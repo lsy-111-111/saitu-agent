@@ -1,0 +1,24 @@
+[Unit]
+Description=Recover an interrupted Resume AI control-plane generation
+Before=resume-ai-deploy-recovery.service resume-ai-pm2.service nginx.service
+ConditionPathExists=/opt/resume-ai/state/control-plane.pending
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/lib/resume-ai/recover-control-plane-generation.sh
+RuntimeDirectory=resume-ai-locks
+RuntimeDirectoryMode=0700
+RuntimeDirectoryPreserve=yes
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+PrivateDevices=true
+IPAddressDeny=any
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+ProtectSystem=strict
+ReadWritePaths=/usr/local/lib/resume-ai /usr/local/share/resume-ai /etc/resume-ai /etc/systemd/system /etc/udev/rules.d /etc/logrotate.d /opt/resume-ai/state /var/lib/resume-ai/control-plane-staging /var/backups/resume-ai/control-plane /run/resume-ai-locks

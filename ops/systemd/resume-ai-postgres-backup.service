@@ -1,0 +1,42 @@
+[Unit]
+Description=Resume AI root-only PostgreSQL backup
+After=postgresql.service
+Requires=postgresql.service
+OnFailure=resume-ai-postgres-ops-alert@%n.service
+
+[Service]
+Type=oneshot
+User=root
+Group=root
+ExecStart=/usr/local/lib/resume-ai/backup-postgres.sh scheduled
+TimeoutStartSec=2h
+RuntimeDirectory=resume-ai-locks
+RuntimeDirectoryMode=0700
+RuntimeDirectoryPreserve=yes
+UMask=0077
+Nice=10
+IOSchedulingClass=best-effort
+IOSchedulingPriority=7
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+PrivateIPC=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectKernelLogs=true
+ProtectControlGroups=true
+ProtectClock=true
+ProtectHostname=true
+ProtectProc=invisible
+ProcSubset=pid
+RestrictSUIDSGID=true
+RestrictNamespaces=true
+RestrictRealtime=true
+RestrictAddressFamilies=AF_UNIX
+LockPersonality=true
+CapabilityBoundingSet=CAP_CHOWN CAP_DAC_OVERRIDE CAP_DAC_READ_SEARCH CAP_SETGID CAP_SETUID
+AmbientCapabilities=
+SystemCallArchitectures=native
+ReadWritePaths=/var/backups/resume-ai /run/resume-ai-locks

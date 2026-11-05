@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="480" viewBox="0 0 1280 480" role="img" aria-labelledby="title desc">
+  <title id="title">双方书状和模拟庭审</title>
+  <desc id="desc">Original technical-editorial competition illustration without official competition identity artwork.</desc>
+  <metadata><![CDATA[{"id":"jessup-international-law","origin":"ai-generated","generator":"Codex code-native SVG renderer v2","generatedAt":"2026-11-04","semantic":"双方书状和模拟庭审","direction":"语言人文","externalAssets":false,"officialIdentityUsed":false,"humanAuthorshipClaimed":false,"humanReviewStatus":"not-claimed","editorialReviewStatus":"assistant-reviewed-passed","editorialReviewedAt":"2026-11-04","implicitLabelStandard":"GB 45438-2025","implicitLabel":{"Label":"1","ContentProducer":"Saitu Campus","ProduceID":"2f37510dbb3327952eb2306b8e7c69e0","ReservedCode1":"","ContentPropagator":"Saitu Campus","PropagateID":"2f37510dbb3327952eb2306b8e7c69e0","ReservedCode2":""}}]]></metadata>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#332C45" stroke-opacity=".065" stroke-width="1"/></pattern>
+    <pattern id="fiber" width="73" height="47" patternUnits="userSpaceOnUse"><path d="m6 11 17-2m18 25 24 2M31 43l13-1" stroke="#332C45" stroke-width=".7" opacity=".08"/></pattern>
+    <pattern id="hatching" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(12)"><path d="M0 0V9" stroke="#C96555" stroke-width="3" opacity=".52"/></pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="m0 0 9 5-9 5Z" fill="#735AA5"/></marker>
+    <clipPath id="artboard"><rect width="1280" height="480"/></clipPath>
+  </defs>
+  <style>
+    .s{fill:none;stroke:#332C45;stroke-width:4.2;stroke-linecap:square;stroke-linejoin:miter}
+    .h{fill:none;stroke:#332C45;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;opacity:.72}
+    .dim{fill:none;stroke:#735AA5;stroke-width:2;stroke-dasharray:8 7;opacity:.86}
+    .a{fill:#735AA5}.b{fill:#C96555}.wash{fill:#735AA5;opacity:.14}.paper{fill:#F4EFE9}.hatch{fill:url(#hatching)}
+    .mis{transform:translate(3px,-2px);opacity:.38}.frame{fill:none;stroke:#332C45;stroke-width:1.5;opacity:.36}
+    .label,.notation{font-family:Arial,"Noto Sans SC",sans-serif;font-size:15px;font-weight:700;letter-spacing:2.3px;fill:#332C45;opacity:.72}
+    .notation{font-size:13px;fill:#735AA5;opacity:1}
+  </style>
+  <rect width="1280" height="480" fill="#F4EFE9"/>
+  <rect width="1280" height="480" fill="url(#fiber)"/>
+  <rect width="1280" height="480" fill="url(#grid)"/>
+  <g clip-path="url(#artboard)">
+    <path d="M-50 422 351 18" stroke="#C96555" stroke-width="36" opacity=".07"/>
+    <path d="m1038 506 292-294" stroke="#735AA5" stroke-width="20" opacity=".08"/>
+    
+      <path class="frame" d="M898 39v402M927 39v402M898 128h294M898 352h294"/>
+      <text class="label" x="958" y="105">语言人文</text>
+      <text class="notation" x="958" y="385">国际公法模拟法庭 / 11</text>
+    <g transform="translate(-34 58) scale(1.06)">
+    <g transform="translate(11 5)">
+      <rect class="s" x="25" y="39" width="333" height="277"/><path class="h" d="M25 94h333M25 149h333M25 204h333M25 259h333M91 39v277M157 39v277M223 39v277M289 39v277"/>
+      <g class="a"><rect x="103" y="106" width="42" height="31"/><rect x="169" y="161" width="42" height="31"/><rect x="235" y="216" width="42" height="31"/><rect x="301" y="271" width="42" height="31"/></g>
+      <path class="h" d="M407 316V39m0 277h273"/><g class="wash"><circle cx="451" cy="249" r="18"/><circle cx="483" cy="178" r="25"/><circle cx="527" cy="222" r="14"/><circle cx="565" cy="116" r="29"/><circle cx="611" cy="156" r="20"/><circle cx="650" cy="73" r="14"/></g>
+      <path class="s" d="M431 276c86-9 139-71 226-220"/>
+      <path class="dim" d="M407 337h273"/>
+    </g></g>
+    <g opacity=".5"><path class="s" d="M31 31h22M42 20v22M1227 449h22M1238 438v22"/></g>
+  </g>
+</svg>

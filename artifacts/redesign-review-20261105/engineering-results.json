@@ -1,0 +1,66 @@
+{
+  "verifiedAt": "2026-11-05",
+  "scope": "本地工作目录，无生产部署或真实学生模型调用",
+  "productionBuild": "passed",
+  "eslint": "passed",
+  "vitest": {
+    "command": "pnpm exec vitest run --testTimeout=20000",
+    "passed": 889,
+    "failed": 27,
+    "skipped": 23,
+    "failingAssertions": {
+      "tests/competitions/followup-gold-audit.test.ts": [
+        "static competition preference follow-up gold audit > reaches each track oracle through V5 and proves both emitted branches are distinct",
+        "static competition preference follow-up gold audit > keeps every authored question material and its own branches outcome-distinct",
+        "static competition preference follow-up gold audit > matches the authored fit and goal minimal member, relation and track oracles",
+        "static competition preference follow-up gold audit > keeps fit and goal answers qualification-invariant across the complete frozen snapshot",
+        "static competition preference follow-up gold audit > limits goal trade-offs to the authored 75/25 goalsOutputs refinement",
+        "static competition preference follow-up gold audit > allows reached track answers only from precomputed states and never upgrades needs_clarification"
+      ],
+      "tests/competitions/gold-freeze-manifest.test.ts": [
+        "competition gold freeze manifest > freezes the benchmark clock and every literal fixture source"
+      ],
+      "tests/competitions/quality-benchmark.test.ts": [
+        "competition quality benchmark fixtures > contains exactly 100 auditable anchors, 30 hard negatives and 20 no-match personas",
+        "100-competition deterministic recommendation quality gates > achieves 100% per-competition Recall@10",
+        "100-competition deterministic recommendation quality gates > meets fixed-question and true V5 full-path ranking gates",
+        "100-competition deterministic recommendation quality gates > has zero official hard-eligibility violations in all returned candidates",
+        "100-competition deterministic recommendation quality gates > hard-excludes all 30 near-neighbor personas only through sourced structured facts"
+      ],
+      "tests/competitions/recommendation-quality.test.ts": [
+        "expert competition recommendation gold set > keeps the expert top choice and hard-negative gates while filling three unique items",
+        "expert competition recommendation gold set > recovers fixed mechanical/hardware alternatives after the target is hard excluded"
+      ],
+      "tests/competitions/scoring-gold-audit.test.ts": [
+        "static competition scoring gold audit > keeps all seven dimensions inside their caps and derives base score from their exact sum",
+        "static competition scoring gold audit > places at least 90% of gold pairs inside their human-approved base-score intervals",
+        "static competition scoring gold audit > keeps every audited cross-core transfer below the subject/task qualification gate",
+        "static competition scoring gold audit > passes 100% of the 104 mechanically label-derived ordering edges in production"
+      ],
+      "tests/competitions/strict-baseline-acceptance.test.ts": [
+        "honest scoring baseline policy > captures only when explicitly requested, then verifies the prospective baseline byte-for-byte"
+      ],
+      "tests/deployment/release-required-tests.test.ts": [
+        "fixed release required-test contract > pins exact dependency inputs and direct package/bin identities against npm alias substitution",
+        "fixed release required-test contract > pins every selected source and covers the complete fixed release matrix",
+        "fixed release required-test contract > accepts only exact passing observations from all three machine reports",
+        "fixed release required-test contract > fails closed when a pinned test is changed into a trivial substitute",
+        "fixed release required-test contract > makes both authorities reject a self-consistent policy mapping rewrite",
+        "fixed release required-test contract > rejects missing, renamed, skipped, and incomplete required observations",
+        "independent dependency-provenance verifier > reproduces the coordinator receipt and rejects ambient dependency input",
+        "independent dependency-provenance verifier > accepts only the frozen Playwright path and run-bound project-tool output"
+      ]
+    },
+    "default5sTimeoutRun": {
+      "passed": 888,
+      "failed": 28,
+      "skipped": 23,
+      "note": "其中一个历史评测循环在并发构建时超过5秒；单独和20秒预算均通过。"
+    }
+  },
+  "finalDesktopMobileCriticalFlow": {
+    "passed": 6,
+    "total": 6
+  },
+  "expertReview": "awaiting independent annotation"
+}

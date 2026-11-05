@@ -1,0 +1,11 @@
+{
+  "name": "resume-ai-production-runtime-tools",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Frozen PM2 and pnpm toolchain for the Resume AI production host",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "pm2": "7.0.4",
+    "pnpm": "11.19.0"
+  }
+}

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="480" viewBox="0 0 1280 480" role="img" aria-labelledby="title desc">
+  <title id="title">调研资料、实践方案与成效证据</title>
+  <desc id="desc">Original technical-editorial competition illustration without official competition identity artwork.</desc>
+  <metadata><![CDATA[{"id":"student-rural-revitalization","origin":"ai-generated","generator":"Codex code-native SVG renderer v2","generatedAt":"2026-11-04","semantic":"调研资料、实践方案与成效证据","direction":"创新创业","externalAssets":false,"officialIdentityUsed":false,"humanAuthorshipClaimed":false,"humanReviewStatus":"not-claimed","editorialReviewStatus":"assistant-reviewed-passed","editorialReviewedAt":"2026-11-04","implicitLabelStandard":"GB 45438-2025","implicitLabel":{"Label":"1","ContentProducer":"Saitu Campus","ProduceID":"3ee53a65dd8a4515f84c9157b87544c0","ReservedCode1":"","ContentPropagator":"Saitu Campus","PropagateID":"3ee53a65dd8a4515f84c9157b87544c0","ReservedCode2":""}}]]></metadata>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#3B2C25" stroke-opacity=".065" stroke-width="1"/></pattern>
+    <pattern id="fiber" width="73" height="47" patternUnits="userSpaceOnUse"><path d="m6 11 17-2m18 25 24 2M31 43l13-1" stroke="#3B2C25" stroke-width=".7" opacity=".08"/></pattern>
+    <pattern id="hatching" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(12)"><path d="M0 0V9" stroke="#3D8B72" stroke-width="3" opacity=".52"/></pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="m0 0 9 5-9 5Z" fill="#C45B38"/></marker>
+    <clipPath id="artboard"><rect width="1280" height="480"/></clipPath>
+  </defs>
+  <style>
+    .s{fill:none;stroke:#3B2C25;stroke-width:4.2;stroke-linecap:square;stroke-linejoin:miter}
+    .h{fill:none;stroke:#3B2C25;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;opacity:.72}
+    .dim{fill:none;stroke:#C45B38;stroke-width:2;stroke-dasharray:8 7;opacity:.86}
+    .a{fill:#C45B38}.b{fill:#3D8B72}.wash{fill:#C45B38;opacity:.14}.paper{fill:#F4EFE5}.hatch{fill:url(#hatching)}
+    .mis{transform:translate(3px,-2px);opacity:.38}.frame{fill:none;stroke:#3B2C25;stroke-width:1.5;opacity:.36}
+    .label,.notation{font-family:Arial,"Noto Sans SC",sans-serif;font-size:15px;font-weight:700;letter-spacing:2.3px;fill:#3B2C25;opacity:.72}
+    .notation{font-size:13px;fill:#C45B38;opacity:1}
+  </style>
+  <rect width="1280" height="480" fill="#F4EFE5"/>
+  <rect width="1280" height="480" fill="url(#fiber)"/>
+  <rect width="1280" height="480" fill="url(#grid)"/>
+  <g clip-path="url(#artboard)">
+    <path d="M-50 422 351 18" stroke="#3D8B72" stroke-width="36" opacity=".07"/>
+    <path d="m1038 506 292-294" stroke="#C45B38" stroke-width="20" opacity=".08"/>
+    
+      <path class="frame" d="M898 39v402M927 39v402M898 128h294M898 352h294"/>
+      <text class="label" x="958" y="105">创新创业</text>
+      <text class="notation" x="958" y="385">乡村调研与实践 / 21</text>
+    <g transform="translate(-34 58) scale(1.06)">
+    <g transform="translate(8 5)">
+      <rect class="wash" x="27" y="36" width="236" height="285"/><rect class="s" x="27" y="36" width="236" height="285"/>
+      <path class="h" d="M59 78h171M59 111h122M59 166h171M59 199h93M59 254h171M59 287h136"/>
+      <g class="a"><rect x="221" y="67" width="19" height="19"/><rect x="221" y="155" width="19" height="19"/><rect x="221" y="243" width="19" height="19"/></g>
+      <path class="h" d="m315 91 95 54 87-86 142 84M410 145l17 126m70-212 36 206M315 91l12 199"/>
+      <g class="s"><circle cx="315" cy="91" r="23"/><circle cx="410" cy="145" r="28"/><circle cx="497" cy="59" r="22"/><circle cx="639" cy="143" r="28"/><circle cx="327" cy="290" r="22"/><circle cx="427" cy="271" r="22"/><circle cx="533" cy="265" r="22"/></g>
+      <path class="s" d="M313 334h328M373 319v30m207-30v30"/><rect class="b" x="430" y="321" width="94" height="26"/>
+    </g></g>
+    <g opacity=".5"><path class="s" d="M31 31h22M42 20v22M1227 449h22M1238 438v22"/></g>
+  </g>
+</svg>

@@ -1,0 +1,50 @@
+.backdrop {
+  animation: competition-modal-backdrop-in 180ms ease-out both;
+}
+
+.panel {
+  animation: competition-modal-panel-in 220ms cubic-bezier(0.2, 0.75, 0.25, 1) both;
+}
+
+@keyframes competition-modal-backdrop-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes competition-modal-panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.99);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (min-width: 768px) {
+  @keyframes competition-modal-panel-in {
+    from {
+      opacity: 0;
+      transform: translateY(8px) scale(0.98);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .backdrop,
+  .panel {
+    animation: none;
+  }
+}

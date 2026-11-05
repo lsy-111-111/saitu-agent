@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="480" viewBox="0 0 1280 480" role="img" aria-labelledby="title desc">
+  <title id="title">lifecycle stages, material loop and impact assessment</title>
+  <desc id="desc">Original technical-editorial competition illustration without official competition identity artwork.</desc>
+  <metadata><![CDATA[{"id":"green-development","origin":"ai-generated","generator":"Codex code-native SVG renderer v2","generatedAt":"2026-08-23","semantic":"lifecycle stages, material loop and impact assessment","direction":"创新创业","externalAssets":false,"officialIdentityUsed":false,"humanAuthorshipClaimed":false,"humanReviewStatus":"not-claimed","editorialReviewStatus":"assistant-reviewed-passed","editorialReviewedAt":"2026-08-23","implicitLabelStandard":"GB 45438-2025","implicitLabel":{"Label":"1","ContentProducer":"Saitu Campus","ProduceID":"c51e315c239735a1c4e1f33ca08df25e","ReservedCode1":"","ContentPropagator":"Saitu Campus","PropagateID":"c51e315c239735a1c4e1f33ca08df25e","ReservedCode2":""}}]]></metadata>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#3B2C25" stroke-opacity=".065" stroke-width="1"/></pattern>
+    <pattern id="fiber" width="73" height="47" patternUnits="userSpaceOnUse"><path d="m6 11 17-2m18 25 24 2M31 43l13-1" stroke="#3B2C25" stroke-width=".7" opacity=".08"/></pattern>
+    <pattern id="hatching" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(12)"><path d="M0 0V9" stroke="#3D8B72" stroke-width="3" opacity=".52"/></pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="m0 0 9 5-9 5Z" fill="#C45B38"/></marker>
+    <clipPath id="artboard"><rect width="1280" height="480"/></clipPath>
+  </defs>
+  <style>
+    .s{fill:none;stroke:#3B2C25;stroke-width:4.2;stroke-linecap:square;stroke-linejoin:miter}
+    .h{fill:none;stroke:#3B2C25;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;opacity:.72}
+    .dim{fill:none;stroke:#C45B38;stroke-width:2;stroke-dasharray:8 7;opacity:.86}
+    .a{fill:#C45B38}.b{fill:#3D8B72}.wash{fill:#C45B38;opacity:.14}.paper{fill:#F4EFE5}.hatch{fill:url(#hatching)}
+    .mis{transform:translate(3px,-2px);opacity:.38}.frame{fill:none;stroke:#3B2C25;stroke-width:1.5;opacity:.36}
+    .label,.notation{font-family:Arial,"Noto Sans SC",sans-serif;font-size:15px;font-weight:700;letter-spacing:2.3px;fill:#3B2C25;opacity:.72}
+    .notation{font-size:13px;fill:#C45B38;opacity:1}
+  </style>
+  <rect width="1280" height="480" fill="#F4EFE5"/>
+  <rect width="1280" height="480" fill="url(#fiber)"/>
+  <rect width="1280" height="480" fill="url(#grid)"/>
+  <g clip-path="url(#artboard)">
+    <path d="M-50 422 351 18" stroke="#3D8B72" stroke-width="36" opacity=".07"/>
+    <path d="m1038 506 292-294" stroke="#C45B38" stroke-width="20" opacity=".08"/>
+    
+    <path class="frame" d="M68 39v402M1212 39v402M68 82h1144M68 398h1144"/>
+    <text class="label" x="92" y="71">创新创业</text>
+    <text class="notation" x="1047" y="71">LCA / 05</text>
+    <g transform="translate(284 58) scale(1.02)">
+    <g transform="translate(7 2)">
+      <path class="s" d="M354 55c133 0 239 89 239 147s-106 147-239 147S115 260 115 202 221 55 354 55Z"/>
+      <path class="s" d="M153 115 91 179l74 49M555 96l77 51-54 66M527 292l-70 58-42-73" marker-end="url(#arrow)"/>
+      <g class="wash"><rect x="276" y="26" width="156" height="71"/><rect x="526" y="166" width="156" height="71"/><rect x="276" y="277" width="156" height="71"/><rect x="27" y="166" width="156" height="71"/></g>
+      <g class="s"><rect x="276" y="26" width="156" height="71"/><rect x="526" y="166" width="156" height="71"/><rect x="276" y="277" width="156" height="71"/><rect x="27" y="166" width="156" height="71"/></g>
+      <path class="h" d="M306 61h95M556 201h95M306 312h95M57 201h95"/>
+      <g class="a"><rect x="314" y="111" width="80" height="18"/><rect x="441" y="193" width="80" height="18"/><rect x="314" y="244" width="80" height="18"/></g>
+    </g></g>
+    <g opacity=".5"><path class="s" d="M31 31h22M42 20v22M1227 449h22M1238 438v22"/></g>
+  </g>
+</svg>

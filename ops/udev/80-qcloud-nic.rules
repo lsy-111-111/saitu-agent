@@ -1,0 +1,4 @@
+# Preserve Tencent Cloud NIC tuning through a bounded, PrivateTmp systemd unit.
+# Never execute the vendor dispatcher directly: it writes predictable root logs
+# below the host /tmp directory.
+SUBSYSTEM=="net", ACTION=="add", KERNEL=="eth[0-9]*", TAG+="systemd", ENV{SYSTEMD_WANTS}+="resume-ai-qcloud-network-tuning@%k.service"

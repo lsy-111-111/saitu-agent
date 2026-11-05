@@ -1,0 +1,12 @@
+[Unit]
+Description=Recover interrupted resume-ai APT configuration transaction
+DefaultDependencies=no
+After=local-fs.target
+Before=apt-daily.service apt-daily-upgrade.service
+RequiresMountsFor=/usr/local/lib/resume-ai /var/lib/resume-ai /var/backups/resume-ai
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/lib/resume-ai/recover-unattended-upgrades.sh
+RemainAfterExit=no
+TimeoutStartSec=180

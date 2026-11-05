@@ -1,0 +1,21 @@
+/var/log/resume-ai/*.log {
+    daily
+    size 50M
+    rotate 14
+    missingok
+    notifempty
+    compress
+    delaycompress
+    dateext
+    dateformat -%Y%m%d-%s
+    sharedscripts
+    su resume-ai resume-ai
+    create 0640 resume-ai resume-ai
+    postrotate
+        if [ -S /var/lib/resume-ai/.pm2/rpc.sock ]; then
+            env -i HOME=/var/lib/resume-ai PM2_HOME=/var/lib/resume-ai/.pm2 \
+                PATH=/opt/nodejs/current/bin:/usr/bin:/bin \
+                /opt/nodejs/current/bin/pm2 reloadLogs >/dev/null
+        fi
+    endscript
+}

@@ -1,0 +1,20 @@
+[Unit]
+Description=Recover an interrupted Resume AI Nginx package/config migration
+Before=nginx.service
+ConditionPathExists=/opt/resume-ai/state/nginx-migration.pending
+
+[Service]
+Type=oneshot
+ExecCondition=/usr/local/lib/resume-ai/nginx-migration-recovery-gate.sh
+ExecStart=/usr/local/lib/resume-ai/recover-nginx-migration.sh
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+PrivateDevices=true
+IPAddressDeny=any
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true

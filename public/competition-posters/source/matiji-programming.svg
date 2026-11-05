@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="480" viewBox="0 0 1280 480" role="img" aria-labelledby="title desc">
+  <title id="title">loop states, test batches and runtime bars</title>
+  <desc id="desc">Original technical-editorial competition illustration without official competition identity artwork.</desc>
+  <metadata><![CDATA[{"id":"matiji-programming","origin":"ai-generated","generator":"Codex code-native SVG renderer v2","generatedAt":"2026-08-23","semantic":"loop states, test batches and runtime bars","direction":"人工智能与物联","externalAssets":false,"officialIdentityUsed":false,"humanAuthorshipClaimed":false,"humanReviewStatus":"not-claimed","editorialReviewStatus":"assistant-reviewed-passed","editorialReviewedAt":"2026-08-23","implicitLabelStandard":"GB 45438-2025","implicitLabel":{"Label":"1","ContentProducer":"Saitu Campus","ProduceID":"ad68ceeea7cb624b650f7eb493333d9e","ReservedCode1":"","ContentPropagator":"Saitu Campus","PropagateID":"ad68ceeea7cb624b650f7eb493333d9e","ReservedCode2":""}}]]></metadata>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#242B49" stroke-opacity=".065" stroke-width="1"/></pattern>
+    <pattern id="fiber" width="73" height="47" patternUnits="userSpaceOnUse"><path d="m6 11 17-2m18 25 24 2M31 43l13-1" stroke="#242B49" stroke-width=".7" opacity=".08"/></pattern>
+    <pattern id="hatching" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(12)"><path d="M0 0V9" stroke="#16A09A" stroke-width="3" opacity=".52"/></pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="m0 0 9 5-9 5Z" fill="#4D59C4"/></marker>
+    <clipPath id="artboard"><rect width="1280" height="480"/></clipPath>
+  </defs>
+  <style>
+    .s{fill:none;stroke:#242B49;stroke-width:4.2;stroke-linecap:square;stroke-linejoin:miter}
+    .h{fill:none;stroke:#242B49;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;opacity:.72}
+    .dim{fill:none;stroke:#4D59C4;stroke-width:2;stroke-dasharray:8 7;opacity:.86}
+    .a{fill:#4D59C4}.b{fill:#16A09A}.wash{fill:#4D59C4;opacity:.14}.paper{fill:#F0F0E8}.hatch{fill:url(#hatching)}
+    .mis{transform:translate(3px,-2px);opacity:.38}.frame{fill:none;stroke:#242B49;stroke-width:1.5;opacity:.36}
+    .label,.notation{font-family:Arial,"Noto Sans SC",sans-serif;font-size:15px;font-weight:700;letter-spacing:2.3px;fill:#242B49;opacity:.72}
+    .notation{font-size:13px;fill:#4D59C4;opacity:1}
+  </style>
+  <rect width="1280" height="480" fill="#F0F0E8"/>
+  <rect width="1280" height="480" fill="url(#fiber)"/>
+  <rect width="1280" height="480" fill="url(#grid)"/>
+  <g clip-path="url(#artboard)">
+    <path d="M-50 422 351 18" stroke="#16A09A" stroke-width="36" opacity=".07"/>
+    <path d="m1038 506 292-294" stroke="#4D59C4" stroke-width="20" opacity=".08"/>
+    
+    <path class="frame" d="M68 39v402M1212 39v402M68 82h1144M68 398h1144"/>
+    <text class="label" x="92" y="71">人工智能与物联</text>
+    <text class="notation" x="1047" y="71">TLE / 2S</text>
+    <g transform="translate(284 58) scale(1.02)">
+    <g transform="translate(10 5)">
+      <path class="h" d="M82 52v55m0 0-49 54m49-54 49 54m-49-54 147 54m-196 0-13 72m13-72 44 72m54-72-34 72m34-72 42 72m56-72-20 72m20-72 43 72"/>
+      <g class="s"><rect x="48" y="31" width="68" height="42"/><rect x="3" y="140" width="60" height="42"/><rect x="101" y="140" width="60" height="42"/><rect x="199" y="140" width="60" height="42"/><rect x="-10" y="232" width="60" height="42"/><rect x="59" y="232" width="60" height="42"/><rect x="129" y="232" width="60" height="42"/><rect x="198" y="232" width="60" height="42"/></g>
+      <g class="wash"><rect x="313" y="38" width="157" height="57"/><rect x="346" y="117" width="157" height="57"/><rect x="379" y="196" width="157" height="57"/><rect x="412" y="275" width="157" height="57"/></g>
+      <g class="s"><rect x="313" y="38" width="157" height="57"/><rect x="346" y="117" width="157" height="57"/><rect x="379" y="196" width="157" height="57"/><rect x="412" y="275" width="157" height="57"/></g>
+      <g class="h"><path d="M596 54h91v91h-91Zm0 106h91v91h-91Zm0 106h91v66h-91Z"/></g><rect class="a" x="610" y="174" width="25" height="25"/>
+    </g></g>
+    <g opacity=".5"><path class="s" d="M31 31h22M42 20v22M1227 449h22M1238 438v22"/></g>
+  </g>
+</svg>

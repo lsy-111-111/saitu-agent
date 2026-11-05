@@ -1,0 +1,90 @@
+{
+  "old": {
+    "profileCount": 25,
+    "catalogSize": 100,
+    "catalogVersion": "2026-08-25.v6",
+    "scorerVersion": "deterministic-2026-08.v14",
+    "fixtureSha256": "e0b9f769b18bf9d1fd4960e7f82c8b4bc8ecae64c4d8284ee5e9adf9299415d7",
+    "source": "Frozen August positive judgments, fixed questionnaire only, series level; unjudged entries and tracks have unknown relevance.",
+    "emptyKnownTop3": [],
+    "expandedTop10": {},
+    "expandedTop3": {},
+    "metrics": {
+      "hitAt3": 1,
+      "recallAt10KnownRelevant": 0.9507,
+      "listedCoverage": 0.9507,
+      "annotatedTop3": 2.72
+    }
+  },
+  "new100": {
+    "profileCount": 25,
+    "catalogSize": 100,
+    "catalogVersion": "2026-11-04.v7",
+    "scorerVersion": "evidence-fit-2026-11.v1",
+    "fixtureSha256": "e0b9f769b18bf9d1fd4960e7f82c8b4bc8ecae64c4d8284ee5e9adf9299415d7",
+    "source": "Frozen August positive judgments, fixed questionnaire only, series level; unjudged entries and tracks have unknown relevance.",
+    "emptyKnownTop3": [],
+    "expandedTop10": {},
+    "expandedTop3": {},
+    "metrics": {
+      "hitAt3": 1,
+      "recallAt10KnownRelevant": 0.9567,
+      "listedCoverage": 1,
+      "annotatedTop3": 2.28
+    }
+  },
+  "new": {
+    "profileCount": 25,
+    "catalogSize": 135,
+    "catalogVersion": "2026-11-04.v7",
+    "scorerVersion": "evidence-fit-2026-11.v1",
+    "fixtureSha256": "e0b9f769b18bf9d1fd4960e7f82c8b4bc8ecae64c4d8284ee5e9adf9299415d7",
+    "source": "Frozen August positive judgments, fixed questionnaire only, series level; unjudged entries and tracks have unknown relevance.",
+    "emptyKnownTop3": [
+      {
+        "profile": "rank-undergraduate-upper-finance-tax",
+        "shown": [
+          "ima-management-accounting",
+          "keyun-accounting",
+          "cgma-global-business"
+        ]
+      }
+    ],
+    "expandedTop10": {
+      "if-student-award": 4,
+      "robomaster-university": 2,
+      "national-student-arts": 2,
+      "national-interpreting-english": 2,
+      "neccs": 2,
+      "ima-management-accounting": 2,
+      "cgma-global-business": 2,
+      "acca-job-hunting": 2,
+      "cfa-research-challenge": 2,
+      "collegiate-chemistry-lab": 2,
+      "pharmacy-student-forum": 2,
+      "cryptography-math-challenge": 2,
+      "student-rural-revitalization": 2,
+      "environmental-law-moot": 2,
+      "icc-criminal-moot": 2,
+      "cosmetics-innovation": 1,
+      "asc-supercomputing": 1,
+      "concrete-material-design": 1,
+      "collegiate-welding": 1,
+      "biomedical-engineering-design": 1,
+      "vis-commercial-arbitration": 1
+    },
+    "expandedTop3": {
+      "ima-management-accounting": 2,
+      "student-rural-revitalization": 2,
+      "collegiate-chemistry-lab": 1,
+      "cgma-global-business": 1
+    },
+    "metrics": {
+      "hitAt3": 0.96,
+      "recallAt10KnownRelevant": 0.881,
+      "listedCoverage": 1,
+      "annotatedTop3": 2.2
+    }
+  },
+  "interpretation": "25 positive-only August judgments, fixed questionnaire, series level. New tracks and unjudged series do not establish real-student gains. Original and expanded catalog replays distinguish scoring from catalog effects."
+}

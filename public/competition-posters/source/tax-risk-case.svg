@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="480" viewBox="0 0 1280 480" role="img" aria-labelledby="title desc">
+  <title id="title">invoice chain, tax nodes and anomaly bands</title>
+  <desc id="desc">Original technical-editorial competition illustration without official competition identity artwork.</desc>
+  <metadata><![CDATA[{"id":"tax-risk-case","origin":"ai-generated","generator":"Codex code-native SVG renderer v2","generatedAt":"2026-08-23","semantic":"invoice chain, tax nodes and anomaly bands","direction":"商业与职业","externalAssets":false,"officialIdentityUsed":false,"humanAuthorshipClaimed":false,"humanReviewStatus":"not-claimed","editorialReviewStatus":"assistant-reviewed-passed","editorialReviewedAt":"2026-08-23","implicitLabelStandard":"GB 45438-2025","implicitLabel":{"Label":"1","ContentProducer":"Saitu Campus","ProduceID":"27f441dcf367839e2734f703620bdd46","ReservedCode1":"","ContentPropagator":"Saitu Campus","PropagateID":"27f441dcf367839e2734f703620bdd46","ReservedCode2":""}}]]></metadata>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#283039" stroke-opacity=".065" stroke-width="1"/></pattern>
+    <pattern id="fiber" width="73" height="47" patternUnits="userSpaceOnUse"><path d="m6 11 17-2m18 25 24 2M31 43l13-1" stroke="#283039" stroke-width=".7" opacity=".08"/></pattern>
+    <pattern id="hatching" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(12)"><path d="M0 0V9" stroke="#B8743E" stroke-width="3" opacity=".52"/></pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="m0 0 9 5-9 5Z" fill="#476B91"/></marker>
+    <clipPath id="artboard"><rect width="1280" height="480"/></clipPath>
+  </defs>
+  <style>
+    .s{fill:none;stroke:#283039;stroke-width:4.2;stroke-linecap:square;stroke-linejoin:miter}
+    .h{fill:none;stroke:#283039;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;opacity:.72}
+    .dim{fill:none;stroke:#476B91;stroke-width:2;stroke-dasharray:8 7;opacity:.86}
+    .a{fill:#476B91}.b{fill:#B8743E}.wash{fill:#476B91;opacity:.14}.paper{fill:#F2EFE7}.hatch{fill:url(#hatching)}
+    .mis{transform:translate(3px,-2px);opacity:.38}.frame{fill:none;stroke:#283039;stroke-width:1.5;opacity:.36}
+    .label,.notation{font-family:Arial,"Noto Sans SC",sans-serif;font-size:15px;font-weight:700;letter-spacing:2.3px;fill:#283039;opacity:.72}
+    .notation{font-size:13px;fill:#476B91;opacity:1}
+  </style>
+  <rect width="1280" height="480" fill="#F2EFE7"/>
+  <rect width="1280" height="480" fill="url(#fiber)"/>
+  <rect width="1280" height="480" fill="url(#grid)"/>
+  <g clip-path="url(#artboard)">
+    <path d="M-50 422 351 18" stroke="#B8743E" stroke-width="36" opacity=".07"/>
+    <path d="m1038 506 292-294" stroke="#476B91" stroke-width="20" opacity=".08"/>
+    
+      <path class="frame" d="M68 39v402M93 39v402"/>
+      <text class="label" x="66" y="415" transform="rotate(-90 66 415)">商业与职业</text>
+      <text class="notation" x="112" y="78">RISK / 07</text>
+    <g transform="translate(178 56) scale(1.03)">
+    <g transform="translate(8 4)">
+      <g class="wash"><rect x="26" y="52" width="203" height="83"/><rect x="90" y="156" width="203" height="83"/><rect x="154" y="260" width="203" height="83"/></g>
+      <g class="s"><rect x="26" y="52" width="203" height="83"/><rect x="90" y="156" width="203" height="83"/><rect x="154" y="260" width="203" height="83"/></g>
+      <path class="h" d="M57 92h141M121 196h141M185 300h141"/>
+      <path class="h" d="M405 313V44m0 269h275"/><g class="a"><circle cx="444" cy="245" r="11"/><circle cx="481" cy="195" r="15"/><circle cx="527" cy="223" r="8"/><circle cx="562" cy="112" r="18"/><circle cx="610" cy="153" r="12"/><circle cx="653" cy="79" r="9"/></g>
+      <path class="s" d="M410 273c93-28 155-99 261-223"/>
+      <path class="b" d="M383 174h43v75h-43Z"/>
+    </g></g>
+    <g opacity=".5"><path class="s" d="M31 31h22M42 20v22M1227 449h22M1238 438v22"/></g>
+  </g>
+</svg>

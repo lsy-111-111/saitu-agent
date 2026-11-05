@@ -1,0 +1,29 @@
+[Unit]
+Description=Recover an interrupted Resume AI QCloud control publication
+DefaultDependencies=no
+After=local-fs.target
+Before=network-pre.target
+ConditionPathExists=/var/lib/resume-ai/security/qcloud-control.pending
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/lib/resume-ai/recover-qcloud-control-generation.sh
+RuntimeDirectory=resume-ai-locks
+RuntimeDirectoryMode=0700
+RuntimeDirectoryPreserve=yes
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+PrivateDevices=true
+IPAddressDeny=any
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+ProtectSystem=strict
+ReadWritePaths=/usr/local/lib/resume-ai /usr/local/share/resume-ai /etc/systemd/system /etc/udev/rules.d /var/lib/resume-ai/security /var/backups/resume-ai/qcloud-control /run/resume-ai-locks
+
+[Install]
+WantedBy=network-pre.target

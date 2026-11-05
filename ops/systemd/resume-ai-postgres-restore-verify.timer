@@ -1,0 +1,12 @@
+[Unit]
+Description=Monthly Resume AI PostgreSQL restore verification schedule
+
+[Timer]
+OnCalendar=*-*-01 03:30:00 Asia/Shanghai
+RandomizedDelaySec=20m
+Persistent=true
+AccuracySec=1m
+Unit=resume-ai-postgres-restore-verify.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,30 @@
+[Unit]
+Description=Emit a critical event when PostgreSQL operation %i fails
+
+[Service]
+Type=oneshot
+User=root
+Group=root
+ExecStart=/usr/bin/logger --priority daemon.crit --tag resume-ai-postgres-ops POSTGRES_OPERATION_FAILED unit=%i
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectKernelLogs=true
+ProtectControlGroups=true
+ProtectClock=true
+ProtectHostname=true
+ProtectProc=invisible
+ProcSubset=pid
+RestrictSUIDSGID=true
+RestrictNamespaces=true
+RestrictRealtime=true
+RestrictAddressFamilies=AF_UNIX
+LockPersonality=true
+CapabilityBoundingSet=
+AmbientCapabilities=
+SystemCallArchitectures=native

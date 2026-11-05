@@ -1,0 +1,7 @@
+Package: nginx
+Pin: version 1.30.4-1~jammy
+Pin-Priority: 1001
+
+Package: *
+Pin: origin nginx.org
+Pin-Priority: -1

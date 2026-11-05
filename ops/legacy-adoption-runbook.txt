@@ -1,0 +1,56 @@
+ONE-TIME LEGACY ADOPTION (FAIL-CLOSED)
+
+This procedure is only for the unmanaged release whose running PM2 process is
+owned by ubuntu and whose exact cwd is:
+
+  /home/ubuntu/resume-ai-web-releases/20260826T041035Z
+
+Do not run this procedure after /opt/resume-ai/state/active.env exists.
+
+Prerequisites:
+
+1. Before any root bootstrap or upload, create the exact Tencent Cloud snapshot
+   resume-ai-initial-rollback-20260826T041035Z and retain raw one-resource
+   DescribeSnapshots/DescribeDisks JSON evidence.
+2. From an independently reviewed copier SHA-256 and canonical bootstrap
+   manifest SHA-256, create one root-only content-addressed generation.  Never
+   sudo-execute the uploaded worktree.  Import the initial snapshot API evidence
+   with that generation, then run its capture-host-baseline.sh with SOURCE_DIR
+   set to the exact live cwd.  Retain the SHA-256 of the baseline SHA256SUMS.
+3. From that same generation and baseline identity, install the pinned Node 24
+   runtime and runtime layout; then install the Nginx transaction and
+   root-owned recovery units.  Do not stop or restart the ubuntu PM2 process.
+4. Record the exact live PM2 PID.  Never print or archive PM2 jlist output or
+   the contents/hashes of .env.local.
+
+Invocation (substitute only reviewed evidence/PID values):
+
+  ACK_LEGACY_ADOPTION=YES \
+  CLOUD_SNAPSHOT_CONFIRMED=YES \
+  CLOUD_SNAPSHOT_ID=lhsnap-REVIEWED_ID \
+  HOST_BASELINE_DIR=/var/backups/resume-ai/prechange/UTC_BASELINE_ID \
+  /usr/local/lib/resume-ai/adopt-legacy-release.sh LIVE_PID 20260826T041035Z
+
+The writer copies .env.local only to /etc/resume-ai/legacy.env as a single
+root:resume-ai 0640 file.  It never places that file, a value hash, or PM2 env
+data in a release or evidence archive.  The immutable candidate starts under
+resume-ai with Node 24 on port 3001.  The old ubuntu PM2 process on port 3000
+is stopped only after Nginx, current, active.env, database legacy-delete state,
+assets/API gates, and the dedicated PM2 dump all agree.
+
+If the command or host stops while the journal exists, do not edit state by
+hand.  Nginx requires resume-ai-legacy-adoption-recovery.service.  Recovery
+keeps the old service when the on-disk upstream is still 3000, quarantines any
+partial initializing evidence, and completes the managed state when the
+upstream is already 3001.  A recovery failure keeps Nginx blocked and retains
+the journal for investigation.  The resume-ai PM2 unit is a non-fatal Want in
+the pre-candidate phase because an empty PM2 dump must not prevent recovery of
+the still-running ubuntu service.
+
+After the first current release passes the 30-minute production observation
+and rpc-only database hardening, retain legacy.env only for the explicitly
+recorded legacy rollback window; remove it later with a separate approved,
+recoverable secret-retirement procedure.
+verify-production-host.sh fails closed if legacy.env is absent while the
+legacy release is the immediate rollback target, or if it remains after that
+immediate rollback window has ended.

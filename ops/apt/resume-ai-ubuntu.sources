@@ -1,0 +1,6 @@
+Types: deb
+URIs: http://mirrors.tencentyun.com/ubuntu
+Suites: jammy jammy-updates jammy-security
+Components: main restricted universe multiverse
+Architectures: amd64
+Signed-By: /etc/apt/keyrings/resume-ai-ubuntu-archive-2018.gpg

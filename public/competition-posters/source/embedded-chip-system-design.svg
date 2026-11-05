@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="480" viewBox="0 0 1280 480" role="img" aria-labelledby="title desc">
+  <title id="title">chip core, peripheral buses and firmware timeline</title>
+  <desc id="desc">Original technical-editorial competition illustration without official competition identity artwork.</desc>
+  <metadata><![CDATA[{"id":"embedded-chip-system-design","origin":"ai-generated","generator":"Codex code-native SVG renderer v2","generatedAt":"2026-08-23","semantic":"chip core, peripheral buses and firmware timeline","direction":"人工智能与物联","externalAssets":false,"officialIdentityUsed":false,"humanAuthorshipClaimed":false,"humanReviewStatus":"not-claimed","editorialReviewStatus":"assistant-reviewed-passed","editorialReviewedAt":"2026-08-23","implicitLabelStandard":"GB 45438-2025","implicitLabel":{"Label":"1","ContentProducer":"Saitu Campus","ProduceID":"00aed2551773ed1623fced191d8cb94c","ReservedCode1":"","ContentPropagator":"Saitu Campus","PropagateID":"00aed2551773ed1623fced191d8cb94c","ReservedCode2":""}}]]></metadata>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#242B49" stroke-opacity=".065" stroke-width="1"/></pattern>
+    <pattern id="fiber" width="73" height="47" patternUnits="userSpaceOnUse"><path d="m6 11 17-2m18 25 24 2M31 43l13-1" stroke="#242B49" stroke-width=".7" opacity=".08"/></pattern>
+    <pattern id="hatching" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(12)"><path d="M0 0V9" stroke="#16A09A" stroke-width="3" opacity=".52"/></pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="m0 0 9 5-9 5Z" fill="#4D59C4"/></marker>
+    <clipPath id="artboard"><rect width="1280" height="480"/></clipPath>
+  </defs>
+  <style>
+    .s{fill:none;stroke:#242B49;stroke-width:4.2;stroke-linecap:square;stroke-linejoin:miter}
+    .h{fill:none;stroke:#242B49;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;opacity:.72}
+    .dim{fill:none;stroke:#4D59C4;stroke-width:2;stroke-dasharray:8 7;opacity:.86}
+    .a{fill:#4D59C4}.b{fill:#16A09A}.wash{fill:#4D59C4;opacity:.14}.paper{fill:#F0F0E8}.hatch{fill:url(#hatching)}
+    .mis{transform:translate(3px,-2px);opacity:.38}.frame{fill:none;stroke:#242B49;stroke-width:1.5;opacity:.36}
+    .label,.notation{font-family:Arial,"Noto Sans SC",sans-serif;font-size:15px;font-weight:700;letter-spacing:2.3px;fill:#242B49;opacity:.72}
+    .notation{font-size:13px;fill:#4D59C4;opacity:1}
+  </style>
+  <rect width="1280" height="480" fill="#F0F0E8"/>
+  <rect width="1280" height="480" fill="url(#fiber)"/>
+  <rect width="1280" height="480" fill="url(#grid)"/>
+  <g clip-path="url(#artboard)">
+    <path d="M-50 422 351 18" stroke="#16A09A" stroke-width="36" opacity=".07"/>
+    <path d="m1038 506 292-294" stroke="#4D59C4" stroke-width="20" opacity=".08"/>
+    
+      <path class="frame" d="M351 39v402M322 39v402M88 128h263M88 352h263"/>
+      <text class="label" x="88" y="105">人工智能与物联</text>
+      <text class="notation" x="88" y="385">BUS / 32</text>
+    <g transform="translate(536 48) scale(1.05)">
+    <g transform="translate(26 0)">
+      <rect class="wash" x="37" y="32" width="349" height="294"/><rect class="s" x="37" y="32" width="349" height="294"/>
+      <path class="s" d="M72 76h91v48h73v-27h112M72 171h52v-24h118v67h106M72 270h80v-34h73v41h123"/>
+      <g class="a"><circle cx="163" cy="76" r="8"/><circle cx="236" cy="124" r="8"/><circle cx="124" cy="171" r="8"/><circle cx="242" cy="214" r="8"/><circle cx="152" cy="270" r="8"/><circle cx="225" cy="236" r="8"/></g>
+      <path class="h" d="M428 62h245v56H428m0 43h245v56H428m0 43h245v56H428"/>
+      <path class="b" d="M451 75h54v30h-54Zm92 99h78v30h-78Zm-62 99h109v30H481Z"/>
+      <path class="dim" d="M411 32v294"/>
+    </g></g>
+    <g opacity=".5"><path class="s" d="M31 31h22M42 20v22M1227 449h22M1238 438v22"/></g>
+  </g>
+</svg>

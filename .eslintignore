@@ -1,0 +1,9 @@
+node_modules
+.next
+.next-e2e
+out
+dist
+coverage
+playwright-report
+test-results
+tmp

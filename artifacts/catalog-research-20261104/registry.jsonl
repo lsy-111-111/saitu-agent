@@ -1,0 +1,563 @@
+{"type":"series","id":"china-international-college-innovation","name":"中国国际大学生创新大赛"}
+{"type":"edition-record","id":"9bbe72c113f3698b","series":"china-international-college-innovation","label":"2026","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.moe.gov.cn/srcsite/A08/s5672/202607/t20260731_1445670.html","https://jwc.shmtu.edu.cn/2026/0822/c12524a295959/page.htm"]}
+{"type":"notice-scope","id":"48c2ffca62180488","series":"china-international-college-innovation","edition":"9bbe72c113f3698b","label":"国内主赛"}
+{"type":"milestone","id":"dacb81a864fe6ac6","series":"china-international-college-innovation","edition":"9bbe72c113f3698b","noticeScope":"48c2ffca62180488","kind":"报名截止","date":"2026-09-25 12:00","source":"https://www.moe.gov.cn/srcsite/A08/s5672/202607/t20260731_1445670.html"}
+{"type":"milestone","id":"862bda13725f6ee9","series":"china-international-college-innovation","edition":"9bbe72c113f3698b","noticeScope":"48c2ffca62180488","kind":"报名开始","date":"2026-08-10","source":"https://www.moe.gov.cn/srcsite/A08/s5672/202607/t20260731_1445670.html"}
+{"type":"track","id":"98d4e7af4514261a","series":"china-international-college-innovation","trackKey":"undergraduate-creative","label":"高教主赛道本科生创意组","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://www.moe.gov.cn/srcsite/A08/s5672/202607/t20260731_1445670.html"}
+{"type":"track","id":"c71608e3621678f0","series":"china-international-college-innovation","trackKey":"undergraduate-startup","label":"高教主赛道本科生创业组","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://www.moe.gov.cn/srcsite/A08/s5672/202607/t20260731_1445670.html"}
+{"type":"track","id":"ed757d61ec1424be","series":"china-international-college-innovation","trackKey":"graduate-creative","label":"高教主赛道研究生创意组","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://www.moe.gov.cn/srcsite/A08/s5672/202607/t20260731_1445670.html"}
+{"type":"track","id":"3d002e4b45464dd1","series":"china-international-college-innovation","trackKey":"graduate-startup","label":"高教主赛道研究生创业组","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://www.moe.gov.cn/srcsite/A08/s5672/202607/t20260731_1445670.html"}
+{"type":"track","id":"a6379076112456ed","series":"china-international-college-innovation","trackKey":"vocational-creative","label":"职教赛道创意组","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://www.moe.gov.cn/srcsite/A08/s5672/202607/t20260731_1445670.html"}
+{"type":"track","id":"52e6d7e9f1d9d316","series":"china-international-college-innovation","trackKey":"vocational-startup","label":"职教赛道创业组","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://www.moe.gov.cn/srcsite/A08/s5672/202607/t20260731_1445670.html"}
+{"type":"series","id":"challenge-cup-academic-science","name":"“挑战杯”全国大学生课外学术科技作品竞赛"}
+{"type":"edition-record","id":"0b702a6ed2aecc9a","series":"challenge-cup-academic-science","label":"2027第二十届","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.wenda.edu.cn/wy/m/display_1271.html","https://www.tiaozhanbei.net/rules"]}
+{"type":"track","id":"7446c397401e4be0","series":"challenge-cup-academic-science","trackKey":"natural-science-paper","label":"自然科学类学术论文","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://www.tiaozhanbei.net/rules"}
+{"type":"track","id":"90c16f7a5fbc156d","series":"challenge-cup-academic-science","trackKey":"social-survey","label":"哲学社会科学类社会调查报告","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://www.tiaozhanbei.net/rules"}
+{"type":"track","id":"c8bee7eabcaacb0e","series":"challenge-cup-academic-science","trackKey":"technology-invention","label":"科技发明制作","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://www.tiaozhanbei.net/rules"}
+{"type":"series","id":"national-college-math-modeling","name":"全国大学生数学建模竞赛"}
+{"type":"edition-record","id":"d914aeeb01fbd7c8","series":"national-college-math-modeling","label":"2026","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.csiam.org.cn/upload/shuxue/69c3870950b04.pdf","https://hs.nufe.edu.cn/_upload/article/files/18/93/be02942d440da93e7786230a433a/ff94902a-2505-493b-9025-7ee5fd6b2a0a.pdf"]}
+{"type":"notice-scope","id":"3a6fc968995f42dd","series":"national-college-math-modeling","edition":"d914aeeb01fbd7c8","label":"全国赛"}
+{"type":"milestone","id":"7301629634dbf078","series":"national-college-math-modeling","edition":"d914aeeb01fbd7c8","noticeScope":"3a6fc968995f42dd","kind":"比赛结束","date":"2026-09-13 20:00","source":"https://hs.nufe.edu.cn/_upload/article/files/18/93/be02942d440da93e7786230a433a/ff94902a-2505-493b-9025-7ee5fd6b2a0a.pdf"}
+{"type":"track","id":"80a60fbd148d7ad3","series":"national-college-math-modeling","trackKey":"undergraduate-group","label":"本科组","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://www.mcm.edu.cn/upload_cn/node/779/D3txF20S95f4041e22b41b4a1f9e0e22ac8a1389.pdf"}
+{"type":"track","id":"f1078ebb07028e94","series":"national-college-math-modeling","trackKey":"vocational-group","label":"高职高专组","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://www.mcm.edu.cn/upload_cn/node/779/D3txF20S95f4041e22b41b4a1f9e0e22ac8a1389.pdf"}
+{"type":"series","id":"challenge-cup-entrepreneurship-plan","name":"“挑战杯”中国大学生创业计划竞赛"}
+{"type":"edition-record","id":"a1ed3528a7cc7783","series":"challenge-cup-entrepreneurship-plan","label":"2026第十五届","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.sohu.com/a/1027400659_121968648","https://www.tiaozhanbei.net/rules2"]}
+{"type":"track","id":"531f60fb2e345f9d","series":"challenge-cup-entrepreneurship-plan","trackKey":"registered","label":"已创业类","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://www.tiaozhanbei.net/rules2"}
+{"type":"track","id":"d155f80b0a81a728","series":"challenge-cup-entrepreneurship-plan","trackKey":"unregistered","label":"未创业类","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://www.tiaozhanbei.net/rules2"}
+{"type":"series","id":"national-college-electronic-design","name":"全国大学生电子设计竞赛"}
+{"type":"edition-record","id":"4fd22d1a2ab501d3","series":"national-college-electronic-design","label":"2026","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.qdhhc.edu.cn/mb/4/p_detail.aspx?id=63561&wsId=63","https://www.nuedc-training.com.cn/index/news/details/new_id/333"]}
+{"type":"track","id":"e5fb6e7a6aee181c","series":"national-college-electronic-design","trackKey":"main","label":"全国主赛","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://www.nuedc-training.com.cn/index/news/details/new_id/333"}
+{"type":"series","id":"icpc-programming","name":"ICPC 国际大学生程序设计竞赛"}
+{"type":"edition-record","id":"d727ae8fde56793f","series":"icpc-programming","label":"2026亚洲区域赛","scope":"资料所述届次或周期；含待确认记录","sources":["https://icpc.pku.edu.cn/tzgg/","https://pjxqtw.dlut.edu.cn/info/1059/15928.htm"]}
+{"type":"series","id":"market-research-analysis","name":"全国大学生市场调查与分析大赛"}
+{"type":"edition-record","id":"de13b8bb2b18fadb","series":"market-research-analysis","label":"2027第十七届","scope":"资料所述届次或周期；含待确认记录","sources":["https://news.gufe.edu.cn/info/1016/19351.htm"]}
+{"type":"notice-scope","id":"4528a61b03711513","series":"market-research-analysis","edition":"de13b8bb2b18fadb","label":"贵州财经大学通知 · 本科组"}
+{"type":"milestone","id":"be1df134f6fb2569","series":"market-research-analysis","edition":"de13b8bb2b18fadb","noticeScope":"4528a61b03711513","kind":"报名截止","date":"2026-10-31 24:00","source":"https://news.gufe.edu.cn/info/1016/19351.htm"}
+{"type":"notice-scope","id":"d796df14d10d397d","series":"market-research-analysis","edition":"de13b8bb2b18fadb","label":"贵州财经大学通知 · 研究生组／来华留学生组"}
+{"type":"milestone","id":"b55d4559ff41f866","series":"market-research-analysis","edition":"de13b8bb2b18fadb","noticeScope":"d796df14d10d397d","kind":"报名截止","date":"2026-11-15 24:00","source":"https://news.gufe.edu.cn/info/1016/19351.htm"}
+{"type":"series","id":"understanding-contemporary-china-foreign-language","name":"外研社·国才杯“理解当代中国”全国大学生外语能力大赛"}
+{"type":"edition-record","id":"2ca6494ef782fa09","series":"understanding-contemporary-china-foreign-language","label":"2026","scope":"资料所述届次或周期；含待确认记录","sources":["https://ucc.fltrp.com/c/2026-04-15/541569.shtml","https://ucc.fltrp.com/c/2026-04-15/517928.shtml","https://jwc.scu.edu.cn/info/1069/10797.htm"]}
+{"type":"track","id":"9311d20bcddb12ce","series":"understanding-contemporary-china-foreign-language","trackKey":"english-comprehensive","label":"英语组国际传播综合能力","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://ucc.fltrp.com/c/2026-04-15/517928.shtml"}
+{"type":"track","id":"77a15a8773ba9cad","series":"understanding-contemporary-china-foreign-language","trackKey":"translation","label":"英语组笔译","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://ucc.fltrp.com/c/2026-04-15/517928.shtml"}
+{"type":"track","id":"6731cad1653337b5","series":"understanding-contemporary-china-foreign-language","trackKey":"short-video","label":"英语组短视频","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://ucc.fltrp.com/c/2026-04-15/517928.shtml"}
+{"type":"track","id":"a60984d443297f8e","series":"understanding-contemporary-china-foreign-language","trackKey":"four-new","label":"英语组“四新”专项","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://ucc.fltrp.com/c/2026-04-15/517928.shtml"}
+{"type":"track","id":"6e27c0b26be63051","series":"understanding-contemporary-china-foreign-language","trackKey":"international-chinese","label":"国际中文组","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://ucc.fltrp.com/c/2026-04-15/517928.shtml"}
+{"type":"series","id":"energy-conservation-emission-reduction","name":"全国大学生节能减排社会实践与科技竞赛"}
+{"type":"edition-record","id":"7f12b761de6ca6b8","series":"energy-conservation-emission-reduction","label":"2026第十九届","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.jienengjianpai.org/","https://jienengjianpai.org/col.jsp?id=161","https://jxxy.qzc.edu.cn/2026/0401/c1364a82767/page.htm"]}
+{"type":"notice-scope","id":"1ec47b71e7aadfae","series":"energy-conservation-emission-reduction","edition":"7f12b761de6ca6b8","label":"全国申报"}
+{"type":"milestone","id":"b10acbcb730c5b06","series":"energy-conservation-emission-reduction","edition":"7f12b761de6ca6b8","noticeScope":"1ec47b71e7aadfae","kind":"学校作品申报截止","date":"2026-05-20 24:00","source":"https://jxxy.qzc.edu.cn/2026/0401/c1364a82767/page.htm"}
+{"type":"series","id":"ecommerce-innovation-creativity-entrepreneurship","name":"全国大学生电子商务“创新、创意及创业”挑战赛"}
+{"type":"edition-record","id":"5c34f5d4a96bbe10","series":"ecommerce-innovation-creativity-entrepreneurship","label":"2027第十七届","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.3chuang.net/","https://ggxy.ahut.edu.cn/info/1083/11364.htm"]}
+{"type":"notice-scope","id":"366192cd5da323c2","series":"ecommerce-innovation-creativity-entrepreneurship","edition":"5c34f5d4a96bbe10","label":"安徽工业大学转述的团队注册窗口"}
+{"type":"milestone","id":"7b9d1928dfd2df03","series":"ecommerce-innovation-creativity-entrepreneurship","edition":"5c34f5d4a96bbe10","noticeScope":"366192cd5da323c2","kind":"报名截止","date":"2027-01-20","source":"https://ggxy.ahut.edu.cn/info/1083/11364.htm"}
+{"type":"milestone","id":"578a949aaab291a9","series":"ecommerce-innovation-creativity-entrepreneurship","edition":"5c34f5d4a96bbe10","noticeScope":"366192cd5da323c2","kind":"报名开始","date":"2026-11-01","source":"https://ggxy.ahut.edu.cn/info/1083/11364.htm"}
+{"type":"series","id":"smart-car","name":"全国大学生智能汽车竞赛"}
+{"type":"edition-record","id":"55399e40af6f2ef9","series":"smart-car","label":"2026第二十一届","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.caa.org.cn/Content/260.html","https://www.czu.cn/_t454/2026/0907/c6a177126/pagem.htm"]}
+{"type":"series","id":"china-college-computer-design","name":"中国大学生计算机设计大赛"}
+{"type":"edition-record","id":"a806f2ca934e1760","series":"china-college-computer-design","label":"2026第十九届","scope":"资料所述届次或周期；含待确认记录","sources":["https://jsjds.blcu.edu.cn/info/1078/1718.htm","https://zs.cqie.edu.cn/upfiles/2026/04/2026041210491875269.pdf"]}
+{"type":"track","id":"466ddfcddd67f8b1","series":"china-college-computer-design","trackKey":"software-development","label":"软件应用与开发","task":"从用户需求出发开发可演示的软件，整理测试与实现说明。","documentTitle":"中国大学生计算机设计大赛组委会 · 第19届参赛要求","scope":"2026年第19届全国比赛，省赛上推国赛。各省校选办法单独核对。","source":"https://jsjds.blcu.edu.cn/info/1078/1718.htm"}
+{"type":"track","id":"d7e7f6568c706605","series":"china-college-computer-design","trackKey":"ai-teaching","label":"微课与AI辅助教学","task":"围绕具体学习问题设计教学内容，演示工具如何帮助理解。","documentTitle":"中国大学生计算机设计大赛组委会 · 第19届参赛要求","scope":"2026年第19届全国比赛，省赛上推国赛。各省校选办法单独核对。","source":"https://jsjds.blcu.edu.cn/info/1078/1718.htm"}
+{"type":"track","id":"11bb2965ed4afc3f","series":"china-college-computer-design","trackKey":"iot","label":"物联网应用","task":"把感知、通信、控制和应用场景连接起来，以原型验证功能。","documentTitle":"中国大学生计算机设计大赛组委会 · 第19届参赛要求","scope":"2026年第19届全国比赛，省赛上推国赛。各省校选办法单独核对。","source":"https://jsjds.blcu.edu.cn/info/1078/1718.htm"}
+{"type":"track","id":"1dc9bf485d5f62ba","series":"china-college-computer-design","trackKey":"big-data","label":"大数据应用","task":"处理与分析数据，展示数据应用如何支持具体决策。","documentTitle":"中国大学生计算机设计大赛组委会 · 第19届参赛要求","scope":"2026年第19届全国比赛，省赛上推国赛。各省校选办法单独核对。","source":"https://jsjds.blcu.edu.cn/info/1078/1718.htm"}
+{"type":"track","id":"5c44027b28a135dc","series":"china-college-computer-design","trackKey":"applied-ai","label":"人工智能应用","task":"围绕应用任务比较模型效果，记录测试和交付方式。","documentTitle":"中国大学生计算机设计大赛组委会 · 第19届参赛要求","scope":"2026年第19届全国比赛，省赛上推国赛。各省校选办法单独核对。","source":"https://jsjds.blcu.edu.cn/info/1078/1718.htm"}
+{"type":"track","id":"5249db0c723af049","series":"china-college-computer-design","trackKey":"info-visualization","label":"信息可视化设计","task":"选择合适的图形和交互，让受众能理解数据或信息的关系。","documentTitle":"中国大学生计算机设计大赛组委会 · 第19届参赛要求","scope":"2026年第19届全国比赛，省赛上推国赛。各省校选办法单独核对。","source":"https://jsjds.blcu.edu.cn/info/1078/1718.htm"}
+{"type":"track","id":"8991f25ea5393c9f","series":"china-college-computer-design","trackKey":"static-media","label":"数媒静态设计","task":"通过构图、字体、图像等手段制作围绕当届主题的静态作品。","documentTitle":"中国大学生计算机设计大赛组委会 · 第19届参赛要求","scope":"2026年第19届全国比赛，省赛上推国赛。各省校选办法单独核对。","source":"https://jsjds.blcu.edu.cn/info/1078/1718.htm"}
+{"type":"track","id":"0028c6ff33bd368d","series":"china-college-computer-design","trackKey":"animation-short","label":"数媒动漫与短片","task":"用分镜、动态画面和声音完成短片或动画表达。","documentTitle":"中国大学生计算机设计大赛组委会 · 第19届参赛要求","scope":"2026年第19届全国比赛，省赛上推国赛。各省校选办法单独核对。","source":"https://jsjds.blcu.edu.cn/info/1078/1718.htm"}
+{"type":"track","id":"37ed2a6d2fd0b781","series":"china-college-computer-design","trackKey":"interactive-media","label":"数媒游戏与交互设计","task":"设计玩法或交互流程，制作能体验的作品原型。","documentTitle":"中国大学生计算机设计大赛组委会 · 第19届参赛要求","scope":"2026年第19届全国比赛，省赛上推国赛。各省校选办法单独核对。","source":"https://jsjds.blcu.edu.cn/info/1078/1718.htm"}
+{"type":"track","id":"21dd0c2f52e964ab","series":"china-college-computer-design","trackKey":"computer-music","label":"计算机音乐创作","task":"运用数字音乐工具创作或编排声音，解释作品如何回应当届主题。","documentTitle":"中国大学生计算机设计大赛组委会 · 第19届参赛要求","scope":"2026年第19届全国比赛，省赛上推国赛。各省校选办法单独核对。","source":"https://jsjds.blcu.edu.cn/info/1078/1718.htm"}
+{"type":"track","id":"32d26fb337a3ffd0","series":"china-college-computer-design","trackKey":"international-sinology","label":"国际生“汉学”","task":"按专项身份和选题要求，通过数字作品表达对中华文化的理解。","documentTitle":"中国大学生计算机设计大赛组委会 · 第19届参赛要求","scope":"2026年第19届全国比赛，省赛上推国赛。各省校选办法单独核对。","source":"https://jsjds.blcu.edu.cn/info/1078/1718.htm"}
+{"type":"series","id":"china-software-cup","name":"中国软件杯大学生软件设计大赛"}
+{"type":"edition-record","id":"14f2b2a1049a938a","series":"china-software-cup","label":"2026第十五届","scope":"资料所述届次或周期；含待确认记录","sources":["https://qihang.hrbeu.edu.cn/2026/0531/c3223a349416/page.htm","https://www.cnsoftbei.com/"]}
+{"type":"notice-scope","id":"d5dcf980d31fa5b7","series":"china-software-cup","edition":"14f2b2a1049a938a","label":"全国报名"}
+{"type":"milestone","id":"076b3d85e293c30b","series":"china-software-cup","edition":"14f2b2a1049a938a","noticeScope":"d5dcf980d31fa5b7","kind":"报名截止","date":"2026-06-30","source":"https://qihang.hrbeu.edu.cn/2026/0531/c3223a349416/page.htm"}
+{"type":"series","id":"career-planning","name":"全国大学生职业规划大赛"}
+{"type":"edition-record","id":"50954ac95d7c882d","series":"career-planning","label":"2026—2027第四届","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.moe.gov.cn/srcsite/A15/s7063/202610/t20261010_1453481.html","https://www.moe.gov.cn/srcsite/A15/s7063/202510/t20251021_1417550.html"]}
+{"type":"notice-scope","id":"ec4adcd9d5ad2a1e","series":"career-planning","edition":"50954ac95d7c882d","label":"全国最晚界限"}
+{"type":"milestone","id":"8ee327974686d7ad","series":"career-planning","edition":"50954ac95d7c882d","noticeScope":"ec4adcd9d5ad2a1e","kind":"各地报名最晚期限","date":"2027-01-31","source":"https://www.moe.gov.cn/srcsite/A15/s7063/202610/t20261010_1453481.html"}
+{"type":"track","id":"362564c144b3f21c","series":"career-planning","trackKey":"growth","label":"成长赛道","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://www.moe.gov.cn/srcsite/A15/s7063/202510/t20251021_1417550.html"}
+{"type":"track","id":"8c9c30749e0f03bd","series":"career-planning","trackKey":"employment","label":"就业赛道","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://www.moe.gov.cn/srcsite/A15/s7063/202510/t20251021_1417550.html"}
+{"type":"series","id":"information-security","name":"全国大学生信息安全竞赛"}
+{"type":"edition-record","id":"842b32b431dc63e8","series":"information-security","label":"2026第十九届","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.ciscn.cn/","https://jwc.cugb.edu.cn/c/2026-07-04/853192.shtml","https://jwc.xjtu.edu.cn/info/1172/10355.htm"]}
+{"type":"track","id":"330c51997f0c0325","series":"information-security","trackKey":"open-security-work","label":"作品赛 · 自由作品赛","task":"自行提出信息安全应用场景，开发并演示可测试的软件或硬件作品。","documentTitle":"西安交通大学教务处 · 第十九届全国大学生信息安全竞赛（作品赛）通知","scope":"2026年全国作品赛的两条分支；校内推荐和后续报名流程仅适用于通知所在学校。","source":"https://jwc.xjtu.edu.cn/info/1172/10355.htm"}
+{"type":"track","id":"143fbb0f95d921bd","series":"information-security","trackKey":"security-challenge","label":"作品赛 · 命题挑战赛","task":"选取该届安全挑战题，设计和验证解决方法，并按题目要求提交成果。","documentTitle":"西安交通大学教务处 · 第十九届全国大学生信息安全竞赛（作品赛）通知","scope":"2026年全国作品赛的两条分支；校内推荐和后续报名流程仅适用于通知所在学校。","source":"https://jwc.xjtu.edu.cn/info/1172/10355.htm"}
+{"type":"series","id":"integrated-circuit-innovation","name":"全国大学生集成电路创新创业大赛"}
+{"type":"edition-record","id":"b744058e00321801","series":"integrated-circuit-innovation","label":"2026第十届","scope":"资料所述届次或周期；含待确认记录","sources":["https://univ.ciciec.com/col.jsp?id=123","https://univ.ciciec.com/"]}
+{"type":"notice-scope","id":"de34b47de64141c9","series":"integrated-circuit-innovation","edition":"b744058e00321801","label":"普通高校赛道"}
+{"type":"milestone","id":"6f499f67635c628d","series":"integrated-circuit-innovation","edition":"b744058e00321801","noticeScope":"de34b47de64141c9","kind":"报名截止","date":"2026-03-31","source":"https://univ.ciciec.com/col.jsp?id=123"}
+{"type":"notice-scope","id":"26e88d679790b20f","series":"integrated-circuit-innovation","edition":"b744058e00321801","label":"初赛作品"}
+{"type":"milestone","id":"926fd1ec0e30c895","series":"integrated-circuit-innovation","edition":"b744058e00321801","noticeScope":"26e88d679790b20f","kind":"作品提交截止","date":"2026-05-07","source":"https://univ.ciciec.com/col.jsp?id=123"}
+{"type":"series","id":"advanced-graphics-bim","name":"全国大学生先进成图技术与产品信息建模创新大赛"}
+{"type":"edition-record","id":"db0c57db8573a4d1","series":"advanced-graphics-bim","label":"2026第十九届","scope":"资料所述届次或周期；含待确认记录","sources":["https://zhxy.nwsuaf.edu.cn/docs/2026-03/7e8dc02d95b846d3aedb052f3405843a.pdf","https://notice.ysu.edu.cn/info/2264/25039.htm"]}
+{"type":"notice-scope","id":"f41d1710524916c6","series":"advanced-graphics-bim","edition":"db0c57db8573a4d1","label":"省赛报名"}
+{"type":"milestone","id":"e4e7b17b9cd50f0e","series":"advanced-graphics-bim","edition":"db0c57db8573a4d1","noticeScope":"f41d1710524916c6","kind":"报名截止","date":"2026-04-25 24:00","source":"https://zhxy.nwsuaf.edu.cn/docs/2026-03/7e8dc02d95b846d3aedb052f3405843a.pdf"}
+{"type":"notice-scope","id":"344c405e24518a70","series":"advanced-graphics-bim","edition":"db0c57db8573a4d1","label":"国赛报名"}
+{"type":"milestone","id":"05588fad133763e4","series":"advanced-graphics-bim","edition":"db0c57db8573a4d1","noticeScope":"344c405e24518a70","kind":"报名截止","date":"2026-06-25 24:00","source":"https://zhxy.nwsuaf.edu.cn/docs/2026-03/7e8dc02d95b846d3aedb052f3405843a.pdf"}
+{"type":"series","id":"national-college-industrial-design","name":"全国大学生工业设计大赛"}
+{"type":"edition-record","id":"6c396bcaff63cac9","series":"national-college-industrial-design","label":"2026第八届","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.cuidc.net/default.aspx","https://art.zafu.edu.cn/info/1003/2861.htm"]}
+{"type":"series","id":"future-designer-ncda","name":"未来设计师·全国高校数字艺术设计大赛"}
+{"type":"edition-record","id":"3fb9dda38c9972d8","series":"future-designer-ncda","label":"2026第十四届","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.ncda.org.cn/dsjs/dsnr/","https://www.ncda.org.cn/"]}
+{"type":"track","id":"eed20b749c265af9","series":"future-designer-ncda","trackKey":"visual-communication","label":"非命题 · 视觉传达设计","task":"围绕传播对象构建视觉语言，形成可展示的设计作品。","documentTitle":"NCDA组委会 · 2026大赛内容","scope":"2026届官方赛道和部分代表性赛项；具体命题、对象与作品规格以对应类别细则为准。","source":"https://www.ncda.org.cn/dsjs/dsnr/"}
+{"type":"track","id":"e3e715cbd3423556","series":"future-designer-ncda","trackKey":"animation-media","label":"非命题 · 动画与数字媒体","task":"用动态视觉与镜头设计表达主题，梳理作品创作过程。","documentTitle":"NCDA组委会 · 2026大赛内容","scope":"2026届官方赛道和部分代表性赛项；具体命题、对象与作品规格以对应类别细则为准。","source":"https://www.ncda.org.cn/dsjs/dsnr/"}
+{"type":"track","id":"24ca32a35f17abc2","series":"future-designer-ncda","trackKey":"interaction-design","label":"非命题 · 交互设计","task":"设计用户操作流程，通过样机或演示说明交互决策。","documentTitle":"NCDA组委会 · 2026大赛内容","scope":"2026届官方赛道和部分代表性赛项；具体命题、对象与作品规格以对应类别细则为准。","source":"https://www.ncda.org.cn/dsjs/dsnr/"}
+{"type":"track","id":"e8f9acc10f7d1e42","series":"future-designer-ncda","trackKey":"industrial-design","label":"非命题 · 工业产品设计","task":"把产品用途、结构和造型结合，以设计稿或模型表达方案。","documentTitle":"NCDA组委会 · 2026大赛内容","scope":"2026届官方赛道和部分代表性赛项；具体命题、对象与作品规格以对应类别细则为准。","source":"https://www.ncda.org.cn/dsjs/dsnr/"}
+{"type":"track","id":"322c8477c87de30d","series":"future-designer-ncda","trackKey":"digital-photography","label":"非命题 · 数字摄影","task":"从主题、构图和组照取舍出发形成摄影系列。","documentTitle":"NCDA组委会 · 2026大赛内容","scope":"2026届官方赛道和部分代表性赛项；具体命题、对象与作品规格以对应类别细则为准。","source":"https://www.ncda.org.cn/dsjs/dsnr/"}
+{"type":"track","id":"4e3aa39d4092d99b","series":"future-designer-ncda","trackKey":"digital-sound","label":"非命题 · 数字声音艺术","task":"以声音素材、编辑和结构组织创作可聆听的数字作品。","documentTitle":"NCDA组委会 · 2026大赛内容","scope":"2026届官方赛道和部分代表性赛项；具体命题、对象与作品规格以对应类别细则为准。","source":"https://www.ncda.org.cn/dsjs/dsnr/"}
+{"type":"series","id":"energy-economics-academic-creativity","name":"全国大学生能源经济学术创意大赛"}
+{"type":"edition-record","id":"349ce9ad645c6dd1","series":"energy-economics-academic-creativity","label":"2027第十三届","scope":"资料所述届次或周期；含待确认记录","sources":["https://jw.dhu.edu.cn/2026/1103/c22080a384086/page.htm"]}
+{"type":"notice-scope","id":"9d423fe0382b41be","series":"energy-economics-academic-creativity","edition":"349ce9ad645c6dd1","label":"全国学生团队报名"}
+{"type":"milestone","id":"da423009e170b66c","series":"energy-economics-academic-creativity","edition":"349ce9ad645c6dd1","noticeScope":"9d423fe0382b41be","kind":"报名截止","date":"2026-12-16","source":"https://jw.dhu.edu.cn/2026/1103/c22080a384086/page.htm"}
+{"type":"milestone","id":"ddd1f3b7dd55a8d8","series":"energy-economics-academic-creativity","edition":"349ce9ad645c6dd1","noticeScope":"9d423fe0382b41be","kind":"报名开始","date":"2026-11-17","source":"https://jw.dhu.edu.cn/2026/1103/c22080a384086/page.htm"}
+{"type":"notice-scope","id":"3b1305db9ecd9681","series":"energy-economics-academic-creativity","edition":"349ce9ad645c6dd1","label":"作品提交"}
+{"type":"milestone","id":"c05253b4e4f3c59e","series":"energy-economics-academic-creativity","edition":"349ce9ad645c6dd1","noticeScope":"3b1305db9ecd9681","kind":"作品提交截止","date":"2027-03-13","source":"https://jw.dhu.edu.cn/2026/1103/c22080a384086/page.htm"}
+{"type":"milestone","id":"e26208f5ab353ea6","series":"energy-economics-academic-creativity","edition":"349ce9ad645c6dd1","noticeScope":"3b1305db9ecd9681","kind":"作品提交开始","date":"2027-02-22","source":"https://jw.dhu.edu.cn/2026/1103/c22080a384086/page.htm"}
+{"type":"track","id":"5314d6e3fcb516be","series":"energy-economics-academic-creativity","trackKey":"energy-paper","label":"研究论文类","task":"确定能源经济研究问题，选择数据和研究方法，解释结论的适用范围。","documentTitle":"东华大学教务处 · 第十三届全国大学生能源经济学术创意大赛通知","scope":"第十三届作品类别。本科与研究生按组别报名，东华大学校内安排不推广到别校。","source":"https://jw.dhu.edu.cn/2026/1103/c22080a384086/page.htm"}
+{"type":"track","id":"1bea1e24d68fba17","series":"energy-economics-academic-creativity","trackKey":"energy-survey","label":"调研报告类","task":"面向实际用能或能源政策问题，收集访谈、问卷或现场证据并提出建议。","documentTitle":"东华大学教务处 · 第十三届全国大学生能源经济学术创意大赛通知","scope":"第十三届作品类别。本科与研究生按组别报名，东华大学校内安排不推广到别校。","source":"https://jw.dhu.edu.cn/2026/1103/c22080a384086/page.htm"}
+{"type":"track","id":"491e0cc2b77fa711","series":"energy-economics-academic-creativity","trackKey":"energy-venture","label":"创新创业类","task":"把能源相关方案与具体用户、成本和验证步骤联系起来。","documentTitle":"东华大学教务处 · 第十三届全国大学生能源经济学术创意大赛通知","scope":"第十三届作品类别。本科与研究生按组别报名，东华大学校内安排不推广到别校。","source":"https://jw.dhu.edu.cn/2026/1103/c22080a384086/page.htm"}
+{"type":"series","id":"business-elite-innovation","name":"全国高校商业精英挑战赛"}
+{"type":"edition-record","id":"947a3824b0e25d30","series":"business-elite-innovation","label":"2026／2027","scope":"资料所述届次或周期；含待确认记录","sources":["https://ccpitcsc.org/mcdt/4857","https://www.ccpitcsc.org/eduxq/4857"]}
+{"type":"series","id":"national-college-logistics-design","name":"全国大学生物流设计大赛"}
+{"type":"edition-record","id":"6d866ca7672da528","series":"national-college-logistics-design","label":"2025第九届","scope":"资料所述届次或周期；含待确认记录","sources":["https://wlsjds.clpp.org.cn/about","https://jwc.cueb.edu.cn/docs/2025-04/37d94190d90b481fb97230de9404f064.pdf"]}
+{"type":"notice-scope","id":"226305b34c03d227","series":"national-college-logistics-design","edition":"6d866ca7672da528","label":"第九届"}
+{"type":"milestone","id":"5fe2a8e3853eb63a","series":"national-college-logistics-design","edition":"6d866ca7672da528","noticeScope":"226305b34c03d227","kind":"报名截止","date":"2025-04-29 16:00","source":"https://jwc.cueb.edu.cn/docs/2025-04/37d94190d90b481fb97230de9404f064.pdf"}
+{"type":"series","id":"china-college-computer-contest","name":"中国高校计算机大赛—网络技术挑战赛"}
+{"type":"edition-record","id":"8cc94a9a1f93ebbf","series":"china-college-computer-contest","label":"2026","scope":"资料所述届次或周期；含待确认记录","sources":["https://jwc.ustb.edu.cn/docs/2026-04/3a226c8fa31444ada8cc28c67cd16208.pdf"]}
+{"type":"notice-scope","id":"044e4289d4522ea1","series":"china-college-computer-contest","edition":"8cc94a9a1f93ebbf","label":"网络技术挑战赛"}
+{"type":"milestone","id":"86675cb00003501c","series":"china-college-computer-contest","edition":"8cc94a9a1f93ebbf","noticeScope":"044e4289d4522ea1","kind":"报名截止","date":"2026-04-14","source":"https://jwc.ustb.edu.cn/docs/2026-04/3a226c8fa31444ada8cc28c67cd16208.pdf"}
+{"type":"series","id":"robocon","name":"全国大学生机器人大赛 ROBOCON"}
+{"type":"edition-record","id":"180df9fef3a4e6a0","series":"robocon","label":"2027","scope":"资料所述届次或周期；含待确认记录","sources":["https://robocon.org.cn/","https://robocon.org.cn/sys-nd/63.html"]}
+{"type":"series","id":"robocup-china","name":"中国机器人大赛暨 RoboCup 机器人世界杯中国赛"}
+{"type":"edition-record","id":"665b355269c2d6c4","series":"robocup-china","label":"2026","scope":"资料所述届次或周期；含待确认记录","sources":["https://rcccaa.drct-caa.org.cn/","https://xxgk.czu.cn/2026/0313/c5469a170843/page.htm"]}
+{"type":"series","id":"siemens-intelligent-manufacturing","name":"“西门子杯”中国智能制造挑战赛"}
+{"type":"edition-record","id":"41e5587baf403ff3","series":"siemens-intelligent-manufacturing","label":"2026第二十届","scope":"资料所述届次或周期；含待确认记录","sources":["https://cxfy.situ.edu.cn/info/1013/1826.htm","https://jwc.sues.edu.cn/81/80/c9830a295296/page.htm"]}
+{"type":"notice-scope","id":"9b2088503057bcc7","series":"siemens-intelligent-manufacturing","edition":"41e5587baf403ff3","label":"全国报名"}
+{"type":"milestone","id":"d76740a002464ed2","series":"siemens-intelligent-manufacturing","edition":"41e5587baf403ff3","noticeScope":"9b2088503057bcc7","kind":"报名截止","date":"2026-05-31","source":"https://jwc.sues.edu.cn/81/80/c9830a295296/page.htm"}
+{"type":"series","id":"lanqiao-cup","name":"蓝桥杯全国大学生软件和信息技术大赛"}
+{"type":"edition-record","id":"714de9b29fb51c72","series":"lanqiao-cup","label":"2027第十八届","scope":"资料所述届次或周期；含待确认记录","sources":["https://dasai.lanqiao.cn/pages/v7/dasai/competition/individual_competition.html","https://www.lncu.edu.cn/cxcyxy/29096.html"]}
+{"type":"notice-scope","id":"46c49d513a56c688","series":"lanqiao-cup","edition":"714de9b29fb51c72","label":"软件／电子个人赛"}
+{"type":"milestone","id":"76630d3f3d11ac26","series":"lanqiao-cup","edition":"714de9b29fb51c72","noticeScope":"46c49d513a56c688","kind":"报名截止","date":"2026-12-18 14:00","source":"https://dasai.lanqiao.cn/pages/v7/dasai/competition/individual_competition.html"}
+{"type":"notice-scope","id":"c5182be333295cd5","series":"lanqiao-cup","edition":"714de9b29fb51c72","label":"视觉艺术／数字科技创新"}
+{"type":"milestone","id":"259cb1ee457490ce","series":"lanqiao-cup","edition":"714de9b29fb51c72","noticeScope":"c5182be333295cd5","kind":"报名及作品提交截止","date":"2027-04-26 14:00","source":"https://www.lncu.edu.cn/cxcyxy/29096.html"}
+{"type":"notice-scope","id":"a0fe76bc926958b8","series":"lanqiao-cup","edition":"714de9b29fb51c72","label":"IP专项设计"}
+{"type":"milestone","id":"5f4ddb91d5a75af6","series":"lanqiao-cup","edition":"714de9b29fb51c72","noticeScope":"a0fe76bc926958b8","kind":"报名及作品提交截止","date":"2026-11-30 14:00","source":"https://www.lncu.edu.cn/cxcyxy/29096.html"}
+{"type":"series","id":"21st-century-english-speaking","name":"中国日报社“21 世纪杯”全国英语演讲比赛"}
+{"type":"edition-record","id":"d744a7e4b4fbe025","series":"21st-century-english-speaking","label":"2026第三十一届","scope":"资料所述届次或周期；含待确认记录","sources":["https://contest.i21st.cn/college/article/6991.html","https://contest.i21st.cn/college/"]}
+{"type":"series","id":"icbc-fintech-innovation","name":"“工行杯”全国大学生金融科技创新大赛"}
+{"type":"edition-record","id":"c5bfed70dcbd3c08","series":"icbc-fintech-innovation","label":"2026第十七届","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.gonghangbei.com/news/view/131.html"]}
+{"type":"notice-scope","id":"42d78c161d0c5d85","series":"icbc-fintech-innovation","edition":"c5bfed70dcbd3c08","label":"中国大陆"}
+{"type":"milestone","id":"c437814094ca985e","series":"icbc-fintech-innovation","edition":"c5bfed70dcbd3c08","noticeScope":"42d78c161d0c5d85","kind":"作品提交截止","date":"2026-10-08 24:00","source":"https://www.gonghangbei.com/news/view/131.html"}
+{"type":"notice-scope","id":"12caeef473dc2519","series":"icbc-fintech-innovation","edition":"c5bfed70dcbd3c08","label":"港澳台"}
+{"type":"milestone","id":"0d00712e46c5fd85","series":"icbc-fintech-innovation","edition":"c5bfed70dcbd3c08","noticeScope":"12caeef473dc2519","kind":"作品提交截止","date":"2026-10-19 24:00","source":"https://www.gonghangbei.com/news/view/131.html"}
+{"type":"series","id":"digital-media-creative-tech","name":"全国大学生数字媒体科技作品及创意竞赛"}
+{"type":"edition-record","id":"0ce9ae43fccb0d2b","series":"digital-media-creative-tech","label":"2026第十四届","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.cmit.cn/wap/","https://www.cmit.cn/html/tongzhigonggao/show-144-45738-1.html","https://news.gufe.edu.cn/info/1016/19363.htm"]}
+{"type":"notice-scope","id":"74e0bfc16746c6d4","series":"digital-media-creative-tech","edition":"0ce9ae43fccb0d2b","label":"常规报名及作品"}
+{"type":"milestone","id":"8cc6c6b3d98720ea","series":"digital-media-creative-tech","edition":"0ce9ae43fccb0d2b","noticeScope":"74e0bfc16746c6d4","kind":"报名及作品提交截止","date":"2026-10-23 23:59:59","source":"https://www.cmit.cn/wap/"}
+{"type":"series","id":"future-aircraft-design","name":"“创新杯”第十二届全国未来飞行器设计大赛"}
+{"type":"edition-record","id":"1458500c8251c698","series":"future-aircraft-design","label":"2026第十二届","scope":"资料所述届次或周期；含待确认记录","sources":["https://ast.nwpu.edu.cn/info/1131/4031.htm"]}
+{"type":"series","id":"vocational-innovation-entrepreneurship","name":"第九届中华职业教育创新创业大赛"}
+{"type":"edition-record","id":"3a10439d9adda83a","series":"vocational-innovation-entrepreneurship","label":"2026第九届","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.ahszhzjs.org.cn/channels/29.html","https://job.xijing.edu.cn/info/1053/4391.htm"]}
+{"type":"series","id":"iot-design","name":"全国大学生物联网设计竞赛"}
+{"type":"edition-record","id":"2b740d77bd1584a9","series":"iot-design","label":"2026第十三届","scope":"资料所述届次或周期；含待确认记录","sources":["https://ieetc.shiep.edu.cn/35/0f/c6747a275727/page.htm","https://iot.sjtu.edu.cn/ueditor/net/upload/file/20260326/6391013243710844328303068.pdf"]}
+{"type":"notice-scope","id":"e19d15e0ef9c7139","series":"iot-design","edition":"2b740d77bd1584a9","label":"全国报名"}
+{"type":"milestone","id":"ff7b8e091d5a033f","series":"iot-design","edition":"2b740d77bd1584a9","noticeScope":"e19d15e0ef9c7139","kind":"报名截止","date":"2026-06-15","source":"https://ieetc.shiep.edu.cn/35/0f/c6747a275727/page.htm"}
+{"type":"notice-scope","id":"94b5da134bf39c13","series":"iot-design","edition":"2b740d77bd1584a9","label":"作品提交"}
+{"type":"milestone","id":"826c949bba136a4e","series":"iot-design","edition":"2b740d77bd1584a9","noticeScope":"94b5da134bf39c13","kind":"作品提交截止","date":"2026-07-27","source":"https://ieetc.shiep.edu.cn/35/0f/c6747a275727/page.htm"}
+{"type":"series","id":"youth-tech-challenge","name":"2026年度中国青年科技创新“揭榜挂帅”擂台赛"}
+{"type":"edition-record","id":"7ccd5c0f0f701088","series":"youth-tech-challenge","label":"2026","scope":"资料所述届次或周期；含待确认记录","sources":["https://www2.scut.edu.cn/youth/2026/0430/c25651a625945/page.htm"]}
+{"type":"track","id":"f32fa8859e1f9d20","series":"youth-tech-challenge","trackKey":"student-track","label":"学生赛道","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://www.tiaozhanbei.net/article/15836/"}
+{"type":"series","id":"low-altitude-industry","name":"第二届低空产业创新大赛"}
+{"type":"edition-record","id":"fd52b756f4fdaf11","series":"low-altitude-industry","label":"2026第二届","scope":"资料所述届次或周期；含待确认记录","sources":["https://cxcy.usst.edu.cn/_t2307/2026/0403/c16859a359193/page.htm"]}
+{"type":"notice-scope","id":"11ee709aefae5ff9","series":"low-altitude-industry","edition":"fd52b756f4fdaf11","label":"第二届"}
+{"type":"milestone","id":"3d38ce061c5d8aea","series":"low-altitude-industry","edition":"fd52b756f4fdaf11","noticeScope":"11ee709aefae5ff9","kind":"报名截止","date":"2026-04-15","source":"https://cxcy.usst.edu.cn/_t2307/2026/0403/c16859a359193/page.htm"}
+{"type":"track","id":"cd97193d303c167a","series":"low-altitude-industry","trackKey":"student-launch","label":"启航赛道（学生组）","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://cxcy.usst.edu.cn/2026/0403/c16859a359193/page.psp"}
+{"type":"series","id":"ican-innovation-entrepreneurship","name":"iCAN大学生创新创业大赛"}
+{"type":"edition-record","id":"331d64429adf4414","series":"ican-innovation-entrepreneurship","label":"2026第二十届","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.g-ican.com/news/details?id=234","https://ecei.hitsz.edu.cn/info/1127/5126.htm"]}
+{"type":"series","id":"graduate-rural-revitalization-agritech","name":"中国研究生乡村振兴科技强农+创新大赛第五届科技作品竞赛"}
+{"type":"edition-record","id":"4d7e8b47d236f4ad","series":"graduate-rural-revitalization-agritech","label":"2026年第5届科技作品竞赛；另有卓越兽医挑战赛","scope":"资料所述届次或周期；含待确认记录","sources":["https://cpipc.acge.org.cn/cw/hp/2c90800c7a132603017a1395f2c105f9","https://cpipc.acge.org.cn/cw/contestData/2c90800c7a132603017a1395f2c105f9/3"]}
+{"type":"track","id":"31825a3bfee15078","series":"graduate-rural-revitalization-agritech","trackKey":"technology-invention","label":"科技发明制作类","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://cpipc.acge.org.cn/cw/hp/2c90800c7a132603017a1395f2c105f9"}
+{"type":"track","id":"07ebeb43f7a9580e","series":"graduate-rural-revitalization-agritech","trackKey":"natural-science","label":"自然科学类","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://cpipc.acge.org.cn/cw/hp/2c90800c7a132603017a1395f2c105f9"}
+{"type":"track","id":"ec84ba5048dbc233","series":"graduate-rural-revitalization-agritech","trackKey":"social-science","label":"社会科学类","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://cpipc.acge.org.cn/cw/hp/2c90800c7a132603017a1395f2c105f9"}
+{"type":"series","id":"green-development","name":"第二届中国青年绿色发展创新大赛"}
+{"type":"edition-record","id":"647b34ce3069b407","series":"green-development","label":"2026第二届","scope":"资料所述届次或周期；含待确认记录","sources":["https://tw.symc.edu.cn/info/1687/22257.htm"]}
+{"type":"track","id":"f4eb649faf587580","series":"green-development","trackKey":"industry-innovation","label":"产业赛道 · 创新组","task":"把实验阶段技术或早期商业计划整理成创新方案，解释适用场景和已有验证。","documentTitle":"沈阳医学院团委 · 第二届中国青年绿色发展创新大赛通知","scope":"第二届通知记载的产业、公益及行业命题方向；本校组织流程不适用于其他学校。","source":"https://tw.symc.edu.cn/info/1687/22257.htm"}
+{"type":"track","id":"c0d041177aa48b8b","series":"green-development","trackKey":"industry-venture","label":"产业赛道 · 创业组","task":"用实际企业项目说明进展、经营模式和发展规划。","documentTitle":"沈阳医学院团委 · 第二届中国青年绿色发展创新大赛通知","scope":"第二届通知记载的产业、公益及行业命题方向；本校组织流程不适用于其他学校。","source":"https://tw.symc.edu.cn/info/1687/22257.htm"}
+{"type":"track","id":"ec57202c64f4c398","series":"green-development","trackKey":"public-benefit","label":"公益赛道 · 公益组","task":"围绕本届公益议题调查服务对象的需要，设计可持续的行动方案。","documentTitle":"沈阳医学院团委 · 第二届中国青年绿色发展创新大赛通知","scope":"第二届通知记载的产业、公益及行业命题方向；本校组织流程不适用于其他学校。","source":"https://tw.symc.edu.cn/info/1687/22257.htm"}
+{"type":"track","id":"9cc39d87c4834093","series":"green-development","trackKey":"industry-brief","label":"行业命题赛道 · 行业命题组","task":"针对主办方公布的行业问题分析痛点，比较解决路线和实施条件。","documentTitle":"沈阳医学院团委 · 第二届中国青年绿色发展创新大赛通知","scope":"第二届通知记载的产业、公益及行业命题方向；本校组织流程不适用于其他学校。","source":"https://tw.symc.edu.cn/info/1687/22257.htm"}
+{"type":"series","id":"xuechuangbei-business-simulation","name":"第十三届“学创杯”全国大学生创业综合模拟演训活动"}
+{"type":"edition-record","id":"06016563ac2a9469","series":"xuechuangbei-business-simulation","label":"2026第十三届","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.jingsailian.com/news/1621515.html","https://www.gztrc.edu.cn/jwc/info/1030/13201.htm"]}
+{"type":"series","id":"mechanical-innovation-design","name":"第十二届全国大学生机械创新设计大赛"}
+{"type":"edition-record","id":"831a09b01b7b242d","series":"mechanical-innovation-design","label":"2026第十二届","scope":"资料所述届次或周期；含待确认记录","sources":["https://ft.moocollege.com/","https://me.wtu.edu.cn/info/1050/15444.htm","https://jwc.tiangong.edu.cn/2026/0316/c1328a113150/page.htm"]}
+{"type":"series","id":"3d-digital-innovation-design","name":"全国三维数字化创新设计大赛"}
+{"type":"edition-record","id":"8aafe7f0a9eb15ba","series":"3d-digital-innovation-design","label":"2026第十九届","scope":"资料所述届次或周期；含待确认记录","sources":["https://3dds.3ddl.net/index.php?ctl=Informationlist&id=745&met=newsdetails","https://3dds.3ddl.net/index.php?ctl=Informationlist&met=newsdetails&id=714"]}
+{"type":"notice-scope","id":"f1c678948d4fe170","series":"3d-digital-innovation-design","edition":"8aafe7f0a9eb15ba","label":"北区DM子赛"}
+{"type":"milestone","id":"7be2716cf170aafe","series":"3d-digital-innovation-design","edition":"8aafe7f0a9eb15ba","noticeScope":"f1c678948d4fe170","kind":"报名及作品提交截止","date":"2026-10-24","source":"https://3dds.3ddl.net/index.php?ctl=Informationlist&id=745&met=newsdetails"}
+{"type":"series","id":"graduate-cybersecurity-innovation","name":"中国研究生网络安全创新大赛"}
+{"type":"edition-record","id":"a5d5495fccc3625d","series":"graduate-cybersecurity-innovation","label":"2026年第5届","scope":"资料所述届次或周期；含待确认记录","sources":["https://cpipc.acge.org.cn/cw/contestNews/detail/2c90800c8093eef401809d33b36f0652/2c9080199ed8b78d019ed96ceea21560?page=1","https://cpipc.acge.org.cn/cw/hp/2c90800c8093eef401809d33b36f0652?language=1"]}
+{"type":"notice-scope","id":"ef7e2a8b052857cf","series":"graduate-cybersecurity-innovation","edition":"a5d5495fccc3625d","label":"资格审核"}
+{"type":"milestone","id":"bf7b69a6c0519f25","series":"graduate-cybersecurity-innovation","edition":"a5d5495fccc3625d","noticeScope":"ef7e2a8b052857cf","kind":"资格审查截止","date":"2026-10-22","source":"https://cpipc.acge.org.cn/cw/hp/2c90800c8093eef401809d33b36f0652?language=1"}
+{"type":"series","id":"national-structural-design","name":"全国大学生结构设计竞赛"}
+{"type":"edition-record","id":"7345e9e4874b555e","series":"national-structural-design","label":"2027新周期","scope":"资料所述届次或周期；含待确认记录","sources":["https://tj.haut.edu.cn/info/1092/23133.htm"]}
+{"type":"notice-scope","id":"5ff5e5893d6b847c","series":"national-structural-design","edition":"7345e9e4874b555e","label":"河南工业大学 · 校内选拔"}
+{"type":"milestone","id":"190cf8e4801bc317","series":"national-structural-design","edition":"7345e9e4874b555e","noticeScope":"5ff5e5893d6b847c","kind":"校内报名截止","date":"2026-11-10","source":"https://tj.haut.edu.cn/info/1092/23133.htm"}
+{"type":"series","id":"national-advertising-art","name":"全国大学生广告艺术大赛"}
+{"type":"edition-record","id":"12bc9cfe09a0b4c8","series":"national-advertising-art","label":"2026第十八届","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.sun-ada.net/home/about_intrs2.html","https://pec.xjtu.edu.cn/info/1117/5142.htm"]}
+{"type":"notice-scope","id":"a994b0a9642f0f66","series":"national-advertising-art","edition":"12bc9cfe09a0b4c8","label":"常规作品"}
+{"type":"milestone","id":"6c8e1f2eff7178a4","series":"national-advertising-art","edition":"12bc9cfe09a0b4c8","noticeScope":"a994b0a9642f0f66","kind":"作品提交截止","date":"2026-06-12 16:00","source":"https://www.sun-ada.net/home/about_intrs2.html"}
+{"type":"notice-scope","id":"09c819f589c8bb49","series":"national-advertising-art","edition":"12bc9cfe09a0b4c8","label":"营销创客"}
+{"type":"milestone","id":"21bb6509c0491259","series":"national-advertising-art","edition":"12bc9cfe09a0b4c8","noticeScope":"09c819f589c8bb49","kind":"作品提交截止","date":"2026-04-10 22:00","source":"https://www.sun-ada.net/home/about_intrs2.html"}
+{"type":"notice-scope","id":"2660eb12a43515d2","series":"national-advertising-art","edition":"12bc9cfe09a0b4c8","label":"省区推荐国赛"}
+{"type":"milestone","id":"9ab35923cd2c764e","series":"national-advertising-art","edition":"12bc9cfe09a0b4c8","noticeScope":"2660eb12a43515d2","kind":"报送／推荐截止","date":"2026-07-05","source":"https://www.sun-ada.net/home/about_intrs2.html"}
+{"type":"track","id":"49c854a45f6aefde","series":"national-advertising-art","trackKey":"graphic","label":"平面类","task":"依命题设计平面广告、包装或创意周边，说明视觉概念。","documentTitle":"全国大学生广告艺术大赛 · 第18届参赛指南","scope":"第18届全国指南，2026年4月修订。不同作品小类的作者、导师上限各异。","source":"https://www.sun-ada.net/home/about_intrs2.html"}
+{"type":"track","id":"26a9aaa81bc9ba6d","series":"national-advertising-art","trackKey":"video","label":"视频类","task":"从策略单写分镜，拍摄剪辑影视、微电影或短视频广告。","documentTitle":"全国大学生广告艺术大赛 · 第18届参赛指南","scope":"第18届全国指南，2026年4月修订。不同作品小类的作者、导师上限各异。","source":"https://www.sun-ada.net/home/about_intrs2.html"}
+{"type":"track","id":"278d97ae6cdce4f0","series":"national-advertising-art","trackKey":"animation","label":"动画类","task":"以角色或动态图形制作广告叙事，说明创意与命题的联系。","documentTitle":"全国大学生广告艺术大赛 · 第18届参赛指南","scope":"第18届全国指南，2026年4月修订。不同作品小类的作者、导师上限各异。","source":"https://www.sun-ada.net/home/about_intrs2.html"}
+{"type":"track","id":"3dd24caae1838c58","series":"national-advertising-art","trackKey":"interactive","label":"互动类","task":"设计线上或线下参与机制，演示受众如何与广告内容互动。","documentTitle":"全国大学生广告艺术大赛 · 第18届参赛指南","scope":"第18届全国指南，2026年4月修订。不同作品小类的作者、导师上限各异。","source":"https://www.sun-ada.net/home/about_intrs2.html"}
+{"type":"track","id":"d9b0131fd3bde86a","series":"national-advertising-art","trackKey":"audio-ad","label":"广播类","task":"用声音脚本、配音和剪辑在限定时长内完成广告。","documentTitle":"全国大学生广告艺术大赛 · 第18届参赛指南","scope":"第18届全国指南，2026年4月修订。不同作品小类的作者、导师上限各异。","source":"https://www.sun-ada.net/home/about_intrs2.html"}
+{"type":"track","id":"74fb32018720413d","series":"national-advertising-art","trackKey":"ad-plan","label":"策划案类","task":"从受众洞察提出传播策略，说明执行步骤及创意呈现。","documentTitle":"全国大学生广告艺术大赛 · 第18届参赛指南","scope":"第18届全国指南，2026年4月修订。不同作品小类的作者、导师上限各异。","source":"https://www.sun-ada.net/home/about_intrs2.html"}
+{"type":"track","id":"f3779693b39d2e7a","series":"national-advertising-art","trackKey":"copywriting","label":"文案类","task":"围绕品牌命题写创意长文案，打磨受众、叙事与说服理由。","documentTitle":"全国大学生广告艺术大赛 · 第18届参赛指南","scope":"第18届全国指南，2026年4月修订。不同作品小类的作者、导师上限各异。","source":"https://www.sun-ada.net/home/about_intrs2.html"}
+{"type":"track","id":"1cbffeb02af3fefb","series":"national-advertising-art","trackKey":"interface","label":"UI类","task":"以界面方案呈现核心功能和用户操作路径。","documentTitle":"全国大学生广告艺术大赛 · 第18届参赛指南","scope":"第18届全国指南，2026年4月修订。不同作品小类的作者、导师上限各异。","source":"https://www.sun-ada.net/home/about_intrs2.html"}
+{"type":"track","id":"957811f72185ceee","series":"national-advertising-art","trackKey":"ai-creative","label":"科技类","task":"在对应命题允许的范围内使用生成式AI辅助创作，记录方法和创作过程。","documentTitle":"全国大学生广告艺术大赛 · 第18届参赛指南","scope":"第18届全国指南，2026年4月修订。不同作品小类的作者、导师上限各异。","source":"https://www.sun-ada.net/home/about_intrs2.html"}
+{"type":"series","id":"engineering-practice-innovation","name":"中国大学生工程实践与创新能力大赛"}
+{"type":"edition-record","id":"4c2630549fd84321","series":"engineering-practice-innovation","label":"2027第十届","scope":"资料所述届次或周期；含待确认记录","sources":["https://mec.xjtu.edu.cn/info/1056/12418.htm","https://gxzx.cug.edu.cn/info/1151/1191.htm"]}
+{"type":"series","id":"huacan-design-award","name":"两岸新锐设计竞赛·华灿奖"}
+{"type":"edition-record","id":"67e3e42e7d872aec","series":"huacan-design-award","label":"2026—2027","scope":"资料所述届次或周期；含待确认记录","sources":["https://jwc.sues.edu.cn/97/8c/c9830a300940/page.htm","https://www.lncu.edu.cn/cxcyxy/29091.html"]}
+{"type":"notice-scope","id":"98a3db2622632311","series":"huacan-design-award","edition":"67e3e42e7d872aec","label":"创意赛道"}
+{"type":"milestone","id":"8a8314242c3a6e3e","series":"huacan-design-award","edition":"67e3e42e7d872aec","noticeScope":"98a3db2622632311","kind":"作品提交截止","date":"2026-11-27 17:00","source":"https://jwc.sues.edu.cn/97/8c/c9830a300940/page.htm"}
+{"type":"notice-scope","id":"8ef7335d0a803455","series":"huacan-design-award","edition":"67e3e42e7d872aec","label":"定向主题"}
+{"type":"milestone","id":"95d15bacd330b4e7","series":"huacan-design-award","edition":"67e3e42e7d872aec","noticeScope":"8ef7335d0a803455","kind":"作品提交截止","date":"2027-03-05 17:00","source":"https://jwc.sues.edu.cn/97/8c/c9830a300940/page.htm"}
+{"type":"track","id":"6c0557d2572d9505","series":"huacan-design-award","trackKey":"student-group","label":"学生组","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://www.huacanjiang.com/home/newsDetails?_refluxos=a10&newsId=105179"}
+{"type":"series","id":"national-innovation-training-annual","name":"全国大学生创新创业训练计划年会展示"}
+{"type":"edition-record","id":"ca1483c6a9181e2a","series":"national-innovation-training-annual","label":"2026第十九届年会","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.gjcxcy.cn/PublicColumn/Notice/ea09170e-3609-4ca3-9b9d-aaa79fc04d68"]}
+{"type":"notice-scope","id":"ab611b97ec83a4e0","series":"national-innovation-training-annual","edition":"ca1483c6a9181e2a","label":"中央部委高校推荐"}
+{"type":"milestone","id":"1b0dca4cc53374ce","series":"national-innovation-training-annual","edition":"ca1483c6a9181e2a","noticeScope":"ab611b97ec83a4e0","kind":"报送／推荐截止","date":"2026-10-23","source":"https://www.gjcxcy.cn/PublicColumn/Notice/ea09170e-3609-4ca3-9b9d-aaa79fc04d68"}
+{"type":"notice-scope","id":"d85e5d2b06ccb5d0","series":"national-innovation-training-annual","edition":"ca1483c6a9181e2a","label":"省级教育部门推荐"}
+{"type":"milestone","id":"f613273fd8a77900","series":"national-innovation-training-annual","edition":"ca1483c6a9181e2a","noticeScope":"d85e5d2b06ccb5d0","kind":"报送／推荐截止","date":"2026-10-30","source":"https://www.gjcxcy.cn/PublicColumn/Notice/ea09170e-3609-4ca3-9b9d-aaa79fc04d68"}
+{"type":"track","id":"7b93d4196523659a","series":"national-innovation-training-annual","trackKey":"innovation-project-exhibition","label":"创新训练项目改革成果展示","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://www.gjcxcy.cn/PublicColumn/Notice/e9090812-003b-4a84-85d6-aa197d06baab"}
+{"type":"series","id":"chemical-engineering-design","name":"全国大学生化工设计竞赛"}
+{"type":"edition-record","id":"faa3b8e4c4c62420","series":"chemical-engineering-design","label":"2026第二十届","scope":"资料所述届次或周期；含待确认记录","sources":["https://iche.zju.edu.cn/","https://iche.zju.edu.cn/uploads/20260228/ad683cd23bc2417ffa3e1dd020f000a7.pdf"]}
+{"type":"series","id":"service-outsourcing-innovation","name":"中国大学生服务外包创新创业大赛"}
+{"type":"edition-record","id":"e3867f7bf01d3108","series":"service-outsourcing-innovation","label":"2026第十七届","scope":"资料所述届次或周期；含待确认记录","sources":["https://fwwb.org.cn/news/show/609","https://jwc.cugb.edu.cn/upload/resources/file/2026/03/03/300388.pdf"]}
+{"type":"series","id":"milan-design-week-china","name":"米兰设计周—中国高校设计学科师生优秀作品展"}
+{"type":"edition-record","id":"76401c2637307956","series":"milan-design-week-china","label":"2027第十一届","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.milan-aap.org.cn/index.html","https://cxcy.lnut.edu.cn/info/14428/186225.htm"]}
+{"type":"track","id":"f25853d4bc880969","series":"milan-design-week-china","trackKey":"currently-enrolled-student-work","label":"在校学生作品组","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://www.czu.cn/_t1006/2026/0323/c6a171373/page.htm"}
+{"type":"series","id":"geology-skills","name":"全国大学生地质技能竞赛"}
+{"type":"edition-record","id":"78e75384b5e3c430","series":"geology-skills","label":"2026第八届","scope":"资料所述届次或周期；含待确认记录","sources":["https://geosociety.org.cn/upload/pdf/notice/20260706173639_29.pdf"]}
+{"type":"series","id":"optoelectronic-design","name":"全国大学生光电设计竞赛"}
+{"type":"edition-record","id":"126503407b21dc6b","series":"optoelectronic-design","label":"2026第十四届／2027第十五届筹备","scope":"资料所述届次或周期；含待确认记录","sources":["https://gd.moocollege.com/home","https://jwc.nepu.edu.cn/info/1162/15112.htm"]}
+{"type":"series","id":"metallographic-skills","name":"全国大学生金相技能大赛"}
+{"type":"edition-record","id":"485f61c2e112be18","series":"metallographic-skills","label":"2027第十六届","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.jxds.tech/dangjie-shiyan-zhinan"]}
+{"type":"notice-scope","id":"51c5c32a3501f888","series":"metallographic-skills","edition":"485f61c2e112be18","label":"高校统一报名"}
+{"type":"milestone","id":"046731328792358c","series":"metallographic-skills","edition":"485f61c2e112be18","noticeScope":"51c5c32a3501f888","kind":"院校报名截止","date":"2027-03-26 18:00","source":"https://www.jxds.tech/dangjie-shiyan-zhinan"}
+{"type":"track","id":"adf727f265174430","series":"metallographic-skills","trackKey":"experimental-skills","label":"实验技能赛道","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://cdn.jxds.tech/files/20250815/2026%E9%87%91%E7%9B%B8%E5%A4%A7%E8%B5%9B%E7%AB%A0%E7%A8%8B.pdf"}
+{"type":"series","id":"zhou-peiyuan-mechanics","name":"全国周培源大学生力学竞赛"}
+{"type":"edition-record","id":"9730d11b9811bc74","series":"zhou-peiyuan-mechanics","label":"2025第十五届／2027线索","scope":"资料所述届次或周期；含待确认记录","sources":["https://zhxy.nwsuaf.edu.cn/docs/2025-03/8ee77789b1d048e5aef631299afd9f93.pdf"]}
+{"type":"notice-scope","id":"36ffcf329bcde8a1","series":"zhou-peiyuan-mechanics","edition":"9730d11b9811bc74","label":"第十五届"}
+{"type":"milestone","id":"131f3be23dec7b6a","series":"zhou-peiyuan-mechanics","edition":"9730d11b9811bc74","noticeScope":"36ffcf329bcde8a1","kind":"报名截止","date":"2025-03-31","source":"https://zhxy.nwsuaf.edu.cn/docs/2025-03/8ee77789b1d048e5aef631299afd9f93.pdf"}
+{"type":"series","id":"mechanical-engineering-innovation","name":"中国大学生机械工程创新创意大赛"}
+{"type":"edition-record","id":"60327aa0e508eb2a","series":"mechanical-engineering-innovation","label":"2026","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.cmes.org/notice/010c5f85554e440e99d702008b58a26f.html","https://www.cmes.org/cmes/upload/2026/03-18/09-47-4800081058154528.pdf"]}
+{"type":"series","id":"china-us-young-maker","name":"中美青年创客大赛"}
+{"type":"edition-record","id":"94e7fe70875a643d","series":"china-us-young-maker","label":"2026","scope":"资料所述届次或周期；含待确认记录","sources":["https://chinaus-maker.cscse.edu.cn/","https://cxcy.usst.edu.cn/2026/0512/c16859a361408/page.htm"]}
+{"type":"notice-scope","id":"010460fcc4839373","series":"china-us-young-maker","edition":"94e7fe70875a643d","label":"上海赛区"}
+{"type":"milestone","id":"b78e5749a3809efc","series":"china-us-young-maker","edition":"94e7fe70875a643d","noticeScope":"010460fcc4839373","kind":"报名及作品提交截止","date":"2026-06-10 24:00","source":"https://cxcy.usst.edu.cn/2026/0512/c16859a361408/page.htm"}
+{"type":"track","id":"10b06d6cb6592108","series":"china-us-young-maker","trackKey":"vocational","label":"职业院校赛道","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://chinaus-maker.cscse.edu.cn/"}
+{"type":"series","id":"raicom-robot-developer","name":"睿抗机器人开发者大赛（RAICOM）"}
+{"type":"edition-record","id":"77507bd1d563e2f0","series":"raicom-robot-developer","label":"2026","scope":"资料所述届次或周期；含待确认记录","sources":["https://cxcy.nuc.edu.cn/info/1040/6532.htm","https://jwc.ustb.edu.cn/tztg/7a4552245dcb452b987023876778037b.htm"]}
+{"type":"series","id":"datang-ict","name":"全国大学生新一代信息通信科技大赛"}
+{"type":"edition-record","id":"ab97e799ca38eab1","series":"datang-ict","label":"2026第十三届","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.ksup.cn/home","https://cxcy.csuft.edu.cn/info/1191/2681.htm"]}
+{"type":"track","id":"8763bb3f8d6eb24b","series":"datang-ict","trackKey":"engineering-practice","label":"工程实践赛","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://cet.ncepu.edu.cn/docs/2025-12/f7028bf4abba4dedbb1657751fac5746.pdf"}
+{"type":"track","id":"124b4cc76e8280e0","series":"datang-ict","trackKey":"5g-innovation","label":"产教融合5G+创新应用赛","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://cet.ncepu.edu.cn/docs/2025-12/f7028bf4abba4dedbb1657751fac5746.pdf"}
+{"type":"track","id":"30ab50d5b9dc094b","series":"datang-ict","trackKey":"ict-general","label":"ICT通识赛","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://cet.ncepu.edu.cn/docs/2025-12/f7028bf4abba4dedbb1657751fac5746.pdf"}
+{"type":"series","id":"huawei-ict","name":"华为ICT大赛"}
+{"type":"edition-record","id":"e26952b1b512574c","series":"huawei-ict","label":"2026—2027","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.swjtuhc.cn/m/html/xxgc/detail/387803","https://due.xjtu.edu.cn/info/1172/10521.htm"]}
+{"type":"notice-scope","id":"d78eec494ea17395","series":"huawei-ict","edition":"e26952b1b512574c","label":"实践赛"}
+{"type":"milestone","id":"8dfb94d1ba416627","series":"huawei-ict","edition":"e26952b1b512574c","noticeScope":"d78eec494ea17395","kind":"报名截止","date":"2026-10-31","source":"https://due.xjtu.edu.cn/info/1172/10521.htm"}
+{"type":"notice-scope","id":"494eb0810d869623","series":"huawei-ict","edition":"e26952b1b512574c","label":"创新／编程赛"}
+{"type":"milestone","id":"07d3beafebc4a3df","series":"huawei-ict","edition":"e26952b1b512574c","noticeScope":"494eb0810d869623","kind":"报名截止","date":"2026-11-30","source":"https://due.xjtu.edu.cn/info/1172/10521.htm"}
+{"type":"series","id":"embedded-chip-system-design","name":"全国大学生嵌入式芯片与系统设计竞赛"}
+{"type":"edition-record","id":"b9001b620a0a8a1a","series":"embedded-chip-system-design","label":"2026","scope":"资料所述届次或周期；含待确认记录","sources":["https://aao.nuaa.edu.cn/2026/0920/c19003a411397/page.htm"]}
+{"type":"notice-scope","id":"c4411732e5bea7f7","series":"embedded-chip-system-design","edition":"b9001b620a0a8a1a","label":"FPGA赛道"}
+{"type":"milestone","id":"bde69e5ad6a541e8","series":"embedded-chip-system-design","edition":"b9001b620a0a8a1a","noticeScope":"c4411732e5bea7f7","kind":"报名截止","date":"2026-09-22 24:00","source":"https://aao.nuaa.edu.cn/2026/0920/c19003a411397/page.htm"}
+{"type":"series","id":"culsc-life-sciences","name":"全国大学生生命科学竞赛（CULSC）"}
+{"type":"edition-record","id":"7e286f8f179ebe77","series":"culsc-life-sciences","label":"2027第十二届科学探究类","scope":"资料所述届次或周期；含待确认记录","sources":["https://pec.xjtu.edu.cn/info/1117/5536.htm"]}
+{"type":"track","id":"bff6d8188f293e7a","series":"culsc-life-sciences","trackKey":"scientific-inquiry","label":"科学探究类","task":"围绕一个生命科学问题设计并执行研究，保留过程材料，把结果写成论文。","documentTitle":"西安交通大学实践教学中心 · 第十二届全国大学生生命科学竞赛（科学探究类）通知","scope":"第十二届科学探究类，2027年赛事通知。校内遴选另行核实。","source":"https://pec.xjtu.edu.cn/info/1117/5536.htm"}
+{"type":"track","id":"e5bc35ff56f5d8cc","series":"culsc-life-sciences","trackKey":"biological-innovation","label":"创新创业类 · 创新组","task":"从已形成的创新成果出发，核对本人贡献、成果类型和署名后准备材料。","documentTitle":"西南交通大学环境学院 · 全国大学生生命科学竞赛（创新创业类）通知","scope":"第十一届创新创业类，2026年全国赛事分组的历史材料；新届成果、署名和队伍条件须重查。","source":"https://ese.swjtu.edu.cn/info/1961/18231.htm"}
+{"type":"track","id":"180f660b3fa8b2c9","series":"culsc-life-sciences","trackKey":"biological-venture","label":"创新创业类 · 创业组","task":"梳理生命科学项目的产品、应用对象、团队与可持续经营计划。","documentTitle":"西南交通大学环境学院 · 全国大学生生命科学竞赛（创新创业类）通知","scope":"第十一届创新创业类，2026年全国赛事分组的历史材料；新届成果、署名和队伍条件须重查。","source":"https://ese.swjtu.edu.cn/info/1961/18231.htm"}
+{"type":"series","id":"physics-experiment-innovation","name":"全国大学生物理实验竞赛（创新）"}
+{"type":"edition-record","id":"31a0b96b4e705d9f","series":"physics-experiment-innovation","label":"2026第十二届","scope":"资料所述届次或周期；含待确认记录","sources":["https://wlsycx.moocollege.com/","https://xxgk.czu.cn/2026/0327/c5469a171577/page.htm"]}
+{"type":"track","id":"26a5a6d710942613","series":"physics-experiment-innovation","trackKey":"assigned-experiment","label":"命题类创新作品","task":"从公布题目选择实验，做测量或装置验证，说明误差与改进方法。","documentTitle":"常州工学院 · 关于参加第十二届全国大学生物理实验竞赛的通知","scope":"2026年全国竞赛三类作品及人数上限，校内报名步骤和遴选名额按学校通知。","source":"https://xxgk.czu.cn/2026/0327/c5469a171577/page.htm"}
+{"type":"track","id":"f214940331ab475d","series":"physics-experiment-innovation","trackKey":"self-directed-experiment","label":"自选课题类创新作品","task":"在自选类要求内提出实验问题，以可复现的测量过程论证结论。","documentTitle":"常州工学院 · 关于参加第十二届全国大学生物理实验竞赛的通知","scope":"2026年全国竞赛三类作品及人数上限，校内报名步骤和遴选名额按学校通知。","source":"https://xxgk.czu.cn/2026/0327/c5469a171577/page.htm"}
+{"type":"track","id":"cb89d5de277adc58","series":"physics-experiment-innovation","trackKey":"physics-teaching","label":"大学生物理实验讲课比赛","task":"围绕一个物理实验组织教学演示，解释现象、实验步骤和测量依据。","documentTitle":"常州工学院 · 关于参加第十二届全国大学生物理实验竞赛的通知","scope":"2026年全国竞赛三类作品及人数上限，校内报名步骤和遴选名额按学校通知。","source":"https://xxgk.czu.cn/2026/0327/c5469a171577/page.htm"}
+{"type":"series","id":"bim-graduation-design","name":"国际高校BIM毕业设计创新大赛"}
+{"type":"edition-record","id":"35f54c68ff2d1467","series":"bim-graduation-design","label":"2027第十三届","scope":"资料所述届次或周期；含待确认记录","sources":["https://cea.hbu.edu.cn/info_show.asp?infoid=1401"]}
+{"type":"notice-scope","id":"1c9db33b98d22de1","series":"bim-graduation-design","edition":"35f54c68ff2d1467","label":"A—H模块"}
+{"type":"milestone","id":"ef8d918f6f4bd4e6","series":"bim-graduation-design","edition":"35f54c68ff2d1467","noticeScope":"1c9db33b98d22de1","kind":"报名截止","date":"2026-11-30 16:00","source":"https://cea.hbu.edu.cn/info_show.asp?infoid=1401"}
+{"type":"notice-scope","id":"20faa0ca90d9108d","series":"bim-graduation-design","edition":"35f54c68ff2d1467","label":"I—J模块"}
+{"type":"milestone","id":"3f0383e9e3cbd330","series":"bim-graduation-design","edition":"35f54c68ff2d1467","noticeScope":"20faa0ca90d9108d","kind":"报名截止","date":"2027-01-29 16:00","source":"https://cea.hbu.edu.cn/info_show.asp?infoid=1401"}
+{"type":"series","id":"intelligent-robot-creativity","name":"中国高校智能机器人创意大赛"}
+{"type":"edition-record","id":"a875841a009039c5","series":"intelligent-robot-creativity","label":"2026第九届","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.robotcontest.cn/home/homepage","https://www.cs.sjtu.edu.cn/xsgz-tzgg-txgz/1201.html"]}
+{"type":"series","id":"china-good-design","name":"中国好创意暨全国数字艺术设计大赛"}
+{"type":"edition-record","id":"84315f04db7d29eb","series":"china-good-design","label":"2027第二十一届","scope":"资料所述届次或周期；含待确认记录","sources":["https://cdec.org.cn/articleDetail/2363"]}
+{"type":"notice-scope","id":"d96b3f9f6a2063e5","series":"china-good-design","edition":"84315f04db7d29eb","label":"常规赛"}
+{"type":"milestone","id":"3ffbeb4f75cb7bab","series":"china-good-design","edition":"84315f04db7d29eb","noticeScope":"d96b3f9f6a2063e5","kind":"报名及作品提交截止","date":"2027-05-31 17:00","source":"https://cdec.org.cn/articleDetail/2363"}
+{"type":"series","id":"china-robot-ai","name":"中国机器人及人工智能大赛"}
+{"type":"edition-record","id":"0467d0ba21c696d0","series":"china-robot-ai","label":"2026第二十八届","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.caairobot.com/index.html","https://cxxy.lntu.edu.cn/info/1134/4895.htm"]}
+{"type":"series","id":"chinese-classics","name":"中华经典诵写讲大赛"}
+{"type":"edition-record","id":"dc3144ccbfb5f6c2","series":"chinese-classics","label":"2026第八届","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.moe.gov.cn/srcsite/A18/s3137/202605/t20260528_1437956.html","https://www.cup.edu.cn/docs/2026-05/e6e258c803314bdfbd3f183fe944c111.pdf"]}
+{"type":"series","id":"intercultural-competence","name":"“外教社杯”全国高校学生跨文化能力大赛"}
+{"type":"edition-record","id":"5b0512693a54173f","series":"intercultural-competence","label":"2026第九届","scope":"资料所述届次或周期；含待确认记录","sources":["https://ict.sflep.com/index.php?a=show&c=index&catid=15&id=179&m=content","https://due.xjtu.edu.cn/info/1172/9923.htm"]}
+{"type":"series","id":"baidu-star","name":"百度之星程序设计大赛"}
+{"type":"edition-record","id":"3bc346bf328ee594","series":"baidu-star","label":"2026第二十二届","scope":"资料所述届次或周期；含待确认记录","sources":["https://site.gcc.edu.cn/jxgl/xkjs/f1753a9e019d497f9684a797054b13ac.htm","https://cxcy.nuc.edu.cn/info/1040/7272.htm"]}
+{"type":"series","id":"water-innovation-design","name":"全国大学生水利创新设计大赛"}
+{"type":"edition-record","id":"3bd911f5d1280b17","series":"water-innovation-design","label":"当前正式国赛待核对","scope":"资料所述届次或周期；含待确认记录","sources":["https://slsd.sicau.edu.cn/info/1053/15305.htm"]}
+{"type":"series","id":"chemical-engineering-experiment","name":"全国大学生化工实验大赛"}
+{"type":"edition-record","id":"607c53dfd66ff7aa","series":"chemical-engineering-experiment","label":"2026第九届","scope":"资料所述届次或周期；含待确认记录","sources":["https://edu.cteic.com/match/app/main","https://hgxy.hfut.edu.cn/_upload/article/files/2a/a3/90f6475b45d3a88778a739e48679/48601720-aee0-42d4-beb5-535c3023d396.pdf"]}
+{"type":"series","id":"chemistry-experiment-innovation","name":"全国大学生化学实验创新设计大赛"}
+{"type":"edition-record","id":"3e2dd472e0309033","series":"chemistry-experiment-innovation","label":"2027第六届","scope":"资料所述届次或周期；含待确认记录","sources":["https://jwc.jxnu.edu.cn/Portal/ArticlesView.aspx?ID=13787","https://slise.btbu.edu.cn/docs/2026-04/dcd3cd94bdce41a79ddc08d7b8263e4f.pdf"]}
+{"type":"notice-scope","id":"da91009423a1c1df","series":"chemistry-experiment-innovation","edition":"3e2dd472e0309033","label":"江西师范大学 · 校内报名"}
+{"type":"milestone","id":"aac338d1885a1b73","series":"chemistry-experiment-innovation","edition":"3e2dd472e0309033","noticeScope":"da91009423a1c1df","kind":"组队表提交截止","date":"2026-11-13 前","source":"https://jwc.jxnu.edu.cn/Portal/ArticlesView.aspx?ID=13787"}
+{"type":"notice-scope","id":"b28eacabdb8e2674","series":"chemistry-experiment-innovation","edition":"3e2dd472e0309033","label":"江西师范大学 · 校赛"}
+{"type":"milestone","id":"3ea4528aee1aeb12","series":"chemistry-experiment-innovation","edition":"3e2dd472e0309033","noticeScope":"b28eacabdb8e2674","kind":"作品提交截止","date":"2026-11-20 前","source":"https://jwc.jxnu.edu.cn/Portal/ArticlesView.aspx?ID=13787"}
+{"type":"milestone","id":"554fdfb4d316ce01","series":"chemistry-experiment-innovation","edition":"3e2dd472e0309033","noticeScope":"b28eacabdb8e2674","kind":"校赛答辩完成","date":"2026-12-25 前","source":"https://jwc.jxnu.edu.cn/Portal/ArticlesView.aspx?ID=13787"}
+{"type":"notice-scope","id":"063fffac22fe6ce8","series":"chemistry-experiment-innovation","edition":"3e2dd472e0309033","label":"华中赛区 · 须以学校为单位"}
+{"type":"milestone","id":"a68bc7662aebdd28","series":"chemistry-experiment-innovation","edition":"3e2dd472e0309033","noticeScope":"063fffac22fe6ce8","kind":"预报名截止","date":"2027-01-31 前","source":"https://jwc.jxnu.edu.cn/Portal/ArticlesView.aspx?ID=13787"}
+{"type":"notice-scope","id":"81c195a0e651f6c4","series":"chemistry-experiment-innovation","edition":"3e2dd472e0309033","label":"华中赛区 · 学校推荐队伍"}
+{"type":"milestone","id":"c5ce7fe758f0024a","series":"chemistry-experiment-innovation","edition":"3e2dd472e0309033","noticeScope":"81c195a0e651f6c4","kind":"确认报名并提交作品","date":"2027-03-10 前","source":"https://jwc.jxnu.edu.cn/Portal/ArticlesView.aspx?ID=13787"}
+{"type":"notice-scope","id":"c988d08d416acf5e","series":"chemistry-experiment-innovation","edition":"3e2dd472e0309033","label":"华中赛区 · 郑州大学"}
+{"type":"milestone","id":"cdcc20144854f57e","series":"chemistry-experiment-innovation","edition":"3e2dd472e0309033","noticeScope":"c988d08d416acf5e","kind":"分赛区复赛","date":"2027-04-16 至 2027-04-18","source":"https://jwc.jxnu.edu.cn/Portal/ArticlesView.aspx?ID=13787"}
+{"type":"track","id":"4392f38561b1f905","series":"chemistry-experiment-innovation","trackKey":"new-experiment","label":"新创实验","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://slise.btbu.edu.cn/docs/2026-04/dcd3cd94bdce41a79ddc08d7b8263e4f.pdf"}
+{"type":"track","id":"f4e88ff3a2ab2aa6","series":"chemistry-experiment-innovation","trackKey":"improved-experiment","label":"改进实验","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://slise.btbu.edu.cn/docs/2026-04/dcd3cd94bdce41a79ddc08d7b8263e4f.pdf"}
+{"type":"track","id":"6b4868c5133976b1","series":"chemistry-experiment-innovation","trackKey":"science-outreach","label":"科普实验","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://slise.btbu.edu.cn/docs/2026-04/dcd3cd94bdce41a79ddc08d7b8263e4f.pdf"}
+{"type":"track","id":"bdf3398c09f4e52d","series":"chemistry-experiment-innovation","trackKey":"digital-experiment","label":"数智化实验","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://slise.btbu.edu.cn/docs/2026-04/dcd3cd94bdce41a79ddc08d7b8263e4f.pdf"}
+{"type":"series","id":"computer-system-ability","name":"全国大学生计算机系统能力大赛"}
+{"type":"edition-record","id":"01df3af837a85173","series":"computer-system-ability","label":"2026操作系统设计赛等","scope":"资料所述届次或周期；含待确认记录","sources":["https://os.educg.net/","https://dean.xjtu.edu.cn/info/1172/9851.htm"]}
+{"type":"track","id":"4727a9433bda2dac","series":"computer-system-ability","trackKey":"os-function-challenge","label":"2026操作系统设计赛—OS功能挑战赛道","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://course.educg.net/pages/contest/contest.jsp?contestCID=0&contestID=Y8zmbRcqh1Q&doVisit=true&my=false"}
+{"type":"series","id":"garden-design-build","name":"全国大学生花园设计建造竞赛"}
+{"type":"edition-record","id":"92deb959282698c4","series":"garden-design-build","label":"2026","scope":"资料所述届次或周期；含待确认记录","sources":["https://landscape-caup.tongji.edu.cn/c8/f4/c10586a379124/page.htm"]}
+{"type":"notice-scope","id":"f556b109a8cdc13d","series":"garden-design-build","edition":"92deb959282698c4","label":"社区花园赛道"}
+{"type":"milestone","id":"7eefb2ecec2ef2c0","series":"garden-design-build","edition":"92deb959282698c4","noticeScope":"f556b109a8cdc13d","kind":"报名截止","date":"2026-10-20 23:59","source":"https://landscape-caup.tongji.edu.cn/c8/f4/c10586a379124/page.htm"}
+{"type":"milestone","id":"2b61319b6fe10a94","series":"garden-design-build","edition":"92deb959282698c4","noticeScope":"f556b109a8cdc13d","kind":"作品提交截止","date":"2026-10-28","source":"https://landscape-caup.tongji.edu.cn/c8/f4/c10586a379124/page.htm"}
+{"type":"series","id":"information-security-confrontation","name":"全国大学生信息安全与对抗技术竞赛"}
+{"type":"edition-record","id":"561a9ad696658c21","series":"information-security-confrontation","label":"2026第二十三届","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.isclab.org.cn/2026/09/08/2026%E5%B9%B4%E7%AC%AC23%E5%B1%8A%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E4%B8%8E%E5%AF%B9%E6%8A%97%E6%8A%80%E6%9C%AF%E7%AB%9E%E8%B5%9B%E9%80%9A%E7%9F%A5-%E5%AF%86%E7%A0%81%E5%AE%89%E5%85%A8/","https://cxcy.lnut.edu.cn/info/14428/186074.htm"]}
+{"type":"track","id":"a939618f083ef920","series":"information-security-confrontation","trackKey":"game-confrontation","label":"博弈对抗赛","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://www.isclab.org.cn/2026/07/23/2026%E5%B9%B4%E7%AC%AC23%E5%B1%8A%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E4%B8%8E%E5%AF%B9%E6%8A%97%E6%8A%80%E6%9C%AF%E7%AB%9E%E8%B5%9B%E9%80%9A%E7%9F%A5-%E5%8D%9A%E5%BC%88%E5%AF%B9%E6%8A%97%E8%B5%9B/"}
+{"type":"series","id":"surveying-innovation","name":"全国大学生测绘学科创新创业智能大赛"}
+{"type":"edition-record","id":"5fe374f39bed92f5","series":"surveying-innovation","label":"2026","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.csgpc.org/detail/27080.html"]}
+{"type":"notice-scope","id":"c41d154082392ba1","series":"surveying-innovation","edition":"5fe374f39bed92f5","label":"学生报名"}
+{"type":"milestone","id":"73f04a5dce8149ec","series":"surveying-innovation","edition":"5fe374f39bed92f5","noticeScope":"c41d154082392ba1","kind":"报名截止","date":"2026-06-20","source":"https://www.csgpc.org/detail/27080.html"}
+{"type":"notice-scope","id":"8f8ca2fd04a19199","series":"surveying-innovation","edition":"5fe374f39bed92f5","label":"学校审核"}
+{"type":"milestone","id":"38f6ed99a93556f0","series":"surveying-innovation","edition":"5fe374f39bed92f5","noticeScope":"8f8ca2fd04a19199","kind":"资格审查截止","date":"2026-06-25","source":"https://www.csgpc.org/detail/27080.html"}
+{"type":"series","id":"statistical-modeling","name":"全国大学生统计建模大赛"}
+{"type":"edition-record","id":"fc956ec2b2617778","series":"statistical-modeling","label":"2026第十二届","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.cmathc.org.cn/tjjmds/news/412.html"]}
+{"type":"series","id":"basic-medicine-innovation","name":"全国大学生基础医学创新研究暨实验设计论坛（大赛）"}
+{"type":"edition-record","id":"976c29ed96200d76","series":"basic-medicine-innovation","label":"2026第十二届","scope":"资料所述届次或周期；含待确认记录","sources":["https://cop.sztu.edu.cn/info/1117/2243.htm","https://jwc.njucm.edu.cn/2026/0307/c4498a166142/page.htm"]}
+{"type":"series","id":"tax-risk-case","name":"全国本科院校税收风险管控案例大赛"}
+{"type":"edition-record","id":"8f09929ab1e57de8","series":"tax-risk-case","label":"2026","scope":"资料所述届次或周期；含待确认记录","sources":["https://jwc.cugb.edu.cn/c/2026-09-14/857246.shtml"]}
+{"type":"notice-scope","id":"3481240126a70eae","series":"tax-risk-case","edition":"8f09929ab1e57de8","label":"全国报名"}
+{"type":"milestone","id":"c38478cd0b608703","series":"tax-risk-case","edition":"8f09929ab1e57de8","noticeScope":"3481240126a70eae","kind":"报名截止","date":"2026-09-20","source":"https://jwc.cugb.edu.cn/c/2026-09-14/857246.shtml"}
+{"type":"series","id":"enterprise-competition-simulation","name":"全国企业竞争模拟大赛"}
+{"type":"edition-record","id":"cb737d920216da59","series":"enterprise-competition-simulation","label":"2026","scope":"资料所述届次或周期；含待确认记录","sources":["https://en.bizwar.cn/main/news/275","https://www.ibizsim.cn/main/news/275"]}
+{"type":"track","id":"1c8296c7ec4a86fa","series":"enterprise-competition-simulation","trackKey":"graduate","label":"研究生组","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://www.ibizsim.cn/main/news/275"}
+{"type":"track","id":"c6c5921f8b568e30","series":"enterprise-competition-simulation","trackKey":"undergraduate","label":"本科组","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://www.ibizsim.cn/main/news/275"}
+{"type":"track","id":"f1b119e35be7c191","series":"enterprise-competition-simulation","trackKey":"vocational","label":"高职组","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://www.ibizsim.cn/main/news/275"}
+{"type":"series","id":"digital-enterprise-sandbox","name":"全国高等院校数智化企业经营沙盘大赛"}
+{"type":"edition-record","id":"b44d238ca01d4b0a","series":"digital-enterprise-sandbox","label":"2026","scope":"资料所述届次或周期；含待确认记录","sources":["https://dean.xjtu.edu.cn/info/1172/10113.htm","https://jiaowu.web.hebust.edu.cn/cxcy/xkjs/567d5ff3698f416fb4b380521850c56f.htm"]}
+{"type":"series","id":"digital-building-innovation","name":"全国数字建筑创新应用大赛"}
+{"type":"edition-record","id":"7b9c50bf5b5eebb6","series":"digital-building-innovation","label":"2026","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.ccen.com.cn/info/1150/5937.htm"]}
+{"type":"notice-scope","id":"8878eea3ed06c701","series":"digital-building-innovation","edition":"7b9c50bf5b5eebb6","label":"全国报名"}
+{"type":"milestone","id":"ed2395ec3e30b9e3","series":"digital-building-innovation","edition":"7b9c50bf5b5eebb6","noticeScope":"8878eea3ed06c701","kind":"报名截止","date":"2026-07-31","source":"https://www.ccen.com.cn/info/1150/5937.htm"}
+{"type":"track","id":"852c8d748fde5c80","series":"digital-building-innovation","trackKey":"bim-design","label":"BIM数维设计建模赛项","task":"按公建或住宅条件构建模型，检查几何关系和构件表达。","documentTitle":"中国建设教育协会 · 关于举办2026年全国数字建筑创新应用大赛的通知","scope":"2026年全国赛三项科目；建筑类相关专业、学段和组队细则须按该届规程核对。","source":"https://www.ccen.com.cn/info/1150/5937.htm"}
+{"type":"track","id":"00d3591e1a330dab","series":"digital-building-innovation","trackKey":"construction-management","label":"数字施工项目管理综合应用赛项","task":"将施工进度、现场布置和管理任务落实到模型和项目计划。","documentTitle":"中国建设教育协会 · 关于举办2026年全国数字建筑创新应用大赛的通知","scope":"2026年全国赛三项科目；建筑类相关专业、学段和组队细则须按该届规程核对。","source":"https://www.ccen.com.cn/info/1150/5937.htm"}
+{"type":"track","id":"dde36a0ab02b97e1","series":"digital-building-innovation","trackKey":"quantity-cost","label":"建设工程计量与计价应用赛项","task":"建立计量模型，编制工程量清单并核算招标控制价。","documentTitle":"中国建设教育协会 · 关于举办2026年全国数字建筑创新应用大赛的通知","scope":"2026年全国赛三项科目；建筑类相关专业、学段和组队细则须按该届规程核对。","source":"https://www.ccen.com.cn/info/1150/5937.htm"}
+{"type":"series","id":"global-campus-ai-algorithm","name":"全球校园人工智能算法精英大赛"}
+{"type":"edition-record","id":"d53a3b0b9ad1744b","series":"global-campus-ai-algorithm","label":"2026第八届","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.aicomp.cn/notice/notice-2/4649.html"]}
+{"type":"notice-scope","id":"a0d29a98993222d0","series":"global-campus-ai-algorithm","edition":"d53a3b0b9ad1744b","label":"算法挑战赛／对应省赛"}
+{"type":"milestone","id":"943fa8c9969da30f","series":"global-campus-ai-algorithm","edition":"d53a3b0b9ad1744b","noticeScope":"a0d29a98993222d0","kind":"报名及缴费截止","date":"2026-10-15 20:00","source":"https://www.aicomp.cn/notice/notice-2/4649.html"}
+{"type":"track","id":"c80b32f30e504bbc","series":"global-campus-ai-algorithm","trackKey":"indoor-agriculture","label":"2026算法主题赛（室内农业）","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://www.aicomp.cn/notice/notice-3/4784.html"}
+{"type":"series","id":"smart-agricultural-equipment","name":"国际大学生智能农业装备创新大赛"}
+{"type":"edition-record","id":"59812bf5e3a03123","series":"smart-agricultural-equipment","label":"2027第十二届","scope":"资料所述届次或周期；含待确认记录","sources":["https://uiaec.ujs.edu.cn/news_show.php?id=234"]}
+{"type":"notice-scope","id":"28715d5de9a4dc6c","series":"smart-agricultural-equipment","edition":"59812bf5e3a03123","label":"未设省级选拔赛高校报名"}
+{"type":"milestone","id":"f491e44982b0a60e","series":"smart-agricultural-equipment","edition":"59812bf5e3a03123","noticeScope":"28715d5de9a4dc6c","kind":"院校报名截止","date":"2026-11-30","source":"https://uiaec.ujs.edu.cn/news_show.php?id=234"}
+{"type":"notice-scope","id":"c973e4cb650846f6","series":"smart-agricultural-equipment","edition":"59812bf5e3a03123","label":"未设省级选拔赛的地区"}
+{"type":"milestone","id":"6e6005fd0ea5813c","series":"smart-agricultural-equipment","edition":"59812bf5e3a03123","noticeScope":"c973e4cb650846f6","kind":"作品提交截止","date":"2026-12-20","source":"https://uiaec.ujs.edu.cn/news_show.php?id=234"}
+{"type":"series","id":"keyun-accounting","name":"“科云杯”全国大学生财会职业能力大赛"}
+{"type":"edition-record","id":"4519a896ec30883d","series":"keyun-accounting","label":"2026","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.pzxy.edu.cn/sx/info/1150/1673.htm","https://www.hnit.edu.cn/cxcyxy/info/1111/5590.htm"]}
+{"type":"notice-scope","id":"d56b8758e9c7cbd3","series":"keyun-accounting","edition":"4519a896ec30883d","label":"河南赛区 · 平顶山工业职业技术学院通知"}
+{"type":"milestone","id":"14c3f24f07f20799","series":"keyun-accounting","edition":"4519a896ec30883d","noticeScope":"d56b8758e9c7cbd3","kind":"报名截止","date":"2026-10-30 17:00","source":"https://www.pzxy.edu.cn/sx/info/1150/1673.htm"}
+{"type":"series","id":"world-vocational-skills","name":"世界职业院校技能大赛"}
+{"type":"edition-record","id":"0cef0346a92c573a","series":"world-vocational-skills","label":"2026","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.moe.gov.cn/srcsite/A07/s7055/202608/t20260820_1447374.html","https://www.moe.gov.cn/srcsite/A07/s7055/202506/t20250617_1194543.html"]}
+{"type":"series","id":"robotac","name":"全国大学生机器人大赛—RoboTac"}
+{"type":"edition-record","id":"f2f9745f8a3cb8a4","series":"robotac","label":"2026第二十五届／第二十六届河南线索","scope":"资料所述届次或周期；含待确认记录","sources":["https://robotac.cn/","https://robotac.cn/sys-nd/1307.html"]}
+{"type":"series","id":"worldskills","name":"世界技能大赛"}
+{"type":"edition-record","id":"c293de28812e271c","series":"worldskills","label":"2026上海第四十八届","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.moe.gov.cn/jyb_xwfb/s5147/202609/t20260921_1451499.html","https://worldskills.org/get-involved/how-compete/"]}
+{"type":"series","id":"worldskills-china-selection","name":"世界技能大赛中国选拔赛"}
+{"type":"edition-record","id":"e27311c323f95c91","series":"worldskills-china-selection","label":"2026对应中国选拔","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.moe.gov.cn/jyb_xwfb/s5147/202609/t20260921_1451499.html","https://worldskills.org/get-involved/how-compete/"]}
+{"type":"series","id":"brics-skills","name":"一带一路暨金砖国家技能发展与技术创新大赛"}
+{"type":"edition-record","id":"3d89e22a5763d266","series":"brics-skills","label":"2026第十届","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.bricsfuture.org.cn/a/20-377.html","https://jwc.hfnu.edu.cn/info/1009/63820.htm"]}
+{"type":"track","id":"87463b975fe23f58","series":"brics-skills","trackKey":"technology-innovation","label":"2026技术创新赛","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://www.bricsfuture.org.cn/a/20-348.html"}
+{"type":"series","id":"matiji-programming","name":"码蹄杯全国大学生程序设计大赛"}
+{"type":"edition-record","id":"8e1ba3de6b40d57a","series":"matiji-programming","label":"2026第八届","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.matiji.net/exam/contest/index","https://www.swpu.edu.cn/scs/info/1055/12442.htm"]}
+{"type":"track","id":"5102ad4cbb21a5db","series":"matiji-programming","trackKey":"undergraduate","label":"本科院校组","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://bigdata.cczu.edu.cn/_upload/article/files/5a/d9/15a17cae4667b4c1acc916be257d/cf794916-39aa-49ed-833b-a1f82be934cb.pdf"}
+{"type":"track","id":"fe50e268cc6cc20a","series":"matiji-programming","trackKey":"vocational","label":"职业院校组","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://bigdata.cczu.edu.cn/_upload/article/files/5a/d9/15a17cae4667b4c1acc916be257d/cf794916-39aa-49ed-833b-a1f82be934cb.pdf"}
+{"type":"series","id":"national-college-mathematics","name":"全国大学生数学竞赛"}
+{"type":"edition-record","id":"eb79265d0de00411","series":"national-college-mathematics","label":"2026第十八届","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.cmathc.org.cn/tzgg/545.html","https://jwc.hdu.edu.cn/2026/0907/c13022a300115/page.htm","https://www.cmathc.org.cn/sqtz/656.html"]}
+{"type":"notice-scope","id":"78d12ce3e3dd8022","series":"national-college-mathematics","edition":"eb79265d0de00411","label":"全国报名最晚要求"}
+{"type":"milestone","id":"9e52a4fc22db9844","series":"national-college-mathematics","edition":"eb79265d0de00411","noticeScope":"78d12ce3e3dd8022","kind":"各地报名最晚期限","date":"2026-10-19","source":"https://www.cmathc.org.cn/tzgg/545.html"}
+{"type":"notice-scope","id":"4a852047ee4662c7","series":"national-college-mathematics","edition":"eb79265d0de00411","label":"浙江"}
+{"type":"milestone","id":"ec9c7b3a318c9555","series":"national-college-mathematics","edition":"eb79265d0de00411","noticeScope":"4a852047ee4662c7","kind":"报名截止","date":"2026-10-14","source":"https://jwc.hdu.edu.cn/2026/0907/c13022a300115/page.htm"}
+{"type":"notice-scope","id":"0896fdb31773757a","series":"national-college-mathematics","edition":"eb79265d0de00411","label":"天津"}
+{"type":"milestone","id":"3fef1174b431432d","series":"national-college-mathematics","edition":"eb79265d0de00411","noticeScope":"0896fdb31773757a","kind":"报名截止","date":"2026-10-15","source":"https://www.cmathc.org.cn/sqtz/656.html"}
+{"type":"series","id":"red-tourism-creative-planning","name":"全国大学生红色旅游创意策划大赛"}
+{"type":"edition-record","id":"be9e4716681f583a","series":"red-tourism-creative-planning","label":"2026","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.sohu.com/a/1025685774_121106842","https://www.mct.gov.cn/whzx/bnsj/zykfs/202403/t20240328_951957.html","https://jwc.bjwlxy.edu.cn/info/1031/4157.htm"]}
+{"type":"series","id":"graduate-math-modeling","name":"中国研究生数学建模竞赛"}
+{"type":"edition-record","id":"d9c0db657b68e9fa","series":"graduate-math-modeling","label":"2026年第23届","scope":"资料所述届次或周期；含待确认记录","sources":["https://cpipc.acge.org.cn/cw/contestNews/detail/4/2c9080189dcfa24e019dddacc24a1314?page=0","https://cpipc.acge.org.cn/cw/hp/4"]}
+{"type":"notice-scope","id":"8cb6fbb223772c3b","series":"graduate-math-modeling","edition":"d9c0db657b68e9fa","label":"论文PDF"}
+{"type":"milestone","id":"bdd4f9e6fc7c3ee3","series":"graduate-math-modeling","edition":"d9c0db657b68e9fa","noticeScope":"8cb6fbb223772c3b","kind":"作品提交截止","date":"2026-09-28 24:00 北京时间","source":"https://cpipc.acge.org.cn/cw/contestNews/detail/4/2c9080189dcfa24e019dddacc24a1314?page=0"}
+{"type":"series","id":"graduate-electronic-design","name":"中国研究生电子设计竞赛"}
+{"type":"edition-record","id":"23e8f090cbc12ce9","series":"graduate-electronic-design","label":"2026年第21届","scope":"资料所述届次或周期；含待确认记录","sources":["https://cpipc.acge.org.cn/cw/hp/6","https://cpipc.acge.org.cn/cw/hp/6?language=1"]}
+{"type":"notice-scope","id":"96fbfc4c7dc212dd","series":"graduate-electronic-design","edition":"23e8f090cbc12ce9","label":"全国学生队伍报名；技术赛与商业计划书专项赛应拆轨道"}
+{"type":"milestone","id":"b75cd31db0bd0ea8","series":"graduate-electronic-design","edition":"23e8f090cbc12ce9","noticeScope":"96fbfc4c7dc212dd","kind":"报名截止","date":"2026-06-20 24:00 北京时间","source":"https://cpipc.acge.org.cn/cw/hp/6"}
+{"type":"notice-scope","id":"f4e13cc3576d7232","series":"graduate-electronic-design","edition":"23e8f090cbc12ce9","label":"作品提交"}
+{"type":"milestone","id":"8fcfa5fb53e576ae","series":"graduate-electronic-design","edition":"23e8f090cbc12ce9","noticeScope":"f4e13cc3576d7232","kind":"作品提交截止","date":"2026-06-20 24:00 北京时间","source":"https://cpipc.acge.org.cn/cw/hp/6"}
+{"type":"series","id":"graduate-ai-innovation","name":"中国研究生人工智能创新大赛"}
+{"type":"edition-record","id":"3d1a2db68bd03fa5","series":"graduate-ai-innovation","label":"2026年第8届","scope":"资料所述届次或周期；含待确认记录","sources":["https://cpipc.acge.org.cn/cw/hp/2c9088a5696cbf370169a3f8101510bd"]}
+{"type":"notice-scope","id":"430f180ad3208e86","series":"graduate-ai-innovation","edition":"3d1a2db68bd03fa5","label":"全国学生报名；未公开到时分"}
+{"type":"milestone","id":"5d898fa875974d22","series":"graduate-ai-innovation","edition":"3d1a2db68bd03fa5","noticeScope":"430f180ad3208e86","kind":"报名截止","date":"2026-08-25","source":"https://cpipc.acge.org.cn/cw/hp/2c9088a5696cbf370169a3f8101510bd"}
+{"type":"notice-scope","id":"5ab584c502f893e2","series":"graduate-ai-innovation","edition":"3d1a2db68bd03fa5","label":"资格审核"}
+{"type":"milestone","id":"594dbbf8807af8fe","series":"graduate-ai-innovation","edition":"3d1a2db68bd03fa5","noticeScope":"5ab584c502f893e2","kind":"资格审查截止","date":"2026-08-25","source":"https://cpipc.acge.org.cn/cw/hp/2c9088a5696cbf370169a3f8101510bd"}
+{"type":"notice-scope","id":"425dccd804d233af","series":"graduate-ai-innovation","edition":"3d1a2db68bd03fa5","label":"作品提交"}
+{"type":"milestone","id":"ad98af0d8b833575","series":"graduate-ai-innovation","edition":"3d1a2db68bd03fa5","noticeScope":"425dccd804d233af","kind":"作品提交截止","date":"2026-09-01","source":"https://cpipc.acge.org.cn/cw/hp/2c9088a5696cbf370169a3f8101510bd"}
+{"type":"track","id":"b5b65f1edae0abcb","series":"graduate-ai-innovation","trackKey":"individual-entry","label":"个人参赛","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://cpipc.acge.org.cn/cw/hp/2c9088a5696cbf370169a3f8101510bd"}
+{"type":"track","id":"ee49393175d3d8db","series":"graduate-ai-innovation","trackKey":"team-entry","label":"团队参赛","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://cpipc.acge.org.cn/cw/hp/2c9088a5696cbf370169a3f8101510bd"}
+{"type":"series","id":"graduate-public-management-case","name":"中国研究生公共管理案例大赛"}
+{"type":"edition-record","id":"f0d9e0c34562e451","series":"graduate-public-management-case","label":"2026年第10届","scope":"资料所述届次或周期；含待确认记录","sources":["https://cpipc.acge.org.cn/cw/hp/8"]}
+{"type":"notice-scope","id":"1247b4345adca7bd","series":"graduate-public-management-case","edition":"f0d9e0c34562e451","label":"全国队伍报名；学校推荐/校赛截止需另外维护"}
+{"type":"milestone","id":"79fb2dd0ece790b6","series":"graduate-public-management-case","edition":"f0d9e0c34562e451","noticeScope":"1247b4345adca7bd","kind":"报名截止","date":"2026-03-13","source":"https://cpipc.acge.org.cn/cw/hp/8"}
+{"type":"notice-scope","id":"75be4dd729799a96","series":"graduate-public-management-case","edition":"f0d9e0c34562e451","label":"资格审核"}
+{"type":"milestone","id":"ff70655e56482048","series":"graduate-public-management-case","edition":"f0d9e0c34562e451","noticeScope":"75be4dd729799a96","kind":"资格审查截止","date":"2026-03-16","source":"https://cpipc.acge.org.cn/cw/hp/8"}
+{"type":"notice-scope","id":"4f5e96d2d52dbb38","series":"graduate-public-management-case","edition":"f0d9e0c34562e451","label":"作品提交"}
+{"type":"milestone","id":"21e7c2024b0bbf00","series":"graduate-public-management-case","edition":"f0d9e0c34562e451","noticeScope":"4f5e96d2d52dbb38","kind":"作品提交截止","date":"2026-03-31","source":"https://cpipc.acge.org.cn/cw/hp/8"}
+{"type":"series","id":"graduate-culture-china","name":"中国研究生“文化中国”两创大赛"}
+{"type":"edition-record","id":"bd4038395255b968","series":"graduate-culture-china","label":"2026年第3届","scope":"资料所述届次或周期；含待确认记录","sources":["https://cpipc.acge.org.cn/cw/hp/2c9080178e896671018e97ce7525018b","https://cpipc.acge.org.cn/pw/notice/list/1"]}
+{"type":"notice-scope","id":"76caed34be91bfdb","series":"graduate-culture-china","edition":"bd4038395255b968","label":"常规非舞蹈赛道全国报名"}
+{"type":"milestone","id":"fb0418e7c5ef3a2f","series":"graduate-culture-china","edition":"bd4038395255b968","noticeScope":"76caed34be91bfdb","kind":"报名截止","date":"2026-09-13","source":"https://cpipc.acge.org.cn/cw/hp/2c9080178e896671018e97ce7525018b"}
+{"type":"notice-scope","id":"6930a3838bb9ba3f","series":"graduate-culture-china","edition":"bd4038395255b968","label":"常规赛道作品提交/资格审核"}
+{"type":"milestone","id":"aa4c0002d3c7dbc6","series":"graduate-culture-china","edition":"bd4038395255b968","noticeScope":"6930a3838bb9ba3f","kind":"提交作品及资格审查截止","date":"2026-09-13","source":"https://cpipc.acge.org.cn/cw/hp/2c9080178e896671018e97ce7525018b"}
+{"type":"notice-scope","id":"008c16003fb29358","series":"graduate-culture-china","edition":"bd4038395255b968","label":"舞蹈赛道报名及作品"}
+{"type":"milestone","id":"393a88e5367923ae","series":"graduate-culture-china","edition":"bd4038395255b968","noticeScope":"008c16003fb29358","kind":"报名及作品提交截止","date":"2026-08-24","source":"https://cpipc.acge.org.cn/pw/notice/list/1"}
+{"type":"series","id":"comap-mcm-icm","name":"COMAP Mathematical Contest in Modeling / Interdisciplinary Contest in Modeling"}
+{"type":"edition-record","id":"87268ffc58729160","series":"comap-mcm-icm","label":"2027 MCM/ICM","scope":"资料所述届次或周期；含待确认记录","sources":["https://contest.comap.com/undergraduate/contests/mcm/instructions.html","https://www.comap.com/contests/mcm-icm"]}
+{"type":"notice-scope","id":"82054713f1e7981e","series":"comap-mcm-icm","edition":"87268ffc58729160","label":"COMAP赛事 · 美国东部标准时间"}
+{"type":"milestone","id":"dad5991696b9cc2e","series":"comap-mcm-icm","edition":"87268ffc58729160","noticeScope":"82054713f1e7981e","kind":"注册截止","date":"2027-01-28 15:00 EST（北京时间 01-29 04:00）前","source":"https://contest.comap.com/undergraduate/contests/mcm/instructions.html"}
+{"type":"milestone","id":"3e9f99dbf8781a16","series":"comap-mcm-icm","edition":"87268ffc58729160","noticeScope":"82054713f1e7981e","kind":"报告提交截止","date":"2027-02-01 21:00 EST（北京时间 02-02 10:00）","source":"https://contest.comap.com/undergraduate/contests/mcm/instructions.html"}
+{"type":"series","id":"igem-collegiate","name":"iGEM Collegiate Competition"}
+{"type":"edition-record","id":"27172bcc1236e716","series":"igem-collegiate","label":"2026","scope":"资料所述届次或周期；含待确认记录","sources":["https://competition.igem.org/?page=10","https://jiaowu.nwpu.edu.cn/info/1164/26568.htm"]}
+{"type":"series","id":"ccpc-collegiate","name":"中国大学生程序设计竞赛（CCPC）"}
+{"type":"edition-record","id":"9a6282c2e2e521b6","series":"ccpc-collegiate","label":"2026赛季","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.iccpc.cn/","https://ccpc.io/uploads/20260317/%E7%AC%AC%E5%8D%81%E4%B8%80%E5%B1%8A%E4%B8%AD%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B%E6%80%BB%E5%86%B3%E8%B5%9B%E9%82%80%E8%AF%B7%E5%87%BD_%E7%9B%96%E7%AB%A0%E7%89%88.pdf"]}
+{"type":"series","id":"robomaster-university","name":"RoboMaster机甲大师高校系列赛"}
+{"type":"edition-record","id":"29780d8bab5cd21a","series":"robomaster-university","label":"2027联盟赛","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.robomaster.com/zh-CN/robo/college-league"]}
+{"type":"notice-scope","id":"a803f96e161c9c91","series":"robomaster-university","edition":"29780d8bab5cd21a","label":"2027联盟赛"}
+{"type":"milestone","id":"4f2751bd0bf09ac8","series":"robomaster-university","edition":"29780d8bab5cd21a","noticeScope":"a803f96e161c9c91","kind":"院校报名截止","date":"2026-10-30 15:00","source":"https://www.robomaster.com/zh-CN/robo/college-league"}
+{"type":"series","id":"asc-supercomputing","name":"ASC世界大学生超级计算机竞赛"}
+{"type":"edition-record","id":"d2440409db55e178","series":"asc-supercomputing","label":"ASC26","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.asc-events.net/StudentChallenge/ASC26/Register.php"]}
+{"type":"series","id":"biomedical-engineering-design","name":"全国大学生生物医学工程创新设计竞赛"}
+{"type":"edition-record","id":"c57369ce81c53744","series":"biomedical-engineering-design","label":"2026第十一届","scope":"资料所述届次或周期；含待确认记录","sources":["https://cxcy.njupt.edu.cn/2026/0319/c11336a298051/page.htm"]}
+{"type":"track","id":"9b31a4dd82271d3b","series":"biomedical-engineering-design","trackKey":"assigned-problem","label":"命题项目","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://cxcy.njupt.edu.cn/2026/0319/c11336a298051/page.htm"}
+{"type":"track","id":"970fed86436e68c0","series":"biomedical-engineering-design","trackKey":"student-proposal","label":"自选项目","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://cxcy.njupt.edu.cn/2026/0319/c11336a298051/page.htm"}
+{"type":"series","id":"pharmacy-student-forum","name":"全国大学生药苑论坛"}
+{"type":"edition-record","id":"01ebbf5b3e3be88a","series":"pharmacy-student-forum","label":"2026第十八届","scope":"资料所述届次或周期；含待确认记录","sources":["https://vr.cpu.edu.cn/b6/7c/c940a243324/page.htm"]}
+{"type":"track","id":"60d53b4ab34a2e6d","series":"pharmacy-student-forum","trackKey":"pharmacy-science","label":"药学科学","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://vr.cpu.edu.cn/b6/7c/c940a243324/page.htm"}
+{"type":"track","id":"24f6735946871410","series":"pharmacy-student-forum","trackKey":"pharmacy-service","label":"药学服务","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://vr.cpu.edu.cn/b6/7c/c940a243324/page.htm"}
+{"type":"series","id":"nactrans","name":"全国大学生交通运输科技大赛（NACTranS）"}
+{"type":"edition-record","id":"449644f54e84912b","series":"nactrans","label":"2026第二十一届","scope":"资料所述届次或周期；含待确认记录","sources":["https://tumu.bucea.edu.cn/ztzl/dxss/83e47af9f4214006a7eede58f9113b3c.htm"]}
+{"type":"notice-scope","id":"4a7de4e57929f617","series":"nactrans","edition":"449644f54e84912b","label":"高校团体报名（1号通知）"}
+{"type":"milestone","id":"03b8b87a3301d70b","series":"nactrans","edition":"449644f54e84912b","noticeScope":"4a7de4e57929f617","kind":"院校报名截止","date":"2026-03-15 18:00","source":"https://tumu.bucea.edu.cn/ztzl/dxss/83e47af9f4214006a7eede58f9113b3c.htm"}
+{"type":"notice-scope","id":"b23f2ca3f0755375","series":"nactrans","edition":"449644f54e84912b","label":"全国作品提交（1号通知）"}
+{"type":"milestone","id":"296cba9d283eb7f1","series":"nactrans","edition":"449644f54e84912b","noticeScope":"b23f2ca3f0755375","kind":"作品提交截止","date":"2026-03-31","source":"https://tumu.bucea.edu.cn/ztzl/dxss/83e47af9f4214006a7eede58f9113b3c.htm"}
+{"type":"track","id":"e193161470299d0d","series":"nactrans","trackKey":"undergraduate","label":"本科生赛道","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://tumu.bucea.edu.cn/ztzl/dxss/83e47af9f4214006a7eede58f9113b3c.htm"}
+{"type":"track","id":"d41a88ed8a967cb4","series":"nactrans","trackKey":"graduate","label":"研究生赛道","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://tumu.bucea.edu.cn/ztzl/dxss/83e47af9f4214006a7eede58f9113b3c.htm"}
+{"type":"track","id":"3cf332bf55c9fe5f","series":"nactrans","trackKey":"themed","label":"主题赛道","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://tumu.bucea.edu.cn/ztzl/dxss/83e47af9f4214006a7eede58f9113b3c.htm"}
+{"type":"series","id":"concrete-material-design","name":"全国大学生混凝土材料设计大赛"}
+{"type":"edition-record","id":"9ca7e2502113e36d","series":"concrete-material-design","label":"2026第八届","scope":"资料所述届次或周期；含待确认记录","sources":["https://civil.csu.edu.cn/info/1112/12265.htm"]}
+{"type":"series","id":"collegiate-gis-skills","name":"高校大学生GIS应用技能大赛"}
+{"type":"edition-record","id":"3d2ad28e1e512784","series":"collegiate-gis-skills","label":"2026第十五届","scope":"资料所述届次或周期；含待确认记录","sources":["https://gsee.swjtu.edu.cn/info/1061/33973.htm"]}
+{"type":"notice-scope","id":"69506ee1599a1a3d","series":"collegiate-gis-skills","edition":"3d2ad28e1e512784","label":"全国／国际主入口"}
+{"type":"milestone","id":"c2172649dc5b4661","series":"collegiate-gis-skills","edition":"3d2ad28e1e512784","noticeScope":"69506ee1599a1a3d","kind":"比赛开始","date":"2026-11-20","source":"https://gsee.swjtu.edu.cn/info/1061/33973.htm"}
+{"type":"series","id":"neccs","name":"全国大学生英语竞赛（NECCS）"}
+{"type":"edition-record","id":"7cc24cd31d894cc2","series":"neccs","label":"2026","scope":"资料所述届次或周期；含待确认记录","sources":["https://yt.cau.edu.cn/module/download/downfile.jsp?classid=0&filename=1db514df848b46acbcff76c2ee11140b.pdf","https://yt.cau.edu.cn/art/2026/3/2/art_43337_1100321.html"]}
+{"type":"series","id":"national-interpreting-english","name":"全国口译大赛（英语）"}
+{"type":"edition-record","id":"a39663a3eb3a84c4","series":"national-interpreting-english","label":"第十五届线索","scope":"资料所述届次或周期；含待确认记录","sources":["https://jwc.nbu.edu.cn/info/1126/18166.htm"]}
+{"type":"series","id":"jessup-international-law","name":"Philip C. Jessup国际法模拟法庭竞赛"}
+{"type":"edition-record","id":"c0cfeca98c05709e","series":"jessup-international-law","label":"Jessup2027","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.ilsa.org/jessup/jessup-2027/","https://www.ilsa.org/jessup/registering-your-team/"]}
+{"type":"notice-scope","id":"6d42f36794be485d","series":"jessup-international-law","edition":"c0cfeca98c05709e","label":"ILSA赛事日历"}
+{"type":"milestone","id":"294c86573b59b386","series":"jessup-international-law","edition":"c0cfeca98c05709e","noticeScope":"6d42f36794be485d","kind":"注册、缴费与名单提交截止","date":"2026-11-20","source":"https://www.ilsa.org/jessup/jessup-2027/"}
+{"type":"milestone","id":"9cc8917afe0ff821","series":"jessup-international-law","edition":"c0cfeca98c05709e","noticeScope":"6d42f36794be485d","kind":"书状提交截止","date":"2027-01-12","source":"https://www.ilsa.org/jessup/jessup-2027/"}
+{"type":"notice-scope","id":"34a0ff9577e95de0","series":"jessup-international-law","edition":"c0cfeca98c05709e","label":"ILSA · 仅特殊许可申请"}
+{"type":"milestone","id":"1a362b27b32b4981","series":"jessup-international-law","edition":"c0cfeca98c05709e","noticeScope":"34a0ff9577e95de0","kind":"特殊参赛资格咨询截止","date":"2026-11-06","source":"https://www.ilsa.org/jessup/jessup-2027/"}
+{"type":"series","id":"vis-commercial-arbitration","name":"Willem C. Vis国际商事仲裁模拟法庭竞赛"}
+{"type":"edition-record","id":"a62c627cb04e8149","series":"vis-commercial-arbitration","label":"2027第34届","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.vismoot.org/home/34th-vis-moot/","https://www.vismoot.org/wp-content/uploads/2026/08/34th-Vis-Moot-Rules_FINAL.pdf"]}
+{"type":"notice-scope","id":"ef8c5f8e934f4005","series":"vis-commercial-arbitration","edition":"a62c627cb04e8149","label":"维也纳第34届比赛"}
+{"type":"milestone","id":"fba932896799d012","series":"vis-commercial-arbitration","edition":"a62c627cb04e8149","noticeScope":"ef8c5f8e934f4005","kind":"注册费缴纳节点","date":"2026-12-11","source":"https://www.vismoot.org/home/34th-vis-moot/"}
+{"type":"milestone","id":"dc2a7e199b83516e","series":"vis-commercial-arbitration","edition":"a62c627cb04e8149","noticeScope":"ef8c5f8e934f4005","kind":"提交注册表截止","date":"2026-11-12","source":"https://www.vismoot.org/home/34th-vis-moot/"}
+{"type":"series","id":"icc-criminal-moot","name":"ICC国际刑事法院模拟法庭竞赛"}
+{"type":"edition-record","id":"c2cb417b56b39bd7","series":"icc-criminal-moot","label":"2027","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.iccmoot.com/","https://law.szu.edu.cn/info/2058/35688.htm"]}
+{"type":"notice-scope","id":"a3ba3085745020dd","series":"icc-criminal-moot","edition":"c2cb417b56b39bd7","label":"海牙国际赛"}
+{"type":"milestone","id":"7b0fcbe3d692f4c7","series":"icc-criminal-moot","edition":"c2cb417b56b39bd7","noticeScope":"a3ba3085745020dd","kind":"口头轮","date":"2027-06-04 至 2027-06-11","source":"https://www.iccmoot.com/"}
+{"type":"series","id":"cfa-research-challenge","name":"CFA Institute Research Challenge"}
+{"type":"edition-record","id":"e6ab3ddef992b104","series":"cfa-research-challenge","label":"2026—2027","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.cfainstitute.org/insights/events/research-challenge"]}
+{"type":"series","id":"ima-management-accounting","name":"IMA校园管理会计案例大赛"}
+{"type":"edition-record","id":"0efefd71f44e8107","series":"ima-management-accounting","label":"2026—2027第十六届","scope":"资料所述届次或周期；含待确认记录","sources":["https://casecompetition.imachina.org.cn/details/101.html","https://casecompetition.imachina.org.cn/details/100.html","https://casecompetition.imachina.org.cn/"]}
+{"type":"notice-scope","id":"1a54302649e64ded","series":"ima-management-accounting","edition":"0efefd71f44e8107","label":"第十六届"}
+{"type":"milestone","id":"9b4efe1bc5857ea9","series":"ima-management-accounting","edition":"0efefd71f44e8107","noticeScope":"1a54302649e64ded","kind":"报名截止","date":"2026-12-16 24:00","source":"https://casecompetition.imachina.org.cn/details/101.html"}
+{"type":"notice-scope","id":"d551ff9b22623601","series":"ima-management-accounting","edition":"0efefd71f44e8107","label":"区域赛作品"}
+{"type":"milestone","id":"6fe870a3347dae0c","series":"ima-management-accounting","edition":"0efefd71f44e8107","noticeScope":"d551ff9b22623601","kind":"作品提交截止","date":"2027-02-24 24:00","source":"https://casecompetition.imachina.org.cn/details/101.html"}
+{"type":"series","id":"cgma-global-business","name":"CGMA商业精英国际挑战赛（GBC）"}
+{"type":"edition-record","id":"ef8f3eddf4da4a3a","series":"cgma-global-business","label":"2026","scope":"资料所述届次或周期；含待确认记录","sources":["https://gbc.cncima.com/2026/","https://kjxy.nfu.edu.cn/info/1096/19773.htm"]}
+{"type":"series","id":"loreal-brandstorm","name":"L’Oréal Brandstorm"}
+{"type":"edition-record","id":"7223179689389f00","series":"loreal-brandstorm","label":"2027","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.loreal.com/en/brandstorm","https://brandstorm2026.loreal.com/en"]}
+{"type":"series","id":"hult-prize","name":"EF Hult Prize"}
+{"type":"edition-record","id":"4ea881a5e85d69d5","series":"hult-prize","label":"2027注册页","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.hultprize.org/register/"]}
+{"type":"series","id":"james-dyson-award","name":"James Dyson Award"}
+{"type":"edition-record","id":"c135d255026d5ef8","series":"james-dyson-award","label":"2026；2027待公告","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.jamesdysonaward.org/how-to-enter/"]}
+{"type":"series","id":"if-student-award","name":"iF DESIGN STUDENT AWARD"}
+{"type":"edition-record","id":"c733fd4faa29dcda","series":"if-student-award","label":"2027","scope":"资料所述届次或周期；含待确认记录","sources":["https://ifdesign.com/en/if-design-student-award-faqs","https://ifdesign.com/en/if-design-student-award"]}
+{"type":"notice-scope","id":"635b6dc55abfbedc","series":"if-student-award","edition":"c733fd4faa29dcda","label":"学生设计奖 · 欧洲中部时间"}
+{"type":"milestone","id":"bb76771588c0931d","series":"if-student-award","edition":"c733fd4faa29dcda","noticeScope":"635b6dc55abfbedc","kind":"作品提交截止","date":"2027-02-03 23:59 CET（北京时间 02-04 06:59）","source":"https://ifdesign.com/en/if-design-student-award-faqs"}
+{"type":"series","id":"student-rural-revitalization","name":"全国大学生乡村振兴大赛"}
+{"type":"edition-record","id":"8f18aecb69e2ae92","series":"student-rural-revitalization","label":"2026第六届","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.yee.org.cn/qywwxdt/202608/t20260811_16809709.htm","https://xkjszx.nwafu.edu.cn/sstz/23f65495146e4b08aa7517e0af0cea40.htm"]}
+{"type":"series","id":"microsoft-imagine-cup","name":"Microsoft Imagine Cup"}
+{"type":"edition-record","id":"ee7517364c802dc1","series":"microsoft-imagine-cup","label":"2027","scope":"资料所述届次或周期；含待确认记录","sources":["https://imaginecup.microsoft.com/en-us/compete"]}
+{"type":"series","id":"collegiate-chemistry-lab","name":"全国大学生化学实验竞赛（原全国大学生化学实验邀请赛）"}
+{"type":"edition-record","id":"144093104eec7602","series":"collegiate-chemistry-lab","label":"第十四届（福州大学及福建赛区通知）","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.chem.pku.edu.cn/rice/docs/2026-02/d1b83cee480d481091d87f4b2bdb5a06.pdf","https://chem.fzu.edu.cn/info/1066/15448.htm"]}
+{"type":"series","id":"pharmaceutical-process-design","name":"全国大学生制药工程设计竞赛"}
+{"type":"edition-record","id":"82fb7d54ceaa1eb1","series":"pharmaceutical-process-design","label":"2025年第十三届（历史资料）","scope":"资料所述届次或周期；含待确认记录","sources":["https://hgxy.nuc.edu.cn/info/1056/10675.htm"]}
+{"type":"notice-scope","id":"f40d29626420e90d","series":"pharmaceutical-process-design","edition":"82fb7d54ceaa1eb1","label":"中北大学 · 第十三届历史校赛"}
+{"type":"milestone","id":"7ce6e76611bc599c","series":"pharmaceutical-process-design","edition":"82fb7d54ceaa1eb1","noticeScope":"f40d29626420e90d","kind":"校内报名截止","date":"2025-04-30 前","source":"https://hgxy.nuc.edu.cn/info/1056/10675.htm"}
+{"type":"series","id":"cosmetics-innovation","name":"全国大学生化妆品创新大赛"}
+{"type":"edition-record","id":"e75f73a8366cbee0","series":"cosmetics-innovation","label":"第四届（协会公告）","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.chcia.org.cn/newsinfo/11114391.html","https://jwc.shzu.edu.cn/_t121/2026/0511/c316a232090/page.htm"]}
+{"type":"track","id":"88ccd6ebbac8dfd4","series":"cosmetics-innovation","trackKey":"ingredients","label":"原料开发组","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://jwc.shzu.edu.cn/_t121/2026/0511/c316a232090/page.htm"}
+{"type":"track","id":"9b4fe19ef3c2bd94","series":"cosmetics-innovation","trackKey":"formulation","label":"产品创意和配方设计组","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://jwc.shzu.edu.cn/_t121/2026/0511/c316a232090/page.htm"}
+{"type":"track","id":"fb008f3668d4fe7c","series":"cosmetics-innovation","trackKey":"packaging","label":"包装设计组","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://jwc.shzu.edu.cn/_t121/2026/0511/c316a232090/page.htm"}
+{"type":"series","id":"lee-li-moot","name":"理律杯全国高校模拟法庭竞赛"}
+{"type":"edition-record","id":"a031aafea0f720e5","series":"lee-li-moot","label":"2026年第二十四届","scope":"资料所述届次或周期；含待确认记录","sources":["https://lilvbei.law.tsinghua.edu.cn/info/1031/1519.htm","https://law.szu.edu.cn/info/1725/15268.htm"]}
+{"type":"series","id":"red-cross-ihl-moot","name":"红十字国际委员会国际人道法模拟法庭竞赛"}
+{"type":"edition-record","id":"514203294ce9f292","series":"red-cross-ihl-moot","label":"2026年第二十届中国赛资料","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.icrc.org/zh/document/china-moot-court-links","https://law.jlu.edu.cn/info/1046/25405.htm"]}
+{"type":"series","id":"student-public-relations","name":"中国大学生公共关系策划创业大赛"}
+{"type":"edition-record","id":"da1f23cf2f096f76","series":"student-public-relations","label":"第十届（2025年资料）","scope":"资料所述届次或周期；含待确认记录","sources":["https://cusprpc2025.cipra.org.cn/site/term/2.html"]}
+{"type":"notice-scope","id":"44f41ba0148ce4ff","series":"student-public-relations","edition":"da1f23cf2f096f76","label":"第十届历史资料"}
+{"type":"milestone","id":"1526f302885a7989","series":"student-public-relations","edition":"da1f23cf2f096f76","noticeScope":"44f41ba0148ce4ff","kind":"报名截止","date":"2025-06-13","source":"https://cusprpc2025.cipra.org.cn/site/term/2.html"}
+{"type":"series","id":"environmental-law-moot","name":"全国大学生环境资源模拟法庭大赛"}
+{"type":"edition-record","id":"a087356132eb00e5","series":"environmental-law-moot","label":"2026年赛事","scope":"资料所述届次或周期；含待确认记录","sources":["https://law.cqu.edu.cn/info/1426/20550.htm","https://law.sysu.edu.cn/article/1110"]}
+{"type":"notice-scope","id":"84f2d1dfb1a4caa3","series":"environmental-law-moot","edition":"a087356132eb00e5","label":"中山大学 · 2026年校队选拔"}
+{"type":"milestone","id":"08956c63dc7d1196","series":"environmental-law-moot","edition":"a087356132eb00e5","noticeScope":"84f2d1dfb1a4caa3","kind":"报名表和书状提交截止","date":"2026-05-18 12:00 前","source":"https://law.sysu.edu.cn/article/1110"}
+{"type":"series","id":"national-student-arts","name":"全国大学生艺术展演活动"}
+{"type":"edition-record","id":"be4de27df35db06e","series":"national-student-arts","label":"全国第八届大学生艺术展演活动","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.moe.gov.cn/srcsite/A17/moe_794/moe_628/202604/t20260421_1434298.html"]}
+{"type":"track","id":"c859a52ef41c4d9f","series":"national-student-arts","trackKey":"performance","label":"艺术表演","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://www.moe.gov.cn/srcsite/A17/moe_794/moe_628/202604/t20260421_1434298.html"}
+{"type":"track","id":"111fcd10868c7ac5","series":"national-student-arts","trackKey":"artwork","label":"艺术作品","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://www.moe.gov.cn/srcsite/A17/moe_794/moe_628/202604/t20260421_1434298.html"}
+{"type":"track","id":"eca82bf30ee55a10","series":"national-student-arts","trackKey":"workshop","label":"艺术实践工作坊","task":null,"documentTitle":null,"scope":"所引文件覆盖的赛道/组别；与新一届的关系须核实","source":"https://www.moe.gov.cn/srcsite/A17/moe_794/moe_628/202604/t20260421_1434298.html"}
+{"type":"series","id":"acca-job-hunting","name":"ACCA全国就业力大比拼"}
+{"type":"edition-record","id":"758b44b003b26e81","series":"acca-job-hunting","label":"2026年高校校选；另有2025年历史指南","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.accaglobal.com.cn/uploads/2025-02/guide.pdf","https://www.hnit.edu.cn/jgxy/info/1116/14820.htm"]}
+{"type":"series","id":"formula-student-china","name":"中国大学生方程式系列赛事"}
+{"type":"edition-record","id":"9d3e55acdcbc7cfa","series":"formula-student-china","label":"2026赛季郑州站通知","scope":"资料所述届次或周期；含待确认记录","sources":["https://img.sae-china.org/web/2026/02/%E5%85%B3%E4%BA%8E%E5%90%AF%E5%8A%A82026%E4%B8%AD%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%96%B9%E7%A8%8B%E5%BC%8F%E7%B3%BB%E5%88%97%E8%B5%9B%E4%BA%8B%E9%94%A6%E6%A0%87%E8%B5%9B%E7%9A%84%E9%80%9A%E7%9F%A5.pdf"]}
+{"type":"series","id":"collegiate-welding","name":"全国大学生焊接创新大赛"}
+{"type":"edition-record","id":"8a55a9beb706cf58","series":"collegiate-welding","label":"2026年第九届","scope":"资料所述届次或周期；含待确认记录","sources":["https://cailiao.nwpu.edu.cn/info/1145/50756.htm"]}
+{"type":"series","id":"cryptography-math-challenge","name":"全国高校密码数学挑战赛"}
+{"type":"edition-record","id":"4d2414df11a39131","series":"cryptography-math-challenge","label":"2026年第十一届","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.cacrnet.org.cn/site/content/1578.html","https://news.nankai.edu.cn/ywsd/system/2026/08/21/030073994.shtml"]}
+{"type":"series","id":"exploration-geophysics","name":"全国大学生勘探地球物理大赛"}
+{"type":"edition-record","id":"5b66c9f68fd99e3d","series":"exploration-geophysics","label":"第十三届高校选拔资料","scope":"资料所述届次或周期；含待确认记录","sources":["https://www.gs.com.cn/kantan/new/detail/3709/detail","https://www.swpu.edu.cn/dky/info/1012/37701.htm"]}

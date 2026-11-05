@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="480" viewBox="0 0 1280 480" role="img" aria-labelledby="title desc">
+  <title id="title">attack paths, trust zones and defense checkpoints</title>
+  <desc id="desc">Original technical-editorial competition illustration without official competition identity artwork.</desc>
+  <metadata><![CDATA[{"id":"information-security-confrontation","origin":"ai-generated","generator":"Codex code-native SVG renderer v2","generatedAt":"2026-08-23","semantic":"attack paths, trust zones and defense checkpoints","direction":"人工智能与物联","externalAssets":false,"officialIdentityUsed":false,"humanAuthorshipClaimed":false,"humanReviewStatus":"not-claimed","editorialReviewStatus":"assistant-reviewed-passed","editorialReviewedAt":"2026-08-23","implicitLabelStandard":"GB 45438-2025","implicitLabel":{"Label":"1","ContentProducer":"Saitu Campus","ProduceID":"3c9de4edac9061f6457fc931cbd8400f","ReservedCode1":"","ContentPropagator":"Saitu Campus","PropagateID":"3c9de4edac9061f6457fc931cbd8400f","ReservedCode2":""}}]]></metadata>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#242B49" stroke-opacity=".065" stroke-width="1"/></pattern>
+    <pattern id="fiber" width="73" height="47" patternUnits="userSpaceOnUse"><path d="m6 11 17-2m18 25 24 2M31 43l13-1" stroke="#242B49" stroke-width=".7" opacity=".08"/></pattern>
+    <pattern id="hatching" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(12)"><path d="M0 0V9" stroke="#16A09A" stroke-width="3" opacity=".52"/></pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="m0 0 9 5-9 5Z" fill="#4D59C4"/></marker>
+    <clipPath id="artboard"><rect width="1280" height="480"/></clipPath>
+  </defs>
+  <style>
+    .s{fill:none;stroke:#242B49;stroke-width:4.2;stroke-linecap:square;stroke-linejoin:miter}
+    .h{fill:none;stroke:#242B49;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;opacity:.72}
+    .dim{fill:none;stroke:#4D59C4;stroke-width:2;stroke-dasharray:8 7;opacity:.86}
+    .a{fill:#4D59C4}.b{fill:#16A09A}.wash{fill:#4D59C4;opacity:.14}.paper{fill:#F0F0E8}.hatch{fill:url(#hatching)}
+    .mis{transform:translate(3px,-2px);opacity:.38}.frame{fill:none;stroke:#242B49;stroke-width:1.5;opacity:.36}
+    .label,.notation{font-family:Arial,"Noto Sans SC",sans-serif;font-size:15px;font-weight:700;letter-spacing:2.3px;fill:#242B49;opacity:.72}
+    .notation{font-size:13px;fill:#4D59C4;opacity:1}
+  </style>
+  <rect width="1280" height="480" fill="#F0F0E8"/>
+  <rect width="1280" height="480" fill="url(#fiber)"/>
+  <rect width="1280" height="480" fill="url(#grid)"/>
+  <g clip-path="url(#artboard)">
+    <path d="M-50 422 351 18" stroke="#16A09A" stroke-width="36" opacity=".07"/>
+    <path d="m1038 506 292-294" stroke="#4D59C4" stroke-width="20" opacity=".08"/>
+    
+      <path class="frame" d="M351 39v402M322 39v402M88 128h263M88 352h263"/>
+      <text class="label" x="88" y="105">人工智能与物联</text>
+      <text class="notation" x="88" y="385">CVE / 05</text>
+    <g transform="translate(536 48) scale(1.05)">
+    <g transform="translate(7 5)">
+      <g class="wash"><rect x="25" y="35" width="185" height="283"/><rect x="256" y="35" width="185" height="283"/><rect x="487" y="35" width="185" height="283"/></g>
+      <g class="s"><rect x="25" y="35" width="185" height="283"/><rect x="256" y="35" width="185" height="283"/><rect x="487" y="35" width="185" height="283"/></g>
+      <path class="h" d="M57 81h121M57 126h87M57 171h121M57 216h67M57 261h121M288 81h121M288 126h87M288 171h121M519 81h121M519 126h87M519 171h121"/>
+      <path class="s" d="M210 112h46m185 121h46" marker-end="url(#arrow)"/>
+      <path class="a" d="m336 205 30 18-30 18-30-18Z"/><path class="b" d="m567 233 30 18-30 18-30-18Z"/>
+      <path class="mis s" d="M72 297 283 67l107 167 239-121"/>
+      <path class="a" d="m381 220 20 37-42-3Z"/>
+    </g></g>
+    <g opacity=".5"><path class="s" d="M31 31h22M42 20v22M1227 449h22M1238 438v22"/></g>
+  </g>
+</svg>

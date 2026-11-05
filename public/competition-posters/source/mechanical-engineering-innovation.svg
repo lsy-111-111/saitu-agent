@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="480" viewBox="0 0 1280 480" role="img" aria-labelledby="title desc">
+  <title id="title">gear train, linkage envelope and exploded fasteners</title>
+  <desc id="desc">Original technical-editorial competition illustration without official competition identity artwork.</desc>
+  <metadata><![CDATA[{"id":"mechanical-engineering-innovation","origin":"ai-generated","generator":"Codex code-native SVG renderer v2","generatedAt":"2026-08-23","semantic":"gear train, linkage envelope and exploded fasteners","direction":"工程与制造","externalAssets":false,"officialIdentityUsed":false,"humanAuthorshipClaimed":false,"humanReviewStatus":"not-claimed","editorialReviewStatus":"assistant-reviewed-passed","editorialReviewedAt":"2026-08-23","implicitLabelStandard":"GB 45438-2025","implicitLabel":{"Label":"1","ContentProducer":"Saitu Campus","ProduceID":"3f51863782e60c6cef27acacd6dbd4f1","ReservedCode1":"","ContentPropagator":"Saitu Campus","PropagateID":"3f51863782e60c6cef27acacd6dbd4f1","ReservedCode2":""}}]]></metadata>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#17343D" stroke-opacity=".065" stroke-width="1"/></pattern>
+    <pattern id="fiber" width="73" height="47" patternUnits="userSpaceOnUse"><path d="m6 11 17-2m18 25 24 2M31 43l13-1" stroke="#17343D" stroke-width=".7" opacity=".08"/></pattern>
+    <pattern id="hatching" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(12)"><path d="M0 0V9" stroke="#D36A3D" stroke-width="3" opacity=".52"/></pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="m0 0 9 5-9 5Z" fill="#16858C"/></marker>
+    <clipPath id="artboard"><rect width="1280" height="480"/></clipPath>
+  </defs>
+  <style>
+    .s{fill:none;stroke:#17343D;stroke-width:4.2;stroke-linecap:square;stroke-linejoin:miter}
+    .h{fill:none;stroke:#17343D;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;opacity:.72}
+    .dim{fill:none;stroke:#16858C;stroke-width:2;stroke-dasharray:8 7;opacity:.86}
+    .a{fill:#16858C}.b{fill:#D36A3D}.wash{fill:#16858C;opacity:.14}.paper{fill:#F1EFE7}.hatch{fill:url(#hatching)}
+    .mis{transform:translate(3px,-2px);opacity:.38}.frame{fill:none;stroke:#17343D;stroke-width:1.5;opacity:.36}
+    .label,.notation{font-family:Arial,"Noto Sans SC",sans-serif;font-size:15px;font-weight:700;letter-spacing:2.3px;fill:#17343D;opacity:.72}
+    .notation{font-size:13px;fill:#16858C;opacity:1}
+  </style>
+  <rect width="1280" height="480" fill="#F1EFE7"/>
+  <rect width="1280" height="480" fill="url(#fiber)"/>
+  <rect width="1280" height="480" fill="url(#grid)"/>
+  <g clip-path="url(#artboard)">
+    <path d="M-50 422 351 18" stroke="#D36A3D" stroke-width="36" opacity=".07"/>
+    <path d="m1038 506 292-294" stroke="#16858C" stroke-width="20" opacity=".08"/>
+    
+      <path class="frame" d="M351 39v402M322 39v402M88 128h263M88 352h263"/>
+      <text class="label" x="88" y="105">工程与制造</text>
+      <text class="notation" x="88" y="385">GEAR / 13</text>
+    <g transform="translate(536 48) scale(1.05)">
+    <g transform="translate(18 2)">
+      <path class="wash" d="M65 194c0-88 46-144 123-144 34 0 56 24 57 59 1 30 14 44 46 52 51 12 69 55 41 97-31 47-83 68-147 57-77-13-120-52-120-121Z"/>
+      <path class="s" d="M65 194c0-88 46-144 123-144 34 0 56 24 57 59 1 30 14 44 46 52 51 12 69 55 41 97-31 47-83 68-147 57-77-13-120-52-120-121Z"/>
+      <circle class="s" cx="187" cy="179" r="31"/><circle class="a" cx="187" cy="179" r="10"/>
+      <path class="s" d="m214 195 139 80 103-147 154 66"/><g class="a"><circle cx="353" cy="275" r="12"/><circle cx="456" cy="128" r="12"/><circle cx="610" cy="194" r="12"/></g>
+      <path class="dim" d="M371 248a93 93 0 0 1 66-96" marker-end="url(#arrow)"/>
+      <path class="h" d="M45 341h615"/>
+    </g></g>
+    <g opacity=".5"><path class="s" d="M31 31h22M42 20v22M1227 449h22M1238 438v22"/></g>
+  </g>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="480" viewBox="0 0 1280 480" role="img" aria-labelledby="title desc">
+  <title id="title">设计展板、过程图与项目说明</title>
+  <desc id="desc">Original technical-editorial competition illustration without official competition identity artwork.</desc>
+  <metadata><![CDATA[{"id":"if-student-award","origin":"ai-generated","generator":"Codex code-native SVG renderer v2","generatedAt":"2026-11-04","semantic":"设计展板、过程图与项目说明","direction":"创意与数字","externalAssets":false,"officialIdentityUsed":false,"humanAuthorshipClaimed":false,"humanReviewStatus":"not-claimed","editorialReviewStatus":"assistant-reviewed-passed","editorialReviewedAt":"2026-11-04","implicitLabelStandard":"GB 45438-2025","implicitLabel":{"Label":"1","ContentProducer":"Saitu Campus","ProduceID":"49a051eb307c996a551ca536ad32d6e8","ReservedCode1":"","ContentPropagator":"Saitu Campus","PropagateID":"49a051eb307c996a551ca536ad32d6e8","ReservedCode2":""}}]]></metadata>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#20243B" stroke-opacity=".065" stroke-width="1"/></pattern>
+    <pattern id="fiber" width="73" height="47" patternUnits="userSpaceOnUse"><path d="m6 11 17-2m18 25 24 2M31 43l13-1" stroke="#20243B" stroke-width=".7" opacity=".08"/></pattern>
+    <pattern id="hatching" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(12)"><path d="M0 0V9" stroke="#D65E73" stroke-width="3" opacity=".52"/></pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="m0 0 9 5-9 5Z" fill="#5356C9"/></marker>
+    <clipPath id="artboard"><rect width="1280" height="480"/></clipPath>
+  </defs>
+  <style>
+    .s{fill:none;stroke:#20243B;stroke-width:4.2;stroke-linecap:square;stroke-linejoin:miter}
+    .h{fill:none;stroke:#20243B;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;opacity:.72}
+    .dim{fill:none;stroke:#5356C9;stroke-width:2;stroke-dasharray:8 7;opacity:.86}
+    .a{fill:#5356C9}.b{fill:#D65E73}.wash{fill:#5356C9;opacity:.14}.paper{fill:#F3EFE6}.hatch{fill:url(#hatching)}
+    .mis{transform:translate(3px,-2px);opacity:.38}.frame{fill:none;stroke:#20243B;stroke-width:1.5;opacity:.36}
+    .label,.notation{font-family:Arial,"Noto Sans SC",sans-serif;font-size:15px;font-weight:700;letter-spacing:2.3px;fill:#20243B;opacity:.72}
+    .notation{font-size:13px;fill:#5356C9;opacity:1}
+  </style>
+  <rect width="1280" height="480" fill="#F3EFE6"/>
+  <rect width="1280" height="480" fill="url(#fiber)"/>
+  <rect width="1280" height="480" fill="url(#grid)"/>
+  <g clip-path="url(#artboard)">
+    <path d="M-50 422 351 18" stroke="#D65E73" stroke-width="36" opacity=".07"/>
+    <path d="m1038 506 292-294" stroke="#5356C9" stroke-width="20" opacity=".08"/>
+    
+    <path class="frame" d="M68 39v402M1212 39v402M68 82h1144M68 398h1144"/>
+    <text class="label" x="92" y="71">创意与数字</text>
+    <text class="notation" x="1047" y="71">可持续学生设计 / 20</text>
+    <g transform="translate(284 58) scale(1.02)">
+    <g transform="translate(8 0)">
+      <path class="wash" d="M63 53c75-29 188-28 257 2l-22 102c-11 50-50 79-102 79s-94-30-105-80Z"/>
+      <path class="s" d="M63 53c75-29 188-28 257 2l-22 102c-11 50-50 79-102 79s-94-30-105-80Z"/>
+      <path class="h" d="M83 95c65-25 159-24 218 2M92 143c60-20 140-20 199 0M196 34v224"/>
+      <path class="s" d="M386 69h191v91H386Zm0 133h191v91H386Z"/><path class="h" d="M422 114h121M415 248c34-35 94-34 132 0"/>
+      <g><rect class="a" x="610" y="69" width="58" height="58"/><rect class="b" x="610" y="141" width="58" height="58"/><rect class="hatch" x="610" y="213" width="58" height="58"/></g>
+      <path class="dim" d="M50 280h275m-275-11v22m275-22v22"/>
+    </g></g>
+    <g opacity=".5"><path class="s" d="M31 31h22M42 20v22M1227 449h22M1238 438v22"/></g>
+  </g>
+</svg>

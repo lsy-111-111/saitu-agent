@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 1,
+  "evidenceType": "resume-ai-release-required-tests",
+  "minimumPassedObservations": 19,
+  "projectToolchain": {
+    "schemaVersion": 1,
+    "policyId": "resume-ai-project-toolchain.v1",
+    "inputs": [
+      {
+        "path": "package.json",
+        "sha256": "d1af29380ea26fc3057eee45150b217f6d8163fee6625e293ac8796346cef488"
+      },
+      {
+        "path": "pnpm-lock.yaml",
+        "sha256": "528fe4316b80f1cdc3665303b967d25fc01b43f55cde03a1b9eb4693bc362db7"
+      },
+      {
+        "path": "pnpm-workspace.yaml",
+        "sha256": "e75f844f4a9a6e0f9b39809bf2e249625a3ce20590c40107f25dfa720aa451a5"
+      }
+    ],
+    "runtime": {
+      "node": {
+        "executable": "/opt/nodejs/node-v24.20.0-linux-x64/bin/node",
+        "version": "v24.20.0"
+      },
+      "pnpm": {
+        "entrypoint": "/opt/nodejs/node-v24.20.0-linux-x64/lib/runtime-tools/node_modules/pnpm/bin/pnpm.mjs",
+        "name": "pnpm",
+        "version": "11.19.0"
+      }
+    },
+    "tools": [
+      {
+        "id": "eslint",
+        "packageName": "eslint",
+        "packagePath": "node_modules/eslint",
+        "version": "8.57.1",
+        "binName": "eslint",
+        "binTarget": "bin/eslint.js"
+      },
+      {
+        "id": "next",
+        "packageName": "next",
+        "packagePath": "node_modules/next",
+        "version": "15.5.24",
+        "binName": "next",
+        "binTarget": "dist/bin/next"
+      },
+      {
+        "id": "playwright",
+        "packageName": "playwright",
+        "packagePath": "node_modules/playwright",
+        "version": "1.60.0",
+        "binName": "playwright",
+        "binTarget": "cli.js"
+      },
+      {
+        "id": "playwright-test",
+        "packageName": "@playwright/test",
+        "packagePath": "node_modules/@playwright/test",
+        "version": "1.60.0",
+        "binName": "playwright",
+        "binTarget": "cli.js"
+      },
+      {
+        "id": "typescript",
+        "packageName": "typescript",
+        "packagePath": "node_modules/typescript",
+        "version": "5.7.2",
+        "binName": "tsc",
+        "binTarget": "bin/tsc"
+      },
+      {
+        "id": "vitest",
+        "packageName": "vitest",
+        "packagePath": "node_modules/vitest",
+        "version": "3.2.6",
+        "binName": "vitest",
+        "binTarget": "vitest.mjs"
+      }
+    ]
+  },
+  "sourcePins": [
+    {
+      "path": "playwright.config.ts",
+      "sha256": "ee7b3b7ff6c736e79c07d0152e4cbd5fe3dfc65a74f8b3c58e76e98fde0998e2"
+    },
+    {
+      "path": "tests/ai/competition-ai.test.ts",
+      "sha256": "20998b842016061e0532ee11bc74b35f7fa7b7b246fb1c5efe218c895acf7478"
+    },
+    {
+      "path": "tests/ai/competition-clarify-route.test.ts",
+      "sha256": "eb756e0669e0a0c9c6ca6cd29d9139aa016e358b9a8e81f983e3a1e7a097e5ef"
+    },
+    {
+      "path": "tests/ai/competition-recommendation.test.ts",
+      "sha256": "35d7b91e997ec71c5bd09c765b28c1d9e4b7b933d9e60f52c38c8845ca67e0ea"
+    },
+    {
+      "path": "tests/deployment/production-ops.test.ts",
+      "sha256": "d4c8790f4d7a39aab0615fdd79b7327f8296ce1dee6c330538d46d06e960e82b"
+    },
+    {
+      "path": "tests/e2e/competition-recommend.spec.ts",
+      "sha256": "333b0e68f61b66418ae08ba174079a7ce7fc57d3de438222ed903ee7e91df27e"
+    },
+    {
+      "path": "tests/security/competition-session-control.test.ts",
+      "sha256": "4eec377e011d80d5bf766b2166dd82392537064ce7213ab24f042d154c3a87ca"
+    },
+    {
+      "path": "tests/security/competition-shared-state-postgres.integration.test.ts",
+      "sha256": "66a04d77ade984f09976c76660877024afd9c4df883b588b030b318e136a7e63"
+    },
+    {
+      "path": "vitest.config.ts",
+      "sha256": "0afd980d2e576ff96bcdfd1a990445c0e1812c07ecbafd4ddf269e34b58caa53"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "followups-0-desktop",
+      "categories": ["followups-0"],
+      "framework": "playwright",
+      "report": "playwright-production",
+      "testFile": "tests/e2e/competition-recommend.spec.ts",
+      "fullName": "信息已足够时可以跳过可选偏好题并直接查看推荐",
+      "project": "desktop",
+      "minimumPassed": 1
+    },
+    {
+      "id": "followups-1-desktop",
+      "categories": ["followups-1"],
+      "framework": "playwright",
+      "report": "playwright-production",
+      "testFile": "tests/e2e/competition-recommend.spec.ts",
+      "fullName": "高价值会话只需一题时立即停止且不会挂载第二或第四题",
+      "project": "desktop",
+      "minimumPassed": 1
+    },
+    {
+      "id": "followups-2-desktop",
+      "categories": ["followups-2", "desktop-e2e"],
+      "framework": "playwright",
+      "report": "playwright-production",
+      "testFile": "tests/e2e/competition-recommend.spec.ts",
+      "fullName": "选项路径先完成 V5 normalization，再以 v8 偏好追问和 rank v4 推荐且修改动态题会失效后续结果",
+      "project": "desktop",
+      "minimumPassed": 1
+    },
+    {
+      "id": "followups-2-mobile",
+      "categories": ["mobile-e2e"],
+      "framework": "playwright",
+      "report": "playwright-production",
+      "testFile": "tests/e2e/competition-recommend.spec.ts",
+      "fullName": "选项路径先完成 V5 normalization，再以 v8 偏好追问和 rank v4 推荐且修改动态题会失效后续结果",
+      "project": "mobile",
+      "minimumPassed": 1
+    },
+    {
+      "id": "followups-3-pure-text-desktop",
+      "categories": ["followups-3", "pure-text-max-10"],
+      "framework": "playwright",
+      "report": "playwright-production",
+      "testFile": "tests/e2e/competition-recommend.spec.ts",
+      "fullName": "全纯文字可完成 14 个可见题包、确认 19 个规范字段，再完成三次动态文字白名单确认并得到推荐",
+      "project": "desktop",
+      "minimumPassed": 1
+    },
+    {
+      "id": "followups-3-pure-text-mobile",
+      "categories": ["followups-3", "pure-text-max-10", "mobile-e2e"],
+      "framework": "playwright",
+      "report": "playwright-production",
+      "testFile": "tests/e2e/competition-recommend.spec.ts",
+      "fullName": "全纯文字可完成 14 个可见题包、确认 19 个规范字段，再完成三次动态文字白名单确认并得到推荐",
+      "project": "mobile",
+      "minimumPassed": 1
+    },
+    {
+      "id": "shared-nat-50-postgres",
+      "categories": ["shared-nat-50"],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/security/competition-shared-state-postgres.integration.test.ts",
+      "fullName": "real PostgreSQL shared security state accepts 50 shared-NAT sessions and limits only the sixty-first minute start",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "shared-nat-50-full-stack",
+      "categories": ["shared-nat-50"],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/security/competition-shared-state-postgres.integration.test.ts",
+      "fullName": "real PostgreSQL shared security state serves 50 shared-NAT recommendation journeys through Nginx and real PostgreSQL",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "session-start-real-threshold",
+      "categories": ["threshold-429-recovery"],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/security/competition-session-control.test.ts",
+      "fullName": "competition session-aware request control limits only the sixty-first unique session start in one minute",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "countdown-answer-recovery-desktop",
+      "categories": ["threshold-429-recovery"],
+      "framework": "playwright",
+      "report": "playwright-production",
+      "testFile": "tests/e2e/competition-recommend.spec.ts",
+      "fullName": "429 HTTP-date 倒计时结束后从 normalize 原地重试且十四题不丢失",
+      "project": "desktop",
+      "minimumPassed": 1
+    },
+    {
+      "id": "countdown-answer-recovery-mobile",
+      "categories": ["threshold-429-recovery", "mobile-e2e"],
+      "framework": "playwright",
+      "report": "playwright-production",
+      "testFile": "tests/e2e/competition-recommend.spec.ts",
+      "fullName": "429 HTTP-date 倒计时结束后从 normalize 原地重试且十四题不丢失",
+      "project": "mobile",
+      "minimumPassed": 1
+    },
+    {
+      "id": "conversation-token-forgery",
+      "categories": ["token-forgery"],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/ai/competition-ai.test.ts",
+      "fullName": "competition conversation token round-trips a signed pending question and rejects tampering",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "conversation-token-expiry",
+      "categories": ["token-expiry"],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/ai/competition-ai.test.ts",
+      "fullName": "competition conversation token expires after the bounded lifetime",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "conversation-token-semantic-replay",
+      "categories": ["token-replay"],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/ai/competition-clarify-route.test.ts",
+      "fullName": "POST /api/ai/competition-clarify preference policy replays one semantic multi-select answer despite order and unsigned recent-history changes",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "cross-session-isolation",
+      "categories": ["token-cross-session"],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/security/competition-session-control.test.ts",
+      "fullName": "competition session-aware request control isolates identical transition hashes across signed sessions",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "queue-8-active-32-waiting",
+      "categories": ["queue-full-fallback"],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/security/competition-shared-state-postgres.integration.test.ts",
+      "fullName": "real PostgreSQL shared security state holds 8 active and 32 queued calls while rejecting the next request",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "queue-full-deterministic-fallback",
+      "categories": ["queue-full-fallback"],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/ai/competition-recommendation.test.ts",
+      "fullName": "DeepSeek competition ranking v4 uses the deterministic full fallback when the model queue times out",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "root-quota-generation-consistency",
+      "categories": ["quota-config-consistency"],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/deployment/production-ops.test.ts",
+      "fullName": "production operations control plane renders the application and Nginx quotas from one validated root config",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "nginx-three-endpoint-consistency",
+      "categories": ["quota-config-consistency"],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/deployment/production-ops.test.ts",
+      "fullName": "production operations control plane applies the same coarse quota to all three recommendation endpoints",
+      "project": "unit",
+      "minimumPassed": 1
+    }
+  ]
+}

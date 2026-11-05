@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="480" viewBox="0 0 1280 480" role="img" aria-labelledby="title desc">
+  <title id="title">exhibition grid, customer route and marketing funnel</title>
+  <desc id="desc">Original technical-editorial competition illustration without official competition identity artwork.</desc>
+  <metadata><![CDATA[{"id":"business-elite-innovation","origin":"ai-generated","generator":"Codex code-native SVG renderer v2","generatedAt":"2026-08-23","semantic":"exhibition grid, customer route and marketing funnel","direction":"商业与职业","externalAssets":false,"officialIdentityUsed":false,"humanAuthorshipClaimed":false,"humanReviewStatus":"not-claimed","editorialReviewStatus":"assistant-reviewed-passed","editorialReviewedAt":"2026-08-23","implicitLabelStandard":"GB 45438-2025","implicitLabel":{"Label":"1","ContentProducer":"Saitu Campus","ProduceID":"95deacf7107a5a40cfcf887a22286a25","ReservedCode1":"","ContentPropagator":"Saitu Campus","PropagateID":"95deacf7107a5a40cfcf887a22286a25","ReservedCode2":""}}]]></metadata>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#283039" stroke-opacity=".065" stroke-width="1"/></pattern>
+    <pattern id="fiber" width="73" height="47" patternUnits="userSpaceOnUse"><path d="m6 11 17-2m18 25 24 2M31 43l13-1" stroke="#283039" stroke-width=".7" opacity=".08"/></pattern>
+    <pattern id="hatching" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(12)"><path d="M0 0V9" stroke="#B8743E" stroke-width="3" opacity=".52"/></pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="m0 0 9 5-9 5Z" fill="#476B91"/></marker>
+    <clipPath id="artboard"><rect width="1280" height="480"/></clipPath>
+  </defs>
+  <style>
+    .s{fill:none;stroke:#283039;stroke-width:4.2;stroke-linecap:square;stroke-linejoin:miter}
+    .h{fill:none;stroke:#283039;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;opacity:.72}
+    .dim{fill:none;stroke:#476B91;stroke-width:2;stroke-dasharray:8 7;opacity:.86}
+    .a{fill:#476B91}.b{fill:#B8743E}.wash{fill:#476B91;opacity:.14}.paper{fill:#F2EFE7}.hatch{fill:url(#hatching)}
+    .mis{transform:translate(3px,-2px);opacity:.38}.frame{fill:none;stroke:#283039;stroke-width:1.5;opacity:.36}
+    .label,.notation{font-family:Arial,"Noto Sans SC",sans-serif;font-size:15px;font-weight:700;letter-spacing:2.3px;fill:#283039;opacity:.72}
+    .notation{font-size:13px;fill:#476B91;opacity:1}
+  </style>
+  <rect width="1280" height="480" fill="#F2EFE7"/>
+  <rect width="1280" height="480" fill="url(#fiber)"/>
+  <rect width="1280" height="480" fill="url(#grid)"/>
+  <g clip-path="url(#artboard)">
+    <path d="M-50 422 351 18" stroke="#B8743E" stroke-width="36" opacity=".07"/>
+    <path d="m1038 506 292-294" stroke="#476B91" stroke-width="20" opacity=".08"/>
+    
+      <path class="frame" d="M898 39v402M927 39v402M898 128h294M898 352h294"/>
+      <text class="label" x="958" y="105">商业与职业</text>
+      <text class="notation" x="958" y="385">FLOW / 12</text>
+    <g transform="translate(-34 58) scale(1.06)">
+    <g transform="translate(3 4)">
+      <path class="h" d="M24 42h384v276H24Zm64 0v276m64-276v276m64-276v276m64-276v276m64-276v276M24 111h384M24 180h384M24 249h384"/>
+      <path class="s" d="M55 286c35-129 144-31 174-145 24-92 103-65 151-77" marker-end="url(#arrow)"/>
+      <g class="a"><circle cx="55" cy="286" r="9"/><circle cx="179" cy="201" r="9"/><circle cx="229" cy="141" r="9"/><circle cx="380" cy="64" r="9"/></g>
+      <path class="s" d="M459 44h218l-39 68H498l35 61h70l-37 65h-1l-35 61h72"/>
+      <path class="wash" d="M498 112h140l-35 61h-70Zm35 61h70l-37 65h-1Z"/>
+      <path class="dim" d="M459 327h218"/>
+    </g></g>
+    <g opacity=".5"><path class="s" d="M31 31h22M42 20v22M1227 449h22M1238 438v22"/></g>
+  </g>
+</svg>

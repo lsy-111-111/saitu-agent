@@ -1,0 +1,9 @@
+http://mirrors.tencentyun.com/ubuntu|jammy|jammy|main|amd64|Packages|Packages|/var/lib/apt/lists/mirrors.tencentyun.com_ubuntu_dists_jammy_main_binary-amd64_Packages|yes
+http://mirrors.tencentyun.com/ubuntu|jammy|jammy|restricted|amd64|Packages|Packages|/var/lib/apt/lists/mirrors.tencentyun.com_ubuntu_dists_jammy_restricted_binary-amd64_Packages|yes
+http://mirrors.tencentyun.com/ubuntu|jammy|jammy|universe|amd64|Packages|Packages|/var/lib/apt/lists/mirrors.tencentyun.com_ubuntu_dists_jammy_universe_binary-amd64_Packages|yes
+http://mirrors.tencentyun.com/ubuntu|jammy|jammy|multiverse|amd64|Packages|Packages|/var/lib/apt/lists/mirrors.tencentyun.com_ubuntu_dists_jammy_multiverse_binary-amd64_Packages|yes
+http://mirrors.tencentyun.com/ubuntu|jammy-updates|jammy|main|amd64|Packages|Packages|/var/lib/apt/lists/mirrors.tencentyun.com_ubuntu_dists_jammy-updates_main_binary-amd64_Packages|yes
+http://mirrors.tencentyun.com/ubuntu|jammy-updates|jammy|restricted|amd64|Packages|Packages|/var/lib/apt/lists/mirrors.tencentyun.com_ubuntu_dists_jammy-updates_restricted_binary-amd64_Packages|yes
+http://mirrors.tencentyun.com/ubuntu|jammy-updates|jammy|universe|amd64|Packages|Packages|/var/lib/apt/lists/mirrors.tencentyun.com_ubuntu_dists_jammy-updates_universe_binary-amd64_Packages|yes
+http://mirrors.tencentyun.com/ubuntu|jammy-updates|jammy|multiverse|amd64|Packages|Packages|/var/lib/apt/lists/mirrors.tencentyun.com_ubuntu_dists_jammy-updates_multiverse_binary-amd64_Packages|yes
+https://nginx.org/packages/ubuntu|jammy|jammy|nginx|amd64|Packages|Packages|/var/lib/apt/lists/nginx.org_packages_ubuntu_dists_jammy_nginx_binary-amd64_Packages|yes

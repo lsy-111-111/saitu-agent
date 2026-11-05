@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="480" viewBox="0 0 1280 480" role="img" aria-labelledby="title desc">
+  <title id="title">interface panes, Bezier path and editing timeline</title>
+  <desc id="desc">Original technical-editorial competition illustration without official competition identity artwork.</desc>
+  <metadata><![CDATA[{"id":"china-college-computer-design","origin":"ai-generated","generator":"Codex code-native SVG renderer v2","generatedAt":"2026-08-23","semantic":"interface panes, Bezier path and editing timeline","direction":"创意与数字","externalAssets":false,"officialIdentityUsed":false,"humanAuthorshipClaimed":false,"humanReviewStatus":"not-claimed","editorialReviewStatus":"assistant-reviewed-passed","editorialReviewedAt":"2026-08-23","implicitLabelStandard":"GB 45438-2025","implicitLabel":{"Label":"1","ContentProducer":"Saitu Campus","ProduceID":"ab330f3fd8bf85f4e94f629931b35e9e","ReservedCode1":"","ContentPropagator":"Saitu Campus","PropagateID":"ab330f3fd8bf85f4e94f629931b35e9e","ReservedCode2":""}}]]></metadata>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#20243B" stroke-opacity=".065" stroke-width="1"/></pattern>
+    <pattern id="fiber" width="73" height="47" patternUnits="userSpaceOnUse"><path d="m6 11 17-2m18 25 24 2M31 43l13-1" stroke="#20243B" stroke-width=".7" opacity=".08"/></pattern>
+    <pattern id="hatching" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(12)"><path d="M0 0V9" stroke="#D65E73" stroke-width="3" opacity=".52"/></pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="m0 0 9 5-9 5Z" fill="#5356C9"/></marker>
+    <clipPath id="artboard"><rect width="1280" height="480"/></clipPath>
+  </defs>
+  <style>
+    .s{fill:none;stroke:#20243B;stroke-width:4.2;stroke-linecap:square;stroke-linejoin:miter}
+    .h{fill:none;stroke:#20243B;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;opacity:.72}
+    .dim{fill:none;stroke:#5356C9;stroke-width:2;stroke-dasharray:8 7;opacity:.86}
+    .a{fill:#5356C9}.b{fill:#D65E73}.wash{fill:#5356C9;opacity:.14}.paper{fill:#F3EFE6}.hatch{fill:url(#hatching)}
+    .mis{transform:translate(3px,-2px);opacity:.38}.frame{fill:none;stroke:#20243B;stroke-width:1.5;opacity:.36}
+    .label,.notation{font-family:Arial,"Noto Sans SC",sans-serif;font-size:15px;font-weight:700;letter-spacing:2.3px;fill:#20243B;opacity:.72}
+    .notation{font-size:13px;fill:#5356C9;opacity:1}
+  </style>
+  <rect width="1280" height="480" fill="#F3EFE6"/>
+  <rect width="1280" height="480" fill="url(#fiber)"/>
+  <rect width="1280" height="480" fill="url(#grid)"/>
+  <g clip-path="url(#artboard)">
+    <path d="M-50 422 351 18" stroke="#D65E73" stroke-width="36" opacity=".07"/>
+    <path d="m1038 506 292-294" stroke="#5356C9" stroke-width="20" opacity=".08"/>
+    
+      <path class="frame" d="M68 39v402M93 39v402"/>
+      <text class="label" x="66" y="415" transform="rotate(-90 66 415)">创意与数字</text>
+      <text class="notation" x="112" y="78">PATH / 07</text>
+    <g transform="translate(178 56) scale(1.03)">
+    <g transform="translate(22 12)">
+      <rect class="wash" x="32" y="24" width="562" height="251"/><rect class="s" x="32" y="24" width="562" height="251"/>
+      <path class="h" d="M32 61h562M184 61v214M55 91h106M55 119h79M55 147h96"/>
+      <path class="s" d="M224 221C270 87 370 267 533 91"/>
+      <g class="a"><circle cx="224" cy="221" r="8"/><circle cx="533" cy="91" r="8"/><circle cx="326" cy="154" r="7"/><circle cx="431" cy="159" r="7"/></g>
+      <path class="dim" d="M224 221v-72h102M533 91v72H431"/>
+      <path class="s" d="M67 311h576"/><path class="h" d="M100 292v38M170 300v22M240 292v38M310 300v22M380 292v38M450 300v22M520 292v38M590 300v22"/>
+      <rect class="a" x="369" y="296" width="89" height="30"/>
+    </g></g>
+    <g opacity=".5"><path class="s" d="M31 31h22M42 20v22M1227 449h22M1238 438v22"/></g>
+  </g>
+</svg>

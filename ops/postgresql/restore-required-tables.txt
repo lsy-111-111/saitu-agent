@@ -1,0 +1,11 @@
+# Structural acceptance gate for monthly restore verification.
+ai_consents
+ai_model_daily_usage
+competition_rate_limit_counters
+competition_session_starts
+competition_sessions
+competition_session_transitions
+competition_idempotency
+ai_model_call_leases
+ai_model_call_waiters
+resume_ai_schema_migrations

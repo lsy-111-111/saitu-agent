@@ -1,0 +1,45 @@
+[Unit]
+Description=Resume AI PM2 process supervisor
+Documentation=file:/opt/resume-ai/current/ops/README.md
+Wants=network-online.target
+Requires=postgresql.service
+After=network-online.target postgresql.service
+
+[Service]
+Type=forking
+User=resume-ai
+Group=resume-ai
+Environment=PM2_HOME=/var/lib/resume-ai/.pm2
+Environment=PATH=/opt/nodejs/current/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+PIDFile=/var/lib/resume-ai/.pm2/pm2.pid
+ExecStartPre=+/usr/local/lib/resume-ai/verify-pm2-boot-state.sh
+ExecStart=/opt/nodejs/current/bin/pm2 resurrect
+ExecReload=/opt/nodejs/current/bin/pm2 reload all --update-env
+ExecStop=/opt/nodejs/current/bin/pm2 kill
+Restart=on-failure
+RestartSec=5s
+TimeoutStartSec=60s
+TimeoutStopSec=30s
+UMask=0027
+LimitNOFILE=65536
+NoNewPrivileges=true
+CapabilityBoundingSet=
+AmbientCapabilities=
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+ReadWritePaths=/var/lib/resume-ai /var/log/resume-ai /var/cache/resume-ai
+PrivateDevices=true
+ProtectClock=true
+ProtectKernelLogs=true
+RestrictNamespaces=true
+RestrictRealtime=true
+LockPersonality=true
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+
+[Install]
+WantedBy=multi-user.target

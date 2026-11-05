@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="480" viewBox="0 0 1280 480" role="img" aria-labelledby="title desc">
+  <title id="title">mixed-signal board, module interfaces and test traces</title>
+  <desc id="desc">Original technical-editorial competition illustration without official competition identity artwork.</desc>
+  <metadata><![CDATA[{"id":"graduate-electronic-design","origin":"ai-generated","generator":"Codex code-native SVG renderer v2","generatedAt":"2026-08-23","semantic":"mixed-signal board, module interfaces and test traces","direction":"工程与制造","externalAssets":false,"officialIdentityUsed":false,"humanAuthorshipClaimed":false,"humanReviewStatus":"not-claimed","editorialReviewStatus":"assistant-reviewed-passed","editorialReviewedAt":"2026-08-23","implicitLabelStandard":"GB 45438-2025","implicitLabel":{"Label":"1","ContentProducer":"Saitu Campus","ProduceID":"b5b0955c83f638df41b45f3577388db0","ReservedCode1":"","ContentPropagator":"Saitu Campus","PropagateID":"b5b0955c83f638df41b45f3577388db0","ReservedCode2":""}}]]></metadata>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#17343D" stroke-opacity=".065" stroke-width="1"/></pattern>
+    <pattern id="fiber" width="73" height="47" patternUnits="userSpaceOnUse"><path d="m6 11 17-2m18 25 24 2M31 43l13-1" stroke="#17343D" stroke-width=".7" opacity=".08"/></pattern>
+    <pattern id="hatching" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(12)"><path d="M0 0V9" stroke="#D36A3D" stroke-width="3" opacity=".52"/></pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="m0 0 9 5-9 5Z" fill="#16858C"/></marker>
+    <clipPath id="artboard"><rect width="1280" height="480"/></clipPath>
+  </defs>
+  <style>
+    .s{fill:none;stroke:#17343D;stroke-width:4.2;stroke-linecap:square;stroke-linejoin:miter}
+    .h{fill:none;stroke:#17343D;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;opacity:.72}
+    .dim{fill:none;stroke:#16858C;stroke-width:2;stroke-dasharray:8 7;opacity:.86}
+    .a{fill:#16858C}.b{fill:#D36A3D}.wash{fill:#16858C;opacity:.14}.paper{fill:#F1EFE7}.hatch{fill:url(#hatching)}
+    .mis{transform:translate(3px,-2px);opacity:.38}.frame{fill:none;stroke:#17343D;stroke-width:1.5;opacity:.36}
+    .label,.notation{font-family:Arial,"Noto Sans SC",sans-serif;font-size:15px;font-weight:700;letter-spacing:2.3px;fill:#17343D;opacity:.72}
+    .notation{font-size:13px;fill:#16858C;opacity:1}
+  </style>
+  <rect width="1280" height="480" fill="#F1EFE7"/>
+  <rect width="1280" height="480" fill="url(#fiber)"/>
+  <rect width="1280" height="480" fill="url(#grid)"/>
+  <g clip-path="url(#artboard)">
+    <path d="M-50 422 351 18" stroke="#D36A3D" stroke-width="36" opacity=".07"/>
+    <path d="m1038 506 292-294" stroke="#16858C" stroke-width="20" opacity=".08"/>
+    
+      <path class="frame" d="M351 39v402M322 39v402M88 128h263M88 352h263"/>
+      <text class="label" x="88" y="105">工程与制造</text>
+      <text class="notation" x="88" y="385">PCB / R3</text>
+    <g transform="translate(536 48) scale(1.05)">
+    <g transform="translate(11 4)">
+      <rect class="wash" x="36" y="45" width="445" height="272"/><rect class="s" x="36" y="45" width="445" height="272"/>
+      <path class="s" d="M75 97h76v63h86v-38h98v77h109M75 258h54v-47h132v67h99v-38h84"/>
+      <g class="a"><circle cx="75" cy="97" r="9"/><circle cx="151" cy="160" r="9"/><circle cx="237" cy="122" r="9"/><circle cx="335" cy="199" r="9"/><circle cx="444" cy="199" r="9"/><circle cx="75" cy="258" r="9"/><circle cx="261" cy="278" r="9"/></g>
+      <rect class="paper" x="510" y="77" width="172" height="173"/><rect class="s" x="510" y="77" width="172" height="173"/><path class="h" d="M530 167h29l17-58 29 109 23-73 16 22h20"/>
+      <path class="h" d="M72 45V18M128 45V18M184 45V18M240 45V18M296 45V18M352 45V18M408 45V18"/>
+    </g></g>
+    <g opacity=".5"><path class="s" d="M31 31h22M42 20v22M1227 449h22M1238 438v22"/></g>
+  </g>
+</svg>

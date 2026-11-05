@@ -1,0 +1,30 @@
+[Unit]
+Description=Recover an interrupted one-time Resume AI legacy adoption
+Documentation=file:/usr/local/share/resume-ai/legacy-adoption-runbook.txt
+ConditionPathExists=/opt/resume-ai/state/legacy-adoption.pending
+Requires=resume-ai-pm2.service
+Wants=network-online.target
+After=local-fs.target network-online.target resume-ai-pm2.service
+Before=nginx.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/lib/resume-ai/recover-legacy-adoption.sh
+UMask=0077
+TimeoutStartSec=300s
+RuntimeDirectory=resume-ai-locks
+RuntimeDirectoryMode=0700
+RuntimeDirectoryPreserve=yes
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/opt/resume-ai /etc/resume-ai /etc/nginx/conf.d /var/lib/resume-ai /var/cache/resume-ai -/var/backups/resume-ai/legacy-adoption /home/ubuntu/.pm2 /run/resume-ai-locks
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+ProtectKernelLogs=true
+ProtectClock=true
+PrivateDevices=true
+RestrictRealtime=true
+LockPersonality=true

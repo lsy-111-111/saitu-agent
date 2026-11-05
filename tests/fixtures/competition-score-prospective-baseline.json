@@ -1,0 +1,3124 @@
+{
+  "schemaVersion": "competition-score-prospective-baseline.v1",
+  "capturedAt": "2026-08-26T09:50:31.731Z",
+  "captureIntent": "forward-regression-denominator-only",
+  "historicalComparisonAllowed": false,
+  "captureCommand": "node scripts/capture-competition-prospective-baseline.mjs",
+  "provenance": {
+    "kind": "dirty-working-tree-content-addressed",
+    "scope": "competition-scorer-and-benchmark-inputs",
+    "releaseId": null,
+    "sourceArchiveSha256": null,
+    "releaseBindingContract": {
+      "sourceArchiveMembership": "excluded-to-avoid-self-reference",
+      "bundleSidecarPath": "baseline/competition-score-prospective-baseline.json",
+      "installPath": "tests/fixtures/competition-score-prospective-baseline.json",
+      "installationOrder": "copy-before-pnpm-test",
+      "checksumManifest": "SHA256SUMS"
+    }
+  },
+  "versions": {
+    "scorer": "deterministic-2026-08.v14",
+    "catalog": "2026-08-25.v6",
+    "questionnaire": "competition-questionnaire.v1"
+  },
+  "benchmarkNow": "2026-08-23T00:00:00.000Z",
+  "sourceSnapshot": {
+    "algorithm": "sha256",
+    "files": [
+      {
+        "path": "src/content/competition-expansion.ts",
+        "sha256": "485ece006db8a036ddc42903e348b38b4a440ee1261228ad3d56a09f211c3dc3"
+      },
+      {
+        "path": "src/content/competition-guide.ts",
+        "sha256": "a2b2d6cecd075a306602e80df96e111d1e9da667cf0c53305c6c0e7978796022"
+      },
+      {
+        "path": "src/content/competition-taxonomy.ts",
+        "sha256": "c9726bed63b02e8d3aa9c69a78185a58e5b5f4e92ddb21139d388c00a3e541fb"
+      },
+      {
+        "path": "src/content/competitions.ts",
+        "sha256": "0b721be0a0344aba9f68053b31093bdad4f7e621daede46946f46e4daec1e64d"
+      },
+      {
+        "path": "src/lib/competitions/availability.ts",
+        "sha256": "974b64446d1949a7605e18dfe44bf4d065943dbbc699d68bc797c1a37e93ffeb"
+      },
+      {
+        "path": "src/lib/competitions/catalog.ts",
+        "sha256": "7c5c80056596d941eb3941249766f0bc9d07785d2cfcf99f23e67135c7026e07"
+      },
+      {
+        "path": "src/lib/competitions/legacy-preference-adapter.ts",
+        "sha256": "d9088a8069cc03a16fe40b3a17cc935c3b42070a4d0396b76404164e535fd00c"
+      },
+      {
+        "path": "src/lib/competitions/recommendation-engine.ts",
+        "sha256": "ff306dde939a02abd6e41a1d766b9ac61854233797de549531077eae7819c368"
+      },
+      {
+        "path": "src/lib/competitions/scoring.ts",
+        "sha256": "1c1ec9077507b7eb57dcceabad1e2d4a6a6fb68a0982c85a1b5fdb34fe56ca7a"
+      },
+      {
+        "path": "src/types/competition-recommendation.ts",
+        "sha256": "f94a9856327327a01efb1c486bd970cf6c0d0efc92f29853ba9d803224e3fbb1"
+      }
+    ],
+    "snapshotSha256": "3cc79823c5f5a3a7d333843f823af6dabd01bc8409079c32abc84030094bed49"
+  },
+  "datasets": {
+    "algorithm": "sha256",
+    "files": [
+      {
+        "path": "tests/fixtures/competition-quality-anchors-1.ts",
+        "sha256": "f95ab4bbfcdaf3fda4f8b10166dc368ef43e437dfb662bcd1df47bad003e8c0e"
+      },
+      {
+        "path": "tests/fixtures/competition-quality-anchors-2.ts",
+        "sha256": "90f4222c52ce4b093d5353667eb42d8d4fd9e5338897cdcfebba8e1e2ef233ef"
+      },
+      {
+        "path": "tests/fixtures/competition-quality-anchors-3.ts",
+        "sha256": "8305d38ca5d37d95536b776630d43649c8498fbfc3815905ac8bec77e484430f"
+      },
+      {
+        "path": "tests/fixtures/competition-quality-anchors-4.ts",
+        "sha256": "add8eaea39315ea24cbf7e61b9cfdd02cf95a634c28adc7becf9c87c88c8370d"
+      },
+      {
+        "path": "tests/fixtures/competition-quality-negative-gold.ts",
+        "sha256": "c35faf24060ec03048c7da7fecf438c0fd22ab2cc3db554fa5a64399e463b704"
+      },
+      {
+        "path": "tests/fixtures/competition-quality-no-match-gold.ts",
+        "sha256": "b1120ec3344e9fc01ea23cf39e9fc9874bae12a4fef940d41de8e7fb423efa24"
+      },
+      {
+        "path": "tests/fixtures/competition-quality-personas.ts",
+        "sha256": "c83d0d4fa2e58de10b66f3e8a6ac838c5211d50ca20ab9c4d881e7e68de4b5bf"
+      },
+      {
+        "path": "tests/fixtures/competition-quality-ranking-gold.ts",
+        "sha256": "e0b9f769b18bf9d1fd4960e7f82c8b4bc8ecae64c4d8284ee5e9adf9299415d7"
+      },
+      {
+        "path": "tests/fixtures/competition-quality-year-gold.ts",
+        "sha256": "8e586b03e42c5868743d8580d5da4a2a7bd6dd83b16c9b7f38574cfa7a10ff4b"
+      }
+    ],
+    "snapshotSha256": "b55134319bab8ed25a8f3ee4a2f3d6ea5a1598324c84dc165b07e4508ac15937",
+    "anchorCaseCount": 100,
+    "holdoutCaseCount": 25
+  },
+  "results": [
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-china-international-college-innovation",
+      "inputSha256": "32089a2e10b51afce24da4fad5686211a7f75cd3db0a40ce2a6189f7f364d35b",
+      "fixedCompetitionId": "china-international-college-innovation",
+      "fixedCompetitionDisplayedScore": 92.6,
+      "top10": [
+        "china-international-college-innovation",
+        "china-us-young-maker",
+        "vocational-innovation-entrepreneurship",
+        "ican-innovation-entrepreneurship",
+        "challenge-cup-academic-science",
+        "youth-tech-challenge",
+        "challenge-cup-entrepreneurship-plan",
+        "low-altitude-industry",
+        "siemens-intelligent-manufacturing",
+        "integrated-circuit-innovation"
+      ],
+      "finalTop3": [
+        "china-international-college-innovation",
+        "vocational-innovation-entrepreneurship",
+        "china-us-young-maker"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-challenge-cup-academic-science",
+      "inputSha256": "3745cdd448bbe69e373b4574331cb833bd66b6deee59d4399b274e004a1f61ec",
+      "fixedCompetitionId": "challenge-cup-academic-science",
+      "fixedCompetitionDisplayedScore": 92,
+      "top10": [
+        "challenge-cup-academic-science",
+        "youth-tech-challenge",
+        "future-aircraft-design",
+        "smart-car",
+        "robocon",
+        "china-international-college-innovation",
+        "national-college-electronic-design",
+        "national-innovation-training-annual",
+        "integrated-circuit-innovation",
+        "energy-conservation-emission-reduction"
+      ],
+      "finalTop3": [
+        "challenge-cup-academic-science",
+        "youth-tech-challenge",
+        "future-aircraft-design"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-national-college-math-modeling",
+      "inputSha256": "908f00c53cf39738dd7acdd520f20de16e44443bcc423e28a72710680aeead6d",
+      "fixedCompetitionId": "national-college-math-modeling",
+      "fixedCompetitionDisplayedScore": 93.6,
+      "top10": [
+        "national-college-math-modeling",
+        "comap-mcm-icm",
+        "zhou-peiyuan-mechanics",
+        "energy-economics-academic-creativity",
+        "global-campus-ai-algorithm",
+        "information-security",
+        "robocup-china",
+        "robocon",
+        "surveying-innovation",
+        "smart-car"
+      ],
+      "finalTop3": [
+        "national-college-math-modeling",
+        "comap-mcm-icm",
+        "zhou-peiyuan-mechanics"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-challenge-cup-entrepreneurship-plan",
+      "inputSha256": "72339b66573f01c459c581dbaeb944d99f2ed0a5f30c0d640e121845933bf486",
+      "fixedCompetitionId": "challenge-cup-entrepreneurship-plan",
+      "fixedCompetitionDisplayedScore": 91.7,
+      "top10": [
+        "challenge-cup-entrepreneurship-plan",
+        "business-elite-innovation",
+        "ecommerce-innovation-creativity-entrepreneurship",
+        "national-college-logistics-design",
+        "icbc-fintech-innovation",
+        "xuechuangbei-business-simulation",
+        "china-international-college-innovation",
+        "green-development",
+        "challenge-cup-academic-science",
+        "youth-tech-challenge"
+      ],
+      "finalTop3": [
+        "challenge-cup-entrepreneurship-plan",
+        "business-elite-innovation",
+        "national-college-logistics-design"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-national-college-electronic-design",
+      "inputSha256": "e809577ac59bc1d094fd4f5d4845d9cf2c1ddf4ad4e2536995db500c28695f48",
+      "fixedCompetitionId": "national-college-electronic-design",
+      "fixedCompetitionDisplayedScore": 95,
+      "top10": [
+        "national-college-electronic-design",
+        "smart-car",
+        "robocon",
+        "integrated-circuit-innovation",
+        "embedded-chip-system-design",
+        "iot-design",
+        "siemens-intelligent-manufacturing",
+        "china-college-computer-contest",
+        "engineering-practice-innovation",
+        "ican-innovation-entrepreneurship"
+      ],
+      "finalTop3": [
+        "national-college-electronic-design",
+        "smart-car",
+        "integrated-circuit-innovation"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-icpc-programming",
+      "inputSha256": "0d2f60904e6621534e568fd99f13f79659e53e121db1c92e865045b444b60ec5",
+      "fixedCompetitionId": "icpc-programming",
+      "fixedCompetitionDisplayedScore": 95,
+      "top10": [
+        "icpc-programming",
+        "global-campus-ai-algorithm",
+        "huawei-ict",
+        "graduate-ai-innovation",
+        "china-college-computer-contest",
+        "embedded-chip-system-design",
+        "china-software-cup",
+        "integrated-circuit-innovation",
+        "icbc-fintech-innovation",
+        "graduate-cybersecurity-innovation"
+      ],
+      "finalTop3": [
+        "global-campus-ai-algorithm",
+        "icpc-programming",
+        "graduate-ai-innovation"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-market-research-analysis",
+      "inputSha256": "708d72a0d85be4fb79f42d06bdc72303f2830029b9e61a88bfb8504d82d814fc",
+      "fixedCompetitionId": "market-research-analysis",
+      "fixedCompetitionDisplayedScore": 92.9,
+      "top10": [
+        "market-research-analysis",
+        "national-college-math-modeling",
+        "global-campus-ai-algorithm",
+        "business-elite-innovation",
+        "icbc-fintech-innovation",
+        "ecommerce-innovation-creativity-entrepreneurship",
+        "enterprise-competition-simulation",
+        "challenge-cup-entrepreneurship-plan",
+        "xuechuangbei-business-simulation",
+        "robocup-china"
+      ],
+      "finalTop3": [
+        "market-research-analysis",
+        "national-college-math-modeling",
+        "business-elite-innovation"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-understanding-contemporary-china-foreign-language",
+      "inputSha256": "d4b6562d61b81c57f0fc23036df6099317e708c4cc03fdeda84d1cc2fa07d21a",
+      "fixedCompetitionId": "understanding-contemporary-china-foreign-language",
+      "fixedCompetitionDisplayedScore": 91.5,
+      "top10": [
+        "intercultural-competence",
+        "understanding-contemporary-china-foreign-language",
+        "chinese-classics",
+        "21st-century-english-speaking",
+        "future-designer-ncda",
+        "huacan-design-award",
+        "china-good-design",
+        "national-advertising-art",
+        "milan-design-week-china",
+        "zhou-peiyuan-mechanics"
+      ],
+      "finalTop3": [
+        "intercultural-competence",
+        "understanding-contemporary-china-foreign-language",
+        "chinese-classics"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-energy-conservation-emission-reduction",
+      "inputSha256": "c27502715c51d9211941e986c776f065689ad778ab24964b6e0fd287975d988f",
+      "fixedCompetitionId": "energy-conservation-emission-reduction",
+      "fixedCompetitionDisplayedScore": 82.7,
+      "top10": [
+        "energy-conservation-emission-reduction",
+        "green-development",
+        "smart-agricultural-equipment",
+        "energy-economics-academic-creativity",
+        "challenge-cup-academic-science",
+        "future-aircraft-design",
+        "youth-tech-challenge",
+        "mechanical-engineering-innovation",
+        "china-international-college-innovation",
+        "siemens-intelligent-manufacturing"
+      ],
+      "finalTop3": [
+        "energy-conservation-emission-reduction",
+        "challenge-cup-academic-science",
+        "youth-tech-challenge"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-ecommerce-innovation-creativity-entrepreneurship",
+      "inputSha256": "330acf96f781f7d0cbf1d6998b67fe099a560edd4bb2a47b3477ef5dfc56ae56",
+      "fixedCompetitionId": "ecommerce-innovation-creativity-entrepreneurship",
+      "fixedCompetitionDisplayedScore": 91.8,
+      "top10": [
+        "ecommerce-innovation-creativity-entrepreneurship",
+        "icbc-fintech-innovation",
+        "challenge-cup-entrepreneurship-plan",
+        "business-elite-innovation",
+        "national-college-logistics-design",
+        "xuechuangbei-business-simulation",
+        "ican-innovation-entrepreneurship",
+        "huawei-ict",
+        "datang-ict",
+        "energy-economics-academic-creativity"
+      ],
+      "finalTop3": [
+        "ecommerce-innovation-creativity-entrepreneurship",
+        "icbc-fintech-innovation",
+        "challenge-cup-entrepreneurship-plan"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-smart-car",
+      "inputSha256": "4585cfd05833a3cdc3717ae4bf6fd42ea28ec3b80b7b7e0b19c645e10296bdb6",
+      "fixedCompetitionId": "smart-car",
+      "fixedCompetitionDisplayedScore": 95,
+      "top10": [
+        "smart-car",
+        "robocon",
+        "robotac",
+        "intelligent-robot-creativity",
+        "china-robot-ai",
+        "robocup-china",
+        "raicom-robot-developer",
+        "siemens-intelligent-manufacturing",
+        "iot-design",
+        "engineering-practice-innovation"
+      ],
+      "finalTop3": [
+        "smart-car",
+        "robocon",
+        "robotac"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-china-college-computer-design",
+      "inputSha256": "970f0c20b3628c32139797e9dcebee705f5911e773d8a9ac5e28108b91ab3fcc",
+      "fixedCompetitionId": "china-college-computer-design",
+      "fixedCompetitionDisplayedScore": 79.5,
+      "top10": [
+        "china-software-cup",
+        "china-college-computer-contest",
+        "huawei-ict",
+        "embedded-chip-system-design",
+        "datang-ict",
+        "china-college-computer-design",
+        "iot-design",
+        "digital-media-creative-tech",
+        "integrated-circuit-innovation",
+        "computer-system-ability"
+      ],
+      "finalTop3": [
+        "china-software-cup",
+        "huawei-ict",
+        "china-college-computer-contest"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-china-software-cup",
+      "inputSha256": "20cf62aec8969dd1f81da493fd9e3e6b8a1f42e0c68b7d60ec93daeebe075147",
+      "fixedCompetitionId": "china-software-cup",
+      "fixedCompetitionDisplayedScore": 92.3,
+      "top10": [
+        "china-software-cup",
+        "service-outsourcing-innovation",
+        "huawei-ict",
+        "datang-ict",
+        "china-college-computer-contest",
+        "embedded-chip-system-design",
+        "computer-system-ability",
+        "iot-design",
+        "icbc-fintech-innovation",
+        "integrated-circuit-innovation"
+      ],
+      "finalTop3": [
+        "computer-system-ability",
+        "china-software-cup",
+        "service-outsourcing-innovation"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-career-planning",
+      "inputSha256": "5da2a36a377a2b3dd23b70851d1f22ec7963c40a87fc718fe52f1054199782b9",
+      "fixedCompetitionId": "career-planning",
+      "fixedCompetitionDisplayedScore": 89,
+      "top10": [
+        "career-planning",
+        "worldskills-china-selection",
+        "worldskills",
+        "green-development",
+        "brics-skills",
+        "business-elite-innovation",
+        "challenge-cup-academic-science",
+        "youth-tech-challenge",
+        "21st-century-english-speaking",
+        "baidu-star"
+      ],
+      "finalTop3": [
+        "career-planning",
+        "worldskills-china-selection",
+        "worldskills"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-information-security",
+      "inputSha256": "baec45b2ec3b08bb42c3abd7138c6a15021df584912845b34378e1ac8ec2038f",
+      "fixedCompetitionId": "information-security",
+      "fixedCompetitionDisplayedScore": 89.7,
+      "top10": [
+        "information-security",
+        "global-campus-ai-algorithm",
+        "china-college-computer-contest",
+        "computer-system-ability",
+        "robocon",
+        "smart-car",
+        "robocup-china",
+        "robotac",
+        "intelligent-robot-creativity",
+        "china-robot-ai"
+      ],
+      "finalTop3": [
+        "global-campus-ai-algorithm",
+        "information-security",
+        "china-college-computer-contest"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-integrated-circuit-innovation",
+      "inputSha256": "5f4a3b021a6865f3f4e906f3cdcdd8cecbd77b7f1f747c36a54c08f96c46ee6a",
+      "fixedCompetitionId": "integrated-circuit-innovation",
+      "fixedCompetitionDisplayedScore": 91.3,
+      "top10": [
+        "integrated-circuit-innovation",
+        "embedded-chip-system-design",
+        "graduate-electronic-design",
+        "datang-ict",
+        "siemens-intelligent-manufacturing",
+        "china-college-computer-contest",
+        "huawei-ict",
+        "brics-skills",
+        "mechanical-engineering-innovation",
+        "ican-innovation-entrepreneurship"
+      ],
+      "finalTop3": [
+        "integrated-circuit-innovation",
+        "graduate-electronic-design",
+        "embedded-chip-system-design"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-advanced-graphics-bim",
+      "inputSha256": "b09835b1c06f6a3b8a339c7f8a3d4007abb10bd1b38831da86e6f26560fad67b",
+      "fixedCompetitionId": "advanced-graphics-bim",
+      "fixedCompetitionDisplayedScore": 91.7,
+      "top10": [
+        "advanced-graphics-bim",
+        "digital-building-innovation",
+        "3d-digital-innovation-design",
+        "china-good-design",
+        "china-us-young-maker",
+        "digital-media-creative-tech",
+        "china-international-college-innovation",
+        "worldskills-china-selection",
+        "mechanical-engineering-innovation",
+        "milan-design-week-china"
+      ],
+      "finalTop3": [
+        "advanced-graphics-bim",
+        "digital-building-innovation",
+        "3d-digital-innovation-design"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-national-college-industrial-design",
+      "inputSha256": "06cf404e99a7fad8f318569998d091eb3de975f7b26921f2252aaadecad86353",
+      "fixedCompetitionId": "national-college-industrial-design",
+      "fixedCompetitionDisplayedScore": 81.7,
+      "top10": [
+        "china-good-design",
+        "national-advertising-art",
+        "milan-design-week-china",
+        "future-designer-ncda",
+        "huacan-design-award",
+        "3d-digital-innovation-design",
+        "digital-media-creative-tech",
+        "national-college-industrial-design",
+        "garden-design-build",
+        "china-college-computer-design"
+      ],
+      "finalTop3": [
+        "china-good-design",
+        "national-advertising-art",
+        "milan-design-week-china"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-future-designer-ncda",
+      "inputSha256": "d6eea2e985ea60c8eaa47a0b908dfd888eb0ce474a46a3d1cb14b6cc8f1ad7d3",
+      "fixedCompetitionId": "future-designer-ncda",
+      "fixedCompetitionDisplayedScore": 90.2,
+      "top10": [
+        "china-good-design",
+        "milan-design-week-china",
+        "future-designer-ncda",
+        "huacan-design-award",
+        "graduate-culture-china",
+        "3d-digital-innovation-design",
+        "digital-media-creative-tech",
+        "garden-design-build",
+        "intercultural-competence",
+        "china-college-computer-design"
+      ],
+      "finalTop3": [
+        "china-good-design",
+        "future-designer-ncda",
+        "huacan-design-award"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-energy-economics-academic-creativity",
+      "inputSha256": "bd301d956036541dc5d7cdbc39eb866cd16ad8339e2b6bec7741fb1d308eb6d6",
+      "fixedCompetitionId": "energy-economics-academic-creativity",
+      "fixedCompetitionDisplayedScore": 83.6,
+      "top10": [
+        "energy-economics-academic-creativity",
+        "zhou-peiyuan-mechanics",
+        "global-campus-ai-algorithm",
+        "business-elite-innovation",
+        "national-college-logistics-design",
+        "graduate-ai-innovation",
+        "ecommerce-innovation-creativity-entrepreneurship",
+        "icbc-fintech-innovation",
+        "challenge-cup-entrepreneurship-plan",
+        "robocup-china"
+      ],
+      "finalTop3": [
+        "energy-economics-academic-creativity",
+        "zhou-peiyuan-mechanics",
+        "global-campus-ai-algorithm"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-business-elite-innovation",
+      "inputSha256": "0522682071453e68dd69dd9421eeb46e0b6e1dabf131704d7eec7ab336a880c3",
+      "fixedCompetitionId": "business-elite-innovation",
+      "fixedCompetitionDisplayedScore": 91,
+      "top10": [
+        "business-elite-innovation",
+        "challenge-cup-entrepreneurship-plan",
+        "ecommerce-innovation-creativity-entrepreneurship",
+        "enterprise-competition-simulation",
+        "icbc-fintech-innovation",
+        "xuechuangbei-business-simulation",
+        "green-development",
+        "china-international-college-innovation",
+        "vocational-innovation-entrepreneurship",
+        "market-research-analysis"
+      ],
+      "finalTop3": [
+        "business-elite-innovation",
+        "challenge-cup-entrepreneurship-plan",
+        "enterprise-competition-simulation"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-national-college-logistics-design",
+      "inputSha256": "9d0634cca903c8137fd52f37fb97d1f005ee7e349d6c27e4e1655b8d67c0c1cb",
+      "fixedCompetitionId": "national-college-logistics-design",
+      "fixedCompetitionDisplayedScore": 90.2,
+      "top10": [
+        "business-elite-innovation",
+        "challenge-cup-entrepreneurship-plan",
+        "national-college-logistics-design",
+        "icbc-fintech-innovation",
+        "ecommerce-innovation-creativity-entrepreneurship",
+        "xuechuangbei-business-simulation",
+        "green-development",
+        "china-international-college-innovation",
+        "energy-economics-academic-creativity",
+        "challenge-cup-academic-science"
+      ],
+      "finalTop3": [
+        "business-elite-innovation",
+        "challenge-cup-entrepreneurship-plan",
+        "national-college-logistics-design"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-china-college-computer-contest",
+      "inputSha256": "27c76d0fc99b8257d8b022e1680a61c66912b03c1d9986d8b613270570371168",
+      "fixedCompetitionId": "china-college-computer-contest",
+      "fixedCompetitionDisplayedScore": 89.3,
+      "top10": [
+        "service-outsourcing-innovation",
+        "china-college-computer-contest",
+        "china-software-cup",
+        "information-security",
+        "huawei-ict",
+        "embedded-chip-system-design",
+        "datang-ict",
+        "computer-system-ability",
+        "iot-design",
+        "integrated-circuit-innovation"
+      ],
+      "finalTop3": [
+        "computer-system-ability",
+        "service-outsourcing-innovation",
+        "china-software-cup"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-robocon",
+      "inputSha256": "4585cfd05833a3cdc3717ae4bf6fd42ea28ec3b80b7b7e0b19c645e10296bdb6",
+      "fixedCompetitionId": "robocon",
+      "fixedCompetitionDisplayedScore": 95,
+      "top10": [
+        "smart-car",
+        "robocon",
+        "robotac",
+        "intelligent-robot-creativity",
+        "china-robot-ai",
+        "robocup-china",
+        "raicom-robot-developer",
+        "siemens-intelligent-manufacturing",
+        "iot-design",
+        "engineering-practice-innovation"
+      ],
+      "finalTop3": [
+        "smart-car",
+        "robocon",
+        "robotac"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-robocup-china",
+      "inputSha256": "2a56baccda557896a7c69808c565f644467db75a7ac693375f785bdce29c898c",
+      "fixedCompetitionId": "robocup-china",
+      "fixedCompetitionDisplayedScore": 94.3,
+      "top10": [
+        "robocup-china",
+        "robotac",
+        "intelligent-robot-creativity",
+        "china-robot-ai",
+        "raicom-robot-developer",
+        "worldskills-china-selection",
+        "siemens-intelligent-manufacturing",
+        "smart-agricultural-equipment",
+        "worldskills",
+        "brics-skills"
+      ],
+      "finalTop3": [
+        "robocup-china",
+        "robotac",
+        "intelligent-robot-creativity"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-siemens-intelligent-manufacturing",
+      "inputSha256": "dd20aa5f9932efb16a830c663b96fa3ef7eb3e739a4ecce3bc16f0569afeb1f1",
+      "fixedCompetitionId": "siemens-intelligent-manufacturing",
+      "fixedCompetitionDisplayedScore": 84.7,
+      "top10": [
+        "robotac",
+        "intelligent-robot-creativity",
+        "china-robot-ai",
+        "robocup-china",
+        "raicom-robot-developer",
+        "siemens-intelligent-manufacturing",
+        "smart-agricultural-equipment",
+        "integrated-circuit-innovation",
+        "future-aircraft-design",
+        "low-altitude-industry"
+      ],
+      "finalTop3": [
+        "robotac",
+        "intelligent-robot-creativity",
+        "china-robot-ai"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-lanqiao-cup",
+      "inputSha256": "2d5af2ab4d4ede46f80c7956c52e5c8a8af2e0020d8e808b4d61978202c8d398",
+      "fixedCompetitionId": "lanqiao-cup",
+      "fixedCompetitionDisplayedScore": 80.7,
+      "top10": [
+        "baidu-star",
+        "matiji-programming",
+        "global-campus-ai-algorithm",
+        "lanqiao-cup",
+        "computer-system-ability",
+        "national-college-math-modeling",
+        "china-us-young-maker",
+        "siemens-intelligent-manufacturing",
+        "youth-tech-challenge",
+        "worldskills-china-selection"
+      ],
+      "finalTop3": [
+        "matiji-programming",
+        "global-campus-ai-algorithm",
+        "baidu-star"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-21st-century-english-speaking",
+      "inputSha256": "8bd55c5718aeb97f4320e3c27e46d5148550a31556bd078326ffa72ec7e26308",
+      "fixedCompetitionId": "21st-century-english-speaking",
+      "fixedCompetitionDisplayedScore": 86.7,
+      "top10": [
+        "intercultural-competence",
+        "understanding-contemporary-china-foreign-language",
+        "chinese-classics",
+        "21st-century-english-speaking",
+        "huacan-design-award",
+        "future-designer-ncda",
+        "china-good-design",
+        "national-advertising-art",
+        "milan-design-week-china",
+        "zhou-peiyuan-mechanics"
+      ],
+      "finalTop3": [
+        "intercultural-competence",
+        "understanding-contemporary-china-foreign-language",
+        "chinese-classics"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-icbc-fintech-innovation",
+      "inputSha256": "39bf2ce44da20685d792069ebe0216ba0b6de3d7ba97d75ded9d8dc84b2894aa",
+      "fixedCompetitionId": "icbc-fintech-innovation",
+      "fixedCompetitionDisplayedScore": 91.4,
+      "top10": [
+        "ecommerce-innovation-creativity-entrepreneurship",
+        "icbc-fintech-innovation",
+        "challenge-cup-entrepreneurship-plan",
+        "business-elite-innovation",
+        "national-college-logistics-design",
+        "xuechuangbei-business-simulation",
+        "huawei-ict",
+        "datang-ict",
+        "china-software-cup",
+        "energy-economics-academic-creativity"
+      ],
+      "finalTop3": [
+        "ecommerce-innovation-creativity-entrepreneurship",
+        "icbc-fintech-innovation",
+        "challenge-cup-entrepreneurship-plan"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-digital-media-creative-tech",
+      "inputSha256": "ab2b40c7487016f659ec41c19e3b204206c761f1608acfb85db3c88f14fee88a",
+      "fixedCompetitionId": "digital-media-creative-tech",
+      "fixedCompetitionDisplayedScore": 84.5,
+      "top10": [
+        "china-good-design",
+        "milan-design-week-china",
+        "future-designer-ncda",
+        "huacan-design-award",
+        "digital-media-creative-tech",
+        "3d-digital-innovation-design",
+        "china-college-computer-design",
+        "china-college-computer-contest",
+        "graduate-electronic-design",
+        "ican-innovation-entrepreneurship"
+      ],
+      "finalTop3": [
+        "china-good-design",
+        "milan-design-week-china",
+        "future-designer-ncda"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-future-aircraft-design",
+      "inputSha256": "93bf5e6777559f5ffbaa73bf257b763eb02670088a77bc757f03a05ea9946daf",
+      "fixedCompetitionId": "future-aircraft-design",
+      "fixedCompetitionDisplayedScore": 83.8,
+      "top10": [
+        "smart-car",
+        "robocon",
+        "robocup-china",
+        "intelligent-robot-creativity",
+        "robotac",
+        "china-robot-ai",
+        "raicom-robot-developer",
+        "mechanical-innovation-design",
+        "future-aircraft-design",
+        "national-college-electronic-design"
+      ],
+      "finalTop3": [
+        "smart-car",
+        "robocon",
+        "robocup-china"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-vocational-innovation-entrepreneurship",
+      "inputSha256": "abfb85dcf85d920abcae9a5f786ef7b550cab97cfa4544c6b1fec78daf4b3310",
+      "fixedCompetitionId": "vocational-innovation-entrepreneurship",
+      "fixedCompetitionDisplayedScore": 91.8,
+      "top10": [
+        "vocational-innovation-entrepreneurship",
+        "china-international-college-innovation",
+        "challenge-cup-entrepreneurship-plan",
+        "robocup-china",
+        "worldskills-china-selection",
+        "worldskills",
+        "business-elite-innovation",
+        "world-vocational-skills",
+        "green-development",
+        "challenge-cup-academic-science"
+      ],
+      "finalTop3": [
+        "vocational-innovation-entrepreneurship",
+        "china-international-college-innovation",
+        "challenge-cup-entrepreneurship-plan"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-iot-design",
+      "inputSha256": "cc11d66652b6140cee1bdbfcb7360fbc7a2ba8876fa50d9dfcd01e630b521270",
+      "fixedCompetitionId": "iot-design",
+      "fixedCompetitionDisplayedScore": 93.7,
+      "top10": [
+        "robotac",
+        "smart-car",
+        "robocon",
+        "intelligent-robot-creativity",
+        "iot-design",
+        "china-robot-ai",
+        "robocup-china",
+        "embedded-chip-system-design",
+        "datang-ict",
+        "raicom-robot-developer"
+      ],
+      "finalTop3": [
+        "iot-design",
+        "smart-car",
+        "robotac"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-youth-tech-challenge",
+      "inputSha256": "68d74532e0a6fb83d16b9edc3b6a1aedd26b34b47b5c6c96119a3047528420ee",
+      "fixedCompetitionId": "youth-tech-challenge",
+      "fixedCompetitionDisplayedScore": 91.5,
+      "top10": [
+        "challenge-cup-academic-science",
+        "youth-tech-challenge",
+        "future-aircraft-design",
+        "china-international-college-innovation",
+        "siemens-intelligent-manufacturing",
+        "integrated-circuit-innovation",
+        "energy-conservation-emission-reduction",
+        "low-altitude-industry",
+        "graduate-public-management-case",
+        "ican-innovation-entrepreneurship"
+      ],
+      "finalTop3": [
+        "challenge-cup-academic-science",
+        "youth-tech-challenge",
+        "future-aircraft-design"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-low-altitude-industry",
+      "inputSha256": "b96fe1fa73a7a7188ca83694271569bf9223ae6254ba389a6007000ce87e013b",
+      "fixedCompetitionId": "low-altitude-industry",
+      "fixedCompetitionDisplayedScore": 82.4,
+      "top10": [
+        "intelligent-robot-creativity",
+        "china-robot-ai",
+        "raicom-robot-developer",
+        "robotac",
+        "robocup-china",
+        "low-altitude-industry",
+        "siemens-intelligent-manufacturing",
+        "future-aircraft-design",
+        "china-international-college-innovation",
+        "smart-agricultural-equipment"
+      ],
+      "finalTop3": [
+        "intelligent-robot-creativity",
+        "china-robot-ai",
+        "raicom-robot-developer"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-ican-innovation-entrepreneurship",
+      "inputSha256": "a7cfde4e39c79c047f34eb189161af60654eb4ea5996e2a0d23c1540a6ef0e1d",
+      "fixedCompetitionId": "ican-innovation-entrepreneurship",
+      "fixedCompetitionDisplayedScore": 91.2,
+      "top10": [
+        "china-us-young-maker",
+        "ican-innovation-entrepreneurship",
+        "china-international-college-innovation",
+        "icbc-fintech-innovation",
+        "china-college-computer-contest",
+        "integrated-circuit-innovation",
+        "embedded-chip-system-design",
+        "huawei-ict",
+        "datang-ict",
+        "low-altitude-industry"
+      ],
+      "finalTop3": [
+        "ican-innovation-entrepreneurship",
+        "china-us-young-maker",
+        "china-international-college-innovation"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-graduate-rural-revitalization-agritech",
+      "inputSha256": "a23f844cbdb37c8bb9851eb98aa62cd9efa17cba77a9fb85d099a6a59a3a69ca",
+      "fixedCompetitionId": "graduate-rural-revitalization-agritech",
+      "fixedCompetitionDisplayedScore": 95,
+      "top10": [
+        "graduate-rural-revitalization-agritech",
+        "energy-conservation-emission-reduction",
+        "energy-economics-academic-creativity",
+        "water-innovation-design",
+        "green-development",
+        "smart-agricultural-equipment",
+        "physics-experiment-innovation",
+        "robocup-china",
+        "surveying-innovation",
+        "geology-skills"
+      ],
+      "finalTop3": [
+        "graduate-rural-revitalization-agritech",
+        "energy-conservation-emission-reduction",
+        "water-innovation-design"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-green-development",
+      "inputSha256": "647f626a7f4d8153bd9eda90b2c84d4c87628fcfabc6af23f39aac90938bad28",
+      "fixedCompetitionId": "green-development",
+      "fixedCompetitionDisplayedScore": 78.9,
+      "top10": [
+        "green-development",
+        "water-innovation-design",
+        "energy-economics-academic-creativity",
+        "energy-conservation-emission-reduction",
+        "red-tourism-creative-planning",
+        "smart-agricultural-equipment",
+        "china-international-college-innovation",
+        "business-elite-innovation",
+        "challenge-cup-entrepreneurship-plan",
+        "challenge-cup-academic-science"
+      ],
+      "finalTop3": [
+        "green-development",
+        "water-innovation-design",
+        "red-tourism-creative-planning"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-xuechuangbei-business-simulation",
+      "inputSha256": "c1dbbaf5249110c5e2890ee6786481c2cf8f6058226b70c6c7f0667022382ce7",
+      "fixedCompetitionId": "xuechuangbei-business-simulation",
+      "fixedCompetitionDisplayedScore": 89.2,
+      "top10": [
+        "national-college-logistics-design",
+        "xuechuangbei-business-simulation",
+        "business-elite-innovation",
+        "challenge-cup-entrepreneurship-plan",
+        "ecommerce-innovation-creativity-entrepreneurship",
+        "icbc-fintech-innovation",
+        "green-development",
+        "china-international-college-innovation",
+        "energy-economics-academic-creativity",
+        "challenge-cup-academic-science"
+      ],
+      "finalTop3": [
+        "national-college-logistics-design",
+        "xuechuangbei-business-simulation",
+        "business-elite-innovation"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-mechanical-innovation-design",
+      "inputSha256": "d05b3519820efa328d5968fec973f8b0ccdcba5e4072aa080197ca071f8b2e13",
+      "fixedCompetitionId": "mechanical-innovation-design",
+      "fixedCompetitionDisplayedScore": 85.3,
+      "top10": [
+        "smart-car",
+        "robocon",
+        "intelligent-robot-creativity",
+        "robotac",
+        "robocup-china",
+        "china-robot-ai",
+        "raicom-robot-developer",
+        "mechanical-innovation-design",
+        "future-aircraft-design",
+        "siemens-intelligent-manufacturing"
+      ],
+      "finalTop3": [
+        "smart-car",
+        "robocon",
+        "intelligent-robot-creativity"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-3d-digital-innovation-design",
+      "inputSha256": "05c236099ff93257efcf76f996b599befc05a23d52e08f6550eb23bdde735716",
+      "fixedCompetitionId": "3d-digital-innovation-design",
+      "fixedCompetitionDisplayedScore": 84.8,
+      "top10": [
+        "china-good-design",
+        "milan-design-week-china",
+        "future-designer-ncda",
+        "huacan-design-award",
+        "3d-digital-innovation-design",
+        "garden-design-build",
+        "digital-media-creative-tech",
+        "bim-graduation-design",
+        "china-college-computer-design",
+        "intelligent-robot-creativity"
+      ],
+      "finalTop3": [
+        "china-good-design",
+        "milan-design-week-china",
+        "future-designer-ncda"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-graduate-cybersecurity-innovation",
+      "inputSha256": "3a413e567074e92934dfad7fb6edc864ef6648e590d7f8240852d0ff61024c8c",
+      "fixedCompetitionId": "graduate-cybersecurity-innovation",
+      "fixedCompetitionDisplayedScore": 85.1,
+      "top10": [
+        "graduate-ai-innovation",
+        "china-software-cup",
+        "graduate-cybersecurity-innovation",
+        "china-college-computer-contest",
+        "computer-system-ability",
+        "huawei-ict",
+        "datang-ict",
+        "embedded-chip-system-design",
+        "graduate-electronic-design",
+        "global-campus-ai-algorithm"
+      ],
+      "finalTop3": [
+        "computer-system-ability",
+        "graduate-ai-innovation",
+        "china-software-cup"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-national-structural-design",
+      "inputSha256": "bd786678db9c2e39a0ef7ff76a0efe3dbe6fc2621994b7a9f4ac76d54c0e010e",
+      "fixedCompetitionId": "national-structural-design",
+      "fixedCompetitionDisplayedScore": 93,
+      "top10": [
+        "national-structural-design",
+        "bim-graduation-design",
+        "advanced-graphics-bim",
+        "digital-building-innovation",
+        "3d-digital-innovation-design",
+        "mechanical-engineering-innovation",
+        "geology-skills",
+        "china-us-young-maker",
+        "national-college-electronic-design",
+        "china-international-college-innovation"
+      ],
+      "finalTop3": [
+        "national-structural-design",
+        "bim-graduation-design",
+        "advanced-graphics-bim"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-national-advertising-art",
+      "inputSha256": "4947a68f7d7d852d8f2414f7fe56b95987859b587587dc35d65cbd08d8d244af",
+      "fixedCompetitionId": "national-advertising-art",
+      "fixedCompetitionDisplayedScore": 94,
+      "top10": [
+        "china-good-design",
+        "national-advertising-art",
+        "milan-design-week-china",
+        "huacan-design-award",
+        "future-designer-ncda",
+        "digital-media-creative-tech",
+        "3d-digital-innovation-design",
+        "garden-design-build",
+        "national-college-industrial-design",
+        "china-college-computer-design"
+      ],
+      "finalTop3": [
+        "china-good-design",
+        "national-advertising-art",
+        "milan-design-week-china"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-engineering-practice-innovation",
+      "inputSha256": "6cb904002cb100a095183dba51f1f944ee6544a0ab249cd7a1d406ca611e0af9",
+      "fixedCompetitionId": "engineering-practice-innovation",
+      "fixedCompetitionDisplayedScore": 89.2,
+      "top10": [
+        "smart-car",
+        "robocon",
+        "robotac",
+        "intelligent-robot-creativity",
+        "china-robot-ai",
+        "robocup-china",
+        "siemens-intelligent-manufacturing",
+        "raicom-robot-developer",
+        "iot-design",
+        "engineering-practice-innovation"
+      ],
+      "finalTop3": [
+        "smart-car",
+        "robocon",
+        "robotac"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-huacan-design-award",
+      "inputSha256": "b65d0136fafe86f57553ad50155de7b3656058dd8b4b04d72ce2c2eba4d42ea5",
+      "fixedCompetitionId": "huacan-design-award",
+      "fixedCompetitionDisplayedScore": 90.9,
+      "top10": [
+        "china-good-design",
+        "milan-design-week-china",
+        "huacan-design-award",
+        "future-designer-ncda",
+        "graduate-culture-china",
+        "3d-digital-innovation-design",
+        "digital-media-creative-tech",
+        "intercultural-competence",
+        "garden-design-build",
+        "china-college-computer-design"
+      ],
+      "finalTop3": [
+        "china-good-design",
+        "huacan-design-award",
+        "future-designer-ncda"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-national-innovation-training-annual",
+      "inputSha256": "926c50ab46ac344e1bce4cc71ac3d882897496e35b3173f04863beb917340bbf",
+      "fixedCompetitionId": "national-innovation-training-annual",
+      "fixedCompetitionDisplayedScore": 90.2,
+      "top10": [
+        "national-innovation-training-annual",
+        "challenge-cup-academic-science",
+        "future-aircraft-design",
+        "youth-tech-challenge",
+        "smart-car",
+        "robocon",
+        "china-international-college-innovation",
+        "low-altitude-industry",
+        "ican-innovation-entrepreneurship",
+        "siemens-intelligent-manufacturing"
+      ],
+      "finalTop3": [
+        "national-innovation-training-annual",
+        "challenge-cup-academic-science",
+        "future-aircraft-design"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-chemical-engineering-design",
+      "inputSha256": "11a985987fab6b93555ab1040f8b88a8771bd85bd8db7ce05fa8177eef236f8d",
+      "fixedCompetitionId": "chemical-engineering-design",
+      "fixedCompetitionDisplayedScore": 86.8,
+      "top10": [
+        "chemical-engineering-design",
+        "chemical-engineering-experiment",
+        "mechanical-engineering-innovation",
+        "zhou-peiyuan-mechanics",
+        "information-security",
+        "china-college-computer-contest",
+        "robocup-china",
+        "water-innovation-design",
+        "mechanical-innovation-design",
+        "future-aircraft-design"
+      ],
+      "finalTop3": [
+        "chemical-engineering-design",
+        "chemical-engineering-experiment",
+        "mechanical-engineering-innovation"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-service-outsourcing-innovation",
+      "inputSha256": "03e39566bcbd6d27793964a47e472d42e29ea09803189a4421a940672de6da73",
+      "fixedCompetitionId": "service-outsourcing-innovation",
+      "fixedCompetitionDisplayedScore": 94,
+      "top10": [
+        "service-outsourcing-innovation",
+        "china-software-cup",
+        "china-college-computer-contest",
+        "huawei-ict",
+        "datang-ict",
+        "embedded-chip-system-design",
+        "ican-innovation-entrepreneurship",
+        "iot-design",
+        "computer-system-ability",
+        "china-college-computer-design"
+      ],
+      "finalTop3": [
+        "computer-system-ability",
+        "service-outsourcing-innovation",
+        "china-software-cup"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-milan-design-week-china",
+      "inputSha256": "7322db720ce1e8b9ab7ae69780ecebd1eef2a39c36b8484a239184d8eb171a9c",
+      "fixedCompetitionId": "milan-design-week-china",
+      "fixedCompetitionDisplayedScore": 92.9,
+      "top10": [
+        "china-good-design",
+        "milan-design-week-china",
+        "huacan-design-award",
+        "future-designer-ncda",
+        "digital-media-creative-tech",
+        "3d-digital-innovation-design",
+        "china-college-computer-design",
+        "intelligent-robot-creativity",
+        "intercultural-competence",
+        "bim-graduation-design"
+      ],
+      "finalTop3": [
+        "china-good-design",
+        "milan-design-week-china",
+        "huacan-design-award"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-geology-skills",
+      "inputSha256": "b7336f11c8e4e5beb2775ae36f8d701b0414b84c49f05a9852e6bebdb470ee0f",
+      "fixedCompetitionId": "geology-skills",
+      "fixedCompetitionDisplayedScore": 93.3,
+      "top10": [
+        "geology-skills",
+        "physics-experiment-innovation",
+        "bim-graduation-design",
+        "national-structural-design",
+        "advanced-graphics-bim",
+        "digital-building-innovation",
+        "culsc-life-sciences",
+        "robocup-china",
+        "basic-medicine-innovation",
+        "challenge-cup-academic-science"
+      ],
+      "finalTop3": [
+        "geology-skills",
+        "physics-experiment-innovation",
+        "bim-graduation-design"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-optoelectronic-design",
+      "inputSha256": "ea06e3dcb7b1bb9b1a78a18e97ee2fe0c17c59aba2b97f10d40610e3ac3f7fa9",
+      "fixedCompetitionId": "optoelectronic-design",
+      "fixedCompetitionDisplayedScore": 91.3,
+      "top10": [
+        "optoelectronic-design",
+        "physics-experiment-innovation",
+        "surveying-innovation",
+        "robocup-china",
+        "information-security",
+        "china-college-computer-contest",
+        "water-innovation-design",
+        "worldskills-china-selection",
+        "worldskills",
+        "smart-agricultural-equipment"
+      ],
+      "finalTop3": [
+        "optoelectronic-design",
+        "physics-experiment-innovation",
+        "surveying-innovation"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-metallographic-skills",
+      "inputSha256": "ced0eb9d27ab76f5cfa0e97a06fd86bfcdcd71ed05459c5196fa4698801237df",
+      "fixedCompetitionId": "metallographic-skills",
+      "fixedCompetitionDisplayedScore": 93.5,
+      "top10": [
+        "metallographic-skills",
+        "national-structural-design",
+        "mechanical-engineering-innovation",
+        "chemistry-experiment-innovation",
+        "zhou-peiyuan-mechanics",
+        "chemical-engineering-design",
+        "chemical-engineering-experiment",
+        "national-college-electronic-design",
+        "robocon",
+        "smart-car"
+      ],
+      "finalTop3": [
+        "metallographic-skills",
+        "national-structural-design",
+        "chemistry-experiment-innovation"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-zhou-peiyuan-mechanics",
+      "inputSha256": "1827b894fa677f53bfa456bd165c28e5d48ee54b25a065b4343d819c7071b7b7",
+      "fixedCompetitionId": "zhou-peiyuan-mechanics",
+      "fixedCompetitionDisplayedScore": 85.5,
+      "top10": [
+        "zhou-peiyuan-mechanics",
+        "graduate-math-modeling",
+        "statistical-modeling",
+        "mechanical-engineering-innovation",
+        "energy-economics-academic-creativity",
+        "bim-graduation-design",
+        "future-aircraft-design",
+        "green-development",
+        "challenge-cup-academic-science",
+        "energy-conservation-emission-reduction"
+      ],
+      "finalTop3": [
+        "graduate-math-modeling",
+        "zhou-peiyuan-mechanics",
+        "statistical-modeling"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-mechanical-engineering-innovation",
+      "inputSha256": "3d5fea253b7acae69e125b8d1076730fb56a95e4e33e590511b24f37850307e9",
+      "fixedCompetitionId": "mechanical-engineering-innovation",
+      "fixedCompetitionDisplayedScore": 89.6,
+      "top10": [
+        "robotac",
+        "intelligent-robot-creativity",
+        "robocup-china",
+        "siemens-intelligent-manufacturing",
+        "mechanical-engineering-innovation",
+        "integrated-circuit-innovation",
+        "worldskills-china-selection",
+        "iot-design",
+        "worldskills",
+        "brics-skills"
+      ],
+      "finalTop3": [
+        "mechanical-engineering-innovation",
+        "siemens-intelligent-manufacturing",
+        "robotac"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-china-us-young-maker",
+      "inputSha256": "5a8c93223104f432be613d0950b9bcc48dd9691c0e1a7c8e4ae18c0f56f75b30",
+      "fixedCompetitionId": "china-us-young-maker",
+      "fixedCompetitionDisplayedScore": 93.2,
+      "top10": [
+        "china-us-young-maker",
+        "low-altitude-industry",
+        "china-international-college-innovation",
+        "ican-innovation-entrepreneurship",
+        "siemens-intelligent-manufacturing",
+        "integrated-circuit-innovation",
+        "challenge-cup-academic-science",
+        "youth-tech-challenge",
+        "national-college-electronic-design",
+        "brics-skills"
+      ],
+      "finalTop3": [
+        "china-us-young-maker",
+        "low-altitude-industry",
+        "china-international-college-innovation"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-raicom-robot-developer",
+      "inputSha256": "97407bd44519f2076006aac68e4a58c278ea8b92f051e21e02c2209df55644d6",
+      "fixedCompetitionId": "raicom-robot-developer",
+      "fixedCompetitionDisplayedScore": 92.7,
+      "top10": [
+        "robotac",
+        "intelligent-robot-creativity",
+        "china-robot-ai",
+        "robocup-china",
+        "raicom-robot-developer",
+        "siemens-intelligent-manufacturing",
+        "smart-agricultural-equipment",
+        "future-aircraft-design",
+        "low-altitude-industry",
+        "embedded-chip-system-design"
+      ],
+      "finalTop3": [
+        "robotac",
+        "intelligent-robot-creativity",
+        "china-robot-ai"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-datang-ict",
+      "inputSha256": "ad0e11c6c1b2de2fcc1aaaa0620382cee577d89311f3bc5e80a6cf0b602e2ab2",
+      "fixedCompetitionId": "datang-ict",
+      "fixedCompetitionDisplayedScore": 92.7,
+      "top10": [
+        "datang-ict",
+        "embedded-chip-system-design",
+        "integrated-circuit-innovation",
+        "icpc-programming",
+        "baidu-star",
+        "graduate-electronic-design",
+        "huawei-ict",
+        "china-college-computer-contest",
+        "graduate-ai-innovation",
+        "china-software-cup"
+      ],
+      "finalTop3": [
+        "datang-ict",
+        "embedded-chip-system-design",
+        "integrated-circuit-innovation"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-huawei-ict",
+      "inputSha256": "261bb6f78d7951e551ab6fe26b6424907af3d91324c3c26656a7240265b9b6bd",
+      "fixedCompetitionId": "huawei-ict",
+      "fixedCompetitionDisplayedScore": 87.1,
+      "top10": [
+        "china-software-cup",
+        "graduate-ai-innovation",
+        "huawei-ict",
+        "datang-ict",
+        "china-college-computer-contest",
+        "embedded-chip-system-design",
+        "computer-system-ability",
+        "graduate-cybersecurity-innovation",
+        "graduate-electronic-design",
+        "china-college-computer-design"
+      ],
+      "finalTop3": [
+        "computer-system-ability",
+        "china-software-cup",
+        "graduate-ai-innovation"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-embedded-chip-system-design",
+      "inputSha256": "44ea725a4ab81115af9a496fd49f745a9054fe8967f6730e33a9a5b5f17a089d",
+      "fixedCompetitionId": "embedded-chip-system-design",
+      "fixedCompetitionDisplayedScore": 92.2,
+      "top10": [
+        "embedded-chip-system-design",
+        "datang-ict",
+        "integrated-circuit-innovation",
+        "graduate-electronic-design",
+        "icpc-programming",
+        "baidu-star",
+        "huawei-ict",
+        "china-college-computer-contest",
+        "china-software-cup",
+        "graduate-ai-innovation"
+      ],
+      "finalTop3": [
+        "embedded-chip-system-design",
+        "datang-ict",
+        "graduate-electronic-design"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-culsc-life-sciences",
+      "inputSha256": "5b5b4880a39328ea92bb7ed6adfc0052af4f0278922fcb238b7bc80e12a3acef",
+      "fixedCompetitionId": "culsc-life-sciences",
+      "fixedCompetitionDisplayedScore": 93.2,
+      "top10": [
+        "culsc-life-sciences",
+        "basic-medicine-innovation",
+        "challenge-cup-academic-science",
+        "youth-tech-challenge",
+        "national-college-math-modeling",
+        "green-development",
+        "china-international-college-innovation",
+        "challenge-cup-entrepreneurship-plan",
+        "understanding-contemporary-china-foreign-language",
+        "physics-experiment-innovation"
+      ],
+      "finalTop3": [
+        "culsc-life-sciences",
+        "basic-medicine-innovation",
+        "challenge-cup-academic-science"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-physics-experiment-innovation",
+      "inputSha256": "47d056fdd8ab37dbb4808fc766e14c28b6efe503bf2ef6ee24543c50c31a9b67",
+      "fixedCompetitionId": "physics-experiment-innovation",
+      "fixedCompetitionDisplayedScore": 93.2,
+      "top10": [
+        "physics-experiment-innovation",
+        "surveying-innovation",
+        "optoelectronic-design",
+        "information-security",
+        "zhou-peiyuan-mechanics",
+        "comap-mcm-icm",
+        "culsc-life-sciences",
+        "robocup-china",
+        "basic-medicine-innovation",
+        "future-aircraft-design"
+      ],
+      "finalTop3": [
+        "physics-experiment-innovation",
+        "surveying-innovation",
+        "optoelectronic-design"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-bim-graduation-design",
+      "inputSha256": "4bdb51500cdf86b7a7f4d3e2e3d58582cbb383a9e93396af163ec56c96f32dd2",
+      "fixedCompetitionId": "bim-graduation-design",
+      "fixedCompetitionDisplayedScore": 94.2,
+      "top10": [
+        "bim-graduation-design",
+        "national-structural-design",
+        "advanced-graphics-bim",
+        "digital-building-innovation",
+        "garden-design-build",
+        "3d-digital-innovation-design",
+        "surveying-innovation",
+        "robocon",
+        "smart-car",
+        "china-good-design"
+      ],
+      "finalTop3": [
+        "bim-graduation-design",
+        "advanced-graphics-bim",
+        "national-structural-design"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-intelligent-robot-creativity",
+      "inputSha256": "97407bd44519f2076006aac68e4a58c278ea8b92f051e21e02c2209df55644d6",
+      "fixedCompetitionId": "intelligent-robot-creativity",
+      "fixedCompetitionDisplayedScore": 95,
+      "top10": [
+        "robotac",
+        "intelligent-robot-creativity",
+        "china-robot-ai",
+        "robocup-china",
+        "raicom-robot-developer",
+        "siemens-intelligent-manufacturing",
+        "smart-agricultural-equipment",
+        "future-aircraft-design",
+        "low-altitude-industry",
+        "embedded-chip-system-design"
+      ],
+      "finalTop3": [
+        "robotac",
+        "intelligent-robot-creativity",
+        "china-robot-ai"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-china-good-design",
+      "inputSha256": "4cef7256702f0c0126411b11bdf092cb5a3e25a9a142dcbf42c8f9e3bc8b60f9",
+      "fixedCompetitionId": "china-good-design",
+      "fixedCompetitionDisplayedScore": 95,
+      "top10": [
+        "china-good-design",
+        "milan-design-week-china",
+        "huacan-design-award",
+        "future-designer-ncda",
+        "3d-digital-innovation-design",
+        "digital-media-creative-tech",
+        "garden-design-build",
+        "china-college-computer-design",
+        "intelligent-robot-creativity",
+        "graduate-culture-china"
+      ],
+      "finalTop3": [
+        "china-good-design",
+        "milan-design-week-china",
+        "huacan-design-award"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-china-robot-ai",
+      "inputSha256": "332db0f0291fb4e464558a5340ee10b5feccec8430abfce795071411e8bdaf96",
+      "fixedCompetitionId": "china-robot-ai",
+      "fixedCompetitionDisplayedScore": 95,
+      "top10": [
+        "china-robot-ai",
+        "intelligent-robot-creativity",
+        "raicom-robot-developer",
+        "smart-car",
+        "robotac",
+        "robocon",
+        "robocup-china",
+        "iot-design",
+        "low-altitude-industry",
+        "siemens-intelligent-manufacturing"
+      ],
+      "finalTop3": [
+        "china-robot-ai",
+        "intelligent-robot-creativity",
+        "raicom-robot-developer"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-chinese-classics",
+      "inputSha256": "a8b698dae4c9e9fe0c455e4d7f989941848cce45e31179d00bf029e5d4289239",
+      "fixedCompetitionId": "chinese-classics",
+      "fixedCompetitionDisplayedScore": 90.1,
+      "top10": [
+        "intercultural-competence",
+        "chinese-classics",
+        "understanding-contemporary-china-foreign-language",
+        "21st-century-english-speaking",
+        "huacan-design-award",
+        "future-designer-ncda",
+        "red-tourism-creative-planning",
+        "china-good-design",
+        "national-advertising-art",
+        "milan-design-week-china"
+      ],
+      "finalTop3": [
+        "intercultural-competence",
+        "chinese-classics",
+        "understanding-contemporary-china-foreign-language"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-intercultural-competence",
+      "inputSha256": "1ac9c05312ee67a85e11c46f6f9d233f2be276c68a8a4f7db9b82789df8f3511",
+      "fixedCompetitionId": "intercultural-competence",
+      "fixedCompetitionDisplayedScore": 93.1,
+      "top10": [
+        "intercultural-competence",
+        "chinese-classics",
+        "understanding-contemporary-china-foreign-language",
+        "huacan-design-award",
+        "red-tourism-creative-planning",
+        "future-designer-ncda",
+        "china-good-design",
+        "national-advertising-art",
+        "milan-design-week-china",
+        "comap-mcm-icm"
+      ],
+      "finalTop3": [
+        "intercultural-competence",
+        "chinese-classics",
+        "understanding-contemporary-china-foreign-language"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-baidu-star",
+      "inputSha256": "b3ba7fe532da17a0a71d841c5c0e88eca516ca3cfed39145b898cadfffc52013",
+      "fixedCompetitionId": "baidu-star",
+      "fixedCompetitionDisplayedScore": 93.6,
+      "top10": [
+        "baidu-star",
+        "matiji-programming",
+        "global-campus-ai-algorithm",
+        "graduate-ai-innovation",
+        "lanqiao-cup",
+        "computer-system-ability",
+        "zhou-peiyuan-mechanics",
+        "siemens-intelligent-manufacturing",
+        "youth-tech-challenge",
+        "future-aircraft-design"
+      ],
+      "finalTop3": [
+        "matiji-programming",
+        "global-campus-ai-algorithm",
+        "baidu-star"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-water-innovation-design",
+      "inputSha256": "2c982a5387eaa8031e0d0175c2853b3a63e0749f4f7d046188da0cd27f9da829",
+      "fixedCompetitionId": "water-innovation-design",
+      "fixedCompetitionDisplayedScore": 87.3,
+      "top10": [
+        "water-innovation-design",
+        "energy-conservation-emission-reduction",
+        "green-development",
+        "energy-economics-academic-creativity",
+        "smart-agricultural-equipment",
+        "national-structural-design",
+        "bim-graduation-design",
+        "zhou-peiyuan-mechanics",
+        "chemical-engineering-design",
+        "advanced-graphics-bim"
+      ],
+      "finalTop3": [
+        "water-innovation-design",
+        "energy-conservation-emission-reduction",
+        "green-development"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-chemical-engineering-experiment",
+      "inputSha256": "80431b8a5e1dad3c13ed3025de46bab26954ecf6b6e09e652405debd063d300e",
+      "fixedCompetitionId": "chemical-engineering-experiment",
+      "fixedCompetitionDisplayedScore": 91.3,
+      "top10": [
+        "chemical-engineering-experiment",
+        "zhou-peiyuan-mechanics",
+        "chemical-engineering-design",
+        "mechanical-engineering-innovation",
+        "comap-mcm-icm",
+        "information-security",
+        "physics-experiment-innovation",
+        "culsc-life-sciences",
+        "basic-medicine-innovation",
+        "surveying-innovation"
+      ],
+      "finalTop3": [
+        "chemical-engineering-experiment",
+        "chemical-engineering-design",
+        "zhou-peiyuan-mechanics"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-chemistry-experiment-innovation",
+      "inputSha256": "de6432d414d88639853fcaea05f49f5b50b1c96b3d7a1a928034b5d30cfb5e10",
+      "fixedCompetitionId": "chemistry-experiment-innovation",
+      "fixedCompetitionDisplayedScore": 94.1,
+      "top10": [
+        "chemistry-experiment-innovation",
+        "chemical-engineering-experiment",
+        "zhou-peiyuan-mechanics",
+        "chemical-engineering-design",
+        "national-structural-design",
+        "mechanical-engineering-innovation",
+        "comap-mcm-icm",
+        "statistical-modeling",
+        "information-security",
+        "physics-experiment-innovation"
+      ],
+      "finalTop3": [
+        "chemistry-experiment-innovation",
+        "chemical-engineering-experiment",
+        "chemical-engineering-design"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-computer-system-ability",
+      "inputSha256": "5f9c52d76798aabc934ebb9abcc1fdeb94718b1baa69bb7fbff9da29bd3dd4da",
+      "fixedCompetitionId": "computer-system-ability",
+      "fixedCompetitionDisplayedScore": 89.9,
+      "top10": [
+        "datang-ict",
+        "integrated-circuit-innovation",
+        "embedded-chip-system-design",
+        "china-college-computer-contest",
+        "baidu-star",
+        "graduate-electronic-design",
+        "icpc-programming",
+        "huawei-ict",
+        "graduate-cybersecurity-innovation",
+        "computer-system-ability"
+      ],
+      "finalTop3": [
+        "datang-ict",
+        "integrated-circuit-innovation",
+        "embedded-chip-system-design"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-garden-design-build",
+      "inputSha256": "b3e6351f7f8a512d3a0de837edb2948e0ad4dd21f3cda068280de03b424d379b",
+      "fixedCompetitionId": "garden-design-build",
+      "fixedCompetitionDisplayedScore": 89.5,
+      "top10": [
+        "garden-design-build",
+        "bim-graduation-design",
+        "3d-digital-innovation-design",
+        "china-good-design",
+        "milan-design-week-china",
+        "future-designer-ncda",
+        "huacan-design-award",
+        "digital-media-creative-tech",
+        "china-college-computer-design",
+        "intelligent-robot-creativity"
+      ],
+      "finalTop3": [
+        "garden-design-build",
+        "bim-graduation-design",
+        "china-good-design"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-information-security-confrontation",
+      "inputSha256": "3be8bfabcabf7f983461c98b9e313836a67870a64d1bf6b353dee4648a6ac8f4",
+      "fixedCompetitionId": "information-security-confrontation",
+      "fixedCompetitionDisplayedScore": 85.6,
+      "top10": [
+        "china-software-cup",
+        "china-college-computer-contest",
+        "information-security-confrontation",
+        "computer-system-ability",
+        "national-college-electronic-design",
+        "robocup-china",
+        "robotac",
+        "embedded-chip-system-design",
+        "huawei-ict",
+        "intelligent-robot-creativity"
+      ],
+      "finalTop3": [
+        "china-software-cup",
+        "china-college-computer-contest",
+        "information-security-confrontation"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-surveying-innovation",
+      "inputSha256": "50e73666bb3f992553fd820d17342d655f08a82fc21913401356d6d159024094",
+      "fixedCompetitionId": "surveying-innovation",
+      "fixedCompetitionDisplayedScore": 93.7,
+      "top10": [
+        "surveying-innovation",
+        "geology-skills",
+        "physics-experiment-innovation",
+        "bim-graduation-design",
+        "national-structural-design",
+        "advanced-graphics-bim",
+        "garden-design-build",
+        "digital-building-innovation",
+        "comap-mcm-icm",
+        "statistical-modeling"
+      ],
+      "finalTop3": [
+        "geology-skills",
+        "surveying-innovation",
+        "physics-experiment-innovation"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-statistical-modeling",
+      "inputSha256": "2fd226ffc009b63a4c334c76ac6283a48ceb092ee0286555a0092976c20fb10f",
+      "fixedCompetitionId": "statistical-modeling",
+      "fixedCompetitionDisplayedScore": 94.1,
+      "top10": [
+        "graduate-math-modeling",
+        "statistical-modeling",
+        "zhou-peiyuan-mechanics",
+        "energy-economics-academic-creativity",
+        "market-research-analysis",
+        "global-campus-ai-algorithm",
+        "graduate-ai-innovation",
+        "robocup-china",
+        "icpc-programming",
+        "graduate-public-management-case"
+      ],
+      "finalTop3": [
+        "graduate-math-modeling",
+        "statistical-modeling",
+        "zhou-peiyuan-mechanics"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-basic-medicine-innovation",
+      "inputSha256": "dbed5a2bce0ec105b608a17cbcc9c160f50638e72bbdbe715538f4a451e27f17",
+      "fixedCompetitionId": "basic-medicine-innovation",
+      "fixedCompetitionDisplayedScore": 92.6,
+      "top10": [
+        "basic-medicine-innovation",
+        "culsc-life-sciences",
+        "challenge-cup-academic-science",
+        "youth-tech-challenge",
+        "national-college-math-modeling",
+        "green-development",
+        "china-international-college-innovation",
+        "challenge-cup-entrepreneurship-plan",
+        "understanding-contemporary-china-foreign-language",
+        "physics-experiment-innovation"
+      ],
+      "finalTop3": [
+        "basic-medicine-innovation",
+        "culsc-life-sciences",
+        "challenge-cup-academic-science"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-tax-risk-case",
+      "inputSha256": "9bc840c50bfad565d42bd13b2b45fa516dff39d26952f67eb51e3f79f06fe17e",
+      "fixedCompetitionId": "tax-risk-case",
+      "fixedCompetitionDisplayedScore": 89,
+      "top10": [
+        "enterprise-competition-simulation",
+        "ecommerce-innovation-creativity-entrepreneurship",
+        "challenge-cup-entrepreneurship-plan",
+        "tax-risk-case",
+        "business-elite-innovation",
+        "icbc-fintech-innovation",
+        "national-college-logistics-design",
+        "xuechuangbei-business-simulation",
+        "market-research-analysis",
+        "energy-economics-academic-creativity"
+      ],
+      "finalTop3": [
+        "enterprise-competition-simulation",
+        "ecommerce-innovation-creativity-entrepreneurship",
+        "challenge-cup-entrepreneurship-plan"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-enterprise-competition-simulation",
+      "inputSha256": "a917814185a2685ae71c8448b7b188c945794f9ce50f4d37a0b6419389fa08e1",
+      "fixedCompetitionId": "enterprise-competition-simulation",
+      "fixedCompetitionDisplayedScore": 89.5,
+      "top10": [
+        "enterprise-competition-simulation",
+        "ecommerce-innovation-creativity-entrepreneurship",
+        "challenge-cup-entrepreneurship-plan",
+        "tax-risk-case",
+        "business-elite-innovation",
+        "icbc-fintech-innovation",
+        "national-college-logistics-design",
+        "xuechuangbei-business-simulation",
+        "market-research-analysis",
+        "energy-economics-academic-creativity"
+      ],
+      "finalTop3": [
+        "enterprise-competition-simulation",
+        "ecommerce-innovation-creativity-entrepreneurship",
+        "challenge-cup-entrepreneurship-plan"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-digital-enterprise-sandbox",
+      "inputSha256": "9a7eca2fe7ceba13353fec90fb77a8574ee529d5f752b9b58145e7836b55c71e",
+      "fixedCompetitionId": "digital-enterprise-sandbox",
+      "fixedCompetitionDisplayedScore": 90.7,
+      "top10": [
+        "keyun-accounting",
+        "digital-enterprise-sandbox",
+        "ecommerce-innovation-creativity-entrepreneurship",
+        "challenge-cup-entrepreneurship-plan",
+        "business-elite-innovation",
+        "icbc-fintech-innovation",
+        "national-college-logistics-design",
+        "xuechuangbei-business-simulation",
+        "market-research-analysis",
+        "energy-economics-academic-creativity"
+      ],
+      "finalTop3": [
+        "keyun-accounting",
+        "digital-enterprise-sandbox",
+        "ecommerce-innovation-creativity-entrepreneurship"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-digital-building-innovation",
+      "inputSha256": "e35d407fb541eb75149183d4b97d5def2f17830874b4c7db4cced0d6c839ef7c",
+      "fixedCompetitionId": "digital-building-innovation",
+      "fixedCompetitionDisplayedScore": 89.9,
+      "top10": [
+        "advanced-graphics-bim",
+        "digital-building-innovation",
+        "3d-digital-innovation-design",
+        "china-good-design",
+        "china-us-young-maker",
+        "digital-media-creative-tech",
+        "china-international-college-innovation",
+        "milan-design-week-china",
+        "siemens-intelligent-manufacturing",
+        "worldskills"
+      ],
+      "finalTop3": [
+        "advanced-graphics-bim",
+        "digital-building-innovation",
+        "3d-digital-innovation-design"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-global-campus-ai-algorithm",
+      "inputSha256": "4d45639b022161a28a56151ed73cfddf74ad11637ebc7e7b597ba820be507217",
+      "fixedCompetitionId": "global-campus-ai-algorithm",
+      "fixedCompetitionDisplayedScore": 93.2,
+      "top10": [
+        "baidu-star",
+        "icpc-programming",
+        "global-campus-ai-algorithm",
+        "matiji-programming",
+        "huawei-ict",
+        "datang-ict",
+        "national-college-electronic-design",
+        "lanqiao-cup",
+        "china-college-computer-contest",
+        "iot-design"
+      ],
+      "finalTop3": [
+        "baidu-star",
+        "icpc-programming",
+        "global-campus-ai-algorithm"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-smart-agricultural-equipment",
+      "inputSha256": "f11a0344e10877df3ecc93ccf422c7abcb713037f60bf672ae96e36a9be5bce2",
+      "fixedCompetitionId": "smart-agricultural-equipment",
+      "fixedCompetitionDisplayedScore": 91.7,
+      "top10": [
+        "smart-agricultural-equipment",
+        "robotac",
+        "intelligent-robot-creativity",
+        "robocup-china",
+        "china-robot-ai",
+        "raicom-robot-developer",
+        "siemens-intelligent-manufacturing",
+        "future-aircraft-design",
+        "low-altitude-industry",
+        "energy-conservation-emission-reduction"
+      ],
+      "finalTop3": [
+        "smart-agricultural-equipment",
+        "robotac",
+        "intelligent-robot-creativity"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-keyun-accounting",
+      "inputSha256": "bb994393a28d731b7297958a6c5333a01c3cd516f8d15f86c0e581395b8deba8",
+      "fixedCompetitionId": "keyun-accounting",
+      "fixedCompetitionDisplayedScore": 93.1,
+      "top10": [
+        "keyun-accounting",
+        "ecommerce-innovation-creativity-entrepreneurship",
+        "challenge-cup-entrepreneurship-plan",
+        "business-elite-innovation",
+        "icbc-fintech-innovation",
+        "national-college-logistics-design",
+        "xuechuangbei-business-simulation",
+        "robocup-china",
+        "market-research-analysis",
+        "energy-economics-academic-creativity"
+      ],
+      "finalTop3": [
+        "keyun-accounting",
+        "ecommerce-innovation-creativity-entrepreneurship",
+        "challenge-cup-entrepreneurship-plan"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-world-vocational-skills",
+      "inputSha256": "742957021fce168de2d8cb95c5f1d8ac97d290b1803e14f815a525b5281c58f2",
+      "fixedCompetitionId": "world-vocational-skills",
+      "fixedCompetitionDisplayedScore": 82.7,
+      "top10": [
+        "worldskills-china-selection",
+        "worldskills",
+        "world-vocational-skills",
+        "career-planning",
+        "robocup-china",
+        "brics-skills",
+        "keyun-accounting",
+        "vocational-innovation-entrepreneurship",
+        "china-us-young-maker",
+        "china-college-computer-contest"
+      ],
+      "finalTop3": [
+        "career-planning",
+        "worldskills-china-selection",
+        "world-vocational-skills"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-robotac",
+      "inputSha256": "cde624d5dc4901d56ce1c71942027f63a890c0bd501826a8cff7031809f11a4e",
+      "fixedCompetitionId": "robotac",
+      "fixedCompetitionDisplayedScore": 95,
+      "top10": [
+        "robotac",
+        "smart-car",
+        "robocon",
+        "intelligent-robot-creativity",
+        "china-robot-ai",
+        "robocup-china",
+        "raicom-robot-developer",
+        "iot-design",
+        "siemens-intelligent-manufacturing",
+        "smart-agricultural-equipment"
+      ],
+      "finalTop3": [
+        "smart-car",
+        "robocon",
+        "robotac"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-worldskills",
+      "inputSha256": "8e12a48d1642711d8d07033845f1f0b9e6096d1a5113cfdc0c4475278f3fe66c",
+      "fixedCompetitionId": "worldskills",
+      "fixedCompetitionDisplayedScore": 92.9,
+      "top10": [
+        "robocup-china",
+        "worldskills",
+        "worldskills-china-selection",
+        "brics-skills",
+        "keyun-accounting",
+        "career-planning",
+        "robocon",
+        "robotac",
+        "smart-car",
+        "national-college-electronic-design"
+      ],
+      "finalTop3": [
+        "robocup-china",
+        "worldskills",
+        "worldskills-china-selection"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-worldskills-china-selection",
+      "inputSha256": "d12aa77c3457da0f4b787353099938e203617fa1a08ad35b4e17c6dbe17e205c",
+      "fixedCompetitionId": "worldskills-china-selection",
+      "fixedCompetitionDisplayedScore": 92.9,
+      "top10": [
+        "robocup-china",
+        "worldskills-china-selection",
+        "worldskills",
+        "brics-skills",
+        "keyun-accounting",
+        "career-planning",
+        "robotac",
+        "china-robot-ai",
+        "intelligent-robot-creativity",
+        "china-college-computer-contest"
+      ],
+      "finalTop3": [
+        "robocup-china",
+        "worldskills-china-selection",
+        "worldskills"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-brics-skills",
+      "inputSha256": "afc91644fadbda27026070d411c621834ed5e7f09d80228d73724be72244e917",
+      "fixedCompetitionId": "brics-skills",
+      "fixedCompetitionDisplayedScore": 79.9,
+      "top10": [
+        "china-software-cup",
+        "graduate-ai-innovation",
+        "brics-skills",
+        "worldskills-china-selection",
+        "robocup-china",
+        "worldskills",
+        "siemens-intelligent-manufacturing",
+        "low-altitude-industry",
+        "china-international-college-innovation",
+        "challenge-cup-academic-science"
+      ],
+      "finalTop3": [
+        "china-software-cup",
+        "graduate-ai-innovation",
+        "brics-skills"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-matiji-programming",
+      "inputSha256": "5ad57ee535587de2cb232421a0691872a0d24e20ece302adf7630c1ab9749fdb",
+      "fixedCompetitionId": "matiji-programming",
+      "fixedCompetitionDisplayedScore": 89.9,
+      "top10": [
+        "baidu-star",
+        "matiji-programming",
+        "global-campus-ai-algorithm",
+        "lanqiao-cup",
+        "national-college-math-modeling",
+        "computer-system-ability",
+        "china-us-young-maker",
+        "siemens-intelligent-manufacturing",
+        "youth-tech-challenge",
+        "worldskills"
+      ],
+      "finalTop3": [
+        "matiji-programming",
+        "global-campus-ai-algorithm",
+        "baidu-star"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-national-college-mathematics",
+      "inputSha256": "41b6263c7c420306a7e5be03daac1abdc684aba1acbb9294e7e454826e489568",
+      "fixedCompetitionId": "national-college-mathematics",
+      "fixedCompetitionDisplayedScore": 82.8,
+      "top10": [
+        "national-college-math-modeling",
+        "zhou-peiyuan-mechanics",
+        "national-college-mathematics",
+        "baidu-star",
+        "global-campus-ai-algorithm",
+        "matiji-programming",
+        "surveying-innovation",
+        "challenge-cup-academic-science",
+        "water-innovation-design",
+        "green-development"
+      ],
+      "finalTop3": [
+        "national-college-mathematics",
+        "matiji-programming",
+        "national-college-math-modeling"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-red-tourism-creative-planning",
+      "inputSha256": "49e609d8fba6dacdbf4cf19a89bcedcda43f26a81710b18fc7c67c13da72833b",
+      "fixedCompetitionId": "red-tourism-creative-planning",
+      "fixedCompetitionDisplayedScore": 80.2,
+      "top10": [
+        "red-tourism-creative-planning",
+        "intercultural-competence",
+        "challenge-cup-academic-science",
+        "youth-tech-challenge",
+        "understanding-contemporary-china-foreign-language",
+        "china-international-college-innovation",
+        "chinese-classics",
+        "challenge-cup-entrepreneurship-plan",
+        "green-development",
+        "business-elite-innovation"
+      ],
+      "finalTop3": [
+        "red-tourism-creative-planning",
+        "intercultural-competence",
+        "understanding-contemporary-china-foreign-language"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-graduate-math-modeling",
+      "inputSha256": "76d5f0fbdf792ba9c090b0ad120203ef8710c70c0f153befb42fed0253931fa3",
+      "fixedCompetitionId": "graduate-math-modeling",
+      "fixedCompetitionDisplayedScore": 95,
+      "top10": [
+        "graduate-math-modeling",
+        "statistical-modeling",
+        "zhou-peiyuan-mechanics",
+        "energy-economics-academic-creativity",
+        "market-research-analysis",
+        "global-campus-ai-algorithm",
+        "graduate-ai-innovation",
+        "robocup-china",
+        "icpc-programming",
+        "graduate-public-management-case"
+      ],
+      "finalTop3": [
+        "graduate-math-modeling",
+        "statistical-modeling",
+        "zhou-peiyuan-mechanics"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-graduate-electronic-design",
+      "inputSha256": "f1c441b14c1348759f7c80b9c3e888de111dc036ece39a18d4b416bddc133be1",
+      "fixedCompetitionId": "graduate-electronic-design",
+      "fixedCompetitionDisplayedScore": 93.9,
+      "top10": [
+        "embedded-chip-system-design",
+        "graduate-electronic-design",
+        "datang-ict",
+        "integrated-circuit-innovation",
+        "china-college-computer-contest",
+        "huawei-ict",
+        "china-software-cup",
+        "digital-media-creative-tech",
+        "ican-innovation-entrepreneurship",
+        "icbc-fintech-innovation"
+      ],
+      "finalTop3": [
+        "graduate-electronic-design",
+        "embedded-chip-system-design",
+        "datang-ict"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-graduate-ai-innovation",
+      "inputSha256": "27e064fad5886db4f34def42bddc44095414e2cb411765e2cec6ed010085ea9a",
+      "fixedCompetitionId": "graduate-ai-innovation",
+      "fixedCompetitionDisplayedScore": 84.9,
+      "top10": [
+        "icpc-programming",
+        "global-campus-ai-algorithm",
+        "graduate-ai-innovation",
+        "huawei-ict",
+        "graduate-cybersecurity-innovation",
+        "china-college-computer-contest",
+        "embedded-chip-system-design",
+        "china-software-cup",
+        "icbc-fintech-innovation",
+        "integrated-circuit-innovation"
+      ],
+      "finalTop3": [
+        "global-campus-ai-algorithm",
+        "icpc-programming",
+        "graduate-ai-innovation"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-graduate-public-management-case",
+      "inputSha256": "2520d4df0f1cfba1ca09a88d7ec37481247a486bba505bd6b31e670c085247f0",
+      "fixedCompetitionId": "graduate-public-management-case",
+      "fixedCompetitionDisplayedScore": 94.1,
+      "top10": [
+        "graduate-public-management-case",
+        "china-international-college-innovation",
+        "green-development",
+        "challenge-cup-entrepreneurship-plan",
+        "business-elite-innovation",
+        "challenge-cup-academic-science",
+        "youth-tech-challenge",
+        "national-college-logistics-design",
+        "xuechuangbei-business-simulation",
+        "graduate-math-modeling"
+      ],
+      "finalTop3": [
+        "graduate-public-management-case",
+        "challenge-cup-academic-science",
+        "china-international-college-innovation"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-graduate-culture-china",
+      "inputSha256": "938c02c98e77ced1539a845c68a39d27d2f1df68b0f64bd83a3d1a5a06619438",
+      "fixedCompetitionId": "graduate-culture-china",
+      "fixedCompetitionDisplayedScore": 93.1,
+      "top10": [
+        "graduate-culture-china",
+        "intercultural-competence",
+        "chinese-classics",
+        "understanding-contemporary-china-foreign-language",
+        "huacan-design-award",
+        "future-designer-ncda",
+        "china-good-design",
+        "milan-design-week-china",
+        "garden-design-build",
+        "graduate-math-modeling"
+      ],
+      "finalTop3": [
+        "graduate-culture-china",
+        "intercultural-competence",
+        "chinese-classics"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-comap-mcm-icm",
+      "inputSha256": "479235cb2e8f6f4f109876b1795cd897357cdf7eda2ffa9bcb883a3850972a9e",
+      "fixedCompetitionId": "comap-mcm-icm",
+      "fixedCompetitionDisplayedScore": 94.9,
+      "top10": [
+        "comap-mcm-icm",
+        "national-college-math-modeling",
+        "zhou-peiyuan-mechanics",
+        "energy-economics-academic-creativity",
+        "global-campus-ai-algorithm",
+        "information-security",
+        "robocup-china",
+        "robocon",
+        "surveying-innovation",
+        "physics-experiment-innovation"
+      ],
+      "finalTop3": [
+        "comap-mcm-icm",
+        "national-college-math-modeling",
+        "zhou-peiyuan-mechanics"
+      ]
+    },
+    {
+      "dataset": "anchor",
+      "personaId": "anchor-igem-collegiate",
+      "inputSha256": "402b62580817c9d2a07b70258ae1655e9e7029ae5ba8b33342d530ceb08f6e4d",
+      "fixedCompetitionId": "igem-collegiate",
+      "fixedCompetitionDisplayedScore": 93.4,
+      "top10": [
+        "igem-collegiate",
+        "culsc-life-sciences",
+        "basic-medicine-innovation",
+        "zhou-peiyuan-mechanics",
+        "comap-mcm-icm",
+        "information-security",
+        "physics-experiment-innovation",
+        "surveying-innovation",
+        "robocup-china",
+        "challenge-cup-academic-science"
+      ],
+      "finalTop3": [
+        "igem-collegiate",
+        "culsc-life-sciences",
+        "basic-medicine-innovation"
+      ]
+    },
+    {
+      "dataset": "holdout",
+      "personaId": "rank-vocational-algorithm",
+      "inputSha256": "068e7649c0ae494604879c2745c5fbe8a4bfc5230bdbf9fde1d744c8bb4bec2f",
+      "fixedCompetitionId": "baidu-star",
+      "fixedCompetitionDisplayedScore": 89.5,
+      "top10": [
+        "baidu-star",
+        "matiji-programming",
+        "lanqiao-cup",
+        "national-college-math-modeling",
+        "global-campus-ai-algorithm",
+        "computer-system-ability",
+        "national-college-mathematics",
+        "youth-tech-challenge",
+        "siemens-intelligent-manufacturing",
+        "business-elite-innovation"
+      ],
+      "finalTop3": [
+        "matiji-programming",
+        "baidu-star",
+        "lanqiao-cup"
+      ]
+    },
+    {
+      "dataset": "holdout",
+      "personaId": "rank-vocational-business-simulation",
+      "inputSha256": "d53f646ee7010f685c7de55cdaa7bafc0ce5b1ff89484aae8f66baa1fa5f2a4a",
+      "fixedCompetitionId": "enterprise-competition-simulation",
+      "fixedCompetitionDisplayedScore": 87.2,
+      "top10": [
+        "enterprise-competition-simulation",
+        "xuechuangbei-business-simulation",
+        "business-elite-innovation",
+        "market-research-analysis",
+        "ecommerce-innovation-creativity-entrepreneurship",
+        "icbc-fintech-innovation",
+        "challenge-cup-entrepreneurship-plan",
+        "china-us-young-maker",
+        "china-international-college-innovation",
+        "china-good-design"
+      ],
+      "finalTop3": [
+        "enterprise-competition-simulation",
+        "xuechuangbei-business-simulation",
+        "business-elite-innovation"
+      ]
+    },
+    {
+      "dataset": "holdout",
+      "personaId": "rank-vocational-robotics",
+      "inputSha256": "b145a8199365a83c9c45833bf9827d597c37545ac5f600067e913adb569c296b",
+      "fixedCompetitionId": "intelligent-robot-creativity",
+      "fixedCompetitionDisplayedScore": 93.2,
+      "top10": [
+        "intelligent-robot-creativity",
+        "robotac",
+        "robocup-china",
+        "raicom-robot-developer",
+        "china-us-young-maker",
+        "national-college-electronic-design",
+        "iot-design",
+        "siemens-intelligent-manufacturing",
+        "smart-agricultural-equipment",
+        "low-altitude-industry"
+      ],
+      "finalTop3": [
+        "intelligent-robot-creativity",
+        "robotac",
+        "raicom-robot-developer"
+      ]
+    },
+    {
+      "dataset": "holdout",
+      "personaId": "rank-vocational-visual-design",
+      "inputSha256": "1e4e30bbf6d10838d536c190cd1ed2d490a1076e9ed712c1096f5fdd3694a794",
+      "fixedCompetitionId": "china-good-design",
+      "fixedCompetitionDisplayedScore": 95,
+      "top10": [
+        "china-good-design",
+        "milan-design-week-china",
+        "huacan-design-award",
+        "future-designer-ncda",
+        "3d-digital-innovation-design",
+        "digital-media-creative-tech",
+        "china-college-computer-design",
+        "intelligent-robot-creativity",
+        "intercultural-competence",
+        "advanced-graphics-bim"
+      ],
+      "finalTop3": [
+        "china-good-design",
+        "milan-design-week-china",
+        "huacan-design-award"
+      ]
+    },
+    {
+      "dataset": "holdout",
+      "personaId": "rank-vocational-career-language",
+      "inputSha256": "a12fd02477a68f18773ba4f9e5044b0f3df1e4570d436e14375f674c26eae15a",
+      "fixedCompetitionId": "career-planning",
+      "fixedCompetitionDisplayedScore": 83.9,
+      "top10": [
+        "career-planning",
+        "intercultural-competence",
+        "understanding-contemporary-china-foreign-language",
+        "chinese-classics",
+        "huacan-design-award",
+        "future-designer-ncda",
+        "china-good-design",
+        "worldskills-china-selection",
+        "worldskills",
+        "milan-design-week-china"
+      ],
+      "finalTop3": [
+        "career-planning",
+        "intercultural-competence",
+        "understanding-contemporary-china-foreign-language"
+      ]
+    },
+    {
+      "dataset": "holdout",
+      "personaId": "rank-undergraduate-lower-algorithm",
+      "inputSha256": "353dffebdfcee4f6f82ccd19f67f120beeaf2a6739795558763a4c9583f4adac",
+      "fixedCompetitionId": "icpc-programming",
+      "fixedCompetitionDisplayedScore": 92.1,
+      "top10": [
+        "icpc-programming",
+        "huawei-ict",
+        "china-software-cup",
+        "global-campus-ai-algorithm",
+        "national-college-math-modeling",
+        "embedded-chip-system-design",
+        "service-outsourcing-innovation",
+        "national-college-electronic-design",
+        "china-college-computer-contest",
+        "information-security"
+      ],
+      "finalTop3": [
+        "icpc-programming",
+        "china-software-cup",
+        "huawei-ict"
+      ]
+    },
+    {
+      "dataset": "holdout",
+      "personaId": "rank-undergraduate-lower-business-simulation",
+      "inputSha256": "c8ffe24f8697fd7e569013833e5ac0ee10e5bec4eb07cbecbcd4869c81abae6d",
+      "fixedCompetitionId": "enterprise-competition-simulation",
+      "fixedCompetitionDisplayedScore": 88,
+      "top10": [
+        "enterprise-competition-simulation",
+        "xuechuangbei-business-simulation",
+        "business-elite-innovation",
+        "market-research-analysis",
+        "ecommerce-innovation-creativity-entrepreneurship",
+        "icbc-fintech-innovation",
+        "national-college-logistics-design",
+        "challenge-cup-entrepreneurship-plan",
+        "tax-risk-case",
+        "energy-economics-academic-creativity"
+      ],
+      "finalTop3": [
+        "enterprise-competition-simulation",
+        "xuechuangbei-business-simulation",
+        "business-elite-innovation"
+      ]
+    },
+    {
+      "dataset": "holdout",
+      "personaId": "rank-undergraduate-lower-robotics",
+      "inputSha256": "ef78e92abb6e2503219cae2f304a0a80c403818855101b860f1e03ddabe94d79",
+      "fixedCompetitionId": "china-robot-ai",
+      "fixedCompetitionDisplayedScore": 92.7,
+      "top10": [
+        "robocon",
+        "intelligent-robot-creativity",
+        "robotac",
+        "china-robot-ai",
+        "robocup-china",
+        "raicom-robot-developer",
+        "smart-car",
+        "iot-design",
+        "national-college-electronic-design",
+        "engineering-practice-innovation"
+      ],
+      "finalTop3": [
+        "intelligent-robot-creativity",
+        "robotac",
+        "robocon"
+      ]
+    },
+    {
+      "dataset": "holdout",
+      "personaId": "rank-undergraduate-lower-visual-design",
+      "inputSha256": "b1c6952ed98b951fa71683a7e7b5de46918f6aa520aae4c354a25c31c80b8544",
+      "fixedCompetitionId": "china-good-design",
+      "fixedCompetitionDisplayedScore": 95,
+      "top10": [
+        "china-good-design",
+        "national-advertising-art",
+        "milan-design-week-china",
+        "huacan-design-award",
+        "future-designer-ncda",
+        "garden-design-build",
+        "3d-digital-innovation-design",
+        "digital-media-creative-tech",
+        "national-college-industrial-design",
+        "china-college-computer-design"
+      ],
+      "finalTop3": [
+        "china-good-design",
+        "national-advertising-art",
+        "milan-design-week-china"
+      ]
+    },
+    {
+      "dataset": "holdout",
+      "personaId": "rank-undergraduate-lower-career-language",
+      "inputSha256": "c7aae065f8071453460046d8955c1253c7854b407f335fc06253bdb5057309d8",
+      "fixedCompetitionId": "career-planning",
+      "fixedCompetitionDisplayedScore": 84.6,
+      "top10": [
+        "career-planning",
+        "21st-century-english-speaking",
+        "intercultural-competence",
+        "understanding-contemporary-china-foreign-language",
+        "chinese-classics",
+        "huacan-design-award",
+        "future-designer-ncda",
+        "china-good-design",
+        "national-advertising-art",
+        "worldskills"
+      ],
+      "finalTop3": [
+        "career-planning",
+        "21st-century-english-speaking",
+        "intercultural-competence"
+      ]
+    },
+    {
+      "dataset": "holdout",
+      "personaId": "rank-undergraduate-upper-chemistry-lab",
+      "inputSha256": "5204136739e8ba2411faed11ca406e65ac7e3efe069c7b60bf3d5a15d0029250",
+      "fixedCompetitionId": "chemical-engineering-experiment",
+      "fixedCompetitionDisplayedScore": 87.3,
+      "top10": [
+        "chemistry-experiment-innovation",
+        "chemical-engineering-experiment",
+        "zhou-peiyuan-mechanics",
+        "chemical-engineering-design",
+        "national-structural-design",
+        "mechanical-engineering-innovation",
+        "comap-mcm-icm",
+        "information-security",
+        "robocup-china",
+        "physics-experiment-innovation"
+      ],
+      "finalTop3": [
+        "chemistry-experiment-innovation",
+        "chemical-engineering-experiment",
+        "zhou-peiyuan-mechanics"
+      ]
+    },
+    {
+      "dataset": "holdout",
+      "personaId": "rank-undergraduate-upper-digital-building",
+      "inputSha256": "3296bb79f67cd1d052dbfb79c59b606a6adc51a4f35000f7a4bfa38b56e66606",
+      "fixedCompetitionId": "advanced-graphics-bim",
+      "fixedCompetitionDisplayedScore": 89.8,
+      "top10": [
+        "bim-graduation-design",
+        "national-structural-design",
+        "advanced-graphics-bim",
+        "garden-design-build",
+        "digital-building-innovation",
+        "3d-digital-innovation-design",
+        "surveying-innovation",
+        "smart-car",
+        "intelligent-robot-creativity",
+        "mechanical-engineering-innovation"
+      ],
+      "finalTop3": [
+        "national-structural-design",
+        "garden-design-build",
+        "bim-graduation-design"
+      ]
+    },
+    {
+      "dataset": "holdout",
+      "personaId": "rank-undergraduate-upper-medical-research",
+      "inputSha256": "a5c9ec9156941e4cb96eb87e700b072de424364ff96dca822ec644685205b89d",
+      "fixedCompetitionId": "basic-medicine-innovation",
+      "fixedCompetitionDisplayedScore": 93.1,
+      "top10": [
+        "igem-collegiate",
+        "basic-medicine-innovation",
+        "culsc-life-sciences",
+        "challenge-cup-academic-science",
+        "youth-tech-challenge",
+        "national-college-math-modeling",
+        "icpc-programming",
+        "china-international-college-innovation",
+        "green-development",
+        "challenge-cup-entrepreneurship-plan"
+      ],
+      "finalTop3": [
+        "basic-medicine-innovation",
+        "igem-collegiate",
+        "culsc-life-sciences"
+      ]
+    },
+    {
+      "dataset": "holdout",
+      "personaId": "rank-undergraduate-upper-electronics",
+      "inputSha256": "e35629c7be4d0ddae50eecc143166b3e1ea5e5dfafc6ffaacabbc31cf071a89c",
+      "fixedCompetitionId": "embedded-chip-system-design",
+      "fixedCompetitionDisplayedScore": 92,
+      "top10": [
+        "national-college-electronic-design",
+        "smart-car",
+        "embedded-chip-system-design",
+        "integrated-circuit-innovation",
+        "robocon",
+        "china-college-computer-contest",
+        "huawei-ict",
+        "icpc-programming",
+        "service-outsourcing-innovation",
+        "brics-skills"
+      ],
+      "finalTop3": [
+        "national-college-electronic-design",
+        "embedded-chip-system-design",
+        "smart-car"
+      ]
+    },
+    {
+      "dataset": "holdout",
+      "personaId": "rank-undergraduate-upper-finance-tax",
+      "inputSha256": "7c7160b5fbe8aae070ecba32a85c8abf8ee7d455fab8808dbf1024f7b613c78e",
+      "fixedCompetitionId": "tax-risk-case",
+      "fixedCompetitionDisplayedScore": 89.9,
+      "top10": [
+        "tax-risk-case",
+        "market-research-analysis",
+        "business-elite-innovation",
+        "icbc-fintech-innovation",
+        "ecommerce-innovation-creativity-entrepreneurship",
+        "national-college-logistics-design",
+        "energy-economics-academic-creativity",
+        "enterprise-competition-simulation",
+        "challenge-cup-entrepreneurship-plan",
+        "xuechuangbei-business-simulation"
+      ],
+      "finalTop3": [
+        "tax-risk-case",
+        "market-research-analysis",
+        "business-elite-innovation"
+      ]
+    },
+    {
+      "dataset": "holdout",
+      "personaId": "rank-master-modeling",
+      "inputSha256": "dba5daedeb97c77570fe011bca864703951b6406933c065ece56cffde4bd04d5",
+      "fixedCompetitionId": "graduate-math-modeling",
+      "fixedCompetitionDisplayedScore": 90.8,
+      "top10": [
+        "statistical-modeling",
+        "graduate-math-modeling",
+        "market-research-analysis",
+        "zhou-peiyuan-mechanics",
+        "energy-economics-academic-creativity",
+        "global-campus-ai-algorithm",
+        "graduate-ai-innovation",
+        "robocup-china",
+        "icpc-programming",
+        "challenge-cup-academic-science"
+      ],
+      "finalTop3": [
+        "graduate-math-modeling",
+        "statistical-modeling",
+        "zhou-peiyuan-mechanics"
+      ]
+    },
+    {
+      "dataset": "holdout",
+      "personaId": "rank-master-electronics",
+      "inputSha256": "508ccb915951e620f853e06972ecaf1fb84d80e4c40467a612facd86bf55240c",
+      "fixedCompetitionId": "embedded-chip-system-design",
+      "fixedCompetitionDisplayedScore": 91.7,
+      "top10": [
+        "embedded-chip-system-design",
+        "graduate-electronic-design",
+        "integrated-circuit-innovation",
+        "icpc-programming",
+        "china-college-computer-contest",
+        "huawei-ict",
+        "china-software-cup",
+        "siemens-intelligent-manufacturing",
+        "china-international-college-innovation",
+        "brics-skills"
+      ],
+      "finalTop3": [
+        "embedded-chip-system-design",
+        "graduate-electronic-design",
+        "integrated-circuit-innovation"
+      ]
+    },
+    {
+      "dataset": "holdout",
+      "personaId": "rank-master-ai-research",
+      "inputSha256": "fd86294894493f384af7c997176f6a55cba4a4778ed921941f55a639e929ba73",
+      "fixedCompetitionId": "global-campus-ai-algorithm",
+      "fixedCompetitionDisplayedScore": 89,
+      "top10": [
+        "graduate-ai-innovation",
+        "global-campus-ai-algorithm",
+        "icpc-programming",
+        "china-robot-ai",
+        "china-software-cup",
+        "graduate-math-modeling",
+        "graduate-cybersecurity-innovation",
+        "huawei-ict",
+        "statistical-modeling",
+        "market-research-analysis"
+      ],
+      "finalTop3": [
+        "global-campus-ai-algorithm",
+        "graduate-ai-innovation",
+        "graduate-cybersecurity-innovation"
+      ]
+    },
+    {
+      "dataset": "holdout",
+      "personaId": "rank-master-public-management",
+      "inputSha256": "e499df554a4246ef08a2e1f4a82a52d5cf58f950cccfc96e23658936b3d9ae3d",
+      "fixedCompetitionId": "graduate-public-management-case",
+      "fixedCompetitionDisplayedScore": 93.1,
+      "top10": [
+        "graduate-public-management-case",
+        "challenge-cup-academic-science",
+        "market-research-analysis",
+        "youth-tech-challenge",
+        "green-development",
+        "china-international-college-innovation",
+        "business-elite-innovation",
+        "tax-risk-case",
+        "challenge-cup-entrepreneurship-plan",
+        "statistical-modeling"
+      ],
+      "finalTop3": [
+        "graduate-public-management-case",
+        "challenge-cup-academic-science",
+        "market-research-analysis"
+      ]
+    },
+    {
+      "dataset": "holdout",
+      "personaId": "rank-master-culture",
+      "inputSha256": "ea8e2cf698621fc8bc5b90851f530b8103d7859bcffe45b6c4afe5289d095255",
+      "fixedCompetitionId": "chinese-classics",
+      "fixedCompetitionDisplayedScore": 86.3,
+      "top10": [
+        "graduate-culture-china",
+        "chinese-classics",
+        "intercultural-competence",
+        "understanding-contemporary-china-foreign-language",
+        "huacan-design-award",
+        "future-designer-ncda",
+        "graduate-math-modeling",
+        "china-good-design",
+        "statistical-modeling",
+        "future-aircraft-design"
+      ],
+      "finalTop3": [
+        "graduate-culture-china",
+        "chinese-classics",
+        "intercultural-competence"
+      ]
+    },
+    {
+      "dataset": "holdout",
+      "personaId": "rank-doctorate-or-recent-modeling",
+      "inputSha256": "9da5e1b75bb115292066be47175ab76dda9f6c9fa0d5569613d0f6f6fcf877a8",
+      "fixedCompetitionId": "graduate-math-modeling",
+      "fixedCompetitionDisplayedScore": 90.8,
+      "top10": [
+        "statistical-modeling",
+        "graduate-math-modeling",
+        "market-research-analysis",
+        "zhou-peiyuan-mechanics",
+        "energy-economics-academic-creativity",
+        "global-campus-ai-algorithm",
+        "graduate-ai-innovation",
+        "robocup-china",
+        "icpc-programming",
+        "challenge-cup-academic-science"
+      ],
+      "finalTop3": [
+        "graduate-math-modeling",
+        "statistical-modeling",
+        "zhou-peiyuan-mechanics"
+      ]
+    },
+    {
+      "dataset": "holdout",
+      "personaId": "rank-doctorate-or-recent-electronics",
+      "inputSha256": "4087dd8d8a37582a943e3f6f21b948f73ceb0e0d61f7c578b35cc5ec4bb9cc70",
+      "fixedCompetitionId": "embedded-chip-system-design",
+      "fixedCompetitionDisplayedScore": 91.7,
+      "top10": [
+        "embedded-chip-system-design",
+        "graduate-electronic-design",
+        "integrated-circuit-innovation",
+        "icpc-programming",
+        "china-college-computer-contest",
+        "huawei-ict",
+        "china-software-cup",
+        "siemens-intelligent-manufacturing",
+        "china-international-college-innovation",
+        "brics-skills"
+      ],
+      "finalTop3": [
+        "embedded-chip-system-design",
+        "graduate-electronic-design",
+        "integrated-circuit-innovation"
+      ]
+    },
+    {
+      "dataset": "holdout",
+      "personaId": "rank-doctorate-or-recent-ai-research",
+      "inputSha256": "53864c6044a6302eec48b16d0bf78c50ea3bd7e593380020f87eb32f73186796",
+      "fixedCompetitionId": "global-campus-ai-algorithm",
+      "fixedCompetitionDisplayedScore": 89,
+      "top10": [
+        "graduate-ai-innovation",
+        "global-campus-ai-algorithm",
+        "icpc-programming",
+        "china-robot-ai",
+        "china-software-cup",
+        "graduate-math-modeling",
+        "graduate-cybersecurity-innovation",
+        "huawei-ict",
+        "statistical-modeling",
+        "market-research-analysis"
+      ],
+      "finalTop3": [
+        "global-campus-ai-algorithm",
+        "graduate-ai-innovation",
+        "graduate-cybersecurity-innovation"
+      ]
+    },
+    {
+      "dataset": "holdout",
+      "personaId": "rank-doctorate-or-recent-public-management",
+      "inputSha256": "f642f1ca174ca367d003a7f27b6a5dc368734fe45526d9c1a6e75e7f8f44155d",
+      "fixedCompetitionId": "graduate-public-management-case",
+      "fixedCompetitionDisplayedScore": 93.1,
+      "top10": [
+        "graduate-public-management-case",
+        "challenge-cup-academic-science",
+        "market-research-analysis",
+        "youth-tech-challenge",
+        "green-development",
+        "china-international-college-innovation",
+        "business-elite-innovation",
+        "tax-risk-case",
+        "challenge-cup-entrepreneurship-plan",
+        "statistical-modeling"
+      ],
+      "finalTop3": [
+        "graduate-public-management-case",
+        "challenge-cup-academic-science",
+        "market-research-analysis"
+      ]
+    },
+    {
+      "dataset": "holdout",
+      "personaId": "rank-doctorate-or-recent-culture",
+      "inputSha256": "327238570eedace6a3a229abd66a1411311d501aff58a6ff9a48b6c6cc72e14e",
+      "fixedCompetitionId": "chinese-classics",
+      "fixedCompetitionDisplayedScore": 86.3,
+      "top10": [
+        "graduate-culture-china",
+        "chinese-classics",
+        "intercultural-competence",
+        "understanding-contemporary-china-foreign-language",
+        "huacan-design-award",
+        "future-designer-ncda",
+        "graduate-math-modeling",
+        "china-good-design",
+        "statistical-modeling",
+        "future-aircraft-design"
+      ],
+      "finalTop3": [
+        "graduate-culture-china",
+        "chinese-classics",
+        "intercultural-competence"
+      ]
+    }
+  ],
+  "aggregates": {
+    "anchorFixedPairMean": 90.28599999999999,
+    "holdoutFixedPairMean": 90.204
+  },
+  "resultsSha256": "63128d7d7009c56583162810f43dc8fee7044768db5d6eaf1c308e78fbd4d0a5",
+  "artifactSha256": "4ad37b38b28ddbce4a62c20f297453476aaa2bb06efa40745f0f40a2cfd380bd"
+}

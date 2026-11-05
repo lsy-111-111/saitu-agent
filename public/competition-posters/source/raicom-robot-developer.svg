@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="480" viewBox="0 0 1280 480" role="img" aria-labelledby="title desc">
+  <title id="title">robot modules, control bus and task checkpoints</title>
+  <desc id="desc">Original technical-editorial competition illustration without official competition identity artwork.</desc>
+  <metadata><![CDATA[{"id":"raicom-robot-developer","origin":"ai-generated","generator":"Codex code-native SVG renderer v2","generatedAt":"2026-08-23","semantic":"robot modules, control bus and task checkpoints","direction":"人工智能与物联","externalAssets":false,"officialIdentityUsed":false,"humanAuthorshipClaimed":false,"humanReviewStatus":"not-claimed","editorialReviewStatus":"assistant-reviewed-passed","editorialReviewedAt":"2026-08-23","implicitLabelStandard":"GB 45438-2025","implicitLabel":{"Label":"1","ContentProducer":"Saitu Campus","ProduceID":"467773cc9572489f41e7902624314102","ReservedCode1":"","ContentPropagator":"Saitu Campus","PropagateID":"467773cc9572489f41e7902624314102","ReservedCode2":""}}]]></metadata>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#242B49" stroke-opacity=".065" stroke-width="1"/></pattern>
+    <pattern id="fiber" width="73" height="47" patternUnits="userSpaceOnUse"><path d="m6 11 17-2m18 25 24 2M31 43l13-1" stroke="#242B49" stroke-width=".7" opacity=".08"/></pattern>
+    <pattern id="hatching" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(12)"><path d="M0 0V9" stroke="#16A09A" stroke-width="3" opacity=".52"/></pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="m0 0 9 5-9 5Z" fill="#4D59C4"/></marker>
+    <clipPath id="artboard"><rect width="1280" height="480"/></clipPath>
+  </defs>
+  <style>
+    .s{fill:none;stroke:#242B49;stroke-width:4.2;stroke-linecap:square;stroke-linejoin:miter}
+    .h{fill:none;stroke:#242B49;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;opacity:.72}
+    .dim{fill:none;stroke:#4D59C4;stroke-width:2;stroke-dasharray:8 7;opacity:.86}
+    .a{fill:#4D59C4}.b{fill:#16A09A}.wash{fill:#4D59C4;opacity:.14}.paper{fill:#F0F0E8}.hatch{fill:url(#hatching)}
+    .mis{transform:translate(3px,-2px);opacity:.38}.frame{fill:none;stroke:#242B49;stroke-width:1.5;opacity:.36}
+    .label,.notation{font-family:Arial,"Noto Sans SC",sans-serif;font-size:15px;font-weight:700;letter-spacing:2.3px;fill:#242B49;opacity:.72}
+    .notation{font-size:13px;fill:#4D59C4;opacity:1}
+  </style>
+  <rect width="1280" height="480" fill="#F0F0E8"/>
+  <rect width="1280" height="480" fill="url(#fiber)"/>
+  <rect width="1280" height="480" fill="url(#grid)"/>
+  <g clip-path="url(#artboard)">
+    <path d="M-50 422 351 18" stroke="#16A09A" stroke-width="36" opacity=".07"/>
+    <path d="m1038 506 292-294" stroke="#4D59C4" stroke-width="20" opacity=".08"/>
+    
+      <path class="frame" d="M898 39v402M927 39v402M898 128h294M898 352h294"/>
+      <text class="label" x="958" y="105">人工智能与物联</text>
+      <text class="notation" x="958" y="385">RAIL / 08</text>
+    <g transform="translate(-34 58) scale(1.06)">
+    <g transform="translate(-6 -1)">
+      <path class="h" d="M23 44h670v280H23Z M90 44v280M157 44v280M224 44v280M291 44v280M358 44v280M425 44v280M492 44v280M559 44v280M626 44v280M23 100h670M23 156h670M23 212h670M23 268h670"/>
+      <path class="wash" d="M191 111h242v146H191Z"/><path class="s" d="M191 111h242v146H191Zm44 0V78h154v33M218 257v34m188-34v34"/>
+      <circle class="a" cx="247" cy="181" r="20"/><circle class="a" cx="377" cy="181" r="20"/><path class="s" d="M270 223h85"/>
+      <path class="s" d="M72 294C180 233 157 90 309 75s193 104 310 57" marker-end="url(#arrow)"/>
+      <path class="b" d="M574 105h82v82h-82Z"/>
+    </g></g>
+    <g opacity=".5"><path class="s" d="M31 31h22M42 20v22M1227 449h22M1238 438v22"/></g>
+  </g>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="480" viewBox="0 0 1280 480" role="img" aria-labelledby="title desc">
+  <title id="title">digital art layers, crop windows and motion keyframes</title>
+  <desc id="desc">Original technical-editorial competition illustration without official competition identity artwork.</desc>
+  <metadata><![CDATA[{"id":"china-good-design","origin":"ai-generated","generator":"Codex code-native SVG renderer v2","generatedAt":"2026-08-23","semantic":"digital art layers, crop windows and motion keyframes","direction":"创意与数字","externalAssets":false,"officialIdentityUsed":false,"humanAuthorshipClaimed":false,"humanReviewStatus":"not-claimed","editorialReviewStatus":"assistant-reviewed-passed","editorialReviewedAt":"2026-08-23","implicitLabelStandard":"GB 45438-2025","implicitLabel":{"Label":"1","ContentProducer":"Saitu Campus","ProduceID":"d1cec0314c7f29a6252d140e0035aaef","ReservedCode1":"","ContentPropagator":"Saitu Campus","PropagateID":"d1cec0314c7f29a6252d140e0035aaef","ReservedCode2":""}}]]></metadata>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#20243B" stroke-opacity=".065" stroke-width="1"/></pattern>
+    <pattern id="fiber" width="73" height="47" patternUnits="userSpaceOnUse"><path d="m6 11 17-2m18 25 24 2M31 43l13-1" stroke="#20243B" stroke-width=".7" opacity=".08"/></pattern>
+    <pattern id="hatching" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(12)"><path d="M0 0V9" stroke="#D65E73" stroke-width="3" opacity=".52"/></pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="m0 0 9 5-9 5Z" fill="#5356C9"/></marker>
+    <clipPath id="artboard"><rect width="1280" height="480"/></clipPath>
+  </defs>
+  <style>
+    .s{fill:none;stroke:#20243B;stroke-width:4.2;stroke-linecap:square;stroke-linejoin:miter}
+    .h{fill:none;stroke:#20243B;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;opacity:.72}
+    .dim{fill:none;stroke:#5356C9;stroke-width:2;stroke-dasharray:8 7;opacity:.86}
+    .a{fill:#5356C9}.b{fill:#D65E73}.wash{fill:#5356C9;opacity:.14}.paper{fill:#F3EFE6}.hatch{fill:url(#hatching)}
+    .mis{transform:translate(3px,-2px);opacity:.38}.frame{fill:none;stroke:#20243B;stroke-width:1.5;opacity:.36}
+    .label,.notation{font-family:Arial,"Noto Sans SC",sans-serif;font-size:15px;font-weight:700;letter-spacing:2.3px;fill:#20243B;opacity:.72}
+    .notation{font-size:13px;fill:#5356C9;opacity:1}
+  </style>
+  <rect width="1280" height="480" fill="#F3EFE6"/>
+  <rect width="1280" height="480" fill="url(#fiber)"/>
+  <rect width="1280" height="480" fill="url(#grid)"/>
+  <g clip-path="url(#artboard)">
+    <path d="M-50 422 351 18" stroke="#D65E73" stroke-width="36" opacity=".07"/>
+    <path d="m1038 506 292-294" stroke="#5356C9" stroke-width="20" opacity=".08"/>
+    
+      <path class="frame" d="M351 39v402M322 39v402M88 128h263M88 352h263"/>
+      <text class="label" x="88" y="105">创意与数字</text>
+      <text class="notation" x="88" y="385">LAYER / 09</text>
+    <g transform="translate(536 48) scale(1.05)">
+    <g transform="translate(26 6)">
+      <rect class="b mis" x="89" y="42" width="324" height="232"/><rect class="a" x="73" y="57" width="324" height="232" opacity=".72"/>
+      <rect class="paper" x="121" y="88" width="228" height="170"/><path class="s" d="M48 77V35h42M379 35h42v42M48 269v42h42M379 311h42v-42"/>
+      <g class="h"><circle cx="468" cy="70" r="1.5"/><circle cx="485" cy="70" r="1.5"/><circle cx="502" cy="70" r="1.5"/><circle cx="519" cy="70" r="1.5"/><circle cx="536" cy="70" r="1.5"/><circle cx="553" cy="70" r="1.5"/><circle cx="570" cy="70" r="1.5"/><circle cx="587" cy="70" r="1.5"/><circle cx="604" cy="70" r="1.5"/><circle cx="621" cy="70" r="1.5"/><circle cx="638" cy="70" r="1.5"/><circle cx="655" cy="70" r="1.5"/><circle cx="468" cy="87" r="1.8599999999999999"/><circle cx="485" cy="87" r="1.8599999999999999"/><circle cx="502" cy="87" r="1.8599999999999999"/><circle cx="519" cy="87" r="1.8599999999999999"/><circle cx="536" cy="87" r="1.8599999999999999"/><circle cx="553" cy="87" r="1.8599999999999999"/><circle cx="570" cy="87" r="1.8599999999999999"/><circle cx="587" cy="87" r="1.8599999999999999"/><circle cx="604" cy="87" r="1.8599999999999999"/><circle cx="621" cy="87" r="1.8599999999999999"/><circle cx="638" cy="87" r="1.8599999999999999"/><circle cx="655" cy="87" r="1.8599999999999999"/><circle cx="468" cy="104" r="2.2199999999999998"/><circle cx="485" cy="104" r="2.2199999999999998"/><circle cx="502" cy="104" r="2.2199999999999998"/><circle cx="519" cy="104" r="2.2199999999999998"/><circle cx="536" cy="104" r="2.2199999999999998"/><circle cx="553" cy="104" r="2.2199999999999998"/><circle cx="570" cy="104" r="2.2199999999999998"/><circle cx="587" cy="104" r="2.2199999999999998"/><circle cx="604" cy="104" r="2.2199999999999998"/><circle cx="621" cy="104" r="2.2199999999999998"/><circle cx="638" cy="104" r="2.2199999999999998"/><circle cx="655" cy="104" r="2.2199999999999998"/><circle cx="468" cy="121" r="2.58"/><circle cx="485" cy="121" r="2.58"/><circle cx="502" cy="121" r="2.58"/><circle cx="519" cy="121" r="2.58"/><circle cx="536" cy="121" r="2.58"/><circle cx="553" cy="121" r="2.58"/><circle cx="570" cy="121" r="2.58"/><circle cx="587" cy="121" r="2.58"/><circle cx="604" cy="121" r="2.58"/><circle cx="621" cy="121" r="2.58"/><circle cx="638" cy="121" r="2.58"/><circle cx="655" cy="121" r="2.58"/><circle cx="468" cy="138" r="2.94"/><circle cx="485" cy="138" r="2.94"/><circle cx="502" cy="138" r="2.94"/><circle cx="519" cy="138" r="2.94"/><circle cx="536" cy="138" r="2.94"/><circle cx="553" cy="138" r="2.94"/><circle cx="570" cy="138" r="2.94"/><circle cx="587" cy="138" r="2.94"/><circle cx="604" cy="138" r="2.94"/><circle cx="621" cy="138" r="2.94"/><circle cx="638" cy="138" r="2.94"/><circle cx="655" cy="138" r="2.94"/><circle cx="468" cy="155" r="3.3"/><circle cx="485" cy="155" r="3.3"/><circle cx="502" cy="155" r="3.3"/><circle cx="519" cy="155" r="3.3"/><circle cx="536" cy="155" r="3.3"/><circle cx="553" cy="155" r="3.3"/><circle cx="570" cy="155" r="3.3"/><circle cx="587" cy="155" r="3.3"/><circle cx="604" cy="155" r="3.3"/><circle cx="621" cy="155" r="3.3"/><circle cx="638" cy="155" r="3.3"/><circle cx="655" cy="155" r="3.3"/><circle cx="468" cy="172" r="3.66"/><circle cx="485" cy="172" r="3.66"/><circle cx="502" cy="172" r="3.66"/><circle cx="519" cy="172" r="3.66"/><circle cx="536" cy="172" r="3.66"/><circle cx="553" cy="172" r="3.66"/><circle cx="570" cy="172" r="3.66"/><circle cx="587" cy="172" r="3.66"/><circle cx="604" cy="172" r="3.66"/><circle cx="621" cy="172" r="3.66"/><circle cx="638" cy="172" r="3.66"/><circle cx="655" cy="172" r="3.66"/><circle cx="468" cy="189" r="4.02"/><circle cx="485" cy="189" r="4.02"/><circle cx="502" cy="189" r="4.02"/><circle cx="519" cy="189" r="4.02"/><circle cx="536" cy="189" r="4.02"/><circle cx="553" cy="189" r="4.02"/><circle cx="570" cy="189" r="4.02"/><circle cx="587" cy="189" r="4.02"/><circle cx="604" cy="189" r="4.02"/><circle cx="621" cy="189" r="4.02"/><circle cx="638" cy="189" r="4.02"/><circle cx="655" cy="189" r="4.02"/></g>
+      <path class="s" d="M481 244h191M481 274h133"/><path class="a" d="M508 199h81v20h-81Z"/>
+      <path class="dim" d="M78 343h564m-564-13v26m564-26v26"/>
+    </g></g>
+    <g opacity=".5"><path class="s" d="M31 31h22M42 20v22M1227 449h22M1238 438v22"/></g>
+  </g>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="480" viewBox="0 0 1280 480" role="img" aria-labelledby="title desc">
+  <title id="title">energy mix, supply-demand curves, dual axes and scenario branches</title>
+  <desc id="desc">Original technical-editorial competition illustration without official competition identity artwork.</desc>
+  <metadata><![CDATA[{"id":"energy-economics-academic-creativity","origin":"ai-generated","generator":"Codex code-native SVG renderer v2","generatedAt":"2026-08-23","semantic":"energy mix, supply-demand curves, dual axes and scenario branches","direction":"学术科研","externalAssets":false,"officialIdentityUsed":false,"humanAuthorshipClaimed":false,"humanReviewStatus":"not-claimed","editorialReviewStatus":"assistant-reviewed-passed","editorialReviewedAt":"2026-08-23","implicitLabelStandard":"GB 45438-2025","implicitLabel":{"Label":"1","ContentProducer":"Saitu Campus","ProduceID":"59b32e4259113361042a0d6cf6b9c202","ReservedCode1":"","ContentPropagator":"Saitu Campus","PropagateID":"59b32e4259113361042a0d6cf6b9c202","ReservedCode2":""}}]]></metadata>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#26344A" stroke-opacity=".065" stroke-width="1"/></pattern>
+    <pattern id="fiber" width="73" height="47" patternUnits="userSpaceOnUse"><path d="m6 11 17-2m18 25 24 2M31 43l13-1" stroke="#26344A" stroke-width=".7" opacity=".08"/></pattern>
+    <pattern id="hatching" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(12)"><path d="M0 0V9" stroke="#C85C52" stroke-width="3" opacity=".52"/></pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="m0 0 9 5-9 5Z" fill="#3C6FA1"/></marker>
+    <clipPath id="artboard"><rect width="1280" height="480"/></clipPath>
+  </defs>
+  <style>
+    .s{fill:none;stroke:#26344A;stroke-width:4.2;stroke-linecap:square;stroke-linejoin:miter}
+    .h{fill:none;stroke:#26344A;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;opacity:.72}
+    .dim{fill:none;stroke:#3C6FA1;stroke-width:2;stroke-dasharray:8 7;opacity:.86}
+    .a{fill:#3C6FA1}.b{fill:#C85C52}.wash{fill:#3C6FA1;opacity:.14}.paper{fill:#F1EFE8}.hatch{fill:url(#hatching)}
+    .mis{transform:translate(3px,-2px);opacity:.38}.frame{fill:none;stroke:#26344A;stroke-width:1.5;opacity:.36}
+    .label,.notation{font-family:Arial,"Noto Sans SC",sans-serif;font-size:15px;font-weight:700;letter-spacing:2.3px;fill:#26344A;opacity:.72}
+    .notation{font-size:13px;fill:#3C6FA1;opacity:1}
+  </style>
+  <rect width="1280" height="480" fill="#F1EFE8"/>
+  <rect width="1280" height="480" fill="url(#fiber)"/>
+  <rect width="1280" height="480" fill="url(#grid)"/>
+  <g clip-path="url(#artboard)">
+    <path d="M-50 422 351 18" stroke="#C85C52" stroke-width="36" opacity=".07"/>
+    <path d="m1038 506 292-294" stroke="#3C6FA1" stroke-width="20" opacity=".08"/>
+    
+      <path class="frame" d="M86 78h245M86 404h245M331 39v402"/>
+      <text class="label" x="86" y="109">学术科研</text>
+      <text class="notation" x="86" y="379">SCEN / B</text>
+      <path class="dim" d="M119 153h178m-178 52h124m-124 52h155"/>
+    <g transform="translate(444 58) scale(1.02)">
+    <g transform="translate(3 3)">
+      <path class="h" d="M31 315h651M31 38v277M682 38v277"/>
+      <g class="wash"><rect x="68" y="214" width="55" height="101"/><rect x="149" y="157" width="55" height="158"/><rect x="230" y="187" width="55" height="128"/><rect x="311" y="101" width="55" height="214"/></g>
+      <path class="s" d="M60 273c102-40 184-123 313-162s190-33 289-77M60 74c122 40 181 114 307 149s197 33 295 68"/>
+      <circle class="a" cx="396" cy="201" r="11"/><path class="dim" d="M396 201v121"/>
+      <path class="s" d="M441 117h188m-188 39h128m-128 39h161"/>
+      <path class="b" d="m589 234 75 38-75 38Z" opacity=".55"/>
+    </g></g>
+    <g opacity=".5"><path class="s" d="M31 31h22M42 20v22M1227 449h22M1238 438v22"/></g>
+  </g>
+</svg>

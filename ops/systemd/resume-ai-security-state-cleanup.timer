@@ -1,0 +1,11 @@
+[Unit]
+Description=Daily Resume AI security-state retention cleanup
+
+[Timer]
+OnCalendar=*-*-* 03:45:00 Asia/Shanghai
+RandomizedDelaySec=20min
+Persistent=true
+Unit=resume-ai-security-state-cleanup.service
+
+[Install]
+WantedBy=timers.target

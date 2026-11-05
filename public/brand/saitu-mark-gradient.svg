@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" fill="none" role="img" aria-labelledby="saitu-mark-title saitu-mark-description">
+  <title id="saitu-mark-title">赛途 Campus 渐变星轨标志</title>
+  <desc id="saitu-mark-description">四角星穿过两道星轨，以靛蓝、蓝紫和星光青渐变表现竞赛助手与成长路径。</desc>
+  <defs>
+    <linearGradient id="saitu-orbit-gradient" x1="34" y1="28" x2="224" y2="226" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3730A3" />
+      <stop offset="0.34" stop-color="#4338CA" />
+      <stop offset="0.68" stop-color="#6366F1" />
+      <stop offset="1" stop-color="#06B6D4" />
+    </linearGradient>
+    <linearGradient id="saitu-star-gradient" x1="88" y1="74" x2="166" y2="190" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3730A3" />
+      <stop offset="0.48" stop-color="#4338CA" />
+      <stop offset="1" stop-color="#6366F1" />
+    </linearGradient>
+    <linearGradient id="saitu-node-gradient" x1="38" y1="181" x2="221" y2="73" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4338CA" />
+      <stop offset="0.55" stop-color="#6366F1" />
+      <stop offset="1" stop-color="#06B6D4" />
+    </linearGradient>
+    <mask id="saitu-orbit-cutout" maskUnits="userSpaceOnUse" x="0" y="0" width="256" height="256">
+      <rect width="256" height="256" fill="white" />
+      <circle cx="128" cy="128" r="43" fill="black" />
+      <circle cx="218" cy="75" r="15" fill="black" />
+      <circle cx="39" cy="181" r="14" fill="black" />
+    </mask>
+  </defs>
+  <g mask="url(#saitu-orbit-cutout)" stroke="url(#saitu-orbit-gradient)" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="128" cy="128" rx="88" ry="101" transform="rotate(-12 128 128)" stroke-width="7.5" />
+    <ellipse cx="128" cy="128" rx="111" ry="47" transform="rotate(-28 128 128)" stroke-width="8.5" />
+  </g>
+  <path fill="url(#saitu-star-gradient)" fill-rule="evenodd" clip-rule="evenodd" d="M128 52C134.5 95.2 146.2 116.5 184 128C146.2 139.5 134.5 160.8 128 204C121.5 160.8 109.8 139.5 72 128C109.8 116.5 121.5 95.2 128 52ZM128 104C130.4 117.3 138.7 125.6 152 128C138.7 130.4 130.4 138.7 128 152C125.6 138.7 117.3 130.4 104 128C117.3 125.6 125.6 117.3 128 104Z" />
+  <circle cx="218" cy="75" r="10" fill="url(#saitu-node-gradient)" />
+  <circle cx="39" cy="181" r="9" fill="#4338CA" />
+</svg>

@@ -1,0 +1,24 @@
+[Unit]
+Description=Recover an interrupted Resume AI quota-generation publication
+Before=resume-ai-pm2.service nginx.service
+ConditionPathExists=/opt/resume-ai/state/quota-generation.pending
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/lib/resume-ai/recover-quota-generation.sh
+RuntimeDirectory=resume-ai-locks
+RuntimeDirectoryMode=0700
+RuntimeDirectoryPreserve=yes
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+PrivateDevices=true
+IPAddressDeny=any
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+ProtectSystem=strict
+ReadWritePaths=/etc/resume-ai /etc/nginx/conf.d /etc/nginx/snippets /opt/resume-ai/state /var/backups/resume-ai/quota-generations /run/resume-ai-locks

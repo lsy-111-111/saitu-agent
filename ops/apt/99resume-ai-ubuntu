@@ -1,0 +1,11 @@
+Package: *
+Pin: release o=Ubuntu,a=jammy
+Pin-Priority: 500
+
+Package: *
+Pin: release o=Ubuntu,a=jammy-updates
+Pin-Priority: 500
+
+Package: *
+Pin: release o=Ubuntu,a=jammy-security
+Pin-Priority: 500

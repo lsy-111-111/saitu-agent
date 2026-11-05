@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="480" viewBox="0 0 1280 480" role="img" aria-labelledby="title desc">
+  <title id="title">storyboard frames, pixel samples, waveform and cursor trajectory</title>
+  <desc id="desc">Original technical-editorial competition illustration without official competition identity artwork.</desc>
+  <metadata><![CDATA[{"id":"digital-media-creative-tech","origin":"ai-generated","generator":"Codex code-native SVG renderer v2","generatedAt":"2026-08-23","semantic":"storyboard frames, pixel samples, waveform and cursor trajectory","direction":"创意与数字","externalAssets":false,"officialIdentityUsed":false,"humanAuthorshipClaimed":false,"humanReviewStatus":"not-claimed","editorialReviewStatus":"assistant-reviewed-passed","editorialReviewedAt":"2026-08-23","implicitLabelStandard":"GB 45438-2025","implicitLabel":{"Label":"1","ContentProducer":"Saitu Campus","ProduceID":"5dec0828570ce6ce26d40d66658e7673","ReservedCode1":"","ContentPropagator":"Saitu Campus","PropagateID":"5dec0828570ce6ce26d40d66658e7673","ReservedCode2":""}}]]></metadata>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#20243B" stroke-opacity=".065" stroke-width="1"/></pattern>
+    <pattern id="fiber" width="73" height="47" patternUnits="userSpaceOnUse"><path d="m6 11 17-2m18 25 24 2M31 43l13-1" stroke="#20243B" stroke-width=".7" opacity=".08"/></pattern>
+    <pattern id="hatching" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(12)"><path d="M0 0V9" stroke="#D65E73" stroke-width="3" opacity=".52"/></pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="m0 0 9 5-9 5Z" fill="#5356C9"/></marker>
+    <clipPath id="artboard"><rect width="1280" height="480"/></clipPath>
+  </defs>
+  <style>
+    .s{fill:none;stroke:#20243B;stroke-width:4.2;stroke-linecap:square;stroke-linejoin:miter}
+    .h{fill:none;stroke:#20243B;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;opacity:.72}
+    .dim{fill:none;stroke:#5356C9;stroke-width:2;stroke-dasharray:8 7;opacity:.86}
+    .a{fill:#5356C9}.b{fill:#D65E73}.wash{fill:#5356C9;opacity:.14}.paper{fill:#F3EFE6}.hatch{fill:url(#hatching)}
+    .mis{transform:translate(3px,-2px);opacity:.38}.frame{fill:none;stroke:#20243B;stroke-width:1.5;opacity:.36}
+    .label,.notation{font-family:Arial,"Noto Sans SC",sans-serif;font-size:15px;font-weight:700;letter-spacing:2.3px;fill:#20243B;opacity:.72}
+    .notation{font-size:13px;fill:#5356C9;opacity:1}
+  </style>
+  <rect width="1280" height="480" fill="#F3EFE6"/>
+  <rect width="1280" height="480" fill="url(#fiber)"/>
+  <rect width="1280" height="480" fill="url(#grid)"/>
+  <g clip-path="url(#artboard)">
+    <path d="M-50 422 351 18" stroke="#D65E73" stroke-width="36" opacity=".07"/>
+    <path d="m1038 506 292-294" stroke="#5356C9" stroke-width="20" opacity=".08"/>
+    
+      <path class="frame" d="M898 39v402M927 39v402M898 128h294M898 352h294"/>
+      <text class="label" x="958" y="105">创意与数字</text>
+      <text class="notation" x="958" y="385">FRAME / 04</text>
+    <g transform="translate(-34 58) scale(1.06)">
+    <g transform="translate(4 6)">
+      <rect class="wash" x="32" y="32" width="248" height="154"/><rect class="s" x="32" y="32" width="248" height="154"/>
+      <path class="h" d="M32 69h248M104 69v117"/><path class="h" d="M56 148l18-27 17 17 19-42 21 52 18-24 17 24 22-66 23 55 21-19 22 30"/>
+      <g class="a"><rect x="321" y="43" width="36" height="36"/><rect x="361" y="43" width="18" height="18"/><rect x="383" y="43" width="27" height="27"/><rect x="321" y="83" width="20" height="20"/><rect x="345" y="83" width="41" height="41"/></g>
+      <rect class="s" x="318" y="147" width="286" height="123"/><path class="h" d="M318 184h286M366 147v123M414 147v123M462 147v123M510 147v123M558 147v123"/>
+      <path class="s" d="M108 258C212 229 270 307 388 268s170-143 288-164" marker-end="url(#arrow)"/>
+      <path class="a" d="m681 97-17 39-14-12 9-44Z"/>
+    </g></g>
+    <g opacity=".5"><path class="s" d="M31 31h22M42 20v22M1227 449h22M1238 438v22"/></g>
+  </g>
+</svg>

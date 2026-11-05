@@ -1,0 +1,12 @@
+[Unit]
+Description=Daily Resume AI PostgreSQL backup schedule
+
+[Timer]
+OnCalendar=*-*-* 02:20:00 Asia/Shanghai
+RandomizedDelaySec=0
+Persistent=true
+AccuracySec=1m
+Unit=resume-ai-postgres-backup.service
+
+[Install]
+WantedBy=timers.target

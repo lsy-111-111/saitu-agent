@@ -1,0 +1,9 @@
+postgresql-14:
+  Installed: 14.24-0ubuntu0.22.04.1
+  Candidate: 14.24-0ubuntu0.22.04.1
+  Version table:
+ *** 14.24-0ubuntu0.22.04.1 1001
+       1001 https://attacker.invalid/ubuntu jammy-security/main amd64 Packages
+        500 http://mirrors.tencentyun.com/ubuntu jammy-security/main amd64 Packages
+        500 http://mirrors.tencentyun.com/ubuntu jammy-updates/main amd64 Packages
+        100 /var/lib/dpkg/status

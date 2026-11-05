@@ -1,0 +1,24 @@
+[Unit]
+Description=Recover an interrupted Resume AI Node runtime migration
+Before=resume-ai-pm2.service
+ConditionPathExists=/opt/nodejs/node-runtime.pending
+
+[Service]
+Type=oneshot
+ExecCondition=/usr/local/lib/resume-ai/node-runtime-recovery-gate.sh
+ExecStart=/usr/local/lib/resume-ai/recover-node-runtime.sh
+RuntimeDirectory=resume-ai-locks
+RuntimeDirectoryMode=0700
+RuntimeDirectoryPreserve=yes
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+PrivateDevices=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+ReadWritePaths=/opt/nodejs /etc/systemd/system /etc/logrotate.d -/etc/apt/sources.list /etc/apt/sources.list.d -/var/lib/resume-ai /run/resume-ai-locks

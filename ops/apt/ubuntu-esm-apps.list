@@ -1,0 +1,2 @@
+# Managed ESM source; Ubuntu Pro authentication remains in root-only auth.conf.
+deb [arch=amd64 signed-by=/usr/share/keyrings/ubuntu-pro-esm-apps.gpg] https://esm.ubuntu.com/apps/ubuntu jammy-apps-security main

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="480" viewBox="0 0 1280 480" role="img" aria-labelledby="title desc">
+  <title id="title">口译录音或现场表现</title>
+  <desc id="desc">Original technical-editorial competition illustration without official competition identity artwork.</desc>
+  <metadata><![CDATA[{"id":"national-interpreting-english","origin":"ai-generated","generator":"Codex code-native SVG renderer v2","generatedAt":"2026-11-04","semantic":"口译录音或现场表现","direction":"语言人文","externalAssets":false,"officialIdentityUsed":false,"humanAuthorshipClaimed":false,"humanReviewStatus":"not-claimed","editorialReviewStatus":"assistant-reviewed-passed","editorialReviewedAt":"2026-11-04","implicitLabelStandard":"GB 45438-2025","implicitLabel":{"Label":"1","ContentProducer":"Saitu Campus","ProduceID":"188f55566ce0ac22544d318a103debbe","ReservedCode1":"","ContentPropagator":"Saitu Campus","PropagateID":"188f55566ce0ac22544d318a103debbe","ReservedCode2":""}}]]></metadata>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#332C45" stroke-opacity=".065" stroke-width="1"/></pattern>
+    <pattern id="fiber" width="73" height="47" patternUnits="userSpaceOnUse"><path d="m6 11 17-2m18 25 24 2M31 43l13-1" stroke="#332C45" stroke-width=".7" opacity=".08"/></pattern>
+    <pattern id="hatching" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(12)"><path d="M0 0V9" stroke="#C96555" stroke-width="3" opacity=".52"/></pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="m0 0 9 5-9 5Z" fill="#735AA5"/></marker>
+    <clipPath id="artboard"><rect width="1280" height="480"/></clipPath>
+  </defs>
+  <style>
+    .s{fill:none;stroke:#332C45;stroke-width:4.2;stroke-linecap:square;stroke-linejoin:miter}
+    .h{fill:none;stroke:#332C45;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;opacity:.72}
+    .dim{fill:none;stroke:#735AA5;stroke-width:2;stroke-dasharray:8 7;opacity:.86}
+    .a{fill:#735AA5}.b{fill:#C96555}.wash{fill:#735AA5;opacity:.14}.paper{fill:#F4EFE9}.hatch{fill:url(#hatching)}
+    .mis{transform:translate(3px,-2px);opacity:.38}.frame{fill:none;stroke:#332C45;stroke-width:1.5;opacity:.36}
+    .label,.notation{font-family:Arial,"Noto Sans SC",sans-serif;font-size:15px;font-weight:700;letter-spacing:2.3px;fill:#332C45;opacity:.72}
+    .notation{font-size:13px;fill:#735AA5;opacity:1}
+  </style>
+  <rect width="1280" height="480" fill="#F4EFE9"/>
+  <rect width="1280" height="480" fill="url(#fiber)"/>
+  <rect width="1280" height="480" fill="url(#grid)"/>
+  <g clip-path="url(#artboard)">
+    <path d="M-50 422 351 18" stroke="#C96555" stroke-width="36" opacity=".07"/>
+    <path d="m1038 506 292-294" stroke="#735AA5" stroke-width="20" opacity=".08"/>
+    
+    <path class="frame" d="M68 39v402M1212 39v402M68 82h1144M68 398h1144"/>
+    <text class="label" x="92" y="71">语言人文</text>
+    <text class="notation" x="1047" y="71">英语口译 / 10</text>
+    <g transform="translate(284 58) scale(1.02)">
+    <g transform="translate(5 5)">
+      <path class="h" d="M31 180h649M31 122h649M31 238h649"/>
+      <path class="s" d="M31 180h36l17-66 21 128 25-89 19 27h39l18-43 24 87 27-132 29 88h41l20-37 24 67 25-103 31 73h49l22-51 29 92 31-146 34 105h56"/>
+      <path class="a" d="M82 278h18v53H82Zm84-27h18v80h-18Zm84-49h18v129h-18Zm84 18h18v111h-18Zm84-72h18v183h-18Z" opacity=".72"/>
+      <path class="s" d="M498 62h171v269H498Z"/><path class="h" d="M527 102h113M527 143h76M527 184h113M527 225h91M527 266h113"/>
+      <path class="b" d="M527 292h83v18h-83Z"/>
+      <path class="dim" d="M31 350h438"/>
+    </g></g>
+    <g opacity=".5"><path class="s" d="M31 31h22M42 20v22M1227 449h22M1238 438v22"/></g>
+  </g>
+</svg>

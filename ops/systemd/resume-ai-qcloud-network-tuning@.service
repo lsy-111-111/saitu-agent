@@ -1,0 +1,32 @@
+[Unit]
+Description=Reviewed Tencent Cloud network tuning for %I
+BindsTo=sys-subsystem-net-devices-%i.device
+After=sys-subsystem-net-devices-%i.device
+
+[Service]
+Type=oneshot
+User=root
+Group=root
+RuntimeDirectory=resume-ai-locks
+RuntimeDirectoryMode=0700
+ExecStart=/usr/local/lib/resume-ai/run-qcloud-network-tuning.sh %i
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+ProtectHostname=yes
+NoNewPrivileges=yes
+RestrictSUIDSGID=yes
+RestrictNamespaces=yes
+LockPersonality=yes
+MemoryDenyWriteExecute=yes
+SystemCallArchitectures=native
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6 AF_NETLINK
+CapabilityBoundingSet=CAP_DAC_OVERRIDE CAP_KILL CAP_NET_ADMIN CAP_SYS_ADMIN
+AmbientCapabilities=
+UMask=0077
+TimeoutStartSec=90s
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=resume-ai-qcloud-network-tuning

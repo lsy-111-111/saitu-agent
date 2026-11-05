@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="480" viewBox="0 0 1280 480" role="img" aria-labelledby="title desc">
+  <title id="title">parameter matrix, optimization basin and validation residuals</title>
+  <desc id="desc">Original technical-editorial competition illustration without official competition identity artwork.</desc>
+  <metadata><![CDATA[{"id":"graduate-math-modeling","origin":"ai-generated","generator":"Codex code-native SVG renderer v2","generatedAt":"2026-08-23","semantic":"parameter matrix, optimization basin and validation residuals","direction":"学术科研","externalAssets":false,"officialIdentityUsed":false,"humanAuthorshipClaimed":false,"humanReviewStatus":"not-claimed","editorialReviewStatus":"assistant-reviewed-passed","editorialReviewedAt":"2026-08-23","implicitLabelStandard":"GB 45438-2025","implicitLabel":{"Label":"1","ContentProducer":"Saitu Campus","ProduceID":"75f5825e6c8dce4b4463a7caf73f8abe","ReservedCode1":"","ContentPropagator":"Saitu Campus","PropagateID":"75f5825e6c8dce4b4463a7caf73f8abe","ReservedCode2":""}}]]></metadata>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#26344A" stroke-opacity=".065" stroke-width="1"/></pattern>
+    <pattern id="fiber" width="73" height="47" patternUnits="userSpaceOnUse"><path d="m6 11 17-2m18 25 24 2M31 43l13-1" stroke="#26344A" stroke-width=".7" opacity=".08"/></pattern>
+    <pattern id="hatching" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(12)"><path d="M0 0V9" stroke="#C85C52" stroke-width="3" opacity=".52"/></pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="m0 0 9 5-9 5Z" fill="#3C6FA1"/></marker>
+    <clipPath id="artboard"><rect width="1280" height="480"/></clipPath>
+  </defs>
+  <style>
+    .s{fill:none;stroke:#26344A;stroke-width:4.2;stroke-linecap:square;stroke-linejoin:miter}
+    .h{fill:none;stroke:#26344A;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;opacity:.72}
+    .dim{fill:none;stroke:#3C6FA1;stroke-width:2;stroke-dasharray:8 7;opacity:.86}
+    .a{fill:#3C6FA1}.b{fill:#C85C52}.wash{fill:#3C6FA1;opacity:.14}.paper{fill:#F1EFE8}.hatch{fill:url(#hatching)}
+    .mis{transform:translate(3px,-2px);opacity:.38}.frame{fill:none;stroke:#26344A;stroke-width:1.5;opacity:.36}
+    .label,.notation{font-family:Arial,"Noto Sans SC",sans-serif;font-size:15px;font-weight:700;letter-spacing:2.3px;fill:#26344A;opacity:.72}
+    .notation{font-size:13px;fill:#3C6FA1;opacity:1}
+  </style>
+  <rect width="1280" height="480" fill="#F1EFE8"/>
+  <rect width="1280" height="480" fill="url(#fiber)"/>
+  <rect width="1280" height="480" fill="url(#grid)"/>
+  <g clip-path="url(#artboard)">
+    <path d="M-50 422 351 18" stroke="#C85C52" stroke-width="36" opacity=".07"/>
+    <path d="m1038 506 292-294" stroke="#3C6FA1" stroke-width="20" opacity=".08"/>
+    
+      <path class="frame" d="M68 39v402M93 39v402"/>
+      <text class="label" x="66" y="415" transform="rotate(-90 66 415)">学术科研</text>
+      <text class="notation" x="112" y="78">ARGMIN / X</text>
+    <g transform="translate(178 56) scale(1.03)">
+    <g transform="translate(-4 3)">
+      <g class="h"><path d="M28 315 212 33l235 54 221 228"/><path d="M62 315 229 64l199 48 199 203M103 315 248 98l161 39 174 178M151 315l115-183 124 30 146 153M207 315l78-148 87 20 115 128"/><path d="M28 315h640M64 259h565M101 203h486M138 147h405M175 91h326"/></g>
+      <path class="s" d="M52 282c96-44 157-9 236-85 73-71 140-17 228-85 61-47 91-35 139-43" marker-end="url(#arrow)"/>
+      <g class="a"><circle cx="52" cy="282" r="9"/><circle cx="288" cy="197" r="9"/><circle cx="516" cy="112" r="9"/><circle cx="655" cy="69" r="9"/></g>
+      <path class="b" d="M92 333h22v18H92Zm36-4h22v22h-22Zm36 9h22v13h-22Zm36-16h22v29h-22Zm36 12h22v17h-22Z"/>
+      <path class="dim" d="M334 341h312"/>
+    </g></g>
+    <g opacity=".5"><path class="s" d="M31 31h22M42 20v22M1227 449h22M1238 438v22"/></g>
+  </g>
+</svg>
