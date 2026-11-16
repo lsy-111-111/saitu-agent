@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState, type Ref } from "react";
 import { CompetitionDetailModal } from "@/components/competitions/CompetitionDetailModal";
+import { RecommendationAdvisories } from "@/components/competitions/recommend/RecommendationAdvisories";
 import { findCanonicalCatalogCompetition } from "@/lib/competitions/catalog";
 import {
   clearSavedCompetitionStore,
@@ -14,6 +15,7 @@ import {
   type SavedCompetitionStorageFailure
 } from "@/lib/competitions/saved-competitions";
 import { trackEvent } from "@/lib/analytics/track";
+import { clearSavedDecisions, readSavedDecisions, removeSavedDecision, type SavedDecision } from "@/lib/competitions/v6/saved-decisions";
 
 type StorageNotice = {
   reason: SavedCompetitionStorageFailure;
@@ -55,6 +57,8 @@ function formatSavedAt(value: string) {
 
 export function SavedCompetitionsClient() {
   const [entries, setEntries] = useState<SavedCompetitionEntryV2[]>([]);
+  const [decisionEntries, setDecisionEntries] = useState<SavedDecision[]>([]);
+  const [decisionNotice, setDecisionNotice] = useState<string | null>(null);
   const [hydrating, setHydrating] = useState(true);
   const [notice, setNotice] = useState<StorageNotice | null>(null);
   const [selectedCompetitionId, setSelectedCompetitionId] = useState<string | null>(null);
@@ -65,6 +69,9 @@ export function SavedCompetitionsClient() {
   >(null);
 
   const loadEntries = useCallback(() => {
+    const decisions = readSavedDecisions();
+    setDecisionEntries(decisions.ok ? decisions.value.items : []);
+    setDecisionNotice(decisions.ok ? null : decisions.message);
     const result = readSavedCompetitionStore();
     if (result.ok) {
       setEntries(result.value.entries);
@@ -88,7 +95,7 @@ export function SavedCompetitionsClient() {
       return;
     }
     emptyStateHeadingRef.current?.focus({ preventScroll: true });
-  }, [entries, hydrating, notice]);
+  }, [entries, decisionEntries, hydrating, notice]);
 
   const selectedCompetition = useMemo(
     () => selectedCompetitionId ? findCanonicalCatalogCompetition(selectedCompetitionId) : null,
@@ -116,6 +123,9 @@ export function SavedCompetitionsClient() {
   const clearEntries = useCallback(() => {
     if (!window.confirm("确定清空已保存的全部竞赛吗？此操作无法撤销。")) return;
     const result = clearSavedCompetitionStore();
+    const decisions = clearSavedDecisions();
+    if (decisions.ok) { setDecisionEntries([]); setDecisionNotice(null); }
+    else setDecisionNotice(decisions.message);
     if (result.ok) {
       pendingFocusRef.current = { kind: "empty" };
       setEntries([]);
@@ -125,6 +135,17 @@ export function SavedCompetitionsClient() {
     }
     setNotice({ reason: result.reason, message: result.message });
   }, []);
+
+  const removeDecisionEntry = useCallback((itemId: string) => {
+    const result = removeSavedDecision(itemId);
+    if (!result.ok) { setDecisionNotice(result.message); return; }
+    const removedIndex = decisionEntries.findIndex(entry => entry.recommendation.itemId === itemId);
+    const nextEntry = result.value.items[Math.min(Math.max(removedIndex, 0), result.value.items.length - 1)];
+    pendingFocusRef.current = nextEntry ? {kind:"entry",competitionId:`v6:${nextEntry.recommendation.itemId}`}
+      : entries[0] ? {kind:"entry",competitionId:entries[0].competitionId} : {kind:"empty"};
+    setDecisionEntries(result.value.items);
+    setDecisionNotice(null);
+  }, [decisionEntries, entries]);
 
   const cleanCorruptData = useCallback(() => {
     const result = clearSavedCompetitionStore();
@@ -159,7 +180,7 @@ export function SavedCompetitionsClient() {
             <h1 className="font-serif text-4xl font-semibold tracking-[-0.035em] text-ink sm:text-5xl" id="saved-competitions-title">
               我的竞赛
             </h1>
-            <p className="mt-3 text-sm leading-7 text-muted-foreground sm:text-base">保存在当前浏览器中的竞赛会沿用当时的赛道和推荐理由。每次选赛最多推荐三项。</p>
+            <p className="mt-3 text-sm leading-7 text-muted-foreground sm:text-base">保存在当前浏览器中的竞赛会保留收藏时的赛道和推荐理由。投入前请再次核对当届资格与报名安排。</p>
           </div>
           <Link
             className="mt-5 inline-flex min-h-11 items-center text-sm font-semibold text-brand-700 underline decoration-brand-300 underline-offset-4 hover:text-brand-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-500 md:mt-0"
@@ -178,15 +199,15 @@ export function SavedCompetitionsClient() {
             <div>
               <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
                 <h2 className="font-serif text-2xl font-semibold text-ink sm:text-3xl">我的竞赛</h2>
-                {!hydrating && !notice ? (
-                  <span className="text-sm font-semibold text-brand-600">已保存 {entries.length} 项</span>
+                {!hydrating && !notice && !decisionNotice ? (
+                  <span className="text-sm font-semibold text-brand-600">已保存 {entries.length + decisionEntries.length} 项</span>
                 ) : null}
               </div>
               <p className="mt-2 max-w-2xl text-xs leading-6 text-muted-foreground">
                 仅保存在当前浏览器；清除该站点的浏览器数据后会丢失。
               </p>
             </div>
-            {entries.length > 0 && !notice ? (
+            {(entries.length > 0 || decisionEntries.length > 0) ? (
               <button
                 className="min-h-11 justify-self-start rounded-full px-1 text-sm font-semibold text-muted-foreground underline decoration-brand-200 underline-offset-4 transition hover:text-brand-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-500 sm:justify-self-end"
                 onClick={clearEntries}
@@ -203,7 +224,9 @@ export function SavedCompetitionsClient() {
           {!hydrating && notice ? (
             <SavedStorageError notice={notice} onClean={cleanCorruptData} onRetry={loadEntries} />
           ) : null}
-          {!hydrating && !notice && entries.length === 0 ? (
+          {!hydrating && decisionNotice ? <div role="alert" className="mb-5 rounded-xl border border-warning-200 bg-warning-50 p-4 text-sm"><p>{decisionNotice}</p><button type="button" className="mt-2 min-h-11 font-semibold text-brand-700 underline" onClick={loadEntries}>重新读取新版收藏</button></div> : null}
+          {!hydrating && decisionEntries.length > 0 ? <section className="mb-8" aria-label="主动收藏的选赛建议"><h2 className="mb-4 text-xl font-semibold">主动收藏的选赛建议</h2><ol className="divide-y divide-border border-y border-border" data-testid="saved-decision-list">{decisionEntries.map(entry=><SavedDecisionRow key={entry.recommendation.itemId} entry={entry} onRemove={removeDecisionEntry} removeButtonRef={node=>setRemoveButtonRef(`v6:${entry.recommendation.itemId}`,node)}/>)}</ol></section>:null}
+          {!hydrating && !notice && !decisionNotice && entries.length === 0 && decisionEntries.length === 0 ? (
             <SavedEmptyState headingRef={emptyStateHeadingRef} />
           ) : null}
           {!hydrating && !notice && entries.length > 0 ? (
@@ -230,6 +253,22 @@ export function SavedCompetitionsClient() {
       />
     </>
   );
+}
+
+function SavedDecisionRow({entry,onRemove,removeButtonRef}:{entry:SavedDecision;onRemove:(id:string)=>void;removeButtonRef:(node:HTMLButtonElement|null)=>void}) {
+  const item=entry.recommendation;
+  return <li className="py-6" data-saved-decision={item.itemId}>
+    <div className="flex flex-wrap items-start justify-between gap-4"><div><h3 className="mt-1 text-lg font-semibold">{item.name}</h3><p className="mt-1 text-sm text-muted-foreground">保存时的赛道：{item.trackLabel} · {item.edition}</p><p className="mt-1 text-xs text-muted-foreground">收藏于 {formatSavedAt(entry.savedAt)}</p></div>
+      <button type="button" className="min-h-11 text-sm font-semibold text-brand-700 underline" ref={removeButtonRef} onClick={()=>onRemove(item.itemId)} aria-label={`移除${item.name}`}>移除收藏</button></div>
+    {entry.officialEntry?<div className="mt-3">{entry.officialEntry.url?<a className="inline-flex min-h-11 items-center text-sm font-semibold text-brand-700 underline" href={entry.officialEntry.url} target="_blank" rel="noopener noreferrer" aria-label={`查看官网：${item.name}`}>查看官网</a>:<p className="text-xs text-muted-foreground">官网链接暂缺</p>}</div>:null}
+    <details className="mt-4 rounded-xl border border-border p-4"><summary className="cursor-pointer text-sm font-semibold text-brand-700">查看保存时的任务、收益与下一步</summary>
+      <p className="mt-3 whitespace-pre-line text-sm leading-6 [overflow-wrap:anywhere]">{item.reasons.map(reason=>reason.text).join("；")}</p>
+      <RecommendationAdvisories item={item} />
+      <dl className="mt-3 grid gap-4 text-sm leading-6 md:grid-cols-2"><div><dt className="font-semibold">主要任务</dt><dd>{item.coreTask.text}</dd></div><div><dt className="font-semibold">当时适合的切入点</dt><dd>{item.currentRole.text}</dd></div><div><dt className="font-semibold">需要补足或确认</dt><dd>{item.gaps.map(gap=>gap.text).join("；")}</dd></div><div><dt className="font-semibold">预期收获与成立条件</dt><dd>{item.values.map((value,index)=><p key={index}>{value.claim.text}{value.claim.conditions.length?`；条件：${value.claim.conditions.join("；")}`:""}</p>)}</dd></div><div><dt className="font-semibold">主要代价</dt><dd>{item.opportunityCost.text}</dd></div><div><dt className="font-semibold">第一步</dt><dd>{item.nextStep.text}<p>再判断的时点：{item.checkpoint}</p></dd></div></dl>
+      <p className="mt-4 rounded-lg bg-slate-50 p-3 text-xs leading-6">以上是收藏时的建议，参赛资格和开赛时间请自行核查官网。 目标、经历或投入改变后，请重新匹配。</p>
+      {!entry.officialEntry&&item.sources.length?<div className="mt-3 space-y-2">{item.sources.map(source=><p key={source.id} className="text-xs"><a className="font-semibold text-brand-700 underline" href={source.url} target="_blank" rel="noopener noreferrer">{source.title}</a> · {source.scope}</p>)}</div>:null}
+    </details>
+  </li>;
 }
 
 function SavedCompetitionRow({
@@ -312,11 +351,11 @@ function SavedCompetitionRow({
           ) : (
             <span>{scoreDisplay.label} <strong className="font-semibold text-ink">{scoreDisplay.scoreText}</strong></span>
           )}
-          <span>{snapshot.registrationStatus.label}</span>
+          <span>参赛资格和开赛时间请自行核查官网</span>
           <span>保存于 {formatSavedAt(entry.latestSavedAt)}</span>
         </div>
         {snapshot.dataNotices.length > 0 ? (
-          <p className="mt-2 text-xs leading-5 text-muted-foreground">{snapshot.dataNotices[0]}</p>
+          <p className="mt-2 text-xs leading-5 text-muted-foreground">保存时的信息提醒：{snapshot.dataNotices[0]}</p>
         ) : null}
       </div>
 
@@ -366,7 +405,7 @@ function SavedEmptyState({ headingRef }: { headingRef: Ref<HTMLHeadingElement> }
       </span>
       <h2 className="mt-6 rounded-sm font-serif text-2xl font-semibold text-ink outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-500" ref={headingRef} tabIndex={-1}>还没有保存的竞赛</h2>
       <p className="mx-auto mt-3 max-w-xl text-sm leading-7 text-muted-foreground">
-        每次选赛最多给出三项重点建议，依据不足时也可能没有结果。找到想继续了解的竞赛后，可以在结果页主动保存。
+        每次选赛最多推荐五项不同系列的竞赛，依据不足时会少于五项。找到想继续了解的竞赛后，可以在结果页主动保存。
       </p>
       <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
         <Link className="inline-flex min-h-12 items-center justify-center rounded-full bg-brand-600 px-6 text-sm font-semibold text-white shadow-soft hover:bg-brand-700" href="/competitions/recommend">打开竞赛助手</Link>

@@ -1,0 +1,40 @@
+
+=== PAGE 1 ===
+Code Jam 2022 - Qualification Round
+Analysis: 3D Printing
+The first thing we can notice is that if a printer has u
+units of ink left of a given color, we cannot
+use more than u
+units of that color. Moreover, this is the only restriction imposed by that value.
+So, we can summarize the input by saying we cannot use more than
+C1 C2 C3
+C = min( , , )
+units of cyan ink, units of magenta ink, units
+M = min( , , )
+M1 M2 M3 Y1 Y2 Y3
+Y = min( , , )
+of yellow ink, or K1 K2 K3
+K = min( , , )
+units of black ink.
+If C +M + Y +K < 10
+6
+then the case is impossible and we are done. Otherwise, we may
+need to use lower amounts of each color. We can simply go one color at a time, lowering the
+amounts of ink until we make the sum exactly 10
+6
+. Doing it one unit at a time works, but it is
+very slow. We can do better: in the same way as before, we can consider all the colors one at at
+a time. Let S 3
+be the sum of the current amount of ink for the colors not currently under
+consideration. If S≥ 10
+6
+, we can simply set the amount of the current color to 0
+and continue
+with the next one. If S < 10
+6 − S
+we can lower the current color to 10
+6
+and finish immediately.
+This works because at all times we maintain the invariant that the total amount of ink we are
+10
+6considering is at least units.

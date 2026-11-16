@@ -166,7 +166,9 @@ done
 install -d -o root -g root -m 0755 /opt/resume-ai
 install -d -o root -g root -m 0700 /opt/resume-ai/state
 install -d -o root -g root -m 0700 "$RUNTIME_LAYOUT_GENERATIONS"
-install -d -o root -g root -m 0750 /etc/resume-ai
+# The delivery public-key anchor requires gid 0 ancestry. Execute-only traversal
+# lets the runtime reach its own 0640 files; private 0600 files remain root-only.
+install -d -o root -g root -m 0711 /etc/resume-ai
 
 run_runtime_layout_snapshot_tcb() {
   /usr/bin/env -i PATH=/usr/sbin:/usr/bin:/sbin:/bin /usr/bin/python3 -I - "$@" <<'PY_RUNTIME_LAYOUT_SNAPSHOT_TCB'
@@ -980,7 +982,7 @@ install -d -o root -g root -m 0700 /var/backups/resume-ai
 install -d -o root -g root -m 0700 /var/lib/resume-ai/security
 install -d -o root -g root -m 0700 /var/lib/resume-ai/security/cloud-snapshots
 install -d -o root -g root -m 0700 /var/lib/resume-ai/security/cloud-snapshots/by-snapshot-id
-install -d -o root -g resume-ai -m 0750 /etc/resume-ai
+install -d -o root -g root -m 0711 /etc/resume-ai
 install -d -o root -g root -m 0700 /etc/resume-ai/approved-releases
 install -d -o root -g root -m 0755 /usr/local/lib/resume-ai
 install -d -o root -g root -m 0755 /usr/local/share/resume-ai
@@ -1003,6 +1005,8 @@ for managed_directory in \
 done
 [ "$(stat -c '%U:%G:%a' /var/lib/resume-ai)" = root:root:755 ] \
   || fail "/var/lib/resume-ai must be a root-owned container, not the app home"
+[ "$(stat -c '%U:%G:%a' /etc/resume-ai)" = root:root:711 ] \
+  || fail "/etc/resume-ai must preserve the root signing anchor and runtime traversal"
 [ "$(readlink -e -- "$EVIDENCE_GENERATIONS")" = "$EVIDENCE_GENERATIONS" ] \
   && [ "$(stat -c '%U:%G:%a' "$EVIDENCE_GENERATIONS")" = root:root:700 ] \
   || fail "release-evidence generation root must be root:root 0700"
@@ -1141,13 +1145,13 @@ cleanup_release_evidence_key_temps() {
 
 cleanup_orphaned_release_evidence_key_temps() {
   local orphan_root=${1:-/etc/resume-ai}
-  local directory_user=${2:-root} directory_group=${3:-resume-ai}
+  local directory_user=${2:-root} directory_group=${3:-root}
   local file_user=${4:-root} file_group=${5:-root}
   local temporary base expected_mode metadata cleaned=0
   local -a orphaned=()
   [ -d "$orphan_root" ] && [ ! -L "$orphan_root" ] \
     && [ "$(readlink -e -- "$orphan_root")" = "$orphan_root" ] \
-    && [ "$(stat -c '%U:%G:%a' "$orphan_root")" = "$directory_user:$directory_group:750" ] \
+    && [ "$(stat -c '%U:%G:%a' "$orphan_root")" = "$directory_user:$directory_group:711" ] \
     || fail "release-evidence orphan cleanup root is unsafe"
   shopt -s nullglob
   orphaned=("$orphan_root"/.release-evidence-signing.{key,pub,pending,env}.??????)
@@ -1657,6 +1661,8 @@ install -o root -g root -m 0755 "$OPS_DIR/../scripts/run-release-evidence.mjs" \
   /usr/local/lib/resume-ai/run-release-evidence.mjs
 install -o root -g root -m 0444 "$OPS_DIR/config/release-required-tests.json" \
   /usr/local/lib/resume-ai/release-required-tests.json
+install -o root -g root -m 0755 "$OPS_DIR/../scripts/lib/release-evidence-spend.mjs" \
+  /usr/local/lib/resume-ai/release-evidence-spend.mjs
 install -o root -g root -m 0755 "$OPS_DIR/../scripts/lib/release-evidence-deepseek-verifier.mjs" \
   /usr/local/lib/resume-ai/release-evidence-deepseek-verifier.mjs
 install -o root -g root -m 0755 "$OPS_DIR/../scripts/lib/release-evidence-http-probe.mjs" \

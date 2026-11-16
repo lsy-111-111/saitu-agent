@@ -3,6 +3,10 @@ import type { PoolClient } from "pg";
 import { deadlineHasElapsed, remainingDeadlineMs } from "@/lib/ai/request-deadline";
 import { isEphemeralE2eSecurityStateAllowed } from "@/lib/config/e2e-runtime";
 import { getPool, isDatabaseConfigured } from "@/lib/db/pool";
+import {isUserUnboundedExecutionMode} from "./execution-policy.mjs";
+import {readUserUnboundedExecutionAuthorizationV7} from "./execution-authorization";
+import {setMaxListeners} from "node:events";
+import {emitProductObservation} from "./product-observation";
 
 export type ModelCallGateFailureReason =
   | "capacity_exhausted"
@@ -27,6 +31,13 @@ type PersistentAttempt =
   | { outcome: "capacity_exhausted" }
   | { outcome: "daily_budget_exhausted" };
 
+/** All governed transports share this ceiling across the same PostgreSQL gate.
+ * Environment configuration may lower the ceiling, never raise it. Legacy or
+ * bypassing processes must be excluded by the participant admission gate. */
+export const MODEL_CALL_GOVERNOR_POLICY_VERSION = "saitu.model-call-governor.global-2.v1";
+export const MODEL_CALL_TRANSPORT_CONCURRENCY_MAX = 2;
+export const MODEL_CALL_USER_UNBOUNDED_POLICY_VERSION = "saitu.model-call-governor.user-unbounded.v1";
+
 const GOVERNOR_ADVISORY_LOCK = "724310896145221";
 const MODEL_LEASE_MS = 180_000;
 const MODEL_HEARTBEAT_MS = 30_000;
@@ -48,6 +59,34 @@ const waitingCalls: QueueEntry[] = [];
 const inMemoryDailyUsage = new Map<string, number>();
 const persistentLeaseTimers = new Map<string, ReturnType<typeof setInterval>>();
 const pendingReleases = new Set<Promise<unknown>>();
+let providerBackpressureUntil=0,consecutiveProvider429=0;
+let providerBackpressure:{untilEpochMs:number;httpStatus:429;delayMs:number;source:"retry-after"|"bounded-fallback";scope:"process"}|null=null;
+
+/** Actual provider feedback affects only future independent dispatches. It
+ * never retries or erases the request which received the definitive 429. */
+export function recordModelCallCapacityFeedbackV7(httpStatus:number,retryAfterMs?:number){
+  if(!isUserUnboundedExecutionMode())return;
+  if(httpStatus!==429){if(httpStatus>=200&&httpStatus<300)consecutiveProvider429=0;return;}
+  consecutiveProvider429+=1;
+  const supplied=retryAfterMs!==undefined&&Number.isSafeInteger(retryAfterMs)&&retryAfterMs>=0&&Number.isSafeInteger(Date.now()+retryAfterMs);
+  // Without Retry-After, explicitly observed consecutive 429s use 1/2/4/8/16/30s.
+  const delayMs=supplied?retryAfterMs!:Math.min(30_000,1000*2**Math.min(consecutiveProvider429-1,5));
+  const until=Date.now()+delayMs;
+  providerBackpressureUntil=Math.max(providerBackpressureUntil,until);
+  providerBackpressure={untilEpochMs:providerBackpressureUntil,httpStatus:429,delayMs,source:supplied?"retry-after":"bounded-fallback",scope:"process"};
+  emitProductObservation("ai_provider_backpressure",providerBackpressure);
+  console.info(JSON.stringify({event:"ai_provider_backpressure",executionMode:"user-unbounded",...providerBackpressure}));
+}
+export const providerCapacityReadyForNewWorkV7=()=>!isUserUnboundedExecutionMode()||Date.now()>=providerBackpressureUntil;
+async function waitForProviderCapacityV7(deadline:number,signal?:AbortSignal){
+  if(signal)setMaxListeners(0,signal);
+  while(!providerCapacityReadyForNewWorkV7()){
+    const remaining=deadline-Date.now();if(remaining<=0||signal?.aborted)return false;
+    await new Promise<void>(resolve=>{let timer:ReturnType<typeof setTimeout>;const finish=()=>{clearTimeout(timer);signal?.removeEventListener("abort",finish);resolve();};
+      timer=setTimeout(finish,Math.max(0,Math.min(remaining,providerBackpressureUntil-Date.now())));signal?.addEventListener("abort",finish,{once:true});if(signal?.aborted)finish();});
+  }
+  return !signal?.aborted&&!deadlineHasElapsed(deadline);
+}
 
 function positiveInteger(name: string, fallback: number) {
   const value = Number(process.env[name]);
@@ -56,7 +95,10 @@ function positiveInteger(name: string, fallback: number) {
 
 function governorConfig() {
   return {
-    concurrency: positiveInteger("AI_CONCURRENCY_MAX", 8),
+    concurrency: Math.min(
+      MODEL_CALL_TRANSPORT_CONCURRENCY_MAX,
+      positiveInteger("AI_CONCURRENCY_MAX", MODEL_CALL_TRANSPORT_CONCURRENCY_MAX)
+    ),
     queue: positiveInteger("AI_QUEUE_MAX", 32),
     waitMs: positiveInteger("AI_QUEUE_WAIT_MS", 15_000),
     dailyBudget: positiveInteger("AI_MODEL_CALLS_PER_DAY", 1200)
@@ -67,6 +109,24 @@ function persistentGovernorRequired() {
   return isDatabaseConfigured() || (
     process.env.NODE_ENV === "production" && !isEphemeralE2eSecurityStateAllowed()
   );
+}
+
+/** Content-free operational evidence; this does not certify other processes. */
+export function getModelCallGovernorConfigurationSnapshot() {
+  if(isUserUnboundedExecutionMode())return {
+    schemaVersion:"saitu.model-call-governor.configuration.v2" as const,
+    policyVersion:MODEL_CALL_USER_UNBOUNDED_POLICY_VERSION,executionMode:"user-unbounded" as const,
+    transportConcurrencyHardMax:null,transportConcurrencyEffectiveMax:null,dailyCallLimit:null,providerBackpressure,
+    persistentRequired:true,databaseConfigured:isDatabaseConfigured()
+  };
+  return {
+    schemaVersion: "saitu.model-call-governor.configuration.v1" as const,
+    policyVersion: MODEL_CALL_GOVERNOR_POLICY_VERSION,
+    transportConcurrencyHardMax: MODEL_CALL_TRANSPORT_CONCURRENCY_MAX,
+    transportConcurrencyEffectiveMax: governorConfig().concurrency,
+    persistentRequired: persistentGovernorRequired(),
+    databaseConfigured: isDatabaseConfigured()
+  };
 }
 
 function usageDay(now = new Date()) {
@@ -349,6 +409,8 @@ async function withTransaction<T>(
     client.release(destroyClient);
   }
 }
+export const readUserUnboundedAuthorizationBeforeV7=(deadline:number,signal?:AbortSignal)=>
+  withTransaction(deadline,signal,client=>readUserUnboundedExecutionAuthorizationV7(client));
 
 async function reservePersistentDailyBudget(client: PoolClient) {
   const config = governorConfig();
@@ -586,6 +648,34 @@ export async function acquireModelCallPermit(
   | { ok: true; permit: ModelCallPermit }
   | { ok: false; reason: ModelCallGateFailureReason }
 > {
+  let userUnbounded:boolean;
+  try{userUnbounded=isUserUnboundedExecutionMode();}catch{return {ok:false,reason:"budget_store_unavailable"};}
+  if(userUnbounded){
+    const deadline=Number.isFinite(options.deadlineEpochMs)?Math.floor(Number(options.deadlineEpochMs)):Date.now()+MODEL_LEASE_MS;
+    if(options.signal?.aborted||deadlineHasElapsed(deadline))return {ok:false,reason:"capacity_exhausted"};
+    try{
+      // Real execution can never reach this branch without the active DB grant.
+      // Unit adapters may supply a verified authority while using memory bookkeeping.
+      if(!isDatabaseConfigured())await readUserUnboundedExecutionAuthorizationV7();
+      const waitDeadline=options.maxWaitMs===undefined?deadline:Number.isFinite(options.maxWaitMs)?Math.min(deadline,Date.now()+Math.max(0,options.maxWaitMs)):Date.now();
+      if(!providerCapacityReadyForNewWorkV7()&&!await waitForProviderCapacityV7(waitDeadline,options.signal))return {ok:false,reason:"capacity_exhausted"};
+      if(options.signal?.aborted||deadlineHasElapsed(deadline))return {ok:false,reason:"capacity_exhausted"};
+      if(!isDatabaseConfigured()){
+        activeCalls+=1;const day=usageDay();inMemoryDailyUsage.set(day,(inMemoryDailyUsage.get(day)??0)+1);
+        let released=false;return {ok:true,permit:{release(){if(released)return;released=true;activeCalls=Math.max(0,activeCalls-1);}}};
+      }
+      const leaseId=await withTransaction(deadline,options.signal,async client=>{
+        await readUserUnboundedExecutionAuthorizationV7(client);
+        await client.query(`insert into ai_model_daily_usage (usage_day,bucket,call_count,updated_at) values($1::date,'global',1,now())
+          on conflict(usage_day,bucket) do update set call_count=ai_model_daily_usage.call_count+1,updated_at=now()`,[usageDay()]);
+        const id=randomUUID();await client.query("insert into ai_model_call_leases(lease_id,expires_at,created_at,updated_at) values($1,$2,now(),now())",[id,new Date(deadline)]);return id;
+      });
+      startPersistentLeaseHeartbeat(leaseId,deadline);let released=false;
+      return {ok:true,permit:{release(){if(released)return;released=true;releasePersistentLease(leaseId);}}};
+    }catch{
+      logGate("budget_store_unavailable",{phase:"user_unbounded_authorization"});return {ok:false,reason:"budget_store_unavailable"};
+    }
+  }
   if (!persistentGovernorRequired()) {
     return acquireMemoryPermit(options.maxWaitMs, options.signal);
   }
@@ -614,6 +704,7 @@ export function resetModelCallGovernorForTests() {
   for (const timer of persistentLeaseTimers.values()) clearInterval(timer);
   persistentLeaseTimers.clear();
   pendingReleases.clear();
+  providerBackpressureUntil=0;consecutiveProvider429=0;providerBackpressure=null;
 }
 
 export function modelCallGovernorSnapshotForTests() {

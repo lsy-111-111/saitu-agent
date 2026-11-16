@@ -41,6 +41,7 @@ excluded_roots = {
     ".git",
     ".claude",
     ".next",
+    "dist",
     "artifacts",
     "coverage",
     "node_modules",

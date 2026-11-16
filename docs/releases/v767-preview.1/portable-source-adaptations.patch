@@ -1,0 +1,162 @@
+--- a/src/lib/ai/execution-policy.mjs
++++ b/src/lib/ai/execution-policy.mjs
+@@ -18,7 +18,7 @@
+ export const LOCAL_PREVIEW_AUTHORIZATION_POLICY = "docs/v7/local-preview-contract-20261112.md";
+ export const LOCAL_PREVIEW_AUTHORIZATION = "user-approved-20261112-local-preview";
+ export const LOCAL_PREVIEW_PURPOSE = "local_preview";
+-export const LOCAL_PREVIEW_ORIGIN = "http://127.0.0.1:3177";
++export const LOCAL_PREVIEW_ORIGIN = "http://127.0.0.1:3187";
+ export function isLocalPreviewBinding(value) {
+   const keys = ["applicationRuntimeSourceSha256", "candidatePoolSha256", "nextBindingSha256", "origin", "productionBuildId", "schemaVersion", "workerArtifactSha256"];
+   return Boolean(value && typeof value === "object" && Object.keys(value).sort().join(",") === keys.join(",") &&
+--- a/src/lib/ai/execution-policy.d.mts
++++ b/src/lib/ai/execution-policy.d.mts
+@@ -17,7 +17,7 @@
+ export const LOCAL_PREVIEW_AUTHORIZATION_POLICY: "docs/v7/local-preview-contract-20261112.md";
+ export const LOCAL_PREVIEW_AUTHORIZATION: "user-approved-20261112-local-preview";
+ export const LOCAL_PREVIEW_PURPOSE: "local_preview";
+-export const LOCAL_PREVIEW_ORIGIN: "http://127.0.0.1:3177";
++export const LOCAL_PREVIEW_ORIGIN: "http://127.0.0.1:3187";
+ export function isLocalPreviewBinding(value: unknown): value is {
+   schemaVersion: "saitu.local-preview.binding.v1";
+   applicationRuntimeSourceSha256: string;
+@@ -25,7 +25,7 @@
+   productionBuildId: string;
+   workerArtifactSha256: string;
+   nextBindingSha256: string;
+-  origin: "http://127.0.0.1:3177";
++  origin: "http://127.0.0.1:3187";
+ };
+ export function isFast24RepairValidationBinding(value: unknown): value is {
+   schemaVersion: "saitu.fast24.repair-validation.v1";
+--- a/src/lib/db/pool.ts
++++ b/src/lib/db/pool.ts
+@@ -44,8 +44,8 @@
+   if (parsed.search || !LOCAL_DATABASE_HOSTS.has(parsed.hostname.toLowerCase())) {
+     throw new Error("DATABASE_URL must target the local PostgreSQL instance.");
+   }
+-  if (parsed.port && parsed.port !== "5432") {
+-    throw new Error("DATABASE_URL must use the local PostgreSQL port 5432.");
++  if (parsed.port && parsed.port !== "55432") {
++    throw new Error("DATABASE_URL must use the local PostgreSQL port 55432.");
+   }
+ }
+ 
+--- a/src/lib/competitions/v7/active-release.ts
++++ b/src/lib/competitions/v7/active-release.ts
+@@ -20,7 +20,7 @@
+     // This server gate needs the actual runtime origin, not Next's compiled public value.
+     const origin=new URL(String(Reflect.get(process.env,"NEXT_PUBLIC_SITE_URL")??"")),database=new URL(process.env.DATABASE_URL??"");
+     if(origin.protocol!=="http:"||!loopbackHosts.has(origin.hostname)||origin.username||origin.password||origin.search||origin.hash||origin.pathname!=="/")return null;
+-    if(!["postgres:","postgresql:"].includes(database.protocol)||!loopbackHosts.has(database.hostname)||database.search||database.hash||database.port&&database.port!=="5432")return null;
++    if(!["postgres:","postgresql:"].includes(database.protocol)||!loopbackHosts.has(database.hostname)||database.search||database.hash||database.port&&database.port!=="55432")return null;
+     const databaseName=decodeURIComponent(database.pathname.slice(1));if(!databaseName||databaseName.includes("/"))return null;
+     const releaseDirectory=process.env.APP_RELEASE_DIR??"",activeLink=process.env.SAITU_V7_WORKER_ACTIVE_LINK??"";
+     if(releaseDirectory.startsWith("/opt/")||releaseDirectory!==realpathSync(process.cwd())||!safeLocalDirectoryV7(releaseDirectory,uid))return null;
+--- a/db/migrations/20261112_local_preview_authority.sql
++++ b/db/migrations/20261112_local_preview_authority.sql
+@@ -38,7 +38,7 @@
+     and jsonb_typeof(effort_condition->'localPreview')='object'
+     and (effort_condition->'localPreview') - array['schemaVersion','applicationRuntimeSourceSha256','productionBuildId','candidatePoolSha256','workerArtifactSha256','nextBindingSha256','origin']='{}'::jsonb
+     and effort_condition->'localPreview'->>'schemaVersion'='saitu.local-preview.binding.v1'
+-    and effort_condition->'localPreview'->>'origin'='http://127.0.0.1:3177'
++    and effort_condition->'localPreview'->>'origin'='http://127.0.0.1:3187'
+     and jsonb_typeof(effort_condition->'localPreview'->'applicationRuntimeSourceSha256')='string'
+     and jsonb_typeof(effort_condition->'localPreview'->'candidatePoolSha256')='string'
+     and jsonb_typeof(effort_condition->'localPreview'->'workerArtifactSha256')='string'
+--- a/docs/v7/local-preview-contract-20261112.md
++++ b/docs/v7/local-preview-contract-20261112.md
+@@ -2,10 +2,13 @@
+ 
+ 用户在当前聊天明确要求实施“整理原计划并交付 v767 本地试用版”。授权以 v767 为基础增加独立本地试用支持，标记为 v767-preview.1，并修复阻塞完整学生流程的问题。
+ 
+-- 用途为 local_preview，账本阶段为 reserve，唯一访问地址 http://127.0.0.1:3177。使用本地既有数据库、真实费用账本和单独批次；绑定实际源码、Next Build ID、worker 字节、Next 绑定和45项候选池。
++- 用途为 local_preview，账本阶段为 reserve，唯一访问地址 http://127.0.0.1:3187。使用本地既有数据库、真实费用账本和单独批次；绑定实际源码、Next Build ID、worker 字节、Next 绑定和45项候选池。
+ - 不要求取得正式验收证明才能进行本次试用，也不将本次试用计入修复468槽、固定3份、最终468槽、UI12、性能30或稳定30分钟成绩。旧授权、原件、失败和进度保持原意。
+ - 仅 DeepSeek Flash，精确 effort v2：rank thinking disabled、temperature 0、top_p 1；explain/review low；profile/chat high；single 布局。名单／详情目标40／120秒，硬截止60／150秒从原提交计时。
+ - 用户选择沿用现有余额规则，不设人工总费用上限。真实余额、未知占额和既有幂等保护有效；不自动充值，不补发未知付费请求。
+ - 交付前用软件、工程、商业三个公开案例走真实页面流程，检查推荐、详情、追问、两项比较、更正、收藏、刷新和服务重启恢复。阻塞问题定向修复；修改共用生成链后在最终同版重测三组。
+ - 对话保持30分钟有效期；同一地址和浏览器的收藏保留。试用记录和历史测试区分。
+ - 交付后保留本机服务运行，提供 start/stop/status/resume；不添加登录自启，不部署生产，不恢复原计划的全量验收。
++
++## 2026-11-16 独立精简包
++用户明确要求实施独立 Mac 运行包方案。使用独立空数据库、3187 网页端口和55432数据库端口；保留模型设置及费用保护，不导入历史试用数据，不修改原项目。
+--- a/next.config.mjs
++++ b/next.config.mjs
+@@ -18,6 +18,8 @@
+     process.env.NEXT_DIST_DIR ??
+     (phase === PHASE_DEVELOPMENT_SERVER ? ".next-dev" : ".next"),
+   reactStrictMode: true,
++  output: 'standalone',
++  outputFileTracingRoot: process.cwd(),
+   // Local catalog metadata must replace the previous page's canonical before
+   // navigation completes; streaming can leave both canonical links in the DOM.
+   htmlLimitedBots: /.*/,
+--- a/tsconfig.json
++++ b/tsconfig.json
+@@ -29,63 +29,13 @@
+     }
+   },
+   "include": [
++    "next-env.d.ts",
+     "**/*.ts",
+     "**/*.tsx",
+-    ".next-compact-ui/types/**/*.ts",
+-    ".next-continuation/types/**/*.ts",
+-    ".next-dev/types/**/*.ts",
+-    ".next-e2e/types/**/*.ts",
+-    ".next-fast24/types/**/*.ts",
+-    ".next-performance/types/**/*.ts",
+-    ".next-specialist-student-20261106/types/**/*.ts",
+-    ".next-v7-browser/types/**/*.ts",
+-    ".next/types/**/*.ts",
+-    "next-env.d.ts",
+-    ".next-compact-v732/types/**/*.ts",
+-    ".next-compact-final/types/**/*.ts",
+-    ".next-compact-repair/types/**/*.ts",
+-    ".next-compact-v734/types/**/*.ts",
+-    ".next-compact-v735/types/**/*.ts",
+-    ".next-compact-v736/types/**/*.ts",
+-    ".next-compact-v737/types/**/*.ts",
+-    ".next-accelerate-v738/types/**/*.ts",
+-    ".next-accelerate-v739/types/**/*.ts",
+-    ".next-accelerate-v740/types/**/*.ts",
+-    ".next-accelerate-v741/types/**/*.ts",
+-    ".next-accelerate-v742/types/**/*.ts",
+-    ".next-accelerate-v743/types/**/*.ts",
+-    ".next-accelerate-v744/types/**/*.ts",
+-    ".next-accelerate-v745/types/**/*.ts",
+-    ".next-accelerate-v746/types/**/*.ts",
+-    ".next-accelerate-v747/types/**/*.ts",
+-    ".next-accelerate-v748/types/**/*.ts",
+-    ".next-accelerate-v749/types/**/*.ts",
+-    ".next-accelerate-v750/types/**/*.ts",
+-    ".next-accelerate-v751/types/**/*.ts",
+-    ".next-accelerate-v752/types/**/*.ts",
+-    ".next-accelerate-v753/types/**/*.ts",
+-    ".next-accelerate-v754/types/**/*.ts",
+-    ".next-accelerate-v755/types/**/*.ts",
+-    ".next-accelerate-v756/types/**/*.ts",
+-    ".next-accelerate-v757/types/**/*.ts",
+-    ".next-accelerate-v758/types/**/*.ts",
+-    ".next-accelerate-v759/types/**/*.ts",
+-    ".next-accelerate-v760/types/**/*.ts",
+-    ".next-accelerate-v761/types/**/*.ts",
+-    ".next-accelerate-v762/types/**/*.ts",
+-    ".next-accelerate-v763/types/**/*.ts",
+-    ".next-accelerate-v764/types/**/*.ts",
+-    ".next-accelerate-v765/types/**/*.ts",
+-    ".next-accelerate-v766/types/**/*.ts",
+-    ".next-accelerate-v767/types/**/*.ts",
+-    ".next-local-preview-v767-preview-1/types/**/*.ts",
+-    ".next-local-preview-v767-preview-1-r2/types/**/*.ts",
+-    ".next-local-preview-v767-preview-1-r3/types/**/*.ts",
+-    ".next-local-preview-v767-preview-1-r4/types/**/*.ts"
++    ".next/types/**/*.ts"
+   ],
+   "exclude": [
+     "node_modules",
+-    ".next-e2e",
+     "artifacts",
+     "tmp"
+   ]

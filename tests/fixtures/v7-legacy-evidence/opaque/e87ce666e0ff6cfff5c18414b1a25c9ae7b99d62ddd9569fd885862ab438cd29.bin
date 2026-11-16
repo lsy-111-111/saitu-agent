@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "saitu.independent-legacy-blind-review.v1",
+  "reviewerType": "AI independent semantic review; not human-approved or human gold",
+  "modelDeclaredByParent": "GPT-6 Astra/high",
+  "sourceHashes": {
+    "manifest.json": "dcc26ed8ac98526d0006e190708befc9d280e8ecf51e15c26a8b96f0223c8df7",
+    "review-inputs.jsonl": "6d40b8e88be560f38ea735c90cb07690cc43bddb402af12584f31fe6761696e7",
+    "candidate-pool.json": "8a8549da1cd0ac32a03cce3549f720fd334ef86f939143827a9e930f8f586cf0"
+  },
+  "readAllowlist": [
+    "manifest.json",
+    "review-inputs.jsonl",
+    "candidate-pool.json"
+  ],
+  "implementationRead": false,
+  "oldGoldRead": false,
+  "testLogsRead": false,
+  "otherReviewRead": false,
+  "externalEvidenceFetched": false,
+  "method": "AI read all 135 candidate summaries and all input profiles/branch selectors, authored semantic archetype tables and materialized individual 0–3 labels with source-specific rationales. This is one AI reviewer plus a deterministic materializer, not 5805 independent human judgments. Qualification unknowns preserve source gaps. No use of candidate goalValues, credibility scores, application output or old expected answers for labels.",
+  "policyWeights": {
+    "goal": 30,
+    "task": 25,
+    "experienceAndPersonalContribution": 20,
+    "preparation": 15,
+    "growth": 10
+  },
+  "counts": {
+    "inputs": 175,
+    "scoringPairs": 96,
+    "followupCases": 36,
+    "followupBranches": 75,
+    "rankingProfiles": 25,
+    "legacyProfiles": 18,
+    "rankingLabels": 3375,
+    "legacyLabels": 2430,
+    "followupBaseLabels": 4860,
+    "taskRelations": 72,
+    "candidatePool": 135
+  },
+  "acceptanceThresholds": {
+    "numericIntervalPassRate": 0.9,
+    "existingRelationThreshold": 104,
+    "changed": false,
+    "equivalenceClaimed": false,
+    "testAcceptanceClaimed": false
+  },
+  "limitations": [
+    "来源是指定的v5兼容目录，不是独立最新官方事实核查；目录内部冲突已保留。",
+    "未见原答案，因此无权宣称哪条旧答案已经失效；须开发者逐条对照证据而非模型输出。",
+    "经验/个人贡献维度所有96项均不可精确裁定，保留0–20。",
+    "数值区间是规范性可辩护范围，不是统计置信区间；禁止拿宽化结果假称原90%测试等价。",
+    "低年级新手应有探索路径；本批25排名画像均为项目/奖项标签，不能充当真正新手覆盖。",
+    "候选排名相关性不是能力分，且资格/成本未知不得转成低能力或已可报名。"
+  ],
+  "artifacts": {
+    "review-index.jsonl": "f61a7cb12897be88ba0c88a4d73bac2923f9de892240e9c292f08eed5b6d375d",
+    "disputes-and-hard-negatives.jsonl": "0b523112973bf06e0faa2980ba001e5623f0efc97257ca061a06fc86832300be",
+    "legacy-v4-full-pool.jsonl": "26827f0a7c6eeebc6be10bf93b2484fcadd7ba5c817077b14c2b34f4c78e7c4f",
+    "ranking-full-pool.jsonl": "693fe352ed35e6cb2e5111b7aa95cc3159cc476ced2770f9ce1904c0c39cbdb2",
+    "followup-branches.jsonl": "f844cb91e27edd8b8aa5a9e6c2ed378046b366f1ce4f81e164486bd780021b03",
+    "scoring-pairs.jsonl": "cd05f00461f57de4092c4b8a7c5a875123043bf6825a59ca429ff54d987729f6",
+    "followup-base-full-pool.jsonl": "6a47b550a9802f55794bd7cb5d67b5656c09a9b1076fb3c6c25d26a4e078a160",
+    "score-task-relations.jsonl": "bc7e00a0fbf6175724b7f2700a569c5be652edca25c2d170af73607bb61ffbc6"
+  }
+}

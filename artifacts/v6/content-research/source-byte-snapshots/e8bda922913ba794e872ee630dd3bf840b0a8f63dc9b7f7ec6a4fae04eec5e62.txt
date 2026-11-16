@@ -1,0 +1,308 @@
+Skip to main content
+iGEM
+Jamboree
+Competition
+Community
+Villages
+Technology
+Responsibility
+Innovation
+Sign In
+Competition
+About
+Registration
+Deliverables
+Judging
+Sponsorships
+Results
+Teams →
+Registration
+Overview
+iGEM 2026 Competition
+Competition Types
+To register, you’ll first choose which competition your team will enter. iGEM organizes two competition types, depending on what kind of students make up the team.
+Collegiate Competition
+For teams made up of collegiate-level students enrolled at universities, colleges, or similar post-secondary institutions.
+High School Competition
+For teams made up of high school-level students enrolled at high schools or other secondary education institutions.
+Deadlines
+Teams can register during the Early, Regular, or Late registration periods. These periods determine the Program Fee rate and the payment deadline for that rate. The Program Fee payment is required for a team to be accepted, along with other registration requirements listed below. We recommend starting registration early, even if you are planning to complete the payment in a later registration period.
+More about Fees & Deadlines ↗
+Starting an Application
+Team registration begins by creating a new team at teams.igem.org.
+The registration must be done by the Primary PI. Students are not allowed to do the application on behalf of the PI.
+Create a New Team
+Registration Steps & Requirements
+#1
+Primary PI
+
+The Primary Principal Investigator (PI) plays a key role in overseeing and supporting the team throughout the season. PIs provide guidance and oversight, including help with fundraising, lab access, and navigating institutional policies and administrative requirements.
+
+The Primary PI is also the team’s official point of contact with iGEM and accepts responsibility for the team within their institution. iGEM may contact the PI regarding registration, safety, judging, or other important matters.
+
+Eligibility to be a PI
+
+Eligibility to serve as a Primary PI depends on your Organizer Type (higher education, secondary education, community lab, or commercial team).
+
+Higher Education Teams: The Primary PI must be a senior representative of the institution, such as a professor, department head, or equivalent. Additional PIs can be post-doctoral researchers or higher.
+Secondary Education Teams: The Primary PI must be a principal, teacher, or academic coach employed by the school where team members are enrolled. If students are from multiple schools the Primary PI must be a principal, teacher, or academic coach employed at of one of the schools.
+Community Lab Teams: The Primary PI must be the director of the community lab.
+Commercial Teams: The Primary PI must be a company employee authorized to make binding commitments.
+Responsibilities of the PI
+
+The Primary PI supports the team and serve as iGEM’s main point of contact throughout the season.
+
+Team Registration: Completing and managing the team registration on the iGEM platform.
+Communication with iGEM HQ: Serving as the primary contact for official communications.
+Team Roster: Managing the team roster and ensuring all members are correctly registered.
+Safety Certification: Certifying the team's adherence to safety protocols.
+Team Support: Providing guidance, resources, and support throughout the iGEM season.
+Payment Responsibilities: Creating orders and managing the payment of team fees.
+
+While not required, having a Secondary PI is strongly recommended. A Secondary PI serves as an additional point of contact and holds the same level of authority as the Primary PI.
+
+PI Agreement
+
+Successful iGEM teams are supported by committed PIs. To codify these roles and responsibilities across the iGEM community, PIs have to affirm their commitment by agreeing to a standard set of terms during the Team Application.
+
+The PI agreement outlines their roles and responsibilities, enabling participation in the iGEM program.
+
+If a team changes their PI after the registration, the new PI also agrees that these conditions apply.
+
+Read the PI Agreement ↗
+
+#2
+Institution/s
+
+Team institutions are the official organizations that team members are affiliated with, such as a university, high school, community lab, company, or another recognized entity.
+
+Why Institutions Matter
+
+Institutions form the foundation of every iGEM team. Being officially affiliated with an institution formalizes a team’s participation and makes it possible for the team to exist, operate, and be represented within the competition.
+
+During registration, you will be asked to list all institutions your team is affiliated with. This information also helps iGEM understand where teams are based and how the global iGEM community is represented each year.
+
+Through the iGEM Competition, iGEM collaborates with institutions worldwide to advance education, research, and collaboration in synthetic biology.
+
+Institution Requirements
+Every team must be formally affiliated with at least one institution.
+Teams may have more than one institution. All institutions represented on the team roster should be listed.
+The Primary PI must have an active role within at least one of the institutions listed.
+Team PI can add or edit institutions after the registration is submitted, up until the team roster freeze deadline.
+Information Collected
+
+For each institution in your team, the PI will be asked to provide:
+
+Official Name, in English
+Official Name, in Local Language
+Official Abbreviation
+Website Link
+Department / Unit
+City, State/Region, Country
+#3
+Location (City & Country)
+
+Each year, iGEM brings together teams from hundreds of cities and institutions around the world. In 2025, over 400 teams from more than 40 countries took part in iGEM, with more than 10,000 participants. Location information helps to understand, analyze trends, and showcase the global reach of the iGEM community - an essential part of the iGEM experience.
+
+This information is collected for informational and analytical purposes only.
+View the Team List ↗
+About Team Location
+There are no requirements or competition relevance tied to the city or country you select. The location does not affect eligibility, judging, or competition outcomes in any way.
+If your team is associated with multiple cities or countries, please select only one primary location. For example, this may be the location of PI’s Institution.
+The term "country" in normal commercial use may refer to a country, region, province, or other economic area and may be used to list teams publicly (e.g., on the team list) and for statistical analysis.
+Based on your location, your team will be automatically allocated one of the iGEM regions: Asia & Oceania, Africa, Europe, Latin America, or North America. This too, has no effect on your competition outcome, and is just informational.
+Collegiate Teams
+High School Teams
+Venture Foundry Teams
+#4
+Organizer Type
+
+Organizer type (previously known as “Team Kind”) describes how your team is organized and hosted. It determines which requirements and documentation apply to your team’s registration. Choosing the correct organizer type ensures your team is eligible to compete and registers accurately.
+
+Why organizer types exist
+
+iGEM teams come from many different settings, reflecting the diversity of how synthetic biology is taught, learned, and built around the world.
+
+iGEM originally began as a university-level student competition before expanding to support teams from a wider range of institutional and organizational environments.
+
+We want to allow teams from different circumstances to be able to take part in iGEM. To support this, iGEM establishes clear guidelines and requirements to ensure all teams participate under fair and transparent conditions.
+
+About Organizer Types
+Organizer type does not affect judging criteria or competition outcomes. All teams within the same competition (Collegiate or High School) compete together in the same competition, regardless of organizer type.
+Some organizer types, such as Community Lab and Commercial, require additional documentation and forms to be eligible.
+Registering your team with an incorrect organizer type will make your team ineligible for the competition.
+Organizer Type Options
+Higher Education
+Teams affiliated with and organized by higher education or collegiate institutions, including universities, colleges, and other post-secondary education establishments.
+Collegiate Competition Only
+Secondary Education
+Teams affiliated with and organized by high schools.
+High School Competition Only
+Community Lab
+Teams affiliated with and organized by independent community labs.
+More info about additional requirements ↗
+Commercial*
+Teams organized by companies, including companies contracting to run teams for colleges, universities, or other organizations, as well as companies recruiting individual members.
+More info about additional requirements ↗
+*All teams run by companies must register as commercial teams. Commercial teams registering as other organizer types are not eligible to compete. If you are a commercial team, please review the Commercial Teams page before starting your application.
+#5
+Team Name
+
+Your team name is your team’s official identity within iGEM. It will be used throughout the season and preserved as part of your team’s record. Team names at iGEM do not indicate projects. Instead, they typically reflect a team’s geographic location or institutional affiliation. Your team name should identify where your team comes from, and not what your project is about.
+
+Requirements
+Must be based only on your:
+city
+school or institution name(s)
+state, country, and/or region
+Must be between 3 and 20 characters
+Must use the Latin alphabet (A–Z, uppercase or lowercase)
+Must start with an uppercase (capital) letter
+Allowed
+Letters (A-Z, upperscase or lowercase)
+Numbers (0-9), Hyphen (-), Space
+Not Allowed
+Team names must not include:
+Generic or descriptive words such as:
+team, crew, squad, winner, prize
+bio, biology, science, biotech
+iGEM, igem, synthetic biology, synbio
+Project names, mascot, project themes, sponsor names
+Year references (e.g. 26 or 2026)
+Any abbreviations that are not clearly related to institution/school, city, country, state, region.
+Underscores (_) or other symbols, except hyphen (-) and space
+Recommendations
+
+Choosing a clear and consistent team name helps avoid confusion and makes it easier for teams to be recognized across the iGEM community.
+
+If your team is the only team in your city or country, using the city or country name alone is a good choice.
+If there are multiple teams from the same city or country, we recommend adding another clear identifier, such as an abbreviation of your institution or school.
+If your team has participated in iGEM before, we recommend keeping the same team name for continuity and consistency, when possible and where it meets current naming guidelines.
+Team names are used and read internationally. We recommend avoiding words that may be unclear, ambiguous, or have unintended meanings in English, even if they are common words in another language.
+Please also avoid using transliterated or non-English equivalents of common words (such as connectors like “and,” “of,” or “in”).
+Team names are reviewed on a first-come, first-served basis. We ask teams to be mindful of other teams when choosing a name, particularly in cities or regions with multiple teams. If a new team later forms in your city, country, or institution, it may become necessary to adjust or further distinguish your team name to avoid confusion. iGEM does not determine ownership of team names beyond the order in which they are submitted and approved.
+Approval Process
+All team names require approval, including names that may have been used in previous years.
+In most cases, team names meet the guidelines and are approved quickly. In a small number of cases, iGEM may contact the PI if clarification or adjustments are needed.
+The PI may edit/propose a new team name up until the team registration is fully accepted (completed all requirements, including team name approval).
+Once your team is marked as Accepted, the team name becomes final and can no longer be changed.
+#6
+Payment Order
+
+Registration fees are completed in three progressive and connected stages, guiding teams from registration and official start (Stage I); to finalization, evaluation and award eligibility (Stage II); and to the global showcase in person at the Jamboree (Stage III). Each stage represents a milestone in your team’s journey and ensures that all participants are fully supported, evaluated, and recognized for their work.
+
+To complete registration, you must create a payment order for the Program Fee - Stage I (Registration) and complete the payment in full before the applicable deadline.
+
+You can create your payment order during the registration process or later via payments.igem.org.
+Only Team PIs (Primary or Secondary) can create or manage payment orders for a team.
+More about Team Fees ↗
+Create a New Payment Order
+#7
+Additional Requirements
+
+After you submit your registration, you’ll get access to your Team Dashboard, where you can track the status of your team’s registration and any required submissions. Depending on your competition type and organizer type, your team may also need to complete additional requirements.
+
+Shipping Address
+
+The shipping address is used to send team materials during the competition season, including the iGEM DNA Distribution Kit - a kit of standard biological parts showcasing the collective work of the global iGEM community.
+
+The shipping address is required to complete registration.
+The shipping address must not be a personal home address.
+The kit will be shipped after your team has been fully accepted.
+You may edit the shipping address until the shipment processing begins.
+More about the Distribution Kit ↗
+Consent Forms
+
+In addition to the general team registration requirements, each team must submit a set of consent forms. This is done directly through teams.igem.org. There are two types of consent forms:
+
+For all teams:
+
+Participant Consent Forms: Every participant must submit an individual consent form to join the Team Roster. Participants under age 18 (on March 31, 2026) cannot sign for themselves - a parent or legal guardian must sign on their behalf.
+
+For High School Competition only (except Commercial Type Teams):
+
+Principal Acknowledgment Agreements: At least one Principal Acknowledgment Agreement is required to complete registration.
+Additional forms may are required for each school represented on the Team Roster.
+More about Consent Forms ↗
+Team Roster
+
+The Team Roster is the official record of everyone who is involved with the iGEM Team, including professors, teachers, instructors, advisors and student team members.
+
+Completing the roster is not required to submit your registration, but we recommend starting early.
+Only Team PIs can manage Team Rosters.
+Team PIs can access the roster immediately after submitting registration and can invite or accept team members.
+Only individuals listed on the roster by the Roster Freeze deadline will receive participation certificates.
+The final deadline to add or remove members is September 16. No changes are allowed after this date.
+More about the Team Roster ↗
+Questions?
+If you have any questions about team registration, eligibility, payments, or required documents, contact iGEM HQ at hq@igem.org ↗.
+
+On this page
+
+Overview
+Primary PI
+Institution/s
+Location
+Organizer Type
+Team Name
+Payment Order
+Additional Requirements
+Questions?
+iGEM
+People
+Support
+Blog
+Videos
+Villages
+Jamboree
+Tickets
+Program
+Exhibitors
+Info
+Competition
+About
+Teams
+Registration
+Deliverables
+Judging
+Sponsorships
+Calendar
+Community
+About
+News
+Topics
+Projects
+Events
+Job Board
+Journals
+Technology
+Registry
+Distribution
+Technologies
+Chassis
+Engineering
+Responsibility
+About
+Events
+Guidance
+Human Practices
+Safety Policies
+Opportunities
+Innovation
+About
+Venture Foundry
+Ecosystem
+Events
+Newsletters
+Copyright © 2026 iGEM Foundation, Inc. All rights reserved. iGEM and the iGEM logo are registered trademarks.
+iGEM Foundation
+·
+501(c)(3) not-for-profit organization
+·
+45 Prospect Street, Cambridge MA, 02139 USA
+iGEM Europe · iGEM HQ
+·
+10 rue du Mail, 75002 Paris, France
+Contact us
+Terms & Policies
+Financials

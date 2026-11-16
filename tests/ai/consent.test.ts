@@ -58,21 +58,21 @@ describe("AI consent gate", () => {
     process.env.AI_CONSENT_VERSION = "unpaired.server.v9";
     process.env.NEXT_PUBLIC_AI_CONSENT_VERSION = "unpaired.client.v8";
 
-    expect(getAiConsentVersion()).toBe("2026-11-05.v7");
-    expect(getCurrentAiConsentDisclosure().version).toBe("2026-11-05.v7");
+    expect(getAiConsentVersion()).toBe("2026-11-09.v9");
+    expect(getCurrentAiConsentDisclosure().version).toBe("2026-11-09.v9");
   });
 
-  it("requires explicit renewed consent before fixed-candidate evidence can leave the service", async () => {
+  it("requires explicit renewed consent before matching and experience evidence can leave the service", async () => {
     setNodeEnv("production");
-    process.env.AI_CONSENT_VERSION = "2026-11-04.v6";
+    process.env.AI_CONSENT_VERSION = "2026-11-05.v7";
     const disclosure = getCurrentAiConsentDisclosure();
-    expect(hasValidAiConsent({aiConsent:{accepted:true, version:"2026-11-04.v6"}})).toBe(false);
+    expect(hasValidAiConsent({aiConsent:{accepted:true, version:"2026-11-05.v8"}})).toBe(false);
     expect(hasValidAiConsent({aiConsent:{accepted:false, version:disclosure.version}})).toBe(false);
     expect(hasValidAiConsent({aiConsent:{accepted:true, version:disclosure.version}})).toBe(true);
-    expect(disclosure.body).toContain("备选依据短句");
-    expect(disclosure.body).toContain("排序均由本站程序决定");
+    expect(disclosure.body).toContain("本人贡献");
+    expect(disclosure.body).toContain("模型决定推荐顺序");
     expect(await aiConsentRequiredResponse().json()).toMatchObject({
-      consentVersion: "2026-11-05.v7", consentDisclosure: disclosure
+      consentVersion: "2026-11-09.v9", consentDisclosure: disclosure
     });
   });
 

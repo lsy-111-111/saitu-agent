@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "saitu.legacy-test-applicability-binding.v7.3",
+  "policyVersion": "saitu.policy.2026-11-09.v7",
+  "responseVersion": "competition-recommendation.v7",
+  "evidenceScope": "current-v7-contract-unit-checks-only",
+  "files": [
+    {
+      "path": "tests/competitions/followup-gold-audit.test.ts",
+      "sha256": "e9ff4b83a3ab5aab7abe576fb162010d571f6b0c4320b86d6c7c6c85a56d3d10"
+    },
+    {
+      "path": "tests/competitions/gold-freeze-manifest.test.ts",
+      "sha256": "038b32c95771b07572042e4c6ea5e86edeabca4556e384f1e8907f0ed34d4e42"
+    },
+    {
+      "path": "tests/competitions/legacy-v7-migration.fixture.ts",
+      "sha256": "7fde579a7c4617f7082d7282d96a3fc41e12f9ff1b2346ef6ec32b6aaf1e2aec"
+    },
+    {
+      "path": "tests/competitions/quality-benchmark.test.ts",
+      "sha256": "d0eff2f87af89041fc01275c8779b0f94587e6b98750ebe4d8d54f336dfd3b61"
+    },
+    {
+      "path": "tests/competitions/recommendation-quality.test.ts",
+      "sha256": "8e1a987c07b0ce27c30f8fc88864a117e5957d073cb9db640546f7c10bf5471e"
+    },
+    {
+      "path": "tests/competitions/scoring-gold-audit.test.ts",
+      "sha256": "37fc7eba729f099c82ad760b2e4c5e0af0587b727acdf60d92b9b9d3ea69d0ff"
+    },
+    {
+      "path": "tests/competitions/strict-baseline-acceptance.test.ts",
+      "sha256": "a78626944391c49305a414d53b246c27a2f056e076c6af7b4e1b88cbfbf19640"
+    }
+  ],
+  "migrationContract": {
+    "path": "artifacts/continuation-v7-20261109/legacy-test-migration/migration-contract.json",
+    "sha256": "55b123d2f44e44a5f7bdcc84a4a19fe7a63d2332ce8f43906a630ab3f073604c"
+  },
+  "predecessorBinding": {
+    "path": "tests/fixtures/v7-legacy-evidence/current-test-binding.v7.2.json",
+    "sha256": "a979107009847fdeb60a817a1c43dc007412fe03dd9328273098cae6c7dd3b11"
+  },
+  "portability": {
+    "files": [
+      {
+        "path": "tests/fixtures/v7-legacy-evidence.ts",
+        "sha256": "ebcd3191d4b9a017d55132b8b517ec3941880f162f66acd7ab7f83a3430d6433"
+      },
+      {
+        "path": "tests/fixtures/v7-legacy-evidence/index.json",
+        "sha256": "7c2f5419f71bd6c2a98a02d321b6c3fb1e926fcc47efe8827c3c601483d26d85"
+      },
+      {
+        "path": "tests/fixtures/v7-legacy-evidence/index.v7.3.json",
+        "sha256": "715eaec587b9769701963952c118335142f5e0cff5a3bb0f9619ad344fab946f"
+      },
+      {
+        "path": "tests/fixtures/v7-legacy-evidence/current-test-binding.v7.2.json",
+        "sha256": "a979107009847fdeb60a817a1c43dc007412fe03dd9328273098cae6c7dd3b11"
+      }
+    ]
+  },
+  "changedCurrentFiles": [
+    {
+      "path": "tests/competitions/gold-freeze-manifest.test.ts",
+      "fromSha256": "36142dc2ea92be326a3d54206e9b06d1f133e02bb7b481e19de3e9ade25c8fc1",
+      "toSha256": "038b32c95771b07572042e4c6ea5e86edeabca4556e384f1e8907f0ed34d4e42"
+    },
+    {
+      "path": "tests/competitions/strict-baseline-acceptance.test.ts",
+      "fromSha256": "81319c5c411e36a9f8eafacbb17a458351197eb163f840760798cdfe67ef6510",
+      "toSha256": "a78626944391c49305a414d53b246c27a2f056e076c6af7b4e1b88cbfbf19640"
+    }
+  ],
+  "portabilityTransition": {
+    "adapter": {
+      "path": "tests/fixtures/v7-legacy-evidence.ts",
+      "fromSha256": "1f6721a7121edb505703c74d578f6780aba2e1c16b60f7c33386e0372b3e1220",
+      "toSha256": "ebcd3191d4b9a017d55132b8b517ec3941880f162f66acd7ab7f83a3430d6433"
+    },
+    "originalIndex": {
+      "path": "tests/fixtures/v7-legacy-evidence/index.json",
+      "sha256": "7c2f5419f71bd6c2a98a02d321b6c3fb1e926fcc47efe8827c3c601483d26d85"
+    },
+    "addedIndex": {
+      "path": "tests/fixtures/v7-legacy-evidence/index.v7.3.json",
+      "sha256": "715eaec587b9769701963952c118335142f5e0cff5a3bb0f9619ad344fab946f",
+      "logicalPaths": [
+        "tests/fixtures/competition-score-prospective-baseline.json"
+      ]
+    }
+  },
+  "bindingSha256": "f92c4d7ec204b374123a0b3ea0ac3ea796f86cbe411408a199d0ebb96e488b40"
+}

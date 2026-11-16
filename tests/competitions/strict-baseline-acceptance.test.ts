@@ -1,3 +1,6 @@
+import { getMatchingCatalogRecords } from "@/lib/competitions/v7/catalog";
+import { migrationContext, rankMigrationContext } from "./legacy-v7-migration.fixture";
+import { LEGACY_V7_MIGRATION_ROOT, LEGACY_PROSPECTIVE_BASELINE_PATH, readMigrationJson, readLegacyEvidenceBytes, readCurrentLegacyMigrationBinding, verifyCurrentMigrationBinding, verifyLegacyOriginalBytes } from "../fixtures/v7-legacy-evidence";
 import { createHash } from "node:crypto";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
@@ -9,7 +12,7 @@ import {
   recommendCompetitions
 } from "@/lib/competitions/recommendation-engine";
 import { projectLegacyCompetitionPreferenceTranscript } from "@/lib/competitions/legacy-preference-adapter";
-import { COMPETITION_SCORER_VERSION, scoreCompetition } from "@/lib/competitions/scoring";
+import { COMPETITION_SCORER_VERSION, buildCompetitionQualificationSnapshot, scoreCompetition } from "@/lib/competitions/scoring";
 import { COMPETITION_QUESTIONNAIRE_VERSION } from "@/types/competition-recommendation";
 import {
   QUALITY_BENCHMARK_NOW,
@@ -33,16 +36,28 @@ const PROSPECTIVE_ARTIFACT_PATH = path.join(
 const CAPTURE_REQUESTED = process.env.CAPTURE_COMPETITION_PROSPECTIVE_BASELINE === "1";
 
 const SOURCE_FILES = [
+  "src/components/competitions/recommend/ChoiceGroup.tsx",
+  "src/components/competitions/recommend/questionContent.ts",
+  "src/content/competition-documented-tracks.ts",
   "src/content/competition-expansion.ts",
+  "src/content/competition-fact-sheets.json",
   "src/content/competition-guide.ts",
+  "src/content/competition-series-20261104.json",
+  "src/content/competition-series.ts",
   "src/content/competition-taxonomy.ts",
   "src/content/competitions.ts",
   "src/lib/competitions/availability.ts",
+  "src/lib/competitions/business-activities.ts",
   "src/lib/competitions/catalog.ts",
+  "src/lib/competitions/decision-fit.ts",
   "src/lib/competitions/legacy-preference-adapter.ts",
   "src/lib/competitions/recommendation-engine.ts",
   "src/lib/competitions/scoring.ts",
-  "src/types/competition-recommendation.ts"
+  "src/lib/competitions/v6/catalog-types.ts",
+  "src/lib/competitions/v6/contracts.ts",
+  "src/lib/competitions/v6/experience-fit.ts",
+  "src/lib/utils.ts",
+  "src/types/competition-recommendation.ts",
 ] as const;
 
 const DATASET_FILES = [
@@ -69,13 +84,16 @@ type ProspectiveResult = {
   personaId: string;
   inputSha256: string;
   fixedCompetitionId: string;
-  fixedCompetitionDisplayedScore: number;
+  fixedPairStatus: "scored" | "hard_excluded";
+  fixedCompetitionDisplayedScore: number | null;
+  fixedCompetitionQualification: Pick<ReturnType<typeof buildCompetitionQualificationSnapshot>["entries"][number],
+    "status" | "reasons" | "hardFilterReason" | "sourceRefs">;
   top10: string[];
   finalTop3: string[];
 };
 
 type ProspectiveBaseline = {
-  schemaVersion: "competition-score-prospective-baseline.v1";
+  schemaVersion: "competition-score-prospective-baseline.v2";
   capturedAt: string;
   captureIntent: "forward-regression-denominator-only";
   historicalComparisonAllowed: false;
@@ -113,8 +131,13 @@ type ProspectiveBaseline = {
   };
   results: ProspectiveResult[];
   aggregates: {
-    anchorFixedPairMean: number;
-    holdoutFixedPairMean: number;
+    scoreMeanSemantics: "scored-pairs-only; hard-excluded pairs retained as null";
+    anchorFixedPairMean: number | null;
+    holdoutFixedPairMean: number | null;
+    anchorScoredPairCount: number;
+    anchorHardExcludedPairCount: number;
+    holdoutScoredPairCount: number;
+    holdoutHardExcludedPairCount: number;
   };
   resultsSha256: string;
   artifactSha256: string;
@@ -200,48 +223,81 @@ function currentResults(): ProspectiveResult[] {
     if (!competition) throw new Error(`${dataset}:${persona.id} has unknown competition ${fixedCompetitionId}`);
     const transcript = projectLegacyCompetitionPreferenceTranscript(persona.transcript);
     const scored = scoreCompetition(competition, persona.profile, QUALITY_BENCHMARK_NOW, transcript);
-    if (!scored) throw new Error(`${dataset}:${persona.id} fixed pair is no longer scoreable`);
+    const entry = buildCompetitionQualificationSnapshot(persona.profile, [competition], QUALITY_BENCHMARK_NOW).entries[0]!;
+    if (!scored && entry.status !== "ineligible") {
+      throw new Error(`${dataset}:${persona.id} fixed pair is unscoreable without a recorded hard exclusion`);
+    }
+    const fixedPairStatus: ProspectiveResult["fixedPairStatus"] = scored ? "scored" : "hard_excluded";
+    const fixedCompetitionQualification = { status: entry.status, reasons: entry.reasons,
+      hardFilterReason: entry.hardFilterReason, sourceRefs: entry.sourceRefs };
+    // Candidate recall now evaluates the full pool; Top10 remains the first ten
+    // ranked candidates, as in quality-benchmark. Preserve the exact size and
+    // finalTop3-subset gates below rather than renaming full recall to Top10.
     const top10 = getCompetitionRecommendationCandidates(persona.profile, {
       catalog,
       now: QUALITY_BENCHMARK_NOW,
       transcript
-    }).recommendations.map(({ competitionId }) => competitionId);
+    }).recommendations.slice(0, 10).map(({ competitionId }) => competitionId);
     const finalTop3 = recommendCompetitions(persona.profile, {
       catalog,
       now: QUALITY_BENCHMARK_NOW,
       transcript
     }).recommendations.map(({ competitionId }) => competitionId);
-    if (top10.length !== 10) throw new Error(`${dataset}:${persona.id} produced ${top10.length} Top10 entries`);
-    if (finalTop3.length !== 3) throw new Error(`${dataset}:${persona.id} produced ${finalTop3.length} Top3 entries`);
     return {
       dataset,
       personaId: persona.id,
       inputSha256: sha256(canonicalJson({ profile: persona.profile, transcript: persona.transcript })),
       fixedCompetitionId,
-      fixedCompetitionDisplayedScore: calibrateCompetitionScore(persona.profile, scored).matchScore,
+      fixedPairStatus,
+      fixedCompetitionDisplayedScore: scored ? calibrateCompetitionScore(persona.profile, scored).matchScore : null,
+      fixedCompetitionQualification,
       top10,
       finalTop3
     };
   });
 }
 
+/** v2 preserves excluded inputs instead of pretending they have a numeric score. */
+function validateFixedPairOutcome(result: ProspectiveResult) {
+  const qualification = result.fixedCompetitionQualification;
+  if (result.fixedPairStatus === "hard_excluded") {
+    if (result.fixedCompetitionDisplayedScore !== null || qualification.status !== "ineligible" ||
+      !qualification.hardFilterReason || qualification.reasons.length === 0 || qualification.sourceRefs.length === 0 ||
+      result.top10.includes(result.fixedCompetitionId) || result.finalTop3.includes(result.fixedCompetitionId)) {
+      throw new Error(`${result.personaId}: invalid hard-excluded outcome`);
+    }
+  } else if (result.fixedPairStatus !== "scored" || qualification.status === "ineligible" ||
+    typeof result.fixedCompetitionDisplayedScore !== "number" || !Number.isFinite(result.fixedCompetitionDisplayedScore) ||
+    result.fixedCompetitionDisplayedScore < 0 || result.fixedCompetitionDisplayedScore > 100) {
+    throw new Error(`${result.personaId}: invalid scored outcome`);
+  }
+}
+
+function prospectiveAggregates(results: ProspectiveResult[]): ProspectiveBaseline["aggregates"] {
+  const scores = (dataset: BaselineDataset) => results.filter(row => row.dataset === dataset && row.fixedPairStatus === "scored")
+    .map(row => row.fixedCompetitionDisplayedScore).filter((score): score is number => typeof score === "number");
+  const excluded = (dataset: BaselineDataset) => results.filter(row => row.dataset === dataset && row.fixedPairStatus === "hard_excluded").length;
+  const anchor = scores("anchor");
+  const holdout = scores("holdout");
+  return { scoreMeanSemantics: "scored-pairs-only; hard-excluded pairs retained as null",
+    anchorFixedPairMean: anchor.length ? mean(anchor) : null, holdoutFixedPairMean: holdout.length ? mean(holdout) : null,
+    anchorScoredPairCount: anchor.length, anchorHardExcludedPairCount: excluded("anchor"),
+    holdoutScoredPairCount: holdout.length, holdoutHardExcludedPairCount: excluded("holdout") };
+}
+
 function buildProspectiveBaseline(): ProspectiveBaseline {
   const sourceFiles = addressFiles(SOURCE_FILES);
   const datasetFiles = addressFiles(DATASET_FILES);
   const results = currentResults();
-  const anchorScores = results
-    .filter(({ dataset }) => dataset === "anchor")
-    .map(({ fixedCompetitionDisplayedScore }) => fixedCompetitionDisplayedScore);
-  const holdoutScores = results
-    .filter(({ dataset }) => dataset === "holdout")
-    .map(({ fixedCompetitionDisplayedScore }) => fixedCompetitionDisplayedScore);
+  results.forEach(validateFixedPairOutcome);
+  const aggregates = prospectiveAggregates(results);
   const releaseId = process.env.PROSPECTIVE_BASELINE_RELEASE_ID?.trim() || null;
   const sourceArchiveSha256 = process.env.PROSPECTIVE_BASELINE_SOURCE_ARCHIVE_SHA256?.trim() || null;
   if (sourceArchiveSha256 && !/^[a-f0-9]{64}$/.test(sourceArchiveSha256)) {
     throw new Error("PROSPECTIVE_BASELINE_SOURCE_ARCHIVE_SHA256 must be a lowercase SHA-256");
   }
   const withoutArtifactHash = {
-    schemaVersion: "competition-score-prospective-baseline.v1" as const,
+    schemaVersion: "competition-score-prospective-baseline.v2" as const,
     capturedAt: new Date().toISOString(),
     captureIntent: "forward-regression-denominator-only" as const,
     historicalComparisonAllowed: false as const,
@@ -278,10 +334,7 @@ function buildProspectiveBaseline(): ProspectiveBaseline {
       holdoutCaseCount: competitionRankingHoldoutCases.length
     },
     results,
-    aggregates: {
-      anchorFixedPairMean: mean(anchorScores),
-      holdoutFixedPairMean: mean(holdoutScores)
-    },
+    aggregates,
     resultsSha256: sha256(canonicalJson(results))
   };
   return {
@@ -321,84 +374,124 @@ describe.sequential("honest scoring baseline policy", () => {
     });
   });
 
-  it("captures only when explicitly requested, then verifies the prospective baseline byte-for-byte", () => {
-    if (CAPTURE_REQUESTED) captureProspectiveBaseline();
-    expect(existsSync(PROSPECTIVE_ARTIFACT_PATH),
-      "Prospective baseline missing. Run: node scripts/capture-competition-prospective-baseline.mjs")
-      .toBe(true);
+  it("includes every local static source dependency in the prospective content address", () => {
+    const pins = new Set<string>(SOURCE_FILES);
+    const missing: string[] = [];
+    for (const importer of SOURCE_FILES) {
+      const source = readFileSync(path.join(process.cwd(), importer), "utf8");
+      for (const match of source.matchAll(/(?:from\s*|import\s*)["']([^"']+)["']/g)) {
+        const specifier = match[1]!;
+        if (!specifier.startsWith(".") && !specifier.startsWith("@/")) continue;
+        const unresolved = specifier.startsWith("@/") ? path.join("src", specifier.slice(2))
+          : path.normalize(path.join(path.dirname(importer), specifier));
+        const resolved = [unresolved, `${unresolved}.ts`, `${unresolved}.tsx`, `${unresolved}.json`,
+          path.join(unresolved, "index.ts")].find(file => existsSync(path.join(process.cwd(), file)));
+        if (!resolved || !pins.has(resolved)) missing.push(`${importer} -> ${specifier} (${resolved ?? "unresolved"})`);
+      }
+    }
+    expect(missing, missing.join("\n")).toEqual([]);
+    expect(SOURCE_FILES).toContain("src/lib/competitions/decision-fit.ts");
+    expect(SOURCE_FILES).toContain("src/content/competition-fact-sheets.json");
+  });
 
-    const artifact = JSON.parse(readFileSync(PROSPECTIVE_ARTIFACT_PATH, "utf8")) as ProspectiveBaseline;
-    expect(artifact.schemaVersion).toBe("competition-score-prospective-baseline.v1");
-    expect(artifact.captureIntent).toBe("forward-regression-denominator-only");
+  it("preserves all 125 predecessor inputs and fixed candidate identities in the v2 denominator", () => {
+    const predecessor = JSON.parse(readLegacyEvidenceBytes(
+      "artifacts/continuation-20261105/legacy-migration/before/tests/fixtures/competition-score-prospective-baseline.json").toString("utf8")) as {
+        schemaVersion: string; historicalComparisonAllowed: boolean; results: ProspectiveResult[];
+      };
+    expect(predecessor.schemaVersion).toBe("competition-score-prospective-baseline.v1");
+    expect(predecessor.historicalComparisonAllowed).toBe(false);
+    expect(predecessor.results).toHaveLength(125);
+    const inputs = (results: ProspectiveResult[]) => results.map(row => ({ dataset: row.dataset,
+      personaId: row.personaId, inputSha256: row.inputSha256, fixedCompetitionId: row.fixedCompetitionId }));
+    expect(inputs(currentResults())).toEqual(inputs(predecessor.results));
+  });
+
+  it("preserves the original vocational computer-design input as a sourced exclusion in v2", () => {
+    const original = competitionAnchorPersonas.find(row => row.id === "anchor-china-college-computer-design")!;
+    expect(original.profile.stage).toBe("vocational");
+    const result = currentResults().find(row => row.personaId === original.id)!;
+    expect(result.fixedPairStatus).toBe("hard_excluded");
+    expect(result.fixedCompetitionDisplayedScore).toBeNull();
+    expect(result.fixedCompetitionQualification.status).toBe("ineligible");
+    expect(result.fixedCompetitionQualification.hardFilterReason).toBe("stage-ineligible");
+    expect(result.fixedCompetitionQualification.sourceRefs).toContain("rules:computer-design-2026:full-time-team");
+    expect(() => validateFixedPairOutcome(result)).not.toThrow();
+  });
+
+  it("rejects fabricated exclusion scores, missing qualification evidence and excluded recommendations", () => {
+    const results = currentResults();
+    const excluded = results.find(row => row.fixedPairStatus === "hard_excluded")!;
+    const scored = results.find(row => row.fixedPairStatus === "scored")!;
+    expect(excluded).toBeDefined();
+    expect(scored).toBeDefined();
+    expect(() => validateFixedPairOutcome({ ...excluded, fixedCompetitionDisplayedScore: 0 })).toThrow("invalid hard-excluded");
+    expect(() => validateFixedPairOutcome({ ...excluded, fixedCompetitionQualification: {
+      ...excluded.fixedCompetitionQualification, status: "needs_clarification" } })).toThrow("invalid hard-excluded");
+    expect(() => validateFixedPairOutcome({ ...excluded, fixedCompetitionQualification: {
+      ...excluded.fixedCompetitionQualification, sourceRefs: [] } })).toThrow("invalid hard-excluded");
+    expect(() => validateFixedPairOutcome({ ...excluded, top10: [excluded.fixedCompetitionId, ...excluded.top10.slice(1)] })).toThrow("invalid hard-excluded");
+    expect(() => validateFixedPairOutcome({ ...scored, fixedCompetitionDisplayedScore: null })).toThrow("invalid scored");
+    expect(() => validateFixedPairOutcome({ ...scored, fixedPairStatus: "hard_excluded", fixedCompetitionDisplayedScore: null })).toThrow("invalid hard-excluded");
+  });
+
+  it("v7 preserves all 125 original inputs while allowing legal two-item and empty short lists", async () => {
+    const inputs = [...competitionAnchorPersonas, ...competitionRankingHoldoutCases];
+    expect(inputs).toHaveLength(125);
+    const records = getMatchingCatalogRecords();
+    expect(records.length).toBeGreaterThan(10);
+    for (const input of inputs) {
+      const before = JSON.stringify(input.profile);
+      const context = migrationContext(input.profile, records);
+      const legalIds = context.candidates.map(candidate => candidate.record.recordId);
+      const ids = [...new Map(context.candidates.map(candidate => [candidate.record.seriesId, candidate.record.recordId])).values()].slice(0, 2).reverse();
+      expect(ids.length, input.id).toBe(2);
+      const run = await rankMigrationContext(context, ids);
+      expect(run.plan.recommendations.map(item => item.itemId), input.id).toEqual(ids);
+      expect(run.plan.recommendations.every(item => legalIds.includes(item.itemId)), input.id).toBe(true);
+      expect(new Set(run.plan.recommendations.map(item => context.candidates.find(candidate => candidate.record.recordId === item.itemId)!.record.seriesId)).size, input.id).toBe(ids.length);
+      expect(run.plan.shortfallReason?.trim().length, input.id).toBeGreaterThan(0);
+      expect(run.packets[0].candidates.map(candidate => candidate.itemId), input.id).toEqual(legalIds);
+      const empty = await rankMigrationContext(migrationContext(input.profile, []), []);
+      expect(empty.plan.recommendations, input.id).toEqual([]);
+      expect(empty.plan.shortfallReason?.trim().length, input.id).toBeGreaterThan(0);
+      expect(empty.calls, input.id).toEqual([]);
+      expect(JSON.stringify(input.profile), input.id).toBe(before);
+    }
+  });
+
+  it("v7 preserves the failed historical prospective baseline and binds current tests under a separate version", () => {
+    const archive = verifyLegacyOriginalBytes();
+    const originalFailure = archive.failures.find(failure => failure.fullName === "honest scoring baseline policy captures only when explicitly requested, then verifies the prospective baseline byte-for-byte");
+    expect(originalFailure?.status).toBe("failed");
+    expect(originalFailure?.failureMessages.length).toBeGreaterThan(0);
+    const artifact = JSON.parse(readLegacyEvidenceBytes(LEGACY_PROSPECTIVE_BASELINE_PATH).toString("utf8")) as ProspectiveBaseline;
+    expect(artifact.schemaVersion).toBe("competition-score-prospective-baseline.v2");
     expect(artifact.historicalComparisonAllowed).toBe(false);
-    expect(Number.isFinite(Date.parse(artifact.capturedAt))).toBe(true);
-    expect(Date.parse(artifact.capturedAt)).toBeGreaterThan(Date.parse(IMPLEMENTATION_STARTED_AT));
-    expect(artifact.captureCommand).toBe("node scripts/capture-competition-prospective-baseline.mjs");
-    expect(artifact.provenance.kind).toBe("dirty-working-tree-content-addressed");
-    expect(artifact.provenance.scope).toBe("competition-scorer-and-benchmark-inputs");
-    expect(artifact.provenance.releaseBindingContract).toEqual({
-      sourceArchiveMembership: "excluded-to-avoid-self-reference",
-      bundleSidecarPath: "baseline/competition-score-prospective-baseline.json",
-      installPath: "tests/fixtures/competition-score-prospective-baseline.json",
-      installationOrder: "copy-before-pnpm-test",
-      checksumManifest: "SHA256SUMS"
-    });
-    if (artifact.provenance.sourceArchiveSha256 !== null) {
-      assertSha256(artifact.provenance.sourceArchiveSha256, "source archive");
-      expect(artifact.provenance.releaseId?.trim().length).toBeGreaterThan(0);
-    }
-    expect(artifact.versions).toEqual({
-      scorer: COMPETITION_SCORER_VERSION,
-      catalog: COMPETITION_CATALOG_VERSION,
-      questionnaire: COMPETITION_QUESTIONNAIRE_VERSION
-    });
-    expect(artifact.benchmarkNow).toBe(QUALITY_BENCHMARK_NOW.toISOString());
-
-    const expectedSourceFiles = addressFiles(SOURCE_FILES);
-    const expectedDatasetFiles = addressFiles(DATASET_FILES);
-    expect(artifact.sourceSnapshot).toEqual({
-      algorithm: "sha256",
-      files: expectedSourceFiles,
-      snapshotSha256: snapshotSha256(expectedSourceFiles)
-    });
-    expect(artifact.datasets).toEqual({
-      algorithm: "sha256",
-      files: expectedDatasetFiles,
-      snapshotSha256: snapshotSha256(expectedDatasetFiles),
-      anchorCaseCount: 100,
-      holdoutCaseCount: 25
-    });
-    for (const content of [...artifact.sourceSnapshot.files, ...artifact.datasets.files]) {
-      assertSha256(content.sha256, content.path);
-    }
-
-    const expectedResults = currentResults();
-    expect(artifact.results).toEqual(expectedResults);
     expect(artifact.results).toHaveLength(125);
-    expect(new Set(artifact.results.map(({ personaId }) => personaId)).size).toBe(125);
-    expect(artifact.resultsSha256).toBe(sha256(canonicalJson(expectedResults)));
-    for (const result of artifact.results) {
-      assertSha256(result.inputSha256, `${result.dataset}:${result.personaId}`);
-      expect(result.top10).toHaveLength(10);
-      expect(new Set(result.top10).size).toBe(10);
-      expect(result.finalTop3).toHaveLength(3);
-      expect(new Set(result.finalTop3).size).toBe(3);
-      expect(result.finalTop3.every((competitionId) => result.top10.includes(competitionId))).toBe(true);
-      expect(result.fixedCompetitionDisplayedScore).toBeGreaterThanOrEqual(0);
-      expect(result.fixedCompetitionDisplayedScore).toBeLessThanOrEqual(100);
-    }
-
-    const anchorScores = expectedResults
-      .filter(({ dataset }) => dataset === "anchor")
-      .map(({ fixedCompetitionDisplayedScore }) => fixedCompetitionDisplayedScore);
-    const holdoutScores = expectedResults
-      .filter(({ dataset }) => dataset === "holdout")
-      .map(({ fixedCompetitionDisplayedScore }) => fixedCompetitionDisplayedScore);
-    expect(artifact.aggregates.anchorFixedPairMean).toBeCloseTo(mean(anchorScores), 12);
-    expect(artifact.aggregates.holdoutFixedPairMean).toBeCloseTo(mean(holdoutScores), 12);
-
-    const { artifactSha256, ...withoutArtifactHash } = artifact;
-    assertSha256(artifactSha256, "canonical artifact");
-    expect(artifactSha256).toBe(sha256(canonicalJson(withoutArtifactHash)));
+    expect(artifact.resultsSha256).toBe(sha256(canonicalJson(artifact.results)));
+    const { artifactSha256, ...unsigned } = artifact;
+    expect(artifactSha256).toBe(sha256(canonicalJson(unsigned)));
+    const historical = readMigrationJson<{ prospectiveBaselineStatus: string; prospectiveSourceMismatches: { path: string; expectedSha256: string; archivedActualSha256: string }[] }>("before/historical-integrity.json");
+    const mismatches = artifact.sourceSnapshot.files.flatMap(file => {
+      const actual = sha256(readLegacyEvidenceBytes(`${LEGACY_V7_MIGRATION_ROOT}/before/${file.path}`).toString("utf8"));
+      return actual === file.sha256 ? [] : [{ path: file.path, expectedSha256: file.sha256, archivedActualSha256: actual }];
+    });
+    expect(historical.prospectiveBaselineStatus).toBe("failed_preserved");
+    expect(mismatches).toEqual(historical.prospectiveSourceMismatches);
+    expect(mismatches.length).toBeGreaterThan(0);
+    const binding = readCurrentLegacyMigrationBinding();
+    expect(verifyCurrentMigrationBinding(process.cwd(), binding)).toEqual({ filesVerified: 7, formalRankingQualityClaim: false });
+    const contract = readMigrationJson<{ originalFailuresConvertedToPass: boolean; qualityAcceptance: boolean; rows: { originalFullName: string; originalEvidenceStatus: string; replacementFullName: string }[] }>("migration-contract.json");
+    expect(contract.originalFailuresConvertedToPass).toBe(false);
+    expect(contract.qualityAcceptance).toBe(false);
+    expect(contract.rows).toHaveLength(13);
+    expect(contract.rows.map(row => row.originalFullName).sort()).toEqual(archive.failures.map(failure => failure.fullName).sort());
+    expect(new Set(contract.rows.map(row => row.replacementFullName)).size).toBe(13);
+    expect(contract.rows.every(row => row.originalEvidenceStatus === "failed_preserved")).toBe(true);
+    expect(contract.rows.find(row => row.originalFullName === originalFailure!.fullName)).toMatchObject({ originalEvidenceStatus: "failed_preserved" });
+    expect(contract.rows.every(row => row.originalFullName !== row.replacementFullName)).toBe(true);
+    // CAPTURE_COMPETITION_PROSPECTIVE_BASELINE cannot rewrite the historical
+    // artifact here. A current v7 binding is a distinct contract, not a recapture.
   });
 });

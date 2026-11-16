@@ -1,6 +1,8 @@
 import { expect, test } from "@playwright/test";
 import { expectNoindex } from "./helpers";
 
+test.use({ launchOptions: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE ? { executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE } : {} });
+
 const savedStore = {
   schemaVersion: "saitu.savedCompetitions.v1",
   entries: [
@@ -27,7 +29,7 @@ const savedStore = {
         completenessPenalty: 0
       },
       rankingSource: "deepseek",
-      registrationStatus: { status: "unknown", label: "请核验本届通知" },
+      registrationStatus: { status: "open", label: "当前可报名" },
       dataNotices: ["报名时间待核验"],
       explanation: {
         matchReasons: ["与本次结构化条件匹配。"],
@@ -53,6 +55,8 @@ test("我的竞赛读取三项快照，可查看详情、移除和确认清空",
   await page.goto("/competitions/saved");
   await expectNoindex(page);
   await expect(page.getByText(/历史快照未记录赛道/)).toHaveCount(3);
+  await expect(page.getByText("当前可报名", { exact: true })).toHaveCount(0);
+  await expect(page.getByText("参赛资格和开赛时间请自行核查官网", { exact: true })).toHaveCount(3);
 
   await expect(page.getByRole("heading", { level: 1, name: "我的竞赛" })).toBeVisible();
   await expect(page.getByText("已保存 3 项")).toBeVisible();

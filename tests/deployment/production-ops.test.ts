@@ -112,10 +112,15 @@ describe("production operations control plane", () => {
       "FEATURE_AI=1",
       "FEATURE_COMPETITION_RECOMMENDER=1",
       "AI_PROVIDER=deepseek",
-      "AI_MODEL=deepseek-v4-pro",
-      "AI_COMPETITION_NORMALIZE_MODEL=deepseek-v4-pro",
-      "AI_COMPETITION_CLARIFY_MODEL=deepseek-v4-pro",
-      "AI_COMPETITION_RECOMMEND_MODEL=deepseek-v4-pro",
+      "AI_MODEL=deepseek-flash",
+      "AI_COMPETITION_NORMALIZE_MODEL=deepseek-flash",
+      "AI_COMPETITION_CLARIFY_MODEL=deepseek-flash",
+      "AI_COMPETITION_RECOMMEND_MODEL=deepseek-flash",
+      "AI_REASONING_EFFORT=max",
+      "AI_SPEND_RUN_ID=deployment-test-shared-run",
+      "AI_SPEND_LIMIT_CNY=300",
+      "AI_SPEND_FUNDED_CNY=130.02",
+      "AI_SPEND_PHASE=calibration",
       "AI_TIMEOUT_MS=30000",
       "AI_RETRY_MAX_DELAY_MS=5000",
       "AI_TEST_MODE=0",
@@ -207,7 +212,7 @@ describe("production operations control plane", () => {
       expect(app).toContain("SESSION_STARTS_PER_IP_DAY=600");
       expect(app).toContain("SESSION_TRANSITIONS_PER_SESSION=12");
       expect(app).toContain("SESSION_TTL_SECONDS=1800");
-      expect(app).toContain("AI_CONCURRENCY_MAX=8");
+      expect(app).toContain("AI_CONCURRENCY_MAX=2");
       expect(app).toContain("AI_QUEUE_MAX=32");
       expect(app).toContain("AI_QUEUE_WAIT_MS=15000");
       expect(app).toContain("AI_REQUEST_DEADLINE_MS=45000");
@@ -1676,7 +1681,11 @@ describe("production operations control plane", () => {
     expect(sql).toContain("SET ROLE resume_ai_security_maintenance;");
     expect(sql).toContain("LIMIT 500 FOR UPDATE SKIP LOCKED");
     expect(sql).toContain("interval '180 days'");
-    expect(sql.match(/^COMMIT;/gmu)).toHaveLength(8);
+    // v6 adds one bounded transaction for encrypted decision-state expiry.
+    // Spend evidence is retained; deleting it would reset the cumulative budget.
+    expect(sql.match(/^COMMIT;/gmu)).toHaveLength(12);
+    expect(sql).toContain("competition_decision_states");
+    expect(sql).not.toMatch(/DELETE FROM (?:public\.)?ai_spend_(?:ledger|budgets|authority)/iu);
     expect(sql).toContain("CLEANUP_REMAINING");
     expect(provision).toContain("NOLOGIN NOSUPERUSER NOCREATEDB NOCREATEROLE NOINHERIT");
     expect(provision).toContain("GRANT SELECT,DELETE ON TABLE");

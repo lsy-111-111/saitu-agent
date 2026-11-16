@@ -1,5 +1,7 @@
 allowBuilds:
   esbuild: true
+  onnxruntime-node: true
+  protobufjs: false
   sharp: true
   unrs-resolver: true
 overrides:

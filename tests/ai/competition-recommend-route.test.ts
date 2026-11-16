@@ -14,6 +14,8 @@ import {
   createCompetitionConversationToken as createSignedCompetitionConversationToken
 } from "../../src/lib/ai/competition-conversation-token";
 import * as competitionCatalog from "../../src/lib/competitions/catalog";
+import * as decisionCatalog from "../../src/lib/competitions/v6/catalog";
+import { selectPublishedDecisionRecords } from "../../src/lib/competitions/v6/published-records";
 import {
   getCompetitionRecommendationCandidates,
   selectFinalQualityRecommendations,
@@ -194,7 +196,7 @@ describe("POST /api/ai/competition-recommend", () => {
     expect(analyticsMocks.completed).not.toHaveBeenCalled();
   });
 
-  it("returns exactly three unique hard-eligible recommendations in explicit mock mode", async () => {
+  it("returns a nonempty unique published-record shortlist in explicit mock mode", async () => {
     const conversationToken = createCompetitionConversationToken({
       profile,
       transcript: completedTranscript,
@@ -211,20 +213,28 @@ describe("POST /api/ai/competition-recommend", () => {
     expect(response.headers.get("cache-control")).toContain("no-store");
     expect(body).toMatchObject({
       responseVersion: "competition-recommendation.v5",
-      provider: "server",
-      model: "structured-fit",
+      provider: "rules",
+      model: "server",
       status: "matched",
       rankingSource: "evidence-rules",
       fallbackUsed: false,
       fallbackMode: "none"
     });
-    expect(body.recommendations).toHaveLength(3);
-    expect(new Set(body.recommendations.map((item: { competitionId: string }) => item.competitionId))).toHaveProperty("size", 3);
+    expect(body.recommendations.length).toBeGreaterThan(0);
+    expect(body.recommendations.length).toBeLessThanOrEqual(3);
+    expect(new Set(body.recommendations.map((item: { competitionId: string }) => item.competitionId)).size).toBe(body.recommendations.length);
     const completionLog = vi.mocked(console.info).mock.calls
       .flatMap((call) => call)
       .find((entry) => typeof entry === "string" && entry.includes('"event":"ai_route_completed"'));
     expect(JSON.parse(completionLog as string).candidateCount).toBeGreaterThan(10);
-    expect(body.candidateAudit).toHaveLength(competitionCatalog.getCompetitionCatalog().length);
+    const records = decisionCatalog.getDecisionCatalog(), published = new Set(selectPublishedDecisionRecords(records).map(record => record.recordId));
+    for (const record of records) {
+      const audit = body.candidateAudit.find((item: { competitionId: string }) => item.competitionId === record.recordId);
+      expect(audit).toBeDefined();
+      expect(audit.reason).toContain(record.recordId);
+      if (!published.has(record.recordId)) { expect(audit.reason).toContain("content_pending"); expect(audit.reason).toContain("不是对你能力的否定"); }
+    }
+    expect(body.recommendations.every((item: { recommendedTrack: { evidenceRef: string } }) => published.has(item.recommendedTrack.evidenceRef))).toBe(true);
     expect(analyticsMocks.completed).toHaveBeenCalledWith(
       expect.objectContaining({
         status: "matched",
@@ -365,7 +375,7 @@ describe("POST /api/ai/competition-recommend", () => {
   });
 
   it("represents zero eligible series as a successful empty decision", async () => {
-    vi.spyOn(competitionCatalog, "getCompetitionCatalog").mockReturnValue([]);
+    vi.spyOn(decisionCatalog, "getDecisionCatalog").mockReturnValue([]);
     const conversationToken = createCompetitionConversationToken({profile, transcript:[], pendingQuestion:null, completed:true});
     const response = await POST(createRequest({aiConsent:{accepted:true,version:"test.v1"},conversationToken},"198.51.100.19"));
     expect(response.status).toBe(200);

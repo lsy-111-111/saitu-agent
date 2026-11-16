@@ -1,0 +1,28 @@
+export type DecisionEffort = "high" | "low";
+export {USER_UNBOUNDED_EXECUTION_MODE,USER_UNBOUNDED_GRANT_VERSION,TOP5_UNBOUNDED_GRANT_VERSION} from "./execution-policy.mjs";
+export type DecisionEffortPolicyV1 = Readonly<{ version: "saitu.effort-policy.v1"; rank: DecisionEffort; explain: DecisionEffort; review: DecisionEffort }>;
+export type DecisionEffortPolicyV2 = Readonly<{ version: "saitu.effort-policy.v2"; rank: "low"; explain: "low"; review: "low"; rankThinking: "disabled"; rankTemperature: 0 }>;
+export type DecisionEffortPolicy = DecisionEffortPolicyV1 | DecisionEffortPolicyV2;
+export type DecisionModelSettings = Readonly<{
+  thinking: "enabled" | "disabled";
+  policyReasoningEffort: DecisionEffort;
+  wireReasoningEffort?: DecisionEffort;
+  temperature?: 0;
+  topP?: 0.95 | 1;
+}>;
+export const EFFORT_POLICY_VERSION: "saitu.effort-policy.v1";
+export const EFFORT_POLICY_VERSION_V2: "saitu.effort-policy.v2";
+export const EFFORT_GRANT_VERSION: "saitu.v7.effort.v1";
+export const TOP5_EFFORT_GRANT_VERSION: "saitu.v7.top5.v1";
+export const LEGACY_DEFAULT_EFFORT_POLICY: DecisionEffortPolicyV1;
+export const DEFAULT_EFFORT_POLICY: DecisionEffortPolicyV1;
+export const RANK_NON_THINKING_EFFORT_POLICY: DecisionEffortPolicyV2;
+export function parseEffortPolicy(value: unknown): DecisionEffortPolicy;
+export function requireCompactRecommendationEffortPolicy(value: unknown): DecisionEffortPolicyV1;
+export function requireRankNonThinkingEffortPolicy(value: unknown): DecisionEffortPolicyV2;
+export function effortPolicySha256(policy: DecisionEffortPolicy): string;
+export function resolveEffortForOperation(operation: string, policy: DecisionEffortPolicy): DecisionEffort;
+export function resolveDecisionModelSettingsForOperation(operation: string, policy: DecisionEffortPolicy): DecisionModelSettings;
+export function effortForPolicyTrace(policy: DecisionEffortPolicy): DecisionEffort | "mixed";
+export function readConfiguredEffortPolicy(environment?: Record<string, string | undefined>): DecisionEffortPolicy;
+export function decisionRequestSha256(input: { prompt: string; system?: string; model?: string; maxTokens?: number; promptVersion?: string; topP?: number; temperature?: number; operation?: string; thinking: "enabled" | "disabled"; reasoningEffort: DecisionEffort; effortPolicySha256: string; recommendationPolicyVersion?:string; implementationVersion?:string }): string;

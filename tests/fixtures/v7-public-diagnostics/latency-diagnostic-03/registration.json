@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "saitu.latency-diagnostic-registration.v1",
+  "registeredAt": "2026-11-08T19:33:24.346Z",
+  "asOf": "2026-11-08T19:09:37.921Z",
+  "inputSha256": "f559feed4b7c6c6a3cf6aae25192a17bacd4be2d9eeadd9cce36719a43fcc3d5",
+  "publicInputSource": {
+    "path": "artifacts/continuation-v7-20261109/frontend/public-admission-02/observations/v7-public-desktop-novice-receipt.json",
+    "sha256": "719237666b84cd0d761f15cd7c95a22c733f45200fe15f5b39b9dd8c86997768"
+  },
+  "runtimeSourceBindingSha256": "68332dd88a24b59b3c0f2f71482e3d9f26e004bbe9904efbddbc7f12919d868c",
+  "candidatePoolSha256": "a957655b2016c337550c715dae1e685b65bf984740720fa63b0affd7b2432fbe",
+  "profileSha256": "5ac291d03844a75a71c9b1a7f4ca5942f90749e5f8927e42752170e55d9807ab",
+  "spendRunId": "saitu-v7-20261109-calibration-05",
+  "oneOriginalRankInvocation": true,
+  "maximumModelAttempts": 2,
+  "deadlineMs": 120000,
+  "model": "deepseek-flash",
+  "thinking": "enabled",
+  "reasoningEffort": "high",
+  "formalOrPublicAcceptanceEligible": false,
+  "reason": "One predeclared public novice invocation for v7.3 prompt candidate; complete same pool and input, new prompt may have cold prefix; no latency quality claim from one observation.",
+  "productionDeadlineChanged": false,
+  "toolSha256": "6be590a7fd0aee119f7a36c21aea97688bd2f5598d48959496f544360fa46289",
+  "promptVersion": "saitu-match.v7.3.direct-comparison-resource-scope",
+  "comparisonReference": "artifacts/continuation-v7-20261109/latency-diagnostic-02/summary.json"
+}

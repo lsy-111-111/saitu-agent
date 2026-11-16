@@ -6,6 +6,9 @@ set -Eeuo pipefail
 exec python3 - "$@" <<'PY'
 from __future__ import annotations
 
+import hashlib
+import json
+
 import grp
 import pathlib
 import pwd
@@ -76,6 +79,11 @@ allowed_keys = {
     "AI_COMPETITION_NORMALIZE_MODEL", "AI_COMPETITION_CLARIFY_MODEL",
     "AI_COMPETITION_RECOMMEND_MODEL", "AI_TIMEOUT_MS",
     "AI_RETRY_MAX_DELAY_MS", "AI_VERIFY_TIMEOUT_MS",
+    "AI_REASONING_EFFORT", "AI_SPEND_POLICY_SHA256", "AI_SPEND_RUN_ID", "AI_SPEND_LIMIT_CNY", "AI_SPEND_FUNDED_CNY", "AI_SPEND_PHASE",
+    "AI_SPEND_AUTHORIZED_EFFORT", "AI_SPEND_HIGH_CONDITION_SHA256", "AI_SPEND_EFFORT_CONDITION_SHA256", "AI_CALIBRATION_CALL_LIMIT",
+    "SAITU_V7_EFFORT_POLICY", "SAITU_V7_EFFORT_POLICY_SHA256", "SAITU_AI_EXECUTION_MODE",
+    "SAITU_DECISION_STRATEGY", "SAITU_CATALOG_SNAPSHOT_PATH",
+    "SAITU_V7_WORKER_CONCURRENCY",
     "AI_CLARIFY_SCHEMA_DIAGNOSTICS", "AI_RANK_SCHEMA_DIAGNOSTICS",
     "AI_TEST_MODE", "ALLOW_AI_MOCK", "NEXT_PUBLIC_AI_TEST_MODE",
 }
@@ -135,6 +143,10 @@ def require_integer_range(key: str, minimum: int, maximum: int) -> int:
 
 
 if mode == "production":
+    execution_mode = values.get("SAITU_AI_EXECUTION_MODE", "")
+    if execution_mode not in {"", "finite", "user-unbounded"}:
+        fail("Invalid explicit AI execution mode")
+    user_unbounded = execution_mode == "user-unbounded"
     if urlsplit(require_nonempty("DATABASE_URL")).scheme not in {"postgresql", "postgres"}:
         fail("DATABASE_URL must use PostgreSQL")
     require_minimum_length("AI_CONSENT_SALT", 32)
@@ -201,6 +213,79 @@ if mode == "production":
         value = require_nonempty(key)
         if not re.fullmatch(r"[A-Za-z0-9._:/-]+", value, re.ASCII):
             fail(f"{key} contains unsupported characters")
+    for key in model_keys[1:]:
+        if values[key] != "deepseek-flash":
+            fail(f"{key} must be deepseek-flash in production")
+    policy_hash = values.get("AI_SPEND_POLICY_SHA256", "")
+    condition_hash = values.get("AI_SPEND_HIGH_CONDITION_SHA256", "")
+    authorized_effort = values.get("AI_SPEND_AUTHORIZED_EFFORT", "")
+    reasoning_effort = values.get("AI_REASONING_EFFORT", "")
+    if policy_hash and not re.fullmatch(r"[a-f0-9]{64}", policy_hash, re.ASCII):
+        fail("AI_SPEND_POLICY_SHA256 must be a SHA-256 digest")
+    if condition_hash and not re.fullmatch(r"[a-f0-9]{64}", condition_hash, re.ASCII):
+        fail("AI_SPEND_HIGH_CONDITION_SHA256 must be a SHA-256 digest")
+    if authorized_effort not in {"", "max", "high", "stage"}:
+        fail("AI_SPEND_AUTHORIZED_EFFORT must be max, high or stage when configured")
+    if user_unbounded and authorized_effort != "stage":
+        fail("User-unbounded execution requires its explicit stage authorization")
+    stage_raw = values.get("SAITU_V7_EFFORT_POLICY", "")
+    stage_sha = values.get("SAITU_V7_EFFORT_POLICY_SHA256", "")
+    stage_condition = values.get("AI_SPEND_EFFORT_CONDITION_SHA256", "")
+    if stage_raw or stage_sha or stage_condition or authorized_effort == "stage":
+        try:
+            stage_policy = json.loads(stage_raw)
+        except (ValueError, TypeError):
+            fail("Invalid explicit v7 stage effort policy")
+        if (not isinstance(stage_policy, dict) or set(stage_policy) != {"version", "rank", "explain", "review"}
+                or stage_policy["version"] != "saitu.effort-policy.v1"
+                or any(stage_policy[key] not in {"high", "low"} for key in ("rank", "explain", "review"))):
+            fail("Invalid explicit v7 stage effort policy")
+        ordered_policy = {key: stage_policy[key] for key in ("version", "rank", "explain", "review")}
+        actual_sha = hashlib.sha256(json.dumps(ordered_policy, separators=(",", ":")).encode()).hexdigest()
+        top5 = values.get("AI_SPEND_RUN_ID", "").startswith("saitu-v7-top5-")
+        if user_unbounded and not top5:
+            fail("User-unbounded mode requires its separate Top5 grant")
+        if top5 and any(stage_policy[key] != "low" for key in ("rank", "explain", "review")):
+            fail("Top5 requires the approved low/low/low policy")
+        branch = "top5-unbounded" if user_unbounded else "top5" if top5 else "effort"
+        expected_run = rf"saitu-v7-{branch}-20261109-{re.escape(values.get('AI_SPEND_PHASE', ''))}-[0-9]{{2}}"
+        if (stage_sha != actual_sha or not re.fullmatch(r"[a-f0-9]{64}", stage_condition, re.ASCII)
+                or not policy_hash or authorized_effort != "stage" or reasoning_effort != "high" or condition_hash
+                or not re.fullmatch(expected_run, values.get("AI_SPEND_RUN_ID", ""), re.ASCII)):
+            fail("v7 stage effort requires its separate exact grant, phase, policy and condition")
+    elif policy_hash:
+        expected_run = rf"saitu-v7-20261109-{re.escape(values.get('AI_SPEND_PHASE', ''))}-[0-9]{{2}}"
+        if not re.fullmatch(expected_run, values.get("AI_SPEND_RUN_ID", ""), re.ASCII):
+            fail("v7 spend run must identify its configured phase")
+        if reasoning_effort != "high" or authorized_effort != "high" or not condition_hash:
+            fail("v7 high spend requires matching reasoning, authorized effort and condition SHA-256")
+    elif reasoning_effort == "high":
+        if (not re.fullmatch(r"saitu-c-sync-20261106-[0-9]{2}", values.get("AI_SPEND_RUN_ID", ""), re.ASCII)
+                or values.get("AI_SPEND_PHASE") != "calibration"
+                or authorized_effort != "high" or not condition_hash):
+            fail("legacy high spend requires its exact conditional calibration grant")
+    elif reasoning_effort != "max" or authorized_effort not in {"", "max"} or condition_hash:
+        fail("max spend must not carry a conflicting high authorization")
+    calibration_cap = values.get("AI_CALIBRATION_CALL_LIMIT", "")
+    if not user_unbounded and calibration_cap and (not re.fullmatch(r"[1-9][0-9]*", calibration_cap, re.ASCII) or int(calibration_cap) > 100):
+        fail("AI_CALIBRATION_CALL_LIMIT must be an integer from 1 through 100")
+    if not re.fullmatch(r"[A-Za-z0-9._-]{1,100}", values.get("AI_SPEND_RUN_ID", ""), re.ASCII):
+        fail("AI_SPEND_RUN_ID must identify the existing shared budget run")
+    for key in (() if user_unbounded else ("AI_SPEND_LIMIT_CNY", "AI_SPEND_FUNDED_CNY")):
+        try:
+            amount = float(values.get(key, ""))
+        except ValueError:
+            fail(f"{key} must be a positive amount at most 300")
+        if not 0 < amount <= 300:
+            fail(f"{key} must be a positive amount at most 300")
+    if values.get("AI_SPEND_PHASE") not in {"calibration", "formal", "repair", "performance", "reserve"}:
+        fail("AI_SPEND_PHASE is invalid")
+    if values.get("SAITU_DECISION_STRATEGY", "rules") not in {"rules", "llm"}:
+        fail("SAITU_DECISION_STRATEGY is invalid")
+    if values.get("SAITU_CATALOG_SNAPSHOT_PATH") and not pathlib.Path(values["SAITU_CATALOG_SNAPSHOT_PATH"]).is_absolute():
+        fail("SAITU_CATALOG_SNAPSHOT_PATH must be absolute")
+    if not user_unbounded and values.get("SAITU_V7_WORKER_CONCURRENCY", ""):
+        require_integer_range("SAITU_V7_WORKER_CONCURRENCY", 1, 4)
     if values["AI_PROVIDER"] != "deepseek":
         fail("AI_PROVIDER must be deepseek in production")
     if values.get("AI_API_URL", "") not in {"", "https://api.deepseek.com/chat/completions"}:

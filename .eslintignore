@@ -7,3 +7,6 @@ coverage
 playwright-report
 test-results
 tmp
+# Captured third-party source bytes and immutable historical evidence are not
+# application code. Linting must not modify or reinterpret those originals.
+artifacts

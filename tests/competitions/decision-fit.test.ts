@@ -56,7 +56,10 @@ describe("date-independent student decision support", () => {
     expect(best[0]!.eligibility.status).toBe("needs_clarification");
     expect(recommendCompetitions({...profile,decisionContext:{excludedTaskFormats:["laboratory"]}},{catalog:[chemistry]}).recommendations).toEqual([]);
     const item=explainDecisionShortlist(profile,[],best)[0]!;
-    expect(item.fitEvidence?.experience.join("")).toContain("独立");
+    // The role-only legacy selection contains no confirmed personal task.
+    // It must not create an assertion of independent laboratory experience.
+    expect(item.fitEvidence?.experience).toEqual([]);
+    expect(item.fitEvidence?.unknowns.join("")).toContain("本人具体完成的工作");
     const response={responseVersion:COMPETITION_RECOMMENDATION_RESPONSE_VERSION, status:"matched",catalogVersion:"now",scorerVersion:"now",
       promptVersion:"rules",model:"rules",provider:"server",rankingSource:"evidence-rules",fallbackUsed:false,fallbackMode:"none",recommendations:[item]};
     expect(parseCompetitionRecommendationResponseV5(response)).not.toBeNull();

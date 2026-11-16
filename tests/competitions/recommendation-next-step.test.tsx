@@ -72,5 +72,9 @@ describe("recommendation next-step services", () => {
     expect(html).toContain("保存并打开我的竞赛");
     expect(html).toContain('href="/about#contact"');
     expect(html).not.toContain("竞赛资源");
+    expect(html).toContain("查看历史届次资料与官方入口");
+    expect(html).toContain("参赛资格和开赛时间请自行核查官网");
+    expect(html).not.toContain("这个月能报名吗");
+    expect(html).not.toContain("全国报名窗口目前开放");
   });
 });

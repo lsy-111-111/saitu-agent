@@ -1,22 +1,30 @@
 {
   "schemaVersion": 1,
   "evidenceType": "resume-ai-release-required-tests",
-  "minimumPassedObservations": 19,
+  "minimumPassedObservations": 342,
   "projectToolchain": {
     "schemaVersion": 1,
     "policyId": "resume-ai-project-toolchain.v1",
     "inputs": [
       {
         "path": "package.json",
-        "sha256": "d1af29380ea26fc3057eee45150b217f6d8163fee6625e293ac8796346cef488"
+        "sha256": "9cc16eab9219c3f1f6c944dcdf1cd8c13f2e9d2eadd297dcfc2cd195bca70260"
       },
       {
         "path": "pnpm-lock.yaml",
-        "sha256": "528fe4316b80f1cdc3665303b967d25fc01b43f55cde03a1b9eb4693bc362db7"
+        "sha256": "e2c3672ee797b690bba9f39ba9cb45ba55d13ed8b927bc392e67502309d4b0b9"
       },
       {
         "path": "pnpm-workspace.yaml",
-        "sha256": "e75f844f4a9a6e0f9b39809bf2e249625a3ce20590c40107f25dfa720aa451a5"
+        "sha256": "43b2e5babda0acd9c89dfde3a92d8e5aeedd487a3b7e5c0b311984dc37f762d3"
+      },
+      {
+        "path": "vitest.config.ts",
+        "sha256": "a32d057bc2e6fd44bb7b9e0df656794f6bd176bfa7232f4a5ac090ff4b9422a5"
+      },
+      {
+        "path": "tests/fixtures/mock-spend-ledger.setup.ts",
+        "sha256": "496e4764ef52cb24c5f4b54221883936e9f28e609e6c20a0fb26b5e8358f8c9a"
       }
     ],
     "runtime": {
@@ -83,12 +91,88 @@
   },
   "sourcePins": [
     {
+      "path": "docs/v7/top5-continuation-contract-20261109.md",
+      "sha256": "34d681c0f73083d073cd152eb97ee66db088ac94bf4fa763bc83cbc86175f5a9"
+    },
+    {
       "path": "playwright.config.ts",
       "sha256": "ee7b3b7ff6c736e79c07d0152e4cbd5fe3dfc65a74f8b3c58e76e98fde0998e2"
     },
     {
+      "path": "scripts/competitions/v7/evaluation-dispatch-evidence.mjs",
+      "sha256": "fc4c4a33ec41c11bfc920665cf91bbeba93c0c10becd0aa3be6f0a44363df810"
+    },
+    {
+      "path": "scripts/competitions/v7/evaluation-effort.mjs",
+      "sha256": "12ef8d6cbe292ea7afb0087c82b31318bd8fbf18de5fcaf31ec4daa6e39a7254"
+    },
+    {
+      "path": "scripts/competitions/v7/evaluation-runtime.mjs",
+      "sha256": "f40aa8f4a41c3934eda39ca08a3fa95acc6309416a34c594c7bca2858e356d8e"
+    },
+    {
+      "path": "scripts/competitions/v7/pilot-contract.mjs",
+      "sha256": "8d1da5f2a47871f15a875609071cfa75186eed7064ff54a68f9226c082c20af7"
+    },
+    {
+      "path": "scripts/lib/release-evidence-v7-postgres.d.mts",
+      "sha256": "ef14a37b2f106627b59490ebca1c463a4c05e1956baa2657d714f6b982e4e2f0"
+    },
+    {
+      "path": "scripts/lib/release-evidence-v7-postgres.mjs",
+      "sha256": "54cbf28cb430e2a213597092e39f55b12c52d0bde6982fa7a052fabedd81269d"
+    },
+    {
+      "path": "src/lib/ai/ai-client.ts",
+      "sha256": "559ddcb5c2f58a5355733228bc776e08eeec1735c037c12d0886b741cc4c08bc"
+    },
+    {
+      "path": "src/lib/ai/durable-call.ts",
+      "sha256": "15fb2bb6d46d5c8a34d43fa5ac4dbfbd930095a8bc800778a8e51574cdbb01cb"
+    },
+    {
+      "path": "src/lib/ai/effort-contract.d.mts",
+      "sha256": "0f54e13dc82369154230b48139f342123456303e9a04bd7e4119e2c1a1281090"
+    },
+    {
+      "path": "src/lib/ai/effort-contract.mjs",
+      "sha256": "6bb7685607196f7cecfdb0fe71f99d7ea4e065279709dae4789f3771317b4d5b"
+    },
+    {
+      "path": "src/lib/ai/effort-policy.mjs",
+      "sha256": "2fec03ad9be1c47de5244fd517a17fcfae4073f6c467bd4d3f216684308dfdc5"
+    },
+    {
+      "path": "src/lib/ai/product-observation.ts",
+      "sha256": "fcdca6a79f17d88b19bf46b0c6c65a94bee922bc98197fa41d8ec4fda9bb9eb8"
+    },
+    {
+      "path": "src/lib/competitions/v7/contracts.ts",
+      "sha256": "772946faffae6d45c1871beba2573c7dad1067e44d6a68123ce3499e2b9416a1"
+    },
+    {
+      "path": "src/lib/competitions/v7/evidence-packet.ts",
+      "sha256": "2f7e3df9a27a4e5b214aba2f18041881ae4aa92f3b7582bd0b599a1981409a13"
+    },
+    {
+      "path": "src/lib/competitions/v7/model.ts",
+      "sha256": "cef16475a2b7d9d741bb47801e836d850ce672c9aad104a6a903244c7d48a299"
+    },
+    {
+      "path": "src/lib/competitions/v7/rank-packet.ts",
+      "sha256": "f049d248ace7738ccbb92d5e02eb255f1a29d44aac26b46f3749f75756d314c3"
+    },
+    {
+      "path": "src/lib/competitions/v7/store.ts",
+      "sha256": "977b6c69f9f4f61d51f6a7dcacc0ff9cc64fe8d3301bc8da7c5088905f8af4e1"
+    },
+    {
+      "path": "src/lib/competitions/v7/worker.ts",
+      "sha256": "a4beb5f9363c08dd49148daed247577c8d82b36d312e3ea43ff25228e9cbdd95"
+    },
+    {
       "path": "tests/ai/competition-ai.test.ts",
-      "sha256": "20998b842016061e0532ee11bc74b35f7fa7b7b246fb1c5efe218c895acf7478"
+      "sha256": "e9597c116c6cf96a8f8daeb289f2a1a845dfae9bb5b4fdbf8708392b80c7960f"
     },
     {
       "path": "tests/ai/competition-clarify-route.test.ts",
@@ -99,12 +183,216 @@
       "sha256": "35d7b91e997ec71c5bd09c765b28c1d9e4b7b933d9e60f52c38c8845ca67e0ea"
     },
     {
+      "path": "tests/ai/effort-policy-build.test.ts",
+      "sha256": "3b7e1872aec4879710b765fd83c66376d03fe3c71c58203e93d7950260f51b8d"
+    },
+    {
+      "path": "tests/ai/model-call-governor-cap.test.ts",
+      "sha256": "3a57e242df1ff200733c23ede034a285b649dff312d6b66461a65558dfa560d3"
+    },
+    {
+      "path": "tests/ai/reservation-scope.integration.test.ts",
+      "sha256": "340961a0ff2b198cfe7cd0d71768d892f598d017304427090ba309ea69d9a7b3"
+    },
+    {
+      "path": "tests/ai/v7-effort-durable-postgres.integration.test.ts",
+      "sha256": "626acc2c8fe66845246c276a67665d9b79e643823911b04cd739097e31997b07"
+    },
+    {
+      "path": "tests/ai/v7-top5-durable-postgres.integration.test.ts",
+      "sha256": "f7fec9a178e91f0e1bd23629d482d001d8e5fe0a8c928d4ab7898bd8e8820902"
+    },
+    {
+      "path": "tests/competitions/recommendation-run-v7.test.tsx",
+      "sha256": "ff0c3a8ed170564ab9f4fb6cd8419ebea3948c593a1b07aba6351fecf5fa8719"
+    },
+    {
+      "path": "tests/competitions/v6/decision-fixtures.ts",
+      "sha256": "c3894a33c1c0e525c6921d06cc3ef76932dc18ba25964e2cc372fd41c5821659"
+    },
+    {
+      "path": "tests/competitions/v7/algorithm.test.ts",
+      "sha256": "1f9c3e438415dc83e71ef0227019872a3ad0e68e802405940223839775752b23"
+    },
+    {
+      "path": "tests/competitions/v7/backend-review.integration.test.ts",
+      "sha256": "2e531f4988841f8ee528ceebd3d1308193ecc92a6f91639e9dccf33e4daed8a9"
+    },
+    {
+      "path": "tests/competitions/v7/browser-effort.test.ts",
+      "sha256": "fe526d1a3a325d6235a9f2ce7f33aa7a7a8deaa578c4f3e2d76e16fb4e06c702"
+    },
+    {
+      "path": "tests/competitions/v7/browser-timing.test.ts",
+      "sha256": "e934b1f1a3a7e431c3ffa02bbdf175fe14bf28303c0667a0c6fc9ed155c67624"
+    },
+    {
+      "path": "tests/competitions/v7/catalog.test.ts",
+      "sha256": "22b8c25eb37416d3ba2563816a85c21bc81aa03bee70b7ae3233dff4e2d509ef"
+    },
+    {
+      "path": "tests/competitions/v7/chat-adoption.test.ts",
+      "sha256": "f7b5a31b3b7e41f4c705d78a07a1e189e06444a6f718ed15d2bc1bd80a4b8f91"
+    },
+    {
+      "path": "tests/competitions/v7/chat-grounding.test.ts",
+      "sha256": "831c4e3609addeef4e067281fa1aa1000d8eb7df2683edb9c04d8611a755f897"
+    },
+    {
+      "path": "tests/competitions/v7/crypto.test.ts",
+      "sha256": "76484781bf6b208d9893c50cca9e26a2651cfabcda4e0f43aa9e929cd30c2b73"
+    },
+    {
+      "path": "tests/competitions/v7/durable-state.integration.test.ts",
+      "sha256": "77915d333e74e6cfd249fb55825cca963413a8f16c67d00efc4825150f9d8255"
+    },
+    {
+      "path": "tests/competitions/v7/evaluation-blind-full.test.ts",
+      "sha256": "44329ec8c3e28a04585b8e9721aeb8e388959a40bc5ee15a1341d3305e6ee2b9"
+    },
+    {
+      "path": "tests/competitions/v7/evaluation-comparison.test.ts",
+      "sha256": "5188cc80ced7dba503b58eb60367624c31cc0b2d943597e7958b6aab3b4853d1"
+    },
+    {
+      "path": "tests/competitions/v7/evaluation-contract.test.ts",
+      "sha256": "e4b7a0c4c2de4e146c04751e3c105d125adbd30cc1f9972feb16f0048912a5b6"
+    },
+    {
+      "path": "tests/competitions/v7/evaluation-effort.test.ts",
+      "sha256": "95d28fdce7f7648212c79605ea400a09213b56dba0d8d17d8a68cad5fe848b07"
+    },
+    {
+      "path": "tests/competitions/v7/evaluation-registration-ranking.test.ts",
+      "sha256": "e9533a6badcf9114634ab9316ca91e59777a724ac70ef709185e8781df1c547c"
+    },
+    {
+      "path": "tests/competitions/v7/evaluation-top5.test.ts",
+      "sha256": "427a943c54e95b5536f9b9cd0402469f83d35d876ab46cd69556bc8953c90b7e"
+    },
+    {
+      "path": "tests/competitions/v7/explanation-projection-B.test.ts",
+      "sha256": "d24c9cab6b29a1ebaa0e11a8101dddd41a96063fb4f118f8ee1bc7f26387b523"
+    },
+    {
+      "path": "tests/competitions/v7/group-worker.integration.test.ts",
+      "sha256": "ffd112681a86fc754c7a06784bc84414c6455b0d80d3fe4453564b93d685227c"
+    },
+    {
+      "path": "tests/competitions/v7/performance-browser.test.ts",
+      "sha256": "1f01223bb521de95899730c4d058be8029ace2e7115bbbf892405ef3ffe8d70d"
+    },
+    {
+      "path": "tests/competitions/v7/profile.test.ts",
+      "sha256": "016a1e8f17cb8d9616b087090f34aa6f1cf79164a93843ef668199c02dd4f654"
+    },
+    {
+      "path": "tests/competitions/v7/provenance-boundary-B.test.ts",
+      "sha256": "9d3d64243133593a55f7e981566a2ce2885e56d4efedda39ffab4ce0637a5d55"
+    },
+    {
+      "path": "tests/competitions/v7/rank-envelope-repair-C.test.ts",
+      "sha256": "81d2b9e9b1c63be5e25445f53a0fd21a115dd4718e398723d0d57e90c76cfced"
+    },
+    {
+      "path": "tests/competitions/v7/rank-packet-C.test.ts",
+      "sha256": "c3c5a623b5808c82c5441d28dded601e1acded7ce8f356c8d3e9019d13ad3206"
+    },
+    {
+      "path": "tests/competitions/v7/submission-timing-client.test.ts",
+      "sha256": "de9b8740a4c7d71dd9d93e29750fcb685aa18aed5b2977713e2d46f6cee4d995"
+    },
+    {
+      "path": "tests/competitions/v7/top5-ranking-A.test.ts",
+      "sha256": "21db41d16c06bc930ce703adde3ecdf51780b064f5e0437c4664906add5f543c"
+    },
+    {
       "path": "tests/deployment/production-ops.test.ts",
-      "sha256": "d4c8790f4d7a39aab0615fdd79b7327f8296ce1dee6c330538d46d06e960e82b"
+      "sha256": "14a81413663ff3ac25ec0c7b046c2595257159f9e3025d617f75b57af350d709"
+    },
+    {
+      "path": "tests/deployment/runtime-layout-anchor.test.ts",
+      "sha256": "4a26da17270b1152a2523135cf778a5d79833ac1b28f53211b08e9618e4e45f1"
+    },
+    {
+      "path": "tests/deployment/v7-database-environment.test.ts",
+      "sha256": "255b75a41a664f6db88b0b6c6b8c28af708368bd4d7db796c2671ac06f97cb1d"
+    },
+    {
+      "path": "tests/deployment/v7-effort-fixed-postgres.integration.test.ts",
+      "sha256": "93654196a73155bdafa6034a6d1255d69e700ff362b076f8dd9499dd87766866"
+    },
+    {
+      "path": "tests/deployment/v7-effort-release.test.ts",
+      "sha256": "1b15b196f08f899bc8ee6bb4bcf23039c7d65a173abdc8637e0fe06fc4733cfe"
+    },
+    {
+      "path": "tests/deployment/v7-native-postgres.integration.test.ts",
+      "sha256": "51d0d49b10fe4d33ea008e5cde66d6edfe1d187223b7d6a03080df7ce118bca5"
+    },
+    {
+      "path": "tests/deployment/v7-ops-postgres.test.mjs",
+      "sha256": "73f0c9cbb809c230ab7631d275969160d93b87f6e324cd9309241a5478454200"
+    },
+    {
+      "path": "tests/deployment/v7-release-evidence.test.ts",
+      "sha256": "0783032f13abe72285800a488c8cf39c7e0b11e3c5aaa2eafaa79ee70c3f9ab7"
+    },
+    {
+      "path": "tests/deployment/v7-worker-ops.test.ts",
+      "sha256": "3b97ba31264f4206db87584b3a1485e096f5d296842558de3a3bb71d3386a100"
+    },
+    {
+      "path": "tests/e2e/competition-decision-v7.spec.ts",
+      "sha256": "4f34718b3212ed335d1dbc1568a884838a863f74c7c499ccc2c366211f43c26c"
     },
     {
       "path": "tests/e2e/competition-recommend.spec.ts",
-      "sha256": "333b0e68f61b66418ae08ba174079a7ce7fc57d3de438222ed903ee7e91df27e"
+      "sha256": "89965164c271ed3b33493adc3c9293422ba8252958d21f92fd532cff7a83e760"
+    },
+    {
+      "path": "tests/e2e/v7-browser-effort.d.mts",
+      "sha256": "822b175e3b5833de898d11a32a4decc7692f14ccb846048aa6ebceeaec571567"
+    },
+    {
+      "path": "tests/e2e/v7-browser-effort.mjs",
+      "sha256": "98877ab63486ed299b6e9a392490d7c65d3032a2eaa648e72d2e1c61616da37e"
+    },
+    {
+      "path": "tests/e2e/v7-performance-browser.mjs",
+      "sha256": "f2b928d014f9a5347179c0521b74310016656543e2ca32122a9c2731cd4c9fac"
+    },
+    {
+      "path": "tests/e2e/v7-pilot-browser.d.mts",
+      "sha256": "7fc683f1cc1769f35e2cf03533473f998864ef6f607bd1f3e60f46f1773ce604"
+    },
+    {
+      "path": "tests/e2e/v7-pilot-browser.mjs",
+      "sha256": "968817f2990d3ae1ae3b322c6e2a653810e0f3619fe04ff22704bc6b7a8d1c4d"
+    },
+    {
+      "path": "tests/e2e/v7-public-browser.d.mts",
+      "sha256": "40b0c0bcb39dc30977f710776159928e8ead5e0d4cb00d69ff89259e52d4ece7"
+    },
+    {
+      "path": "tests/e2e/v7-public-browser.mjs",
+      "sha256": "71037c98e21497c6d2eb8f66a90522d9fbb3b11de51186b9c750643efb58ab42"
+    },
+    {
+      "path": "tests/fixtures/mock-spend-ledger.setup.ts",
+      "sha256": "496e4764ef52cb24c5f4b54221883936e9f28e609e6c20a0fb26b5e8358f8c9a"
+    },
+    {
+      "path": "tests/fixtures/recommendation-run-v7.ts",
+      "sha256": "04e8579e7def412dbdccdb4ea7152a8748a4e53a412f7751528cc72bf838072c"
+    },
+    {
+      "path": "tests/helpers/v7-database-environment.ts",
+      "sha256": "68ac280f47185267caf2a13404c36ee31b155ef06e4d6b60249d2997626a1f4e"
+    },
+    {
+      "path": "tests/helpers/v7-production-environment.mjs",
+      "sha256": "86000b673f386f4f2550234332c1f17111dea6547135122355aeaae7c089ffa2"
     },
     {
       "path": "tests/security/competition-session-control.test.ts",
@@ -112,17 +400,27 @@
     },
     {
       "path": "tests/security/competition-shared-state-postgres.integration.test.ts",
-      "sha256": "66a04d77ade984f09976c76660877024afd9c4df883b588b030b318e136a7e63"
+      "sha256": "41dab7a489dee0a8df3ba3ef6e8a874f2a91bc9dbfbd6ae342ff92b5dfef6565"
+    },
+    {
+      "path": "tests/v7-model-evidence-packet.test.ts",
+      "sha256": "4cf1d106e65e10f1f7bc9212f07c34cf4c11ee77aa442c3c886dfb21f5119c38"
+    },
+    {
+      "path": "tests/v7-model-identifier-relations.test.ts",
+      "sha256": "0e15d1267ada9a7a779ae5d8eed0464b7589a1063ec2bba0ce3f271a3e66abae"
     },
     {
       "path": "vitest.config.ts",
-      "sha256": "0afd980d2e576ff96bcdfd1a990445c0e1812c07ecbafd4ddf269e34b58caa53"
+      "sha256": "a32d057bc2e6fd44bb7b9e0df656794f6bd176bfa7232f4a5ac090ff4b9422a5"
     }
   ],
   "requirements": [
     {
       "id": "followups-0-desktop",
-      "categories": ["followups-0"],
+      "categories": [
+        "followups-0"
+      ],
       "framework": "playwright",
       "report": "playwright-production",
       "testFile": "tests/e2e/competition-recommend.spec.ts",
@@ -132,7 +430,9 @@
     },
     {
       "id": "followups-1-desktop",
-      "categories": ["followups-1"],
+      "categories": [
+        "followups-1"
+      ],
       "framework": "playwright",
       "report": "playwright-production",
       "testFile": "tests/e2e/competition-recommend.spec.ts",
@@ -142,7 +442,10 @@
     },
     {
       "id": "followups-2-desktop",
-      "categories": ["followups-2", "desktop-e2e"],
+      "categories": [
+        "followups-2",
+        "desktop-e2e"
+      ],
       "framework": "playwright",
       "report": "playwright-production",
       "testFile": "tests/e2e/competition-recommend.spec.ts",
@@ -152,7 +455,9 @@
     },
     {
       "id": "followups-2-mobile",
-      "categories": ["mobile-e2e"],
+      "categories": [
+        "mobile-e2e"
+      ],
       "framework": "playwright",
       "report": "playwright-production",
       "testFile": "tests/e2e/competition-recommend.spec.ts",
@@ -162,27 +467,36 @@
     },
     {
       "id": "followups-3-pure-text-desktop",
-      "categories": ["followups-3", "pure-text-max-10"],
+      "categories": [
+        "followups-3",
+        "pure-text-max-10"
+      ],
       "framework": "playwright",
       "report": "playwright-production",
       "testFile": "tests/e2e/competition-recommend.spec.ts",
-      "fullName": "全纯文字可完成 14 个可见题包、确认 19 个规范字段，再完成三次动态文字白名单确认并得到推荐",
+      "fullName": "全纯文字可完成深入提问并确认规范字段，再完成三次动态文字白名单确认并得到推荐",
       "project": "desktop",
       "minimumPassed": 1
     },
     {
       "id": "followups-3-pure-text-mobile",
-      "categories": ["followups-3", "pure-text-max-10", "mobile-e2e"],
+      "categories": [
+        "followups-3",
+        "pure-text-max-10",
+        "mobile-e2e"
+      ],
       "framework": "playwright",
       "report": "playwright-production",
       "testFile": "tests/e2e/competition-recommend.spec.ts",
-      "fullName": "全纯文字可完成 14 个可见题包、确认 19 个规范字段，再完成三次动态文字白名单确认并得到推荐",
+      "fullName": "全纯文字可完成深入提问并确认规范字段，再完成三次动态文字白名单确认并得到推荐",
       "project": "mobile",
       "minimumPassed": 1
     },
     {
       "id": "shared-nat-50-postgres",
-      "categories": ["shared-nat-50"],
+      "categories": [
+        "shared-nat-50"
+      ],
       "framework": "vitest",
       "report": "vitest-postgres",
       "testFile": "tests/security/competition-shared-state-postgres.integration.test.ts",
@@ -192,7 +506,9 @@
     },
     {
       "id": "shared-nat-50-full-stack",
-      "categories": ["shared-nat-50"],
+      "categories": [
+        "shared-nat-50"
+      ],
       "framework": "vitest",
       "report": "vitest-postgres",
       "testFile": "tests/security/competition-shared-state-postgres.integration.test.ts",
@@ -202,7 +518,9 @@
     },
     {
       "id": "session-start-real-threshold",
-      "categories": ["threshold-429-recovery"],
+      "categories": [
+        "threshold-429-recovery"
+      ],
       "framework": "vitest",
       "report": "vitest-unit",
       "testFile": "tests/security/competition-session-control.test.ts",
@@ -212,27 +530,34 @@
     },
     {
       "id": "countdown-answer-recovery-desktop",
-      "categories": ["threshold-429-recovery"],
+      "categories": [
+        "threshold-429-recovery"
+      ],
       "framework": "playwright",
       "report": "playwright-production",
       "testFile": "tests/e2e/competition-recommend.spec.ts",
-      "fullName": "429 HTTP-date 倒计时结束后从 normalize 原地重试且十四题不丢失",
+      "fullName": "429 HTTP-date 倒计时结束后从 normalize 原地重试且已答题目不丢失",
       "project": "desktop",
       "minimumPassed": 1
     },
     {
       "id": "countdown-answer-recovery-mobile",
-      "categories": ["threshold-429-recovery", "mobile-e2e"],
+      "categories": [
+        "threshold-429-recovery",
+        "mobile-e2e"
+      ],
       "framework": "playwright",
       "report": "playwright-production",
       "testFile": "tests/e2e/competition-recommend.spec.ts",
-      "fullName": "429 HTTP-date 倒计时结束后从 normalize 原地重试且十四题不丢失",
+      "fullName": "429 HTTP-date 倒计时结束后从 normalize 原地重试且已答题目不丢失",
       "project": "mobile",
       "minimumPassed": 1
     },
     {
       "id": "conversation-token-forgery",
-      "categories": ["token-forgery"],
+      "categories": [
+        "token-forgery"
+      ],
       "framework": "vitest",
       "report": "vitest-unit",
       "testFile": "tests/ai/competition-ai.test.ts",
@@ -242,7 +567,9 @@
     },
     {
       "id": "conversation-token-expiry",
-      "categories": ["token-expiry"],
+      "categories": [
+        "token-expiry"
+      ],
       "framework": "vitest",
       "report": "vitest-unit",
       "testFile": "tests/ai/competition-ai.test.ts",
@@ -252,7 +579,9 @@
     },
     {
       "id": "conversation-token-semantic-replay",
-      "categories": ["token-replay"],
+      "categories": [
+        "token-replay"
+      ],
       "framework": "vitest",
       "report": "vitest-unit",
       "testFile": "tests/ai/competition-clarify-route.test.ts",
@@ -262,7 +591,9 @@
     },
     {
       "id": "cross-session-isolation",
-      "categories": ["token-cross-session"],
+      "categories": [
+        "token-cross-session"
+      ],
       "framework": "vitest",
       "report": "vitest-unit",
       "testFile": "tests/security/competition-session-control.test.ts",
@@ -272,17 +603,21 @@
     },
     {
       "id": "queue-8-active-32-waiting",
-      "categories": ["queue-full-fallback"],
+      "categories": [
+        "queue-full-fallback"
+      ],
       "framework": "vitest",
       "report": "vitest-postgres",
       "testFile": "tests/security/competition-shared-state-postgres.integration.test.ts",
-      "fullName": "real PostgreSQL shared security state holds 8 active and 32 queued calls while rejecting the next request",
+      "fullName": "real PostgreSQL shared security state holds the hard ceiling of 2 active and 32 queued calls even with env=8 while rejecting the next request",
       "project": "postgres-integration",
       "minimumPassed": 1
     },
     {
       "id": "queue-full-deterministic-fallback",
-      "categories": ["queue-full-fallback"],
+      "categories": [
+        "queue-full-fallback"
+      ],
       "framework": "vitest",
       "report": "vitest-unit",
       "testFile": "tests/ai/competition-recommendation.test.ts",
@@ -292,7 +627,9 @@
     },
     {
       "id": "root-quota-generation-consistency",
-      "categories": ["quota-config-consistency"],
+      "categories": [
+        "quota-config-consistency"
+      ],
       "framework": "vitest",
       "report": "vitest-unit",
       "testFile": "tests/deployment/production-ops.test.ts",
@@ -302,12 +639,3890 @@
     },
     {
       "id": "nginx-three-endpoint-consistency",
-      "categories": ["quota-config-consistency"],
+      "categories": [
+        "quota-config-consistency"
+      ],
       "framework": "vitest",
       "report": "vitest-unit",
       "testFile": "tests/deployment/production-ops.test.ts",
       "fullName": "production operations control plane applies the same coarse quota to all three recommendation endpoints",
       "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-algorithm-d90f542784c2",
+      "categories": [
+        "v7-algorithm"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/algorithm.test.ts",
+      "fullName": "v7 batch grounded explanations can assemble every real core-admitted record without reviving the old publication gate",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-algorithm-17e808efede0",
+      "categories": [
+        "v7-algorithm"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/algorithm.test.ts",
+      "fullName": "v7 batch grounded explanations does not expand a refusal of product planning into a refusal of software or design",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-algorithm-5e579290a076",
+      "categories": [
+        "v7-algorithm"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/algorithm.test.ts",
+      "fullName": "v7 batch grounded explanations emits a complete reproducible offline sample rather than a dangling claim key",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-algorithm-e38c0ef291ec",
+      "categories": [
+        "v7-algorithm"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/algorithm.test.ts",
+      "fullName": "v7 batch grounded explanations honors explicit task refusal without excluding unknown readiness",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-algorithm-57d5a7436a12",
+      "categories": [
+        "v7-algorithm"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/algorithm.test.ts",
+      "fullName": "v7 batch grounded explanations never allows explanation generation to reorder the C ranking",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-algorithm-86f4ca7416f3",
+      "categories": [
+        "v7-algorithm"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/algorithm.test.ts",
+      "fullName": "v7 batch grounded explanations rejects forged audit coverage and comparison row identities",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-algorithm-9428a6ee3b63",
+      "categories": [
+        "v7-algorithm"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/algorithm.test.ts",
+      "fullName": "v7 batch grounded explanations repairs a verbose explanation once before dispatching the bounded support batch",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-algorithm-51b15d41862d",
+      "categories": [
+        "v7-algorithm"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/algorithm.test.ts",
+      "fullName": "v7 batch grounded explanations reuses already checked catalog facts in a single explanation call and retains ranking",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-algorithm-ccc5bf1e58a3",
+      "categories": [
+        "v7-algorithm"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/algorithm.test.ts",
+      "fullName": "v7 batch grounded explanations reviews a rule even when it is mislabeled as an uncited suggestion",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-algorithm-6ac75e60b9f1",
+      "categories": [
+        "v7-algorithm"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/algorithm.test.ts",
+      "fullName": "v7 batch grounded explanations reviews new critical personal claims in one batch rather than one call per item",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-algorithm-c09d841dc0f9",
+      "categories": [
+        "v7-algorithm"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/algorithm.test.ts",
+      "fullName": "v7 full-pool model-owned ranking admits every supplied core record regardless of publication tier, qualification or registration",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-algorithm-e9244e7bf321",
+      "categories": [
+        "v7-algorithm"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/algorithm.test.ts",
+      "fullName": "v7 full-pool model-owned ranking also includes the real matching pool without a hidden top-N shortlist",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-algorithm-9cc210633a89",
+      "categories": [
+        "v7-algorithm"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/algorithm.test.ts",
+      "fullName": "v7 full-pool model-owned ranking does not repay after an unknown durable_outcome_unknown outcome",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-algorithm-6659c66addd5",
+      "categories": [
+        "v7-algorithm"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/algorithm.test.ts",
+      "fullName": "v7 full-pool model-owned ranking does not repay after an unknown network_error outcome",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-algorithm-e7c52595f37c",
+      "categories": [
+        "v7-algorithm"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/algorithm.test.ts",
+      "fullName": "v7 full-pool model-owned ranking does not repay after an unknown timeout outcome",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-algorithm-95b306d7f356",
+      "categories": [
+        "v7-algorithm"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/algorithm.test.ts",
+      "fullName": "v7 full-pool model-owned ranking passes the remaining original 60/150-second hard budget through every AI-client deadline layer",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-algorithm-49d6a836a09e",
+      "categories": [
+        "v7-algorithm"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/algorithm.test.ts",
+      "fullName": "v7 full-pool model-owned ranking rejects a personal fit inference that cites no task and an illegal confirmed conditional fact",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-algorithm-12aad4f98a3e",
+      "categories": [
+        "v7-algorithm"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/algorithm.test.ts",
+      "fullName": "v7 full-pool model-owned ranking rejects duplicate series, stale versions, fabricated sources and foreign student IDs",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-algorithm-5a7bbd509e0d",
+      "categories": [
+        "v7-algorithm"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/algorithm.test.ts",
+      "fullName": "v7 full-pool model-owned ranking rejects a foreign ID without another model call",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-algorithm-1fb19dd3e59c",
+      "categories": [
+        "v7-algorithm"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/algorithm.test.ts",
+      "fullName": "v7 full-pool model-owned ranking selects and explains exactly the five model choices from the complete pool",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-algorithm-8d17889d9644",
+      "categories": [
+        "v7-algorithm"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/algorithm.test.ts",
+      "fullName": "v7 full-pool model-owned ranking sends the entire pool in one governed low call and preserves the LLM order",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-backend-review-b0b8680c41ab",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/backend-review.integration.test.ts",
+      "fullName": "independent v7 backend crash and replay review (real disposable PostgreSQL, stubbed transport) blocks the old Next chat review after a real active symlink switch, retaining its first response and accounting",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-backend-review-3f0a907f950f",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/backend-review.integration.test.ts",
+      "fullName": "independent v7 backend crash and replay review (real disposable PostgreSQL, stubbed transport) cancels an undispatched reservation when the active slot changes before dispatch, then safely resumes",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-backend-review-b4e52cebc473",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/backend-review.integration.test.ts",
+      "fullName": "independent v7 backend crash and replay review (real disposable PostgreSQL, stubbed transport) creates one explicit failed retry with new deadlines, including concurrent and cache-lost replay",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-backend-review-3443413efb53",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/backend-review.integration.test.ts",
+      "fullName": "independent v7 backend crash and replay review (real disposable PostgreSQL, stubbed transport) does not reset an already missed list deadline on worker restart",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-backend-review-56a9a16a50a6",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/backend-review.integration.test.ts",
+      "fullName": "independent v7 backend crash and replay review (real disposable PostgreSQL, stubbed transport) encrypts a sampled chat claim and restores its one audit record after HTTP cache loss",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-backend-review-09969ad608ba",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/backend-review.integration.test.ts",
+      "fullName": "independent v7 backend crash and replay review (real disposable PostgreSQL, stubbed transport) enforces a v7 formal call cap atomically under concurrent reservations and preserves conservative unknown costs",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-backend-review-393ae91bebcb",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/backend-review.integration.test.ts",
+      "fullName": "independent v7 backend crash and replay review (real disposable PostgreSQL, stubbed transport) isolates chat journal request IDs and rejects a stale generation before accounting",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-backend-review-9863bd91512a",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/backend-review.integration.test.ts",
+      "fullName": "independent v7 backend crash and replay review (real disposable PostgreSQL, stubbed transport) keeps a successful raw receipt after completion and revalidates both schemas without another dispatch",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-backend-review-bc366547deb7",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/backend-review.integration.test.ts",
+      "fullName": "independent v7 backend crash and replay review (real disposable PostgreSQL, stubbed transport) keeps invalid-output raw content after completion and repairs schema replay without another dispatch",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-backend-review-bdbac93c080d",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/backend-review.integration.test.ts",
+      "fullName": "independent v7 backend crash and replay review (real disposable PostgreSQL, stubbed transport) keeps unknown dispatch conservative across restart and never makes a second transport",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-backend-review-c32e38ef466d",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/backend-review.integration.test.ts",
+      "fullName": "independent v7 backend crash and replay review (real disposable PostgreSQL, stubbed transport) persists an actual atomic reservation and content receipt, then replays without another transport",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-backend-review-99f16202cc4d",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/backend-review.integration.test.ts",
+      "fullName": "independent v7 backend crash and replay review (real disposable PostgreSQL, stubbed transport) persists and settles an already dispatched response while blocking the next stage after an active-slot switch",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-backend-review-68e8b5f08afb",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/backend-review.integration.test.ts",
+      "fullName": "independent v7 backend crash and replay review (real disposable PostgreSQL, stubbed transport) prevents a valid token for another session from reading a run",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-backend-review-0998b8bee015",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/backend-review.integration.test.ts",
+      "fullName": "independent v7 backend crash and replay review (real disposable PostgreSQL, stubbed transport) prevents the old owner from overwriting a replacement reservation before its response arrives",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-backend-review-2f69f6b35b8e",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/backend-review.integration.test.ts",
+      "fullName": "independent v7 backend crash and replay review (real disposable PostgreSQL, stubbed transport) prevents the runtime role from issuing its own v7 grant, budget, or authority",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-backend-review-c37ee76c7699",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/backend-review.integration.test.ts",
+      "fullName": "independent v7 backend crash and replay review (real disposable PostgreSQL, stubbed transport) publishes the list before details, keeps one token, and resumes the second phase under a new lease",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-backend-review-82867831b5fe",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/backend-review.integration.test.ts",
+      "fullName": "independent v7 backend crash and replay review (real disposable PostgreSQL, stubbed transport) recovers a chat commit failure after the paid journal completed, with one transport and one history append",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-backend-review-860204bc79b2",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/backend-review.integration.test.ts",
+      "fullName": "independent v7 backend crash and replay review (real disposable PostgreSQL, stubbed transport) recovers a persisted response receipt and settles its still-reserved ledger without transport",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-backend-review-dbd9cd9e74f9",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/backend-review.integration.test.ts",
+      "fullName": "independent v7 backend crash and replay review (real disposable PostgreSQL, stubbed transport) refuses old source binding before either model phase can dispatch",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-backend-review-ea571d732d7c",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/backend-review.integration.test.ts",
+      "fullName": "independent v7 backend crash and replay review (real disposable PostgreSQL, stubbed transport) rejects retries for a live run, another session, and a token near or beyond expiry",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-backend-review-063e2a925486",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/backend-review.integration.test.ts",
+      "fullName": "independent v7 backend crash and replay review (real disposable PostgreSQL, stubbed transport) releases an inactive worker lease before any model call or journal entry",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-backend-review-d18e5a1eb1cf",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/backend-review.integration.test.ts",
+      "fullName": "independent v7 backend crash and replay review (real disposable PostgreSQL, stubbed transport) replays a questionnaire correction after deleting the actual HTTP response cache",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-backend-review-d0a48abb3bde",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/backend-review.integration.test.ts",
+      "fullName": "independent v7 backend crash and replay review (real disposable PostgreSQL, stubbed transport) replays an accepted run near token expiry without moving the original deadlines",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-backend-review-947566117329",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/backend-review.integration.test.ts",
+      "fullName": "independent v7 backend crash and replay review (real disposable PostgreSQL, stubbed transport) replays an ordinary chat after HTTP cache loss without changing its paid prompt or duplicating history",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-backend-review-8a21d1cd046c",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/backend-review.integration.test.ts",
+      "fullName": "independent v7 backend crash and replay review (real disposable PostgreSQL, stubbed transport) replays the forward Top5 grant migration without invalidating historical v7 grants",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-backend-review-313739550184",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/backend-review.integration.test.ts",
+      "fullName": "independent v7 backend crash and replay review (real disposable PostgreSQL, stubbed transport) requires the exact administrator-granted v7 phase, policy, high condition, and effort before reserving",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-backend-review-7250a3793c8f",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/backend-review.integration.test.ts",
+      "fullName": "independent v7 backend crash and replay review (real disposable PostgreSQL, stubbed transport) requires the read-only budget CHECK gate to reject a missing phase/policy/evidence predicate",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-backend-review-26a9b268caf9",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/backend-review.integration.test.ts",
+      "fullName": "independent v7 backend crash and replay review (real disposable PostgreSQL, stubbed transport) restores one encrypted worker audit sample after an interrupted explanation and never includes it in the public run",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-backend-review-c9b72b103468",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/backend-review.integration.test.ts",
+      "fullName": "independent v7 backend crash and replay review (real disposable PostgreSQL, stubbed transport) retains a real late response after the replacement owner has classified dispatch as unknown",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-backend-review-9dde43b6b534",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/backend-review.integration.test.ts",
+      "fullName": "independent v7 backend crash and replay review (real disposable PostgreSQL, stubbed transport) returns one chat correction run across HTTP cache loss and rejects a distinct stale correction",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-backend-review-9052c2a947c4",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/backend-review.integration.test.ts",
+      "fullName": "independent v7 backend crash and replay review (real disposable PostgreSQL, stubbed transport) rolls back the ledger reservation if the durable owner is lost before the reservation binds",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-catalog-650c55fc1b54",
+      "categories": [
+        "v7-catalog"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/catalog.test.ts",
+      "fullName": "actual independently reviewed stable audience boundaries excludes confirmed postgraduates from COMAP while retaining vocational and unknown students",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-catalog-2cc28bef1307",
+      "categories": [
+        "v7-catalog"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/catalog.test.ts",
+      "fullName": "actual independently reviewed stable audience boundaries uses Yau's two held editions without treating BIOMOD's mentor role as a degree conflict",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-catalog-35c6dc0acde6",
+      "categories": [
+        "v7-catalog"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/catalog.test.ts",
+      "fullName": "explicit audience and historical metadata does not admit reviewed metadata that labels a document or unsafe URL as a homepage",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-catalog-c46e0707942e",
+      "categories": [
+        "v7-catalog"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/catalog.test.ts",
+      "fullName": "explicit audience and historical metadata never infers an audience exclusion from historical/current registration qualification alone",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-catalog-17b7c5fc4973",
+      "categories": [
+        "v7-catalog"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/catalog.test.ts",
+      "fullName": "explicit audience and historical metadata prefers a specifically reviewed official landing page over a recently fetched document",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-catalog-f51fca9e9e94",
+      "categories": [
+        "v7-catalog"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/catalog.test.ts",
+      "fullName": "explicit audience and historical metadata requires exact fact fields, source closure and record identity for metadata audience evidence",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-catalog-0aa9467edc6a",
+      "categories": [
+        "v7-catalog"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/catalog.test.ts",
+      "fullName": "explicit audience and historical metadata requires independently reviewed metadata and exact confirmed user evidence for stable audience conflicts",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-catalog-3de5874c152b",
+      "categories": [
+        "v7-catalog"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/catalog.test.ts",
+      "fullName": "v7 independently verified core catalog honors a later source-review denial and refuses caller self-approval or changed tasks",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-catalog-32434f7f60c7",
+      "categories": [
+        "v7-catalog"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/catalog.test.ts",
+      "fullName": "v7 independently verified core catalog integrates the actual detached 45-series candidate across all nine task families",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-catalog-612192b17a96",
+      "categories": [
+        "v7-catalog"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/catalog.test.ts",
+      "fullName": "v7 independently verified core catalog keeps checked core tasks when enrollment, dates, registration and L3 detail are unknown",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-catalog-5adfde2dc032",
+      "categories": [
+        "v7-catalog"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/catalog.test.ts",
+      "fullName": "v7 independently verified core catalog keeps entries with pending or revoked official-homepage review in the directory only",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-catalog-84ba5df11818",
+      "categories": [
+        "v7-catalog"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/catalog.test.ts",
+      "fullName": "v7 independently verified core catalog keeps source documents distinct from verified contest landing pages",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-catalog-ca091894fbe1",
+      "categories": [
+        "v7-catalog"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/catalog.test.ts",
+      "fullName": "v7 independently verified core catalog never treats a GitHub task PDF or directory as the official archive landing page",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-catalog-f3aab8ec2e1f",
+      "categories": [
+        "v7-catalog"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/catalog.test.ts",
+      "fullName": "v7 independently verified core catalog rejects unavailable evidence and cross-track core facts",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-catalog-3c943e03cbce",
+      "categories": [
+        "v7-catalog"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/catalog.test.ts",
+      "fullName": "v7 independently verified core catalog requires one actual independent source recheck for ordinary core information",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-adoption-79f7533b6cfc",
+      "categories": [
+        "v7-chat-adoption"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-adoption.test.ts",
+      "fullName": "v7 complete semantic adoption of new statements adopts a new domain constraint without requiring a first-person prefix: 成果只授权线下展览，不接受商业转载。",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-adoption-4d2c9343e341",
+      "categories": [
+        "v7-chat-adoption"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-adoption.test.ts",
+      "fullName": "v7 complete semantic adoption of new statements adopts a new domain constraint without requiring a first-person prefix: 数据不得移交给外部单位。",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-adoption-f4a88854474d",
+      "categories": [
+        "v7-chat-adoption"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-adoption.test.ts",
+      "fullName": "v7 complete semantic adoption of new statements adopts a new domain constraint without requiring a first-person prefix: 材料仅限校内使用，禁止公开上传。",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-adoption-8dc17d7d1b79",
+      "categories": [
+        "v7-chat-adoption"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-adoption.test.ts",
+      "fullName": "v7 complete semantic adoption of new statements adopts a newly stated learning goal without presenting the desired skill as existing ability",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-adoption-5315180c8a18",
+      "categories": [
+        "v7-chat-adoption"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-adoption.test.ts",
+      "fullName": "v7 complete semantic adoption of new statements adopts standard and new constraints atomically instead of dropping the unrecognized clauses",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-adoption-2b7c849f3267",
+      "categories": [
+        "v7-chat-adoption"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-adoption.test.ts",
+      "fullName": "v7 complete semantic adoption of new statements does not partly update a turn when extraction omits an independent restriction",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-adoption-692d10190c20",
+      "categories": [
+        "v7-chat-adoption"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-adoption.test.ts",
+      "fullName": "v7 complete semantic adoption of new statements retains a real ambiguity instead of guessing or applying only other fields",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-adoption-99149e3e5094",
+      "categories": [
+        "v7-chat-adoption"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-adoption.test.ts",
+      "fullName": "v7 complete semantic adoption of new statements reuses an existing nonstandard field when correcting its value",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-adoption-31f2fb2fb4cb",
+      "categories": [
+        "v7-chat-adoption"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-adoption.test.ts",
+      "fullName": "v7 complete semantic adoption of new statements routes opaque content within a standard ability clause through the full semantic pass",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-adoption-3af31866bbb9",
+      "categories": [
+        "v7-chat-adoption"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-adoption.test.ts",
+      "fullName": "v7 complete semantic adoption of new statements uses whole-turn semantics for a detailed target or mixed constraint: 我目前没有队友并有硬件资源。",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-adoption-6c4cf3afcfcb",
+      "categories": [
+        "v7-chat-adoption"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-adoption.test.ts",
+      "fullName": "v7 complete semantic adoption of new statements uses whole-turn semantics for a detailed target or mixed constraint: 目标改为练习绘图。",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-adoption-e3581d42e2de",
+      "categories": [
+        "v7-chat-adoption"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-adoption.test.ts",
+      "fullName": "v7 complete semantic adoption of new statements uses whole-turn semantics for a detailed target or mixed constraint: 请按只能校内展示这个限制推荐。",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-adoption-fb3c4adf8712",
+      "categories": [
+        "v7-chat-adoption"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-adoption.test.ts",
+      "fullName": "v7 semantic adoption keeps attribution and dispatch boundaries adopts a declarative unknown with an embedded question: 我还不确定设备能否借到。",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-adoption-9d2748b06200",
+      "categories": [
+        "v7-chat-adoption"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-adoption.test.ts",
+      "fullName": "v7 semantic adoption keeps attribution and dispatch boundaries adopts a declarative unknown with an embedded question: 目前还不知道材料是否允许公开。",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-adoption-320bc8b76e7d",
+      "categories": [
+        "v7-chat-adoption"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-adoption.test.ts",
+      "fullName": "v7 semantic adoption keeps attribution and dispatch boundaries adopts an explicit unknown instead of requiring a confirmed numeric value",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-adoption-0ee812231cc3",
+      "categories": [
+        "v7-chat-adoption"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-adoption.test.ts",
+      "fullName": "v7 semantic adoption keeps attribution and dispatch boundaries bounds hint fields without truncating a full valid profile during correction",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-adoption-7bb27be26c46",
+      "categories": [
+        "v7-chat-adoption"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-adoption.test.ts",
+      "fullName": "v7 semantic adoption keeps attribution and dispatch boundaries does not dispatch a model to guess a clear numeric ambiguity: 个人预算100元或者200元。",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-adoption-2add34a6de6d",
+      "categories": [
+        "v7-chat-adoption"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-adoption.test.ts",
+      "fullName": "v7 semantic adoption keeps attribution and dispatch boundaries does not dispatch a model to guess a clear numeric ambiguity: 每周3–8小时。",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-adoption-56c1f5e17b00",
+      "categories": [
+        "v7-chat-adoption"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-adoption.test.ts",
+      "fullName": "v7 semantic adoption keeps attribution and dispatch boundaries does not extract a pure question or courtesy message: 下一步",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-adoption-d6063127d1eb",
+      "categories": [
+        "v7-chat-adoption"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-adoption.test.ts",
+      "fullName": "v7 semantic adoption keeps attribution and dispatch boundaries does not extract a pure question or courtesy message: 如果每周只有3小时，怎么准备？",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-adoption-1273b1387b5e",
+      "categories": [
+        "v7-chat-adoption"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-adoption.test.ts",
+      "fullName": "v7 semantic adoption keeps attribution and dispatch boundaries does not extract a pure question or courtesy message: 我需要再举证吗？",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-adoption-df0c9836795e",
+      "categories": [
+        "v7-chat-adoption"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-adoption.test.ts",
+      "fullName": "v7 semantic adoption keeps attribution and dispatch boundaries does not extract a pure question or courtesy message: 比较第一项和第二项",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-adoption-c8f83cb5c3f9",
+      "categories": [
+        "v7-chat-adoption"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-adoption.test.ts",
+      "fullName": "v7 semantic adoption keeps attribution and dispatch boundaries does not extract a pure question or courtesy message: 谢谢",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-adoption-7711022d8772",
+      "categories": [
+        "v7-chat-adoption"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-adoption.test.ts",
+      "fullName": "v7 semantic adoption keeps attribution and dispatch boundaries does not relabel team or unspecified budgets as personal limits",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-adoption-a98c5bba1f2d",
+      "categories": [
+        "v7-chat-adoption"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-adoption.test.ts",
+      "fullName": "v7 semantic adoption keeps attribution and dispatch boundaries does not retry an extraction with an unknown dispatch outcome",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-adoption-f766b48ef04c",
+      "categories": [
+        "v7-chat-adoption"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-adoption.test.ts",
+      "fullName": "v7 semantic adoption keeps attribution and dispatch boundaries fails closed for invented quotes and reserved field paths",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-adoption-688361d5373c",
+      "categories": [
+        "v7-chat-adoption"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-adoption.test.ts",
+      "fullName": "v7 semantic adoption keeps attribution and dispatch boundaries keeps a direct resource question as a question",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-adoption-dad76a12d76a",
+      "categories": [
+        "v7-chat-adoption"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-adoption.test.ts",
+      "fullName": "v7 semantic adoption keeps attribution and dispatch boundaries keeps standard clear skills and hours on the no-model path",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-adoption-79a2a7fbec3c",
+      "categories": [
+        "v7-chat-adoption"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-adoption.test.ts",
+      "fullName": "v7 semantic adoption keeps attribution and dispatch boundaries never renders a model-authored proof or certification request as clarification",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-adoption-2784244149bf",
+      "categories": [
+        "v7-chat-adoption"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-adoption.test.ts",
+      "fullName": "v7 semantic adoption keeps attribution and dispatch boundaries rejects another person's statement being converted into student ability",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-adoption-76635230e3c2",
+      "categories": [
+        "v7-chat-adoption"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-adoption.test.ts",
+      "fullName": "v7 semantic adoption keeps attribution and dispatch boundaries rejects clear third-person work as student ability while retaining attributed and first-person contributions",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-adoption-734957ed1a15",
+      "categories": [
+        "v7-chat-adoption"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-adoption.test.ts",
+      "fullName": "v7 semantic adoption keeps attribution and dispatch boundaries retains interest separately and a future ability as conditional",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-grounding-ee52ff15d880",
+      "categories": [
+        "v7-chat-grounding"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-grounding.test.ts",
+      "fullName": "v7 grounded follow-up answers does not display an uncited factual assertion hidden in the model message",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-grounding-1e729e0c3e8e",
+      "categories": [
+        "v7-chat-grounding"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-grounding.test.ts",
+      "fullName": "v7 grounded follow-up answers does not repay a timeout while answering a follow-up",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-grounding-b62709e0961b",
+      "categories": [
+        "v7-chat-grounding"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-grounding.test.ts",
+      "fullName": "v7 grounded follow-up answers does not treat a missing or foreign support-review key as approval",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-chat-grounding-d0a3baf54d81",
+      "categories": [
+        "v7-chat-grounding"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/chat-grounding.test.ts",
+      "fullName": "v7 grounded follow-up answers independently rejects new false rules despite a valid but unrelated citation",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-crypto-4105b0a6f4ed",
+      "categories": [
+        "v7-crypto"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/crypto.test.ts",
+      "fullName": "v7 encrypted identity and recovery tokens binds encrypted personal input to its exact run, and detects modification",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-crypto-40ec1d05c3d2",
+      "categories": [
+        "v7-crypto"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/crypto.test.ts",
+      "fullName": "v7 encrypted identity and recovery tokens keeps tokens stable across background work while separating profile generations",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-durable-state-d4ede1176d6f",
+      "categories": [
+        "v7-durable-state"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/durable-state.integration.test.ts",
+      "fullName": "v7 durable PostgreSQL state with no live provider persists one logical submission and replays it after the HTTP cache is lost",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-durable-state-22c67872bd15",
+      "categories": [
+        "v7-durable-state"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/durable-state.integration.test.ts",
+      "fullName": "v7 durable PostgreSQL state with no live provider reclaims an expired lease and refuses to repeat a call with unknown dispatch outcome",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-durable-state-55929b46b934",
+      "categories": [
+        "v7-durable-state"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/durable-state.integration.test.ts",
+      "fullName": "v7 durable PostgreSQL state with no live provider rejects competing corrections and never publishes a late old worker result",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-profile-88096520b51d",
+      "categories": [
+        "v7-profile"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/profile.test.ts",
+      "fullName": "v7 clear correction and ambiguity adopts all clear corrections in one turn with one provenance update",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-profile-7b94d9b8170c",
+      "categories": [
+        "v7-profile"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/profile.test.ts",
+      "fullName": "v7 clear correction and ambiguity adopts an unambiguous questionnaire text answer while keeping legacy normalization readable",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-profile-5adf482e1473",
+      "categories": [
+        "v7-profile"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/profile.test.ts",
+      "fullName": "v7 clear correction and ambiguity applies 8-to-3 hours immediately and retains exact new hours plus the original wording",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-profile-8fa40ead8eff",
+      "categories": [
+        "v7-profile"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/profile.test.ts",
+      "fullName": "v7 clear correction and ambiguity asks only for a genuinely ambiguous time value",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-profile-99091f468c3f",
+      "categories": [
+        "v7-profile"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/profile.test.ts",
+      "fullName": "v7 clear correction and ambiguity can withdraw a numeric limit without supplying a replacement number",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-profile-a3dbeb64d7bf",
+      "categories": [
+        "v7-profile"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/profile.test.ts",
+      "fullName": "v7 clear correction and ambiguity immediately removes a denied ability while preserving the other self-reported skills",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-profile-336dfa235f4d",
+      "categories": [
+        "v7-profile"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/profile.test.ts",
+      "fullName": "v7 clear correction and ambiguity lets chat use a clear self report without a paid model call",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-profile-f8247778e50e",
+      "categories": [
+        "v7-profile"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/profile.test.ts",
+      "fullName": "v7 clear correction and ambiguity withdraws a concrete experience and its dependent contribution",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-profile-e836b640a9c2",
+      "categories": [
+        "v7-profile"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/profile.test.ts",
+      "fullName": "v7 clear correction and ambiguity withdraws a skill assertion without asserting that the student cannot do it",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-profile-ffc927ec2b29",
+      "categories": [
+        "v7-profile"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/profile.test.ts",
+      "fullName": "v7 immediate self-report adoption adopts unknown and negated facts without manufacturing positive ability",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-profile-b1e67d68fbed",
+      "categories": [
+        "v7-profile"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/profile.test.ts",
+      "fullName": "v7 immediate self-report adoption does not turn an interest into an ability",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-profile-32426944c76b",
+      "categories": [
+        "v7-profile"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/profile.test.ts",
+      "fullName": "v7 immediate self-report adoption keeps conditional plans separate from an existing current ability",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-profile-9a96abbd5ceb",
+      "categories": [
+        "v7-profile"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/profile.test.ts",
+      "fullName": "v7 immediate self-report adoption keeps exact hours and their legacy bucket coherent after extraction and a later bucket edit",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-profile-8fff66ed1ec9",
+      "categories": [
+        "v7-profile"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/profile.test.ts",
+      "fullName": "v7 immediate self-report adoption lets explicit unknown hours replace both old representations without becoming zero",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-profile-0dabafd56c41",
+      "categories": [
+        "v7-profile"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/profile.test.ts",
+      "fullName": "v7 immediate self-report adoption preserves a team maximum without relabeling it as a personal spending cap",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-profile-1b8c0116769f",
+      "categories": [
+        "v7-profile"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/profile.test.ts",
+      "fullName": "v7 immediate self-report adoption uses submitted ability without requiring a concrete experience or another confirmation",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-test-environment-467f73ae6729",
+      "categories": [
+        "v7-test-environment"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/deployment/v7-database-environment.test.ts",
+      "fullName": "v7 dedicated PostgreSQL test environment accepts only a matching coordinator namespace and distinct runtime role",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-test-environment-7a281f546aea",
+      "categories": [
+        "v7-test-environment"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/deployment/v7-database-environment.test.ts",
+      "fullName": "v7 dedicated PostgreSQL test environment rejects application databases, remote hosts, query overrides and unrelated runtime roles",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-test-environment-72ba0beafdbc",
+      "categories": [
+        "v7-test-environment"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/deployment/v7-database-environment.test.ts",
+      "fullName": "v7 dedicated PostgreSQL test environment retains the established local development database fallback without accepting a generic test name",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-native-pg14-90e6cc5925ee",
+      "categories": [
+        "v7-native-pg14"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/deployment/v7-native-postgres.integration.test.ts",
+      "fullName": "v7 native Linux x64 PostgreSQL14 worker contract Node cleanup respects child FKs and retains the paid ledger",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-native-pg14-f4f09b9c8112",
+      "categories": [
+        "v7-native-pg14"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/deployment/v7-native-postgres.integration.test.ts",
+      "fullName": "v7 native Linux x64 PostgreSQL14 worker contract actual read-only SQL accepts the complete migrated schema",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-native-pg14-7967780cb025",
+      "categories": [
+        "v7-native-pg14"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/deployment/v7-native-postgres.integration.test.ts",
+      "fullName": "v7 native Linux x64 PostgreSQL14 worker contract built worker stays paused before switch, activates, and pauses on rollback",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-native-pg14-570cb2b3f0d0",
+      "categories": [
+        "v7-native-pg14"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/deployment/v7-native-postgres.integration.test.ts",
+      "fullName": "v7 native Linux x64 PostgreSQL14 worker contract installed SQL cleanup converges across committed batches without deleting spend",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-native-pg14-8f90331a868b",
+      "categories": [
+        "v7-native-pg14"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/deployment/v7-native-postgres.integration.test.ts",
+      "fullName": "v7 native Linux x64 PostgreSQL14 worker contract production app.env and PM2 clean env reach the actual high-grant gate; DB formal cap wins; zero dispatch",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-native-pg14-1336e33dcb83",
+      "categories": [
+        "v7-native-pg14"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/deployment/v7-native-postgres.integration.test.ts",
+      "fullName": "v7 native Linux x64 PostgreSQL14 worker contract read-only SQL rejects lost-call-parent",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-native-pg14-3168dedc9cab",
+      "categories": [
+        "v7-native-pg14"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/deployment/v7-native-postgres.integration.test.ts",
+      "fullName": "v7 native Linux x64 PostgreSQL14 worker contract read-only SQL rejects lost-cipher-cap",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-native-pg14-d33150989391",
+      "categories": [
+        "v7-native-pg14"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/deployment/v7-native-postgres.integration.test.ts",
+      "fullName": "v7 native Linux x64 PostgreSQL14 worker contract read-only SQL rejects lost-idempotency",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-native-pg14-5934e43b877c",
+      "categories": [
+        "v7-native-pg14"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/deployment/v7-native-postgres.integration.test.ts",
+      "fullName": "v7 native Linux x64 PostgreSQL14 worker contract read-only SQL rejects missing full grant evidence predicate",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-native-pg14-1ec25978cd85",
+      "categories": [
+        "v7-native-pg14"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/deployment/v7-native-postgres.integration.test.ts",
+      "fullName": "v7 native Linux x64 PostgreSQL14 worker contract read-only SQL rejects plaintext",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-native-pg14-10aa8d4188bb",
+      "categories": [
+        "v7-native-pg14"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/deployment/v7-native-postgres.integration.test.ts",
+      "fullName": "v7 native Linux x64 PostgreSQL14 worker contract read-only SQL rejects weakened full grant evidence predicate",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-native-pg14-befd382eefd8",
+      "categories": [
+        "v7-native-pg14"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/deployment/v7-native-postgres.integration.test.ts",
+      "fullName": "v7 native Linux x64 PostgreSQL14 worker contract runtime has v7 S/I/U without DELETE/TRUNCATE/DDL",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-native-pg14-1e63e8c19332",
+      "categories": [
+        "v7-native-pg14"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/deployment/v7-native-postgres.integration.test.ts",
+      "fullName": "v7 native Linux x64 PostgreSQL14 worker contract worker exits cleanly on SIGTERM",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-v7-worker-ops-b54b837ccc42",
+      "categories": [
+        "v7-v7-worker-ops"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/deployment/v7-worker-ops.test.ts",
+      "fullName": "v7 decision worker operations contract drains before deleting only the named inactive worker and retains it when health cannot be proved",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-v7-worker-ops-27d0a6329612",
+      "categories": [
+        "v7-v7-worker-ops"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/deployment/v7-worker-ops.test.ts",
+      "fullName": "v7 decision worker operations contract passes an exact high grant through the production app validator, PM2 whitelist and live/dump topology",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-v7-worker-ops-579a51a2b683",
+      "categories": [
+        "v7-v7-worker-ops"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/deployment/v7-worker-ops.test.ts",
+      "fullName": "v7 decision worker operations contract rejects incomplete high authorization and malformed finite caps in both production readers",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-v7-worker-ops-c12bd9aa0b0b",
+      "categories": [
+        "v7-v7-worker-ops"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/deployment/v7-worker-ops.test.ts",
+      "fullName": "v7 decision worker operations contract rejects worker tampering and a Next build with a different compiled source binding",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-v7-worker-ops-3f79e299808e",
+      "categories": [
+        "v7-v7-worker-ops"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/deployment/v7-worker-ops.test.ts",
+      "fullName": "v7 decision worker operations contract requires a fresh health record for the requested slot and live PID",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-v7-worker-ops-2b7a00a61ecf",
+      "categories": [
+        "v7-v7-worker-ops"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/deployment/v7-worker-ops.test.ts",
+      "fullName": "v7 decision worker operations contract requires both slot workers in live and persisted PM2 topology and rejects stale bindings",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-browser-6a04050a1f9b",
+      "categories": [
+        "v7-browser-desktop"
+      ],
+      "framework": "playwright",
+      "report": "playwright-production",
+      "testFile": "tests/e2e/competition-decision-v7.spec.ts",
+      "fullName": "v7 restores a list first, fills clicked detail, isolates detail failure and preserves official links",
+      "project": "desktop",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-browser-f0a6110c8124",
+      "categories": [
+        "v7-browser-desktop"
+      ],
+      "framework": "playwright",
+      "report": "playwright-production",
+      "testFile": "tests/e2e/competition-decision-v7.spec.ts",
+      "fullName": "v7 recovers a disconnected poll and applies a correction to a fresh run without confirmation",
+      "project": "desktop",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-browser-c9c531cbdff1",
+      "categories": [
+        "v7-browser-desktop"
+      ],
+      "framework": "playwright",
+      "report": "playwright-production",
+      "testFile": "tests/e2e/competition-decision-v7.spec.ts",
+      "fullName": "v7 explicitly retries a failed run with one stable request ID and preserves its list",
+      "project": "desktop",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-browser-95db7727665f",
+      "categories": [
+        "v7-browser-desktop"
+      ],
+      "framework": "playwright",
+      "report": "playwright-production",
+      "testFile": "tests/e2e/competition-decision-v7.spec.ts",
+      "fullName": "v7 expiry starts a fresh session from the latest pending profile without stale form wording",
+      "project": "desktop",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-browser-615484270e69",
+      "categories": [
+        "v7-browser-desktop"
+      ],
+      "framework": "playwright",
+      "report": "playwright-production",
+      "testFile": "tests/e2e/competition-decision-v7.spec.ts",
+      "fullName": "v7 ignores an old delayed poll after a correction and clears a delayed chat on restart",
+      "project": "desktop",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-browser-01ccadf3a440",
+      "categories": [
+        "v7-browser-mobile"
+      ],
+      "framework": "playwright",
+      "report": "playwright-production",
+      "testFile": "tests/e2e/competition-decision-v7.spec.ts",
+      "fullName": "v7 restores a list first, fills clicked detail, isolates detail failure and preserves official links",
+      "project": "mobile",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-browser-3a92b4791303",
+      "categories": [
+        "v7-browser-mobile"
+      ],
+      "framework": "playwright",
+      "report": "playwright-production",
+      "testFile": "tests/e2e/competition-decision-v7.spec.ts",
+      "fullName": "v7 recovers a disconnected poll and applies a correction to a fresh run without confirmation",
+      "project": "mobile",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-browser-4994938bd22a",
+      "categories": [
+        "v7-browser-mobile"
+      ],
+      "framework": "playwright",
+      "report": "playwright-production",
+      "testFile": "tests/e2e/competition-decision-v7.spec.ts",
+      "fullName": "v7 explicitly retries a failed run with one stable request ID and preserves its list",
+      "project": "mobile",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-browser-25280dd456d3",
+      "categories": [
+        "v7-browser-mobile"
+      ],
+      "framework": "playwright",
+      "report": "playwright-production",
+      "testFile": "tests/e2e/competition-decision-v7.spec.ts",
+      "fullName": "v7 expiry starts a fresh session from the latest pending profile without stale form wording",
+      "project": "mobile",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-browser-e483941462de",
+      "categories": [
+        "v7-browser-mobile"
+      ],
+      "framework": "playwright",
+      "report": "playwright-production",
+      "testFile": "tests/e2e/competition-decision-v7.spec.ts",
+      "fullName": "v7 ignores an old delayed poll after a correction and clears a delayed chat on restart",
+      "project": "mobile",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-release-evidence-9da43b4a960f",
+      "categories": [
+        "v7-release-evidence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/deployment/v7-release-evidence.test.ts",
+      "fullName": "v7 native PostgreSQL signed evidence binding (synthetic verifier fixtures) requires every native assertion and the exact production worker in both authorities",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-release-evidence-1a854f1400d3",
+      "categories": [
+        "v7-release-evidence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/deployment/v7-release-evidence.test.ts",
+      "fullName": "v7 native PostgreSQL signed evidence binding (synthetic verifier fixtures) rejects a stale source, rewritten raw log and nonzero provider dispatch",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-release-evidence-4755fb1d1fe9",
+      "categories": [
+        "v7-release-evidence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/deployment/v7-release-evidence.test.ts",
+      "fullName": "v7 worker delivery closure (synthetic build artifacts) accepts the closed paired worker and preserves legacy releases without a worker marker",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-release-evidence-4081868e7f5c",
+      "categories": [
+        "v7-release-evidence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/deployment/v7-release-evidence.test.ts",
+      "fullName": "v7 worker delivery closure (synthetic build artifacts) rejects arbitrary dist members, extra worker files and missing worker output",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-release-evidence-fbd78eb40189",
+      "categories": [
+        "v7-release-evidence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/deployment/v7-release-evidence.test.ts",
+      "fullName": "v7 worker delivery closure (synthetic build artifacts) rejects tampered bytes, a different compiled source and a linked worker",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-group-persistence-b04cec391c2a",
+      "categories": [
+        "v7-group-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/durable-state.integration.test.ts",
+      "fullName": "v7 durable PostgreSQL state with no live provider rejects a stale copy from the same lease without overwriting a newer result",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-group-persistence-6703fc9adbc4",
+      "categories": [
+        "v7-group-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/durable-state.integration.test.ts",
+      "fullName": "v7 durable PostgreSQL state with no live provider serializes concurrent patches against the latest body, retaining every audit observation",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-group-persistence-d9758cba65d6",
+      "categories": [
+        "v7-group-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/durable-state.integration.test.ts",
+      "fullName": "v7 durable PostgreSQL state with no live provider binds writes to the persisted session generation even when the lease is still valid",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-group-persistence-79ee6044c8da",
+      "categories": [
+        "v7-group-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/group-worker.integration.test.ts",
+      "fullName": "grouped worker recovery with real disposable PostgreSQL and synthetic provider transport persists one Top5 group, publishes the real five items and creates no g1 ledger call",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-group-persistence-cf6fe99ebfc8",
+      "categories": [
+        "v7-group-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/group-worker.integration.test.ts",
+      "fullName": "grouped worker recovery with real disposable PostgreSQL and synthetic provider transport retains all five list items and the unknown reservation without redispatching generation",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-group-persistence-1c943008992a",
+      "categories": [
+        "v7-group-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/group-worker.integration.test.ts",
+      "fullName": "grouped worker recovery with real disposable PostgreSQL and synthetic provider transport keeps all Top5 details checking until the saved explanation finishes review",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-group-persistence-d78af9cae58a",
+      "categories": [
+        "v7-group-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/group-worker.integration.test.ts",
+      "fullName": "grouped worker recovery with real disposable PostgreSQL and synthetic provider transport resumes persisted parsed explanation without regenerating it after worker interruption",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-group-persistence-fb7efed95092",
+      "categories": [
+        "v7-group-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/group-worker.integration.test.ts",
+      "fullName": "grouped worker recovery with real disposable PostgreSQL and synthetic provider transport replays generation_receipt after interruption with no additional provider dispatch",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-group-persistence-0b44cbf9ea45",
+      "categories": [
+        "v7-group-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/group-worker.integration.test.ts",
+      "fullName": "grouped worker recovery with real disposable PostgreSQL and synthetic provider transport replays review_receipt after interruption with no additional provider dispatch",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-group-persistence-8dec37dfd817",
+      "categories": [
+        "v7-group-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/group-worker.integration.test.ts",
+      "fullName": "grouped worker recovery with real disposable PostgreSQL and synthetic provider transport settles late review receipt but cannot publish over a corrected profile",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-group-persistence-4cea175ff945",
+      "categories": [
+        "v7-group-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/group-worker.integration.test.ts",
+      "fullName": "grouped worker recovery with real disposable PostgreSQL and synthetic provider transport completes a valid empty shortlist without creating an empty group or any provider call",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-group-persistence-a9d10bb7f068",
+      "categories": [
+        "v7-group-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/group-worker.integration.test.ts",
+      "fullName": "grouped worker recovery with real disposable PostgreSQL and synthetic provider transport cannot grant a fresh explanation window when resuming a prepared group",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-group-persistence-afe528eaac59",
+      "categories": [
+        "v7-group-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/group-worker.integration.test.ts",
+      "fullName": "grouped worker recovery with real disposable PostgreSQL and synthetic provider transport terminates an incompatible older run without a generation field instead of repeatedly reclaiming it",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-governor-cap-c64c03f21a0f",
+      "categories": [
+        "v7-governor-cap"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/ai/model-call-governor-cap.test.ts",
+      "fullName": "immutable two-transport ceiling cannot raise the source ceiling through env=undefined",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-governor-cap-b50928eccadc",
+      "categories": [
+        "v7-governor-cap"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/ai/model-call-governor-cap.test.ts",
+      "fullName": "immutable two-transport ceiling cannot raise the source ceiling through env=2",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-governor-cap-bf42bdb46326",
+      "categories": [
+        "v7-governor-cap"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/ai/model-call-governor-cap.test.ts",
+      "fullName": "immutable two-transport ceiling cannot raise the source ceiling through env=8",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-governor-cap-8eb8caa5c22d",
+      "categories": [
+        "v7-governor-cap"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/ai/model-call-governor-cap.test.ts",
+      "fullName": "immutable two-transport ceiling cannot raise the source ceiling through env=128",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-governor-cap-013d5399e68a",
+      "categories": [
+        "v7-governor-cap"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/ai/model-call-governor-cap.test.ts",
+      "fullName": "immutable two-transport ceiling cannot raise the source ceiling through env=NaN",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-governor-cap-7e5e717c7685",
+      "categories": [
+        "v7-governor-cap"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/ai/model-call-governor-cap.test.ts",
+      "fullName": "immutable two-transport ceiling cannot raise the source ceiling through env=0",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-governor-cap-66b95a98bdcf",
+      "categories": [
+        "v7-governor-cap"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/ai/model-call-governor-cap.test.ts",
+      "fullName": "immutable two-transport ceiling cannot raise the source ceiling through env=-1",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-governor-cap-28e15e908695",
+      "categories": [
+        "v7-governor-cap"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/ai/model-call-governor-cap.test.ts",
+      "fullName": "immutable two-transport ceiling cannot raise the source ceiling through env=1.9",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-governor-cap-0e4f141463ca",
+      "categories": [
+        "v7-governor-cap"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/ai/model-call-governor-cap.test.ts",
+      "fullName": "immutable two-transport ceiling retains an operator's conservative cap=1",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-governor-cap-2b6f40fab6cc",
+      "categories": [
+        "v7-governor-cap"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/ai/model-call-governor-cap.test.ts",
+      "fullName": "immutable two-transport ceiling exposes only content-free policy and persistence fields",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-governor-cap-89eee601af28",
+      "categories": [
+        "v7-governor-cap"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/ai/model-call-governor-cap.test.ts",
+      "fullName": "immutable two-transport ceiling fails closed for real production DeepSeek even if every synthetic flag is set",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-governor-cap-d924a74834de",
+      "categories": [
+        "v7-governor-cap"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/ai/model-call-governor-cap.test.ts",
+      "fullName": "immutable two-transport ceiling retains the existing isolated mock-only production E2E memory path",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "runtime-layout-anchor-fresh",
+      "categories": [
+        "v7-release-evidence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/deployment/runtime-layout-anchor.test.ts",
+      "fullName": "runtime-layout signing anchor permission model connects fresh installer parent phases to the actual delivery anchor and Next-worker readers",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "runtime-layout-anchor-adopt",
+      "categories": [
+        "v7-release-evidence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/deployment/runtime-layout-anchor.test.ts",
+      "fullName": "runtime-layout signing anchor permission model uses the same anchor contract for adopted keys without changing key bytes or file modes",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "runtime-layout-anchor-private-access",
+      "categories": [
+        "v7-release-evidence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/deployment/runtime-layout-anchor.test.ts",
+      "fullName": "runtime-layout signing anchor permission model permits configuration traversal while denying directory listing and private-key or ledger reads",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "runtime-layout-anchor-unsafe-metadata",
+      "categories": [
+        "v7-release-evidence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/deployment/runtime-layout-anchor.test.ts",
+      "fullName": "runtime-layout signing anchor permission model keeps the actual consumer and runtime guards rejecting unsafe parent and file metadata",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "runtime-layout-anchor-shared-orphan",
+      "categories": [
+        "v7-release-evidence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/deployment/runtime-layout-anchor.test.ts",
+      "fullName": "runtime-layout signing anchor permission model binds both installer phases and the shared fresh-or-adoption orphan gate to root0711",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-reservation-scope-3026ebee592e",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/ai/reservation-scope.integration.test.ts",
+      "fullName": "additional per-reservation ceiling in disposable PostgreSQL allows an exact reservation after earlier spend without changing the old absolute scope",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-reservation-scope-ba14f486a1de",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/ai/reservation-scope.integration.test.ts",
+      "fullName": "additional per-reservation ceiling in disposable PostgreSQL rejects one micro below the required reservation without adding a ledger row",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-reservation-scope-132c26aaaa1d",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/ai/reservation-scope.integration.test.ts",
+      "fullName": "additional per-reservation ceiling in disposable PostgreSQL cannot raise either the actual funded cap or the administrator's budget",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-reservation-scope-8143b6fedc9e",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/ai/reservation-scope.integration.test.ts",
+      "fullName": "additional per-reservation ceiling in disposable PostgreSQL nested ceilings only tighten and cannot relax the preexisting cumulative scope",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-reservation-scope-97142fda29cd",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/ai/reservation-scope.integration.test.ts",
+      "fullName": "additional per-reservation ceiling in disposable PostgreSQL isolates simultaneous asynchronous ceilings",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-reservation-scope-86832f48f1d0",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/ai/reservation-scope.integration.test.ts",
+      "fullName": "additional per-reservation ceiling in disposable PostgreSQL zero denies every reservation and invalid ceilings fail before invoking work",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-reservation-scope-b6e7ba731ea0",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/ai/reservation-scope.integration.test.ts",
+      "fullName": "additional per-reservation ceiling in disposable PostgreSQL cannot create or select an ungranted funded run",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-rank-hard-cutoff-45",
+      "categories": [
+        "v7-backend-review"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/backend-review.integration.test.ts",
+      "fullName": "independent v7 backend crash and replay review (real disposable PostgreSQL, stubbed transport) continues ranking after the 40-second target within the approved 60-second cutoff without resetting details",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-release-da38013887b9",
+      "categories": [
+        "v7-effort-release"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/deployment/v7-effort-release.test.ts",
+      "fullName": "stage effort release contract without live services matches the product fingerprint for all eight policies and fixes normalization to high",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-release-ebba65443cdf",
+      "categories": [
+        "v7-effort-release"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/deployment/v7-effort-release.test.ts",
+      "fullName": "stage effort release contract without live services preserves old high and max request identities and rejects permit version substitution",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-release-8f1cd8c94c42",
+      "categories": [
+        "v7-effort-release"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/deployment/v7-effort-release.test.ts",
+      "fullName": "stage effort release contract without live services requires a separate stage grant namespace and exact protected policy and condition",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-release-9ea14944132c",
+      "categories": [
+        "v7-effort-release"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/deployment/v7-effort-release.test.ts",
+      "fullName": "stage effort release contract without live services requires the explicit source authorization and fingerprint at the coordinator boundary",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-release-c4fe724ba2a6",
+      "categories": [
+        "v7-effort-release"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/deployment/v7-effort-release.test.ts",
+      "fullName": "stage effort release contract without live services binds SQL to the existing authority, stage policy and common finite budget lock",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-release-fe4c8234fca2",
+      "categories": [
+        "v7-effort-release"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/deployment/v7-effort-release.test.ts",
+      "fullName": "stage effort release contract without live services holds unknown or foreign effort observations and preserves settlement after grant closure",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-release-7aa65af8be2c",
+      "categories": [
+        "v7-effort-release"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/deployment/v7-effort-release.test.ts",
+      "fullName": "stage effort release contract without live services requires the signed runtime policy when consuming stage receipts and rejects event substitutions",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-release-97dcb0f1a941",
+      "categories": [
+        "v7-effort-release"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/deployment/v7-effort-release.test.ts",
+      "fullName": "stage effort release contract without live services executes exactly two synthetic HTTP requests with normalization high and recommendation rank effort",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-release-ab239c46463d",
+      "categories": [
+        "v7-effort-release"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/deployment/v7-effort-release.test.ts",
+      "fullName": "stage effort release contract without live services requires exact paired Next and worker effort bytes and retains the old manifest branch",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-release-6a8b090c6963",
+      "categories": [
+        "v7-effort-release"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/deployment/v7-effort-release.test.ts",
+      "fullName": "stage effort release contract without live services validates app environment and PM2 against the signed policy without starting a process",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-native-stage-effort",
+      "categories": [
+        "v7-native-pg14"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/deployment/v7-native-postgres.integration.test.ts",
+      "fullName": "v7 native Linux x64 PostgreSQL14 worker contract stage effort app.env and PM2 reach the actual policy-bound reserve gate; DB cap wins; zero dispatch",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-pg-4d0df62f0896",
+      "categories": [
+        "v7-effort-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/ai/v7-effort-durable-postgres.integration.test.ts",
+      "fullName": "stage effort on owned socket PostgreSQL with synthetic provider runs real low/high/low reservations and persists actual operation and policy",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-pg-a9f0e82a5599",
+      "categories": [
+        "v7-effort-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/ai/v7-effort-durable-postgres.integration.test.ts",
+      "fullName": "stage effort on owned socket PostgreSQL with synthetic provider refuses mismatched condition, policy, phase, effort and operation before ledger insertion",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-pg-eaefd32f026e",
+      "categories": [
+        "v7-effort-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/ai/v7-effort-durable-postgres.integration.test.ts",
+      "fullName": "stage effort on owned socket PostgreSQL with synthetic provider retains finite call limits atomically under concurrent attempts",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-pg-a6e28726bc01",
+      "categories": [
+        "v7-effort-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/ai/v7-effort-durable-postgres.integration.test.ts",
+      "fullName": "stage effort on owned socket PostgreSQL with synthetic provider preserves an unknown full charge and refuses a fresh namespace without another reservation",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-pg-f6b37e5be8cd",
+      "categories": [
+        "v7-effort-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/ai/v7-effort-durable-postgres.integration.test.ts",
+      "fullName": "stage effort on owned socket PostgreSQL with synthetic provider blocks an old unknown row before inserting a new implementation key",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-pg-12eb2a5dc606",
+      "categories": [
+        "v7-effort-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/ai/v7-effort-durable-postgres.integration.test.ts",
+      "fullName": "stage effort on owned socket PostgreSQL with synthetic provider allows two same-lease in-flight siblings and retains two unique receipts",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-pg-9271f5d06b67",
+      "categories": [
+        "v7-effort-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/ai/v7-effort-durable-postgres.integration.test.ts",
+      "fullName": "stage effort on owned socket PostgreSQL with synthetic provider replays a durable raw receipt without duplicate spend and pins the actual request SHA",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-pg-edf1a2e7fdec",
+      "categories": [
+        "v7-effort-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/ai/v7-effort-durable-postgres.integration.test.ts",
+      "fullName": "stage effort on owned socket PostgreSQL with synthetic provider rejects a direct policy switch even with an otherwise valid lease",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-pg-eff653d2ee14",
+      "categories": [
+        "v7-effort-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/ai/v7-effort-durable-postgres.integration.test.ts",
+      "fullName": "stage effort on owned socket PostgreSQL with synthetic provider keeps historical submitted clocks and original 45/90 cutoffs on replay after a new policy",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-pg-8d13c163dff2",
+      "categories": [
+        "v7-effort-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/ai/v7-effort-durable-postgres.integration.test.ts",
+      "fullName": "stage effort on owned socket PostgreSQL with synthetic provider rejects future and elapsed new clocks without a persistent task",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-pg-f0df565abacb",
+      "categories": [
+        "v7-effort-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/ai/v7-effort-durable-postgres.integration.test.ts",
+      "fullName": "stage effort on owned socket PostgreSQL with synthetic provider atomically keeps trusted component diagnostics out of ordinary worker claims",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-pg-0155f26900f2",
+      "categories": [
+        "v7-effort-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/ai/v7-effort-durable-postgres.integration.test.ts",
+      "fullName": "stage effort on owned socket PostgreSQL with synthetic provider rejects a policy-changing CAS and keeps the frozen body unchanged",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-pg-06dc3d415382",
+      "categories": [
+        "v7-effort-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/ai/v7-effort-durable-postgres.integration.test.ts",
+      "fullName": "stage effort on owned socket PostgreSQL with synthetic provider restores frozen scope for a worker lease after environment changes",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-pg-596208a3f8ea",
+      "categories": [
+        "v7-effort-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/ai/v7-effort-durable-postgres.integration.test.ts",
+      "fullName": "stage effort on owned socket PostgreSQL with synthetic provider terminates a pre-policy body without transport or repeated reclamation",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-pg-2323a58b8d24",
+      "categories": [
+        "v7-effort-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/ai/v7-effort-durable-postgres.integration.test.ts",
+      "fullName": "stage effort on owned socket PostgreSQL with synthetic provider keeps runtime unable to mint budgets, change authority or grant effort",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-pg-d02ddfb69295",
+      "categories": [
+        "v7-effort-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/ai/v7-effort-durable-postgres.integration.test.ts",
+      "fullName": "stage effort on owned socket PostgreSQL with synthetic provider preserves legacy max/high grants and bytes while old and new migrations replay",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-pg-49f24a6be008",
+      "categories": [
+        "v7-effort-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/ai/v7-effort-durable-postgres.integration.test.ts",
+      "fullName": "stage effort on owned socket PostgreSQL with synthetic provider still admits an old v7 high grant and rejects low without its new stage authorization",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-pg-a554546b99a0",
+      "categories": [
+        "v7-effort-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/ai/v7-effort-durable-postgres.integration.test.ts",
+      "fullName": "stage effort on owned socket PostgreSQL with synthetic provider keeps the historical main calibration ceiling of 100 non-cancelled calls",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-pg-89190ebe56a8",
+      "categories": [
+        "v7-effort-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/ai/v7-effort-durable-postgres.integration.test.ts",
+      "fullName": "stage effort on owned socket PostgreSQL with synthetic provider rejects broadened or mismatched stage grants at the database boundary",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-clock-d2fa28fad013",
+      "categories": [
+        "v7-original-clock"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/browser-timing.test.ts",
+      "fullName": "v7 original browser click windows collects a valid 42-second list while retaining its failed 40-second performance result",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-clock-55313fbe326d",
+      "categories": [
+        "v7-original-clock"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/browser-timing.test.ts",
+      "fullName": "v7 original browser click windows does not open another 150 seconds after a slow list or refresh",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-clock-023a76a3c34e",
+      "categories": [
+        "v7-original-clock"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/submission-timing-client.test.ts",
+      "fullName": "v7 client timing token continuity carries the signed first-stage token and cumulative elapsed time into later stages and network retries",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-clock-adad1769dcda",
+      "categories": [
+        "v7-original-clock"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/submission-timing-client.test.ts",
+      "fullName": "v7 client timing token continuity atomically restores the same unknown-outcome retry ID and original clock after reload",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-clock-25c369f31366",
+      "categories": [
+        "v7-original-clock"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/submission-timing-client.test.ts",
+      "fullName": "v7 client timing token continuity rejects malformed timing without clearing the original or silently starting another window",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-clock-2a383dbebbd4",
+      "categories": [
+        "v7-original-clock"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/recommendation-run-v7.test.tsx",
+      "fullName": "v7 list delivery and recovery boundaries keeps original submission, expiry and persisted deadlines fixed across poll updates",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-eval-595bc5c6a815",
+      "categories": [
+        "v7-effort-evaluation"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/evaluation-effort.test.ts",
+      "fullName": "evaluation stage effort binding accepts every frozen high/low stage combination without changing the original numerical scoring policy",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-eval-8fc10fcd3ce5",
+      "categories": [
+        "v7-effort-evaluation"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/evaluation-effort.test.ts",
+      "fullName": "evaluation stage effort binding requires the new grant map/hash and keeps the historical high grant exactly high",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-eval-c5659acb9969",
+      "categories": [
+        "v7-effort-evaluation"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/evaluation-effort.test.ts",
+      "fullName": "evaluation stage effort binding rejects a wrong stage, changed policy or chat effort even when both values are supported",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-eval-090ee75bc024",
+      "categories": [
+        "v7-effort-evaluation"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/evaluation-comparison.test.ts",
+      "fullName": "60 paired report quality and comprehension comparisons rejects parsed matrices and booleans as substitutes for original byte proofs",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-eval-f74d7b1a1b43",
+      "categories": [
+        "v7-effort-evaluation"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/evaluation-comparison.test.ts",
+      "fullName": "60 paired report quality and comprehension comparisons keeps unavailable reports and missing assessments in the original 60-pair denominators",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-eval-9309d6ec6523",
+      "categories": [
+        "v7-effort-evaluation"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/evaluation-comparison.test.ts",
+      "fullName": "60 paired report quality and comprehension comparisons rejects evaluator self-answering, cross-arm reader reuse and reference answers opened too late",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-eval-86817c62d8e8",
+      "categories": [
+        "v7-effort-evaluation"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/evaluation-contract.test.ts",
+      "fullName": "v7 evaluation registration and finite matrix retains measured and unknown cost bounds without creating paid ranking duplicates",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-eval-26058f304d7c",
+      "categories": [
+        "v7-effort-evaluation"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/evaluation-registration-ranking.test.ts",
+      "fullName": "registration binds optional ranking panel metadata after the public guard new creation omits the unused panel contract and binds stage effort with five invented admission receipts",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-eval-baf179c7c8c5",
+      "categories": [
+        "v7-effort-evaluation"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/evaluation-registration-ranking.test.ts",
+      "fullName": "registration binds optional ranking panel metadata after the public guard preserves public-first failure in both creation and scoring preflight",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-fixed-pg-75facddf4d55",
+      "categories": [
+        "v7-effort-fixed-budget"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/deployment/v7-effort-fixed-postgres.integration.test.ts",
+      "fullName": "stage fixed release budget SQL in an isolated random PostgreSQL database executes exact paired reservation, claim and cancellation with separate high and low ledger rows",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-fixed-pg-b6fe8f97a163",
+      "categories": [
+        "v7-effort-fixed-budget"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/deployment/v7-effort-fixed-postgres.integration.test.ts",
+      "fullName": "stage fixed release budget SQL in an isolated random PostgreSQL database rejects policy substitution and a database cap without inserting either reservation",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-fixed-pg-9545776549c1",
+      "categories": [
+        "v7-effort-fixed-budget"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/deployment/v7-effort-fixed-postgres.integration.test.ts",
+      "fullName": "stage fixed release budget SQL in an isolated random PostgreSQL database keeps immutable ledger policy rows and unknown reservations through closed-grant settlement",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-fixed-pg-5821b44a0727",
+      "categories": [
+        "v7-effort-fixed-budget"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/deployment/v7-effort-fixed-postgres.integration.test.ts",
+      "fullName": "stage fixed release budget SQL in an isolated random PostgreSQL database serializes two paired reservations under the common count ceiling and admits a single claim",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-closure-41ff95d8289f",
+      "categories": [
+        "v7-effort-evaluation"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/evaluation-effort.test.ts",
+      "fullName": "evaluation stage effort binding rejects durable-call metadata that differs from its original ledger or call key",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-closure-ac1e93985d9b",
+      "categories": [
+        "v7-effort-evaluation"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/evaluation-blind-full.test.ts",
+      "fullName": "two complete fresh ranking reviewers refuses to construct a dispute packet when raw original alpha is below .70 or null",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-closure-87b2537c5031",
+      "categories": [
+        "v7-effort-evaluation"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/evaluation-blind-full.test.ts",
+      "fullName": "two complete fresh ranking reviewers retains shared U as a real unresolved dispute after the original alpha passes",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-closure-28cbdac51547",
+      "categories": [
+        "v7-effort-browser"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/browser-effort.test.ts",
+      "fullName": "actual browser staged effort authority checks exact operation effort for all eight frozen maps, including fixed-high chat and extraction",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-closure-b9c73e5e4d19",
+      "categories": [
+        "v7-effort-browser"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/browser-effort.test.ts",
+      "fullName": "actual browser staged effort authority refuses legacy execution grants and every mismatched actual grant or environment field",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-closure-fb4dba586805",
+      "categories": [
+        "v7-effort-browser"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/browser-effort.test.ts",
+      "fullName": "actual browser staged effort authority rejects identical low rank/review relabeling, call-ledger disagreement, wrong phase and missing request fields",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-closure-1a60ffaad480",
+      "categories": [
+        "v7-effort-browser"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/browser-effort.test.ts",
+      "fullName": "actual browser staged effort authority does not let one valid receipt conceal a wrong-stage or foreign unknown paid call",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-closure-df88c36b107f",
+      "categories": [
+        "v7-effort-browser"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/browser-effort.test.ts",
+      "fullName": "actual browser staged effort authority actual public/performance config entrypoints require the new explicit map and grant",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-closure-312766eea2a4",
+      "categories": [
+        "v7-effort-browser"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/browser-effort.test.ts",
+      "fullName": "actual browser staged effort authority captures the actual root accounting emitter stage fields while rejecting unrelated trace data",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-closure-80f7d8a3bc94",
+      "categories": [
+        "v7-effort-evaluation"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/evaluation-effort.test.ts",
+      "fullName": "evaluation stage effort binding rejects nonfresh original provenance in new-stage formal scoring while retaining historical full-review reading",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-closure-f40a6a56764e",
+      "categories": [
+        "v7-effort-evaluation"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/evaluation-comparison.test.ts",
+      "fullName": "60 paired report quality and comprehension comparisons uses an existing calibration phase and a separately bound simulation purpose without extending database authority",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-provenance-official-editorial-review",
+      "categories": [
+        "v7-provenance-boundary"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/provenance-boundary-B.test.ts",
+      "fullName": "source provenance at the explanation and newly prepared review boundaries reviews an official relabeling of an exact editorial sentence while retaining optional reuse",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-provenance-same-id-source-boundary",
+      "categories": [
+        "v7-provenance-boundary"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/provenance-boundary-B.test.ts",
+      "fullName": "source provenance at the explanation and newly prepared review boundaries keeps same-ID official text and optional editorial provenance distinct, including a missing sourceBoundary",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-provenance-wire-official-relabel-refused",
+      "categories": [
+        "v7-provenance-boundary"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/provenance-boundary-B.test.ts",
+      "fullName": "source provenance at the explanation and newly prepared review boundaries sends one new g1 prepared through both actual wires and retains supported=false: '官方题目要求用跳跃索引完成序列处理。'",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-provenance-wire-optional-method-retained",
+      "categories": [
+        "v7-provenance-boundary"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/provenance-boundary-B.test.ts",
+      "fullName": "source provenance at the explanation and newly prepared review boundaries sends one new g1 prepared through both actual wires and retains supported=true: '你可尝试用跳跃索引练习序列处理；这是可选编辑方法。'",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-provenance-wire-general-role-retained",
+      "categories": [
+        "v7-provenance-boundary"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/provenance-boundary-B.test.ts",
+      "fullName": "source provenance at the explanation and newly prepared review boundaries sends one new g1 prepared through both actual wires and retains supported=true: '可独立建模与实现，交付不变量说明、代码和边界测试。'",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-provenance-wire-unfounded-bound-refused",
+      "categories": [
+        "v7-provenance-boundary"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/provenance-boundary-B.test.ts",
+      "fullName": "source provenance at the explanation and newly prepared review boundaries sends one new g1 prepared through both actual wires and retains supported=false: '输入规模保证不超过一百；可据此枚举所有排列。'",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-provenance-novel-conditions-review",
+      "categories": [
+        "v7-provenance-boundary"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/provenance-boundary-B.test.ts",
+      "fullName": "source provenance at the explanation and newly prepared review boundaries treats new conditions as part of an assertion while preserving empty and exact-section reuse",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-provenance-wire-novel-conditions-refused",
+      "categories": [
+        "v7-provenance-boundary"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/provenance-boundary-B.test.ts",
+      "fullName": "source provenance at the explanation and newly prepared review boundaries sends one new g1 prepared through both actual wires and retains supported=false: '可整理练习记录。'",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-provenance-wire-exact-section-retained",
+      "categories": [
+        "v7-provenance-boundary"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/provenance-boundary-B.test.ts",
+      "fullName": "source provenance at the explanation and newly prepared review boundaries sends one new g1 prepared through both actual wires and retains supported=true: '可整理练习记录。'",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-build-default-policy",
+      "categories": [
+        "v7-effort-release"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/ai/effort-policy-build.test.ts",
+      "fullName": "compiled decision effort policy freezes the configured default even when the runtime environment lacks the policy",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-build-explicit-environment",
+      "categories": [
+        "v7-effort-release"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/ai/effort-policy-build.test.ts",
+      "fullName": "compiled decision effort policy preserves explicit-environment parsing independently of compiled defaults",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-effort-build-fingerprint-rejection",
+      "categories": [
+        "v7-effort-release"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/ai/effort-policy-build.test.ts",
+      "fullName": "compiled decision effort policy rejects mismatched compiled and explicit fingerprints without weakening validation",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-generation-exact-official-section",
+      "categories": [
+        "v7-provenance-boundary"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/explanation-projection-B.test.ts",
+      "fullName": "B conservative generation section projection only omits a same-owner exact official fact and keeps the full helper and record untouched",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-generation-protected-boundaries",
+      "categories": [
+        "v7-provenance-boundary"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/explanation-projection-B.test.ts",
+      "fullName": "B conservative generation section projection retains unknowns, conditions and free-text fees or resource limits even with empty conditions",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-generation-role-template",
+      "categories": [
+        "v7-provenance-boundary"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/explanation-projection-B.test.ts",
+      "fullName": "B conservative generation section projection only removes the exact role template and falls back to the full sentence after any role or reference change",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-generation-negative-value",
+      "categories": [
+        "v7-provenance-boundary"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/explanation-projection-B.test.ts",
+      "fullName": "B conservative generation section projection keeps a unique negative value statement unless the complete same-kind text and citations remain in an assessment",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-generation-ambiguous-fallback",
+      "categories": [
+        "v7-provenance-boundary"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/explanation-projection-B.test.ts",
+      "fullName": "B conservative generation section projection retains changed, ambiguous or no-longer-usable fact copies and unknown future narrative",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-review-comparison-owner-boundaries",
+      "categories": [
+        "v7-provenance-boundary"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/explanation-projection-B.test.ts",
+      "fullName": "B review boundary owners keeps both top-two comparison owners and B's unique unknown cost even with no B citation or ordinary assertion",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-review-foreign-owner-isolation",
+      "categories": [
+        "v7-provenance-boundary"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/explanation-projection-B.test.ts",
+      "fullName": "B review boundary owners never supplies an unrelated selected owner's boundaries as support or accepts its foreign citation",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-rank-wire-full-pool-lossless",
+      "categories": [
+        "v7-algorithm"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/rank-packet-C.test.ts",
+      "fullName": "rank-only lossless wire packing preserves the full45 pool, profile corrections,205 facts,81 roles,36 bounds and87 conditions",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-rank-wire-unknown-difference",
+      "categories": [
+        "v7-algorithm"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/rank-packet-C.test.ts",
+      "fullName": "rank-only lossless wire packing keeps each original unknowns value when just one candidate has a different resource or conflict condition",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "v7-rank-wire-existing-decoder",
+      "categories": [
+        "v7-algorithm"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/rank-packet-C.test.ts",
+      "fullName": "rank-only lossless wire packing uses existing ordinary-array decoding for smaller text references without changing dictionary meaning",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-ae619632ba154f3c",
+      "categories": [
+        "v7-algorithm"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/rank-envelope-repair-C.test.ts",
+      "fullName": "rank envelope repair through the actual JSON transport repairs only the missing headers, keeps the model's five choices/order, and uses the original remaining budget/key/effort",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-1e4a7ebfe2303ee8",
+      "categories": [
+        "v7-algorithm"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/rank-envelope-repair-C.test.ts",
+      "fullName": "rank envelope repair through the actual JSON transport rejects an otherwise shaped repair that changes order, without a third call",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-9d0e42594e5d0ffe",
+      "categories": [
+        "v7-algorithm"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/rank-envelope-repair-C.test.ts",
+      "fullName": "rank envelope repair through the actual JSON transport fails foreign-id on the initial real transport path without a second call",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-9844e08fcb605b56",
+      "categories": [
+        "v7-algorithm"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/rank-envelope-repair-C.test.ts",
+      "fullName": "rank envelope repair through the actual JSON transport does not repair initial durable_outcome_unknown, even if a seam previously called safeParse on bad raw",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-85d916d985fa7a0f",
+      "categories": [
+        "v7-algorithm"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/top5-ranking-A.test.ts",
+      "fullName": "Top5 generation uses the complete candidate pool keeps 0 meaningful choices with an explanation",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-8028210391467f54",
+      "categories": [
+        "v7-algorithm"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/top5-ranking-A.test.ts",
+      "fullName": "Top5 generation uses the complete candidate pool rejects 6 choices instead of silently truncating them",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-f82f7d2d93d96e41",
+      "categories": [
+        "v7-effort-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/ai/v7-top5-durable-postgres.integration.test.ts",
+      "fullName": "Top5 frozen execution and finite authorization on disposable PostgreSQL dispatches low product stages and high profile/chat with thinking enabled under the same finite grant",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-cd2e9f852044649b",
+      "categories": [
+        "v7-effort-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/ai/v7-top5-durable-postgres.integration.test.ts",
+      "fullName": "Top5 frozen execution and finite authorization on disposable PostgreSQL rejects a wrong contract, authorization, policy version, implementation or stage at the database boundary",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-9d2c9fcf3c8234f4",
+      "categories": [
+        "v7-effort-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/ai/v7-top5-durable-postgres.integration.test.ts",
+      "fullName": "Top5 frozen execution and finite authorization on disposable PostgreSQL freezes new targets and cutoffs from the original click and replays them without resetting effort",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-3919a2d495882464",
+      "categories": [
+        "v7-effort-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/ai/v7-top5-durable-postgres.integration.test.ts",
+      "fullName": "Top5 frozen execution and finite authorization on disposable PostgreSQL reads a historical ten-item task with original 45/90 cutoffs and excludes it from new worker claims",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-b21866df1fb7d76f",
+      "categories": [
+        "v7-effort-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/ai/v7-top5-durable-postgres.integration.test.ts",
+      "fullName": "Top5 frozen execution and finite authorization on disposable PostgreSQL allows ranking after its target, publishes only five and includes frozen versions in actual durable hashes",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-132a1fa2db831d84",
+      "categories": [
+        "v7-effort-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/ai/v7-top5-durable-postgres.integration.test.ts",
+      "fullName": "Top5 frozen execution and finite authorization on disposable PostgreSQL prevents changing frozen execution policy and suppresses uncertain paid retries across namespaces",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-b99acba59e873d1f",
+      "categories": [
+        "v7-effort-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/ai/v7-top5-durable-postgres.integration.test.ts",
+      "fullName": "Top5 frozen execution and finite authorization on disposable PostgreSQL rejects caller version substitution before spend and replays an explicitly versioned receipt once",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-a366a63251207be2",
+      "categories": [
+        "v7-effort-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/ai/v7-top5-durable-postgres.integration.test.ts",
+      "fullName": "Top5 frozen execution and finite authorization on disposable PostgreSQL continues details after the 120 second target and stops at the original 150 second hard cutoff",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-85cd37bf58fbb1f0",
+      "categories": [
+        "v7-group-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/group-worker.integration.test.ts",
+      "fullName": "grouped worker recovery with real disposable PostgreSQL and synthetic provider transport keeps a false review judgment, all five identities and four reviewed details without repair or replacement",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-f43b27d6b83e178e",
+      "categories": [
+        "v7-group-persistence"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/competitions/v7/group-worker.integration.test.ts",
+      "fullName": "grouped worker recovery with real disposable PostgreSQL and synthetic provider transport publishes an explained 3-item meaningful shortfall in g0 without filling the list",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-2ba47476e6961ffd",
+      "categories": [
+        "v7-effort-browser"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/recommendation-run-v7.test.tsx",
+      "fullName": "v7 list delivery and recovery boundaries shows all five new recommendations with the real progress denominator and no hidden remainder",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-ce82c436a9855817",
+      "categories": [
+        "v7-effort-browser"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/recommendation-run-v7.test.tsx",
+      "fullName": "v7 list delivery and recovery boundaries reads historical ten-item runs without applying the new count or deadlines and saves the tenth item",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-b62896b4bd22bfe8",
+      "categories": [
+        "v7-effort-browser"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/recommendation-run-v7.test.tsx",
+      "fullName": "v7 list delivery and recovery boundaries does not replace a run's frozen Top5 policy, targets or delivered order during polling",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-ee337c7b822cc5cd",
+      "categories": [
+        "v7-effort-browser"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/browser-timing.test.ts",
+      "fullName": "v7 original browser click windows accepts the target boundaries but keeps collection limits separate",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-c81de6320b21710b",
+      "categories": [
+        "v7-effort-browser"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/performance-browser.test.ts",
+      "fullName": "v7 performance public entrance dependency does not admit performance from a quality-approved five with invalid Top5 timing: list",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-006e44d39b1f5d3f",
+      "categories": [
+        "v7-effort-browser"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/performance-browser.test.ts",
+      "fullName": "v7 performance public entrance dependency does not admit performance from a quality-approved five with invalid Top5 timing: details",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-119ad728bdc994c5",
+      "categories": [
+        "v7-effort-browser"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/performance-browser.test.ts",
+      "fullName": "v7 performance public entrance dependency does not admit performance from a quality-approved five with invalid Top5 timing: expansion",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-06919eb66ee0acb2",
+      "categories": [
+        "v7-effort-browser"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/performance-browser.test.ts",
+      "fullName": "v7 performance public entrance dependency does not admit performance from a quality-approved five with invalid Top5 timing: missing-expansion",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-7742a2884361bcff",
+      "categories": [
+        "v7-browser-desktop"
+      ],
+      "framework": "playwright",
+      "report": "playwright-production",
+      "testFile": "tests/e2e/competition-decision-v7.spec.ts",
+      "fullName": "Top5 restores all five items, compares the fifth and saves only the selected ready item",
+      "project": "desktop",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-35956623e2f33072",
+      "categories": [
+        "v7-browser-mobile"
+      ],
+      "framework": "playwright",
+      "report": "playwright-production",
+      "testFile": "tests/e2e/competition-decision-v7.spec.ts",
+      "fullName": "Top5 restores all five items, compares the fifth and saves only the selected ready item",
+      "project": "mobile",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-1344a3deb65d4dec",
+      "categories": [
+        "v7-browser-desktop"
+      ],
+      "framework": "playwright",
+      "report": "playwright-production",
+      "testFile": "tests/e2e/competition-decision-v7.spec.ts",
+      "fullName": "historical ten-item v7 caches keep their deadlines, expand and save the tenth result",
+      "project": "desktop",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-219e4d23e598b2cc",
+      "categories": [
+        "v7-browser-mobile"
+      ],
+      "framework": "playwright",
+      "report": "playwright-production",
+      "testFile": "tests/e2e/competition-decision-v7.spec.ts",
+      "fullName": "historical ten-item v7 caches keep their deadlines, expand and save the tenth result",
+      "project": "mobile",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-14d0f01031b4d04f",
+      "categories": [
+        "v7-effort-evaluation"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/evaluation-top5.test.ts",
+      "fullName": "Top5 evaluation contract binds the product five-item limit, low stages, 40/120 targets and 60/150 cutoffs to a new policy",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-5562c26080167fe9",
+      "categories": [
+        "v7-effort-evaluation"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/evaluation-top5.test.ts",
+      "fullName": "Top5 evaluation contract scores five displayed results against all 45 candidates and retires the nDCG10 gate",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-c70ec3270cbfc00d",
+      "categories": [
+        "v7-effort-evaluation"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/evaluation-top5.test.ts",
+      "fullName": "Top5 evaluation contract rejects a sixth actual displayed result from arm B",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-02f3f5cd3f88a97a",
+      "categories": [
+        "v7-effort-evaluation"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/evaluation-top5.test.ts",
+      "fullName": "Top5 evaluation contract rejects a sixth actual displayed result from arm C",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-5b01070aa5f2be58",
+      "categories": [
+        "v7-effort-evaluation"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/evaluation-top5.test.ts",
+      "fullName": "Top5 evaluation contract keeps failed requests with existing timestamps in the 100-request p95 denominator",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-e0f91b60f9ed75f2",
+      "categories": [
+        "v7-effort-evaluation"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/evaluation-top5.test.ts",
+      "fullName": "Top5 evaluation contract requires four of the same five public runs to jointly meet content and timing targets",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-af92204e1b5fbe51",
+      "categories": [
+        "v7-effort-evaluation"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/competitions/v7/evaluation-top5.test.ts",
+      "fullName": "Top5 evaluation contract plans finite operation bounds and protects unknown holds without inventing measured costs",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-91922e13fa57e31f",
+      "categories": [
+        "v7-effort-release"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/deployment/v7-effort-release.test.ts",
+      "fullName": "stage effort release contract without live services requires the Top5 namespace and LLL at protected policy, coordinator, permit and receipt boundaries",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-a9020185d2e099aa",
+      "categories": [
+        "v7-effort-release"
+      ],
+      "framework": "vitest",
+      "report": "vitest-unit",
+      "testFile": "tests/deployment/v7-effort-release.test.ts",
+      "fullName": "stage effort release contract without live services binds Top5 reservation to its exact authorization while retaining unknown and closed-grant settlement",
+      "project": "unit",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-824d5e7e85658cf8",
+      "categories": [
+        "v7-effort-fixed-budget"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/deployment/v7-effort-fixed-postgres.integration.test.ts",
+      "fullName": "top5 fixed release budget SQL in an isolated random PostgreSQL database executes exact paired reservation, claim and cancellation with separate high and low ledger rows",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-18af43c4fd98d3bc",
+      "categories": [
+        "v7-effort-fixed-budget"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/deployment/v7-effort-fixed-postgres.integration.test.ts",
+      "fullName": "top5 fixed release budget SQL in an isolated random PostgreSQL database rejects policy substitution and a database cap without inserting either reservation",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-343b206bcca14155",
+      "categories": [
+        "v7-effort-fixed-budget"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/deployment/v7-effort-fixed-postgres.integration.test.ts",
+      "fullName": "top5 fixed release budget SQL in an isolated random PostgreSQL database keeps immutable ledger policy rows and unknown reservations through closed-grant settlement",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-637d726611d59ebc",
+      "categories": [
+        "v7-effort-fixed-budget"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/deployment/v7-effort-fixed-postgres.integration.test.ts",
+      "fullName": "top5 fixed release budget SQL in an isolated random PostgreSQL database serializes two paired reservations under the common count ceiling and admits a single claim",
+      "project": "postgres-integration",
+      "minimumPassed": 1
+    },
+    {
+      "id": "top5-205fad5b37b85164",
+      "categories": [
+        "v7-effort-release"
+      ],
+      "framework": "vitest",
+      "report": "vitest-postgres",
+      "testFile": "tests/deployment/v7-native-postgres.integration.test.ts",
+      "fullName": "v7 native Linux x64 PostgreSQL14 worker contract top5 app.env and PM2 reach the actual LLL policy-bound reserve gate; DB cap wins; zero dispatch",
+      "project": "postgres-integration",
       "minimumPassed": 1
     }
   ]

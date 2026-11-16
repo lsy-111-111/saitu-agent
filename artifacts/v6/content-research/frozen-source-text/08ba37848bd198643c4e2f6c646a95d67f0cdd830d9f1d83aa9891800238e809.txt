@@ -1,0 +1,3009 @@
+[PAGE 1]
+31 August  –  5 September 2025
+[PAGE 2]
+Known as the ‘Land of Fire’,
+Azerbaijan is a tangle of beautiful
+contradictions and contrasts.
+Neither Europe nor Asia,
+it’s a nexus of ancient historical
+empires, but also a ‘new’
+nation which has undergone an
+extraordinary transformation.
+We are excited you’re here...
+hello and welcome to
+Azerbaijan!
+[PAGE 3]
+06 W elcome
+18 W orld Finals Information
+30 Activities
+37 The Hosts
+44 Organizers and Sponsors
+50 The Judges
+CONTENT
+57 Leadership Awards
+77 Coaching Awards
+85 Special Thanks
+65 The T eams
+[PAGE 4]
+[PAGE 5]
+[PAGE 6]
+2025
+ICPC
+WORLD
+FINALS
+Welcome
+[PAGE 7]
+WELCOME  //  Letters
+Welcome
+from the Rector of ADA University
+Dear participants and guests of the 2025 ICPC World Finals Baku!
+On behalf of ADA University, I warmly welcome you to this prestigious event of the year, bringing together the finest
+young programmers from around the globe. It is a great honor and pleasure for ADA University to host the ICPC World
+Finals in Azerbaijan.
+For the past 15 years, Azerbaijan has hosted numerous large-scale events of the highest caliber however, the ICPC
+World Finals hold a special significance among these events. This is a competition of young students from the world’s
+most esteemed Universities in one of the most technologically advanced fields of human activity. It demands participants
+to possess extraordinary qualities and knowledge in mathematics, engineering, and logic, along with the ability to work
+in teams, think critically, and swiftly develop innovative solutions. These qualities are essential for success in any career,
+particularly in the IT industry. ICPC participants are young individuals who demonstrate exceptional training and a
+relentless pursuit of excellence.
+Azerbaijan is proactively moving toward technological progress. We believe that investing in education and supporting
+youth-led business initiatives are the most effective ways to ensure sustainable development and prosperity for the
+nation. The growth of a new, innovative IT ecosystem will increasingly shape a country’s position and role in the global
+ranking. Hosting the ICPC World Finals in Baku is a significant step on this journey. We are confident that this event will
+become a milestone in the advancement of competitive programming and IT development in our country and will draw
+global attention to our potential.
+I wish all participants good luck, inspiration, and success in the competition. May these competitions serve as a source
+of new knowledge and opportunitiesfor you.
+Welcome to Azerbaijan, the land of fire, hospitality, and technological promise!
+Hafiz PashayevHafiz Pashayev
+Rector of ADA University
+7
+ICPC World Finals Baku
+[PAGE 8]
+WELCOME  //  Letters
+Welcome
+from the Central Bank of the Republic of Azerbaijan
+Dear participants and guests of the 2025 ICPC World Finals Baku!
+On behalf of the Central Bank of the Republic of Azerbaijan, I am delighted to welcome you to the 49th ICPC World
+Championship, to be held in Baku from August 31 to September 5, 2024.
+Baku, a city where the rich heritage of the past meets the dynamic spirit of the future, provides an ideal setting for this
+global event. As we welcome over a thousand talented students and their mentors from more than 50 countries, we also
+celebrate the power of knowledge, diversity, and global cooperation.
+Azerbaijan is increasingly recognized as a regional leader in innovation. In line with the vision expressed in our national
+anthem—to become a flourishing land, our country has prioritized innovation and development across various sectors,
+with the financial sector at the forefront. As part of this transformation, the Central Bank is driving the advancement
+of a resilient and inclusive digital financial ecosystem, embracing emerging technologies to better serve our economy
+and society.
+Being host partner of this prestigious competition to take place for the first time in our country is extremely significant.
+The ICPC World Finals not only celebrate excellence in programming and problem-solving, but also reflect the values
+of integrity, growth, and accountability. These are the values that we deeply cherish and embed as a Central Bank of
+Azerbaijan in our journey toward building a more sustainable digital future. We sincerely believe that we can create
+a future where inclusion, security and stability can coexist.
+We are confident that the ICPC World Finals bringing together the brightest minds from across the globe, will offer
+a unique opportunity to inspire the next generation of leaders in technology, finance, and beyond, that will ignite
+the innovation journey of our country.
+We extend our best wishes to all participants for an inspiring and successful competition. May your experience in Azerbaijan
+be filled with unforgettable moments, impactful ideas, and lasting connections!
+Welcome to Baku, where innovation meets tradition, and where your digital future begins!
+Taleh KazimovTaleh Kazimov
+Governor of the Central Bank
+of the Republic of Azerbaijan
+8
+ICPC World Finals Baku
+[PAGE 9]
+WELCOME  //  Letters
+Welcome
+from the Ministry of Digital Development and Transport
+of the Republic of Azerbaijan
+Dear participants and guests of the 2025 ICPC World Finals,
+It is a great honor for Azerbaijan to host this event in Baku.
+The ICPC represents much more than a competition — it is a platform where talent, dedication, and teamwork converge
+to create solutions for the future.
+In Azerbaijan, we see this as an opportunity to encourage our youth to embrace creativity, analytical thinking,
+and collaboration at the highest level.
+Since 2024, the Innovation and Digital Development Agency, ADA University, and the ICPC Azerbaijan community
+have been working closely to prepare for this milestone.
+Through training sessions, programming camps, national contest stages, and international participation, we have aimed
+to strengthen both the skills of our local teams and the bonds within the global ICPC family.
+The participation of ADA University’s team at the 48th ICPC World Finals in Luxor was a proud moment that further
+fueled our enthusiasm for this year’s Finals.
+I am confident that all the great effort put forth by hundreds of people will turn the Baku event into an unforgettable
+experience.
+I wish all ICPC World Finals participants success in their quest for excellence.
+Rashad NabiyevRashad Nabiyev
+Minister of Digital Development and
+Transport of the Republic of Azerbaijan
+9
+ICPC World Finals Baku
+[PAGE 10]
+WELCOME  //  Letters
+Welcome
+from the Director of the 2025 ICPC World Finals Baku
+Dear Contestants, Esteemed Coaches, Dedicated Organizers, and Honored Guests of the 2025 ICPC World Finals Baku,
+Welcome to Azerbaijan — a land of warmth and hospitality!
+The 2025 ICPC World Finals in Baku is the culmination of six months of dedication, discipline and collaboration.
+What once seemed like an ambitious goal has now become a reality thanks to the shared commitment of many:
+> The ICPC Foundation for entrusting us with this responsibility and doing an absolutely fantastic job over the past
+6 months to make today’s finals a success
+> ADA University as a Host University
+> Host Partner, Central Bank of Azerbaijan
+> Partners and Sponsors
+> State authorities whose steadfast support has been indispensable
+> Host team, who have done an incredible amount of work in this short period of time
+To the contestants: you represent the highest standards of intellectual rigor and creative problem-solving. The ICPC
+is more than a competition; it is a global forum where exceptional young minds meet, learn, and inspire one another.
+Your presence here affirms the vital role that talent and curiosity play in advancing the frontiers of computing.
+To the coaches and mentors: thank you for guiding these teams with skill and patience. Your dedication shapes the
+professionals and leaders of tomorrow.
+To the members of the organizing committee and the many volunteers: Your contribution exemplifies the spirit
+of service and collaboration that underpins events of this magnitude.
+Globally, the ICPC cultivates talent, fosters innovation, and accelerates progress in information technology.
+For Azerbaijan, hosting the World Finals is an opportunity to accelerate our national ambitions in education, research,
+and the digital economy. We aspire not only to showcase our capacity to host an event of this caliber, but also to
+strengthen ties with the international academic and technological communities, and to inspire future generations of
+Azerbaijani innovators.
+May this WF produce not only memorable achievements and enduring friendships, but also fresh ideas that advance
+our shared future.
+Once again, welcome to Baku. We wish every team success, and we look forward to the exceptional displays of talent
+and ingenuity that will define these World Finals.
+Fuad HajiyevFuad Hajiyev
+Director of the 2025 ICPC World Finals Baku
+10
+ICPC World Finals Baku
+[PAGE 11]
+WELCOME  //  Letters
+Welcome
+from the ICPC Executive Director & ICPC Foundation President
+Welcome to ICPC World Finals Baku!
+Dear ICPC Finalists, Coaches, Volunteers, and Supporters,
+On behalf of the ICPC Foundation, ADA University, the Central Bank of Azerbaijan, and the entire local organizing team,
+it is our extraordinary honor to welcome you all to Baku, Azerbaijan for the 49th ICPC World Championship, set against
+the stunning backdrop of the Cas   pian Sea, August 31 through September 5, 2025.
+This season, across Regional Contests, Workshops, Challenges, Camps, and outreach events, with 63,294 students,
+mentored by 10,573 coaches and co-coaches, from 3,307 universities in 93 countries have participated, advancing
+140 of the world’s elite collegiate teams to compete here in Baku. Your accomplishments reflect the hard work, brilliance,
+and dedication that embody our global community.
+Thank you to President Ilham Aliyev of the Republic of Azerbaijan, for your leadership and vision in welcoming the ICPC
+World Finals to this remarkable nation. Our gratitude abounds to the Government of Azerbaijan for bringing together these
+extraordinary young minds from across the globe. Special thanks go to ADA University, led by Rector Hafiz Pashayev,
+for providing an inspiring academic environment, and to the Central Bank of Azerbaijan, led by Mr. Taleh Kazimov, for
+championing innovation and opportunity. Your dedication to empowering future generations will leave a lasting legacy -
+impacting lives in this beautiful country and resonating across the world for decades to come.
+We are so grateful to our host ADA University and host partner Central Bank of Azerbaijan for their leadership and
+generosity. Your support for these students, and for the global programming community, will have ripple effects for years
+to come. Special thanks goes to the Innovation and Digital Development Agency and Pasha Holding. To the volunteers
+from across ICPC, Azerbaijan and beyond - thank you. You are the lifeblood of ICPC. Every T-shirt packed, every meal
+served, every server tested - your unseen work uplifts the dreams of thousands.
+The ICPC spirit thrives through the generosity of volunteers, mentors, and dreamers. During this week, spotlighting
+outstanding contributions, we celebrate award-winning ICPC news coverage, volunteers who elevate the competition,
+and regional leaders whose efforts build lasting impact.
+A heartfelt thanks goes to Diamond and ICPC Challenge Sponsor, Huawei. Your commitment to empowering global
+talent is inspiring.  Thank you JetBrains, our ICPC Programming Tools Sponsor. Your steadfast commitment makes
+all of the difference.
+And a special welcome goes to our new sponsors, Platinum Sponsor, Open AI, and Gold Sponsor Google DeepMind!
+All with rich traditions of ICPC community talent - now some 450,000 alumni strong and five decades deep, your passion
+for problem-solving helps write the next chapter in our Digital Renaissance. Together, you build systems, create innovations,
+and unlock prosperity - not just for yourselves, but for your neighbors, our communities, and you do it together.
+The ICPC World Finals is more than a competition. It’s your launchpad. You are entering an age of immense opportunity,
+responsibility, and promise. Build boldly. Think ethically. Lift others as you rise. And above all, stay connected - not just by
+network cables and code, but by a noble, shared purpose that brought you here.
+Welcome again to Baku, Azerbaijan. May this week be filled with thrilling challenges, inspiring connections, and memories
+that last a lifetime. You belong here, and we are honored to be here with you, together.
+Best,
+William B. PoucherWilliam B. Poucher
+ICPC Executive Director
+and ICPC Foundation President
+11
+ICPC World Finals Baku
+[PAGE 12]
+WELCOME  //  Letters
+Welcome
+from ICPC World Finals Diamond Sponsor, Multi-Regional
+Sponsor, Huawei
+Every breakthrough in artificial intelligence begins with a line of code and a brilliant algorithm—precisely the kind of
+elegant, logical thinking you will demonstrate here at the 2025 ICPC World Finals in Baku. Your journey has brought you
+to this global stage, which is testament to your mastery of computational problem-solving. What you do here today isn’t
+about winning; it’s about laying the groundwork for the intelligence of tomorrow.
+Prominent experts have deemed 2025 to be “the year of crossing the AI event horizon”. Artificial intelligence has moved
+beyond labs and into the physical world—reshaping industries, revolutionizing science, and redefining human progress.
+From AI-driven literacy tools that empower educators to reach more students, to accelerated drug discovery through
+computational simulation, we are witnessing AI’s power to transform society.
+However, the current AI still generates hallucinations and struggles with basic tasks. It’s essential for us to improve its
+capability to drive civilization forward. It is important to remember that mastery over algorithms and data structures equips
+you with the tools to build transformative technology. Yet, it is the visionary pioneers—those who deeply understand
+human needs and industrial challenges—who will architect a better future. This is where ICPC shines: bridging academia
+and industry. The problems you’ll solve here reflect real-world complexities. May you find not only intellectual triumph
+here, but also purpose and joy.
+Huawei is honored to support this journey. Through actions like the ICPC Challenge powered by Huawei, we share
+industry insights, resources, and real-world problems with contestants, coaches, and organizers. We remain committed
+to empowering you—future STEM leaders—as you push the frontiers of technology.
+So, embrace this moment, dive deep, and eagerly collaborate. The future isn’t simply written in code—it’s built by those
+who code with vision. Keep coding, keep refining, and keep pushing boundaries.
+Dr. Zhou HongDr. Zhou Hong
+President of the Institute of Strategic Research,
+Huawei
+12
+ICPC World Finals Baku
+[PAGE 13]
+WELCOME  //  Letters
+Welcome
+from ICPC Global Programming Tools Sponsor, JetBrains
+Dear friends,
+On behalf of the JetBrains team, I’m delighted to welcome you to the 2025 ICPC World Finals – this time hosted in
+beautiful Baku, Azerbaijan.
+After several years of unexpected changes, it’s great to see the Finals return to a steady rhythm this year – a positive
+sign for ICPC and everyone involved.
+At JetBrains, we are honored to support ICPC as a Global Programming Tools Sponsor. We’re not just here to celebrate
+your coding skills, though those are truly impressive. We’re here because we believe in the future you are building – one
+line of code, one sleepless night, one team problem-solving session at a time. After so many years side by side, it feels
+like we’re part of the ICPC family, and that’s exactly where we want to be.
+This competition is about more than just algorithms and run times. It’s about how individuals bring their best, and how
+teams learn to trust each other under pressure. We’re proud to be by your side as you grow into the leaders, innovators,
+and creators of tomorrow.
+To support your journey, we aim to equip you with the best possible tools for learning, growing, and creating. We build
+tools to help you stay focused and do your best work, like IntelliJ IDEA, PyCharm, CLion, and our intelligent coding
+agent, Junie. During the ICPC livestreams, we’re always excited to catch glimpses of CLion on your screens. And we are
+thrilled to offer CLion free for non-commercial use, making it easier for even more of you to work with the tools we love.
+While great tools can support your growth, it’s the people around you who make the journey truly meaningful. By being
+here, you are already a part of a worldwide network of driven and creative thinkers.
+Enjoy the event, the connections, and the energy of the Finals – these are the moments that often turn into lasting
+friendships, collaborations, and ideas.
+We can’t wait to meet you at our booth. Come for the Kotlin Challenge, the cool prizes, the postcards (they’re back again!),
+and the chance to talk to ICPC fellows and JetBrainers!
+We wish you a great competition and an even greater journey ahead.
+Kind regards,
+Andrey IvanovAndrey Ivanov
+SVP of People, Research
+and Investments,
+JetBrains
+Hawke
+Filled
+llbaulf
+Illbandt
+13
+ICPC World Finals Baku
+[PAGE 14]
+WELCOME  //  Letters
+Welcome
+from ICPC World Finals Diamond Sponsor, OpenAI
+Dear ICPC Finalists, Coaches, and Friends,
+On behalf of OpenAI - and personally, as someone whose path in computer science was shaped by programming
+contests - I’m honored to welcome you to the 2025 ICPC World Finals in Baku.
+What can computers do? This question is at the core of our work at OpenAI, and it echoes in every problem you’ll
+face this week. Each task is a new frontier: you’re asked to model, analyze, and implement a solution under pressure,
+deciding what the computer should do, what it can do within constraints, and how you must steer it to make it happen.
+Programming competitions are about more than computers, however. They teach the valuable sense of being stuck and
+the exhilarating feeling of making progress - and in ICPC, we get the incredible opportunity to collaborate on an ambitious
+creative pursuit as a team.
+At OpenAI, we believe competitions like ICPC help nurture the very qualities that will define the next generation of
+scientists, engineers, and innovators. Your drive to push boundaries and solve the unsolvable mirrors the spirit that
+motivates our own work: building AI systems that expand human potential and help solve the world’s most important
+challenges.
+Eventually, AI will be able to solve even the hardest contest problems that we’ve seen yet. It will work alongside us
+and help drive the discovery of new knowledge. What you take from this week - the sense of being stuck, the thrill of
+progress, and the practice of building together - will remain critical as you shape your community and the future you build.
+We are proud to support ICPC and to stand alongside you in celebrating this extraordinary gathering of talent and
+dedication. May this week in Baku be filled with inspiring challenges, new friendships, and lasting memories.
+Congratulations, and good luck.
+Jakub PachockiJakub Pachocki
+Chief Scientist
+OpenAI
+14
+ICPC World Finals Baku
+[PAGE 15]
+WELCOME  //  Letters
+Welcome
+from ICPC World Finals Gold Sponsor, Google DeepMind
+Congratulations on reaching the ICPC World Finals. This is a remarkable achievement, and it speaks volumes of your
+dedication to the science and art of algorithmic problem solving. On behalf of Google DeepMind, I want to extend my
+sincere admiration for the intellectual curiosity and persistence that have brought you to this moment.
+The skills you have developed in competitive programming — the ability to dissect a problem, design an elegant
+algorithm, and implement it with precision — are more than just techniques to help you succeed this week. You have
+honed a special way of thinking. Your ability to take a structured, analytical approach when solving these complex
+problems is a powerful tool you’ll carry throughout your life to tackle significant challenges. From scientific discovery
+to engineering breakthroughs, you are a key part of the future of this field.
+My advice to you is to embrace the process. The thrill of competition is immense. Remember that value lies in the mental
+models you have built. Trust in your ability to reason first from principles, and do not be afraid to explore unconventional
+paths. At Google DeepMind, our goal is to build AI to accelerate scientific progress to benefit humanity. We’ve learned
+time and again that the most innovative solutions often come from a willingness to see the problem from a new perspective.
+Take a breath, recall the principles that got you here, and have fun.
+We are incredibly proud to support and cheer on every participant of ICPC. You represent the future of innovation.
+To reach this point, you’ve demonstrated an ability to think critically and creatively about complex systems. We are
+excited to see the ingenious solutions you will devise. The experience you gain here, in this intense and collaborative
+environment, will be invaluable as you go on to your careers as leaders in science and technology.
+I wish you the very best of luck, and I sincerely hope you enjoy every moment of your time at ICPC.
+Benoit SchillingsBenoit Schillings
+VP of Technology,
+Google DeepMind
+15
+ICPC World Finals Baku
+[PAGE 16]
+WELCOME  //  Letters
+Welcome
+from the UPE Executive Director
+Welcome from UPSILON PI EPSILON
+On behalf of UPE, the computer science honor society, I would like to welcome student teams and their coaches,
+ICPC support personnel, and distinguished guests to the 2025 ICPC World Finals in Baku, Azerbaijan! We are honored
+and delighted to gather in this historic city on the Caspian Sea - an extraordinary blend of ancient heritage and modern
+innovation. For many of us, it will be a memorable first visit to the Land of Fire, where tradition and cutting-edge
+technology meet.
+The ICPC World Finals is always an inspiring event for UPE. We are privileged to celebrate and recognize the world’s
+most brilliant students in computing. Each year, the ICPC World Finals remind us of the true spirit of academic excellence
+and collaboration that defines both ICPC and UPE. Thank you for your commitment, perseverance, and dedication to
+upholding these ideals.
+This year’s Finals will once again showcase that student participants are not only the best of the best but also the future
+leaders of the globally competitive world of computing. We encourage everyone to immerse themselves fully in the
+beauty and culture of Baku, from its winding historic streets to its bold modern architecture rising along the Caspian shore.
+Take in the rich cultural experience that Baku has to offer and to make the most of this incredible opportunity to learn,
+compete, and connect with peers from around the globe.
+Finally, I would like to extend our heartfelt thanks to the organizers and sponsors: the ICPC Foundation, the ICPC World
+Finals Host, ADA University, the Host sponsors Central Bank of Azerbaijan, Pasha Holding and the Innovation and Digital
+Development Agency, to the ICPC Global Sponsors Huawei and JetBrains and to the ICPC Event Sponsors OpenAI,
+Google DeepMind, and Alber Blanc for making this possible.
+Enjoy the 2025 ICPC World Finals, embrace the challenge, and build friendships that will last a lifetime.
+Orlando Madrigal Ph.D.Orlando Madrigal Ph.D.
+Executive Director of UPE
+16
+ICPC World Finals Baku
+[PAGE 17]
+[PAGE 18]
+2025
+ICPC
+WORLD
+FINALS
+Information
+[PAGE 19]
+WORLD FINALS INFORMATION  //  About the Contest
+What is the ICPC?
+The ICPC International Collegiate Programming Contest is the premiere global
+programming competition conducted by and for the world’s universities. The ICPC
+operates under the auspices of the ICPC Foundation, which hosts ICPC Global
+Headquarters. We spotlight the students, coaches, universities, industry, and
+communities working to advance prospects of prosperity through team-based,
+algorithmic, competitive programming.
+For over four decades, the ICPC has grown to be a game-changing global competitive
+educational program that has raised aspirations and performance of generations of the
+world’s problem solvers in the computing sciences and engineering. With over
+450,000 alumni, the ICPC community spans the globe, with recent annual participation
+levels reaching 10,000+ volunteers, 12,258 coaches and co-coaches serving
+73,083 team members representing 3,424 universities located in 103 countries.
+Even during several years of the COVID pandemic, with limited access to the
+competition, annual participation continued above 49,000 team members from 2,640
+universities in 93 countries.
+With ICPC principles, “Put people first.”; “Practice goodwill.” and “Follow the Golden
+Rule.”, the doors are open for students from all universities to compete in ICPC regional
+competitions with the opportunity to advance to the ICPC World Finals. See the ICPC
+Code of Ethics.
+ICPC World Finals host institutions offer hospitality comparable to visiting grandma’s
+house with special assistance to obtain passports and visas so that all who qualify
+may participate. The 49th ICPC World Finals in Baku, hosted by ADA University, will
+continue over four decades of global inclusion, advancing participants of any race,
+ethnicity, gender, religion, or nationality who qualify. The ICPC’s purpose remains to
+uplift each generation on the path of excellence to build systems that benefit their
+neighbors.
+In ICPC competitions, teams of three students represent their universities in multiple
+levels of regional competition. Volunteer coaches prepare their teams with intense
+training and instruction in algorithms, programming, and teamwork strategy. Several
+ICPC universities and ICPC volunteers provide online judging systems free of charge.
+Top teams from regional competitions held on six continents advance to the annual
+ICPC World Championship rounds of the ICPC World Finals, hosted by ADA University
+on September 4, 2025, in Baku, Azerbaijan.
+To learn more about the ICPC, visit icpc.global
+The ICPC community purpose remains at the heart of the ICPC:
+to advance prospects for the next generation by bringing
+students together, working collaboratively to solve
+algorithmically challenging problems, and preparing them to build
+dependable systems that benefit their neighbors with the support
+of universities, industry, and community leaders, globally.
+International Collegiate
+Programming Contest
+19
+ICPC World Finals Baku
+[PAGE 20]
+The ICPC
+Community
+500,000+
+Alumni
+12,000+
+Volunteers
+10,500+
+Coaches &
+Co-Coaches
+63,200+
+Students
+3,300+
+Universities
+90+
+Countries
+WORLD FINALS INFORMATION  //  About the Contest
+History
+The ICPC traces its roots to a competition held at Texas A&M in 1970
+hosted by the Alpha Chapter of the UPE Computer Science Honor
+Society. The idea quickly gained popularity within the United States
+and Canada as an innovative initiative to raise the aspirations,
+performance, and opportunity of the top students in the emerging field
+of computer science.
+The contest evolved into a multi-tier competition, with the first Finals
+held at the ACM Computer Science Conference in 1977. Operating
+under the auspices of the ICPC Foundation and headquartered at
+Baylor University from 1989 to 2021, the contest has expanded into
+a global network of universities hosting regional competitions that
+advance teams to the ICPC World Finals.
+The contest fosters creativity, teamwork, and innovation in building
+new software programs and enables students to test their ability to
+perform under pressure. It is the oldest, largest, and most prestigious
+programming contest in the world and the root of competitive
+programming competitions the world over.
+The annual event comprises several levels of competition:
+Local Contests
+Universities choose teams or hold local contests to select one or more
+teams to represent them at the next level of competition. Selection
+takes place from a field of over 300,000 students in computing
+disciplines worldwide.
+Regional Contests
+Recent ICPC Regional Contests have served 75,000 volunteers,
+coaches, and team members from 3,450 universities in 111 countries.
+World Finals
+August 31– September 5, 2025, in Baku, Azerbaijan – Hosted by
+ADA University, the ICPC World Finalist teams will compete for World
+Championship awards, prizes, and bragging rights. These teams
+represent the best of great universities on six continents - the cream
+of the crop.
+20
+ICPC World Finals Baku
+[PAGE 21]
+Battle of the Brains
+The contest pits teams of three university students against eight or more complex, real-world problems with a gruelling
+five-hour deadline. Huddled around a single computer, competitors race against the clock in a battle of logic, strategy,
+and mental endurance.
+Teammates collaborate to rank the difficulty of the problems, deduce the requirements, design test beds, and build
+software systems that solve the problems under the intense scrutiny of expert judges. For a well-versed computer
+science student, some of the problems require precision only. Others require knowledge and understanding of advanced
+algorithms. Still, others are simply too hard to solve – except, of course, for the world’s brightest problem-solvers.
+Judging is relentlessly strict. The students are given a problem statement – not a requirements document. They are given
+an example of test data, but they do not have access to the judges’ test data and acceptance criteria. Each incorrect
+solution submitted is assessed a time penalty. You don’t want to waste your customer’s time when you are dealing with
+the supreme court of computing. The team that solves the most problems in the fewest attempts in the least cumulative
+time is declared the winner.
+To learn more about the ICPC, please visit icpc.global.
+For full coverage of the World Finals, including social media, photos, video, live coverage, and live scoreboard, go to
+ICPCNews, news.icpc.global.
+WORLD FINALS INFORMATION  //  About the Contest
+Contest Growth
+The ICPC Foundation and UPE are thrilled that the contest continues to attract the best and brightest worldwide.
+The ICPC student participation has increased by 2000% in 25 years.
+For more information in the previous contests and last year’s final standings and problem sets, please see icpc.global.
+The 2025 ICPC World Finals in Baku, Azerbaijan, will host the 49th Championship, the final round for the 2024-2025
+ICPC Regionals.
+21
+ICPC World Finals Baku
+[PAGE 22]
+Recent medal winners
+48th ICPC World Finals Astana
+2024 Gold
+Peking University
+Moscow Institute of Physics and Technology
+Tsinghua University
+Tokyo Institute of Technology
+2024 Silver
+KAIST
+National University of Singapore
+Beijing Jiaotong University
+The University of Tokyo
+2024 Bronze
+Seoul National University
+Zhejiang University
+Massachusetts Institute of Technology
+Swarthmore College
+47th ICPC World Finals Luxor
+2023 Gold
+National Research University Higher School of Economics
+Peking University
+Moscow Institute of Physics and Technology
+Harbour Space University - Barcelona Campus
+2023 Silver
+Tsinghua University
+Nanjing University
+Seoul National University
+University of Waterloo
+2023 Bronze
+The University of Tokyo
+Tokyo Institute of Technology
+Brigham Young University
+University of Warsaw
+Universidad de Buenos Aires - FCEN
+University of Cambridge
+National Taiwan University
+Xi’an Jiaotong University
+46th ICPC World Finals Luxor
+2022 Gold
+Peking University
+Massachusetts Institute of Technology
+National Research University Higher School of Economics
+University of Oxford
+2022 Silver
+Moscow Institute of Physics and Technology
+Seoul National University
+Taras Shevchenko National University of Kyiv
+University of Wisconsin-Madison
+2022 Bronze
+The University of Tokyo
+Tsinghua University
+Nanjing University of Posts and Telecommunications
+National Taiwan University
+45th ICPC World Finals Dhaka
+2021 Gold
+Massachusetts Institute of Technology
+Peking University
+The University of Tokyo
+Seoul National University
+2021 Silver
+ETH Zürich
+École Normale Supérieure de Paris
+Carnegie Mellon University
+University of Warsaw
+2021 Bronze
+National Research University Higher School of Economics
+St. Petersburg State University
+University of Oxford
+University of Engineering and Technology - VNU
+WORLD FINALS INFORMATION  //  About the Contest
+22
+ICPC World Finals Baku
+[PAGE 23]
+About Azerbaijan
+Throughout its history, Azerbaijan has been a land of cultural diversity and religious tolerance. Today, it is home to
+numerous ethnic groups and communities of different faiths, coexisting in harmony. This tradition of inclusivity is deeply
+rooted in the nation’s identity.
+The official state language is Azerbaijani, celebrated as a language of poetry and music. Azerbaijan is equally renowned
+for its heritage sites – notably Gobustan – home to approximately 20 rocky enclaves containing more than 6,000
+ancient petroglyphs, the mud volcanoes, locally known as “Yanardagh” and for regional carpet weaving schools, each
+distinguished by unique designs, patterns, and techniques.
+In 1918, the Democratic Republic of Azerbaijan was founded, becoming the first Muslim republic to grant women equal
+political rights with men. During this progressive period, Baku State University, the first modern university in the Muslim
+East was established, marking a new chapter in the country’s educational history.
+Today’s Azerbaijan is rich in natural resources, particularly oil and gas, and is one of the major players in the Caspian Sea
+energy market. This abundance has earned it the title “Land of Fire,” a name inspired by the natural flames fueled by
+underground gas reserves. The country has been working to diversify its economy by investing in alternative energy sources,
+agriculture, and technology demonstrating a commitment to sustainable growth beyond its traditional oil and gas sector.
+Modern Azerbaijan is a place where Eastern traditions blend seamlessly with Western influences. A multicultural society
+and forward-looking leadership continue to drive the nation’s progress, bridging cultures and creating a hub for innovation.
+The Land of Fire is waiting for you!
+Located at the crossroads of Eastern Europe and Western Asia,
+Azerbaijan has a history dating back to the Stone Age.
+WORLD FINALS INFORMATION  //  About the Contest
+23
+ICPC World Finals Baku
+[PAGE 24]
+ICPC World Finals Baku
+Contest Rules
+Mission
+The International Collegiate Programming Contest (ICPC) provides college students
+with opportunities to interact with students from other universities and to sharpen and
+demonstrate their problem-solving, programming, and teamwork skills. The contest
+provides a platform for industry and academia to encourage and focus public attention
+on the next generation of computing professionals as they pursue excellence. (from the
+ICPC Policies and Procedures).
+Introduction
+The contest is a two-tiered competition among teams of students representing
+institutions of higher education. Teams first compete in Regional Contests held around
+the world, normally from September to March each year. Based on their performance
+in Regional Contests, top-ranking teams advance to the International Collegiate
+Programming Contest World Finals. Additional high-ranking teams may be invited to
+the World Finals. At most 142 teams will be invited to compete onsite. These rules
+are subject to change.
+Organization
+The ICPC is organized according to the ICPC Policies and Procedures in harmony
+with the ICPC Code of Ethics and Overview. The Executive Committee, chaired by
+the Executive Director, sets the policy and general rules for the conduct of the contest.
+The Executive Director is solely responsible for interpreting the rules and for ruling
+on unforeseen situations.
+Team Requirements
+Teams qualify to advance to the World Finals through Regional Contests. See the
+ICPC Regional Rules and Region-Specific Rules for details on advancing to the
+World Finals. Only one team from a given institution may advance to the World Finals.
+No team member on the qualifying team may have competed as a contestant in
+two previous World Finals.
+The coach of a qualifying team is the point of contact before and during World Finals
+activities. A contestant of a team may not serve as the coach. The coach must
+WORLD FINALS INFORMATION  //  Contest Rules
+24
+ICPC World Finals Baku
+[PAGE 25]
+See the ICPC
+Regional Rules
+and Region-Specific
+Rules for details
+on advancing to the
+World Finals.
+Only one team from
+a given institution
+may advance to the
+World Finals.
+WORLD FINALS INFORMATION  //  Contest Rules
+complete certification at the Team Certification Web Site
+within five (5) business days of notification. Qualifying teams
+will be invited by email and postal mail (if requested) soon
+after completing certification.
+All team members attending the team’s institution on visas
+must be permitted to return to their point of origin after the
+World Finals. Qualifying teams requiring visas must initiate
+the process of applying for visas within 10 business days of
+being invited to apply for a visa. Teams failing to comply with
+any of these requirements will be ruled ineligible to compete
+in the World Finals. Upon completion of these requirements,
+a qualifying team will be advanced to the World Finals.
+A team advancing to the World Finals will comprise the
+same three members as when it qualified. (Reserves are not
+allowed at the Finals.) If a team member is unwilling, unable,
+or unfit to compete in the World Finals, the coach must notify
+the ICPC Contest Manager in a timely manner. A team
+member who is unwilling or unfit to compete in the World
+Finals will be disqualified from further ICPC competitions.
+The team member may appeal disqualification to the
+Appeals Committee.
+At on-site registration, participants must provide a picture ID
+(passport, driver’s license, etc). Contestants must show proof
+of enrollment at the university during the term of the regional
+contest at which they qualified. A letter on university stationery
+with the signature of a university official accompanied by
+an English translation is sufficient. All team members are
+responsible to follow all health safety rules.
+Attendance
+Finalists must attend all required events, from On-Site
+Registration to Celebration, as indicated in the Schedule
+of Events. Failure to attend any required event could result
+in disqualification and forfeiture of scholarships and prizes.
+Coaches must be accessible during On-Site Registration,
+Dress Rehearsal, the World Finals Championship, and the
+Awards Ceremony. All team members and coaches must
+comply with any special instructions when participating in
+ICPC events.
+In particular, before coming to the stage during the Awards
+Ceremony, please ensure your team and coaches wear their
+official Contest shirts with no non-ICPC logo wear or color
+scheme that distracts from our spotlighting any other award-
+winning team. Do not bring anything with you other than
+smiles and teammates.
+25
+ICPC World Finals Baku
+[PAGE 26]
+Support and Prizes
+The ICPC Host will provide each finalist team with hotel
+accommodations for the coach and three contestants according to
+dates published on ICPC Host Invitations. The coach should identify
+any special needs during registration. The ICPC Host will seek to
+accommodate those needs at a team expense not to exceed the cost
+of one additional sleeping room. The teams and coaches will be treated
+to a full schedule of activities including a full course of complimentary
+food functions.
+Transportation to the World Finals is the responsibility of the finalists.
+The ICPC encourages teams to raise funds for transportation and
+extracurricular activities from local sources to strengthen better
+community ties among academia, industry, and government.
+Each ICPC World Finalist team is assigned to an ICPC World
+Championship Division based on the ICPC Region from which the
+team qualified.
+At the ICPC World Finals Opening Ceremony (“Opening Ceremony”),
+ICPC World Finals teams will be recognized by Division. Within a
+Division, ICPC Region Champions will be announced first.
+At the ICPC World Finals Awards Ceremony (“Awards Ceremony”),
+●  The highest ranked team competing in the ICPC World Championship
+will be recognized as the ICPC World Finals Champions and will
+receive the World Champion Trophy and plaques.
+●  Teams finishing in the top four positions will be awarded Gold Medals.
+WORLD FINALS INFORMATION  //  Contest Rules
+●  Those teams finishing fifth through eighth
+place will be awarded Silver Medals.
+●  Those teams finishing ninth through twelfth
+place will receive Bronze Medals.
+●  All medalist teams will receive plaques.
+●  All Highest Honors teams will receive
+plaques.
+●  The highest ranked team from each Division
+will receive a plaque and be recognized as
+Division Champions.
+The Division Champions are:
+- ICPC Africa & Arab Champions
+- ICPC Asia East Champions
+- ICPC Asia Pacific Champions
+- ICPC Asia West Champions
+- ICPC Europe Champions
+- ICPC Latin America Champions
+- ICPC North America Champion
+- ICPC Northern Eurasia Champions
+●  Prizes will be awarded in strict compliance
+with and as permitted by applicable laws
+governing transactions by prize donors and
+the ICPC Foundation.
+●  Shortly after the Awards Ceremony,
+individual award certificates will be posted
+on team member dashboards.
+26
+ICPC World Finals Baku
+[PAGE 27]
+WORLD FINALS INFORMATION  //  Contest Rules
+Conduct of the Finals
+Ten or more problems have been posed in recent
+World Finals.
+Problems will be posed in English. During the contest,
+all communications from contest officials to contestants
+will be in English. Each team may identify an interpreter
+to translate questions posed by contestants to contest
+officials. Contestants may bring electronic natural
+language translators to on-site registration for inspection
+and consideration for being made available to the
+team at their workstation during the competition.  Such
+devices may not support any other functionality that
+provides an advantage to the team such as electronic
+connectivity.
+Solutions to problems submitted for judging are called
+runs. Each run is judged as accepted or rejected, and
+the team is notified of the results. Rejected runs will be
+marked with one of the following::
+- compilation error (CE)
+- run-time error (RTE)
+- time-limit exceeded (TLE)
+- wrong answer (WA)
+Notification of accepted runs may be suspended at the
+appropriate time to keep the final results secret.
+A general announcement to that effect will be made
+during the contest. Notification of rejected runs will
+continue until the end of the contest.
+A contestant may submit a claim of ambiguity or error
+in a problem statement by submitting a clarification
+request. If the Judges agree that an ambiguity or error
+exists, a clarification will be issued.
+//
+The competition is scheduled to last five hours.
+The Finals Director has the authority to lengthen
+the contest in the event of unforeseen circumstances.
+Should the Contest duration be altered, every attempt
+will be made to notify contestants in a timely and uniform
+manner.
+Scoring of the Finals
+The World Finals Judges are solely responsible for
+determining the correctness of submitted runs. In
+consultation with the World Finals Judges, the Director
+of Judging is responsible for determining the winners
+of the World Finals. They are empowered to adjust for
+or adjudicate unforeseen events and conditions. Their
+decisions are final.
+Teams are ranked according to the most problems
+solved. Teams placing in the first twelve places who
+solve the same number of problems are ranked first by
+the least total time and, if need be, by the earliest time of
+submission of the last accepted run
+The total time is the sum of the time consumed for
+each problem solved. The time consumed for a solved
+problem is the time elapsed from the beginning of the
+contest to the submission of the first accepted run plus
+20 penalty minutes for every previously rejected run for
+that problem (except that there is no penalty for runs
+rejected due to Compilation Error). There is no time
+consumed for a problem that is not solved..
+Championship Honors
+Teams competing in the ICPC World Finals are eligible
+for Championship Honors awards.
+Highest Honors
+All medalist teams together with all teams solving the
+same number of problems as the minimum number of
+problems solved by any medalist team.
+High Honors
+All teams solving one fewer problem than the minimum
+number of problems solved by any medalist team.
+Honors
+All teams not receiving Highest Honors or High Honors
+solving the same number of problems or more than the
+median scoring team.
+Honorable Mention
+All teams solving fewer than the number of problems
+solved by the median scoring team.
+27
+ICPC World Finals Baku
+[PAGE 28]
+WORLD FINALS INFORMATION  //  Contest Rules
+Do not touch
+anything at the
+team workstations
+until so directed
+by the World Finals
+Director.
+Computing Environment
+The World Finals programming language tools include
+Java, C, C++, Kotlin, and Python3. See the Programming
+Environment Web Site for detailed configuration information.
+Before the World Finals, the judges will have solved all
+problems in languages from at least two of the three distinct
+language groups (Java/Kotlin, C/C++, and Python3).
+Each team will be provided with one computer. All teams
+will have equivalent computing equipment. Contestants may
+not bring any printed materials or machine-readable versions
+of software or data to the Contest Area. Contestants may not
+bring their own computers, computer terminals, calculators,
+or other electronic devices to the Contest Area.
+Each team member may bring an unannotated natural
+language printed dictionary.  Online reference materials will
+be made available as described in the Reference Materials
+section of the Programming Environment Web Site.   Each
+team will be permitted three copies of the Team Reference
+Document described in the On-Site Registration Instructions.
+Contestant Conduct
+DO NOT TOUCH ANYTHING at the team workstations until
+otherwise directed by the Finals Director.
+Contestants are not to converse with anyone except members
+of their team and personnel designated by the Finals Director.
+Systems support staff may advise contestants on system-
+related problems, such as explaining system error messages.
+A team may be disqualified by the Finals Director for any
+activity that jeopardizes the World Finals, such as dislodging
+extension cords, unauthorized modification of contest
+materials, distracting behavior, or behavior contrary to the
+ICPC Code of Ethics and Overview.
+Participant Conduct
+Any participant may be disqualified from further participation
+due to any activity that compromises an ICPC event or
+due to behavior that is not in harmony with the ICPC Code
+of Ethics and Overview.
+28
+ICPC World Finals Baku
+[PAGE 29]
+[PAGE 30]
+2025
+ICPC
+WORLD
+FINALS
+Activities
+[PAGE 31]
+ICPC World Finals Baku
+Activities
+Team Registration
+Provided by the ICPC Foundation, representatives certify
+that team paperwork and Team Reference Documents
+comply with ICPC rules. Teams receive their official
+customized T-shirts, have an official Team Photo taken
+and participate in interviews. All teams and coaches must
+present themselves for registration at the time selected
+by appointments.
+Participant Welcome
+Dinner is hosted by the Central Bank of the Republic
+of Azerbaijan to welcome all registered attendees.
+Enjoy the networking opportunity with participants of
+the 49th ICPC World Championship of the International
+Collegiate Programming Contest.
+2024 OPENING CEREMONY ASTANA 2024 SHOWCASE ASTANA
+2024 JETBRAINS TECH TREK ASTANA
+31
+ICPC World Finals Baku
+[PAGE 32]
+<Tech Trek>
+WORLD FINALS INFORMATION  //  Activities
+CLI Symposium
+Join us to hear from thought leaders in this three-night
+speaker series chaired by Christian Lim. The 2025
+Competititve Learning Institute Symposium features
+a three track structure:
+August 31 // ICPC Compete Track
+> discussions on programming competitions, news,
+instructions and tools
+September 1 // ICPC Educate Track
+> discussions on tools and resources for learning about
+competitive programming
+September 3 // ICPC Library Track
+> living library of ICPC history including news, analytics,
+contest archives and more
+Tech Showcase
+and Chill Zone
+This special on-site environment is courtesy of the ADA
+University and the ICPC Foundation. It’s a great way to
+learn about new technologies and innovative practices
+directly from industry visionaries as well as an area to
+relax, play games, engage with other teams and interact
+with neat demos featuring varied, innovative technologies,
+solve challenges that top companies are working on,
+meet your future colleagues, communicate with
+ICPC Alumni, relax and discover future opportunities.
+Don’t forget to bring your business cards!
+ICPC Alumni Talk
+ICPC World Finals is a unique opportunity to get together,
+get to know each other better, share knowledge, and help
+fellow programmers.
+The ICPC Foundation is honored to announce a
+presentation by Jeremy Fineman, Professor, Director
+of Graduate Studies, and Wagner Chair of Computer
+Science at Georgetown University. His main research
+interest is in algorithm design and analysis, with a focus
+on data structures, parallel algorithms, memory-efficient
+algorithms, and scheduling. He received his Ph.D. from
+MIT in 2009 and did a postdoc at CMU before starting
+at Georgetown in 2011. Don’t miss this chance to ask
+your questions!
+Opening Ceremony
+This required event recognizes some of the hundreds of
+volunteers who have worked to make this year’s World
+Finals a reality and represents the first public introduction
+of this year’s World Finals contestants – the best of the
+best collegiate programmers.
+Dress Rehearsal
+This required event is a full-scale rehearsal and practice
+of the World Finals. During the Dress Rehearsal, you will
+have the opportunity to submit questions on the process
+that will be answered directly afterward at the “Answers
+to Questions” session, following an open practice slot to
+apply those learnings.
+2024 CLI SYMPOSIUM ASTANA
+32
+ICPC World Finals Baku
+[PAGE 33]
+WORLD FINALS INFORMATION  //  Activities
+Tech Trek
+Brought to you by ICPC Global Programming Tools
+sponsor, JetBrains, Tech Trek is a required activity that
+brings you a showcase of modern software development
+technologies, leading engineering and educational tools,
+and so much more.
+ICPC Challenge
+The ICPC Challenge powered by Huawei is a required
+activity that presents a problem from some domains
+in computing. The domain and problem style may be
+very different from the standard ICPC problems. This
+contest provides ICPC participants the opportunity to
+learn about and experience leading-edge issues in
+computing, typically of contemporary interest to industry.
+The ICPC Challenge also provides a platform for ICPC
+to experiment with new problem types. Get ready for
+the opportunity to win some amazing prizes provided by
+ICPC Global Diamond Sponsor Huawei!
+Coaches Award
+Ceremony
+This event celebrates the commitment of ICPC coaches
+that bring teams to the World Finals for a significant
+number of years:
+Lifetime Coach Award (twenty or more years),
+Senior Coach Award (fifteen or more years),
+Master Coach Award (ten or more years),
+Coach Award (five or more years).
+The World Finals
+The time has come! Teams from six continents battle
+in a five-hour competition to see who takes home this
+year’s prizes, accolades, and bragging rights as the top
+collegiate programmers in the world.
+Awards Ceremony
+This required event will be held to resolve the last hour
+of pending submissions, discover the 2025 ICPC World
+Champions and medal winners, and recognize the
+ICPC Challenge winners.
+Celebration
+Qualifying for the World Finals is no small feat.
+This night celebrates all teams. Relax, enjoy, and share
+memories from the week’s events in an interactive
+and fun experience.
+2024 AWARDS CEREMONY ASTANA
+33
+ICPC World Finals Baku
+[PAGE 34]
+TIME// 8:00pm – 10:30pm            LOCATION// Marriott Blvd - Tagiyev Ballroom
+2025
+// CLI Symposium
+// August 31, 2025
+SESSION CHAIR
+Etienne Vouga
+University of Texas at Austin
+PRESENTERS
+John Buck
+C-Scape, Inc.
+Marc Furon
+ICPC North America Southern California
+Mateusz Radecki
+University of Warsaw
+Tolga Can
+Colorado School of Mines
+Ryan Farrell
+Brigham Young University
+Christian Yongwhan Lim
+Arklex AI / Columbia University
+ICPC
+Compete
+Discussions on competitive
+programming competitions at
+different levels including news,
+instructions, and tools for entering
+ICPC contests, ICPC endorsed
+contests, and practice contests.
+// September 3, 2025
+SESSION CHAIR
+Fredrik Niemela
+Kattis
+PRESENTERS
+Arup Guha
+University of Central Florida
+Joshua Andersson
+Chalmers University of Technology
+Rasmus Hulthe
+Chalmers University of Technology
+Miguel Revilla Rodríguez
+OJBooks
+Emilio Revilla Rodríguez
+OJBooks
+Cristina Redondo García
+OJBooks
+ICPC
+Library
+Discussions on a living library
+of ICPC history, including news,
+analytics, problem sets, solutions,
+judge archives, contest archives,
+awards, and other artifacts of
+ICPC history.
+// September 1, 2025
+SESSION CHAIR
+Erich Baker
+Belmont University
+PRESENTERS
+Christian Yongwhan Lim
+Arklex AI / Columbia University
+Jerzy Jaromczyk
+University of Kentucky
+Bob Roggio
+University of North Florida
+Zhou Yu
+Arklex AI / Columbia University
+ICPC
+Educate
+Discussions on tools and resources
+for learning about competitive
+programming, including scholarly
+works, tutorials, algorithms from
+theory to application, strategies,
+coaching methods, and programs
+for quick development.
+Symposium Chair:
+Christian Yongwhan Lim
+[PAGE 35]
+AND...
+IN BAKU
+This Challenge will be based on Photos Tessellation Optimization.
+Photo-aesthetic composition embodies a user-centered popular
+design philosophy, while the tessellation problem corresponds to a
+classic geometric challenge. When these two issues, one traditional,
+the other modern, are merged, they give rise to a geometry-based
+optimization problem grounded in tiling theory. The challenge is to
+devise an optimization algorithm that simultaneously satisfies both
+the tiling constraints and the aesthetic objectives. Innovative ideas
+will be incorporated into the aesthetic design of the photo album.
+ICPC Challenge Contestants will be separated into two areas.
+Coaches can participate at the 2nd Floor Restaurant of the
+Convention Center, and World Finals participants will be competing
+in the Team Area that will be used for the 2025 ICPC World Finals.
+Prizes will be awarded to the teams ranking in the 1st, 2nd, and 3rd
+positions (4 teams per rank), and top 6 coaches will also be
+rewardedʢone 1st prize, two 2nd prize, three 3rd prizeʣ.
+We wish all contestants the best of luck during both this Challenge,
+and the 2025 ICPC World Finals!
+We look forward
+to welcoming
+you to the 2025
+ICPC Challenge
+powered by
+Huawei, which
+will take place
+on Wednesday,
+September 3rd
+from 11am-2pm.
+local time (UTC/GMT+4)
+[PAGE 36]
+The ICPC Challenge powered by Huawei provides an opportunity for the ICPC community to
+experience training, practice and performance in new problem areas that showcase emerging
+technologies addressing contemporary issues. The Challenge fosters extra-curricular
+development of university students, faculty, and alumni. We look forward to seeing all teams
+and coaches during the Challenge on September 3, 2024.
+Photographer: Rob Brown
+[PAGE 37]
+2025
+ICPC
+WORLD
+FINALS
+The Host
+[PAGE 38]
+ICPC World Finals Baku
+Host & Venues
+About the Host
+ADA University
+Founded in 2006 in Baku, ADA University has quickly
+established itself as one of Azerbaijan’s most prestigious
+centers for higher education.
+ADA’s mission is to prepare global-minded and innovative
+leaders through high-quality education, and research.
+The university places strong emphasis on social
+responsibility, striving to add value to society.
+With its modern architecture and eco-friendly design,
+ADA’s campus reflects a deep commitment to
+sustainability and innovation. The university actively
+fosters partnerships with leading institutions worldwide,
+welcoming students and faculty from multiple countries,
+and offering a truly multicultural learning experience.
+Academic programs are designed to meet the demands
+of a rapidly changing world, with a focus on diplomacy,
+business, information technologies, public policy, and
+education. This multidisciplinary approach equips
+graduates with the skills needed to succeed in both
+local and global contexts.
+ADA University is also a hub for thought leadership,
+hosting conferences, workshops, and forums that bring
+together policymakers, scholars, and industry leaders
+to discuss global and regional issues.
+ADA’s alumni network is growing rapidly, with graduates
+making significant contributions in public service,
+international organizations, academia, and the private
+sector.
+Today, ADA University has become a symbol of academic
+excellence in Azerbaijan and the wider region.
+WORLD FINALS INFORMATION  //  The Host  // About the Host
+38
+ICPC World Finals Baku
+[PAGE 39]
+Baku
+Baku is a city of contrasts. From a unique blend of medieval structures, to Soviet-era buildings, and modern skyscrapers,
+the architectural spirit of the city is diverse. It’s a multicultural city, where people of different faiths have coexisted
+peacefully for centuries. The iconic Maiden Tower, Shirvanshah’s Palace, UNESCO-listed Old City, and the modern
+Flame Towers can be considered as the main symbols of the city. Also a hub for higher education, innovation, and
+technological development, Baku’s top universities are nurturing future leaders.
+Explore the wonders of Baku, the city of winds is waiting for you! For more information about the attractions visit:
+worldfinals.icpc.global/baku.html
+WORLD FINALS INFORMATION  //  The Host  // About the Host City
+Baku, the capital of Azerbaijan, also known as the “city of
+winds” is located on the western shore of the Caspian Sea.
+Archaeological findings trace human settlements in the area
+back to the Stone Age, while written records mention the
+city’s name as early as the 5th century.
+39
+ICPC World Finals Baku
+[PAGE 40]
+WORLD FINALS INFORMATION  //  The Host  // About the Host Venues
+Baku Convention
+Center
+Situated in the heart of Baku, the center was
+designed to be a “dancing partner” to the Heydar
+Aliyev Center with it’s open views and connecting
+public space featuring garden beds, fountains
+and seating areas. Equipped with advanced
+technology, the center regularly hosts major
+international exhibitions and events, making it an
+ideal location for the 2025 ICPC World Finals.
+Heydar Aliyev
+Center
+Renowned for its iconic, fluid, and futuristic
+architectural design by Zaha Hadid. It’s a major
+Baku landmark and cultural hub housing a
+museum, auditorium, and gallery spaces. The
+building’s distinctive curves and absence of sharp
+angles symbolize the fluidity of Azerbaijani culture
+and progress.
+Baku Expo Center
+With beautifully landscapes grounds, ample
+space, modern amenities and high-quality
+service, the Baku Expo Center  is the ideal venue
+for the 2025 ICPC World Finals.
+40
+ICPC World Finals Baku
+[PAGE 41]
+Baku
+Marriott Hotel
+Boulevard
+Baku Marriott Hotel Boulevard is a
+premier seaside retreat located in
+the heart of Baku’s most eco-friendly
+White City district offering exceptional
+amenities and panoramic views of the
+Caspian Sea.
+With its modern design and elegantly
+appointed rooms, discover unparalleled
+comfort and hospitality at Baku Marriott
+Hotel Boulevard.
+Free WiFi
+Wellness Spa
+Heated Indoor Pool
+Fitness Center
+Barber/Salon
+WORLD FINALS INFORMATION  //  The Host
+41
+ICPC World Finals Baku
+[PAGE 42]
+About the Host Hotels
+JW Marriott
+Absheron Baku
+JW Marriott Absheron Baku is ideally located
+among the city centre’s futuristic skyline and
+historic buildings.
+This stylish, modern 5-star luxury hotel
+offers exceptional comfort and amenities
+to business and leisure travelers alike.
+Lavishly appointed rooms featuring views
+of the Caspian Sea, luxury bedding and
+the latest technology provide the ultimate
+in comfort.
+The hotel is set in the heart of the business,
+shopping and entertainment district with
+Azadliq Square, Baku Boulevard and high-
+end retailers just steps away.
+Free WiFi
+Fitness Center
+Rooftop Indoor Pool
+Wellness Spa
+WORLD FINALS INFORMATION  //  The Host
+42
+ICPC World Finals Baku
+[PAGE 43]
+ICPC World Finals Baku
+Must-Experience Checklist
+WORLD FINALS INFORMATION  //  The Host
+The 2025 ICPC World Finals
+Maiden Tower
+National Art Museum
+of Azerbaijan
+Victory Park and Museum
+Flame Towers
+Azerbaijan Carpet Museum
+Icherisheher Baku Boulevard (National Park) Ateshgah (Fire Temple)
+43
+ICPC World Finals Baku
+[PAGE 44]
+2025
+ICPC
+WORLD
+FINALS
+Organizers
+and Sponsors
+[PAGE 45]
+The ICPC Foundation
+The ICPC Foundation advances the art and sport of competitive
+programming. The ICPC Foundation is a 501(c)(3) charity. According to
+ICPC Policies and Procedures, the ICPC Foundation is responsible for
+sponsorship, hosting, fundraising, outreach, and operational models in
+adherence to ICPC Policies and Procedures and the ICPC Foundation
+Constitution and By-Laws. The ICPC Foundation Board has served the
+ICPC community for over 250 years out of a love for the community’s
+impact on the next generation, and a willingness to step forward on
+behalf of the ICPC.
+icpc.foundation
+Upsilon Pi Epsilon
+The Upsilon Pi Epsilon International Computer Science Honor Society
+recognizes the best students of computer science and engineering
+from around the world. Since it began participating, the UPE has
+provided support and scholarships to the World Finals teams. The UPE
+boasts the longest continuous relationship with the ICPC, dating back
+to 1970 when the first event was held at Texas A&M by members of the
+Alpha Chapter of the UPE.
+upe.acm.org
+ICPC World Finals Baku
+Organizers and Sponsors
+WORLD FINALS INFORMATION  //  Organizers and Sponsors
+45
+ICPC World Finals Baku
+[PAGE 46]
+ICPC World Finals Diamond Sponsor
+ICPC Multi-Regional Sponsor
+Huawei
+Founded in 1987, Huawei is a leading global provider of information and communications
+technology (ICT) infrastructure and smart devices. We have more than 197,000 employees and
+operate in over 170 countries and regions, serving more than three billion people around the
+world.
+Our vision and mission is to bring digital technology to every person, home and organization for
+a fully connected, intelligent world. To this end, we will drive ubiquitous connectivity and promote
+equal access to networks; bring cloud and artificial intelligence to every corner of the earth to
+provide superior computing power where you need it, when you need it; build digital platforms to
+help all industries and organizations become more agile, efficient, and dynamic; redefine user
+experiences with AI, making it more personalized for people in all aspects of their lives, whether
+they’re at home, in the office, or on the go.
+huawei.com
+ICPC Global Sponsor Programming Tools
+JetBrains
+JetBrains is a global software company that creates professional software development tools
+and advanced collaboration solutions trusted by more than 15 million users worldwide. Since
+2000, we have built a product catalog that covers all stages of the software development cycle,
+major technologies, programming languages and educational processes.
+As developers of the Kotlin programming language and creators of professional development
+products like IntelliJ IDEA, CLion, and PyCharm, as well as educational tools that help people
+learn and teach computer programming, we are dedicated to supporting individuals throughout
+their software development journeys. Sponsoring ICPC has special significance for JetBrains
+and aligns with our commitment to nurturing promising young talent and working with the
+brightest minds.
+Visit jetbrains.com/icpc to learn about JetBrains’ involvement with the ICPC and find materials
+on how the company supports the brilliant minds of the ICPC community.
+jetbrains.com
+WORLD FINALS INFORMATION  //  Organizers and Sponsors
+46
+ICPC World Finals Baku
+[PAGE 47]
+WORLD FINALS INFORMATION  //  Organizers and Sponsors
+ICPC World Finals Diamond Sponsor
+OpenAI
+OpenAI is an AI research and deployment company. Our mission is to ensure that artificial
+general intelligence benefits all of humanity.
+Stay connected with OpenAI’s Emerging Talent Community! Join a network of competitive
+coders and AI enthusiasts at OpenAI. Sign up to receive updates on new roles and upcoming
+community events.
+openai.com
+ICPC World Finals Gold Sponsor
+Google DeepMind
+Google DeepMind is a world-leading AI research lab with British heritage and an international
+team, committed to building AI responsibly, delivering scientific breakthroughs, and creating
+products that improve billions of lives.
+The unit’s breakthroughs over the last decade include AlphaGo - the first computer program to
+defeat a Go world champion, Transformers - neural networks that underpin all modern language
+models, AlphaFold - an AI model that can accurately predict the structure of proteins, DNA,
+RNA, ligands and more, and how they interact, and Gemini, a family of versatile AI models
+built from the ground up for multimodality, seamlessly combining and understanding text, code,
+images, audio and video.
+deepmind.google
+ICPC Gold Sponsor
+Àlber Blanc
+Alber Blanc is a high-frequency trading firm where ICPC alumni thrive.
+Founded in 2010, the firm has been independently managing its own capital and building
+everything in-house—from low-latency trading systems to advanced research tools. Their team
+includes many former ICPC competitors who now apply their skills to real-world markets. If you
+enjoy algorithmic challenges and writing elegant code, you’ll find a like-minded community here.
+alberblanc.com
+47
+ICPC World Finals Baku
+[PAGE 48]
+WORLD FINALS INFORMATION  //  Organizers and Sponsors
+Host Platinum Sponsor
+Pasha Holding
+“PASHA Holding” Limited Liability Company (PASHA Holding or PASHA Holding LLC) through
+its subsidiaries, invests in banking, insurance, construction, information technology, the property
+development and tourism sectors.
+Established in 2006 and employing over 22,000 people within the Group, the Holding builds its
+business on the basis of effective management, corporate governance and well-thought-out
+investment decisions.
+pasha-holding.az
+Host Operation Partner
+Innovation and Digital Development
+Agency
+Innovation and Digital Development Agency, established under the Ministry of Digital
+Development and Transport of Azerbaijan in 2021, serves to contribute to the field of digital
+transformation and strengthen the innovation ecosystem of the country. Among its priority
+directions are organizing digital government and digital society, developing and promoting
+digital public services, supporting local and foreign ICT businesses by enabling the environment
+for their accommodation and growth, supporting human capital development in the field of
+ICT, as well as fostering innovation through startup and tech entrepreneurship programs,
+international partnerships, and investment initiatives.
+IDDA is focused on developing digital solutions to streamline data exchange and enhance
+processes for citizens, government, and businesses in Azerbaijan. Additionally, IDDA is
+committed to capacity building and human capital development, including initiatives to create,
+reskill, and upskill IT specialists.
+idda.az
+48
+ICPC World Finals Baku
+[PAGE 49]
+[PAGE 50]
+2025
+ICPC
+WORLD
+FINALS
+The Judges
+[PAGE 51]
+ICPC World Finals Baku
+Judges
+Jo Perry
+North Carolina
+State University
+Director of Judging
+since 2010
+World Finals Judge
+since 1988
+John Bonomo
+Westminster College
+World Finals Chief
+Judge since 2010
+World Finals Judge
+since 2002
+THE JUDGES
+From the judges of the best
+student programming contest
+in the world to the best student
+programmers in the world:
+We have the greatest respect
+for what you have accomplished
+so far, and we hope that all of you
+will perform at your peak in this
+2025 ICPC Championship.
+Good luck to all the teams.
+Here’s where all your hard work
+will pay off! And don’t forget –
+owl be watching you!
+Arnav Sastry
+Jump Trading
+World Finals Judge
+since 2020
+As the problems get harder, the
+teamwork becomes more important.
+Good luck, and have fun!
+51
+ICPC World Finals Baku
+[PAGE 52]
+ICPC World Finals Baku
+Judges
+THE JUDGES
+Bruce Merry
+South African Radio
+Astronomy Observatory
+World Finals Judge
+since 2016
+Good luck, and may your code be
+free from bugs.
+Gennady
+Korotkevich
+World Finals Judge
+since 2024
+Derek Kisman
+Apple
+World Finals Judge
+since 2004
+There are problems that make
+champions, and then there are
+problems that champions make.
+Practice outside your comfort zone,
+and your comfort zone will grow...
+52
+ICPC World Finals Baku
+[PAGE 53]
+ICPC World Finals Baku
+Judges
+Michal Svargerka
+HFT crypto startup /
+ETH Zürich
+World Finals Judge
+since 2019
+THE JUDGES
+Give it your best and enjoy the ride!
+Martin Kacer
+Czech Technical
+University in Prague
+World Finals Judge
+since 2003
+Today’s world has more and more
+challenges. Maybe you will help to
+solve some of them in the future.
+For now, let’s practice on solving
+our problems in this competition.
+Good luck in the contest! Don’t let the
+code bugs bite. And the best wishes
+for your future careers!
+This is an exciting time to be in
+computer science - learn as much
+as you can, build something great
+and change the world!
+Matthias Ruhl
+World Finals Judge
+since 1997
+53
+ICPC World Finals Baku
+[PAGE 54]
+ICPC World Finals Baku
+Judges
+Per Austrin
+KTH Royal Institute of
+Technology, Stockholm
+World Finals Judge
+since 2008
+THE JUDGES
+Don’t Panic.
+Onufry
+Wojtaszczyk
+Google
+World Finals Judge
+since 2011
+Computers (and, obviously, computer
+programmers) are the most likely the
+cause of both universal human utopia
+and of human extinction in the next
+10 years. With great power comes
+great responsibility - choose wisely!
+Paul Wild
+University of Erlangen-
+Nürnberg
+World Finals Judge
+since 2023
+Programs are proofs, and
+programming is proving.
+54
+ICPC World Finals Baku
+[PAGE 55]
+ICPC World Finals Baku
+Judges
+THE JUDGES
+Yujie An
+Google
+World Finals Judge
+since 2022
+Don’t worry, be happy.
+Walter Guttman
+University of Canterbury
+World Finals Judge
+since 2011
+Every problem in our set has an
+answer, you can bet. Code it quick
+if you can find it, else move on
+and never mind it.
+55
+ICPC World Finals Baku
+[PAGE 56]
+news.icpc.global
+#ICPCBaku
+[PAGE 57]
+2025
+ICPC
+WORLD
+FINALS
+Leadership
+Awards
+[PAGE 58]
+The ICPC Foundation
+Mark Measures
+Distinguished Service Award
+Presented to
+Fredrik Niemelä
+ICPC Problem Archive Director
+ICPC Standards Committee Chair
+The Mark Measures Distinguished Service Award is presented
+annually to a person or group who has played an instrumental role
+in the success of the International Collegiate Programming Contest
+for fifteen or more years.
+Presented at the 2025 ICPC World Finals,
+September 2025, Baku, Azerbaijan
+As a globally recognized volunteer leader, Fredrik has served the ICPC
+community for more than 20 years, playing key roles in the structure,
+organization, and evolution of both the ICPC World Finals and Regionals.
+He served as the 2009 ICPC World Finals Director where he was a
+founder of the first ICPC Live event. He is the co-inventor of the ICPC
+World Finals Resolver, first used by the ICPC Northwestern Europe
+Regionals in 2006. Fredrik has a long history of providing Kattis contest
+control service to regionals worldwide, especially in both Europe and
+North America. Fredrik has been a key volunteer for the ICPC North
+America Championship since its inception and for the ICPC World
+Finals for more than 15 years. He has served with distinction during
+extraordinary times. In service and commitment to excellence, Fredrik
+embodies the ideals of the ICPC.
+LEADERSHIP AWARDS  //  The ICPC Foundation
+58
+ICPC World Finals Baku
+[PAGE 59]
+The ICPC Foundation
+Mark Measures
+Distinguished Service Award
+Presented to
+Samir Ashoo
+ICPC Deputy Technical Director
+The Mark Measures Distinguished Service Award is presented
+annually to a person or group who has played an instrumental role
+in the success of the International Collegiate Programming Contest
+for fifteen or more years.
+Presented at the 2025 ICPC World Finals,
+September 2025, Baku, Azerbaijan
+As a globally recognized volunteer leader, Sam has been a driving force
+in delivering mission critical systems, development, and management
+for the ICPC community for 34 years. He joined the PC^2 contest
+control system development team after competing in two ICPC regionals.
+Among his technical contributions, Sam added network submission
+features to PC^2, and served as a lynchpin technical staff expert at
+regionals from California to Sharm el-Sheikh, serving on the ICPC
+North America Championship systems team since NAC’s inception,
+and serving as Systems Manager of the ICPC World Finals Systems
+Operations Team. He is a CLI Fellow and recipient of the DeBlasi Award.
+He is ICPC Deputy Director of Technology. His mission-critical service
+has made a difference in the lives of nearly two generations of ICPC
+student alumni. Sam embodies the ideals of the ICPC.
+LEADERSHIP AWARDS  //  The ICPC Foundation
+59
+ICPC World Finals Baku
+[PAGE 60]
+The ICPC Foundation
+Joseph S. DeBlasi
+Outstanding Contribution
+Award
+Presented to
+International Collegiate
+Programming Contest
+LEADERSHIP AWARDS  //  The ICPC Foundation
+Fuad Hajiyev
+ICPC Azerbaijan Leadership
+The Joseph S. DeBlasi Outstanding Contribution Award is presented
+annually to a person or group who has played an instrumental role in
+the success of the ICPC for five or more years.
+Presented at the 2025 ICPC World Finals,
+September 2025, Baku, Azerbaijan
+In recognition of his outstanding contributions to the development of
+the ICPC community in both Azerbaijan and Kazakhstan, Fuad has
+emerged as a leading figure in the South Caucasus ICPC movement.
+His efforts have played a crucial role in uniting the region, significantly
+elevating the quality of teams and competitions, and enhancing the
+international reputation of ICPC Azerbaijan. Fuad’s pivotal role in
+organizing the ICPC World Championship final in Baku is particularly
+noteworthy and merits high praise and recognition.
+60
+ICPC World Finals Baku
+[PAGE 61]
+The ICPC Foundation
+Joseph S. DeBlasi
+Outstanding Contribution
+Award
+Presented to
+International Collegiate
+Programming Contest
+LEADERSHIP AWARDS  //  The ICPC Foundation
+Etibar Seyidzade
+ICPC Azerbaijan Leadership
+The Joseph S. DeBlasi Outstanding Contribution Award is presented
+annually to a person or group who has played an instrumental role in
+the success of the ICPC for five or more years.
+Presented at the 2025 ICPC World Finals,
+September 2025, Baku, Azerbaijan
+In recognition of his outstanding contributions to the growth and
+development of the ICPC movement in Azerbaijan, Etibar stands as
+one of the pioneering founders of the Azerbaijani ICPC community,
+which proudly celebrates its 20th anniversary this year. Through his
+dedicated leadership as Director of ICPC Azerbaijan, Etibar has
+significantly increased student participation in international programming
+competitions. His efforts have not only elevated the performance of
+regional teams over the past 3-4 years but have also strengthened
+Azerbaijan’s standing on the global ICPC stage.
+61
+ICPC World Finals Baku
+[PAGE 62]
+The ICPC Foundation
+James Comer
+Distinguished Regional
+Contest Director Award
+Presented to
+LEADERSHIP AWARDS  //  The ICPC Foundation
+International Collegiate
+Programming Contest
+Fuad Hajiev
+World Finals Director
+ADA University
+The James Comer Distinguished Regional Contest Director Award
+is presented annually to an ICPC regional leader who has played
+instrumental roles in the success of the International Collegiate
+Programming Contest for twenty or more years.
+Presented at the 2025 ICPC World Finals,
+September 2025, Baku, Azerbaijan
+For his outstanding contribution to the development of ICPC in
+Azerbaijan and his long-standing work as a coach and regional
+leader, Fuad Hajiyev deserves special recognition. As the coach of
+ADA University’s first ICPC World Finals team and a key figure in
+organizing training camps and regional contests, he played a vital role
+in establishing Azerbaijan on the global competitive programming map.
+His dedication continues to inspire a new generation of programmers
+and strengthens international cooperation.
+62
+ICPC World Finals Baku
+[PAGE 63]
+The ICPC Foundation
+James Comer
+Distinguished Regional
+Contest Director Award
+Presented to
+LEADERSHIP AWARDS  //  The ICPC Foundation
+Jan Madey
+University of Warsaw
+The James Comer Distinguished Regional Contest Director Award
+is presented annually to an ICPC regional leader who has played
+instrumental roles in the success of the International Collegiate
+Programming Contest for twenty or more years.
+Presented at the 2025 ICPC World Finals,
+September 2025, Baku, Azerbaijan
+For his outstanding contribution to the development of the ICPC
+in Poland and his long-standing work as a coach and organizer,
+Professor Jan Madey deserves special recognition. As the driving force
+behind ICPC at the University of Warsaw and as World Finals Director
+and co-organizer of the ICPC 2012 World Finals, he played a key
+role in building one of the most successful competitive programming
+institutions in the world. His decades of dedication have shaped
+generations of top programmers and elevated Poland’s standing in the
+global computing community to the highest tier.
+63
+ICPC World Finals Baku
+[PAGE 64]
+The ICPC Foundation
+C.J. Hwang
+Distinguished Regional
+Leadership Awards
+Presented to
+LEADERSHIP AWARDS  //  The ICPC Foundation
+Jonathan Irvin Gunawan
+Steven Halim
+Le Don Khue
+Min-Zheng Sieh
+Rie Shigetomi Yamaguchi
+The leadership for the first ICPC
+Asia Pacific Championships
+The C.J. Hwang Distinguished Regional Leadership Award is
+presented annually to a group of ICPC regional leaders who have
+played instrumental roles in the success of the International Collegiate
+Programming Contest.
+Presented at the 2025 ICPC World Finals,
+September 2025, Baku, Azerbaijan
+The collective contributions of this pioneer team have made the first
+two Asia Pacific Championships possible - after challenging Covid
+years delaying them. Their engagement with the ICPC has been
+essential in making the first Asia Pacific Championships possible.
+64
+ICPC World Finals Baku
+[PAGE 65]
+The ICPC Foundation
+Global Service Award
+Presented to
+LEADERSHIP AWARDS  //  The ICPC Foundation
+Huawei
+ICPC World Finals Diamond Sponsor
+ICPC Multi-Regional Sponsor
+The ICPC Foundation Global Service Award is presented for
+global contributions to the success of the International Collegiate
+Programming Contest global community in keeping with the
+mission of the ICPC Foundation to advance the art and sport
+of competitive programming.
+Presented at the 2025 ICPC World Finals,
+September 2025, Baku, Azerbaijan
+For providing exceptional support for multiple ICPC Regionals and
+ICPC Region Championships across the globe, for your generous
+support of the ICPC World Finals in Baku and ICPC World Finals
+Challenges that lead university students to explore new horizons of
+digital community, and for championing problem solvers everywhere,
+THANK YOU!
+65
+ICPC World Finals Baku
+[PAGE 66]
+The ICPC Foundation
+Global Service Award
+Presented to
+LEADERSHIP AWARDS  //  The ICPC Foundation
+JetBrains
+ICPC Global Programming Tools
+Sponsor
+The ICPC Foundation Global Service Award is presented for
+global contributions to the success of the International Collegiate
+Programming Contest global community in keeping with the
+mission of the ICPC Foundation to advance the art and sport
+of competitive programming.
+Presented at the 2025 ICPC World Finals,
+September 2025, Baku, Azerbaijan
+For providing extraordinary programming tools to all students
+competing in the ICPC Regionals, ICPC Region Championships,
+and ICPC World Finals, for your generous support of the ICPC World
+Finals in Baku, for decades of commitment to the ICPC community,
+and for championing champions of the next generation,
+THANK YOU!
+66
+ICPC World Finals Baku
+[PAGE 67]
+The ICPC Foundation
+International Contribution
+Award
+Presented to
+LEADERSHIP AWARDS  //  The ICPC Foundation
+Hafiz Pashayev
+Rector of ADA University
+The ICPC Foundation International Contribution Award is presented
+to an individual or group that has played an instrumental role in the
+success of advancing the art and science of competitive programming
+through support of the International Collegiate Programming Contest.
+Presented at the 2025 ICPC World Finals,
+September 2025, Baku, Azerbaijan
+His Excellency Ambassador Hafiz Pashayev, Rector of ADA University,
+deserves special recognition for creating an inspiring academic
+environment. His dedication to empowering future generations will
+leave an indelible legacy that will impact the lives of the people of this
+beautiful country and resonate across the world for decades to come.
+His support for students and the global programming community will
+have a ripple effect for many years. Deep gratitude is expressed for
+his contribution to promoting Azerbaijan as a hub for IT innovation and
+opportunities for youth.
+67
+ICPC World Finals Baku
+[PAGE 68]
+The ICPC Foundation
+International Contribution
+Award
+Presented to
+LEADERSHIP AWARDS  //  The ICPC Foundation
+ADA University
+Hafiz Pashayev
+Fariz Ismayilzade
+Natig Hajiyev
+Araz Yusubov
+Sabina Amirova
+Fuad Hajiyev
+The ICPC Foundation Outstanding International Contribution Award
+is presented to an individual or group that has played an instrumental
+role in the success of advancing the art and science of competitive
+programming through support of the International Collegiate
+Programming Contest.
+Presented at the 2025 ICPC World Finals,
+September 2025, Baku, Azerbaijan
+As a prestigious center of excellence in science and education, ADA
+University is recognized as a regional leader in competitive programming.
+ADA University is a pillar of the ICPC global community, demonstrating
+its outstanding organizational prowess and commitment serving as
+Host of the 2025 ICPC World Finals in Baku. The professionalism and
+seamless coordination of the Host team was flawless, further enhancing
+Azerbaijan’s international reputation in the IT sector. We extend our
+sincere gratitude to ADA University for steadfast contributions to the
+development of competitive programming and continued support for
+nurturing young talent ensured all of a world-class competition.
+68
+ICPC World Finals Baku
+[PAGE 69]
+The ICPC Foundation
+International Contribution
+Award
+Presented to
+LEADERSHIP AWARDS  //  The ICPC Foundation
+Taleh Kazimov
+Governor of the Central Bank
+of the Republic of Azerbaijan
+The ICPC Foundation Outstanding International Contribution Award
+is presented to an individual or group that has played an instrumental
+role in the success of advancing the art and science of competitive
+programming through support of the International Collegiate
+Programming Contest.
+Presented at the 2025 ICPC World Finals,
+September 2025, Baku, Azerbaijan
+Taleh Kazimov, Governor of the Central Bank of the Republic of
+Azerbaijan, deserves special recognition for his vital and decisive
+support of the ICPC World Finals in Azerbaijan. His leadership and
+commitment were instrumental in creating the conditions necessary to
+stage this international competition successfully. The Central Bank’s
+financial and organizational support was indispensable to making the
+Finals possible.
+69
+ICPC World Finals Baku
+[PAGE 70]
+The ICPC Foundation
+International Contribution
+Award
+Presented to
+LEADERSHIP AWARDS  //  The ICPC Foundation
+Central Bank of the
+Republic of Azerbaijan
+Taleh Kazimov
+Vusal Khalilov
+Sadig Akhundov
+Fidan Tofidi
+Afgan Abbasov
+The ICPC Foundation Outstanding International Contribution Award
+is presented to an individual or group that has played an instrumental
+role in the success of advancing the art and science of competitive
+programming through support of the International Collegiate
+Programming Contest.
+Presented at the 2025 ICPC World Finals,
+September 2025, Baku, Azerbaijan
+As Host Partner, CBAR played several central roles key to the success
+of the 2025 ICPC World Finals in Baku. In addition to being the single
+greatest host benefactor, CBAR provided mission-critical expertise
+in support of the complex organizational, technical, and operational
+functions essential to producing the World Finals. As the pre-eminent
+employer of ICPC alumni in Azerbaijan, CBAR attracts talent. CBAR
+also empowers talent through investment in the country’s IT sector.
+CBAR is the leader in digitalization and delivery of financial e-services
+for the community. CBAR deserves special recognition for its significant
+and decisive contributions to the success of the ICPC World Finals
+in Baku.
+70
+ICPC World Finals Baku
+[PAGE 71]
+The ICPC Foundation
+International Contribution
+Award
+Presented to
+LEADERSHIP AWARDS  //  The ICPC Foundation
+Innovation and Digital
+Development Agency
+Farid Osmanov
+Shahin Aliyev
+Hafiz Tofidi
+Chingiz Salimov
+The ICPC Foundation Outstanding International Contribution Award
+is presented to an individual or group that has played an instrumental
+role in the success of advancing the art and science of competitive
+programming through support of the International Collegiate
+Programming Contest.
+Presented at the 2025 ICPC World Finals,
+September 2025, Baku, Azerbaijan
+As one of the key government agencies supporting innovation, digital
+development, and IT education in Azerbaijan, IDDA played a significant
+role in the success of the 2025 ICPC World Finals in Baku. From the
+outset, IDDA has established itself as a reliable Operational Partner for
+both the Host and Host Partner. We express deep gratitude for IDDA’s
+contributions to the development of the IT sector and support for young
+talents in Azerbaijan.
+71
+ICPC World Finals Baku
+[PAGE 72]
+The ICPC Foundation
+International Contribution
+Award
+Presented to
+LEADERSHIP AWARDS  //  The ICPC Foundation
+Pasha Holding
+2025 ICPC World Finals
+Platinum Sponsor
+The ICPC Foundation Outstanding International Contribution Award
+is presented to an individual or group that has played an instrumental
+role in the success of advancing the art and science of competitive
+programming through support of the International Collegiate
+Programming Contest.
+Presented at the 2025 ICPC World Finals,
+September 2025, Baku, Azerbaijan
+Pasha Holding is recognized both in Azerbaijan and internationally for
+its commitment to social responsibility and the promotion of innovation
+and creativity. By acting as a Platinum Sponsor of the Finals, the
+company continues to support young talents and the development
+of IT education in the country. Pasha Holding’s invaluable contribution
+to strengthening the global IT community is deeply appreciated.
+72
+ICPC World Finals Baku
+[PAGE 73]
+The ICPC Foundation
+Outstanding Community
+Engagement Award
+Presented to
+LEADERSHIP AWARDS  //  The ICPC Foundation
+ICPC Community of Azerbaijan
+The ICPC Global Outstanding Community Engagement Award
+is presented to an individual or group that has played an
+instrumental role in the outreach of the International Collegiate
+Programming Contest.
+Presented at the 2025 ICPC World Finals,
+September 2025, Baku, Azerbaijan
+The organizers of the ICPC Regional Contests in Azerbaijan, along
+with dedicated coaches and international instructors, have consistently
+demonstrated exceptional professionalism and commitment, maintaining
+a high standard of events over many years. Their unwavering efforts
+have played a vital role in advancing information technology in Azerbaijan
+and nurturing young talent across the country. We extend our sincere
+gratitude for their invaluable contributions to the scientific and
+educational community.
+Rauf Suleymanli
+Asif Pashayev
+Farid Ahmadov
+Elviz Ismayilov
+Gadir Rustamli
+Kanan Asgarli
+Ali Hasanov
+Arman Suleimenov
+Alimzhan Amanov
+Zhan Kurbanbayev
+Fuad Gurbanov
+Mykhailo Medvediev
+Adil Aliyev
+Fariz Hasanli
+Rashad Mammadov
+Vugar Huseynli
+Ramal Jabbarov
+Oleg Khristenko
+Aibar Kuanyshbay
+Sergey Kolodyazhnyy
+(E-olymp)
+Etibar Seyidzade
+73
+ICPC World Finals Baku
+[PAGE 74]
+The ICPC Foundation
+Outstanding Community
+Engagement Award
+Presented to
+LEADERSHIP AWARDS  //  The ICPC Foundation
+International Collegiate
+Programming Contest
+International Collegiate
+Programming Contest
+Vusal Khalilov
+Deputy Governor of the Central
+Bank of the Republic of Azerbaijan
+The ICPC Global Outstanding Community Engagement Award
+is presented to an individual or group that has played an
+instrumental role in the outreach of the International Collegiate
+Programming Contest.
+Presented at the 2025 ICPC World Finals,
+September 2025, Baku, Azerbaijan
+Vusal Khalilov, an esteemed ICPC alumnus, played a pivotal role in
+securing Baku as the host city for the 2025 ICPC World Finals. As a
+prominent leader in the development of Azerbaijan’s IT community,
+his dedication and professionalism were instrumental in the successful
+organization of this landmark event. His significant contributions to
+advancing information technology in Azerbaijan deserve heartfelt
+gratitude and widespread recognition.
+74
+ICPC World Finals Baku
+[PAGE 75]
+The ICPC Foundation
+Outstanding Community
+Engagement Award
+Presented to
+LEADERSHIP AWARDS  //  The ICPC Foundation
+ICPC Training Camp Organizers
+Pawel Gawrychowski
+Oleksandr Kulkov
+Guojie Luo
+The ICPC Global Outstanding Community Engagement Award
+is presented to an individual or group that has played an
+instrumental role in the outreach of the International Collegiate
+Programming Contest.
+Presented at the 2025 ICPC World Finals,
+September 2025, Baku, Azerbaijan
+Pawel, Oleksandr, Guojie demonstrated exceptional dedication to
+the organization and success of the ICPC Training Camp, fostering
+excellence and collaboration across borders.
+75
+ICPC World Finals Baku
+[PAGE 76]
+The ICPC Foundation
+Outstanding Community
+Engagement Award
+Presented to
+LEADERSHIP AWARDS  //  The ICPC Foundation
+International Collegiate
+Programming Contest
+International Collegiate
+Programming Contest
+Vipin Pavithran
+Algo Queen
+The ICPC Global Outstanding Community Engagement Award
+is presented to an individual or group that has played an
+instrumental role in the outreach of the International Collegiate
+Programming Contest.
+Presented at the 2025 ICPC World Finals,
+September 2025, Baku, Azerbaijan
+For recruiting and registering over 4,000 participants in the Algo Queen
+competition worldwide, opening pathways of opportunity in competitive
+programming for young women at an unprecedented scale.
+76
+ICPC World Finals Baku
+[PAGE 77]
+2025
+ICPC
+WORLD
+FINALS
+Coaching
+Awards
+[PAGE 78]
+Lifetime Coaching Award
+Presented to
+For excellence in coaching, having advanced teams
+to the ICPC World Finals for 20 or more years.
+Mohamed Mahmoud
+AbdElWahab Mohamed
+AbdElMoneim Mahmoud
+Faculty of Computers and Artificial
+Intelligence – Cairo University
+COACHING AWARDS  //  The ICPC Foundation
+Presented at the 2025 ICPC World Finals,
+September 2025, Baku Azerbaijan
+78
+ICPC World Finals Baku
+[PAGE 79]
+Lifetime Coaching Award
+Presented to
+For excellence in coaching, having advanced teams
+to the ICPC World Finals for 20 or more years.
+Can Wang
+Zhejiang University, China
+COACHING AWARDS  //  The ICPC Foundation
+Presented at the 2025 ICPC World Finals,
+September 2025, Baku Azerbaijan
+79
+ICPC World Finals Baku
+[PAGE 80]
+Master Coaching Award
+Presented to
+For excellence in coaching, having advanced teams
+to the ICPC World Finals for 10 or more years.
+Rohit Gheyi
+Universidade Federal de
+Campina Grande, Brazil
+COACHING AWARDS  //  The ICPC Foundation
+Presented at the 2025 ICPC World Finals,
+September 2025, Baku Azerbaijan
+80
+ICPC World Finals Baku
+[PAGE 81]
+Master Coaching Award
+Presented to
+For excellence in coaching, having advanced teams
+to the ICPC World Finals for 10 or more years.
+Mohammad Hajiaghayi
+University of Maryland
+COACHING AWARDS  //  The ICPC Foundation
+Presented at the 2025 ICPC World Finals,
+September 2025, Baku Azerbaijan
+81
+ICPC World Finals Baku
+[PAGE 82]
+Coaching Award
+Presented to
+COACHING AWARDS  //  The ICPC Foundation
+Demid Kucherenko
+MIPT
+For excellence in coaching, having advanced teams to the ICPC World Finals
+for 5 or more years.
+Presented at the 2025 ICPC World Finals, September 2025, Baku Azerbaijan
+Mohamed Ahmed Anany
+Ain Shams University
+For excellence in coaching, having advanced teams to the ICPC World Finals
+for 5 or more years.
+Vi-Minh Luong
+University of Science, VNU-HCM
+For excellence in coaching, having advanced teams to the ICPC World Finals
+for 5 or more years.
+82
+ICPC World Finals Baku
+[PAGE 83]
+Coaching Award
+Presented to
+COACHING AWARDS  //  The ICPC Foundation
+Min-Zheng Shieh
+National Yang Ming Chiao Tung
+University
+Muhammad Rafi
+National University of Computer
+and Emerging Sciences,
+Islamabad Pakistan
+For excellence in coaching, having advanced teams to the ICPC World Finals
+for 5 or more years.
+For excellence in coaching, having advanced teams to the ICPC World Finals
+for 5 or more years.
+Presented at the 2025 ICPC World Finals, September 2025, Baku Azerbaijan
+Thanh-Hung Nguyen
+University of Science, VNUHCM
+For excellence in coaching, having advanced teams to the ICPC World Finals
+for 5 or more years.
+83
+ICPC World Finals Baku
+[PAGE 84]
+Coaching Award
+Presented to
+COACHING AWARDS  //  The ICPC Foundation
+Presented at the 2025 ICPC World Finals, September 2025, Baku Azerbaijan
+David A Smallberg
+University of California,
+Los Angeles
+David Zheng
+University of Illinois-
+Urbana Champaign
+For excellence in coaching, having advanced teams to the ICPC World Finals
+for 5 or more years.
+For excellence in coaching, having advanced teams to the ICPC World Finals
+for 5 or more years.
+84
+ICPC World Finals Baku
+[PAGE 85]
+2025
+ICPC
+WORLD
+FINALS
+Special
+Thanks
+[PAGE 86]
+SPECIAL THANKS
+HOST TEAM
+Gamar Abbasova
+Narmin Abbasova
+Seymur Aghakishiyev
+Nazim Aghayev
+Tural Ahmadov
+Haji Akhundov
+Parviz Aliyev
+Emil Aliyev
+Mubariz Aliyev
+Adila Aliyeva
+Mirana Aliyeva
+Huseyn Alizada
+Elshad Alizada
+Laman Asadova
+Farid Asadzada
+Tamara Asgarova
+Emin Baghirov
+Mushviq Bakhsheliyev
+Ulvi Chelebiyev
+Emin Dashdemirov
+Fikrat Eminov
+Fikret Fataliyev
+Fatima Fataliyeva
+Seymur Gafarov
+Talat Gasimov
+Farid Gasimov
+Ramin Gulamzade
+Ravan Guliyev
+Amin Guliyev
+Afsana Guliyeva
+Ayyub Guluzada
+Kenan Gurbanov
+Vusal Habibbayli
+Chingiz Haciyev
+Fuad Hajiyev
+Imran Hajiyev
+Nuray Hajiyeva-Hasanova
+Gunel Hamzayeva
+Laman Hasanly
+Rufat Hasanov
+Shahriyar Hasanov
+Ali Heyderov
+Host
+Acknowledgments
+Mehdi Huseynli
+Ulvi Huseynov
+Natig Huseynov
+Gunay Huseynova
+Firidun Huseynzada
+Shahin Husuyev
+Rovshana Ibrahimova
+Maryam Ibrahimsani
+Adigozal Isayev
+Ismayil Isayev
+Emil Isgandarov
+Deyanet Iskenderli
+Tural Ismayilov
+Jamil Jabrayilzada
+Nigar Jafarova
+Zahra Jafarzada
+Sevda Jahangirova
+Sevil Jamili
+Sahib Jarchalov
+Zeynab Karasharli
+Kamala Karimova
+Ilaha Khaligova
+Turgay Maharramov
+Manzar Malikova
+Ruslan Mammadov
+Ibrahim Mammadov
+Tahir Mammadov
+Abdulla Mammadov
+Nihad Mammadov
+Ismayil Mammadov
+Reyhan Mammadova
+Esmira Mammadova
+Javid Memmedov
+Elkhan Mikayilov
+Jala Muradova
+Elnura Mursalova
+Hamzat Mustafayev
+Tamerlan Naghiyev
+Mahammad Pashayev
+Pirim Pirimov
+Alevtina Plisko
+Ruslan Rustamli
+Murad Rzayev
+Polad Rzayev
+Ibrahim Safarov
+Elchin Semedov
+Jeyhun Seyidbeyov
+Aytan Shahidi
+Samira Sheydabekova
+Samira Sheydabekova
+Shakar Taghiyeva
+Elmin Tagiyev
+Sarkhan Tagiyev
+Kamran Talalakin
+Aghazeynal Talibov
+Adigozel Valiyev
+Yana Vladimirovna
+Dinara Zamanova
+Anar Zeynalov
+Murad Zeynalov
+HOST VOLUNTEERS
+Aydan Abasova
+Ilham Abbasov
+Seljan Abbasova
+Fidan Abbasova
+Zarifa Abbasova
+Tahira Abdullayeva
+Nijat Abdurrahmanzada
+Arzu Adayeva
+Fidan Adiyeva
+Kanan Afandi
+Farid Afandiyev
+Fidan Afandiyeva
+Leyla Afandiyeva
+Hilala Afgan
+Khadija Agasi
+Nahida Aghamaliyeva
+Leyla Aghayeva
+Elvira Aghayeva
+Valida Aghazada
+Zahra Ahadzada
+Fərid Ahmadli
+Zarifa Ahmadli
+Zahra Ahmadova
+Madina Ahmadova
+Aykhan Ahmadzada
+86
+ICPC World Finals Baku
+[PAGE 87]
+SPECIAL THANKS
+Aysel Ahmadzada
+Jamil Akbarov
+Ramil Akhmineyev
+Nuray Akhundova
+Shahin Alakbarli
+Zemfira Alasgarova
+Akif Aliyev
+Ali Aliyev
+Mahmud Aliyev
+Leyla Aliyev
+Tahir Aliyev
+Fidan Aliyeva
+Aisha Aliyeva
+Aylin Aliyeva
+Sama Aliyeva
+Gulkhanim Aliyeva
+Khadijakhanim Aliyeva
+Vasila Aliyeva
+Alima Aliyeva
+Almaz Aliyeva
+Jamiha Aliyeva
+Nuhbala Aliyoldashov
+Aytac Alizada
+Laman Alizada
+Rauf Alizada
+Fidan Alizada
+Yusif Alizada
+Heydar Alizada
+Aydan Alizada
+Adil Allahveranov
+Aytan Allahveranova
+Saida Allahyarova
+Jala Almammadli
+Ulvi Amanli
+Ayan Amiraslanova
+Zeynab Amirli
+Rafael Amirov
+Vusal Amrahov
+Jamil Anar
+Ismail Aras
+Rahida Asadli
+Rafig Asgarli
+Fidan Aslanova
+Nihad Aslanzada
+Leyla Atakishibayli
+Elgun Atayev
+Aysel Azimli
+Emil Azizov
+Tunar Babali
+Rahib Babashli
+Farat Babayev
+Nargiz Babayeva
+Nasiba Babayeva
+Sitara Babayeva
+Fatima Babayeva
+Gulay Baghirli
+Nigar Baghirova
+Fidan Baghırova
+Madina Baghirzada
+Ilkin Baghirzada
+Aylin Baktashi
+Malak Bayramova
+Fazil Behbudov
+Emin Dabakhov
+Minakhanim Dadashova
+Ofeliya Dadashzada
+Turan Eldarov
+Leyla Eynullazada
+Amirali Eyvazli
+Huseyn Eyvazov
+Alibala Fatiyev
+Shanay Fatizada
+Ayan Fazilova
+Nazifa Gadirova
+Chohra Gafarova
+Sumaya Gafarova
+Riyad Gahramanli
+Huseyn Gahramanov
+Farid Gambarli
+Mujgan Ganbarli
+Minur Ganbarova
+Zahra Garibova
+Guldana Gasimli
+Asim Gasimov
+Zeynab Gasimova
+Firuza Gasimzada
+Alsu Gorchiyeva
+Ali Gulamaliyev
+Davud Guliyev
+Fatima Guliyeva
+Goncha Guliyeva
+Fizura Guliyeva
+Laman Guliyeva
+Khuraman Guliyeva
+Konul Guliyeva
+Latafat Guliyeva
+Laman Guliyeva
+Ismayil Guluzada
+Rasta Guluzada
+Aydin Guluzada
+Zeynab Gurbanova
+Aydan Gurbanova
+Nijat Hajili
+Fuad Hajiyev
+Museyib Hajiyev
+Salim Hajiyev
+Huseyn Hajiyev
+Maryam Hajiyeva
+Yegana Hajiyeva
+Gendab Hajiyeva
+Leyli Hajıyeva
+Asma Hajizada
+Farhad Hasanli
+Amin Hasanli
+Ayan Hasanli
+Turab Hasanli
+Hamidagha Hasanov
+Ali Hasanov
+Gulnara Hasanova
+Nazrin Hasanova
+Nazima Hasanova
+Sevinj Hasanova
+Mansura Hasanzada
+Allahverdi Hasanzada
+Aysun Hasanzada
+Fatima Hasanzada
+Sabira Hashimova
+Suel Heybatova
+Damla Heydarli
+Ayxan Heydarov
+Javid Hidayatov
+Jala Huseynli
+Leyla Huseynli
+Jamal Huseynov
+Nariman Huseynov
+Mehman Huseynov
+Nihad Huseynov
+Aliakbar Huseynov
+Solmaz Huseynova
+Mehriban Huseynova
+Rovshana Huseynova
+Aliya Huseynova
+Asiman Huseynova
+Anar Huseynzada
+Maleyka Huseynzada
+Rəfiqə Hüseynzadə
+Zahra Ibishova
+Banu Ibrahimli
+Firudin Ibrahimzada
+Ibrahim Ilkhasli
+87
+ICPC World Finals Baku
+[PAGE 88]
+SPECIAL THANKS
+Narmin Imanli
+Kudirat Imiela
+Rashad Isayev
+Ayan İsayeva
+Jala İsayeva
+Amil Isgandarov
+İlaha İsgandarova
+Rugayya Isimkhanova
+Nuray İsmayilli
+Emil Ismayilov
+Nurlana Ismayilova
+Nigar Ismayilova
+Duygu Ismayilova
+Nazrin Ismayilova
+Sabina Ismayilova
+Nazrin Ismayilova
+Leyla İsmayılova
+Ayla Ismayilzada
+Gunel Ismayilzada
+Sona Ismayilzada
+Farida Jabbarova
+Rauf Jafar
+Isgandar Jafarli
+Raul Jafarli
+Tarlan Jalilov
+Nazrin Jalilova
+Ilaha Jamalli
+Ayla Jamalova
+Rahima Jamilova
+laman jananova
+Darya Javadi
+Gunel Javadova
+Shahane Kamalzada
+İsa Karimli
+Shukran Karimli
+Kanan Karimov
+Aytac Karimova
+Fidan Khalilova
+Fidan Khalilova
+Nijat Khanlarov
+Laman Khidirova
+Nuray Khudiyeva
+Ayla Kosayeva
+Viktoriya Kuzovatkina
+Jasmin Layıcova
+Arzu Lin
+Batura Macidova
+Leyla Mahalova
+Laman Mahammadli
+İdrak Maharramli
+Daniz Maharramov
+Khadija Mahmudova
+Amina Majidova
+Farid Malikov
+Asim Malikov
+Nurlan Mamishzada
+Asmanur Mammad
+Nigar Mammadli
+Huseynli Mammadli
+Ofeliya Mammadli
+Shafiga Mammadli
+Aytac Mammadli
+Azima Mammadli
+Firudin Mammadov
+Fuad Mammadov
+Kanan Mammadov
+Nihad Mammadov
+Ughur Mammadov
+Elnama Mammadova
+Jala Mammadova
+Fatima Mammadova
+Sadagat Mammadova
+Mirvari Mammadova
+Hamayil Mammadova
+Aliya Mammadova
+Chichak Mammadova
+Leyla Mammadzada
+Sayyara Mammadzada
+Hasan Mammadzada
+Jalal Mansurov
+Toghrul Mardiyev
+Yaroslav Medvedev
+Gunay Mehdiyeva
+Said Mehraliyev
+Shamil Məmmədov
+Gunay Mikayilova
+Səbinə Mikayılova
+Asli Minasazli
+Huseyn Mirzayev
+Fidan Mirzayeva
+Asif Mukhtarov
+Bilgayis Muradova
+Nazrin Muradova
+Kanan Murshudov
+Maryam Musa
+Talat Musayev
+Zeynəb Musayeva
+Vusala Musayeva
+Farid Mustafayev
+Sona Mustafazada
+Shola Mustafazada
+İlham Naghıyev
+Jeyhun Naghiyeva
+Tomris Nasirli
+Yusif Nazarli
+Aynur Nazarli
+Farah Nematzada
+Leyla Neymat
+Leyla Niftaliyeva
+Nurana Niftaliyeva
+Nigar Niyazli
+Khanali Niyazli
+Khadija Novruzlu
+Cavidan Nuriyev
+Aynura Nuriyeva
+Omar Nurulla
+Tofig Nuruyev
+Murad Orujov
+Laman Orujzada
+Nail Osmanov
+Tinatin Panahova
+Fidan Pashayeva
+Nazrin Pirishova
+İlahə Qədirli
+Ümid Qənbərov
+Gular Rahimli
+Zulfiyya Rahimova
+Narmin Rahimova
+Shafa Rahmanova
+Zaur Rajabov
+Khumar Ramazanova
+Lamiya Rashidli
+Zəhra Rasulova
+Nigar Rustamova
+Maryam Rustamova
+Ziya Rzayev
+Yaqub Rzayev
+Natavan Rzayeva
+Nigar Sadraddinbayli
+Islam Safarli
+Mina Safarova
+Nargiz Safiyarli
+Nurlan Saidov
+Amil Salahov
+Laman Salmanli
+Rubaba Samadzada
+Nazli Samadzada
+Timur Sevchenko
+Kanan Seyidzada
+Nijat Shafiyev
+88
+ICPC World Finals Baku
+[PAGE 89]
+SPECIAL THANKS
+Amal Shafiyev
+Aliyyakbar Shirinli
+Malahat Shirinli
+Hasan Shkhiyev
+Sabina Shomayeva
+Nihat Shukurova
+Murad Suleymanli
+Əli Süleymanlı
+Zahra Suleymanova
+Fakhranisa Sultanova
+Lala Taghiyeva
+Zohra Taghıyeva
+Farida Taghizada
+Rauf Talibli
+Khanimjahan Talibova
+Jala Tanriverdi
+Faig Tayibov
+Vazifa Useynova
+Matin Xalilova
+Shabnam Xalilzada
+Tubu Yunisova
+Ismayil Yusifli
+Nargiz Zeynalli
+Maharram Zeynalov
+Fidan Zeynalova
+Aygul Zeynalova
+Simuzar Zeynalova
+Nargiz Zohrabova
+BROCHURE COMMITTEE
+Melissa Elliott
+Tania Fitzpatrick
+Lidia Perovskaya
+Veronika Soboleva
+CLI SYMPOSIUM
+Erich Baker
+Joshua Thomas Bergman Andersson
+Ryan Farrell
+Arup Guha
+Rasmus Hulthe
+Jerzy W Jaromczyk
+Christian  Yongwhan Lim
+Fredrik Niemelä
+Mateusz Radecki
+Cristina Redondo García
+Miguel Revilla Rodríguez
+Emilio Revilla Rodríguez
+Etienne Vouga
+Zhou Yu
+ICPC CONTEST CONTROL
+SYSTEM & ANALYTICS
+Daniel Brinkers
+Iakov Dlugach
+Jacob Eldering
+Michal Forisek
+Marc Furon
+Nicky Gerritsen
+Kevin Jilissen
+Kutay Karakas
+Riku Kawasaki
+Mart Pluijmaekers
+Joe Terlizzi
+Tobias Werth
+Huaiyu Wu
+ICPC EVENTS
+Melissa Elliott
+Tania Fitzpatrick
+Chelsea Kalyn
+Arti Kaushal
+Tanya Labutte
+Christina Millar
+ICPC LIVE
+Maxim Alzhanov
+Konstantin Bats
+Roman Elizarov
+David Harmeyer
+Andrew He
+Azat Ismagilov
+Tatyana Kolinkova
+Mikhail Kornilovich
+Pavel Kunyavskiy
+Lidia Perovskaya
+Qingyu Shi
+Sofia Tekhazheva
+Victoria Volochay
+Mariia Zhogova
+ICPC NEWS
+Katie Allison
+Hans Domjan
+Bettina Johnson
+Chris Kirkham
+Matthew Lozano
+Charles Piland
+Clara Ritger
+Michael Roytek
+Bob Smith
+Amanda Sturgill
+David Sturgill
+Ethan Wu
+ICPC OPERATIONS
+Md Imran Bin Azad
+Alexey Fyodorov
+Patrick Hynan
+Matvey Kazakov
+Foma Kazakov
+Sofya Kondrashina
+Sergey Melnikov
+2025 ICPC World
+Finals Staff
+89
+ICPC World Finals Baku
+[PAGE 90]
+ICPC SERVICES
+Pranish Bhagat
+Tomáš Černý
+Gabriel Goulis
+Ali Kanaan
+Denton Wood
+ICPC STAFF
+Roy Andersson
+Patrick Baker
+Evgeny Barskiy
+Steve Bourne
+Sarah Bourne
+Kevin Clevenger
+Kirsten Elliott
+Jeremy Fineman
+James Gage
+Mark Hobbs
+Elle Janitzen
+Nikolay Kalinin
+Robert Lake
+Grace Lim
+Antonette Logar
+Lauren Marchetti
+Jon Mills
+Mikhail Mirzayanov
+Nija Mohan Bindukumari
+Tolkyn Nauryzbayeva
+William Poucher
+Melinda Poucher Gage
+Melanie Rebando
+Maddy Renström
+Mikael Renström
+Tim Renström
+Alvin Renström
+Bob Roggio
+Carolyn Roggio
+Brianna Rowell
+Ulyana Sheremeta
+Veronika Soboleva
+Jason Stuck
+Taylor Watson
+ICPC SYSOPS
+Samir Ashoo
+Taylor Ashoo
+Troy Boudreau
+John Buck
+John Clevenger
+SPECIAL THANKS
+Tim deBoer
+Mattias de Zalenski
+Keith Johnson
+Johannes Niemelä
+Joel Niemelä
+Brian Ross
+Michael Vasseur
+JUDGES
+Yujie An
+Per Austrin
+John Bonomo
+Walter Guttmann
+Martin Kacer
+Derek Kisman
+Gennady Korotkevich
+Bruce Merry
+Jo Perry
+Jan Matthias Ruhl
+Arnav Sastry
+Michal Svagerka
+Paul Wild
+Jakub Wojtaszczyk
+ICPC AFRICA
+AND ARAB
+Mohamed Ayman Abd Elaal
+Ahmed Abdulrahim
+Faisal Abu Khzam
+Ashraf Ahmad
+Khalid Ahmed
+Mohammed Al-Badawi
+Jafar Alkheir
+Musa Alrefaya
+Ahmed Atito
+Tarek Barakat
+Dorsaf Benna
+Yomna Darwish
+Yousry Elgamal
+Ahmed ElSayed
+Muhammad Ewaily
+Mohamed Fouad
+Amin Gamal
+Nour Hassan
+Ossama Ismail
+Ismail AbdelGhaffar Ismail Farag
+Mahmoud Khaled
+Waleed Khalil
+AbdAlhadi Radwan
+Ahmed Ramy
+Amira Swilam
+Mohamed Yosri
+ICPC ASIA EAST
+Qifeng Chen
+Lei Deng
+Da Huang
+C Jinshong Hwang
+Xuefeng Jiang
+Wenxin Li
+Bin Liu
+Guojie Luo
+Hong Pan
+Jiaqi Xi
+Peng Yang
+Wei-Min Zhou
+Hui Zhu
+Chunran Zou
+ICPC Regional
+Contest
+Directors
+> Registered RCDs - this is
+not a comprehensive list
+of all RCDs
+90
+ICPC World Finals Baku
+[PAGE 91]
+ICPC ASIA PACIFIC
+Hwan-Gue Cho
+Andry Chowanda
+Tim French
+Jonathan Irvin Gunawan
+Steven Halim
+Ling-Ju Hung
+Katsuhiko Kakehi
+Don Khue Le
+Felicia Limanta
+Nguyen Long
+Andreas Martin
+Huy Nguyen
+Shinya Nishizaki
+Sheng-Lung Peng
+Athasit Surarerks
+Jessada Thutkawkorapin
+Long Vuong Hoang
+Rie Shigetomi Yamaguchi
+ICPC ASIA WEST
+Rohit Agarwal
+Sandesh Gupta
+Phalguni Gupta
+Abul Haque
+Masroor Hussain
+Md Ashraful Islam
+Upul Jayasinghe
+Mohammad Shah Omid
+Vipin Pavithran
+Md Saifur Rahman
+Ashish Sharma
+Rajan Sundaravaradhan
+Arjun Thottapilly Unnikrishnan
+Masilamani Vedhanayagam
+Hamid Zarrabi-Zadeh
+ICPC EUROPE
+Alexandre Francisco
+Paweł Gawrychowski
+Václav Herman
+José Paulo Leal
+Bozena Mannova
+Pedro Ribeiro
+Fernando Silva
+Alexandros Spitalas
+Nicolae Tapus
+Konstantinos Tsichlas
+SPECIAL THANKS
+Thomas Verwoerd
+Lenka Zerzanova
+Michael Zündorf
+ICPC LATIN AMERICA
+Jose Enmanuel Amaya Araujo
+Carlos Fernando Arbelaez Arbelaez
+María Paula Badenes
+Micaela Bassani
+Beatriz Eugenia Caicedo
+Rodrigo Cardoso Rodriguez
+Jhonatan Ismael Castro Rocabado
+Yisel Clavel Quintero
+Carlos Alejandro Cordero Garcia
+Anderson de Araujo
+Roger Eleutheri
+Vinicius Fernandes dos Santos
+Carlos Alberto Fernandez Guillot
+Carlos Eduardo Ferreira
+Jose Eduardo Ferrer Cruz
+Adolfo Galán
+Rafael A Garcia Gomez
+Sandra Margarita Garcia-Herreros
+Sánchez
+Jose Trinidad Gomez Barreto
+Viktor Khlebnikov
+Marcos Kolodny
+Gabriela Lamas Oliva
+Rubisley Lemes
+Federico Meza
+Bruno Monteiro
+Ignacio Muñoz
+Alfonso Navarro Mojica
+Alvaro Ivan Parres Peredo
+Paulo Cezar Pereira Costa
+Claudia Permuy Díaz
+Ana Maria Portocarrero Portocarrero
+Hector Pulido Gonzalez
+Edy Miguel Ramírez-Jiménez
+Bruno Ribas
+Constanza Rodriguez Gonzalez
+Leonides Rodríguez Martínez
+Guillermo Rosas Bellido
+Cristian Ruz
+Alejandro Strejilevich de Loma
+Lucy Mari Tabuti
+Rolando Troche Venegas
+Bienvenido Vélez
+ICPC NORTH AMERICA
+Ian Barland
+Ram Basnet
+Ivona Bezakova
+Zack Butler
+Jaime (JC) Cabrera
+Thomas Capaul
+Edward Corwin
+Jeff Ifland
+Terri Ifland
+Robert Kramer
+Mary Kramer
+Warren MacEvoy
+Charles Riedesel
+Isaac Traxler
+Kathy Traxler
+David Van Brackle
+Etienne Vouga
+Holly Woo
+ICPC NORTHERN EURASIA
+Bokhodir Ayupov
+Artem Beliaev
+Antonina Fedorova
+Pirmyrat Gurbanov
+Evgeny Khalturin
+Georgiy Korneev
+Pavel Mandrik
+Bakhyt Matkarimov
+Viacheslav Muravev
+Sharaf Nazarov
+Tatyana Nesterenko
+Anton Pankratyev
+Vladimir Parfenov
+Katsiaryna Paziura
+Jakhongir Radjabov
+Tim Seleznev
+Tatiana Semenova
+Etibar Seyidzade
+Olga Shalagina
+Dzhambolet Shovgenov
+Oleg Sokov
+Andrey Stankevich
+Rauf Suleymanli
+Guzel Tuktarova
+Antanina Yakunina
+Alsu Zainullina
+Natia Zarkua
+Iason Zarkua
+91
+ICPC World Finals Baku

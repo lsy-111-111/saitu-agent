@@ -1,0 +1,4658 @@
+{
+  "schemaVersion": "saitu.explanation-diagnostic.v1",
+  "runId": "e30167b7-559c-401b-afee-cd6b7c56ed31",
+  "elapsedMs": 123847.131708,
+  "reusedRank": {
+    "path": "artifacts/continuation-v7-20261109/pipeline-diagnostic-02/rank-plan.json",
+    "sha256": "e20dace6bcd3306b935b87476542efe51e46f539ebfa7f7e3795af26ebee8101",
+    "sourceRegistration": {
+      "path": "artifacts/continuation-v7-20261109/pipeline-diagnostic-02/registration.json",
+      "sha256": "07d7d5d96e0a0a64c714348b4790f4d6ab1d3f3d5f663a38ac2b4729957bc724"
+    },
+    "originalRuntime": "e6fe52f43bd050e4f8e87d3865d7da2deb5a48646fdad83856c37bb55902b96c",
+    "rankPromptVersion": "saitu-match.v7.4.resource-scope-json-envelope",
+    "originalTimingNotReusedAsNewTiming": true
+  },
+  "modelAttempts": 2,
+  "stageCounts": {
+    "explain": 1,
+    "review": 1
+  },
+  "stage": "complete",
+  "plan": {
+    "profileRevision": "e090ae536df4637e4497e14c10bfe56d62881cd22a32f63f6bbcfdfba48bd37b",
+    "catalogVersion": "v7-b75f38e52d3b51ddfda62d54",
+    "recommendations": [
+      {
+        "itemId": "atcoder-beginner-contest:2025-427:d-simple-game:individual-open:global-online-abc427:v3",
+        "reasons": [
+          {
+            "text": "个人算法练习，低门槛短时可试",
+            "basis": "suggestion",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          }
+        ]
+      },
+      {
+        "itemId": "google-kick-start:2022:round-a-speed-typing:historical-public-task:round-a-speed-typing-2022:v3",
+        "reasons": [
+          {
+            "text": "个人字符串题，规则简单易起步",
+            "basis": "suggestion",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          }
+        ]
+      },
+      {
+        "itemId": "google-code-jam:2022:qualification-3d-printing:historical-public-task:qualification-3d-printing-2022:v3",
+        "reasons": [
+          {
+            "text": "个人构造题，题面短可快速试做",
+            "basis": "suggestion",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          }
+        ]
+      },
+      {
+        "itemId": "apple-swift-student-challenge:2026:app-playground:individual-student:global-2026:v3",
+        "reasons": [
+          {
+            "text": "个人小型应用，探索软件与设计",
+            "basis": "suggestion",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          }
+        ]
+      },
+      {
+        "itemId": "chinese-classics:2025-zhejiang-13:classics-recitation:huzhou-individual:zhejiang-huzhou-local:v3",
+        "reasons": [
+          {
+            "text": "个人朗诵，低成本练表达与文本",
+            "basis": "suggestion",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          }
+        ]
+      },
+      {
+        "itemId": "lanqiao-cup:2019-10:cpp-array-successor:cpp-a:china-provincial-cpp-a-2019:v3",
+        "reasons": [
+          {
+            "text": "个人机考，费用贴近上限可试编程",
+            "basis": "suggestion",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          }
+        ]
+      },
+      {
+        "itemId": "national-college-mathematics:2011-3:calculus-third-derivative:non-mathematics:zhejiang-zjut-preliminary-2011:v3",
+        "reasons": [
+          {
+            "text": "个人数学证明，低报名费短周期",
+            "basis": "suggestion",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          }
+        ]
+      },
+      {
+        "itemId": "if-student-award:2025-entry-guide:sdg-design:design-students-graduates:global-2025:v3",
+        "reasons": [
+          {
+            "text": "概念海报，投入较轻可探索设计",
+            "basis": "suggestion",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          }
+        ]
+      },
+      {
+        "itemId": "dandad-new-blood:2026-share-your-passion:personal-social-campaign:eligible-creative:global-2026-dad-brief:v3",
+        "reasons": [
+          {
+            "text": "个人创意作品，可短周期做视觉表达",
+            "basis": "suggestion",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          }
+        ]
+      },
+      {
+        "itemId": "loreal-brandstorm:2026-luxe:future-fragrance:18-30-team:global-local-entry:v3",
+        "reasons": [
+          {
+            "text": "三人商业创意，短材料可探索商科",
+            "basis": "suggestion",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          }
+        ]
+      }
+    ],
+    "shortfallReason": null
+  },
+  "report": {
+    "schemaVersion": "saitu.report.v6",
+    "reportId": "report-e090ae536df4637e-a1343cb06507",
+    "generatedAt": "2026-11-08T19:09:37.921Z",
+    "catalogVersion": "v7-b75f38e52d3b51ddfda62d54",
+    "profile": {
+      "schemaVersion": "saitu.profile.v6",
+      "profileId": "4ba14d19-e077-47e9-af13-0bd04745299d",
+      "revision": "e090ae536df4637e4497e14c10bfe56d62881cd22a32f63f6bbcfdfba48bd37b",
+      "facts": [
+        {
+          "id": "s.stage.4821abd683989b98",
+          "field": "stage",
+          "value": "undergraduate-1",
+          "label": "学习阶段：本科大一",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report",
+          "answerId": "questionnaire.stage",
+          "originalText": "undergraduate-1",
+          "sourceSpan": {
+            "start": 0,
+            "end": 15
+          },
+          "updatedAt": "2026-11-08T19:03:14.000Z",
+          "supersedesFactIds": []
+        },
+        {
+          "id": "s.weeklyCommitment.599ad580c3a5c743",
+          "field": "weeklyCommitment",
+          "value": "5-10",
+          "label": "每周投入：每周 5–10 小时",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report",
+          "answerId": "questionnaire.weeklyCommitment",
+          "originalText": "5-10",
+          "sourceSpan": {
+            "start": 0,
+            "end": 4
+          },
+          "updatedAt": "2026-11-08T19:03:14.000Z",
+          "supersedesFactIds": []
+        },
+        {
+          "id": "s.goalIntent.c54d1a8bca1535aa",
+          "field": "goalIntent",
+          "value": "explore",
+          "label": "希望参赛帮助你探索适合自己的方向",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report",
+          "answerId": "questionnaire.goalIntent",
+          "originalText": "explore",
+          "sourceSpan": {
+            "start": 0,
+            "end": 7
+          },
+          "updatedAt": "2026-11-08T19:03:14.000Z",
+          "supersedesFactIds": []
+        },
+        {
+          "id": "s.goalResolution.bf2526b0c391a80e",
+          "field": "goalResolution",
+          "value": "confirmed",
+          "label": "已确认目标取舍",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report",
+          "answerId": "questionnaire.goalResolution",
+          "originalText": "confirmed",
+          "sourceSpan": {
+            "start": 0,
+            "end": 9
+          },
+          "updatedAt": "2026-11-08T19:03:14.000Z",
+          "supersedesFactIds": []
+        },
+        {
+          "id": "s.experienceStatus.a95094f1e822437c",
+          "field": "experienceStatus",
+          "value": "none",
+          "label": "暂时没有可描述的经历",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report",
+          "answerId": "questionnaire.experienceStatus",
+          "originalText": "none",
+          "sourceSpan": {
+            "start": 0,
+            "end": 4
+          },
+          "updatedAt": "2026-11-08T19:03:14.000Z",
+          "supersedesFactIds": []
+        },
+        {
+          "id": "s.budget.0a92c8623fae55d8",
+          "field": "budget",
+          "value": "100-500",
+          "label": "预算：100至500元（个人）",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report",
+          "answerId": "questionnaire.budget",
+          "originalText": "100-500",
+          "sourceSpan": {
+            "start": 0,
+            "end": 7
+          },
+          "updatedAt": "2026-11-08T19:03:14.000Z",
+          "supersedesFactIds": []
+        },
+        {
+          "id": "s.budget.maximumYuan.128e2f58150ed419",
+          "field": "budget.maximumYuan",
+          "value": 300,
+          "label": "自付费用上限：300元",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report",
+          "answerId": "questionnaire.budget",
+          "originalText": "300",
+          "sourceSpan": {
+            "start": 0,
+            "end": 3
+          },
+          "updatedAt": "2026-11-08T19:03:14.000Z",
+          "supersedesFactIds": []
+        },
+        {
+          "id": "s.preparationHorizon.23efb888fdffefde",
+          "field": "preparationHorizon",
+          "value": "1-2-weeks",
+          "label": "准备周期：1–2周",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report",
+          "answerId": "questionnaire.preparationHorizon",
+          "originalText": "1-2-weeks",
+          "sourceSpan": {
+            "start": 0,
+            "end": 9
+          },
+          "updatedAt": "2026-11-08T19:03:14.000Z",
+          "supersedesFactIds": []
+        }
+      ],
+      "unknownFields": [
+        "majorFields",
+        "specificSubjects",
+        "skills",
+        "interests",
+        "goals",
+        "preferredOutputs",
+        "startingPoint",
+        "teamStatus",
+        "availableResources",
+        "participationMode",
+        "participationTiming",
+        "taskFormats",
+        "experienceLevel",
+        "evidence",
+        "enrollmentStatus",
+        "firstHigherEducationYear",
+        "teamUnit",
+        "teamSize"
+      ],
+      "retractedFactIds": [],
+      "goals": [
+        "探索适合自己的方向"
+      ],
+      "primaryGoal": "探索适合自己的方向",
+      "tradeoffStatus": "confirmed",
+      "mode": "quick",
+      "updates": []
+    },
+    "summary": {
+      "direction": {
+        "text": "围绕“探索适合自己的方向”，先比较AtCoder Beginner Contest·有向图有限步博弈与Google Kick Start·Round A：Speed Typing的实际任务。先尝试一项，再决定是否完整备赛。",
+        "basis": "suggestion",
+        "studentFactIds": [],
+        "competitionFactIds": [
+          "atcoder-beginner-contest:v2:track"
+        ],
+        "conditions": []
+      },
+      "personalEvidence": [],
+      "mainGap": {
+        "text": "所读通用规则页会更新，未把当前编译器列表回填2025",
+        "basis": "unknown",
+        "studentFactIds": [],
+        "competitionFactIds": [],
+        "conditions": []
+      },
+      "nextStep": {
+        "text": "画一个Bob可选择A或B终点的两步小图，分别列出两人的最优选择。",
+        "basis": "suggestion",
+        "studentFactIds": [
+          "s.weeklyCommitment.599ad580c3a5c743"
+        ],
+        "competitionFactIds": [],
+        "conditions": [
+          "你更喜欢推导策略还是实现测试？"
+        ]
+      },
+      "focusItemIds": [
+        "atcoder-beginner-contest:2025-427:d-simple-game:individual-open:global-online-abc427:v3",
+        "google-kick-start:2022:round-a-speed-typing:historical-public-task:round-a-speed-typing-2022:v3",
+        "google-code-jam:2022:qualification-3d-printing:historical-public-task:qualification-3d-printing-2022:v3"
+      ]
+    },
+    "recommendations": [
+      {
+        "rank": 1,
+        "itemId": "atcoder-beginner-contest:2025-427:d-simple-game:individual-open:global-online-abc427:v3",
+        "seriesId": "atcoder-beginner-contest",
+        "name": "AtCoder Beginner Contest",
+        "trackLabel": "有向图有限步博弈",
+        "edition": "2025 ABC427（历史）",
+        "contentTier": "L3",
+        "eligibilityStatus": "unknown",
+        "eligibilityNotes": [
+          "所读通用规则页会更新，未把当前编译器列表回填2025",
+          "采用已冻结的14196日文原解与题面核对；未取得正式隐藏评测成绩",
+          "报名资格与日期请通过官方入口自行核查。",
+          "个人总支出仍需核实，尚不能认定符合已报预算。"
+        ],
+        "registration": {
+          "status": "historical",
+          "note": "第427场在2025年10月11日举行，已结束；本条为公开历史题学习，虚拟练习不改变正式名次。"
+        },
+        "preparation": "conditional",
+        "coreTask": {
+          "text": "从固定终点倒推最优胜负，把己方存在一个好选择和对手所有选择都无害区分开。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [
+            "atcoder-beginner-contest:v2:track"
+          ],
+          "conditions": []
+        },
+        "reasons": [
+          {
+            "text": "你以探索方向为目标、每周可投入5–10小时且准备周期1–2周；ABC427 D的有限步有向图博弈题可作一次短周期算法探索：读题后倒推胜负并提交程序，用一个小任务判断是否愿意继续这类个人算法练习。",
+            "basis": "inference",
+            "studentFactIds": [
+              "s.goalIntent.c54d1a8bca1535aa",
+              "s.weeklyCommitment.599ad580c3a5c743",
+              "s.preparationHorizon.23efb888fdffefde"
+            ],
+            "competitionFactIds": [
+              "atcoder-beginner-contest:v2:track",
+              "atcoder-beginner-contest:v2:deliverables",
+              "atcoder-beginner-contest:v2:participation"
+            ],
+            "conditions": [
+              "仅使用2025历史题练习，不回到已结束正式比赛取得原名次。",
+              "报名资格与当前日期请另行通过官方入口核查。"
+            ]
+          }
+        ],
+        "currentRole": {
+          "text": "可先承担独立算法与验证角色，围绕该题完成递推证明、代码和对拍记录，作为两周内可交付的探索动作。",
+          "basis": "suggestion",
+          "studentFactIds": [
+            "s.preparationHorizon.23efb888fdffefde"
+          ],
+          "competitionFactIds": [
+            "atcoder-beginner-contest:v2:deliverables"
+          ],
+          "conditions": [
+            "历史题练习，不声称隐藏评测成绩或正式rating。"
+          ]
+        },
+        "gaps": [
+          {
+            "text": "所读通用规则页会更新，未把当前编译器列表回填2025",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          },
+          {
+            "text": "采用已冻结的14196日文原解与题面核对；未取得正式隐藏评测成绩",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          },
+          {
+            "text": "报名资格与日期请通过官方入口自行核查。",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          },
+          {
+            "text": "个人总支出仍需核实，尚不能认定符合已报预算。",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          }
+        ],
+        "values": [
+          {
+            "dimension": "governance",
+            "claim": {
+              "text": "已读规则来源：AtCoder。仍需按来源范围和后续补充通知使用。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "atcoder-beginner-contest:v2:track"
+              ],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "taskRelevance",
+            "claim": {
+              "text": "该路径实际任务为：从固定终点倒推最优胜负，把己方存在一个好选择和对手所有选择都无害区分开。；相关性须与学生目标相对照。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "portfolio",
+            "claim": {
+              "text": "积累图论、动态规划及反例分析能力；平台练习表现不等于学历竞赛奖项或正式rating。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "atcoder-beginner-contest:v2:deliverables"
+              ],
+              "conditions": [
+                "已实际完成相应工作",
+                "公开展示已取得必要授权"
+              ]
+            }
+          },
+          {
+            "dimension": "learningFeedback",
+            "claim": {
+              "text": "体验时可以这样检查学习：能说明存在到A的路仍可能Alice必输。；这不是承诺赛事会提供个人反馈。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "industryAcademicAccess",
+            "claim": {
+              "text": "尚无可核实的个人行业/学术接触机会或学校/招聘认可承诺；不从赛事名称推导。",
+              "basis": "unknown",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "recognition",
+            "claim": {
+              "text": "尚无可核实的个人行业/学术接触机会或学校/招聘认可承诺；不从赛事名称推导。",
+              "basis": "unknown",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          }
+        ],
+        "difficulty": [
+          {
+            "stage": "entry",
+            "claim": {
+              "text": "需数组、邻接表、布尔逻辑和基本复杂度概念。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "atcoder-beginner-contest:v2:track"
+              ],
+              "conditions": [
+                "根据学生真实经历判断；没有经历不等于没有潜力"
+              ]
+            }
+          },
+          {
+            "stage": "completion",
+            "claim": {
+              "text": "难点是双方轮次和存在/任意的量词，图里有环也不能误判成无限博弈。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "atcoder-beginner-contest:v2:deliverables"
+              ],
+              "conditions": [
+                "需核对个人时间、队友、导师与必要资源"
+              ]
+            }
+          },
+          {
+            "stage": "award",
+            "claim": {
+              "text": "完成交付与获奖分开判断；本库没有可用于个人获奖概率的校准数据。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "atcoder-beginner-contest:v2:rubric"
+              ],
+              "conditions": [
+                "奖项取决于当届赛道与评审，不承诺结果"
+              ]
+            }
+          }
+        ],
+        "opportunityCost": {
+          "text": "官方介绍明确线上竞赛免费参加，以赞助支持运营；这是2026读取的一般参与费政策，不是个人设备、网络或可选线下活动总费用为零的保证。 选择这项任务意味着把相同时间用于程序训练或软件制作；请与其他课程、作品或实习准备的优先级比较。",
+          "basis": "suggestion",
+          "studentFactIds": [
+            "s.weeklyCommitment.599ad580c3a5c743"
+          ],
+          "competitionFactIds": [
+            "atcoder-beginner-contest:v2:investment"
+          ],
+          "conditions": [
+            "投入估计是准备建议，实际成本需逐项核对。"
+          ]
+        },
+        "nextStep": {
+          "text": "画一个Bob可选择A或B终点的两步小图，分别列出两人的最优选择。",
+          "basis": "suggestion",
+          "studentFactIds": [
+            "s.weeklyCommitment.599ad580c3a5c743"
+          ],
+          "competitionFactIds": [],
+          "conditions": [
+            "你更喜欢推导策略还是实现测试？"
+          ]
+        },
+        "checkpoint": "能说明存在到A的路仍可能Alice必输。",
+        "sources": [
+          {
+            "id": "abc-c7-home",
+            "title": "ABC427官方比赛页",
+            "url": "https://atcoder.jp/contests/abc427",
+            "scope": "2025第427场资格、100分钟和分值",
+            "checkedAt": "2026-11-05"
+          },
+          {
+            "id": "abc-c7-rules",
+            "title": "比赛规则页面",
+            "url": "https://atcoder.jp/contests/abc427/rules",
+            "scope": "2026-11读取的通用个人参赛、计分和提交规则",
+            "checkedAt": "2026-11-05"
+          },
+          {
+            "id": "abc-c7-task",
+            "title": "D - The Simple Game完整题面",
+            "url": "https://atcoder.jp/contests/abc427/tasks/abc427_d",
+            "scope": "ABC427 D题、输入输出、限制与425分",
+            "checkedAt": "2026-11-05"
+          },
+          {
+            "id": "abc-c7-editorial",
+            "title": "D题官方日文解说",
+            "url": "https://atcoder.jp/contests/abc427/editorial/14196",
+            "scope": "ABC427 D有限步博弈的正确动态规划",
+            "checkedAt": "2026-11-05"
+          },
+          {
+            "id": "abc-c7-free",
+            "title": "AtCoder为什么免费",
+            "url": "https://info.atcoder.jp/overview/about/why-tada",
+            "scope": "2026-11读取的线上竞赛参与费政策，不含个人设备网络",
+            "checkedAt": "2026-11-05"
+          }
+        ],
+        "evidenceFacts": [
+          {
+            "id": "atcoder-beginner-contest:v2:eligibility",
+            "text": "第427场标记所有人可参加，计入rating的范围为0—1999，不能把rating范围当参赛门槛；奖品另有日本居住和学生身份限制，不等于参赛资格。",
+            "sourceIds": [
+              "abc-c7-home"
+            ],
+            "scope": "2025第427场资格、100分钟和分值",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "atcoder-beginner-contest:v2:track",
+            "text": "D题在每点至少一条出边的有向图上，Alice先手、Bob后手各移动K次，终点字符决定赢家，要求双方最优策略的结果。",
+            "sourceIds": [
+              "abc-c7-task"
+            ],
+            "scope": "ABC427 D题、输入输出、限制与425分",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "atcoder-beginner-contest:v2:participation",
+            "text": "第427场100分钟、线上评测；通用规则要求个人独立作答。公开历史题可以练习，不能回到已结束的正式比赛取得原名次。",
+            "sourceIds": [
+              "abc-c7-home",
+              "abc-c7-rules"
+            ],
+            "scope": "2025第427场资格、100分钟和分值；2026-11读取的通用个人参赛、计分和提交规则",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "atcoder-beginner-contest:v2:deliverables",
+            "text": "用平台支持语言提交程序，从标准输入读多组图和K，逐组输出Alice或Bob；不能将样例的一条非最优过程视为策略证明。",
+            "sourceIds": [
+              "abc-c7-rules",
+              "abc-c7-task"
+            ],
+            "scope": "2026-11读取的通用个人参赛、计分和提交规则；ABC427 D题、输入输出、限制与425分",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "atcoder-beginner-contest:v2:rubric",
+            "text": "第427场D题425分、2秒1024MiB；总分优先，同分按最后得分时间与已解题错误提交每次5分钟比较。CE不罚时、最终没解出的题错误不计入罚时。",
+            "sourceIds": [
+              "abc-c7-home",
+              "abc-c7-rules",
+              "abc-c7-task"
+            ],
+            "scope": "2025第427场资格、100分钟和分值；2026-11读取的通用个人参赛、计分和提交规则；ABC427 D题、输入输出、限制与425分",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "atcoder-beginner-contest:v2:investment",
+            "text": "官方介绍明确线上竞赛免费参加，以赞助支持运营；这是2026读取的一般参与费政策，不是个人设备、网络或可选线下活动总费用为零的保证。",
+            "sourceIds": [
+              "abc-c7-free"
+            ],
+            "scope": "2026-11读取的线上竞赛参与费政策，不含个人设备网络",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "atcoder-beginner-contest:v2:eligibility.individual",
+            "text": "通用规则Team or Individual明确：无另行说明时必须个人独立参赛，不允许组队。该规则在2026年11月读取，不证明2025版本未变。",
+            "sourceIds": [
+              "abc-c7-rules"
+            ],
+            "scope": "2026-11读取的通用个人参赛、计分和提交规则",
+            "status": "historical",
+            "kind": "official_fact"
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "itemId": "google-kick-start:2022:round-a-speed-typing:historical-public-task:round-a-speed-typing-2022:v3",
+        "seriesId": "google-kick-start",
+        "name": "Google Kick Start",
+        "trackLabel": "Round A：Speed Typing",
+        "edition": "2022历史题；系列已于2023结束",
+        "contentTier": "L3",
+        "eligibilityStatus": "unknown",
+        "eligibilityNotes": [
+          "完整历史资格与费用条款未核；当前不提供报名",
+          "官方归档中的旧测试时限是历史评测条件，不作本机性能保证",
+          "报名资格与日期请通过官方入口自行核查。",
+          "个人总支出仍需核实，尚不能认定符合已报预算。"
+        ],
+        "registration": {
+          "status": "historical",
+          "note": "Google官方2023告别公告明确赛事结束，现存官方归档供题目学习；不推荐当届报名，不计近期正式参与覆盖。"
+        },
+        "preparation": "conditional",
+        "coreTask": {
+          "text": "把输入修复故事转成子序列问题，用双指针保持顺序并证明删除次数唯一。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [
+            "google-kick-start:v2:track"
+          ],
+          "conditions": []
+        },
+        "reasons": [
+          {
+            "text": "该题是仅删除且保序的字符串判定，产出为逐例删除数或IMPOSSIBLE；对你用1–2周探索方向而言，可用官方归档历史题完成一次双指针与反例验证的小交付，每周5–10小时足以安排短练。",
+            "basis": "inference",
+            "studentFactIds": [
+              "s.goalIntent.c54d1a8bca1535aa",
+              "s.weeklyCommitment.599ad580c3a5c743",
+              "s.preparationHorizon.23efb888fdffefde"
+            ],
+            "competitionFactIds": [
+              "google-kick-start:v2:track",
+              "google-kick-start:v2:deliverables"
+            ],
+            "conditions": [
+              "2022系列已结束，仅作官方归档历史题练习，不表示当前可报名。",
+              "报名资格与日期请另行通过官方入口核查。"
+            ]
+          }
+        ],
+        "currentRole": {
+          "text": "可先承担独立字符串算法角色，画双指针跟踪表并构造顺序反例，形成可复核的练习记录。",
+          "basis": "suggestion",
+          "studentFactIds": [
+            "s.preparationHorizon.23efb888fdffefde"
+          ],
+          "competitionFactIds": [
+            "google-kick-start:v2:deliverables"
+          ],
+          "conditions": [
+            "仅按历史题练习，不声称通过官方赛程。"
+          ]
+        },
+        "gaps": [
+          {
+            "text": "完整历史资格与费用条款未核；当前不提供报名",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          },
+          {
+            "text": "官方归档中的旧测试时限是历史评测条件，不作本机性能保证",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          },
+          {
+            "text": "报名资格与日期请通过官方入口自行核查。",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          },
+          {
+            "text": "个人总支出仍需核实，尚不能认定符合已报预算。",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          }
+        ],
+        "values": [
+          {
+            "dimension": "governance",
+            "claim": {
+              "text": "已读规则来源：Google（官方竞赛归档）。仍需按来源范围和后续补充通知使用。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "google-kick-start:v2:track"
+              ],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "taskRelevance",
+            "claim": {
+              "text": "该路径实际任务为：把输入修复故事转成子序列问题，用双指针保持顺序并证明删除次数唯一。；相关性须与学生目标相对照。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "portfolio",
+            "claim": {
+              "text": "能展示条件抽象、线性复杂度分析与反例设计；练习不等于通过官方赛程。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "google-kick-start:v2:deliverables"
+              ],
+              "conditions": [
+                "已实际完成相应工作",
+                "公开展示已取得必要授权"
+              ]
+            }
+          },
+          {
+            "dimension": "learningFeedback",
+            "claim": {
+              "text": "体验时可以这样检查学习：第一例删1；第二例不能通过删除生成大写K，不使用大小写归一化偷换题目。；这不是承诺赛事会提供个人反馈。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "industryAcademicAccess",
+            "claim": {
+              "text": "尚无可核实的个人行业/学术接触机会或学校/招聘认可承诺；不从赛事名称推导。",
+              "basis": "unknown",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "recognition",
+            "claim": {
+              "text": "尚无可核实的个人行业/学术接触机会或学校/招聘认可承诺；不从赛事名称推导。",
+              "basis": "unknown",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          }
+        ],
+        "difficulty": [
+          {
+            "stage": "entry",
+            "claim": {
+              "text": "需理解字符串下标与循环条件，新手可先用纸笔划掉多余字符。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "google-kick-start:v2:track"
+              ],
+              "conditions": [
+                "根据学生真实经历判断；没有经历不等于没有潜力"
+              ]
+            }
+          },
+          {
+            "stage": "completion",
+            "claim": {
+              "text": "难点是保序而非字符数量；必须检查目标指针最终到达末尾，并在读取字符前防止越界。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "google-kick-start:v2:deliverables"
+              ],
+              "conditions": [
+                "需核对个人时间、队友、导师与必要资源"
+              ]
+            }
+          },
+          {
+            "stage": "award",
+            "claim": {
+              "text": "完成交付与获奖分开判断；本库没有可用于个人获奖概率的校准数据。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "google-kick-start:v2:rubric"
+              ],
+              "conditions": [
+                "奖项取决于当届赛道与评审，不承诺结果"
+              ]
+            }
+          }
+        ],
+        "opportunityCost": {
+          "text": "编辑建议四周每周2—3小时，已有电脑和本地语言运行环境即可读题实现；历史正式报名及个人全程费用未知，当前赛事已结束。 选择这项任务意味着把相同时间用于程序训练或软件制作；请与其他课程、作品或实习准备的优先级比较。",
+          "basis": "suggestion",
+          "studentFactIds": [
+            "s.weeklyCommitment.599ad580c3a5c743"
+          ],
+          "competitionFactIds": [],
+          "conditions": [
+            "投入估计是准备建议，实际成本需逐项核对。"
+          ]
+        },
+        "nextStep": {
+          "text": "分别追踪I=aaaa/P=aaaaa和I=KickstartIsFun/P=kkickstartiisfun两个原例；再自行构造字符数量够但顺序错误的反例。",
+          "basis": "suggestion",
+          "studentFactIds": [
+            "s.weeklyCommitment.599ad580c3a5c743"
+          ],
+          "competitionFactIds": [],
+          "conditions": [
+            "你能在写代码前解释每次指针移动的含义吗？"
+          ]
+        },
+        "checkpoint": "第一例删1；第二例不能通过删除生成大写K，不使用大小写归一化偷换题目。",
+        "sources": [
+          {
+            "id": "gks-2022-speed-task",
+            "title": "2022 Round A Speed Typing完整题",
+            "url": "https://github.com/google/coding-competitions-archive/blob/main/kickstart/2022/round_a/speed_typing/statement.pdf",
+            "scope": "2022已结束赛事的历史题与判定依据；不构成当前报名机会",
+            "checkedAt": "2026-11-06"
+          },
+          {
+            "id": "gks-2022-speed-analysis",
+            "title": "Speed Typing官方分析",
+            "url": "https://github.com/google/coding-competitions-archive/blob/main/kickstart/2022/round_a/speed_typing/analysis.pdf",
+            "scope": "2022已结束赛事的历史题与判定依据；不构成当前报名机会",
+            "checkedAt": "2026-11-06"
+          },
+          {
+            "id": "google-competitions-farewell",
+            "title": "Google Coding Competitions正式告别及归档公告",
+            "url": "https://developers.googleblog.com/celebrate-googles-coding-competitions-with-a-final-round-of-programming-fun/",
+            "scope": "2022已结束赛事的历史题与判定依据；不构成当前报名机会",
+            "checkedAt": "2026-11-06"
+          }
+        ],
+        "evidenceFacts": [
+          {
+            "id": "google-kick-start:v2:eligibility",
+            "text": "Google官方告别公告明确结束Coding Competitions，并将题面、分析及测试数据持续保留在官方GitHub归档。",
+            "sourceIds": [
+              "google-competitions-farewell"
+            ],
+            "scope": "2022已结束赛事的历史题与判定依据；不构成当前报名机会",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "google-kick-start:v2:track",
+            "text": "已知目标字符串I和实际输入P，只允许从P删除字符，判断能否得到I；能则输出删除数，不能则IMPOSSIBLE，字符大小写有区别。",
+            "sourceIds": [
+              "gks-2022-speed-task"
+            ],
+            "scope": "2022已结束赛事的历史题与判定依据；不构成当前报名机会",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "google-kick-start:v2:participation",
+            "text": "正式Round A题按多组输入计算结果，不是Coding Practice活动。先处理目标全同字符的测试集，再处理任意大小写字母串。",
+            "sourceIds": [
+              "gks-2022-speed-task"
+            ],
+            "scope": "2022已结束赛事的历史题与判定依据；不构成当前报名机会",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "google-kick-start:v2:deliverables",
+            "text": "每例输出Case #x加删除数或IMPOSSIBLE；T至多100，字符串长1至10万，内存1GB。测试集1限20秒且I字母全同，测试集2限40秒。",
+            "sourceIds": [
+              "gks-2022-speed-task"
+            ],
+            "scope": "2022已结束赛事的历史题与判定依据；不构成当前报名机会",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "google-kick-start:v2:rubric",
+            "text": "答案必须满足仅删除且保序，不能替换、插入或忽略大小写。两个测试集的范围与时限明确；样例正确不代替全部测试。未取得分值，不自定权重。",
+            "sourceIds": [
+              "gks-2022-speed-task"
+            ],
+            "scope": "2022已结束赛事的历史题与判定依据；不构成当前报名机会",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "google-kick-start:v2:eligibility.historical-rules",
+            "text": "2022年龄、地域及雇佣关系等完整资格条款未取得；公开读题不证明历史或当前参赛资格。",
+            "sourceIds": [],
+            "scope": "2022历史报名资格资料缺口；仅供公开题学习，不确认历史或当前报名条件",
+            "status": "unknown",
+            "kind": "unknown"
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "itemId": "google-code-jam:2022:qualification-3d-printing:historical-public-task:qualification-3d-printing-2022:v3",
+        "seriesId": "google-code-jam",
+        "name": "Google Code Jam",
+        "trackLabel": "Qualification Round：3D Printing",
+        "edition": "2022历史题；系列已于2023结束",
+        "contentTier": "L3",
+        "eligibilityStatus": "unknown",
+        "eligibilityNotes": [
+          "完整2022年龄/地域等资格条款与历史个人费用未核；当前已停办",
+          "归档的旧评测环境不可据本机运行假装已复现；不承诺任何历史名次",
+          "报名资格与日期请通过官方入口自行核查。",
+          "个人总支出仍需核实，尚不能认定符合已报预算。"
+        ],
+        "registration": {
+          "status": "historical",
+          "note": "Google官方2023告别公告明确赛事结束，现存官方归档供题目学习；不推荐当届报名，不计近期正式参与覆盖。"
+        },
+        "preparation": "conditional",
+        "coreTask": {
+          "text": "从共享资源约束提炼逐维上限，构造满足等式的可行解，并证明无解条件。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [
+            "google-code-jam:v2:track"
+          ],
+          "conditions": []
+        },
+        "reasons": [
+          {
+            "text": "从三台打印机容量压缩出四个逐色最小值并构造总和恰为100万的方案，是一次短小的约束建模任务；适合你用1–2周、每周5–10小时试做，以判断是否喜欢这类个人构造与证明。",
+            "basis": "inference",
+            "studentFactIds": [
+              "s.goalIntent.c54d1a8bca1535aa",
+              "s.weeklyCommitment.599ad580c3a5c743",
+              "s.preparationHorizon.23efb888fdffefde"
+            ],
+            "competitionFactIds": [
+              "google-code-jam:v2:track",
+              "google-code-jam:v2:deliverables"
+            ],
+            "conditions": [
+              "2022届已结束，仅作官方归档历史题练习，不构成当前报名机会。",
+              "报名资格与日期请另行通过官方入口核查。"
+            ]
+          }
+        ],
+        "currentRole": {
+          "text": "可先承担独立约束建模与实现角色，交付不变量证明、代码和边界测试，作为低门槛探索。",
+          "basis": "suggestion",
+          "studentFactIds": [
+            "s.preparationHorizon.23efb888fdffefde"
+          ],
+          "competitionFactIds": [
+            "google-code-jam:v2:deliverables"
+          ],
+          "conditions": [
+            "仅按历史题练习，不声称赛事成绩或证书。"
+          ]
+        },
+        "gaps": [
+          {
+            "text": "完整2022年龄/地域等资格条款与历史个人费用未核；当前已停办",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          },
+          {
+            "text": "归档的旧评测环境不可据本机运行假装已复现；不承诺任何历史名次",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          },
+          {
+            "text": "报名资格与日期请通过官方入口自行核查。",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          },
+          {
+            "text": "个人总支出仍需核实，尚不能认定符合已报预算。",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          }
+        ],
+        "values": [
+          {
+            "dimension": "governance",
+            "claim": {
+              "text": "已读规则来源：Google（官方竞赛归档）。仍需按来源范围和后续补充通知使用。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "google-code-jam:v2:track"
+              ],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "taskRelevance",
+            "claim": {
+              "text": "该路径实际任务为：从共享资源约束提炼逐维上限，构造满足等式的可行解，并证明无解条件。；相关性须与学生目标相对照。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "portfolio",
+            "claim": {
+              "text": "形成从文字约束到算法不变量的完整证据；历史公开题练习不产生赛事成绩或证书。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "google-code-jam:v2:deliverables"
+              ],
+              "conditions": [
+                "已实际完成相应工作",
+                "公开展示已取得必要授权"
+              ]
+            }
+          },
+          {
+            "dimension": "learningFeedback",
+            "claim": {
+              "text": "体验时可以这样检查学习：对第二例指出总上限不足100万；对第三例不把容量够用误判为任意总和都可。；这不是承诺赛事会提供个人反馈。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "industryAcademicAccess",
+            "claim": {
+              "text": "尚无可核实的个人行业/学术接触机会或学校/招聘认可承诺；不从赛事名称推导。",
+              "basis": "unknown",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "recognition",
+            "claim": {
+              "text": "尚无可核实的个人行业/学术接触机会或学校/招聘认可承诺；不从赛事名称推导。",
+              "basis": "unknown",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          }
+        ],
+        "difficulty": [
+          {
+            "stage": "entry",
+            "claim": {
+              "text": "会数组、循环、整数比较和标准输入输出即可开始；重点是区分每台机器容量与三台总和。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "google-code-jam:v2:track"
+              ],
+              "conditions": [
+                "根据学生真实经历判断；没有经历不等于没有潜力"
+              ]
+            }
+          },
+          {
+            "stage": "completion",
+            "claim": {
+              "text": "样例通过不够，需同时证明解的非负性、逐色上界与精确总和；额外加大用量即使未超墨盒也可能使答案无效。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "google-code-jam:v2:deliverables"
+              ],
+              "conditions": [
+                "需核对个人时间、队友、导师与必要资源"
+              ]
+            }
+          },
+          {
+            "stage": "award",
+            "claim": {
+              "text": "完成交付与获奖分开判断；本库没有可用于个人获奖概率的校准数据。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "google-code-jam:v2:rubric"
+              ],
+              "conditions": [
+                "奖项取决于当届赛道与评审，不承诺结果"
+              ]
+            }
+          }
+        ],
+        "opportunityCost": {
+          "text": "编辑建议四周每周2—4小时；本地电脑与离线编程工具即可完成此题分析。历史赛事个人完整费用未知，题目中的墨水是输入数据，不是采购预算。 选择这项任务意味着把相同时间用于程序训练或软件制作；请与其他课程、作品或实习准备的优先级比较。",
+          "basis": "suggestion",
+          "studentFactIds": [
+            "s.weeklyCommitment.599ad580c3a5c743"
+          ],
+          "competitionFactIds": [],
+          "conditions": [
+            "投入估计是准备建议，实际成本需逐项核对。"
+          ]
+        },
+        "nextStep": {
+          "text": "手算原题三个样例的四个逐色最小值，逐项检查总和与上界，再独立构造一个不同合法输出。",
+          "basis": "suggestion",
+          "studentFactIds": [
+            "s.weeklyCommitment.599ad580c3a5c743"
+          ],
+          "competitionFactIds": [],
+          "conditions": [
+            "你更擅长找约束、写构造还是发现漏掉的等式？"
+          ]
+        },
+        "checkpoint": "对第二例指出总上限不足100万；对第三例不把容量够用误判为任意总和都可。",
+        "sources": [
+          {
+            "id": "gcj-2022-3d-task",
+            "title": "2022资格赛3D Printing完整官方题",
+            "url": "https://github.com/google/coding-competitions-archive/blob/main/codejam/2022/qualification_round/3d_printing/statement.pdf",
+            "scope": "2022已结束赛事的历史题与判定依据；不构成当前报名机会",
+            "checkedAt": "2026-11-06"
+          },
+          {
+            "id": "gcj-2022-3d-analysis",
+            "title": "3D Printing官方分析",
+            "url": "https://github.com/google/coding-competitions-archive/blob/main/codejam/2022/qualification_round/3d_printing/analysis.pdf",
+            "scope": "2022已结束赛事的历史题与判定依据；不构成当前报名机会",
+            "checkedAt": "2026-11-06"
+          },
+          {
+            "id": "google-competitions-farewell",
+            "title": "Google Coding Competitions正式告别及归档公告",
+            "url": "https://developers.googleblog.com/celebrate-googles-coding-competitions-with-a-final-round-of-programming-fun/",
+            "scope": "2022已结束赛事的历史题与判定依据；不构成当前报名机会",
+            "checkedAt": "2026-11-06"
+          }
+        ],
+        "evidenceFacts": [
+          {
+            "id": "google-code-jam:v2:eligibility",
+            "text": "Google官方告别公告明确结束Coding Competitions，并将题面、分析及测试数据持续保留在官方GitHub归档。",
+            "sourceIds": [
+              "google-competitions-farewell"
+            ],
+            "scope": "2022已结束赛事的历史题与判定依据；不构成当前报名机会",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "google-code-jam:v2:track",
+            "text": "给定三台打印机的青、品红、黄、黑四墨盒容量，找能由三台机器分别打印同色的四个非负整数用量，总和必须恰为100万；无解输出IMPOSSIBLE。",
+            "sourceIds": [
+              "gcj-2022-3d-task"
+            ],
+            "scope": "2022已结束赛事的历史题与判定依据；不构成当前报名机会",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "google-code-jam:v2:participation",
+            "text": "2022资格赛该题采用标准输入输出，按测试用例输出Case #x结果；原题允许多解任取，不要求真的制作打印机或购买墨盒。",
+            "sourceIds": [
+              "gcj-2022-3d-task"
+            ],
+            "scope": "2022已结束赛事的历史题与判定依据；不构成当前报名机会",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "google-code-jam:v2:deliverables",
+            "text": "每例读入3行4个容量；输出四个整数或IMPOSSIBLE。容量在0至100万，测试用例至多100；题定时间5秒、内存1GB。",
+            "sourceIds": [
+              "gcj-2022-3d-task"
+            ],
+            "scope": "2022已结束赛事的历史题与判定依据；不构成当前报名机会",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "google-code-jam:v2:rubric",
+            "text": "官方题的正确性判定要求四用量分别不超过每台打印机对应容量、非负且和恰为100万；多种合法结果均接受，唯一测试集标Visible Verdict。没有取得该题分值，不编造分数。",
+            "sourceIds": [
+              "gcj-2022-3d-task"
+            ],
+            "scope": "2022已结束赛事的历史题与判定依据；不构成当前报名机会",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "google-code-jam:v2:eligibility.historical-rules",
+            "text": "2022年龄、地域及雇佣关系等完整资格条款未取得；公开读题不证明历史或当前参赛资格。",
+            "sourceIds": [],
+            "scope": "2022历史报名资格资料缺口；仅供公开题学习，不确认历史或当前报名条件",
+            "status": "unknown",
+            "kind": "unknown"
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "itemId": "apple-swift-student-challenge:2026:app-playground:individual-student:global-2026:v3",
+        "seriesId": "apple-swift-student-challenge",
+        "name": "Apple Swift Student Challenge",
+        "trackLabel": "个人离线App Playground",
+        "edition": "2026（已结束；用于作品准备）",
+        "contentTier": "L3",
+        "eligibilityStatus": "unknown",
+        "eligibilityNotes": [
+          "2027条款、报名时间与当届工具版本未采用；此记录不证明下一届可报",
+          "设备实际可借用性、用户个人年龄及学校证明仍待确认",
+          "报名资格与日期请通过官方入口自行核查。",
+          "个人总支出仍需核实，尚不能认定符合已报预算。"
+        ],
+        "registration": {
+          "status": "closed",
+          "note": "2026条款截止于2026-02-28 23:59 PST，已过期；这里只提供历史规则下的作品练习路线。"
+        },
+        "preparation": "conditional",
+        "coreTask": {
+          "text": "把一个小问题做成三分钟内可体验的离线交互程序，用运行效果和自己的文字解释技术与设计取舍。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [
+            "apple-swift-student-challenge:v2:track"
+          ],
+          "conditions": []
+        },
+        "reasons": [
+          {
+            "text": "该路径要求把一个小问题做成离线交互App Playground，并解释技术与设计取舍；你每周5–10小时、1–2周可先做三屏流程和一个状态反馈，探索自己是否愿意继续软件交互方向，而不把2026报名当作当前可参加。",
+            "basis": "inference",
+            "studentFactIds": [
+              "s.goalIntent.c54d1a8bca1535aa",
+              "s.weeklyCommitment.599ad580c3a5c743",
+              "s.preparationHorizon.23efb888fdffefde"
+            ],
+            "competitionFactIds": [
+              "apple-swift-student-challenge:v2:track",
+              "apple-swift-student-challenge:v2:deliverables"
+            ],
+            "conditions": [
+              "2026届已结束，不推定2027资格与窗口。",
+              "设备、在讀证明与当前工具版本需另行核对。"
+            ]
+          }
+        ],
+        "currentRole": {
+          "text": "可先承担独立交互开发角色，完成一个按钮引起状态变化并能离线试用的小流程。",
+          "basis": "suggestion",
+          "studentFactIds": [
+            "s.preparationHorizon.23efb888fdffefde"
+          ],
+          "competitionFactIds": [
+            "apple-swift-student-challenge:v2:deliverables"
+          ],
+          "conditions": [
+            "仅作探索性作品准备，不声称可提交2026申请。"
+          ]
+        },
+        "gaps": [
+          {
+            "text": "2027条款、报名时间与当届工具版本未采用；此记录不证明下一届可报",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          },
+          {
+            "text": "设备实际可借用性、用户个人年龄及学校证明仍待确认",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          },
+          {
+            "text": "报名资格与日期请通过官方入口自行核查。",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          },
+          {
+            "text": "个人总支出仍需核实，尚不能认定符合已报预算。",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          }
+        ],
+        "values": [
+          {
+            "dimension": "governance",
+            "claim": {
+              "text": "已读规则来源：Apple Developer。仍需按来源范围和后续补充通知使用。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "apple-swift-student-challenge:v2:track"
+              ],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "taskRelevance",
+            "claim": {
+              "text": "该路径实际任务为：把一个小问题做成三分钟内可体验的离线交互程序，用运行效果和自己的文字解释技术与设计取舍。；相关性须与学生目标相对照。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "portfolio",
+            "claim": {
+              "text": "完成后可保留小型交互作品及本人实现记录；申请条款不保证反馈、获奖或工作机会，展示前仍应清理第三方授权与个人数据。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "apple-swift-student-challenge:v2:deliverables"
+              ],
+              "conditions": [
+                "已实际完成相应工作",
+                "公开展示已取得必要授权"
+              ]
+            }
+          },
+          {
+            "dimension": "learningFeedback",
+            "claim": {
+              "text": "体验时可以这样检查学习：另一人在三分钟内理解目标并完成操作，作者能解释触发一次状态更新的代码。；这不是承诺赛事会提供个人反馈。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "industryAcademicAccess",
+            "claim": {
+              "text": "尚无可核实的个人行业/学术接触机会或学校/招聘认可承诺；不从赛事名称推导。",
+              "basis": "unknown",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "recognition",
+            "claim": {
+              "text": "尚无可核实的个人行业/学术接触机会或学校/招聘认可承诺；不从赛事名称推导。",
+              "basis": "unknown",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          }
+        ],
+        "difficulty": [
+          {
+            "stage": "entry",
+            "claim": {
+              "text": "先能独立修改一个Swift示例并说明变量和事件；没有Apple开发设备时先画交互流程，不把原型当可提交程序。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "apple-swift-student-challenge:v2:track"
+              ],
+              "conditions": [
+                "根据学生真实经历判断；没有经历不等于没有潜力"
+              ]
+            }
+          },
+          {
+            "stage": "completion",
+            "claim": {
+              "text": "主要差距是离线可运行、三分钟体验完整、英文解释清楚，以及每部分都能证明由本人创作。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "apple-swift-student-challenge:v2:deliverables"
+              ],
+              "conditions": [
+                "需核对个人时间、队友、导师与必要资源"
+              ]
+            }
+          },
+          {
+            "stage": "award",
+            "claim": {
+              "text": "完成交付与获奖分开判断；本库没有可用于个人获奖概率的校准数据。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "apple-swift-student-challenge:v2:rubric"
+              ],
+              "conditions": [
+                "奖项取决于当届赛道与评审，不承诺结果"
+              ]
+            }
+          }
+        ],
+        "opportunityCost": {
+          "text": "编辑建议用四周、每周4—6小时试做一条交互流程；Mac或iPad及可运行工具是资源条件，未持有设备时先核对借用方案，不把开发者免费注册当总成本为零。 选择这项任务意味着把相同时间用于程序训练或软件制作；请与其他课程、作品或实习准备的优先级比较。",
+          "basis": "suggestion",
+          "studentFactIds": [
+            "s.weeklyCommitment.599ad580c3a5c743"
+          ],
+          "competitionFactIds": [],
+          "conditions": [
+            "投入估计是准备建议，实际成本需逐项核对。"
+          ]
+        },
+        "nextStep": {
+          "text": "选一个可离线表达的小知识点，画三屏流程并完成一个按钮引起状态变化的交互；关闭网络后试用。",
+          "basis": "suggestion",
+          "studentFactIds": [
+            "s.weeklyCommitment.599ad580c3a5c743"
+          ],
+          "competitionFactIds": [],
+          "conditions": [
+            "你更喜欢交互解释、写逻辑还是排查运行问题？"
+          ]
+        },
+        "checkpoint": "另一人在三分钟内理解目标并完成操作，作者能解释触发一次状态更新的代码。",
+        "sources": [
+          {
+            "id": "swift-2026-policy",
+            "title": "Swift Student Challenge 2026 Terms and Conditions",
+            "url": "https://developer.apple.com/swift-student-challenge/policy/",
+            "scope": "2026个人挑战赛正式条款",
+            "checkedAt": "2026-11-05"
+          },
+          {
+            "id": "swift-playground-requirements",
+            "title": "Eligibility and requirements",
+            "url": "https://developer.apple.com/swift-student-challenge/eligibility/",
+            "scope": "2026-11-05读取的资格与作品要求页；与2026正式条款共同使用",
+            "checkedAt": "2026-11-05"
+          },
+          {
+            "id": "swift-accessibility-2025-full",
+            "title": "Accessibility Escape：作者完整2025公开项目",
+            "url": "https://github.com/phnagy/ssc2025/tree/960b72301329ff8dd5f67801eca8d9a8240fabe7",
+            "scope": "作者标记为Swift Student Challenge 2025的完整源代码/本地素材；不认证获奖或2026合规",
+            "checkedAt": "2026-11-05"
+          }
+        ],
+        "evidenceFacts": [
+          {
+            "id": "apple-swift-student-challenge:v2:eligibility",
+            "text": "2026规则要求不从事全职开发工作并满足列明学生身份；中国大陆通常至少14岁。需注册Apple开发者身份，Apple员工、实习生及列明关联人员不符资格；最终由Apple核验。",
+            "sourceIds": [
+              "swift-2026-policy"
+            ],
+            "scope": "2026个人挑战赛正式条款",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "apple-swift-student-challenge:v2:track",
+            "text": "每人提交一个个人创作的App Playground；团队作品不参与评审，第三方素材须遵守许可并说明用途。",
+            "sourceIds": [
+              "swift-2026-policy"
+            ],
+            "scope": "2026个人挑战赛正式条款",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "apple-swift-student-challenge:v2:participation",
+            "text": "通过官方申请入口填表并上传作品和有效在读证明；只接受截止前在线提交，英文问答须本人撰写。",
+            "sourceIds": [
+              "swift-2026-policy"
+            ],
+            "scope": "2026个人挑战赛正式条款",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "apple-swift-student-challenge:v2:deliverables",
+            "text": "提交不超过25MB的ZIP，包含.swiftpm及离线资源；使用Swift Playground 4.6或Xcode 26及更新版本，内容为英文。作品不能依赖网络或要求评委登录。",
+            "sourceIds": [
+              "swift-2026-policy"
+            ],
+            "scope": "2026个人挑战赛正式条款",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "apple-swift-student-challenge:v2:rubric",
+            "text": "评审依据技术完成度、创意和申请表书面回答；评分不公开，也不提供个人作品反馈。AI辅助须披露，不能替代本人技术理解。",
+            "sourceIds": [
+              "swift-2026-policy"
+            ],
+            "scope": "2026个人挑战赛正式条款",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "apple-swift-student-challenge:v2:eligibility.individual",
+            "text": "作品须由报名者本人独立完成或独立修改模板；不接受小组作品。",
+            "sourceIds": [
+              "swift-2026-policy"
+            ],
+            "scope": "2026个人挑战赛正式条款",
+            "status": "historical",
+            "kind": "official_fact"
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "itemId": "chinese-classics:2025-zhejiang-13:classics-recitation:huzhou-individual:zhejiang-huzhou-local:v3",
+        "seriesId": "chinese-classics",
+        "name": "中华经典诵写讲大赛",
+        "trackLabel": "典润之江个人经典朗诵",
+        "edition": "2025浙江第十三届典润之江及湖州师范校选",
+        "contentTier": "L3",
+        "eligibilityStatus": "unknown",
+        "eligibilityNotes": [
+          "校通知有届次与报名年份笔误，赛程以组委会确认为准；本条不据笔误判可报名。数字评分细则未公开读取",
+          "报名资格与日期请通过官方入口自行核查。",
+          "个人总支出仍需核实，尚不能认定符合已报预算。"
+        ],
+        "registration": {
+          "status": "historical",
+          "note": "历史届次，仅用于历史任务学习；不表示当前仍可报名，也不自动适用于下一届。"
+        },
+        "preparation": "conditional",
+        "coreTask": {
+          "text": "把指定古文中的认识转折转成有文本依据的停连、重音和语气，让听众听懂而非只感到情绪强烈。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [
+            "chinese-classics:v2:track"
+          ],
+          "conditions": []
+        },
+        "reasons": [
+          {
+            "text": "校选为脱稿朗诵一篇且不需配乐、PPT，官方校选考阅读理解、艺术鉴赏和语言表达；在1–2周内可用指定题库做一次文本细读和录音试讲，探索是否适合表达类任务，同时每周5–10小时可安排短练。",
+            "basis": "inference",
+            "studentFactIds": [
+              "s.goalIntent.c54d1a8bca1535aa",
+              "s.weeklyCommitment.599ad580c3a5c743",
+              "s.preparationHorizon.23efb888fdffefde"
+            ],
+            "competitionFactIds": [
+              "chinese-classics:v2:deliverables",
+              "chinese-classics:v2:rubric",
+              "chinese-classics:v2:track"
+            ],
+            "conditions": [
+              "仅按2025浙江与湖州师范校选历史条款理解，个人组不等于全国通道。",
+              "当前资格与日期请另行通过官方入口核查。"
+            ]
+          }
+        ],
+        "currentRole": {
+          "text": "可先承担文本解读角色，标注河伯前后认知变化和易错读音，再决定是否进入朗诵表达。",
+          "basis": "suggestion",
+          "studentFactIds": [
+            "s.preparationHorizon.23efb888fdffefde"
+          ],
+          "competitionFactIds": [
+            "chinese-classics:v2:deliverables"
+          ],
+          "conditions": [
+            "不改变指定原文，先核准读音和句意再讨论情绪。"
+          ]
+        },
+        "gaps": [
+          {
+            "text": "校通知有届次与报名年份笔误，赛程以组委会确认为准；本条不据笔误判可报名。数字评分细则未公开读取",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          },
+          {
+            "text": "报名资格与日期请通过官方入口自行核查。",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          },
+          {
+            "text": "个人总支出仍需核实，尚不能认定符合已报预算。",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          }
+        ],
+        "values": [
+          {
+            "dimension": "governance",
+            "claim": {
+              "text": "已读规则来源：湖州师范学院校赛组织单位。仍需按来源范围和后续补充通知使用。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "chinese-classics:v2:track"
+              ],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "taskRelevance",
+            "claim": {
+              "text": "该路径实际任务为：把指定古文中的认识转折转成有文本依据的停连、重音和语气，让听众听懂而非只感到情绪强烈。；相关性须与学生目标相对照。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "portfolio",
+            "claim": {
+              "text": "积累文本细读、普通话与公开表达；朗诵方案属于个人解释，需要原句支撑。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "chinese-classics:v2:deliverables"
+              ],
+              "conditions": [
+                "已实际完成相应工作",
+                "公开展示已取得必要授权"
+              ]
+            }
+          },
+          {
+            "dimension": "learningFeedback",
+            "claim": {
+              "text": "体验时可以这样检查学习：读音和句意先核准，再讨论情绪；不改变指定原文。；这不是承诺赛事会提供个人反馈。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "industryAcademicAccess",
+            "claim": {
+              "text": "尚无可核实的个人行业/学术接触机会或学校/招聘认可承诺；不从赛事名称推导。",
+              "basis": "unknown",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "recognition",
+            "claim": {
+              "text": "尚无可核实的个人行业/学术接触机会或学校/招聘认可承诺；不从赛事名称推导。",
+              "basis": "unknown",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          }
+        ],
+        "difficulty": [
+          {
+            "stage": "entry",
+            "claim": {
+              "text": "愿意逐句查词和听自己的录音即可开始，不要求播音专业。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "chinese-classics:v2:track"
+              ],
+              "conditions": [
+                "根据学生真实经历判断；没有经历不等于没有潜力"
+              ]
+            }
+          },
+          {
+            "stage": "completion",
+            "claim": {
+              "text": "难点在文意、读音和情感不互相遮盖，尤其引用层次与虚词不能靠喊读解决。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "chinese-classics:v2:deliverables"
+              ],
+              "conditions": [
+                "需核对个人时间、队友、导师与必要资源"
+              ]
+            }
+          },
+          {
+            "stage": "award",
+            "claim": {
+              "text": "完成交付与获奖分开判断；本库没有可用于个人获奖概率的校准数据。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "chinese-classics:v2:rubric"
+              ],
+              "conditions": [
+                "奖项取决于当届赛道与评审，不承诺结果"
+              ]
+            }
+          }
+        ],
+        "opportunityCost": {
+          "text": "浙江个人初赛每人500元由学校承担，禁止转向学生收费；决赛差旅住宿由学校承担，个人其他支出仍须确认。 选择这项任务意味着把相同时间用于该方向的持续实践；请与其他课程、作品或实习准备的优先级比较。",
+          "basis": "suggestion",
+          "studentFactIds": [
+            "s.weeklyCommitment.599ad580c3a5c743"
+          ],
+          "competitionFactIds": [
+            "chinese-classics:v2:investment"
+          ],
+          "conditions": [
+            "投入估计是准备建议，实际成本需逐项核对。"
+          ]
+        },
+        "nextStep": {
+          "text": "朗读题库《秋水》节选，给河伯看见北海前后各标一句核心转折。",
+          "basis": "suggestion",
+          "studentFactIds": [
+            "s.weeklyCommitment.599ad580c3a5c743"
+          ],
+          "competitionFactIds": [],
+          "conditions": [
+            "别人能复述主人公认识如何变化吗？"
+          ]
+        },
+        "checkpoint": "读音和句意先核准，再讨论情绪；不改变指定原文。",
+        "sources": [
+          {
+            "id": "chinese-classics:legacy:source:1",
+            "title": "教育部 国家语委关于举办第八届中华经典诵写讲大赛的通知 - 中华人民共和国教育部政府门户网站",
+            "url": "https://www.moe.gov.cn/srcsite/A18/s3137/202605/t20260528_1437956.html",
+            "scope": "赛事公开资料 · 以文件所列赛区、组别及院校为限",
+            "checkedAt": "2026-11-05"
+          },
+          {
+            "id": "chinese-classics:legacy:source:2",
+            "title": "中华人民共和国教育部 教语用函〔2026〕1 号 教育部国家语委关于举办 第八届中华经典诵写讲大赛的",
+            "url": "https://www.cup.edu.cn/docs/2026-05/e6e258c803314bdfbd3f183fe944c111.pdf",
+            "scope": "高校发布资料 · 以文件所列赛区、组别及院校为限",
+            "checkedAt": "2026-11-05"
+          },
+          {
+            "id": "b-classics-local",
+            "title": "湖州师范学院2025中华经典诵写讲校选通知",
+            "url": "https://rwxy.huznu.edu.cn/2025/0409/c534a231481/page.htm",
+            "scope": "2025湖州师范典润之江校选",
+            "checkedAt": "2026-11-05"
+          },
+          {
+            "id": "b-classics-rules",
+            "title": "浙江第十三届大赛正式通知及四赛项方案",
+            "url": "https://rwxy.huznu.edu.cn/_upload/article/files/24/5e/408522fc4fada966b2b571aa9c8f/b0053435-8be0-4bf1-a93c-e74ae08d4843.pdf",
+            "scope": "2025浙江省赛分组及规则",
+            "checkedAt": "2026-11-05"
+          },
+          {
+            "id": "b-classics-task",
+            "title": "2025典润之江初赛完整朗读题库",
+            "url": "https://rwxy.huznu.edu.cn/_upload/article/files/24/5e/408522fc4fada966b2b571aa9c8f/90c168b5-4687-4f3c-bfb9-611ca1f56f66.pdf",
+            "scope": "2025浙江典润之江初赛",
+            "checkedAt": "2026-11-05"
+          }
+        ],
+        "evidenceFacts": [
+          {
+            "id": "chinese-classics:legacy:fact:eligibility",
+            "text": "组委会文件的不同赛项设学生、教师及其他组别；学生按所对应的赛项和组别申报。〔2〕",
+            "sourceIds": [
+              "chinese-classics:legacy:source:2"
+            ],
+            "scope": "2026第八届；赛事公开资料 · 以文件所列赛区、组别及院校为限",
+            "status": "pending_review",
+            "kind": "official_fact"
+          },
+          {
+            "id": "chinese-classics:legacy:fact:team",
+            "text": "组队人数及是否允许跨校待核实。",
+            "sourceIds": [],
+            "scope": "2026第八届；赛事公开资料 · 以文件所列赛区、组别及院校为限",
+            "status": "unknown",
+            "kind": "unknown"
+          },
+          {
+            "id": "chinese-classics:legacy:fact:mentor",
+            "text": "所引2026第8届全国方案：诵读每件作品至多2名指导教师；讲解/演讲、书写及篆刻各限1名，篆刻教师组不填写指导教师。不能推广为所有赛项均可2名，也不能套至其他年份地方专项。〔2〕",
+            "sourceIds": [
+              "chinese-classics:legacy:source:2"
+            ],
+            "scope": "2026第八届；赛事公开资料 · 以文件所列赛区、组别及院校为限",
+            "status": "pending_review",
+            "kind": "official_fact"
+          },
+          {
+            "id": "chinese-classics:legacy:fact:fee",
+            "text": "报名费及收费环节待核实。",
+            "sourceIds": [],
+            "scope": "2026第八届；赛事公开资料 · 以文件所列赛区、组别及院校为限",
+            "status": "unknown",
+            "kind": "unknown"
+          },
+          {
+            "id": "chinese-classics:v2:eligibility",
+            "text": "湖州师范校选面向本校全日制在校生，2025毕业生不在选送范围；历届该省赛同类别一二等奖选手受限制。",
+            "sourceIds": [
+              "b-classics-local"
+            ],
+            "scope": "2025湖州师范典润之江校选",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "chinese-classics:v2:track",
+            "text": "校选从2025指定题库选择一篇；读例为古代第3题《庄子·秋水》节选。",
+            "sourceIds": [
+              "b-classics-local",
+              "b-classics-task"
+            ],
+            "scope": "2025湖州师范典润之江校选；2025浙江典润之江初赛",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "chinese-classics:v2:participation",
+            "text": "由校选推荐浙江省赛；个人组省赛路线与全国综合组推荐不同，不能宣称个人校选直接通国赛。",
+            "sourceIds": [
+              "b-classics-rules"
+            ],
+            "scope": "2025浙江省赛分组及规则",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "chinese-classics:v2:deliverables",
+            "text": "湖州校选为脱稿朗诵一篇，无需配乐、无需PPT；省初赛则另有古今各一篇朗读讲解和备稿演讲视频。",
+            "sourceIds": [
+              "b-classics-local",
+              "b-classics-rules"
+            ],
+            "scope": "2025湖州师范典润之江校选；2025浙江省赛分组及规则",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "chinese-classics:v2:rubric",
+            "text": "校选明确考阅读理解、艺术鉴赏、语言表达，要求普通话准确清晰与体态得当；未公布数字权重。",
+            "sourceIds": [
+              "b-classics-local"
+            ],
+            "scope": "2025湖州师范典润之江校选",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "chinese-classics:v2:investment",
+            "text": "浙江个人初赛每人500元由学校承担，禁止转向学生收费；决赛差旅住宿由学校承担，个人其他支出仍须确认。",
+            "sourceIds": [
+              "b-classics-rules"
+            ],
+            "scope": "2025浙江省赛分组及规则",
+            "status": "historical",
+            "kind": "official_fact"
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "itemId": "lanqiao-cup:2019-10:cpp-array-successor:cpp-a:china-provincial-cpp-a-2019:v3",
+        "seriesId": "lanqiao-cup",
+        "name": "蓝桥杯全国软件和信息技术专业人才大赛",
+        "trackLabel": "C/C++程序设计：修改数组",
+        "edition": "2019第十届省赛A组（历史）",
+        "contentTier": "L3",
+        "eligibilityStatus": "unknown",
+        "eligibilityNotes": [
+          "未运行官方隐藏评测，不声称满分通过",
+          "当前届规则需另查；本条明确保留2019题目与同届规则",
+          "报名资格与日期请通过官方入口自行核查。",
+          "个人总支出仍需核实，尚不能认定符合已报预算。"
+        ],
+        "registration": {
+          "status": "historical",
+          "note": "2018年12月14日报名截止，2019省赛已结束；不代表新届组别与收费。"
+        },
+        "preparation": "conditional",
+        "coreTask": {
+          "text": "把逐次查重的朴素过程转成可证明正确的后继查询，处理大量重复值而不超时。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [
+            "lanqiao-cup:v2:track"
+          ],
+          "conditions": []
+        },
+        "reasons": [
+          {
+            "text": "H题要求把重复值递增到最小未用值并输出完整数组，交付标准C/C++单文件；这可用1–2周做一次个人算法与实现探索；历史300元报名费虽接近你的300元自付上限，但食宿等未知，不能据此认定总预算。",
+            "basis": "inference",
+            "studentFactIds": [
+              "s.goalIntent.c54d1a8bca1535aa",
+              "s.preparationHorizon.23efb888fdffefde",
+              "s.budget.maximumYuan.128e2f58150ed419"
+            ],
+            "competitionFactIds": [
+              "lanqiao-cup:v2:track",
+              "lanqiao-cup:v2:deliverables",
+              "lanqiao-cup:v2:investment"
+            ],
+            "conditions": [
+              "仅2019历史题与同届规则，不声称当前可报名或满分通过。",
+              "食宿交通与当前费用未核，不能把历史报名费当作个人总支出。"
+            ]
+          }
+        ],
+        "currentRole": {
+          "text": "可先承担独立算法与实现角色，交付正确性说明、单文件实现与对拍记录，重点试探从朴素模拟改到后继结构是否愿意继续。",
+          "basis": "suggestion",
+          "studentFactIds": [
+            "s.preparationHorizon.23efb888fdffefde"
+          ],
+          "competitionFactIds": [
+            "lanqiao-cup:v2:deliverables"
+          ],
+          "conditions": [
+            "仅作历史题练习，不运行官方隐藏评测。"
+          ]
+        },
+        "gaps": [
+          {
+            "text": "未运行官方隐藏评测，不声称满分通过",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          },
+          {
+            "text": "当前届规则需另查；本条明确保留2019题目与同届规则",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          },
+          {
+            "text": "报名资格与日期请通过官方入口自行核查。",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          },
+          {
+            "text": "个人总支出仍需核实，尚不能认定符合已报预算。",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          }
+        ],
+        "values": [
+          {
+            "dimension": "governance",
+            "claim": {
+              "text": "已读规则来源：大赛组委会／四川轻化工大学公开原件。仍需按来源范围和后续补充通知使用。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "lanqiao-cup:v2:track"
+              ],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "taskRelevance",
+            "claim": {
+              "text": "该路径实际任务为：把逐次查重的朴素过程转成可证明正确的后继查询，处理大量重复值而不超时。；相关性须与学生目标相对照。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "portfolio",
+            "claim": {
+              "text": "积累算法证明、复杂度分析和调试证据；单题掌握不保证正式比赛分数。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "lanqiao-cup:v2:deliverables"
+              ],
+              "conditions": [
+                "已实际完成相应工作",
+                "公开展示已取得必要授权"
+              ]
+            }
+          },
+          {
+            "dimension": "learningFeedback",
+            "claim": {
+              "text": "体验时可以这样检查学习：输出互异且每个新值都是处理当时最小可用的合法值。；这不是承诺赛事会提供个人反馈。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "industryAcademicAccess",
+            "claim": {
+              "text": "尚无可核实的个人行业/学术接触机会或学校/招聘认可承诺；不从赛事名称推导。",
+              "basis": "unknown",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "recognition",
+            "claim": {
+              "text": "尚无可核实的个人行业/学术接触机会或学校/招聘认可承诺；不从赛事名称推导。",
+              "basis": "unknown",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          }
+        ],
+        "difficulty": [
+          {
+            "stage": "entry",
+            "claim": {
+              "text": "需循环、数组、集合与函数基础，可先手算重复值如何向后移动。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "lanqiao-cup:v2:track"
+              ],
+              "conditions": [
+                "根据学生真实经历判断；没有经历不等于没有潜力"
+              ]
+            }
+          },
+          {
+            "stage": "completion",
+            "claim": {
+              "text": "难点是高重复输入下避免反复扫描，并为超过初始最大值的新元素留容量。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "lanqiao-cup:v2:deliverables"
+              ],
+              "conditions": [
+                "需核对个人时间、队友、导师与必要资源"
+              ]
+            }
+          },
+          {
+            "stage": "award",
+            "claim": {
+              "text": "完成交付与获奖分开判断；本库没有可用于个人获奖概率的校准数据。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "lanqiao-cup:v2:rubric"
+              ],
+              "conditions": [
+                "奖项取决于当届赛道与评审，不承诺结果"
+              ]
+            }
+          }
+        ],
+        "opportunityCost": {
+          "text": "2019软件个人赛报名300元/人，参赛者及带队教师食宿交通自理；院校补贴与新届费用不能由此推定。 选择这项任务意味着把相同时间用于程序训练或软件制作；请与其他课程、作品或实习准备的优先级比较。",
+          "basis": "suggestion",
+          "studentFactIds": [
+            "s.weeklyCommitment.599ad580c3a5c743"
+          ],
+          "competitionFactIds": [
+            "lanqiao-cup:v2:investment"
+          ],
+          "conditions": [
+            "投入估计是准备建议，实际成本需逐项核对。"
+          ]
+        },
+        "nextStep": {
+          "text": "先用集合逐次递增实现五个小输入，再构造大量相同值，比较操作次数。",
+          "basis": "suggestion",
+          "studentFactIds": [
+            "s.weeklyCommitment.599ad580c3a5c743"
+          ],
+          "competitionFactIds": [],
+          "conditions": [
+            "你是否愿意为超时原因写清楚解释再优化？"
+          ]
+        },
+        "checkpoint": "输出互异且每个新值都是处理当时最小可用的合法值。",
+        "sources": [
+          {
+            "id": "lanqiao-cup:legacy:source:1",
+            "title": "dasai.lanqiao.cn",
+            "url": "https://dasai.lanqiao.cn/pages/v7/dasai/competition/individual_competition.html",
+            "scope": "赛事公开资料 · 以文件所列赛区、组别及院校为限",
+            "checkedAt": "2026-11-05"
+          },
+          {
+            "id": "lanqiao-cup:legacy:source:2",
+            "title": "【竞赛通知-2026053】2026年第十八届蓝桥杯全国大学生软件和信息技术大赛 – 创新创业学院",
+            "url": "https://www.lncu.edu.cn/cxcyxy/29096.html",
+            "scope": "高校发布资料 · 以文件所列赛区、组别及院校为限",
+            "checkedAt": "2026-11-05"
+          },
+          {
+            "id": "lanqiao-c3-rules",
+            "title": "2019第十届蓝桥杯报名附件：通知、软件大纲、指南、费用",
+            "url": "https://webadm.suse.edu.cn/_upload/article/files/db/ce/8c33934f4d00ac940f42f84d62f5/57a90821-ccb9-4ddb-955a-89a8e3a333b3.rar",
+            "scope": "2019个人软件赛资格、评分与报名费用",
+            "checkedAt": "2026-11-05"
+          },
+          {
+            "id": "lanqiao-c3-h",
+            "title": "第十届蓝桥杯省赛C/C++大学A组试题",
+            "url": "https://acm.ecnu.edu.cn/contest/515/statements/",
+            "scope": "2019省赛A组H修改数组完整题与限制",
+            "checkedAt": "2026-11-05"
+          }
+        ],
+        "evidenceFacts": [
+          {
+            "id": "lanqiao-cup:legacy:fact:eligibility",
+            "text": "已核个人赛面向有正式全日制学籍的研究生、本科或高职高专学生，按科目分组。〔1〕",
+            "sourceIds": [
+              "lanqiao-cup:legacy:source:1"
+            ],
+            "scope": "2027第十八届；赛事公开资料 · 以文件所列赛区、组别及院校为限",
+            "status": "pending_review",
+            "kind": "official_fact"
+          },
+          {
+            "id": "lanqiao-cup:legacy:fact:team",
+            "text": "该页面为个人赛科目。〔1〕",
+            "sourceIds": [
+              "lanqiao-cup:legacy:source:1"
+            ],
+            "scope": "2027第十八届；赛事公开资料 · 以文件所列赛区、组别及院校为限",
+            "status": "pending_review",
+            "kind": "official_fact"
+          },
+          {
+            "id": "lanqiao-cup:legacy:fact:mentor",
+            "text": "学校为每位选手配1名指导教师。〔1〕",
+            "sourceIds": [
+              "lanqiao-cup:legacy:source:1"
+            ],
+            "scope": "2027第十八届；赛事公开资料 · 以文件所列赛区、组别及院校为限",
+            "status": "pending_review",
+            "kind": "official_fact"
+          },
+          {
+            "id": "lanqiao-cup:legacy:fact:fee",
+            "text": "已核个人赛科目每人300元，参赛期间食宿交通另计。〔1〕",
+            "sourceIds": [
+              "lanqiao-cup:legacy:source:1"
+            ],
+            "scope": "2027第十八届；赛事公开资料 · 以文件所列赛区、组别及院校为限",
+            "status": "pending_review",
+            "kind": "official_fact"
+          },
+          {
+            "id": "lanqiao-cup:v2:eligibility",
+            "text": "2019正式全日制研究生、本科及高职高专学生可报；985/211本科及研究生只能A组，其余本科可A/B，高职高专可任选；每人只选一个组别。",
+            "sourceIds": [
+              "lanqiao-c3-rules"
+            ],
+            "scope": "2019个人软件赛资格、评分与报名费用",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "lanqiao-cup:v2:track",
+            "text": "个人限时程序设计。H题依次把已在前缀出现的当前整数递增到最小未用值，输出修改后的完整数组。",
+            "sourceIds": [
+              "lanqiao-c3-h"
+            ],
+            "scope": "2019省赛A组H修改数组完整题与限制",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "lanqiao-cup:v2:participation",
+            "text": "注册、学籍认证、选科目组别并完成院校或个人缴费后参赛；2019省赛四小时，一人一机，禁止互联网及外接资源。",
+            "sourceIds": [
+              "lanqiao-c3-rules"
+            ],
+            "scope": "2019个人软件赛资格、评分与报名费用",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "lanqiao-cup:v2:deliverables",
+            "text": "H提交标准C/C++单文件源程序，按标准输入输出；浏览器提交且最后一次答案生效，不能仅覆盖样例。",
+            "sourceIds": [
+              "lanqiao-c3-h"
+            ],
+            "scope": "2019省赛A组H修改数组完整题与限制",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "lanqiao-cup:v2:rubric",
+            "text": "H满分20，限1秒、256MB，N至多十万、初始值至多一百万；80%用例N至多一万。规程按多个测试用例分别计分，不能把80%用例机械等同固定16分。",
+            "sourceIds": [
+              "lanqiao-c3-rules",
+              "lanqiao-c3-h"
+            ],
+            "scope": "2019个人软件赛资格、评分与报名费用；2019省赛A组H修改数组完整题与限制",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "lanqiao-cup:v2:investment",
+            "text": "2019软件个人赛报名300元/人，参赛者及带队教师食宿交通自理；院校补贴与新届费用不能由此推定。",
+            "sourceIds": [
+              "lanqiao-c3-rules"
+            ],
+            "scope": "2019个人软件赛资格、评分与报名费用",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "lanqiao-cup:v2:eligibility.individual",
+            "text": "2019个人赛软件类采用个人赛、一人一机、全程机考。",
+            "sourceIds": [
+              "lanqiao-c3-rules"
+            ],
+            "scope": "2019个人软件赛资格、评分与报名费用",
+            "status": "historical",
+            "kind": "official_fact"
+          }
+        ]
+      },
+      {
+        "rank": 7,
+        "itemId": "national-college-mathematics:2011-3:calculus-third-derivative:non-mathematics:zhejiang-zjut-preliminary-2011:v3",
+        "seriesId": "national-college-mathematics",
+        "name": "全国大学生数学竞赛",
+        "trackLabel": "高等数学：三阶导数存在性证明",
+        "edition": "2011第三届预赛历史题",
+        "contentTier": "L3",
+        "eligibilityStatus": "unknown",
+        "eligibilityNotes": [
+          "本条采用2011经典题与浙江工业大学同届通知；原全国通知冻结为拦截页，不再用于事实支持，不能用于新届直接报名",
+          "公开评分是参考解答的累计标注，不保证其它证明路线逐步对应同分",
+          "报名资格与日期请通过官方入口自行核查。",
+          "个人总支出仍需核实，尚不能认定符合已报预算。"
+        ],
+        "registration": {
+          "status": "historical",
+          "note": "2011年10月29日预赛已结束，本记录用于经典题学习，新届资格、赛制和费用需重新核验。"
+        },
+        "preparation": "conditional",
+        "coreTask": {
+          "text": "利用泰勒公式消去未知常数项，再通过连续性把两个导数值之间的关系转为存在性结论。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [
+            "national-college-mathematics:v2:track"
+          ],
+          "conditions": []
+        },
+        "reasons": [
+          {
+            "text": "第三题要求用泰勒公式与连续性证明开区间中存在三阶导数等于3的点，产出为完整书面证明；可把该历史题作为1–2周内的个人证明小样，从复习余项与介值定理入手，探索自己是否愿意继续数学证明方向；60元仅为2011浙江工大历史本校收费，不推成当前全国费用。",
+            "basis": "inference",
+            "studentFactIds": [
+              "s.goalIntent.c54d1a8bca1535aa",
+              "s.preparationHorizon.23efb888fdffefde"
+            ],
+            "competitionFactIds": [
+              "national-college-mathematics:v2:track",
+              "national-college-mathematics:v2:deliverables",
+              "national-college-mathematics:v2:investment"
+            ],
+            "conditions": [
+              "仅2011历史题与浙江工大历史通知，不用于新届直接报名。",
+              "公开评分路线不保证其他证明路线逐步同分。"
+            ]
+          }
+        ],
+        "currentRole": {
+          "text": "可先承担个人证明与表达角色，逐项核对余项点、导数连续性和累计评分步骤，形成可修订的证明草稿。",
+          "basis": "suggestion",
+          "studentFactIds": [
+            "s.preparationHorizon.23efb888fdffefde"
+          ],
+          "competitionFactIds": [
+            "national-college-mathematics:v2:deliverables"
+          ],
+          "conditions": [
+            "仅作历史单题练习，不声称当前赛季资格或获奖概率。"
+          ]
+        },
+        "gaps": [
+          {
+            "text": "本条采用2011经典题与浙江工业大学同届通知；原全国通知冻结为拦截页，不再用于事实支持，不能用于新届直接报名",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          },
+          {
+            "text": "公开评分是参考解答的累计标注，不保证其它证明路线逐步对应同分",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          },
+          {
+            "text": "报名资格与日期请通过官方入口自行核查。",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          },
+          {
+            "text": "个人总支出仍需核实，尚不能认定符合已报预算。",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          }
+        ],
+        "values": [
+          {
+            "dimension": "governance",
+            "claim": {
+              "text": "已读规则来源：浙江工业大学计算机科学与技术学院。仍需按来源范围和后续补充通知使用。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "national-college-mathematics:v2:track"
+              ],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "taskRelevance",
+            "claim": {
+              "text": "该路径实际任务为：利用泰勒公式消去未知常数项，再通过连续性把两个导数值之间的关系转为存在性结论。；相关性须与学生目标相对照。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "portfolio",
+            "claim": {
+              "text": "建立定理适用条件和证明表达的训练证据；历史单题练习不代表当前赛季资格或获奖概率。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "national-college-mathematics:v2:deliverables"
+              ],
+              "conditions": [
+                "已实际完成相应工作",
+                "公开展示已取得必要授权"
+              ]
+            }
+          },
+          {
+            "dimension": "learningFeedback",
+            "claim": {
+              "text": "体验时可以这样检查学习：正确处理负端点三次项的符号。；这不是承诺赛事会提供个人反馈。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "industryAcademicAccess",
+            "claim": {
+              "text": "尚无可核实的个人行业/学术接触机会或学校/招聘认可承诺；不从赛事名称推导。",
+              "basis": "unknown",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "recognition",
+            "claim": {
+              "text": "尚无可核实的个人行业/学术接触机会或学校/招聘认可承诺；不从赛事名称推导。",
+              "basis": "unknown",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          }
+        ],
+        "difficulty": [
+          {
+            "stage": "entry",
+            "claim": {
+              "text": "需高等数学中泰勒公式、连续函数介值定理和导数基础。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "national-college-mathematics:v2:track"
+              ],
+              "conditions": [
+                "根据学生真实经历判断；没有经历不等于没有潜力"
+              ]
+            }
+          },
+          {
+            "stage": "completion",
+            "claim": {
+              "text": "难点是两次展开的余项点不同，必须借助连续性完成最后一步，不能直接把平均值当成某点函数值。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "national-college-mathematics:v2:deliverables"
+              ],
+              "conditions": [
+                "需核对个人时间、队友、导师与必要资源"
+              ]
+            }
+          },
+          {
+            "stage": "award",
+            "claim": {
+              "text": "完成交付与获奖分开判断；本库没有可用于个人获奖概率的校准数据。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "national-college-mathematics:v2:rubric"
+              ],
+              "conditions": [
+                "奖项取决于当届赛道与评审，不承诺结果"
+              ]
+            }
+          }
+        ],
+        "opportunityCost": {
+          "text": "该校2011通知要求每人60元报名费；这只是本校历史收取额，个人总支出、其他学校补贴及当前届收费均未知，不能推成全国或免费。 选择这项任务意味着把相同时间用于该方向的持续实践；请与其他课程、作品或实习准备的优先级比较。",
+          "basis": "suggestion",
+          "studentFactIds": [
+            "s.weeklyCommitment.599ad580c3a5c743"
+          ],
+          "competitionFactIds": [
+            "national-college-mathematics:v2:investment"
+          ],
+          "conditions": [
+            "投入估计是准备建议，实际成本需逐项核对。"
+          ]
+        },
+        "nextStep": {
+          "text": "复习三阶泰勒余项，在x=1和x=-1分别写展开式，给两个余项点使用不同符号。",
+          "basis": "suggestion",
+          "studentFactIds": [
+            "s.weeklyCommitment.599ad580c3a5c743"
+          ],
+          "competitionFactIds": [],
+          "conditions": [
+            "你愿意检查每一步存在性和连续性条件吗？"
+          ]
+        },
+        "checkpoint": "正确处理负端点三次项的符号。",
+        "sources": [
+          {
+            "id": "national-college-mathematics:legacy:source:1",
+            "title": "关于举办第十八届全国大学生数学竞赛的通知-大学生数学竞赛网 - 全国大学生数学竞赛",
+            "url": "https://www.cmathc.org.cn/tzgg/545.html",
+            "scope": "赛事公开资料 · 以文件所列赛区、组别及院校为限",
+            "checkedAt": "2026-11-05"
+          },
+          {
+            "id": "national-college-mathematics:legacy:source:2",
+            "title": "第十八届全国大学生数学竞赛报名通知",
+            "url": "https://jwc.hdu.edu.cn/2026/0907/c13022a300115/page.htm",
+            "scope": "高校发布资料 · 以文件所列赛区、组别及院校为限",
+            "checkedAt": "2026-11-05"
+          },
+          {
+            "id": "national-college-mathematics:legacy:source:3",
+            "title": "第十八届全国大学生数学竞赛天津赛区报名通知-大学生数学竞赛网 - 全国大学生数学竞赛",
+            "url": "https://www.cmathc.org.cn/sqtz/656.html",
+            "scope": "赛事公开资料 · 以文件所列赛区、组别及院校为限",
+            "checkedAt": "2026-11-05"
+          },
+          {
+            "id": "cmc-c5-zjut-rules",
+            "title": "关于第三届全国大学生数学竞赛报名的通知",
+            "url": "https://www.soft.zjut.edu.cn/170.html",
+            "scope": "2011浙江赛区、本校报名和费用安排；不作为全国费用通则",
+            "checkedAt": "2026-11-05"
+          },
+          {
+            "id": "cmc-c5-paper",
+            "title": "2011预赛非数学类原卷",
+            "url": "https://math.ecnu.edu.cn/llin/pdf_files/nonmath2011.pdf",
+            "scope": "2011非数学组作答要求及第三大题",
+            "checkedAt": "2026-11-05"
+          },
+          {
+            "id": "cmc-c5-answer",
+            "title": "2011预赛非数学类解答与评分标准",
+            "url": "https://math.ecnu.edu.cn/llin/pdf_files/nonmathans2011.pdf",
+            "scope": "2011第三题15分完整证明及累计分值",
+            "checkedAt": "2026-11-05"
+          }
+        ],
+        "evidenceFacts": [
+          {
+            "id": "national-college-mathematics:legacy:fact:eligibility",
+            "text": "第十八届面向全日制在校大学生，按数学专业、非数学专业、高职高专等类别报名。〔1〕",
+            "sourceIds": [
+              "national-college-mathematics:legacy:source:1"
+            ],
+            "scope": "2026第十八届；赛事公开资料 · 以文件所列赛区、组别及院校为限",
+            "status": "pending_review",
+            "kind": "official_fact"
+          },
+          {
+            "id": "national-college-mathematics:legacy:fact:team",
+            "text": "个人竞赛。〔1〕",
+            "sourceIds": [
+              "national-college-mathematics:legacy:source:1"
+            ],
+            "scope": "2026第十八届；赛事公开资料 · 以文件所列赛区、组别及院校为限",
+            "status": "pending_review",
+            "kind": "official_fact"
+          },
+          {
+            "id": "national-college-mathematics:legacy:fact:mentor",
+            "text": "导师是否必需及人数待核实。",
+            "sourceIds": [],
+            "scope": "2026第十八届；赛事公开资料 · 以文件所列赛区、组别及院校为限",
+            "status": "unknown",
+            "kind": "unknown"
+          },
+          {
+            "id": "national-college-mathematics:legacy:fact:fee",
+            "text": "全国通知标准为每人100元；交费时间与方式由赛区或学校组织。〔1〕",
+            "sourceIds": [
+              "national-college-mathematics:legacy:source:1"
+            ],
+            "scope": "2026第十八届；赛事公开资料 · 以文件所列赛区、组别及院校为限",
+            "status": "pending_review",
+            "kind": "official_fact"
+          },
+          {
+            "id": "national-college-mathematics:v2:eligibility",
+            "text": "浙江工业大学2011浙江赛区通知面向在校本科二年级及以上；数学与应用数学、信息与计算科学属于数学组，不能参加非数学组。范围仅该校历史通知。",
+            "sourceIds": [
+              "cmc-c5-zjut-rules"
+            ],
+            "scope": "2011浙江赛区、本校报名和费用安排；不作为全国费用通则",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "national-college-mathematics:v2:track",
+            "text": "第三题要求从函数端点值和中点一阶导数条件，证明开区间中存在三阶导数等于3的点，需完整论证。",
+            "sourceIds": [
+              "cmc-c5-paper"
+            ],
+            "scope": "2011非数学组作答要求及第三大题",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "national-college-mathematics:v2:participation",
+            "text": "该校通知要求9月21日前以班级为单位提交电子及纸质报名表和费用至年级团总支；浙江预赛10月29日9:00—11:30举行。本来源不用于证明全国统一程序和决赛推荐。",
+            "sourceIds": [
+              "cmc-c5-zjut-rules"
+            ],
+            "scope": "2011浙江赛区、本校报名和费用安排；不作为全国费用通则",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "national-college-mathematics:v2:deliverables",
+            "text": "闭卷150分钟，在原卷规定范围写解答，密封线外不能有姓名标记；其它纸上作答无效，允许当页背面续写并标题号。",
+            "sourceIds": [
+              "cmc-c5-paper"
+            ],
+            "scope": "2011非数学组作答要求及第三大题",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "national-college-mathematics:v2:rubric",
+            "text": "全卷100分，第三题15分；公开解答在泰勒展开、代入端点、相减、取值范围和介值结论处标累计3/5/7/10/13/15分，不能把累计数相加。",
+            "sourceIds": [
+              "cmc-c5-paper",
+              "cmc-c5-answer"
+            ],
+            "scope": "2011非数学组作答要求及第三大题；2011第三题15分完整证明及累计分值",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "national-college-mathematics:v2:investment",
+            "text": "该校2011通知要求每人60元报名费；这只是本校历史收取额，个人总支出、其他学校补贴及当前届收费均未知，不能推成全国或免费。",
+            "sourceIds": [
+              "cmc-c5-zjut-rules"
+            ],
+            "scope": "2011浙江赛区、本校报名和费用安排；不作为全国费用通则",
+            "status": "historical",
+            "kind": "official_fact"
+          }
+        ]
+      },
+      {
+        "rank": 8,
+        "itemId": "if-student-award:2025-entry-guide:sdg-design:design-students-graduates:global-2025:v3",
+        "seriesId": "if-student-award",
+        "name": "iF DESIGN STUDENT AWARD",
+        "trackLabel": "联合国可持续发展目标概念设计",
+        "edition": "2025届官方参赛指南",
+        "contentTier": "L3",
+        "eligibilityStatus": "unknown",
+        "eligibilityNotes": [
+          "该海报是官方指南示例，未确认作者完整底层试验资料或2025参赛/获奖身份；只据海报作机制评读",
+          "本条为作者研究草稿，尚待两名独立审阅者核对来源及学习路线。",
+          "报名资格与日期请通过官方入口自行核查。",
+          "个人总支出仍需核实，尚不能认定符合已报预算。"
+        ],
+        "registration": {
+          "status": "historical",
+          "note": "历史届次，仅用于历史任务学习；不表示当前仍可报名，也不自动适用于下一届。"
+        },
+        "preparation": "conditional",
+        "coreTask": {
+          "text": "把可持续设计概念的用户、工作机制、体验和资源约束讲清楚，并区分海报表达与实际效能验证。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [
+            "if-student-award:v2:track"
+          ],
+          "conditions": []
+        },
+        "reasons": [
+          {
+            "text": "官方指南的MASHAV海报机制阅读可在一页概念里拆解用户、通风逻辑与效果证据；你能每周投入5–10小时且以1–2周探索方向，可先做机制重绘来检验是否喜欢设计概念分析，但2025报名资格与当前窗口不据此成立。",
+            "basis": "inference",
+            "studentFactIds": [
+              "s.goalIntent.c54d1a8bca1535aa",
+              "s.weeklyCommitment.599ad580c3a5c743",
+              "s.preparationHorizon.23efb888fdffefde"
+            ],
+            "competitionFactIds": [
+              "if-student-award:v2:track",
+              "if-student-award:v2:deliverables"
+            ],
+            "conditions": [
+              "2025历史指南；设计相关专业资格未确认，仅作练习。",
+              "不把指南示例称为2025获奖作品，当前报名另行核查。"
+            ]
+          }
+        ],
+        "currentRole": {
+          "text": "可先承担机制与证据角色，重绘被动、主动和组合通风路径并列出待测参数，不用购买材料即可试探。",
+          "basis": "suggestion",
+          "studentFactIds": [
+            "s.preparationHorizon.23efb888fdffefde"
+          ],
+          "competitionFactIds": [
+            "if-student-award:v2:deliverables"
+          ],
+          "conditions": [
+            "图上没有的性能不自行补成作者测试结论。"
+          ]
+        },
+        "gaps": [
+          {
+            "text": "该海报是官方指南示例，未确认作者完整底层试验资料或2025参赛/获奖身份；只据海报作机制评读",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          },
+          {
+            "text": "本条为作者研究草稿，尚待两名独立审阅者核对来源及学习路线。",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          },
+          {
+            "text": "报名资格与日期请通过官方入口自行核查。",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          },
+          {
+            "text": "个人总支出仍需核实，尚不能认定符合已报预算。",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          }
+        ],
+        "values": [
+          {
+            "dimension": "governance",
+            "claim": {
+              "text": "已读规则来源：iF Design。仍需按来源范围和后续补充通知使用。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "if-student-award:v2:track"
+              ],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "taskRelevance",
+            "claim": {
+              "text": "该路径实际任务为：把可持续设计概念的用户、工作机制、体验和资源约束讲清楚，并区分海报表达与实际效能验证。；相关性须与学生目标相对照。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "portfolio",
+            "claim": {
+              "text": "学习用一页图解释设计机制并评估社会价值；不把指南示例称为2025获奖作品。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "if-student-award:v2:deliverables"
+              ],
+              "conditions": [
+                "已实际完成相应工作",
+                "公开展示已取得必要授权"
+              ]
+            }
+          },
+          {
+            "dimension": "learningFeedback",
+            "claim": {
+              "text": "体验时可以这样检查学习：图上没有的性能不自行补成作者测试结论。；这不是承诺赛事会提供个人反馈。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "industryAcademicAccess",
+            "claim": {
+              "text": "尚无可核实的个人行业/学术接触机会或学校/招聘认可承诺；不从赛事名称推导。",
+              "basis": "unknown",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "recognition",
+            "claim": {
+              "text": "尚无可核实的个人行业/学术接触机会或学校/招聘认可承诺；不从赛事名称推导。",
+              "basis": "unknown",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          }
+        ],
+        "difficulty": [
+          {
+            "stage": "entry",
+            "claim": {
+              "text": "能画因果箭头和用户动作即可开始，不必先购买智能织物。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "if-student-award:v2:track"
+              ],
+              "conditions": [
+                "根据学生真实经历判断；没有经历不等于没有潜力"
+              ]
+            }
+          },
+          {
+            "stage": "completion",
+            "claim": {
+              "text": "难点是把美观图示连到可测的舒适、能耗、耐用和维护假设。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "if-student-award:v2:deliverables"
+              ],
+              "conditions": [
+                "需核对个人时间、队友、导师与必要资源"
+              ]
+            }
+          },
+          {
+            "stage": "award",
+            "claim": {
+              "text": "完成交付与获奖分开判断；本库没有可用于个人获奖概率的校准数据。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "if-student-award:v2:rubric"
+              ],
+              "conditions": [
+                "奖项取决于当届赛道与评审，不承诺结果"
+              ]
+            }
+          }
+        ],
+        "opportunityCost": {
+          "text": "编辑建议四周每周3—5小时；2025参赛费明确为零，制作测试预算另计。 选择这项任务意味着把相同时间用于该方向的持续实践；请与其他课程、作品或实习准备的优先级比较。",
+          "basis": "suggestion",
+          "studentFactIds": [
+            "s.weeklyCommitment.599ad580c3a5c743"
+          ],
+          "competitionFactIds": [],
+          "conditions": [
+            "投入估计是准备建议，实际成本需逐项核对。"
+          ]
+        },
+        "nextStep": {
+          "text": "重绘MASHAV被动、主动和组合通风三条气流路径。",
+          "basis": "suggestion",
+          "studentFactIds": [
+            "s.weeklyCommitment.599ad580c3a5c743"
+          ],
+          "competitionFactIds": [],
+          "conditions": [
+            "你更关心舒适体验还是装置结构？"
+          ]
+        },
+        "checkpoint": "图上没有的性能不自行补成作者测试结论。",
+        "sources": [
+          {
+            "id": "if-student-award:legacy:source:1",
+            "title": "iF DESIGN STUDENT AWARD · 学生奖FAQ",
+            "url": "https://ifdesign.com/en/if-design-student-award-faqs",
+            "scope": "主办方学生奖2027申请规则，与收费的职业设计奖独立",
+            "checkedAt": "2026-11-05"
+          },
+          {
+            "id": "if-student-award:legacy:source:2",
+            "title": "iF DESIGN STUDENT AWARD 2027 · 赛事日程和费用",
+            "url": "https://ifdesign.com/en/if-design-student-award",
+            "scope": "主办方2027学生奖，不适用于职业设计奖",
+            "checkedAt": "2026-11-05"
+          },
+          {
+            "id": "b-if-guide",
+            "title": "iF DESIGN STUDENT AWARD 2025 Entry Guide（西语）",
+            "url": "https://assets.ctfassets.net/9el74s703hin/mEuiHUwteSLEZbLDQT7VR/c2ca102a428805da3c6d37fdf411d845/iF_DESIGN_STUDENT_AWARD_2025_Entry_Guide_Spanish.pdf",
+            "scope": "2025全球学生奖参赛与展示规范",
+            "checkedAt": "2026-11-05"
+          }
+        ],
+        "evidenceFacts": [
+          {
+            "id": "if-student-award:legacy:fact:eligibility",
+            "text": "面向大学在读学生及毕业不超过两年者。使用英语提交设计说明、图像和方案海报。〔1〕",
+            "sourceIds": [
+              "if-student-award:legacy:source:1"
+            ],
+            "scope": "2027；主办方学生奖2027申请规则，与收费的职业设计奖独立",
+            "status": "pending_review",
+            "kind": "official_fact"
+          },
+          {
+            "id": "if-student-award:legacy:fact:team",
+            "text": "可个人参加或最多4人组队；团队申请须提供成员学生身份材料。〔1〕",
+            "sourceIds": [
+              "if-student-award:legacy:source:1"
+            ],
+            "scope": "2027；主办方学生奖2027申请规则，与收费的职业设计奖独立",
+            "status": "pending_review",
+            "kind": "official_fact"
+          },
+          {
+            "id": "if-student-award:legacy:fact:mentor",
+            "text": "导师是否必需及人数待核实。",
+            "sourceIds": [],
+            "scope": "2027；主办方学生奖2027申请规则，与收费的职业设计奖独立",
+            "status": "unknown",
+            "kind": "unknown"
+          },
+          {
+            "id": "if-student-award:legacy:fact:fee",
+            "text": "学生奖免报名费，无须强制寄送实物原型。〔1〕",
+            "sourceIds": [
+              "if-student-award:legacy:source:1"
+            ],
+            "scope": "2027；主办方学生奖2027申请规则，与收费的职业设计奖独立",
+            "status": "pending_review",
+            "kind": "official_fact"
+          },
+          {
+            "id": "if-student-award:v2:eligibility",
+            "text": "设计相关专业在校生或毕业两年内者；团队最多4人，2025年2月5日截止。",
+            "sourceIds": [
+              "b-if-guide"
+            ],
+            "scope": "2025全球学生奖参赛与展示规范",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "if-student-award:v2:track",
+            "text": "围绕SDG1—15提交产品、服务、沟通或应用概念；用官方指南MASHAV完整海报练习证据阅读。",
+            "sourceIds": [
+              "b-if-guide"
+            ],
+            "scope": "2025全球学生奖参赛与展示规范",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "if-student-award:v2:participation",
+            "text": "英文在线提交；指南声明参赛免费，不包括自主制作和其他支出。",
+            "sourceIds": [
+              "b-if-guide"
+            ],
+            "scope": "2025全球学生奖参赛与展示规范",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "if-student-award:v2:deliverables",
+            "text": "A1横版一页PDF海报不超5MB，最多2张图及650字符说明，视频可选；以原指南格式为准。",
+            "sourceIds": [
+              "b-if-guide"
+            ],
+            "scope": "2025全球学生奖参赛与展示规范",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "if-student-award:v2:rubric",
+            "text": "五维：解决问题、伦理标准、团结互助、积极体验、经济可行性；不另编分值。",
+            "sourceIds": [
+              "b-if-guide"
+            ],
+            "scope": "2025全球学生奖参赛与展示规范",
+            "status": "historical",
+            "kind": "official_fact"
+          }
+        ]
+      },
+      {
+        "rank": 9,
+        "itemId": "dandad-new-blood:2026-share-your-passion:personal-social-campaign:eligible-creative:global-2026-dad-brief:v3",
+        "seriesId": "dandad-new-blood",
+        "name": "D&AD New Blood Awards",
+        "trackLabel": "个人创意社交传播",
+        "edition": "2026 Share your passion历史命题",
+        "contentTier": "L3",
+        "eligibilityStatus": "unknown",
+        "eligibilityNotes": [
+          "历史截止已过，正式新届资格及个人总成本另核",
+          "本题以2026通用评审问题作自查参考；Games Design有例外，不推断本题未标明的分支排序",
+          "未发布样稿时不声称传播成效，也不把本人姓名例外推广到其他命题",
+          "报名资格与日期请通过官方入口自行核查。",
+          "个人总支出仍需核实，尚不能认定符合已报预算。"
+        ],
+        "registration": {
+          "status": "historical",
+          "note": "原题2026年3月17日17时GMT截止；仅作完整历史命题练习，不判断当届可报名。"
+        },
+        "preparation": "conditional",
+        "coreTask": {
+          "text": "把自己的创意实践变成一个能够持续展开、面向明确受众的社交内容系列，并用可审查样稿说明传播策略。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [
+            "dandad-new-blood:v2:track"
+          ],
+          "conditions": []
+        },
+        "reasons": [
+          {
+            "text": "Share your passion要求把个人创意实践延展成持续社交内容系列，并产出至少五幅静态样稿或三条短视频；在1–2周内可先做五幅静态草稿探索创意传播是否适合自己，2026报名费15英镑及设备制作成本另核，不能据此确认总支出在预算内。",
+            "basis": "inference",
+            "studentFactIds": [
+              "s.goalIntent.c54d1a8bca1535aa",
+              "s.preparationHorizon.23efb888fdffefde",
+              "s.weeklyCommitment.599ad580c3a5c743"
+            ],
+            "competitionFactIds": [
+              "dandad-new-blood:v2:track",
+              "dandad-new-blood:v2:deliverables",
+              "dandad-new-blood:v2:investment"
+            ],
+            "conditions": [
+              "2026历史截止已过，正式新届资格与个人总成本另核。",
+              "未发布样稿时不声称传播成效。"
+            ]
+          }
+        ],
+        "currentRole": {
+          "text": "可先承担创意与视觉表达角色，做五幅有共同主线的静态样稿并记录改版理由，作为两周探索产出。",
+          "basis": "suggestion",
+          "studentFactIds": [
+            "s.preparationHorizon.23efb888fdffefde"
+          ],
+          "competitionFactIds": [
+            "dandad-new-blood:v2:deliverables"
+          ],
+          "conditions": [
+            "中文草稿只作练习，正式英语表达与素材授权另行准备。"
+          ]
+        },
+        "gaps": [
+          {
+            "text": "历史截止已过，正式新届资格及个人总成本另核",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          },
+          {
+            "text": "本题以2026通用评审问题作自查参考；Games Design有例外，不推断本题未标明的分支排序",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          },
+          {
+            "text": "未发布样稿时不声称传播成效，也不把本人姓名例外推广到其他命题",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          },
+          {
+            "text": "报名资格与日期请通过官方入口自行核查。",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          },
+          {
+            "text": "个人总支出仍需核实，尚不能认定符合已报预算。",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          }
+        ],
+        "values": [
+          {
+            "dimension": "governance",
+            "claim": {
+              "text": "已读规则来源：D&AD。仍需按来源范围和后续补充通知使用。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "dandad-new-blood:v2:track"
+              ],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "taskRelevance",
+            "claim": {
+              "text": "该路径实际任务为：把自己的创意实践变成一个能够持续展开、面向明确受众的社交内容系列，并用可审查样稿说明传播策略。；相关性须与学生目标相对照。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "portfolio",
+            "claim": {
+              "text": "可形成自我定位、连续内容设计与作品表达证据；没有发布或反馈时只称模拟提案，不虚报传播或录用结果。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "dandad-new-blood:v2:deliverables"
+              ],
+              "conditions": [
+                "已实际完成相应工作",
+                "公开展示已取得必要授权"
+              ]
+            }
+          },
+          {
+            "dimension": "learningFeedback",
+            "claim": {
+              "text": "体验时可以这样检查学习：五幅有共同主线，不虚构受众反馈；作品来源和本人贡献可追溯。；这不是承诺赛事会提供个人反馈。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "industryAcademicAccess",
+            "claim": {
+              "text": "尚无可核实的个人行业/学术接触机会或学校/招聘认可承诺；不从赛事名称推导。",
+              "basis": "unknown",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "recognition",
+            "claim": {
+              "text": "尚无可核实的个人行业/学术接触机会或学校/招聘认可承诺；不从赛事名称推导。",
+              "basis": "unknown",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          }
+        ],
+        "difficulty": [
+          {
+            "stage": "entry",
+            "claim": {
+              "text": "从已有的一项真实创意实践出发，用纸面或已有设计工具做五幅静态样稿；不要求购买流量或公开个人隐私。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "dandad-new-blood:v2:track"
+              ],
+              "conditions": [
+                "根据学生真实经历判断；没有经历不等于没有潜力"
+              ]
+            }
+          },
+          {
+            "stage": "completion",
+            "claim": {
+              "text": "难点是连续内容的关系、受众需求与本人真实贡献匹配，以及区分创作作品数量和提交介绍格式。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "dandad-new-blood:v2:deliverables"
+              ],
+              "conditions": [
+                "需核对个人时间、队友、导师与必要资源"
+              ]
+            }
+          },
+          {
+            "stage": "award",
+            "claim": {
+              "text": "完成交付与获奖分开判断；本库没有可用于个人获奖概率的校准数据。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "dandad-new-blood:v2:rubric"
+              ],
+              "conditions": [
+                "奖项取决于当届赛道与评审，不承诺结果"
+              ]
+            }
+          }
+        ],
+        "opportunityCost": {
+          "text": "2026每项作品报名费15英镑，或由每位成员完成参赛调查获得全额报名费抵用券；这不足以确认个人总支出，设备、网络、制作及授权成本仍待核。 选择这项任务意味着把相同时间用于该方向的持续实践；请与其他课程、作品或实习准备的优先级比较。",
+          "basis": "suggestion",
+          "studentFactIds": [
+            "s.weeklyCommitment.599ad580c3a5c743"
+          ],
+          "competitionFactIds": [
+            "dandad-new-blood:v2:investment"
+          ],
+          "conditions": [
+            "投入估计是准备建议，实际成本需逐项核对。"
+          ]
+        },
+        "nextStep": {
+          "text": "选择一项本人做过的创意练习，写清受众与目的，画五幅静态样稿并解释每幅如何推动下一次交流。",
+          "basis": "suggestion",
+          "studentFactIds": [
+            "s.weeklyCommitment.599ad580c3a5c743"
+          ],
+          "competitionFactIds": [],
+          "conditions": [
+            "你更喜欢视觉制作、叙事编排还是理解受众？"
+          ]
+        },
+        "checkpoint": "五幅有共同主线，不虚构受众反馈；作品来源和本人贡献可追溯。",
+        "sources": [
+          {
+            "id": "newblood-2026-dad-brief",
+            "title": "D&AD 2026 Share your passion完整命题",
+            "url": "https://media.dandad.org/documents/NBA2026-D-AD-220126.pdf",
+            "scope": "2026该命题目标、受众、创作约束和交付",
+            "checkedAt": "2026-11-05"
+          },
+          {
+            "id": "newblood-2026-tutor-pack",
+            "title": "New Blood Awards 2026 Tutor Pack",
+            "url": "https://media.dandad.org/documents/New_Blood_Awards_2026_Tutor_Pack_UPDATED.pdf",
+            "scope": "2026适用资格、通用材料规范和正式评审，非2027规则",
+            "checkedAt": "2026-11-05"
+          }
+        ],
+        "evidenceFacts": [
+          {
+            "id": "dandad-new-blood:v2:eligibility",
+            "text": "本记录只采用两处共同支持的学生分支：2026年1月1日就读认可的全日制或非全日制继续/高等教育课程；FAQ明确学生不限年龄和专业。个人或至多5人团队，每人均须合格，并受正式条款的赛事关联人员及家属等排除条件约束。同文件第30页FAQ的非学生门槛为over 18及自由职业折算6个月，第34页正式条款为2026年1月1日aged 18 and over及自由职业一年；未取得消歧依据，不选择任一版本确认非学生资格。",
+            "sourceIds": [
+              "newblood-2026-tutor-pack"
+            ],
+            "scope": "2026适用资格、通用材料规范和正式评审，非2027规则",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "dandad-new-blood:v2:track",
+            "text": "Share your passion要求为自己建立有持续性的社交传播活动，明确本人实践与热情、目标受众、求职/社群/品牌合作等目的，并解释平台与互动策略。",
+            "sourceIds": [
+              "newblood-2026-dad-brief"
+            ],
+            "scope": "2026该命题目标、受众、创作约束和交付",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "dandad-new-blood:v2:participation",
+            "text": "按2026在线参赛规则提交原创命题回应；指南要求作品及解释使用英语，除非命题明确另有规定，本题未给中文提交例外。此题特别允许出现本人姓名、视频和照片，不能把该身份例外外推到其他匿名命题。",
+            "sourceIds": [
+              "newblood-2026-dad-brief",
+              "newblood-2026-tutor-pack"
+            ],
+            "scope": "2026该命题目标、受众、创作约束和交付；2026适用资格、通用材料规范和正式评审，非2027规则",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "dandad-new-blood:v2:deliverables",
+            "text": "创作示例至少三条各不少于30秒的视频或五幅静态作品，可混合媒介；正式主材料为至多2分钟介绍视频或至多8张JPEG。选交交互作品；主交JPEG时可另交总长至多1分钟视频，主交视频时可另交至多4张JPEG。创作示例与评审介绍材料不是同一长度限制；正式作品和解释须符合英语提交要求，中文题面不等于允许中文参赛材料。",
+            "sourceIds": [
+              "newblood-2026-dad-brief",
+              "newblood-2026-tutor-pack"
+            ],
+            "scope": "2026该命题目标、受众、创作约束和交付；2026适用资格、通用材料规范和正式评审，非2027规则",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "dandad-new-blood:v2:investment",
+            "text": "2026每项作品报名费15英镑，或由每位成员完成参赛调查获得全额报名费抵用券；这不足以确认个人总支出，设备、网络、制作及授权成本仍待核。",
+            "sourceIds": [
+              "newblood-2026-tutor-pack"
+            ],
+            "scope": "2026适用资格、通用材料规范和正式评审，非2027规则",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "dandad-new-blood:v2:rubric",
+            "text": "2026指南列出创意、执行与回应命题三个通用评审问题，并明确Games Design命题标准略有不同；广告大创意类与Craft类的优先次序也不同。本题未明确对应哪一优先分支，故不自定权重或冒用2027Craft排序。",
+            "sourceIds": [
+              "newblood-2026-tutor-pack"
+            ],
+            "scope": "2026适用资格、通用材料规范和正式评审，非2027规则",
+            "status": "historical",
+            "kind": "official_fact"
+          }
+        ]
+      },
+      {
+        "rank": 10,
+        "itemId": "loreal-brandstorm:2026-luxe:future-fragrance:18-30-team:global-local-entry:v3",
+        "seriesId": "loreal-brandstorm",
+        "name": "L’Oréal Brandstorm",
+        "trackLabel": "奢华香氛未来体验",
+        "edition": "2026全球Luxe命题",
+        "contentTier": "L3",
+        "eligibilityStatus": "unknown",
+        "eligibilityNotes": [
+          "报名资格与日期请通过官方入口自行核查。",
+          "个人总支出仍需核实，尚不能认定符合已报预算。"
+        ],
+        "registration": {
+          "status": "historical",
+          "note": "历史届次，仅用于历史任务学习；不表示当前仍可报名，也不自动适用于下一届。"
+        },
+        "preparation": "conditional",
+        "coreTask": {
+          "text": "把一种尚未满足的香氛使用需求转成可估算成本、包容不同使用者且能扩大供给的产品或服务。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [
+            "loreal-brandstorm:v2:track"
+          ],
+          "conditions": []
+        },
+        "reasons": [
+          {
+            "text": "命题要把奢华香氛体验重做成可评估创新、可行与扩展的三页方案；你可用1–2周先观察一个试香或使用障碍并画纸面旅程，探索商业与体验设计，但三人团队、18–30年龄和当地通道需另行核对。",
+            "basis": "inference",
+            "studentFactIds": [
+              "s.goalIntent.c54d1a8bca1535aa",
+              "s.preparationHorizon.23efb888fdffefde"
+            ],
+            "competitionFactIds": [
+              "loreal-brandstorm:v2:track",
+              "loreal-brandstorm:v2:deliverables",
+              "loreal-brandstorm:v2:eligibility"
+            ],
+            "conditions": [
+              "2026历史命题，不表示当前可报。",
+              "三人团队与18–30资格未确认，需另行核查当地通道。"
+            ]
+          }
+        ],
+        "currentRole": {
+          "text": "可先承担需求与商业角色，整理真实观察、反例和成本假设表，为后续团队讨论提供可核查输入。",
+          "basis": "suggestion",
+          "studentFactIds": [
+            "s.preparationHorizon.23efb888fdffefde"
+          ],
+          "competitionFactIds": [
+            "loreal-brandstorm:v2:deliverables"
+          ],
+          "conditions": [
+            "若组成团队，本角色不替代团队协作；资格与日期另核。"
+          ]
+        },
+        "gaps": [
+          {
+            "text": "报名资格与日期请通过官方入口自行核查。",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          },
+          {
+            "text": "个人总支出仍需核实，尚不能认定符合已报预算。",
+            "basis": "unknown",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          }
+        ],
+        "values": [
+          {
+            "dimension": "governance",
+            "claim": {
+              "text": "已读规则来源：L’Oréal。仍需按来源范围和后续补充通知使用。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "loreal-brandstorm:v2:track"
+              ],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "taskRelevance",
+            "claim": {
+              "text": "该路径实际任务为：把一种尚未满足的香氛使用需求转成可估算成本、包容不同使用者且能扩大供给的产品或服务。；相关性须与学生目标相对照。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "portfolio",
+            "claim": {
+              "text": "练习把用户问题、体验、商业可行性压缩到三页；不能把概念渲染当成科技已实现。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "loreal-brandstorm:v2:deliverables"
+              ],
+              "conditions": [
+                "已实际完成相应工作",
+                "公开展示已取得必要授权"
+              ]
+            }
+          },
+          {
+            "dimension": "learningFeedback",
+            "claim": {
+              "text": "体验时可以这样检查学习：区分受访者原话、解释与未经验证的预测。；这不是承诺赛事会提供个人反馈。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "industryAcademicAccess",
+            "claim": {
+              "text": "尚无可核实的个人行业/学术接触机会或学校/招聘认可承诺；不从赛事名称推导。",
+              "basis": "unknown",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          },
+          {
+            "dimension": "recognition",
+            "claim": {
+              "text": "尚无可核实的个人行业/学术接触机会或学校/招聘认可承诺；不从赛事名称推导。",
+              "basis": "unknown",
+              "studentFactIds": [],
+              "competitionFactIds": [],
+              "conditions": []
+            }
+          }
+        ],
+        "difficulty": [
+          {
+            "stage": "entry",
+            "claim": {
+              "text": "先掌握一种用户观察方法和清晰表达；不要求香水专业背景。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "loreal-brandstorm:v2:track"
+              ],
+              "conditions": [
+                "根据学生真实经历判断；没有经历不等于没有潜力"
+              ]
+            }
+          },
+          {
+            "stage": "completion",
+            "claim": {
+              "text": "三页同时讲清创新及执行路径较难，团队视频还要用真实经历证明协作。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "loreal-brandstorm:v2:deliverables"
+              ],
+              "conditions": [
+                "需核对个人时间、队友、导师与必要资源"
+              ]
+            }
+          },
+          {
+            "stage": "award",
+            "claim": {
+              "text": "完成交付与获奖分开判断；本库没有可用于个人获奖概率的校准数据。",
+              "basis": "suggestion",
+              "studentFactIds": [],
+              "competitionFactIds": [
+                "loreal-brandstorm:v2:rubric"
+              ],
+              "conditions": [
+                "奖项取决于当届赛道与评审，不承诺结果"
+              ]
+            }
+          }
+        ],
+        "opportunityCost": {
+          "text": "编辑建议四周每周4—6小时，优先纸面原型；规则未明确报名收费，不表述为免费。 选择这项任务意味着把相同时间用于该方向的持续实践；请与其他课程、作品或实习准备的优先级比较。",
+          "basis": "suggestion",
+          "studentFactIds": [
+            "s.weeklyCommitment.599ad580c3a5c743"
+          ],
+          "competitionFactIds": [],
+          "conditions": [
+            "投入估计是准备建议，实际成本需逐项核对。"
+          ]
+        },
+        "nextStep": {
+          "text": "画一条试香或购香旅程，找一处障碍并做两种纸面改进。",
+          "basis": "suggestion",
+          "studentFactIds": [
+            "s.weeklyCommitment.599ad580c3a5c743"
+          ],
+          "competitionFactIds": [],
+          "conditions": [
+            "你愿意继续追问成本还是改进体验？"
+          ]
+        },
+        "checkpoint": "区分受访者原话、解释与未经验证的预测。",
+        "sources": [
+          {
+            "id": "loreal-brandstorm:legacy:source:1",
+            "title": "L’Oréal Brandstorm · 来源文件",
+            "url": "https://www.loreal.com/en/brandstorm",
+            "scope": "赛事公开资料 · 以文件所列赛区、组别及院校为限",
+            "checkedAt": "2026-11-05"
+          },
+          {
+            "id": "loreal-brandstorm:legacy:source:2",
+            "title": "Brandstorm 2026 · 官方赛事说明",
+            "url": "https://brandstorm2026.loreal.com/en",
+            "scope": "2026届历史规则；2027届资格以新规则为准",
+            "checkedAt": "2026-11-05"
+          },
+          {
+            "id": "b-loreal-entry",
+            "title": "Brandstorm 2026参赛平台",
+            "url": "https://brandstorm2026.loreal.com/en",
+            "scope": "2026全球Brandstorm报名基础说明",
+            "checkedAt": "2026-11-05"
+          },
+          {
+            "id": "b-loreal-brief",
+            "title": "Brandstorm 2026完整命题手册",
+            "url": "https://d32gkk464bsqbe.cloudfront.net/activities/o/BRANDSTORM_2026_MISSION_DOCUMENT.pdf?v=6.8.13",
+            "scope": "2026全球Luxe",
+            "checkedAt": "2026-11-05"
+          }
+        ],
+        "evidenceFacts": [
+          {
+            "id": "loreal-brandstorm:legacy:fact:eligibility",
+            "text": "2026届接受18–30岁人群，专业背景不限；2027届的日期及资格另核。〔2〕",
+            "sourceIds": [
+              "loreal-brandstorm:legacy:source:2"
+            ],
+            "scope": "2027；赛事公开资料 · 以文件所列赛区、组别及院校为限",
+            "status": "pending_review",
+            "kind": "official_fact"
+          },
+          {
+            "id": "loreal-brandstorm:legacy:fact:team",
+            "text": "组队人数及是否允许跨校待核实。",
+            "sourceIds": [],
+            "scope": "2027；赛事公开资料 · 以文件所列赛区、组别及院校为限",
+            "status": "unknown",
+            "kind": "unknown"
+          },
+          {
+            "id": "loreal-brandstorm:legacy:fact:mentor",
+            "text": "导师是否必需及人数待核实。",
+            "sourceIds": [],
+            "scope": "2027；赛事公开资料 · 以文件所列赛区、组别及院校为限",
+            "status": "unknown",
+            "kind": "unknown"
+          },
+          {
+            "id": "loreal-brandstorm:legacy:fact:fee",
+            "text": "报名费及收费环节待核实。",
+            "sourceIds": [],
+            "scope": "2027；赛事公开资料 · 以文件所列赛区、组别及院校为限",
+            "status": "unknown",
+            "kind": "unknown"
+          },
+          {
+            "id": "loreal-brandstorm:v2:eligibility",
+            "text": "18—30岁，三人团队，不限学科及经验；当地参赛通道另核验。",
+            "sourceIds": [
+              "b-loreal-entry"
+            ],
+            "scope": "2026全球Brandstorm报名基础说明",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "loreal-brandstorm:v2:track",
+            "text": "2026命题要求以创意、科学和技术重新设计奢华香氛的产品、服务及体验。",
+            "sourceIds": [
+              "b-loreal-brief"
+            ],
+            "scope": "2026全球Luxe",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "loreal-brandstorm:v2:participation",
+            "text": "报名并提交初选材料，再按当地选拔进入后续赛程；历史2026不表示现在可报。",
+            "sourceIds": [
+              "b-loreal-entry"
+            ],
+            "scope": "2026全球Brandstorm报名基础说明",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "loreal-brandstorm:v2:deliverables",
+            "text": "3页方案演示文件，另交3分钟团队视频；两者各不超过50MB。",
+            "sourceIds": [
+              "b-loreal-brief"
+            ],
+            "scope": "2026全球Luxe",
+            "status": "historical",
+            "kind": "official_fact"
+          },
+          {
+            "id": "loreal-brandstorm:v2:rubric",
+            "text": "项目5项各5分：创新、可持续、包容、可行、扩展；团队另5项各按5/2/0评分。",
+            "sourceIds": [
+              "b-loreal-brief"
+            ],
+            "scope": "2026全球Luxe",
+            "status": "historical",
+            "kind": "official_fact"
+          }
+        ]
+      }
+    ],
+    "shortlistShortfallReason": null,
+    "comparisons": [
+      {
+        "itemIds": [
+          "atcoder-beginner-contest:2025-427:d-simple-game:individual-open:global-online-abc427:v3",
+          "google-kick-start:2022:round-a-speed-typing:historical-public-task:round-a-speed-typing-2022:v3"
+        ],
+        "dimensions": [
+          {
+            "label": "主要任务",
+            "values": [
+              {
+                "itemId": "atcoder-beginner-contest:2025-427:d-simple-game:individual-open:global-online-abc427:v3",
+                "claim": {
+                  "text": "从固定终点倒推最优胜负，把己方存在一个好选择和对手所有选择都无害区分开。",
+                  "basis": "suggestion",
+                  "studentFactIds": [],
+                  "competitionFactIds": [
+                    "atcoder-beginner-contest:v2:track"
+                  ],
+                  "conditions": []
+                }
+              },
+              {
+                "itemId": "google-kick-start:2022:round-a-speed-typing:historical-public-task:round-a-speed-typing-2022:v3",
+                "claim": {
+                  "text": "把输入修复故事转成子序列问题，用双指针保持顺序并证明删除次数唯一。",
+                  "basis": "suggestion",
+                  "studentFactIds": [],
+                  "competitionFactIds": [
+                    "google-kick-start:v2:track"
+                  ],
+                  "conditions": []
+                }
+              }
+            ]
+          },
+          {
+            "label": "现在的切入点",
+            "values": [
+              {
+                "itemId": "atcoder-beginner-contest:2025-427:d-simple-game:individual-open:global-online-abc427:v3",
+                "claim": {
+                  "text": "可先承担独立算法与验证角色，围绕该题完成递推证明、代码和对拍记录，作为两周内可交付的探索动作。",
+                  "basis": "suggestion",
+                  "studentFactIds": [
+                    "s.preparationHorizon.23efb888fdffefde"
+                  ],
+                  "competitionFactIds": [
+                    "atcoder-beginner-contest:v2:deliverables"
+                  ],
+                  "conditions": [
+                    "历史题练习，不声称隐藏评测成绩或正式rating。"
+                  ]
+                }
+              },
+              {
+                "itemId": "google-kick-start:2022:round-a-speed-typing:historical-public-task:round-a-speed-typing-2022:v3",
+                "claim": {
+                  "text": "可先承担独立字符串算法角色，画双指针跟踪表并构造顺序反例，形成可复核的练习记录。",
+                  "basis": "suggestion",
+                  "studentFactIds": [
+                    "s.preparationHorizon.23efb888fdffefde"
+                  ],
+                  "competitionFactIds": [
+                    "google-kick-start:v2:deliverables"
+                  ],
+                  "conditions": [
+                    "仅按历史题练习，不声称通过官方赛程。"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "主要代价",
+            "values": [
+              {
+                "itemId": "atcoder-beginner-contest:2025-427:d-simple-game:individual-open:global-online-abc427:v3",
+                "claim": {
+                  "text": "官方介绍明确线上竞赛免费参加，以赞助支持运营；这是2026读取的一般参与费政策，不是个人设备、网络或可选线下活动总费用为零的保证。 选择这项任务意味着把相同时间用于程序训练或软件制作；请与其他课程、作品或实习准备的优先级比较。",
+                  "basis": "suggestion",
+                  "studentFactIds": [
+                    "s.weeklyCommitment.599ad580c3a5c743"
+                  ],
+                  "competitionFactIds": [
+                    "atcoder-beginner-contest:v2:investment"
+                  ],
+                  "conditions": [
+                    "投入估计是准备建议，实际成本需逐项核对。"
+                  ]
+                }
+              },
+              {
+                "itemId": "google-kick-start:2022:round-a-speed-typing:historical-public-task:round-a-speed-typing-2022:v3",
+                "claim": {
+                  "text": "编辑建议四周每周2—3小时，已有电脑和本地语言运行环境即可读题实现；历史正式报名及个人全程费用未知，当前赛事已结束。 选择这项任务意味着把相同时间用于程序训练或软件制作；请与其他课程、作品或实习准备的优先级比较。",
+                  "basis": "suggestion",
+                  "studentFactIds": [
+                    "s.weeklyCommitment.599ad580c3a5c743"
+                  ],
+                  "competitionFactIds": [],
+                  "conditions": [
+                    "投入估计是准备建议，实际成本需逐项核对。"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "先验证什么",
+            "values": [
+              {
+                "itemId": "atcoder-beginner-contest:2025-427:d-simple-game:individual-open:global-online-abc427:v3",
+                "claim": {
+                  "text": "画一个Bob可选择A或B终点的两步小图，分别列出两人的最优选择。",
+                  "basis": "suggestion",
+                  "studentFactIds": [
+                    "s.weeklyCommitment.599ad580c3a5c743"
+                  ],
+                  "competitionFactIds": [],
+                  "conditions": [
+                    "你更喜欢推导策略还是实现测试？"
+                  ]
+                }
+              },
+              {
+                "itemId": "google-kick-start:2022:round-a-speed-typing:historical-public-task:round-a-speed-typing-2022:v3",
+                "claim": {
+                  "text": "分别追踪I=aaaa/P=aaaaa和I=KickstartIsFun/P=kkickstartiisfun两个原例；再自行构造字符数量够但顺序错误的反例。",
+                  "basis": "suggestion",
+                  "studentFactIds": [
+                    "s.weeklyCommitment.599ad580c3a5c743"
+                  ],
+                  "competitionFactIds": [],
+                  "conditions": [
+                    "你能在写代码前解释每次指针移动的含义吗？"
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "tradeoff": {
+          "text": "AtCoder Beginner Contest目前列在前面，可先用“能说明存在到A的路仍可能Alice必输。”检查起点；如果你更愿意做Round A：Speed Typing的任务，则用“第一例删1；第二例不能通过删除生成大写K，不使用大小写归一化偷换题目。”检验第二条路径。先做一个体验产出，若兴趣、时间或资源改变，再重新比较；目前顺序不表示获奖机会更高。",
+          "basis": "suggestion",
+          "studentFactIds": [
+            "s.goalIntent.c54d1a8bca1535aa",
+            "s.weeklyCommitment.599ad580c3a5c743",
+            "s.preparationHorizon.23efb888fdffefde"
+          ],
+          "competitionFactIds": [
+            "atcoder-beginner-contest:v2:track",
+            "google-kick-start:v2:track"
+          ],
+          "conditions": [
+            "这是选择建议，不是获奖或就业承诺。"
+          ]
+        }
+      }
+    ],
+    "goalPaths": [],
+    "candidateAudit": [
+      {
+        "recordId": "google-code-jam:2022:qualification-3d-printing:historical-public-task:qualification-3d-printing-2022:v3",
+        "seriesId": "google-code-jam",
+        "name": "Google Code Jam",
+        "status": "selected",
+        "reason": {
+          "text": "已纳入本次选择；查看具体赛道的依据和条件。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "google-kick-start:2022:round-a-speed-typing:historical-public-task:round-a-speed-typing-2022:v3",
+        "seriesId": "google-kick-start",
+        "name": "Google Kick Start",
+        "status": "selected",
+        "reason": {
+          "text": "已纳入本次选择；查看具体赛道的依据和条件。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "google-hash-code:2022:qualification-mentorship:historical-public-task:qualification-mentorship-2022:v3",
+        "seriesId": "google-hash-code",
+        "name": "Google Hash Code",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "taiwan-child-rights-lesson-contest:2023-first:preschool-rights-learning:preschool-student:taiwan-2023-preschool-student:v3",
+        "seriesId": "taiwan-child-rights-lesson-contest",
+        "name": "台湾妇女、儿童人权教案竞赛",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "ncyu-special-education-demonstration:2016-2017-105:reading-lesson-design:pre-service-teachers:taiwan-105-special-education:v3",
+        "seriesId": "ncyu-special-education-demonstration",
+        "name": "嘉义大学特殊教育教学演示竞赛",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "acm-student-research:2025-chi:hci-education-research:undergraduate:chi-2025-undergrad:v3",
+        "seriesId": "acm-student-research",
+        "name": "ACM Student Research Competition",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "apple-swift-student-challenge:2026:app-playground:individual-student:global-2026:v3",
+        "seriesId": "apple-swift-student-challenge",
+        "name": "Apple Swift Student Challenge",
+        "status": "selected",
+        "reason": {
+          "text": "已纳入本次选择；查看具体赛道的依据和条件。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "international-mathematics-competition:2026-33:proofs:individual:bulgaria-2026:v3",
+        "seriesId": "international-mathematics-competition",
+        "name": "International Mathematics Competition for University Students",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "dandad-new-blood:2026-share-your-passion:personal-social-campaign:eligible-creative:global-2026-dad-brief:v3",
+        "seriesId": "dandad-new-blood",
+        "name": "D&AD New Blood Awards",
+        "status": "selected",
+        "reason": {
+          "text": "已纳入本次选择；查看具体赛道的依据和条件。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "aiaa-design-build-fly:2025-2026:aircraft-missions:university-team:2026-charter-flight:v3",
+        "seriesId": "aiaa-design-build-fly",
+        "name": "AIAA Design/Build/Fly",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "china-undergraduate-physics-tournament:2020-rules:physics-fight:undergraduate:china-historical-2020:v3",
+        "seriesId": "china-undergraduate-physics-tournament",
+        "name": "中国大学生物理学术竞赛",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "national-college-math-modeling:2026:undergraduate-group:undergraduate:china-2026-a:v3",
+        "seriesId": "national-college-math-modeling",
+        "name": "全国大学生数学建模竞赛",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "comap-mcm-icm:2026:mcm-a:undergraduate-or-below:global-2026-mcm-a:v3",
+        "seriesId": "comap-mcm-icm",
+        "name": "美国大学生数学建模竞赛MCM/ICM",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "icpc-programming:2025-world-finals:world-finals:qualified-university-team:world-finals-baku-2025:v3",
+        "seriesId": "icpc-programming",
+        "name": "国际大学生程序设计竞赛ICPC",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "china-software-cup:2026-15:a3-learning-agents:a-higher-education:china-a3-2026:v3",
+        "seriesId": "china-software-cup",
+        "name": "中国软件杯大学生软件设计大赛",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "china-college-computer-design:2026-19:ai-industrial-vision:full-time-undergraduate:china-ai-industrial-2026:v3",
+        "seriesId": "china-college-computer-design",
+        "name": "中国大学生计算机设计大赛",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "lanqiao-cup:2019-10:cpp-array-successor:cpp-a:china-provincial-cpp-a-2019:v3",
+        "seriesId": "lanqiao-cup",
+        "name": "蓝桥杯全国软件和信息技术专业人才大赛",
+        "status": "selected",
+        "reason": {
+          "text": "已纳入本次选择；查看具体赛道的依据和条件。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "ccf-ccsp:2025:systems-programming-xor:csp-qualified-students:china-harbin-2025:v3",
+        "seriesId": "ccf-ccsp",
+        "name": "CCF大学生计算机系统与程序设计竞赛",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "national-college-mathematics:2011-3:calculus-third-derivative:non-mathematics:zhejiang-zjut-preliminary-2011:v3",
+        "seriesId": "national-college-mathematics",
+        "name": "全国大学生数学竞赛",
+        "status": "selected",
+        "reason": {
+          "text": "已纳入本次选择；查看具体赛道的依据和条件。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "mathorcup:2026-16:d-three-dimensional-packing:undergraduate-d:china-spring-d-2026:v3",
+        "seriesId": "mathorcup",
+        "name": "MathorCup数学应用挑战赛",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "yau-college-mathematics:2026-17:algebra-non-simple-group:undergraduate-individual:global-2026-historical-training:v3",
+        "seriesId": "yau-college-mathematics",
+        "name": "丘成桐大学生数学竞赛",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "atcoder-beginner-contest:2025-427:d-simple-game:individual-open:global-online-abc427:v3",
+        "seriesId": "atcoder-beginner-contest",
+        "name": "AtCoder Beginner Contest",
+        "status": "selected",
+        "reason": {
+          "text": "已纳入本次选择；查看具体赛道的依据和条件。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "loreal-brandstorm:2026-luxe:future-fragrance:18-30-team:global-local-entry:v3",
+        "seriesId": "loreal-brandstorm",
+        "name": "L’Oréal Brandstorm",
+        "status": "selected",
+        "reason": {
+          "text": "已纳入本次选择；查看具体赛道的依据和条件。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "intercultural-competence:2025-liaoning:case-analysis:chinese-student-team:liaoning-semifinal:v3",
+        "seriesId": "intercultural-competence",
+        "name": "全国大学生跨文化能力大赛",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "if-student-award:2025-entry-guide:sdg-design:design-students-graduates:global-2025:v3",
+        "seriesId": "if-student-award",
+        "name": "iF DESIGN STUDENT AWARD",
+        "status": "selected",
+        "reason": {
+          "text": "已纳入本次选择；查看具体赛道的依据和条件。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "cfa-research-challenge:2024-2025-historical:equity-research:university-team:global-2024-2025-report:v3",
+        "seriesId": "cfa-research-challenge",
+        "name": "CFA Institute Research Challenge",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "market-research-analysis:2025-15-undergraduate:wenjuan-ai:undergraduate-3-5:china-cau-submission:v3",
+        "seriesId": "market-research-analysis",
+        "name": "全国大学生市场调查与分析大赛",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "national-college-industrial-design:2024-7:product-system:fulltime-university:heilongjiang-rules-national-work:v3",
+        "seriesId": "national-college-industrial-design",
+        "name": "全国大学生工业设计大赛",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "ecommerce-innovation-creativity-entrepreneurship:2025-15-rural:rural-commerce:university-3-5:china-rural-practical:v3",
+        "seriesId": "ecommerce-innovation-creativity-entrepreneurship",
+        "name": "全国大学生电子商务创新、创意及创业挑战赛",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "chongqing-rural-revitalization:2025-5:bencao-cultural-tourism:students-graduates-2-5:chongqing-regular:v3",
+        "seriesId": "chongqing-rural-revitalization",
+        "name": "重庆市大学生乡村振兴创意大赛",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "chinese-classics:2025-zhejiang-13:classics-recitation:huzhou-individual:zhejiang-huzhou-local:v3",
+        "seriesId": "chinese-classics",
+        "name": "中华经典诵写讲大赛",
+        "status": "selected",
+        "reason": {
+          "text": "已纳入本次选择；查看具体赛道的依据和条件。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "iot-design:2026-13:espressif-aiot:regular-university:china-espressif:v3",
+        "seriesId": "iot-design",
+        "name": "全国大学生物联网设计竞赛",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "chemical-engineering-design:2026-20:clean-styrene-plant:undergraduate:china-styrene:v3",
+        "seriesId": "chemical-engineering-design",
+        "name": "全国大学生化工设计竞赛",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "physics-experiment-innovation:2026-12:ice-metal-friction:assigned-domestic:china-ice-metal:v3",
+        "seriesId": "physics-experiment-innovation",
+        "name": "全国大学生物理实验竞赛（创新）",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "embedded-chip-system-design:2026:gowin-real-time-synth:nuaa-undergraduate-graduate:nuaa-gowin-fpga:v3",
+        "seriesId": "embedded-chip-system-design",
+        "name": "全国大学生嵌入式芯片与系统设计竞赛",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "chemistry-experiment-innovation:2025-5:popular-science-cochineal:popular-science:china-2025-popular-science:v3",
+        "seriesId": "chemistry-experiment-innovation",
+        "name": "全国大学生化学实验创新设计大赛",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "national-college-electronic-design:2025-national:monocular-measurement:undergraduate-task:china-2025-c:v3",
+        "seriesId": "national-college-electronic-design",
+        "name": "全国大学生电子设计竞赛",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "engineering-practice-innovation:2025-national:solar-mechanical-car:undergraduate:china-2025-solar:v3",
+        "seriesId": "engineering-practice-innovation",
+        "name": "中国大学生工程实践与创新能力大赛",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "smart-car:2025-20-outdoor:outdoor-ros-mapping:higher-education:china-2025-outdoor-ros:v3",
+        "seriesId": "smart-car",
+        "name": "全国大学生智能汽车竞赛",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "robomaster-university:2026-rmuc:engineering-core-assembly:university:rmuc-2026-core-assembly:v3",
+        "seriesId": "robomaster-university",
+        "name": "RoboMaster机甲大师高校系列赛",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "biomod:2023:biomolecular-design:undergraduate:biomod-2023:v3",
+        "seriesId": "biomod",
+        "name": "BIOMOD国际生物分子设计竞赛",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "formula-student-china:2026-fscc:cost-manufacturing:university-combustion:china-2026-fscc-cost:v3",
+        "seriesId": "formula-student-china",
+        "name": "中国大学生方程式系列赛事",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "igem-collegiate:2026-collegiate:model-evidence:higher-education:igem-2026-higher-education:v3",
+        "seriesId": "igem-collegiate",
+        "name": "iGEM国际遗传工程机器大赛高校组",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "mechanical-innovation-design:2026-12-regular:vegetable-processing:undergraduate-junior-college:china-regular-vegetable:v3",
+        "seriesId": "mechanical-innovation-design",
+        "name": "全国大学生机械创新设计大赛",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      },
+      {
+        "recordId": "national-structural-design:2026-19-shanghai:lele-cart:undergraduate-junior-college:shanghai-division:v3",
+        "seriesId": "national-structural-design",
+        "name": "全国大学生结构设计竞赛",
+        "status": "not_selected",
+        "reason": {
+          "text": "已比较，但本次有更优先或更明确的任务联系；可以修改目标后重新比较。",
+          "basis": "suggestion",
+          "studentFactIds": [],
+          "competitionFactIds": [],
+          "conditions": []
+        }
+      }
+    ],
+    "pendingQuestions": [],
+    "usefulQuestions": [],
+    "schoolPolicyReminder": "综测、奖学金、推免等认可，请核对你所在学校当年的正式政策。",
+    "fallback": {
+      "used": false,
+      "reason": null
+    },
+    "trace": {
+      "engineVersion": "saitu-decision.2026-11.v7",
+      "method": "llm",
+      "reasoningEffort": "high",
+      "explanationSource": "model_text",
+      "invocationId": "e30167b7-559c-401b-afee-cd6b7c56ed31",
+      "supportChecks": 20,
+      "unsupportedChecks": 0,
+      "lastValidModelItemIds": [
+        "atcoder-beginner-contest:2025-427:d-simple-game:individual-open:global-online-abc427:v3",
+        "google-kick-start:2022:round-a-speed-typing:historical-public-task:round-a-speed-typing-2022:v3",
+        "google-code-jam:2022:qualification-3d-printing:historical-public-task:qualification-3d-printing-2022:v3",
+        "apple-swift-student-challenge:2026:app-playground:individual-student:global-2026:v3",
+        "chinese-classics:2025-zhejiang-13:classics-recitation:huzhou-individual:zhejiang-huzhou-local:v3",
+        "lanqiao-cup:2019-10:cpp-array-successor:cpp-a:china-provincial-cpp-a-2019:v3",
+        "national-college-mathematics:2011-3:calculus-third-derivative:non-mathematics:zhejiang-zjut-preliminary-2011:v3",
+        "if-student-award:2025-entry-guide:sdg-design:design-students-graduates:global-2025:v3",
+        "dandad-new-blood:2026-share-your-passion:personal-social-campaign:eligible-creative:global-2026-dad-brief:v3",
+        "loreal-brandstorm:2026-luxe:future-fragrance:18-30-team:global-local-entry:v3"
+      ],
+      "cachedInputTokens": 0,
+      "model": "deepseek-flash",
+      "promptVersion": "saitu-explain.v7.4.explicit-claim-schema-repair",
+      "candidateCount": 45,
+      "callCount": 2,
+      "elapsedMs": 123819,
+      "verification": "model_reviewed",
+      "inputTokens": 89197,
+      "outputTokens": 20486,
+      "costCny": null
+    }
+  },
+  "error": null,
+  "network": [
+    {
+      "callNumber": 1,
+      "headersAfterMs": 388.59125000000006,
+      "status": 200
+    },
+    {
+      "callNumber": 2,
+      "headersAfterMs": 766.8639999999941,
+      "status": 200
+    }
+  ],
+  "observations": [
+    {
+      "elapsedMs": 41264.739875,
+      "stage": "v7.explain",
+      "kind": "response",
+      "data": {
+        "ok": true,
+        "repair": false,
+        "upstreamAttempted": true,
+        "usage": {
+          "inputTokens": 42762,
+          "outputTokens": 6479,
+          "cachedInputTokens": 0
+        },
+        "reason": null
+      }
+    },
+    {
+      "elapsedMs": 41273.537917,
+      "stage": "v7.explain",
+      "kind": "validation",
+      "data": {
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "elapsedMs": 41273.850792,
+      "stage": "v7.audit",
+      "kind": "validation",
+      "data": {
+        "profileRevision": "e090ae536df4637e4497e14c10bfe56d62881cd22a32f63f6bbcfdfba48bd37b",
+        "catalogVersion": "v7-b75f38e52d3b51ddfda62d54",
+        "sampling": {
+          "algorithm": "sha256-uint32be-mod5-zero",
+          "seed": [
+            "v7-b75f38e52d3b51ddfda62d54",
+            "e090ae536df4637e4497e14c10bfe56d62881cd22a32f63f6bbcfdfba48bd37b"
+          ],
+          "rate": 0.2
+        },
+        "offlineSamples": [],
+        "rate": 0.2
+      }
+    },
+    {
+      "elapsedMs": 123824.907042,
+      "stage": "v7.review",
+      "kind": "response",
+      "data": {
+        "ok": true,
+        "repair": false,
+        "upstreamAttempted": true,
+        "usage": {
+          "inputTokens": 46435,
+          "outputTokens": 14007,
+          "cachedInputTokens": 0
+        },
+        "reason": null
+      }
+    }
+  ],
+  "calls": [
+    {
+      "call_id": "f8855565-082c-4d4f-903f-9107bfb99026",
+      "call_key": "v7.explain:batch:1",
+      "prompt_sha256": "5c0c3cec287271ff6146bff60dc8240a273af3563e9769708bd434bf8c67102c",
+      "state": "completed",
+      "reservation_id": "4a4edcf1-3f42-4588-a362-d786720a246e",
+      "saved": {
+        "kind": "receipt",
+        "receipt": {
+          "model": "deepseek-flash",
+          "httpStatus": 200,
+          "finishReason": "stop",
+          "content": "{\"profileRevision\":\"e090ae536df4637e4497e14c10bfe56d62881cd22a32f63f6bbcfdfba48bd37b\",\"catalogVersion\":\"v7-b75f38e52d3b51ddfda62d54\",\"recommendations\":[{\"itemId\":\"@C3\",\"reasons\":[{\"text\":\"你以探索方向为目标、每周可投入5–10小时且准备周期1–2周；ABC427 D的有限步有向图博弈题可作一次短周期算法探索：读题后倒推胜负并提交程序，用一个小任务判断是否愿意继续这类个人算法练习。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P3\",\"@P7\",\"@P5\"],\"competitionFactIds\":[\"@F26\",\"@F20\",\"@F24\"],\"conditions\":[\"仅使用2025历史题练习，不回到已结束正式比赛取得原名次。\",\"报名资格与当前日期请另行通过官方入口核查。\"]}],\"roleIndex\":0,\"roleReason\":{\"text\":\"可先承担独立算法与验证角色，围绕该题完成递推证明、代码和对拍记录，作为两周内可交付的探索动作。\",\"basis\":\"suggestion\",\"studentFactIds\":[\"@P5\"],\"competitionFactIds\":[\"@F20\"],\"conditions\":[\"历史题练习，不声称隐藏评测成绩或正式rating。\"]}},{\"itemId\":\"@C22\",\"reasons\":[{\"text\":\"该题是仅删除且保序的字符串判定，产出为逐例删除数或IMPOSSIBLE；对你用1–2周探索方向而言，可用官方归档历史题完成一次双指针与反例验证的小交付，每周5–10小时足以安排短练。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P3\",\"@P7\",\"@P5\"],\"competitionFactIds\":[\"@F182\",\"@F177\"],\"conditions\":[\"2022系列已结束，仅作官方归档历史题练习，不表示当前可报名。\",\"报名资格与日期请另行通过官方入口核查。\"]}],\"roleIndex\":0,\"roleReason\":{\"text\":\"可先承担独立字符串算法角色，画双指针跟踪表并构造顺序反例，形成可复核的练习记录。\",\"basis\":\"suggestion\",\"studentFactIds\":[\"@P5\"],\"competitionFactIds\":[\"@F177\"],\"conditions\":[\"仅按历史题练习，不声称通过官方赛程。\"]}},{\"itemId\":\"@C20\",\"reasons\":[{\"text\":\"从三台打印机容量压缩出四个逐色最小值并构造总和恰为100万的方案，是一次短小的约束建模任务；适合你用1–2周、每周5–10小时试做，以判断是否喜欢这类个人构造与证明。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P3\",\"@P7\",\"@P5\"],\"competitionFactIds\":[\"@F170\",\"@F165\"],\"conditions\":[\"2022届已结束，仅作官方归档历史题练习，不构成当前报名机会。\",\"报名资格与日期请另行通过官方入口核查。\"]}],\"roleIndex\":0,\"roleReason\":{\"text\":\"可先承担独立约束建模与实现角色，交付不变量证明、代码和边界测试，作为低门槛探索。\",\"basis\":\"suggestion\",\"studentFactIds\":[\"@P5\"],\"competitionFactIds\":[\"@F165\"],\"conditions\":[\"仅按历史题练习，不声称赛事成绩或证书。\"]}},{\"itemId\":\"@C2\",\"reasons\":[{\"text\":\"该路径要求把一个小问题做成离线交互App Playground，并解释技术与设计取舍；你每周5–10小时、1–2周可先做三屏流程和一个状态反馈，探索自己是否愿意继续软件交互方向，而不把2026报名当作当前可参加。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P3\",\"@P7\",\"@P5\"],\"competitionFactIds\":[\"@F19\",\"@F14\"],\"conditions\":[\"2026届已结束，不推定2027资格与窗口。\",\"设备、在讀证明与当前工具版本需另行核对。\"]}],\"roleIndex\":0,\"roleReason\":{\"text\":\"可先承担独立交互开发角色，完成一个按钮引起状态变化并能离线试用的小流程。\",\"basis\":\"suggestion\",\"studentFactIds\":[\"@P5\"],\"competitionFactIds\":[\"@F14\"],\"conditions\":[\"仅作探索性作品准备，不声称可提交2026申请。\"]}},{\"itemId\":\"@C12\",\"reasons\":[{\"text\":\"校选为脱稿朗诵一篇且不需配乐、PPT，官方校选考阅读理解、艺术鉴赏和语言表达；在1–2周内可用指定题库做一次文本细读和录音试讲，探索是否适合表达类任务，同时每周5–10小时可安排短练。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P3\",\"@P7\",\"@P5\"],\"competitionFactIds\":[\"@F100\",\"@F104\",\"@F105\"],\"conditions\":[\"仅按2025浙江与湖州师范校选历史条款理解，个人组不等于全国通道。\",\"当前资格与日期请另行通过官方入口核查。\"]}],\"roleIndex\":0,\"roleReason\":{\"text\":\"可先承担文本解读角色，标注河伯前后认知变化和易错读音，再决定是否进入朗诵表达。\",\"basis\":\"suggestion\",\"studentFactIds\":[\"@P5\"],\"competitionFactIds\":[\"@F100\"],\"conditions\":[\"不改变指定原文，先核准读音和句意再讨论情绪。\"]}},{\"itemId\":\"@C29\",\"reasons\":[{\"text\":\"H题要求把重复值递增到最小未用值并输出完整数组，交付标准C/C++单文件；这可用1–2周做一次个人算法与实现探索；历史300元报名费虽接近你的300元自付上限，但食宿等未知，不能据此认定总预算。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P3\",\"@P5\",\"@P1\"],\"competitionFactIds\":[\"@F246\",\"@F240\",\"@F243\"],\"conditions\":[\"仅2019历史题与同届规则，不声称当前可报名或满分通过。\",\"食宿交通与当前费用未核，不能把历史报名费当作个人总支出。\"]}],\"roleIndex\":0,\"roleReason\":{\"text\":\"可先承担独立算法与实现角色，交付正确性说明、单文件实现与对拍记录，重点试探从朴素模拟改到后继结构是否愿意继续。\",\"basis\":\"suggestion\",\"studentFactIds\":[\"@P5\"],\"competitionFactIds\":[\"@F240\"],\"conditions\":[\"仅作历史题练习，不运行官方隐藏评测。\"]}},{\"itemId\":\"@C37\",\"reasons\":[{\"text\":\"第三题要求用泰勒公式与连续性证明开区间中存在三阶导数等于3的点，产出为完整书面证明；可把该历史题作为1–2周内的个人证明小样，从复习余项与介值定理入手，探索自己是否愿意继续数学证明方向；60元仅为2011浙江工大历史本校收费，不推成当前全国费用。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P3\",\"@P5\"],\"competitionFactIds\":[\"@F319\",\"@F314\",\"@F316\"],\"conditions\":[\"仅2011历史题与浙江工大历史通知，不用于新届直接报名。\",\"公开评分路线不保证其他证明路线逐步同分。\"]}],\"roleIndex\":0,\"roleReason\":{\"text\":\"可先承担个人证明与表达角色，逐项核对余项点、导数连续性和累计评分步骤，形成可修订的证明草稿。\",\"basis\":\"suggestion\",\"studentFactIds\":[\"@P5\"],\"competitionFactIds\":[\"@F314\"],\"conditions\":[\"仅作历史单题练习，不声称当前赛季资格或获奖概率。\"]}},{\"itemId\":\"@C24\",\"reasons\":[{\"text\":\"官方指南的MASHAV海报机制阅读可在一页概念里拆解用户、通风逻辑与效果证据；你能每周投入5–10小时且以1–2周探索方向，可先做机制重绘来检验是否喜欢设计概念分析，但2025报名资格与当前窗口不据此成立。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P3\",\"@P7\",\"@P5\"],\"competitionFactIds\":[\"@F201\",\"@F197\"],\"conditions\":[\"2025历史指南；设计相关专业资格未确认，仅作练习。\",\"不把指南示例称为2025获奖作品，当前报名另行核查。\"]}],\"roleIndex\":0,\"roleReason\":{\"text\":\"可先承担机制与证据角色，重绘被动、主动和组合通风路径并列出待测参数，不用购买材料即可试探。\",\"basis\":\"suggestion\",\"studentFactIds\":[\"@P5\"],\"competitionFactIds\":[\"@F197\"],\"conditions\":[\"图上没有的性能不自行补成作者测试结论。\"]}},{\"itemId\":\"@C15\",\"reasons\":[{\"text\":\"Share your passion要求把个人创意实践延展成持续社交内容系列，并产出至少五幅静态样稿或三条短视频；在1–2周内可先做五幅静态草稿探索创意传播是否适合自己，2026报名费15英镑及设备制作成本另核，不能据此确认总支出在预算内。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P3\",\"@P5\",\"@P7\"],\"competitionFactIds\":[\"@F126\",\"@F121\",\"@F123\"],\"conditions\":[\"2026历史截止已过，正式新届资格与个人总成本另核。\",\"未发布样稿时不声称传播成效。\"]}],\"roleIndex\":0,\"roleReason\":{\"text\":\"可先承担创意与视觉表达角色，做五幅有共同主线的静态样稿并记录改版理由，作为两周探索产出。\",\"basis\":\"suggestion\",\"studentFactIds\":[\"@P5\"],\"competitionFactIds\":[\"@F121\"],\"conditions\":[\"中文草稿只作练习，正式英语表达与素材授权另行准备。\"]}},{\"itemId\":\"@C30\",\"reasons\":[{\"text\":\"命题要把奢华香氛体验重做成可评估创新、可行与扩展的三页方案；你可用1–2周先观察一个试香或使用障碍并画纸面旅程，探索商业与体验设计，但三人团队、18–30年龄和当地通道需另行核对。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P3\",\"@P5\"],\"competitionFactIds\":[\"@F255\",\"@F251\",\"@F252\"],\"conditions\":[\"2026历史命题，不表示当前可报。\",\"三人团队与18–30资格未确认，需另行核查当地通道。\"]}],\"roleIndex\":0,\"roleReason\":{\"text\":\"可先承担需求与商业角色，整理真实观察、反例和成本假设表，为后续团队讨论提供可核查输入。\",\"basis\":\"suggestion\",\"studentFactIds\":[\"@P5\"],\"competitionFactIds\":[\"@F251\"],\"conditions\":[\"若组成团队，本角色不替代团队协作；资格与日期另核。\"]}}],\"shortfallReason\":null}",
+          "usage": {
+            "inputTokens": 42762,
+            "outputTokens": 6479,
+            "cachedInputTokens": 0
+          },
+          "durationMs": 41230,
+          "attempts": 1
+        }
+      }
+    },
+    {
+      "call_id": "b25b77a9-80e0-4f92-9dc9-d3aeecfec67a",
+      "call_key": "v7.review:batch:1",
+      "prompt_sha256": "490ae109a9be75654fea8ebc3fbd261908a06e81d1c1747c40ad66041371222c",
+      "state": "completed",
+      "reservation_id": "26b713f7-3e55-4390-a128-f4953f1ffc89",
+      "saved": {
+        "kind": "receipt",
+        "receipt": {
+          "model": "deepseek-flash",
+          "httpStatus": 200,
+          "finishReason": "stop",
+          "content": "{\"checks\":[{\"key\":\"atcoder-beginner-contest:2025-427:d-simple-game:individual-open:global-online-abc427:v3.reason.0\",\"supported\":true,\"reason\":\"P3探索目标、P7每周5–10小时、P5周期1–2周与F26/F20/F24题目及参与事实一致；并保留历史题练习、不返正式赛取名次及资格日期另核条件。\"},{\"key\":\"atcoder-beginner-contest:2025-427:d-simple-game:individual-open:global-online-abc427:v3.role\",\"supported\":true,\"reason\":\"作为建议，与该项独立算法角色及F20提交要求、P5的1–2周周期一致；未声称隐藏评测成绩或正式rating，条件已保留。\"},{\"key\":\"google-kick-start:2022:round-a-speed-typing:historical-public-task:round-a-speed-typing-2022:v3.reason.0\",\"supported\":true,\"reason\":\"F182仅删除保序判定、F177输出与限制及P3/P7/P5探索周期支持该短练建议；保留2022已结束、仅历史题练习及资格日期另核条件。\"},{\"key\":\"google-kick-start:2022:round-a-speed-typing:historical-public-task:round-a-speed-typing-2022:v3.role\",\"supported\":true,\"reason\":\"双指针跟踪表与顺序反例属该项角色建议，和F177题目边界及P5准备周期一致；保留仅历史题练习、不称通过官方赛程条件。\"},{\"key\":\"google-code-jam:2022:qualification-3d-printing:historical-public-task:qualification-3d-printing-2022:v3.reason.0\",\"supported\":true,\"reason\":\"F170四色容量与总和100万、F165输入输出及P3/P7/P5周期支持该试做建议；保留2022已结束、仅归档历史题及资格日期另核条件。\"},{\"key\":\"google-code-jam:2022:qualification-3d-printing:historical-public-task:qualification-3d-printing-2022:v3.role\",\"supported\":true,\"reason\":\"不变量证明、代码和边界测试与该角色及F165交付要求一致；保留仅历史题练习、不声称成绩或证书条件。\"},{\"key\":\"apple-swift-student-challenge:2026:app-playground:individual-student:global-2026:v3.reason.0\",\"supported\":true,\"reason\":\"F19个人App Playground、F14离线交付及P3/P7/P5周期支持三屏流程和状态反馈的探索建议；保留2026已结束、不推定2027及设备/证明/工具另核条件。\"},{\"key\":\"apple-swift-student-challenge:2026:app-playground:individual-student:global-2026:v3.role\",\"supported\":true,\"reason\":\"按钮触发状态变化并离线试用与该角色及F14离线交付一致；仅作探索性作品准备，未声称可提交2026申请。\"},{\"key\":\"chinese-classics:2025-zhejiang-13:classics-recitation:huzhou-individual:zhejiang-huzhou-local:v3.reason.0\",\"supported\":true,\"reason\":\"F100脱稿朗诵无需配乐PPT、F104考阅读理解/艺术鉴赏/语言表达、F105指定题库及P3/P7/P5周期支持该短练；保留2025浙江/湖州历史范围与个人组不等于全国通道。\"},{\"key\":\"chinese-classics:2025-zhejiang-13:classics-recitation:huzhou-individual:zhejiang-huzhou-local:v3.role\",\"supported\":true,\"reason\":\"先作文本解读、标注河伯认知变化和易错读音属该项角色建议，与F100/F105文本任务一致；保留先核准读音句意、不改原文条件。\"},{\"key\":\"lanqiao-cup:2019-10:cpp-array-successor:cpp-a:china-provincial-cpp-a-2019:v3.reason.0\",\"supported\":true,\"reason\":\"F246重复值递增到最小未用值、F240单文件提交、F243历史报名300元及P3/P5/P1上限300元支持该说明；费用等于上限且食宿未知，未据此认定总预算。\"},{\"key\":\"lanqiao-cup:2019-10:cpp-array-successor:cpp-a:china-provincial-cpp-a-2019:v3.role\",\"supported\":true,\"reason\":\"正确性说明、单文件实现与对拍记录属该角色建议，和F240交付要求一致；保留仅2019历史题练习、不运行官方隐藏评测条件。\"},{\"key\":\"national-college-mathematics:2011-3:calculus-third-derivative:non-mathematics:zhejiang-zjut-preliminary-2011:v3.reason.0\",\"supported\":true,\"reason\":\"F319第三题证明目标、F314闭卷书面作答、F316仅2011浙江工大历史60元及P3/P5周期支持该证明小样建议；未推成当前全国费用。\"},{\"key\":\"national-college-mathematics:2011-3:calculus-third-derivative:non-mathematics:zhejiang-zjut-preliminary-2011:v3.role\",\"supported\":true,\"reason\":\"核对余项点、导数连续性和累计评分步骤与该个人证明角色及F314一致；保留仅历史单题练习、不称当前资格或获奖概率。\"},{\"key\":\"if-student-award:2025-entry-guide:sdg-design:design-students-graduates:global-2025:v3.reason.0\",\"supported\":true,\"reason\":\"F201围绕SDG概念并用MASHAV海报练习证据阅读、F197一页海报交付及P3/P7/P5周期支持机制重绘探索；保留2025历史指南、专业资格未确认及不称获奖作品条件。\"},{\"key\":\"if-student-award:2025-entry-guide:sdg-design:design-students-graduates:global-2025:v3.role\",\"supported\":true,\"reason\":\"重绘被动/主动/组合通风路径并列出待测参数属该机制与证据角色建议，和F197海报阅读及不购买材料即可试探一致；保留图上未载性能不补成测试结论。\"},{\"key\":\"dandad-new-blood:2026-share-your-passion:personal-social-campaign:eligible-creative:global-2026-dad-brief:v3.reason.0\",\"supported\":true,\"reason\":\"F126持续社交传播、F121至少五幅静态或三条短视频、F123标准报名费15英镑及P3/P5/P7周期支持五幅静态草稿探索；保留2026历史截止已过、总成本另核及不称传播成效条件。\"},{\"key\":\"dandad-new-blood:2026-share-your-passion:personal-social-campaign:eligible-creative:global-2026-dad-brief:v3.role\",\"supported\":true,\"reason\":\"五幅有共同主线的静态样稿并记录改版理由与该创意视觉角色及F121创作示例要求一致；保留中文草稿仅练习、正式英语表达与素材授权另备条件。\"},{\"key\":\"loreal-brandstorm:2026-luxe:future-fragrance:18-30-team:global-local-entry:v3.reason.0\",\"supported\":true,\"reason\":\"F255重设奢华香氛产品/服务/体验、F251三页方案与视频、F252三人团队18–30及P3/P5周期支持纸面旅程探索；保留2026历史命题、不表示当前可报及团队/年龄/当地通道另核。\"},{\"key\":\"loreal-brandstorm:2026-luxe:future-fragrance:18-30-team:global-local-entry:v3.role\",\"supported\":true,\"reason\":\"整理真实观察、反例和成本假设属该需求与商业角色建议，与F251三页方案及用户观察任务一致；保留若组队不替代团队协作、资格日期另核条件。\"}]}",
+          "usage": {
+            "inputTokens": 46435,
+            "outputTokens": 14007,
+            "cachedInputTokens": 0
+          },
+          "durationMs": 82520,
+          "attempts": 1
+        }
+      }
+    }
+  ],
+  "notAcceptanceEvidence": true,
+  "originalListDeadlineExceeded": null,
+  "originalDetailsDeadlineExceeded": null,
+  "limitations": [
+    "Explanation-only observation using a separately bound prior public rank, not a fresh full pipeline or any browser/acceptance timing",
+    "No hidden reasoning text retained",
+    "Unknown outcomes are not retried",
+    "Diagnostic result is never published to a student session"
+  ]
+}

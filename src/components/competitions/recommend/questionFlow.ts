@@ -352,10 +352,10 @@ const fixedQuestionTurnDefinitions = [
         label: "你现在有哪些可以继续打磨或展示的成果？",
         options: evidenceOptions,
         selection: "multiple",
-        minSelections: 1,
+        minSelections: 0,
         maxSelections: 3,
         exclusiveNone: true,
-        hint: "选择 1–3 项；“暂时没有”不能与其他项同时选择"
+        hint: "可选；没有展示材料也可以继续匹配"
       }
     ]
   }
@@ -400,14 +400,25 @@ export const avoidableTasks = [...taskFormatOptions, { value: "laboratory", labe
 export function decisionAnswerSummary(turn: FixedQuestionTurn, profile: DraftCompetitionProfile, text: FixedQuestionTextAnswers, context: DecisionContext) {
   const summary = turnAnswerLabel(turn, profile, text);
   const details: string[] = [];
-  if (turn.id === "goals" && profile.goals?.length) details.push(`首要目标：${getOptionLabel(goalOptions, profile.goals[0])}`);
+  if (turn.id === "goals") {
+    if (context.goalResolution === "undecided") details.push("尚未决定首要目标，先比较不同方向的取舍");
+    else if (context.goalIntent) details.push(`希望优先：${context.goalIntent === "explore" ? "探索方向" : context.goalIntent === "skill" ? "练习具体能力" : getOptionLabel(goalOptions, context.goalIntent)}；${context.goalResolution === "confirmed" ? "已了解取舍并确认" : "取舍待确认"}`);
+    else if (profile.goals?.length) details.push(`当前目标：${getOptionLabel(goalOptions, profile.goals[0])}`);
+  }
   if (turn.id === "teamStatus" && context.fixedTeam) details.push("必须保持当前队伍及人数");
   if (turn.id === "experienceLevel" && context.experienceRole) details.push(`本人参与：${getOptionLabel(experienceRoles, context.experienceRole)}`);
+  if (turn.id === "experienceLevel") {
+    if (context.experienceStatus === "none") details.push("暂时没有或想不起具体经历，不代表没有能力");
+    for (const experience of context.experiences ?? []) details.push(`${experience.task || "任务待填写"}；本人参与：${getOptionLabel(experienceRoles,experience.contribution)}；按你的自述采用`);
+    if(context.noviceTaskPreferences?.some(item=>item.preference==="try"))details.push("已选择愿意尝试的日常任务，仅作为兴趣线索");
+  }
+  if (turn.id === "weeklyCommitment" && context.preparationHorizon) details.push(`准备周期：${({"1-2-weeks":"先体验1–2周","one-month":"约一个月","2-3-months":"2–3个月","long-term":"长期准备","unknown":"暂不确定"})[context.preparationHorizon]}`);
   if (turn.id === "taskFormats" && context.businessActivity) details.push(`希望做的商科任务：${getOptionLabel(businessActivities, context.businessActivity)}`);
   if (turn.id === "taskFormats" && context.excludedTaskFormats?.length) {
     details.push("明确不做：" + context.excludedTaskFormats.map(v => getOptionLabel(avoidableTasks, v)).join("、"));
   }
   if (turn.id === "availableResources") {
+    if (context.budget) details.push(`预算：${({zero:"暂不自费",under100:"不超过100元","100-500":"101–500元",over500:context.budget.maximumYuan?`不超过${context.budget.maximumYuan}元`:"500元以上，上限待确认",unknown:"未知"})[context.budget.range]}；${context.budget.scope==="personal"?"个人预算":context.budget.scope==="team"?"团队预算":"预算范围待确认"}`);
     if (context.obtainableResources?.length) details.push("可争取：" + context.obtainableResources.map(v => getOptionLabel(availableResourceOptions, v)).join("、"));
     if (context.unavailableResources?.length) details.push("无法获得：" + context.unavailableResources.map(v => getOptionLabel(availableResourceOptions, v)).join("、"));
   }
@@ -430,7 +441,7 @@ export function hasDecisionAnswer(turn: FixedQuestionTurn, profile: DraftCompeti
   const raw = normalizeCompetitionAnswerText(text[turn.id] ?? "");
   if (raw) return isCompetitionAnswerTextValid(raw);
   if (turn.id === "stage") return Boolean(profile.stage);
-  return turn.fields.some(field => isStructuredFieldComplete(field, profile));
+  return turn.fields.some(field => getFieldAnswer(field, profile) !== undefined && isStructuredFieldComplete(field, profile));
 }
 
 export function getFieldAnswer(
@@ -444,8 +455,8 @@ export function getFieldAnswer(
 function isStructuredFieldComplete(field: FixedQuestionField, profile: DraftCompetitionProfile) {
   const answer = getFieldAnswer(field, profile);
   if (field.selection === "single") return typeof answer === "string" && answer.length > 0;
-  if (!Array.isArray(answer)) return false;
   const minimum = field.minSelections ?? 1;
+  if (!Array.isArray(answer)) return answer === undefined && minimum === 0;
   return answer.length >= minimum && (field.maxSelections === undefined || answer.length <= field.maxSelections);
 }
 
@@ -490,9 +501,16 @@ export function toCompetitionQuestionnaireDraft(
     : fixedQuestionTurns;
   if (decision ? !turns.some(turn => turn.id === "stage") : !turns.every(turn => isTurnComplete(turn, profile, textAnswers))) return null;
 
+  const context = decision?.context;
+  const confirmedExperiences = context?.experiences?.filter(item=>isCompetitionAnswerTextValid(item.task) && (!item.challenge || isCompetitionAnswerTextValid(item.challenge))).map(item=>({...item,confirmed:true}));
+  const primaryGoal = context?.goalResolution === "undecided" || context?.goalIntent === "explore" || context?.goalIntent === "skill"
+    ? undefined : context?.goalIntent ?? profile.goals?.[0];
   return {
     version: COMPETITION_QUESTIONNAIRE_VERSION,
-    ...(decision ? { decisionContext: { ...decision.context, primaryGoal: profile.goals?.[0] } } : {}),
+    ...(decision ? { decisionContext: { ...decision.context, primaryGoal,
+      experiences: confirmedExperiences,
+      experienceStatus: decision.context.experienceStatus === "provided" && !confirmedExperiences?.length ? "unknown" : decision.context.experienceStatus
+    } } : {}),
     answers: turns.map((turn) => {
       const selectedValues = turn.fields.flatMap((field) => {
         const answer = getFieldAnswer(field, profile);
@@ -603,7 +621,7 @@ export function toCompleteProfile(
     participationTiming: profile.participationTiming as CompleteCompetitionQuestionnaireProfile["participationTiming"],
     taskFormats: (profile.taskFormats as CompleteCompetitionQuestionnaireProfile["taskFormats"]).slice(0, 3),
     experienceLevel: profile.experienceLevel as CompleteCompetitionQuestionnaireProfile["experienceLevel"],
-    evidence: (profile.evidence as CompleteCompetitionQuestionnaireProfile["evidence"]).slice(0, 3)
+    evidence: (profile.evidence ?? []).slice(0, 3) as CompleteCompetitionQuestionnaireProfile["evidence"]
   };
 }
 

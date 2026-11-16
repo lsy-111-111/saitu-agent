@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "saitu.primary-c-source-freeze.v1",
+  "asOf": "2026-11-06T01:09:37.181448+00:00",
+  "sourcesCounted": 1,
+  "officialHosts": 2,
+  "sameCompleteRar": true,
+  "memberPdfSha256": "388c204bf489abc6f15976e9526cbaeccb8e4eb678250cb28d0ac46edaa3e722",
+  "oldSixImagesRead": false,
+  "oldAuditModified": false,
+  "independentReviews": 0,
+  "files": [
+    {
+      "path": "2025-C.pdf",
+      "sha256": "388c204bf489abc6f15976e9526cbaeccb8e4eb678250cb28d0ac46edaa3e722",
+      "bytes": 796463
+    },
+    {
+      "path": "2025-C.txt",
+      "sha256": "fa6dcf3eba2bd527efcbddfb6ec338cb71f3c3eca16e722ffc2798bab5cf5377",
+      "bytes": 7617
+    },
+    {
+      "path": "README.md",
+      "sha256": "dbc960a3f0c24e77ea9be7f1dce6250e665342fa2296d469ab6758278d94f434",
+      "bytes": 990
+    },
+    {
+      "path": "author-reading.json",
+      "sha256": "f011dfa563efb3fc7a8b91758e1077a1ca088a3778ae86f29052d765bb5e4eef",
+      "bytes": 3540
+    },
+    {
+      "path": "notice-captures.json",
+      "sha256": "34bab235d18cd2d9c3a9e85b2b5ae1c8ff42be172230a0e1436f988bbd7f21be",
+      "bytes": 733
+    },
+    {
+      "path": "page-1.png",
+      "sha256": "2a8e5d44a7128c60836f50124e6e36f8d4af87ca21d3f47fd018f930908c5017",
+      "bytes": 347228
+    },
+    {
+      "path": "page-2.png",
+      "sha256": "d10e25b78eb8b1b35f7d69fa8fe49b440032a27f0e10d508a0fe28d48dd3aef5",
+      "bytes": 360244
+    },
+    {
+      "path": "page-3.png",
+      "sha256": "db4302e06a31c0aea87fca142b4df6d1fc701161bcbbf2dc7e115a5d36d56099",
+      "bytes": 311376
+    },
+    {
+      "path": "page-4.png",
+      "sha256": "4e34ec230b202878cf7b4c965b9ce54cc96e72c6d387b7b3f36103e46903fdcf",
+      "bytes": 97479
+    },
+    {
+      "path": "retrieval.json",
+      "sha256": "92eadc8bff51a2aad5258cf081a7086a733b4cf8f11a3af3d98cccc847993993",
+      "bytes": 1084
+    },
+    {
+      "path": "shaanxi-crosscheck.json",
+      "sha256": "4c139e557800256317cd7a2a442799e6425eee2bc420d5ce795db18d5ed4137f",
+      "bytes": 470
+    },
+    {
+      "path": "shaanxi-crosscheck.rar",
+      "sha256": "bc68f44d5599ac25b9b0494e4fc97b8fdea0b2d56c919b0a3d6072740ddab847",
+      "bytes": 5829714
+    },
+    {
+      "path": "shaanxi-first-timeout.partial",
+      "sha256": "f3db190352a749fd03c63c79ce287abab91167d4761bb07ffcb40ae66b9f9d68",
+      "bytes": 1407998
+    },
+    {
+      "path": "shaanxi-notice.html",
+      "sha256": "f685b6f4c1c6b07804a67a15b10f1b6f9c84f5c478e63f2f7429ad0f22a78f5b",
+      "bytes": 4800
+    },
+    {
+      "path": "shanghai-notice.html",
+      "sha256": "6cc8e71dc5694b0f48fd820b1f7aa8684166967a3a1c22b3443348157e507167",
+      "bytes": 12003
+    },
+    {
+      "path": "shanghai-undergraduate.rar",
+      "sha256": "bc68f44d5599ac25b9b0494e4fc97b8fdea0b2d56c919b0a3d6072740ddab847",
+      "bytes": 5829714
+    }
+  ]
+}

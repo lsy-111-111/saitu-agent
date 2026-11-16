@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "saitu.public-diagnostic-test-fixtures.v1",
+  "createdAt": "2026-11-08T21:04:24.813489+00:00",
+  "purpose": "Exact immutable copies of public development input and recorded output for source-only isolated regression tests. Original failures and recorded usage remain historical, not new model executions.",
+  "containsFormalInputsOrGold": false,
+  "containsProviderKeysOrHiddenReasoning": false,
+  "sourceBytesUnchanged": true,
+  "files": [
+    {
+      "sourcePath": "artifacts/continuation-v7-20261109/pipeline-diagnostic-02/input.json",
+      "fixturePath": "pipeline-diagnostic-02/input.json",
+      "bytes": 1895597,
+      "sha256": "f559feed4b7c6c6a3cf6aae25192a17bacd4be2d9eeadd9cce36719a43fcc3d5"
+    },
+    {
+      "sourcePath": "artifacts/continuation-v7-20261109/pipeline-diagnostic-02/registration.json",
+      "fixturePath": "pipeline-diagnostic-02/registration.json",
+      "bytes": 2013,
+      "sha256": "07d7d5d96e0a0a64c714348b4790f4d6ab1d3f3d5f663a38ac2b4729957bc724"
+    },
+    {
+      "sourcePath": "artifacts/continuation-v7-20261109/pipeline-diagnostic-02/result.json",
+      "fixturePath": "pipeline-diagnostic-02/result.json",
+      "bytes": 35203,
+      "sha256": "2a50f3fcfa6124fac5b315238a5a87adee18ea06c808ca034ac7abf7084bb1ba"
+    },
+    {
+      "sourcePath": "artifacts/continuation-v7-20261109/latency-diagnostic-03/input.json",
+      "fixturePath": "latency-diagnostic-03/input.json",
+      "bytes": 1895597,
+      "sha256": "f559feed4b7c6c6a3cf6aae25192a17bacd4be2d9eeadd9cce36719a43fcc3d5"
+    },
+    {
+      "sourcePath": "artifacts/continuation-v7-20261109/latency-diagnostic-03/registration.json",
+      "fixturePath": "latency-diagnostic-03/registration.json",
+      "bytes": 1511,
+      "sha256": "026ee38f2192a442e138ce8545ef9b91086399eb5f741f3cbc13ac1429795d88"
+    },
+    {
+      "sourcePath": "artifacts/continuation-v7-20261109/latency-diagnostic-03/result.json",
+      "fixturePath": "latency-diagnostic-03/result.json",
+      "bytes": 3939,
+      "sha256": "9de4ded2c6144de826906306594a9454f9b133ecb1ee4951d4904fcd39ccd711"
+    },
+    {
+      "sourcePath": "artifacts/continuation-v7-20261109/explanation-diagnostic-01/input.json",
+      "fixturePath": "explanation-diagnostic-01/input.json",
+      "bytes": 1895597,
+      "sha256": "f559feed4b7c6c6a3cf6aae25192a17bacd4be2d9eeadd9cce36719a43fcc3d5"
+    },
+    {
+      "sourcePath": "artifacts/continuation-v7-20261109/explanation-diagnostic-01/registration.json",
+      "fixturePath": "explanation-diagnostic-01/registration.json",
+      "bytes": 2173,
+      "sha256": "32a443249572c51a9da3616d7df36a8f426f7edfad080e26046ed151370d14f7"
+    },
+    {
+      "sourcePath": "artifacts/continuation-v7-20261109/explanation-diagnostic-01/result.json",
+      "fixturePath": "explanation-diagnostic-01/result.json",
+      "bytes": 212684,
+      "sha256": "d6d2c2cd5ce67b71c367c6c23fb528d3034dd590d17c3d4edcb47032ada20ceb"
+    },
+    {
+      "sourcePath": "artifacts/continuation-v7-20261109/real-output-review-01/claim-review.json",
+      "fixturePath": "real-output-review-01/claim-review.json",
+      "bytes": 89268,
+      "sha256": "e2f0d1ce02cfd34cb1be9d61a5a1efbea0a6febc272f1cec816f2f7bd393eb99"
+    }
+  ]
+}

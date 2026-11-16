@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { site } from "@/content/site";
-import { competitions } from "@/content/competitions";
+import { getDirectorySeries } from "@/lib/competitions/directory-series";
 import { getCompetitionFactSheet } from "@/content/competition-facts";
 
 const indexableRoutes = ["/", "/competitions", "/about", "/privacy", "/terms"] as const;
@@ -16,9 +16,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: route === "/" ? "weekly" : "monthly",
     priority: route === "/" ? 1 : 0.7
   }));
-  return [...pages, ...competitions.map(competition => ({
-    url: siteUrl(`/competitions/${competition.id}`),
-    lastModified: getCompetitionFactSheet(competition.id)?.checkedAt,
+  return [...pages, ...getDirectorySeries().map(series => ({
+    url: siteUrl(`/competitions/${series.seriesId}`),
+    lastModified: getCompetitionFactSheet(series.seriesId)?.checkedAt ?? series.officialSource?.checkedAt ?? undefined,
     changeFrequency: "monthly" as const,
     priority: 0.6
   }))];

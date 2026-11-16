@@ -9,6 +9,7 @@ import {
   parseCompetitionQuery
 } from "@/lib/competitions/search";
 import { createMetadata } from "@/lib/seo/metadata";
+import { getAdditionalDirectorySeries } from "@/lib/competitions/directory-series";
 
 export const metadata: Metadata = createMetadata(seo.pages.competitions);
 
@@ -22,6 +23,7 @@ export default async function CompetitionsPage({ searchParams }: CompetitionsPag
   const initialQuery = parseCompetitionQuery(params.q);
   const initialDirection = parseCompetitionDirection(params.direction);
   const initialPage = parseCompetitionPage(params.page);
+  const additionalSeries = getAdditionalDirectorySeries();
 
   return (
     <main className="bg-paper">
@@ -33,6 +35,7 @@ export default async function CompetitionsPage({ searchParams }: CompetitionsPag
             initialDirection={initialDirection}
             initialPage={initialPage}
             initialQuery={initialQuery}
+            additionalSeries={additionalSeries}
           />
         </div>
       </Section>

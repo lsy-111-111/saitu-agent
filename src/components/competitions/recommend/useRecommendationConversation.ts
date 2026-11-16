@@ -1,5 +1,13 @@
 "use client";
 
+import { changedContextFields } from "@/lib/competitions/v6/questionnaire-edit";
+import type { DecisionChatReply } from "@/lib/competitions/v6/chat-contracts";
+import { runRecoveryContextSchema } from "./runRecoveryContext";
+import { RECOMMENDATION_RESPONSE_VERSION, recommendationRunSchema, type RecommendationChatReplyV7 } from "@/lib/competitions/v7/contracts";
+import { useRecommendationRunV7 } from "./useRecommendationRunV7";
+import { acceptSubmissionTimingV7, clearSubmissionTimingV7, newSubmissionTimingV7, persistSubmissionTimingV7,
+  restoreSubmissionTimingV7, submissionHeadersV7, type SubmissionTimingV7 } from "./submissionTiming";
+
 import { useCallback, useEffect, useMemo, useRef, useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
 import {
@@ -33,6 +41,8 @@ import {
   type AiConsentDisclosureV1
 } from "@/lib/ai/client-consent";
 import { trackEvent } from "@/lib/analytics/track";
+import { isDecisionBudgetMaximumValid } from "@/lib/competitions/decision-budget";
+import { decisionResponseSchema, type DecisionReportV6 } from "@/lib/competitions/v6/contracts";
 import {
   competitionDynamicQuestionFamilyV3,
   competitionDynamicQuestionV3Schema,
@@ -63,7 +73,7 @@ export type ConversationPhase =
   | "results"
   | "error";
 
-type RetryAction = "normalize" | "clarify" | "recommend";
+type RetryAction = "normalize" | "clarify" | "recommend" | "run";
 
 export const FIXED_AUTO_ADVANCE_DELAY_MS = 0;
 export const MAX_CLARIFICATION_QUESTIONS = 3;
@@ -428,8 +438,33 @@ function interpretationReviewItems(
   return items.filter(({ requiresConfirmation }) => requiresConfirmation).length === expected ? items : null;
 }
 
+function recoverRunConversation(value: unknown) {
+  if (!value || typeof value !== "object") return null;
+  const saved = value as Record<string, unknown>;
+  if (saved.depth !== "quick" && saved.depth !== "deep") return null;
+  let profile: DraftCompetitionProfile = {};
+  const rawProfile = saved.profile && typeof saved.profile === "object" ? saved.profile as Record<string, unknown> : {};
+  const text: FixedQuestionTextAnswers = {};
+  const rawText = saved.fixedQuestionTextAnswers && typeof saved.fixedQuestionTextAnswers === "object" ? saved.fixedQuestionTextAnswers as Record<string, unknown> : {};
+  for (const turn of fixedQuestionTurns) {
+    for (const field of turn.fields) {
+      const raw = rawProfile[field.id];
+      const allowed = new Set(field.options.map(option => option.value));
+      if (field.selection === "multiple" && Array.isArray(raw)) {
+        const values = raw.filter((entry): entry is string => typeof entry === "string" && allowed.has(entry)).slice(0, field.maxSelections);
+        if (values.length) profile = applyFieldAnswer(profile, field, values);
+      } else if (typeof raw === "string" && allowed.has(raw)) profile = applyFieldAnswer(profile, field, raw);
+    }
+    const answer = rawText[turn.id];
+    if (typeof answer === "string" && answer.length <= COMPETITION_ANSWER_TEXT_MAX_LENGTH && isCompetitionAnswerTextValid(answer)) text[turn.id] = answer;
+  }
+  const context = runRecoveryContextSchema.safeParse(saved.decisionContext);
+  return { depth: saved.depth as SelectionDepth, profile, text, context: context.success ? context.data : {}, consentVersion: typeof saved.acceptedConsentVersion === "string" ? saved.acceptedConsentVersion : null };
+}
+
 export function useRecommendationConversation(initialAiConsentDisclosure: AiConsentDisclosureV1) {
   const router = useRouter();
+  const {run:recommendationRun,displayRun:recommendationDisplayRun,pollError:runPollError,restoredContext,adopt:adoptRun,pause:pauseRun,clear:clearRun,retryPoll,isActive:isRunActive} = useRecommendationRunV7();
   const [isConsentRefreshPending, startConsentRefresh] = useTransition();
   const [editingCompleted, setEditingCompleted] = useState(false);
   const [depth, setDepth] = useState<SelectionDepth>("quick");
@@ -455,6 +490,13 @@ export function useRecommendationConversation(initialAiConsentDisclosure: AiCons
   } | null>(null);
   const [dynamicAnswerConfirmation, setDynamicAnswerConfirmation] = useState<DynamicAnswerConfirmation | null>(null);
   const [result, setResult] = useState<CompetitionRecommendationResponseV5 | null>(null);
+  const [decisionToken, setDecisionToken] = useState<string | null>(null);
+  const [decisionReport, setDecisionReport] = useState<DecisionReportV6 | null>(null);
+  const [previousDecisionReport, setPreviousDecisionReport] = useState<DecisionReportV6 | null>(null);
+  const latestDecisionReportRef = useRef<DecisionReportV6 | null>(null);
+  const syncedRunProfileRef = useRef<string | null>(null);
+  const latestDecisionTokenRef = useRef<string | null>(null);
+  const editedDecisionFieldsRef = useRef(new Set<string>());
   const [selectedCompetitionId, setSelectedCompetitionId] = useState<string | null>(null);
   const [errorMessage, setErrorMessage] = useState("");
   const [retryAction, setRetryAction] = useState<RetryAction>("clarify");
@@ -468,6 +510,8 @@ export function useRecommendationConversation(initialAiConsentDisclosure: AiCons
   const normalizeIdempotencyKeyRef = useRef<string | null>(null);
   const clarifyRetryContextRef = useRef<ClarifyRetryContext | null>(null);
   const recommendTokenRef = useRef<string | null>(null);
+  const runRetryRequestRef = useRef<{ runId: string; requestId: string } | null>(null);
+  const submissionTimingRef = useRef<SubmissionTimingV7 | null>(null);
   const rebuildConversationSessionRef = useRef<(questionnaireToken?: string | null) => void>(
     () => undefined
   );
@@ -518,6 +562,23 @@ export function useRecommendationConversation(initialAiConsentDisclosure: AiCons
     return context;
   }, []);
 
+  const ensureSubmissionTiming = useCallback(() => {
+    const timing = submissionTimingRef.current ?? restoreSubmissionTimingV7() ?? newSubmissionTimingV7();
+    submissionTimingRef.current = timing;
+    persistSubmissionTimingV7(timing);
+    return timing;
+  }, []);
+
+  const fetchSubmission = useCallback(async (url: string, init: RequestInit) => {
+    const timing = ensureSubmissionTiming();
+    const response = await fetch(url, { ...init, headers: submissionHeadersV7(timing, init.headers) });
+    if (submissionTimingRef.current === timing) {
+      acceptSubmissionTimingV7(timing, response);
+      persistSubmissionTimingV7(timing);
+    }
+    return response;
+  }, [ensureSubmissionTiming]);
+
   const finishRequest = useCallback((generation: number) => {
     if (requestGenerationRef.current !== generation) return;
     requestInFlightRef.current = false;
@@ -526,12 +587,13 @@ export function useRecommendationConversation(initialAiConsentDisclosure: AiCons
   }, []);
 
   const cancelActiveRequest = useCallback(() => {
+    pauseRun();
     requestGenerationRef.current += 1;
     activeRequestControllerRef.current?.abort();
     activeRequestControllerRef.current = null;
     requestInFlightRef.current = false;
     setRequestPending(false);
-  }, []);
+  }, [pauseRun]);
 
   const applyRequestError = useCallback((error: unknown, fallbackMessage: string) => {
     const requestError = normalizeRequestError(error, fallbackMessage);
@@ -555,6 +617,7 @@ export function useRecommendationConversation(initialAiConsentDisclosure: AiCons
     setDynamicAnswerConfirmation(null);
     setClarificationIndex(0);
     setResult(null);
+    setDecisionReport(null);
     setSelectedCompetitionId(null);
     setErrorMessage("");
     clarifyRetryContextRef.current = null;
@@ -564,6 +627,8 @@ export function useRecommendationConversation(initialAiConsentDisclosure: AiCons
   }, []);
 
   const clearRemoteState = useCallback(() => {
+    submissionTimingRef.current = null;
+    clearSubmissionTimingV7();
     setAcceptedConsentVersion(null);
     if (consentDisclosureReady) setConsentDisclosureNotice("");
     clearConversationSessionState();
@@ -685,6 +750,7 @@ export function useRecommendationConversation(initialAiConsentDisclosure: AiCons
   ]);
 
   const chooseFixedAnswer = useCallback((field: FixedQuestionField, rawAnswer: string | string[]) => {
+    editedDecisionFieldsRef.current.add(field.id);
     setProfile((current) => {
       const previous = getFieldAnswer(field, current);
       const answer = Array.isArray(rawAnswer)
@@ -692,20 +758,20 @@ export function useRecommendationConversation(initialAiConsentDisclosure: AiCons
         : rawAnswer;
       return applyFieldAnswer(current, field, answer);
     });
-    if (Array.isArray(rawAnswer) && field.id === "availableResources") {
-      setDecisionContext(prev => ({ ...prev,
-        obtainableResources: prev.obtainableResources?.filter(value => !rawAnswer.includes(value)),
-        unavailableResources: prev.unavailableResources?.filter(value => !rawAnswer.includes(value))
-      }));
-    } else if (Array.isArray(rawAnswer) && field.id === "taskFormats") {
-      setDecisionContext(prev => ({ ...prev,
-        excludedTaskFormats: prev.excludedTaskFormats?.filter(value => !rawAnswer.includes(value))
-      }));
-    }
+    if (Array.isArray(rawAnswer)) setDecisionContext(previous => {
+      let next=previous;
+      if(field.id==="goals")next={...previous,primaryGoal:undefined,goalResolution:undefined,
+        goalIntent:previous.goalIntent === "explore" || previous.goalIntent === "skill" || (previous.goalIntent && rawAnswer.includes(previous.goalIntent)) ? previous.goalIntent : undefined};
+      else if(field.id==="availableResources")next={...previous,obtainableResources:previous.obtainableResources?.filter(value=>!rawAnswer.includes(value)),unavailableResources:previous.unavailableResources?.filter(value=>!rawAnswer.includes(value))};
+      else if(field.id==="taskFormats")next={...previous,excludedTaskFormats:previous.excludedTaskFormats?.filter(value=>!rawAnswer.includes(value))};
+      changedContextFields(previous,next).forEach(field=>editedDecisionFieldsRef.current.add(field));
+      return next;
+    });
     clearRemoteState();
   }, [clearRemoteState]);
 
   const updateFixedQuestionText = useCallback((fieldId: CompetitionFixedQuestionId, value: string) => {
+    fixedQuestionTurns.find(turn=>turn.id===fieldId)?.fields.forEach(field=>editedDecisionFieldsRef.current.add(field.id));
     const nextValue = value.slice(0, COMPETITION_ANSWER_TEXT_MAX_LENGTH);
     setFixedQuestionTextAnswers((current) => {
       if (nextValue) return { ...current, [fieldId]: nextValue };
@@ -722,16 +788,21 @@ export function useRecommendationConversation(initialAiConsentDisclosure: AiCons
     else if (questionnaireComplete) { setEditingCompleted(true); setPhase("summary"); }
   }, [activeTurns.length, questionnaireComplete, turnIndex]);
 
-  const hasContextAnswer = (currentTurn.id === "experienceLevel" && Boolean(decisionContext.experienceRole)) ||
+  const hasContextAnswer = (currentTurn.id === "goals" && Boolean(decisionContext.goalResolution)) ||
+    (currentTurn.id === "weeklyCommitment" && Boolean(decisionContext.preparationHorizon)) ||
+    (currentTurn.id === "experienceLevel" && Boolean(decisionContext.experienceRole || decisionContext.experienceStatus)) ||
     (currentTurn.id === "taskFormats" && Boolean(decisionContext.excludedTaskFormats?.length || decisionContext.businessActivity)) ||
-    (currentTurn.id === "availableResources" && Boolean(decisionContext.obtainableResources?.length || decisionContext.unavailableResources?.length));
+    (currentTurn.id === "availableResources" && Boolean(decisionContext.budget || decisionContext.obtainableResources?.length || decisionContext.unavailableResources?.length));
+  const goalDecisionReady = currentTurn.id !== "goals" || (!(profile.goals && profile.goals.length > 1) && !decisionContext.goalIntent) || Boolean(decisionContext.goalResolution);
+  const decisionReady = goalDecisionReady && (currentTurn.id !== "availableResources" || isDecisionBudgetMaximumValid(decisionContext.budget));
 
   const confirmFixedAnswer = useCallback(() => {
-    if (hasDecisionAnswer(currentTurn, profile, fixedQuestionTextAnswers) || hasContextAnswer) advanceTurn();
-  }, [advanceTurn, currentTurn, fixedQuestionTextAnswers, hasContextAnswer, profile]);
+    if (decisionReady && (hasDecisionAnswer(currentTurn, profile, fixedQuestionTextAnswers) || hasContextAnswer)) advanceTurn();
+  }, [advanceTurn, currentTurn, decisionReady, fixedQuestionTextAnswers, hasContextAnswer, profile]);
 
   const skipFixedAnswer = useCallback(() => {
     if (currentTurn.id === "stage") return;
+    currentTurn.fields.forEach(field=>editedDecisionFieldsRef.current.add(field.id));
     setProfile(previous => {
       const next = { ...previous };
       currentTurn.fields.forEach(field => { delete next[field.id]; });
@@ -747,9 +818,13 @@ export function useRecommendationConversation(initialAiConsentDisclosure: AiCons
       if (currentTurn.id === "availableResources") {
         delete next.obtainableResources;
         delete next.unavailableResources;
+        delete next.budget;
       } else if (currentTurn.id === "teamStatus") delete next.fixedTeam;
-      else if (currentTurn.id === "experienceLevel") delete next.experienceRole;
+      else if (currentTurn.id === "experienceLevel") { delete next.experienceRole; delete next.experiences; delete next.experienceStatus; delete next.noviceTaskPreferences; }
+      else if (currentTurn.id === "goals") { delete next.goalIntent; delete next.goalResolution; delete next.primaryGoal; }
+      else if (currentTurn.id === "weeklyCommitment") delete next.preparationHorizon;
       else if (currentTurn.id === "taskFormats") { delete next.excludedTaskFormats; delete next.businessActivity; }
+      changedContextFields(previous,next).forEach(field=>editedDecisionFieldsRef.current.add(field));
       return next;
     });
     clearRemoteState();
@@ -757,7 +832,7 @@ export function useRecommendationConversation(initialAiConsentDisclosure: AiCons
   }, [advanceTurn, clearRemoteState, currentTurn]);
 
   const changeContext = useCallback((next: DecisionContext) => {
-    setDecisionContext(next);
+    setDecisionContext(previous=>{changedContextFields(previous,next).forEach(field=>editedDecisionFieldsRef.current.add(field));return next;});
     clearRemoteState();
   }, [clearRemoteState]);
 
@@ -772,18 +847,26 @@ export function useRecommendationConversation(initialAiConsentDisclosure: AiCons
 
   const restart = useCallback(() => {
     cancelActiveRequest();
+    clearRun();
     setPhase("questions");
     setTurnIndex(0);
     setProfile({});
     setDepth("quick");
     setEditingCompleted(false);
     setDecisionContext({});
+    latestDecisionReportRef.current = null;
+    syncedRunProfileRef.current = null;
+    latestDecisionTokenRef.current = null;
+    editedDecisionFieldsRef.current.clear();
+    setDecisionToken(null);
+    setPreviousDecisionReport(null);
+    setDecisionReport(null);
     setFixedQuestionTextAnswers({});
     clearRemoteState();
     retryDeadlineRef.current = null;
     setRetryDeadline(null);
     setRetryAfter(0);
-  }, [cancelActiveRequest, clearRemoteState]);
+  }, [cancelActiveRequest, clearRemoteState, clearRun]);
 
   const runRecommend = useCallback(async (conversationToken: string) => {
     const aiConsent = acceptedAiConsent();
@@ -791,29 +874,66 @@ export function useRecommendationConversation(initialAiConsentDisclosure: AiCons
     const requestContext = startRequest();
     if (!requestContext) return;
     recommendTokenRef.current = conversationToken;
-    setPhase("recommending");
+    pauseRun();
+    setPhase(recommendationDisplayRun ? "results" : "recommending");
     setErrorMessage("");
 
     let rebuildSession = false;
     let recoveryQuestionnaireToken: string | null = null;
     try {
-      const response = await fetch("/api/ai/competition-recommend", {
+      const editRevision = recommendationRun
+        ? recommendationRun.status !== "expired" && recommendationRun.status !== "superseded" && Date.now() < Date.parse(recommendationRun.expiresAt) ? recommendationRun.profileRevision : null
+        : latestDecisionReportRef.current?.profile.revision;
+      const response = await fetchSubmission("/api/ai/competition-recommend", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         signal: requestContext.controller.signal,
         body: JSON.stringify({
           aiConsent,
-          conversationToken
+          reportVersion: RECOMMENDATION_RESPONSE_VERSION,
+          conversationToken,
+          ...(latestDecisionTokenRef.current && editRevision ? {decisionEdit:{decisionToken:latestDecisionTokenRef.current,expectedRevision:editRevision,changedFields:[...editedDecisionFieldsRef.current]}}:{})
         })
       });
       const payload = await readJson(response);
       if (requestGenerationRef.current !== requestContext.generation) return;
       if (!response.ok) throw responseError(response, payload);
+      const runResponse = recommendationRunSchema.safeParse(payload);
+      if (runResponse.success) {
+        adoptRun(runResponse.data,{depth,profile,fixedQuestionTextAnswers,decisionContext,acceptedConsentVersion});
+        latestDecisionTokenRef.current = runResponse.data.decisionToken;
+        setDecisionToken(runResponse.data.decisionToken);
+        editedDecisionFieldsRef.current.clear();
+        setResult(null);
+        setPhase("results");
+        return;
+      }
+      const decisionResponse = decisionResponseSchema.safeParse(payload);
+      if (decisionResponse.success) {
+        clearRun();
+        const nextReport = decisionResponse.data.report;
+        setDecisionToken(decisionResponse.data.decisionToken ?? null);
+        latestDecisionTokenRef.current=decisionResponse.data.decisionToken??null;
+        editedDecisionFieldsRef.current.clear();
+        setPreviousDecisionReport(latestDecisionReportRef.current);
+        latestDecisionReportRef.current = nextReport;
+        setDecisionReport(nextReport);
+        setResult(null);
+        setPhase("results");
+        trackEvent("competition_recommend_completed", {
+          resultCount: nextReport.recommendations.length,
+          fallbackUsed: nextReport.fallback.used,
+          competitionIds: nextReport.recommendations.map(item=>item.seriesId).join(",")
+        });
+        return;
+      }
       const nextResult = parseCompetitionRecommendationResponseV5(payload);
       if (!nextResult) {
         throw new CompetitionApiError("返回的推荐结果不完整，请原地重试。", "invalid_response");
       }
+      clearRun();
       setResult(nextResult);
+      setDecisionReport(null);
       setPhase("results");
       trackEvent("competition_recommend_completed", {
         resultCount: nextResult.recommendations.length,
@@ -836,7 +956,7 @@ export function useRecommendationConversation(initialAiConsentDisclosure: AiCons
       } else {
         setRetryAction("recommend");
         applyRequestError(error, "这次匹配没有完成，请原地重试。");
-        setPhase("error");
+        setPhase(recommendationDisplayRun ? "results" : "error");
       }
     } finally {
       finishRequest(requestContext.generation);
@@ -852,7 +972,10 @@ export function useRecommendationConversation(initialAiConsentDisclosure: AiCons
     finishRequest,
     questionnaireToken,
     recoverFromConsentError,
-    startRequest
+    fetchSubmission,
+    startRequest,
+    adoptRun, clearRun, pauseRun, recommendationRun, recommendationDisplayRun,
+    depth, profile, fixedQuestionTextAnswers, decisionContext, acceptedConsentVersion
   ]);
 
   const requestNextClarification = useCallback(async (
@@ -867,18 +990,20 @@ export function useRecommendationConversation(initialAiConsentDisclosure: AiCons
     setPhase("clarifying");
     setErrorMessage("");
     setResult(null);
+    setDecisionReport(null);
     if ("questionnaireToken" in input) trackEvent("competition_recommend_started");
 
     let completedToken: string | null = null;
     let rebuildSession = false;
     let recoveryQuestionnaireToken: string | null = null;
     try {
-      const response = await fetch("/api/ai/competition-clarify", {
+      const response = await fetchSubmission("/api/ai/competition-clarify", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         signal: requestContext.controller.signal,
         body: JSON.stringify({
           aiConsent,
+          recommendationPolicy: "v7",
           recentSignalKeys: recentSignalKeysRef.current,
           ...input
         })
@@ -1021,6 +1146,7 @@ export function useRecommendationConversation(initialAiConsentDisclosure: AiCons
     questionnaireToken,
     recoverFromConsentError,
     runRecommend,
+    fetchSubmission,
     startRequest
   ]);
 
@@ -1038,7 +1164,8 @@ export function useRecommendationConversation(initialAiConsentDisclosure: AiCons
   }, [requestNextClarification]);
 
   const runNormalize = useCallback(async () => {
-    const questionnaire = toCompetitionQuestionnaireDraft(profile, fixedQuestionTextAnswers, { turns: activeTurns, context: decisionContext });
+    const clickTiming = newSubmissionTimingV7();
+    const questionnaire = toCompetitionQuestionnaireDraft(profile, fixedQuestionTextAnswers, { turns: activeTurns, context: { ...decisionContext, mode: depth } });
     const aiConsent = acceptedAiConsent();
     if (!questionnaire || !aiConsent) return;
     const requestContext = startRequest();
@@ -1049,9 +1176,11 @@ export function useRecommendationConversation(initialAiConsentDisclosure: AiCons
     let confirmedToken: string | null = null;
 
     try {
+      if (!submissionTimingRef.current) submissionTimingRef.current = restoreSubmissionTimingV7() ?? clickTiming;
+      persistSubmissionTimingV7(submissionTimingRef.current);
       const idempotencyKey = normalizeIdempotencyKeyRef.current ?? createClientIdempotencyKey();
       normalizeIdempotencyKeyRef.current = idempotencyKey;
-      const response = await fetch("/api/competitions/recommend/normalize", {
+      const response = await fetchSubmission("/api/competitions/recommend/normalize", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -1060,6 +1189,7 @@ export function useRecommendationConversation(initialAiConsentDisclosure: AiCons
         signal: requestContext.controller.signal,
         body: JSON.stringify({
           aiConsent,
+          recommendationPolicy: "v7",
           questionnaire
         })
       });
@@ -1122,10 +1252,12 @@ export function useRecommendationConversation(initialAiConsentDisclosure: AiCons
     beginClarification,
     activeTurns,
     decisionContext,
+    depth,
     finishRequest,
     fixedQuestionTextAnswers,
     profile,
     recoverFromConsentError,
+    fetchSubmission,
     startRequest
   ]);
 
@@ -1160,12 +1292,13 @@ export function useRecommendationConversation(initialAiConsentDisclosure: AiCons
     let rebuildSession = false;
 
     try {
-      const response = await fetch("/api/competitions/recommend/normalize", {
+      const response = await fetchSubmission("/api/competitions/recommend/normalize", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         signal: requestContext.controller.signal,
         body: JSON.stringify({
           aiConsent,
+          recommendationPolicy: "v7",
           questionnaireToken,
           confirmations
         })
@@ -1214,6 +1347,7 @@ export function useRecommendationConversation(initialAiConsentDisclosure: AiCons
     interpretationItems,
     questionnaireToken,
     recoverFromConsentError,
+    fetchSubmission,
     startRequest
   ]);
 
@@ -1390,6 +1524,7 @@ export function useRecommendationConversation(initialAiConsentDisclosure: AiCons
     const nextIndex = Math.max(0, Math.min(index, clarificationQuestions.length - 1));
     cancelActiveRequest();
     setResult(null);
+    setDecisionReport(null);
     setSelectedCompetitionId(null);
     setErrorMessage("");
     setDynamicAnswerConfirmation(null);
@@ -1406,38 +1541,185 @@ export function useRecommendationConversation(initialAiConsentDisclosure: AiCons
     setPhase("followups");
   }, [cancelActiveRequest, clarificationQuestions]);
 
+  const syncDecisionProfile = useCallback((report: Pick<DecisionReportV6, "profile">) => {
+      const retracted = new Set(report.profile.retractedFactIds);
+      const valid = report.profile.facts.filter(f => f.confirmed && f.state !== "retracted" && !retracted.has(f.id));
+      const active = valid.filter(f => f.state === "affirmed");
+      const values = (field: string) => active.filter(f => f.field === field).map(f => f.value);
+      const one = (field: string) => values(field).at(-1);
+      const arrays = new Set(["majorFields","specificSubjects","skills","interests","goals","preferredOutputs","availableResources","taskFormats","evidence"]);
+      setProfile(current => {
+        const next = {...current} as Record<string, unknown>;
+        for (const key of new Set([...Object.keys(current), ...active.map(f => f.field)])) {
+          if (key.includes(".") || ["goalIntent","goalResolution","primaryGoal","experienceStatus","noviceTask","budget","preparationHorizon","fixedTeam","excludedTask","unavailableResource","obtainableResource","businessActivity"].includes(key)) continue;
+          const found = values(key);
+          if (arrays.has(key)) next[key] = found;
+          else if (found.length) next[key] = found[found.length-1];
+          else delete next[key];
+        }
+        return next as DraftCompetitionProfile;
+      });
+      setDecisionContext(current => {
+        const maximum = one("budget.maximumYuan");
+        const budgetRange = one("budget") as NonNullable<DecisionContext["budget"]>["range"] | undefined;
+        const experiences: NonNullable<DecisionContext["experiences"]> = [1,2].flatMap(index => {
+          const task = one(`experience.${index}.task`);
+          return typeof task === "string" ? [{id:`experience-${index}`, task, confirmed:true,
+            contribution:(one(`experience.${index}.contribution`)??"unknown") as NonNullable<DecisionContext["experiences"]>[number]["contribution"],
+            completion:(one(`experience.${index}.completion`)??"unknown") as NonNullable<DecisionContext["experiences"]>[number]["completion"],
+            challenge:String(one(`experience.${index}.challenge`)??"")}]:[];
+        });
+        return {...current,experiences,experienceRole:undefined,
+          primaryGoal:one("primaryGoal") as DecisionContext["primaryGoal"],
+          fixedTeam:one("fixedTeam") as DecisionContext["fixedTeam"],
+          businessActivity:one("businessActivity") as DecisionContext["businessActivity"],
+          excludedTaskFormats:valid.filter(f=>f.field==="excludedTask").map(f=>String(f.value)) as DecisionContext["excludedTaskFormats"],
+          unavailableResources:valid.filter(f=>f.field==="unavailableResource").map(f=>String(f.value)) as DecisionContext["unavailableResources"],
+          obtainableResources:values("obtainableResource") as DecisionContext["obtainableResources"],
+          noviceTaskPreferences:valid.filter(f=>f.field==="noviceTask").map(f=>({task:String(f.value),preference:f.state==="negated"?"avoid":"try"})) as DecisionContext["noviceTaskPreferences"],
+          experienceStatus:one("experienceStatus") as DecisionContext["experienceStatus"],
+          goalIntent:one("goalIntent") as DecisionContext["goalIntent"],goalResolution:one("goalResolution") as DecisionContext["goalResolution"],
+          preparationHorizon:one("preparationHorizon") as DecisionContext["preparationHorizon"],
+          budget: typeof maximum === "number" ? {scope:"personal" as const,range:maximum===0?"zero" as const:maximum<=100?"under100" as const:maximum<=500?"100-500" as const:"over500" as const,...(maximum>0?{maximumYuan:maximum}:{})} : budgetRange ? {range:budgetRange,scope:current.budget?.scope??"unknown"} : undefined,
+        };
+      });
+  }, []);
+
+  const renewMatchingSession = useCallback(() => {
+    cancelActiveRequest();
+    clearRemoteState();
+    latestDecisionTokenRef.current = null;
+    setDecisionToken(null);
+    latestDecisionReportRef.current = null;
+    editedDecisionFieldsRef.current.clear();
+    runRetryRequestRef.current = null;
+    if (recommendationRun) {
+      syncDecisionProfile({ profile: recommendationRun.profile });
+      setFixedQuestionTextAnswers({});
+    }
+    setEditingCompleted(true);
+    setPhase("summary");
+  }, [cancelActiveRequest, clearRemoteState, recommendationRun, syncDecisionProfile]);
+
+  const retryRecommendationRun = useCallback(async () => {
+    if (!recommendationRun || requestInFlightRef.current || retryAfter > 0) return;
+    const clickTiming = newSubmissionTimingV7();
+    const aiConsent = acceptedAiConsent();
+    if (!aiConsent || recommendationRun.status === "expired" || recommendationRun.status === "superseded") {
+      renewMatchingSession();
+      return;
+    }
+    if (recommendationRun.status !== "failed") return;
+    const context = startRequest();
+    if (!context) return;
+    setErrorMessage("");
+    setRetryAction("run");
+    try {
+      const existing = submissionTimingRef.current ?? restoreSubmissionTimingV7();
+      if (existing?.retry?.runId === recommendationRun.runId) {
+        runRetryRequestRef.current = existing.retry;
+        submissionTimingRef.current = existing;
+      } else {
+        runRetryRequestRef.current = { runId: recommendationRun.runId, requestId: crypto.randomUUID() };
+        submissionTimingRef.current = { ...clickTiming, retry: runRetryRequestRef.current };
+      }
+      persistSubmissionTimingV7(submissionTimingRef.current);
+      const response = await fetchSubmission(`/api/ai/competition-recommend/runs/${encodeURIComponent(recommendationRun.runId)}/retry`, {
+        method: "POST", headers: { "Content-Type": "application/json" }, signal: context.controller.signal,
+        body: JSON.stringify({ aiConsent, decisionToken: recommendationRun.decisionToken, expectedRevision: recommendationRun.profileRevision, requestId: runRetryRequestRef.current.requestId }),
+      });
+      const payload = await readJson(response);
+      if (requestGenerationRef.current !== context.generation) return;
+      const code = payload && typeof payload === "object" && "error" in payload ? payload.error : null;
+      if (response.status === 401 || code === "DECISION_SESSION_RENEWAL_REQUIRED") {
+        renewMatchingSession();
+        return;
+      }
+      if (!response.ok) throw responseError(response, payload);
+      const parsed = recommendationRunSchema.safeParse(payload);
+      if (!parsed.success || parsed.data.runId === recommendationRun.runId || parsed.data.profileId !== recommendationRun.profileId || parsed.data.profileRevision !== recommendationRun.profileRevision) throw new CompetitionApiError("重试结果与当前画像不一致，请刷新后继续。", "invalid_response");
+      runRetryRequestRef.current = null;
+      latestDecisionTokenRef.current = parsed.data.decisionToken;
+      setDecisionToken(parsed.data.decisionToken);
+      adoptRun(parsed.data);
+    } catch (error) {
+      if (requestGenerationRef.current === context.generation && !recoverFromConsentError(error, "这次重新匹配没有完成，可以重试。")) applyRequestError(error, "这次重新匹配没有完成，可以重试。");
+    } finally {
+      finishRequest(context.generation);
+    }
+  }, [acceptedAiConsent, adoptRun, applyRequestError, fetchSubmission, finishRequest, recommendationRun, recoverFromConsentError, renewMatchingSession, retryAfter, startRequest]);
+
   const retry = useCallback(() => {
     if (requestInFlightRef.current || retryAfter > 0) return;
+    if (retryAction === "run") { void retryRecommendationRun(); return; }
     if (retryAction === "normalize") {
-      if (questionnaireToken && interpretationItems.length > 0) {
-        void confirmInterpretations();
-      } else {
-        void runNormalize();
-      }
+      if (questionnaireToken && interpretationItems.length > 0) void confirmInterpretations();
+      else void runNormalize();
       return;
     }
     if (retryAction === "clarify") {
       const retryContext = clarifyRetryContextRef.current;
-      if (retryContext) {
-        const { input, ...context } = retryContext;
-        void requestNextClarification(input, context);
-      } else {
-        void runClarify();
-      }
+      if (retryContext) { const { input, ...context } = retryContext; void requestNextClarification(input, context); }
+      else void runClarify();
       return;
     }
     if (recommendTokenRef.current) void runRecommend(recommendTokenRef.current);
-  }, [
-    confirmInterpretations,
-    interpretationItems.length,
-    questionnaireToken,
-    requestNextClarification,
-    retryAction,
-    retryAfter,
-    runClarify,
-    runNormalize,
-    runRecommend
-  ]);
+  }, [confirmInterpretations, interpretationItems.length, questionnaireToken, requestNextClarification, retryAction, retryAfter, retryRecommendationRun, runClarify, runNormalize, runRecommend]);
+
+  const acceptDecisionChatReply = useCallback((reply: DecisionChatReply) => {
+    setDecisionToken(reply.decisionToken);
+    latestDecisionTokenRef.current = reply.decisionToken;
+    if (reply.report) {
+      setPreviousDecisionReport(latestDecisionReportRef.current);
+      latestDecisionReportRef.current = reply.report;
+      setDecisionReport(reply.report);
+      syncDecisionProfile(reply.report);
+    }
+  }, [syncDecisionProfile]);
+
+  const acceptRunChatReply = useCallback((reply: RecommendationChatReplyV7) => {
+    if (!reply.run) return;
+    cancelActiveRequest();
+    editedDecisionFieldsRef.current.clear();
+    setPreviousDecisionReport(latestDecisionReportRef.current);
+    latestDecisionTokenRef.current = reply.run.decisionToken;
+    setDecisionToken(reply.run.decisionToken);
+    setErrorMessage("");
+    adoptRun(reply.run);
+    setPhase("results");
+  }, [adoptRun, cancelActiveRequest]);
+
+  useEffect(() => {
+    const recovered = recoverRunConversation(restoredContext);
+    if (!recovered) return;
+    setDepth(recovered.depth);
+    setProfile(recovered.profile);
+    setFixedQuestionTextAnswers(recovered.text);
+    setDecisionContext(recovered.context);
+    if (recovered.consentVersion === initialAiConsentDisclosure.version) setAcceptedConsentVersion(recovered.consentVersion);
+    setEditingCompleted(true);
+  }, [initialAiConsentDisclosure.version, restoredContext]);
+
+  useEffect(() => {
+    if (!recommendationRun || !isRunActive()) return;
+    setDecisionToken(recommendationRun.decisionToken);
+    latestDecisionTokenRef.current = recommendationRun.decisionToken;
+    setResult(null);
+    setPhase("results");
+    const profileBinding = `${recommendationRun.profileId}:${recommendationRun.profileRevision}`;
+    if (syncedRunProfileRef.current !== profileBinding) {
+      syncedRunProfileRef.current = profileBinding;
+      syncDecisionProfile({ profile: recommendationRun.profile });
+      // A chat correction replaces the old wording as well as its structured
+      // values, so a later fresh session cannot re-introduce the old answer.
+      if (recommendationRun.profile.updates?.length) setFixedQuestionTextAnswers({});
+    }
+    if (recommendationRun.report && latestDecisionReportRef.current?.reportId !== recommendationRun.report.reportId) {
+      setPreviousDecisionReport(latestDecisionReportRef.current);
+      latestDecisionReportRef.current = recommendationRun.report;
+      setDecisionReport(recommendationRun.report);
+    }
+  }, [isRunActive, recommendationRun, syncDecisionProfile]);
 
   const openDetails = useCallback((competitionId: string) => {
     setSelectedCompetitionId(competitionId);
@@ -1451,7 +1733,7 @@ export function useRecommendationConversation(initialAiConsentDisclosure: AiCons
   return {
     phase,
     returnToSummary: editingCompleted && questionnaireComplete ? () => setPhase("summary") : null,
-    depth, setDepth, activeTurns, decisionContext, changeContext, skipFixedAnswer, hasContextAnswer,
+    depth, setDepth, activeTurns, decisionContext, changeContext, skipFixedAnswer, hasContextAnswer, decisionReady,
     turnIndex,
     profile,
     fixedQuestionTextAnswers,
@@ -1472,6 +1754,11 @@ export function useRecommendationConversation(initialAiConsentDisclosure: AiCons
     currentClarificationAnswer,
     dynamicAnswerConfirmation,
     result,
+    decisionReport,
+    previousDecisionReport,
+    recommendationRun, recommendationDisplayRun, runPollError, retryPoll, retryRecommendationRun, acceptRunChatReply,
+    decisionToken, acceptDecisionChatReply,
+    decisionAiConsent: consentAccepted ? { accepted: true as const, version: aiConsentDisclosure.version } : null,
     selectedCompetitionId,
     errorMessage,
     requestPending,

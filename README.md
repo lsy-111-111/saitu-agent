@@ -1,79 +1,68 @@
-# 赛途 Campus
+# 赛途竞赛助手
 
-赛途是面向大学生竞赛新手的选赛助手。学生告诉乐乐自己的兴趣、经历和目标，比较值得准备的竞赛，了解能承担什么任务、目前缺哪些条件，以及如何开始。
+赛途是面向大学生竞赛新手的选赛助手，提供赛事目录、问答选赛、推荐详情、两项比较、收藏，以及组队和联系入口。
 
-## 页面与入口
+当前源码版本为 **v767-preview.1，第 4 次构建对应的开发快照**。本次更新保留既有 Git 提交历史，包含当前应用代码和运行必需的赛事证据。
 
-| 地址 | 用途 |
-| --- | --- |
-| `/` | 品牌首页，可直接开始第一次选赛 |
-| `/competitions/recommend` | 打开即回答首题，可切换深入了解 |
-| `/competitions` | 搜索赛事、查看赛道、适合人群、准备建议和对应届次的来源 |
-| `/competitions/[id]` | 可直接分享的单项竞赛详情，地址采用目录中的稳定编号 |
-| `/competitions/saved` | 在当前浏览器中查看或移除主动保存的推荐 |
-| `/teams` | 组队二维码与有效期说明 |
-| `/about#contact` | 团队竞赛证书与 Emily 学姐联系方式 |
-| `/privacy`、`/terms` | 隐私政策与用户协议 |
+## 下载 Mac 精简运行包
 
-旧书签 `/resources` 会永久跳转至竞赛目录。
+[打开 v767-preview.1-portable.1 下载页面](https://github.com/lsy-111-111/saitu-agent/releases/tag/v767-preview.1-portable.1)，选择 **赛途-v767-preview.1-Mac-精简运行包.zip**。
 
-## 选赛流程
+- ZIP 为 409.05 MiB，解压约 605.81 MiB，支持 Apple 芯片 Mac。
+- 解压后双击「启动赛途.command」，访问 `http://127.0.0.1:3187`；使用后双击「停止赛途.command」。
+- 已内置 Node.js 24.22.1、PostgreSQL 17.11 和运行依赖，无需安装开发工具。
+- 这是为维护者现有 Mac 配置的本地试用包。AI 推荐需要联网，并读取该 Mac 上已有的私有配置。
+- 配置与运行数据保存在 `~/Library/Application Support/赛途本地版/`。其中 `settings.json` 包含 AI 密钥，不在 GitHub 或 ZIP 内；数据库和个人使用记录也不随包上传。
+- GitHub 自动生成的 `Source code (zip)` 是源码压缩包；双击运行请下载上面的中文命名 Mac ZIP。
 
-1. 首页「帮我选第一场竞赛」进入目标题。快速选赛有九个主题，设计用时约 4–6 分钟。「想聊得更细」会根据已有回答补充关于成果、项目起点、队伍和参与方式的问题。当前学段用于筛选参赛资格，其余不确定的条件可以跳过。
-2. 各题支持选项和文字回答。学生可区分自己做过的工作、可争取的资源、确认无法获得的资源与明确拒绝的任务。提交前可查看和修改回答。外部 AI 处理需取得当前 v7 单独同意。文字解释由本人核对。本站程序决定入选和顺序后，可以请 DeepSeek 在固定候选已有的目标、任务和经历依据中挑选展示理由。模型不可用时展示站内依据。
-3. 服务端以已确认事实检查赛道资格，并按目标、任务兴趣、经历能力、准备条件及成长空间比较整个目录。只有能改变结果的偏好才需要追问，最多三轮。报名开放、截止及查不到本届日期只在信息区展示，本校认定须对照本校文件。
-4. 一次给出 0–3 项重点建议，说明适配依据、差距与第一步。学生可以展开有依据的其他候选，比较两至三项，查询为什么未推荐某场比赛，或调整原有回答后重新匹配。结果之后可选择联系团队。
+版本来源、打包适配和原有验证记录见[本次发布说明](docs/releases/v767-preview.1/README.md)。
 
-`competition-questionnaire.v1` 接受稀疏答案包并保留旧版完整问卷兼容。新推荐使用 `competition-recommendation.v5` 和 `evidence-rules` 排序来源。旧版快照按保存时的口径展示。算法、边界和历史版本见 [竞赛助手推荐机制说明](竞赛助手推荐机制说明.md)。
+## 源码包含什么
 
-## 本次改版的核查资料
+应用代码、提示词、网页素材、服务端群二维码、数据库结构与迁移、依赖锁文件、测试、维护脚本及开发文档均保留。程序读取的 **364 个赛事证据文件，约 329.14 MiB** 也已纳入仓库，并保持原索引及相对路径。
 
-[本地功能与工程验收](artifacts/redesign-review-20261105/README.md)记录了页面、二维码、证书与推荐算法的实测范围和复跑命令。
+历史实验快照、重复构建、开发依赖、缓存、日志、真实数据库和私有环境配置不随此次源码快照上传。`.gitignore` 仅放行上述必需证据，不会把整个历史材料目录一起纳入版本库。已有测试和维护文档仍可能引用本机保留的历史实验材料；本仓库快照不包含完整的历史实验运行环境。
 
-- [赛事检索台账与计数口径](artifacts/catalog-research-20261104/README.md)：655 条计入的独立检索，附网址、正文读取状态及字段依据。
-- [135 项赛事的修订与待核清单](artifacts/catalog-research-20261104/目录与待核事项.md)，可直接打开本地详情。
-- [64 条种子的工程复跑与独立盲审](artifacts/competition-recommendation/expert-review-20261104/README.md)，包含历史正例比较及尚待独立判断的题目。
-
-## 公开源码与验收边界
-
-本仓库从本地改版项目导出并初始化全新 Git 历史。包含运行源码、135 项赛事及检索依据、测试、数据库定义、运维脚本、经确认可公开的微信二维码与 18 份脱敏证书。未包含密钥、本地环境配置、原始照片、依赖或构建缓存。`private/team-qr` 是应用服务端素材目录，GitHub 中仍为公开文件；网站到期收起群码不会从 Git 历史中删除图片。
-
-当前本地验收记录：TypeScript、ESLint、生产构建通过；全仓 Vitest（每例 20 秒）889 项通过、27 项失败、23 项跳过。失败包括 19 项旧评分、追问、质量门槛与冻结基线检查，以及 8 项发布审查清单检查。未删除或改签这些断言。本仓库上传不等于通过生产发布审批。
-
-64 条评测种子与盲审材料已保留，推荐效果仍待独立老师或专家核对、冻结标准后评审；真实学生收益与生产模型输出质量尚未验证。具体失败和复跑方式见上方验收资料。`artifacts/competition-recommendation` 根目录的 2026 年 8 月文档仅记录历史算法和基线，当前行为以本 README 和 11 月验收资料为准。
+`private/team-qr` 是应用服务端素材目录，但其中图片在本公开仓库中同样可见。网站按有效期收起群码不会删除 Git 中的图片记录。
 
 ## 本地开发
 
-使用 Node.js 24（至少 24.19.0）和 pnpm 11.19.0。锁文件必须保留。
+使用 Node.js `>=24.19.0 <25` 和 pnpm `11.19.0`，保留锁文件。
 
 ```bash
+git clone https://github.com/lsy-111-111/saitu-agent.git
+cd saitu-agent
 pnpm install --frozen-lockfile
 cp .env.example .env.local
+```
+
+在 `.env.local` 中配置自己的 PostgreSQL 连接、服务端 AI 密钥及独立的签名/哈希密钥，按数据库迁移和现有运行策略准备开发环境。配置文件仅保存在本机；AI 密钥不能使用 `NEXT_PUBLIC_` 前缀。
+
+```bash
 pnpm dev
 ```
 
-`pnpm dev` 固定使用 3000 端口，`http://localhost:3000` 与 `http://127.0.0.1:3000` 均受支持。Playwright 的 mock 服务单独使用 `http://127.0.0.1:3111`，并且只有在 `AI_TEST_MODE=1` 与 `ALLOW_AI_MOCK=1` 同时存在时才允许 `AI_PROVIDER=mock`；这些标记不得出现在生产环境。
+该命令启动 `http://localhost:3000` 的网页开发服务。新版推荐任务还需要配套的 worker、数据库及运行授权；只启动网页进程不等于已准备完整的 AI 推荐环境。统一构建入口为 `pnpm build`，worker 运维见 [v7 worker 说明](ops/v7-worker-runbook.md)。
 
-第三方 AI 密钥只能配置在服务端 `AI_API_KEY` 中，不得使用 `NEXT_PUBLIC_` 前缀，也不得提交到版本库。AI 同意记录使用 PostgreSQL；`AI_CONSENT_SALT` 应设置为独立的高强度随机值。
+仓库中的「本地试用.command」及 [v767 本地试用合同](docs/v7/local-preview-contract-20261112.md) 面向维护者原机器的数据库和 Node 路径，使用端口 3177。希望直接运行现有版本时，请使用上面的 Mac 精简包，其独立端口为 3187。
 
-## 验证
+## 页面入口
 
-```bash
-pnpm lint
-pnpm typecheck
-pnpm test
-pnpm build
-pnpm test:e2e
-```
+| 地址 | 用途 |
+| --- | --- |
+| `/` | 首页 |
+| `/competitions` | 赛事目录与筛选 |
+| `/competitions/[id]` | 单项赛事详情 |
+| `/competitions/recommend` | 问答选赛与推荐 |
+| `/competitions/saved` | 当前浏览器中的收藏 |
+| `/teams` | 组队入口 |
+| `/about#contact` | Emily 联系方式 |
+| `/privacy`、`/terms` | 隐私政策与用户协议 |
 
-对生产 DeepSeek 配置做主动验收时，使用：
+## 发布与验证记录
 
-```bash
-pnpm verify:deepseek
-```
+2026 年 11 月 16 日的这次 GitHub 更新仅进行源码整理和附件发布，**未重新运行 lint、类型检查、测试、构建、浏览器验收或真实 AI 调用**。
 
-默认 DeepSeek 模型为 `deepseek-v4-pro`。此预检会使用合成输入调用付费 API，验证部署环境的模型连通性及兼容协议，包含历史排序协议的探测。当前选赛结果在服务端依据学生确认的条件和目录证据生成，正式展示的名次无需模型重排。生产发布前置检查见下方运维说明。
+Mac 包制作时已有 24 项浏览器检查和一次真实 AI 推荐的通过记录，详见[原始制作与验证记录](docs/releases/v767-preview.1/portable-verification-20261116.json)。这些是运行包制作时的历史结果，不表示此次上传重新执行了验收，也不代表生产上线验收完成。
 
-## 生产运维
-
-唯一受支持的生产流程见 [`ops/README.md`](ops/README.md)：先冻结源码并在任何服务器 root 变更前创建腾讯云初始回滚快照，再以工作站外部记录的复制器与 bootstrap manifest 哈希创建 root-only 内容寻址 generation；服务器不得直接 `sudo` 执行上传工作树。随后生成内容寻址的 release bundle，经 root 审批后再由 root-owned `/usr/local/lib/resume-ai/deploy-release.sh` 部署。生产工具链固定为 Node.js 24.20.0 LTS 与 pnpm 11.19.0；不得从未固定的安装脚本或系统 Node 20 回退运行。`deploy/setup.sh` 已永久退役并始终退出 64，不能用于建库、配置 Nginx 或发布。
+生产部署仍按 [运维文档](ops/README.md) 单独执行；本次 GitHub 发布未部署网站。

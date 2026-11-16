@@ -10,46 +10,14 @@ type RecommendationResultCardProps = {
   onSourceClick: (competitionId: string) => void;
 };
 
-const recommendationRoleLabels: Record<CompetitionRecommendationItemV3["recommendationRole"], string> = {
-  best: "最匹配",
-  steady: "稳妥选择",
-  reference: "参考匹配"
-};
-
 const fitLabels = {
   goal: "和你的目标有什么关系", task: "你会做哪些任务", experience: "你的经历可以用在哪里",
   readiness: "目前具备的条件", growth: "值得补足的能力", unknowns: "决定前还要核实"
 } as const;
 
-const statusStyles: Record<CompetitionRecommendationItemV3["registrationStatus"]["status"], string> = {
-  open: "border-success-200 bg-success-50 text-success-700",
-  upcoming: "border-brand-200 bg-brand-50 text-brand-700",
-  unknown: "border-border bg-white text-muted-foreground",
-  stale: "border-border bg-white text-muted-foreground",
-  closed: "border-border bg-white text-muted-foreground",
-  cancelled: "border-border bg-white text-muted-foreground"
-};
-
 type EvidenceDetails = NonNullable<
   NonNullable<CompetitionRecommendationItemV3["evidenceRefs"]>["details"]
 >;
-
-const eligibilityPresentation = {
-  eligible: {
-    label: "资格初筛通过",
-    styles: "border-success-200 bg-success-50 text-success-700"
-  },
-  needs_clarification: {
-    label: "资格待核验",
-    styles: "border-warning-200 bg-warning-50 text-warning-700"
-  },
-  ineligible: {
-    label: "资格不符合",
-    styles: "border-error-200 bg-error-50 text-error-700"
-  }
-} as const;
-
-
 
 const evidenceLabels = {
   "official-fact": "官方事实",
@@ -129,8 +97,7 @@ export function RecommendationResultCard({
   onOpenDetails,
   onSourceClick
 }: RecommendationResultCardProps) {
-  const [expanded, setExpanded] = useState(recommendation.rank === 1);
-  const eligibility = eligibilityPresentation[recommendation.eligibility.status];
+  const [expanded, setExpanded] = useState(false);
   const titleId = `recommendation-title-${recommendation.competitionId}`;
   const contentId = `recommendation-content-${recommendation.competitionId}`;
   const officialEvidenceSources = [...new Set(
@@ -167,17 +134,6 @@ export function RecommendationResultCard({
         </span>
 
         <span className="min-w-0">
-          <span className="flex flex-wrap items-center gap-2">
-            <span className="text-xs font-semibold text-brand-600">
-              {recommendationRoleLabels[recommendation.recommendationRole]}
-            </span>
-            <span className={`rounded-full border px-2.5 py-1 text-[11px] font-semibold ${statusStyles[recommendation.registrationStatus.status]}`}>
-              {recommendation.registrationStatus.label}
-            </span>
-            <span className={`rounded-full border px-2.5 py-1 text-[11px] font-semibold ${eligibility.styles}`}>
-              {eligibility.label}
-            </span>
-          </span>
           <span className="mt-2 block text-base font-semibold leading-6 text-ink md:text-lg" id={titleId}>
             {recommendation.name}
           </span>
@@ -201,22 +157,10 @@ export function RecommendationResultCard({
         </span>
       </button>
 
+      <div className="flex flex-wrap items-center gap-3 px-4 pb-4 md:px-6"><a className="inline-flex min-h-11 items-center text-sm font-semibold text-brand-700 underline" href={recommendation.sourceUrl} onClick={() => onSourceClick(recommendation.competitionId)} target="_blank" rel="noopener noreferrer">查看官网</a><span className="text-xs text-muted-foreground">参赛资格和开赛时间请自行核查官网</span></div>
       <div className={expanded ? "block" : "hidden"} id={contentId}>
         <div className="border-t border-border px-4 py-5 md:px-6 md:py-6">
-          {recommendation.registrationStatus.note ? (
-            <p className="mb-5 rounded-[14px] border border-border bg-brand-50 px-4 py-3 text-xs leading-5 text-muted-foreground">
-              {recommendation.registrationStatus.note}
-            </p>
-          ) : null}
-
-          {recommendation.eligibility.status === "needs_clarification" ? (
-            <div className="mb-5 rounded-[14px] border border-warning-200 bg-warning-50 px-4 py-3 text-xs leading-5 text-warning-700" data-testid="recommendation-eligibility-pending">
-              <p className="font-semibold">资格待核验</p>
-              <p className="mt-1">
-                {recommendation.eligibility.reasons[0] || "目前缺少官方条件的确认信息，请以当届通知为准。"}
-              </p>
-            </div>
-          ) : null}
+          <p className="mb-5 text-xs leading-5 text-muted-foreground">参赛资格和开赛时间请自行核查官网</p>
 
           {recommendation.recommendationRole === "reference" ? (
             <div className="mb-5 rounded-[14px] border border-border bg-white px-4 py-3 text-xs leading-5 text-muted-foreground" data-testid="recommendation-reference-notice">

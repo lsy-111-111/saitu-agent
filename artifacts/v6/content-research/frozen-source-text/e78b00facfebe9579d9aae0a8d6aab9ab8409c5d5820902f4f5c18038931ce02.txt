@@ -1,0 +1,89 @@
+
+=== PAGE 1 ===
+Kick Start 2022 - Round A
+Analysis: Speed Typing
+For better understanding, let us define some variables:
+N I
+: Length of string
+M P
+: Length of string
+Test Set 1
+All the characters in String IC IC
+are the same, let us say that character is . This means that is made up entirely of character
+N
+occurring times.
+We need to check if P C
+contains at least N N I
+number of times (recall that denotes the length of string ). This can be done by
+simply maintaining a count of C PN
+in . If this count is greater than or equal to , then the number of characters to be removed
+would be (M
+− N
+) P
+, which is the number of extra characters in . Else, the answer is IMPOSSIBLE.
+Time and Space Complexity: All operations including counting the appearances of C PO(M
+in can be done in O(1)
+is the overall time complexity of this solution. Extra space required would be of the order of .
+)
+time, which
+Test Set 2
+Observe that we are trying to condense P I P
+to by deleting some characters from without disturbing their order. This directly
+leads us to the definition of a subsequence:
+A subsequence is a sequence that can be derived from another sequence by deleting some elements without changing the
+order of the remaining elements.
+If I P
+is not a subsequence of , the answer is IMPOSSIBLE. This can take place when:
+Case 1: is shorter than
+P I
+Case 2: A character in I P
+is not present in
+Case 3: A character in I P
+is present in , but not at the right place
+If I P P I
+is a subsequence of , then contains all characters of in the same order along with some extra characters
+(possibly ). Barbara will have to hit backspace on these extra characters to correct the string. The answer would be
+(M
+)
+− N
+0
+.
+Time and Space Complexity: Subsequence check can be done in O(M
+)
+time using a two-pointer approach. The overall time
+complexity of this solution comes out to be O(M
+)
+O(1)
+as well. Extra space required would be of the order of .
+Pseudocode for Subsequence Check:
+FUNCTION checkSubSequence(String I, String P) RETURNS BOOLEAN
+// Assign lengths of I and P to variables N and M
+N <- Length of I
+M <- Length of P
+// Declare pointers ptrI and ptrP to the current position in I and P respectively
+// and assign them to position 0
+ptrI <- 0
+ptrP <- 0
+// Traverse both strings, and compare current character of P with first unmatched char of I
+// While making sure the pointers do not go out of bounds of their respective strings
+WHILE ptrI is less than N AND ptrP is less than M
+// If characters at current positions match, then move ahead in both I and P
+IF I[ptrI] equals P[ptrP]
+ptrI <- ptrI + 1
+ptrP <- ptrP + 1
+// If the characters at current the positions do not match, then move ahead only in P
+ELSE
+ptrP <- ptrP + 1
+ENDIF
+
+=== PAGE 2 ===
+ENDWHILE
+// If we reach past the end of I, we have successfully matched all the characters of I
+// to some characters of P
+// If not, some characters in I remain unmatched and it is not a subsequence of P
+IF ptrI equals N
+RETURN True;
+ELSE
+RETURN False;
+ENDIF
+ENDFUNCTION

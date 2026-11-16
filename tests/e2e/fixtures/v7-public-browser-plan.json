@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "saitu.public-browser-plan.v7.1",
+  "origin": "synthetic_public_profiles_authored_for_v7",
+  "newRunsOnly": true,
+  "sampleCount": 5,
+  "clock": "browser_performance_now_before_initial_submit_click_includes_normalize_clarify_network_and_enqueue",
+  "failuresRemainInDenominator": true,
+  "automaticPaidRetries": false,
+  "cases": [
+    { "caseId": "v7-public-desktop-novice", "viewport": "desktop", "stage": "本科大一", "skill": null, "weekly": "每周 5–10 小时", "budget": 300 },
+    { "caseId": "v7-public-mobile-data", "viewport": "mobile", "stage": "本科大二", "skill": "数据分析与建模", "weekly": "每周 5 小时以内", "budget": 100 },
+    { "caseId": "v7-public-desktop-software", "viewport": "desktop", "stage": "本科大三", "skill": "编程与软件开发", "weekly": "每周 10 小时以上", "budget": 0 },
+    { "caseId": "v7-public-mobile-design", "viewport": "mobile", "stage": "高职／专科", "skill": "视觉与创意设计", "weekly": "每周 5–10 小时", "budget": 500 },
+    { "caseId": "v7-public-desktop-language", "viewport": "desktop", "stage": "硕士研究生", "skill": "语言表达与跨文化沟通", "weekly": "每周 5 小时以内", "budget": 100 }
+  ]
+}

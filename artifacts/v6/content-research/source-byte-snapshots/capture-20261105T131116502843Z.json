@@ -1,0 +1,58 @@
+{
+  "createdAt": "2026-11-05T13:11:16.502812+00:00",
+  "independentReview": false,
+  "sources": [
+    {
+      "sourceId": "teach-d2-2017-rules",
+      "url": "https://www.mchps.kh.edu.tw/upload/149/101_6710/%E7%B0%A1%E7%AB%A0_5.pdf",
+      "retrievedAt": "2026-11-05T13:11:11.781607+00:00",
+      "independentReview": false,
+      "status": "captured_bytes_not_verified",
+      "finalUrl": "https://www.mchps.kh.edu.tw/upload/149/101_6710/%E7%B0%A1%E7%AB%A0_5.pdf",
+      "sha256": "b130c0c2d03b5d62cfd0888fe720f9f585fd2d92a98f329ee2013c6c7d2a9152",
+      "bytes": 118682,
+      "contentType": "application/pdf",
+      "artifact": "artifacts/v6/content-research/source-byte-snapshots/b130c0c2d03b5d62cfd0888fe720f9f585fd2d92a98f329ee2013c6c7d2a9152.pdf",
+      "limitation": "HTTP success or a byte digest does not establish that a document is a usable rule or that facts are true; reviewers must open and read it."
+    },
+    {
+      "sourceId": "teach-d2-official-work",
+      "url": "https://www.ncyu.edu.tw/cset/Contents?nodeId=50587",
+      "retrievedAt": "2026-11-05T13:11:11.781947+00:00",
+      "independentReview": false,
+      "status": "captured_bytes_not_verified",
+      "finalUrl": "https://www.ncyu.edu.tw/cset/Contents?nodeId=50587",
+      "sha256": "7ea2aec427c80991709d2d90777fa8070b829bc73dacaf92716dcc6b1dd63024",
+      "bytes": 102863,
+      "contentType": "text/html; charset=utf-8",
+      "artifact": "artifacts/v6/content-research/source-byte-snapshots/7ea2aec427c80991709d2d90777fa8070b829bc73dacaf92716dcc6b1dd63024.html",
+      "limitation": "HTTP success or a byte digest does not establish that a document is a usable rule or that facts are true; reviewers must open and read it."
+    },
+    {
+      "sourceId": "teach-d2-roaming-lesson",
+      "url": "https://www.ncyu.edu.tw/cset/ServerFile/Get/76a7da0c-2c2c-4706-8577-4a828b139328?nodeId=50587&sId=102478",
+      "retrievedAt": "2026-11-05T13:11:11.782089+00:00",
+      "independentReview": false,
+      "status": "captured_bytes_not_verified",
+      "finalUrl": "https://www.ncyu.edu.tw/cset/ServerFile/Get/76a7da0c-2c2c-4706-8577-4a828b139328?nodeId=50587&sId=102478",
+      "sha256": "253dfa9d414a7bf6aec1c1c26fe1b6dde36a8311cc184574fa53f43c8e581dfe",
+      "bytes": 1945304,
+      "contentType": "application/pdf",
+      "artifact": "artifacts/v6/content-research/source-byte-snapshots/253dfa9d414a7bf6aec1c1c26fe1b6dde36a8311cc184574fa53f43c8e581dfe.pdf",
+      "limitation": "HTTP success or a byte digest does not establish that a document is a usable rule or that facts are true; reviewers must open and read it."
+    },
+    {
+      "sourceId": "b-rural-task",
+      "url": "https://xtw.swupl.edu.cn/docs/2025-09/d9f9b43ef5ca415588bc637e066aae32.pdf",
+      "retrievedAt": "2026-11-05T13:11:15.421042+00:00",
+      "independentReview": false,
+      "status": "captured_bytes_not_verified",
+      "finalUrl": "https://xtw.swupl.edu.cn/docs/2025-09/d9f9b43ef5ca415588bc637e066aae32.pdf",
+      "sha256": "014b69c6be5ad2f7b3971da80e75b184cab8d5b569e533f388569057277493c7",
+      "bytes": 188876,
+      "contentType": "application/pdf",
+      "artifact": "artifacts/v6/content-research/source-byte-snapshots/014b69c6be5ad2f7b3971da80e75b184cab8d5b569e533f388569057277493c7.pdf",
+      "limitation": "HTTP success or a byte digest does not establish that a document is a usable rule or that facts are true; reviewers must open and read it."
+    }
+  ]
+}

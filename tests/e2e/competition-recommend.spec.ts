@@ -11,6 +11,9 @@ import type {
   CompetitionRecommendationResponseV5
 } from "../../src/types/competition-recommendation";
 import { expectNoindex } from "./helpers";
+import type { DecisionResponseV6 } from "../../src/lib/competitions/v6/contracts";
+
+test.use({ launchOptions: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE ? { executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE } : {} });
 
 const NORMALIZE_PATH = "/api/competitions/recommend/normalize";
 const CLARIFY_PATH = "/api/ai/competition-clarify";
@@ -20,6 +23,35 @@ const CLARIFY_PROMPT_VERSION = "competition-clarify.v8";
 const RANK_PROMPT_VERSION = "competition-rank.v4";
 const E2E_CONVERSATION_SIGNING_SECRET =
   "e2e-competition-signing-secret-at-least-thirty-two-characters";
+
+// Real current routes return a V6 report. The V5 response fixtures below still
+// exercise legacy rendering; do not make current-route checks accept either.
+async function expectCurrentReportVisible(page: Page) {
+  const report = page.getByTestId("decision-report-v6");
+  await expect(report).toBeVisible();
+  await expect(report.getByRole("heading", { name: "先找到值得你投入的方向", exact: true })).toBeVisible();
+  await expect(report.getByRole("region", { name: "优先了解的方向", exact: true }).locator("article")).toHaveCount(3);
+  await expect(report.locator('article[id^="decision-"]')).toHaveCount(5);
+  return report;
+}
+
+function expectCurrentRulesResponse(value: unknown): DecisionResponseV6 {
+  expect(value).toMatchObject({
+    responseVersion: "competition-recommendation.v6",
+    decisionToken: expect.any(String),
+    report: {
+      trace: { method: "rules", model: "server", callCount: 0, verification: "deterministic" },
+      fallback: { used: false, reason: null }
+    }
+  });
+  const body = value as DecisionResponseV6;
+  expect(body.report.recommendations.length).toBeGreaterThanOrEqual(5);
+  expect(body.report.recommendations.length).toBeLessThanOrEqual(10);
+  expect(new Set(body.report.recommendations.map(item => item.seriesId)).size).toBe(body.report.recommendations.length);
+  expect(new Set(body.report.recommendations.map(item => item.itemId)).size).toBe(body.report.recommendations.length);
+  expect(body.report.recommendations.map(item => item.rank)).toEqual(body.report.recommendations.map((_, index) => index + 1));
+  return body;
+}
 
 function createSignedLegacyConversationToken(marker: string) {
   const encodedPayload = Buffer.from(JSON.stringify({
@@ -595,7 +627,7 @@ async function answerAllBaseQuestionsWithPureText(page: Page) {
 }
 
 async function consentAndStart(page: Page) {
-  await page.getByRole("checkbox", { name: /我已单独同意/ }).check();
+  await page.locator('[data-phase="summary"]').getByRole("checkbox").check();
   await page.getByRole("button", { name: "同意，请乐乐开始匹配", exact: true }).click();
 }
 
@@ -1149,7 +1181,7 @@ async function expectTextareaExpansionAndTypingStable(
   if (clearAfter) await textarea.fill("");
 }
 
-test("真实服务器 mock provider 完成固定问卷、签名 V6 偏好会话与三项推荐", async ({ page, isMobile }) => {
+test("真实服务器 mock provider 完成固定问卷、签名 V6 偏好会话与分层报告", async ({ page, isMobile }) => {
   test.setTimeout(180_000);
   test.skip(isMobile, "真实服务端签名链路在 desktop 跑一次；移动布局由独立视口矩阵覆盖。");
   const observer = observeCompetitionApi(page);
@@ -1166,9 +1198,7 @@ test("真实服务器 mock provider 完成固定问卷、签名 V6 偏好会话�
   }
 
   expect(outcome.answeredQuestions).toBeLessThanOrEqual(3);
-  await expect(page.getByRole("heading", { name: /这些竞赛值得你优先了解/ })).toBeVisible();
-  const cards = page.locator("article[aria-labelledby^='recommendation-title-']");
-  await expect(cards).toHaveCount(3);
+  const report = await expectCurrentReportVisible(page);
   await expect(page.getByTestId("ai-test-mode-notice")).toContainText("没有调用 DeepSeek");
   await expect(page.getByText(/补充问题 4/)).toHaveCount(0);
 
@@ -1206,18 +1236,11 @@ test("真实服务器 mock provider 完成固定问卷、签名 V6 偏好会话�
     expectPreferenceOnlyDynamicPayload(exchange.responseBody, `real clarify response ${index + 1}`);
   }
 
-  const recommendationBody = recommend[0].responseBody as CompetitionRecommendationResponseV5;
-  expect(recommendationBody).toMatchObject({
-    responseVersion: "competition-recommendation.v5",
-    status: "matched",
-    provider: "server",
-    model: "structured-fit",
-    rankingSource: "evidence-rules",
-    fallbackUsed: false,
-    fallbackMode: "none"
-  });
-  expect(recommendationBody.recommendations).toHaveLength(3);
-  expect(new Set(recommendationBody.recommendations.map(({ competitionId }) => competitionId)).size).toBe(3);
+  expect(recommend[0].requestBody.reportVersion).toBe("competition-recommendation.v6");
+  const recommendationBody = expectCurrentRulesResponse(recommend[0].responseBody);
+  for (const [index, item] of recommendationBody.report.recommendations.slice(0, 5).entries()) {
+    await expect(report.locator('article[id^="decision-"]').nth(index)).toContainText(item.name);
+  }
   const completedPayload = expectCompletedV6Token(recommend[0].requestBody.conversationToken);
   expect(completedPayload.rawAnswerContext).toEqual(expect.arrayContaining([
     expect.objectContaining({ fieldId: "stage" }),
@@ -1259,8 +1282,7 @@ test("真实 V6 会话过期后自动重建且保留已答题目答案", async (
 
   expect(expiredConversationInjected).toBe(true);
   expect(outcome.answeredQuestions).toBeLessThanOrEqual(6);
-  await expect(page.getByRole("heading", { name: /这些竞赛值得你优先了解/ })).toBeVisible();
-  await expect(page.locator("article[aria-labelledby^='recommendation-title-']")).toHaveCount(3);
+  await expectCurrentReportVisible(page);
   await expect(
     page.getByTestId("conversation-transcript-turn").getByRole("button", {
       name: "修改这条回答",
@@ -1277,6 +1299,8 @@ test("真实 V6 会话过期后自动重建且保留已答题目答案", async (
   )).toBe(true);
   const recommend = exchanges.filter(({ path }) => path === RECOMMEND_PATH);
   expect(recommend).toHaveLength(1);
+  expect(recommend[0].requestBody.reportVersion).toBe("competition-recommendation.v6");
+  expectCurrentRulesResponse(recommend[0].responseBody);
   expectCompletedV6Token(recommend[0].requestBody.conversationToken);
   consumeExpectedHttpConsoleErrors(page, 400);
 });
@@ -1539,9 +1563,9 @@ test("clarify 与 recommend 短暂失败后均可原地重试并继续真实路�
   expect(recommendFailure.terminalPhase).toBe("error");
   expect(recommendFailure.answeredQuestions).toBeLessThanOrEqual(3);
   await expect(page.locator("article[aria-labelledby^='recommendation-title-']")).toHaveCount(0);
+  await expect(page.getByTestId("decision-report-v6")).toHaveCount(0);
   await page.getByRole("button", { name: "请乐乐原地重试", exact: true }).click();
-  await expect(page.getByRole("heading", { name: /这些竞赛值得你优先了解/ })).toBeVisible();
-  await expect(page.locator("article[aria-labelledby^='recommendation-title-']")).toHaveCount(3);
+  await expectCurrentReportVisible(page);
 
   const exchanges = await observedCompetitionApiExchanges(observer);
   expect(exchanges.filter(({ path }) => path === NORMALIZE_PATH)).toHaveLength(1);
@@ -1550,11 +1574,8 @@ test("clarify 与 recommend 短暂失败后均可原地重试并继续真实路�
   expect(clarify.some(({ status }) => status === 200)).toBe(true);
   const recommend = exchanges.filter(({ path }) => path === RECOMMEND_PATH);
   expect(recommend.map(({ status }) => status)).toEqual([503, 200]);
-  expect(recommend[1].responseBody).toMatchObject({
-    responseVersion: "competition-recommendation.v5",
-    provider: "server",
-    rankingSource: "evidence-rules"
-  });
+  expect(recommend[1].requestBody.reportVersion).toBe("competition-recommendation.v6");
+  expectCurrentRulesResponse(recommend[1].responseBody);
   expectCompletedV6Token(recommend[1].requestBody.conversationToken);
   consumeExpectedHttpConsoleErrors(page, 503, 2);
 });
@@ -1648,14 +1669,15 @@ test("快速问答保留未知，结果可以比较、查漏推并修改后重�
   ]});
   const cards = page.locator("article[aria-labelledby^='recommendation-title-']");
   const before = await cards.evaluateAll(nodes => nodes.map(node => node.getAttribute("aria-labelledby")));
-  await page.getByText("这个月能报名吗？", {exact:true}).click();
-  const calendar = page.getByTestId("monthly-registration-reference");
-  await expect(calendar.locator("[data-monthly-series]")).toHaveCount(2);
-  await expect(calendar.locator("[data-monthly-series]").first()).toHaveAttribute("data-monthly-series","iot-design");
-  await expect(calendar.locator("[data-monthly-series]").first()).toContainText("全国报名");
+  await page.getByText("查看历史届次资料与官方入口", {exact:true}).click();
+  const calendar = page.getByTestId("historical-registration-reference");
+  await expect(calendar.locator("[data-historical-series]")).toHaveCount(2);
+  await expect(calendar.locator("[data-historical-series]").first()).toHaveAttribute("data-historical-series","iot-design");
+  await expect(calendar).toContainText("参赛资格和开赛时间请自行核查官网");
+  await expect(calendar).not.toContainText("全国报名窗口目前开放");
   await expect(calendar.getByRole("link").first()).toHaveAttribute("target","_blank");
   await expect(calendar).toContainText("资料核查于");
-  await page.getByText("这个月能报名吗？", {exact:true}).click();
+  await page.getByText("查看历史届次资料与官方入口", {exact:true}).click();
   expect(await cards.evaluateAll(nodes => nodes.map(node => node.getAttribute("aria-labelledby")))).toEqual(before);
   expect(requests.recommendPayloads).toHaveLength(1);
   await page.getByText("展开更多候选", { exact: true }).click();

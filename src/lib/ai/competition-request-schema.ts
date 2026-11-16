@@ -1,5 +1,7 @@
 import { businessActivityValues } from "@/lib/competitions/business-activities";
+import { isDecisionBudgetMaximumValid } from "@/lib/competitions/decision-budget";
 import { z } from "zod";
+import { containsCompetitionNotePersonalInfo } from "@/lib/ai/competition-note";
 import {
   competitionDynamicAnswerSchema,
   competitionDynamicSignalKeyV3Schema
@@ -77,6 +79,28 @@ export const competitionRecommendationProfileSchema = z
   .strict();
 
 export const competitionDecisionContextSchema = z.object({
+  mode: z.enum(["quick", "deep"]).optional(),
+  goalIntent: z.enum([...COMPETITION_GOALS, "explore", "skill"]).optional(),
+  goalResolution: z.enum(["confirmed", "undecided"]).optional(),
+  experienceStatus: z.enum(["provided", "none", "unknown"]).optional(),
+  experiences: z.array(z.object({
+    id: z.string().min(1).max(64),
+    task: z.string().trim().max(120).refine(value => !containsCompetitionNotePersonalInfo(value)),
+    contribution: z.enum(["observed", "assisted", "independent", "led", "unknown"]),
+    completion: z.enum(["learning", "draft", "delivered", "feedback", "unknown"]),
+    challenge: z.string().trim().max(120).refine(value => !containsCompetitionNotePersonalInfo(value)),
+    confirmed: z.boolean()
+  }).strict().refine(value => !value.confirmed || Boolean(value.task.trim()), "Confirmed experience needs a task")).max(2).refine(values => unique(values.map(value => value.id))).optional(),
+  noviceTaskPreferences: z.array(z.object({
+    task: z.enum(["organize-information", "explain-ideas", "observe-record", "make-content", "build-tool"]),
+    preference: z.enum(["try", "avoid", "unknown"])
+  }).strict()).max(5).refine(values => unique(values.map(value => value.task))).optional(),
+  budget: z.object({
+    range: z.enum(["zero", "under100", "100-500", "over500", "unknown"]),
+    maximumYuan: z.number().int().min(0).max(1000000).optional(),
+    scope: z.enum(["personal", "team", "unknown"])
+  }).strict().refine(isDecisionBudgetMaximumValid, "Budget maximum must match its range").optional(),
+  preparationHorizon: z.enum(["1-2-weeks", "one-month", "2-3-months", "long-term", "unknown"]).optional(),
   businessActivity: z.enum(businessActivityValues).optional(),
   fixedTeam: z.boolean().optional(),
   excludedTaskFormats: z.array(z.enum([...COMPETITION_TASK_FORMATS, "laboratory"])).max(11).refine(unique).optional(),
@@ -181,6 +205,7 @@ export const competitionRecentSignalKeysSchema = z
 
 const normalizedClarifyRequestSchema = z
   .object({
+    recommendationPolicy:z.literal("v7").optional(),
     aiConsent: aiConsentSchema,
     questionnaireToken: z.string().min(32).max(48 * 1024),
     recentSignalKeys: competitionRecentSignalKeysSchema.optional()
@@ -189,6 +214,7 @@ const normalizedClarifyRequestSchema = z
 
 const continuingClarifyRequestSchema = z
   .object({
+    recommendationPolicy:z.literal("v7").optional(),
     aiConsent: aiConsentSchema,
     conversationToken: z.string().min(32).max(48 * 1024),
     answer: competitionDynamicAnswerSchema,
@@ -211,6 +237,7 @@ const continuingClarifyRequestSchema = z
 
 const skipOptionalClarifyRequestSchema = z
   .object({
+    recommendationPolicy:z.literal("v7").optional(),
     aiConsent: aiConsentSchema,
     conversationToken: z.string().min(32).max(48 * 1024),
     action: z.literal("skip_optional"),
@@ -227,7 +254,9 @@ export const competitionClarifyRequestSchema = z.union([
 export const competitionRecommendRequestSchema = z
   .object({
     aiConsent: aiConsentSchema,
-    conversationToken: z.string().min(32).max(48 * 1024)
+    conversationToken: z.string().min(32).max(48 * 1024),
+    reportVersion: z.enum(["competition-recommendation.v6","competition-recommendation.v7"]).optional(),
+    decisionEdit: z.object({decisionToken:z.string().min(32).max(4096),expectedRevision:z.string().max(180),changedFields:z.array(z.string().max(80)).max(80)}).strict().optional()
   })
   .strict();
 

@@ -1,0 +1,52 @@
+Editorial - Panasonic Programming Contest 2025（AtCoder Beginner Contest 427）
+×
+Contest started
+Panasonic Programming Contest 2025（AtCoder Beginner Contest 427） has begun.
+Close
+×
+Contest is over
+Panasonic Programming Contest 2025（AtCoder Beginner Contest 427） has ended.
+Close
+Panasonic Programming Contest 2025（AtCoder Beginner Contest 427）
+English
+日本語
+English
+Sign Up
+Sign In
+Contest Duration:
+2025-10-11 21:00:00+0900 - 2025-10-11 22:40:00+0900 (local time)
+(100 minutes)
+Back to Home
+Top
+Tasks
+Clarifications
+Results
+All Submissions
+Standings
+Virtual Standings
+Editorial
+Discuss
+Official
+D - The Simple Game Editorial
+by  cn449
+Editorial for printing
+このようなゲームの問題では、後ろから勝敗の状態を解析するのが有効なことが多いです。
+各状態についてその状態が Alice が必勝の状態であるのか Bob が必勝の状態であるのか解析することを目指します。\(dp_{i, j}\) を Alice と Bob が合わせて \(i\) 回の操作を行い、駒が頂点 \(j\) にあるときに Alice が必勝の状態であるかの真偽値を表す変数とします。
+\(i = 2K, 2K - 1, \ldots, 1, 0\) の順に \(dp_{i, j}\) の計算を行います。
+まず、\(i = 2K\) のときは \(S_j =\) A ならば \(dp_{i, j}\) は true であり、\(S_j = \) B ならば \(dp_{i, j}\) は false です。
+\(i = 2K - 2, 2K - 4, \ldots, 2, 0\) のときは、次に行う Alice の操作に注目することになります。\(dp_{i + 1, v}\) が true であり頂点 \(j\) から頂点 \(v\) に向かう辺が存在するような \(v\) が存在するとき、\(dp_{i, j}\) は true になります。実際、\(i\) 回の操作後に頂点 \(j\) に駒があるとき Alice は頂点 \(v\) に駒を動かすことで勝つことができます。そうでないとき、\(dp_{i, j}\) は false です。
+同様に、\(i = 2K - 1, 2K - 3, \ldots, 3, 1\) のときは次に行う Bob の操作について考えることで、\(dp_{i + 1, v}\) が false であり頂点 \(j\) から頂点 \(v\) に向かう辺が存在するするような \(v\) が存在するとき \(dp_{i, j}\) は false であり、そうでないとき \(dp_{i, j}\) は true であるとわかります。
+最終的な答えは \(dp_{0, 1}\) の値によって決まります。dp の状態数が \(O(NK)\) であり、遷移はすべて合わせて \(O((N+M)K)\) 時間で行えるので適切な実装のもと十分高速です。
+実装例 （dp 配列を 1 次元にするなど、解説本文とは異なる記号を採用したりしている部分があります）
+posted:
+last update:
+Rule
+Glossary
+Terms of Use
+Privacy Policy
+Information Protection Policy
+Company
+FAQ
+Contact
+Copyright Since 2012 ©AtCoder Inc. All rights reserved.
+Page Top

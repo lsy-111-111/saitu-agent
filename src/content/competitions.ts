@@ -1048,7 +1048,7 @@ const recommendationProfiles = {
     difficulty: "challenge",
     weeklyHours: ["5-10", "over-10"],
     participationModes: ["unknown"],
-    teamRequirement: { state: "known", mode: "either" },
+    teamRequirement: { state: "known", mode: "team", minSize: 3, maxSize: 5 },
     usefulResources: ["mentor", "data"],
     schedule: unknownSchedule("https://www.ccpitcsc.org/eduxq/4857"),
     dataCompleteness: 0.72,
@@ -1340,8 +1340,8 @@ const legacyCompetitionEvidenceOverrides = {
     sourceUrl: "https://www.ccpitcsc.org/eduxq/4857", sourceType: "organizer",
     facts: ["identity", "stages", "teamRequirement", "eligibility"],
     stages: legacyStageSets.allHigherEducation, subjects: ["finance-accounting", "public-management"],
-    teamRequirement: { state: "known", mode: "either" }, participationModes: ["unknown"],
-    eligibilityState: "partial", eligibilityNotes: ["贸促会商业行业委员会当届通知确认高校组别，不同专业赛可采个人或团队形式。"], dataCompleteness: 0.84
+    teamRequirement: { state: "known", mode: "team", minSize: 3, maxSize: 5 }, participationModes: ["unknown"],
+    eligibilityState: "partial", eligibilityNotes: ["2026创新创业竞赛的五个学生赛道均为3—5名全日制在校学生与1—2名导师组成团队；教师个人赛不是学生参赛路径，其他专业赛和新届条件另核。"], dataCompleteness: 0.84
   },
   "mechanical-innovation-design": {
     sourceUrl: "https://umic.moocollege.com/home/newsContain/detail?newsId=102880",

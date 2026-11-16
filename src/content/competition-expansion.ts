@@ -1004,13 +1004,10 @@ export const expansionCompetitionSpecs = [
     deliverable: "研究论文、实验记录和答辩材料",
     suitableFor: ["生物、医学、农学等相关本科生", "具备实验研究基础的团队", "可持续记录研究过程与原始数据的参赛者"],
     stages: { state: "known", values: ["vocational", ...undergraduateStages] },
-    teamRequirement: { state: "known", mode: "team", maxSize: 5 },
+    teamRequirement: { state: "known", mode: "team" },
     eligibilityState: "verified",
-    eligibilityNotes: ["2026年科学探究类官方通知确认参赛者为全日制非成人教育高校在校本、专科生，每队不超过5名学生，可跨学院和跨校组队。"],
-    blockingClarifications: [
-      "每名选手当届是否仅加入1支参赛队伍尚未确认。",
-      "参赛者在校期间参加该竞赛是否未超过2次尚未确认。"
-    ],
+    eligibilityNotes: ["科学探究与创新创业属于不同届次和规则范围；学历、5人/6人上限及参赛次数分别由具体赛道合同判断，不能借用相邻类别。"],
+    blockingClarifications: [],
     additionalDataNotices: ["学校当届参赛确认与统一报名属于提交流程，请按所在学校通知办理。"],
     requiresFullTime: true,
     sameInstitutionTeam: false,
@@ -1066,9 +1063,9 @@ export const expansionCompetitionSpecs = [
     deliverable: "BIM模型、工程文档和成果汇报",
     suitableFor: ["土木、建筑、工程管理相关学生", "正在完成毕业设计的项目团队", "熟悉BIM软件和协同流程的参赛者"],
     stages: { state: "known", values: collegiateStages },
-    teamRequirement: { state: "known", mode: "team", minSize: 3, maxSize: 5 },
+    teamRequirement: { state: "unknown" },
     eligibilityState: "partial",
-    eligibilityNotes: ["2025—2026年赛制文件覆盖中职、高职、本科和研究生，每队3至5人，研究生同队不超过2人；当前学段枚举不含中职，不将中职误映射为高职。"],
+    eligibilityNotes: ["资格来源为2025—2026旧规；目录第13届资料仅能支持河北大学A—H模块的3—5人要求，I—J另列，当前跨届与未选模块人数待核，不用旧上限过滤新模块。"],
     schedule: {
       state: "scheduled", edition: "2025—2026", competitionStart: "2025-09", competitionEnd: "2026-05",
       datePrecision: "month", verifiedAt: COMPETITION_EXPANSION_VERIFIED_AT,

@@ -1,0 +1,351 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>4C2026参赛作品提交要求（11大类，4月17日）-中国大学生计算机设计大赛</title><meta name="pageType" content="3">
+<meta name="pageTitle" content="4C2026参赛作品提交要求（11大类，4月17日）">
+<META Name="keywords" Content="中国大学生计算机设计大赛,资料下载,参赛作品,提交要求" />
+<META Name="description" Content="4C大赛参赛作品提交要求" />
+
+<link href="../../css/style.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="../../js/jquery.min.js"></script>
+<link rel="icon" href="../../images/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">
+jQuery.browser={};(function(){jQuery.browser.msie=false; jQuery.browser.version=0;if(navigator.userAgent.match(/MSIE ([0-9]+)./)){ jQuery.browser.msie=true;jQuery.browser.version=RegExp.$1;}})();
+</script>
+
+
+
+<!--Announced by Visual SiteBuilder 9-->
+<script language="javascript" src="../../_sitegray/_sitegray.js"></script>
+<!-- CustomerNO:77656262657232307e7847525255574200050000435d -->
+<link rel="stylesheet" type="text/css" href="../../content.vsb.css" />
+<script type="text/javascript" src="/system/resource/js/counter.js"></script>
+<script type="text/javascript">_jsq_(1045,'/content.jsp',2013,1825439128)</script>
+</head>
+<body>
+<div class="wid100 fl">
+    <div class="top">
+        
+<a href="https://2026.jsjds.com.cn/" target="_blank" class="logo"><img src="../../images/new-logo.JPG"></a>
+        <div class="top-right fr">
+               <script language="javascript" src="/system/resource/js/dynclicks.js"></script><script language="javascript" src="/system/resource/js/openlink.js"></script>
+            <!-- 3.1.3版本 -->
+
+
+
+<script language="javascript" src="/system/resource/js/base64.js"></script><script language="javascript" src="/system/resource/vue/vue.js"></script><script language="javascript" src="/system/resource/vue/bluebird.min.js"></script><script language="javascript" src="/system/resource/vue/axios.js"></script><script language="javascript" src="/system/resource/vue/polyfill.js"></script><script language="javascript" src="/system/resource/vue/token.js"></script><LINK href="/system/resource/vue/static/element/index.css" type="text/css" rel="stylesheet"><script language="javascript" src="/system/resource/vue/static/element/index.js"></script><script language="javascript" src="/system/resource/vue/static/public.js"></script><script language="javascript" src="/system/resource/openapp/search/js/containsHtmlTags.js"></script><script language="javascript" src="/system/resource/openapp/search/layui/layui.js"></script><style>
+    #appu2 .qwss{
+        height: 31px;
+        font-size: 12px;
+        min-width: 190px;
+        max-width: 600px;
+        width: 60%;
+        margin-top: -15px;
+        outline: none;
+        padding-left: 10px;
+        border-radius: 2px;
+        border: 1px solid #e4e7ed;}
+    #appu2 .tj{
+        padding-left: 6px;
+        letter-spacing: 5px;
+        color: white;
+        min-width: 53px;
+        max-width: 150px;
+        height: 32px;
+        border: 0;
+        border-radius: 2px;
+        background-color: #1890FF;
+        position: relative;
+        top: 1px;
+        width: 20%;
+        margin-top: -15px;}
+</style>
+<div id="divu2"></div>
+<script type="text/html" id="htmlu2">
+    <div id="appu2">
+        <div v-if="!isError">
+        
+        
+        <div class="search fr">
+                <input  class="search-input" value="请输入搜索内容..." autocomplete=off v-model=query.keyWord @keyup.enter="onSubmit"> 
+                <input name="search-btn" type="image" class="search-btn" src="../../images/search-btn.png" v-on:click="onSubmit()"/>
+            </div>
+        
+        </div>
+        <div v-if="isError" style="color: #b30216; font-size:18px;text-align: center;padding:20px;">
+            应用维护中！
+        </div>
+    </div>
+</script>
+<script>
+    $("#divu2").html($("#htmlu2").text());
+</script>
+<script>
+    var appOwner = "1825439128";
+    var token = gettoken(10);
+    var urlPrefix = "/aop_component/";
+
+    jQuery.support.cors = true;
+    $.ajaxSetup({
+        beforeSend: function (request, settings) {
+            request.setRequestHeader("Authorization", token);
+            request.setRequestHeader("owner", appOwner);
+        }
+    });
+
+    new Vue({
+        el: "#appu2",
+        data: function () {
+            return {
+                query: {
+                    keyWord: "",//搜索关键词
+                    owner: appOwner,
+                    token: token,
+                    urlPrefix: urlPrefix,
+                    lang:"i18n_zh_CN"
+                },
+                isError: false
+            }
+        },
+        mounted: function () {
+            var _this = this;
+            // _this.init();
+        },
+        methods: {
+            init: function(){
+                $.ajax({
+                    url: "/aop_component//webber/search/test",
+                    type: "get",
+                    success: function (response) {
+                        if (response.code == "0000") {
+                        } else if (response.code == "220") {
+                            _this.isError = true;
+                            console.log(response);
+                        } else if (!response.code) {
+                            _this.isError = true;
+                            console.log(response);
+                        }
+                    },
+                    error: function (response) {
+                        _this.isError = true;
+                    }
+                });
+            },
+            onSubmit: function (e) {
+                var url = "/aop_views/search/modules/resultpc/soso.html";
+                if ("10" == "1" || "10" == "2") {
+                    url = "" + url;
+                }
+                var _this = this;
+                var query = _this.query;
+                if (url.indexOf("?") > -1) {
+                    url = url.split("?")[0];
+                }
+                if (query.keyWord) {
+                    var query = new Base64().encode(JSON.stringify(query));
+                    window.open(url + "?query=" + query);
+                } else {
+                    alert("请填写搜索内容")
+                }
+            },
+        }
+    })
+</script>
+
+<script>
+   var appElementu2 = document.querySelector("#appu2");
+   if (appElementu2 && appElementu2.__vue__) {
+
+   } else {
+      $("#divu2").html($("#htmlu2").text());
+      var appOwner = "1825439128";   
+      var urlPrefix = "/aop_component/";
+      var ifLogin="";
+      var token = ifLogin=='true'?gettoken(10, true).trim():'tourist';
+      if (containsHtmlTags(token) || !token) { 
+         token = 'tourist';
+      }
+      jQuery.support.cors = true;
+      $.ajaxSetup({
+        beforeSend: function (request, settings) {
+            request.setRequestHeader("Authorization", token);
+            request.setRequestHeader("owner", appOwner);
+        }
+      });
+      var queryInfou2 = {
+        query: {
+            keyWord: "",//搜索关键词
+            owner: appOwner,
+            token: token,
+            urlPrefix: urlPrefix,
+            lang:"i18n_zh_CN"
+        },
+        isError: false
+      };
+      function keyUpFunu2(e){
+        var theEvent = e || window.event;
+        var keyCode = theEvent.keyCode || theEvent.which || theEvent.charCode;
+        if(keyCode == 13){
+          onSubmitu2();
+        }
+      };
+
+      function onSubmitu2(e) {
+        queryInfou2.query.keyWord= $("#appu2  .qwss").val();
+        
+        var url = "/aop_views/search/modules/resultpc/soso.html";      
+        if ("10" == "1" || "10" == "2") {
+           url = "" + url;
+        }
+        var query = queryInfou2.query;
+        if (url.indexOf("?") > -1) {
+            url = url.split("?")[0];
+        }
+        if (query.keyWord) {
+            var query = new Base64().encode(JSON.stringify(query));
+            window.open(url + "?query=" + query);
+        } else {
+            alert("请填写搜索内容")
+        }
+      };
+   }
+</script>
+        </div>
+    </div>
+</div> 
+<div class="menu-nav fl">
+    <div id="menu">    
+      <ul class="l1-nav">    
+        <li class="l1-nav">  
+          <a class="l1-nav" href="../../index.htm">首页</a>
+        </li>
+        <li class="l1-nav">  
+          <a class="l1-nav" href="../../dsdt.htm">大赛动态</a>
+        </li>
+        <li class="l1-nav">  
+          <a class="l1-nav" href="../../wjss.htm">往届赛事</a>
+        </li>
+        <li class="l1-nav">  
+          <a class="l1-nav" href="../../gyds1/dsjj.htm">关于大赛</a>
+          <ul class="l2-nav">       
+            <li class="l2-nav"><a class="l2-nav" href="../../gyds1/dsjj.htm">大赛简介</a></li>
+            <li class="l2-nav"><a class="l2-nav" href="../../gyds1/csyq.htm">参赛要求</a></li>
+            <li class="l2-nav"><a class="l2-nav" href="../../gyds1/lxfs.htm">联系方式</a></li>
+            <li class="l2-nav"><a class="l2-nav" href="../../gyds1/wyds.htm">我与大赛</a></li>
+          </ul>
+        </li>
+        <li class="l1-nav">  
+          <a class="l1-nav" href="../../zlxz.htm">资料下载</a>
+        </li>
+        <li class="l1-nav">  
+          <a class="l1-nav" href="../../gsjs1.htm">国赛决赛</a>
+          <ul class="l2-nav">       
+            <li class="l2-nav"><a class="l2-nav" href="../../gsjs1/shjsq.htm">上海决赛区</a></li>
+            <li class="l2-nav"><a class="l2-nav" href="../../gsjs1/hzjsq.htm">杭州决赛区</a></li>
+            <li class="l2-nav"><a class="l2-nav" href="../../gsjs1/njnjsq.htm">南京南决赛区</a></li>
+            <li class="l2-nav"><a class="l2-nav" href="../../gsjs1/njd2jsq.htm">南京东2决赛区</a></li>
+            <li class="l2-nav"><a class="l2-nav" href="../../gsjs1/jnjsq.htm">济南决赛区</a></li>
+            <li class="l2-nav"><a class="l2-nav" href="../../gsjs1/njd1jsq.htm">南京东1决赛区</a></li>
+          </ul>
+        </li>
+
+</ul>
+    
+    </div>  
+</div> 
+    <div class="list-banner">
+    <img src="../../images/banner11.PNG" style="width:100%" />
+</div>
+
+
+<div class="mainWrap cleafix">
+    <div class="main w1000">
+            <div class="local fl">
+                <h3>
+资料下载</h3>
+                <div class="dqwz">
+                        <a href="../../index.htm">首页</a>
+                >
+                <a href="../../zlxz.htm">资料下载</a>
+                >
+                正文
+</div>
+
+            </div>
+            
+
+<script language="javascript" src="../../_dwr/interface/NewsvoteDWR.js"></script><script language="javascript" src="../../_dwr/engine.js"></script><script language="javascript" src="/system/resource/js/news/newscontent.js"></script><script language="javascript" src="/system/resource/js/news/zepto.min.js"></script><script language="javascript" src="/system/resource/js/ajax.js"></script><LINK href="/system/resource/js/photoswipe/photoswipe.css" type="text/css" rel="stylesheet"><LINK href="/system/resource/js/photoswipe/default-skin.css" type="text/css" rel="stylesheet"><script language="javascript" src="/system/resource/js/photoswipe/photoswipe.min.js"></script><script language="javascript" src="/system/resource/js/photoswipe/photoswipe-ui-default.min.js"></script><script language="javascript" src="/system/resource/contentImgPreview/js/preview.js"></script>
+<script>window.addEventListener('load', function(){getImages('#vsb_content')})</script>
+<form name="_newscontent_fromname">
+
+<div class="content">
+    <div class="content-title">
+                    <h3><p>中国大学生计算机设计大赛参赛作品提交要求及文档模板（2026版）</p></h3>
+                    <i>发布者：&nbsp;&nbsp;时间：2026-04-17&nbsp;&nbsp;浏览：<script>_showDynClicks("wbnews", 1825439128, 2013)</script></i>
+   </div>
+   
+ 
+    <div id="vsb_content" class="content-con"><div class="v_news_content">
+<p style="text-indent: 2em; margin-top: 5px; margin-bottom: 5px; line-height: normal;"><br></p><p style="line-height: normal; text-indent: 2em;"><span style="text-indent: 2em;">中国大学生计算机设计大赛（简称“大赛”或4C）是全国普通高校大学生竞赛排行榜榜单和计算机类竞赛指数榜单的赛事。大赛开始于2008年，是我国最早面向高校本科生的赛事之一，由教育部计算机相关教指委发起举办。大赛的目的是以赛促学、以赛促教、以赛促产、以赛促创、以赛育人，为国家培养德智体美劳全面发展的</span>应用型<span style="text-indent: 2em;">、复合型、</span>创新型<span style="text-indent: 2em;">人才服务。</span></p><p style="line-height: normal; text-indent: 2em;">2026年（第19届）中国大学生计算机设计大赛的竞赛内容分为11个大类，分设上海、杭州<span style="text-indent: 2em;">、南京南、南京东2、济南和南京东1共6个国赛决赛区，全部采取线下答辩方式，依次开展竞赛的时间为7月17日-21日（上海）、7月22日-26日（</span>浙江杭州<span style="text-indent: 2em;">）、7月27日-31日（安徽合肥）、</span><span style="text-indent: 2em;">8月6</span><span style="text-indent: 2em;">日-10</span><span style="text-indent: 2em;">日（吉林长春）</span><span style="text-indent: 2em;">、8月11日-15日（山东青岛）和8月16日-20日（江苏无锡）。</span></p><p style="line-height: normal; text-indent: 2em;">大赛参赛作品分为11个大类，包括软件应用与开发、微课与AI辅助教学、物联网应用与物联网创新转化（创业实践）、大数据应用、人工智能应用、信息可视化设计、数媒静态设计、数媒动漫与短片、数媒游戏与交互设计、计算机音乐创作和国际生“汉学”。</p><p style="line-height: normal; text-indent: 2em;">2026年（第19届）中国大学生计算机设计大赛的作品提交要求及文档模板的下载链接如下： &nbsp; &nbsp;<br> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;链接：<a href="https://pan.baidu.com/s/1MyON-TK_lXrcG7xXcmkORg?pwd=aaaa"></a><a href="https://pan.baidu.com/s/1zfrpvxbhLST85X87zCxH_Q?pwd=1111" target="_self"></a><a href="https://pan.baidu.com/s/1N-fUhs2cK6e4KO1IiDXV3w?pwd=1111" target="_blank">https://pan.baidu.com/s/1N-fUhs2cK6e4KO1IiDXV3w?pwd=1111</a>提取码: 1111</p>
+</div></div><div id="div_vote_id"></div>
+    
+    
+    
+    
+  
+</div>
+</form>
+
+
+        
+    </div>
+</div>
+
+
+<div class="foot fl">
+    <div class="wid1000">
+        <!-- 版权内容请在本组件"内容配置-版权"处填写 -->
+
+
+<div class="foot-left fl">
+<p>版权所有©中国大学生计算机设计大赛组织委员会&nbsp; &nbsp; 网站建设：北京语言大学信息科学学院； 技术支持：北京语言大学信息化办公室</p>
+</div>
+
+ 
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

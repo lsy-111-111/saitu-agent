@@ -20,7 +20,7 @@ const REQUIRED_COORDINATOR_PATH = "/usr/local/lib/resume-ai/run-release-evidence
 const REQUIRED_DEEPSEEK_VERIFIER_PATH = "/usr/local/lib/resume-ai/release-evidence-deepseek-verifier.mjs";
 const REQUIRED_TESTS_PATH = "/usr/local/lib/resume-ai/release-required-tests.json";
 const REQUIRED_TESTS_MEMBER = "ops/config/release-required-tests.json";
-const REQUIRED_TEST_POLICY_SHA256 = "69e7f409a3a07b7bcec7805032041a18051b1ca7f8e3842787414af103947321";
+const REQUIRED_TEST_POLICY_SHA256 = "d8031d1299a5ad211bef18e0083d2db6ecd76080ac706379acdf0e5eb7152bae";
 const REQUIRED_EVIDENCE_GENERATIONS_ROOT = "/var/lib/resume-ai/release-evidence-generations";
 const EVIDENCE_SIGNING_PUBLIC_KEY = "/etc/resume-ai/release-evidence-signing.pub";
 const LINUX_GENERATION_MANIFEST = "linux-validation-artifact-manifest.txt";
@@ -31,11 +31,13 @@ const REQUIRED_TEST_MANIFEST_LIMIT_BYTES = 1024 * 1024;
 const REQUIRED_TEST_RECEIPT_LIMIT_BYTES = 16 * 1024 * 1024;
 const DEPENDENCY_PROVENANCE_RECEIPT_LIMIT_BYTES = 16 * 1024 * 1024;
 const PROJECT_TOOLCHAIN_POLICY_ID = "resume-ai-project-toolchain.v1";
-const PROJECT_TOOLCHAIN_POLICY_SHA256 = "5f0a44a4d5106af0095a4d73e0e2498d9b6d88c67a79d98c5f626fd5fcda2adb";
+const PROJECT_TOOLCHAIN_POLICY_SHA256 = "e68d2edc17fed848575cd62b528a1e224735953eea0cb6819a008a586b56e636";
 const TRUSTED_DEPENDENCY_INPUTS = [
-  { path: "package.json", sha256: "d1af29380ea26fc3057eee45150b217f6d8163fee6625e293ac8796346cef488" },
-  { path: "pnpm-lock.yaml", sha256: "528fe4316b80f1cdc3665303b967d25fc01b43f55cde03a1b9eb4693bc362db7" },
-  { path: "pnpm-workspace.yaml", sha256: "e75f844f4a9a6e0f9b39809bf2e249625a3ce20590c40107f25dfa720aa451a5" }
+  { path: "package.json", sha256: "9cc16eab9219c3f1f6c944dcdf1cd8c13f2e9d2eadd297dcfc2cd195bca70260" },
+  { path: "pnpm-lock.yaml", sha256: "e2c3672ee797b690bba9f39ba9cb45ba55d13ed8b927bc392e67502309d4b0b9" },
+  { path: "pnpm-workspace.yaml", sha256: "43b2e5babda0acd9c89dfde3a92d8e5aeedd487a3b7e5c0b311984dc37f762d3" },
+  { path: "vitest.config.ts", sha256: "a32d057bc2e6fd44bb7b9e0df656794f6bd176bfa7232f4a5ac090ff4b9422a5" },
+  { path: "tests/fixtures/mock-spend-ledger.setup.ts", sha256: "496e4764ef52cb24c5f4b54221883936e9f28e609e6c20a0fb26b5e8358f8c9a" }
 ];
 const TRUSTED_PROJECT_TOOLS = [
   { id: "eslint", packageName: "eslint", packagePath: "node_modules/eslint", version: "8.57.1", binName: "eslint", binTarget: "bin/eslint.js" },
@@ -46,10 +48,44 @@ const TRUSTED_PROJECT_TOOLS = [
   { id: "vitest", packageName: "vitest", packagePath: "node_modules/vitest", version: "3.2.6", binName: "vitest", binTarget: "vitest.mjs" }
 ];
 const REQUIRED_TEST_CATEGORIES = new Set([
-  "followups-0", "followups-1", "followups-2", "followups-3", "pure-text-max-10",
-  "shared-nat-50", "threshold-429-recovery", "token-forgery", "token-expiry",
-  "token-replay", "token-cross-session", "queue-full-fallback", "quota-config-consistency",
-  "desktop-e2e", "mobile-e2e"
+  "desktop-e2e",
+  "followups-0",
+  "followups-1",
+  "followups-2",
+  "followups-3",
+  "mobile-e2e",
+  "pure-text-max-10",
+  "queue-full-fallback",
+  "quota-config-consistency",
+  "shared-nat-50",
+  "threshold-429-recovery",
+  "token-cross-session",
+  "token-expiry",
+  "token-forgery",
+  "token-replay",
+  "v7-algorithm",
+  "v7-backend-review",
+  "v7-browser-desktop",
+  "v7-browser-mobile",
+  "v7-catalog",
+  "v7-chat-adoption",
+  "v7-chat-grounding",
+  "v7-crypto",
+  "v7-durable-state",
+  "v7-group-persistence",
+  "v7-governor-cap",
+  "v7-native-pg14",
+  "v7-profile",
+  "v7-release-evidence",
+  "v7-test-environment",
+  "v7-v7-worker-ops",
+  "v7-effort-release",
+  "v7-effort-persistence",
+  "v7-original-clock",
+  "v7-effort-evaluation",
+  "v7-effort-fixed-budget",
+  "v7-effort-browser",
+  "v7-provenance-boundary"
 ]);
 const REQUIRED_TEST_IDS = [
   "followups-0-desktop",
@@ -70,10 +106,337 @@ const REQUIRED_TEST_IDS = [
   "queue-8-active-32-waiting",
   "queue-full-deterministic-fallback",
   "root-quota-generation-consistency",
-  "nginx-three-endpoint-consistency"
+  "nginx-three-endpoint-consistency",
+  "v7-algorithm-d90f542784c2",
+  "v7-algorithm-17e808efede0",
+  "v7-algorithm-5e579290a076",
+  "v7-algorithm-e38c0ef291ec",
+  "v7-algorithm-57d5a7436a12",
+  "v7-algorithm-86f4ca7416f3",
+  "v7-algorithm-9428a6ee3b63",
+  "v7-algorithm-51b15d41862d",
+  "v7-algorithm-ccc5bf1e58a3",
+  "v7-algorithm-6ac75e60b9f1",
+  "v7-algorithm-c09d841dc0f9",
+  "v7-algorithm-e9244e7bf321",
+  "v7-algorithm-9cc210633a89",
+  "v7-algorithm-6659c66addd5",
+  "v7-algorithm-e7c52595f37c",
+  "v7-algorithm-95b306d7f356",
+  "v7-algorithm-49d6a836a09e",
+  "v7-algorithm-12aad4f98a3e",
+  "v7-algorithm-5a7bbd509e0d",
+  "v7-algorithm-1fb19dd3e59c",
+  "v7-algorithm-8d17889d9644",
+  "v7-backend-review-b0b8680c41ab",
+  "v7-backend-review-3f0a907f950f",
+  "v7-backend-review-b4e52cebc473",
+  "v7-backend-review-3443413efb53",
+  "v7-backend-review-56a9a16a50a6",
+  "v7-backend-review-09969ad608ba",
+  "v7-backend-review-393ae91bebcb",
+  "v7-backend-review-9863bd91512a",
+  "v7-backend-review-bc366547deb7",
+  "v7-backend-review-bdbac93c080d",
+  "v7-backend-review-c32e38ef466d",
+  "v7-backend-review-99f16202cc4d",
+  "v7-backend-review-68e8b5f08afb",
+  "v7-backend-review-0998b8bee015",
+  "v7-backend-review-2f69f6b35b8e",
+  "v7-backend-review-c37ee76c7699",
+  "v7-backend-review-82867831b5fe",
+  "v7-backend-review-860204bc79b2",
+  "v7-backend-review-dbd9cd9e74f9",
+  "v7-backend-review-ea571d732d7c",
+  "v7-backend-review-063e2a925486",
+  "v7-backend-review-d18e5a1eb1cf",
+  "v7-backend-review-d0a48abb3bde",
+  "v7-backend-review-947566117329",
+  "v7-backend-review-8a21d1cd046c",
+  "v7-backend-review-313739550184",
+  "v7-backend-review-7250a3793c8f",
+  "v7-backend-review-26a9b268caf9",
+  "v7-backend-review-c9b72b103468",
+  "v7-backend-review-9dde43b6b534",
+  "v7-backend-review-9052c2a947c4",
+  "v7-catalog-650c55fc1b54",
+  "v7-catalog-2cc28bef1307",
+  "v7-catalog-35c6dc0acde6",
+  "v7-catalog-c46e0707942e",
+  "v7-catalog-17b7c5fc4973",
+  "v7-catalog-f51fca9e9e94",
+  "v7-catalog-0aa9467edc6a",
+  "v7-catalog-3de5874c152b",
+  "v7-catalog-32434f7f60c7",
+  "v7-catalog-612192b17a96",
+  "v7-catalog-5adfde2dc032",
+  "v7-catalog-84ba5df11818",
+  "v7-catalog-ca091894fbe1",
+  "v7-catalog-f3aab8ec2e1f",
+  "v7-catalog-3c943e03cbce",
+  "v7-chat-adoption-79f7533b6cfc",
+  "v7-chat-adoption-4d2c9343e341",
+  "v7-chat-adoption-f4a88854474d",
+  "v7-chat-adoption-8dc17d7d1b79",
+  "v7-chat-adoption-5315180c8a18",
+  "v7-chat-adoption-2b7c849f3267",
+  "v7-chat-adoption-692d10190c20",
+  "v7-chat-adoption-99149e3e5094",
+  "v7-chat-adoption-31f2fb2fb4cb",
+  "v7-chat-adoption-3af31866bbb9",
+  "v7-chat-adoption-6c4cf3afcfcb",
+  "v7-chat-adoption-e3581d42e2de",
+  "v7-chat-adoption-fb3c4adf8712",
+  "v7-chat-adoption-9d2748b06200",
+  "v7-chat-adoption-320bc8b76e7d",
+  "v7-chat-adoption-0ee812231cc3",
+  "v7-chat-adoption-7bb27be26c46",
+  "v7-chat-adoption-2add34a6de6d",
+  "v7-chat-adoption-56c1f5e17b00",
+  "v7-chat-adoption-d6063127d1eb",
+  "v7-chat-adoption-1273b1387b5e",
+  "v7-chat-adoption-df0c9836795e",
+  "v7-chat-adoption-c8f83cb5c3f9",
+  "v7-chat-adoption-7711022d8772",
+  "v7-chat-adoption-a98c5bba1f2d",
+  "v7-chat-adoption-f766b48ef04c",
+  "v7-chat-adoption-688361d5373c",
+  "v7-chat-adoption-dad76a12d76a",
+  "v7-chat-adoption-79a2a7fbec3c",
+  "v7-chat-adoption-2784244149bf",
+  "v7-chat-adoption-76635230e3c2",
+  "v7-chat-adoption-734957ed1a15",
+  "v7-chat-grounding-ee52ff15d880",
+  "v7-chat-grounding-1e729e0c3e8e",
+  "v7-chat-grounding-b62709e0961b",
+  "v7-chat-grounding-d0a3baf54d81",
+  "v7-crypto-4105b0a6f4ed",
+  "v7-crypto-40ec1d05c3d2",
+  "v7-durable-state-d4ede1176d6f",
+  "v7-durable-state-22c67872bd15",
+  "v7-durable-state-55929b46b934",
+  "v7-profile-88096520b51d",
+  "v7-profile-7b94d9b8170c",
+  "v7-profile-5adf482e1473",
+  "v7-profile-8fa40ead8eff",
+  "v7-profile-99091f468c3f",
+  "v7-profile-a3dbeb64d7bf",
+  "v7-profile-336dfa235f4d",
+  "v7-profile-f8247778e50e",
+  "v7-profile-e836b640a9c2",
+  "v7-profile-ffc927ec2b29",
+  "v7-profile-b1e67d68fbed",
+  "v7-profile-32426944c76b",
+  "v7-profile-9a96abbd5ceb",
+  "v7-profile-8fff66ed1ec9",
+  "v7-profile-0dabafd56c41",
+  "v7-profile-1b8c0116769f",
+  "v7-test-environment-467f73ae6729",
+  "v7-test-environment-7a281f546aea",
+  "v7-test-environment-72ba0beafdbc",
+  "v7-native-pg14-90e6cc5925ee",
+  "v7-native-pg14-f4f09b9c8112",
+  "v7-native-pg14-7967780cb025",
+  "v7-native-pg14-570cb2b3f0d0",
+  "v7-native-pg14-8f90331a868b",
+  "v7-native-pg14-1336e33dcb83",
+  "v7-native-pg14-3168dedc9cab",
+  "v7-native-pg14-d33150989391",
+  "v7-native-pg14-5934e43b877c",
+  "v7-native-pg14-1ec25978cd85",
+  "v7-native-pg14-10aa8d4188bb",
+  "v7-native-pg14-befd382eefd8",
+  "v7-native-pg14-1e63e8c19332",
+  "v7-v7-worker-ops-b54b837ccc42",
+  "v7-v7-worker-ops-27d0a6329612",
+  "v7-v7-worker-ops-579a51a2b683",
+  "v7-v7-worker-ops-c12bd9aa0b0b",
+  "v7-v7-worker-ops-3f79e299808e",
+  "v7-v7-worker-ops-2b7a00a61ecf",
+  "v7-browser-6a04050a1f9b",
+  "v7-browser-f0a6110c8124",
+  "v7-browser-c9c531cbdff1",
+  "v7-browser-95db7727665f",
+  "v7-browser-615484270e69",
+  "v7-browser-01ccadf3a440",
+  "v7-browser-3a92b4791303",
+  "v7-browser-4994938bd22a",
+  "v7-browser-25280dd456d3",
+  "v7-browser-e483941462de",
+  "v7-release-evidence-9da43b4a960f",
+  "v7-release-evidence-1a854f1400d3",
+  "v7-release-evidence-4755fb1d1fe9",
+  "v7-release-evidence-4081868e7f5c",
+  "v7-release-evidence-fbd78eb40189",
+  "v7-group-persistence-b04cec391c2a",
+  "v7-group-persistence-6703fc9adbc4",
+  "v7-group-persistence-d9758cba65d6",
+  "v7-group-persistence-79ee6044c8da",
+  "v7-group-persistence-cf6fe99ebfc8",
+  "v7-group-persistence-1c943008992a",
+  "v7-group-persistence-d78af9cae58a",
+  "v7-group-persistence-fb7efed95092",
+  "v7-group-persistence-0b44cbf9ea45",
+  "v7-group-persistence-8dec37dfd817",
+  "v7-group-persistence-4cea175ff945",
+  "v7-group-persistence-a9d10bb7f068",
+  "v7-group-persistence-afe528eaac59",
+  "v7-governor-cap-c64c03f21a0f",
+  "v7-governor-cap-b50928eccadc",
+  "v7-governor-cap-bf42bdb46326",
+  "v7-governor-cap-8eb8caa5c22d",
+  "v7-governor-cap-013d5399e68a",
+  "v7-governor-cap-7e5e717c7685",
+  "v7-governor-cap-66b95a98bdcf",
+  "v7-governor-cap-28e15e908695",
+  "v7-governor-cap-0e4f141463ca",
+  "v7-governor-cap-2b6f40fab6cc",
+  "v7-governor-cap-89eee601af28",
+  "v7-governor-cap-d924a74834de",
+  "runtime-layout-anchor-fresh",
+  "runtime-layout-anchor-adopt",
+  "runtime-layout-anchor-private-access",
+  "runtime-layout-anchor-unsafe-metadata",
+  "runtime-layout-anchor-shared-orphan",
+  "v7-reservation-scope-3026ebee592e",
+  "v7-reservation-scope-ba14f486a1de",
+  "v7-reservation-scope-132c26aaaa1d",
+  "v7-reservation-scope-8143b6fedc9e",
+  "v7-reservation-scope-97142fda29cd",
+  "v7-reservation-scope-86832f48f1d0",
+  "v7-reservation-scope-b6e7ba731ea0",
+  "v7-rank-hard-cutoff-45",
+  "v7-effort-release-da38013887b9",
+  "v7-effort-release-ebba65443cdf",
+  "v7-effort-release-8f1cd8c94c42",
+  "v7-effort-release-9ea14944132c",
+  "v7-effort-release-c4fe724ba2a6",
+  "v7-effort-release-fe4c8234fca2",
+  "v7-effort-release-7aa65af8be2c",
+  "v7-effort-release-97dcb0f1a941",
+  "v7-effort-release-ab239c46463d",
+  "v7-effort-release-6a8b090c6963",
+  "v7-native-stage-effort",
+  "v7-effort-pg-4d0df62f0896",
+  "v7-effort-pg-a9f0e82a5599",
+  "v7-effort-pg-eaefd32f026e",
+  "v7-effort-pg-a6e28726bc01",
+  "v7-effort-pg-f6b37e5be8cd",
+  "v7-effort-pg-12eb2a5dc606",
+  "v7-effort-pg-9271f5d06b67",
+  "v7-effort-pg-edf1a2e7fdec",
+  "v7-effort-pg-eff653d2ee14",
+  "v7-effort-pg-8d13c163dff2",
+  "v7-effort-pg-f0df565abacb",
+  "v7-effort-pg-0155f26900f2",
+  "v7-effort-pg-06dc3d415382",
+  "v7-effort-pg-596208a3f8ea",
+  "v7-effort-pg-2323a58b8d24",
+  "v7-effort-pg-d02ddfb69295",
+  "v7-effort-pg-49f24a6be008",
+  "v7-effort-pg-a554546b99a0",
+  "v7-effort-pg-89190ebe56a8",
+  "v7-clock-d2fa28fad013",
+  "v7-clock-55313fbe326d",
+  "v7-clock-023a76a3c34e",
+  "v7-clock-adad1769dcda",
+  "v7-clock-25c369f31366",
+  "v7-clock-2a383dbebbd4",
+  "v7-effort-eval-595bc5c6a815",
+  "v7-effort-eval-8fc10fcd3ce5",
+  "v7-effort-eval-c5659acb9969",
+  "v7-effort-eval-090ee75bc024",
+  "v7-effort-eval-f74d7b1a1b43",
+  "v7-effort-eval-9309d6ec6523",
+  "v7-effort-eval-86817c62d8e8",
+  "v7-effort-eval-26058f304d7c",
+  "v7-effort-eval-baf179c7c8c5",
+  "v7-effort-fixed-pg-75facddf4d55",
+  "v7-effort-fixed-pg-b6fe8f97a163",
+  "v7-effort-fixed-pg-9545776549c1",
+  "v7-effort-fixed-pg-5821b44a0727",
+  "v7-effort-closure-41ff95d8289f",
+  "v7-effort-closure-ac1e93985d9b",
+  "v7-effort-closure-87b2537c5031",
+  "v7-effort-closure-28cbdac51547",
+  "v7-effort-closure-b9c73e5e4d19",
+  "v7-effort-closure-fb4dba586805",
+  "v7-effort-closure-1a60ffaad480",
+  "v7-effort-closure-df88c36b107f",
+  "v7-effort-closure-312766eea2a4",
+  "v7-effort-closure-80f7d8a3bc94",
+  "v7-effort-closure-f40a6a56764e",
+  "v7-provenance-official-editorial-review",
+  "v7-provenance-same-id-source-boundary",
+  "v7-provenance-wire-official-relabel-refused",
+  "v7-provenance-wire-optional-method-retained",
+  "v7-provenance-wire-general-role-retained",
+  "v7-provenance-wire-unfounded-bound-refused",
+  "v7-provenance-novel-conditions-review",
+  "v7-provenance-wire-novel-conditions-refused",
+  "v7-provenance-wire-exact-section-retained",
+  "v7-effort-build-default-policy",
+  "v7-effort-build-explicit-environment",
+  "v7-effort-build-fingerprint-rejection",
+  "v7-generation-exact-official-section",
+  "v7-generation-protected-boundaries",
+  "v7-generation-role-template",
+  "v7-generation-negative-value",
+  "v7-generation-ambiguous-fallback",
+  "v7-review-comparison-owner-boundaries",
+  "v7-review-foreign-owner-isolation",
+  "v7-rank-wire-full-pool-lossless",
+  "v7-rank-wire-unknown-difference",
+  "v7-rank-wire-existing-decoder",
+  "top5-ae619632ba154f3c",
+  "top5-1e4a7ebfe2303ee8",
+  "top5-9d0e42594e5d0ffe",
+  "top5-9844e08fcb605b56",
+  "top5-85d916d985fa7a0f",
+  "top5-8028210391467f54",
+  "top5-f82f7d2d93d96e41",
+  "top5-cd2e9f852044649b",
+  "top5-9d2c9fcf3c8234f4",
+  "top5-3919a2d495882464",
+  "top5-b21866df1fb7d76f",
+  "top5-132a1fa2db831d84",
+  "top5-b99acba59e873d1f",
+  "top5-a366a63251207be2",
+  "top5-85cd37bf58fbb1f0",
+  "top5-f43b27d6b83e178e",
+  "top5-2ba47476e6961ffd",
+  "top5-ce82c436a9855817",
+  "top5-b62896b4bd22bfe8",
+  "top5-ee337c7b822cc5cd",
+  "top5-c81de6320b21710b",
+  "top5-006e44d39b1f5d3f",
+  "top5-119ad728bdc994c5",
+  "top5-06919eb66ee0acb2",
+  "top5-7742a2884361bcff",
+  "top5-35956623e2f33072",
+  "top5-1344a3deb65d4dec",
+  "top5-219e4d23e598b2cc",
+  "top5-14d0f01031b4d04f",
+  "top5-5562c26080167fe9",
+  "top5-c70ec3270cbfc00d",
+  "top5-02f3f5cd3f88a97a",
+  "top5-5b01070aa5f2be58",
+  "top5-e0f91b60f9ed75f2",
+  "top5-af92204e1b5fbe51",
+  "top5-91922e13fa57e31f",
+  "top5-a9020185d2e099aa",
+  "top5-824d5e7e85658cf8",
+  "top5-18af43c4fd98d3bc",
+  "top5-343b206bcca14155",
+  "top5-637d726611d59ebc",
+  "top5-205fad5b37b85164"
 ];
 const REQUIRED_SIGNED_EVIDENCE_FILES = new Set([
+  "deepseek-budget-receipt.json",
   "dependency-provenance-receipt.json",
+  "worker-build-result.json",
+  "native-v7-postgres-result.json",
+  "validation-logs/native-v7-postgres.log",
   "e2e-result.json",
   "playwright-report.json",
   "pnpm-audit-result.json",
@@ -231,7 +594,7 @@ export function parseRequiredTestManifest(bytes, sourceRows) {
     }
     pins.set(pin.path, pin.sha256);
   }
-  for (const config of ["playwright.config.ts", "vitest.config.ts"]) {
+  for (const config of ["playwright.config.ts", "vitest.config.ts", "tests/fixtures/mock-spend-ledger.setup.ts"]) {
     if (!pins.has(config)) fail(`required-test manifest does not pin ${config}`);
   }
 
@@ -270,7 +633,8 @@ export function parseRequiredTestManifest(bytes, sourceRows) {
   if (JSON.stringify([...coveredCategories].sort()) !== JSON.stringify([...REQUIRED_TEST_CATEGORIES].sort())) {
     fail("required-test manifest does not cover every fixed release requirement");
   }
-  return { pins, requirements, minimumPassedObservations: REQUIRED_TEST_IDS.length, projectToolchain };
+  const reviewedSources = new Set([...sourceRows].filter(([relative, row]) => safeManifestPath(relative) && row.kind === "F" && /^[a-f0-9]{64}$/u.test(row.digest)).map(([relative]) => relative));
+  return { pins, reviewedSources, requirements, minimumPassedObservations: REQUIRED_TEST_IDS.length, projectToolchain };
 }
 
 function canonicalBase64(value, label) {
@@ -459,7 +823,7 @@ async function validateLinuxGenerationAttestation({
   ) fail("Linux validation signed artifact membership differs");
   const logNames = (await readdir(path.join(evidenceDir, "validation-logs")))
     .sort((left, right) => Buffer.from(left).compare(Buffer.from(right)));
-  const expectedLogNames = REQUIRED_GATES.map((name) => `${name}.log`)
+  const expectedLogNames = [...REQUIRED_GATES.map((name) => `${name}.log`), "native-v7-postgres.log"]
     .sort((left, right) => Buffer.from(left).compare(Buffer.from(right)));
   if (JSON.stringify(logNames) !== JSON.stringify(expectedLogNames)) {
     fail("Linux validation signed log directory contains missing or extra evidence");
@@ -712,13 +1076,15 @@ function validateCommand(gate, controlHashes, dependencyState, runId) {
   };
   if (gate?.name === "deepseek-preflight") {
     if (
-      argv.length !== 4
+      argv.length !== 5
       || argv[0] !== REQUIRED_DEEPSEEK_VERIFIER_PATH
       || argv[1] !== "<systemd-credential>"
-      || !/^[A-Za-z0-9._-]{1,128}$/u.test(argv[2])
-      || !/^[A-Za-z0-9._-]{1,128}$/u.test(argv[3])
+      || argv[2] !== "<systemd-budget-permit>"
+      || argv[3] !== "deepseek-flash" || argv[4] !== "deepseek-flash"
+      || gate?.command?.spendControlSha256 !== controlHashes.spendControl
+      || !/^[a-f0-9]{64}$/.test(gate?.command?.permitSha256??"")
       || gate?.command?.verifierSha256 !== controlHashes.deepseek
-      || !exactKeys(gate.command, ["executable", "argv", "verifierSha256"])
+      || !exactKeys(gate.command, ["executable", "argv", "verifierSha256", "spendControlSha256", "permitSha256"])
     ) fail("DeepSeek fixed-verifier execution boundary differs");
     assertSandbox({ uid: "resume-ai-verify", networked: true, credentialTransport: "systemd-LoadCredential", repositoryVerifier: false });
     return;
@@ -779,7 +1145,9 @@ function validateCommand(gate, controlHashes, dependencyState, runId) {
     || !exactKeys(gate.command, ["executable", "argv", "projectTool", "executableSha256"])
     || gate.command.projectTool !== toolId
     || gate.command.executableSha256 !== tool.binSha256
-    || argv[0] !== `<frozen-node_modules>/${tool.binRelativePath}`
+    || (gate.name === "production-build"
+      ? JSON.stringify(argv) !== JSON.stringify(["<reviewed-source>/scripts/competitions/v7/build-worker.mjs", "--with-next", `<frozen-node_modules>/${tool.binRelativePath}`])
+      : argv[0] !== `<frozen-node_modules>/${tool.binRelativePath}`)
   ) fail(`project-tool identity differs for ${gate.name}`);
   assertSandbox();
   const rest = argv.slice(1);
@@ -787,12 +1155,12 @@ function validateCommand(gate, controlHashes, dependencyState, runId) {
   switch (gate.name) {
     case "typecheck": if (!exact("--noEmit", "--incremental", "false")) fail("typecheck command drift"); break;
     case "lint": if (!exact(".", "--max-warnings=0")) fail("lint command drift"); break;
-    case "production-build": if (!exact("build")) fail("production build command drift"); break;
+    case "production-build": break; // The complete reviewed wrapper argv was checked above.
     case "unit":
       if (!exact("run", "--reporter=json", `--outputFile=/opt/resume-ai/build-staging/release-evidence-${runId}/writable/vitest-unit-result.json`)) fail("unit command drift");
       break;
     case "postgres-integration":
-      if (!exact("run", "tests/security/competition-shared-state-postgres.integration.test.ts", "--reporter=json", `--outputFile=/opt/resume-ai/build-staging/release-evidence-${runId}/writable/vitest-postgres-result.json`)) fail("PostgreSQL integration command drift");
+      if (!exact("run", "tests/security/competition-shared-state-postgres.integration.test.ts", "tests/competitions/v7/backend-review.integration.test.ts", "tests/competitions/v7/durable-state.integration.test.ts", "tests/competitions/v7/group-worker.integration.test.ts", "tests/ai/reservation-scope.integration.test.ts", "tests/ai/v7-effort-durable-postgres.integration.test.ts", "tests/deployment/v7-effort-fixed-postgres.integration.test.ts", "tests/ai/v7-top5-durable-postgres.integration.test.ts", "tests/deployment/v7-native-postgres.integration.test.ts", "--maxWorkers=1", "--no-file-parallelism", "--hookTimeout=120000", "--testTimeout=30000", "--reporter=json", `--outputFile=/opt/resume-ai/build-staging/release-evidence-${runId}/writable/vitest-postgres-result.json`)) fail("PostgreSQL integration command drift");
       break;
     case "production-e2e":
       if (!exact("test", "--reporter=json,html")) fail("production E2E command drift");
@@ -801,14 +1169,14 @@ function validateCommand(gate, controlHashes, dependencyState, runId) {
   }
 }
 
-function assertDeepSeekLog(bytes) {
+function assertDeepSeekLog(bytes, expectedVerifier = "release-evidence-deepseek.v2") {
   const completed = new Set();
   for (const line of bytes.toString("utf8").split(/\r?\n/u)) {
     const candidate = line.replace(/^\[(?:stdout|stderr)\] /u, "").trim();
     if (!candidate.startsWith("{")) continue;
     try {
       const value = JSON.parse(candidate);
-      if (value?.event === "deepseek_preflight" && value?.status === "ok" && value?.verifier === "release-evidence-deepseek.v1") completed.add(value.operation);
+      if (value?.event === "deepseek_preflight" && value?.status === "ok" && value?.verifier === expectedVerifier) completed.add(value.operation);
       if (value?.event === "deepseek_preflight" && ["failed", "skipped"].includes(value?.status)) fail("DeepSeek evidence is failed or skipped");
     } catch (error) {
       if (error instanceof Error && error.message === "DeepSeek evidence is failed or skipped") throw error;
@@ -817,13 +1185,133 @@ function assertDeepSeekLog(bytes) {
   for (const operation of ["models", "competition_normalize", "competition_followup_policy", "competition_recommend"]) if (!completed.has(operation)) fail(`DeepSeek evidence lacks ${operation}`);
 }
 
-function requiredReportPath(value, pins, label) {
+function validateLegacyDeepSeekBudgetReceipt(receipt,gate,controlHashes,log) {
+  if(receipt?.schemaVersion!=="release-evidence-spend-receipt.v1"||receipt.source!=="protected-psql-shared-ledger"||receipt.providerInvoice!==false||receipt.verifierSha256!==controlHashes.deepseek||receipt.controlSha256!==controlHashes.spendControl||receipt.permitSha256!==gate.command.permitSha256||receipt.logSha256!==createHash("sha256").update(log).digest("hex")||!["calibration","formal","repair","performance","reserve"].includes(receipt.phase)||receipt.priceVersion!=="deepseek-flash-cny-20261105-peak-upper-bound"||!/^[A-Za-z0-9._-]{1,100}$/.test(receipt.runId??"")||![receipt.limitMicros,receipt.fundedMicros].every(n=>Number.isSafeInteger(n)&&n>0&&n<=300000000)||!Array.isArray(receipt.reservations)||receipt.reservations.length!==2||new Set(receipt.reservations.map(r=>r.reservationId)).size!==2||new Set(receipt.reservations.map(r=>r.operation)).size!==2||receipt.reservations.reduce((sum,r)=>sum+r.reservedMicros,0)>Math.min(receipt.limitMicros,receipt.fundedMicros))fail("DeepSeek shared budget receipt binding differs");
+  const events=[];for(const line of log.toString("utf8").split(/\r?\n/)){try{const event=JSON.parse(line.replace(/^\[(stdout|stderr)\] /,""));if(event.event==="deepseek_preflight"&&event.verifier==="release-evidence-deepseek.v2")events.push(event);}catch{}}
+  for(const reservation of receipt.reservations){
+    if(!["competition_normalize","competition_recommend"].includes(reservation.operation)||!Number.isSafeInteger(reservation.reservedMicros)||reservation.reservedMicros<65536||!Number.isSafeInteger(reservation.chargedMicros)||reservation.chargedMicros<0||reservation.chargedMicros>reservation.reservedMicros||!["usage_estimated","conservative"].includes(reservation.state))fail("successful DeepSeek preflight requires two charged reservations");
+    const attempts=events.filter(e=>e.operation==="budget_attempt"&&e.reservationId===reservation.reservationId&&e.requestSha256===reservation.requestSha256&&e.permitSha256===receipt.permitSha256&&e.runId===receipt.runId&&e.permitId===receipt.permitId);
+    if(attempts.length!==1||attempts[0].attempt!==1||attempts[0].model!=="deepseek-flash"||attempts[0].reasoningEffort!=="max"||attempts[0].maxTokens!==8192)fail("DeepSeek paid request attempt binding differs");
+    if(reservation.state==="conservative"&&(reservation.usage!==null||reservation.chargedMicros!==reservation.reservedMicros))fail("unknown usage must retain full reservation");
+    if(reservation.state==="usage_estimated"){
+      const usage=reservation.usage;if(!usage||![usage.inputTokens,usage.outputTokens,usage.cachedInputTokens].every(n=>Number.isSafeInteger(n)&&n>=0)||usage.cachedInputTokens>usage.inputTokens||Math.ceil((usage.inputTokens-usage.cachedInputTokens)*2+usage.cachedInputTokens*0.04+usage.outputTokens*8)!==reservation.chargedMicros)fail("DeepSeek usage price calculation differs");
+      const terminal=events.filter(e=>e.operation==="budget_terminal"&&e.reservationId===reservation.reservationId&&e.requestSha256===reservation.requestSha256&&e.permitSha256===receipt.permitSha256&&e.runId===receipt.runId&&e.permitId===receipt.permitId);if(terminal.length!==1||terminal[0].upstreamAttempted!==true||JSON.stringify(terminal[0].usage)!==JSON.stringify(usage))fail("DeepSeek usage receipt lacks matching terminal observation");
+    }
+  }
+  return true;
+}
+
+export function parseBuildEffortPolicy(value) {
+  if (!exactKeys(value,["version","rank","explain","review"]) || value.version !== "saitu.effort-policy.v1" || ["rank","explain","review"].some(stage => !["high","low"].includes(value[stage]))) fail("invalid signed effort policy");
+  return {version:value.version,rank:value.rank,explain:value.explain,review:value.review};
+}
+export const effortPolicyHash = value => createHash("sha256").update(JSON.stringify(parseBuildEffortPolicy(value))).digest("hex");
+
+export function validateDeepSeekBudgetReceipt(receipt, gate, controlHashes, log, profile = "legacy-v1-max", expectedPolicySha256, expectedEffortPolicySha256) {
+  if (profile === "legacy-v1-max") return validateLegacyDeepSeekBudgetReceipt(receipt, gate, controlHashes, log);
+  const unbounded = profile === "v7-top5-user-unbounded", top5 = profile === "v7-top5" || unbounded, stage = profile === "v7-effort" || top5;
+  if (!["v7-high","v7-effort","v7-top5","v7-top5-user-unbounded"].includes(profile) || receipt?.schemaVersion !== (unbounded ? "release-evidence-spend-receipt.v7.top5.user-unbounded.v1" : top5 ? "release-evidence-spend-receipt.v7.top5.v1" : stage ? "release-evidence-spend-receipt.v7.effort.v1" : "release-evidence-spend-receipt.v7")) fail("v7 source requires the matching budget receipt version");
+  const hex = value => typeof value === "string" && /^[a-f0-9]{64}$/.test(value);
+  const run = value => typeof value === "string" && /^[a-zA-Z0-9._-]{1,100}$/.test(value);
+  const positive = value => Number.isSafeInteger(value) && value > 0;
+  const canonical = value => value === null || typeof value !== "object" ? JSON.stringify(value) : Array.isArray(value) ? `[${value.map(canonical).join(",")}]` : `{${Object.keys(value).sort().map(key => `${JSON.stringify(key)}:${canonical(value[key])}`).join(",")}}`;
+  const digest = value => createHash("sha256").update(value).digest("hex");
+  const a = receipt.authorization, f = a?.funding;
+  if (!hex(expectedPolicySha256) || !exactKeys(a, ["mainRunId","grantVersion","policySha256","authorizedEffort","effortConditionSha256","callLimit","funding",...(stage?["effortPolicy","effortPolicySha256"]:[]),...(unbounded?["executionMode"]:[])]) || !run(a.mainRunId) || a.mainRunId === receipt.runId || a.grantVersion !== (unbounded?"saitu.v7.top5.user-unbounded.v1":top5?"saitu.v7.top5.v1":stage?"saitu.v7.effort.v1":"saitu.v7") || a.policySha256 !== expectedPolicySha256 || a.authorizedEffort !== (stage?"stage":"high") || !hex(a.effortConditionSha256) || (unbounded ? a.callLimit !== null || a.executionMode !== "user-unbounded" : !positive(a.callLimit) || a.callLimit > 2147483647) || !["calibration","formal","repair","performance","reserve"].includes(receipt.phase) || !new RegExp(`^saitu-v7-${unbounded?"top5-unbounded-":top5?"top5-":stage?"effort-":""}20261109-${receipt.phase}-[0-9]{2}$`).test(receipt.runId ?? "") || !exactKeys(f, ["runId","createdAt","fundingLimitMicros","baselineIdsSha256"]) || !run(f.runId) || typeof f.createdAt !== "string" || !Number.isFinite(Date.parse(f.createdAt)) || (!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.[0-9]{3,6}Z$/.test(f.createdAt) || new Date(f.createdAt).toISOString().slice(0,19) !== f.createdAt.slice(0,19)) || !positive(f.fundingLimitMicros) || !hex(f.baselineIdsSha256) || receipt.authorizationSha256 !== digest(canonical(a))) fail("v7 budget authority/funding binding differs");
+  if(stage && (!hex(expectedEffortPolicySha256) || a.effortPolicySha256 !== expectedEffortPolicySha256 || effortPolicyHash(a.effortPolicy) !== expectedEffortPolicySha256)) fail("signed runtime effort policy differs from budget receipt");
+  if(top5 && ["rank","explain","review"].some(key => a.effortPolicy[key] !== "low")) fail("top5 budget receipt requires the approved low/low/low policy");
+  if (receipt.source !== "protected-psql-shared-ledger" || receipt.providerInvoice !== false || receipt.verifierSha256 !== controlHashes.deepseek || receipt.controlSha256 !== controlHashes.spendControl || receipt.permitSha256 !== gate.command.permitSha256 || !hex(receipt.permitSha256) || !/^[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/.test(receipt.permitId ?? "") || receipt.logSha256 !== digest(log) || receipt.priceVersion !== "deepseek-flash-cny-20261105-peak-upper-bound" || (unbounded ? receipt.executionMode!=="user-unbounded"||receipt.limitMicros!==null||!positive(receipt.fundedMicros)||receipt.fundedMicros!==f.fundingLimitMicros : ![receipt.limitMicros,receipt.fundedMicros].every(positive)) || !Array.isArray(receipt.reservations) || receipt.reservations.length !== 2 || new Set(receipt.reservations.map(r => r.reservationId)).size !== 2 || new Set(receipt.reservations.map(r => r.operation)).size !== 2) fail("v7 budget receipt control binding differs");
+  const definitions = [
+    {operation:"competition_normalize",requestSha256:"59bae03086f7685d62dd9df47660f4a75f26d246e3798434cdd9c56a7f75c7d6",reservedMicros:68428,effort:"high"},
+    {operation:"competition_recommend",requestSha256:stage && a.effortPolicy.rank === "low" ? "5934824a544c16609d3ccc2b6f301240170fd1ccc1b5db6887cbeecf569600a7" : "df5f5150de1aead558a0f636fcf2635329b0a9dbc1d1ce048ecbaaaacc7a0280",reservedMicros:69308,effort:stage?a.effortPolicy.rank:"high"}
+  ];
+  if (receipt.reservations.reduce((sum,r) => sum+r.reservedMicros,0) > (unbounded?Math.min(receipt.fundedMicros,f.fundingLimitMicros):Math.min(receipt.limitMicros,receipt.fundedMicros,f.fundingLimitMicros)) || !unbounded && a.callLimit < 2) fail("v7 receipt exceeds funded/call capacity");
+  const expectedVerifier=unbounded?"release-evidence-deepseek.v7.top5.user-unbounded.v1":top5?"release-evidence-deepseek.v7.top5.v1":stage?"release-evidence-deepseek.v7.effort.v1":"release-evidence-deepseek.v7.1";
+  assertDeepSeekLog(log, expectedVerifier);
+  const events=[];
+  for (const line of log.toString("utf8").split(/\r?\n/u)) { try { const e=JSON.parse(line.replace(/^\[(stdout|stderr)\] /u,"")); if(e.event==="deepseek_preflight" && e.verifier===expectedVerifier) events.push(e); } catch {} }
+  for (const r of receipt.reservations) {
+    const definition=definitions.find(d => d.operation === r.operation);
+    if (!definition || r.requestSha256 !== definition.requestSha256 || r.reservedMicros !== definition.reservedMicros || !/^[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/.test(r.reservationId ?? "") || !["usage_estimated","conservative"].includes(r.state) || !Number.isSafeInteger(r.chargedMicros) || r.chargedMicros < 0 || r.chargedMicros > r.reservedMicros) fail("v7 fixed request reservation differs");
+    const bound=events.filter(e => e.reservationId === r.reservationId && e.requestSha256 === r.requestSha256 && e.permitSha256 === receipt.permitSha256 && e.permitId === receipt.permitId && e.runId === receipt.runId && e.authorizationSha256 === receipt.authorizationSha256 && e.mainRunId === a.mainRunId && e.phase === receipt.phase && (!unbounded || e.executionMode === "user-unbounded"));
+    const attempts=bound.filter(e => e.operation === "budget_attempt"), terminal=bound.filter(e => e.operation === "budget_terminal");
+    if (attempts.length !== 1 || attempts[0].attempt !== 1 || attempts[0].model !== "deepseek-flash" || attempts[0].reasoningEffort !== definition.effort || attempts[0].maxTokens !== 8192) fail("v7 paid request attempt binding differs");
+    if (r.state === "conservative") { if(r.usage !== null || r.chargedMicros !== r.reservedMicros) fail("v7 unknown usage must retain full reservation"); }
+    else {
+      const u=r.usage;
+      if (!u || ![u.inputTokens,u.outputTokens,u.cachedInputTokens].every(n=>Number.isSafeInteger(n)&&n>=0) || u.cachedInputTokens > u.inputTokens || u.outputTokens > 8192 || Math.ceil((u.inputTokens-u.cachedInputTokens)*2+u.cachedInputTokens*0.04+u.outputTokens*8) !== r.chargedMicros || terminal.length !== 1 || terminal[0].upstreamAttempted !== true || JSON.stringify(terminal[0].usage) !== JSON.stringify(u)) fail("v7 exact usage receipt differs");
+    }
+  }
+  return true;
+}
+
+const NATIVE_V7_ASSERTIONS = Object.freeze([
+  'runtime has v7 S/I/U without DELETE/TRUNCATE/DDL',
+  'actual read-only SQL accepts the complete migrated schema',
+  'read-only SQL rejects plaintext',
+  'read-only SQL rejects lost-call-parent',
+  'read-only SQL rejects lost-idempotency',
+  'read-only SQL rejects lost-cipher-cap',
+  'read-only SQL rejects missing full grant evidence predicate',
+  'read-only SQL rejects weakened full grant evidence predicate',
+  'Node cleanup respects child FKs and retains the paid ledger',
+  'installed SQL cleanup converges across committed batches without deleting spend',
+  'production app.env and PM2 clean env reach the actual high-grant gate; DB formal cap wins; zero dispatch',
+  'built worker stays paused before switch, activates, and pauses on rollback',
+  'worker exits cleanly on SIGTERM',
+]);
+const NATIVE_V7_EFFORT_ASSERTIONS = Object.freeze([...NATIVE_V7_ASSERTIONS, 'stage effort app.env and PM2 reach the actual policy-bound reserve gate; DB cap wins; zero dispatch']);
+const NATIVE_V7_TOP5_ASSERTIONS = Object.freeze([...NATIVE_V7_EFFORT_ASSERTIONS, 'top5 app.env and PM2 reach the actual LLL policy-bound reserve gate; DB cap wins; zero dispatch']);
+const NATIVE_V7_UNBOUNDED_ASSERTIONS = Object.freeze([...NATIVE_V7_TOP5_ASSERTIONS, 'user-unbounded app.env and PM2 reserve beyond finite caps while physical unknown holds remain protected; zero dispatch']);
+
+export function validateNativeV7PostgresEvidence(result, log, sourceHashes, workerBuild) {
+  const unbounded=sourceHashes.has("db/migrations/20261109_spend_user_unbounded_execution.sql"), top5 = sourceHashes.has("db/migrations/20261109_spend_v7_top5_policy.sql"), stage = sourceHashes.has("src/lib/ai/effort-policy.mjs") || Object.hasOwn(workerBuild,"effortPolicySha256"), assertions=unbounded?NATIVE_V7_UNBOUNDED_ASSERTIONS:top5?NATIVE_V7_TOP5_ASSERTIONS:stage?NATIVE_V7_EFFORT_ASSERTIONS:NATIVE_V7_ASSERTIONS;
+  if (!exactKeys(result, ["schemaVersion", "status", "database", "postgresVersion", "observations", "productionGrantChain", "workerBuild", "paidCalls", "productionTouched", "execution",...(stage?["stageGrantChain"]:[]),...(top5?["top5GrantChain"]:[]),...(unbounded?["userUnboundedGrantChain"]:[])])
+    || result.schemaVersion !== (unbounded?"saitu.v7-ops-local-evidence.v4":top5?"saitu.v7-ops-local-evidence.v3":stage?"saitu.v7-ops-local-evidence.v2":"saitu.v7-ops-local-evidence.v1") || result.status !== "passed"
+    || !/^saitu_v7_ops_[a-f0-9]{10}$/.test(result.database) || !/^14\./.test(result.postgresVersion)
+    || JSON.stringify(result.observations) !== JSON.stringify(assertions) || result.paidCalls !== 0 || result.productionTouched !== false)
+    fail("native v7 PostgreSQL14 evidence is incomplete or non-passing");
+  const grant = result.productionGrantChain;
+  if (!exactKeys(grant, ["syntheticGrantInDisposableDatabase", "phase", "configuredCalibrationCallLimit", "authoritativePgCallLimit", "authorizedReservations", "chargedMicros", "providerDispatches", "configurationOnlyNextSeal"])
+    || grant.syntheticGrantInDisposableDatabase !== true || grant.phase !== "formal" || grant.configuredCalibrationCallLimit !== 1
+    || grant.authoritativePgCallLimit !== 2 || grant.authorizedReservations !== 2 || grant.chargedMicros !== 0 || grant.providerDispatches !== 0 || grant.configurationOnlyNextSeal !== true)
+    fail("native v7 high-grant authority chain differs");
+  if (!exactKeys(result.workerBuild, ["sourceSha256", "artifactSha256",...(stage?["effortPolicySha256"]:[]),...(unbounded?["executionMode"]:[])])
+    || result.workerBuild.sourceSha256 !== workerBuild.sourceSha256 || result.workerBuild.artifactSha256 !== workerBuild.artifactSha256)
+    fail("native v7 worker differs from the uniform production build");
+  if(stage){const g=result.stageGrantChain;
+    if(!exactKeys(g,["syntheticGrantInDisposableDatabase","grantVersion","effortPolicySha256","rankEffort","authorizedReservations","chargedMicros","providerDispatches","configurationOnlyNextSeal"])||g.syntheticGrantInDisposableDatabase!==true||g.grantVersion!=="saitu.v7.effort.v1"||g.effortPolicySha256!==workerBuild.effortPolicySha256||result.workerBuild.effortPolicySha256!==workerBuild.effortPolicySha256||g.rankEffort!==workerBuild.effortPolicy?.rank||g.authorizedReservations!==2||g.chargedMicros!==0||g.providerDispatches!==0||g.configurationOnlyNextSeal!==true)fail("native stage effort authority chain differs");
+  }
+  if(top5){const g=result.top5GrantChain;
+    if(!exactKeys(g,["syntheticGrantInDisposableDatabase","grantVersion","effortPolicySha256","rankEffort","authorizedReservations","chargedMicros","providerDispatches","configurationOnlyNextSeal"])||g.syntheticGrantInDisposableDatabase!==true||g.grantVersion!=="saitu.v7.top5.v1"||g.effortPolicySha256!==workerBuild.effortPolicySha256||g.effortPolicySha256!=="04962f576d20346af8a8f076ce64fdbda5aea13fdbd2fae39f3c7456fe30aa48"||g.rankEffort!=="low"||g.authorizedReservations!==2||g.chargedMicros!==0||g.providerDispatches!==0||g.configurationOnlyNextSeal!==true)fail("native top5 authority chain differs");
+  }
+  if(unbounded){const g=result.userUnboundedGrantChain;
+    if(!exactKeys(g,["syntheticGrantInDisposableDatabase","grantVersion","executionMode","effortPolicySha256","rankEffort","authorizedReservations","chargedMicros","providerDispatches","configurationOnlyNextSeal","physicalUnknownHoldRejected"])||result.workerBuild.executionMode!=="user-unbounded"||workerBuild.executionMode!=="user-unbounded"||g.executionMode!=="user-unbounded"||g.syntheticGrantInDisposableDatabase!==true||g.grantVersion!=="saitu.v7.top5.user-unbounded.v1"||g.effortPolicySha256!==workerBuild.effortPolicySha256||g.rankEffort!=="low"||g.authorizedReservations!==3||g.chargedMicros!==0||g.providerDispatches!==0||g.configurationOnlyNextSeal!==true||g.physicalUnknownHoldRejected!==true)fail("native user-unbounded authority chain differs");
+  }
+  const execution = result.execution;
+  if (!exactKeys(execution, ["platform", "arch", "node", "source", "sourceSha256", "rawLogSha256"])
+    || execution.platform !== "linux" || execution.arch !== "x64" || execution.node !== "v24.20.0"
+    || execution.source !== "tests/deployment/v7-ops-postgres.test.mjs"
+    || execution.sourceSha256 !== sourceHashes.get(execution.source) || execution.rawLogSha256 !== sha256(log))
+    fail("native v7 source, runtime or raw-log binding differs");
+  const lines = log.toString("utf8").split(/\r?\n/).filter(Boolean);
+  if (JSON.stringify(lines.filter(line => line.startsWith("PASS ")).map(line => line.slice(5))) !== JSON.stringify(assertions))
+    fail("native v7 raw log lacks all required executed assertions");
+  const footers = lines.filter(line => line.startsWith("{")).map(line => { try { return JSON.parse(line); } catch { return null; } });
+  if (footers.length !== 1 || !exactKeys(footers[0], ["status", "observations", "paidCalls", "productionTouched", "result"])
+    || footers[0].status !== "passed" || footers[0].observations !== assertions.length || footers[0].paidCalls !== 0 || footers[0].productionTouched !== false
+    || !/^\/tmp\/saitu-v7-native-[A-Za-z0-9]+\/result\.json$/.test(footers[0].result))
+    fail("native v7 completion marker differs");
+  return true;
+}
+
+function requiredReportPath(value, reviewedSources, label) {
   if (typeof value !== "string" || value.length === 0 || value !== value.normalize("NFC") || /[\\\0\r\n\t]/u.test(value)) {
     fail(`${label} report contains an invalid test filename`);
   }
-  if (pins.has(value)) return value;
+  if (safeManifestPath(value) && reviewedSources.has(value)) return value;
   const match = /^\/opt\/resume-ai\/build-staging\/release-evidence-[0-9a-f-]{36}\/source\/(.+)$/u.exec(value);
-  if (!match || !safeManifestPath(match[1]) || !pins.has(match[1])) fail(`${label} report names an unpinned test file`);
+  if (!match || !safeManifestPath(match[1]) || !reviewedSources.has(match[1])) fail(`${label} report names a test file outside the reviewed source`);
   return match[1];
 }
 
@@ -837,7 +1325,7 @@ function requiredVitestObservations(report, contract, project, label) {
   ) fail(`${label} required-test report is not a passing Vitest report`);
   const observations = [];
   for (const testResult of report.testResults) {
-    const testFile = requiredReportPath(testResult?.name, contract.pins, label);
+    const testFile = requiredReportPath(testResult?.name, contract.reviewedSources, label);
     if (!Array.isArray(testResult?.assertionResults)) fail(`${label} test result lacks assertions`);
     for (const assertion of testResult.assertionResults) {
       const fullName = requiredTestText(assertion?.fullName, `${label} fullName`, 512);
@@ -870,7 +1358,7 @@ function requiredPlaywrightObservations(report, contract) {
   function visit(suite, inheritedFile) {
     const suiteFile = typeof suite?.file === "string" ? suite.file : inheritedFile;
     for (const spec of suite?.specs ?? []) {
-      const testFile = requiredReportPath(spec?.file ?? suiteFile, contract.pins, "playwright-production");
+      const testFile = requiredReportPath(spec?.file ?? suiteFile, contract.reviewedSources, "playwright-production");
       const fullName = requiredTestText(spec?.title, "playwright-production fullName", 512);
       if (!Array.isArray(spec?.tests) || spec.tests.length === 0) fail("Playwright required-test spec lacks project results");
       for (const test of spec.tests) {
@@ -933,6 +1421,22 @@ function deriveRequiredTestVerification(contract, reports) {
   });
   if (passedObservations < contract.minimumPassedObservations) fail("required-test passing observation floor was not met");
   return { passedObservations, verified };
+}
+
+/** main keeps original report bytes and hashes for receipt verification. Parse
+ * that exact artifact shape before evaluating its observations; the required
+ * selectors remain independent of additional reviewed files in full reports. */
+export function deriveRequiredTestVerificationFromArtifacts(contract, reports) {
+  if (!exactKeys(reports, ["unit", "postgres", "playwright"])) fail("required-test report artifact set differs");
+  const parsed = {};
+  for (const name of ["unit", "postgres", "playwright"]) {
+    const report = reports[name];
+    if (!report || !Buffer.isBuffer(report.bytes) || report.bytes.length > 64 * 1024 * 1024 || sha256(report.bytes) !== report.sha256)
+      fail("required-test report artifact bytes or digest differ");
+    try { parsed[name] = JSON.parse(report.bytes.toString("utf8")); }
+    catch { fail("required-test report artifact is not JSON"); }
+  }
+  return deriveRequiredTestVerification(contract, parsed);
 }
 
 function assertRequiredTestLog(bytes, expected) {
@@ -1166,7 +1670,7 @@ async function validateRequiredTestEvidence({
   const receiptArtifact = await artifact(path.join(evidenceDir, "required-test-receipt.json"), REQUIRED_TEST_RECEIPT_LIMIT_BYTES);
   let receipt;
   try { receipt = JSON.parse(receiptArtifact.bytes.toString("utf8")); } catch { fail("required-test receipt is not JSON"); }
-  const derived = deriveRequiredTestVerification(contract, reports);
+  const derived = deriveRequiredTestVerificationFromArtifacts(contract, reports);
   const reportSha256 = {
     "vitest-unit": reports.unit.sha256,
     "vitest-postgres": reports.postgres.sha256,
@@ -1640,6 +2144,7 @@ with tarfile.open(archive_path, "r:gz") as archive:
   const requiredControlRows = {
     coordinator: sourceRows.get("scripts/run-release-evidence.mjs"),
     deepseek: sourceRows.get("scripts/lib/release-evidence-deepseek-verifier.mjs"),
+    spendControl: sourceRows.get("scripts/lib/release-evidence-spend.mjs"),
     httpProbe: sourceRows.get("scripts/lib/release-evidence-http-probe.mjs"),
     trustedGenerationCreator: sourceRows.get("scripts/lib/macos_trusted_deep_scan_generation.py"),
     requiredTests: sourceRows.get(REQUIRED_TESTS_MEMBER)
@@ -1648,6 +2153,7 @@ with tarfile.open(archive_path, "r:gz") as archive:
   const controlHashes = {
     coordinator: requiredControlRows.coordinator.digest,
     deepseek: requiredControlRows.deepseek.digest,
+    spendControl: requiredControlRows.spendControl.digest,
     httpProbe: requiredControlRows.httpProbe.digest,
     trustedGenerationCreator: requiredControlRows.trustedGenerationCreator.digest,
     requiredTests: requiredControlRows.requiredTests.digest
@@ -1668,6 +2174,7 @@ with tarfile.open(archive_path, "r:gz") as archive:
     !exactKeys(validation, [
       "schemaVersion", "evidenceType", "status", "runId", "sourceManifestSha256",
       "sourceModeManifestSha256", "sourceModeMemberCount", "prospectiveBaselineCandidate",
+      "workerBuild", "nativePostgres",
       "requiredTests", "dependencyProvenance", "startedAt", "completedAt", "requiredGates",
       "coordinator", "toolchain", "gates"
     ])
@@ -1678,6 +2185,18 @@ with tarfile.open(archive_path, "r:gz") as archive:
     || validation.sourceModeManifestSha256 !== sourceModeManifestSha256
     || validation.sourceModeMemberCount !== sourceModeMemberCount
   ) fail("validation result is not source/mode-bound and passing");
+  const workerBuildArtifact = await artifact(path.join(evidenceDir, "worker-build-result.json"));
+  const workerBuild = JSON.parse(workerBuildArtifact.bytes.toString("utf8"));
+  if (!exactKeys(validation.workerBuild, ["artifact", "sha256"]) || validation.workerBuild.artifact !== "worker-build-result.json" || validation.workerBuild.sha256 !== workerBuildArtifact.sha256 || !exactKeys(workerBuild, ["schemaVersion", "sourceSha256", "artifactSha256", "nodeMajor", "inputs", "nextBuildId", "nextBindingSha256", ...(sourceRows.has("src/lib/ai/effort-policy.mjs") ? ["effortPolicy","effortPolicySha256"] : [])]) || workerBuild.schemaVersion !== "saitu.worker-build.v7" || workerBuild.nodeMajor !== 24 || ![workerBuild.sourceSha256, workerBuild.artifactSha256, workerBuild.nextBindingSha256].every((value) => /^[a-f0-9]{64}$/u.test(value ?? "")) || typeof workerBuild.nextBuildId !== "string" || !workerBuild.nextBuildId || !Array.isArray(workerBuild.inputs) || !workerBuild.inputs.length) fail("signed decision worker build receipt is missing or malformed");
+  if (sourceRows.has("src/lib/ai/effort-policy.mjs") && workerBuild.effortPolicySha256 !== effortPolicyHash(workerBuild.effortPolicy)) fail("signed worker effort policy is missing or malformed");
+  const nativePostgresArtifact = await artifact(path.join(evidenceDir, "native-v7-postgres-result.json"));
+  const nativePostgresLog = await artifact(path.join(evidenceDir, "validation-logs/native-v7-postgres.log"));
+  if (!exactKeys(validation.nativePostgres, ["artifact", "sha256", "rawLog", "rawLogSha256"])
+    || validation.nativePostgres.artifact !== "native-v7-postgres-result.json" || validation.nativePostgres.sha256 !== nativePostgresArtifact.sha256
+    || validation.nativePostgres.rawLog !== "validation-logs/native-v7-postgres.log" || validation.nativePostgres.rawLogSha256 !== nativePostgresLog.sha256)
+    fail("native v7 PostgreSQL artifact binding differs");
+  validateNativeV7PostgresEvidence(JSON.parse(nativePostgresArtifact.bytes.toString("utf8")), nativePostgresLog.bytes,
+    new Map([...sourceRows].map(([name, row]) => [name, row.digest])), workerBuild);
   const baselineRow = sourceRows.get("tests/fixtures/competition-score-prospective-baseline.json");
   if (
     !exactKeys(validation.prospectiveBaselineCandidate, ["path", "byteSha256", "artifactSha256"])
@@ -1771,6 +2290,7 @@ with tarfile.open(archive_path, "r:gz") as archive:
     const gateExtras = {
       "dependency-provenance": ["receipt", "receiptSha256"],
       unit: ["stats", "machineResultSha256"],
+      "deepseek-preflight": ["budgetReceipt", "budgetReceiptSha256"],
       "production-dependency-audit": ["stats", "machineResultSha256"],
       "postgres-integration": ["stats", "machineResultSha256"],
       "production-e2e": ["e2eResultSha256", "playwrightReportSha256", "playwrightHtmlManifestSha256"],
@@ -1803,7 +2323,18 @@ with tarfile.open(archive_path, "r:gz") as archive:
     validateCommand(gate, controlHashes, dependencyState, validation.runId);
     const logPath = path.join(evidenceDir, gate.rawLog);
     if (!path.resolve(logPath).startsWith(`${evidenceDir}${path.sep}`) || (await artifact(logPath)).sha256 !== gate.rawLogSha256) fail(`validation raw log hash differs: ${name}`);
-    if (name === "deepseek-preflight") assertDeepSeekLog((await artifact(logPath)).bytes);
+    if (name === "deepseek-preflight") {
+      const log=(await artifact(logPath)).bytes;
+      const stageSource = sourceRows.has("src/lib/ai/effort-policy.mjs");
+      const top5Source = sourceRows.has("db/migrations/20261109_spend_v7_top5_policy.sql");
+      const unboundedSource = sourceRows.has("db/migrations/20261109_spend_user_unbounded_execution.sql");
+      const profile = unboundedSource ? "v7-top5-user-unbounded" : top5Source ? "v7-top5" : stageSource ? "v7-effort" : sourceRows.has("scripts/competitions/v7/build-worker.mjs") ? "v7-high" : "legacy-v1-max";
+      assertDeepSeekLog(log, unboundedSource ? "release-evidence-deepseek.v7.top5.user-unbounded.v1" : top5Source ? "release-evidence-deepseek.v7.top5.v1" : stageSource ? "release-evidence-deepseek.v7.effort.v1" : profile === "v7-high" ? "release-evidence-deepseek.v7.1" : "release-evidence-deepseek.v2");
+      if(gate.budgetReceipt!=="deepseek-budget-receipt.json")fail("DeepSeek budget receipt identity differs");
+      const budgetArtifact=await artifact(path.join(evidenceDir,gate.budgetReceipt));
+      if(budgetArtifact.sha256!==gate.budgetReceiptSha256)fail("DeepSeek budget receipt hash differs");
+      validateDeepSeekBudgetReceipt(JSON.parse(budgetArtifact.bytes.toString("utf8")),gate,controlHashes,log,profile,sourceRows.get(unboundedSource?"docs/v7/top5-unbounded-execution-contract-20261109.md":top5Source?"docs/v7/top5-continuation-contract-20261109.md":stageSource?"docs/v7/effort-continuation-contract-20261109.md":"docs/v7/implementation-contract.md")?.digest,stageSource?workerBuild.effortPolicySha256:undefined);
+    }
   }
   const e2eGate = gates.get("production-e2e");
   if (e2e.startedAt !== e2eGate.startedAt || e2e.completedAt !== e2eGate.completedAt) fail("E2E timestamps differ from their gate");

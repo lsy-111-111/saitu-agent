@@ -1,0 +1,4723 @@
+[
+  {
+    "recordId": "market-research-analysis:edition-d1b2c1bf1daf:undergraduate-practice:group-78fd9199138e:scope-8e1db2092033:v3",
+    "coreDigest": "fe2dabf3cfc842957bfd32146c5c2db340e3d106665feeff0eb3b950c440fbb4",
+    "originalContentDigest": "9f031289a1583cb8cd9eb61236240db7fe94fdbfa87c32cf5bb5497ac6fbc99c",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.090452+00:00",
+      "contentDigest": "9f031289a1583cb8cd9eb61236240db7fe94fdbfa87c32cf5bb5497ac6fbc99c",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "market-czu-2027"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/00-market-research-analysis.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": false,
+        "temporalAccuracy": true
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "A3-00-01",
+          "severity": "major",
+          "description": "补完整公开报告（问卷、样本、分析和结论）及适用评分；不能用报道摘要或编辑框架满足L3。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "market-research-analysis:edition-d1b2c1bf1daf:undergraduate-practice:group-78fd9199138e:scope-8e1db2092033:v3",
+    "coreDigest": "fe2dabf3cfc842957bfd32146c5c2db340e3d106665feeff0eb3b950c440fbb4",
+    "originalContentDigest": "9f031289a1583cb8cd9eb61236240db7fe94fdbfa87c32cf5bb5497ac6fbc99c",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:34:33.157681+00:00",
+      "contentDigest": "9f031289a1583cb8cd9eb61236240db7fe94fdbfa87c32cf5bb5497ac6fbc99c",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "market-czu-2027"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/00-market-research-analysis.json",
+      "checks": {
+        "factualSupport": false,
+        "entityScope": true,
+        "studentUsefulness": false,
+        "temporalAccuracy": true
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "B2-00-01",
+          "severity": "major",
+          "description": "原理与流程已有原件，但market-cau-case-2026仍无对应原始字节；并且仅公开摘要，缺完整报告/调查资料及本届实践评分，严格L3不通过。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "china-college-computer-design:edition-b8257354f41e:software-development:group-78fd9199138e:scope-3497779db6c7:v3",
+    "coreDigest": "b15a299ec000b5b4776fa7cee78705b9a49882ee8c273dda4eb0ba2d790d1714",
+    "originalContentDigest": "32e8dcbe61c1556fe2d905844e2d879246b32b6862cc3d6bd140ff93bae78029",
+    "review": {
+      "runId": "a2-gpt6astra-20261105T165926Z-5a7ff8c714f2",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:00:15.506107+00:00",
+      "contentDigest": "32e8dcbe61c1556fe2d905844e2d879246b32b6862cc3d6bd140ff93bae78029",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "4c-rules-2026",
+        "4c-submission-2026"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a2/evidence/01-china-college-computer-design.json",
+      "checks": {
+        "factualSupport": false,
+        "entityScope": true,
+        "studentUsefulness": false,
+        "temporalAccuracy": true
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "a2-01-01",
+          "severity": "major",
+          "description": "取得AI专项完整正文、模板及适用评分；统一正文大类和具体专项范围，不能以搜索缓存节选批准。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "china-college-computer-design:edition-b8257354f41e:software-development:group-78fd9199138e:scope-3497779db6c7:v3",
+    "coreDigest": "b15a299ec000b5b4776fa7cee78705b9a49882ee8c273dda4eb0ba2d790d1714",
+    "originalContentDigest": "32e8dcbe61c1556fe2d905844e2d879246b32b6862cc3d6bd140ff93bae78029",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.090774+00:00",
+      "contentDigest": "32e8dcbe61c1556fe2d905844e2d879246b32b6862cc3d6bd140ff93bae78029",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "4c-rules-2026",
+        "4c-submission-2026"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/01-china-college-computer-design.json",
+      "checks": {
+        "factualSupport": false,
+        "entityScope": true,
+        "studentUsefulness": false,
+        "temporalAccuracy": true
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "A3-01-01",
+          "severity": "major",
+          "description": "取得AI专项完整正文、模板及适用评分；统一正文大类和具体专项范围，不能以搜索缓存节选批准。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "china-college-computer-design:edition-b8257354f41e:software-development:group-78fd9199138e:scope-3497779db6c7:v3",
+    "coreDigest": "b15a299ec000b5b4776fa7cee78705b9a49882ee8c273dda4eb0ba2d790d1714",
+    "originalContentDigest": "32e8dcbe61c1556fe2d905844e2d879246b32b6862cc3d6bd140ff93bae78029",
+    "review": {
+      "runId": "content-b2-astra-high-20261106-f046e690",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T16:32:28.876529+00:00",
+      "contentDigest": "32e8dcbe61c1556fe2d905844e2d879246b32b6862cc3d6bd140ff93bae78029",
+      "method": "independent_source_recheck",
+      "sourceIds": [],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/evidence/01-china-college-computer-design.json",
+      "checks": {
+        "factualSupport": false,
+        "entityScope": false,
+        "studentUsefulness": false,
+        "temporalAccuracy": false
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "B2-01-01",
+          "severity": "major",
+          "description": "冻结记录中关键事实及案例来源全部没有sourceArtifact，无法在限定冻结包内实际读原件。sourceIds保持空，不继承作者body_read或旧审结论。需补入可核SHA的原件后独立重审。",
+          "resolved": false
+        },
+        {
+          "id": "B2-01-02",
+          "severity": "major",
+          "description": "专项仅搜索缓存节选，未取得完整题/提交模板及适用评分；记录自述缺口未解决，不能按严格L3。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "china-college-computer-design:edition-b8257354f41e:software-development:group-78fd9199138e:scope-3497779db6c7:v3",
+    "coreDigest": "b15a299ec000b5b4776fa7cee78705b9a49882ee8c273dda4eb0ba2d790d1714",
+    "originalContentDigest": "32e8dcbe61c1556fe2d905844e2d879246b32b6862cc3d6bd140ff93bae78029",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:34:33.159395+00:00",
+      "contentDigest": "32e8dcbe61c1556fe2d905844e2d879246b32b6862cc3d6bd140ff93bae78029",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "4c-rules-2026",
+        "4c-submission-2026"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/01-china-college-computer-design.json",
+      "checks": {
+        "factualSupport": false,
+        "entityScope": true,
+        "studentUsefulness": false,
+        "temporalAccuracy": true
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "B2-01-01",
+          "severity": "major",
+          "description": "4c-ai-special-task-2026仍没有可独立核查的原文/附件；详细模板与适用评分缺失，不能将搜索缓存节选或通用路线当严格L3完整任务。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "national-advertising-art:edition-8a08b7777f9d:graphic:group-78fd9199138e:scope-6e32b3157c92:v3",
+    "coreDigest": "aba4737d85b82603e0eebd0f3009408ce8d0f9a99b4ba7cd05823ebf9e14e4ec",
+    "originalContentDigest": "55d8f72aaee49ded1824e90321760ca5564d8ab74f88eb90d9dc7833ffc517ec",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.091145+00:00",
+      "contentDigest": "55d8f72aaee49ded1824e90321760ca5564d8ab74f88eb90d9dc7833ffc517ec",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "advertising-guide-2026",
+        "advertising-aliyun-brief-2026"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/02-national-advertising-art.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": false,
+        "temporalAccuracy": true
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "A3-02-01",
+          "severity": "major",
+          "description": "补适用于该平面命题的正式或明确参考评分，再填实rubric与证据映射。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "national-advertising-art:edition-8a08b7777f9d:graphic:group-78fd9199138e:scope-6e32b3157c92:v3",
+    "coreDigest": "aba4737d85b82603e0eebd0f3009408ce8d0f9a99b4ba7cd05823ebf9e14e4ec",
+    "originalContentDigest": "55d8f72aaee49ded1824e90321760ca5564d8ab74f88eb90d9dc7833ffc517ec",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:43:18.877618+00:00",
+      "contentDigest": "55d8f72aaee49ded1824e90321760ca5564d8ab74f88eb90d9dc7833ffc517ec",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "advertising-guide-2026",
+        "advertising-aliyun-brief-2026"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/02-national-advertising-art.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": false,
+        "temporalAccuracy": true
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "B2-02-01",
+          "severity": "major",
+          "description": "rubric仍为unknown；完整命题及创作要求不能代替适用正式评审依据，严格L3该项尚未补齐。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "google-code-jam:2022:qualification-3d-printing:historical-public-task:qualification-3d-printing-2022:v3",
+    "coreDigest": "dabf662e516b076e0954af697f044e7a3ed2af5fb8f678d80fee6f711331ee64",
+    "originalContentDigest": "1fdceafabc295f6511e92b50f9c9a4c938fbc72187dd5e4688fdf9425d2f13de",
+    "review": {
+      "runId": "a2-batch07-20261105T203530Z-b504cf63",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T20:35:30.116141+00:00",
+      "contentDigest": "1fdceafabc295f6511e92b50f9c9a4c938fbc72187dd5e4688fdf9425d2f13de",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "gcj-2022-3d-task",
+        "gcj-2022-3d-analysis",
+        "google-competitions-farewell"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a2/batch07/evidence.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": [
+        {
+          "id": "a2-b07-week3-specificity",
+          "severity": "major",
+          "description": "第三周完成标准由泛化的所有断言可复算改为三官方样例、零容量、总上限恰差1、多解与失败反例，明确可核验产物；属于编辑学习验收，不宣称官方新增评分或已经通过官方评测。",
+          "resolved": true
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "google-code-jam:2022:qualification-3d-printing:historical-public-task:qualification-3d-printing-2022:v3",
+    "coreDigest": "dabf662e516b076e0954af697f044e7a3ed2af5fb8f678d80fee6f711331ee64",
+    "originalContentDigest": "1fdceafabc295f6511e92b50f9c9a4c938fbc72187dd5e4688fdf9425d2f13de",
+    "review": {
+      "runId": "content-b2-astra-high-batch07-20261106-1a31dd6b",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T20:36:42.440238+00:00",
+      "contentDigest": "1fdceafabc295f6511e92b50f9c9a4c938fbc72187dd5e4688fdf9425d2f13de",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "gcj-2022-3d-task",
+        "gcj-2022-3d-analysis",
+        "google-competitions-farewell"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch07/evidence/00-google-code-jam.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "google-kick-start:2022:round-a-speed-typing:historical-public-task:round-a-speed-typing-2022:v3",
+    "coreDigest": "9074e9142a69e79ccecf708bf13d736714aa4d5173f30842cdb4248c17a9ea22",
+    "originalContentDigest": "9a76f98fe2803e5c1c62938e4b585fd2aa0f1908dfdd83e5a35620b9824c17ef",
+    "review": {
+      "runId": "a2-batch06-20261105T201748Z-7df37711",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T20:17:48.696704+00:00",
+      "contentDigest": "9a76f98fe2803e5c1c62938e4b585fd2aa0f1908dfdd83e5a35620b9824c17ef",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "gks-2022-speed-task",
+        "gks-2022-speed-analysis",
+        "google-competitions-farewell"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a2/batch06/evidence/1-google-kick-start.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": [
+        {
+          "id": "a2-b06-fact-type",
+          "severity": "major",
+          "description": "资格知识缺口已拆成kind/status unknown、空sourceIds/sourceScopes、checkedAt与lastVerifiedAt null，并保留requires_confirmation；解决的是类型混淆，未解决未知资格本身。",
+          "resolved": true
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "google-kick-start:2022:round-a-speed-typing:historical-public-task:round-a-speed-typing-2022:v3",
+    "coreDigest": "9074e9142a69e79ccecf708bf13d736714aa4d5173f30842cdb4248c17a9ea22",
+    "originalContentDigest": "9a76f98fe2803e5c1c62938e4b585fd2aa0f1908dfdd83e5a35620b9824c17ef",
+    "review": {
+      "runId": "content-b2-astra-high-batch06-20261106-2ba54f74",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T20:24:04.856569+00:00",
+      "contentDigest": "9a76f98fe2803e5c1c62938e4b585fd2aa0f1908dfdd83e5a35620b9824c17ef",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "gks-2022-speed-task",
+        "gks-2022-speed-analysis",
+        "google-competitions-farewell"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch06/evidence/01-google-kick-start.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "google-hash-code:2022:qualification-mentorship:historical-public-task:qualification-mentorship-2022:v3",
+    "coreDigest": "483ba425949142173f6de9543e71bce5dcfe6ee86b91d934baeb294245a115b1",
+    "originalContentDigest": "fccf9e048308064cc5b0a79df12944abfaabfb11d5007c81a82bd04b460234ed",
+    "review": {
+      "runId": "a2-batch06-20261105T201748Z-7df37711",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T20:17:48.696704+00:00",
+      "contentDigest": "fccf9e048308064cc5b0a79df12944abfaabfb11d5007c81a82bd04b460234ed",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "ghc-2022-mentorship-task",
+        "ghc-2022-event",
+        "google-competitions-farewell"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a2/batch06/evidence/2-google-hash-code.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": [
+        {
+          "id": "a2-b06-fact-type",
+          "severity": "major",
+          "description": "资格知识缺口已拆成kind/status unknown、空sourceIds/sourceScopes、checkedAt与lastVerifiedAt null，并保留requires_confirmation；解决的是类型混淆，未解决未知资格本身。",
+          "resolved": true
+        },
+        {
+          "id": "a2-b06-hash-parallel",
+          "severity": "major",
+          "description": "七日体验、nextStep、learningFeedback均明确Anna/Logging与Maria-Bob/WebChat，无贡献者可同时参与两项目；P8—9原图与正文支持。",
+          "resolved": true
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "google-hash-code:2022:qualification-mentorship:historical-public-task:qualification-mentorship-2022:v3",
+    "coreDigest": "483ba425949142173f6de9543e71bce5dcfe6ee86b91d934baeb294245a115b1",
+    "originalContentDigest": "fccf9e048308064cc5b0a79df12944abfaabfb11d5007c81a82bd04b460234ed",
+    "review": {
+      "runId": "content-b2-astra-high-batch06-20261106-2ba54f74",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T20:24:04.857069+00:00",
+      "contentDigest": "fccf9e048308064cc5b0a79df12944abfaabfb11d5007c81a82bd04b460234ed",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "ghc-2022-mentorship-task",
+        "ghc-2022-event",
+        "google-competitions-farewell"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch06/evidence/02-google-hash-code.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "taiwan-child-rights-lesson-contest:2023-first:preschool-rights-learning:preschool-student:taiwan-2023-preschool-student:v3",
+    "coreDigest": "b648302e89ab745569c46823885efa61a4627c0260bb421f4b890d0097fe4678",
+    "originalContentDigest": "a96c6bd030a053a54c5b0b1fd72ade7da3f622775d486800547398cc7ff24f95",
+    "review": {
+      "reviewerId": "/root/content_corrections_review_b",
+      "runId": "content-corrections-independent-b2-2026-11-06T01:18:57.622Z",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-06T01:18:57.622Z",
+      "contentDigest": "a96c6bd030a053a54c5b0b1fd72ade7da3f622775d486800547398cc7ff24f95",
+      "method": "independent_source_recheck",
+      "outcome": "approved",
+      "sourceIds": [
+        "teach-d3-2023-rules",
+        "teach-d3-children-rights-work"
+      ],
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "findings": [],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-corrections-independent-b2/record-evidence.json"
+    }
+  },
+  {
+    "recordId": "taiwan-child-rights-lesson-contest:2023-first:preschool-rights-learning:preschool-student:taiwan-2023-preschool-student:v3",
+    "coreDigest": "b648302e89ab745569c46823885efa61a4627c0260bb421f4b890d0097fe4678",
+    "originalContentDigest": "a96c6bd030a053a54c5b0b1fd72ade7da3f622775d486800547398cc7ff24f95",
+    "review": {
+      "reviewerId": "/root/six_content_independent_a",
+      "runId": "six-content-independent-a1@2026-11-06T01:28:26+00:00",
+      "model": "gpt-6-astra",
+      "reasoningEffort": "high",
+      "reviewedAt": "2026-11-06T01:28:26+00:00",
+      "method": "independent_source_recheck",
+      "outcome": "approved",
+      "contentDigest": "a96c6bd030a053a54c5b0b1fd72ade7da3f622775d486800547398cc7ff24f95",
+      "sourceIds": [
+        "teach-d3-2023-rules",
+        "teach-d3-children-rights-work"
+      ],
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "findings": [],
+      "evidenceArtifact": "artifacts/continuation-20261105/six-content-independent-a1/01-taiwan-child-rights-lesson-contest.json"
+    }
+  },
+  {
+    "recordId": "ncyu-special-education-demonstration:2016-2017-105:reading-lesson-design:pre-service-teachers:taiwan-105-special-education:v3",
+    "coreDigest": "274a4f6245e49de2536cfee73ac9306018192fdfe4bf0a39f1368a2339237cc5",
+    "originalContentDigest": "d301539e1d828e6209065a975a8337c3e5acf8415ba51b0f062549ba85029843",
+    "review": {
+      "runId": "a2-gpt6astra-20261105T165926Z-5a7ff8c714f2",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:00:15.506107+00:00",
+      "contentDigest": "d301539e1d828e6209065a975a8337c3e5acf8415ba51b0f062549ba85029843",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "teach-d2-2017-rules",
+        "teach-d2-official-work",
+        "teach-d2-roaming-lesson"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a2/evidence/04-ncyu-special-education-demonstration.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "ncyu-special-education-demonstration:2016-2017-105:reading-lesson-design:pre-service-teachers:taiwan-105-special-education:v3",
+    "coreDigest": "274a4f6245e49de2536cfee73ac9306018192fdfe4bf0a39f1368a2339237cc5",
+    "originalContentDigest": "d301539e1d828e6209065a975a8337c3e5acf8415ba51b0f062549ba85029843",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.093817+00:00",
+      "contentDigest": "d301539e1d828e6209065a975a8337c3e5acf8415ba51b0f062549ba85029843",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "teach-d2-2017-rules",
+        "teach-d2-official-work",
+        "teach-d2-roaming-lesson"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/04-ncyu-special-education-demonstration.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "ncyu-special-education-demonstration:2016-2017-105:reading-lesson-design:pre-service-teachers:taiwan-105-special-education:v3",
+    "coreDigest": "274a4f6245e49de2536cfee73ac9306018192fdfe4bf0a39f1368a2339237cc5",
+    "originalContentDigest": "d301539e1d828e6209065a975a8337c3e5acf8415ba51b0f062549ba85029843",
+    "review": {
+      "runId": "content-b2-astra-high-20261106-f046e690",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:06:54.929426+00:00",
+      "contentDigest": "d301539e1d828e6209065a975a8337c3e5acf8415ba51b0f062549ba85029843",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "teach-d2-2017-rules",
+        "teach-d2-official-work",
+        "teach-d2-roaming-lesson"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/evidence/04-ncyu-special-education-demonstration.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "ncyu-special-education-demonstration:2016-2017-105:reading-lesson-design:pre-service-teachers:taiwan-105-special-education:v3",
+    "coreDigest": "274a4f6245e49de2536cfee73ac9306018192fdfe4bf0a39f1368a2339237cc5",
+    "originalContentDigest": "d301539e1d828e6209065a975a8337c3e5acf8415ba51b0f062549ba85029843",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:33:22.019332+00:00",
+      "contentDigest": "d301539e1d828e6209065a975a8337c3e5acf8415ba51b0f062549ba85029843",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "teach-d2-2017-rules",
+        "teach-d2-official-work",
+        "teach-d2-roaming-lesson"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/04-ncyu-special-education-demonstration.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "acm-student-research:2025-chi:hci-education-research:undergraduate:chi-2025-undergrad:v3",
+    "coreDigest": "c945df84db4e7e1bb66a662a920535723937fc0a8ca17e169a8cf919fd028635",
+    "originalContentDigest": "4428f0dd70aa239dbd8068f41493baec686990309cc0ed999321c4dd32244a74",
+    "review": {
+      "runId": "a2-gpt6astra-20261105T165926Z-5a7ff8c714f2",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:00:15.506107+00:00",
+      "contentDigest": "4428f0dd70aa239dbd8068f41493baec686990309cc0ed999321c4dd32244a74",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "chi-d1-2025-rules",
+        "chi-d1-chemlab-work"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a2/evidence/05-acm-student-research.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "acm-student-research:2025-chi:hci-education-research:undergraduate:chi-2025-undergrad:v3",
+    "coreDigest": "c945df84db4e7e1bb66a662a920535723937fc0a8ca17e169a8cf919fd028635",
+    "originalContentDigest": "4428f0dd70aa239dbd8068f41493baec686990309cc0ed999321c4dd32244a74",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.095203+00:00",
+      "contentDigest": "4428f0dd70aa239dbd8068f41493baec686990309cc0ed999321c4dd32244a74",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "chi-d1-2025-rules",
+        "chi-d1-chemlab-work"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/05-acm-student-research.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "acm-student-research:2025-chi:hci-education-research:undergraduate:chi-2025-undergrad:v3",
+    "coreDigest": "c945df84db4e7e1bb66a662a920535723937fc0a8ca17e169a8cf919fd028635",
+    "originalContentDigest": "4428f0dd70aa239dbd8068f41493baec686990309cc0ed999321c4dd32244a74",
+    "review": {
+      "runId": "content-b2-astra-high-20261106-f046e690",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:31:18.348560+00:00",
+      "contentDigest": "4428f0dd70aa239dbd8068f41493baec686990309cc0ed999321c4dd32244a74",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "chi-d1-2025-rules",
+        "chi-d1-chemlab-work"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/evidence/05-acm-student-research.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "acm-student-research:2025-chi:hci-education-research:undergraduate:chi-2025-undergrad:v3",
+    "coreDigest": "c945df84db4e7e1bb66a662a920535723937fc0a8ca17e169a8cf919fd028635",
+    "originalContentDigest": "4428f0dd70aa239dbd8068f41493baec686990309cc0ed999321c4dd32244a74",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:33:22.019959+00:00",
+      "contentDigest": "4428f0dd70aa239dbd8068f41493baec686990309cc0ed999321c4dd32244a74",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "chi-d1-2025-rules",
+        "chi-d1-chemlab-work"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/05-acm-student-research.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "apple-swift-student-challenge:2026:app-playground:individual-student:global-2026:v3",
+    "coreDigest": "36cb0c910438e21006e63d40927911fd7d0f9ca54881023fb7ce507cc7a7aad0",
+    "originalContentDigest": "0ebe4265bc5c1fb71c91ff71d8849d51f38ae3f30a5ce8af74870c6fa4a822d2",
+    "review": {
+      "runId": "a2-batch05-20261105T195247Z-8ed2c6b2",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T19:52:47.369510+00:00",
+      "contentDigest": "0ebe4265bc5c1fb71c91ff71d8849d51f38ae3f30a5ce8af74870c6fa4a822d2",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "swift-2026-policy",
+        "swift-playground-requirements",
+        "swift-accessibility-2025-full"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a2/batch05/evidence.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": [
+        {
+          "id": "a2-b05-image-label-mismatch-explained",
+          "severity": "major",
+          "description": "原JPEG确为海岸而非苹果；关卡ZStack标签为Apples hanging from a tree，输入仅apple匹配。当前文本明确以语义冲突作案例，已经修正成功案例叙述。修复的是解读正文，不是原作品代码。",
+          "resolved": true
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "apple-swift-student-challenge:2026:app-playground:individual-student:global-2026:v3",
+    "coreDigest": "36cb0c910438e21006e63d40927911fd7d0f9ca54881023fb7ce507cc7a7aad0",
+    "originalContentDigest": "0ebe4265bc5c1fb71c91ff71d8849d51f38ae3f30a5ce8af74870c6fa4a822d2",
+    "review": {
+      "runId": "content-b2-astra-high-batch05-20261106-4047b979",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T19:53:08.339604+00:00",
+      "contentDigest": "0ebe4265bc5c1fb71c91ff71d8849d51f38ae3f30a5ce8af74870c6fa4a822d2",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "swift-2026-policy",
+        "swift-playground-requirements",
+        "swift-accessibility-2025-full"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch05/evidence/00-apple-swift-student-challenge.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "geographical-science-innovation:2026-9:human-geography:human-geography:china-preliminary:v3",
+    "coreDigest": "7e6db66f8379ed6943df7ba80703598d4c4cfa4a04f1073498ce10a708381a49",
+    "originalContentDigest": "2e5e5a1362679056a6f45cd0277cb2b844d32993ed8e06a110c53fc6b85d6a2e",
+    "review": {
+      "runId": "a2-gpt6astra-20261105T165926Z-5a7ff8c714f2",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:00:15.506107+00:00",
+      "contentDigest": "2e5e5a1362679056a6f45cd0277cb2b844d32993ed8e06a110c53fc6b85d6a2e",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "geography-2026-notice"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a2/evidence/07-geographical-science-innovation.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": false,
+        "temporalAccuracy": true
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "a2-07-01",
+          "severity": "major",
+          "description": "补完整具体官方任务或完整公开作品及适用评分；地理分异主题本身不满足严格案例。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "geographical-science-innovation:2026-9:human-geography:human-geography:china-preliminary:v3",
+    "coreDigest": "7e6db66f8379ed6943df7ba80703598d4c4cfa4a04f1073498ce10a708381a49",
+    "originalContentDigest": "2e5e5a1362679056a6f45cd0277cb2b844d32993ed8e06a110c53fc6b85d6a2e",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.096119+00:00",
+      "contentDigest": "2e5e5a1362679056a6f45cd0277cb2b844d32993ed8e06a110c53fc6b85d6a2e",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "geography-2026-notice"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/07-geographical-science-innovation.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": false,
+        "temporalAccuracy": true
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "A3-07-01",
+          "severity": "major",
+          "description": "补完整具体官方任务或完整公开作品及适用评分；地理分异主题本身不满足严格案例。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "geographical-science-innovation:2026-9:human-geography:human-geography:china-preliminary:v3",
+    "coreDigest": "7e6db66f8379ed6943df7ba80703598d4c4cfa4a04f1073498ce10a708381a49",
+    "originalContentDigest": "2e5e5a1362679056a6f45cd0277cb2b844d32993ed8e06a110c53fc6b85d6a2e",
+    "review": {
+      "runId": "content-b2-astra-high-20261106-f046e690",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T16:34:13.802158+00:00",
+      "contentDigest": "2e5e5a1362679056a6f45cd0277cb2b844d32993ed8e06a110c53fc6b85d6a2e",
+      "method": "independent_source_recheck",
+      "sourceIds": [],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/evidence/07-geographical-science-innovation.json",
+      "checks": {
+        "factualSupport": false,
+        "entityScope": false,
+        "studentUsefulness": false,
+        "temporalAccuracy": false
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "B2-07-01",
+          "severity": "major",
+          "description": "geography-2026-notice没有冻结sourceArtifact/frozenIndex；本次无法独立核验本科院系资格、件数、300元初审费、时间及匿名视频要求。应提供原件，不接受作者body_read标签替代。",
+          "resolved": false
+        },
+        {
+          "id": "B2-07-02",
+          "severity": "major",
+          "description": "严格L3具体案例缺失：仅开放主题“地理分异与因地制宜”及编辑选题流程，没有具体完整官方题或完整公开作品。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "geographical-science-innovation:2026-9:human-geography:human-geography:china-preliminary:v3",
+    "coreDigest": "7e6db66f8379ed6943df7ba80703598d4c4cfa4a04f1073498ce10a708381a49",
+    "originalContentDigest": "2e5e5a1362679056a6f45cd0277cb2b844d32993ed8e06a110c53fc6b85d6a2e",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:34:33.161169+00:00",
+      "contentDigest": "2e5e5a1362679056a6f45cd0277cb2b844d32993ed8e06a110c53fc6b85d6a2e",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "geography-2026-notice"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/07-geographical-science-innovation.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": false,
+        "temporalAccuracy": true
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "B2-07-01",
+          "severity": "major",
+          "description": "目前仅开放主题与通用初审要求，没有足够具体的完整官方题或完整公开作品，严格L3案例仍缺。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "schneider-go-green:2026:energy-proposal:student-team:global-phase-one:v3",
+    "coreDigest": "fec3b293131260843d5a8fab0f309bb981944174cdec4b3a605991af1c420d1f",
+    "originalContentDigest": "5276730b7ca6b3c948f79c5a2215c6c8c79fef1b987503d6f3a8238e7825e6ec",
+    "review": {
+      "runId": "a2-gpt6astra-20261105T165926Z-5a7ff8c714f2",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:00:15.506107+00:00",
+      "contentDigest": "5276730b7ca6b3c948f79c5a2215c6c8c79fef1b987503d6f3a8238e7825e6ec",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "gogreen-2026-terms",
+        "gogreen-2026-faq"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a2/evidence/08-schneider-go-green.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": false,
+        "temporalAccuracy": true
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "a2-08-01",
+          "severity": "major",
+          "description": "补具有具体输入/情境/约束的完整官方题或完整公开项目，并配适用评审；不以通用社区能源练习替代。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "schneider-go-green:2026:energy-proposal:student-team:global-phase-one:v3",
+    "coreDigest": "fec3b293131260843d5a8fab0f309bb981944174cdec4b3a605991af1c420d1f",
+    "originalContentDigest": "5276730b7ca6b3c948f79c5a2215c6c8c79fef1b987503d6f3a8238e7825e6ec",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.097215+00:00",
+      "contentDigest": "5276730b7ca6b3c948f79c5a2215c6c8c79fef1b987503d6f3a8238e7825e6ec",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "gogreen-2026-terms",
+        "gogreen-2026-faq"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/08-schneider-go-green.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": false,
+        "temporalAccuracy": true
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "A3-08-01",
+          "severity": "major",
+          "description": "补具有具体输入/情境/约束的完整官方题或完整公开项目，并配适用评审；不以通用社区能源练习替代。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "schneider-go-green:2026:energy-proposal:student-team:global-phase-one:v3",
+    "coreDigest": "fec3b293131260843d5a8fab0f309bb981944174cdec4b3a605991af1c420d1f",
+    "originalContentDigest": "5276730b7ca6b3c948f79c5a2215c6c8c79fef1b987503d6f3a8238e7825e6ec",
+    "review": {
+      "runId": "content-b2-astra-high-20261106-f046e690",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T16:34:13.799071+00:00",
+      "contentDigest": "5276730b7ca6b3c948f79c5a2215c6c8c79fef1b987503d6f3a8238e7825e6ec",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "gogreen-2026-terms",
+        "gogreen-2026-faq"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/evidence/08-schneider-go-green.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": false,
+        "temporalAccuracy": true
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "B2-08-01",
+          "severity": "major",
+          "description": "严格L3仍仅有开放主题和通用提案要求，workedExample未确定真实社区的完整官方题或可核完整作品；missingForPublication已记录相同缺口。需补足具体案例，不能以通用研究路线替代。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "schneider-go-green:2026:energy-proposal:student-team:global-phase-one:v3",
+    "coreDigest": "fec3b293131260843d5a8fab0f309bb981944174cdec4b3a605991af1c420d1f",
+    "originalContentDigest": "5276730b7ca6b3c948f79c5a2215c6c8c79fef1b987503d6f3a8238e7825e6ec",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:33:22.021172+00:00",
+      "contentDigest": "5276730b7ca6b3c948f79c5a2215c6c8c79fef1b987503d6f3a8238e7825e6ec",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "gogreen-2026-terms",
+        "gogreen-2026-faq"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/08-schneider-go-green.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": false,
+        "temporalAccuracy": true
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "B2-08-01",
+          "severity": "major",
+          "description": "严格L3仍仅有开放主题和通用提案要求，workedExample未确定真实社区的完整官方题或可核完整作品；missingForPublication已记录相同缺口。需补足具体案例，不能以通用研究路线替代。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "national-software-testing:2025-10:web-testing:individual:china-web-2025:v3",
+    "coreDigest": "a150c1f992d6b3b4ba194505b517b99018e0579db431b3a23c0dbc46c2d22423",
+    "originalContentDigest": "033ec6da26a8a02211bbc4ff9cbf55e3623ac6133b24efb2e0e0178ca8a6354c",
+    "review": {
+      "runId": "a2-gpt6astra-20261105T165926Z-5a7ff8c714f2",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:00:15.506107+00:00",
+      "contentDigest": "033ec6da26a8a02211bbc4ff9cbf55e3623ac6133b24efb2e0e0178ca8a6354c",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "testing-2025-rules",
+        "testing-2025-track"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a2/evidence/09-national-software-testing.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": false,
+        "temporalAccuracy": true
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "a2-09-01",
+          "severity": "major",
+          "description": "补具体官方应用及完整需求（或完整公开测试作品）与适用评分；不得仅用自选表单练习当真实赛题。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "national-software-testing:2025-10:web-testing:individual:china-web-2025:v3",
+    "coreDigest": "a150c1f992d6b3b4ba194505b517b99018e0579db431b3a23c0dbc46c2d22423",
+    "originalContentDigest": "033ec6da26a8a02211bbc4ff9cbf55e3623ac6133b24efb2e0e0178ca8a6354c",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.098096+00:00",
+      "contentDigest": "033ec6da26a8a02211bbc4ff9cbf55e3623ac6133b24efb2e0e0178ca8a6354c",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "testing-2025-rules",
+        "testing-2025-track"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/09-national-software-testing.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": false,
+        "temporalAccuracy": true
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "A3-09-01",
+          "severity": "major",
+          "description": "补具体官方应用及完整需求（或完整公开测试作品）与适用评分；不得仅用自选表单练习当真实赛题。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "national-software-testing:2025-10:web-testing:individual:china-web-2025:v3",
+    "coreDigest": "a150c1f992d6b3b4ba194505b517b99018e0579db431b3a23c0dbc46c2d22423",
+    "originalContentDigest": "033ec6da26a8a02211bbc4ff9cbf55e3623ac6133b24efb2e0e0178ca8a6354c",
+    "review": {
+      "runId": "content-b2-astra-high-20261106-f046e690",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T16:32:28.877754+00:00",
+      "contentDigest": "033ec6da26a8a02211bbc4ff9cbf55e3623ac6133b24efb2e0e0178ca8a6354c",
+      "method": "independent_source_recheck",
+      "sourceIds": [],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/evidence/09-national-software-testing.json",
+      "checks": {
+        "factualSupport": false,
+        "entityScope": false,
+        "studentUsefulness": false,
+        "temporalAccuracy": false
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "B2-09-01",
+          "severity": "major",
+          "description": "冻结记录中关键事实及案例来源全部没有sourceArtifact，无法在限定冻结包内实际读原件。sourceIds保持空，不继承作者body_read或旧审结论。需补入可核SHA的原件后独立重审。",
+          "resolved": false
+        },
+        {
+          "id": "B2-09-02",
+          "severity": "major",
+          "description": "赛项概述说明提交用例/脚本/截图，但没有具体测试应用和完整需求或完整公开参赛作品，不能满足严格L3案例门槛。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "national-software-testing:2025-10:web-testing:individual:china-web-2025:v3",
+    "coreDigest": "a150c1f992d6b3b4ba194505b517b99018e0579db431b3a23c0dbc46c2d22423",
+    "originalContentDigest": "033ec6da26a8a02211bbc4ff9cbf55e3623ac6133b24efb2e0e0178ca8a6354c",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:43:18.882235+00:00",
+      "contentDigest": "033ec6da26a8a02211bbc4ff9cbf55e3623ac6133b24efb2e0e0178ca8a6354c",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "testing-2025-rules",
+        "testing-2025-track"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/09-national-software-testing.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": false,
+        "temporalAccuracy": true
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "B2-09-01",
+          "severity": "major",
+          "description": "新增原件已支持2025 Web赛项规则和正式评分，但workedExample仍是赛项说明与通用测试流程，未含一个完整具体被测Web应用/功能需求或完整公开答卷的拆解。严格L3的完整具体任务原例尚缺，不能把赛项概述等同具体试题。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "international-mathematics-competition:2026-33:proofs:individual:bulgaria-2026:v3",
+    "coreDigest": "a40240b1cc0973b1a10107a2d390fe961ba4e4c2992cbc856972e7bc71bd97f1",
+    "originalContentDigest": "fa5990e657eef26197b5da5a5868a1f0501325fa07308e40ef4ef60378b260ab",
+    "review": {
+      "runId": "a2-gpt6astra-20261105T165926Z-5a7ff8c714f2",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:00:15.506107+00:00",
+      "contentDigest": "fa5990e657eef26197b5da5a5868a1f0501325fa07308e40ef4ef60378b260ab",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "imc-2026-info",
+        "imc-2026-day1",
+        "imc-2026-day1-marking"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a2/evidence/10-international-mathematics-competition.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "international-mathematics-competition:2026-33:proofs:individual:bulgaria-2026:v3",
+    "coreDigest": "a40240b1cc0973b1a10107a2d390fe961ba4e4c2992cbc856972e7bc71bd97f1",
+    "originalContentDigest": "fa5990e657eef26197b5da5a5868a1f0501325fa07308e40ef4ef60378b260ab",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.099165+00:00",
+      "contentDigest": "fa5990e657eef26197b5da5a5868a1f0501325fa07308e40ef4ef60378b260ab",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "imc-2026-info",
+        "imc-2026-day1",
+        "imc-2026-day1-marking"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/10-international-mathematics-competition.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "international-mathematics-competition:2026-33:proofs:individual:bulgaria-2026:v3",
+    "coreDigest": "a40240b1cc0973b1a10107a2d390fe961ba4e4c2992cbc856972e7bc71bd97f1",
+    "originalContentDigest": "fa5990e657eef26197b5da5a5868a1f0501325fa07308e40ef4ef60378b260ab",
+    "review": {
+      "runId": "content-b2-astra-high-20261106-f046e690",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T16:31:37.134384+00:00",
+      "contentDigest": "fa5990e657eef26197b5da5a5868a1f0501325fa07308e40ef4ef60378b260ab",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "imc-2026-info",
+        "imc-2026-day1",
+        "imc-2026-day1-marking"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/evidence/10-international-mathematics-competition.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "international-mathematics-competition:2026-33:proofs:individual:bulgaria-2026:v3",
+    "coreDigest": "a40240b1cc0973b1a10107a2d390fe961ba4e4c2992cbc856972e7bc71bd97f1",
+    "originalContentDigest": "fa5990e657eef26197b5da5a5868a1f0501325fa07308e40ef4ef60378b260ab",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:33:22.021845+00:00",
+      "contentDigest": "fa5990e657eef26197b5da5a5868a1f0501325fa07308e40ef4ef60378b260ab",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "imc-2026-info",
+        "imc-2026-day1",
+        "imc-2026-day1-marking"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/10-international-mathematics-competition.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "dandad-new-blood:2026-share-your-passion:personal-social-campaign:eligible-creative:global-2026-dad-brief:v3",
+    "coreDigest": "98ac1802f56beee32bcd960d5e202463fcdc776ada729f3d1a7c7a2444d9750b",
+    "originalContentDigest": "81b5c7d9683737ba602a106206a0a9563a466c38f4b32c81fb45988268469066",
+    "review": {
+      "reviewerId": "/root/content_corrections_review_b",
+      "runId": "content-corrections-independent-b2-2026-11-06T01:18:57.622Z",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-06T01:18:57.622Z",
+      "contentDigest": "81b5c7d9683737ba602a106206a0a9563a466c38f4b32c81fb45988268469066",
+      "method": "independent_source_recheck",
+      "outcome": "approved",
+      "sourceIds": [
+        "newblood-2026-dad-brief",
+        "newblood-2026-tutor-pack"
+      ],
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "findings": [],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-corrections-independent-b2/record-evidence.json"
+    }
+  },
+  {
+    "recordId": "dandad-new-blood:2026-share-your-passion:personal-social-campaign:eligible-creative:global-2026-dad-brief:v3",
+    "coreDigest": "98ac1802f56beee32bcd960d5e202463fcdc776ada729f3d1a7c7a2444d9750b",
+    "originalContentDigest": "81b5c7d9683737ba602a106206a0a9563a466c38f4b32c81fb45988268469066",
+    "review": {
+      "reviewerId": "/root/six_content_independent_a",
+      "runId": "six-content-independent-a1@2026-11-06T01:28:26+00:00",
+      "model": "gpt-6-astra",
+      "reasoningEffort": "high",
+      "reviewedAt": "2026-11-06T01:28:26+00:00",
+      "method": "independent_source_recheck",
+      "outcome": "approved",
+      "contentDigest": "81b5c7d9683737ba602a106206a0a9563a466c38f4b32c81fb45988268469066",
+      "sourceIds": [
+        "newblood-2026-dad-brief",
+        "newblood-2026-tutor-pack"
+      ],
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "findings": [],
+      "evidenceArtifact": "artifacts/continuation-20261105/six-content-independent-a1/02-dandad-new-blood.json"
+    }
+  },
+  {
+    "recordId": "aiaa-design-build-fly:2025-2026:aircraft-missions:university-team:2026-charter-flight:v3",
+    "coreDigest": "d1a1abeacaa823b14852e1d688a86c6950e164a3b52de68ddc7c4d32227db70b",
+    "originalContentDigest": "eb36d5551df194b59f07216fcf3403c041a964b9fa44dc773b4b49442052727e",
+    "review": {
+      "runId": "a2-batch04-20261105T194125Z-7db8c31a",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T19:41:25.608720+00:00",
+      "contentDigest": "eb36d5551df194b59f07216fcf3403c041a964b9fa44dc773b4b49442052727e",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "aiaa-dbf-2026-rules"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a2/batch04/evidence/15-aiaa-design-build-fly.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "aiaa-design-build-fly:2025-2026:aircraft-missions:university-team:2026-charter-flight:v3",
+    "coreDigest": "d1a1abeacaa823b14852e1d688a86c6950e164a3b52de68ddc7c4d32227db70b",
+    "originalContentDigest": "eb36d5551df194b59f07216fcf3403c041a964b9fa44dc773b4b49442052727e",
+    "review": {
+      "runId": "content-b2-astra-high-batch04-20261106-3f6acd66",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T19:46:55.270688+00:00",
+      "contentDigest": "eb36d5551df194b59f07216fcf3403c041a964b9fa44dc773b4b49442052727e",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "aiaa-dbf-2026-rules"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch04/evidence/15-aiaa-design-build-fly.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "china-undergraduate-physics-tournament:2020-rules:physics-fight:undergraduate:china-historical-2020:v3",
+    "coreDigest": "f764d92a970b87677cb575dd2be8515fed36667027166c4918da5b6b475ef47d",
+    "originalContentDigest": "d82bc7b52c96d3bc66b1f403b70fa0eae4cad4867f884820cb7168801271a0d7",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.102060+00:00",
+      "contentDigest": "d82bc7b52c96d3bc66b1f403b70fa0eae4cad4867f884820cb7168801271a0d7",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "cupt-2020-rules",
+        "iypt-2020-problem6"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/13-china-undergraduate-physics-tournament.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "china-undergraduate-physics-tournament:2020-rules:physics-fight:undergraduate:china-historical-2020:v3",
+    "coreDigest": "f764d92a970b87677cb575dd2be8515fed36667027166c4918da5b6b475ef47d",
+    "originalContentDigest": "d82bc7b52c96d3bc66b1f403b70fa0eae4cad4867f884820cb7168801271a0d7",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:33:22.023283+00:00",
+      "contentDigest": "d82bc7b52c96d3bc66b1f403b70fa0eae4cad4867f884820cb7168801271a0d7",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "cupt-2020-rules",
+        "iypt-2020-problem6",
+        "cupt-2026-north-notice"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/13-china-undergraduate-physics-tournament.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "national-college-math-modeling:2026:undergraduate-group:undergraduate:china-2026-a:v3",
+    "coreDigest": "10f8777b024c772fdbacde0a8443a8c94961fb840281d434d1e3ae91df8d52fe",
+    "originalContentDigest": "0258b9074ee6ffc1ebb36b22a474beff6733a2fc46eff983c8a73a6bf731580a",
+    "review": {
+      "runId": "a2-batch04-20261105T194125Z-7db8c31a",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T19:41:25.608720+00:00",
+      "contentDigest": "0258b9074ee6ffc1ebb36b22a474beff6733a2fc46eff983c8a73a6bf731580a",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "cumcm-c-charter",
+        "cumcm-c-format",
+        "cumcm-c-rules",
+        "cumcm-c-problem-a"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a2/batch04/evidence/17-national-college-math-modeling.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "national-college-math-modeling:2026:undergraduate-group:undergraduate:china-2026-a:v3",
+    "coreDigest": "10f8777b024c772fdbacde0a8443a8c94961fb840281d434d1e3ae91df8d52fe",
+    "originalContentDigest": "0258b9074ee6ffc1ebb36b22a474beff6733a2fc46eff983c8a73a6bf731580a",
+    "review": {
+      "runId": "content-b2-astra-high-batch04-20261106-3f6acd66",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T19:46:55.274132+00:00",
+      "contentDigest": "0258b9074ee6ffc1ebb36b22a474beff6733a2fc46eff983c8a73a6bf731580a",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "cumcm-c-charter",
+        "cumcm-c-format",
+        "cumcm-c-rules",
+        "cumcm-c-problem-a"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch04/evidence/17-national-college-math-modeling.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "comap-mcm-icm:2026:mcm-a:undergraduate-or-below:global-2026-mcm-a:v3",
+    "coreDigest": "09e8a5f4f28890bccc914c04579cd37066f355a11b167efa9830a2943f627b0a",
+    "originalContentDigest": "3561c057b72bf04ab2840b4e476b6dca7535c89c591231ba8229e5ec742a8ad5",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.105214+00:00",
+      "contentDigest": "3561c057b72bf04ab2840b4e476b6dca7535c89c591231ba8229e5ec742a8ad5",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "comap-c-2026-rules",
+        "comap-c-2026-mirror",
+        "comap-c-2026-a"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/15-comap-mcm-icm.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "comap-mcm-icm:2026:mcm-a:undergraduate-or-below:global-2026-mcm-a:v3",
+    "coreDigest": "09e8a5f4f28890bccc914c04579cd37066f355a11b167efa9830a2943f627b0a",
+    "originalContentDigest": "3561c057b72bf04ab2840b4e476b6dca7535c89c591231ba8229e5ec742a8ad5",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:33:22.024878+00:00",
+      "contentDigest": "3561c057b72bf04ab2840b4e476b6dca7535c89c591231ba8229e5ec742a8ad5",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "comap-c-2026-rules",
+        "comap-c-2026-mirror",
+        "comap-c-2026-a"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/15-comap-mcm-icm.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "icpc-programming:2025-world-finals:world-finals:qualified-university-team:world-finals-baku-2025:v3",
+    "coreDigest": "c08443fe26f5f83fba25d40356b0c0d000e302915e9e810c7f1eb949b54f1f23",
+    "originalContentDigest": "391129705dcc9daea8a99fb9d68efdfb022d98333af74e6988763206912885c9",
+    "review": {
+      "runId": "a2-gpt6astra-20261105T165926Z-5a7ff8c714f2",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:00:15.506107+00:00",
+      "contentDigest": "391129705dcc9daea8a99fb9d68efdfb022d98333af74e6988763206912885c9",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "icpc-c-2025-rules",
+        "icpc-c-2025-d"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a2/evidence/15-icpc-programming.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "icpc-programming:2025-world-finals:world-finals:qualified-university-team:world-finals-baku-2025:v3",
+    "coreDigest": "c08443fe26f5f83fba25d40356b0c0d000e302915e9e810c7f1eb949b54f1f23",
+    "originalContentDigest": "391129705dcc9daea8a99fb9d68efdfb022d98333af74e6988763206912885c9",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.114861+00:00",
+      "contentDigest": "391129705dcc9daea8a99fb9d68efdfb022d98333af74e6988763206912885c9",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "icpc-c-2025-rules",
+        "icpc-c-2025-d"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/16-icpc-programming.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "icpc-programming:2025-world-finals:world-finals:qualified-university-team:world-finals-baku-2025:v3",
+    "coreDigest": "c08443fe26f5f83fba25d40356b0c0d000e302915e9e810c7f1eb949b54f1f23",
+    "originalContentDigest": "391129705dcc9daea8a99fb9d68efdfb022d98333af74e6988763206912885c9",
+    "review": {
+      "runId": "content-b2-astra-high-20261106-f046e690",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:10:35.007575+00:00",
+      "contentDigest": "391129705dcc9daea8a99fb9d68efdfb022d98333af74e6988763206912885c9",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "icpc-c-2025-rules",
+        "icpc-c-2025-d"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/evidence/15-icpc-programming.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "icpc-programming:2025-world-finals:world-finals:qualified-university-team:world-finals-baku-2025:v3",
+    "coreDigest": "c08443fe26f5f83fba25d40356b0c0d000e302915e9e810c7f1eb949b54f1f23",
+    "originalContentDigest": "391129705dcc9daea8a99fb9d68efdfb022d98333af74e6988763206912885c9",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:33:22.025686+00:00",
+      "contentDigest": "391129705dcc9daea8a99fb9d68efdfb022d98333af74e6988763206912885c9",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "icpc-c-2025-rules",
+        "icpc-c-2025-d"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/16-icpc-programming.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "china-software-cup:2026-15:a3-learning-agents:a-higher-education:china-a3-2026:v3",
+    "coreDigest": "9cc0449ff27d1e6ab9229324149f973b50c3260b07be70bf40f3bc0034022106",
+    "originalContentDigest": "eb04772c1518bbdd436d8f5c4693137a27c07cf4277996ed090f196ad393c0c6",
+    "review": {
+      "reviewerId": "/root/stage2_content_a",
+      "runId": "stage2-content-review-a-20261106",
+      "model": "gpt-6.1-sol",
+      "reasoningEffort": "max",
+      "reviewedAt": "2026-11-06T05:43:35Z",
+      "method": "independent_source_recheck",
+      "outcome": "approved",
+      "contentDigest": "eb04772c1518bbdd436d8f5c4693137a27c07cf4277996ed090f196ad393c0c6",
+      "sourceIds": [
+        "softcup-c2-notice",
+        "softcup-c2-a3"
+      ],
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "findings": [],
+      "evidenceArtifact": "artifacts/specialist-20261106/stage2-content-review-a/software-cup-a3-evidence.json"
+    }
+  },
+  {
+    "recordId": "china-software-cup:2026-15:a3-learning-agents:a-higher-education:china-a3-2026:v3",
+    "coreDigest": "9cc0449ff27d1e6ab9229324149f973b50c3260b07be70bf40f3bc0034022106",
+    "originalContentDigest": "eb04772c1518bbdd436d8f5c4693137a27c07cf4277996ed090f196ad393c0c6",
+    "review": {
+      "reviewerId": "/root/stage2_content_b",
+      "runId": "stage2-content-review-b-20261106T055555Z",
+      "model": "gpt-6.1-sol",
+      "reasoningEffort": "max",
+      "reviewedAt": "2026-11-06T05:55:55+00:00",
+      "method": "independent_source_recheck",
+      "outcome": "approved",
+      "contentDigest": "eb04772c1518bbdd436d8f5c4693137a27c07cf4277996ed090f196ad393c0c6",
+      "sourceIds": [
+        "softcup-c2-notice",
+        "softcup-c2-a3"
+      ],
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "findings": [],
+      "evidenceArtifact": "artifacts/specialist-20261106/stage2-content-review-b/software-cup/evidence.json"
+    }
+  },
+  {
+    "recordId": "service-outsourcing-innovation:2026-17:a11-basketball-reid:college-and-recent-graduates:china-a11-2026:v3",
+    "coreDigest": "7b7a4b32206007cb57c1d4b719c49573ebbd929c77f1244d24fab0191a36989c",
+    "originalContentDigest": "d047b2f0d152e762e9145b3ffad39b64bae0be77ce48e3d1bcad4b7de039209a",
+    "review": {
+      "runId": "a2-batch04-20261105T194125Z-7db8c31a",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T19:41:25.608720+00:00",
+      "contentDigest": "d047b2f0d152e762e9145b3ffad39b64bae0be77ce48e3d1bcad4b7de039209a",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "fwwb-c2-handbooks",
+        "fwwb-c2-a11"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a2/batch04/evidence/21-service-outsourcing-innovation.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": false,
+        "temporalAccuracy": true
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "a2-b04-21-l3-gap",
+          "severity": "major",
+          "description": "保留L3阻断：补该届A11适用的正式评审依据或正式确认参考表适用的原件。现有参考分值可作为学习建议，不能当最终评分已核。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "service-outsourcing-innovation:2026-17:a11-basketball-reid:college-and-recent-graduates:china-a11-2026:v3",
+    "coreDigest": "7b7a4b32206007cb57c1d4b719c49573ebbd929c77f1244d24fab0191a36989c",
+    "originalContentDigest": "d047b2f0d152e762e9145b3ffad39b64bae0be77ce48e3d1bcad4b7de039209a",
+    "review": {
+      "runId": "content-b2-astra-high-batch04-20261106-3f6acd66",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T19:46:55.278051+00:00",
+      "contentDigest": "d047b2f0d152e762e9145b3ffad39b64bae0be77ce48e3d1bcad4b7de039209a",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "fwwb-c2-handbooks",
+        "fwwb-c2-a11"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch04/evidence/21-service-outsourcing-innovation.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": false,
+        "temporalAccuracy": true
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "B2-21-01",
+          "severity": "major",
+          "description": "正式适用评分仍缺：参赛手册第37页标题明确“仅供参考”，A11技术达标阈值不等于正式评审。新版已恢复缺口且标注正确，但严格L3尚不可通过。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "china-college-computer-design:2026-19:ai-industrial-vision:full-time-undergraduate:china-ai-industrial-2026:v3",
+    "coreDigest": "529b5e1db84c064d182cdf82536b36ce7c9941ad1f23d580660e6efd4a07bb5e",
+    "originalContentDigest": "3021621bdf1a73a9f342b810532e296a9d2844c8a3668f70511f80f47efdd48b",
+    "review": {
+      "runId": "a2-gpt6astra-20261105T165926Z-5a7ff8c714f2",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:00:15.506107+00:00",
+      "contentDigest": "3021621bdf1a73a9f342b810532e296a9d2844c8a3668f70511f80f47efdd48b",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "4c-c2-national",
+        "4c-c2-industrial"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a2/evidence/18-china-college-computer-design.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "china-college-computer-design:2026-19:ai-industrial-vision:full-time-undergraduate:china-ai-industrial-2026:v3",
+    "coreDigest": "529b5e1db84c064d182cdf82536b36ce7c9941ad1f23d580660e6efd4a07bb5e",
+    "originalContentDigest": "3021621bdf1a73a9f342b810532e296a9d2844c8a3668f70511f80f47efdd48b",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.119480+00:00",
+      "contentDigest": "3021621bdf1a73a9f342b810532e296a9d2844c8a3668f70511f80f47efdd48b",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "4c-c2-national",
+        "4c-c2-industrial"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/19-china-college-computer-design.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "china-college-computer-design:2026-19:ai-industrial-vision:full-time-undergraduate:china-ai-industrial-2026:v3",
+    "coreDigest": "529b5e1db84c064d182cdf82536b36ce7c9941ad1f23d580660e6efd4a07bb5e",
+    "originalContentDigest": "3021621bdf1a73a9f342b810532e296a9d2844c8a3668f70511f80f47efdd48b",
+    "review": {
+      "runId": "content-b2-astra-high-20261106-f046e690",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:33:04.626044+00:00",
+      "contentDigest": "3021621bdf1a73a9f342b810532e296a9d2844c8a3668f70511f80f47efdd48b",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "4c-c2-national",
+        "4c-c2-industrial"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/evidence/18-china-college-computer-design.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "china-college-computer-design:2026-19:ai-industrial-vision:full-time-undergraduate:china-ai-industrial-2026:v3",
+    "coreDigest": "529b5e1db84c064d182cdf82536b36ce7c9941ad1f23d580660e6efd4a07bb5e",
+    "originalContentDigest": "3021621bdf1a73a9f342b810532e296a9d2844c8a3668f70511f80f47efdd48b",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:33:22.028923+00:00",
+      "contentDigest": "3021621bdf1a73a9f342b810532e296a9d2844c8a3668f70511f80f47efdd48b",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "4c-c2-national",
+        "4c-c2-industrial"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/19-china-college-computer-design.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "lanqiao-cup:2019-10:cpp-array-successor:cpp-a:china-provincial-cpp-a-2019:v3",
+    "coreDigest": "2ccc823ea2314b326fd32ede5ab969164b83422f278caafa0975429e6c26b116",
+    "originalContentDigest": "02560bee51e0c2767fe4fa0e79b6103a535109a8005763ae57f3d4cbf4739a86",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.120673+00:00",
+      "contentDigest": "02560bee51e0c2767fe4fa0e79b6103a535109a8005763ae57f3d4cbf4739a86",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "lanqiao-c3-rules",
+        "lanqiao-c3-h"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/20-lanqiao-cup.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "lanqiao-cup:2019-10:cpp-array-successor:cpp-a:china-provincial-cpp-a-2019:v3",
+    "coreDigest": "2ccc823ea2314b326fd32ede5ab969164b83422f278caafa0975429e6c26b116",
+    "originalContentDigest": "02560bee51e0c2767fe4fa0e79b6103a535109a8005763ae57f3d4cbf4739a86",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:33:22.030244+00:00",
+      "contentDigest": "02560bee51e0c2767fe4fa0e79b6103a535109a8005763ae57f3d4cbf4739a86",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "lanqiao-c3-rules",
+        "lanqiao-c3-h"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/20-lanqiao-cup.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "william-lowell-putnam:2026-87:proof-mathematics:eligible-undergraduates:us-ca-mx-2026:v3",
+    "coreDigest": "1739f8c7e35327882bd556d577af95dbb50bc455b9b3c02260d1ecf356fa1bb9",
+    "originalContentDigest": "51c800723c5528a071c3f9b41dfd7084be3af772e2d3fb7d9937f4844b894d09",
+    "review": {
+      "runId": "a2-batch04-20261105T194125Z-7db8c31a",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T19:41:25.608720+00:00",
+      "contentDigest": "51c800723c5528a071c3f9b41dfd7084be3af772e2d3fb7d9937f4844b894d09",
+      "method": "independent_source_recheck",
+      "sourceIds": [],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a2/batch04/evidence/24-william-lowell-putnam.json",
+      "checks": {
+        "factualSupport": false,
+        "entityScope": true,
+        "studentUsefulness": false,
+        "temporalAccuracy": true
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "a2-b04-24-l3-gap",
+          "severity": "major",
+          "description": "补可复核的2026规则/主页和2025完整A1题解原件字节及获取来源；在此之前保持L3阻断。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "william-lowell-putnam:2026-87:proof-mathematics:eligible-undergraduates:us-ca-mx-2026:v3",
+    "coreDigest": "1739f8c7e35327882bd556d577af95dbb50bc455b9b3c02260d1ecf356fa1bb9",
+    "originalContentDigest": "51c800723c5528a071c3f9b41dfd7084be3af772e2d3fb7d9937f4844b894d09",
+    "review": {
+      "runId": "content-b2-astra-high-batch04-20261106-3f6acd66",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T19:46:55.278879+00:00",
+      "contentDigest": "51c800723c5528a071c3f9b41dfd7084be3af772e2d3fb7d9937f4844b894d09",
+      "method": "independent_source_recheck",
+      "sourceIds": [],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch04/evidence/24-william-lowell-putnam.json",
+      "checks": {
+        "factualSupport": false,
+        "entityScope": false,
+        "studentUsefulness": true,
+        "temporalAccuracy": false
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "B2-24-01",
+          "severity": "major",
+          "description": "putnam-c3-rules、putnam-c3-home、putnam-c3-a1均没有冻结原件，跨记录同URL及冻结HTML/TXT检索也未找到可代替来源。无法核实2026四场90分钟等规则、当前报名日期和完整2025 A1官方题，须补原件后重审。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "ccf-ccsp:2025:systems-programming-xor:csp-qualified-students:china-harbin-2025:v3",
+    "coreDigest": "21f4de241aeae8caaebfb6ff1bebd65bec5c75086f5eeffeef34c35e5363fdd4",
+    "originalContentDigest": "c028deac9a49f76da30802b6baee0f7d85417500222d3e58a90466f7183897c1",
+    "review": {
+      "runId": "a4-gpt6astra-20261105T182253Z-981b858ce5be",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:22:53.566236+00:00",
+      "contentDigest": "c028deac9a49f76da30802b6baee0f7d85417500222d3e58a90466f7183897c1",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "ccsp-c4-notice",
+        "ccsp-c4-archive",
+        "ccsp-c4-xor"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a4/evidence/22-ccf-ccsp.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": [
+        {
+          "id": "A4-22-01",
+          "severity": "major",
+          "description": "原teamSize=1硬排除已改为待确认，未核独立作答条款未被升级为已证实事实。",
+          "resolved": true
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "ccf-ccsp:2025:systems-programming-xor:csp-qualified-students:china-harbin-2025:v3",
+    "coreDigest": "21f4de241aeae8caaebfb6ff1bebd65bec5c75086f5eeffeef34c35e5363fdd4",
+    "originalContentDigest": "c028deac9a49f76da30802b6baee0f7d85417500222d3e58a90466f7183897c1",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:34:33.189853+00:00",
+      "contentDigest": "c028deac9a49f76da30802b6baee0f7d85417500222d3e58a90466f7183897c1",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "ccsp-c4-notice",
+        "ccsp-c4-archive",
+        "ccsp-c4-xor"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/22-ccf-ccsp.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "national-college-mathematics:2011-3:calculus-third-derivative:non-mathematics:zhejiang-zjut-preliminary-2011:v3",
+    "coreDigest": "68cf37dda61a0a4491eaffa903bd19200e84f07d34735af47b524b778ba6468d",
+    "originalContentDigest": "806700d61fd214b641d28288eafe7655b70d88d6d00be6e7ced818a43882e6eb",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.144381+00:00",
+      "contentDigest": "806700d61fd214b641d28288eafe7655b70d88d6d00be6e7ced818a43882e6eb",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "cmc-c5-zjut-rules",
+        "cmc-c5-paper",
+        "cmc-c5-answer"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/23-national-college-mathematics.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "national-college-mathematics:2011-3:calculus-third-derivative:non-mathematics:zhejiang-zjut-preliminary-2011:v3",
+    "coreDigest": "68cf37dda61a0a4491eaffa903bd19200e84f07d34735af47b524b778ba6468d",
+    "originalContentDigest": "806700d61fd214b641d28288eafe7655b70d88d6d00be6e7ced818a43882e6eb",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:34:33.155196+00:00",
+      "contentDigest": "806700d61fd214b641d28288eafe7655b70d88d6d00be6e7ced818a43882e6eb",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "cmc-c5-paper",
+        "cmc-c5-answer",
+        "cmc-c5-zjut-rules"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/23-national-college-mathematics.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "mathorcup:2026-16:d-three-dimensional-packing:undergraduate-d:china-spring-d-2026:v3",
+    "coreDigest": "7913b9f3ef114e3ff6efe5c14af8fb44beea1198d2735d0a1cf4cfdd003ec134",
+    "originalContentDigest": "cbecf87a950818117154b326cb0b01c2ded90a608c459096f47a278e4117cdd5",
+    "review": {
+      "runId": "a2-gpt6astra-20261105T165926Z-5a7ff8c714f2",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:00:15.506107+00:00",
+      "contentDigest": "cbecf87a950818117154b326cb0b01c2ded90a608c459096f47a278e4117cdd5",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "mathorcup-c6-notice",
+        "mathorcup-c6-rules",
+        "mathorcup-c6-d",
+        "mathorcup-c6-correction",
+        "mathorcup-c6-ai"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a2/evidence/23-mathorcup.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "mathorcup:2026-16:d-three-dimensional-packing:undergraduate-d:china-spring-d-2026:v3",
+    "coreDigest": "7913b9f3ef114e3ff6efe5c14af8fb44beea1198d2735d0a1cf4cfdd003ec134",
+    "originalContentDigest": "cbecf87a950818117154b326cb0b01c2ded90a608c459096f47a278e4117cdd5",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.145481+00:00",
+      "contentDigest": "cbecf87a950818117154b326cb0b01c2ded90a608c459096f47a278e4117cdd5",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "mathorcup-c6-notice",
+        "mathorcup-c6-rules",
+        "mathorcup-c6-d",
+        "mathorcup-c6-correction",
+        "mathorcup-c6-ai"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/24-mathorcup.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "mathorcup:2026-16:d-three-dimensional-packing:undergraduate-d:china-spring-d-2026:v3",
+    "coreDigest": "7913b9f3ef114e3ff6efe5c14af8fb44beea1198d2735d0a1cf4cfdd003ec134",
+    "originalContentDigest": "cbecf87a950818117154b326cb0b01c2ded90a608c459096f47a278e4117cdd5",
+    "review": {
+      "runId": "content-b2-astra-high-20261106-f046e690",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:25:51.150528+00:00",
+      "contentDigest": "cbecf87a950818117154b326cb0b01c2ded90a608c459096f47a278e4117cdd5",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "mathorcup-c6-notice",
+        "mathorcup-c6-rules",
+        "mathorcup-c6-d",
+        "mathorcup-c6-correction",
+        "mathorcup-c6-ai"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/evidence/23-mathorcup.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "mathorcup:2026-16:d-three-dimensional-packing:undergraduate-d:china-spring-d-2026:v3",
+    "coreDigest": "7913b9f3ef114e3ff6efe5c14af8fb44beea1198d2735d0a1cf4cfdd003ec134",
+    "originalContentDigest": "cbecf87a950818117154b326cb0b01c2ded90a608c459096f47a278e4117cdd5",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:33:22.032532+00:00",
+      "contentDigest": "cbecf87a950818117154b326cb0b01c2ded90a608c459096f47a278e4117cdd5",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "mathorcup-c6-notice",
+        "mathorcup-c6-rules",
+        "mathorcup-c6-d",
+        "mathorcup-c6-correction",
+        "mathorcup-c6-ai"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/24-mathorcup.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "yau-college-mathematics:2026-17:algebra-non-simple-group:undergraduate-individual:global-2026-historical-training:v3",
+    "coreDigest": "aa2a2ac88d7c234a597720ae67bee97dad8b932faa3bc4ff379c359516c2c7be",
+    "originalContentDigest": "a748867111f86fdc6f97d09592a5a504e4ea7c62ff79c90327551d7c90b0edd0",
+    "review": {
+      "runId": "a2-gpt6astra-20261105T165926Z-5a7ff8c714f2",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:00:15.506107+00:00",
+      "contentDigest": "a748867111f86fdc6f97d09592a5a504e4ea7c62ff79c90327551d7c90b0edd0",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "yau-c6-rules",
+        "yau-c6-assessment",
+        "yau-c6-2011"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a2/evidence/24-yau-college-mathematics.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "yau-college-mathematics:2026-17:algebra-non-simple-group:undergraduate-individual:global-2026-historical-training:v3",
+    "coreDigest": "aa2a2ac88d7c234a597720ae67bee97dad8b932faa3bc4ff379c359516c2c7be",
+    "originalContentDigest": "a748867111f86fdc6f97d09592a5a504e4ea7c62ff79c90327551d7c90b0edd0",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.150871+00:00",
+      "contentDigest": "a748867111f86fdc6f97d09592a5a504e4ea7c62ff79c90327551d7c90b0edd0",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "yau-c6-rules",
+        "yau-c6-assessment",
+        "yau-c6-2011"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/25-yau-college-mathematics.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "yau-college-mathematics:2026-17:algebra-non-simple-group:undergraduate-individual:global-2026-historical-training:v3",
+    "coreDigest": "aa2a2ac88d7c234a597720ae67bee97dad8b932faa3bc4ff379c359516c2c7be",
+    "originalContentDigest": "a748867111f86fdc6f97d09592a5a504e4ea7c62ff79c90327551d7c90b0edd0",
+    "review": {
+      "runId": "content-b2-astra-high-20261106-f046e690",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T16:33:22.203731+00:00",
+      "contentDigest": "a748867111f86fdc6f97d09592a5a504e4ea7c62ff79c90327551d7c90b0edd0",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "yau-c6-rules",
+        "yau-c6-assessment",
+        "yau-c6-2011"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/evidence/24-yau-college-mathematics.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "yau-college-mathematics:2026-17:algebra-non-simple-group:undergraduate-individual:global-2026-historical-training:v3",
+    "coreDigest": "aa2a2ac88d7c234a597720ae67bee97dad8b932faa3bc4ff379c359516c2c7be",
+    "originalContentDigest": "a748867111f86fdc6f97d09592a5a504e4ea7c62ff79c90327551d7c90b0edd0",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:33:22.033575+00:00",
+      "contentDigest": "a748867111f86fdc6f97d09592a5a504e4ea7c62ff79c90327551d7c90b0edd0",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "yau-c6-rules",
+        "yau-c6-assessment",
+        "yau-c6-2011"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/25-yau-college-mathematics.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "atcoder-beginner-contest:2025-427:d-simple-game:individual-open:global-online-abc427:v3",
+    "coreDigest": "5ffaebb182e4a8a9fedc2694af45ce555656560c0f700593cda015d3ae80da70",
+    "originalContentDigest": "09237dc7243c5e8ae2044fad8feb165d39ac5343a413b3ecafbee4e83df5c1d7",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.151926+00:00",
+      "contentDigest": "09237dc7243c5e8ae2044fad8feb165d39ac5343a413b3ecafbee4e83df5c1d7",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "abc-c7-home",
+        "abc-c7-rules",
+        "abc-c7-task",
+        "abc-c7-editorial",
+        "abc-c7-free"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/26-atcoder-beginner-contest.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "atcoder-beginner-contest:2025-427:d-simple-game:individual-open:global-online-abc427:v3",
+    "coreDigest": "5ffaebb182e4a8a9fedc2694af45ce555656560c0f700593cda015d3ae80da70",
+    "originalContentDigest": "09237dc7243c5e8ae2044fad8feb165d39ac5343a413b3ecafbee4e83df5c1d7",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:33:22.034667+00:00",
+      "contentDigest": "09237dc7243c5e8ae2044fad8feb165d39ac5343a413b3ecafbee4e83df5c1d7",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "abc-c7-home",
+        "abc-c7-rules",
+        "abc-c7-task",
+        "abc-c7-editorial",
+        "abc-c7-free"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/26-atcoder-beginner-contest.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "national-advertising-art:2026-18-aliyun:graphic:fulltime-students:china-aliyun-graphic:v3",
+    "coreDigest": "3146fcd4f66397f79f1bde287e8f2dd923a1ca97b556bc34d8f754a74b8a688f",
+    "originalContentDigest": "bd469e0ef1bf56a98b1e07421c6c9d4c5f341f80f01e25f0613720e59e194639",
+    "review": {
+      "runId": "a2-batch04-20261105T194125Z-7db8c31a",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T19:41:25.608720+00:00",
+      "contentDigest": "bd469e0ef1bf56a98b1e07421c6c9d4c5f341f80f01e25f0613720e59e194639",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "b-ad-rules",
+        "b-ad-task",
+        "b-ad-shaoyang-2026-reference"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a2/batch04/evidence/30-national-advertising-art.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": false,
+        "temporalAccuracy": true
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "a2-b04-30-l3-gap",
+          "severity": "major",
+          "description": "补全国阿里云平面路径适用评审原件，或将正文与实体范围实质限定到有适用评分的路径后重新冻结；邵阳校赛参考不得关闭全国评分缺口。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "national-advertising-art:2026-18-aliyun:graphic:fulltime-students:china-aliyun-graphic:v3",
+    "coreDigest": "3146fcd4f66397f79f1bde287e8f2dd923a1ca97b556bc34d8f754a74b8a688f",
+    "originalContentDigest": "bd469e0ef1bf56a98b1e07421c6c9d4c5f341f80f01e25f0613720e59e194639",
+    "review": {
+      "runId": "content-b2-astra-high-batch04-20261106-3f6acd66",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T19:46:55.280114+00:00",
+      "contentDigest": "bd469e0ef1bf56a98b1e07421c6c9d4c5f341f80f01e25f0613720e59e194639",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "b-ad-rules",
+        "b-ad-task",
+        "b-ad-shaoyang-2026-reference"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch04/evidence/30-national-advertising-art.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": false,
+        "temporalAccuracy": true
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "B2-30-01",
+          "severity": "major",
+          "description": "全国阿里云平面路径仍缺适用正式评审依据；邵阳校赛30/30/30/10已正确限定为训练参考，恢复缺口合理，但不能据此批准严格L3。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "future-designer-ncda:2026-14-yiwu:portable-brush:university-students:china-yiwu-9c1d:v3",
+    "coreDigest": "81a080b7c698b30088785abfc19981b5f71c080d83b044f3f96bc3778af6add5",
+    "originalContentDigest": "5a20488a5e14c032932fe9e64f966436ee4f4dea9944b47f93926191ac20315a",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.152557+00:00",
+      "contentDigest": "5a20488a5e14c032932fe9e64f966436ee4f4dea9944b47f93926191ac20315a",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "b-ncda-task"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/28-future-designer-ncda.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": false,
+        "temporalAccuracy": true
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "A3-28-01",
+          "severity": "major",
+          "description": "取得9C1D企业详细设计要求及必要素材原件并核对完整任务；现有网页摘要虽具体，仍缺其明确引用的详细命题附件。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "future-designer-ncda:2026-14-yiwu:portable-brush:university-students:china-yiwu-9c1d:v3",
+    "coreDigest": "81a080b7c698b30088785abfc19981b5f71c080d83b044f3f96bc3778af6add5",
+    "originalContentDigest": "5a20488a5e14c032932fe9e64f966436ee4f4dea9944b47f93926191ac20315a",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:33:22.035880+00:00",
+      "contentDigest": "5a20488a5e14c032932fe9e64f966436ee4f4dea9944b47f93926191ac20315a",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "b-ncda-task"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/28-future-designer-ncda.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": false,
+        "temporalAccuracy": true
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "B2-28-01",
+          "severity": "major",
+          "description": "严格L3完整官方题的范围仍有缺口：网页第33行明确“设计要求详见素材下载”，第136—137行指向企业设计要求PPT及课件；冻结包没有这些资料，稿件也承认详细企业素材未完整读取。现有网页能支持所写事实和正式评审，但不足以证实所选9C1D完整任务要求已读。请补入该企业对应设计要求并核对，或保留较低内容层级。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "loreal-brandstorm:2026-luxe:future-fragrance:18-30-team:global-local-entry:v3",
+    "coreDigest": "d3b045709185ccfa0c2b8273952c6444706f62a94c5f04ec0938fd9f99d3fd98",
+    "originalContentDigest": "bfae3e6c92057ae9a996b93c0a248b6abfa80d7e08dc5779bc1f51f14371748a",
+    "review": {
+      "runId": "t05-clean-a1-20261105T225718-0d8752a200-record2",
+      "reviewerId": "/root/t05_content_review_clean_a",
+      "model": "GPT-6 Astra / high",
+      "reviewedAt": "2026-11-05T22:57:18.559828+00:00",
+      "contentDigest": "bfae3e6c92057ae9a996b93c0a248b6abfa80d7e08dc5779bc1f51f14371748a",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "b-loreal-brief",
+        "b-loreal-entry"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/t05-content-review-import-01/evidence-A-2.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "loreal-brandstorm:2026-luxe:future-fragrance:18-30-team:global-local-entry:v3",
+    "coreDigest": "d3b045709185ccfa0c2b8273952c6444706f62a94c5f04ec0938fd9f99d3fd98",
+    "originalContentDigest": "bfae3e6c92057ae9a996b93c0a248b6abfa80d7e08dc5779bc1f51f14371748a",
+    "review": {
+      "runId": "t05-content-revision-clean-b1-ebd4f7db-ca9f-4c2e-977b-95903ba7e506",
+      "reviewerId": "/root/t05_content_review_clean_b",
+      "model": "GPT-6 Astra / high",
+      "reviewedAt": "2026-11-05T23:03:13.481413+00:00",
+      "contentDigest": "bfae3e6c92057ae9a996b93c0a248b6abfa80d7e08dc5779bc1f51f14371748a",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "b-loreal-brief",
+        "b-loreal-entry"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/t05-content-review-import-01/evidence-B-5.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "intercultural-competence:2025-liaoning:case-analysis:chinese-student-team:liaoning-semifinal:v3",
+    "coreDigest": "7a62f28f77b14877d102e4565ec4e533ec803906fa5fc1f40751dce9af5ecf23",
+    "originalContentDigest": "717592b6ffccbe5e3327909a62157031fd8aaeba3a3299d8d76dc2b81967f1fa",
+    "review": {
+      "runId": "a2-gpt6astra-20261105T165926Z-5a7ff8c714f2",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:00:15.506107+00:00",
+      "contentDigest": "717592b6ffccbe5e3327909a62157031fd8aaeba3a3299d8d76dc2b81967f1fa",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "b-intercultural-rules-case"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a2/evidence/29-intercultural-competence.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "intercultural-competence:2025-liaoning:case-analysis:chinese-student-team:liaoning-semifinal:v3",
+    "coreDigest": "7a62f28f77b14877d102e4565ec4e533ec803906fa5fc1f40751dce9af5ecf23",
+    "originalContentDigest": "717592b6ffccbe5e3327909a62157031fd8aaeba3a3299d8d76dc2b81967f1fa",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.154937+00:00",
+      "contentDigest": "717592b6ffccbe5e3327909a62157031fd8aaeba3a3299d8d76dc2b81967f1fa",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "b-intercultural-rules-case"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/30-intercultural-competence.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "intercultural-competence:2025-liaoning:case-analysis:chinese-student-team:liaoning-semifinal:v3",
+    "coreDigest": "7a62f28f77b14877d102e4565ec4e533ec803906fa5fc1f40751dce9af5ecf23",
+    "originalContentDigest": "717592b6ffccbe5e3327909a62157031fd8aaeba3a3299d8d76dc2b81967f1fa",
+    "review": {
+      "runId": "content-b2-astra-high-20261106-f046e690",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T16:57:57.283669+00:00",
+      "contentDigest": "717592b6ffccbe5e3327909a62157031fd8aaeba3a3299d8d76dc2b81967f1fa",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "b-intercultural-rules-case"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/evidence/29-intercultural-competence.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "intercultural-competence:2025-liaoning:case-analysis:chinese-student-team:liaoning-semifinal:v3",
+    "coreDigest": "7a62f28f77b14877d102e4565ec4e533ec803906fa5fc1f40751dce9af5ecf23",
+    "originalContentDigest": "717592b6ffccbe5e3327909a62157031fd8aaeba3a3299d8d76dc2b81967f1fa",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:33:22.038053+00:00",
+      "contentDigest": "717592b6ffccbe5e3327909a62157031fd8aaeba3a3299d8d76dc2b81967f1fa",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "b-intercultural-rules-case"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/30-intercultural-competence.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "ima-management-accounting:2026-27-16:carbon-investment:same-campus-3-5:china-regional:v3",
+    "coreDigest": "315e098975805f0515495cd37ed6c4a1347cd905114b794a227ccde00fd3cd3e",
+    "originalContentDigest": "64782b3ddcfd5f079498439ad74d2d6820e988c34794c6d7fdd7978243aba725",
+    "review": {
+      "runId": "a2-batch04-20261105T194125Z-7db8c31a",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T19:41:25.608720+00:00",
+      "contentDigest": "64782b3ddcfd5f079498439ad74d2d6820e988c34794c6d7fdd7978243aba725",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "b-ima-rules",
+        "b-ima-delivery",
+        "b-ima-case",
+        "b-ima-16-handbook",
+        "b-ima-fourth-reference-rubric"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a2/batch04/evidence/34-ima-management-accounting.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": false,
+        "temporalAccuracy": true
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "a2-b04-34-l3-gap",
+          "severity": "major",
+          "description": "补第十六届区域赛适用内容评审原件或明确可适用的主办方确认；第四届历史参考和本届文件合规扣分不能共同冒充本届完整评审依据。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "ima-management-accounting:2026-27-16:carbon-investment:same-campus-3-5:china-regional:v3",
+    "coreDigest": "315e098975805f0515495cd37ed6c4a1347cd905114b794a227ccde00fd3cd3e",
+    "originalContentDigest": "64782b3ddcfd5f079498439ad74d2d6820e988c34794c6d7fdd7978243aba725",
+    "review": {
+      "runId": "content-b2-astra-high-batch04-20261106-3f6acd66",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T19:46:55.294693+00:00",
+      "contentDigest": "64782b3ddcfd5f079498439ad74d2d6820e988c34794c6d7fdd7978243aba725",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "b-ima-rules",
+        "b-ima-delivery",
+        "b-ima-case",
+        "b-ima-16-handbook",
+        "b-ima-fourth-reference-rubric"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch04/evidence/34-ima-management-accounting.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": false,
+        "temporalAccuracy": true
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "B2-34-01",
+          "severity": "major",
+          "description": "第16届2026-2027区域赛内容正式评分仍未取得；第4届手册70/30是已正确标明的历史参考。新版恢复缺口合理，严格L3仍不可通过。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "james-dyson-award:2025-global:engineering-design:students-recent-graduates:2025-national-review:v3",
+    "coreDigest": "c462e888e0a4318f984128e85a99e9ecc214a4873716532984a9744ec8196f21",
+    "originalContentDigest": "76907f2ade5b7a3fdf40bb920f07b7624319adea8e93b9db709cd363642355a1",
+    "review": {
+      "runId": "a2-batch04-20261105T194125Z-7db8c31a",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T19:41:25.608720+00:00",
+      "contentDigest": "76907f2ade5b7a3fdf40bb920f07b7624319adea8e93b9db709cd363642355a1",
+      "method": "independent_source_recheck",
+      "sourceIds": [],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a2/batch04/evidence/35-james-dyson-award.json",
+      "checks": {
+        "factualSupport": false,
+        "entityScope": true,
+        "studentUsefulness": false,
+        "temporalAccuracy": true
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "a2-b04-35-l3-gap",
+          "severity": "major",
+          "description": "取得bloc完整原作图文及2025完整资格、提交规格原件并重审；保留L3阻断，不把学校简介或作者断言当完整作品。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "james-dyson-award:2025-global:engineering-design:students-recent-graduates:2025-national-review:v3",
+    "coreDigest": "c462e888e0a4318f984128e85a99e9ecc214a4873716532984a9744ec8196f21",
+    "originalContentDigest": "76907f2ade5b7a3fdf40bb920f07b7624319adea8e93b9db709cd363642355a1",
+    "review": {
+      "runId": "content-b2-astra-high-batch04-20261106-3f6acd66",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T19:46:55.295617+00:00",
+      "contentDigest": "76907f2ade5b7a3fdf40bb920f07b7624319adea8e93b9db709cd363642355a1",
+      "method": "independent_source_recheck",
+      "sourceIds": [],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch04/evidence/35-james-dyson-award.json",
+      "checks": {
+        "factualSupport": false,
+        "entityScope": false,
+        "studentUsefulness": true,
+        "temporalAccuracy": false
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "B2-35-01",
+          "severity": "major",
+          "description": "b-dyson-rule和b-dyson-bloc均未提供冻结原件，原件目录文本检索也未找到作品页。不能独立核验2025国家评审、截止及bloc°完整作品/设计过程，须补可读原文和图像材料。",
+          "resolved": false
+        },
+        {
+          "id": "B2-35-02",
+          "severity": "major",
+          "description": "记录本身承认精确资格、毕业年限、地区、团队及提交字段尚缺原始条款；若作为严格L3参赛决策内容，应补足适用规则或明确仅保留历史作品探索层级。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "if-student-award:2025-entry-guide:sdg-design:design-students-graduates:global-2025:v3",
+    "coreDigest": "1a6b193a5cfbbdadfca9e4abd44eb26f49895e56d6c5ebf99e505833fd53c13f",
+    "originalContentDigest": "40000eb9e58b822f2fbfc0326e4dbeab15628ae4fe2d022b9b3edcb215178b8f",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.156354+00:00",
+      "contentDigest": "40000eb9e58b822f2fbfc0326e4dbeab15628ae4fe2d022b9b3edcb215178b8f",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "b-if-guide"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/33-if-student-award.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": [
+        {
+          "id": "A3-33-resolved",
+          "severity": "major",
+          "description": "本人A2意见：将机制角色、deepDive步骤里的“双层服装/双层衣物”改为原海报明确的“两件式服装（裙装与通风风帽）”，避免把两件部件误读成双层织物或夹层气道；其余已读事实、个人路线及评分可保留。 本轮处理依据：重新视觉阅读2025指南5页MASHAV完整海报，修订两件式裙装与通风风帽符合原作，三种气流模式和无实测温降声明准确；五维参考评分、资格/免费报名与制作支出分离、个人机制评读和四周均充分。",
+          "resolved": true
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "if-student-award:2025-entry-guide:sdg-design:design-students-graduates:global-2025:v3",
+    "coreDigest": "1a6b193a5cfbbdadfca9e4abd44eb26f49895e56d6c5ebf99e505833fd53c13f",
+    "originalContentDigest": "40000eb9e58b822f2fbfc0326e4dbeab15628ae4fe2d022b9b3edcb215178b8f",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:33:22.039200+00:00",
+      "contentDigest": "40000eb9e58b822f2fbfc0326e4dbeab15628ae4fe2d022b9b3edcb215178b8f",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "b-if-guide"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/33-if-student-award.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "cfa-research-challenge:2024-2025-historical:equity-research:university-team:global-2024-2025-report:v3",
+    "coreDigest": "0914c38d7de45dc8eeaf7861fadebf4c77adb05a3ec8bcb93c5e64d8279319a5",
+    "originalContentDigest": "dc207ab5bb241dff2cfd97c9146df13b3efb56a925966698e8398d08ad0ff967",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.157552+00:00",
+      "contentDigest": "dc207ab5bb241dff2cfd97c9146df13b3efb56a925966698e8398d08ad0ff967",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "b-cfa-2025-rules",
+        "b-cfa-report"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/34-cfa-research-challenge.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "cfa-research-challenge:2024-2025-historical:equity-research:university-team:global-2024-2025-report:v3",
+    "coreDigest": "0914c38d7de45dc8eeaf7861fadebf4c77adb05a3ec8bcb93c5e64d8279319a5",
+    "originalContentDigest": "dc207ab5bb241dff2cfd97c9146df13b3efb56a925966698e8398d08ad0ff967",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:33:22.040335+00:00",
+      "contentDigest": "dc207ab5bb241dff2cfd97c9146df13b3efb56a925966698e8398d08ad0ff967",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "b-cfa-2025-rules",
+        "b-cfa-report"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/34-cfa-research-challenge.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "market-research-analysis:2025-15-undergraduate:wenjuan-ai:undergraduate-3-5:china-cau-submission:v3",
+    "coreDigest": "477c58a99bdf8ac88beeb4346d4204e891709a842b9fdc11770f4272cccc4451",
+    "originalContentDigest": "5034455272366d03f7c3e5a4a6daca11d9c7411aa151ac0588c3750e969e1792",
+    "review": {
+      "runId": "t05-clean-a1-20261105T225718-0d8752a200-record1",
+      "reviewerId": "/root/t05_content_review_clean_a",
+      "model": "GPT-6 Astra / high",
+      "reviewedAt": "2026-11-05T22:57:18.559828+00:00",
+      "contentDigest": "5034455272366d03f7c3e5a4a6daca11d9c7411aa151ac0588c3750e969e1792",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "b-market-rules",
+        "b-market-score",
+        "b-market-task"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/t05-content-review-import-01/evidence-A-1.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "market-research-analysis:2025-15-undergraduate:wenjuan-ai:undergraduate-3-5:china-cau-submission:v3",
+    "coreDigest": "477c58a99bdf8ac88beeb4346d4204e891709a842b9fdc11770f4272cccc4451",
+    "originalContentDigest": "5034455272366d03f7c3e5a4a6daca11d9c7411aa151ac0588c3750e969e1792",
+    "review": {
+      "runId": "t05-content-revision-clean-b1-ebd4f7db-ca9f-4c2e-977b-95903ba7e506",
+      "reviewerId": "/root/t05_content_review_clean_b",
+      "model": "GPT-6 Astra / high",
+      "reviewedAt": "2026-11-05T23:03:13.481413+00:00",
+      "contentDigest": "5034455272366d03f7c3e5a4a6daca11d9c7411aa151ac0588c3750e969e1792",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "b-market-rules",
+        "b-market-score",
+        "b-market-task"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/t05-content-review-import-01/evidence-B-4.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "understanding-contemporary-china-foreign-language:2026-english-video:china-through-data:fulltime-undergraduate-masters:china-ahnu-local:v3",
+    "coreDigest": "e49447fff35ad853e3167249648613ac4ea23618cdad14584b6bd21eab041aa0",
+    "originalContentDigest": "ccab0c44ad734430b8f6b740c3b3a093ea76b32365c3bc19f9229fcf83b74e41",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.158553+00:00",
+      "contentDigest": "ccab0c44ad734430b8f6b740c3b3a093ea76b32365c3bc19f9229fcf83b74e41",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "b-fltrp-rules",
+        "b-fltrp-local"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/36-understanding-contemporary-china-foreign-language.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": false,
+        "temporalAccuracy": true
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "A3-36-01",
+          "severity": "major",
+          "description": "补完整公开短视频作品或完整具体官方命题并连到适用50/30/20评分；通用选题与脚本练习不充当L3原作。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "understanding-contemporary-china-foreign-language:2026-english-video:china-through-data:fulltime-undergraduate-masters:china-ahnu-local:v3",
+    "coreDigest": "e49447fff35ad853e3167249648613ac4ea23618cdad14584b6bd21eab041aa0",
+    "originalContentDigest": "ccab0c44ad734430b8f6b740c3b3a093ea76b32365c3bc19f9229fcf83b74e41",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:33:22.042783+00:00",
+      "contentDigest": "ccab0c44ad734430b8f6b740c3b3a093ea76b32365c3bc19f9229fcf83b74e41",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "b-fltrp-rules",
+        "b-fltrp-local"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/36-understanding-contemporary-china-foreign-language.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": false,
+        "temporalAccuracy": true
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "B2-36-01",
+          "severity": "major",
+          "description": "具体完整官方题或公开短视频作品仍缺，开放主题和通用创作路线不足以通过严格L3。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "national-college-industrial-design:2024-7:product-system:fulltime-university:heilongjiang-rules-national-work:v3",
+    "coreDigest": "370cd1ae23c1533f52cb7e3f04d8f870b7644cd6c55cdff9d3a0234974fa6671",
+    "originalContentDigest": "2be8e6759d8b70df83e6892a600933af7b9a2077cf04d4902ab4f910f3f67db8",
+    "review": {
+      "reviewerId": "/root/stage2_content_a",
+      "runId": "stage2-content-review-a2-20261106",
+      "model": "gpt-6.1-sol",
+      "reasoningEffort": "max",
+      "reviewedAt": "2026-11-06T06:00:12Z",
+      "method": "independent_source_recheck",
+      "outcome": "approved",
+      "contentDigest": "2be8e6759d8b70df83e6892a600933af7b9a2077cf04d4902ab4f910f3f67db8",
+      "sourceIds": [
+        "b-industrial-rule",
+        "b-industrial-work"
+      ],
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "findings": [
+        {
+          "id": "content-a-industrial-known-cost-responsibility",
+          "severity": "minor",
+          "description": "首轮费用承担信息缺失已解决：新稿investment[0]及其fact准确列出单位承担展板制作费、入围国赛模型寄送和收回费，金额/垫付/报销和差旅另向本校核实。依据原PDF第8页。",
+          "resolved": true
+        }
+      ],
+      "evidenceArtifact": "artifacts/specialist-20261106/stage2-content-review-a2/industrial-design-evidence.json"
+    }
+  },
+  {
+    "recordId": "national-college-industrial-design:2024-7:product-system:fulltime-university:heilongjiang-rules-national-work:v3",
+    "coreDigest": "370cd1ae23c1533f52cb7e3f04d8f870b7644cd6c55cdff9d3a0234974fa6671",
+    "originalContentDigest": "2be8e6759d8b70df83e6892a600933af7b9a2077cf04d4902ab4f910f3f67db8",
+    "review": {
+      "reviewerId": "/root/stage2_content_b",
+      "runId": "stage2-content-review-b-20261106T055555Z",
+      "model": "gpt-6.1-sol",
+      "reasoningEffort": "max",
+      "reviewedAt": "2026-11-06T05:55:55+00:00",
+      "method": "independent_source_recheck",
+      "outcome": "approved",
+      "contentDigest": "2be8e6759d8b70df83e6892a600933af7b9a2077cf04d4902ab4f910f3f67db8",
+      "sourceIds": [
+        "b-industrial-rule",
+        "b-industrial-work"
+      ],
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "findings": [],
+      "evidenceArtifact": "artifacts/specialist-20261106/stage2-content-review-b/industrial-design/evidence.json"
+    }
+  },
+  {
+    "recordId": "ecommerce-innovation-creativity-entrepreneurship:2025-15-rural:rural-commerce:university-3-5:china-rural-practical:v3",
+    "coreDigest": "182b1abed0f3baa102723f4e0cd5f2ea5556cdc5f61bbf8131a4535376490501",
+    "originalContentDigest": "078c196464136af90bc064b8f459158e14a550750c4813af3d6d3171321e6850",
+    "review": {
+      "runId": "a2-gpt6astra-20261105T165926Z-5a7ff8c714f2",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:00:15.506107+00:00",
+      "contentDigest": "078c196464136af90bc064b8f459158e14a550750c4813af3d6d3171321e6850",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "b-ecommerce-plan",
+        "b-ecommerce-full-guide"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a2/evidence/37-ecommerce-innovation-creativity-entrepreneurship.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "ecommerce-innovation-creativity-entrepreneurship:2025-15-rural:rural-commerce:university-3-5:china-rural-practical:v3",
+    "coreDigest": "182b1abed0f3baa102723f4e0cd5f2ea5556cdc5f61bbf8131a4535376490501",
+    "originalContentDigest": "078c196464136af90bc064b8f459158e14a550750c4813af3d6d3171321e6850",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.162790+00:00",
+      "contentDigest": "078c196464136af90bc064b8f459158e14a550750c4813af3d6d3171321e6850",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "b-ecommerce-plan",
+        "b-ecommerce-full-guide"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/38-ecommerce-innovation-creativity-entrepreneurship.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "ecommerce-innovation-creativity-entrepreneurship:2025-15-rural:rural-commerce:university-3-5:china-rural-practical:v3",
+    "coreDigest": "182b1abed0f3baa102723f4e0cd5f2ea5556cdc5f61bbf8131a4535376490501",
+    "originalContentDigest": "078c196464136af90bc064b8f459158e14a550750c4813af3d6d3171321e6850",
+    "review": {
+      "runId": "content-b2-astra-high-20261106-f046e690",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:23:31.379907+00:00",
+      "contentDigest": "078c196464136af90bc064b8f459158e14a550750c4813af3d6d3171321e6850",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "b-ecommerce-plan",
+        "b-ecommerce-full-guide"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/evidence/37-ecommerce-innovation-creativity-entrepreneurship.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "ecommerce-innovation-creativity-entrepreneurship:2025-15-rural:rural-commerce:university-3-5:china-rural-practical:v3",
+    "coreDigest": "182b1abed0f3baa102723f4e0cd5f2ea5556cdc5f61bbf8131a4535376490501",
+    "originalContentDigest": "078c196464136af90bc064b8f459158e14a550750c4813af3d6d3171321e6850",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:33:22.044036+00:00",
+      "contentDigest": "078c196464136af90bc064b8f459158e14a550750c4813af3d6d3171321e6850",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "b-ecommerce-plan",
+        "b-ecommerce-full-guide"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/38-ecommerce-innovation-creativity-entrepreneurship.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "chongqing-rural-revitalization:2025-5:bencao-cultural-tourism:students-graduates-2-5:chongqing-regular:v3",
+    "coreDigest": "41d0790f809c29b13f7d75f409a740960a0af74dbade1cf2431e04629b7a4a16",
+    "originalContentDigest": "7c3a58e7672e21b053416e2769fe6229b035e81375a50ceca5f8dd9ac848dd47",
+    "review": {
+      "runId": "a2-gpt6astra-20261105T165926Z-5a7ff8c714f2",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:00:15.506107+00:00",
+      "contentDigest": "7c3a58e7672e21b053416e2769fe6229b035e81375a50ceca5f8dd9ac848dd47",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "b-rural-rules",
+        "b-rural-task"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a2/evidence/38-chongqing-rural-revitalization.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "chongqing-rural-revitalization:2025-5:bencao-cultural-tourism:students-graduates-2-5:chongqing-regular:v3",
+    "coreDigest": "41d0790f809c29b13f7d75f409a740960a0af74dbade1cf2431e04629b7a4a16",
+    "originalContentDigest": "7c3a58e7672e21b053416e2769fe6229b035e81375a50ceca5f8dd9ac848dd47",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.163373+00:00",
+      "contentDigest": "7c3a58e7672e21b053416e2769fe6229b035e81375a50ceca5f8dd9ac848dd47",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "b-rural-rules",
+        "b-rural-task"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/39-chongqing-rural-revitalization.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "chongqing-rural-revitalization:2025-5:bencao-cultural-tourism:students-graduates-2-5:chongqing-regular:v3",
+    "coreDigest": "41d0790f809c29b13f7d75f409a740960a0af74dbade1cf2431e04629b7a4a16",
+    "originalContentDigest": "7c3a58e7672e21b053416e2769fe6229b035e81375a50ceca5f8dd9ac848dd47",
+    "review": {
+      "runId": "content-b2-astra-high-20261106-f046e690",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T16:48:53.648407+00:00",
+      "contentDigest": "7c3a58e7672e21b053416e2769fe6229b035e81375a50ceca5f8dd9ac848dd47",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "b-rural-rules",
+        "b-rural-task"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/evidence/38-chongqing-rural-revitalization.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "chongqing-rural-revitalization:2025-5:bencao-cultural-tourism:students-graduates-2-5:chongqing-regular:v3",
+    "coreDigest": "41d0790f809c29b13f7d75f409a740960a0af74dbade1cf2431e04629b7a4a16",
+    "originalContentDigest": "7c3a58e7672e21b053416e2769fe6229b035e81375a50ceca5f8dd9ac848dd47",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:33:22.045323+00:00",
+      "contentDigest": "7c3a58e7672e21b053416e2769fe6229b035e81375a50ceca5f8dd9ac848dd47",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "b-rural-rules",
+        "b-rural-task"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/39-chongqing-rural-revitalization.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "hult-prize:2023-fashion:sustainable-fashion:campus-3-5:global-2023-guide:v3",
+    "coreDigest": "92119599e96063680a429a516e12c5eb363f2ee0910ed9bc90c4806e58d91a2a",
+    "originalContentDigest": "6620bbf6c76d756d5d3e2084baff7cad0babb8736b16a6b7154aff3f16db0784",
+    "review": {
+      "runId": "a2-batch04-20261105T194125Z-7db8c31a",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T19:41:25.608720+00:00",
+      "contentDigest": "6620bbf6c76d756d5d3e2084baff7cad0babb8736b16a6b7154aff3f16db0784",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "b-hult-guide"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a2/batch04/evidence/43-hult-prize.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": false,
+        "temporalAccuracy": true
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "a2-b04-43-l3-gap",
+          "severity": "major",
+          "description": "补一个完整公开具体项目/作品或足够具体的完整命题拆解，逐项连接方案选择、验证证据和适用定性评分；通用商业策划步骤不能充作完整案例。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "hult-prize:2023-fashion:sustainable-fashion:campus-3-5:global-2023-guide:v3",
+    "coreDigest": "92119599e96063680a429a516e12c5eb363f2ee0910ed9bc90c4806e58d91a2a",
+    "originalContentDigest": "6620bbf6c76d756d5d3e2084baff7cad0babb8736b16a6b7154aff3f16db0784",
+    "review": {
+      "runId": "content-b2-astra-high-batch04-20261106-3f6acd66",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T19:46:55.301641+00:00",
+      "contentDigest": "6620bbf6c76d756d5d3e2084baff7cad0babb8736b16a6b7154aff3f16db0784",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "b-hult-guide"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch04/evidence/43-hult-prize.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": false,
+        "temporalAccuracy": true
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "B2-43-01",
+          "severity": "major",
+          "description": "2023开放可持续时尚任务与通用策划路线仍不能构成完整具体原例；五项正式定性评审有效，无须编造数字权重，但严格L3案例缺口仍在。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "chinese-classics:2025-zhejiang-13:classics-recitation:huzhou-individual:zhejiang-huzhou-local:v3",
+    "coreDigest": "930a01c2f37f42e4bdc651af6a37a34abf4c65c1c5a2282032e37c605a048802",
+    "originalContentDigest": "78c0c7410c209bc558c63d5b554da69a1f4f1379d192599c527a33768f542cc0",
+    "review": {
+      "runId": "t05-clean-a1-20261105T225718-0d8752a200-record3",
+      "reviewerId": "/root/t05_content_review_clean_a",
+      "model": "GPT-6 Astra / high",
+      "reviewedAt": "2026-11-05T22:57:18.559828+00:00",
+      "contentDigest": "78c0c7410c209bc558c63d5b554da69a1f4f1379d192599c527a33768f542cc0",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "b-classics-local",
+        "b-classics-rules",
+        "b-classics-task"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/t05-content-review-import-01/evidence-A-3.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "chinese-classics:2025-zhejiang-13:classics-recitation:huzhou-individual:zhejiang-huzhou-local:v3",
+    "coreDigest": "930a01c2f37f42e4bdc651af6a37a34abf4c65c1c5a2282032e37c605a048802",
+    "originalContentDigest": "78c0c7410c209bc558c63d5b554da69a1f4f1379d192599c527a33768f542cc0",
+    "review": {
+      "runId": "t05-content-revision-clean-b1-ebd4f7db-ca9f-4c2e-977b-95903ba7e506",
+      "reviewerId": "/root/t05_content_review_clean_b",
+      "model": "GPT-6 Astra / high",
+      "reviewedAt": "2026-11-05T23:03:13.481413+00:00",
+      "contentDigest": "78c0c7410c209bc558c63d5b554da69a1f4f1379d192599c527a33768f542cc0",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "b-classics-local",
+        "b-classics-rules",
+        "b-classics-task"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/t05-content-review-import-01/evidence-B-6.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "iot-design:2026-13:espressif-aiot:regular-university:china-espressif:v3",
+    "coreDigest": "ceb1d5ff240dd7afc84846e3030a6083b63aaea6a4aadf4849b870551e0a87ca",
+    "originalContentDigest": "1bdd0572c34b716d2b4063461a42d14466b9f0ba7a833e93d67d4e838fadc51d",
+    "review": {
+      "runId": "a2-gpt6astra-20261105T165926Z-5a7ff8c714f2",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:00:15.506107+00:00",
+      "contentDigest": "1bdd0572c34b716d2b4063461a42d14466b9f0ba7a833e93d67d4e838fadc51d",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "iot-2026-charter",
+        "iot-2026-espressif"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a2/evidence/41-iot-design.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "iot-design:2026-13:espressif-aiot:regular-university:china-espressif:v3",
+    "coreDigest": "ceb1d5ff240dd7afc84846e3030a6083b63aaea6a4aadf4849b870551e0a87ca",
+    "originalContentDigest": "1bdd0572c34b716d2b4063461a42d14466b9f0ba7a833e93d67d4e838fadc51d",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.174755+00:00",
+      "contentDigest": "1bdd0572c34b716d2b4063461a42d14466b9f0ba7a833e93d67d4e838fadc51d",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "iot-2026-charter",
+        "iot-2026-espressif"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/42-iot-design.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "iot-design:2026-13:espressif-aiot:regular-university:china-espressif:v3",
+    "coreDigest": "ceb1d5ff240dd7afc84846e3030a6083b63aaea6a4aadf4849b870551e0a87ca",
+    "originalContentDigest": "1bdd0572c34b716d2b4063461a42d14466b9f0ba7a833e93d67d4e838fadc51d",
+    "review": {
+      "runId": "content-b2-astra-high-20261106-f046e690",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:16:11.265686+00:00",
+      "contentDigest": "1bdd0572c34b716d2b4063461a42d14466b9f0ba7a833e93d67d4e838fadc51d",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "iot-2026-charter",
+        "iot-2026-espressif"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/evidence/41-iot-design.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "iot-design:2026-13:espressif-aiot:regular-university:china-espressif:v3",
+    "coreDigest": "ceb1d5ff240dd7afc84846e3030a6083b63aaea6a4aadf4849b870551e0a87ca",
+    "originalContentDigest": "1bdd0572c34b716d2b4063461a42d14466b9f0ba7a833e93d67d4e838fadc51d",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:33:22.048018+00:00",
+      "contentDigest": "1bdd0572c34b716d2b4063461a42d14466b9f0ba7a833e93d67d4e838fadc51d",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "iot-2026-charter",
+        "iot-2026-espressif"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/42-iot-design.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "chemical-engineering-design:2026-20:clean-styrene-plant:undergraduate:china-styrene:v3",
+    "coreDigest": "30bdf0709daa1eb64410b1aeb8ab89642f1dbdd0ab638eb0df4ebb4dad411c39",
+    "originalContentDigest": "8916516a2122b4ce0279e50e6be60989c752ddc1e234932498d0ccc6271f1004",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.178889+00:00",
+      "contentDigest": "8916516a2122b4ce0279e50e6be60989c752ddc1e234932498d0ccc6271f1004",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "chemical-design-2026-notice",
+        "chemical-design-2026-task"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/43-chemical-engineering-design.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "chemical-engineering-design:2026-20:clean-styrene-plant:undergraduate:china-styrene:v3",
+    "coreDigest": "30bdf0709daa1eb64410b1aeb8ab89642f1dbdd0ab638eb0df4ebb4dad411c39",
+    "originalContentDigest": "8916516a2122b4ce0279e50e6be60989c752ddc1e234932498d0ccc6271f1004",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:33:22.049314+00:00",
+      "contentDigest": "8916516a2122b4ce0279e50e6be60989c752ddc1e234932498d0ccc6271f1004",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "chemical-design-2026-notice",
+        "chemical-design-2026-task"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/43-chemical-engineering-design.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "integrated-circuit-innovation:2026-10:xinnuoda-tp3057:a-undergraduate-or-below:china-xinnuoda:v3",
+    "coreDigest": "4588720578a4c7b511d56dfa46c9c0d2c3271c7e164873679dd8bb82417c43d1",
+    "originalContentDigest": "5a2f798a3b67e69779a3919b69f9cdd12f56711d93918159ff28d2527f0426dd",
+    "review": {
+      "runId": "a2-gpt6astra-20261105T165926Z-5a7ff8c714f2",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:00:15.506107+00:00",
+      "contentDigest": "5a2f798a3b67e69779a3919b69f9cdd12f56711d93918159ff28d2527f0426dd",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "ic-2026-charter",
+        "ic-2026-xinnuoda",
+        "ic-2026-preliminary"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a2/evidence/43-integrated-circuit-innovation.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "integrated-circuit-innovation:2026-10:xinnuoda-tp3057:a-undergraduate-or-below:china-xinnuoda:v3",
+    "coreDigest": "4588720578a4c7b511d56dfa46c9c0d2c3271c7e164873679dd8bb82417c43d1",
+    "originalContentDigest": "5a2f798a3b67e69779a3919b69f9cdd12f56711d93918159ff28d2527f0426dd",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.181047+00:00",
+      "contentDigest": "5a2f798a3b67e69779a3919b69f9cdd12f56711d93918159ff28d2527f0426dd",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "ic-2026-charter",
+        "ic-2026-xinnuoda",
+        "ic-2026-preliminary"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/44-integrated-circuit-innovation.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "integrated-circuit-innovation:2026-10:xinnuoda-tp3057:a-undergraduate-or-below:china-xinnuoda:v3",
+    "coreDigest": "4588720578a4c7b511d56dfa46c9c0d2c3271c7e164873679dd8bb82417c43d1",
+    "originalContentDigest": "5a2f798a3b67e69779a3919b69f9cdd12f56711d93918159ff28d2527f0426dd",
+    "review": {
+      "runId": "content-b2-astra-high-20261106-f046e690",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:20:00.367070+00:00",
+      "contentDigest": "5a2f798a3b67e69779a3919b69f9cdd12f56711d93918159ff28d2527f0426dd",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "ic-2026-charter",
+        "ic-2026-xinnuoda",
+        "ic-2026-preliminary"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/evidence/43-integrated-circuit-innovation.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": false,
+        "temporalAccuracy": true
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "B2-43-01",
+          "severity": "major",
+          "description": "严格L3的参数案例仍缺关键原件：长图第五节“四、赛事资料”明确TP3057器件手册和ST3020系统手册第6版另在钉钉群发布；冻结包本稿来源未包含这两份手册。deepDive要求“按手册建立参数—条件—向量—判定表”，却未选取并完整核验任何一个具体参数，无法检查该链路或器件覆盖是否实质正确。补入可合法公开并复审的相关手册及至少一项具体完整分析，或保留为概览层级；不要猜写参数。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "integrated-circuit-innovation:2026-10:xinnuoda-tp3057:a-undergraduate-or-below:china-xinnuoda:v3",
+    "coreDigest": "4588720578a4c7b511d56dfa46c9c0d2c3271c7e164873679dd8bb82417c43d1",
+    "originalContentDigest": "5a2f798a3b67e69779a3919b69f9cdd12f56711d93918159ff28d2527f0426dd",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:33:22.050742+00:00",
+      "contentDigest": "5a2f798a3b67e69779a3919b69f9cdd12f56711d93918159ff28d2527f0426dd",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "ic-2026-charter",
+        "ic-2026-xinnuoda",
+        "ic-2026-preliminary"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/44-integrated-circuit-innovation.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": false,
+        "temporalAccuracy": true
+      },
+      "outcome": "changes_requested",
+      "findings": [
+        {
+          "id": "B2-44-01",
+          "severity": "major",
+          "description": "严格L3的参数案例仍缺关键原件：长图第五节“四、赛事资料”明确TP3057器件手册和ST3020系统手册第6版另在钉钉群发布；冻结包本稿来源未包含这两份手册。deepDive要求“按手册建立参数—条件—向量—判定表”，却未选取并完整核验任何一个具体参数，无法检查该链路或器件覆盖是否实质正确。补入可合法公开并复审的相关手册及至少一项具体完整分析，或保留为概览层级；不要猜写参数。",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "physics-experiment-innovation:2026-12:ice-metal-friction:assigned-domestic:china-ice-metal:v3",
+    "coreDigest": "6f74a5b525f02ab02570aa062cb1f22b381a3fc0438d1dfc015832eebbdf1f48",
+    "originalContentDigest": "31afca33504a8b05dd03c45469fb4cc35acd9f0ff761013e133d025696ac4bd6",
+    "review": {
+      "runId": "a2-gpt6astra-20261105T165926Z-5a7ff8c714f2",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:00:15.506107+00:00",
+      "contentDigest": "31afca33504a8b05dd03c45469fb4cc35acd9f0ff761013e133d025696ac4bd6",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "physics-2026-notice-task"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a2/evidence/44-physics-experiment-innovation.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "physics-experiment-innovation:2026-12:ice-metal-friction:assigned-domestic:china-ice-metal:v3",
+    "coreDigest": "6f74a5b525f02ab02570aa062cb1f22b381a3fc0438d1dfc015832eebbdf1f48",
+    "originalContentDigest": "31afca33504a8b05dd03c45469fb4cc35acd9f0ff761013e133d025696ac4bd6",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.181501+00:00",
+      "contentDigest": "31afca33504a8b05dd03c45469fb4cc35acd9f0ff761013e133d025696ac4bd6",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "physics-2026-notice-task"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/45-physics-experiment-innovation.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "physics-experiment-innovation:2026-12:ice-metal-friction:assigned-domestic:china-ice-metal:v3",
+    "coreDigest": "6f74a5b525f02ab02570aa062cb1f22b381a3fc0438d1dfc015832eebbdf1f48",
+    "originalContentDigest": "31afca33504a8b05dd03c45469fb4cc35acd9f0ff761013e133d025696ac4bd6",
+    "review": {
+      "runId": "content-b2-astra-high-20261106-f046e690",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T16:44:44.444053+00:00",
+      "contentDigest": "31afca33504a8b05dd03c45469fb4cc35acd9f0ff761013e133d025696ac4bd6",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "physics-2026-notice-task"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/evidence/44-physics-experiment-innovation.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "physics-experiment-innovation:2026-12:ice-metal-friction:assigned-domestic:china-ice-metal:v3",
+    "coreDigest": "6f74a5b525f02ab02570aa062cb1f22b381a3fc0438d1dfc015832eebbdf1f48",
+    "originalContentDigest": "31afca33504a8b05dd03c45469fb4cc35acd9f0ff761013e133d025696ac4bd6",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:33:22.052064+00:00",
+      "contentDigest": "31afca33504a8b05dd03c45469fb4cc35acd9f0ff761013e133d025696ac4bd6",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "physics-2026-notice-task"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/45-physics-experiment-innovation.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "embedded-chip-system-design:2026:gowin-real-time-synth:nuaa-undergraduate-graduate:nuaa-gowin-fpga:v3",
+    "coreDigest": "c25d91413bff3ef86114b06850f20fd56937207d54c7e59e907d3f5212d856bb",
+    "originalContentDigest": "cf12207cb6106bfecca452953b0209bd470e917632ca52f587976fb38b94c8bc",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.181934+00:00",
+      "contentDigest": "cf12207cb6106bfecca452953b0209bd470e917632ca52f587976fb38b94c8bc",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "fpga-nuaa-2026-notice",
+        "fpga-gowin-2026-task"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/46-embedded-chip-system-design.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "embedded-chip-system-design:2026:gowin-real-time-synth:nuaa-undergraduate-graduate:nuaa-gowin-fpga:v3",
+    "coreDigest": "c25d91413bff3ef86114b06850f20fd56937207d54c7e59e907d3f5212d856bb",
+    "originalContentDigest": "cf12207cb6106bfecca452953b0209bd470e917632ca52f587976fb38b94c8bc",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:43:18.904654+00:00",
+      "contentDigest": "cf12207cb6106bfecca452953b0209bd470e917632ca52f587976fb38b94c8bc",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "fpga-nuaa-2026-notice",
+        "fpga-gowin-2026-task"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/46-embedded-chip-system-design.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "chemistry-experiment-innovation:2025-5:popular-science-cochineal:popular-science:china-2025-popular-science:v3",
+    "coreDigest": "661e7fb139f2dc8073def33e5983514975f25e9da371e28e4574ea9e0017c633",
+    "originalContentDigest": "8141e8706457835a598cfa61e4f5bc24726f06d67d65ea8a3207a31587a4f584",
+    "review": {
+      "runId": "a2-batch04-20261105T194125Z-7db8c31a",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T19:41:25.608720+00:00",
+      "contentDigest": "8141e8706457835a598cfa61e4f5bc24726f06d67d65ea8a3207a31587a4f584",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "chem-innovation-2025-charter",
+        "chem-innovation-2025-final",
+        "chem-cochineal-2026-work",
+        "chem-cochineal-2026-issue"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a2/batch04/evidence/50-chemistry-experiment-innovation.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "chemistry-experiment-innovation:2025-5:popular-science-cochineal:popular-science:china-2025-popular-science:v3",
+    "coreDigest": "661e7fb139f2dc8073def33e5983514975f25e9da371e28e4574ea9e0017c633",
+    "originalContentDigest": "8141e8706457835a598cfa61e4f5bc24726f06d67d65ea8a3207a31587a4f584",
+    "review": {
+      "runId": "content-b2-astra-high-batch04-20261106-3f6acd66",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T19:46:55.310593+00:00",
+      "contentDigest": "8141e8706457835a598cfa61e4f5bc24726f06d67d65ea8a3207a31587a4f584",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "chem-innovation-2025-charter",
+        "chem-innovation-2025-final",
+        "chem-cochineal-2026-work",
+        "chem-cochineal-2026-issue"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch04/evidence/50-chemistry-experiment-innovation.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "national-college-electronic-design:2025-national:monocular-measurement:undergraduate-task:china-2025-c:v3",
+    "coreDigest": "606e5bff63f6388a3a63f628b58cd94a3a544696a10eed7be365b09f2a830005",
+    "originalContentDigest": "746d9ea506b1cb4f330ad407be182d371d0f3014270cab1bc1ae9274302dc029",
+    "review": {
+      "reviewerId": "/root/stage2_content_a",
+      "runId": "stage2-content-review-a3-20261106",
+      "model": "gpt-6.1-sol",
+      "reasoningEffort": "max",
+      "reviewedAt": "2026-11-06T06:04:28Z",
+      "method": "independent_source_recheck",
+      "outcome": "approved",
+      "contentDigest": "746d9ea506b1cb4f330ad407be182d371d0f3014270cab1bc1ae9274302dc029",
+      "sourceIds": [
+        "electronics-2025-main-notice",
+        "electronics-2025-c-task-shanghai-rar",
+        "electronics-2025-national-process"
+      ],
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "findings": [
+        {
+          "id": "content-a-electronics-report-anonymity-and-format",
+          "severity": "major",
+          "description": "首轮报告交付条件遗漏已补：匿名、八页、300字摘要、页顶空白及密封纸位置已列出，process已加入交付fact的sourceIds。新增处罚范围限定另列新问题。",
+          "resolved": true
+        },
+        {
+          "id": "content-a2-electronics-report-only-qualification",
+          "severity": "minor",
+          "description": "第二轮新增处罚范围限定已解决：第三轮sections.deliverables及同文fact均改为“否则取消评审资格”，与实施说明一、8一致，无新增“该报告的”限定，也没有扩写其他未明示处罚。",
+          "resolved": true
+        }
+      ],
+      "evidenceArtifact": "artifacts/specialist-20261106/stage2-content-review-a3/electronics-c-evidence.json"
+    }
+  },
+  {
+    "recordId": "national-college-electronic-design:2025-national:monocular-measurement:undergraduate-task:china-2025-c:v3",
+    "coreDigest": "606e5bff63f6388a3a63f628b58cd94a3a544696a10eed7be365b09f2a830005",
+    "originalContentDigest": "746d9ea506b1cb4f330ad407be182d371d0f3014270cab1bc1ae9274302dc029",
+    "review": {
+      "reviewerId": "/root/stage2_content_b",
+      "runId": "stage2-content-review-b3-20261106T060017Z",
+      "model": "gpt-6.1-sol",
+      "reasoningEffort": "max",
+      "reviewedAt": "2026-11-06T06:00:17+00:00",
+      "method": "independent_source_recheck",
+      "outcome": "approved",
+      "contentDigest": "746d9ea506b1cb4f330ad407be182d371d0f3014270cab1bc1ae9274302dc029",
+      "sourceIds": [
+        "electronics-2025-main-notice",
+        "electronics-2025-c-task-shanghai-rar",
+        "electronics-2025-national-process"
+      ],
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "findings": [],
+      "evidenceArtifact": "artifacts/specialist-20261106/stage2-content-review-b3/electronic-design/evidence.json"
+    }
+  },
+  {
+    "recordId": "engineering-practice-innovation:2025-national:solar-mechanical-car:undergraduate:china-2025-solar:v3",
+    "coreDigest": "e47a0eb42419b0de741cb775599d3adcabab8db9cf6f46a15172354af5308bd2",
+    "originalContentDigest": "e23b9b16f3ff19d139c963f1a9694c7590266df2bd452b40b98628e486f83f52",
+    "review": {
+      "runId": "a2-gpt6astra-20261105T165926Z-5a7ff8c714f2",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:00:15.506107+00:00",
+      "contentDigest": "e23b9b16f3ff19d139c963f1a9694c7590266df2bd452b40b98628e486f83f52",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "engineering-2025-notice",
+        "engineering-2025-solar-task",
+        "engineering-2025-solar-score"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a2/evidence/48-engineering-practice-innovation.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "engineering-practice-innovation:2025-national:solar-mechanical-car:undergraduate:china-2025-solar:v3",
+    "coreDigest": "e47a0eb42419b0de741cb775599d3adcabab8db9cf6f46a15172354af5308bd2",
+    "originalContentDigest": "e23b9b16f3ff19d139c963f1a9694c7590266df2bd452b40b98628e486f83f52",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.191523+00:00",
+      "contentDigest": "e23b9b16f3ff19d139c963f1a9694c7590266df2bd452b40b98628e486f83f52",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "engineering-2025-notice",
+        "engineering-2025-solar-task",
+        "engineering-2025-solar-score"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/49-engineering-practice-innovation.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "engineering-practice-innovation:2025-national:solar-mechanical-car:undergraduate:china-2025-solar:v3",
+    "coreDigest": "e47a0eb42419b0de741cb775599d3adcabab8db9cf6f46a15172354af5308bd2",
+    "originalContentDigest": "e23b9b16f3ff19d139c963f1a9694c7590266df2bd452b40b98628e486f83f52",
+    "review": {
+      "runId": "content-b2-astra-high-20261106-f046e690",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:37:01.527302+00:00",
+      "contentDigest": "e23b9b16f3ff19d139c963f1a9694c7590266df2bd452b40b98628e486f83f52",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "engineering-2025-notice",
+        "engineering-2025-solar-task",
+        "engineering-2025-solar-score"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/evidence/48-engineering-practice-innovation.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "engineering-practice-innovation:2025-national:solar-mechanical-car:undergraduate:china-2025-solar:v3",
+    "coreDigest": "e47a0eb42419b0de741cb775599d3adcabab8db9cf6f46a15172354af5308bd2",
+    "originalContentDigest": "e23b9b16f3ff19d139c963f1a9694c7590266df2bd452b40b98628e486f83f52",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:33:22.056508+00:00",
+      "contentDigest": "e23b9b16f3ff19d139c963f1a9694c7590266df2bd452b40b98628e486f83f52",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "engineering-2025-notice",
+        "engineering-2025-solar-task",
+        "engineering-2025-solar-score"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/49-engineering-practice-innovation.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "smart-car:2025-20-outdoor:outdoor-ros-mapping:higher-education:china-2025-outdoor-ros:v3",
+    "coreDigest": "01adf43abf9ebe44122b87621980b0f1e665be54e6d343838b43ddeb4c24f51d",
+    "originalContentDigest": "fd38a8e7cf3a2ef2162520425adbe6e15226333a887aa439f2eeca09f5f4b212",
+    "review": {
+      "reviewerId": "/root/content_corrections_review_b",
+      "runId": "content-corrections-independent-b3-2026-11-06T01:25:20.696Z",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-06T01:25:20.696Z",
+      "contentDigest": "fd38a8e7cf3a2ef2162520425adbe6e15226333a887aa439f2eeca09f5f4b212",
+      "method": "independent_source_recheck",
+      "outcome": "approved",
+      "sourceIds": [
+        "smartcar-2025-outdoor-ros"
+      ],
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "findings": [
+        {
+          "id": "b2-smartcar-completion-penalty",
+          "severity": "major",
+          "description": "已在新摘要两处完赛训练表述核实：两圈、建图、停车是练习目标；第二圈停车失败和未现场建图分别加罚20/50秒，赛道中停止运行超过10秒属任务失败。与规则第8页一致。",
+          "resolved": true
+        },
+        {
+          "id": "b2-smartcar-rubric-trace",
+          "severity": "minor",
+          "description": "新摘要将ROS2和现场建图移至requirementMapping，分别引用deliverables、track及rubric；正式计分映射只列运行与技术手册。原规则第2–3、7–9页支持。",
+          "resolved": true
+        }
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-corrections-independent-b3/record-evidence.json"
+    }
+  },
+  {
+    "recordId": "smart-car:2025-20-outdoor:outdoor-ros-mapping:higher-education:china-2025-outdoor-ros:v3",
+    "coreDigest": "01adf43abf9ebe44122b87621980b0f1e665be54e6d343838b43ddeb4c24f51d",
+    "originalContentDigest": "fd38a8e7cf3a2ef2162520425adbe6e15226333a887aa439f2eeca09f5f4b212",
+    "review": {
+      "reviewerId": "/root/six_content_independent_a",
+      "runId": "six-content-independent-a1@2026-11-06T01:28:26+00:00",
+      "model": "gpt-6-astra",
+      "reasoningEffort": "high",
+      "reviewedAt": "2026-11-06T01:28:26+00:00",
+      "method": "independent_source_recheck",
+      "outcome": "approved",
+      "contentDigest": "fd38a8e7cf3a2ef2162520425adbe6e15226333a887aa439f2eeca09f5f4b212",
+      "sourceIds": [
+        "smartcar-2025-outdoor-ros"
+      ],
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "findings": [],
+      "evidenceArtifact": "artifacts/continuation-20261105/six-content-independent-a1/06-smart-car.json"
+    }
+  },
+  {
+    "recordId": "robomaster-university:2026-rmuc:engineering-core-assembly:university:rmuc-2026-core-assembly:v3",
+    "coreDigest": "d11f60e8c8ddfa428ac68d5a59cd164d201666195b53ae6677edda8bca8a60e6",
+    "originalContentDigest": "dc2fe3a19f5cacbc2eb9ca5c260fa1aea772b4425f1bb9f30928911f5b412339",
+    "review": {
+      "runId": "a2-gpt6astra-20261105T165926Z-5a7ff8c714f2",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:00:15.506107+00:00",
+      "contentDigest": "dc2fe3a19f5cacbc2eb9ca5c260fa1aea772b4425f1bb9f30928911f5b412339",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "robomaster-2026-participant",
+        "robomaster-2026-core-task"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a2/evidence/50-robomaster-university.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "robomaster-university:2026-rmuc:engineering-core-assembly:university:rmuc-2026-core-assembly:v3",
+    "coreDigest": "d11f60e8c8ddfa428ac68d5a59cd164d201666195b53ae6677edda8bca8a60e6",
+    "originalContentDigest": "dc2fe3a19f5cacbc2eb9ca5c260fa1aea772b4425f1bb9f30928911f5b412339",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.200937+00:00",
+      "contentDigest": "dc2fe3a19f5cacbc2eb9ca5c260fa1aea772b4425f1bb9f30928911f5b412339",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "robomaster-2026-participant",
+        "robomaster-2026-core-task"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/51-robomaster-university.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "robomaster-university:2026-rmuc:engineering-core-assembly:university:rmuc-2026-core-assembly:v3",
+    "coreDigest": "d11f60e8c8ddfa428ac68d5a59cd164d201666195b53ae6677edda8bca8a60e6",
+    "originalContentDigest": "dc2fe3a19f5cacbc2eb9ca5c260fa1aea772b4425f1bb9f30928911f5b412339",
+    "review": {
+      "runId": "content-b2-astra-high-20261106-f046e690",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:25:51.166142+00:00",
+      "contentDigest": "dc2fe3a19f5cacbc2eb9ca5c260fa1aea772b4425f1bb9f30928911f5b412339",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "robomaster-2026-participant",
+        "robomaster-2026-core-task"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/evidence/50-robomaster-university.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "robomaster-university:2026-rmuc:engineering-core-assembly:university:rmuc-2026-core-assembly:v3",
+    "coreDigest": "d11f60e8c8ddfa428ac68d5a59cd164d201666195b53ae6677edda8bca8a60e6",
+    "originalContentDigest": "dc2fe3a19f5cacbc2eb9ca5c260fa1aea772b4425f1bb9f30928911f5b412339",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:33:22.059568+00:00",
+      "contentDigest": "dc2fe3a19f5cacbc2eb9ca5c260fa1aea772b4425f1bb9f30928911f5b412339",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "robomaster-2026-participant",
+        "robomaster-2026-core-task"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/51-robomaster-university.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "biomod:2023:biomolecular-design:undergraduate:biomod-2023:v3",
+    "coreDigest": "d0bbc2b3f2f74df672d5b93c140e91bf9371b4544fbf38a258a5b7330a47cf98",
+    "originalContentDigest": "9888d74a231d694f9056409431eace58b3ff86c04ad594ab4ca88f6e9360c39c",
+    "review": {
+      "runId": "a2-batch06-20261105T201748Z-7df37711",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T20:17:48.696704+00:00",
+      "contentDigest": "9888d74a231d694f9056409431eace58b3ff86c04ad594ab4ca88f6e9360c39c",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "biomod-2023-requirements",
+        "biomod-2023-rubric",
+        "biomod-2023-sendai-project",
+        "biomod-2023-sendai-design",
+        "biomod-2023-sendai-experiment",
+        "biomod-requirements-observed-text",
+        "biomod-requirements-fees-2023"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a2/batch06/evidence/3-biomod.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": [
+        {
+          "id": "a2-b06-fact-type",
+          "severity": "major",
+          "description": "资格知识缺口已拆成kind/status unknown、空sourceIds/sourceScopes、checkedAt与lastVerifiedAt null，并保留requires_confirmation；解决的是类型混淆，未解决未知资格本身。",
+          "resolved": true
+        },
+        {
+          "id": "a2-b06-biomod-scope",
+          "severity": "major",
+          "description": "group/scope/registration限定2023公开作品学习；原Requirements标requires_recheck，新增仅网页文字与2023费用来源绑定同原HTML、不同scope，未把2023资格适用性关闭；同届评分独立保留。",
+          "resolved": true
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "biomod:2023:biomolecular-design:undergraduate:biomod-2023:v3",
+    "coreDigest": "d0bbc2b3f2f74df672d5b93c140e91bf9371b4544fbf38a258a5b7330a47cf98",
+    "originalContentDigest": "9888d74a231d694f9056409431eace58b3ff86c04ad594ab4ca88f6e9360c39c",
+    "review": {
+      "runId": "content-b2-astra-high-batch06-20261106-2ba54f74",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T20:24:04.857570+00:00",
+      "contentDigest": "9888d74a231d694f9056409431eace58b3ff86c04ad594ab4ca88f6e9360c39c",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "biomod-2023-requirements",
+        "biomod-2023-rubric",
+        "biomod-2023-sendai-project",
+        "biomod-2023-sendai-design",
+        "biomod-2023-sendai-experiment",
+        "biomod-requirements-observed-text",
+        "biomod-requirements-fees-2023"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch06/evidence/03-biomod.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "formula-student-china:2026-fscc:cost-manufacturing:university-combustion:china-2026-fscc-cost:v3",
+    "coreDigest": "05248d6f581d219729f0247ae6754d77518872700e6bde518767489270d7b516",
+    "originalContentDigest": "820b74545c6d2e5f4fb794a76d1cd504df04ebacbda10bb140ba0b871fc6d59b",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.207226+00:00",
+      "contentDigest": "820b74545c6d2e5f4fb794a76d1cd504df04ebacbda10bb140ba0b871fc6d59b",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "fsc-2026-rules-cost",
+        "fsc-2026-cost-case"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/53-formula-student-china.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": [
+        {
+          "id": "A3-53-resolved",
+          "severity": "major",
+          "description": "本人A2意见：A4.1.1规定只限全日制高等院校学生；将资格中本科生也明确限定全日制，并在结构化规则核对fullTime，避免只限制研究生。 本轮处理依据：原2026规则13页A4.1.1与A4.2.1重读：全日制限制同时覆盖本科，修订正文与结构化fullTime一致。完整四页成本任务、三年报价及20/40/40评分、个人成本模型/四周与退出仍有证据。",
+          "resolved": true
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "formula-student-china:2026-fscc:cost-manufacturing:university-combustion:china-2026-fscc-cost:v3",
+    "coreDigest": "05248d6f581d219729f0247ae6754d77518872700e6bde518767489270d7b516",
+    "originalContentDigest": "820b74545c6d2e5f4fb794a76d1cd504df04ebacbda10bb140ba0b871fc6d59b",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:33:22.061178+00:00",
+      "contentDigest": "820b74545c6d2e5f4fb794a76d1cd504df04ebacbda10bb140ba0b871fc6d59b",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "fsc-2026-rules-cost",
+        "fsc-2026-cost-case"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/53-formula-student-china.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "igem-collegiate:2026-collegiate:model-evidence:higher-education:igem-2026-higher-education:v3",
+    "coreDigest": "d6b3927854cf3f12539a2cac763e47d9df07c39c3e7f7d603ae14793ead745fd",
+    "originalContentDigest": "06d7a541005f99446557a8f749bdab1f5bd5c04923508ceb2ef3382e22ab6f4d",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.213059+00:00",
+      "contentDigest": "06d7a541005f99446557a8f749bdab1f5bd5c04923508ceb2ef3382e22ab6f4d",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "igem-2026-registration",
+        "igem-2026-roster",
+        "igem-2026-special-prizes",
+        "igem-2026-deliverables",
+        "igem-2026-fees",
+        "igem-2025-hkust-model",
+        "igem-2025-judge-handbook"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/54-igem-collegiate.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": [
+        {
+          "id": "A3-54-resolved",
+          "severity": "major",
+          "description": "本人A2意见：补完整2025公开作品链（包括后续建模循环/结果及必要上下文）与2025适用评分；2026评分可保留为当前训练参考，但不能代替案例适用评分和完整作品审读。 本轮处理依据：已读完整2025 HKUST Model HTML文字（Cycle0、1A、1B、2、Biosensor、Kill Switch）与Cycle0完整图组及各后续关键图，并视觉核同届手册67—68页。稿准确区分预测置信度、作者解释、独立验证缺失；没有替原作背书错误科学解释或未运行结果。2026资格、名单、费用和交付为独立年度范围；冻结来源为rendered_dom_text，另取官方SPA原JS核关键事实，不伪称为原HTTP正文。完整研究评读、同届四项评分、个人路线及四周/退出足够。",
+          "resolved": true
+        }
+      ]
+    }
+  },
+  {
+    "recordId": "igem-collegiate:2026-collegiate:model-evidence:higher-education:igem-2026-higher-education:v3",
+    "coreDigest": "d6b3927854cf3f12539a2cac763e47d9df07c39c3e7f7d603ae14793ead745fd",
+    "originalContentDigest": "06d7a541005f99446557a8f749bdab1f5bd5c04923508ceb2ef3382e22ab6f4d",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:50:14.533545+00:00",
+      "contentDigest": "06d7a541005f99446557a8f749bdab1f5bd5c04923508ceb2ef3382e22ab6f4d",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "igem-2026-registration",
+        "igem-2026-roster",
+        "igem-2026-special-prizes",
+        "igem-2026-deliverables",
+        "igem-2026-fees",
+        "igem-2025-hkust-model",
+        "igem-2025-judge-handbook"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/54-igem-collegiate.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "mechanical-innovation-design:2026-12-regular:vegetable-processing:undergraduate-junior-college:china-regular-vegetable:v3",
+    "coreDigest": "d7a50e94304f0107fadf02a2dcece2cb01e0009aa65f9bfb01a7528875a900bc",
+    "originalContentDigest": "0a4ebeec9ac1d9035cfecc0e146a23df4e32c0f58ce03e394fe27f5e23416593",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.213972+00:00",
+      "contentDigest": "0a4ebeec9ac1d9035cfecc0e146a23df4e32c0f58ce03e394fe27f5e23416593",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "mechanical-2026-notice",
+        "mechanical-2026-instructions"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/55-mechanical-innovation-design.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "mechanical-innovation-design:2026-12-regular:vegetable-processing:undergraduate-junior-college:china-regular-vegetable:v3",
+    "coreDigest": "d7a50e94304f0107fadf02a2dcece2cb01e0009aa65f9bfb01a7528875a900bc",
+    "originalContentDigest": "0a4ebeec9ac1d9035cfecc0e146a23df4e32c0f58ce03e394fe27f5e23416593",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:33:22.062892+00:00",
+      "contentDigest": "0a4ebeec9ac1d9035cfecc0e146a23df4e32c0f58ce03e394fe27f5e23416593",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "mechanical-2026-notice",
+        "mechanical-2026-instructions"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/55-mechanical-innovation-design.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "national-structural-design:2026-19-shanghai:lele-cart:undergraduate-junior-college:shanghai-division:v3",
+    "coreDigest": "bc6536f76f9f08436eefb01401cacdef96a89c5c1ed99b170d872c593a7df5e8",
+    "originalContentDigest": "8f076fb59d3e8c0e2c30e37c1ab5531cb2150583e08d78a3ac5d7a3e6a649b2b",
+    "review": {
+      "runId": "a2-gpt6astra-20261105T165926Z-5a7ff8c714f2",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:00:15.506107+00:00",
+      "contentDigest": "8f076fb59d3e8c0e2c30e37c1ab5531cb2150583e08d78a3ac5d7a3e6a649b2b",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "structure-shanghai-2026-notice",
+        "structure-shanghai-2026-task"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a2/evidence/55-national-structural-design.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "national-structural-design:2026-19-shanghai:lele-cart:undergraduate-junior-college:shanghai-division:v3",
+    "coreDigest": "bc6536f76f9f08436eefb01401cacdef96a89c5c1ed99b170d872c593a7df5e8",
+    "originalContentDigest": "8f076fb59d3e8c0e2c30e37c1ab5531cb2150583e08d78a3ac5d7a3e6a649b2b",
+    "review": {
+      "runId": "a3-gpt6astra-20261105T175838Z-cc8b9db1bb24",
+      "reviewerId": "/root/content_review_a2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:58:39.218707+00:00",
+      "contentDigest": "8f076fb59d3e8c0e2c30e37c1ab5531cb2150583e08d78a3ac5d7a3e6a649b2b",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "structure-shanghai-2026-notice",
+        "structure-shanghai-2026-task"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-a3/evidence/56-national-structural-design.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "national-structural-design:2026-19-shanghai:lele-cart:undergraduate-junior-college:shanghai-division:v3",
+    "coreDigest": "bc6536f76f9f08436eefb01401cacdef96a89c5c1ed99b170d872c593a7df5e8",
+    "originalContentDigest": "8f076fb59d3e8c0e2c30e37c1ab5531cb2150583e08d78a3ac5d7a3e6a649b2b",
+    "review": {
+      "runId": "content-b2-astra-high-20261106-f046e690",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T17:12:24.052365+00:00",
+      "contentDigest": "8f076fb59d3e8c0e2c30e37c1ab5531cb2150583e08d78a3ac5d7a3e6a649b2b",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "structure-shanghai-2026-notice",
+        "structure-shanghai-2026-task"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/evidence/55-national-structural-design.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "national-structural-design:2026-19-shanghai:lele-cart:undergraduate-junior-college:shanghai-division:v3",
+    "coreDigest": "bc6536f76f9f08436eefb01401cacdef96a89c5c1ed99b170d872c593a7df5e8",
+    "originalContentDigest": "8f076fb59d3e8c0e2c30e37c1ab5531cb2150583e08d78a3ac5d7a3e6a649b2b",
+    "review": {
+      "runId": "content-b2-astra-high-batch03-20261106-f9ce7387",
+      "reviewerId": "/root/content_review_b2",
+      "model": "gpt-6-astra",
+      "reviewedAt": "2026-11-05T18:33:22.064524+00:00",
+      "contentDigest": "8f076fb59d3e8c0e2c30e37c1ab5531cb2150583e08d78a3ac5d7a3e6a649b2b",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "structure-shanghai-2026-notice",
+        "structure-shanghai-2026-task"
+      ],
+      "evidenceArtifact": "artifacts/continuation-20261105/content-review-b2/batch03/evidence/56-national-structural-design.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "china-college-computer-design:2026-19:ai-industrial-vision:full-time-undergraduate:china-ai-industrial-2026:v3",
+    "coreDigest": "1c8f926218e234be2454ee31d1e311befe8b4b916ba0a104474616ae2c55945c",
+    "originalContentDigest": "9dad117395e743d90b66cf0305ff343c829f5270c1f8b68a1426486467b5bba7",
+    "review": {
+      "runId": "accelerate-v743-independent-catalog-source-recheck",
+      "reviewerId": "/root/e_independent_review",
+      "model": "Codex independent reviewer E",
+      "reviewedAt": "2026-11-11T07:17:09.096Z",
+      "contentDigest": "9dad117395e743d90b66cf0305ff343c829f5270c1f8b68a1426486467b5bba7",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "4c-c2-industrial",
+        "4c-c2-national"
+      ],
+      "evidenceArtifact": "artifacts/accelerate-20261111/E/v743-catalog-source-recheck.safe.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "iot-design:2026-13:espressif-aiot:regular-university:china-espressif:v3",
+    "coreDigest": "6c0aa61c816b8c97905bb65d3fc9c9d57b925f7b746d95cd97f90881bf318594",
+    "originalContentDigest": "f967aead82ab3660fd369922baeacca6ab5d053e39380eebcf33c6172a256920",
+    "review": {
+      "runId": "accelerate-v743-independent-catalog-source-recheck",
+      "reviewerId": "/root/e_independent_review",
+      "model": "Codex independent reviewer E",
+      "reviewedAt": "2026-11-11T07:17:09.096Z",
+      "contentDigest": "f967aead82ab3660fd369922baeacca6ab5d053e39380eebcf33c6172a256920",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "iot-2026-espressif",
+        "iot-2026-charter"
+      ],
+      "evidenceArtifact": "artifacts/accelerate-20261111/E/v743-catalog-source-recheck.safe.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "smart-car:2025-20-outdoor:outdoor-ros-mapping:higher-education:china-2025-outdoor-ros:v3",
+    "coreDigest": "10b2c6a610b77585227ffa9e02b56b61c766eb704d5253c3444551e456f456d8",
+    "originalContentDigest": "d926f8c8d860e507b3323373f25cef90afbf0aaba889e5379d718eb91792581c",
+    "review": {
+      "runId": "accelerate-v743-independent-catalog-source-recheck",
+      "reviewerId": "/root/e_independent_review",
+      "model": "Codex independent reviewer E",
+      "reviewedAt": "2026-11-11T07:17:09.096Z",
+      "contentDigest": "d926f8c8d860e507b3323373f25cef90afbf0aaba889e5379d718eb91792581c",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "smartcar-2025-outdoor-ros"
+      ],
+      "evidenceArtifact": "artifacts/accelerate-20261111/E/v743-catalog-source-recheck.safe.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  },
+  {
+    "recordId": "apple-swift-student-challenge:2026:app-playground:individual-student:global-2026:v3",
+    "coreDigest": "d350e2209b349f57568d8d4086d7d089ef4f319c9af597e666e0113121c9643e",
+    "originalContentDigest": "12ceff8aa7c866583494ee7f5d7d8b1b8a9919d45a244c122ddde78dfb0c600c",
+    "review": {
+      "runId": "accelerate-v748-independent-catalog-source-recheck",
+      "reviewerId": "/root/e_independent_review",
+      "model": "Codex independent reviewer E",
+      "reviewedAt": "2026-11-11T09:20:41.233Z",
+      "contentDigest": "12ceff8aa7c866583494ee7f5d7d8b1b8a9919d45a244c122ddde78dfb0c600c",
+      "method": "independent_source_recheck",
+      "sourceIds": [
+        "swift-2026-policy",
+        "swift-playground-requirements"
+      ],
+      "evidenceArtifact": "artifacts/accelerate-20261111/E/v748-catalog-source-recheck.safe.json",
+      "checks": {
+        "factualSupport": true,
+        "entityScope": true,
+        "studentUsefulness": true,
+        "temporalAccuracy": true
+      },
+      "outcome": "approved",
+      "findings": []
+    }
+  }
+]

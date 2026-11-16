@@ -1,4 +1,6 @@
 import { z } from "zod";
+import { readSubmissionTimingV7, attachSubmissionTimingV7, submissionModelDeadlineV7 } from "@/lib/competitions/v7/submission-timing";
+import { withRecommendationAccountingTrace } from "@/lib/ai/product-observation";
 import { getConfiguredAiProvider } from "@/lib/ai/ai-client";
 import {
   aiConsentRequiredResponse,
@@ -47,11 +49,13 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 const normalizeRequestSchema = z.object({
+  recommendationPolicy:z.literal("v7").optional(),
   aiConsent: aiConsentSchema,
   questionnaire: competitionQuestionnaireV1Schema
 }).strict();
 
 const confirmRequestSchema = z.object({
+  recommendationPolicy:z.literal("v7").optional(),
   aiConsent: aiConsentSchema,
   questionnaireToken: z.string().min(32).max(48 * 1024),
   confirmations: z.array(competitionQuestionnaireConfirmationSchema)
@@ -77,15 +81,24 @@ async function handleNormalizeRequest(
   data: NormalizeRequest,
   context: CompetitionProducerContext
 ) {
+  const response = await handleNormalizeRequestInternal(request, data, context);
+  return data.recommendationPolicy === "v7" ? attachSubmissionTimingV7(request, response) : response;
+}
+
+async function handleNormalizeRequestInternal(request: Request, data: NormalizeRequest, context: CompetitionProducerContext) {
   try {
+    const modelDeadline = data.recommendationPolicy === "v7"
+      ? submissionModelDeadlineV7(request, context.deadlines.aiDeadlineEpochMs, "before_rank")
+      : context.deadlines.aiDeadlineEpochMs;
     if ("questionnaire" in data) {
-      const normalized = normalizeCompetitionQuestionnaire(data.questionnaire);
+      const normalized = normalizeCompetitionQuestionnaire(data.questionnaire,{policy:data.recommendationPolicy});
       if (!normalized.ok) return competitionAiJson({ ok: false, error: "INVALID_QUESTIONNAIRE" }, { status: 400 });
       const enhanced = await enhanceCompetitionQuestionnaireWithAi(
         normalized.questionnaire,
         normalized.interpretations,
         {
-          deadlineEpochMs: context.deadlines.aiDeadlineEpochMs,
+          policy:data.recommendationPolicy,
+          deadlineEpochMs: modelDeadline,
           signal: context.signal
         }
       );
@@ -175,14 +188,21 @@ async function handleNormalizeRequest(
       model: getCompetitionNormalizeModel(),
       aiUsed: verified.payload.interpretations.some(({ source }) => source === "model")
     });
-  } catch {
+  } catch (error) {
+    if (error instanceof Error && error.message === "DECISION_TIMEOUT") return competitionAiJson({ok:false,error:"DECISION_TIMEOUT"},{status:503});
     return competitionAiJson({ ok: false, error: "COMPETITION_NORMALIZATION_FAILED" }, { status: 500 });
   }
 }
 
 export async function POST(request: Request) {
-  const deadlines = createCompetitionRequestDeadlines();
   const requestId = getRequestId(request);
+  try { readSubmissionTimingV7(request); }
+  catch { return withRequestId(competitionAiJson({ok:false,error:"DECISION_TIMING_INVALID"},{status:400}),requestId); }
+  return withRecommendationAccountingTrace(requestId, () => normalize(request, requestId));
+}
+
+async function normalize(request: Request, requestId: string) {
+  const deadlines = createCompetitionRequestDeadlines();
   const respond = <T extends Response>(response: T) => withRequestId(response, requestId);
   if (!isCompetitionRecommenderEnabled()) {
     return respond(competitionAiJson({ ok: false, error: "COMPETITION_RECOMMENDER_DISABLED" }, { status: 503 }));

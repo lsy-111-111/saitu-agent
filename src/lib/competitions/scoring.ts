@@ -1,5 +1,5 @@
 import { getSeriesBusinessActivities } from "./business-activities";
-import { assessDecisionFit, type DecisionFit } from "./decision-fit";
+import { assessDecisionFit, confirmedDecisionGoal, personalExperienceFit, type DecisionFit } from "./decision-fit";
 import type { Competition } from "@/content/competitions";
 import { getCompetitionTaxonomySignals } from "@/content/competition-taxonomy";
 import type {
@@ -1440,15 +1440,15 @@ function scoreCompetitionForProfile(
   const refinedTask = businessActivity && seriesActivities
     ? 0.7 * Number(seriesActivities.includes(businessActivity)) + 0.3 * (confirmedTask ?? 0)
     : confirmedTask;
-  const role = profile.decisionContext?.experienceRole;
-  const experience = averageKnown([
-    known("skills") && profile.skills.length ? directSkillRatio : null,
-    known("evidence") ? evidenceRatio : null,
-    known("experienceLevel") ? experienceDifficultyFit(competition, profile) : null
-  ]);
+  // Five-dimensional scoring must retain the same confirmed subject/task boundary.
+  // A later explicit task choice can resolve the transfer gap; generic skills alone cannot.
+  const boundedTask = fixedCoreMismatch && dynamicTaskFit === null && !businessActivity && refinedTask !== null
+    ? Math.min(refinedTask, COMPETITION_CORE_MISMATCH_MAX_SUBJECT_TASK_POINTS / 25)
+    : refinedTask;
+  const experience = personalExperienceFit(competition, profile);
   const fitPolicy = assessDecisionFit(competition, profile, {
-    goal: priorityGoal ?? profile.decisionContext?.primaryGoal ?? profile.goals[0],
-    task: refinedTask, experience: experience === null ? null : experience * (role === "observed" ? 0.55 : role === "assisted" ? 0.8 : 1),
+    goal: confirmedDecisionGoal(profile, priorityGoal),
+    task: boundedTask, experience,
     readiness: averageKnown([known("weeklyCommitment") ? weeklyCommitmentFit(competition, profile) : null,
       known("teamStatus") ? teamStatusFit(competition, profile) : null,
       known("availableResources") ? availableResourcesFit(competition, {...profile, availableResources: [...new Set([...profile.availableResources, ...(profile.decisionContext?.obtainableResources ?? [])])]}) : null,

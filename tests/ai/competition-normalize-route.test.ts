@@ -16,6 +16,7 @@ import type {
   CompetitionQuestionnaireV1
 } from "../../src/types/competition-recommendation";
 import { competitionPiiRegressionTexts } from "../fixtures/competition-pii-regression";
+import { withProductObservation, type ProductObservation } from "../../src/lib/ai/product-observation";
 
 const originalEnv = { ...process.env };
 const uuidPattern = /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/;
@@ -128,6 +129,47 @@ afterEach(() => {
 });
 
 describe("POST /api/competitions/recommend/normalize", () => {
+  it("binds concurrent normalization dispatch metadata to each HTTP request without logging questionnaire content", async () => {
+    process.env.AI_PROVIDER = "deepseek";
+    process.env.AI_API_KEY = "unit-normalize-secret-not-real";
+    const fetchMock = vi.fn(async () => aiResponse({ mappings: [{
+      fieldId: "skills", status: "unique", values: ["programming"],
+      evidenceSpan: "Python写项目", rationale: "原文描述编程经验。"
+    }] }));
+    vi.stubGlobal("fetch", fetchMock);
+    const observed: ProductObservation[] = [];
+    const responses = await Promise.all(["a", "b"].map((suffix, index) => {
+      const req = request({ recommendationPolicy: "v7", aiConsent: { accepted: true, version: "test.v1" },
+        questionnaire: questionnaire({ skills: { fieldId: "skills", selectedValues: [], freeText: "平时用Python写项目" } })
+      }, `198.51.100.${180 + index}`, `normalize-accounting-${suffix}-0001`);
+      req.headers.set("X-Request-ID", `normalize-accounting-${suffix}`);
+      return withProductObservation({ observer: event => { observed.push(event); } }, () => POST(req));
+    }));
+    expect(responses.map(response => response.status)).toEqual([200, 200]);
+    expect(responses.map(response => response.headers.get("X-Request-ID"))).toEqual(["normalize-accounting-a", "normalize-accounting-b"]);
+    const traces = vi.mocked(console.info).mock.calls.map(([value]) => {
+      try { return JSON.parse(String(value)); } catch { return null; }
+    }).filter(row => row?.event === "competition_accounting_trace");
+    const dispatches = traces.filter(row => row.type === "ai_transport_dispatch");
+    expect(dispatches).toHaveLength(2);
+    expect(dispatches.map(row => row.requestId).sort()).toEqual(["normalize-accounting-a", "normalize-accounting-b"]);
+    for (const row of dispatches) expect(row.details).toMatchObject({ operation: "competition_normalize", reservationId: "explicit-vitest-mocked-reservation", attempt: 1 });
+    expect(observed.filter(event => event.type === "ai_transport_dispatch")).toHaveLength(2);
+    expect(JSON.stringify(traces)).not.toMatch(/unit-normalize-secret|Python写项目|questionnaireToken|reasoning_content|Authorization/);
+    expect(fetchMock).toHaveBeenCalledTimes(2);
+  });
+
+  it("does not invent accounting dispatches for a normalization replay or local whitelist input", async () => {
+    const body = { recommendationPolicy: "v7", aiConsent: { accepted: true, version: "test.v1" }, questionnaire: questionnaire() };
+    const first = await POST(request(body, "198.51.100.182", "normalize-accounting-local-0001"));
+    const replay = await POST(request(body, "198.51.100.182", "normalize-accounting-local-0001"));
+    expect(first.status).toBe(200);
+    expect(replay.status).toBe(200);
+    expect(replay.headers.get("X-Idempotent-Replay")).toBe("true");
+    expect(await replay.json()).toEqual(await first.json());
+    expect(vi.mocked(console.info).mock.calls.flat().join("\n")).not.toContain("competition_accounting_trace");
+  });
+
   it("replays one semantic questionnaire when answer and selected-value order changes", async () => {
     const canonical = questionnaire({
       skills: {

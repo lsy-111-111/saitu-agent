@@ -1,0 +1,113 @@
+{
+  "createdAt": "2026-11-05T12:21:58.452192+00:00",
+  "independentReview": false,
+  "sources": [
+    {
+      "sourceId": "mathorcup-c6-notice",
+      "url": "https://publicqn.saikr.com/2026/01/23/contest/372f8beb2c317551514ddec3ecf85f011769165504521.pdf",
+      "retrievedAt": "2026-11-05T12:21:34.965555+00:00",
+      "independentReview": false,
+      "status": "captured_bytes_not_verified",
+      "finalUrl": "https://publicqn.saikr.com/2026/01/23/contest/372f8beb2c317551514ddec3ecf85f011769165504521.pdf",
+      "sha256": "fa0f98e05373260c7a3beae0637ff73c0f24fe5ec1dafecae4c220cadb1b656b",
+      "bytes": 477431,
+      "contentType": "application/pdf",
+      "artifact": "artifacts/v6/content-research/source-byte-snapshots/fa0f98e05373260c7a3beae0637ff73c0f24fe5ec1dafecae4c220cadb1b656b.pdf",
+      "limitation": "HTTP success or a byte digest does not establish that a document is a usable rule or that facts are true; reviewers must open and read it."
+    },
+    {
+      "sourceId": "mathorcup-c6-rules",
+      "url": "https://publicqn.saikr.com/2026/02/04/contest/4fe02d5fa102b54d7afd4ecc5d8ae09b1770173060028.pdf",
+      "retrievedAt": "2026-11-05T12:21:34.965920+00:00",
+      "independentReview": false,
+      "status": "captured_bytes_not_verified",
+      "finalUrl": "https://publicqn.saikr.com/2026/02/04/contest/4fe02d5fa102b54d7afd4ecc5d8ae09b1770173060028.pdf",
+      "sha256": "982c9c62cbf5f7e2b7ca0c390fc804ac8629a7f91400bffbd177c62245d9060e",
+      "bytes": 157945,
+      "contentType": "application/pdf",
+      "artifact": "artifacts/v6/content-research/source-byte-snapshots/982c9c62cbf5f7e2b7ca0c390fc804ac8629a7f91400bffbd177c62245d9060e.pdf",
+      "limitation": "HTTP success or a byte digest does not establish that a document is a usable rule or that facts are true; reviewers must open and read it."
+    },
+    {
+      "sourceId": "mathorcup-c6-d",
+      "url": "https://www.mathorcup.org/uploads/files/20260417/1776438403640865.zip",
+      "retrievedAt": "2026-11-05T12:21:34.966068+00:00",
+      "independentReview": false,
+      "status": "captured_bytes_not_verified",
+      "finalUrl": "https://files.mathorcup.org/uploads/files/20260417/1776438403640865.zip",
+      "sha256": "d417f99dd790d576b89f9c7b8b0fd7ba22ff324414884f801c07431b0e2a039a",
+      "bytes": 156307,
+      "contentType": "application/zip",
+      "artifact": "artifacts/v6/content-research/source-byte-snapshots/d417f99dd790d576b89f9c7b8b0fd7ba22ff324414884f801c07431b0e2a039a.zip",
+      "limitation": "HTTP success or a byte digest does not establish that a document is a usable rule or that facts are true; reviewers must open and read it."
+    },
+    {
+      "sourceId": "mathorcup-c6-correction",
+      "url": "https://www.mathorcup.org/detail/2488",
+      "retrievedAt": "2026-11-05T12:21:40.253856+00:00",
+      "independentReview": false,
+      "status": "captured_bytes_not_verified",
+      "finalUrl": "https://www.mathorcup.org/detail/2488",
+      "sha256": "a47903ce47327d56497cedd6d21db166a5402dd083dfd26e3ddfc0115024c494",
+      "bytes": 20773,
+      "contentType": "text/html;charset=utf-8",
+      "artifact": "artifacts/v6/content-research/source-byte-snapshots/a47903ce47327d56497cedd6d21db166a5402dd083dfd26e3ddfc0115024c494.html",
+      "limitation": "HTTP success or a byte digest does not establish that a document is a usable rule or that facts are true; reviewers must open and read it."
+    },
+    {
+      "sourceId": "mathorcup-c6-ai",
+      "url": "https://publicqn.saikr.com/2026/02/04/contest/4fe02d5fa102b54d7afd4ecc5d8ae09b1770173065606.pdf",
+      "retrievedAt": "2026-11-05T12:21:40.810782+00:00",
+      "independentReview": false,
+      "status": "captured_bytes_not_verified",
+      "finalUrl": "https://publicqn.saikr.com/2026/02/04/contest/4fe02d5fa102b54d7afd4ecc5d8ae09b1770173065606.pdf",
+      "sha256": "a67a8a1c6be3f85db8928558b8670ffe1d8f94b8439fc3c96ab7987724a802bb",
+      "bytes": 122648,
+      "contentType": "application/pdf",
+      "artifact": "artifacts/v6/content-research/source-byte-snapshots/a67a8a1c6be3f85db8928558b8670ffe1d8f94b8439fc3c96ab7987724a802bb.pdf",
+      "limitation": "HTTP success or a byte digest does not establish that a document is a usable rule or that facts are true; reviewers must open and read it."
+    },
+    {
+      "sourceId": "yau-c6-rules",
+      "url": "https://www.yau-contest.com/page-rule.html",
+      "retrievedAt": "2026-11-05T12:21:42.909215+00:00",
+      "independentReview": false,
+      "status": "captured_bytes_not_verified",
+      "finalUrl": "https://www.yau-contest.com/page-rule.html",
+      "sha256": "2e5c8906a6e4429caddf5468c1cc1648d19df4447cdbbcf398814cbea8a9c10e",
+      "bytes": 35852,
+      "contentType": "text/html; charset=utf-8",
+      "artifact": "artifacts/v6/content-research/source-byte-snapshots/2e5c8906a6e4429caddf5468c1cc1648d19df4447cdbbcf398814cbea8a9c10e.html",
+      "limitation": "HTTP success or a byte digest does not establish that a document is a usable rule or that facts are true; reviewers must open and read it."
+    },
+    {
+      "sourceId": "yau-c6-assessment",
+      "url": "https://www.yau-contest.com/page-assessment.html",
+      "retrievedAt": "2026-11-05T12:21:44.789706+00:00",
+      "independentReview": false,
+      "status": "captured_bytes_not_verified",
+      "finalUrl": "https://www.yau-contest.com/page-assessment.html",
+      "sha256": "1f23413268d1c90768274d82a9f9f749bcc7ccc15b2cd8d3d1b6812fe3fc69da",
+      "bytes": 14905,
+      "contentType": "text/html; charset=utf-8",
+      "artifact": "artifacts/v6/content-research/source-byte-snapshots/1f23413268d1c90768274d82a9f9f749bcc7ccc15b2cd8d3d1b6812fe3fc69da.html",
+      "limitation": "HTTP success or a byte digest does not establish that a document is a usable rule or that facts are true; reviewers must open and read it."
+    },
+    {
+      "sourceId": "yau-c6-2011",
+      "url": "https://www.yau-contest.com/index/reldown?id=9",
+      "retrievedAt": "2026-11-05T12:21:45.519724+00:00",
+      "independentReview": false,
+      "status": "captured_bytes_not_verified",
+      "finalUrl": "https://www.yau-contest.com/index/reldown?id=9",
+      "sha256": "f2f027f4f4a2d67d3d88609fdb41362cb29550f078893cee353fc24eba42121d",
+      "bytes": 13194262,
+      "contentType": "application/octet-stream",
+      "artifact": "artifacts/v6/content-research/source-byte-snapshots/f2f027f4f4a2d67d3d88609fdb41362cb29550f078893cee353fc24eba42121d.zip",
+      "limitation": "HTTP success or a byte digest does not establish that a document is a usable rule or that facts are true; reviewers must open and read it.",
+      "selectedArchiveMembers": [
+        "2010-2026历年笔试真题/2011/4.Algebra-Individual-2011.pdf"
+      ]
+    }
+  ]
+}

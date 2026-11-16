@@ -58,10 +58,22 @@ const trackBundles: Record<string, Bundle[]> = {
     activity("physics-teaching","大学生物理实验讲课比赛","围绕一个物理实验组织教学演示，解释现象、实验步骤和测量依据。",["laboratory","presentation","writing"],["language-communication","research-provenance"],["presentation"],{teamRequirement:maximum(3),verifiedFacts:["teamRequirement"]})
   ]}],
   "culsc-life-sciences":[{doc:lifeResearch,tracks:[
-    activity("scientific-inquiry","科学探究类","围绕一个生命科学问题设计并执行研究，保留过程材料，把结果写成论文。",["laboratory","research","data-analysis","writing"],["research-provenance"],["research-paper"])
+    activity("scientific-inquiry","科学探究类","围绕一个生命科学问题设计并执行研究，保留过程材料，把结果写成论文。",["laboratory","research","data-analysis","writing"],["research-provenance"],["research-paper"],{
+      stages:{state:"known",values:undergraduate},teamRequirement:maximum(5),requiresFullTime:true,requiresCurrentEnrollment:true,sameInstitutionTeam:false,verifiedFacts:["stages","teamRequirement","eligibility"],
+      eligibilityNotes:["第12届科学探究类仅列全日制在校本科生，至多5名学生、1—2名导师；不可套用旧届本专科范围。"],
+      blockingClarifications:["学校确认、每人当届一队、在校期间最多参赛2次及项目周期原创性仍须按第12届原文逐项核实。"]
+    })
   ]},{doc:lifeVenture,tracks:[
-    activity("biological-innovation","创新创业类 · 创新组","从已形成的创新成果出发，核对本人贡献、成果类型和署名后准备材料。",["laboratory","research","writing"],["research-provenance","product-validation"],["research-paper","prototype"],{blockingClarifications:["该历史届次对可申报成果、署名及贡献顺序有要求，不能把纯想法视为已具备报名条件。"]}),
-    activity("biological-venture","创新创业类 · 创业组","梳理生命科学项目的产品、应用对象、团队与可持续经营计划。",["product","accounting-finance","presentation"],["product-validation","venture-readiness"],["business-plan","prototype"],{blockingClarifications:["创业组的团队、成果和报名要求请核对目标届次创新创业类文件。"]})
+    activity("biological-innovation","创新创业类 · 创新组","从已形成的创新成果出发，核对本人贡献、成果类型和署名后准备材料。",["laboratory","research","writing"],["research-provenance","product-validation"],["research-paper","prototype"],{
+      stages:{state:"known",values:college},teamRequirement:maximum(6),requiresFullTime:true,requiresCurrentEnrollment:true,sameInstitutionTeam:false,verifiedFacts:["stages","teamRequirement","eligibility"],
+      eligibilityNotes:["第11届2026创新创业类为生命科学相关专业本专科学生，至多6名学生、1—2名导师；这是历史届次。"],
+      blockingClarifications:["相关专业、成果类型及负责人前三贡献者、每人项目数量与导师署名须按第11届创新组核实；新届规则另核。"]
+    }),
+    activity("biological-venture","创新创业类 · 创业组","梳理生命科学项目的产品、应用对象、团队与可持续经营计划。",["product","accounting-finance","presentation"],["product-validation","venture-readiness"],["business-plan","prototype"],{
+      stages:{state:"known",values:college},teamRequirement:maximum(6),requiresFullTime:true,requiresCurrentEnrollment:true,sameInstitutionTeam:false,verifiedFacts:["stages","teamRequirement","eligibility"],
+      eligibilityNotes:["第11届2026创业组至多6名全日制在校本专科学生、1—2名导师；不套用科学探究五人上限。"],
+      blockingClarifications:["相关专业、实践类股东身份或创意类条件、每人项目数量及导师最多2个创业项目须按第11届创业组核实；新届规则另核。"]
+    })
   ]}],
   "energy-economics-academic-creativity":[{doc:energy,tracks:[
     activity("energy-paper","研究论文类","确定能源经济研究问题，选择数据和研究方法，解释结论的适用范围。",["research","data-analysis","writing"],["modeling-intensive","research-provenance"],["research-paper"]),

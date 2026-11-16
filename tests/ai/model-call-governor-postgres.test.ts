@@ -93,7 +93,37 @@ describe("PostgreSQL model call governor", () => {
     expect(fakeDb.client.release).toHaveBeenCalledWith(true);
   });
 
+  it("fails closed without charging when the queue deadline elapses inside a transaction", async () => {
+    vi.useFakeTimers();
+    vi.setSystemTime(new Date("2026-08-26T12:00:00.000Z"));
+    const statements: string[] = [];
+    fakeDb.state.handler = async (rawSql) => {
+      const sql = rawSql.replace(/\s+/g, " ").trim().toLowerCase();
+      statements.push(sql);
+      if (sql === "begin") {
+        // A scheduler pause can consume the transaction's shared 20ms budget.
+        vi.setSystemTime(Date.now() + 21);
+        return { rowCount: null, rows: [] };
+      }
+      if (sql === "rollback") return { rowCount: null, rows: [] };
+      throw new Error(`Unexpected SQL after elapsed transaction deadline: ${sql}`);
+    };
+    const { acquireModelCallPermit } = await import("@/lib/ai/model-call-governor");
+
+    expect(await acquireModelCallPermit()).toEqual({
+      ok: false,
+      reason: "budget_store_unavailable"
+    });
+    // No budget reservation, waiter or lease write is allowed after this expiry.
+    expect(statements).toEqual(["begin", "rollback"]);
+    expect(fakeDb.client.release).toHaveBeenCalledTimes(1);
+  });
+
   it("shares concurrency, queue and daily budget across fresh module instances", async () => {
+    // This test checks shared state, not the speed of the host scheduler. Keep
+    // transaction work at a fixed time and explicitly expire the queued wait.
+    vi.useFakeTimers();
+    vi.setSystemTime(new Date("2026-08-26T12:00:00.000Z"));
     const leases = new Map<string, Date>();
     const waiters = new Map<string, { expiresAt: Date; enqueuedAt: number }>();
     let dailyUsage = 0;
@@ -169,7 +199,18 @@ describe("PostgreSQL model call governor", () => {
 
     vi.resetModules();
     const secondModule = await import("@/lib/ai/model-call-governor");
-    expect(await secondModule.acquireModelCallPermit()).toEqual({
+    const queued = secondModule.acquireModelCallPermit();
+    let queueSettled = false;
+    void queued.then(() => { queueSettled = true; });
+    await vi.advanceTimersByTimeAsync(0);
+    expect(waiters.size).toBe(1);
+    expect(leases.size).toBe(1);
+    expect(dailyUsage).toBe(1);
+    await vi.advanceTimersByTimeAsync(19);
+    expect(queueSettled).toBe(false);
+    expect(waiters.size).toBe(1);
+    await vi.advanceTimersByTimeAsync(1);
+    expect(await queued).toEqual({
       ok: false,
       reason: "capacity_exhausted"
     });

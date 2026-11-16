@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "saitu.legacy-evidence-opaque-source-closure.v1",
+  "scope": "exact-selector-excluded-legacy-baseline-input-v7.3",
+  "files": [
+    {
+      "originalPath": "tests/fixtures/competition-score-prospective-baseline.json",
+      "fixturePath": "opaque/84c3a3565861bb9ae532e8db3c4cacf57e70efd965f2bfde15c88fd5df755f96.bin",
+      "bytes": 157588,
+      "sha256": "84c3a3565861bb9ae532e8db3c4cacf57e70efd965f2bfde15c88fd5df755f96"
+    }
+  ]
+}

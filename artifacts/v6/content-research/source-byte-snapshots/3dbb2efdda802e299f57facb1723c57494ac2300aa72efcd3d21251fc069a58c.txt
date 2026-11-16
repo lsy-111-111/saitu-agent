@@ -1,0 +1,240 @@
+Skip to main content
+iGEM
+Jamboree
+Competition
+Community
+Villages
+Technology
+Responsibility
+Innovation
+Sign In
+Competition
+About
+Registration
+Deliverables
+Judging
+Sponsorships
+Results
+Teams →
+Registration
+Fees & Deadlines
+iGEM 2026 Competition
+Registration Stages
+Registration fees are completed in three progressive and connected stages, guiding teams from registration and official start (Stage I); to finalization, evaluation and award eligibility (Stage II); and to the global showcase in person at the Jamboree (Stage III). Each stage represents a milestone in your team’s journey and ensures that all participants are fully supported, evaluated, and recognized for their work.
+
+All participating teams in the iGEM Competitions (Collegiate & High School) are required to complete team fees (Stages I and II) in order to compete. Only teams attending the Jamboree in person are required to buy individual Jamboree tickets per person (Stage III).
+
+All iGEM registration and payment processes are subject to Competition Participation Terms & Conditions and Payment Terms & Conditions.
+
+Stage I - Registration
+Stage I officially launches your team’s participation in iGEM. Once you complete all registration requirements and the payment of the Program Fee, your team is officially accepted into the competition and becomes part of the global iGEM community. This grants you access to the competition platform, your wiki, all team tools, sponsor offers, mentorship opportunities, and other resources.
+Stage II - Finalization
+Stage II confirms your team’s commitment to completion and enters your project into the final evaluation and judging phase of iGEM. Completing this stage marks your active participation through submission of final deliverables, and secures your judging session assignment at the Jamboree. This makes you eligible for medals, awards, and official certificates. For teams participating in person, it also secures your Jamboree booth space and eligibility for live stage talks.
+All teams — both in-person and remote — need to complete this stage to be eligible for evaluation.
+Teams that do not complete this stage are marked as “withdrawn” and lose access to the competition platform, including the team dashboard and the wiki.
+To be registered as an in-person team, and secure your team booth and eligibility for live stage talks at the Jamboree, your team needs to complete the Program Fee - Stage II and buy at least 1 Jamboree Ticket before the Stage II deadline.
+Stage III - Jamboree
+Stage III is the finale of the iGEM season. The iGEM Grand Jamboree in Paris is the world expo of synthetic biology and the annual global gathering of the synbio community. The Jamboree ticket provides individual team members with full access to the Jamboree. Here, teams showcase their work to the world, meet fellow innovators, participate in in-person session with judges, attend talks and activities across the Jamboree program, learn from leaders in the field, connect with the international community, and participate in the live award show celebrating achievements of the year.
+Stage III is part of the competition experience for all teams. However, purchasing Jamboree Tickets applies only to teams attending the Jamboree in person. Jamboree tickets are required only for team members attending in Paris. Remote teams or remote team members can still participate in online judging sessions and livestreams.
+All team members who wish to attend the Grand Jamboree in Paris must purchase a Team Member Ticket. Everyone on the official Team Roster is eligible for the Team Member Ticket rate, including Team PIs, Instructors, Student Team Leaders, Student Team Members, and Advisors.
+Rates & Payment Deadlines
+For all teams
+For in-person teams
+STAGE
+I
+STAGE
+II
+STAGE
+III
+All fees are listed in EUR. All payment deadlines are at 15:00 UTC.
+What’s new in 2026?
+While the amounts and deadlines remain consistent with recent years, in 2026 we are changing: the payment currency, and the terminology and categorization of registration fees.
+New Payment Currency
+Previous Currency	New Currency (from 2026)
+$USD	€EUR
+Starting in 2026, all iGEM registration fees will be charged in euros (€ EUR) instead of US dollars ($USD). With the Grand Jamboree taking place annually in Paris and our operations now based primarily in Europe, most of iGEM’s event and operational expenses are in euros. In recent years, fluctuating value of $USD has created uncertainty in budgeting for both teams and iGEM HQ. This made iGEM vulnerable to currency exchange rates, especially during 2025. We have done our best to absorb the impact of currency fluctuations in recent years, as we understand that the global economy continues to pose challenges for many institutions worldwide, especially in our field. However, the volatility has increased to a level that can no longer be offset without affecting the program stability. As a result, the transition to €EUR has become necessary to ensure long-term sustainability of iGEM programs.
+Renaming Registration Fees
+Previous Name	New Name (from 2026)
+“Program Registration Fee”	“Program Fee - Stage I (Registration)”
+“Team Jamboree Fee”	“Program Fee - Stage II (Finalization)”
+
+Previously known as the “Program Registration Fee” and “Team Jamboree Fee,” these two required team fees are being renamed starting in 2026 as “Program Fee – Stage I (Registration)” and “Program Fee – Stage II (Finalization)” to more clearly reflect the competition’s progression and structure. This is a naming update only; the fees and their function in the competition remain the same.
+
+This update reflects how teams naturally progress through the iGEM Competition program, from initial registration, to final evaluation and judging, and participation in the Grand Jamboree. The updated names are designed to improve understanding and transparency, avoiding confusion for both new and returning teams. Communicating and visualizing the fees in a progressive manner gives a clearer understanding of the requirements and helps teams in planning their project timeline.
+
+Payment Instructions
+Visit the iGEM Payment Platform ↗ (payments.igem.org).
+Sign In: Only Team PIs have access to create orders for Program Fees.
+Add items to your order.
+Provide the Billing Address information for the order.
+Generate Invoice: Download a detailed invoice you can share with your institution's payment department.
+Payment Methods
+After generating the order, you will be able to choose from the two accepted payment methods: card & digital payments, or wire transfer. Other payment methods, including checks and cash, are not accepted.
+Payment Method	How It Works	Processing Time	Important Notes
+Card & Digital Payments	
+
+Pay directly on the iGEM Payment Platform ↗. Debit/Credit cards accepted: Visa, Mastercard, AMEX, Discover, Diners Club, UnionPay, JCB, Cartes Bancaires, and eftpos. Digital payments accepted: Apple Pay, Link, and Google Pay.
+
+All card and digital payments made to iGEM are processed securely through Stripe, a globally trusted and widely used payment platform. Stripe’s encrypted infrastructure ensures that your payment information is handled safely and in compliance with international security standards (PCI-DSS). No card details are stored by iGEM.
+
+	Immediate: Your team’s payment status will be automatically updated on your team page.	
+
+If paying by card, please ensure that your card is approved for international transactions and has a sufficient limit/balance for the full amount.
+
+A receipt is issued instantly and can be downloaded on the order page.
+
+
+International Wire Transfer	
+Download your invoice on the iGEM Payment Platform ↗. Wire transfer instructions are included on the invoice.
+Send payment using your bank, including your allocated reference number.
+Upload your transfer proof/confirmation on the iGEM Payment Platform.
+	
+
+5–7 business days: Wire transfers, especially international transfers, can take several business days to process. You are responsible for initiating transfers early enough to ensure funds reach iGEM before the stated deadlines. Only payments received by iGEM before the payment deadlines will be accepted. Your order status will be updated manually once the funds arrive in iGEM’s bank account.
+
+You can track the status of your payment on your Payment Order Page and your Team Page. If your transfer has not arrived, your status will remain pending.
+
+	
+
+All payments must be made in EUR (€). Payments sent in other currencies will not be accepted.
+
+Please ensure that all bank fees (sending, intermediary, and receiving) are covered by your institution. The full invoice amount must be received by iGEM for the payment to be accepted. If any fees are deducted and a shortfall occurs, an additional payment will be required.
+
+Please note that missing reference information (Order Number and Team Name) may cause significant delays in processing your payment.
+
+Other Payment Info
+Payment Request by Email
+Invoices are generated automatically through the iGEM Payment Platform. In the rare case that iGEM must manually issue an invoice, it will only come from an official iGEM Foundation email address, from Sarah Beguelin (sarah@igem.org). Please check the sender email address before opening the invoice. If you receive a payment request or invoice from any other address, do not process the payment and contact us immediately at hq@igem.org.
+Partial Payments
+Teams may split a payment into two equal installments. Partial payments can be made using a combination of card payments and wire transfers. Your payment status will be updated once each installment is received and processed.
+Purchase Orders (POs)
+You may add a purchase order number on your automatically generated invoice directly on the iGEM Payment Platform. Purchase Orders (POs) are accepted as documentation only and do not constitute payment. An order is not considered paid until funds have been received by iGEM.
+Payment Deadlines
+A payment is considered complete only when the full amount has been received by iGEM. Deadlines refer to the time by which the full payment must arrive in iGEM’s account, not when it is sent or initiated. Processing times vary by payment method, so teams should plan accordingly to ensure funds arrive before the stated deadline.
+If the full payment (including any partial installments) is not received by the deadline, the order will be automatically moved to the next applicable rate category, if one exists. This applies even if a partial payment was submitted before the deadline.
+Payment deadlines are fixed and non-extendable. To ensure fairness and consistent handling for all teams, iGEM strictly adheres to the posted deadlines.
+Not fulfilling the “Program Fee – Stage II (Finalization)” payment by the final deadline will result in the team being marked as “Withdrawn”. The team will lose access to the competition platform, and not be eligible for: Judging session, booth (for in-person teams), or Live stage talks (for in-person teams).
+Cancellation & Refund Policy
+
+We understand that circumstances may change, and teams may need to cancel/withdraw their participation and request a refund. To qualify for a refund, a cancellation request must be submitted in writing by the Primary PI, by email to hq@igem.org, before the applicable cancellation deadline listed below.
+
+Cancellation deadlines reflect the timeline of competition progress, event preparation, assignments, and operational commitments for the Competition program.
+
+General Cancellation & Refund Conditions
+Important note: All team program fees (Stage I and Stage II) and all team member Jamboree tickets (Stage III) are tied to the specific team and the specific competition year for which they were purchased. They cannot be transferred to another team, another institution, or another competition year under any circumstances.
+Refunds are issued in EUR (€) and processed using the same method as the original payment (card or wire transfer), unless otherwise stated.
+All standard refunds are subject to a 10% cancellation fee to cover administrative and transaction processing costs.
+All deadlines occur at 15:00 UTC on the listed date.
+iGEM is not responsible for delays, cancellations, or changes in participation resulting from circumstances beyond iGEM’s reasonable control, including but not limited to acts of God, natural disasters, extreme weather conditions, public health emergencies, labor disputes, transportation disruptions, government restrictions, armed conflict, acts of terrorism, or other force majeure events. In such cases, iGEM is not obligated to provide refunds, reimbursements, or compensation for any costs incurred by teams, except as expressly stated in this Refund Policy.
+Summary Table
+Fee Type	Program Fee - Stage I (Registration)	Program Fee - Stage II (Finalization)	Jamboree Tickets (Stage III)
+Available Options	
+
+Teams may request one of the following before the Stage I cancellation deadline:
+
+A. Standard Refund
+Refund issued back to the original payment method.
+A 10% cancellation fee applies.
+
+B. iGEM Payment Credit (Special Option)
+Full amount (100%) returned as iGEM Payment Credit.
+No cancellation fee deducted.
+Credit is valid only for the following competition year.
+Credit may be used only by the same team for future iGEM payments.
+Credit cannot be refunded, transferred, or extended.
+
+	
+
+Teams may request the following before the Stage II cancellation deadline:
+
+Standard Refund
+Refund issued back to the original payment method.
+A 10% cancellation fee applies.
+
+	
+
+Teams may request the following:
+
+Standard Refund
+Refund available until the Jamboree ticket cancellation deadline.
+A 10% cancellation fee applies.
+
+Ticket Reassignment
+A ticket that has not been checked in can be re-assigned to another person by whoever holds it — a Team PI from the team dashboard, or the purchaser from the Jamboree website.
+A ticket that has already been checked in must be unassigned first. Email hq@igem.org to request this; once iGEM HQ has unassigned it, you re-assign it yourself the same way.
+Both must happen before Nov 11, 2026, 15:00 UTC, after which the holder is fixed so badges can be printed.
+Re-assignment is not a financial transfer and does not involve any refund.
+
+
+Cancellation Deadline	Apr 2, 2026
+15:00 UTC	Jul 30, 2026
+15:00 UTC	Sep 17, 2026
+15:00 UTC
+After the deadline	No refund and no credit is available.	Non-refundable.	Non-refundable.
+Cancellations and refunds are subject to Payment Terms & Conditions.
+
+On this page
+
+Registration Stages
+Rates & Payment Deadlines
+What’s new in 2026?
+Payment Instructions
+Cancellation & Refund Policy
+iGEM
+People
+Support
+Blog
+Videos
+Villages
+Jamboree
+Tickets
+Program
+Exhibitors
+Info
+Competition
+About
+Teams
+Registration
+Deliverables
+Judging
+Sponsorships
+Calendar
+Community
+About
+News
+Topics
+Projects
+Events
+Job Board
+Journals
+Technology
+Registry
+Distribution
+Technologies
+Chassis
+Engineering
+Responsibility
+About
+Events
+Guidance
+Human Practices
+Safety Policies
+Opportunities
+Innovation
+About
+Venture Foundry
+Ecosystem
+Events
+Newsletters
+Copyright © 2026 iGEM Foundation, Inc. All rights reserved. iGEM and the iGEM logo are registered trademarks.
+iGEM Foundation
+·
+501(c)(3) not-for-profit organization
+·
+45 Prospect Street, Cambridge MA, 02139 USA
+iGEM Europe · iGEM HQ
+·
+10 rue du Mail, 75002 Paris, France
+Contact us
+Terms & Policies
+Financials

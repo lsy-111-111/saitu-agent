@@ -3,7 +3,6 @@ import { useState } from "react";
 import { competitions } from "@/content/competitions";
 import { findCanonicalCatalogCompetition } from "@/lib/competitions/catalog";
 import { getCompetitionFactSheet } from "@/content/competition-facts";
-import { getDocumentedCompetitionAvailability } from "@/lib/competitions/documented-availability";
 import { clearSavedCompetitionStore, saveRecommendationResult, type SavedCompetitionStorageFailure } from "@/lib/competitions/saved-competitions";
 import type { CompetitionRecommendationResponseV5 } from "@/types/competition-recommendation";
 import type { FixedQuestionTurn } from "./questionFlow";
@@ -11,40 +10,27 @@ import type { FixedQuestionTurn } from "./questionFlow";
 const box = "rounded-2xl border border-border bg-white px-5 py-4";
 const disclosure = "cursor-pointer py-1 font-semibold text-brand-700";
 
-function RegistrationMonthReference({ items }: { items: CompetitionRecommendationResponseV5["recommendations"] }) {
-  const [asOf, setAsOf] = useState<Date | null>(null);
+function HistoricalCompetitionReference({ items }: { items: CompetitionRecommendationResponseV5["recommendations"] }) {
   if (!items.length) return null;
-  const month = asOf && new Intl.DateTimeFormat("sv-SE", {
-    timeZone: "Asia/Shanghai", year: "numeric", month: "2-digit"
-  }).format(asOf);
-  return <details className={box} onToggle={event => {
-    if (event.currentTarget.open) setAsOf(new Date());
-  }}>
-    <summary className={disclosure}>这个月能报名吗？</summary>
-    {asOf && month && <div className="mt-3" data-testid="monthly-registration-reference">
-      <p className="text-sm text-muted-foreground">{month} · 以下是本次推荐对应的届次和已核实节点。校内选拔、赛区和赛道可能有各自的截止时间。</p>
+  return <details className={box}>
+    <summary className={disclosure}>查看历史届次资料与官方入口</summary>
+    <div className="mt-3" data-testid="historical-registration-reference">
+      <p className="text-sm text-muted-foreground">以下按标注届次保留资料，仅用于了解任务与准备安排。参赛资格和开赛时间请自行核查官网。</p>
       <ol className="mt-3 divide-y divide-border">{items.map(item => {
         const facts = getCompetitionFactSheet(item.competitionId);
-        const competition = findCanonicalCatalogCompetition(item.competitionId);
-        const status = competition && getDocumentedCompetitionAvailability(competition, asOf).registrationStatus;
         const nodes = facts?.nodes ?? [];
-        const thisMonth = nodes.filter(node => node.date.startsWith(month));
         const source = facts?.sources[0];
-        return <li key={item.competitionId} className="py-3 text-sm leading-6" data-monthly-series={item.competitionId}>
+        return <li key={item.competitionId} className="py-3 text-sm leading-6" data-historical-series={item.competitionId}>
           <h3 className="font-semibold text-ink">{item.name}</h3>
-          <p className="text-xs text-muted-foreground">{facts ? `${facts.edition} · 资料核查于 ${facts.checkedAt}` : "当前届次和核查时间待确认"}</p>
-          <p className="mt-1">{status?.status === "open" && facts
-            ? "官方全国报名窗口目前开放，个人参赛资格和本校提交时间仍须核实。"
-            : thisMonth.length ? "本月有以下安排，能否报名请核对节点类型及适用范围。"
-            : "尚未查到能确认你本人本月可以报名的通知。"}</p>
-          {nodes.length > 0 && <ul className="mt-1 space-y-1">{(thisMonth.length ? thisMonth : nodes).map((node, index) =>
+          <p className="text-xs text-muted-foreground">{facts ? `${facts.edition} · 资料核查于 ${facts.checkedAt}` : "历史届次资料，范围请核对来源"}</p>
+          {nodes.length > 0 && <ul className="mt-1 space-y-1">{nodes.map((node, index) =>
             <li key={index}><a href={node.sourceUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-brand-700 underline underline-offset-2">
               {node.date} · {node.kind}</a> · {node.scope}</li>)}</ul>}
           <a href={source?.url || item.sourceUrl} target="_blank" rel="noopener noreferrer" className="mt-1 inline-block text-brand-700 underline underline-offset-2">
             {source?.title || "核对赛事公开来源"}</a>
         </li>;
       })}</ol>
-    </div>}
+    </div>
   </details>;
 }
 
@@ -74,7 +60,7 @@ export function SelectionResultActions({ result, turns, editTurn, openDetails }:
     setSaveError(outcome.ok ? null : outcome);
   }
   return <div className="mt-5 grid gap-3">
-    <RegistrationMonthReference items={result.recommendations} />
+    <HistoricalCompetitionReference items={result.recommendations} />
     {Boolean(result.alternatives?.length) && <details className={box}><summary className={disclosure}>展开更多候选</summary>
       <ul className="mt-3 space-y-3">{result.alternatives?.map(item => <li key={item.competitionId}>
         <button className="font-semibold text-brand-700 underline underline-offset-2" type="button" onClick={() => openDetails(item.competitionId)}>{item.name}</button>

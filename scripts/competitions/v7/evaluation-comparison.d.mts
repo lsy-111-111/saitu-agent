@@ -1,0 +1,14 @@
+export const COMPARISON_SELECTION: string;
+export const COMPREHENSION_COST_PHASE: string;
+export const COMPREHENSION_COST_PURPOSE: string;
+export const COMPARISON_QUALITY_DIMENSIONS: readonly string[];
+export const COMPREHENSION_QUESTIONS: readonly { id: string; question: string }[];
+export function prepareComparisonPlan(options: any): any;
+export function validateComparisonPlan(plan: any): any;
+export function collectComparisonReports(plan: any, ranking: any): any;
+export function isVerifiedComparisonCollection(collection: any): boolean;
+export function comparisonReaderPackets(collection: any): any[];
+export function scoreComparisonRecords(collection: any, assessment: any, options?: { costsVerified?: boolean }): any;
+export function validateSimulationCostScope(original: any, runtime: any): any;
+export function scoreComparisonOriginals(collection: any, assessment: any, options: { evidenceRoot: string }): Promise<any>;
+export function loadComparisonOriginals(options: { evidenceRoot: string; registration: any; plan: any; directory: string; freezeManifestSha256: string }): Promise<any>;

@@ -1,3 +1,8 @@
+import { buildDecisionContextV7 } from "@/lib/competitions/v7/model";
+import { getMatchingCatalogRecords } from "@/lib/competitions/v7/catalog";
+import { createStudentProfileV7, applySelfReportedFactsV7 } from "@/lib/competitions/v7/profile";
+import { draftDecisionChatV7 } from "@/lib/competitions/v7/chat";
+import { migrationContext, migrationRecords, migrationStudent, rankMigrationContext } from "./legacy-v7-migration.fixture";
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
@@ -468,325 +473,93 @@ describe("static competition preference follow-up gold audit", () => {
     }
   });
 
-  it("reaches each track oracle through V5 and proves both emitted branches are distinct", async () => {
-    const failures: string[] = [];
-    for (const gold of staticCompetitionFollowupGoldCases.filter(
-      ({ family }) => family === "track"
-    )) {
-      const persona = personas.get(gold.personaId)!;
-      const reached = await reachAuthoredTrackQuestion(gold, persona.profile);
-      failures.push(...reached.setupFailures);
-      if (!reached.targetQuestion) {
-        continue;
-      }
-      if (
-        reached.targetQuestion.impact !== "material" ||
-        reached.targetQuestion.estimatedPreferenceOutcomeChanges < 2
-      ) {
-        failures.push(`${gold.id}: emitted target question is not material`);
-      }
-      const serverOptions = new Set(reached.targetQuestion.options.map(({ value }) => value));
-      const branchSignatures = new Set<string>();
-      for (const branch of gold.branches) {
-        for (const value of branch.selectedValues) {
-          if (!serverOptions.has(value)) {
-            failures.push(
-              `${gold.id}: authored track ${value} is absent from the actually generated question`
-            );
-          }
-        }
-        if (!branch.selectedValues.every((value) => serverOptions.has(value))) continue;
-        const actual = simulateCompetitionClarifyOutcome(
-          persona.profile,
-          reached.candidates,
-          gold.signalKey,
-          branch.selectedValues,
-          reached.priorTranscript,
-          { now: QUALITY_BENCHMARK_NOW }
-        );
-        branchSignatures.add(visiblePreferenceSignature(actual));
-        failures.push(...branchOracleFailures(gold, branch, actual));
-      }
-      if (branchSignatures.size !== gold.branches.length) {
-        failures.push(
-          `${gold.id}: ${gold.branches.length} authored branches produced only ` +
-          `${branchSignatures.size} distinct visible outcomes in the reached context`
-        );
-      }
+  it("v7 applies a directly submitted track preference without the retired V5 question path", async () => {
+    const records = migrationRecords(3);
+    records[1] = { ...records[1], seriesId: records[0].seriesId, recordId: `${records[0].seriesId}.2026.alternative`, track: { id: "alternative", name: "另一任务方向" } };
+    const original = JSON.stringify(records);
+    const question = competitionDynamicQuestionV3Schema.parse({
+      questionId: "dq_v7_direct_track", signalKey: `track:${records[0].seriesId}`,
+      prompt: "这两个任务方向，你希望优先准备哪个？", selection: "single",
+      options: [{ value: "analysis", label: "数据任务" }, { value: "alternative", label: "另一任务方向" }],
+      allowsNote: true, maxNoteLength: COMPETITION_CLARIFICATION_NOTE_MAX_LENGTH,
+      impact: "material", estimatedPreferenceOutcomeChanges: 2
+    });
+    for (const selectedValue of ["analysis", "alternative"]) {
+      const context = buildDecisionContextV7(migrationStudent(), { records, transcript: [{ question, answer: { selectedValues: [selectedValue] } }] });
+      expect(context.candidates.filter(candidate => candidate.record.seriesId === records[0].seriesId).map(candidate => candidate.record.track.id)).toEqual([selectedValue]);
+      expect(context.candidates.some(candidate => candidate.record.recordId === records[2].recordId)).toBe(true);
+      const selectedIds = context.candidates.map(candidate => candidate.record.recordId);
+      const { plan } = await rankMigrationContext(context, selectedIds);
+      expect(plan.recommendations.map(item => item.itemId)).toEqual(selectedIds);
+      expect(context.candidates.every(candidate => candidate.eligibility === "unknown" && candidate.score === null)).toBe(true);
     }
-    expect(failures, failures.join("\n")).toEqual([]);
+    expect(JSON.stringify(records)).toBe(original);
   });
 
-  it("keeps every authored question material and its own branches outcome-distinct", () => {
-    const failures: string[] = [];
-    for (const gold of staticCompetitionFollowupGoldCases.filter(
-      ({ family }) => family !== "track"
-    )) {
-      const persona = personas.get(gold.personaId)!;
-      const prepared = prepareGoldContext(gold, persona.profile);
-      failures.push(...prepared.setupFailures);
-      const { askable, candidates, priorTranscript } = prepared;
-      if (!askable) {
-        failures.push(`${gold.id}: expected material askable ${gold.signalKey} was absent`);
-        continue;
-      }
-      if (askable.impact !== "material" || askable.estimatedPreferenceOutcomeChanges < 2) {
-        failures.push(`${gold.id}: non-material askable metadata`);
-      }
-      const authoredSignatures = new Set<string>();
-      for (const branch of gold.branches) {
-        if (!branch.selectedValues.every((value) => askable.allowedOptionValues.includes(value))) {
-          failures.push(`${gold.id}: branch contains a non-whitelisted option ${branch.selectedValues.join(",")}`);
-          continue;
-        }
-        const actual = simulateCompetitionClarifyOutcome(
-          persona.profile,
-          candidates,
-          gold.signalKey,
-          branch.selectedValues,
-          priorTranscript,
-          { now: QUALITY_BENCHMARK_NOW }
-        );
-        authoredSignatures.add(visiblePreferenceSignature(actual));
-      }
-      if (authoredSignatures.size < 2) {
-        failures.push(`${gold.id}: authored branches collapse to one visible preference outcome`);
-      }
-
-      const signatures = new Set(
-        legalAnswerSets(gold, askable.allowedOptionValues).map((selectedValues) => visiblePreferenceSignature(
-          simulateCompetitionClarifyOutcome(
-            persona.profile,
-            candidates,
-            gold.signalKey,
-            selectedValues,
-            priorTranscript,
-            { now: QUALITY_BENCHMARK_NOW }
-          )
-        ))
-      );
-      if (signatures.size < 2) failures.push(`${gold.id}: all legal answers collapse to one preference outcome`);
-    }
-    expect(failures, failures.join("\n")).toEqual([]);
+  it("v7 adopts a clear self report immediately and keeps interest separate from ability", async () => {
+    const legacy = migrationStudent();
+    let extractionCalls = 0;
+    const reply = await draftDecisionChatV7({ legacy, profile: createStudentProfileV7(legacy) }, "我会Python。", [], {
+      modelCall: async () => { extractionCalls++; throw new Error("clear_self_report_must_not_require_a_call"); }
+    });
+    expect(extractionCalls).toBe(0);
+    expect(reply.profile?.facts.find(fact => fact.field === "skills" && fact.value === "programming")).toMatchObject({ state: "affirmed", confirmed: true, evidenceLevel: "self_report", originalText: "我会Python。" });
+    expect(reply.profile?.facts.some(fact => fact.field.startsWith("experience."))).toBe(false);
+    const context = buildDecisionContextV7(legacy, { profile: reply.profile!, records: migrationRecords() });
+    const ranked = await rankMigrationContext(context, context.candidates.slice(0, 2).map(candidate => candidate.record.recordId));
+    expect(ranked.packets[0].profile.facts.find(fact => fact.field === "skills" && fact.value === "programming")).toMatchObject({ confirmed: true, originalText: "我会Python。" });
+    const text = "我对数据感兴趣，想学分析。";
+    const source = { answerId: "v7-interest", text, at: "2026-11-09T00:00:00.000Z" };
+    const interested = applySelfReportedFactsV7(createStudentProfileV7(legacy), { facts: [{ field: "interests", value: "data", state: "affirmed", confirmed: false, evidenceLevel: "self_report", sourceText: text }], unknownFields: [] }, source, legacy);
+    expect(interested.facts.find(fact => fact.field === "interests")?.value).toBe("data");
+    expect(interested.facts.some(fact => fact.field === "skills")).toBe(false);
+    expect(() => applySelfReportedFactsV7(createStudentProfileV7(legacy), { facts: [{ field: "skills", value: "data-analysis", state: "affirmed", confirmed: false, evidenceLevel: "self_report", sourceText: text }], unknownFields: [] }, source, legacy)).toThrow("interest_cannot_become_ability");
   });
 
-  it("matches the authored fit and goal minimal member, relation and track oracles", () => {
-    const failures: string[] = [];
-    for (const gold of staticCompetitionFollowupGoldCases.filter(
-      ({ family }) => family !== "track"
-    )) {
-      const persona = personas.get(gold.personaId)!;
-      const prepared = prepareGoldContext(gold, persona.profile);
-      failures.push(...prepared.setupFailures);
-      if (!prepared.askable) {
-        failures.push(`${gold.id}: expected material askable ${gold.signalKey} was absent`);
-        continue;
-      }
-      for (const branch of gold.branches) {
-        if (!branch.selectedValues.every((value) =>
-          prepared.askable!.allowedOptionValues.includes(value)
-        )) continue;
-        const actual = simulateCompetitionClarifyOutcome(
-          persona.profile,
-          prepared.candidates,
-          gold.signalKey,
-          branch.selectedValues,
-          prepared.priorTranscript,
-          { now: QUALITY_BENCHMARK_NOW }
-        );
-        failures.push(...branchOracleFailures(gold, branch, actual));
-      }
+  it("v7 lets C choose different full-pool orders without a fixed fit or goal relation oracle", async () => {
+    const context = migrationContext();
+    const selectedIds = context.candidates.slice(-10).map(candidate => candidate.record.recordId);
+    const forward = await rankMigrationContext(context, selectedIds);
+    const reverse = await rankMigrationContext(context, [...selectedIds].reverse());
+    for (const run of [forward, reverse]) {
+      expect(run.packets[0].candidates.map(candidate => candidate.itemId)).toEqual(context.candidates.map(candidate => candidate.record.recordId));
+      expect(run.calls).toEqual([{ operation: "competition_v7_rank", effort: "high", maxAttempts: 1 }]);
+      expect(run.plan.recommendations).toHaveLength(10);
     }
-    expect(failures, failures.join("\n")).toEqual([]);
+    expect(forward.plan.recommendations.map(item => item.itemId)).toEqual(selectedIds);
+    expect(reverse.plan.recommendations.map(item => item.itemId)).toEqual([...selectedIds].reverse());
+    expect(reverse.plan.recommendations[0].itemId).not.toBe(forward.plan.recommendations[0].itemId);
   });
 
-  it("keeps fit and goal answers qualification-invariant across the complete frozen snapshot", () => {
-    const failures: string[] = [];
-    for (const gold of staticCompetitionFollowupGoldCases.filter(({ family }) => family !== "track")) {
-      const persona = personas.get(gold.personaId)!;
-      const catalog = getCompetitionCatalog();
-      const prepared = prepareGoldContext(gold, persona.profile);
-      failures.push(...prepared.setupFailures);
-      const {
-        askable,
-        priorTranscript,
-        snapshot: beforeSnapshot
-      } = prepared;
-      const beforeScoredCompetitionIds = scoreCompetitionRecommendations(catalog, persona.profile, {
-        now: QUALITY_BENCHMARK_NOW,
-        transcript: priorTranscript
-      }).map(({ competition }) => competition.id).sort();
-      if (!askable) {
-        failures.push(`${gold.id}: expected material askable ${gold.signalKey} was absent`);
-        continue;
-      }
-      const question = materializeCompetitionClarifyQuestion(
-        askable,
-        priorTranscript.length + 1
-      );
-      const expectedEligibilityFor = (competitionId: string, trackId: string | null) => {
-        const entry = beforeSnapshot.entries.find((item) => item.competitionId === competitionId);
-        return trackId
-          ? entry?.tracks.find((track) => track.trackId === trackId)
-          : entry;
-      };
-
-      for (const selectedValues of legalAnswerSets(gold, askable.allowedOptionValues)) {
-        const transcript: CompetitionDynamicExchangeV3[] = [
-          ...priorTranscript,
-          { question, answer: { selectedValues } }
-        ];
-        const afterSnapshot = buildCompetitionQualificationSnapshot(
-          persona.profile,
-          undefined,
-          QUALITY_BENCHMARK_NOW
-        );
-        if (JSON.stringify(snapshotFingerprint(afterSnapshot)) !== JSON.stringify(snapshotFingerprint(beforeSnapshot))) {
-          failures.push(`${gold.id}/${selectedValues.join("+")}: qualification snapshot changed`);
-        }
-        const afterEligibility = scoreCompetitionRecommendations(catalog, persona.profile, {
-          now: QUALITY_BENCHMARK_NOW,
-          transcript
-        })
-          .map(({ competition, recommendedTrack, eligibility }) => ({
-            competitionId: competition.id,
-            trackId: recommendedTrack?.id ?? null,
-            eligibility
-          }));
-        const afterScoredCompetitionIds = afterEligibility
-          .map(({ competitionId }) => competitionId)
-          .sort();
-        if (JSON.stringify(afterScoredCompetitionIds) !== JSON.stringify(beforeScoredCompetitionIds)) {
-          failures.push(`${gold.id}/${selectedValues.join("+")}: preference answer changed the hard-filtered competition set`);
-        }
-        const qualificationChanges = afterEligibility.flatMap((item) => {
-          const precomputed = expectedEligibilityFor(item.competitionId, item.trackId);
-          return precomputed &&
-            precomputed.status === item.eligibility.status &&
-            JSON.stringify(precomputed.reasons) === JSON.stringify(item.eligibility.reasons)
-            ? []
-            : [`${item.competitionId}:${item.trackId ?? "none"}`];
-        });
-        if (qualificationChanges.length > 0) {
-          failures.push(`${gold.id}/${selectedValues.join("+")}: scoring eligibility diverged from snapshot for ${qualificationChanges.join(",")}`);
-        }
-      }
+  it("v7 keeps unknown readiness and registration metadata out of the legal pool for every old fit and goal input", () => {
+    const records = migrationRecords();
+    const historical = structuredClone(records);
+    for (const [index, record] of historical.entries()) {
+      record.registration = { status: index % 2 ? "closed" : "unknown", checkedAt: null, factIds: [], note: "报名与资格留待官方核查" };
+      record.contentTier = "L1";
+      record.publication = { mode: "discovery_only", productionReady: false, blockers: ["current_registration_unknown"] };
     }
-    expect(failures, failures.join("\n")).toEqual([]);
+    for (const gold of staticCompetitionFollowupGoldCases.filter(gold => gold.family !== "track")) {
+      const profile = personas.get(gold.personaId)!.profile;
+      const normal = migrationContext(profile, records), unknown = migrationContext(profile, historical);
+      expect(unknown.candidates.map(candidate => candidate.record.recordId), gold.id).toEqual(normal.candidates.map(candidate => candidate.record.recordId));
+      expect(unknown.excluded, gold.id).toEqual(normal.excluded);
+      expect(unknown.candidates.every(candidate => candidate.score === null && candidate.eligibility === "unknown"), gold.id).toBe(true);
+      expect(unknown.candidates.every(candidate => candidate.conditions.some(condition => condition.includes("官方"))), gold.id).toBe(true);
+    }
   });
 
-  it("limits goal trade-offs to the authored 75/25 goalsOutputs refinement", () => {
-    const failures: string[] = [];
-    const stableDimensions = [
-      "subjectTask",
-      "skillsEvidence",
-      "maturity",
-      "teamResources",
-      "availabilityTiming",
-      "dataConfidence"
-    ] as const;
-
-    for (const gold of staticCompetitionFollowupGoldCases.filter(
-      ({ family }) => family === "goal"
-    )) {
-      const persona = personas.get(gold.personaId)!;
-      const prepared = prepareGoldContext(gold, persona.profile);
-      failures.push(...prepared.setupFailures);
-      if (!prepared.askable) {
-        failures.push(`${gold.id}: expected material goal question was absent`);
-        continue;
-      }
-      const question = materializeCompetitionClarifyQuestion(
-        prepared.askable,
-        prepared.priorTranscript.length + 1
-      );
-      const baseline = new Map(scoreCompetitionRecommendations(
-        getCompetitionCatalog(),
-        persona.profile,
-        { now: QUALITY_BENCHMARK_NOW, transcript: prepared.priorTranscript }
-      ).map((item) => [item.competition.id, item]));
-
-      for (const selectedValues of legalAnswerSets(
-        gold,
-        prepared.askable.allowedOptionValues
-      )) {
-        const selectedGoal = selectedValues[0]!;
-        const transcript: CompetitionDynamicExchangeV3[] = [
-          ...prepared.priorTranscript,
-          { question, answer: { selectedValues } }
-        ];
-        const after = scoreCompetitionRecommendations(
-          getCompetitionCatalog(),
-          persona.profile,
-          { now: QUALITY_BENCHMARK_NOW, transcript }
-        );
-        if (after.length !== baseline.size) {
-          failures.push(`${gold.id}/${selectedGoal}: goal answer changed the scored catalog set`);
-        }
-        for (const item of after) {
-          const before = baseline.get(item.competition.id);
-          if (!before) {
-            failures.push(`${gold.id}/${selectedGoal}: new scored member ${item.competition.id}`);
-            continue;
-          }
-          for (const dimension of stableDimensions) {
-            if (item.scoreBreakdown[dimension] !== before.scoreBreakdown[dimension]) {
-              failures.push(
-                `${gold.id}/${selectedGoal}/${item.competition.id}: ${dimension} changed ` +
-                `${before.scoreBreakdown[dimension]} -> ${item.scoreBreakdown[dimension]}`
-              );
-            }
-          }
-
-          const beforeGoals = before.scoreBreakdown.goalsOutputs;
-          const afterGoals = item.scoreBreakdown.goalsOutputs;
-          if (beforeGoals === undefined || afterGoals === undefined) {
-            failures.push(`${gold.id}/${selectedGoal}/${item.competition.id}: goalsOutputs missing`);
-            continue;
-          }
-          const subjectAssessment = assessCompetitionConfirmedSubjectAlignment(
-            item.competition,
-            persona.profile
-          );
-          const hasConfirmedSubjectIntent = Boolean(
-            subjectAssessment &&
-            (
-              subjectAssessment.requestedPrimaryMajors.length > 0 ||
-              subjectAssessment.requestedSpecificSubjects.length > 0
-            )
-          );
-          const fixedCoreMismatch = Boolean(
-            hasConfirmedSubjectIntent &&
-            persona.profile.confirmedFields.includes("taskFormats") &&
-            persona.profile.taskFormats.length > 0 &&
-            !hasCompetitionFixedCoreMatch(item.competition, persona.profile)
-          );
-          const transfer = fixedCoreMismatch
-            ? COMPETITION_CORE_MISMATCH_TRANSFER_RATIOS.goalsOutputs
-            : 1;
-          const priorityRatio = item.competition.recommendation.goalValues[
-            selectedGoal as keyof typeof item.competition.recommendation.goalValues
-          ];
-          const expectedFromRoundedBaseline =
-            beforeGoals * 0.75 +
-            COMPETITION_SCORE_WEIGHTS.goalsOutputs * priorityRatio * transfer * 0.25;
-          if (Math.abs(afterGoals - expectedFromRoundedBaseline) > 0.11) {
-            failures.push(
-              `${gold.id}/${selectedGoal}/${item.competition.id}: goalsOutputs ${afterGoals} ` +
-              `does not follow 0.75*${beforeGoals}+0.25*priority ` +
-              `(rounded expectation ${expectedFromRoundedBaseline.toFixed(2)})`
-            );
-          }
-          if (Math.abs(afterGoals - beforeGoals) > 3.75) {
-            failures.push(
-              `${gold.id}/${selectedGoal}/${item.competition.id}: goalsOutputs moved ` +
-              `${Math.abs(afterGoals - beforeGoals).toFixed(1)} points (>3.75)`
-            );
-          }
-        }
-      }
+  it("v7 sends each explicit goal to C without a 75/25 rule score refinement", async () => {
+    for (const goal of ["project", "award", "postgraduate", "employment", "portfolio", "entrepreneurship", "networking"] as const) {
+      const context = migrationContext(migrationStudent({ goals: [goal], confirmedFields: ["stage", "goals"] }));
+      const selected = context.candidates.slice(-2).map(candidate => candidate.record.recordId).reverse();
+      const ranked = await rankMigrationContext(context, selected);
+      expect(ranked.packets[0].profile.facts.some(fact => fact.field === "goals" && fact.value === goal && fact.confirmed), goal).toBe(true);
+      expect(ranked.packets[0].profile.primaryGoal, goal).toBe(context.profile.primaryGoal);
+      expect(context.candidates.every(candidate => candidate.score === null && candidate.nativeScore === undefined), goal).toBe(true);
+      expect(ranked.packets[0].candidates.every(candidate => !("score" in candidate) && !("scoreBreakdown" in candidate)), goal).toBe(true);
+      expect(ranked.plan.recommendations.map(item => item.itemId), goal).toEqual(selected);
     }
-    expect(failures, failures.join("\n")).toEqual([]);
   });
 
   it("keeps every authored goal relation and fit-11/12 relation inside one qualification tier", () => {
@@ -824,85 +597,25 @@ describe("static competition preference follow-up gold audit", () => {
     expect(failures, failures.join("\n")).toEqual([]);
   });
 
-  it("allows reached track answers only from precomputed states and never upgrades needs_clarification", async () => {
-    const failures: string[] = [];
-    const authoredStatuses = new Set<"eligible" | "needs_clarification">();
-    for (const gold of staticCompetitionFollowupGoldCases.filter(({ family }) => family === "track")) {
-      const persona = personas.get(gold.personaId)!;
-      const reached = await reachAuthoredTrackQuestion(gold, persona.profile);
-      failures.push(...reached.setupFailures);
-      const targetCompetitionId = gold.signalKey.slice("track:".length);
-      const catalogCompetition = getCompetitionCatalog().find(({ id }) => id === targetCompetitionId);
-      const entry = reached.snapshot.entries.find(
-        ({ competitionId }) => competitionId === targetCompetitionId
-      );
-      const question = reached.targetQuestion;
-      if (!entry || !question || !catalogCompetition) {
-        failures.push(`${gold.id}: target catalog, snapshot or generated question missing`);
-        continue;
-      }
-      const preferenceTrackIds = new Set(
-        getCompetitionPreferenceQuestionTracks(catalogCompetition).map(({ id }) => id)
-      );
-      for (const selectedTrackId of new Set([
-        ...question.options.map(({ value }) => value),
-        ...gold.branches.flatMap(({ selectedValues }) => selectedValues)
-      ])) {
-        if (!preferenceTrackIds.has(selectedTrackId)) {
-          failures.push(`${gold.id}/${selectedTrackId}: track is not in the authored preference-question whitelist`);
-        }
-      }
-      for (const selectedTrackId of question.options.map(({ value }) => value)) {
-        const branch = gold.branches.find(({ selectedValues }) => selectedValues[0] === selectedTrackId);
-        const precomputed = entry.tracks.find(({ trackId }) => trackId === selectedTrackId);
-        if (!precomputed || precomputed.status === "ineligible") {
-          failures.push(`${gold.id}/${selectedTrackId}: option is absent or hard-ineligible in snapshot`);
-          continue;
-        }
-        const expectedStatus = branch && "precomputedTrackStatus" in branch
-          ? branch.precomputedTrackStatus
-          : undefined;
-        if (expectedStatus && precomputed.status !== expectedStatus) {
-          failures.push(`${gold.id}/${selectedTrackId}: expected precomputed=${expectedStatus}, actual=${precomputed.status}`);
-        }
-        if (branch && (precomputed.status === "eligible" || precomputed.status === "needs_clarification")) {
-          authoredStatuses.add(precomputed.status);
-        }
-        const transcript: CompetitionDynamicExchangeV3[] = [
-          ...reached.priorTranscript,
-          { question, answer: { selectedValues: [selectedTrackId] } }
-        ];
-        const selected = scoreCompetitionRecommendations(
-          getCompetitionCatalog(),
-          persona.profile,
-          { now: QUALITY_BENCHMARK_NOW, transcript }
-        ).find(({ competition }) => competition.id === targetCompetitionId);
-        if (selected?.recommendedTrack?.id !== selectedTrackId) {
-          failures.push(`${gold.id}/${selectedTrackId}: scorer did not adopt the selected precomputed track`);
-        }
-        if (selected?.eligibility.status !== precomputed.status) {
-          failures.push(`${gold.id}/${selectedTrackId}: precomputed status=${precomputed.status}, selected status=${selected?.eligibility.status ?? "missing"}`);
-        }
-        if (precomputed.status === "needs_clarification" && selected?.eligibility.status === "eligible") {
-          failures.push(`${gold.id}/${selectedTrackId}: user choice upgraded needs_clarification to eligible`);
-        }
-        const afterSnapshot = buildCompetitionQualificationSnapshot(
-          persona.profile,
-          undefined,
-          QUALITY_BENCHMARK_NOW
-        );
-        if (
-          JSON.stringify(snapshotFingerprint(afterSnapshot)) !==
-          JSON.stringify(snapshotFingerprint(reached.snapshot))
-        ) {
-          failures.push(`${gold.id}/${selectedTrackId}: track answer mutated the frozen snapshot`);
-        }
-      }
-    }
-    if (!authoredStatuses.has("needs_clarification")) {
-      failures.push("authored track gold does not exercise any needs_clarification selection");
-    }
-    expect(failures, failures.join("\n")).toEqual([]);
+  it("v7 excludes only a reviewed explicit audience conflict and keeps the same unknown identity eligible for matching", async () => {
+    const records = getMatchingCatalogRecords();
+    const comap = records.find(record => record.seriesId === "comap-mcm-icm")!;
+    const biomod = records.find(record => record.seriesId === "biomod")!;
+    expect(comap).toBeDefined(); expect(biomod).toBeDefined();
+    const legacy = migrationStudent({ stage: "master", confirmedFields: ["stage"] });
+    const confirmed = migrationContext(legacy, [comap, biomod]);
+    expect(confirmed.excluded.has(comap.recordId)).toBe(true);
+    expect(confirmed.candidates.map(candidate => candidate.record.recordId)).toEqual([biomod.recordId]);
+    const unknownProfile = createStudentProfileV7(legacy);
+    unknownProfile.facts = unknownProfile.facts.map(fact => fact.field === "stage" ? { ...fact, state: "unknown", confirmed: false } : fact);
+    unknownProfile.unknownFields = [...new Set([...unknownProfile.unknownFields, "stage"])];
+    const unknown = buildDecisionContextV7(undefined, { profile: unknownProfile, records: [comap, biomod] });
+    expect(unknown.excluded.size).toBe(0);
+    expect(new Set(unknown.candidates.map(candidate => candidate.record.recordId))).toEqual(new Set([comap.recordId, biomod.recordId]));
+    const chosen = [comap.recordId, biomod.recordId];
+    const ranked = await rankMigrationContext(unknown, chosen);
+    expect(ranked.plan.recommendations.map(item => item.itemId)).toEqual(chosen);
+    expect(unknown.candidates.every(candidate => candidate.eligibility === "unknown")).toBe(true);
   });
 
   it("adopts a synthetic eligible content-track selection without changing its status", () => {
@@ -953,5 +666,108 @@ describe("static competition preference follow-up gold audit", () => {
     )[0];
     expect(selected?.recommendedTrack?.id).toBe("embedded-system");
     expect(selected?.eligibility.status).toBe("eligible");
+  });
+});
+
+
+/** Saved V5 compatibility evidence; it does not grade current V7 model relevance. */
+describe("policy migration candidate preference safety independent of reachability", () => {
+  it("checks every literal fit/goal branch against the full precomputed qualification pool", () => {
+    const personas = new Map([...competitionAnchorPersonas, ...competitionRankingHoldoutCases]
+      .map(persona => [persona.id, persona]));
+    const catalog = getCompetitionCatalog();
+    const failures: string[] = [];
+    let checkedBranches = 0;
+    for (const gold of staticCompetitionFollowupGoldCases.filter(item => item.family !== "track")) {
+      const profile = personas.get(gold.personaId)!.profile;
+      const frozenProfile = JSON.stringify(profile);
+      const snapshot = buildCompetitionQualificationSnapshot(profile, catalog, QUALITY_BENCHMARK_NOW);
+      expect(snapshot.entries).toHaveLength(catalog.length);
+      const before = scoreCompetitionRecommendations(catalog, profile, { now: QUALITY_BENCHMARK_NOW });
+      // Replay authored preference semantics directly. This does not assert that
+      // the production generator currently offers this question or these options.
+      const values = [...new Set(gold.branches.flatMap(branch => [...branch.selectedValues]))];
+      const question = competitionDynamicQuestionV3Schema.parse({
+        questionId: `dq_migration_${gold.id}`, signalKey: gold.signalKey,
+        prompt: "请选择希望优先比较的任务或目标。", selection: gold.family === "fit" ? "multiple" : "single",
+        ...(gold.family === "fit" ? { maxSelections: 2 } : {}),
+        options: values.map(value => ({ value, label: value })), allowsNote: true,
+        maxNoteLength: COMPETITION_CLARIFICATION_NOTE_MAX_LENGTH,
+        impact: "material", estimatedPreferenceOutcomeChanges: 2
+      });
+      for (const branch of gold.branches) {
+        checkedBranches += 1;
+        const after = scoreCompetitionRecommendations(catalog, profile, { now: QUALITY_BENCHMARK_NOW,
+          transcript: [{ question, answer: { selectedValues: [...branch.selectedValues] } }]
+        });
+        if (JSON.stringify(profile) !== frozenProfile) failures.push(`${gold.id}: profile facts mutated`);
+        if (JSON.stringify(after.map(row => row.competition.id).sort()) !==
+          JSON.stringify(before.map(row => row.competition.id).sort())) {
+          failures.push(`${gold.id}/${branch.selectedValues.join("+")}: changed hard-filtered candidate membership`);
+        }
+        for (const row of after) {
+          const parent = snapshot.entries.find(entry => entry.competitionId === row.competition.id)!;
+          const expected = row.recommendedTrack
+            ? parent.tracks.find(track => track.trackId === row.recommendedTrack!.id) : parent;
+          if (!expected || expected.status !== row.eligibility.status ||
+            JSON.stringify(expected.reasons) !== JSON.stringify(row.eligibility.reasons)) {
+            failures.push(`${gold.id}/${branch.selectedValues.join("+")}/${row.competition.id}: preference changed precomputed eligibility`);
+          }
+        }
+      }
+    }
+    expect(checkedBranches).toBe(51);
+    expect(failures, failures.join("\n")).toEqual([]);
+  });
+});
+
+describe("five-dimensional goal isolation migration candidate", () => {
+  it("keeps non-goal contributions fixed for every authored goal answer on unchanged track-free tasks", () => {
+    const personas = new Map([...competitionAnchorPersonas, ...competitionRankingHoldoutCases]
+      .map(persona => [persona.id, persona]));
+    const catalog = getCompetitionCatalog().filter(item => !item.recommendation.tracks?.length);
+    expect(catalog.length).toBeGreaterThan(0);
+    const failures: string[] = [];
+    let checkedBranches = 0;
+    let comparedCandidates = 0;
+    for (const gold of staticCompetitionFollowupGoldCases.filter(item => item.family === "goal")) {
+      const profile = personas.get(gold.personaId)!.profile;
+      const before = new Map(scoreCompetitionRecommendations(catalog, profile, { now: QUALITY_BENCHMARK_NOW })
+        .map(row => [row.competition.id, row]));
+      const values = [...new Set(gold.branches.flatMap(branch => [...branch.selectedValues]))];
+      const question = competitionDynamicQuestionV3Schema.parse({
+        questionId: `dq_goal_isolation_${gold.id}`, signalKey: gold.signalKey,
+        prompt: "在任务不变时，选择希望优先比较的目标。", selection: "single",
+        options: values.map(value => ({ value, label: value })), allowsNote: true,
+        maxNoteLength: COMPETITION_CLARIFICATION_NOTE_MAX_LENGTH,
+        impact: "material", estimatedPreferenceOutcomeChanges: 2
+      });
+      for (const branch of gold.branches) {
+        checkedBranches += 1;
+        const after = scoreCompetitionRecommendations(catalog, profile, { now: QUALITY_BENCHMARK_NOW,
+          transcript: [{ question, answer: { selectedValues: [...branch.selectedValues] } }]
+        });
+        for (const row of after) {
+          comparedCandidates += 1;
+          const previous = before.get(row.competition.id);
+          if (!previous?.decisionFit || !row.decisionFit) {
+            failures.push(`${gold.id}/${row.competition.id}: missing five-dimensional assessment`);
+            continue;
+          }
+          for (const dimension of ["task", "experience", "readiness", "growth"] as const) {
+            if (previous.decisionFit.dimensions[dimension] !== row.decisionFit.dimensions[dimension]) {
+              failures.push(`${gold.id}/${branch.selectedValues}/${row.competition.id}: changed ${dimension} without new facts`);
+            }
+          }
+          if (branch.selectedValues[0] === "award" &&
+            (row.decisionFit.dimensions.goal !== 0 || row.decisionFit.upper - row.decisionFit.lower < 30 - 1e-9)) {
+            failures.push(`${gold.id}/${row.competition.id}: award recognition was treated as known`);
+          }
+        }
+      }
+    }
+    expect(checkedBranches).toBe(24);
+    expect(comparedCandidates).toBeGreaterThan(0);
+    expect(failures, failures.join("\n")).toEqual([]);
   });
 });

@@ -1,0 +1,9 @@
+{
+  "schemaVersion": "release-evidence-spend-policy.v1",
+  "runId": "REPLACE_WITH_EXISTING_MAIN_AI_SPEND_RUN_ID",
+  "phase": "calibration",
+  "pgServiceFile": "/etc/resume-ai/ai-spend-ledger.pg_service.conf",
+  "pgService": "saitu_shared_ledger",
+  "limitCny": 300,
+  "fundedCny": 130.02
+}

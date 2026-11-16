@@ -1,0 +1,1315 @@
+{
+  "schemaVersion": "saitu.author-source-reading.v2",
+  "createdAt": "2026-11-05T17:31:37.436119+00:00",
+  "authorAgentId": "/root/continue_catalog",
+  "independentReview": false,
+  "note": "作者原文核对与取件记录；不含审者结论，不表示独立审核或批准。未取得完整题/评分的记录仍显式缺证。",
+  "sources": [
+    {
+      "sourceId": "softcup-c2-a3",
+      "url": "https://www.cnsoftbei.com/content-3-1286-1.html",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/008039a7728077b2b0e57a1485da3264b29bde35e02d17b9eab985dc3bb16c8b.html",
+      "sourceByteSha256": "008039a7728077b2b0e57a1485da3264b29bde35e02d17b9eab985dc3bb16c8b",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/953717c68d291aee877a39262c4c0aa760ea2e90b8426903322aaddc74894dcc.txt",
+      "bodySha256": "953717c68d291aee877a39262c4c0aa760ea2e90b8426903322aaddc74894dcc",
+      "readLocator": "辅助工具限制段：其他AI辅助工具须为科大讯飞相关工具；框架不限并不豁免此约束。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "b-ima-rules",
+      "url": "https://casecompetition.imachina.org.cn/details/100.html",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/637a546721da98069edb88b66fb60550ce9fa877a5300f654d2410d767e332ee.html",
+      "sourceByteSha256": "637a546721da98069edb88b66fb60550ce9fa877a5300f654d2410d767e332ee",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/de09728dd6cd6c825ce64c9a65c0fa525770a342b87c651638b04ef6cb04809b.txt",
+      "bodySha256": "de09728dd6cd6c825ce64c9a65c0fa525770a342b87c651638b04ef6cb04809b",
+      "readLocator": "学校报名队数超过5支条件及区域赛名额；非所有学校都必须另行校选。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "b-ima-delivery",
+      "url": "https://casecompetition.imachina.org.cn/details/102.html",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/1c24ce3f862e91b51ac6d6b00296fc24dad1025d66e1486ca1d71f32ae36c566.html",
+      "sourceByteSha256": "1c24ce3f862e91b51ac6d6b00296fc24dad1025d66e1486ca1d71f32ae36c566",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/58624ddb41ccda041274398a0f4cab820d8138ed329d272aeb244b1860d17051.txt",
+      "bodySha256": "58624ddb41ccda041274398a0f4cab820d8138ed329d272aeb244b1860d17051",
+      "readLocator": "提交规范末段：格式不合规扣分；不含完整内容评分表。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "b-if-guide",
+      "url": "https://assets.ctfassets.net/9el74s703hin/mEuiHUwteSLEZbLDQT7VR/c2ca102a428805da3c6d37fdf411d845/iF_DESIGN_STUDENT_AWARD_2025_Entry_Guide_Spanish.pdf",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/36359add622443dfeab50a6ae6415718f5afa711163949a620d8a7a928bd4c29.pdf",
+      "sourceByteSha256": "36359add622443dfeab50a6ae6415718f5afa711163949a620d8a7a928bd4c29",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/d253f535dfa321223a574f557786e82c0a78a98a5e21252a64a8fdaca88d5db5.txt",
+      "bodySha256": "d253f535dfa321223a574f557786e82c0a78a98a5e21252a64a8fdaca88d5db5",
+      "readLocator": "MASHAV完整海报（two-piece garment），裙装及通风风帽结构。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "b-classics-local",
+      "url": "https://rwxy.huznu.edu.cn/2025/0409/c534a231481/page.htm",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/f15680b17981637151bd9c2237aee4f52e0996a461b382a95024f13506a77efa.html",
+      "sourceByteSha256": "f15680b17981637151bd9c2237aee4f52e0996a461b382a95024f13506a77efa",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/e5040ecd653f2d501c8d68453a58bc63f3cb9d993b7765d126cd82d847a60935.txt",
+      "bodySha256": "e5040ecd653f2d501c8d68453a58bc63f3cb9d993b7765d126cd82d847a60935",
+      "readLocator": "本校全日制在校资格；配合省赛收费由学校承担的规定，不等于官方不收费。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "b-ad-rules",
+      "url": "https://www.sun-ada.net/home/about_intrs2.html",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/6e3255aa663a7c4771be1914604ac7442b2c0bde506c7ad2ec3ab7b95465c526.html",
+      "sourceByteSha256": "6e3255aa663a7c4771be1914604ac7442b2c0bde506c7ad2ec3ab7b95465c526",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/3d4e5526ec26f2e6e96d999ca8ba8a7bac51294ca9ddfa42b342fc379c662503.txt",
+      "bodySha256": "3d4e5526ec26f2e6e96d999ca8ba8a7bac51294ca9ddfa42b342fc379c662503",
+      "readLocator": "通用平面人数、导师、禁跨校及横竖不限；品牌竖版另见b-ad-task。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "b-ad-task",
+      "url": "https://www.sun-ada.net/home/zt_xqs3026.html",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/8d4c98ec1a7a9a6068b557a08e035ca5804205ad57b348f5230309de3235a1d8.html",
+      "sourceByteSha256": "8d4c98ec1a7a9a6068b557a08e035ca5804205ad57b348f5230309de3235a1d8",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/3897b27d7c96495efc0369035f6182abd3a2015f61460da634016c909dc9f5bc.txt",
+      "bodySha256": "3897b27d7c96495efc0369035f6182abd3a2015f61460da634016c909dc9f5bc",
+      "readLocator": "阿里云创作须知与A3竖版约束；创作要求不是正式rubric。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "b-fltrp-rules",
+      "url": "https://ucc.fltrp.com/c/2026-04-15/517928.shtml",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/49e746a4aee5d8d2aa07f5d9812a5d318483cf9bb6a1d8c7547fd75e04c3071c.html",
+      "sourceByteSha256": "49e746a4aee5d8d2aa07f5d9812a5d318483cf9bb6a1d8c7547fd75e04c3071c",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/b39f2e8704826c8876796edcb0fcca553dbe72c7a91af8c881ac2791a2b31f74.txt",
+      "bodySha256": "b39f2e8704826c8876796edcb0fcca553dbe72c7a91af8c881ac2791a2b31f74",
+      "readLocator": "往届同语种同赛项国赛冠亚季军排除；短视频真实配音与素材标注。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "b-fltrp-local",
+      "url": "https://flc.ahnu.edu.cn/info/1090/50391.htm",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/1300ca400c67125ac4357ca134c48220a8a3b1878cb615bdc7f1b1d93a40dcba.html",
+      "sourceByteSha256": "1300ca400c67125ac4357ca134c48220a8a3b1878cb615bdc7f1b1d93a40dcba",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/627406f024487a5edd4ad0d30d5b02b2ba5e83b4be12a0f72f3e4a3e36b2fff5.txt",
+      "bodySha256": "627406f024487a5edd4ad0d30d5b02b2ba5e83b4be12a0f72f3e4a3e36b2fff5",
+      "readLocator": "短视频AI图片标注与真实英语配音；四新研究报告核心创作禁令不跨赛项套用。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "fsc-2026-rules-cost",
+      "url": "https://img.sae-china.org/web/2026/04/2026%E4%B8%AD%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%96%B9%E7%A8%8B%E5%BC%8F%E7%B3%BB%E5%88%97%E8%B5%9B%E4%BA%8B%E8%A7%84%E5%88%99%EF%BC%88%E6%9C%80%E7%BB%88%E7%89%88%EF%BC%89.pdf",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/7f2efddf604190851fab7e1ecbc6d9aa0bc6d98ebe00b96c7d4dced52b2aaece.pdf",
+      "sourceByteSha256": "7f2efddf604190851fab7e1ecbc6d9aa0bc6d98ebe00b96c7d4dced52b2aaece",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/9baa9397720da9f00fc61b60ab7654725fa109439565c3b06b94f2ebc0b8b1bd.txt",
+      "bodySha256": "9baa9397720da9f00fc61b60ab7654725fa109439565c3b06b94f2ebc0b8b1bd",
+      "readLocator": "A4.1.1 full-time适用于所有学生，毕业七个月例外另核。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "fpga-nuaa-2026-notice",
+      "url": "https://aao.nuaa.edu.cn/2026/0920/c19003a411397/page.htm",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/e733142bcd1ec359e1dd4d5d8f6f40f12c2e7b52972705227c5d899b34039bd0.html",
+      "sourceByteSha256": "e733142bcd1ec359e1dd4d5d8f6f40f12c2e7b52972705227c5d899b34039bd0",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/e50f0c09fc9b5632412fdecc261d2254523d3e225b24c3cfdfd77dbd3d5c6c85.txt",
+      "bodySha256": "e50f0c09fc9b5632412fdecc261d2254523d3e225b24c3cfdfd77dbd3d5c6c85",
+      "readLocator": "只载2026及报名/提交/决赛日期，无第九届序数。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "fpga-gowin-2026-task",
+      "url": "https://www.gowinsemi.com.cn/university/match2026",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/bde2d4bfa3c705799a9dbc05fcbec6fcbd8b45bebba1ab899acdddec6e4204de.html",
+      "sourceByteSha256": "bde2d4bfa3c705799a9dbc05fcbec6fcbd8b45bebba1ab899acdddec6e4204de",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/eb998291d7252c28c95776e49d009d9c869a44f409ba66e61a412bed26366712.txt",
+      "bodySha256": "eb998291d7252c28c95776e49d009d9c869a44f409ba66e61a412bed26366712",
+      "readLocator": "高云FPGA选题二，不提供第九届依据。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "comap-c-2026-rules",
+      "url": "https://www2.scut.edu.cn/_upload/article/files/e5/f2/8871d9db4b7b8ea970516352c699/5b837653-8e0c-41dc-9238-97f734bcb90f.pdf",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/0b69bcc27f8fc7d994ebb2d127b28ba6e6e4760bd5def691f0d19062e350d781.pdf",
+      "sourceByteSha256": "0b69bcc27f8fc7d994ebb2d127b28ba6e6e4760bd5def691f0d19062e350d781",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/2b088a24da30342e903344bf652d5d12217aa61648991c1a6b7a6301554caca0.txt",
+      "bodySha256": "2b088a24da30342e903344bf652d5d12217aa61648991c1a6b7a6301554caca0",
+      "readLocator": "第4/10页英文匿名；第11页小于20MB；当届镜像仅改在线流程，未另给相异尺寸。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "cmc-c5-zjut-rules",
+      "url": "https://www.soft.zjut.edu.cn/170.html",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/2df5b570123f404b60978d141b2e45d1d295b6d64a7c2c163b17417fc872134a.html",
+      "sourceByteSha256": "2df5b570123f404b60978d141b2e45d1d295b6d64a7c2c163b17417fc872134a",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/d9f77aa7f98c6df7c8fef731bb04925956cf02b0fa95e485d15bb816a76e242b.txt",
+      "bodySha256": "d9f77aa7f98c6df7c8fef731bb04925956cf02b0fa95e485d15bb816a76e242b",
+      "readLocator": "2011本校对象、程序和60元费用；不声明其它扫描端点比对。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "abc-c7-rules",
+      "url": "https://atcoder.jp/contests/abc427/rules",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/5a6e5a83c3d931e49c9c49bb8e04535e29d7f312493116c2f1eb3c2e28017bb4.html",
+      "sourceByteSha256": "5a6e5a83c3d931e49c9c49bb8e04535e29d7f312493116c2f1eb3c2e28017bb4",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/163bba17d0a2a03ed8ad4993522ac1a6b1d08839f8bf0680a2b32ba4219a0f58.txt",
+      "bodySha256": "163bba17d0a2a03ed8ad4993522ac1a6b1d08839f8bf0680a2b32ba4219a0f58",
+      "readLocator": "Team or Individual；通用规则读取时点2026-11，不证明2025版本未变。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "abc-c7-editorial",
+      "url": "https://atcoder.jp/contests/abc427/editorial/14196",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/41a3b72b7cdeb4c09c7422a85b6c07685cafb4458a01d7276c6eace20b3a522c.html",
+      "sourceByteSha256": "41a3b72b7cdeb4c09c7422a85b6c07685cafb4458a01d7276c6eace20b3a522c",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/af4da33510e2223d91b55a6bf3c945dceb6822b916883b9879564cb46b1c8ba2.txt",
+      "bodySha256": "af4da33510e2223d91b55a6bf3c945dceb6822b916883b9879564cb46b1c8ba2",
+      "readLocator": "14196日文状态定义与轮次转移；删除无冻结英文原件的错误指控。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "b-cfa-2025-rules",
+      "url": "https://www.unive.it/web/fileadmin/user_upload/cdl_cdlm/area-economica/research-challenge-official-rules.pdf",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/c9a1a5e61a251e4db5550636a3ef2af5ccf77b0160c28ebe86676df41886e35a.pdf",
+      "sourceByteSha256": "c9a1a5e61a251e4db5550636a3ef2af5ccf77b0160c28ebe86676df41886e35a",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/629ce84aa1363c00442fed880697b646ef75056995893d2bc84980113ec2edf4.txt",
+      "bodySha256": "629ce84aa1363c00442fed880697b646ef75056995893d2bc84980113ec2edf4",
+      "readLocator": "2.1/2.2校队接纳、kickoff至少part-time；仅使用冻结学校托管本，不声明第二端点字节相同。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "chemical-design-2026-notice",
+      "url": "https://iche.zju.edu.cn/uploads/20260228/ad683cd23bc2417ffa3e1dd020f000a7.pdf",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/de0f2871940e7fc87ca298a1f139653084134b6af5578fc2c41de77e21d13e53.pdf",
+      "sourceByteSha256": "de0f2871940e7fc87ca298a1f139653084134b6af5578fc2c41de77e21d13e53",
+      "bodyArtifact": null,
+      "bodySha256": null,
+      "readLocator": "早期安排部分另行通知；综合作品、口头报告和答辩评分来源。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "chemical-design-2026-task",
+      "url": "https://iche.zju.edu.cn/uploads/20260226/ec4637873e07197e1ce4b72c781d8617.pdf",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/d7c753c42b38409be399f2ca457d7f0175e063ab8a166a0232e9c43fde44a06d.pdf",
+      "sourceByteSha256": "d7c753c42b38409be399f2ca457d7f0175e063ab8a166a0232e9c43fde44a06d",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/ff98d8ed44b40033c08aeb6856447b65dc89a9e32cbd46bbb3c8007740eb2b85.txt",
+      "bodySha256": "ff98d8ed44b40033c08aeb6856447b65dc89a9e32cbd46bbb3c8007740eb2b85",
+      "readLocator": "完整设计任务与HAZOP/能量集成/经济分析，非最终赛程证明。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "mechanical-2026-notice",
+      "url": "https://12umic.hit.edu.cn/2025/0321/c20012a364782/page.htm",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/ec6385d88947369e56546868fd0b3e88beb33e8d70e49b3ff7be01e0a6744395.html",
+      "sourceByteSha256": "ec6385d88947369e56546868fd0b3e88beb33e8d70e49b3ff7be01e0a6744395",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/26bcd896d8a2796071ae3ef80be75e643b822f1c3cc97ae578f4deeab70c4074.txt",
+      "bodySha256": "26bcd896d8a2796071ae3ef80be75e643b822f1c3cc97ae578f4deeab70c4074",
+      "readLocator": "赛区报名费由赛区组委会决定。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "mechanical-2026-instructions",
+      "url": "https://jdxy.hsu.edu.cn/_upload/article/files/40/1f/feb2c7904f029972f37b54785c30/0a272ab2-669f-41ab-9f19-eb143648a954.pdf",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/3b291b293bd34700548a8cf0aac52b8fb6ac5f21611ba040664b1ded4bdf51d3.pdf",
+      "sourceByteSha256": "3b291b293bd34700548a8cf0aac52b8fb6ac5f21611ba040664b1ded4bdf51d3",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/890d94699cd4fefeef6dac3db144011376b804a1f1c295a191aa6fdd78e6b0f8.txt",
+      "bodySha256": "890d94699cd4fefeef6dac3db144011376b804a1f1c295a191aa6fdd78e6b0f8",
+      "readLocator": "学校承担参赛费用，不转向学生；个人完整总额仍未知。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "swift-2026-policy",
+      "url": "https://developer.apple.com/swift-student-challenge/policy/",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/afcca43cde9b1470893affd7cfa3aa89a6b103033537d82d93498e02a4489beb.html",
+      "sourceByteSha256": "afcca43cde9b1470893affd7cfa3aa89a6b103033537d82d93498e02a4489beb",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/a5c4987471e728273c8810d662cf3bfa75684a5e17aa4bcc91cf6d6d35082941.txt",
+      "bodySha256": "a5c4987471e728273c8810d662cf3bfa75684a5e17aa4bcc91cf6d6d35082941",
+      "readLocator": "独立完成/修改模板，Group work will not be considered。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "newblood-2027-essential",
+      "url": "https://media.dandad.org/documents/NBA27-essential-info-271026.pdf",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/9f60518e036c5f5eea287ecb2fe53c0f43170dab9c6c33dfae3809b9dd274534.pdf",
+      "sourceByteSha256": "9f60518e036c5f5eea287ecb2fe53c0f43170dab9c6c33dfae3809b9dd274534",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/b1ec405a0ad87e8ecdcad46fb48be1b3071b48dd0f98d3c0131f5c92cee1caf0.txt",
+      "bodySha256": "b1ec405a0ad87e8ecdcad46fb48be1b3071b48dd0f98d3c0131f5c92cee1caf0",
+      "readLocator": "Teams & tutors：个人或最多5人，每人须合格。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "smdc-2026-rules",
+      "url": "https://namrc.sme.org/competitions/student-manufacturing-design-competition/",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/4829d6cceedd2bb2925b1de1b710871ba5d61f8845583a4e3af031293a81b7c5.html",
+      "sourceByteSha256": "4829d6cceedd2bb2925b1de1b710871ba5d61f8845583a4e3af031293a81b7c5",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/9c1d230995c25d580d86082a25d52675ec6ef388e0049d6bba9d33fa7e667213.txt",
+      "bodySha256": "9c1d230995c25d580d86082a25d52675ec6ef388e0049d6bba9d33fa7e667213",
+      "readLocator": "报告须有faculty sponsor姓名、签名和联系方式；资格的旧日期未自动改新。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "psychology-2026-notice",
+      "url": "https://jwb.bnuzh.edu.cn/docs/2026-03/94468b7ed4ae4ab3b1610a3dd0360737.pdf",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/e89de114231e9e64be1f50e9ecc0a3e58508f6df781687a0faf7bafa8bd3a7d0.pdf",
+      "sourceByteSha256": "e89de114231e9e64be1f50e9ecc0a3e58508f6df781687a0faf7bafa8bd3a7d0",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/32eab0dec9fb97f5687110933cbe9aaa443f048f07f06fdebae0ec7f9e2488e4.txt",
+      "bodySha256": "32eab0dec9fb97f5687110933cbe9aaa443f048f07f06fdebae0ec7f9e2488e4",
+      "readLocator": "PDF第2页学校推荐每论坛原则不超1项，第6页全日制在学盖章证明。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "datajournalism-2026-hainan",
+      "url": "https://webplus.hainnu.edu.cn/_s58/2026/0515/c2514a165201/page.psp",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/571555789d380d0c6e39c6861255cf83127d8e552fe1e8ae9232ec61481db548.html",
+      "sourceByteSha256": "571555789d380d0c6e39c6861255cf83127d8e552fe1e8ae9232ec61481db548",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/18e75b30742c6e3c02ad4a66ca719ee371bbef35010c611894aa18980071105f.txt",
+      "bodySha256": "18e75b30742c6e3c02ad4a66ca719ee371bbef35010c611894aa18980071105f",
+      "readLocator": "数据新闻部分高校组作品应注明教师；不套用后半AIGC赛事。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "cvma-vocational-2026",
+      "url": "https://www.cvma.org.cn/6848/202604/73246.html",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/a97846162f243e5a62867d5f3f8743c20d22008ed1ee24b9e2e39ee0baa14ef0.html",
+      "sourceByteSha256": "a97846162f243e5a62867d5f3f8743c20d22008ed1ee24b9e2e39ee0baa14ef0",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/38120843a8cf4428e6ea917d6e8de6457680ac7efc41cd6bcb1896c79b1c327a.txt",
+      "bodySha256": "38120843a8cf4428e6ea917d6e8de6457680ac7efc41cd6bcb1896c79b1c327a",
+      "readLocator": "两成员一操作一辅助；每选手1—2教师。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "aiaa-dbf-2026-rules",
+      "url": "https://aiaa.org/wp-content/uploads/2025/08/2026-DBF-Rules.pdf",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/cc4c95d150febd6a9b8cfb169db41af93e25a43ce355c4da6736c93a05f57917.pdf",
+      "sourceByteSha256": "cc4c95d150febd6a9b8cfb169db41af93e25a43ce355c4da6736c93a05f57917",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/bbf85f76270ddb02a5f5c59983150aa23d282fec7891c0a9ab44eaa064121592.txt",
+      "bodySha256": "bbf85f76270ddb02a5f5c59983150aa23d282fec7891c0a9ab44eaa064121592",
+      "readLocator": "第5页学生AIAA会员、飞手AMA会员和1/3组成；提案选拔及fly-off条件。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "cupt-2020-rules",
+      "url": "https://jwc.ecust.edu.cn/_upload/article/files/37/7f/056b829b414e9ee2268c1beb2775/6f94229e-2725-47d6-a854-79d2997a269b.pdf",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/4e8c1c4e7a1bc78faa4a9a5134ffc6f1ea9b0f07ef13cdd0242caf339a2621be.pdf",
+      "sourceByteSha256": "4e8c1c4e7a1bc78faa4a9a5134ffc6f1ea9b0f07ef13cdd0242caf339a2621be",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/441eb1a1cb3ffe4a919ccecbe3be305744f2d58e169cace23ef9b2341fe8eee4.txt",
+      "bodySha256": "441eb1a1cb3ffe4a919ccecbe3be305744f2d58e169cace23ef9b2341fe8eee4",
+      "readLocator": "第4—5页2020学校名额和团队入口，不能视为现届开放。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "networkculture8-plan",
+      "url": "https://dxs.moe.gov.cn/zx/a/sy_xzsd/250606/2009024.shtml",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/388ff53425ceccd725f46fbf68e8811a20afdf3232c9ac88d52be84abb1fc406.html",
+      "sourceByteSha256": "388ff53425ceccd725f46fbf68e8811a20afdf3232c9ac88d52be84abb1fc406",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/e4faf3ab594c05c02c6d40f8603e4eb261b8a0e4d835fc381baa783ea6e85705.txt",
+      "bodySha256": "e4faf3ab594c05c02c6d40f8603e4eb261b8a0e4d835fc381baa783ea6e85705",
+      "readLocator": "网语青年说作者1人，其他赛道人数不同。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "lanqiao-c3-rules",
+      "url": "https://webadm.suse.edu.cn/_upload/article/files/db/ce/8c33934f4d00ac940f42f84d62f5/57a90821-ccb9-4ddb-955a-89a8e3a333b3.rar",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/bc58356bb01f436d14f9bce7a9b92070a9363dbe16e4282360449559de1b6531.rar",
+      "sourceByteSha256": "bc58356bb01f436d14f9bce7a9b92070a9363dbe16e4282360449559de1b6531",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/155f7b161b35d49d5aa0b615d186a0566eb19f27d4b10571a5392696ac1514a3.txt",
+      "bodySha256": "155f7b161b35d49d5aa0b615d186a0566eb19f27d4b10571a5392696ac1514a3",
+      "readLocator": "个人软件赛一人一机全程机考；仅2019归档范围。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "ccsp-c4-notice",
+      "url": "https://ccsp.ccf.org.cn/ccsp/Bulletin/2025-09-15/848571.shtml",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/edeef98d27b72071e174b659467433f53d19a2fb9aae5b20a7a942aac2bb058d.html",
+      "sourceByteSha256": "edeef98d27b72071e174b659467433f53d19a2fb9aae5b20a7a942aac2bb058d",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/998f0c01597cf9b9c83a5d674dba08053df98da13c2ac88c696154a0a8434026.txt",
+      "bodySha256": "998f0c01597cf9b9c83a5d674dba08053df98da13c2ac88c696154a0a8434026",
+      "readLocator": "机考及个人登记/学校缴费；未得到明确独立作答条款，新增原子保持pending_review。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "igem-2025-hkust-model",
+      "url": "https://2025.igem.wiki/hkust/model",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/43ac4d99fdaf07521e20cae33dedee8f2ecae59100c1752c28c643e65388934d.html",
+      "sourceByteSha256": "43ac4d99fdaf07521e20cae33dedee8f2ecae59100c1752c28c643e65388934d",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/ee804f87805796fef92dbd5e7594a02ff835beb9fe5c07be306846f3ff19dc7a.txt",
+      "bodySha256": "ee804f87805796fef92dbd5e7594a02ff835beb9fe5c07be306846f3ff19dc7a",
+      "readLocator": "完整HTML全部六模块；Cycle0图1—19、后续模型结果/局限及97张图，7张联系图已视觉检查。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "igem-2025-judge-handbook",
+      "url": "https://static.igem.org/websites/competition/2025/judging/2025judgehandbook.pdf",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/9dd7732b77065f9923a9375fd2f65ba3b1b9576d2b8e6673848ba96454479424.pdf",
+      "sourceByteSha256": "9dd7732b77065f9923a9375fd2f65ba3b1b9576d2b8e6673848ba96454479424",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/5fd7b3c4d65ef6397adf8cfc0acb4810e0745483bd899e33bf30e23597239b98.txt",
+      "bodySha256": "5fd7b3c4d65ef6397adf8cfc0acb4810e0745483bd899e33bf30e23597239b98",
+      "readLocator": "完整99页PDF，阅读第67—68页Model及四项评分，68页视觉核对。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "newblood-2026-dad-brief",
+      "url": "https://media.dandad.org/documents/NBA2026-D-AD-220126.pdf",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/cfe478e3b77958c473c7f5173eb02b5abbe6dd5f30f3e463ad9df0b900d1ce91.pdf",
+      "sourceByteSha256": "cfe478e3b77958c473c7f5173eb02b5abbe6dd5f30f3e463ad9df0b900d1ce91",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/e0030d1023bdfa52910ff2dc083be6867a330c206ee38e4d984c86c868ac87f1.txt",
+      "bodySha256": "e0030d1023bdfa52910ff2dc083be6867a330c206ee38e4d984c86c868ac87f1",
+      "readLocator": "完整2页原题，两个页面视觉核对。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    },
+    {
+      "sourceId": "newblood-2026-tutor-pack",
+      "url": "https://media.dandad.org/documents/New_Blood_Awards_2026_Tutor_Pack_UPDATED.pdf",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/a38902a9d2093661aab6d311c9968805ddf31a8266aaa612da1f30d7101af2c3.pdf",
+      "sourceByteSha256": "a38902a9d2093661aab6d311c9968805ddf31a8266aaa612da1f30d7101af2c3",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/ad9cda6247e960647d3ce098b95c6ea456676fcc3af042459aa4a56734fc930e.txt",
+      "bodySha256": "ad9cda6247e960647d3ce098b95c6ea456676fcc3af042459aa4a56734fc930e",
+      "readLocator": "完整36页原件，3页共同评审，26—27页交付，30—31页资格/费用/团队/评分，34—36页条款；30—31页视觉核对。",
+      "authorAgentId": "/root/continue_catalog",
+      "independentReview": false
+    }
+  ],
+  "supportingImages": [
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/mtoverview.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/6b00f0873a03-mtoverview.webp",
+      "httpStatus": "200",
+      "bytes": 93834,
+      "sha256": "5ed1a5407ff1cb678bcd72d6b63f28a985785616220d3d3718bdd2d66ce196b5",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:05.979172+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/bsoverview.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/7632a6d88a80-bsoverview.webp",
+      "httpStatus": "200",
+      "bytes": 121530,
+      "sha256": "bf9bcc2b2df46b40aa60c99da1aeb68417353ff06a6ad47e7a703b8629c28e23",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:06.008935+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/mtmodelcycle0/c0figure1.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/9bb32655666c-c0figure1.webp",
+      "httpStatus": "200",
+      "bytes": 77322,
+      "sha256": "d809f1cdcdb37c53cf0e1ec27e8f8afb52947b29b3b85e365f7e94e28e0abd32",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:05.955022+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/mtmodelcycle0/whatsapp-image-2025-10-08-at-13-57-26.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/4eadccd2a8fd-whatsapp-image-2025-10-08-at-13-57-26.webp",
+      "httpStatus": "200",
+      "bytes": 107656,
+      "sha256": "0778eae046406d34d40760e342eb672d30c06cfca562209971493effbe0949f1",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:05.998077+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/mtmodelcycle0/c0figure3.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/48dda584550a-c0figure3.webp",
+      "httpStatus": "200",
+      "bytes": 46364,
+      "sha256": "f930c9cb6a85537ed36c750be1fcc348b801ed28cf7ed026adce785eb334cd4c",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:06.034411+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/mtmodelcycle0/c0figure4.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/6cb46aa9d320-c0figure4.webp",
+      "httpStatus": "200",
+      "bytes": 53788,
+      "sha256": "53104b48c306229b14de2b307fc1d2b1ff939cf6c91cd0c35b6b4dce2fc5e0b4",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:05.908506+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/mtmodelcycle0/c0figure5.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/cebce6d4c6eb-c0figure5.webp",
+      "httpStatus": "200",
+      "bytes": 54130,
+      "sha256": "741af5444a8090ea8af2e4d9951c0d505e536594cabf7215feb013476abe4d07",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:05.910988+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/mtmodelcycle0/c0figure6.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/063ae68ffecf-c0figure6.webp",
+      "httpStatus": "200",
+      "bytes": 50422,
+      "sha256": "ebc2d5c46cf6f456830c510d683f5c42d604f355661168673868dc66f696828b",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:05.876902+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/mtmodelcycle0/c0figure7.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/fd4687f33238-c0figure7.webp",
+      "httpStatus": "200",
+      "bytes": 53270,
+      "sha256": "7e1c2b7572270e8af6dfb77f96137917075d44f71c4763d9426d807c72ec81be",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:06.600771+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/mtmodelcycle0/c0figure8.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/37b93f123686-c0figure8.webp",
+      "httpStatus": "200",
+      "bytes": 44774,
+      "sha256": "e4645cd9ae4a12e78d38ada2ce1c7e69c4c02af08ef7b95a99e7d4005b1eb9f6",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:06.604210+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/mtmodelcycle0/c0figure9.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/b225175def2b-c0figure9.webp",
+      "httpStatus": "200",
+      "bytes": 78540,
+      "sha256": "9652a5ef2948a43c3a8139cdbbde74127304e23cad6dffacdeb291d1d3dff258",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:06.680527+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/mtmodelcycle0/c0figure10.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/856ab2f9ce1b-c0figure10.webp",
+      "httpStatus": "200",
+      "bytes": 74798,
+      "sha256": "2b730710ca2f2719d4c136e7b627205aba5f620bcd2f07df22d361f38bd9013d",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:06.727136+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/mtmodelcycle0/c0figure11.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/a47398d098cd-c0figure11.webp",
+      "httpStatus": "200",
+      "bytes": 113978,
+      "sha256": "59b5f68cf1e9c06f709bcb4add766e287233263c1590183833ba6d536911dee5",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:06.805903+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/mtmodelcycle0/c0figure12.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/f1b606659ce8-c0figure12.webp",
+      "httpStatus": "200",
+      "bytes": 28446,
+      "sha256": "c8949ea4def0be813f3fca4b197808e3e9c04b9fa7f2b4b4805847537aa7b5e3",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:06.618419+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/mtmodelcycle0/c0figure13.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/dd55116d9843-c0figure13.webp",
+      "httpStatus": "200",
+      "bytes": 51868,
+      "sha256": "03b31f3b85a71c67301d7b26eca2d7d74d36acae43077d3906a91cf06a2243c6",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:06.703833+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/mtmodelcycle0/c0figure14.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/a28fdde9bbbe-c0figure14.webp",
+      "httpStatus": "200",
+      "bytes": 56320,
+      "sha256": "f3aa44e4783017b9eadfa7ad32cc06f6820b7c945d686554f9799846a26745a1",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:06.737583+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/mtmodelcycle0/c0figure15.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/0d4c3d62345a-c0figure15.webp",
+      "httpStatus": "200",
+      "bytes": 14142,
+      "sha256": "f2257cae4ebdd0524df7c8bc9018ab613c6de3c530bc1aa38b9c2de0e1051503",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:07.221340+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/mtmodelcycle0/c0figure16.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/12cc58450ae8-c0figure16.webp",
+      "httpStatus": "200",
+      "bytes": 12340,
+      "sha256": "a24d25db0c404665f4e932a716529522498247ab1193c9776cfef2759cdb7071",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:07.296337+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/mtmodelcycle0/c0figure17.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/32389cf01a97-c0figure17.webp",
+      "httpStatus": "200",
+      "bytes": 57688,
+      "sha256": "a82697808564a0c912f2de2486dda411000cb6b3d491760cf0c4b499fd9a57be",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:07.353572+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/mtmodelcycle0/c0figure18.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/17cb49ea053e-c0figure18.webp",
+      "httpStatus": "200",
+      "bytes": 52244,
+      "sha256": "22400db4f4bdbb958dc1c019868838fb438c2ba841840d839fa41e7ada447fc4",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:07.431135+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/gromacs/fig1.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/0b625bcb1d70-fig1.webp",
+      "httpStatus": "200",
+      "bytes": 98184,
+      "sha256": "ee6c5a4cce4699dbce561c3385d23fd0304a761bfde26a1accb735846a0088f8",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:07.512387+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/gromacs/fig2.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/8cc3e18bb2c8-fig2.webp",
+      "httpStatus": "200",
+      "bytes": 27662,
+      "sha256": "3f36bc8567d6b1ab20f9feb1984bc609fa369f3b2cd34200fc5ed190e01bd08a",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:07.368271+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/gromacs/fig3.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/a703fa10a7ac-fig3.webp",
+      "httpStatus": "200",
+      "bytes": 14360,
+      "sha256": "bbf0f574131f803b0f2d4eac03c12dd93c8f6d3280851ab4271722ebd932df38",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:07.380546+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/gromacs/fig4.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/9b864b5710f3-fig4.webp",
+      "httpStatus": "200",
+      "bytes": 47592,
+      "sha256": "fe7959e661b0d2f47f24d8430593e337836a80592c7eaf0ede901c41ad26b76a",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:07.510398+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/gromacs/fig5.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/64bf7553a9d0-fig5.webp",
+      "httpStatus": "200",
+      "bytes": 22812,
+      "sha256": "fec3c13e37a23ebd90fa0308d08c16cdd70baf54c32cf73e2f2efd04cad78df1",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:07.940356+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/gromacs/fig6.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/bc35dedc81b9-fig6.webp",
+      "httpStatus": "200",
+      "bytes": 59768,
+      "sha256": "a08158535c0781e8cfceb50bb7e8bd1aab7552914a80702d87d795d619046ecf",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:08.016054+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/gromacs/fig7.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/c8e901c77655-fig7.webp",
+      "httpStatus": "200",
+      "bytes": 14550,
+      "sha256": "f27dd8ff2c35570526df8b16cb5c4ca6a2983b480c76e14719acd13322910809",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:07.995616+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/gromacs/fig8.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/1fb050795423-fig8.webp",
+      "httpStatus": "200",
+      "bytes": 140606,
+      "sha256": "41247e3ad05ce0a7ee5a1cefe9b80938c12cfc793bac72ba1f0bfa162bf7e87c",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:08.193395+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/gromacs/fig9.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/8079af7d1d80-fig9.webp",
+      "httpStatus": "200",
+      "bytes": 17464,
+      "sha256": "63a46ff51283bb15076bcbd39717404d1c26c53147029b3d72ec7a97858a28a4",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:08.037443+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/gromacs/fig10.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/1ba992ceb4aa-fig10.webp",
+      "httpStatus": "200",
+      "bytes": 37252,
+      "sha256": "e5eafdf9b619ea441a99811a84a3533940b23a5a18e4eb6da294fdcae059afb7",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:08.133600+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/gromacs/fig11.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/69aca75fc5aa-fig11.webp",
+      "httpStatus": "200",
+      "bytes": 88064,
+      "sha256": "f6d74e4e344942388627a012001c529f43e5eb56b222e8a38d4ba2d9292f45a6",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:08.271767+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/gromacs/fig12.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/f72fb3a7c51c-fig12.webp",
+      "httpStatus": "200",
+      "bytes": 46024,
+      "sha256": "a41ec4a4647c0cbb371a93ba65630c60d9770bcc1f52faa5282c63386550614e",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:08.195620+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/gromacs/fig13.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/19a4232cc20a-fig13.webp",
+      "httpStatus": "200",
+      "bytes": 123594,
+      "sha256": "608608437a3cda2e8534949e2cb4af15b10cf2c40601d7d6db399c2a1b915ad3",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:08.764564+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/gromacs/bindingpotential1.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/ff57560a850e-bindingpotential1.webp",
+      "httpStatus": "200",
+      "bytes": 19414,
+      "sha256": "cad6e9b9f71e1ff9eb9ae268bd1d25650c211a67cb7ac7932375b6a5baca9dab",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:08.640975+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/gromacs/fig15.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/477c5e02bb62-fig15.webp",
+      "httpStatus": "200",
+      "bytes": 15898,
+      "sha256": "23b2a4e91967473e9e5e6d608963b7d6cfcb7eb3f9596c9c710834d409491519",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:08.624117+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/gromacs/fig16.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/390330bfc207-fig16.webp",
+      "httpStatus": "200",
+      "bytes": 19412,
+      "sha256": "ee90c0af4be686481cecbdbe5d101f29f6c33a88e64f5b220d0ddd88ab4eacef",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:08.669796+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/gromacs/fig17.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/5d6c49ce904f-fig17.webp",
+      "httpStatus": "200",
+      "bytes": 15378,
+      "sha256": "f235ad14d2cb797043179864060859214d096d05dcec4999525cb0832b6c6f1d",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:08.729007+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/gromacs/fig18.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/c3eaed83d2f3-fig18.webp",
+      "httpStatus": "200",
+      "bytes": 14480,
+      "sha256": "691e69e5786b08e3ff1fc3a27f9fe6fa518f1cf00ce6ca6eb6c442026e115e87",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:08.827530+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/gromacs/fig19.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/53bac48a195f-fig19.webp",
+      "httpStatus": "200",
+      "bytes": 16020,
+      "sha256": "bae6c878b95891e99d6229dfaf096dcaa141e4d28dd840b07f876e3193f8088a",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:08.821103+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/gromacs/fig20.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/854fb0e643d9-fig20.webp",
+      "httpStatus": "200",
+      "bytes": 13354,
+      "sha256": "779fb357c61a6782284c0316b6ad811344d8f54562b19122a03a5874bc241539",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:08.952552+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/gromacs/fig21.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/ecf3f9b76e3a-fig21.webp",
+      "httpStatus": "200",
+      "bytes": 7708,
+      "sha256": "2f0c4576fd99d5d3671292acb3168e8e18d6515be80df64d6daac2ccf9f5baa8",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:09.247373+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/gromacs/fig22.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/9f6c567f350f-fig22.webp",
+      "httpStatus": "200",
+      "bytes": 5542,
+      "sha256": "fb443f1b585c5fe02579c77857e49944d58443f22acc889d97ab30fcca4968d7",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:09.232287+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/gromacs/fig23.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/56e9cfefab2c-fig23.webp",
+      "httpStatus": "200",
+      "bytes": 14690,
+      "sha256": "8b7ea75ea20740ee6edf1e7e7938af083830f64b0e632c22f2920e5f593685d5",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:09.320421+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/gromacs/fig24.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/89e235589097-fig24.webp",
+      "httpStatus": "200",
+      "bytes": 22352,
+      "sha256": "24bb97bc0098fb3f53ccb1fb9c2fc541160d52c7fe9dd1c15eb4729be29d98e4",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:09.375378+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/gromacs/fig25.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/55f8315d5143-fig25.webp",
+      "httpStatus": "200",
+      "bytes": 10536,
+      "sha256": "e44736eb94d71e4d652017dc09b183b28162a33fd155b7adb98f097d8e5b82d9",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:09.386700+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/gromacs/fig26.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/886ecf3acda5-fig26.webp",
+      "httpStatus": "200",
+      "bytes": 20062,
+      "sha256": "7169df0d5f480adee8d5953b5d844bda887b0397fe9ae8481ee14ea4eb88226b",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:09.437649+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/mtmodel2/deeplearning-stage1-2.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/9d2075c35eae-deeplearning-stage1-2.webp",
+      "httpStatus": "200",
+      "bytes": 67948,
+      "sha256": "45699e5285de0bf27d8921245fe4d3ae46cbf71d1712edf32526c1fc5f67b02e",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:09.588760+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/mtmodel2/diffusion-model.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/69cfa6bb14fc-diffusion-model.webp",
+      "httpStatus": "200",
+      "bytes": 48276,
+      "sha256": "7f555d1dac14c6b2e861926199a756e711b1057c4c9839c22f880f477d6d29ee",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:09.665408+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-1.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/ba5411e0028a-bsmodel-1.webp",
+      "httpStatus": "200",
+      "bytes": 21646,
+      "sha256": "12cb20498924cd6caac05e065d9dd609128fc1efd681da7b9d3e59ce0dbd3286",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:09.872178+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-2.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/09cd500cb3ad-bsmodel-2.webp",
+      "httpStatus": "200",
+      "bytes": 19332,
+      "sha256": "bcf7272ebef55d464843ab80de0bc7abe7ee0c913211d2d590224b2aa24a937a",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:09.888990+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-3.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/b6630d246c5e-bsmodel-3.webp",
+      "httpStatus": "200",
+      "bytes": 27188,
+      "sha256": "7f94dc16494d2714170722619780452f2abce24893981b75252ae25890c853fd",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:09.934677+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-4.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/d46d93d7947f-bsmodel-4.webp",
+      "httpStatus": "200",
+      "bytes": 23676,
+      "sha256": "fd43dc025f7a64b224034158f1993059f2032521f438655c372cbf52a1e796c5",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:09.979576+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-5.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/1bef92f52a03-bsmodel-5.webp",
+      "httpStatus": "200",
+      "bytes": 20936,
+      "sha256": "1d0e53e1a14ff8127c5afe6432142696309d9f4584f316ddab9b28c12a309fc3",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:09.992219+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-6.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/6ce31d88a8ee-bsmodel-6.webp",
+      "httpStatus": "200",
+      "bytes": 25888,
+      "sha256": "2a386ce9e8cb2b559226eeeed0a9147fe02be9d34ae4da31090af2c9f92221c9",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:10.076650+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-7.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/86dc8f86f81c-bsmodel-7.webp",
+      "httpStatus": "200",
+      "bytes": 40066,
+      "sha256": "2a9864ea5b8d5daf4b8b4272f1aa67735fe600183a4bca6ac9b4e5a47b648f4a",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:10.303972+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-8.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/9578b72f9a99-bsmodel-8.webp",
+      "httpStatus": "200",
+      "bytes": 20748,
+      "sha256": "a60dc3dd10320920a790be00ee95b6e6594ba5bbc16fad9564ef841606370ab8",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:10.325931+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-9.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/991c098f2930-bsmodel-9.webp",
+      "httpStatus": "200",
+      "bytes": 4918,
+      "sha256": "7616e2c33c5a675853782921950640d6348eb6ec8cea60de25ce68595f02e787",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:10.724900+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-10.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/0d15c9f07aa5-bsmodel-10.webp",
+      "httpStatus": "200",
+      "bytes": 5758,
+      "sha256": "5e0e8c614a8bb2e9871d546c71f4d360cfa3bc1fa3749a6beaf59934f67eee7b",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:10.523797+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-11.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/d252a7ae64ff-bsmodel-11.webp",
+      "httpStatus": "200",
+      "bytes": 8094,
+      "sha256": "d8cf1ffb65c02801f2773d69978bc74a43d2e7aba97816729dc15ac14100be33",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:10.529140+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-12.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/8e6e00ab0b2f-bsmodel-12.webp",
+      "httpStatus": "200",
+      "bytes": 2850,
+      "sha256": "b6030a6ffec53edd767af04933cbcfd2c7b2f0ad25ed0a18ea6e1e89bea180d0",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:10.614033+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-13.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/09e0c87c785a-bsmodel-13.webp",
+      "httpStatus": "200",
+      "bytes": 4742,
+      "sha256": "d2efd151c1877ce1414528e4c1ff4e8f26fafa6acf0f6c74411467e9dc4a7b21",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:10.590006+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-14.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/d61ea017b6d7-bsmodel-14.webp",
+      "httpStatus": "200",
+      "bytes": 3956,
+      "sha256": "1b704bd22e03cf8c16341fd720a005b221d885876ffeaa9a863fb60495cc8d00",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:10.695809+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-15.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/9be675bb9f14-bsmodel-15.webp",
+      "httpStatus": "200",
+      "bytes": 4964,
+      "sha256": "7e1333ac2fd0d0cb21374ad8947628bde242d00eeb33e7b57918e6558095355e",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:10.905461+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-16.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/eaa46638ccf2-bsmodel-16.webp",
+      "httpStatus": "200",
+      "bytes": 5638,
+      "sha256": "4f5dff770281aa39750c7c3fcd947409b8eccf28b93e5cf1b9b46cfccb840ed2",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:10.994247+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-17.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/8eca9133a302-bsmodel-17.webp",
+      "httpStatus": "200",
+      "bytes": 2808,
+      "sha256": "12afdf2ae31f280b30d219d3e87d0b9c977c86408bd8dc81a0fd16aa316247e7",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:11.154618+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-18.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/d8f732b83e60-bsmodel-18.webp",
+      "httpStatus": "200",
+      "bytes": 3906,
+      "sha256": "8ea5be6dfb7057c1f348e80bb492611768fdebcf084fe5f5533e015da572f4f8",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:11.109777+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-19.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/be2a759c4530-bsmodel-19.webp",
+      "httpStatus": "200",
+      "bytes": 4988,
+      "sha256": "af07d3ef027f614fbb474fb34cb43685d189545d3c1620ff2e22540f8c6c6798",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:11.170782+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-20.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/84b94af3818e-bsmodel-20.webp",
+      "httpStatus": "200",
+      "bytes": 58010,
+      "sha256": "05fec05dc0f2cb82eb9006fa8d3072ecdfd8a9258615d6151d2637a6745f0dc3",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:11.358815+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-21.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/16bc62e8d38b-bsmodel-21.webp",
+      "httpStatus": "200",
+      "bytes": 14980,
+      "sha256": "896a0a4ed6592cac3b9ab6d0cb3eaba0906273c0937423348c51a35307211fb5",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:11.317150+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/killswitch/rmsd.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/5a2c45a5185f-rmsd.webp",
+      "httpStatus": "200",
+      "bytes": 3220,
+      "sha256": "643aebce995cc5cf4fed11affc50ef802c6509a6ef2d56288e59563c5a4cf281",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:11.293898+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/killswitch/tmscore.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/b554e61b8fef-tmscore.webp",
+      "httpStatus": "200",
+      "bytes": 1476,
+      "sha256": "f60f413e2e817c6e0c041dbf17ddebec8f25ecbc2c62bde9c902b71b668ecc53",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:11.524558+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/killswitch/ksfig2.webp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/62faa3f8220f-ksfig2.webp",
+      "httpStatus": "200",
+      "bytes": 25486,
+      "sha256": "6d5b360409c32bdc26ef7dfc4c535aa30b26a7e400b9d848845dd27d24a0b6b1",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:13:11.618582+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/membranemodel/fig1.avif",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/d1104309c713-fig1.avif",
+      "httpStatus": "200",
+      "bytes": 13448,
+      "sha256": "27a3923bad76db87789dc70733ca1e863b074ac2be9535acee20ffce57721526",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:20:16.390423+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/membranemodel/fig2.avif",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/625eb9976ce6-fig2.avif",
+      "httpStatus": "200",
+      "bytes": 33148,
+      "sha256": "17212895a68a95517db651a02d34ba7cf6f06f6d1e18f0597725539ae433d80d",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:20:16.281605+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/membranemodel/fig3.avif",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/95468449d615-fig3.avif",
+      "httpStatus": "200",
+      "bytes": 25216,
+      "sha256": "821fc9c6a16dadac5131ff4c17ff69024aa7d569742f8be64abfec66def1b5d0",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:20:16.574531+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/membranemodel/fig4.avif",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/bad20945e8cb-fig4.avif",
+      "httpStatus": "200",
+      "bytes": 21534,
+      "sha256": "3e2508899cb229c2a912d7cc3dd44b3317413f07cdb88fed063de2683ff74a62",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:20:16.039865+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/membranemodel/fig5.avif",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/b01e8cb77570-fig5.avif",
+      "httpStatus": "200",
+      "bytes": 56012,
+      "sha256": "ae824df76071ce8a5c607e703f9ffbebbb9bd446c552a7fc3c943bc85c43e242",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:20:16.351068+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/membranemodel/fig7.avif",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/3091d029a050-fig7.avif",
+      "httpStatus": "200",
+      "bytes": 13482,
+      "sha256": "6824ac529b63cc3e6a0f3bb47ccf182442943c70cb50c89213d6bc9c7623e78a",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:20:17.048167+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/membranemodel/fig8.avif",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/499366b679aa-fig8.avif",
+      "httpStatus": "200",
+      "bytes": 25932,
+      "sha256": "3fcb6dcde9498df63fd705cf6c32066b1913dc51c58ef25cf12bdc3e6f06b015",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:20:16.713850+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/membranemodel/fig9.avif",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/94c6237d1981-fig9.avif",
+      "httpStatus": "200",
+      "bytes": 31561,
+      "sha256": "260c8604134bac10da1a9d5d266c2142a43e6f95ea7f31d53544248fac81c9be",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:20:16.954324+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/membranemodel/fig10.avif",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/fa81664fcc27-fig10.avif",
+      "httpStatus": "200",
+      "bytes": 37070,
+      "sha256": "5186f099fd2799fd2bff4694f589c6d4efde9eb353d8ce9af451b232e460b9dd",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:20:16.587999+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/membranemodel/membrane1.avif",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/0ecdfdee0153-membrane1.avif",
+      "httpStatus": "200",
+      "bytes": 299566,
+      "sha256": "91c35021346d4c4d764013fb8936339571bd4051fa2ced42688123338dbdac21",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:20:17.854195+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/membranemodel/membrane2.avif",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/223ea4805388-membrane2.avif",
+      "httpStatus": "200",
+      "bytes": 62288,
+      "sha256": "4a7ea38144b48fb2915f66a8746839f33997a0d36b0ba7876a6a366c7c7f105f",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:20:17.085768+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/membranemodel/protein.avif",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/3cb2da6d167b-protein.avif",
+      "httpStatus": "200",
+      "bytes": 12646,
+      "sha256": "4cc2c964a068e4b68f2cdd33a47773e7a70dbb1bb1db7a98e0bfe6361aff6545",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:20:16.950027+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/mtmodel2/william1.avif",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/d42b3e28896b-william1.avif",
+      "httpStatus": "200",
+      "bytes": 19181,
+      "sha256": "824b4e8273f3a8df03e89170e5979f9fc8874e1cbdfa06c029f249d9d2257148",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:20:17.640663+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/mtmodel2/william2.avif",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/5c556fbeef72-william2.avif",
+      "httpStatus": "200",
+      "bytes": 18923,
+      "sha256": "31b82b2186bd5b8a67a4a15a62f5b5c0b0afc06f6e8b6819a67f71d1dbe036f4",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:20:18.284421+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/mtmodel2/william3.avif",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/c4a0a2645aef-william3.avif",
+      "httpStatus": "200",
+      "bytes": 20965,
+      "sha256": "df18b58f457a3dddf294bc63c54071a130fbb29d93e8f2c482a96dbae36f8734",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:20:17.580247+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/mtmodel2/william4.avif",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/6cc2153066e2-william4.avif",
+      "httpStatus": "200",
+      "bytes": 14281,
+      "sha256": "cdb56c5dc61af95059ac437fb81e39a9e3a11d2e95b122f775b4205bd44b1467",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:20:17.470900+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/mtmodel2/william5.avif",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/0defe90d3190-william5.avif",
+      "httpStatus": "200",
+      "bytes": 32116,
+      "sha256": "acb6a7e5c6d23bdac601851d07ea1719a02a98c0c30572cfce7a9408a3b59d40",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:20:17.500120+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/mtmodel2/william6.avif",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/48a4bb66f8f7-william6.avif",
+      "httpStatus": "200",
+      "bytes": 11957,
+      "sha256": "de7aa6b195e23034dd95b4796fe7bbd35281aa020de32312a0851237822706b1",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:20:17.627245+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/mtmodel2/william7.avif",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/c0853faef9bb-william7.avif",
+      "httpStatus": "200",
+      "bytes": 18214,
+      "sha256": "0ed41adad827b97f1dfaadb68983eda3b2f0e56b38290883b90cce65eac73912",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:20:17.606690+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/mtmodel2/william8.avif",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/80ae85d8419b-william8.avif",
+      "httpStatus": "200",
+      "bytes": 37321,
+      "sha256": "09765aced9cfc7149fe443a4371d1b16c4760e9cd86eed848a2945f319577fea",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:20:18.013589+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/killswitch/ksfig1new.avif",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/a56d285c56a0-ksfig1new.avif",
+      "httpStatus": "200",
+      "bytes": 40813,
+      "sha256": "b5101150364f667b08090d255e6262b8336250d902981e1d21714dca4787c18c",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:20:18.061183+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/killswitch/ksfig3new.avif",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/6c81be58bded-ksfig3new.avif",
+      "httpStatus": "200",
+      "bytes": 45668,
+      "sha256": "66a7ce5d11124144cca18e193250a48daeefc610721ced02efacfe966f83203a",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:20:18.160172+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/killswitch/ksfig4.avif",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/f10631c70429-ksfig4.avif",
+      "httpStatus": "200",
+      "bytes": 30823,
+      "sha256": "e89aba82cd8688670b1eb1d1322d2b87c4aa52884909dd708058ad3dee9d1081",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:20:18.119954+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/killswitch/ksfig5new.avif",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/647a0cf16d09-ksfig5new.avif",
+      "httpStatus": "200",
+      "bytes": 29461,
+      "sha256": "06a6879e9bfc28f274cb6bc5bf1e6bef42331b2503fef801a28b4afba2d446d0",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:20:18.208528+00:00"
+    },
+    {
+      "url": "https://static.igem.wiki/teams/5546/model/killswitch/ksfig6.avif",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-assets/e62853f0d2a2-ksfig6.avif",
+      "httpStatus": "200",
+      "bytes": 35873,
+      "sha256": "f91e1dac01c80838aa57ff95389499d314c8d273c235535c9f418ff152434747",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:20:18.213906+00:00"
+    }
+  ],
+  "visualReadingArtifacts": [
+    "artifacts/continuation-20261105/content/source-rechecks-batch02/avif-16.png",
+    "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-judge-68.png",
+    "artifacts/continuation-20261105/content/source-rechecks-batch02/images-32.png",
+    "artifacts/continuation-20261105/content/source-rechecks-batch02/newblood-guide-30.png",
+    "artifacts/continuation-20261105/content/source-rechecks-batch02/newblood-guide-31.png",
+    "artifacts/continuation-20261105/content/source-rechecks-batch02/images-0.png",
+    "artifacts/continuation-20261105/content/source-rechecks-batch02/newblood-brief-2.png",
+    "artifacts/continuation-20261105/content/source-rechecks-batch02/newblood-brief-1.png",
+    "artifacts/continuation-20261105/content/source-rechecks-batch02/avif-0.png",
+    "artifacts/continuation-20261105/content/source-rechecks-batch02/images-16.png",
+    "artifacts/continuation-20261105/content/source-rechecks-batch02/images-64.png",
+    "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-judge-67.png",
+    "artifacts/continuation-20261105/content/source-rechecks-batch02/images-48.png"
+  ],
+  "previousAuthorEvidence": [
+    "artifacts/v6/content-research/engineering-a-reading-log.json",
+    "artifacts/v6/content-research/arts-business-b-reading-log.json"
+  ],
+  "unresolved": [
+    {
+      "sourceId": "putnam-c3-rules",
+      "reason": "官方网页转写可读，MAA原始PDF仍403，资格独立作答原子保持pending_review。"
+    },
+    {
+      "sourceId": "ncda-9c1d-detail",
+      "url": "https://share.weiyun.com/L0uuqSiq",
+      "reason": "公开HTML目录元信息已取，但9C1D企业详细PPT未取；CUA iab不可用且browser inventory为空。不得把目录当完整题。"
+    },
+    {
+      "sourceId": "industrial-liaoning-notice",
+      "url": "https://cxxy.lnist.edu.cn/info/1008/1753.htm",
+      "reason": "网页转写可读；HTTPS及HTTP curl均超时，未加入事实。省赛承办方终评页字节另已取，仍不充作品原始评审适用证明。"
+    }
+  ]
+}

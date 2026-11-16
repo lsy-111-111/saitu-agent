@@ -1,0 +1,773 @@
+{
+  "schemaVersion": "saitu.author-source-reading.v2",
+  "authorAgentId": "/root/continue_catalog",
+  "independentReview": false,
+  "createdAt": "2026-11-05T19:17:26.620686+00:00",
+  "sourceReadings": [
+    {
+      "sourceId": "chem-cochineal-2026-issue",
+      "url": "https://www.dxhx.pku.edu.cn/CN/10.12461/PKU.DXHX202509113",
+      "finalUrl": "https://www.dxhx.pku.edu.cn/CN/10.12461/PKU.DXHX202509113",
+      "retrievedAt": "2026-11-05T19:17:26.620686+00:00",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/c392ab631894507f5516b5914d512d689c06747ff356097bd9bf00fd409b77e1.html",
+      "sourceByteSha256": "c392ab631894507f5516b5914d512d689c06747ff356097bd9bf00fd409b77e1",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/8e613ee341e46275a1b5d2acca83e2f94f37f41c3122ce2d61412b6680d865c5.txt",
+      "bodySha256": "8e613ee341e46275a1b5d2acca83e2f94f37f41c3122ce2d61412b6680d865c5",
+      "characters": 4178,
+      "extractionMethod": "HTML text extraction or repository source concatenation",
+      "captureKind": "original_http_bytes",
+      "status": "body_available_not_verified",
+      "independentReview": false,
+      "captureIndex": "artifacts/continuation-20261105/content/source-rechecks-batch04/reading-log.json",
+      "actualReading": "正文所属专题明确第5届全国大学生化学实验创新设计大赛；期刊2026卷41期5页120—130，网页发布2026-05-21，PDF另列网络发表2026-02-12。只能证实期刊专题归属，不能补出参赛编号或奖项。",
+      "readAt": "2026-11-05T19:17:26.620686+00:00"
+    },
+    {
+      "sourceId": "swift-accessibility-2025-full",
+      "url": "https://github.com/phnagy/ssc2025/tree/960b72301329ff8dd5f67801eca8d9a8240fabe7",
+      "finalUrl": "https://github.com/phnagy/ssc2025/tree/960b72301329ff8dd5f67801eca8d9a8240fabe7",
+      "retrievedAt": "2026-11-05T18:59:35.093683+00:00",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/4754f90fc7d6ce15629196fba624981a152b8a2228b9d77e2b03207a6979cc04.zip",
+      "sourceByteSha256": "4754f90fc7d6ce15629196fba624981a152b8a2228b9d77e2b03207a6979cc04",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/311426ec11e718e5a64e6d84bccacda427756d13c4fadeaf5db26327303cf23b.txt",
+      "bodySha256": "311426ec11e718e5a64e6d84bccacda427756d13c4fadeaf5db26327303cf23b",
+      "characters": 95371,
+      "extractionMethod": "HTML text extraction or repository source concatenation",
+      "captureKind": "original_http_bytes",
+      "status": "body_available_not_verified",
+      "independentReview": false,
+      "captureIndex": "artifacts/continuation-20261105/content/source-rechecks-batch04/reading-log.json",
+      "acquisition": {
+        "url": "https://codeload.github.com/phnagy/ssc2025/zip/960b72301329ff8dd5f67801eca8d9a8240fabe7",
+        "commit": "960b72301329ff8dd5f67801eca8d9a8240fabe7",
+        "retrievedAt": "2026-11-05T18:59:35.093683+00:00",
+        "sourceArtifact": "artifacts/continuation-20261105/content/source-rechecks-batch04/swift-accessibility-complete.zip",
+        "sha256": "4754f90fc7d6ce15629196fba624981a152b8a2228b9d77e2b03207a6979cc04",
+        "members": [
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/.gitignore",
+            "sha256": "b6a5cf45483ea380d1b2149312172de8694142013981fde80883759dfff28d53"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/AccessibilityEscape.swift",
+            "sha256": "9e0f59e8f5d74ad6a271569735e6173b849ce4f3b38e9dedc10573715d12fc8f"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/AppIcon.appiconset/Contents.json",
+            "sha256": "32b04fa76b03929c14dc94ca770e1288378053c5119d7e469ad2ccb702d715f3"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/AppIcon.appiconset/Logo.png",
+            "sha256": "7970d633d35302e035c0368115b0fa7d46e9f7efdae10f0da8ece3becfedff3d"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Blue/BlueAccessible.colorset/Contents.json",
+            "sha256": "68fb3b5a059e707d647a93e5067b1fa23bfdeaebaed700c41410944f80cde8b6"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Blue/BlueCustom.colorset/Contents.json",
+            "sha256": "aeb762afb6827ffaef17e46ed739a992eee88b1f29320871a3204a42813690c3"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Blue/BlueDark.colorset/Contents.json",
+            "sha256": "75de324b9ffa56479e658bdd465ff20cdafbcb440b5f0d60214752aad38388fd"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Blue/BlueDefault.colorset/Contents.json",
+            "sha256": "9226b5dade3d7eebce2aa84e718109519aa68cd1fa44a56fbb00232374d28aaa"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Blue/BlueLight.colorset/Contents.json",
+            "sha256": "a59b8f2d3427c8c02b6caa5bc37a7903f3211732b49d4c7b8426b9df2fb01e53"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Blue/Contents.json",
+            "sha256": "0fd49ba3c3585c709678e0046a821c3c60685ec7063720d30d3a3448be3a208b"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Contents.json",
+            "sha256": "0fd49ba3c3585c709678e0046a821c3c60685ec7063720d30d3a3448be3a208b"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Green/Contents.json",
+            "sha256": "0fd49ba3c3585c709678e0046a821c3c60685ec7063720d30d3a3448be3a208b"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Green/GreenAccessible.colorset/Contents.json",
+            "sha256": "350fc344dca1344ef2d224f72c2a7314056738a1868404a42a34f8f8846d87b1"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Green/GreenDark.colorset/Contents.json",
+            "sha256": "d0641cdd44368a22489d17f869f49e4f7984e1f652a4b2369b012bd663cf4e3c"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Green/GreenDefault.colorset/Contents.json",
+            "sha256": "85db9649670a79a6aebdd6543ed6989cfa07ee9af271ad5b7b62cdb0cbbec879"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Green/GreenLight.colorset/Contents.json",
+            "sha256": "e46a9fcb0149f795ca3ac2041efed5e488739c7bb2420a7f2cf913bdb214fadb"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Red/Contents.json",
+            "sha256": "0fd49ba3c3585c709678e0046a821c3c60685ec7063720d30d3a3448be3a208b"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Red/RedAccessible.colorset/Contents.json",
+            "sha256": "8f31e0d56e13f1b389a8b9543f092cd24139d845246607bfaf6489c5eb9e435c"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Red/RedCustom.colorset/Contents.json",
+            "sha256": "4557f656803a0afbc9c3886572d90e9e2e94e768bc024a8f4e7765359959db08"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Red/RedDark.colorset/Contents.json",
+            "sha256": "471ad70b1cc4982f9b32d3c0e7364e2c1bcbe72bc21af5b6a98181590405a27d"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Red/RedDefault.colorset/Contents.json",
+            "sha256": "5c9c8085a073c1bffc242b7266784642ed05b99ac2aee56206c1e70961d3853d"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Red/RedLight.colorset/Contents.json",
+            "sha256": "0777c0bdbbbff0857cb601a3e8f83ce52766f8067bbcec8e9a06a1fbfbd7fd13"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Yellow/Contents.json",
+            "sha256": "0fd49ba3c3585c709678e0046a821c3c60685ec7063720d30d3a3448be3a208b"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Yellow/YellowAccessible.colorset/Contents.json",
+            "sha256": "692f650a40a476ee522d1525bc3499f9a0fea9fd0e99ffc67bde5df4761597dc"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Yellow/YellowDark.colorset/Contents.json",
+            "sha256": "207d686b49e9dbc41c9e765162e215009f641a52125afdc03c5eb89b91b9ac77"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Yellow/YellowDefault.colorset/Contents.json",
+            "sha256": "f5cb4c7768cfe510639ea7e0582a53bdab0045eae7b12b9265ed5b1afb74ddcb"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Yellow/YellowLight.colorset/Contents.json",
+            "sha256": "f9ebc9380539fd8613d00c2c12f602be20eb1f5e101bc2e3274b76d6a98e2e16"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Contents.json",
+            "sha256": "0fd49ba3c3585c709678e0046a821c3c60685ec7063720d30d3a3448be3a208b"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Images/Contents.json",
+            "sha256": "0fd49ba3c3585c709678e0046a821c3c60685ec7063720d30d3a3448be3a208b"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Images/Contrast-1.imageset/Contents.json",
+            "sha256": "e0213ed0be7939b723d3187fbef17c3731f21698bd2a4cc9c2789dcbe134f02c"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Images/Contrast-1.imageset/Contrast-D.png",
+            "sha256": "62378c0ff6d338f1cabb90316f489a9b28b3657a507097c0e1bb52a0448c7060"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Images/Contrast-1.imageset/Contrast-L.png",
+            "sha256": "12ef30bf2c1297e5e88d4a095b82a68997b940827afbc3dac11e7c6a4454912a"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Images/DarkMode-1.imageset/Contents.json",
+            "sha256": "af53ea12b859c6ced548fa4e0cdbce8f1f90819b45f893e105e7b803b42d0714"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Images/DarkMode-1.imageset/DarkMode-D.png",
+            "sha256": "bd22fa73aca753a6c50860d2a4724141485ad981e7c2703c7dd7efb7ce8b5a87"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Images/DarkMode-1.imageset/DarkMode-L.png",
+            "sha256": "e40a57a8bce51aa9ff2f204ce46afdbebff076c8a9ba5fb3da9236f0484ddc8a"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Images/Logo-AE.imageset/Contents.json",
+            "sha256": "66d0456d7d012717f49b0bd13c7f28924f64e50dbb091d299e54ad874c7c4132"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Images/Logo-AE.imageset/Logo-AE.png",
+            "sha256": "0c8cbb6d6ffc61cfdb1bf9ca2b040b9bcd246065e429882ddf5f1afb8b833547"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Images/Memoji.imageset/Contents.json",
+            "sha256": "9d3d1fc3090bb2c803695da40f05a08646c743191a69884928f88dec32afdc19"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Images/Memoji.imageset/IMG_1373 1 (1).png",
+            "sha256": "94b2020746af9797034c913675da8cfc275e31a88654bada1ff1a1c61a7bc29c"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Images/VoiceOver-1.imageset/Contents.json",
+            "sha256": "4d4b43e78c6131edcc028941c2f939ebc9fee59fd4d22ca73fba96b5278a60e5"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Assets.xcassets/Images/VoiceOver-1.imageset/dji_fly_20230404_140934_839_1680594234129_photo_optimized.jpg",
+            "sha256": "0ce1a42f138c8cd5a549e65a80ba0bd5aed24bf34807e8eb3a32df84fe06b09a"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Guide Subsystem/GuideView.swift",
+            "sha256": "4667e4da603582b637f982fd50b5e0bf3796215bcae0ab0640080ba9b08b3d48"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Guide Subsystem/Guides/GuideContrastView.swift",
+            "sha256": "7d122972fd4d40f39306783642ee61d2d279238088cc74dc53b7583ebae09240"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Guide Subsystem/Guides/GuideDarkModeView.swift",
+            "sha256": "29f5549bec9330b4842f8a280024295f8c8f0fcb7cb7f22672ff7b47e95f087b"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Guide Subsystem/Guides/GuideDynamicTypeView.swift",
+            "sha256": "556652bbe2779d3e651344a78b4aa2af76a9bf26b923777175bea0e8ddb7c06f"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Guide Subsystem/Guides/GuideMotionView.swift",
+            "sha256": "37211ebe1f302ddf3a35dc6cdec2b6aa2b513155ecda7a3ce96174d19ed06087"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Guide Subsystem/Guides/GuideVoiceOverView.swift",
+            "sha256": "c1a6794b29e3dc34b0e2394502507d8b3544af1bbb5f24083c217ca94ad79c13"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Helpers/CodeBlockView.swift",
+            "sha256": "55bad9da37ac6b54dcb59d6e83915bf667952a754166b5658e8854d98e2d4ae2"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Helpers/ColorView.swift",
+            "sha256": "0f47921c52a497a3c4b264cdab298cd7e31b24cfa69d51545af551aaeb6d354b"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Helpers/GuideButton.swift",
+            "sha256": "2be2799f83f02b7756fdda224f55b1a1a69d6b7ee6bd1b7601c55b6cd48f1c2b"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Helpers/HapticManager.swift",
+            "sha256": "5c1fcf3e49c41274dbb6ba5e5e887292859c416d762a7c37cf31f22805cee288"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Helpers/LevelButton.swift",
+            "sha256": "03bb435cf6d523b086dacda7f7088d156df11dd6a5fc9b429b1a040918d9a705"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Helpers/LinkView.swift",
+            "sha256": "e1a78d8f2d2e40c73b75f0bb8b69338de7fc18eb929de38a9a86149776197f72"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Helpers/WebLinksView.swift",
+            "sha256": "c3d315c2ea2faba582dced23e61e995197ec7c7bb4022105419765ebeeaeaacd"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Level Subsystem/Levels/LevelContrastView.swift",
+            "sha256": "3ed78856ee6d453639ab4b63544c80538440c1096565b41c254570c700b80f76"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Level Subsystem/Levels/LevelDarkModeView.swift",
+            "sha256": "2be368b0a6e18d10607e20ebe984873adbcb5f503df991cae7e44e4cf554395e"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Level Subsystem/Levels/LevelDynamicTypeView.swift",
+            "sha256": "4d9ae084d512cfde3c2216ec2080db9d5f11bd39f77eadd6db756d64b0ba2556"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Level Subsystem/Levels/LevelMotionView.swift",
+            "sha256": "77bdf5573c61272ad83afcc1eeb2bc429bd7f0e15d93ba883cd3487892311033"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Level Subsystem/Levels/LevelVoiceOverView.swift",
+            "sha256": "dea86398606e2de13f3738df5183c9ed9ff9bbe002b6798458b197ed5fc61d2c"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Level Subsystem/LevelsView.swift",
+            "sha256": "cb2e1375dd25ab041b0fdf83390f10110d571daf193a6ef26effe9cf546de1b7"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Localization/LEVEL_1.swift",
+            "sha256": "38373ab0f9f8d5a4e2850b6f463a2a6692a9f314eb069075d5d858a9b3b32515"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Localization/LEVEL_2.swift",
+            "sha256": "e40f9a31755ca2539e5e5c254fd62d890e846ffaba622c1d45f37557227062e9"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Localization/LEVEL_3.swift",
+            "sha256": "89e5a7a71c7a76670fd603e8b256a9dba966ba981134813b4ced69bbe5a55ca6"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Localization/LEVEL_4.swift",
+            "sha256": "fb68adccb848bf128241fbf06449c1d8bb8a87655382b9e355d6e6bf050a17fc"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Localization/LEVEL_5.swift",
+            "sha256": "a78975290c98fdfc82adf60d8fb2e56589c9004f2751e202aef1d75509fbcf6e"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Localization/Localization.swift",
+            "sha256": "29e70958383a750011ad5e6bcd08fc16a8dd66f627f257667af96656599173c3"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Models/Model Objects/AssistantMessage.swift",
+            "sha256": "802a47592ff1ba69fd782b3d9798d0544bbeee96a32255850da6094e409aab36"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Models/Model Objects/Level.swift",
+            "sha256": "1f1c850221eb9a20ce4c8a73c955ecea951cc53358b94fcf632bfaacd356d507"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Models/Model Objects/Levels.swift",
+            "sha256": "b5b90cde991c882c9a804906a057109f20740da72b7b228f4e2c31968f542b17"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Models/Model Objects/Link.swift",
+            "sha256": "2eaa94f57442e7a9926333716332f124afef1f674bac8ae343433d74707ed855"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Models/Model Objects/TextStyle.swift",
+            "sha256": "5bfc4c8404918ba23d8fe847757f3a21d1f15e1964496a53b82715217785576f"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Models/Model.swift",
+            "sha256": "f70145751596eded23bb4efb6d2a2bbcb4683c576a616285ed380adb0a771e76"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/Package.swift",
+            "sha256": "0e008e869105126858b5a79aecb90205aa398c46d0a081dd95ed4c22251d5124"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/ViewModifier/AssistantViewModifier.swift",
+            "sha256": "73b3ab9aa08cd4543f836ac6aa8f00a6343032ce6da285e5ac0c3122f491881e"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/ViewModifier/CaptionViewModifier.swift",
+            "sha256": "9aea8afb10e7077c50e080a02927002547cec535bfba2be1adab0317ea7925f6"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/ViewModifier/DeviceShakeViewModifier.swift",
+            "sha256": "b8a72e83418e81808ac947e2e8e32209a427c6ff2172138a978b922c2c79cc8e"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/ViewModifier/LevelViewModifier.swift",
+            "sha256": "57d16cf839bdcde1b949066d5948c00e73338957a1df42263e74ad225a20ca1a"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/AccessibilityEscape.swiftpm/ViewModifier/RowViewModifier.swift",
+            "sha256": "6a278a8647e1a9e43c4fb1149e2cdcf4cdf34c5d3ec3984638bd02928f83f7b6"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/Images/AccessibilityEscape-Guide-DarkMode.png",
+            "sha256": "2c5ab01440118c394e1d82d151cc3c7062efc2e619fcc4ecdd97144973530182"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/Images/AccessibilityEscape-Level-Overview.png",
+            "sha256": "b9c7ec1d465822d3d0227ea7d588c64956427ca21fe7d1736a882a43eaa3eea7"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/Images/AccessibilityEscape-Level-VoiceOver.png",
+            "sha256": "5e3c57465f25c6c7ab3e026e58aef94d1b37f6aa98a206af2fa0df56f72e43eb"
+          },
+          {
+            "path": "ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/README.md",
+            "sha256": "187cbff0f0f5cdcdb35c81515cb2f66099a36688d6920bba209e548ce1dbf07b"
+          }
+        ]
+      },
+      "actualReading": "已读README、Package.swift、入口、Model/Level、五关实现、共享完成修饰器、VoiceOver指南；已看三张作者截图。五关对应深色/对比度/字体/减弱动态/VoiceOver；VoiceOver只接受lowercased等于apple，完成修饰器onChange没有true判断，需实机核实。没有Xcode/iOS运行声称；iOS声明版本不一致、无明确许可均保留边界。",
+      "readAt": "2026-11-05T19:17:26.620686+00:00"
+    },
+    {
+      "sourceId": "biomod-2023-sendai-design",
+      "url": "https://teamsendai2023.github.io/design.html",
+      "finalUrl": "https://teamsendai2023.github.io/design.html",
+      "retrievedAt": "2026-11-05T19:17:26.620686+00:00",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/00d26ae56451866a1092a0c1250cab51690e90985722731d8a7fd5f0f094218f.html",
+      "sourceByteSha256": "00d26ae56451866a1092a0c1250cab51690e90985722731d8a7fd5f0f094218f",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/1578acd7969a9640f09139db9ffbba0227a6735042c7f604e4d3cb8da63b2629.txt",
+      "bodySha256": "1578acd7969a9640f09139db9ffbba0227a6735042c7f604e4d3cb8da63b2629",
+      "characters": 9646,
+      "extractionMethod": "HTML text extraction or repository source concatenation",
+      "captureKind": "original_http_bytes",
+      "status": "body_available_not_verified",
+      "independentReview": false,
+      "captureIndex": "artifacts/continuation-20261105/content/source-rechecks-batch04/reading-log.json",
+      "actualReading": "完整页核读；43个两页图像引用已补齐、解码并通过8张联系表视觉阅读。GIF另读中间帧，不将模拟动画当实测。实验图6/7对照30nt至34nt修订与条带解释，仍只是TMSD替代组件；正文16%与表7标题20%不一致。图像取得信息另见biomod-complete-assets.json。",
+      "readAt": "2026-11-05T19:17:26.620686+00:00"
+    },
+    {
+      "sourceId": "biomod-2023-sendai-experiment",
+      "url": "https://teamsendai2023.github.io/experiment.html",
+      "finalUrl": "https://teamsendai2023.github.io/experiment.html",
+      "retrievedAt": "2026-11-05T19:17:26.620686+00:00",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/efd7a2bb781ad1e3dbc514807cd1ad69c5159e7bb35d9eb3bdd41eae8e954495.html",
+      "sourceByteSha256": "efd7a2bb781ad1e3dbc514807cd1ad69c5159e7bb35d9eb3bdd41eae8e954495",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/133740676c07858dadee220090d2c77b7d06364812efc29eb924db8d4412ae8d.txt",
+      "bodySha256": "133740676c07858dadee220090d2c77b7d06364812efc29eb924db8d4412ae8d",
+      "characters": 14971,
+      "extractionMethod": "HTML text extraction or repository source concatenation",
+      "captureKind": "original_http_bytes",
+      "status": "body_available_not_verified",
+      "independentReview": false,
+      "captureIndex": "artifacts/continuation-20261105/content/source-rechecks-batch04/reading-log.json",
+      "actualReading": "完整页核读；43个两页图像引用已补齐、解码并通过8张联系表视觉阅读。GIF另读中间帧，不将模拟动画当实测。实验图6/7对照30nt至34nt修订与条带解释，仍只是TMSD替代组件；正文16%与表7标题20%不一致。图像取得信息另见biomod-complete-assets.json。",
+      "readAt": "2026-11-05T19:17:26.620686+00:00"
+    },
+    {
+      "sourceId": "gcj-2022-3d-analysis",
+      "url": "https://github.com/google/coding-competitions-archive/blob/main/codejam/2022/qualification_round/3d_printing/analysis.pdf",
+      "finalUrl": "https://api.github.com/repos/google/coding-competitions-archive/git/blobs/5780f3f4c062564a4c1afacd5e5c34a62cbc5e86",
+      "retrievedAt": "2026-11-05T19:08:42.250398+00:00",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/2ae3051b856e5f4e9286a0eb753eb694b8aac62eb262d383f876abad02fe78c9.pdf",
+      "sourceByteSha256": "2ae3051b856e5f4e9286a0eb753eb694b8aac62eb262d383f876abad02fe78c9",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/4fcab9b7694f88ffec257a39b9f820783edc8629997499acfbf4cb846ed43fb2.txt",
+      "bodySha256": "4fcab9b7694f88ffec257a39b9f820783edc8629997499acfbf4cb846ed43fb2",
+      "characters": 1307,
+      "extractionMethod": "Git blob decoded bytes with SHA1 verification; PDFKit text + separately inspected PNG pages",
+      "captureKind": "official_public_repository_git_blob_bytes",
+      "status": "body_available_not_verified",
+      "independentReview": false,
+      "captureIndex": "artifacts/continuation-20261105/content/source-rechecks-batch04/reading-log.json",
+      "acquisition": {
+        "sourceId": "gcj-analysis.pdf",
+        "url": "https://github.com/google/coding-competitions-archive/blob/main/codejam/2022/qualification_round/3d_printing/analysis.pdf",
+        "finalUrl": "https://api.github.com/repos/google/coding-competitions-archive/git/blobs/5780f3f4c062564a4c1afacd5e5c34a62cbc5e86",
+        "sourceArtifact": "artifacts/continuation-20261105/content/source-rechecks-batch04/gcj-analysis.pdf",
+        "apiResponseArtifact": "artifacts/continuation-20261105/content/source-rechecks-batch04/api-google-gcj-analysis.pdf.json",
+        "gitBlobSha1": "5780f3f4c062564a4c1afacd5e5c34a62cbc5e86",
+        "sha256": "2ae3051b856e5f4e9286a0eb753eb694b8aac62eb262d383f876abad02fe78c9",
+        "bytes": 49406,
+        "retrievedAt": "2026-11-05T19:08:42.250398+00:00",
+        "captureKind": "official_public_repository_git_blob_bytes"
+      },
+      "actualReading": "完整题/分析逐页正文已读。Code Jam两页图与样例，Kick Start两页大小写/两测试集；Hash Code第3、6、8、9页导师、样例和时间轴另渲染检查，复算10+3+20=33。题面判定不虚构分值，Hash Code严格区分题内贡献者与现实队友。",
+      "readAt": "2026-11-05T19:17:26.620686+00:00"
+    },
+    {
+      "sourceId": "gcj-2022-3d-task",
+      "url": "https://github.com/google/coding-competitions-archive/blob/main/codejam/2022/qualification_round/3d_printing/statement.pdf",
+      "finalUrl": "https://api.github.com/repos/google/coding-competitions-archive/git/blobs/99caa6217b1989d29948e788d97a202004a22342",
+      "retrievedAt": "2026-11-05T19:08:42.283626+00:00",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/d7041415b3fa7aca7e05996c51f63fdcb4764109846084a0aefe02be5a24b063.pdf",
+      "sourceByteSha256": "d7041415b3fa7aca7e05996c51f63fdcb4764109846084a0aefe02be5a24b063",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/3e93b1dc4c61ba71a60dfa96c19651e181c972c9b84b4747bad25e009e940ed0.txt",
+      "bodySha256": "3e93b1dc4c61ba71a60dfa96c19651e181c972c9b84b4747bad25e009e940ed0",
+      "characters": 3918,
+      "extractionMethod": "Git blob decoded bytes with SHA1 verification; PDFKit text + separately inspected PNG pages",
+      "captureKind": "official_public_repository_git_blob_bytes",
+      "status": "body_available_not_verified",
+      "independentReview": false,
+      "captureIndex": "artifacts/continuation-20261105/content/source-rechecks-batch04/reading-log.json",
+      "acquisition": {
+        "sourceId": "gcj-statement.pdf",
+        "url": "https://github.com/google/coding-competitions-archive/blob/main/codejam/2022/qualification_round/3d_printing/statement.pdf",
+        "finalUrl": "https://api.github.com/repos/google/coding-competitions-archive/git/blobs/99caa6217b1989d29948e788d97a202004a22342",
+        "sourceArtifact": "artifacts/continuation-20261105/content/source-rechecks-batch04/gcj-statement.pdf",
+        "apiResponseArtifact": "artifacts/continuation-20261105/content/source-rechecks-batch04/api-google-gcj-statement.pdf.json",
+        "gitBlobSha1": "99caa6217b1989d29948e788d97a202004a22342",
+        "sha256": "d7041415b3fa7aca7e05996c51f63fdcb4764109846084a0aefe02be5a24b063",
+        "bytes": 76327,
+        "retrievedAt": "2026-11-05T19:08:42.283626+00:00",
+        "captureKind": "official_public_repository_git_blob_bytes"
+      },
+      "actualReading": "完整题/分析逐页正文已读。Code Jam两页图与样例，Kick Start两页大小写/两测试集；Hash Code第3、6、8、9页导师、样例和时间轴另渲染检查，复算10+3+20=33。题面判定不虚构分值，Hash Code严格区分题内贡献者与现实队友。",
+      "readAt": "2026-11-05T19:17:26.620686+00:00"
+    },
+    {
+      "sourceId": "gks-2022-speed-analysis",
+      "url": "https://github.com/google/coding-competitions-archive/blob/main/kickstart/2022/round_a/speed_typing/analysis.pdf",
+      "finalUrl": "https://api.github.com/repos/google/coding-competitions-archive/git/blobs/7151ed0fb9229f7bed442ef04f4c045de869c23e",
+      "retrievedAt": "2026-11-05T19:08:42.710092+00:00",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/5380477d205dcc114976f56a7b9b9db04ed3f5d8c4858a8ae1e481ea93dd3239.pdf",
+      "sourceByteSha256": "5380477d205dcc114976f56a7b9b9db04ed3f5d8c4858a8ae1e481ea93dd3239",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/e78b00facfebe9579d9aae0a8d6aab9ab8409c5d5820902f4f5c18038931ce02.txt",
+      "bodySha256": "e78b00facfebe9579d9aae0a8d6aab9ab8409c5d5820902f4f5c18038931ce02",
+      "characters": 3022,
+      "extractionMethod": "Git blob decoded bytes with SHA1 verification; PDFKit text + separately inspected PNG pages",
+      "captureKind": "official_public_repository_git_blob_bytes",
+      "status": "body_available_not_verified",
+      "independentReview": false,
+      "captureIndex": "artifacts/continuation-20261105/content/source-rechecks-batch04/reading-log.json",
+      "acquisition": {
+        "sourceId": "gks-analysis.pdf",
+        "url": "https://github.com/google/coding-competitions-archive/blob/main/kickstart/2022/round_a/speed_typing/analysis.pdf",
+        "finalUrl": "https://api.github.com/repos/google/coding-competitions-archive/git/blobs/7151ed0fb9229f7bed442ef04f4c045de869c23e",
+        "sourceArtifact": "artifacts/continuation-20261105/content/source-rechecks-batch04/gks-analysis.pdf",
+        "apiResponseArtifact": "artifacts/continuation-20261105/content/source-rechecks-batch04/api-google-gks-analysis.pdf.json",
+        "gitBlobSha1": "7151ed0fb9229f7bed442ef04f4c045de869c23e",
+        "sha256": "5380477d205dcc114976f56a7b9b9db04ed3f5d8c4858a8ae1e481ea93dd3239",
+        "bytes": 80333,
+        "retrievedAt": "2026-11-05T19:08:42.710092+00:00",
+        "captureKind": "official_public_repository_git_blob_bytes"
+      },
+      "actualReading": "完整题/分析逐页正文已读。Code Jam两页图与样例，Kick Start两页大小写/两测试集；Hash Code第3、6、8、9页导师、样例和时间轴另渲染检查，复算10+3+20=33。题面判定不虚构分值，Hash Code严格区分题内贡献者与现实队友。",
+      "readAt": "2026-11-05T19:17:26.620686+00:00"
+    },
+    {
+      "sourceId": "gks-2022-speed-task",
+      "url": "https://github.com/google/coding-competitions-archive/blob/main/kickstart/2022/round_a/speed_typing/statement.pdf",
+      "finalUrl": "https://api.github.com/repos/google/coding-competitions-archive/git/blobs/063104fb9bb987384ffec12d104fc4e5f5da4edf",
+      "retrievedAt": "2026-11-05T19:08:42.830551+00:00",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/47aa8db1a1d67bc0452c5374d5428e2360a22c5b4595a10e94c054fbffbfc4d2.pdf",
+      "sourceByteSha256": "47aa8db1a1d67bc0452c5374d5428e2360a22c5b4595a10e94c054fbffbfc4d2",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/f9dff248ad43a1b6a82129ae03f0f4676d2f8f23710e483ad881bdef055b63f5.txt",
+      "bodySha256": "f9dff248ad43a1b6a82129ae03f0f4676d2f8f23710e483ad881bdef055b63f5",
+      "characters": 2690,
+      "extractionMethod": "Git blob decoded bytes with SHA1 verification; PDFKit text + separately inspected PNG pages",
+      "captureKind": "official_public_repository_git_blob_bytes",
+      "status": "body_available_not_verified",
+      "independentReview": false,
+      "captureIndex": "artifacts/continuation-20261105/content/source-rechecks-batch04/reading-log.json",
+      "acquisition": {
+        "sourceId": "gks-statement.pdf",
+        "url": "https://github.com/google/coding-competitions-archive/blob/main/kickstart/2022/round_a/speed_typing/statement.pdf",
+        "finalUrl": "https://api.github.com/repos/google/coding-competitions-archive/git/blobs/063104fb9bb987384ffec12d104fc4e5f5da4edf",
+        "sourceArtifact": "artifacts/continuation-20261105/content/source-rechecks-batch04/gks-statement.pdf",
+        "apiResponseArtifact": "artifacts/continuation-20261105/content/source-rechecks-batch04/api-google-gks-statement.pdf.json",
+        "gitBlobSha1": "063104fb9bb987384ffec12d104fc4e5f5da4edf",
+        "sha256": "47aa8db1a1d67bc0452c5374d5428e2360a22c5b4595a10e94c054fbffbfc4d2",
+        "bytes": 78863,
+        "retrievedAt": "2026-11-05T19:08:42.830551+00:00",
+        "captureKind": "official_public_repository_git_blob_bytes"
+      },
+      "actualReading": "完整题/分析逐页正文已读。Code Jam两页图与样例，Kick Start两页大小写/两测试集；Hash Code第3、6、8、9页导师、样例和时间轴另渲染检查，复算10+3+20=33。题面判定不虚构分值，Hash Code严格区分题内贡献者与现实队友。",
+      "readAt": "2026-11-05T19:17:26.620686+00:00"
+    },
+    {
+      "sourceId": "ghc-2022-mentorship-task",
+      "url": "https://github.com/google/coding-competitions-archive/blob/main/hashcode/hashcode_2022_qualification_round.pdf",
+      "finalUrl": "https://api.github.com/repos/google/coding-competitions-archive/git/blobs/36b0f8c0ab5055cb5c12c7a6463854e0ff3ceacc",
+      "retrievedAt": "2026-11-05T19:08:43.403724+00:00",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/4e287f001462ae16b114e2c26de3cdd5c7adeb407b0542ea299f4afaa02d6db8.pdf",
+      "sourceByteSha256": "4e287f001462ae16b114e2c26de3cdd5c7adeb407b0542ea299f4afaa02d6db8",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/8a7d5636e2f5084ac1bf0e94e20d84980d8968a7207ce3708fc81ac360d1bd42.txt",
+      "bodySha256": "8a7d5636e2f5084ac1bf0e94e20d84980d8968a7207ce3708fc81ac360d1bd42",
+      "characters": 11714,
+      "extractionMethod": "Git blob decoded bytes with SHA1 verification; PDFKit text + separately inspected PNG pages",
+      "captureKind": "official_public_repository_git_blob_bytes",
+      "status": "body_available_not_verified",
+      "independentReview": false,
+      "captureIndex": "artifacts/continuation-20261105/content/source-rechecks-batch04/reading-log.json",
+      "acquisition": {
+        "sourceId": "ghc-statement.pdf",
+        "url": "https://github.com/google/coding-competitions-archive/blob/main/hashcode/hashcode_2022_qualification_round.pdf",
+        "finalUrl": "https://api.github.com/repos/google/coding-competitions-archive/git/blobs/36b0f8c0ab5055cb5c12c7a6463854e0ff3ceacc",
+        "sourceArtifact": "artifacts/continuation-20261105/content/source-rechecks-batch04/ghc-statement.pdf",
+        "apiResponseArtifact": "artifacts/continuation-20261105/content/source-rechecks-batch04/api-google-ghc-statement.pdf.json",
+        "gitBlobSha1": "36b0f8c0ab5055cb5c12c7a6463854e0ff3ceacc",
+        "sha256": "4e287f001462ae16b114e2c26de3cdd5c7adeb407b0542ea299f4afaa02d6db8",
+        "bytes": 662954,
+        "retrievedAt": "2026-11-05T19:08:43.403724+00:00",
+        "captureKind": "official_public_repository_git_blob_bytes"
+      },
+      "actualReading": "完整题/分析逐页正文已读。Code Jam两页图与样例，Kick Start两页大小写/两测试集；Hash Code第3、6、8、9页导师、样例和时间轴另渲染检查，复算10+3+20=33。题面判定不虚构分值，Hash Code严格区分题内贡献者与现实队友。",
+      "readAt": "2026-11-05T19:17:26.620686+00:00"
+    },
+    {
+      "sourceId": "google-competitions-farewell",
+      "url": "https://developers.googleblog.com/celebrate-googles-coding-competitions-with-a-final-round-of-programming-fun/",
+      "finalUrl": "https://developers.googleblog.com/celebrate-googles-coding-competitions-with-a-final-round-of-programming-fun/",
+      "retrievedAt": "2026-11-05T19:09:40.091644+00:00",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/a1f50522334f9c2406ae275ef890a704f93862a4f1dd01275df7e1c72921ba31.html",
+      "sourceByteSha256": "a1f50522334f9c2406ae275ef890a704f93862a4f1dd01275df7e1c72921ba31",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/325a82507828e1b5cf558058d9805750c02d8931d39fcfe62f4b1e1f35839583.txt",
+      "bodySha256": "325a82507828e1b5cf558058d9805750c02d8931d39fcfe62f4b1e1f35839583",
+      "characters": 3696,
+      "extractionMethod": "HTML text extraction or repository source concatenation",
+      "captureKind": "original_http_bytes",
+      "status": "body_available_not_verified",
+      "independentReview": false,
+      "captureIndex": "artifacts/continuation-20261105/content/source-rechecks-batch04/reading-log.json",
+      "acquisition": {
+        "sourceId": "google-farewell",
+        "url": "https://developers.googleblog.com/celebrate-googles-coding-competitions-with-a-final-round-of-programming-fun/",
+        "sourceArtifact": "artifacts/continuation-20261105/content/source-rechecks-batch04/google-farewell.html",
+        "sha256": "a1f50522334f9c2406ae275ef890a704f93862a4f1dd01275df7e1c72921ba31",
+        "status": "200",
+        "exit": 0,
+        "bytes": 27074,
+        "retrievedAt": "2026-11-05T19:09:40.091644+00:00"
+      },
+      "actualReading": "官方告别说明三个独立竞赛系列已结束及官方归档来源；Hash Code 2022介绍明确2—4人队伍和注册/资格赛日期。未得到完整年龄地域条款，不推所有人资格符合。",
+      "readAt": "2026-11-05T19:17:26.620686+00:00"
+    },
+    {
+      "sourceId": "ghc-2022-event",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/hash-code-2022-returns-new-look/",
+      "finalUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/hash-code-2022-returns-new-look/",
+      "retrievedAt": "2026-11-05T19:09:39.923193+00:00",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/ded13b7d2c9bc6dd0a81f2d159fb792e69d84f1c8a186add93bb3840f4f74408.html",
+      "sourceByteSha256": "ded13b7d2c9bc6dd0a81f2d159fb792e69d84f1c8a186add93bb3840f4f74408",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/c51a54e6fc96d3f3f0ba405506813ff39569ae1fb9f1d65b648f00b990098353.txt",
+      "bodySha256": "c51a54e6fc96d3f3f0ba405506813ff39569ae1fb9f1d65b648f00b990098353",
+      "characters": 6814,
+      "extractionMethod": "HTML text extraction or repository source concatenation",
+      "captureKind": "original_http_bytes",
+      "status": "body_available_not_verified",
+      "independentReview": false,
+      "captureIndex": "artifacts/continuation-20261105/content/source-rechecks-batch04/reading-log.json",
+      "acquisition": {
+        "sourceId": "google-hashcode-blog",
+        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/hash-code-2022-returns-new-look/",
+        "sourceArtifact": "artifacts/continuation-20261105/content/source-rechecks-batch04/google-hashcode-blog.html",
+        "sha256": "ded13b7d2c9bc6dd0a81f2d159fb792e69d84f1c8a186add93bb3840f4f74408",
+        "status": "200",
+        "exit": 0,
+        "bytes": 335106,
+        "retrievedAt": "2026-11-05T19:09:39.923193+00:00"
+      },
+      "actualReading": "官方告别说明三个独立竞赛系列已结束及官方归档来源；Hash Code 2022介绍明确2—4人队伍和注册/资格赛日期。未得到完整年龄地域条款，不推所有人资格符合。",
+      "readAt": "2026-11-05T19:17:26.620686+00:00"
+    },
+    {
+      "sourceId": "aiaa-dbf-2026-rules",
+      "url": "https://aiaa.org/wp-content/uploads/2025/08/2026-DBF-Rules.pdf",
+      "finalUrl": "https://aiaa.org/wp-content/uploads/2025/08/2026-DBF-Rules.pdf",
+      "retrievedAt": "2026-11-05T11:13:25.441313+00:00",
+      "sourceByteSha256": "cc4c95d150febd6a9b8cfb169db41af93e25a43ce355c4da6736c93a05f57917",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/cc4c95d150febd6a9b8cfb169db41af93e25a43ce355c4da6736c93a05f57917.pdf",
+      "captureIndex": "artifacts/v6/content-research/source-byte-snapshots/capture-20261105T111336751805Z.json",
+      "independentReview": false,
+      "status": "body_available_not_verified",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/bbf85f76270ddb02a5f5c59983150aa23d282fec7891c0a9ab44eaa064121592.txt",
+      "bodySha256": "bbf85f76270ddb02a5f5c59983150aa23d282fec7891c0a9ab44eaa064121592",
+      "characters": 92460,
+      "extractionMethod": "pypdf_text_extraction",
+      "actualReading": "重读第2页规则适用边界：仅该年包与FAQ适用。现有来源不支持2027具体题，删除该断言。",
+      "readAt": "2026-11-05T19:17:26.620686+00:00",
+      "visualArtifacts": []
+    },
+    {
+      "sourceId": "cumcm-c-problem-a",
+      "url": "https://www.mcm.edu.cn/upload_cn/CUMCM2026Problems.zip",
+      "finalUrl": "https://www.mcm.edu.cn/upload_cn/CUMCM2026Problems.zip",
+      "retrievedAt": "2026-11-05T11:31:43.493853+00:00",
+      "sourceByteSha256": "a54c0e6b552d31e2dbd41aba4a07769943433cb9317927514c2d39ec6442e241",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/a54c0e6b552d31e2dbd41aba4a07769943433cb9317927514c2d39ec6442e241.zip",
+      "captureIndex": "artifacts/v6/content-research/source-byte-snapshots/capture-20261105T113219165279Z.json",
+      "independentReview": false,
+      "status": "body_available_not_verified",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/3305afc7ae6bdfa7021c8ec33363b27af4835a3178b4b9acab3d0f2d71ee37a4.txt",
+      "bodySha256": "3305afc7ae6bdfa7021c8ec33363b27af4835a3178b4b9acab3d0f2d71ee37a4",
+      "characters": 15317,
+      "extractionMethod": "zip_pdf_members_in_memory_pypdf",
+      "actualReading": "A题第3页附录2视觉确认扩散系数随C变化；固定热物性不等于常扩散系数。",
+      "readAt": "2026-11-05T19:17:26.620686+00:00",
+      "visualArtifacts": [
+        "artifacts/continuation-20261105/content/source-rechecks-batch04/cumcm-3.png"
+      ]
+    },
+    {
+      "sourceId": "newblood-2026-tutor-pack",
+      "url": "https://media.dandad.org/documents/New_Blood_Awards_2026_Tutor_Pack_UPDATED.pdf",
+      "finalUrl": "https://media.dandad.org/documents/New_Blood_Awards_2026_Tutor_Pack_UPDATED.pdf",
+      "retrievedAt": "2026-11-05T17:27:58.361005+00:00",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/a38902a9d2093661aab6d311c9968805ddf31a8266aaa612da1f30d7101af2c3.pdf",
+      "sourceByteSha256": "a38902a9d2093661aab6d311c9968805ddf31a8266aaa612da1f30d7101af2c3",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/ad9cda6247e960647d3ce098b95c6ea456676fcc3af042459aa4a56734fc930e.txt",
+      "bodySha256": "ad9cda6247e960647d3ce098b95c6ea456676fcc3af042459aa4a56734fc930e",
+      "characters": 158860,
+      "extractionMethod": "PDFKit page text",
+      "status": "body_available_not_verified",
+      "independentReview": false,
+      "captureIndex": "artifacts/continuation-20261105/content/source-rechecks-batch02/reading-log.json",
+      "rangeLog": "artifacts/continuation-20261105/content/source-rechecks-batch02/newblood-ranges.json",
+      "actualReading": "实读第30页FAQ及第34页条款。非学生年龄over18/aged18andover、自由职业6个月/一年冲突；学生共同分支明确，赛事关联人员排除依条款保留。",
+      "readAt": "2026-11-05T19:17:26.620686+00:00",
+      "visualArtifacts": [
+        "artifacts/continuation-20261105/content/source-rechecks-batch04/newblood-30.png",
+        "artifacts/continuation-20261105/content/source-rechecks-batch04/newblood-34.png"
+      ]
+    },
+    {
+      "sourceId": "chem-cochineal-2026-work",
+      "url": "https://www.dxhx.pku.edu.cn/CN/10.12461/PKU.DXHX202509113",
+      "finalUrl": "https://www.dxhx.pku.edu.cn/CN/10.12461/PKU.DXHX202509113",
+      "retrievedAt": "2026-11-05T11:48:36.308262+00:00",
+      "captureKind": "original_document_bytes",
+      "authorReadingLog": "artifacts/v6/content-research/engineering-a-reading-log.json",
+      "authorReadLocator": "Complete11pages120-130; section1.4 figures5-9 and audience section2; award unverified",
+      "sourceByteSha256": "b0a61a692f7bab380382064b9a1be50989dbd627748e58ea6441da1e1a7cc115",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/b0a61a692f7bab380382064b9a1be50989dbd627748e58ea6441da1e1a7cc115.pdf",
+      "captureIndex": "artifacts/v6/content-research/source-byte-snapshots/capture-local-20261105T132309399831Z.json",
+      "independentReview": false,
+      "status": "body_available_not_verified",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/f34af9ba428731bdf9a4161e5f290ed80d810e17f751304ab0c6dbd81c1050a1.txt",
+      "bodySha256": "f34af9ba428731bdf9a4161e5f290ed80d810e17f751304ab0c6dbd81c1050a1",
+      "characters": 10657,
+      "extractionMethod": "pypdf_text_extraction",
+      "actualReading": "PDF第1页专题与卷期，不单独证明参赛身份；本轮另补期刊HTML专题归属证据。",
+      "readAt": "2026-11-05T19:17:26.620686+00:00",
+      "visualArtifacts": [
+        "artifacts/continuation-20261105/content/source-rechecks-batch04/chem-1.png"
+      ]
+    },
+    {
+      "sourceId": "biomod-2023-requirements",
+      "url": "https://biomod.net/requirements/",
+      "finalUrl": "https://biomod.net/requirements/",
+      "retrievedAt": "2026-11-05T12:47:46.499484+00:00",
+      "captureKind": "original_document_bytes",
+      "authorReadingLog": "artifacts/v6/content-research/engineering-a-reading-log.json",
+      "authorReadLocator": "Registration fees, Team structure, Project Deliverables; 不采用旧FAQ场地",
+      "sourceByteSha256": "f3a3299d03cd24c8cfd402db060ddf3fdeffc8c2ec226445a64976184bff2373",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/f3a3299d03cd24c8cfd402db060ddf3fdeffc8c2ec226445a64976184bff2373.html",
+      "captureIndex": "artifacts/v6/content-research/source-byte-snapshots/capture-local-20261105T132309399831Z.json",
+      "independentReview": false,
+      "status": "body_available_not_verified",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/6b0f36fc1bfac0013f3f5cbf3639968cc8fde8c2d29ba6ce57eedbd0d0bd7a86.txt",
+      "bodySha256": "6b0f36fc1bfac0013f3f5cbf3639968cc8fde8c2d29ba6ce57eedbd0d0bd7a86",
+      "characters": 9430,
+      "extractionMethod": "html_parser_without_scripts_styles",
+      "actualReading": "Team structure至少faculty advisor；FAQ明确tenure-track professor。费用2023不消解FAQ混用旧会场版本，保留历史职衔确认占位。",
+      "readAt": "2026-11-05T19:17:26.620686+00:00",
+      "visualArtifacts": []
+    }
+  ],
+  "dependencies": [
+    "artifacts/continuation-20261105/content/source-rechecks-batch04/biomod-complete-assets.json",
+    "artifacts/continuation-20261105/content/source-rechecks-batch04/biomod-api-assets.json",
+    "artifacts/continuation-20261105/content/source-rechecks-batch04/biomod-asset-errors.json",
+    "artifacts/continuation-20261105/content/source-rechecks-batch04/biomod-retry.json",
+    "artifacts/continuation-20261105/content/source-rechecks-batch04/swift-archive.json",
+    "artifacts/continuation-20261105/content/source-rechecks-batch04/google-source-log.json",
+    "artifacts/continuation-20261105/content/source-rechecks-batch04/google-blog-log.json",
+    "artifacts/continuation-20261105/content/source-rechecks-batch04/fetch-log.json",
+    "artifacts/continuation-20261105/content/source-rechecks-batch04/browser-fetch-log.json",
+    "artifacts/continuation-20261105/content/source-rechecks-batch04/alternative-fetch-log.json",
+    "artifacts/continuation-20261105/content/source-rechecks-batch04/biomod-sheet-0.jpg",
+    "artifacts/continuation-20261105/content/source-rechecks-batch04/biomod-sheet-1.jpg",
+    "artifacts/continuation-20261105/content/source-rechecks-batch04/biomod-sheet-2.jpg",
+    "artifacts/continuation-20261105/content/source-rechecks-batch04/biomod-sheet-3.jpg",
+    "artifacts/continuation-20261105/content/source-rechecks-batch04/biomod-sheet-4.jpg",
+    "artifacts/continuation-20261105/content/source-rechecks-batch04/biomod-sheet-5.jpg",
+    "artifacts/continuation-20261105/content/source-rechecks-batch04/biomod-sheet-6.jpg",
+    "artifacts/continuation-20261105/content/source-rechecks-batch04/biomod-sheet-7.jpg",
+    "artifacts/continuation-20261105/content/source-rechecks-batch04/gcj-1.png",
+    "artifacts/continuation-20261105/content/source-rechecks-batch04/gcj-2.png",
+    "artifacts/continuation-20261105/content/source-rechecks-batch04/ghc-3.png",
+    "artifacts/continuation-20261105/content/source-rechecks-batch04/ghc-6.png",
+    "artifacts/continuation-20261105/content/source-rechecks-batch04/ghc-8.png",
+    "artifacts/continuation-20261105/content/source-rechecks-batch04/ghc-9.png",
+    "artifacts/continuation-20261105/content/source-rechecks-batch04/gks-1.png",
+    "artifacts/continuation-20261105/content/source-rechecks-batch04/gks-2.png",
+    "artifacts/continuation-20261105/content/source-rechecks-batch04/swift-source/ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/Images/AccessibilityEscape-Guide-DarkMode.png",
+    "artifacts/continuation-20261105/content/source-rechecks-batch04/swift-source/ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/Images/AccessibilityEscape-Level-Overview.png",
+    "artifacts/continuation-20261105/content/source-rechecks-batch04/swift-source/ssc2025-960b72301329ff8dd5f67801eca8d9a8240fabe7/Images/AccessibilityEscape-Level-VoiceOver.png"
+  ],
+  "unresolved": [
+    {
+      "sourceId": "putnam-c3-rules/putnam-c3-home/putnam-c3-a1",
+      "reason": "原站curl及正常Chrome均403。MIT可支持局部赛制但不能替代全部原规则；本轮保留严格L3原件缺口。"
+    },
+    {
+      "sourceId": "b-dyson-rule/b-dyson-bloc",
+      "reason": "原站curl及正常Chrome 403；官方地区URL仍403。ZHdK学校简介可取但非完整赛事规则/设计过程，未据此关闭缺口。"
+    },
+    {
+      "sourceId": "ncda-9c1d-detail",
+      "url": "https://share.weiyun.com/L0uuqSiq",
+      "reason": "沿用前次公开分享访问未得PPT事实；本轮3组精确公开搜索未找到可用企业PPT，未登录、不绕验证、不联系企业。"
+    }
+  ]
+}

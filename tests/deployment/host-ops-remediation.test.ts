@@ -673,7 +673,7 @@ if observed != expected:
     expect(deploy).toContain('"$PROJECT_NODE_BIN" "$TOOL_TYPESCRIPT" --noEmit --incremental false');
     expect(deploy).toContain('"$PROJECT_NODE_BIN" "$TOOL_ESLINT" . --max-warnings=0');
     expect(deploy).toContain('"$PROJECT_NODE_BIN" "$TOOL_VITEST" run --passWithNoTests');
-    expect(deploy).toContain('"$PROJECT_NODE_BIN" "$TOOL_NEXT" build');
+    expect(deploy).toContain('"$PROJECT_NODE_BIN" scripts/competitions/v7/build-worker.mjs --with-next "$TOOL_NEXT"');
     expect(deploy).not.toMatch(/pnpm (?:run (?:typecheck|lint|test|build)|exec vitest)/u);
     expect(deploy).toContain('set_tree_readonly_for_runtime "$FINAL_RELEASE"');
     expect(deploy).not.toContain('chown -R root:resume-ai "$FINAL_RELEASE"');

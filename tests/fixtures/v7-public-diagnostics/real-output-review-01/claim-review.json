@@ -1,0 +1,1876 @@
+{
+  "schemaVersion": "saitu.real-output-independent-manual-review.v1",
+  "reviewer": "independent v7_rank_format_independent agent",
+  "reviewedAt": "2026-11-08T20:34:17.291Z",
+  "boundInputs": [
+    {
+      "path": "artifacts/continuation-v7-20261109/explanation-diagnostic-01/input.json",
+      "sha256": "f559feed4b7c6c6a3cf6aae25192a17bacd4be2d9eeadd9cce36719a43fcc3d5"
+    },
+    {
+      "path": "artifacts/continuation-v7-20261109/explanation-diagnostic-01/result.json",
+      "sha256": "d6d2c2cd5ce67b71c367c6c23fb528d3034dd590d17c3d4edcb47032ada20ceb"
+    },
+    {
+      "path": "artifacts/continuation-v7-20261109/explanation-diagnostic-01/registration.json",
+      "sha256": "32a443249572c51a9da3616d7df36a8f426f7edfad080e26046ed151370d14f7"
+    }
+  ],
+  "counts": {
+    "items": 10,
+    "manuallyReviewedClaims": 20,
+    "supportedAsInferenceOrSuggestion": 13,
+    "needsRevision": 7,
+    "p2": 2,
+    "p3": 5,
+    "modelReviewChecks": 20,
+    "modelReviewChecksTrue": 20
+  },
+  "independentCriticalReviewPassed": false,
+  "productionValidatorPassed": true,
+  "pureValidatorTests": {
+    "passed": 4,
+    "failed": 0
+  },
+  "modelSha256": "df5a12f9669f1f1ecdfb717117b027379b7ebad80d5d70bf0cc9a86865c7f042",
+  "identityAndOrderErrors": 0,
+  "inactiveStudentOrForeignFactReferenceErrors": 0,
+  "materialHistoricalFeeCurrentEligibilityPromotionErrorsFound": 0,
+  "conditionReview": {
+    "catalogAndServerCandidateConditionsRetained": true,
+    "learnerAbilityAssumedFromUnknownFields": false,
+    "materialNotes": [
+      "iF免购材料说法需要保留个人资源未知条件。"
+    ],
+    "nonfatalCompletenessNotes": [
+      "D&AD理由视频分支未复述每条至少30秒；当前建议为五幅静态练习，完整fact保留了时长下限。"
+    ]
+  },
+  "scope": {
+    "rankingMeritJudged": false,
+    "studentSelfReportTruthfulnessVerified": false,
+    "liveOfficialWebsitesReaudited": false,
+    "sourceLevel": "Bound catalog original facts, scopes and source metadata only; no external fetching or new raw-source reading.",
+    "uncitedEditorialSectionsUsedToApproveClaims": false,
+    "newHttpCalls": 0,
+    "newPaidCalls": 0,
+    "productionCodeModified": false,
+    "freshFullPipelineAcceptanceClaim": false,
+    "performancePassClaim": false,
+    "fourOfFiveClaim": false
+  },
+  "severityMeaning": "P2为应在作为质量证据前修正的要求/事实支持问题；P3为具体引用覆盖或限定缺口。此非formal排名测评，不将本审查擅自映射为正式严重错误率。",
+  "rows": [
+    {
+      "reviewIndex": 1,
+      "key": "atcoder-beginner-contest:2025-427:d-simple-game:individual-open:global-online-abc427:v3.reason.0",
+      "pointer": "/report/recommendations/0/reasons/0",
+      "rank": 1,
+      "itemId": "atcoder-beginner-contest:2025-427:d-simple-game:individual-open:global-online-abc427:v3",
+      "kind": "reason",
+      "text": "你以探索方向为目标、每周可投入5–10小时且准备周期1–2周；ABC427 D的有限步有向图博弈题可作一次短周期算法探索：读题后倒推胜负并提交程序，用一个小任务判断是否愿意继续这类个人算法练习。",
+      "basis": "inference",
+      "decision": {
+        "verdict": "supported",
+        "note": "学生目标、5–10小时及1–2周来自有效自报；有限步图博弈与程序交付有据。倒推和短练是探索建议，未声称已有算法能力或历史名次。"
+      },
+      "studentEvidence": [
+        {
+          "id": "s.goalIntent.c54d1a8bca1535aa",
+          "field": "goalIntent",
+          "originalText": "explore",
+          "label": "希望参赛帮助你探索适合自己的方向",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        },
+        {
+          "id": "s.weeklyCommitment.599ad580c3a5c743",
+          "field": "weeklyCommitment",
+          "originalText": "5-10",
+          "label": "每周投入：每周 5–10 小时",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        },
+        {
+          "id": "s.preparationHorizon.23efb888fdffefde",
+          "field": "preparationHorizon",
+          "originalText": "1-2-weeks",
+          "label": "准备周期：1–2周",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        }
+      ],
+      "competitionEvidence": [
+        {
+          "id": "atcoder-beginner-contest:v2:track",
+          "text": "D题在每点至少一条出边的有向图上，Alice先手、Bob后手各移动K次，终点字符决定赢家，要求双方最优策略的结果。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "ABC427 D题、输入输出、限制与425分",
+          "sourceIds": [
+            "abc-c7-task"
+          ],
+          "sources": [
+            {
+              "id": "abc-c7-task",
+              "url": "https://atcoder.jp/contests/abc427/tasks/abc427_d",
+              "title": "D - The Simple Game完整题面",
+              "scope": "ABC427 D题、输入输出、限制与425分",
+              "authority": "organizer",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/v6/content-research/software-math-c7-reading-log.json"
+            }
+          ]
+        },
+        {
+          "id": "atcoder-beginner-contest:v2:deliverables",
+          "text": "用平台支持语言提交程序，从标准输入读多组图和K，逐组输出Alice或Bob；不能将样例的一条非最优过程视为策略证明。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2026-11读取的通用个人参赛、计分和提交规则；ABC427 D题、输入输出、限制与425分",
+          "sourceIds": [
+            "abc-c7-rules",
+            "abc-c7-task"
+          ],
+          "sources": [
+            {
+              "id": "abc-c7-rules",
+              "url": "https://atcoder.jp/contests/abc427/rules",
+              "title": "比赛规则页面",
+              "scope": "2026-11读取的通用个人参赛、计分和提交规则",
+              "authority": "organizer",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/v6/content-research/software-math-c7-reading-log.json"
+            },
+            {
+              "id": "abc-c7-task",
+              "url": "https://atcoder.jp/contests/abc427/tasks/abc427_d",
+              "title": "D - The Simple Game完整题面",
+              "scope": "ABC427 D题、输入输出、限制与425分",
+              "authority": "organizer",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/v6/content-research/software-math-c7-reading-log.json"
+            }
+          ]
+        },
+        {
+          "id": "atcoder-beginner-contest:v2:participation",
+          "text": "第427场100分钟、线上评测；通用规则要求个人独立作答。公开历史题可以练习，不能回到已结束的正式比赛取得原名次。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2025第427场资格、100分钟和分值；2026-11读取的通用个人参赛、计分和提交规则",
+          "sourceIds": [
+            "abc-c7-home",
+            "abc-c7-rules"
+          ],
+          "sources": [
+            {
+              "id": "abc-c7-home",
+              "url": "https://atcoder.jp/contests/abc427",
+              "title": "ABC427官方比赛页",
+              "scope": "2025第427场资格、100分钟和分值",
+              "authority": "organizer",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/v6/content-research/software-math-c7-reading-log.json"
+            },
+            {
+              "id": "abc-c7-rules",
+              "url": "https://atcoder.jp/contests/abc427/rules",
+              "title": "比赛规则页面",
+              "scope": "2026-11读取的通用个人参赛、计分和提交规则",
+              "authority": "organizer",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/v6/content-research/software-math-c7-reading-log.json"
+            }
+          ]
+        }
+      ],
+      "retainedClaimConditions": [
+        "仅使用2025历史题练习，不回到已结束正式比赛取得原名次。",
+        "报名资格与当前日期请另行通过官方入口核查。"
+      ],
+      "retainedCandidateConditions": [
+        "所读通用规则页会更新，未把当前编译器列表回填2025",
+        "采用已冻结的14196日文原解与题面核对；未取得正式隐藏评测成绩",
+        "报名资格与日期请通过官方入口自行核查。",
+        "个人总支出仍需核实，尚不能认定符合已报预算。"
+      ]
+    },
+    {
+      "reviewIndex": 2,
+      "key": "atcoder-beginner-contest:2025-427:d-simple-game:individual-open:global-online-abc427:v3.role",
+      "pointer": "/report/recommendations/0/currentRole",
+      "rank": 1,
+      "itemId": "atcoder-beginner-contest:2025-427:d-simple-game:individual-open:global-online-abc427:v3",
+      "kind": "role",
+      "text": "可先承担独立算法与验证角色，围绕该题完成递推证明、代码和对拍记录，作为两周内可交付的探索动作。",
+      "basis": "suggestion",
+      "decision": {
+        "verdict": "supported",
+        "note": "代码与验证目标对应历史程序交付；递推证明和对拍是明确的行动建议，不冒充官方提交要求或已有能力。两周按探索任务安排理解，不构成完成保证。"
+      },
+      "studentEvidence": [
+        {
+          "id": "s.preparationHorizon.23efb888fdffefde",
+          "field": "preparationHorizon",
+          "originalText": "1-2-weeks",
+          "label": "准备周期：1–2周",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        }
+      ],
+      "competitionEvidence": [
+        {
+          "id": "atcoder-beginner-contest:v2:deliverables",
+          "text": "用平台支持语言提交程序，从标准输入读多组图和K，逐组输出Alice或Bob；不能将样例的一条非最优过程视为策略证明。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2026-11读取的通用个人参赛、计分和提交规则；ABC427 D题、输入输出、限制与425分",
+          "sourceIds": [
+            "abc-c7-rules",
+            "abc-c7-task"
+          ],
+          "sources": [
+            {
+              "id": "abc-c7-rules",
+              "url": "https://atcoder.jp/contests/abc427/rules",
+              "title": "比赛规则页面",
+              "scope": "2026-11读取的通用个人参赛、计分和提交规则",
+              "authority": "organizer",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/v6/content-research/software-math-c7-reading-log.json"
+            },
+            {
+              "id": "abc-c7-task",
+              "url": "https://atcoder.jp/contests/abc427/tasks/abc427_d",
+              "title": "D - The Simple Game完整题面",
+              "scope": "ABC427 D题、输入输出、限制与425分",
+              "authority": "organizer",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/v6/content-research/software-math-c7-reading-log.json"
+            }
+          ]
+        }
+      ],
+      "retainedClaimConditions": [
+        "历史题练习，不声称隐藏评测成绩或正式rating。"
+      ],
+      "retainedCandidateConditions": [
+        "所读通用规则页会更新，未把当前编译器列表回填2025",
+        "采用已冻结的14196日文原解与题面核对；未取得正式隐藏评测成绩",
+        "报名资格与日期请通过官方入口自行核查。",
+        "个人总支出仍需核实，尚不能认定符合已报预算。"
+      ]
+    },
+    {
+      "reviewIndex": 3,
+      "key": "google-kick-start:2022:round-a-speed-typing:historical-public-task:round-a-speed-typing-2022:v3.reason.0",
+      "pointer": "/report/recommendations/1/reasons/0",
+      "rank": 2,
+      "itemId": "google-kick-start:2022:round-a-speed-typing:historical-public-task:round-a-speed-typing-2022:v3",
+      "kind": "reason",
+      "text": "该题是仅删除且保序的字符串判定，产出为逐例删除数或IMPOSSIBLE；对你用1–2周探索方向而言，可用官方归档历史题完成一次双指针与反例验证的小交付，每周5–10小时足以安排短练。",
+      "basis": "inference",
+      "decision": {
+        "verdict": "supported",
+        "note": "仅删除、保序、删除数或IMPOSSIBLE均由track/deliverables支持；学生时间与目标引用有效，保留停办及历史范围。“足以安排短练”只支持安排练习，不证明一定解出。"
+      },
+      "studentEvidence": [
+        {
+          "id": "s.goalIntent.c54d1a8bca1535aa",
+          "field": "goalIntent",
+          "originalText": "explore",
+          "label": "希望参赛帮助你探索适合自己的方向",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        },
+        {
+          "id": "s.weeklyCommitment.599ad580c3a5c743",
+          "field": "weeklyCommitment",
+          "originalText": "5-10",
+          "label": "每周投入：每周 5–10 小时",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        },
+        {
+          "id": "s.preparationHorizon.23efb888fdffefde",
+          "field": "preparationHorizon",
+          "originalText": "1-2-weeks",
+          "label": "准备周期：1–2周",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        }
+      ],
+      "competitionEvidence": [
+        {
+          "id": "google-kick-start:v2:track",
+          "text": "已知目标字符串I和实际输入P，只允许从P删除字符，判断能否得到I；能则输出删除数，不能则IMPOSSIBLE，字符大小写有区别。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2022已结束赛事的历史题与判定依据；不构成当前报名机会",
+          "sourceIds": [
+            "gks-2022-speed-task"
+          ],
+          "sources": [
+            {
+              "id": "gks-2022-speed-task",
+              "url": "https://github.com/google/coding-competitions-archive/blob/main/kickstart/2022/round_a/speed_typing/statement.pdf",
+              "title": "2022 Round A Speed Typing完整题",
+              "scope": "2022已结束赛事的历史题与判定依据；不构成当前报名机会",
+              "authority": "organizer",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/continuation-20261105/content/source-rechecks-batch06/reading-log.json"
+            }
+          ]
+        },
+        {
+          "id": "google-kick-start:v2:deliverables",
+          "text": "每例输出Case #x加删除数或IMPOSSIBLE；T至多100，字符串长1至10万，内存1GB。测试集1限20秒且I字母全同，测试集2限40秒。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2022已结束赛事的历史题与判定依据；不构成当前报名机会",
+          "sourceIds": [
+            "gks-2022-speed-task"
+          ],
+          "sources": [
+            {
+              "id": "gks-2022-speed-task",
+              "url": "https://github.com/google/coding-competitions-archive/blob/main/kickstart/2022/round_a/speed_typing/statement.pdf",
+              "title": "2022 Round A Speed Typing完整题",
+              "scope": "2022已结束赛事的历史题与判定依据；不构成当前报名机会",
+              "authority": "organizer",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/continuation-20261105/content/source-rechecks-batch06/reading-log.json"
+            }
+          ]
+        }
+      ],
+      "retainedClaimConditions": [
+        "2022系列已结束，仅作官方归档历史题练习，不表示当前可报名。",
+        "报名资格与日期请另行通过官方入口核查。"
+      ],
+      "retainedCandidateConditions": [
+        "完整历史资格与费用条款未核；当前不提供报名",
+        "官方归档中的旧测试时限是历史评测条件，不作本机性能保证",
+        "报名资格与日期请通过官方入口自行核查。",
+        "个人总支出仍需核实，尚不能认定符合已报预算。"
+      ]
+    },
+    {
+      "reviewIndex": 4,
+      "key": "google-kick-start:2022:round-a-speed-typing:historical-public-task:round-a-speed-typing-2022:v3.role",
+      "pointer": "/report/recommendations/1/currentRole",
+      "rank": 2,
+      "itemId": "google-kick-start:2022:round-a-speed-typing:historical-public-task:round-a-speed-typing-2022:v3",
+      "kind": "role",
+      "text": "可先承担独立字符串算法角色，画双指针跟踪表并构造顺序反例，形成可复核的练习记录。",
+      "basis": "suggestion",
+      "decision": {
+        "verdict": "supported",
+        "note": "双指针跟踪表和反例属于围绕字符串任务的练习建议，没有声称官方指定该解法或学生已经掌握。历史赛程边界保留。"
+      },
+      "studentEvidence": [
+        {
+          "id": "s.preparationHorizon.23efb888fdffefde",
+          "field": "preparationHorizon",
+          "originalText": "1-2-weeks",
+          "label": "准备周期：1–2周",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        }
+      ],
+      "competitionEvidence": [
+        {
+          "id": "google-kick-start:v2:deliverables",
+          "text": "每例输出Case #x加删除数或IMPOSSIBLE；T至多100，字符串长1至10万，内存1GB。测试集1限20秒且I字母全同，测试集2限40秒。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2022已结束赛事的历史题与判定依据；不构成当前报名机会",
+          "sourceIds": [
+            "gks-2022-speed-task"
+          ],
+          "sources": [
+            {
+              "id": "gks-2022-speed-task",
+              "url": "https://github.com/google/coding-competitions-archive/blob/main/kickstart/2022/round_a/speed_typing/statement.pdf",
+              "title": "2022 Round A Speed Typing完整题",
+              "scope": "2022已结束赛事的历史题与判定依据；不构成当前报名机会",
+              "authority": "organizer",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/continuation-20261105/content/source-rechecks-batch06/reading-log.json"
+            }
+          ]
+        }
+      ],
+      "retainedClaimConditions": [
+        "仅按历史题练习，不声称通过官方赛程。"
+      ],
+      "retainedCandidateConditions": [
+        "完整历史资格与费用条款未核；当前不提供报名",
+        "官方归档中的旧测试时限是历史评测条件，不作本机性能保证",
+        "报名资格与日期请通过官方入口自行核查。",
+        "个人总支出仍需核实，尚不能认定符合已报预算。"
+      ]
+    },
+    {
+      "reviewIndex": 5,
+      "key": "google-code-jam:2022:qualification-3d-printing:historical-public-task:qualification-3d-printing-2022:v3.reason.0",
+      "pointer": "/report/recommendations/2/reasons/0",
+      "rank": 3,
+      "itemId": "google-code-jam:2022:qualification-3d-printing:historical-public-task:qualification-3d-printing-2022:v3",
+      "kind": "reason",
+      "text": "从三台打印机容量压缩出四个逐色最小值并构造总和恰为100万的方案，是一次短小的约束建模任务；适合你用1–2周、每周5–10小时试做，以判断是否喜欢这类个人构造与证明。",
+      "basis": "inference",
+      "decision": {
+        "verdict": "supported",
+        "note": "三机四色容量及总量100万由track/deliverables支持；逐色取最小值是与同色可打印约束一致的推断。短周期试做不被表述成当前报名或获奖保证。"
+      },
+      "studentEvidence": [
+        {
+          "id": "s.goalIntent.c54d1a8bca1535aa",
+          "field": "goalIntent",
+          "originalText": "explore",
+          "label": "希望参赛帮助你探索适合自己的方向",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        },
+        {
+          "id": "s.weeklyCommitment.599ad580c3a5c743",
+          "field": "weeklyCommitment",
+          "originalText": "5-10",
+          "label": "每周投入：每周 5–10 小时",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        },
+        {
+          "id": "s.preparationHorizon.23efb888fdffefde",
+          "field": "preparationHorizon",
+          "originalText": "1-2-weeks",
+          "label": "准备周期：1–2周",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        }
+      ],
+      "competitionEvidence": [
+        {
+          "id": "google-code-jam:v2:track",
+          "text": "给定三台打印机的青、品红、黄、黑四墨盒容量，找能由三台机器分别打印同色的四个非负整数用量，总和必须恰为100万；无解输出IMPOSSIBLE。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2022已结束赛事的历史题与判定依据；不构成当前报名机会",
+          "sourceIds": [
+            "gcj-2022-3d-task"
+          ],
+          "sources": [
+            {
+              "id": "gcj-2022-3d-task",
+              "url": "https://github.com/google/coding-competitions-archive/blob/main/codejam/2022/qualification_round/3d_printing/statement.pdf",
+              "title": "2022资格赛3D Printing完整官方题",
+              "scope": "2022已结束赛事的历史题与判定依据；不构成当前报名机会",
+              "authority": "organizer",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/continuation-20261105/content/source-rechecks-batch06/reading-log.json"
+            }
+          ]
+        },
+        {
+          "id": "google-code-jam:v2:deliverables",
+          "text": "每例读入3行4个容量；输出四个整数或IMPOSSIBLE。容量在0至100万，测试用例至多100；题定时间5秒、内存1GB。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2022已结束赛事的历史题与判定依据；不构成当前报名机会",
+          "sourceIds": [
+            "gcj-2022-3d-task"
+          ],
+          "sources": [
+            {
+              "id": "gcj-2022-3d-task",
+              "url": "https://github.com/google/coding-competitions-archive/blob/main/codejam/2022/qualification_round/3d_printing/statement.pdf",
+              "title": "2022资格赛3D Printing完整官方题",
+              "scope": "2022已结束赛事的历史题与判定依据；不构成当前报名机会",
+              "authority": "organizer",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/continuation-20261105/content/source-rechecks-batch06/reading-log.json"
+            }
+          ]
+        }
+      ],
+      "retainedClaimConditions": [
+        "2022届已结束，仅作官方归档历史题练习，不构成当前报名机会。",
+        "报名资格与日期请另行通过官方入口核查。"
+      ],
+      "retainedCandidateConditions": [
+        "完整2022年龄/地域等资格条款与历史个人费用未核；当前已停办",
+        "归档的旧评测环境不可据本机运行假装已复现；不承诺任何历史名次",
+        "报名资格与日期请通过官方入口自行核查。",
+        "个人总支出仍需核实，尚不能认定符合已报预算。"
+      ]
+    },
+    {
+      "reviewIndex": 6,
+      "key": "google-code-jam:2022:qualification-3d-printing:historical-public-task:qualification-3d-printing-2022:v3.role",
+      "pointer": "/report/recommendations/2/currentRole",
+      "rank": 3,
+      "itemId": "google-code-jam:2022:qualification-3d-printing:historical-public-task:qualification-3d-printing-2022:v3",
+      "kind": "role",
+      "text": "可先承担独立约束建模与实现角色，交付不变量证明、代码和边界测试，作为低门槛探索。",
+      "basis": "suggestion",
+      "decision": {
+        "verdict": "supported",
+        "note": "不变量、实现和边界测试是围绕构造题交付的行动建议；未表述为官方强制证明材料，保留历史练习和无成绩保证。"
+      },
+      "studentEvidence": [
+        {
+          "id": "s.preparationHorizon.23efb888fdffefde",
+          "field": "preparationHorizon",
+          "originalText": "1-2-weeks",
+          "label": "准备周期：1–2周",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        }
+      ],
+      "competitionEvidence": [
+        {
+          "id": "google-code-jam:v2:deliverables",
+          "text": "每例读入3行4个容量；输出四个整数或IMPOSSIBLE。容量在0至100万，测试用例至多100；题定时间5秒、内存1GB。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2022已结束赛事的历史题与判定依据；不构成当前报名机会",
+          "sourceIds": [
+            "gcj-2022-3d-task"
+          ],
+          "sources": [
+            {
+              "id": "gcj-2022-3d-task",
+              "url": "https://github.com/google/coding-competitions-archive/blob/main/codejam/2022/qualification_round/3d_printing/statement.pdf",
+              "title": "2022资格赛3D Printing完整官方题",
+              "scope": "2022已结束赛事的历史题与判定依据；不构成当前报名机会",
+              "authority": "organizer",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/continuation-20261105/content/source-rechecks-batch06/reading-log.json"
+            }
+          ]
+        }
+      ],
+      "retainedClaimConditions": [
+        "仅按历史题练习，不声称赛事成绩或证书。"
+      ],
+      "retainedCandidateConditions": [
+        "完整2022年龄/地域等资格条款与历史个人费用未核；当前已停办",
+        "归档的旧评测环境不可据本机运行假装已复现；不承诺任何历史名次",
+        "报名资格与日期请通过官方入口自行核查。",
+        "个人总支出仍需核实，尚不能认定符合已报预算。"
+      ]
+    },
+    {
+      "reviewIndex": 7,
+      "key": "apple-swift-student-challenge:2026:app-playground:individual-student:global-2026:v3.reason.0",
+      "pointer": "/report/recommendations/3/reasons/0",
+      "rank": 4,
+      "itemId": "apple-swift-student-challenge:2026:app-playground:individual-student:global-2026:v3",
+      "kind": "reason",
+      "text": "该路径要求把一个小问题做成离线交互App Playground，并解释技术与设计取舍；你每周5–10小时、1–2周可先做三屏流程和一个状态反馈，探索自己是否愿意继续软件交互方向，而不把2026报名当作当前可参加。",
+      "basis": "inference",
+      "decision": {
+        "verdict": "needs_revision",
+        "priority": "P2",
+        "category": "unsupported_requirement",
+        "unsupported": [
+          "并解释技术与设计取舍"
+        ],
+        "note": "引用的track只支持个人App Playground、非团队及素材许可，deliverables只支持离线、文件格式、版本和英语等。它们没有说明必须解释技术与设计取舍；不能凭未引用编辑内容或整站印象补成要求。",
+        "change": "将此部分明确改成准备建议，或增加可用且直接支持该解释要求的具体fact引用。"
+      },
+      "studentEvidence": [
+        {
+          "id": "s.goalIntent.c54d1a8bca1535aa",
+          "field": "goalIntent",
+          "originalText": "explore",
+          "label": "希望参赛帮助你探索适合自己的方向",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        },
+        {
+          "id": "s.weeklyCommitment.599ad580c3a5c743",
+          "field": "weeklyCommitment",
+          "originalText": "5-10",
+          "label": "每周投入：每周 5–10 小时",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        },
+        {
+          "id": "s.preparationHorizon.23efb888fdffefde",
+          "field": "preparationHorizon",
+          "originalText": "1-2-weeks",
+          "label": "准备周期：1–2周",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        }
+      ],
+      "competitionEvidence": [
+        {
+          "id": "apple-swift-student-challenge:v2:track",
+          "text": "每人提交一个个人创作的App Playground；团队作品不参与评审，第三方素材须遵守许可并说明用途。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2026个人挑战赛正式条款",
+          "sourceIds": [
+            "swift-2026-policy"
+          ],
+          "sources": [
+            {
+              "id": "swift-2026-policy",
+              "url": "https://developer.apple.com/swift-student-challenge/policy/",
+              "title": "Swift Student Challenge 2026 Terms and Conditions",
+              "scope": "2026个人挑战赛正式条款",
+              "authority": "organizer",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/v6/content-research/batch-01-reading-log.json"
+            }
+          ]
+        },
+        {
+          "id": "apple-swift-student-challenge:v2:deliverables",
+          "text": "提交不超过25MB的ZIP，包含.swiftpm及离线资源；使用Swift Playground 4.6或Xcode 26及更新版本，内容为英文。作品不能依赖网络或要求评委登录。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2026个人挑战赛正式条款",
+          "sourceIds": [
+            "swift-2026-policy"
+          ],
+          "sources": [
+            {
+              "id": "swift-2026-policy",
+              "url": "https://developer.apple.com/swift-student-challenge/policy/",
+              "title": "Swift Student Challenge 2026 Terms and Conditions",
+              "scope": "2026个人挑战赛正式条款",
+              "authority": "organizer",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/v6/content-research/batch-01-reading-log.json"
+            }
+          ]
+        }
+      ],
+      "retainedClaimConditions": [
+        "2026届已结束，不推定2027资格与窗口。",
+        "设备、在讀证明与当前工具版本需另行核对。"
+      ],
+      "retainedCandidateConditions": [
+        "2027条款、报名时间与当届工具版本未采用；此记录不证明下一届可报",
+        "设备实际可借用性、用户个人年龄及学校证明仍待确认",
+        "报名资格与日期请通过官方入口自行核查。",
+        "个人总支出仍需核实，尚不能认定符合已报预算。"
+      ]
+    },
+    {
+      "reviewIndex": 8,
+      "key": "apple-swift-student-challenge:2026:app-playground:individual-student:global-2026:v3.role",
+      "pointer": "/report/recommendations/3/currentRole",
+      "rank": 4,
+      "itemId": "apple-swift-student-challenge:2026:app-playground:individual-student:global-2026:v3",
+      "kind": "role",
+      "text": "可先承担独立交互开发角色，完成一个按钮引起状态变化并能离线试用的小流程。",
+      "basis": "suggestion",
+      "decision": {
+        "verdict": "supported",
+        "note": "按钮状态变化与离线小流程是适配App Playground的探索建议；未声称当届资格成立或已经具备开发能力。"
+      },
+      "studentEvidence": [
+        {
+          "id": "s.preparationHorizon.23efb888fdffefde",
+          "field": "preparationHorizon",
+          "originalText": "1-2-weeks",
+          "label": "准备周期：1–2周",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        }
+      ],
+      "competitionEvidence": [
+        {
+          "id": "apple-swift-student-challenge:v2:deliverables",
+          "text": "提交不超过25MB的ZIP，包含.swiftpm及离线资源；使用Swift Playground 4.6或Xcode 26及更新版本，内容为英文。作品不能依赖网络或要求评委登录。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2026个人挑战赛正式条款",
+          "sourceIds": [
+            "swift-2026-policy"
+          ],
+          "sources": [
+            {
+              "id": "swift-2026-policy",
+              "url": "https://developer.apple.com/swift-student-challenge/policy/",
+              "title": "Swift Student Challenge 2026 Terms and Conditions",
+              "scope": "2026个人挑战赛正式条款",
+              "authority": "organizer",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/v6/content-research/batch-01-reading-log.json"
+            }
+          ]
+        }
+      ],
+      "retainedClaimConditions": [
+        "仅作探索性作品准备，不声称可提交2026申请。"
+      ],
+      "retainedCandidateConditions": [
+        "2027条款、报名时间与当届工具版本未采用；此记录不证明下一届可报",
+        "设备实际可借用性、用户个人年龄及学校证明仍待确认",
+        "报名资格与日期请通过官方入口自行核查。",
+        "个人总支出仍需核实，尚不能认定符合已报预算。"
+      ]
+    },
+    {
+      "reviewIndex": 9,
+      "key": "chinese-classics:2025-zhejiang-13:classics-recitation:huzhou-individual:zhejiang-huzhou-local:v3.reason.0",
+      "pointer": "/report/recommendations/4/reasons/0",
+      "rank": 5,
+      "itemId": "chinese-classics:2025-zhejiang-13:classics-recitation:huzhou-individual:zhejiang-huzhou-local:v3",
+      "kind": "reason",
+      "text": "校选为脱稿朗诵一篇且不需配乐、PPT，官方校选考阅读理解、艺术鉴赏和语言表达；在1–2周内可用指定题库做一次文本细读和录音试讲，探索是否适合表达类任务，同时每周5–10小时可安排短练。",
+      "basis": "inference",
+      "decision": {
+        "verdict": "supported",
+        "note": "湖州校选脱稿一篇、无需配乐/PPT及三类考查内容均由对应事实支持；地区与2025范围、非全国直通及当前资格待核保留。文本细读/录音属于建议。"
+      },
+      "studentEvidence": [
+        {
+          "id": "s.goalIntent.c54d1a8bca1535aa",
+          "field": "goalIntent",
+          "originalText": "explore",
+          "label": "希望参赛帮助你探索适合自己的方向",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        },
+        {
+          "id": "s.weeklyCommitment.599ad580c3a5c743",
+          "field": "weeklyCommitment",
+          "originalText": "5-10",
+          "label": "每周投入：每周 5–10 小时",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        },
+        {
+          "id": "s.preparationHorizon.23efb888fdffefde",
+          "field": "preparationHorizon",
+          "originalText": "1-2-weeks",
+          "label": "准备周期：1–2周",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        }
+      ],
+      "competitionEvidence": [
+        {
+          "id": "chinese-classics:v2:deliverables",
+          "text": "湖州校选为脱稿朗诵一篇，无需配乐、无需PPT；省初赛则另有古今各一篇朗读讲解和备稿演讲视频。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2025湖州师范典润之江校选；2025浙江省赛分组及规则",
+          "sourceIds": [
+            "b-classics-local",
+            "b-classics-rules"
+          ],
+          "sources": [
+            {
+              "id": "b-classics-local",
+              "url": "https://rwxy.huznu.edu.cn/2025/0409/c534a231481/page.htm",
+              "title": "湖州师范学院2025中华经典诵写讲校选通知",
+              "scope": "2025湖州师范典润之江校选",
+              "authority": "university_local",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/v6/content-research/arts-business-b-reading-log.json"
+            },
+            {
+              "id": "b-classics-rules",
+              "url": "https://rwxy.huznu.edu.cn/_upload/article/files/24/5e/408522fc4fada966b2b571aa9c8f/b0053435-8be0-4bf1-a93c-e74ae08d4843.pdf",
+              "title": "浙江第十三届大赛正式通知及四赛项方案",
+              "scope": "2025浙江省赛分组及规则",
+              "authority": "official_host",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/v6/content-research/arts-business-b-reading-log.json"
+            }
+          ]
+        },
+        {
+          "id": "chinese-classics:v2:rubric",
+          "text": "校选明确考阅读理解、艺术鉴赏、语言表达，要求普通话准确清晰与体态得当；未公布数字权重。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2025湖州师范典润之江校选",
+          "sourceIds": [
+            "b-classics-local"
+          ],
+          "sources": [
+            {
+              "id": "b-classics-local",
+              "url": "https://rwxy.huznu.edu.cn/2025/0409/c534a231481/page.htm",
+              "title": "湖州师范学院2025中华经典诵写讲校选通知",
+              "scope": "2025湖州师范典润之江校选",
+              "authority": "university_local",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/v6/content-research/arts-business-b-reading-log.json"
+            }
+          ]
+        },
+        {
+          "id": "chinese-classics:v2:track",
+          "text": "校选从2025指定题库选择一篇；读例为古代第3题《庄子·秋水》节选。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2025湖州师范典润之江校选；2025浙江典润之江初赛",
+          "sourceIds": [
+            "b-classics-local",
+            "b-classics-task"
+          ],
+          "sources": [
+            {
+              "id": "b-classics-local",
+              "url": "https://rwxy.huznu.edu.cn/2025/0409/c534a231481/page.htm",
+              "title": "湖州师范学院2025中华经典诵写讲校选通知",
+              "scope": "2025湖州师范典润之江校选",
+              "authority": "university_local",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/v6/content-research/arts-business-b-reading-log.json"
+            },
+            {
+              "id": "b-classics-task",
+              "url": "https://rwxy.huznu.edu.cn/_upload/article/files/24/5e/408522fc4fada966b2b571aa9c8f/90c168b5-4687-4f3c-bfb9-611ca1f56f66.pdf",
+              "title": "2025典润之江初赛完整朗读题库",
+              "scope": "2025浙江典润之江初赛",
+              "authority": "official_host",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/v6/content-research/arts-business-b-reading-log.json"
+            }
+          ]
+        }
+      ],
+      "retainedClaimConditions": [
+        "仅按2025浙江与湖州师范校选历史条款理解，个人组不等于全国通道。",
+        "当前资格与日期请另行通过官方入口核查。"
+      ],
+      "retainedCandidateConditions": [
+        "校通知有届次与报名年份笔误，赛程以组委会确认为准；本条不据笔误判可报名。数字评分细则未公开读取",
+        "报名资格与日期请通过官方入口自行核查。",
+        "个人总支出仍需核实，尚不能认定符合已报预算。"
+      ]
+    },
+    {
+      "reviewIndex": 10,
+      "key": "chinese-classics:2025-zhejiang-13:classics-recitation:huzhou-individual:zhejiang-huzhou-local:v3.role",
+      "pointer": "/report/recommendations/4/currentRole",
+      "rank": 5,
+      "itemId": "chinese-classics:2025-zhejiang-13:classics-recitation:huzhou-individual:zhejiang-huzhou-local:v3",
+      "kind": "role",
+      "text": "可先承担文本解读角色，标注河伯前后认知变化和易错读音，再决定是否进入朗诵表达。",
+      "basis": "suggestion",
+      "decision": {
+        "verdict": "needs_revision",
+        "priority": "P3",
+        "category": "citation_coverage_gap",
+        "unsupported": [
+          "标注河伯前后认知变化"
+        ],
+        "note": "唯一引用deliverables说明朗诵交付及省赛材料，未包含指定篇目、河伯或文本认识转折。目录roles中的同样建议没有被本claim引用，不能代替fact证据。",
+        "change": "改成不依赖特定人物事实的文本标注建议；若保留人物细节，增加具体篇目/原文事实。"
+      },
+      "studentEvidence": [
+        {
+          "id": "s.preparationHorizon.23efb888fdffefde",
+          "field": "preparationHorizon",
+          "originalText": "1-2-weeks",
+          "label": "准备周期：1–2周",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        }
+      ],
+      "competitionEvidence": [
+        {
+          "id": "chinese-classics:v2:deliverables",
+          "text": "湖州校选为脱稿朗诵一篇，无需配乐、无需PPT；省初赛则另有古今各一篇朗读讲解和备稿演讲视频。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2025湖州师范典润之江校选；2025浙江省赛分组及规则",
+          "sourceIds": [
+            "b-classics-local",
+            "b-classics-rules"
+          ],
+          "sources": [
+            {
+              "id": "b-classics-local",
+              "url": "https://rwxy.huznu.edu.cn/2025/0409/c534a231481/page.htm",
+              "title": "湖州师范学院2025中华经典诵写讲校选通知",
+              "scope": "2025湖州师范典润之江校选",
+              "authority": "university_local",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/v6/content-research/arts-business-b-reading-log.json"
+            },
+            {
+              "id": "b-classics-rules",
+              "url": "https://rwxy.huznu.edu.cn/_upload/article/files/24/5e/408522fc4fada966b2b571aa9c8f/b0053435-8be0-4bf1-a93c-e74ae08d4843.pdf",
+              "title": "浙江第十三届大赛正式通知及四赛项方案",
+              "scope": "2025浙江省赛分组及规则",
+              "authority": "official_host",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/v6/content-research/arts-business-b-reading-log.json"
+            }
+          ]
+        }
+      ],
+      "retainedClaimConditions": [
+        "不改变指定原文，先核准读音和句意再讨论情绪。"
+      ],
+      "retainedCandidateConditions": [
+        "校通知有届次与报名年份笔误，赛程以组委会确认为准；本条不据笔误判可报名。数字评分细则未公开读取",
+        "报名资格与日期请通过官方入口自行核查。",
+        "个人总支出仍需核实，尚不能认定符合已报预算。"
+      ]
+    },
+    {
+      "reviewIndex": 11,
+      "key": "lanqiao-cup:2019-10:cpp-array-successor:cpp-a:china-provincial-cpp-a-2019:v3.reason.0",
+      "pointer": "/report/recommendations/5/reasons/0",
+      "rank": 6,
+      "itemId": "lanqiao-cup:2019-10:cpp-array-successor:cpp-a:china-provincial-cpp-a-2019:v3",
+      "kind": "reason",
+      "text": "H题要求把重复值递增到最小未用值并输出完整数组，交付标准C/C++单文件；这可用1–2周做一次个人算法与实现探索；历史300元报名费虽接近你的300元自付上限，但食宿等未知，不能据此认定总预算。",
+      "basis": "inference",
+      "decision": {
+        "verdict": "supported",
+        "note": "H题修改数组与单文件C/C++交付有据；2019报名费300元与学生300元上限的比较忠实，明确食宿交通、当前费用和个人总支出未知。"
+      },
+      "studentEvidence": [
+        {
+          "id": "s.goalIntent.c54d1a8bca1535aa",
+          "field": "goalIntent",
+          "originalText": "explore",
+          "label": "希望参赛帮助你探索适合自己的方向",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        },
+        {
+          "id": "s.preparationHorizon.23efb888fdffefde",
+          "field": "preparationHorizon",
+          "originalText": "1-2-weeks",
+          "label": "准备周期：1–2周",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        },
+        {
+          "id": "s.budget.maximumYuan.128e2f58150ed419",
+          "field": "budget.maximumYuan",
+          "originalText": "300",
+          "label": "自付费用上限：300元",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        }
+      ],
+      "competitionEvidence": [
+        {
+          "id": "lanqiao-cup:v2:track",
+          "text": "个人限时程序设计。H题依次把已在前缀出现的当前整数递增到最小未用值，输出修改后的完整数组。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2019省赛A组H修改数组完整题与限制",
+          "sourceIds": [
+            "lanqiao-c3-h"
+          ],
+          "sources": [
+            {
+              "id": "lanqiao-c3-h",
+              "url": "https://acm.ecnu.edu.cn/contest/515/statements/",
+              "title": "第十届蓝桥杯省赛C/C++大学A组试题",
+              "scope": "2019省赛A组H修改数组完整题与限制",
+              "authority": "official_host",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/v6/content-research/software-math-c3-reading-log.json"
+            }
+          ]
+        },
+        {
+          "id": "lanqiao-cup:v2:deliverables",
+          "text": "H提交标准C/C++单文件源程序，按标准输入输出；浏览器提交且最后一次答案生效，不能仅覆盖样例。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2019省赛A组H修改数组完整题与限制",
+          "sourceIds": [
+            "lanqiao-c3-h"
+          ],
+          "sources": [
+            {
+              "id": "lanqiao-c3-h",
+              "url": "https://acm.ecnu.edu.cn/contest/515/statements/",
+              "title": "第十届蓝桥杯省赛C/C++大学A组试题",
+              "scope": "2019省赛A组H修改数组完整题与限制",
+              "authority": "official_host",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/v6/content-research/software-math-c3-reading-log.json"
+            }
+          ]
+        },
+        {
+          "id": "lanqiao-cup:v2:investment",
+          "text": "2019软件个人赛报名300元/人，参赛者及带队教师食宿交通自理；院校补贴与新届费用不能由此推定。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2019个人软件赛资格、评分与报名费用",
+          "sourceIds": [
+            "lanqiao-c3-rules"
+          ],
+          "sources": [
+            {
+              "id": "lanqiao-c3-rules",
+              "url": "https://webadm.suse.edu.cn/_upload/article/files/db/ce/8c33934f4d00ac940f42f84d62f5/57a90821-ccb9-4ddb-955a-89a8e3a333b3.rar",
+              "title": "2019第十届蓝桥杯报名附件：通知、软件大纲、指南、费用",
+              "scope": "2019个人软件赛资格、评分与报名费用",
+              "authority": "official_host",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/v6/content-research/software-math-c3-reading-log.json"
+            }
+          ]
+        }
+      ],
+      "retainedClaimConditions": [
+        "仅2019历史题与同届规则，不声称当前可报名或满分通过。",
+        "食宿交通与当前费用未核，不能把历史报名费当作个人总支出。"
+      ],
+      "retainedCandidateConditions": [
+        "未运行官方隐藏评测，不声称满分通过",
+        "当前届规则需另查；本条明确保留2019题目与同届规则",
+        "报名资格与日期请通过官方入口自行核查。",
+        "个人总支出仍需核实，尚不能认定符合已报预算。"
+      ]
+    },
+    {
+      "reviewIndex": 12,
+      "key": "lanqiao-cup:2019-10:cpp-array-successor:cpp-a:china-provincial-cpp-a-2019:v3.role",
+      "pointer": "/report/recommendations/5/currentRole",
+      "rank": 6,
+      "itemId": "lanqiao-cup:2019-10:cpp-array-successor:cpp-a:china-provincial-cpp-a-2019:v3",
+      "kind": "role",
+      "text": "可先承担独立算法与实现角色，交付正确性说明、单文件实现与对拍记录，重点试探从朴素模拟改到后继结构是否愿意继续。",
+      "basis": "suggestion",
+      "decision": {
+        "verdict": "supported",
+        "note": "正确性说明、对拍和后继结构是明确的算法练习建议，不被写成官方必须采用的方法或已经通过隐藏评测。个人准备周期引用有效。"
+      },
+      "studentEvidence": [
+        {
+          "id": "s.preparationHorizon.23efb888fdffefde",
+          "field": "preparationHorizon",
+          "originalText": "1-2-weeks",
+          "label": "准备周期：1–2周",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        }
+      ],
+      "competitionEvidence": [
+        {
+          "id": "lanqiao-cup:v2:deliverables",
+          "text": "H提交标准C/C++单文件源程序，按标准输入输出；浏览器提交且最后一次答案生效，不能仅覆盖样例。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2019省赛A组H修改数组完整题与限制",
+          "sourceIds": [
+            "lanqiao-c3-h"
+          ],
+          "sources": [
+            {
+              "id": "lanqiao-c3-h",
+              "url": "https://acm.ecnu.edu.cn/contest/515/statements/",
+              "title": "第十届蓝桥杯省赛C/C++大学A组试题",
+              "scope": "2019省赛A组H修改数组完整题与限制",
+              "authority": "official_host",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/v6/content-research/software-math-c3-reading-log.json"
+            }
+          ]
+        }
+      ],
+      "retainedClaimConditions": [
+        "仅作历史题练习，不运行官方隐藏评测。"
+      ],
+      "retainedCandidateConditions": [
+        "未运行官方隐藏评测，不声称满分通过",
+        "当前届规则需另查；本条明确保留2019题目与同届规则",
+        "报名资格与日期请通过官方入口自行核查。",
+        "个人总支出仍需核实，尚不能认定符合已报预算。"
+      ]
+    },
+    {
+      "reviewIndex": 13,
+      "key": "national-college-mathematics:2011-3:calculus-third-derivative:non-mathematics:zhejiang-zjut-preliminary-2011:v3.reason.0",
+      "pointer": "/report/recommendations/6/reasons/0",
+      "rank": 7,
+      "itemId": "national-college-mathematics:2011-3:calculus-third-derivative:non-mathematics:zhejiang-zjut-preliminary-2011:v3",
+      "kind": "reason",
+      "text": "第三题要求用泰勒公式与连续性证明开区间中存在三阶导数等于3的点，产出为完整书面证明；可把该历史题作为1–2周内的个人证明小样，从复习余项与介值定理入手，探索自己是否愿意继续数学证明方向；60元仅为2011浙江工大历史本校收费，不推成当前全国费用。",
+      "basis": "inference",
+      "decision": {
+        "verdict": "needs_revision",
+        "priority": "P2",
+        "category": "editorial_method_promoted_to_requirement",
+        "unsupported": [
+          "第三题要求用泰勒公式与连续性证明"
+        ],
+        "note": "被引track只要求证明三阶导数存在性，deliverables是作答格式。绑定目录将Taylor路线列为editorial_inference，公开参考评分路线也不等于所有合法证明必须用该方法；不能说成题目要求。60元历史本校收费边界本身正确。",
+        "change": "改为“可尝试用泰勒公式与连续性证明”，并在需要讨论参考评分时引用相应rubric事实，保留其他证明路线边界。"
+      },
+      "studentEvidence": [
+        {
+          "id": "s.goalIntent.c54d1a8bca1535aa",
+          "field": "goalIntent",
+          "originalText": "explore",
+          "label": "希望参赛帮助你探索适合自己的方向",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        },
+        {
+          "id": "s.preparationHorizon.23efb888fdffefde",
+          "field": "preparationHorizon",
+          "originalText": "1-2-weeks",
+          "label": "准备周期：1–2周",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        }
+      ],
+      "competitionEvidence": [
+        {
+          "id": "national-college-mathematics:v2:track",
+          "text": "第三题要求从函数端点值和中点一阶导数条件，证明开区间中存在三阶导数等于3的点，需完整论证。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2011非数学组作答要求及第三大题",
+          "sourceIds": [
+            "cmc-c5-paper"
+          ],
+          "sources": [
+            {
+              "id": "cmc-c5-paper",
+              "url": "https://math.ecnu.edu.cn/llin/pdf_files/nonmath2011.pdf",
+              "title": "2011预赛非数学类原卷",
+              "scope": "2011非数学组作答要求及第三大题",
+              "authority": "official_host",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/v6/content-research/software-math-c5-reading-log.json"
+            }
+          ]
+        },
+        {
+          "id": "national-college-mathematics:v2:deliverables",
+          "text": "闭卷150分钟，在原卷规定范围写解答，密封线外不能有姓名标记；其它纸上作答无效，允许当页背面续写并标题号。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2011非数学组作答要求及第三大题",
+          "sourceIds": [
+            "cmc-c5-paper"
+          ],
+          "sources": [
+            {
+              "id": "cmc-c5-paper",
+              "url": "https://math.ecnu.edu.cn/llin/pdf_files/nonmath2011.pdf",
+              "title": "2011预赛非数学类原卷",
+              "scope": "2011非数学组作答要求及第三大题",
+              "authority": "official_host",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/v6/content-research/software-math-c5-reading-log.json"
+            }
+          ]
+        },
+        {
+          "id": "national-college-mathematics:v2:investment",
+          "text": "该校2011通知要求每人60元报名费；这只是本校历史收取额，个人总支出、其他学校补贴及当前届收费均未知，不能推成全国或免费。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2011浙江赛区、本校报名和费用安排；不作为全国费用通则",
+          "sourceIds": [
+            "cmc-c5-zjut-rules"
+          ],
+          "sources": [
+            {
+              "id": "cmc-c5-zjut-rules",
+              "url": "https://www.soft.zjut.edu.cn/170.html",
+              "title": "关于第三届全国大学生数学竞赛报名的通知",
+              "scope": "2011浙江赛区、本校报名和费用安排；不作为全国费用通则",
+              "authority": "university_local",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/v6/content-research/after-review-b-reading-log.json"
+            }
+          ]
+        }
+      ],
+      "retainedClaimConditions": [
+        "仅2011历史题与浙江工大历史通知，不用于新届直接报名。",
+        "公开评分路线不保证其他证明路线逐步同分。"
+      ],
+      "retainedCandidateConditions": [
+        "本条采用2011经典题与浙江工业大学同届通知；原全国通知冻结为拦截页，不再用于事实支持，不能用于新届直接报名",
+        "公开评分是参考解答的累计标注，不保证其它证明路线逐步对应同分",
+        "报名资格与日期请通过官方入口自行核查。",
+        "个人总支出仍需核实，尚不能认定符合已报预算。"
+      ]
+    },
+    {
+      "reviewIndex": 14,
+      "key": "national-college-mathematics:2011-3:calculus-third-derivative:non-mathematics:zhejiang-zjut-preliminary-2011:v3.role",
+      "pointer": "/report/recommendations/6/currentRole",
+      "rank": 7,
+      "itemId": "national-college-mathematics:2011-3:calculus-third-derivative:non-mathematics:zhejiang-zjut-preliminary-2011:v3",
+      "kind": "role",
+      "text": "可先承担个人证明与表达角色，逐项核对余项点、导数连续性和累计评分步骤，形成可修订的证明草稿。",
+      "basis": "suggestion",
+      "decision": {
+        "verdict": "needs_revision",
+        "priority": "P3",
+        "category": "citation_coverage_gap",
+        "unsupported": [
+          "余项点、导数连续性和累计评分步骤"
+        ],
+        "note": "唯一引用deliverables只讲闭卷150分钟和原卷作答，不能支持本题存在特定余项/累计评分步骤。未引用的角色描述及rubric不作为补证。",
+        "change": "增加直接支持这些内容的可用task/rubric事实，或改成一般性的条件核对与证明修订建议。"
+      },
+      "studentEvidence": [
+        {
+          "id": "s.preparationHorizon.23efb888fdffefde",
+          "field": "preparationHorizon",
+          "originalText": "1-2-weeks",
+          "label": "准备周期：1–2周",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        }
+      ],
+      "competitionEvidence": [
+        {
+          "id": "national-college-mathematics:v2:deliverables",
+          "text": "闭卷150分钟，在原卷规定范围写解答，密封线外不能有姓名标记；其它纸上作答无效，允许当页背面续写并标题号。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2011非数学组作答要求及第三大题",
+          "sourceIds": [
+            "cmc-c5-paper"
+          ],
+          "sources": [
+            {
+              "id": "cmc-c5-paper",
+              "url": "https://math.ecnu.edu.cn/llin/pdf_files/nonmath2011.pdf",
+              "title": "2011预赛非数学类原卷",
+              "scope": "2011非数学组作答要求及第三大题",
+              "authority": "official_host",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/v6/content-research/software-math-c5-reading-log.json"
+            }
+          ]
+        }
+      ],
+      "retainedClaimConditions": [
+        "仅作历史单题练习，不声称当前赛季资格或获奖概率。"
+      ],
+      "retainedCandidateConditions": [
+        "本条采用2011经典题与浙江工业大学同届通知；原全国通知冻结为拦截页，不再用于事实支持，不能用于新届直接报名",
+        "公开评分是参考解答的累计标注，不保证其它证明路线逐步对应同分",
+        "报名资格与日期请通过官方入口自行核查。",
+        "个人总支出仍需核实，尚不能认定符合已报预算。"
+      ]
+    },
+    {
+      "reviewIndex": 15,
+      "key": "if-student-award:2025-entry-guide:sdg-design:design-students-graduates:global-2025:v3.reason.0",
+      "pointer": "/report/recommendations/7/reasons/0",
+      "rank": 8,
+      "itemId": "if-student-award:2025-entry-guide:sdg-design:design-students-graduates:global-2025:v3",
+      "kind": "reason",
+      "text": "官方指南的MASHAV海报机制阅读可在一页概念里拆解用户、通风逻辑与效果证据；你能每周投入5–10小时且以1–2周探索方向，可先做机制重绘来检验是否喜欢设计概念分析，但2025报名资格与当前窗口不据此成立。",
+      "basis": "inference",
+      "decision": {
+        "verdict": "needs_revision",
+        "priority": "P3",
+        "category": "citation_coverage_gap",
+        "unsupported": [
+          "通风逻辑与效果证据"
+        ],
+        "note": "track只说明SDG概念及MASHAV海报可供阅读，deliverables只讲海报格式；引文未包含该海报具体通风机制或效果证据。保留了指南示例非获奖事实、资格及历史边界。",
+        "change": "引用含实际海报机制内容的fact，或把建议改为不预设通风机制的“分析工作机制与待验证证据”。"
+      },
+      "studentEvidence": [
+        {
+          "id": "s.goalIntent.c54d1a8bca1535aa",
+          "field": "goalIntent",
+          "originalText": "explore",
+          "label": "希望参赛帮助你探索适合自己的方向",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        },
+        {
+          "id": "s.weeklyCommitment.599ad580c3a5c743",
+          "field": "weeklyCommitment",
+          "originalText": "5-10",
+          "label": "每周投入：每周 5–10 小时",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        },
+        {
+          "id": "s.preparationHorizon.23efb888fdffefde",
+          "field": "preparationHorizon",
+          "originalText": "1-2-weeks",
+          "label": "准备周期：1–2周",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        }
+      ],
+      "competitionEvidence": [
+        {
+          "id": "if-student-award:v2:track",
+          "text": "围绕SDG1—15提交产品、服务、沟通或应用概念；用官方指南MASHAV完整海报练习证据阅读。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2025全球学生奖参赛与展示规范",
+          "sourceIds": [
+            "b-if-guide"
+          ],
+          "sources": [
+            {
+              "id": "b-if-guide",
+              "url": "https://assets.ctfassets.net/9el74s703hin/mEuiHUwteSLEZbLDQT7VR/c2ca102a428805da3c6d37fdf411d845/iF_DESIGN_STUDENT_AWARD_2025_Entry_Guide_Spanish.pdf",
+              "title": "iF DESIGN STUDENT AWARD 2025 Entry Guide（西语）",
+              "scope": "2025全球学生奖参赛与展示规范",
+              "authority": "organizer",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/v6/content-research/arts-business-b-reading-log.json"
+            }
+          ]
+        },
+        {
+          "id": "if-student-award:v2:deliverables",
+          "text": "A1横版一页PDF海报不超5MB，最多2张图及650字符说明，视频可选；以原指南格式为准。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2025全球学生奖参赛与展示规范",
+          "sourceIds": [
+            "b-if-guide"
+          ],
+          "sources": [
+            {
+              "id": "b-if-guide",
+              "url": "https://assets.ctfassets.net/9el74s703hin/mEuiHUwteSLEZbLDQT7VR/c2ca102a428805da3c6d37fdf411d845/iF_DESIGN_STUDENT_AWARD_2025_Entry_Guide_Spanish.pdf",
+              "title": "iF DESIGN STUDENT AWARD 2025 Entry Guide（西语）",
+              "scope": "2025全球学生奖参赛与展示规范",
+              "authority": "organizer",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/v6/content-research/arts-business-b-reading-log.json"
+            }
+          ]
+        }
+      ],
+      "retainedClaimConditions": [
+        "2025历史指南；设计相关专业资格未确认，仅作练习。",
+        "不把指南示例称为2025获奖作品，当前报名另行核查。"
+      ],
+      "retainedCandidateConditions": [
+        "该海报是官方指南示例，未确认作者完整底层试验资料或2025参赛/获奖身份；只据海报作机制评读",
+        "本条为作者研究草稿，尚待两名独立审阅者核对来源及学习路线。",
+        "报名资格与日期请通过官方入口自行核查。",
+        "个人总支出仍需核实，尚不能认定符合已报预算。"
+      ]
+    },
+    {
+      "reviewIndex": 16,
+      "key": "if-student-award:2025-entry-guide:sdg-design:design-students-graduates:global-2025:v3.role",
+      "pointer": "/report/recommendations/7/currentRole",
+      "rank": 8,
+      "itemId": "if-student-award:2025-entry-guide:sdg-design:design-students-graduates:global-2025:v3",
+      "kind": "role",
+      "text": "可先承担机制与证据角色，重绘被动、主动和组合通风路径并列出待测参数，不用购买材料即可试探。",
+      "basis": "suggestion",
+      "decision": {
+        "verdict": "needs_revision",
+        "priority": "P3",
+        "category": "citation_coverage_and_resource_qualification_gap",
+        "unsupported": [
+          "被动、主动和组合通风路径",
+          "不用购买材料即可试探"
+        ],
+        "note": "唯一deliverables事实是A1一页海报规范，不含三类气流路径，也不证明个人已有绘图设备或材料。虽然没有声称全部免费或预算已满足，免购材料表述仍缺资源条件。",
+        "change": "补具体机制事实；将资源表述改为“可优先使用已有纸笔或设备做机制草图，所需资源另核”，保持不虚构性能测试。"
+      },
+      "studentEvidence": [
+        {
+          "id": "s.preparationHorizon.23efb888fdffefde",
+          "field": "preparationHorizon",
+          "originalText": "1-2-weeks",
+          "label": "准备周期：1–2周",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        }
+      ],
+      "competitionEvidence": [
+        {
+          "id": "if-student-award:v2:deliverables",
+          "text": "A1横版一页PDF海报不超5MB，最多2张图及650字符说明，视频可选；以原指南格式为准。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2025全球学生奖参赛与展示规范",
+          "sourceIds": [
+            "b-if-guide"
+          ],
+          "sources": [
+            {
+              "id": "b-if-guide",
+              "url": "https://assets.ctfassets.net/9el74s703hin/mEuiHUwteSLEZbLDQT7VR/c2ca102a428805da3c6d37fdf411d845/iF_DESIGN_STUDENT_AWARD_2025_Entry_Guide_Spanish.pdf",
+              "title": "iF DESIGN STUDENT AWARD 2025 Entry Guide（西语）",
+              "scope": "2025全球学生奖参赛与展示规范",
+              "authority": "organizer",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/v6/content-research/arts-business-b-reading-log.json"
+            }
+          ]
+        }
+      ],
+      "retainedClaimConditions": [
+        "图上没有的性能不自行补成作者测试结论。"
+      ],
+      "retainedCandidateConditions": [
+        "该海报是官方指南示例，未确认作者完整底层试验资料或2025参赛/获奖身份；只据海报作机制评读",
+        "本条为作者研究草稿，尚待两名独立审阅者核对来源及学习路线。",
+        "报名资格与日期请通过官方入口自行核查。",
+        "个人总支出仍需核实，尚不能认定符合已报预算。"
+      ]
+    },
+    {
+      "reviewIndex": 17,
+      "key": "dandad-new-blood:2026-share-your-passion:personal-social-campaign:eligible-creative:global-2026-dad-brief:v3.reason.0",
+      "pointer": "/report/recommendations/8/reasons/0",
+      "rank": 9,
+      "itemId": "dandad-new-blood:2026-share-your-passion:personal-social-campaign:eligible-creative:global-2026-dad-brief:v3",
+      "kind": "reason",
+      "text": "Share your passion要求把个人创意实践延展成持续社交内容系列，并产出至少五幅静态样稿或三条短视频；在1–2周内可先做五幅静态草稿探索创意传播是否适合自己，2026报名费15英镑及设备制作成本另核，不能据此确认总支出在预算内。",
+      "basis": "inference",
+      "decision": {
+        "verdict": "supported",
+        "note": "个人实践、持续社交内容、五幅静态或三条视频以及15英镑历史费用均有据；个人总成本及汇率未被推定，当前建议选择静态草稿。视频分支未复述每条至少30秒，作为非致命完整性提示记录；完整绑定fact仍保留该下限。"
+      },
+      "studentEvidence": [
+        {
+          "id": "s.goalIntent.c54d1a8bca1535aa",
+          "field": "goalIntent",
+          "originalText": "explore",
+          "label": "希望参赛帮助你探索适合自己的方向",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        },
+        {
+          "id": "s.preparationHorizon.23efb888fdffefde",
+          "field": "preparationHorizon",
+          "originalText": "1-2-weeks",
+          "label": "准备周期：1–2周",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        },
+        {
+          "id": "s.weeklyCommitment.599ad580c3a5c743",
+          "field": "weeklyCommitment",
+          "originalText": "5-10",
+          "label": "每周投入：每周 5–10 小时",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        }
+      ],
+      "competitionEvidence": [
+        {
+          "id": "dandad-new-blood:v2:track",
+          "text": "Share your passion要求为自己建立有持续性的社交传播活动，明确本人实践与热情、目标受众、求职/社群/品牌合作等目的，并解释平台与互动策略。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2026该命题目标、受众、创作约束和交付",
+          "sourceIds": [
+            "newblood-2026-dad-brief"
+          ],
+          "sources": [
+            {
+              "id": "newblood-2026-dad-brief",
+              "url": "https://media.dandad.org/documents/NBA2026-D-AD-220126.pdf",
+              "title": "D&AD 2026 Share your passion完整命题",
+              "scope": "2026该命题目标、受众、创作约束和交付",
+              "authority": "organizer",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/continuation-20261105/content/source-rechecks-batch02/reading-log.json"
+            }
+          ]
+        },
+        {
+          "id": "dandad-new-blood:v2:deliverables",
+          "text": "创作示例至少三条各不少于30秒的视频或五幅静态作品，可混合媒介；正式主材料为至多2分钟介绍视频或至多8张JPEG。选交交互作品；主交JPEG时可另交总长至多1分钟视频，主交视频时可另交至多4张JPEG。创作示例与评审介绍材料不是同一长度限制；正式作品和解释须符合英语提交要求，中文题面不等于允许中文参赛材料。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2026该命题目标、受众、创作约束和交付；2026适用资格、通用材料规范和正式评审，非2027规则",
+          "sourceIds": [
+            "newblood-2026-dad-brief",
+            "newblood-2026-tutor-pack"
+          ],
+          "sources": [
+            {
+              "id": "newblood-2026-dad-brief",
+              "url": "https://media.dandad.org/documents/NBA2026-D-AD-220126.pdf",
+              "title": "D&AD 2026 Share your passion完整命题",
+              "scope": "2026该命题目标、受众、创作约束和交付",
+              "authority": "organizer",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/continuation-20261105/content/source-rechecks-batch02/reading-log.json"
+            },
+            {
+              "id": "newblood-2026-tutor-pack",
+              "url": "https://media.dandad.org/documents/New_Blood_Awards_2026_Tutor_Pack_UPDATED.pdf",
+              "title": "New Blood Awards 2026 Tutor Pack",
+              "scope": "2026适用资格、通用材料规范和正式评审，非2027规则",
+              "authority": "organizer",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/continuation-20261105/content/source-rechecks-batch02/reading-log.json"
+            }
+          ]
+        },
+        {
+          "id": "dandad-new-blood:v2:investment",
+          "text": "2026每项作品报名费15英镑，或由每位成员完成参赛调查获得全额报名费抵用券；这不足以确认个人总支出，设备、网络、制作及授权成本仍待核。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2026适用资格、通用材料规范和正式评审，非2027规则",
+          "sourceIds": [
+            "newblood-2026-tutor-pack"
+          ],
+          "sources": [
+            {
+              "id": "newblood-2026-tutor-pack",
+              "url": "https://media.dandad.org/documents/New_Blood_Awards_2026_Tutor_Pack_UPDATED.pdf",
+              "title": "New Blood Awards 2026 Tutor Pack",
+              "scope": "2026适用资格、通用材料规范和正式评审，非2027规则",
+              "authority": "organizer",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/continuation-20261105/content/source-rechecks-batch02/reading-log.json"
+            }
+          ]
+        }
+      ],
+      "retainedClaimConditions": [
+        "2026历史截止已过，正式新届资格与个人总成本另核。",
+        "未发布样稿时不声称传播成效。"
+      ],
+      "retainedCandidateConditions": [
+        "历史截止已过，正式新届资格及个人总成本另核",
+        "本题以2026通用评审问题作自查参考；Games Design有例外，不推断本题未标明的分支排序",
+        "未发布样稿时不声称传播成效，也不把本人姓名例外推广到其他命题",
+        "报名资格与日期请通过官方入口自行核查。",
+        "个人总支出仍需核实，尚不能认定符合已报预算。"
+      ]
+    },
+    {
+      "reviewIndex": 18,
+      "key": "dandad-new-blood:2026-share-your-passion:personal-social-campaign:eligible-creative:global-2026-dad-brief:v3.role",
+      "pointer": "/report/recommendations/8/currentRole",
+      "rank": 9,
+      "itemId": "dandad-new-blood:2026-share-your-passion:personal-social-campaign:eligible-creative:global-2026-dad-brief:v3",
+      "kind": "role",
+      "text": "可先承担创意与视觉表达角色，做五幅有共同主线的静态样稿并记录改版理由，作为两周探索产出。",
+      "basis": "suggestion",
+      "decision": {
+        "verdict": "supported",
+        "note": "五幅静态样稿、共同主线和迭代是合理准备建议；英文正式提交与素材授权另核，未把中文草稿或未发布作品说成正式结果。"
+      },
+      "studentEvidence": [
+        {
+          "id": "s.preparationHorizon.23efb888fdffefde",
+          "field": "preparationHorizon",
+          "originalText": "1-2-weeks",
+          "label": "准备周期：1–2周",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        }
+      ],
+      "competitionEvidence": [
+        {
+          "id": "dandad-new-blood:v2:deliverables",
+          "text": "创作示例至少三条各不少于30秒的视频或五幅静态作品，可混合媒介；正式主材料为至多2分钟介绍视频或至多8张JPEG。选交交互作品；主交JPEG时可另交总长至多1分钟视频，主交视频时可另交至多4张JPEG。创作示例与评审介绍材料不是同一长度限制；正式作品和解释须符合英语提交要求，中文题面不等于允许中文参赛材料。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2026该命题目标、受众、创作约束和交付；2026适用资格、通用材料规范和正式评审，非2027规则",
+          "sourceIds": [
+            "newblood-2026-dad-brief",
+            "newblood-2026-tutor-pack"
+          ],
+          "sources": [
+            {
+              "id": "newblood-2026-dad-brief",
+              "url": "https://media.dandad.org/documents/NBA2026-D-AD-220126.pdf",
+              "title": "D&AD 2026 Share your passion完整命题",
+              "scope": "2026该命题目标、受众、创作约束和交付",
+              "authority": "organizer",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/continuation-20261105/content/source-rechecks-batch02/reading-log.json"
+            },
+            {
+              "id": "newblood-2026-tutor-pack",
+              "url": "https://media.dandad.org/documents/New_Blood_Awards_2026_Tutor_Pack_UPDATED.pdf",
+              "title": "New Blood Awards 2026 Tutor Pack",
+              "scope": "2026适用资格、通用材料规范和正式评审，非2027规则",
+              "authority": "organizer",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/continuation-20261105/content/source-rechecks-batch02/reading-log.json"
+            }
+          ]
+        }
+      ],
+      "retainedClaimConditions": [
+        "中文草稿只作练习，正式英语表达与素材授权另行准备。"
+      ],
+      "retainedCandidateConditions": [
+        "历史截止已过，正式新届资格及个人总成本另核",
+        "本题以2026通用评审问题作自查参考；Games Design有例外，不推断本题未标明的分支排序",
+        "未发布样稿时不声称传播成效，也不把本人姓名例外推广到其他命题",
+        "报名资格与日期请通过官方入口自行核查。",
+        "个人总支出仍需核实，尚不能认定符合已报预算。"
+      ]
+    },
+    {
+      "reviewIndex": 19,
+      "key": "loreal-brandstorm:2026-luxe:future-fragrance:18-30-team:global-local-entry:v3.reason.0",
+      "pointer": "/report/recommendations/9/reasons/0",
+      "rank": 10,
+      "itemId": "loreal-brandstorm:2026-luxe:future-fragrance:18-30-team:global-local-entry:v3",
+      "kind": "reason",
+      "text": "命题要把奢华香氛体验重做成可评估创新、可行与扩展的三页方案；你可用1–2周先观察一个试香或使用障碍并画纸面旅程，探索商业与体验设计，但三人团队、18–30年龄和当地通道需另行核对。",
+      "basis": "inference",
+      "decision": {
+        "verdict": "needs_revision",
+        "priority": "P3",
+        "category": "citation_coverage_gap",
+        "unsupported": [
+          "可评估创新、可行与扩展"
+        ],
+        "note": "引用的track支持奢华香氛创意/科学/技术，deliverables支持三页及团队视频，eligibility支持18–30岁/三人队。可行与扩展作为评审标准没有出现在这些被引事实中；未引用的rubric不能补证。资格与当前窗口边界保留。",
+        "change": "增加直接支持创新、可行和扩展标准的rubric事实引用，或删去这些作为命题要求的限定。"
+      },
+      "studentEvidence": [
+        {
+          "id": "s.goalIntent.c54d1a8bca1535aa",
+          "field": "goalIntent",
+          "originalText": "explore",
+          "label": "希望参赛帮助你探索适合自己的方向",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        },
+        {
+          "id": "s.preparationHorizon.23efb888fdffefde",
+          "field": "preparationHorizon",
+          "originalText": "1-2-weeks",
+          "label": "准备周期：1–2周",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        }
+      ],
+      "competitionEvidence": [
+        {
+          "id": "loreal-brandstorm:v2:track",
+          "text": "2026命题要求以创意、科学和技术重新设计奢华香氛的产品、服务及体验。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2026全球Luxe",
+          "sourceIds": [
+            "b-loreal-brief"
+          ],
+          "sources": [
+            {
+              "id": "b-loreal-brief",
+              "url": "https://d32gkk464bsqbe.cloudfront.net/activities/o/BRANDSTORM_2026_MISSION_DOCUMENT.pdf?v=6.8.13",
+              "title": "Brandstorm 2026完整命题手册",
+              "scope": "2026全球Luxe",
+              "authority": "organizer",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/v6/content-research/arts-business-b-reading-log.json"
+            }
+          ]
+        },
+        {
+          "id": "loreal-brandstorm:v2:deliverables",
+          "text": "3页方案演示文件，另交3分钟团队视频；两者各不超过50MB。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2026全球Luxe",
+          "sourceIds": [
+            "b-loreal-brief"
+          ],
+          "sources": [
+            {
+              "id": "b-loreal-brief",
+              "url": "https://d32gkk464bsqbe.cloudfront.net/activities/o/BRANDSTORM_2026_MISSION_DOCUMENT.pdf?v=6.8.13",
+              "title": "Brandstorm 2026完整命题手册",
+              "scope": "2026全球Luxe",
+              "authority": "organizer",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/v6/content-research/arts-business-b-reading-log.json"
+            }
+          ]
+        },
+        {
+          "id": "loreal-brandstorm:v2:eligibility",
+          "text": "18—30岁，三人团队，不限学科及经验；当地参赛通道另核验。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2026全球Brandstorm报名基础说明",
+          "sourceIds": [
+            "b-loreal-entry"
+          ],
+          "sources": [
+            {
+              "id": "b-loreal-entry",
+              "url": "https://brandstorm2026.loreal.com/en",
+              "title": "Brandstorm 2026参赛平台",
+              "scope": "2026全球Brandstorm报名基础说明",
+              "authority": "organizer",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/v6/content-research/arts-business-b-reading-log.json"
+            }
+          ]
+        }
+      ],
+      "retainedClaimConditions": [
+        "2026历史命题，不表示当前可报。",
+        "三人团队与18–30资格未确认，需另行核查当地通道。"
+      ],
+      "retainedCandidateConditions": [
+        "报名资格与日期请通过官方入口自行核查。",
+        "个人总支出仍需核实，尚不能认定符合已报预算。"
+      ]
+    },
+    {
+      "reviewIndex": 20,
+      "key": "loreal-brandstorm:2026-luxe:future-fragrance:18-30-team:global-local-entry:v3.role",
+      "pointer": "/report/recommendations/9/currentRole",
+      "rank": 10,
+      "itemId": "loreal-brandstorm:2026-luxe:future-fragrance:18-30-team:global-local-entry:v3",
+      "kind": "role",
+      "text": "可先承担需求与商业角色，整理真实观察、反例和成本假设表，为后续团队讨论提供可核查输入。",
+      "basis": "suggestion",
+      "decision": {
+        "verdict": "supported",
+        "note": "需求观察、反例和成本假设是明确的准备建议，团队讨论以未来条件表达；没有把未知团队、年龄或当前通道说成已满足。"
+      },
+      "studentEvidence": [
+        {
+          "id": "s.preparationHorizon.23efb888fdffefde",
+          "field": "preparationHorizon",
+          "originalText": "1-2-weeks",
+          "label": "准备周期：1–2周",
+          "state": "affirmed",
+          "confirmed": true,
+          "evidenceLevel": "self_report"
+        }
+      ],
+      "competitionEvidence": [
+        {
+          "id": "loreal-brandstorm:v2:deliverables",
+          "text": "3页方案演示文件，另交3分钟团队视频；两者各不超过50MB。",
+          "kind": "official_fact",
+          "status": "historical",
+          "scope": "2026全球Luxe",
+          "sourceIds": [
+            "b-loreal-brief"
+          ],
+          "sources": [
+            {
+              "id": "b-loreal-brief",
+              "url": "https://d32gkk464bsqbe.cloudfront.net/activities/o/BRANDSTORM_2026_MISSION_DOCUMENT.pdf?v=6.8.13",
+              "title": "Brandstorm 2026完整命题手册",
+              "scope": "2026全球Luxe",
+              "authority": "organizer",
+              "accessStatus": "body_read",
+              "verificationMethod": "agent_web_read",
+              "evidenceArtifact": "artifacts/v6/content-research/arts-business-b-reading-log.json"
+            }
+          ]
+        }
+      ],
+      "retainedClaimConditions": [
+        "若组成团队，本角色不替代团队协作；资格与日期另核。"
+      ],
+      "retainedCandidateConditions": [
+        "报名资格与日期请通过官方入口自行核查。",
+        "个人总支出仍需核实，尚不能认定符合已报预算。"
+      ]
+    }
+  ]
+}

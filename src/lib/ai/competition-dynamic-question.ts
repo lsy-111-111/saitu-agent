@@ -84,6 +84,11 @@ export type CompetitionDynamicTextInterpretation = {
   allowedOptions: CompetitionDynamicQuestionV3["options"];
 };
 
+/** A submitted, unique answer is already authoritative under v7. */
+export function requiresDynamicAnswerClarificationV7(interpretation: CompetitionDynamicTextInterpretation): boolean {
+  return interpretation.status !== "ready";
+}
+
 function sameValues(left: readonly string[], right: readonly string[]) {
   return left.length === right.length && left.every((value) => right.includes(value));
 }
@@ -212,10 +217,10 @@ export async function enhanceCompetitionDynamicFreeTextWithAi(
     model,
     systemPrompt: "Return JSON only. Map text only to the supplied whitelist; use ambiguous or no_match instead of guessing.",
     temperature: 0,
-    maxTokens: 500,
+    maxTokens: 8192,
     maxAttempts: 2,
     schema: outputSchema,
-    thinking: "disabled",
+    thinking: "enabled",
     operation: "competition_normalize",
     promptVersion: COMPETITION_DYNAMIC_NORMALIZE_PROMPT_VERSION,
     candidateCount: question.options.length,

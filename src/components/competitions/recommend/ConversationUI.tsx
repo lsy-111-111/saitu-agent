@@ -264,6 +264,7 @@ export function FixedConversationQuestion({
   onSkip,
   children,
   hasContextAnswer,
+  decisionReady = true,
   turn,
   profile,
   onAnswer,
@@ -280,6 +281,7 @@ export function FixedConversationQuestion({
   onSkip?: () => void;
   children?: ReactNode;
   hasContextAnswer?: boolean;
+  decisionReady?: boolean;
   turn: FixedQuestionTurn;
   profile: DraftCompetitionProfile;
   onAnswer: (field: FixedQuestionField, answer: string | string[]) => void;
@@ -292,7 +294,7 @@ export function FixedConversationQuestion({
   onFreeTextChange: (questionId: FixedQuestionTurn["id"], value: string) => void;
 }) {
   const questionNumber = index + 1;
-  const turnComplete = onSkip ? (hasDecisionAnswer(turn, profile, textAnswers) || hasContextAnswer) : isTurnComplete(turn, profile, textAnswers);
+  const turnComplete = decisionReady && (onSkip ? (hasDecisionAnswer(turn, profile, textAnswers) || hasContextAnswer) : isTurnComplete(turn, profile, textAnswers));
 
   return (
     <AgentMessage>

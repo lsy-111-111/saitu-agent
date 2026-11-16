@@ -9,6 +9,8 @@ import { resetModelCallGovernorForTests } from "@/lib/ai/model-call-governor";
 import { explainDecisionShortlist } from "@/lib/ai/competition-ranking";
 import { normalizeCompetitionQuestionnaire, confirmCompetitionQuestionnaire } from "@/lib/ai/competition-questionnaire";
 import { getCompetitionRecommendationCandidates } from "@/lib/competitions/recommendation-engine";
+import { selectPublishedDecisionRecords } from "@/lib/competitions/v6/published-records";
+import { isDecisionEvidenceFact, isEvidenceForRecord } from "@/lib/competitions/v6/evidence";
 import { COMPETITION_QUESTIONNAIRE_VERSION } from "@/types/competition-recommendation";
 
 const fetchMock = vi.fn<typeof fetch>();
@@ -128,7 +130,7 @@ describe("fixed decision explanations", () => {
     expect(audit).not.toHaveBeenCalled();
   });
 
-  it("returns validated model-selected reasons from the signed final route under v7 consent", async () => {
+  it("returns reviewed exact-record rule reasons from the signed V5 route under v7 consent without a model call", async () => {
     vi.stubEnv("FEATURE_AI", "1");
     vi.stubEnv("FEATURE_COMPETITION_RECOMMENDER", "1");
     vi.stubEnv("AI_CONVERSATION_SIGNING_SECRET", "test-only-final-route-signature-secret-123456");
@@ -137,16 +139,37 @@ describe("fixed decision explanations", () => {
       profile, rawAnswerContext: answers, transcript: [], pendingQuestion: null, completed: true
     });
     const payload = { aiConsent: options().aiConsent, conversationToken };
-    answer(pools => ({ choices: pools.map(p => ({ slot: p.slot, refs: [p.evidence[0].ref] })) }));
+    // The V5 compatibility route projects the current reviewed decision records.
+    // Model reference-selection behavior remains covered by the tests above.
+    fetchMock.mockRejectedValue(new Error("V5 compatibility must not call a provider"));
     const response = await POST(new Request("http://localhost/api/ai/competition-recommend", {
       method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(payload)
     }));
     expect(response.status).toBe(200);
     const parsed = parseCompetitionRecommendationResponseV5(await response.json());
-    expect(parsed).toMatchObject({ status: "matched", provider: "deepseek", rankingSource: "evidence-rules" });
+    expect(parsed).toMatchObject({ status: "matched", provider: "rules", model: "server", rankingSource: "evidence-rules", fallbackUsed: false });
     expect(parsed!.recommendations.length).toBeGreaterThan(0);
-    expect(parsed!.recommendations.every(item => item.explanationSource === "deepseek")).toBe(true);
-    expect(fetchMock).toHaveBeenCalledTimes(1);
+    expect(parsed!.recommendations.length).toBeLessThanOrEqual(3);
+    expect(new Set(parsed!.recommendations.map(item => item.competitionId)).size).toBe(parsed!.recommendations.length);
+    const published = new Map(selectPublishedDecisionRecords().map(record => [record.recordId, record]));
+    for (const item of parsed!.recommendations) {
+      const record = published.get(item.recommendedTrack?.evidenceRef ?? "");
+      expect(record).toBeDefined();
+      if (!record) throw new Error("unpublished exact record returned by V5 route");
+      expect(item).toMatchObject({ competitionId: record.seriesId, evaluatedTrackId: record.track.id,
+        recommendedTrack: { id: record.track.id, evidenceRef: record.recordId }, explanationSource: "rule" });
+      expect(item.explanation.matchReasons.length).toBeGreaterThan(0);
+      const facts = record.facts.filter(fact => fact.kind === "official_fact" && isDecisionEvidenceFact(record, fact) && isEvidenceForRecord(record, fact));
+      const evidenceSourceIds = new Set(facts.flatMap(fact => fact.sourceIds));
+      expect(record.sources.some(source => source.url === item.sourceUrl && evidenceSourceIds.has(source.id))).toBe(true);
+      expect(item.evidenceRefs?.officialFacts?.length).toBeGreaterThan(0);
+      for (const reference of item.evidenceRefs!.officialFacts!) {
+        expect(facts.some(fact => fact.text === reference.fact && fact.sourceIds.includes(reference.sourceRef)
+          && record.sources.some(source => source.id === reference.sourceRef && source.url === reference.sourceUrl))).toBe(true);
+      }
+    }
+    expect(fetchMock).not.toHaveBeenCalled();
+    expect(audit).not.toHaveBeenCalled();
   });
 
   it("uses rules on an upstream error, a missing key, or a spent model budget", async () => {

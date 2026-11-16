@@ -665,8 +665,11 @@ describe("competition scoring", () => {
     expect(taskMismatch.scoreBreakdown.subjectTask).toBeLessThan(baseline.scoreBreakdown.subjectTask!);
     expect(majorMismatch.scoreBreakdown.skillsEvidence).toBe(baseline.scoreBreakdown.skillsEvidence);
     expect(taskMismatch.scoreBreakdown.skillsEvidence).toBe(baseline.scoreBreakdown.skillsEvidence);
-    expect(skillMismatch.scoreBreakdown.skillsEvidence).toBeLessThan(baseline.scoreBreakdown.skillsEvidence!);
-    expect(evidenceMissing.scoreBreakdown.skillsEvidence).toBeLessThan(baseline.scoreBreakdown.skillsEvidence!);
+    // These inputs contain self-reported skills/artifact categories, but no
+    // confirmed personal task. None may earn a definite experience score.
+    expect(baseline.scoreBreakdown.skillsEvidence).toBe(0);
+    expect(skillMismatch.scoreBreakdown.skillsEvidence).toBe(0);
+    expect(evidenceMissing.scoreBreakdown.skillsEvidence).toBe(0);
     expect(skillMismatch.scoreBreakdown.subjectTask).toBe(baseline.scoreBreakdown.subjectTask);
     expect(evidenceMissing.scoreBreakdown.subjectTask).toBe(baseline.scoreBreakdown.subjectTask);
   });

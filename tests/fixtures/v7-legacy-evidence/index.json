@@ -1,0 +1,723 @@
+{
+  "schemaVersion": "saitu.legacy-evidence-opaque-source-closure.v1",
+  "scope": "historical-legacy-byte-preservation-only-not-new-v7-gold",
+  "allowedLogicalRoots": [
+    "artifacts/continuation-v7-20261109/legacy-test-migration/",
+    "artifacts/continuation-20261105/legacy-blind-review/",
+    "artifacts/continuation-20261105/legacy-migration/",
+    "artifacts/v6/legacy-review-20261105/"
+  ],
+  "logicalFileCount": 118,
+  "uniqueBlobCount": 95,
+  "uniqueBytes": 25524541,
+  "files": [
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-blind-review/build_review.py",
+      "fixturePath": "opaque/ac58c155f9915894e854b3689a099913e0b1549e94d36dc6336414dfc965fb85.bin",
+      "bytes": 35085,
+      "sha256": "ac58c155f9915894e854b3689a099913e0b1549e94d36dc6336414dfc965fb85"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-blind-review/disputes-and-hard-negatives.jsonl",
+      "fixturePath": "opaque/0b523112973bf06e0faa2980ba001e5623f0efc97257ca061a06fc86832300be.bin",
+      "bytes": 5747,
+      "sha256": "0b523112973bf06e0faa2980ba001e5623f0efc97257ca061a06fc86832300be"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-blind-review/followup-base-full-pool.jsonl",
+      "fixturePath": "opaque/6a47b550a9802f55794bd7cb5d67b5656c09a9b1076fb3c6c25d26a4e078a160.bin",
+      "bytes": 8388961,
+      "sha256": "6a47b550a9802f55794bd7cb5d67b5656c09a9b1076fb3c6c25d26a4e078a160"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-blind-review/followup-branches.jsonl",
+      "fixturePath": "opaque/f844cb91e27edd8b8aa5a9e6c2ed378046b366f1ce4f81e164486bd780021b03.bin",
+      "bytes": 134996,
+      "sha256": "f844cb91e27edd8b8aa5a9e6c2ed378046b366f1ce4f81e164486bd780021b03"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-blind-review/legacy-v4-full-pool.jsonl",
+      "fixturePath": "opaque/26827f0a7c6eeebc6be10bf93b2484fcadd7ba5c817077b14c2b34f4c78e7c4f.bin",
+      "bytes": 4334291,
+      "sha256": "26827f0a7c6eeebc6be10bf93b2484fcadd7ba5c817077b14c2b34f4c78e7c4f"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-blind-review/manifest.json",
+      "fixturePath": "opaque/e87ce666e0ff6cfff5c18414b1a25c9ae7b99d62ddd9569fd885862ab438cd29.bin",
+      "bytes": 3365,
+      "sha256": "e87ce666e0ff6cfff5c18414b1a25c9ae7b99d62ddd9569fd885862ab438cd29"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-blind-review/ranking-full-pool.jsonl",
+      "fixturePath": "opaque/693fe352ed35e6cb2e5111b7aa95cc3159cc476ced2770f9ce1904c0c39cbdb2.bin",
+      "bytes": 5954184,
+      "sha256": "693fe352ed35e6cb2e5111b7aa95cc3159cc476ced2770f9ce1904c0c39cbdb2"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-blind-review/REVIEW_METHOD.md",
+      "fixturePath": "opaque/ff6dd551d5f8d303436584d9b880141f3d6a7b3bdff34cbff007958852c95858.bin",
+      "bytes": 4318,
+      "sha256": "ff6dd551d5f8d303436584d9b880141f3d6a7b3bdff34cbff007958852c95858"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-blind-review/review-index.jsonl",
+      "fixturePath": "opaque/f61a7cb12897be88ba0c88a4d73bac2923f9de892240e9c292f08eed5b6d375d.bin",
+      "bytes": 55442,
+      "sha256": "f61a7cb12897be88ba0c88a4d73bac2923f9de892240e9c292f08eed5b6d375d"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-blind-review/review-lock.json",
+      "fixturePath": "opaque/8958065fdf8d7e10a44df87a9d62a25ad94dd5508055c422a1cd6e66ed946379.bin",
+      "bytes": 1968,
+      "sha256": "8958065fdf8d7e10a44df87a9d62a25ad94dd5508055c422a1cd6e66ed946379"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-blind-review/score-task-relations.jsonl",
+      "fixturePath": "opaque/bc7e00a0fbf6175724b7f2700a569c5be652edca25c2d170af73607bb61ffbc6.bin",
+      "bytes": 26838,
+      "sha256": "bc7e00a0fbf6175724b7f2700a569c5be652edca25c2d170af73607bb61ffbc6"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-blind-review/scoring-pairs.jsonl",
+      "fixturePath": "opaque/cd05f00461f57de4092c4b8a7c5a875123043bf6825a59ca429ff54d987729f6.bin",
+      "bytes": 370775,
+      "sha256": "cd05f00461f57de4092c4b8a7c5a875123043bf6825a59ca429ff54d987729f6"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-blind-review/semantic-rubric.json",
+      "fixturePath": "opaque/aa4d4461bf797c9d546e7252bedd6fe6c4e80a51c53cb41195208e36af7450df.bin",
+      "bytes": 17933,
+      "sha256": "aa4d4461bf797c9d546e7252bedd6fe6c4e80a51c53cb41195208e36af7450df"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-blind-review/validation.json",
+      "fixturePath": "opaque/34d088846dd289336199a699507ade017c7840b3580051de52186f9cb2b58a4a.bin",
+      "bytes": 1063,
+      "sha256": "34d088846dd289336199a699507ade017c7840b3580051de52186f9cb2b58a4a"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before-lock.json",
+      "fixturePath": "opaque/67caacfdd29ef80201ff78eeed4b1c3800e70ccebdfd56b8ba62073ada97a054.bin",
+      "bytes": 4399,
+      "sha256": "67caacfdd29ef80201ff78eeed4b1c3800e70ccebdfd56b8ba62073ada97a054"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before/artifacts/continuation-20261105/full-vitest-01.json",
+      "fixturePath": "opaque/066f391eb6bfe0f1d56af0348ccc8f7bcac4669380d73269e1b30f7780e01be9.bin",
+      "bytes": 905327,
+      "sha256": "066f391eb6bfe0f1d56af0348ccc8f7bcac4669380d73269e1b30f7780e01be9"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before/package.json",
+      "fixturePath": "opaque/da2a8bbeeb5d0a9f85077687790c04bae4abab8a86722a92ac192eb0080cb85c.bin",
+      "bytes": 2444,
+      "sha256": "da2a8bbeeb5d0a9f85077687790c04bae4abab8a86722a92ac192eb0080cb85c"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before/pnpm-lock.yaml",
+      "fixturePath": "opaque/e2c3672ee797b690bba9f39ba9cb45ba55d13ed8b927bc392e67502309d4b0b9.bin",
+      "bytes": 176145,
+      "sha256": "e2c3672ee797b690bba9f39ba9cb45ba55d13ed8b927bc392e67502309d4b0b9"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before/tests/ai/competition-clarify-context.test.ts",
+      "fixturePath": "opaque/ae4b07e73ac7f63a2063ab48ca3044518291001f7663330eec76680e70cc3ce9.bin",
+      "bytes": 32707,
+      "sha256": "ae4b07e73ac7f63a2063ab48ca3044518291001f7663330eec76680e70cc3ce9"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before/tests/ai/competition-clarify-route.test.ts",
+      "fixturePath": "opaque/eb756e0669e0a0c9c6ca6cd29d9139aa016e358b9a8e81f983e3a1e7a097e5ef.bin",
+      "bytes": 26961,
+      "sha256": "eb756e0669e0a0c9c6ca6cd29d9139aa016e358b9a8e81f983e3a1e7a097e5ef"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before/tests/ai/competition-recommend-route.test.ts",
+      "fixturePath": "opaque/605ae748de8a35cc6436fff48c7575eaaa86056063f2f31dc9be934f716faf5d.bin",
+      "bytes": 25765,
+      "sha256": "605ae748de8a35cc6436fff48c7575eaaa86056063f2f31dc9be934f716faf5d"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before/tests/ai/deepseek-live.test.ts",
+      "fixturePath": "opaque/1b90e8b237d5b3f78fed1f821b50d84542cafb380117f1769040abea5c804f9f.bin",
+      "bytes": 40394,
+      "sha256": "1b90e8b237d5b3f78fed1f821b50d84542cafb380117f1769040abea5c804f9f"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before/tests/competitions/followup-gold-audit.test.ts",
+      "fixturePath": "opaque/2538c418bd782ccbfedbf615ee0805d6219e4d55a95ae3e8e5d2a6161a775abb.bin",
+      "bytes": 40355,
+      "sha256": "2538c418bd782ccbfedbf615ee0805d6219e4d55a95ae3e8e5d2a6161a775abb"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before/tests/competitions/gold-freeze-manifest.test.ts",
+      "fixturePath": "opaque/80e2cfa47ef3613c453e756a77acd6da54c20f9fe8cd31df988fb1e8fe013256.bin",
+      "bytes": 6966,
+      "sha256": "80e2cfa47ef3613c453e756a77acd6da54c20f9fe8cd31df988fb1e8fe013256"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before/tests/competitions/live-ranking-regression.test.ts",
+      "fixturePath": "opaque/5f6034fe9039af386e2e8df48fb0943c89bd050894001d5e82c653d68c5d4920.bin",
+      "bytes": 7270,
+      "sha256": "5f6034fe9039af386e2e8df48fb0943c89bd050894001d5e82c653d68c5d4920"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before/tests/competitions/qualification-status-audit.test.ts",
+      "fixturePath": "opaque/554e658e9f4ceebd9045e2fffdc69529a285fa284d9e42390ef0be61bf155e59.bin",
+      "bytes": 29208,
+      "sha256": "554e658e9f4ceebd9045e2fffdc69529a285fa284d9e42390ef0be61bf155e59"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before/tests/competitions/quality-benchmark.test.ts",
+      "fixturePath": "opaque/d8a7ef4dce4885d30b63a81301b9e55705f919badf8eb818cdfcca9ace518acf.bin",
+      "bytes": 59505,
+      "sha256": "d8a7ef4dce4885d30b63a81301b9e55705f919badf8eb818cdfcca9ace518acf"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before/tests/competitions/recommendation-quality.test.ts",
+      "fixturePath": "opaque/ff534bb2545a0be596a926cad207e5c4a3e91d596c24c37d23b6dc7bb9ab357d.bin",
+      "bytes": 31589,
+      "sha256": "ff534bb2545a0be596a926cad207e5c4a3e91d596c24c37d23b6dc7bb9ab357d"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before/tests/competitions/scoring-gold-audit.test.ts",
+      "fixturePath": "opaque/6520a36da238e02a46d95fae4c63c3007b61424b968c8ba0fc491b548ddd84ad.bin",
+      "bytes": 22463,
+      "sha256": "6520a36da238e02a46d95fae4c63c3007b61424b968c8ba0fc491b548ddd84ad"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before/tests/competitions/strict-baseline-acceptance.test.ts",
+      "fixturePath": "opaque/ed0fd1e9a85b911acb9794c6689dcf0e733145da0e7e5a6e6e337bac34334b0b.bin",
+      "bytes": 16864,
+      "sha256": "ed0fd1e9a85b911acb9794c6689dcf0e733145da0e7e5a6e6e337bac34334b0b"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before/tests/fixtures/competition-followup-gold.ts",
+      "fixturePath": "opaque/7072b0f2fc9eb84c825d536f84120ab8a3b99245fdf175c512699c742c461962.bin",
+      "bytes": 36659,
+      "sha256": "7072b0f2fc9eb84c825d536f84120ab8a3b99245fdf175c512699c742c461962"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before/tests/fixtures/competition-free-text-samples.ts",
+      "fixturePath": "opaque/1c5d769b64eb3ad7a508ccb06d96a8d9c9bb159ac05019af0cec89d9baebea5d.bin",
+      "bytes": 16615,
+      "sha256": "1c5d769b64eb3ad7a508ccb06d96a8d9c9bb159ac05019af0cec89d9baebea5d"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before/tests/fixtures/competition-gold-freeze-manifest.ts",
+      "fixturePath": "opaque/12e55abd85d6c80e55379bb30ea597d85f33c771bce8283538f0f0e7bd481fb7.bin",
+      "bytes": 13532,
+      "sha256": "12e55abd85d6c80e55379bb30ea597d85f33c771bce8283538f0f0e7bd481fb7"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before/tests/fixtures/competition-preference-oracle.ts",
+      "fixturePath": "opaque/130daf4c33ad3cc4a0b716ecb834aaad9e4684ff3f99e0f4af86d1915bed4d0a.bin",
+      "bytes": 19582,
+      "sha256": "130daf4c33ad3cc4a0b716ecb834aaad9e4684ff3f99e0f4af86d1915bed4d0a"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before/tests/fixtures/competition-quality-anchors-1.ts",
+      "fixturePath": "opaque/f95ab4bbfcdaf3fda4f8b10166dc368ef43e437dfb662bcd1df47bad003e8c0e.bin",
+      "bytes": 64228,
+      "sha256": "f95ab4bbfcdaf3fda4f8b10166dc368ef43e437dfb662bcd1df47bad003e8c0e"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before/tests/fixtures/competition-quality-anchors-2.ts",
+      "fixturePath": "opaque/90f4222c52ce4b093d5353667eb42d8d4fd9e5338897cdcfebba8e1e2ef233ef.bin",
+      "bytes": 65989,
+      "sha256": "90f4222c52ce4b093d5353667eb42d8d4fd9e5338897cdcfebba8e1e2ef233ef"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before/tests/fixtures/competition-quality-anchors-3.ts",
+      "fixturePath": "opaque/8305d38ca5d37d95536b776630d43649c8498fbfc3815905ac8bec77e484430f.bin",
+      "bytes": 68844,
+      "sha256": "8305d38ca5d37d95536b776630d43649c8498fbfc3815905ac8bec77e484430f"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before/tests/fixtures/competition-quality-anchors-4.ts",
+      "fixturePath": "opaque/add8eaea39315ea24cbf7e61b9cfdd02cf95a634c28adc7becf9c87c88c8370d.bin",
+      "bytes": 68198,
+      "sha256": "add8eaea39315ea24cbf7e61b9cfdd02cf95a634c28adc7becf9c87c88c8370d"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before/tests/fixtures/competition-quality-negative-gold.ts",
+      "fixturePath": "opaque/c35faf24060ec03048c7da7fecf438c0fd22ab2cc3db554fa5a64399e463b704.bin",
+      "bytes": 74085,
+      "sha256": "c35faf24060ec03048c7da7fecf438c0fd22ab2cc3db554fa5a64399e463b704"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before/tests/fixtures/competition-quality-no-match-gold.ts",
+      "fixturePath": "opaque/b1120ec3344e9fc01ea23cf39e9fc9874bae12a4fef940d41de8e7fb423efa24.bin",
+      "bytes": 32146,
+      "sha256": "b1120ec3344e9fc01ea23cf39e9fc9874bae12a4fef940d41de8e7fb423efa24"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before/tests/fixtures/competition-quality-personas.ts",
+      "fixturePath": "opaque/c83d0d4fa2e58de10b66f3e8a6ac838c5211d50ca20ab9c4d881e7e68de4b5bf.bin",
+      "bytes": 5066,
+      "sha256": "c83d0d4fa2e58de10b66f3e8a6ac838c5211d50ca20ab9c4d881e7e68de4b5bf"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before/tests/fixtures/competition-quality-ranking-gold.ts",
+      "fixturePath": "opaque/e0b9f769b18bf9d1fd4960e7f82c8b4bc8ecae64c4d8284ee5e9adf9299415d7.bin",
+      "bytes": 103074,
+      "sha256": "e0b9f769b18bf9d1fd4960e7f82c8b4bc8ecae64c4d8284ee5e9adf9299415d7"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before/tests/fixtures/competition-quality-year-gold.ts",
+      "fixturePath": "opaque/8e586b03e42c5868743d8580d5da4a2a7bd6dd83b16c9b7f38574cfa7a10ff4b.bin",
+      "bytes": 2394,
+      "sha256": "8e586b03e42c5868743d8580d5da4a2a7bd6dd83b16c9b7f38574cfa7a10ff4b"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before/tests/fixtures/competition-questionnaire-context.ts",
+      "fixturePath": "opaque/01857fb9c25230f3efe72d72ad445e6dfe4e5f3990daf3f10ad652015b2394f1.bin",
+      "bytes": 886,
+      "sha256": "01857fb9c25230f3efe72d72ad445e6dfe4e5f3990daf3f10ad652015b2394f1"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before/tests/fixtures/competition-score-prospective-baseline.json",
+      "fixturePath": "opaque/34f86f01c049cf0379fb2904e33a35f18ad09192bf529918aef715c45a02797f.bin",
+      "bytes": 104719,
+      "sha256": "34f86f01c049cf0379fb2904e33a35f18ad09192bf529918aef715c45a02797f"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before/tests/fixtures/competition-scoring-gold.ts",
+      "fixturePath": "opaque/cc2f799b2f4bf0c6ab4d84f3a1291b320fbd6716661a745f7675e354414d0337.bin",
+      "bytes": 59003,
+      "sha256": "cc2f799b2f4bf0c6ab4d84f3a1291b320fbd6716661a745f7675e354414d0337"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before/tests/fixtures/deepseek-live-personas.ts",
+      "fixturePath": "opaque/7be4ba001224642c64941b530560490887bd1a3946fa47dcfebca564a0cbc7b7.bin",
+      "bytes": 15838,
+      "sha256": "7be4ba001224642c64941b530560490887bd1a3946fa47dcfebca564a0cbc7b7"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before/tsconfig.json",
+      "fixturePath": "opaque/34fa9775f33843d93ecd2e0225cabe3e012d159e5d8e127212a1c246d47a2358.bin",
+      "bytes": 817,
+      "sha256": "34fa9775f33843d93ecd2e0225cabe3e012d159e5d8e127212a1c246d47a2358"
+    },
+    {
+      "originalPath": "artifacts/continuation-20261105/legacy-migration/before/vitest.config.ts",
+      "fixturePath": "opaque/a32d057bc2e6fd44bb7b9e0df656794f6bd176bfa7232f4a5ac090ff4b9422a5.bin",
+      "bytes": 658,
+      "sha256": "a32d057bc2e6fd44bb7b9e0df656794f6bd176bfa7232f4a5ac090ff4b9422a5"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/artifacts/continuation-v7-20261109/checks/legacy-13-applicability-v7-v3.json",
+      "fixturePath": "opaque/7100390db37d79176d2340d938f698247e52369c0b3e3718a68b300f554b8822.bin",
+      "bytes": 30134,
+      "sha256": "7100390db37d79176d2340d938f698247e52369c0b3e3718a68b300f554b8822"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/artifacts/continuation-v7-20261109/checks/third-full-vitest.json",
+      "fixturePath": "opaque/a3b7b2c83321cdbb274d9c4978e0acaa54f63df06d1791abd10f7f8aea875435.bin",
+      "bytes": 1221413,
+      "sha256": "a3b7b2c83321cdbb274d9c4978e0acaa54f63df06d1791abd10f7f8aea875435"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/artifacts/continuation-v7-20261109/checks/third-full-vitest.log",
+      "fixturePath": "opaque/9738b8eb14e4fa0b42d57ac2d00a8cd65c03b8ef41698f5aed4823d77236f383.bin",
+      "bytes": 566,
+      "sha256": "9738b8eb14e4fa0b42d57ac2d00a8cd65c03b8ef41698f5aed4823d77236f383"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/before-lock.json",
+      "fixturePath": "opaque/3f6c953ac0219fbf62daa17014a3582ffd6a6e5b10f2a23c4c1270a375c47d91.bin",
+      "bytes": 1505,
+      "sha256": "3f6c953ac0219fbf62daa17014a3582ffd6a6e5b10f2a23c4c1270a375c47d91"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/historical-evidence-lock.json",
+      "fixturePath": "opaque/6248eba356fbd1389e4de0ce33fc4d220f594c6a589fef08b32c20e60e33ed62.bin",
+      "bytes": 2429,
+      "sha256": "6248eba356fbd1389e4de0ce33fc4d220f594c6a589fef08b32c20e60e33ed62"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/historical-integrity.json",
+      "fixturePath": "opaque/47b9b68e6a6e9aa1e7782956da4d64086414b1b18b85d15f086a2c2971f9b0bd.bin",
+      "bytes": 6702,
+      "sha256": "47b9b68e6a6e9aa1e7782956da4d64086414b1b18b85d15f086a2c2971f9b0bd"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/historical-scope-lock.json",
+      "fixturePath": "opaque/584af3018b0637275aa61ce4e90fe063c5fbd5d23f1dbf9d85c6d04dc09fd7ea.bin",
+      "bytes": 6370,
+      "sha256": "584af3018b0637275aa61ce4e90fe063c5fbd5d23f1dbf9d85c6d04dc09fd7ea"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/original-failures.json",
+      "fixturePath": "opaque/e9533dc6874657add2c8c19274cca2c24ea6930bf858ddf07497c443e95f7ebc.bin",
+      "bytes": 498909,
+      "sha256": "e9533dc6874657add2c8c19274cca2c24ea6930bf858ddf07497c443e95f7ebc"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/package.json",
+      "fixturePath": "opaque/9cc16eab9219c3f1f6c944dcdf1cd8c13f2e9d2eadd297dcfc2cd195bca70260.bin",
+      "bytes": 2791,
+      "sha256": "9cc16eab9219c3f1f6c944dcdf1cd8c13f2e9d2eadd297dcfc2cd195bca70260"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/pnpm-lock.yaml",
+      "fixturePath": "opaque/e2c3672ee797b690bba9f39ba9cb45ba55d13ed8b927bc392e67502309d4b0b9.bin",
+      "bytes": 176145,
+      "sha256": "e2c3672ee797b690bba9f39ba9cb45ba55d13ed8b927bc392e67502309d4b0b9"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/src/components/competitions/recommend/ChoiceGroup.tsx",
+      "fixturePath": "opaque/d59e86fc65b26328abd5e21f27c34e1f53c59db323813475b87f90e8cec3cb0d.bin",
+      "bytes": 4304,
+      "sha256": "d59e86fc65b26328abd5e21f27c34e1f53c59db323813475b87f90e8cec3cb0d"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/src/components/competitions/recommend/questionContent.ts",
+      "fixturePath": "opaque/19cd35b8157e3836be5bc3a983f84849f339401953526549e2aa4c6bf2b432de.bin",
+      "bytes": 13301,
+      "sha256": "19cd35b8157e3836be5bc3a983f84849f339401953526549e2aa4c6bf2b432de"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/src/content/competition-documented-tracks.ts",
+      "fixturePath": "opaque/e226a23cae91801a3ff0cfe79dde7a110e451d0710f3b68d697dc01ecc04a4e1.bin",
+      "bytes": 21533,
+      "sha256": "e226a23cae91801a3ff0cfe79dde7a110e451d0710f3b68d697dc01ecc04a4e1"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/src/content/competition-expansion.ts",
+      "fixturePath": "opaque/c624a35121f9109b323266e17d9958be9a33397a11fdca0b7a4e0e23b62f0db2.bin",
+      "bytes": 145059,
+      "sha256": "c624a35121f9109b323266e17d9958be9a33397a11fdca0b7a4e0e23b62f0db2"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/src/content/competition-fact-sheets.json",
+      "fixturePath": "opaque/41d66770a4cb7b5092239c836d3d851cf08d4db850256c4b76a9f0753200a312.bin",
+      "bytes": 151099,
+      "sha256": "41d66770a4cb7b5092239c836d3d851cf08d4db850256c4b76a9f0753200a312"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/src/content/competition-guide.ts",
+      "fixturePath": "opaque/1d8f0ddd5ece1aacd0b1774973966975a09bd1cb458cf0ef8a46ec2b55dcfd37.bin",
+      "bytes": 88578,
+      "sha256": "1d8f0ddd5ece1aacd0b1774973966975a09bd1cb458cf0ef8a46ec2b55dcfd37"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/src/content/competition-series-20261104.json",
+      "fixturePath": "opaque/9952cb7bb523548741ce9537a938d0b63d673c694a51a310701ead65126b2862.bin",
+      "bytes": 28500,
+      "sha256": "9952cb7bb523548741ce9537a938d0b63d673c694a51a310701ead65126b2862"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/src/content/competition-series.ts",
+      "fixturePath": "opaque/367bac5f8ef3c5532395fdc4e2d7a4fd551dc3544ebcd6f06044375ad294fdf0.bin",
+      "bytes": 23394,
+      "sha256": "367bac5f8ef3c5532395fdc4e2d7a4fd551dc3544ebcd6f06044375ad294fdf0"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/src/content/competition-taxonomy.ts",
+      "fixturePath": "opaque/31a212a355dba392e28ed544a2bf99ac868e87c4fdb7b0293e75f79277afbc84.bin",
+      "bytes": 5835,
+      "sha256": "31a212a355dba392e28ed544a2bf99ac868e87c4fdb7b0293e75f79277afbc84"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/src/content/competitions.ts",
+      "fixturePath": "opaque/d228bf322d040ef72c316912fb4321bbff9aedadf01921c1eac57042cc51090e.bin",
+      "bytes": 113683,
+      "sha256": "d228bf322d040ef72c316912fb4321bbff9aedadf01921c1eac57042cc51090e"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/src/lib/competitions/availability.ts",
+      "fixturePath": "opaque/974b64446d1949a7605e18dfe44bf4d065943dbbc699d68bc797c1a37e93ffeb.bin",
+      "bytes": 5351,
+      "sha256": "974b64446d1949a7605e18dfe44bf4d065943dbbc699d68bc797c1a37e93ffeb"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/src/lib/competitions/business-activities.ts",
+      "fixturePath": "opaque/aae53d2e98bd3011dc1fdec7b341c4e25dad87c546d0ad3ea1d0ec02303a1526.bin",
+      "bytes": 1350,
+      "sha256": "aae53d2e98bd3011dc1fdec7b341c4e25dad87c546d0ad3ea1d0ec02303a1526"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/src/lib/competitions/catalog.ts",
+      "fixturePath": "opaque/b31c04d9af69ffb75c792d94c113a6a184d393a3c3dc09bf453b30e32828ae0a.bin",
+      "bytes": 2323,
+      "sha256": "b31c04d9af69ffb75c792d94c113a6a184d393a3c3dc09bf453b30e32828ae0a"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/src/lib/competitions/decision-fit.ts",
+      "fixturePath": "opaque/6b4a4df9105f3b8c1a9cb3bee10ec6f63fac719efec32b614197e2a21b3aea0c.bin",
+      "bytes": 9381,
+      "sha256": "6b4a4df9105f3b8c1a9cb3bee10ec6f63fac719efec32b614197e2a21b3aea0c"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/src/lib/competitions/legacy-preference-adapter.ts",
+      "fixturePath": "opaque/d9088a8069cc03a16fe40b3a17cc935c3b42070a4d0396b76404164e535fd00c.bin",
+      "bytes": 2904,
+      "sha256": "d9088a8069cc03a16fe40b3a17cc935c3b42070a4d0396b76404164e535fd00c"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/src/lib/competitions/recommendation-engine.ts",
+      "fixturePath": "opaque/baa55cb11174593a7837aa78238f74a3756444d579c4a56f56fb04436c1cf35f.bin",
+      "bytes": 28699,
+      "sha256": "baa55cb11174593a7837aa78238f74a3756444d579c4a56f56fb04436c1cf35f"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/src/lib/competitions/scoring.ts",
+      "fixturePath": "opaque/472fe9f6bb5206cab5985f90765ba4c05961605651254395f1bfea9dafe0240d.bin",
+      "bytes": 78352,
+      "sha256": "472fe9f6bb5206cab5985f90765ba4c05961605651254395f1bfea9dafe0240d"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/src/lib/competitions/v6/catalog-types.ts",
+      "fixturePath": "opaque/11bcd4e5bf41259ee1e13e4321bf6d0f8e8dc20d2d73cccb334456e40c2ba336.bin",
+      "bytes": 11082,
+      "sha256": "11bcd4e5bf41259ee1e13e4321bf6d0f8e8dc20d2d73cccb334456e40c2ba336"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/src/lib/competitions/v6/contracts.ts",
+      "fixturePath": "opaque/6c9b7be2e2a980bf14a41dd0bba4f329fb6fea6f0cda97465c7a6c51224d5741.bin",
+      "bytes": 11419,
+      "sha256": "6c9b7be2e2a980bf14a41dd0bba4f329fb6fea6f0cda97465c7a6c51224d5741"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/src/lib/competitions/v6/experience-fit.ts",
+      "fixturePath": "opaque/d20ca6a0a9919422bf9a389736eff83aaefd9f26dc4f966eae0a2cee570273a6.bin",
+      "bytes": 15006,
+      "sha256": "d20ca6a0a9919422bf9a389736eff83aaefd9f26dc4f966eae0a2cee570273a6"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/src/lib/utils.ts",
+      "fixturePath": "opaque/d07602373bc557f25aaea1678f328da89db77eda7429bcac49283b6547e6c9b0.bin",
+      "bytes": 121,
+      "sha256": "d07602373bc557f25aaea1678f328da89db77eda7429bcac49283b6547e6c9b0"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/src/types/competition-recommendation.ts",
+      "fixturePath": "opaque/e7882053cee932cc43d4a1916ca36e5d215340305699448792e5ebd9a97e8470.bin",
+      "bytes": 26996,
+      "sha256": "e7882053cee932cc43d4a1916ca36e5d215340305699448792e5ebd9a97e8470"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/tests/ai/competition-clarify-context.test.ts",
+      "fixturePath": "opaque/ae4b07e73ac7f63a2063ab48ca3044518291001f7663330eec76680e70cc3ce9.bin",
+      "bytes": 32707,
+      "sha256": "ae4b07e73ac7f63a2063ab48ca3044518291001f7663330eec76680e70cc3ce9"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/tests/ai/competition-clarify-route.test.ts",
+      "fixturePath": "opaque/eb756e0669e0a0c9c6ca6cd29d9139aa016e358b9a8e81f983e3a1e7a097e5ef.bin",
+      "bytes": 26961,
+      "sha256": "eb756e0669e0a0c9c6ca6cd29d9139aa016e358b9a8e81f983e3a1e7a097e5ef"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/tests/ai/competition-recommend-route.test.ts",
+      "fixturePath": "opaque/3f63166c582ed3b31875f8aa3b0048ca68ea64339477315691d5a872bb46de45.bin",
+      "bytes": 26631,
+      "sha256": "3f63166c582ed3b31875f8aa3b0048ca68ea64339477315691d5a872bb46de45"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/tests/ai/deepseek-live.test.ts",
+      "fixturePath": "opaque/1b90e8b237d5b3f78fed1f821b50d84542cafb380117f1769040abea5c804f9f.bin",
+      "bytes": 40394,
+      "sha256": "1b90e8b237d5b3f78fed1f821b50d84542cafb380117f1769040abea5c804f9f"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/tests/competitions/followup-gold-audit.test.ts",
+      "fixturePath": "opaque/af12fbbc3507170e8d7568419f7e6e86f658f56b0bd6e40b15d9ce1aa449faa2.bin",
+      "bytes": 46460,
+      "sha256": "af12fbbc3507170e8d7568419f7e6e86f658f56b0bd6e40b15d9ce1aa449faa2"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/tests/competitions/gold-freeze-manifest.test.ts",
+      "fixturePath": "opaque/8703362b8c1122085216f27f06836f6e07df02b5dd345a831223e5d3b30dd0fd.bin",
+      "bytes": 12293,
+      "sha256": "8703362b8c1122085216f27f06836f6e07df02b5dd345a831223e5d3b30dd0fd"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/tests/competitions/live-ranking-regression.test.ts",
+      "fixturePath": "opaque/5f6034fe9039af386e2e8df48fb0943c89bd050894001d5e82c653d68c5d4920.bin",
+      "bytes": 7270,
+      "sha256": "5f6034fe9039af386e2e8df48fb0943c89bd050894001d5e82c653d68c5d4920"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/tests/competitions/qualification-status-audit.test.ts",
+      "fixturePath": "opaque/554e658e9f4ceebd9045e2fffdc69529a285fa284d9e42390ef0be61bf155e59.bin",
+      "bytes": 29208,
+      "sha256": "554e658e9f4ceebd9045e2fffdc69529a285fa284d9e42390ef0be61bf155e59"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/tests/competitions/quality-benchmark.test.ts",
+      "fixturePath": "opaque/464a277dab9dc2dd148ad1e26e0edb9c22ca6771081c3996cde8ff46b65fd069.bin",
+      "bytes": 61822,
+      "sha256": "464a277dab9dc2dd148ad1e26e0edb9c22ca6771081c3996cde8ff46b65fd069"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/tests/competitions/recommendation-quality.test.ts",
+      "fixturePath": "opaque/21d4c64037653ce6a02e968d8a02b28ec5c6b387ccd896bd1f096ff9e0fbcf02.bin",
+      "bytes": 33871,
+      "sha256": "21d4c64037653ce6a02e968d8a02b28ec5c6b387ccd896bd1f096ff9e0fbcf02"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/tests/competitions/scoring-gold-audit.test.ts",
+      "fixturePath": "opaque/9644a50efa2199528e3de349ab40304a7e86b9545b73c0e2e06a4800abca3330.bin",
+      "bytes": 28117,
+      "sha256": "9644a50efa2199528e3de349ab40304a7e86b9545b73c0e2e06a4800abca3330"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/tests/competitions/strict-baseline-acceptance.test.ts",
+      "fixturePath": "opaque/b3acb3a32a08f7b65faa0d9c9e9c463c0886ba3e0e78e3126c466c3d2c740c18.bin",
+      "bytes": 25437,
+      "sha256": "b3acb3a32a08f7b65faa0d9c9e9c463c0886ba3e0e78e3126c466c3d2c740c18"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/tests/fixtures/competition-followup-gold.ts",
+      "fixturePath": "opaque/7072b0f2fc9eb84c825d536f84120ab8a3b99245fdf175c512699c742c461962.bin",
+      "bytes": 36659,
+      "sha256": "7072b0f2fc9eb84c825d536f84120ab8a3b99245fdf175c512699c742c461962"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/tests/fixtures/competition-free-text-samples.ts",
+      "fixturePath": "opaque/1c5d769b64eb3ad7a508ccb06d96a8d9c9bb159ac05019af0cec89d9baebea5d.bin",
+      "bytes": 16615,
+      "sha256": "1c5d769b64eb3ad7a508ccb06d96a8d9c9bb159ac05019af0cec89d9baebea5d"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/tests/fixtures/competition-gold-freeze-manifest.ts",
+      "fixturePath": "opaque/12e55abd85d6c80e55379bb30ea597d85f33c771bce8283538f0f0e7bd481fb7.bin",
+      "bytes": 13532,
+      "sha256": "12e55abd85d6c80e55379bb30ea597d85f33c771bce8283538f0f0e7bd481fb7"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/tests/fixtures/competition-historical-baseline-limitation.json",
+      "fixturePath": "opaque/91a31d730db0c744553b2393b3282b54531718f962b9fc5be1f6c4f11997aaa9.bin",
+      "bytes": 831,
+      "sha256": "91a31d730db0c744553b2393b3282b54531718f962b9fc5be1f6c4f11997aaa9"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/tests/fixtures/competition-preference-oracle.ts",
+      "fixturePath": "opaque/130daf4c33ad3cc4a0b716ecb834aaad9e4684ff3f99e0f4af86d1915bed4d0a.bin",
+      "bytes": 19582,
+      "sha256": "130daf4c33ad3cc4a0b716ecb834aaad9e4684ff3f99e0f4af86d1915bed4d0a"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/tests/fixtures/competition-quality-anchors-1.ts",
+      "fixturePath": "opaque/f95ab4bbfcdaf3fda4f8b10166dc368ef43e437dfb662bcd1df47bad003e8c0e.bin",
+      "bytes": 64228,
+      "sha256": "f95ab4bbfcdaf3fda4f8b10166dc368ef43e437dfb662bcd1df47bad003e8c0e"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/tests/fixtures/competition-quality-anchors-2.ts",
+      "fixturePath": "opaque/90f4222c52ce4b093d5353667eb42d8d4fd9e5338897cdcfebba8e1e2ef233ef.bin",
+      "bytes": 65989,
+      "sha256": "90f4222c52ce4b093d5353667eb42d8d4fd9e5338897cdcfebba8e1e2ef233ef"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/tests/fixtures/competition-quality-anchors-3.ts",
+      "fixturePath": "opaque/8305d38ca5d37d95536b776630d43649c8498fbfc3815905ac8bec77e484430f.bin",
+      "bytes": 68844,
+      "sha256": "8305d38ca5d37d95536b776630d43649c8498fbfc3815905ac8bec77e484430f"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/tests/fixtures/competition-quality-anchors-4.ts",
+      "fixturePath": "opaque/add8eaea39315ea24cbf7e61b9cfdd02cf95a634c28adc7becf9c87c88c8370d.bin",
+      "bytes": 68198,
+      "sha256": "add8eaea39315ea24cbf7e61b9cfdd02cf95a634c28adc7becf9c87c88c8370d"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/tests/fixtures/competition-quality-negative-gold.ts",
+      "fixturePath": "opaque/c35faf24060ec03048c7da7fecf438c0fd22ab2cc3db554fa5a64399e463b704.bin",
+      "bytes": 74085,
+      "sha256": "c35faf24060ec03048c7da7fecf438c0fd22ab2cc3db554fa5a64399e463b704"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/tests/fixtures/competition-quality-no-match-gold.ts",
+      "fixturePath": "opaque/b1120ec3344e9fc01ea23cf39e9fc9874bae12a4fef940d41de8e7fb423efa24.bin",
+      "bytes": 32146,
+      "sha256": "b1120ec3344e9fc01ea23cf39e9fc9874bae12a4fef940d41de8e7fb423efa24"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/tests/fixtures/competition-quality-personas.ts",
+      "fixturePath": "opaque/c83d0d4fa2e58de10b66f3e8a6ac838c5211d50ca20ab9c4d881e7e68de4b5bf.bin",
+      "bytes": 5066,
+      "sha256": "c83d0d4fa2e58de10b66f3e8a6ac838c5211d50ca20ab9c4d881e7e68de4b5bf"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/tests/fixtures/competition-quality-ranking-gold.ts",
+      "fixturePath": "opaque/e0b9f769b18bf9d1fd4960e7f82c8b4bc8ecae64c4d8284ee5e9adf9299415d7.bin",
+      "bytes": 103074,
+      "sha256": "e0b9f769b18bf9d1fd4960e7f82c8b4bc8ecae64c4d8284ee5e9adf9299415d7"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/tests/fixtures/competition-quality-year-gold.ts",
+      "fixturePath": "opaque/8e586b03e42c5868743d8580d5da4a2a7bd6dd83b16c9b7f38574cfa7a10ff4b.bin",
+      "bytes": 2394,
+      "sha256": "8e586b03e42c5868743d8580d5da4a2a7bd6dd83b16c9b7f38574cfa7a10ff4b"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/tests/fixtures/competition-questionnaire-context.ts",
+      "fixturePath": "opaque/01857fb9c25230f3efe72d72ad445e6dfe4e5f3990daf3f10ad652015b2394f1.bin",
+      "bytes": 886,
+      "sha256": "01857fb9c25230f3efe72d72ad445e6dfe4e5f3990daf3f10ad652015b2394f1"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/tests/fixtures/competition-score-prospective-baseline.json",
+      "fixturePath": "opaque/84c3a3565861bb9ae532e8db3c4cacf57e70efd965f2bfde15c88fd5df755f96.bin",
+      "bytes": 157588,
+      "sha256": "84c3a3565861bb9ae532e8db3c4cacf57e70efd965f2bfde15c88fd5df755f96"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/tests/fixtures/competition-scoring-gold.ts",
+      "fixturePath": "opaque/cc2f799b2f4bf0c6ab4d84f3a1291b320fbd6716661a745f7675e354414d0337.bin",
+      "bytes": 59003,
+      "sha256": "cc2f799b2f4bf0c6ab4d84f3a1291b320fbd6716661a745f7675e354414d0337"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/tests/fixtures/deepseek-live-personas.ts",
+      "fixturePath": "opaque/7be4ba001224642c64941b530560490887bd1a3946fa47dcfebca564a0cbc7b7.bin",
+      "bytes": 15838,
+      "sha256": "7be4ba001224642c64941b530560490887bd1a3946fa47dcfebca564a0cbc7b7"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/tsconfig.json",
+      "fixturePath": "opaque/b61e141617f687fb9265b8c4a14483beea51e453837dd29191bd37562564a205.bin",
+      "bytes": 950,
+      "sha256": "b61e141617f687fb9265b8c4a14483beea51e453837dd29191bd37562564a205"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/before/vitest.config.ts",
+      "fixturePath": "opaque/a32d057bc2e6fd44bb7b9e0df656794f6bd176bfa7232f4a5ac090ff4b9422a5.bin",
+      "bytes": 658,
+      "sha256": "a32d057bc2e6fd44bb7b9e0df656794f6bd176bfa7232f4a5ac090ff4b9422a5"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/current-test-binding.json",
+      "fixturePath": "opaque/16949b69d123e34fbed545f27170be8a6853d1b20e0f85857e0cd9b03a13c6e2.bin",
+      "bytes": 1674,
+      "sha256": "16949b69d123e34fbed545f27170be8a6853d1b20e0f85857e0cd9b03a13c6e2"
+    },
+    {
+      "originalPath": "artifacts/continuation-v7-20261109/legacy-test-migration/migration-contract.json",
+      "fixturePath": "opaque/55b123d2f44e44a5f7bdcc84a4a19fe7a63d2332ce8f43906a630ab3f073604c.bin",
+      "bytes": 11890,
+      "sha256": "55b123d2f44e44a5f7bdcc84a4a19fe7a63d2332ce8f43906a630ab3f073604c"
+    },
+    {
+      "originalPath": "artifacts/v6/legacy-review-20261105/candidate-pool.json",
+      "fixturePath": "opaque/8a8549da1cd0ac32a03cce3549f720fd334ef86f939143827a9e930f8f586cf0.bin",
+      "bytes": 829124,
+      "sha256": "8a8549da1cd0ac32a03cce3549f720fd334ef86f939143827a9e930f8f586cf0"
+    },
+    {
+      "originalPath": "artifacts/v6/legacy-review-20261105/manifest.json",
+      "fixturePath": "opaque/dcc26ed8ac98526d0006e190708befc9d280e8ecf51e15c26a8b96f0223c8df7.bin",
+      "bytes": 2211,
+      "sha256": "dcc26ed8ac98526d0006e190708befc9d280e8ecf51e15c26a8b96f0223c8df7"
+    },
+    {
+      "originalPath": "artifacts/v6/legacy-review-20261105/review-inputs.jsonl",
+      "fixturePath": "opaque/6d40b8e88be560f38ea735c90cb07690cc43bddb402af12584f31fe6761696e7.bin",
+      "bytes": 210892,
+      "sha256": "6d40b8e88be560f38ea735c90cb07690cc43bddb402af12584f31fe6761696e7"
+    }
+  ]
+}

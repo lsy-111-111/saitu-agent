@@ -53,6 +53,7 @@ import type {
   CompetitionRecommendationProfileV5
 } from "@/types/competition-recommendation";
 import { COMPETITION_CLARIFICATION_RESPONSE_VERSION } from "@/types/competition-recommendation";
+import { readSubmissionTimingV7, submissionModelDeadlineV7 } from "@/lib/competitions/v7/submission-timing";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -71,6 +72,8 @@ export async function POST(request: Request) {
   const deadlines = createCompetitionRequestDeadlines();
   const requestId = getRequestId(request);
   const respond = <T extends Response>(response: T) => withRequestId(response, requestId);
+  try { readSubmissionTimingV7(request); }
+  catch { return respond(competitionAiJson({ok:false,error:"DECISION_TIMING_INVALID"},{status:400})); }
   if (!isCompetitionRecommenderEnabled()) {
     return respond(competitionAiJson({ ok: false, error: "COMPETITION_RECOMMENDER_DISABLED" }, { status: 503 }));
   }
@@ -87,7 +90,7 @@ export async function POST(request: Request) {
   const recentSignalKeys = validated.data.recentSignalKeys ?? [];
   const transitionId = competitionTransitionId(
     "competition_clarify",
-    canonicalizeCompetitionClarifyTransition(validated.data)
+    {...canonicalizeCompetitionClarifyTransition(validated.data),...(validated.data.recommendationPolicy?{recommendationPolicy:validated.data.recommendationPolicy}:{})}
   );
   let sessionId: string;
   let sessionExpiresAtEpochSeconds: number;
@@ -143,10 +146,10 @@ export async function POST(request: Request) {
       qualificationSnapshotSummary.evaluatedAt
     );
     qualificationSnapshot = frozen.snapshot;
-    if (!competitionQualificationSnapshotMatches(qualificationSnapshotSummary, qualificationSnapshot)) {
+    if (validated.data.recommendationPolicy!=="v7"&&!competitionQualificationSnapshotMatches(qualificationSnapshotSummary, qualificationSnapshot)) {
       return respond(competitionAiJson({ ok: false, error: "QUALIFICATION_SNAPSHOT_CHANGED" }, { status: 409 }));
     }
-    if (!competitionPreferenceQuestionsMatchQualificationSnapshot(
+    if (validated.data.recommendationPolicy!=="v7"&&!competitionPreferenceQuestionsMatchQualificationSnapshot(
       qualificationSnapshot,
       transcript,
       verified.payload.pendingQuestion
@@ -227,6 +230,9 @@ export async function POST(request: Request) {
     deadlines,
     producer: async (context) => {
       try {
+        const modelDeadline = validated.data.recommendationPolicy === "v7"
+          ? submissionModelDeadlineV7(request, context.deadlines.aiDeadlineEpochMs, "before_rank")
+          : context.deadlines.aiDeadlineEpochMs;
         let consentRecorded = false;
         if (pendingTextAnswer?.answer.note) {
           const interpretation = await enhanceCompetitionDynamicFreeTextWithAi(
@@ -234,7 +240,7 @@ export async function POST(request: Request) {
             pendingTextAnswer.answer.note,
             pendingTextAnswer.answer.selectedValues,
             {
-              deadlineEpochMs: context.deadlines.aiDeadlineEpochMs,
+              deadlineEpochMs: modelDeadline,
               signal: context.signal
             }
           );
@@ -256,7 +262,7 @@ export async function POST(request: Request) {
           const matchesSelection =
             interpretation.suggestedValues.length === selected.length &&
             interpretation.suggestedValues.every((value) => selected.includes(value));
-          if (interpretation.status !== "ready" || !matchesSelection) {
+          if (interpretation.status !== "ready" || (validated.data.recommendationPolicy!=="v7"&&!matchesSelection)) {
             const {
               provider: _provider,
               model: _model,
@@ -278,7 +284,7 @@ export async function POST(request: Request) {
           }
           transcript.push({
             question: pendingTextAnswer.question,
-            answer: { selectedValues: pendingTextAnswer.answer.selectedValues }
+            answer: { selectedValues: validated.data.recommendationPolicy==="v7"?interpretation.suggestedValues:pendingTextAnswer.answer.selectedValues }
           });
         }
 
@@ -297,7 +303,7 @@ export async function POST(request: Request) {
           now: new Date(qualificationSnapshotSummary.evaluatedAt * 1000)
         });
         const answeredOptional = transcript.some(({ question }) => question.impact === "optional");
-        const result = answeredOptional
+        const result = answeredOptional||validated.data.recommendationPolicy==="v7"
           ? {
               ok: true as const,
               responseVersion: COMPETITION_CLARIFICATION_RESPONSE_VERSION,
@@ -349,7 +355,8 @@ export async function POST(request: Request) {
           outcome: "success"
         }));
         return competitionAiJson(response);
-      } catch {
+      } catch (error) {
+        if (error instanceof Error && error.message === "DECISION_TIMEOUT") return competitionAiJson({ok:false,error:"DECISION_TIMEOUT"},{status:503});
         console.error(JSON.stringify({
           event: "ai_route_completed",
           operation: "competition_clarify",

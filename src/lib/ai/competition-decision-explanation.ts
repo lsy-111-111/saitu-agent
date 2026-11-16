@@ -79,7 +79,7 @@ export async function personalizeFixedDecisionExplanations(items: Item[], option
       evidence: pool.options.map(({ key, promptText }) => ({ ref: key, text: promptText }))
     }))), {
       systemPrompt: '为每个固定的选赛结果选择最能帮助学生理解适配的1到2条已有依据。优先具体经历、技能与任务关联，避免两条重复。只能返回 JSON {"choices":[{"slot":1,"refs":["原样复制该项的ref"]}]}，每项按输入顺序出现一次，不得跨项、重排或生成说明文字。',
-      model, schema: selection, thinking: "disabled", temperature: 0, maxAttempts: 1, maxTokens: 500,
+      model, schema: selection, thinking: "enabled", temperature: 0, maxAttempts: 1, maxTokens: 8192,
       operation: "competition_recommend", promptVersion, candidateCount: pools.length,
       deadlineEpochMs: options.deadlineEpochMs, signal: options.signal
     });

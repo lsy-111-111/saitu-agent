@@ -24,7 +24,9 @@ describe("competition response retention disclosure", () => {
     expect(privacy).toContain("补充问题与回答");
     expect(privacy).toContain("可逆加密");
     expect(privacy).toContain("服务器备份");
-    expect(consent.body).toContain("刷新或离开只会清除页面状态");
+    expect(consent.body).toContain("本标签页会暂存输入");
+    expect(consent.body).toContain("关闭标签页或清除暂存后删除");
+    expect(consent.body).toContain("暂存不超过会话有效期");
     expect(privacy).not.toContain("这些内容仅保留在当前页面内存中");
     expect(consent.body).not.toContain("系统不会持久化这些问答");
   });
@@ -54,15 +56,17 @@ describe("competition response retention disclosure", () => {
     expect(consent).toContain(`最近 ${predeploy} 份发布前备份`);
   });
 
-  it("requires renewed consent and describes the new evidence-selection purpose", () => {
+  it("requires renewed consent and describes the new model-matching purpose", () => {
     const disclosure = getCurrentAiConsentDisclosure();
-    expect(disclosure.version).toBe("2026-11-05.v7");
+    expect(disclosure.version).toBe("2026-11-09.v9");
     const privacy = legalPages.privacy.sections.flatMap(section => section.body).join("");
-    expect(privacy).toContain("临时编号、依据编号");
-    expect(privacy).toContain("不发送问答原文");
-    expect(disclosure.body).toContain("解释服务不可用时显示本站已有依据");
-    expect(legalPages.privacy.updatedAt).toBe("2026-11-05");
-    expect(legalPages.terms.updatedAt).toBe("2026-11-05");
+    expect(privacy).toContain("本人贡献、预算与目标取舍");
+    expect(privacy).toContain("逐段经历短文本");
+    expect(disclosure.body).toContain("模型决定推荐顺序");
+    expect(disclosure.body).toContain("自报能力直接用于匹配，不要求举证");
+    expect(disclosure.body).toContain("参赛资格和开赛时间由我自行核查官网");
+    expect(legalPages.privacy.updatedAt).toBe("2026-11-09");
+    expect(legalPages.terms.updatedAt).toBe("2026-11-09");
   });
 
   it("discloses the enforced anonymous analytics retention boundary", () => {

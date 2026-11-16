@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "saitu.legacy-test-before-lock.v7.1",
+  "archivedAt": "2026-11-08T18:55:11.741857+00:00",
+  "scope": "six legacy test files and complete original Vitest report/log; no historical pass claim",
+  "fileSha256": {
+    "tests/competitions/followup-gold-audit.test.ts": "af12fbbc3507170e8d7568419f7e6e86f658f56b0bd6e40b15d9ce1aa449faa2",
+    "tests/competitions/quality-benchmark.test.ts": "464a277dab9dc2dd148ad1e26e0edb9c22ca6771081c3996cde8ff46b65fd069",
+    "tests/competitions/recommendation-quality.test.ts": "21d4c64037653ce6a02e968d8a02b28ec5c6b387ccd896bd1f096ff9e0fbcf02",
+    "tests/competitions/scoring-gold-audit.test.ts": "9644a50efa2199528e3de349ab40304a7e86b9545b73c0e2e06a4800abca3330",
+    "tests/competitions/strict-baseline-acceptance.test.ts": "b3acb3a32a08f7b65faa0d9c9e9c463c0886ba3e0e78e3126c466c3d2c740c18",
+    "tests/competitions/gold-freeze-manifest.test.ts": "8703362b8c1122085216f27f06836f6e07df02b5dd345a831223e5d3b30dd0fd",
+    "artifacts/continuation-v7-20261109/checks/third-full-vitest.json": "a3b7b2c83321cdbb274d9c4978e0acaa54f63df06d1791abd10f7f8aea875435",
+    "artifacts/continuation-v7-20261109/checks/third-full-vitest.log": "9738b8eb14e4fa0b42d57ac2d00a8cd65c03b8ef41698f5aed4823d77236f383",
+    "artifacts/continuation-v7-20261109/checks/legacy-13-applicability-v7-v3.json": "7100390db37d79176d2340d938f698247e52369c0b3e3718a68b300f554b8822",
+    "original-failures.json": "e9533dc6874657add2c8c19274cca2c24ea6930bf858ddf07497c443e95f7ebc"
+  }
+}

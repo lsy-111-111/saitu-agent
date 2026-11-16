@@ -1,0 +1,184 @@
+[PAGE 1]
+本案例仅供本届大赛期间选手与评委使用，未经授权不得复制、传播或用于商业用途。
+IMA（第十六届）校园管理会计案例大赛
+校内赛及区域赛案例
+双语版
+[PAGE 2]
+IMA（第十六届）校园管理会计案例大赛 – 校内赛及区域赛案例
+1
+碳价决策：新能源企业的投资与战略挑战
+Carbon Pricing Decisions: Investment and Strategic Challenges for a Renewable Energy
+Company
+案例背景 Case Background
+注：本案例中的企业为综合国内动力及储能锂电池行业多家头部企业特征构建的虚拟主体，案
+例数据经过整合重构，仅用于教学研讨，不指代任何一家真实企业。
+Note: The firm in this case is a fictional entity synthesized from profiles of leading domestic
+manufacturers of power and energy storage lithium batteries. All case data has been consolidated and
+reconstructed solely for pedagogical discussion and does not refer to any real company.
+2026年 6月，锂航新能源科技股份有限公司（锂航能源）CFO正准备两周后提交
+给董事会的资本支出审批材料。他面前摆着国内新生产基地 20GWh方形磷酸铁锂
+电池产线的两份核心设备采购方案——这是新基地投产前金额最大的单笔资本支
+出，决策结果会直接影响新产线的投资回报周期、长期碳履约成本，以及公司面向
+国际市场的客户准入资格。
+In June 2026, the CFO of Lihang New Energy Technology Co., Ltd. ("Lihang Energy") was
+finalizing the capital expenditure approval package to be submitted to the Board of
+Directors in two weeks. On his desk lay two competing procurement proposals for the core
+equipment of a new 20 GWh prismatic lithium iron phosphate (LFP) battery production line
+at the company's new manufacturing base in China — the single largest capital expenditure
+before the base comes on stream. The outcome of this decision would direct ly affect the
+payback period of the new line, its long-term carbon compliance costs, and the company's
+eligibility to serve customers in international markets.
+锂航能源是一家快速发展中的动力与储能锂电池制造商，2025年实现营业收入
+120亿元，在国内外布局多座智能化生产基地，核心客户覆盖国内主流商用车主机
+厂与头部储能系统集成商，出口业务占总营收的 28%，主要面向国际户储与工商
+业储能市场。公司 2024年在科创板上市，连续三年储能电池出货量位居国内前
+十，2025年被纳入全国碳排放权交易市场重点排放单位名录，需按年度实际排放
+量清缴碳配额。
+Lihang Energy is a fast-developing manufacturers of power and energy -storage lithium
+batteries. In 2025, the company posted operating revenue of RMB 12 billion, and operates
+multiple smart production bases at home and abroad. Its core customers span China's
+mainstream commercial-vehicle OEMs and top energy-storage system integrators. Exports
+account for 28% of total revenue, primarily serving the international r esidential and
+[PAGE 3]
+IMA（第十六届）校园管理会计案例大赛 – 校内赛及区域赛案例
+2
+commercial & industrial (C&I) energy-storage markets. The company listed on the STAR
+Market in 2024 and has ranked among China's top ten energy-storage battery shippers for
+three consecutive years. In 2025, it was designated a key emitting entity under the national
+carbon emissions trading market and is required to surrender carbon allowances annually
+against its actual verified emissions.
+本次选型的设备是化成分容环节的核心生产装置——该环节是电芯生产全流程中单
+位能耗最高的环节，单条产线的化成分容环节耗电量占总生产能耗的 34%，直接
+决定整条产线的运营成本与碳排放水平。采购团队提供的两个备选方案为：
+The equipment to be selected this time is the core production system for the formation and
+capacity grading ("formation & grading") stage — the most energy-intensive step in the
+entire cell manufacturing process, accounting for 34% of a single line's total energy
+consumption. This stage directly determines the operating cost and carbon emissions of the
+entire line. The procurement team has put forward two alternatives:
+方案 A：国内合作供应商提供的传统无能量回馈化成分容柜，初始采购价 2.4亿
+元，年运维成本 1200万元，10年生命周期期末残值 1200万元，年碳排放量 5.8
+万吨。该供应商与公司合作超过 5年，过往交付的设备故障率低、售后响应速度
+快，制造部门对该方案的接受度最高。
+Option A: Conventional formation-and-grading cabinets without energy feedback, supplied
+by a domestic partner supplier. Initial purchase price: RMB 240 million; annual operation
+and maintenance (O&M) cost: RMB 12 million; salvage value at the end of the 10-year life
+cycle: RMB 12 million; annual carbon emissions: 58,000 tonnes. The supplier has worked
+with the company for more than five years, with a track record of low equipment failure
+rates and fast after-sales response, and the manufacturing department is most receptive to
+this option.
+方案 B：德国进口的带能量回馈功能节能化成分容柜，初始采购价 3.9亿元，年运
+维成本 700万元，10年生命周期期末残值 1950万元，年碳排放量 2.3万吨，投
+产后可申请 2000万元地方节能设备补贴。该类设备在国内同行业的应用案例较
+少，国际业务团队与 ESG部门倾向于选择该方案——设备低能耗的特性，既能降
+低长期碳配额采购成本，也能满足欧洲客户 2027年即将生效的电池全生命周期碳
+足迹披露要求。
+Option B: Energy-efficient formation -and-grading cabinets with energy feedback,
+imported from Germany. Initial purchase price: RMB 390 million; annual O&M cost: RMB
+7 million; salvage value at the end of the 10 -year life cycle: RMB 19.5 million; annual
+carbon emissions: 23,000 tonnes. Upon commissioning, the company may apply for a local
+subsidy of RMB 20 million for energy -saving equipment. There are relatively few
+application cases of this type of equipment among domestic peers; the international business
+[PAGE 4]
+IMA（第十六届）校园管理会计案例大赛 – 校内赛及区域赛案例
+3
+team and the ESG department both lean toward this option — the equipment's low energy
+consumption would not only reduce long-term carbon allowance purchase costs, but also
+satisfy the full life -cycle battery carbon footprint disclosure requirements of Euro pean
+customers that take effect in 2027.
+公司财务团队最初的测算完全沿用传统资本预算口径，未将碳成本纳入现金流测
+算，初步结论显示选择方案 A可获得更高的净现值。但管理层对这一结论存在明显
+分歧：一方面，制造部门认为传统口径的测算符合公司过去 10年的投资决策规
+则，没有必要为不确定的政策风险提前支付溢价；另一方面，国际业务部门指出，
+欧洲客户的碳足迹要求已经从“加分项”变成了“准入门槛”，如果现在选择高能
+耗设备，未来不仅要额外承担碳配额采购成本，还可能面临客户流失的风险。
+The finance team's initial projections followed the traditional capital budgeting framework
+entirely, with no carbon costs incorporated into the cash flow analysis, and the preliminary
+conclusion was that Option A would deliver the higher net present value  (NPV).
+Management, however, is clearly divided on this conclusion. On the one hand, the
+manufacturing department holds that projections under the traditional framework are
+consistent with the company's investment decision rules of the past decade, and tha t there
+is no need to pay a premium upfront for uncertain policy risks. On the other hand, the
+international business department points out that European customers' carbon footprint
+requirements have shifted from a "bonus point" to an "entry ticket": choos ing energy-
+intensive equipment now would mean not only bearing additional carbon allowance
+purchase costs in the future, but also running the risk of losing customers.
+考虑到人工智能在财务领域的应用趋势，公司管理层允许且鼓励团队使用日常可及
+的通用大语言模型作为辅助工具，分三个阶段完成测算与判断，最终形成董事会决
+策汇报材料。
+In view of the growing application of artificial intelligence in finance, the company's
+management allows — and indeed encourages — the team to use readily accessible general-
+purpose large language models (LLMs) as auxiliary tools, to complete the analysis  and
+judgment in three stages, and ultimately to produce the decision report for the Board of
+Directors.
+为了迅速获得对项目投资分析的认知，财务项目组首先获取了产线运营相关的信
+息：新产线满产后的年营业收入按 95亿元测算，变动成本率按公司过去同类产线
+的平均水平定为 90%，企业基准投资折现率取董事会要求的 8%，所得税税率按现
+行 25%计算，设备的生命周期统一按 10年核算。考虑到这是初步分析，项目组先
+把最复杂的碳政策变量做了简化：按当前碳市场的平均履约成本，决策用碳价暂按
+100元/吨固定计算，暂不考虑碳价波动、政策调整带来的不确定性。
+To quickly build a baseline understanding of the project's investment analysis, the finance
+[PAGE 5]
+IMA（第十六届）校园管理会计案例大赛 – 校内赛及区域赛案例
+4
+project team first gathered the operating assumptions for the new line: post -ramp annual
+revenue is projected at RMB 9.5 billion; the variable cost ratio is set at 90%, in line with
+the historical average of the company's similar lines; the corporate disco unt rate for
+investment appraisal is 8%, as required by the Board; the income tax rate is the prevailing
+25%; and the equipment life is standardized at 10 years. Given that this is a preliminary
+analysis, the team simplified the most complex variable — carbon policy: based on the
+current average compliance cost in the carbon market, the carbon price for decision-making
+is provisionally fixed at RMB 100 per tonne, leaving aside for now the uncertainty arising
+from carbon price volatility and policy adjustments.
+问题|Questions:
+1. 同时完成两套独立投资估值：第一套完全剔除碳成本，计算两个方案的静态回收
+期、10年期 NPV；第二套按给定固定碳价，把碳排放成本作为年固定现金流出
+嵌入现金流，重新计算两个方案的对应指标。
+提示：本题涉及对固定资产投资评估，重点考核贴现现金流估值模型，以及NPV、Payback
+Period等相关投资评估指标。推荐使用 AI工具辅助回答，但必须经过人工审核。
+1. Complete two independent investment valuations. The first strips out carbon costs
+entirely — compute the static payback period and the 10-year NPV of both options.
+The second, at the given fixed carbon price, embeds carbon emission costs into the
+cash flows as an annual fixed cash outflow and recomputes the same metrics for both
+options.
+Tip: This question involves the appraisal of fixed-asset investment, with a focus on the discounted
+cash flow (DCF) valuation model and investment appraisal metrics such as NPV and payback
+period. You are encouraged to use AI tools to assist with your answers, but all AI output must be
+reviewed by humans.
+2. 直观对比两套测算的结论差异，说明传统口径的决策结论在加入碳成本后发生了
+什么变化。
+2. Compare the results of the two sets of calculations in an intuitive way, and explain
+what happens to the conclusion under the traditional framework once carbon costs are
+incorporated.
+[PAGE 6]
+IMA（第十六届）校园管理会计案例大赛 – 校内赛及区域赛案例
+5
+3. 答题必须体现 AI辅助过程：介绍你使用了哪款（或多款）AI工具，附上你实
+际使用的大模型提示词原文，说明 AI输出结果中需要人工审核的关键节点，
+并介绍 AI在回答中的缺陷。
+3. Your answers must document the AI-assisted process: state which AI tool(s) you
+used, attach the verbatim prompts you actually submitted to the LLM(s), identify
+the key checkpoints in the AI output that require human review, and discuss the
+shortcomings of AI in answering.
+推荐阅读|Reading Recommendations：
+[1] IMA管理会计师协会. 管理会计的AI最佳实践[J].战略财务,2024(3)
+[EB/OL].https://www.imachina.org.cn/imanews_details/4999.html.
+[2] IMA管理会计师协会. CMA Part2 战略财务管理[M].北京经济科学出版社, 2024:第7章资本投
+资决策.
+[3] 世界银行. 项目经济评估：纳入碳成本分析指南[R].2024
+[EB/OL].https://documents1.worldbank.org/curated/en/099553203142424068/txt/IDU1c94753bb18
+19e14c781831215580060675b1.txt.
+[4] WBCSD. 内部碳定价如何服务资本配置与风险管理[R].2026
+[EB/OL].https://www.wbcsd.org/news/how-internal-carbon-pricing-can-support-capital-allocation-
+and-risk-management/.
+[1] IMA. AI Best Practices for Management Accountants[J]. Strategic Finance, 2024(3)
+[EB/OL].https://www.imachina.org.cn/imanews_details/4999.html.
+[2] IMA. CMA Part 2 Strategic Financial Management[M]. Beijing: Economic Science Press, 2024,
+Chapter 7 Investment Decisions.
+[3] World Bank. Guidance Note on Shadow Price of Carbon in Economic Analysis[R].2024
+[EB/OL].https://documents1.worldbank.org/curated/en/099553203142424068/txt/IDU1c94753bb18
+19e14c781831215580060675b1.txt.
+[4] WBCSD. How internal carbon pricing can support capital allocation and risk-management[R].2026
+[EB/OL].https://www.wbcsd.org/news/how-internal-carbon-pricing-can-support-capital-allocation-
+and-risk-management/.
+- 结束 -
+- End -

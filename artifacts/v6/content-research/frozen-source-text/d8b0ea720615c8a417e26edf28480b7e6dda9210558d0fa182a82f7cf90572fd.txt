@@ -1,0 +1,277 @@
+Student Research Competition - ACM CHI 2026
+Skip to main content
+ACM CHI 2026
+Creant el demà junts • Barcelona, 13–17 April, 2026
+Toggle mobile menu
+Home
+Blog
+Authors
+Papers
+Posters
+Interactive Demos
+Panels
+Accepted Panels
+Workshops
+Accepted Workshops
+Meet-Ups
+Accepted Meet-Ups
+Global Science Program
+Student Mentoring Program (SMP)
+Student Research Competition
+Journals
+Paper Presentation Instructions
+Publication Ready Author Instructions
+FAQ
+Reviewers
+Guide to Reviewing
+Code of Conduct in Reviewing
+Attendees
+Full Program
+Registration
+Paper Presentation Instructions
+Visa FAQ
+Hotels
+Local Information
+Accessibility
+Childcare
+Accessibility
+Sponsors and Exhibitors
+CHI 2026 Sponsors
+Recruiters at CHI 2026
+Call for Sponsors and Exhibitors
+Organizing
+Organizing Committee
+Student Volunteers
+Home
+Blog
+Authors
+Papers
+Posters
+Interactive Demos
+Panels
+Accepted Panels
+Workshops
+Accepted Workshops
+Meet-Ups
+Accepted Meet-Ups
+Global Science Program
+Student Mentoring Program (SMP)
+Student Research Competition
+Journals
+Paper Presentation Instructions
+Publication Ready Author Instructions
+FAQ
+Reviewers
+Guide to Reviewing
+Code of Conduct in Reviewing
+Attendees
+Full Program
+Registration
+Paper Presentation Instructions
+Visa FAQ
+Hotels
+Local Information
+Accessibility
+Childcare
+Accessibility
+Sponsors and Exhibitors
+CHI 2026 Sponsors
+Recruiters at CHI 2026
+Call for Sponsors and Exhibitors
+Organizing
+Organizing Committee
+Student Volunteers
+Search for:
+Search
+Home » Authors » Student Research Competition
+Important Dates
+All times are in Anywhere on Earth (AoE) time zone. The submission site of each track will open approximately four weeks before its submission deadline.
+Papers
+2025-09-04 Abstract/Metadata Due
+2025-09-11 Full Paper Due
+2025-11-04 Reviews Released
+2025-12-04 Resubmission Due
+2026-01-15 Decisions Notification
+Posters
+2026-01-22 Submission deadline
+2026-02-19 Notification
+Interactive Demos
+2026-01-22 Submission deadline
+2026-02-19 Notification
+Panels
+2025-11-20 Submission deadline
+2026-01-15 Notification deadline
+Workshops
+2025-10-02 Organizer submission deadline
+2025-11-20 Organizer notification
+2025-12-18 Accepted Workshops Websites Up
+Meet-Ups
+2025-10-02 Submission Deadline
+2025-11-20 Notification Deadline
+Student Mentoring Program
+2026-01-22 Submission deadline
+2026-02-19 Notification
+Student Research Competition
+2026-01-22 Submission deadline
+2026-02-19 Notification
+Journals
+2025-11-17 Invitation sent to authors
+2026-01-22 Submission deadline
+2026-02-19 Notification
+Search
+Search
+BlueSky
+Instagram
+Student Research Competition
+Winners
+Undergraduate
+1st place: Viktor Emil Kalvoda, Josef Pribbernow, Nikolas Rieger*, Thomas Wolf
+Hasso Plattner Institute, Germany
+BackinFocus: Iterative Design and Validation of a Smart Jacket for Robust Posture Sensing
+2nd place: Hayeon Doh*
+Ewha Womans University, South Korea
+PromptFlow: Supporting Novice Prompt Engineering Through Structured and Visual Scaffolding
+3rd place: Yonatan Tussa & Andy Heredia*
+University of Maryland, USA
+The Pen: Episodic Cognitive Assistance via an Ear-Worn Interface
+*presenter
+Graduate
+1st place: Obinna Ogbonnia Otuu
+Swansea University, UK & Federal Polytechnic Oko, Nigeria
+Exploring the Usability of African-Inspired Wearable Cameras Co-designed Through a Conflict Sensitive Design Approach
+2nd place: Nidhi Mittal
+University of California, Davis, USA
+The Invisible Data: Mapping the Perimenopausal Data Gap in Women’s Health
+3rd place: Joris Bosma
+Eindhoven University of Technology, Netherlands
+Homy: Exploring the Design of a Wayfinding Device That Supports Environmental Connection for People With Dementia
+Note: CHI 2026 has no hybrid or remote attendance.
+Important Dates
+All times are in Anywhere on Earth (AoE) time zone. When the deadline is day D, the last time to submit is when D ends AoE. Check your local time in AoE.
+Thursday, January 22, 2026: Submission deadline
+Thursday, February 19, 2026: Notification
+Thursday, February 26, 2026: E-rights completion deadline
+Friday, February 27, 2026: Initial TAPS upload deadline (Author must upload their paper to TAPS)
+Thursday, March 5, 2026: Publication-ready deadline (Authors upload FINAL TAPS-approved version to PCS)
+Submission Details
+Online submission:  PCS Submission System
+Template: ACM Master Article Submission Templates (single column)
+Submission length: Up to 5 pages long (excluding references).
+Proof of student status. Student(s) must be currently enrolled in a university or college at the time of the initial submission deadline. For further details see the Eligibility and Guidelines section below.
+Abstract submissions must meet SIGCHI accessibility requirements. See details in the Preparing Your Student Research Competition Submission section below.
+Submissions are not anonymous and should include all author names, affiliations, and contact information.
+We recommend that authors read the following two policies before submitting:
+The April 2023 ACM Policy on Authorship and use of large language models (LLMs), and the SIGCHI blog post about it.
+The 2021 ACM Publications policy on research involving humans.
+ACM Selection Process Category
+Reviewed
+Message from the Student Research Competition Chairs
+The Student Research Competition (SRC) is a forum for undergraduate and graduate students to showcase their research, exchange ideas, and improve their communication skills while competing for prizes at CHI 2026. The CHI SRC competition is a branch of the ACM Student Research Competition which hosts similar competitions at other ACM conferences.
+The Student Research Competition has the following goals:
+to give undergraduate and graduate students the opportunity to share their research ideas and results at CHI in a special forum that provides visibility for their work
+to recognize and reward outstanding student research
+for students to receive feedback about their research and presentation, from a panel of distinguished judges from industry and academia
+to give students the opportunity to meet with and interact with CHI attendees to share ideas, gain new insights, and understand possible practical applications
+to give students an opportunity to sharpen their communication skills
+Eligibility and Guidelines
+Authorship requirements follow the requirements for the ACM Student Research Competition:
+Student(s) must be currently enrolled in a university or college at the time of the initial submission deadline.
+Graduate students (Masters or PhD program) submissions must submit their individual research project (i.e., single-author).
+Undergraduate students can submit as individuals or as part of a team. Team projects may have multiple student authors with one author designated to present. Should they win, the designated presenter will be the recipient of the medal and the monetary award.
+Research completed while the student was an undergraduate may be submitted to the undergraduate category even if the student is now a first-year graduate student.
+If the submission is selected, the presenting author must have an active ACM student membership and register to attend the CHI 2026 conference.
+If an individual is part of a group research project and wants to participate in the SRC, they can only present their part of the research.
+Note that supervisors/advisors are not allowed to be co-authors.
+Funding
+Funding is not provided for this track; however, students can apply for a Gary Marsden Travel Award independently of submitting to the Student Research Competition. Please carefully read the page linked above because some of the deadlines for this travel award may occur before the submission deadline of SRC.
+Prizes and Awards
+Three winners will be selected in each category: Undergraduate and Graduate. The top three winners at CHI 2026 in each category will receive prizes of US$ 500, US$ 300, and US$ 200, respectively. All winners will receive a medal and a one-year complimentary ACM student membership with a subscription to the ACM Digital Library. Winners will be recognized during the closing plenary session of the CHI 2026 conference. The first-place winners will also go on to compete in the ACM grand finals with winners from other ACM conferences.
+ACM Open
+Content in this track will be published under ACM Open Access as an “extended abstract” article type.  Extended abstract article types will not be charged an article processing charge (APC) for open access.  For more information about which article types are subject to an APC, see the ACM article types summary.
+Publication Policies & Requirements
+Authors must review ACM’s publications policies. Please read this separate page for them.
+Metadata Integrity
+The abstract/metadata deadline is a hard deadline for listing all author names; there are no exceptions. Changes to the order of authors are allowed only during the Publication-Ready submission phase. The abstract/metadata is crucial to the integrity of the review process and author representation. If any of the authors need to be added or removed after the abstract/metadata deadline, the authors would need to withdraw their submissions/papers.
+Minor changes to the title and abstract are permitted during the revision period.
+Policy on Use of Large Language Models
+Text generated from a large-scale language model (LLM), such as ChatGPT, must be marked where such tools are used for purposes beyond editing the author’s own text. Please review the April 2023 ACM Policy on Authorship before using these tools. The SIGCHI blog post describes approaches to acknowledging the use of such tools, which we refer to for guidance. Note that the LaTeX template will default to hiding the Acknowledgements section while in review mode – please make sure that any LLM disclosure is available in your submitted version. While we do not anticipate using tools on a large scale to detect LLM-generated text, we will investigate submissions brought to our attention and desk-reject papers where LLM use is not clearly marked.
+Policy on Research Involving Human Participants and Subjects
+Any research in submitted manuscripts that involves human subjects must go through the appropriate ethics review requirements that apply to the authors’ research environment. As research environments vary considerably concerning their requirements, authors are asked to submit a short note to reviewers that provides this context. Please also see the 2021 ACM Publications policy on research involving humans before submitting.
+Accessibility
+Accessible submissions are essential for reviewers and are good practice. Authors are expected to follow SIGCHI’s Guide to an Accessible Submission. If you have any questions or concerns about creating accessible submissions, please contact the Accessibility Chairs at access@chi2026.acm.org early in the writing process (the closer to the deadline, the less time the team will have to respond to individual requests).
+Preparing Your Student Research Competition Submission
+A submission to the Student Research Competition should describe recently completed or ongoing student research in any of the topic areas covered by CHI. For undergraduate students, a group of undergraduate students who worked together on a project can submit the research with all their names on it, but all students must be undergraduates and the faculty advisor cannot be listed as an author. Graduate student submissions must be single author– even if the research was completed under the supervision of a supervisor, the submission must be authored by the graduate student alone. Submissions should be original work that is neither in submission elsewhere nor already published in CHI or another conference or journal. Abstracts should describe:
+The research problem and motivation for the work
+Background and related work
+Novelty of the research
+Research approach
+Results
+Contributions to the field of HCI
+For examples of extended abstracts, we recommend checking accepted submissions from previous years. You can find them in the past CHI proceedings on the ACM Digital Library or on SIGCHI.org (open access). Select “Extended Abstract” and look for “Student Research Competition” session. Winners of previous years are listed on ACM website: 2022, 2023, and 2024, or the conference website: 2024 and 2025. For earlier years, select on the navigation bar. Note that the published extended abstracts have a different layout from the submission template.
+To participate in the Student Research Competition:
+Submit an extended abstract to the Student Research Competition category via the Precision conference submission system:
+The submission must be a maximum length of 5 pages. References are not included in this page limit.
+The initial submission for this venue is *not* anonymized. Please include the name of the author(s) and the acknowledgment section as they will appear in the camera-ready version of the abstract.
+Proof Package of Student Status: submit a single file confirming your student status written in English.
+This can be a proof of school affiliation or a note signed by your academic supervisor or faculty member in the same institution verifying all of the following information:
+Academic affiliation
+Whether you were an undergraduate or a graduate student when the work was done
+Student status at the time of the initial submission (i.e., as of January 2026)
+List of supervisors/advisors with affiliation, if relevant/li>
+Transcripts or scanned IDs will not be accepted as proof.
+Note that authors are NOT required to submit video material for SRC.
+Selection Process
+Submissions will be evaluated by a minimum of three reviewers according to the ACM Student Research Competition scoring system:
+Problem and motivation: 5 points
+Background and related work: 5 points
+Approach and uniqueness: 10 points
+Results and contribution: 10 points
+Total possible score: 30 points
+The official publication date is the date the proceedings are made available in the ACM Digital Library. This date may be up to two weeks prior to the first day of the conference. The official publication date affects the deadline for any patent filings related to published work.
+Confidentiality of submissions is maintained during the review process. All rejected submissions will be kept confidential in perpetuity. All submitted materials for accepted submissions will be kept confidential until the start of the conference or the release of conference abstracts in the ACM Digital Library, with the exception of title and author information which will be published on the website prior to the conference. Submissions should not contain sensitive, private, or proprietary information that cannot be disclosed at publication time.
+Upon Acceptance of Your Submission
+The corresponding author of a conditionally accepted submission has to follow the instructions on preparing and submitting a final version of the proposal by the Publication-Ready deadline. If the authors cannot meet these requirements by the Publication-Ready deadline, the venue chairs will be notified and may be required to remove the proposal from the program.
+The publication-ready version has to follow the LaTeX and Word templates from ACM. Should you need technical assistance, please direct your technical query to publications@chi2026.acm.org.
+Responsibility for obtaining permission to use video, audio, or pictures of identifiable people or proprietary content rests with the author, not the ACM or the CHI conference.
+Please read the publication-ready author instructions.
+AUTHORS TAKE NOTE: The official publication date is when the proceedings are made available in the ACM Digital Library. This date may be up to two weeks before the first day of the conference. The official publication date may affect the deadline for any patent filings related to published work. For those rare conferences whose proceedings are published in the ACM Digital Library after the conference, the official publication date remains the first day of the conference.
+At the Conference
+Accepted authors must participate in the competition in-person. Accordingly, a presenting author must register to the conference.
+The research is evaluated during the first round of the competition during a poster presentation at CHI. Thus, all accepted authors must prepare and bring posters to the conference.
+Requirements for the posters are the following:
+Posters should include (1) the title, authors’ names, and affiliations, (2) a concise overview of the research, (3) clear illustrations of key aspects of the work, and (4) a compelling visual design. Posters might also include QR codes to link to online materials (e.g., scenario videos, interactive prototypes). The typical poster size recommended is A1, or a maximum of ~33.1 inches tall by ~23.4 inches wide (or a maximum of  841 mm tall by 594 mm wide).
+The poster design must be reduced to one standard letter page in size and submitted in PDF format. The file can be no larger than 4 megabytes.
+For this year, we recommend designing posters in portrait format.
+For guidance on how to create a research poster, see this XRDS article by Lorrie Cranor.
+The poster presentation will be evaluated by multiple judges according to the ACM Student Research Competition scoring system:
+Oral presentation: 10 points
+Visual presentation: 10 points
+Research methods: 15 points
+Significance of contribution: 10 points
+Total possible score: 45 points
+Based on the results from the poster session, the judges will select three submissions for each category to advance to the second round. During the second round, students will have the opportunity to give a short presentation of their research followed by a question and answer session, which will be evaluated by a panel of judges according to the ACM Student Research Competition scoring system:
+Knowledge of research area: 15 points
+Contribution of research: 10 points
+Presentation: 10 points
+Total possible score: 35 points
+Winners will be announced during the closing plenary.
+In-person attendance
+The CHI 2026 Student Research Competition relies on in-person attendance, so that all students can benefit most from the experience. Accepted submissions are expected to attend CHI 2026 to participate in the Student Research Competition. If you have an exceptional circumstance which prevents your in-person attendance, please contact the Chairs.
+Competition Judges
+A distinguished panel of judges from across the CHI community will be convened to discuss finalists’ presentations and select the finalist. The names of the judges will be listed here prior to the conference.
+After the Conference
+The first-place winners from each category will advance to the ACM Grand Finals of the Student Research Competition where the winners of several ACM conferences compete for more prizes and recognition. Accepted Student Research Competition abstracts will be distributed in the CHI Conference Extended Abstracts. They will be placed in the ACM Digital Library, where they will remain accessible to thousands of researchers and practitioners worldwide.
+Frequently asked questions
+Can I submit to the Student Research Competition and submit the same work in parallel with other tracks (e.g., Late-breaking work)?
+For each work, authors must choose only one track and submit their submissions to a single track. Any concurrent submissions must be declared and should follow ACM policies on Redundant Publication or Self-Plagiarism. Any duplicate submissions across tracks will be rejected.
+Can high school students submit to Student Research Competition?
+Unfortunately, no. The CHI Student Research Competition follows ACM Student Research Competition rules, which limit the participants to undergraduate and graduate students.
+Can I reuse the content of my Student Research Competition paper in my future paper?
+The copyright of the content in the Extended Abstracts is typically retained by the authors, not assigned to the ACM. Thus, the authors may reuse their content.
+Suppose the authors plan to reuse the content as a part of their future paper. In that case, we recommend reaching out to the paper chairs or editors of the target venue to clarify the re-publishability early on. Their decision will depend on the policies at the time of your future submission. For the CHI conferences, relevant policies are the ACM policies on Prior Publication and Simultaneous Submissions, Guidelines and Criteria for Evaluation of Submissions for ACM Publications, and Policy on Plagiarism, Misrepresentation, and Falsification.
+According to these policies, as of 2026, material published in a semi-archival, widely disseminated publication, such as the CHI Extended Abstracts, should not be republished unless the work has been “significantly” revised. A significant revision would contain at least 25% unpublished material and amplify or clarify the original material. These are subjective measures left to the interpretation of the reviewers and committee members – authors are wise to revise well beyond the Policy guidelines. Whenever submitting material that has partially appeared in a widely disseminated publication, it is good practice to cite the prior publication and explicitly state the differences between the new and prior material.
+Contact Us
+Jacki O’Neill, Paloma Díaz, Max V. Birk
+studentresearch@chi2026.acm.org
+© 2026 • ACM SIGCHI • ACM Privacy Policy
+Powered by WordPress / Academica WordPress Theme by WPZOOM

@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "saitu.source-reading.v1",
+  "authorContextId": "/root",
+  "retrievedAt": "2026-11-05T13:10:13.220726+00:00",
+  "notes": "AI source reading, not human review. Local PDF copies are research cache, public deliverable cites originals.",
+  "sources": [
+    {
+      "id": "mechanical-2026-notice",
+      "url": "https://12umic.hit.edu.cn/2025/0321/c20012a364782/page.htm",
+      "method": "web_body_read",
+      "locator": "第四、六、七节",
+      "status": "body_read"
+    },
+    {
+      "id": "mechanical-2026-instructions",
+      "url": "https://jdxy.hsu.edu.cn/_upload/article/files/40/1f/feb2c7904f029972f37b54785c30/0a272ab2-669f-41ab-9f19-eb143648a954.pdf",
+      "method": "web_pdf_text_read",
+      "locator": "PDF1—5页",
+      "status": "body_read"
+    },
+    {
+      "id": "structure-shanghai-2026-notice",
+      "url": "https://www.sues.edu.cn/_upload/article/files/20/1e/2db459b7465887d8f668885071da/131fb335-fbb3-4ed9-bef3-3894867f2f46.pdf",
+      "method": "web_pdf_text_read",
+      "locator": "PDF第2页",
+      "status": "body_read"
+    },
+    {
+      "id": "structure-shanghai-2026-task",
+      "url": "https://www.sues.edu.cn/_upload/article/files/20/1e/2db459b7465887d8f668885071da/2c4a1ed7-4d28-437b-83d2-57787b0de0bb.pdf",
+      "method": "curl_download_pypdf_text_read",
+      "locator": "PDF第1—13页，未使用图纸页乱码",
+      "status": "body_read",
+      "sha256": "734a2e4a46a89df3800533ed326212f8436a881cce14f428e5131aa269c8ea6c",
+      "localResearchCopy": "tmp/research-sources/structure-2026.pdf"
+    },
+    {
+      "id": "iot-2026-charter",
+      "url": "https://iot.sjtu.edu.cn/ueditor/net/upload/file/20260326/6391013243710844328303068.pdf",
+      "method": "pypdf_text_read",
+      "locator": "PDF2—6页",
+      "status": "body_read",
+      "sha256": "65676231f78dc9f007fcf8a6dc7eca7f8281c2c5c6251654dff4ef5cec9fe492",
+      "localResearchCopy": "tmp/research-sources/iot-2026.pdf",
+      "retrievedAt": "2026-11-05T11:11:21.136351+00:00"
+    },
+    {
+      "id": "iot-2026-espressif",
+      "url": "https://iot.sjtu.edu.cn/ueditor/net/upload/file/20260329/6391039317778793056390288.pdf",
+      "method": "pypdf_text_read",
+      "locator": "PDF1—13页",
+      "status": "body_read",
+      "sha256": "538623fd400373172817a45c511e40b9ba16d761d97aec3ec422066cc43a5e30",
+      "localResearchCopy": "tmp/research-sources/iot-2026-espressif.pdf",
+      "retrievedAt": "2026-11-05T11:11:21.138514+00:00"
+    },
+    {
+      "id": "chemical-design-2026-notice",
+      "url": "https://iche.zju.edu.cn/uploads/20260228/ad683cd23bc2417ffa3e1dd020f000a7.pdf",
+      "method": "apple_vision_ocr_read",
+      "locator": "PDF1—3页",
+      "status": "body_read",
+      "sha256": "de0f2871940e7fc87ca298a1f139653084134b6af5578fc2c41de77e21d13e53",
+      "localResearchCopy": "tmp/research-sources/chemical-design-2026-notice.pdf",
+      "retrievedAt": "2026-11-05T11:11:21.142954+00:00"
+    },
+    {
+      "id": "chemical-design-2026-task",
+      "url": "https://iche.zju.edu.cn/uploads/20260226/ec4637873e07197e1ce4b72c781d8617.pdf",
+      "method": "pypdf_text_read",
+      "locator": "PDF2—5页",
+      "status": "body_read",
+      "sha256": "d7c753c42b38409be399f2ca457d7f0175e063ab8a166a0232e9c43fde44a06d",
+      "localResearchCopy": "tmp/research-sources/chemical-design-2026-task.pdf",
+      "retrievedAt": "2026-11-05T11:11:21.143125+00:00"
+    },
+    {
+      "id": "ic-2026-charter",
+      "url": "https://univ.ciciec.com/col.jsp?id=123",
+      "locator": "Sections 3-4",
+      "method": "web_body_read",
+      "status": "body_read",
+      "retrievedAt": "2026-11-05T11:48:36.298439+00:00"
+    },
+    {
+      "id": "ic-2026-xinnuoda",
+      "url": "https://univ.ciciec.com/nd.jsp?id=1015",
+      "locator": "Full task image sections 2,5,6; rubric crop visually checked",
+      "method": "apple_vision_ocr_and_visual_read",
+      "status": "body_read",
+      "retrievedAt": "2026-11-05T11:48:36.298560+00:00",
+      "sha256": "24eeed15064fe6badba7c0689edf005c3288c27ddd97687bfae40aa4cee93e85",
+      "localResearchCopy": "tmp/research-sources/ic-xinnuoda-2026.png"
+    },
+    {
+      "id": "ic-2026-preliminary",
+      "url": "https://univ.ciciec.com/nd.jsp?id=1050",
+      "locator": "Introduction and section 13",
+      "method": "web_body_read",
+      "status": "body_read",
+      "retrievedAt": "2026-11-05T11:48:36.300859+00:00"
+    },
+    {
+      "id": "physics-2026-notice-task",
+      "url": "https://physics.hit.edu.cn/_upload/article/files/2a/4b/3bb6b5634e5e96ee685875bf0541/c046329a-3efa-4ea2-9fab-5c265fc16d24.pdf",
+      "locator": "PDF pp2-3,5-8; assigned task1-4 rubric only",
+      "method": "web_pdf_text_read",
+      "status": "body_read",
+      "retrievedAt": "2026-11-05T11:48:36.300866+00:00",
+      "sha256": "38bbd5afbc5adf0154e492ecbc66cc12a204d027d469d169308be5a4a7db3095",
+      "localResearchCopy": "tmp/research-sources/physics-2026.pdf"
+    },
+    {
+      "id": "fpga-nuaa-2026-notice",
+      "url": "https://aao.nuaa.edu.cn/2026/0920/c19003a411397/page.htm",
+      "locator": "Sections 1,2,4; NUAA-only eligibility",
+      "method": "web_body_read",
+      "status": "body_read",
+      "retrievedAt": "2026-11-05T11:48:36.301367+00:00"
+    },
+    {
+      "id": "fpga-gowin-2026-task",
+      "url": "https://www.gowinsemi.com.cn/university/match2026",
+      "locator": "Task2 basic, extended, scoring and onsite verification",
+      "method": "web_body_read",
+      "status": "body_read",
+      "retrievedAt": "2026-11-05T11:48:36.301371+00:00",
+      "sha256": "bde2d4bfa3c705799a9dbc05fcbec6fcbd8b45bebba1ab899acdddec6e4204de",
+      "localResearchCopy": "tmp/research-sources/fpga-gowin-2026.html"
+    },
+    {
+      "id": "chem-innovation-2025-charter",
+      "url": "https://cid.nju.edu.cn/UpLoad/ueditor/jsp/upload/file/20250311/1741657661442014167.pdf",
+      "locator": "Appendix1 national charter articles9-11,15,17",
+      "method": "web_pdf_text_read",
+      "status": "body_read",
+      "retrievedAt": "2026-11-05T11:48:36.301671+00:00",
+      "sha256": "0335d5251c7b4936b100ed16bdf135270953fd34c12bfb7e7f7dc4bdcb88004b",
+      "localResearchCopy": "tmp/research-sources/chem-innovation-2025-charter.pdf"
+    },
+    {
+      "id": "chem-innovation-2025-final",
+      "url": "https://cid.nju.edu.cn/UpLoad/ueditor/jsp/upload/file/20250818/1755500298814050899.pdf",
+      "locator": "PDF pp1-2 sections3,4,7",
+      "method": "web_pdf_text_read",
+      "status": "body_read",
+      "retrievedAt": "2026-11-05T11:48:36.307827+00:00",
+      "sha256": "55966516e41c8d5516cd5a4636cab70043067204cd4149ce40f5568d3fc6062b",
+      "localResearchCopy": "tmp/research-sources/chem-innovation-2025-final.pdf"
+    },
+    {
+      "id": "chem-cochineal-2026-work",
+      "url": "https://www.dxhx.pku.edu.cn/CN/10.12461/PKU.DXHX202509113",
+      "locator": "Complete11pages120-130; section1.4 figures5-9 and audience section2; award unverified",
+      "method": "pypdf_full_text_read",
+      "status": "body_read",
+      "retrievedAt": "2026-11-05T11:48:36.308262+00:00",
+      "sha256": "b0a61a692f7bab380382064b9a1be50989dbd627748e58ea6441da1e1a7cc115",
+      "localResearchCopy": "tmp/research-sources/cochineal-2026.pdf"
+    },
+    {
+      "id": "electronics-2025-main-notice",
+      "url": "https://hnedc.hnie.edu.cn/__local/0/0D/80/FD1C067B95F5F7BF3968A58D3D5_331E6B71_D7CEE.pdf",
+      "method": "pypdf_full_text_read",
+      "locator": "PDF 1-7",
+      "status": "body_read",
+      "sha256": "edcca8268356e283e8a04d3e6c6260604ee44916290e4435a88fd55488c93b69",
+      "localResearchCopy": "tmp/research-sources/electronics-2025-notice.pdf",
+      "retrievedAt": "2026-11-05T12:20:35.300916+00:00"
+    },
+    {
+      "id": "engineering-2025-notice",
+      "url": "https://metc.ahpu.edu.cn/_upload/article/files/92/8a/5ddb18124a64b313f7c8b5b9c79f/7c26b85c-f310-4d89-aada-3dea0dadfe36.pdf",
+      "method": "web_pdf_full_text_read",
+      "locator": "PDF 1-5",
+      "status": "body_read",
+      "sha256": "9a44d1778ba5924c3560061905e5e1ff3a1249a8d382a9a62ce5a1b5b183b777",
+      "localResearchCopy": "tmp/research-sources/engineering-practice-2025-notice.pdf",
+      "retrievedAt": "2026-11-05T12:20:35.300916+00:00"
+    },
+    {
+      "id": "engineering-2025-solar-task",
+      "url": "https://aao.nuaa.edu.cn/_upload/article/files/02/ff/a4420c074e5999e610a8c98ccc5d/0ed54600-6b11-44ce-8486-44f64040253b.pdf",
+      "method": "web_pdf_text_read",
+      "locator": "PDF 1-9 solar section; thermoelectric section not used",
+      "status": "body_read",
+      "sha256": "5d09e00391ffa987440eb869866b48fb0ffc6fe7d1f38a78fa094c7a7af76cdc",
+      "localResearchCopy": "tmp/research-sources/engineering-practice-2025-task.pdf",
+      "retrievedAt": "2026-11-05T12:20:35.300916+00:00"
+    },
+    {
+      "id": "engineering-2025-solar-score",
+      "url": "https://metc.ahpu.edu.cn/_upload/article/files/92/8a/5ddb18124a64b313f7c8b5b9c79f/e49d9f67-b295-4053-87eb-23330c932a78.pdf",
+      "method": "pypdf_full_text_read",
+      "locator": "PDF 1-9",
+      "status": "body_read",
+      "sha256": "a12a16d77d474b2787064ac8e5c534ac1d94811e914a96cb4b2ce9e045a7461f",
+      "localResearchCopy": "tmp/research-sources/engineering-practice-2025-score.pdf",
+      "retrievedAt": "2026-11-05T12:20:35.300916+00:00"
+    },
+    {
+      "id": "electronics-2025-c-task",
+      "url": "https://res.nuedc-training.com.cn/topic/2025/topic_122.html",
+      "method": "official_public_images_read; image1 OCR plus previously read full task PDF; images2-6 visual inspection",
+      "locator": "All six official task images, including basic/advanced accuracy and 120-point rubric",
+      "status": "body_read",
+      "retrievedAt": "2026-11-05T12:20:35.300916+00:00",
+      "originalImages": [
+        {
+          "url": "https://res.nuedc-training.com.cn/s/png/2025/07/30/topic_202507301945.png",
+          "localResearchCopy": "tmp/research-sources/topic_202507301945.png",
+          "sha256": "80147a5b6cfce8594fbaa36e82b01a714bfec3a4bcefe382549b957f3baf787a"
+        },
+        {
+          "url": "https://res.nuedc-training.com.cn/s/png/2025/07/30/topic_202507303262.png",
+          "localResearchCopy": "tmp/research-sources/topic_202507303262.png",
+          "sha256": "d7225ca6e1771e4a049929ca0a9377e2a60ce6bee0f1f6be3475ca917c247b59"
+        },
+        {
+          "url": "https://res.nuedc-training.com.cn/s/png/2025/07/30/topic_202507302336.png",
+          "localResearchCopy": "tmp/research-sources/topic_202507302336.png",
+          "sha256": "1c3c481d52523634430d6752daf0bb6830252bde66a12ac1ed5460ff4c41622e"
+        },
+        {
+          "url": "https://res.nuedc-training.com.cn/s/png/2025/07/30/topic_202507306564.png",
+          "localResearchCopy": "tmp/research-sources/topic_202507306564.png",
+          "sha256": "9ae2dfb121e24f65a097c5827f963ee66a440473c01d14a50a9bf67c1e95b621"
+        },
+        {
+          "url": "https://res.nuedc-training.com.cn/s/png/2025/07/30/topic_202507309022.png",
+          "localResearchCopy": "tmp/research-sources/topic_202507309022.png",
+          "sha256": "f6067888b003e0ca32c8c9637b94dd08c9cef41b55d724b8332aa7c4be776b50"
+        },
+        {
+          "url": "https://res.nuedc-training.com.cn/s/png/2025/07/30/topic_202507302774.png",
+          "localResearchCopy": "tmp/research-sources/topic_202507302774.png",
+          "sha256": "6ce280f315fa9225e746a60758199338fabf545b969a7a82aff65c47bc8400e0"
+        }
+      ],
+      "captureNote": "Images publicly embedded in official page; downloaded with normal page Referer after web text fetch could not load them. No login or captcha bypass."
+    },
+    {
+      "id": "smartcar-2025-outdoor-ros",
+      "url": "https://www.smartcar.zone/upload/files/2025/9/%E8%B5%9B%E9%A1%B9%E4%B8%80-%E5%AE%A4%E5%A4%96ROS%E6%97%A0%E4%BA%BA%E8%BD%A6%E8%B5%9B%EF%BC%88%E9%AB%98%E6%95%99%E7%BB%84%EF%BC%89%E6%AF%94%E8%B5%9B%E8%A7%84%E5%88%99.pdf",
+      "method": "pypdf_text_read",
+      "locator": "PDF完整14页",
+      "status": "body_read",
+      "sha256": "ec9874d1f3dca0f0e4b8514ddf9608bc3712b8e77d0c4073dff09deba23a638e",
+      "localResearchCopy": "tmp/research-sources/smartcar-2025-ros.pdf",
+      "retrievedAt": "2026-11-05T12:45:34.395122+00:00"
+    },
+    {
+      "id": "robomaster-2026-participant",
+      "url": "https://bbs-web-static.robomaster.com/3fcc5b752b7a435b9323892f57c574141766654205303/RoboMaster%202026%20%E6%9C%BA%E7%94%B2%E5%A4%A7%E5%B8%88%E8%B6%85%E7%BA%A7%E5%AF%B9%E6%8A%97%E8%B5%9B%E5%8F%82%E8%B5%9B%E6%89%8B%E5%86%8CV1.1.0%EF%BC%8820251225%EF%BC%89.pdf",
+      "method": "apple_pdfkit_text_read",
+      "locator": "PDF第7—14、16—19页；其余未声明阅读",
+      "status": "body_read",
+      "sha256": "444836b2203b74d60e0bbb1844bb12b62e84a3d65b0b498d08fa6506855c4525",
+      "localResearchCopy": "tmp/research-sources/robomaster-2026-participant-v11.pdf",
+      "retrievedAt": "2026-11-05T12:45:34.395122+00:00"
+    },
+    {
+      "id": "robomaster-2026-core-task",
+      "url": "https://bbs-web-static.robomaster.com/e354d2750e17485e8f67e5b5a9d1a2891786094242879/RoboMaster%202026%20%E6%9C%BA%E7%94%B2%E5%A4%A7%E5%B8%88%E8%B6%85%E7%BA%A7%E5%AF%B9%E6%8A%97%E8%B5%9B%E6%AF%94%E8%B5%9B%E8%A7%84%E5%88%99%E6%89%8B%E5%86%8CV2.2.0%EF%BC%8820260807%EF%BC%89.pdf",
+      "method": "apple_pdfkit_text_read",
+      "locator": "PDF第85—91页；非全文158页",
+      "status": "body_read",
+      "sha256": "88ae3c7d0bbd7312c8095eff2603910437e292a0b53f46c9378f26144c09a6f5",
+      "localResearchCopy": "tmp/research-sources/robomaster-2026-rules-v22.pdf",
+      "retrievedAt": "2026-11-05T12:45:34.395122+00:00"
+    },
+    {
+      "id": "biomod-2023-requirements",
+      "url": "https://biomod.net/requirements/",
+      "method": "http_html_text_read",
+      "locator": "Registration fees, Team structure, Project Deliverables; 不采用旧FAQ场地",
+      "status": "body_read",
+      "sha256": "f3a3299d03cd24c8cfd402db060ddf3fdeffc8c2ec226445a64976184bff2373",
+      "localResearchCopy": "tmp/research-sources/biomod-requirements.html",
+      "retrievedAt": "2026-11-05T12:47:46.499484+00:00"
+    },
+    {
+      "id": "biomod-2023-rubric",
+      "url": "https://biomod.net/jamboree/BIOMOD2023-QuickGuide.pdf",
+      "method": "pypdf_text_read",
+      "locator": "PDF4,10—12页",
+      "status": "body_read",
+      "sha256": "e1eed90f0c05cdce51ed6a9e57367f546eaa0ee666426248ce5ee6e7600aaa00",
+      "localResearchCopy": "tmp/research-sources/biomod-2023-guide.pdf",
+      "retrievedAt": "2026-11-05T12:47:46.499484+00:00"
+    },
+    {
+      "id": "biomod-2023-sendai-project",
+      "url": "https://teamsendai2023.github.io/project.html",
+      "method": "http_html_text_read",
+      "locator": "Problem/Challenges/Solution/Feasibility选定正文；不声称读取图片目标",
+      "status": "body_read",
+      "sha256": "a6bb8133a14997a7d363aa7bb68228f3b8c9b8669c64cc4b502f9d8fc2e7534b",
+      "localResearchCopy": "tmp/research-sources/biomod-2023-project.html",
+      "retrievedAt": "2026-11-05T12:47:46.499484+00:00"
+    },
+    {
+      "id": "biomod-2023-sendai-design",
+      "url": "https://teamsendai2023.github.io/design.html",
+      "method": "http_html_text_read",
+      "locator": "全部设计正文，未把预测当实测",
+      "status": "body_read",
+      "sha256": "00d26ae56451866a1092a0c1250cab51690e90985722731d8a7fd5f0f094218f",
+      "localResearchCopy": "tmp/research-sources/biomod-2023-design.html",
+      "retrievedAt": "2026-11-05T12:47:46.499484+00:00"
+    },
+    {
+      "id": "biomod-2023-sendai-experiment",
+      "url": "https://teamsendai2023.github.io/experiment.html",
+      "method": "http_html_text_read",
+      "locator": "实验摘要与各实验正文/结果；图片细节未用于精确数值",
+      "status": "body_read",
+      "sha256": "efd7a2bb781ad1e3dbc514807cd1ad69c5159e7bb35d9eb3bdd41eae8e954495",
+      "localResearchCopy": "tmp/research-sources/biomod-2023-experiment.html",
+      "retrievedAt": "2026-11-05T12:47:46.499484+00:00"
+    },
+    {
+      "id": "fsc-2026-rules-cost",
+      "url": "https://img.sae-china.org/web/2026/04/2026%E4%B8%AD%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%96%B9%E7%A8%8B%E5%BC%8F%E7%B3%BB%E5%88%97%E8%B5%9B%E4%BA%8B%E8%A7%84%E5%88%99%EF%BC%88%E6%9C%80%E7%BB%88%E7%89%88%EF%BC%89.pdf",
+      "method": "pypdf_text_read",
+      "locator": "PDF13—14,17—18,138—142页；不声称198页全文",
+      "status": "body_read",
+      "sha256": "7f2efddf604190851fab7e1ecbc6d9aa0bc6d98ebe00b96c7d4dced52b2aaece",
+      "localResearchCopy": "tmp/research-sources/fsc-2026-rules.pdf",
+      "retrievedAt": "2026-11-05T12:53:13.318427+00:00"
+    },
+    {
+      "id": "fsc-2026-cost-case",
+      "url": "https://img.sae-china.org/web/2026/02/FSC_2026_%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90%E9%A2%98%E7%9B%AE.pdf",
+      "method": "pypdf_text_read",
+      "locator": "完整4页中英文题",
+      "status": "body_read",
+      "sha256": "d46e31fd6ef6317761ffd49431218e80f284854a16fc645a0baa10eee9a620ed",
+      "localResearchCopy": "tmp/research-sources/fsc-2026-cost-case.pdf",
+      "retrievedAt": "2026-11-05T12:53:13.318427+00:00"
+    },
+    {
+      "id": "igem-2026-registration",
+      "url": "https://competition.igem.org/registration/overview",
+      "method": "browser_rendered_body_text_read",
+      "locator": "Competition types; PI/institutions/organizer/payment order",
+      "status": "body_read",
+      "sha256": "e8bda922913ba794e872ee630dd3bf840b0a8f63dc9b7f7ec6a4fae04eec5e62",
+      "localResearchCopy": "tmp/research-sources/igem-registration-browser.txt",
+      "retrievedAt": "2026-11-05T12:51:14.189949+00:00",
+      "authorReadAt": "2026-11-05T13:10:13.220726+00:00",
+      "captureNote": "Observed public browser DOM text, not original HTTP HTML/PDF bytes. Large PDF partial downloads were not adopted."
+    },
+    {
+      "id": "igem-2026-roster",
+      "url": "https://competition.igem.org/registration/team-roster",
+      "method": "browser_rendered_body_text_read",
+      "locator": "Rules, roles, sections; March31 cutoff",
+      "status": "body_read",
+      "sha256": "ce1a2688647258a55692c7f8cd380b29b8fbc3eea08c3cf77fdb936dd74e1053",
+      "localResearchCopy": "tmp/research-sources/igem-roster-browser.txt",
+      "retrievedAt": "2026-11-05T12:53:46.853465+00:00",
+      "authorReadAt": "2026-11-05T13:10:13.220726+00:00",
+      "captureNote": "Observed public browser DOM text, not original HTTP HTML/PDF bytes. Large PDF partial downloads were not adopted."
+    },
+    {
+      "id": "igem-2026-special-prizes",
+      "url": "https://competition.igem.org/judging/special-prizes",
+      "method": "browser_rendered_body_text_read",
+      "locator": "Scoring Rubric and Best Model four ballot questions",
+      "status": "body_read",
+      "sha256": "a45538d61f24c99a780172164116533817e026dfc9964edac3bbbe3aed9eb1e8",
+      "localResearchCopy": "tmp/research-sources/igem-prizes-browser.txt",
+      "retrievedAt": "2026-11-05T13:03:48.941842+00:00",
+      "authorReadAt": "2026-11-05T13:10:13.220726+00:00",
+      "captureNote": "Observed public browser DOM text, not original HTTP HTML/PDF bytes. Large PDF partial downloads were not adopted."
+    },
+    {
+      "id": "igem-2026-deliverables",
+      "url": "https://competition.igem.org/deliverables",
+      "method": "browser_rendered_body_text_read",
+      "locator": "Deliverables introduction and New in2026; no unrendered image-table values",
+      "status": "body_read",
+      "sha256": "e9af33e7ce65f7834d68ba8abc3504615545607f3ecc39b6252017291ff259cc",
+      "localResearchCopy": "tmp/research-sources/igem-deliverables-browser.txt",
+      "retrievedAt": "2026-11-05T13:03:48.761360+00:00",
+      "authorReadAt": "2026-11-05T13:10:13.220726+00:00",
+      "captureNote": "Observed public browser DOM text, not original HTTP HTML/PDF bytes. Large PDF partial downloads were not adopted."
+    },
+    {
+      "id": "igem-2026-fees",
+      "url": "https://competition.igem.org/registration/fees",
+      "method": "browser_rendered_body_text_read",
+      "locator": "Registration stages and currency; fee numeric graphic unread",
+      "status": "body_read",
+      "sha256": "3dbb2efdda802e299f57facb1723c57494ac2300aa72efcd3d21251fc069a58c",
+      "localResearchCopy": "tmp/research-sources/igem-fees-browser.txt",
+      "retrievedAt": "2026-11-05T13:03:48.761260+00:00",
+      "authorReadAt": "2026-11-05T13:10:13.220726+00:00",
+      "captureNote": "Observed public browser DOM text, not original HTTP HTML/PDF bytes. Large PDF partial downloads were not adopted."
+    },
+    {
+      "id": "igem-2025-hkust-model",
+      "url": "https://2025.igem.wiki/hkust/model",
+      "method": "browser_rendered_body_text_read",
+      "locator": "Metallothionein rendered tab selected design/comparison/limitations; not hidden biosensor tab",
+      "status": "body_read",
+      "sha256": "95896bbd8219137be39e1ef64f7bfefcc02d87d74e6dffcf2b67af1327f74d62",
+      "localResearchCopy": "tmp/research-sources/igem-hkust-model-browser.txt",
+      "retrievedAt": "2026-11-05T12:54:03.238069+00:00",
+      "authorReadAt": "2026-11-05T13:10:13.220726+00:00",
+      "captureNote": "Observed public browser DOM text, not original HTTP HTML/PDF bytes. Large PDF partial downloads were not adopted."
+    }
+  ]
+}

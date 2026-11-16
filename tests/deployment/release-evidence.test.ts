@@ -263,6 +263,74 @@ describe("release evidence chain", () => {
     }
   });
 
+  it("allows only the coordinator's exact isolated environment constants in source and text patches", async () => {
+    const fixture = await realpath(await mkdtemp(path.join(tmpdir(), "resume-ai-coordinator-placeholders-")));
+    const scanner = path.join(root, "ops/bin/scan-release-secrets.sh");
+    const coordinator = "scripts/run-release-evidence.mjs";
+    const reviewed = [
+      ["AI_CONSENT_SALT", "synthetic-release-evidence-consent-salt-000000000000000000"],
+      ["AI_CONVERSATION_SIGNING_SECRET", "synthetic-release-evidence-signing-secret-0000000000000000"],
+      ["LOG_HASH_SECRET", "synthetic-release-evidence-log-secret-0000000000000000000"]
+    ] as const;
+    const assignments = (values: ReadonlyArray<readonly [string, string]>) =>
+      values.map(([name, value]) => `    ${name}: "${value}",\n`).join("");
+    let sequence = 0;
+    async function checkSourceAndPatch(relative: string, body: string, accepted: boolean, prefix = "+") {
+      const caseId = sequence++, sourceRoot = path.join(fixture, `source-${caseId}`);
+      const sourceFile = path.join(sourceRoot, relative), patchFile = path.join(fixture, `case-${caseId}.patch`);
+      await mkdir(path.dirname(sourceFile), { recursive: true });
+      await writeFile(sourceFile, body);
+      const lines = body.trimEnd().split("\n");
+      await writeFile(patchFile, [
+        `diff --git a/${relative} b/${relative}`,
+        `--- a/${relative}`,
+        `+++ b/${relative}`,
+        `@@ -1,${lines.length} +1,${lines.length} @@`,
+        ...lines.map(line => `${prefix}${line}`),
+        ""
+      ].join("\n"));
+      const sourceScan = execFileAsync("/bin/bash", [scanner, "--source-tree", sourceRoot]);
+      const patchScan = execFileAsync("/bin/bash", [scanner, "--full", patchFile]);
+      if (accepted) {
+        await Promise.all([expect(sourceScan).resolves.toBeDefined(), expect(patchScan).resolves.toBeDefined()]);
+      } else {
+        await Promise.all([
+          expect(sourceScan).rejects.toMatchObject({ code: 1 }),
+          expect(patchScan).rejects.toMatchObject({ code: 1 })
+        ]);
+      }
+      return { sourceRoot, sourceFile };
+    }
+    try {
+      const body = assignments(reviewed);
+      for (const prefix of ["+", " ", "-"]) {
+        const allowed = await checkSourceAndPatch(coordinator, body, true, prefix);
+        await expect(execFileAsync("/bin/bash", [scanner, "--source-tree", allowed.sourceFile], { cwd: allowed.sourceRoot }))
+          .resolves.toBeDefined();
+      }
+      for (const relative of ["src/config.mjs", "scripts/run-release-evidence.mjs.backup", "nested/scripts/run-release-evidence.mjs", "tests/run-release-evidence.mjs"]) {
+        for (const entry of reviewed) await checkSourceAndPatch(relative, assignments([entry]), false);
+      }
+      for (const [name, value] of reviewed) {
+        for (const changed of [`${value.slice(0, -1)}1`, `${value} `, `${value}\t`, `${value}x`]) {
+          await checkSourceAndPatch(coordinator, assignments([[name, changed]]), false);
+        }
+      }
+      const extraProviderToken = ["sk-", "A".repeat(40)].join("");
+      await checkSourceAndPatch(coordinator, `${body}AI_API_KEY=${extraProviderToken}\n`, false);
+      await checkSourceAndPatch(coordinator, `${body}TOKEN=${"r".repeat(48)}\n`, false);
+      const postgres = ["postgresql://user:", reviewed[0][1], "@127.0.0.1:5432/saitu"].join("");
+      await checkSourceAndPatch(coordinator, `${body}DATABASE_URL=${postgres}\n`, false);
+      const privateKey = ["-----BEGIN ", "PRIVATE KEY-----\nsynthetic-key-body\n-----END ", "PRIVATE KEY-----\n"].join("");
+      await checkSourceAndPatch(coordinator, `${body}${privateKey}`, false);
+      const rawEvidence = path.join(fixture, "unbound-evidence.log");
+      await writeFile(rawEvidence, body);
+      await expect(execFileAsync("/bin/bash", [scanner, "--full", rawEvidence])).rejects.toMatchObject({ code: 1 });
+    } finally {
+      await rm(fixture, { recursive: true, force: true });
+    }
+  });
+
   it("decodes Git binary literals and rejects a secret hidden beside a benign text hunk", async () => {
     const fixture = await mkdtemp(path.join(tmpdir(), "resume-ai-binary-patch-secret-"));
     try {

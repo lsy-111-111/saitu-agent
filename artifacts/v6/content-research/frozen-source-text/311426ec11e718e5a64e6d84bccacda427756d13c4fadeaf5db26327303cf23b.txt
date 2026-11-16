@@ -1,0 +1,3315 @@
+=== AccessibilityEscape.swiftpm/AccessibilityEscape.swift ===
+import SwiftUI
+
+@available(iOS 18.0, *)
+@main
+struct AccessibilityEscape: App {
+    init() {
+        UITabBar.appearance().scrollEdgeAppearance = UITabBarAppearance()
+    }
+    
+    @State var model = Model()
+    @State var isAssistantVisible = false
+    
+    var body: some Scene {
+        WindowGroup {
+            VStack {
+                TabView {
+                    LevelsView()
+                        .tabItem {
+                            Label("Escape", systemImage: "door.left.hand.open")
+                        }
+                    GuideView()
+                        .tabItem {
+                            Label("Guide", systemImage: "books.vertical")
+                        }
+                }
+                .tabViewStyle(.tabBarOnly)
+                .environment(model)
+            }
+            .assistant(isVisible: $model.isAssistantVisible, assistantMessage: model.assistantMessage)
+        }
+    }
+}
+
+
+=== AccessibilityEscape.swiftpm/Assets.xcassets/AppIcon.appiconset/Contents.json ===
+{
+  "images" : [
+    {
+      "filename" : "Logo.png",
+      "idiom" : "universal",
+      "platform" : "ios",
+      "size" : "1024x1024"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
+
+
+=== AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Blue/BlueAccessible.colorset/Contents.json ===
+{
+  "colors" : [
+    {
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0xDD",
+          "green" : "0x40",
+          "red" : "0x00"
+        }
+      },
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0xFF",
+          "green" : "0x9C",
+          "red" : "0x40"
+        }
+      },
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
+
+
+=== AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Blue/BlueCustom.colorset/Contents.json ===
+{
+  "colors" : [
+    {
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0xD9",
+          "green" : "0x6F",
+          "red" : "0x50"
+        }
+      },
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0xE2",
+          "green" : "0x6E",
+          "red" : "0x40"
+        }
+      },
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
+
+
+=== AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Blue/BlueDark.colorset/Contents.json ===
+{
+  "colors" : [
+    {
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0xFF",
+          "green" : "0x84",
+          "red" : "0x0A"
+        }
+      },
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
+
+
+=== AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Blue/BlueDefault.colorset/Contents.json ===
+{
+  "colors" : [
+    {
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0xFF",
+          "green" : "0x7A",
+          "red" : "0x00"
+        }
+      },
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0xFF",
+          "green" : "0x84",
+          "red" : "0x0A"
+        }
+      },
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
+
+
+=== AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Blue/BlueLight.colorset/Contents.json ===
+{
+  "colors" : [
+    {
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0xFF",
+          "green" : "0x7A",
+          "red" : "0x00"
+        }
+      },
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
+
+
+=== AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Blue/Contents.json ===
+{
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
+
+
+=== AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Contents.json ===
+{
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
+
+
+=== AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Green/Contents.json ===
+{
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
+
+
+=== AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Green/GreenAccessible.colorset/Contents.json ===
+{
+  "colors" : [
+    {
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0x3D",
+          "green" : "0x8A",
+          "red" : "0x24"
+        }
+      },
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0x5B",
+          "green" : "0xDB",
+          "red" : "0x30"
+        }
+      },
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
+
+
+=== AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Green/GreenDark.colorset/Contents.json ===
+{
+  "colors" : [
+    {
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0x58",
+          "green" : "0xD1",
+          "red" : "0x30"
+        }
+      },
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
+
+
+=== AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Green/GreenDefault.colorset/Contents.json ===
+{
+  "colors" : [
+    {
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0x59",
+          "green" : "0xC7",
+          "red" : "0x34"
+        }
+      },
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0x58",
+          "green" : "0xD1",
+          "red" : "0x30"
+        }
+      },
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
+
+
+=== AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Green/GreenLight.colorset/Contents.json ===
+{
+  "colors" : [
+    {
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0x59",
+          "green" : "0xC7",
+          "red" : "0x34"
+        }
+      },
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
+
+
+=== AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Red/Contents.json ===
+{
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
+
+
+=== AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Red/RedAccessible.colorset/Contents.json ===
+{
+  "colors" : [
+    {
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0x15",
+          "green" : "0x00",
+          "red" : "0xD7"
+        }
+      },
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0x61",
+          "green" : "0x69",
+          "red" : "0xFF"
+        }
+      },
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
+
+
+=== AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Red/RedCustom.colorset/Contents.json ===
+{
+  "colors" : [
+    {
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0x29",
+          "green" : "0x29",
+          "red" : "0xFF"
+        }
+      },
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
+
+
+=== AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Red/RedDark.colorset/Contents.json ===
+{
+  "colors" : [
+    {
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0x3A",
+          "green" : "0x45",
+          "red" : "0xFF"
+        }
+      },
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
+
+
+=== AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Red/RedDefault.colorset/Contents.json ===
+{
+  "colors" : [
+    {
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0x30",
+          "green" : "0x3B",
+          "red" : "0xFF"
+        }
+      },
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0x3A",
+          "green" : "0x45",
+          "red" : "0xFF"
+        }
+      },
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
+
+
+=== AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Red/RedLight.colorset/Contents.json ===
+{
+  "colors" : [
+    {
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0x30",
+          "green" : "0x3B",
+          "red" : "0xFF"
+        }
+      },
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
+
+
+=== AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Yellow/Contents.json ===
+{
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
+
+
+=== AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Yellow/YellowAccessible.colorset/Contents.json ===
+{
+  "colors" : [
+    {
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0x00",
+          "green" : "0x50",
+          "red" : "0xB2"
+        }
+      },
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0x26",
+          "green" : "0xD4",
+          "red" : "0xFF"
+        }
+      },
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
+
+
+=== AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Yellow/YellowDark.colorset/Contents.json ===
+{
+  "colors" : [
+    {
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0x0A",
+          "green" : "0xD6",
+          "red" : "0xFF"
+        }
+      },
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
+
+
+=== AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Yellow/YellowDefault.colorset/Contents.json ===
+{
+  "colors" : [
+    {
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0x00",
+          "green" : "0xCC",
+          "red" : "0xFF"
+        }
+      },
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0x0A",
+          "green" : "0xD6",
+          "red" : "0xFF"
+        }
+      },
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
+
+
+=== AccessibilityEscape.swiftpm/Assets.xcassets/Colors/Yellow/YellowLight.colorset/Contents.json ===
+{
+  "colors" : [
+    {
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0x00",
+          "green" : "0xCC",
+          "red" : "0xFF"
+        }
+      },
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
+
+
+=== AccessibilityEscape.swiftpm/Assets.xcassets/Contents.json ===
+{
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
+
+
+=== AccessibilityEscape.swiftpm/Assets.xcassets/Images/Contents.json ===
+{
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
+
+
+=== AccessibilityEscape.swiftpm/Assets.xcassets/Images/Contrast-1.imageset/Contents.json ===
+{
+  "images" : [
+    {
+      "filename" : "Contrast-L.png",
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "Contrast-D.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
+
+
+=== AccessibilityEscape.swiftpm/Assets.xcassets/Images/DarkMode-1.imageset/Contents.json ===
+{
+  "images" : [
+    {
+      "filename" : "DarkMode-L.png",
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "DarkMode-D.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
+
+
+=== AccessibilityEscape.swiftpm/Assets.xcassets/Images/Logo-AE.imageset/Contents.json ===
+{
+  "images" : [
+    {
+      "filename" : "Logo-AE.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
+
+
+=== AccessibilityEscape.swiftpm/Assets.xcassets/Images/Memoji.imageset/Contents.json ===
+{
+  "images" : [
+    {
+      "filename" : "IMG_1373 1 (1).png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
+
+
+=== AccessibilityEscape.swiftpm/Assets.xcassets/Images/VoiceOver-1.imageset/Contents.json ===
+{
+  "images" : [
+    {
+      "filename" : "dji_fly_20230404_140934_839_1680594234129_photo_optimized.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
+
+
+=== AccessibilityEscape.swiftpm/Guide Subsystem/GuideView.swift ===
+//
+//  GuideView.swift
+//  Accessibility Arcade
+//
+//  Created by Philipp Nagy on 24.01.25.
+//
+
+import SwiftUI
+
+@available(iOS 18.0, *)
+struct GuideView: View {
+    @Environment(Model.self) var model
+    
+    var body: some View {
+        NavigationView {
+            VStack {
+                List {
+                    startView()
+                    ForEach(model.levels) { level in
+                        Section {
+                            GuideButton(level: level)
+                        }
+                        .listSectionSpacing(16)
+                    }
+                }
+                .padding(.horizontal, -4)
+            }
+            .navigationTitle("Guide")
+        }
+    }
+    
+    func startView() -> some View {
+        VStack {
+            Image("Logo-AE")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(height: 56)
+                .padding()
+            Text("Accessibility Escape")
+                .font(.title3)
+                .fontWeight(.bold)
+                .padding(.vertical, 2)
+            Text(LocalizedStringKey(GUIDES_VIEW_MESSAGE))
+                .multilineTextAlignment(.center)
+                .padding(.horizontal, 8)
+                .padding(.bottom, 16)
+        }
+        .frame(maxWidth: .infinity)
+        .padding(4)
+        .clipShape(.rect(cornerRadius: 8))
+    }
+}
+
+
+=== AccessibilityEscape.swiftpm/Guide Subsystem/Guides/GuideContrastView.swift ===
+//
+//  GuideContrastView.swift
+//  AccessibilityEscape
+//
+//  Created by Philipp Nagy on 18.02.25.
+//
+
+import SwiftUI
+
+@available(iOS 18.0, *)
+struct GuideContrastView: View {
+    @Environment(\.sizeCategory) var sizeCategory
+    @State var systemBlueColor = false
+    @State var requireInceasedContrast = true
+    @State var lastStateSuccess = false
+    
+    var columns: [GridItem] {
+        let columnCount = sizeCategory.isAccessibilityCategory ? 1 : 2
+        return Array(repeating: GridItem(.flexible()), count: columnCount)
+    }
+    
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 32) {
+                intro()
+                problem()
+                example()
+                systemColors()
+                customColors()
+                WebLinksView(links: LEVEL_2_GUIDE_LINKS)
+            }
+            .padding(.horizontal)
+            .padding(.bottom)
+        }
+    }
+    
+    func intro() -> some View {
+        Text(LocalizedStringKey(LEVEL_2_GUIDE_1))
+            .navigationTitle("Contrast")
+    }
+    
+    func problem() -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("Problem")
+                .font(.title3)
+                .bold()
+            Text(LocalizedStringKey(LEVEL_2_GUIDE_2))
+        }
+    }
+    
+    func example() -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("Example")
+                .font(.title3)
+                .bold()
+            Toggle(LocalizedStringKey("Use System Color"), isOn: $systemBlueColor)
+                .onChange(of: systemBlueColor) {
+                    triggerStateChange()
+                }
+                .row()
+            Toggle("Require Icreased Contrast", isOn: $requireInceasedContrast)
+                .onChange(of: requireInceasedContrast) {
+                    triggerStateChange()
+                }
+                .row()
+            CodeBlockView(code: "Text(\"Hello World!\")\n\t.foregroundStyle(\(systemBlueColor ? ".blue" : "Color(\"CustomBlue\")"))")
+            ZStack(alignment: .trailing) {
+                Text("Hello World!")
+                    .foregroundStyle(computeColor())
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .clipShape(.rect(cornerRadius: 8))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 8)
+                            .stroke(isSuccess() ? .green : .red, lineWidth: 2)
+                    )
+                Image(systemName: isSuccess() ? "checkmark" : "xmark")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(height: 20)
+                    .foregroundStyle(isSuccess() ? .green : .red)
+                    .padding(.trailing)
+            }
+            .caption("\(isSuccess() ? "Passes" : "Failing") \(requireInceasedContrast ? "increased" : "default") contrast requirements")
+            .padding(.top, 8)
+        }
+    }
+    
+    func systemColors() -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("System colors")
+                .font(.title3)
+                .bold()
+            Text(LocalizedStringKey(LEVEL_2_GUIDE_3))
+                .padding(.bottom, 8)
+            LazyVGrid(columns: columns, spacing: 16) {
+                ColorView(color: "Red", suffix1: "Default", suffix2: "Accessible", split: false)
+                ColorView(color: "Blue", suffix1: "Default", suffix2: "Accessible", split: false)
+                ColorView(color: "Green", suffix1: "Default", suffix2: "Accessible", split: false)
+                ColorView(color: "Yellow", suffix1: "Default", suffix2: "Accessible", split: false)
+            }
+        }
+    }
+    
+    
+    func customColors() -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("Custom colors")
+                .font(.title3)
+                .bold()
+            Text(LocalizedStringKey(LEVEL_2_GUIDE_4))
+                .padding(.bottom, 16)
+            Image("Contrast-1")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(maxWidth: .infinity)
+                .caption("Custom Dark Mode colors in Assets")
+            Text(LocalizedStringKey(LEVEL_2_GUIDE_5))
+                .padding(.top, 8)
+        }
+    }
+    
+    // Helper Functions
+    func triggerStateChange() {
+        if !lastStateSuccess && isSuccess() {
+            HapticManager.triggerHapticSuccess()
+            lastStateSuccess = true
+        }
+        
+        if lastStateSuccess && !isSuccess() {
+            HapticManager.triggerHapticError()
+            lastStateSuccess = false
+        }
+    }
+    
+    func isSuccess() -> Bool {
+        if requireInceasedContrast && !systemBlueColor {
+            return false
+        }
+        return true
+    }
+    
+    func computeColor() -> Color {
+        if systemBlueColor && requireInceasedContrast {
+            return Color("BlueAccessible")
+        }
+        if systemBlueColor {
+            return Color("BlueDefault")
+        }
+        return Color("BlueCustom")
+    }
+}
+
+@available(iOS 18.0, *)
+#Preview {
+    GuideContrastView()
+}
+
+
+=== AccessibilityEscape.swiftpm/Guide Subsystem/Guides/GuideDarkModeView.swift ===
+//
+//  GuideDarkModeView.swift
+//  AccessibilityEscape
+//
+//  Created by Philipp Nagy on 18.02.25.
+//
+
+import SwiftUI
+
+@available(iOS 18.0, *)
+struct GuideDarkModeView: View {
+    @Environment(\.sizeCategory) var sizeCategory
+    @State var showPrimaryColor = false
+    
+    var columns: [GridItem] {
+        let columnCount = sizeCategory.isAccessibilityCategory ? 1 : 2
+        return Array(repeating: GridItem(.flexible()), count: columnCount)
+    }
+    
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 32) {
+                intro()
+                problem()
+                example()
+                systemColors()
+                customColors()
+                WebLinksView(links: LEVEL_1_GUIDE_LINKS)
+            }
+            .padding(.horizontal)
+            .padding(.bottom)
+        }
+    }
+    
+    func intro() -> some View {
+        Text(LocalizedStringKey(LEVEL_1_GUIDE_1))
+            .navigationTitle("Dark Mode")
+    }
+    
+    func problem() -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("Problem")
+                .font(.title3)
+                .bold()
+            Text(LocalizedStringKey(LEVEL_1_GUIDE_2))
+        }
+    }
+    
+    func example() -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("Example")
+                .font(.title3)
+                .bold()
+            Toggle(isOn: $showPrimaryColor) {
+                HStack {
+                    Text(LocalizedStringKey("Use `.primary`"))
+                    Spacer()
+                }
+            }
+            .row()
+            CodeBlockView(code: "Text(\"Hello World!\")\n\t.foregroundStyle(.\(showPrimaryColor ? "primary" : "black"))")
+            Text("Hello World!")
+                .foregroundStyle(.black)
+                .padding()
+                .frame(maxWidth: .infinity)
+                .background(.white)
+                .clipShape(.rect(cornerRadius: 8))
+                .caption("\(showPrimaryColor ? "Primary" : "Black") text in light mode")
+                .padding(.top, 8)
+            Text("Hello World!")
+                .foregroundStyle(showPrimaryColor ? .white : .black)
+                .padding()
+                .frame(maxWidth: .infinity)
+                .background(.black)
+                .cornerRadius(8)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(Color.white, lineWidth: 2)
+                )
+                .caption("\(showPrimaryColor ? "Primary" : "Black") text in dark mode")
+            
+        }
+    }
+    
+    func systemColors() -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("System colors")
+                .font(.title3)
+                .bold()
+            Text(LocalizedStringKey(LEVEL_1_GUIDE_3))
+                .padding(.bottom, 8)
+            LazyVGrid(columns: columns, spacing: 16) {
+                ColorView(color: "Red", suffix1: "Light", suffix2: "Dark", split: true)
+                ColorView(color: "Blue", suffix1: "Light", suffix2: "Dark", split: true)
+                ColorView(color: "Green", suffix1: "Light", suffix2: "Dark", split: true)
+                ColorView(color: "Yellow", suffix1: "Light", suffix2: "Dark", split: true)
+            }
+        }
+    }
+    
+    
+    
+    func customColors() -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("Custom colors")
+                .font(.title3)
+                .bold()
+            Text(LocalizedStringKey(LEVEL_1_GUIDE_4))
+                .padding(.bottom, 16)
+            Image("DarkMode-1")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(maxWidth: .infinity)
+                .caption("Custom Dark Mode colors in Assets")
+            Text(LocalizedStringKey(LEVEL_1_GUIDE_5))
+                .padding(.top, 8)
+        }
+    }
+    
+}
+
+@available(iOS 18.0, *)
+#Preview {
+    GuideDarkModeView()
+}
+
+
+
+//                    LazyVGrid(columns: columns, spacing: 16) {
+//                        ColorsView(color: "Red", suffix1: "Default", suffix2: "Accessible", split: false)
+//                        ColorsView(color: "Blue", suffix1: "Default", suffix2: "Accessible", split: false)
+//                        ColorsView(color: "Green", suffix1: "Default", suffix2: "Accessible", split: false)
+//                        ColorsView(color: "Yellow", suffix1: "Default", suffix2: "Accessible", split: false)
+//                    }
+
+
+
+
+
+=== AccessibilityEscape.swiftpm/Guide Subsystem/Guides/GuideDynamicTypeView.swift ===
+//
+//  GuideDynamicTypeView.swift
+//  AccessibilityEscape
+//
+//  Created by Philipp Nagy on 18.02.25.
+//
+
+import SwiftUI
+
+@available(iOS 18.0, *)
+struct GuideDynamicTypeView: View {
+    @Environment(\.colorScheme) var colorScheme
+    @State var dynamicTypeSizeIndex: Double = 7
+    @State var useDynamicFont: Bool = false
+    let dynamicTypeSizes: [DynamicTypeSize] = DynamicTypeSize.allCases
+    
+    var dynamicTypeSize: DynamicTypeSize {
+        return dynamicTypeSizes[Int(dynamicTypeSizeIndex)]
+    }
+    
+    var sliderColor: Color {
+        colorScheme == .dark ? Color(UIColor.secondarySystemFill) : Color(UIColor.systemFill)
+    }
+    
+    let textStyles: [TextStyle] = [
+        TextStyle(name: "Large Title", size: 34),
+        TextStyle(name: "Title 1", size: 28),
+        TextStyle(name: "Title 2", size: 22),
+        TextStyle(name: "Title 3", size: 20),
+        TextStyle(name: "Headline", size: 17),
+        TextStyle(name: "Body", size: 17),
+        TextStyle(name: "Callout", size: 16),
+        TextStyle(name: "Subhead", size: 15),
+        TextStyle(name: "Footnote", size: 13),
+        TextStyle(name: "Caption 1", size: 12),
+        TextStyle(name: "Caption 2", size: 11)
+    ]
+    
+    let columns: [GridItem] = [
+        GridItem(.flexible(), alignment: .leading),
+        GridItem(.fixed(120), alignment: .trailing)
+    ]
+    
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 32) {
+                intro()
+                problem()
+                example()
+                systemFonts()
+                WebLinksView(links: LEVEL_3_GUIDE_LINKS)
+            }
+            .padding(.horizontal)
+            .padding(.bottom)
+        }
+    }
+    
+    func intro() -> some View {
+        Text(LocalizedStringKey(LEVEL_3_GUIDE_1))
+            .navigationTitle("Text")
+    }
+    
+    func problem() -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("Problem")
+                .font(.title3)
+                .bold()
+            Text(LocalizedStringKey(LEVEL_3_GUIDE_2))
+        }
+    }
+    
+    func example() -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("Example")
+                .font(.title3)
+                .bold()
+            Toggle("Use Dynamic Font", isOn: $useDynamicFont)
+                .row()
+            dynamicTypeSlider()
+            CodeBlockView(code: "Text(\"Hello World!\")\n\t.font(\(useDynamicFont ? ".body" : ".system(size: 17)"))")
+            Text("Hello World!")
+                .font(.system(size: getDynamicTextSize(dynamicTypeSize)))
+                .padding()
+                .frame(maxWidth: .infinity)
+                .cornerRadius(8)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(lineWidth: 2)
+                )
+                .padding(.top, 16)
+            
+        }
+    }
+    
+    func dynamicTypeSlider() -> some View {
+        VStack(alignment: .leading, spacing: 16) {
+            HStack {
+                Text("Dynamic Type:")
+                Spacer()
+                Text("\(dynamicTypeSizes[Int(dynamicTypeSizeIndex)].description)")
+                    .bold()
+            }
+            ZStack(alignment: .leading) {
+                HStack {
+                    ForEach(dynamicTypeSizes.indices, id: \.self) { index in
+                        VStack(spacing: 4) {
+                            Rectangle()
+                                .frame(width: 5, height: 5)
+                                .foregroundStyle(sliderColor)
+                                .padding(.top, 1)
+                            Rectangle()
+                                .frame(width: 5, height: 5)
+                                .foregroundStyle(sliderColor)
+                        }
+                        if index != dynamicTypeSizes.indices.last {
+                            Spacer()
+                        }
+                    }
+                }
+                .padding(.horizontal, 11)
+                .padding(.leading, 0)
+                Slider(value: $dynamicTypeSizeIndex, in: 0...Double(dynamicTypeSizes.count-1), step: 1)
+                    .tint(sliderColor)
+            }
+        }
+        .row()
+    }
+    
+    func systemFonts() -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("System Fonts")
+                .font(.title3)
+                .bold()
+            Text(LocalizedStringKey(LEVEL_3_GUIDE_3))
+            VStack {
+                LazyVGrid(columns: columns, spacing: 10) {
+                    Text("Text Style").bold()
+                    Text("Size (pt)").bold()
+                }
+                .padding(.bottom, 5)
+                Divider()
+                    .background(Color.secondary)
+                    .padding(.horizontal, -16)
+                ForEach(textStyles.indices, id: \.self) { index in
+                    if index != 0 {
+                        Divider()
+                            .padding(.horizontal, -16)
+                    }
+                    LazyVGrid(columns: columns, spacing: 10) {
+                        Text(textStyles[index].name)
+                        Text("\(Int(textStyles[index].size))")
+                    }
+                }
+            }
+            .row()
+            .padding()
+        }
+        
+    }
+    
+    func getDynamicTextSize(_ dynamicTypeSize: DynamicTypeSize) -> CGFloat {
+        if !useDynamicFont {
+            return 17
+        }
+        let sizeMapping: [DynamicTypeSize: CGFloat] = [
+            .xSmall: 14,
+            .small: 15,
+            .medium: 16,
+            .large: 17,
+            .xLarge: 19,
+            .xxLarge: 21,
+            .xxxLarge: 23,
+            .accessibility1: 28,
+            .accessibility2: 33,
+            .accessibility3: 40,
+            .accessibility4: 47,
+            .accessibility5: 53
+        ]
+        
+        return sizeMapping[dynamicTypeSize] ?? 17 // Default size
+    }
+}
+
+
+@available(iOS 18.0, *)
+#Preview {
+    GuideDynamicTypeView()
+}
+
+extension DynamicTypeSize {
+    var description: String {
+        "\(self)"
+    }
+}
+
+
+=== AccessibilityEscape.swiftpm/Guide Subsystem/Guides/GuideMotionView.swift ===
+//
+//  GuideMotionView.swift
+//  AccessibilityEscape
+//
+//  Created by Philipp Nagy on 18.02.25.
+//
+
+import SwiftUI
+
+@available(iOS 18.0, *)
+struct GuideMotionView: View {
+    @State private var animate = false
+    @State private var requireReducedMotion = true
+    @State private var useReduceMotion = false
+    
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 32) {
+                intro()
+                problem()
+                example()
+                WebLinksView(links: LEVEL_4_GUIDE_LINKS)
+            }
+            .padding(.horizontal)
+            .padding(.bottom)
+        }
+    }
+    
+    func intro() -> some View {
+        Text(LocalizedStringKey(LEVEL_4_GUIDE_1))
+            .navigationTitle("Motion")
+    }
+    
+    func problem() -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("Problem")
+                .font(.title3)
+                .bold()
+            Text(LocalizedStringKey(LEVEL_4_GUIDE_2))
+        }
+    }
+    func example() -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("Example")
+                .font(.title3)
+                .bold()
+            Toggle("Use `reduceMotion`", isOn: $useReduceMotion)
+                .row()
+            CodeBlockView(code: useReduceMotion ? LEVEL_4_GUIDE_CODE_TRUE : LEVEL_4_GUIDE_CODE_FALSE)
+            Toggle("Require Reduced Motion", isOn: $requireReducedMotion)
+                .row()
+            Group {
+                if requireReducedMotion && useReduceMotion {
+                    Text("Hello World!")
+                } else {
+                    Text("Hello World!")
+                        .scaleEffect(animate ? 1.7 : 1.0)
+                        .animation(.easeInOut(duration: 1).repeatForever(autoreverses: !requireReducedMotion), value: animate)
+                        .onAppear() {
+                            animate.toggle()
+                        }
+                }
+            }
+            .padding()
+            .frame(maxWidth: .infinity)
+            .cornerRadius(8)
+            .overlay(
+                RoundedRectangle(cornerRadius: 8)
+                    .stroke(lineWidth: 2)
+            )
+            .padding(.top, 8)
+        }
+    }
+}
+
+@available(iOS 18.0, *)
+#Preview {
+    GuideMotionView()
+}
+
+
+=== AccessibilityEscape.swiftpm/Guide Subsystem/Guides/GuideVoiceOverView.swift ===
+//
+//  GuideVoiceOverView.swift
+//  AccessibilityEscape
+//
+//  Created by Philipp Nagy on 18.02.25.
+//
+
+import SwiftUI
+import AVFoundation
+
+@available(iOS 18.0, *)
+struct GuideVoiceOverView: View {
+    @State var useAccessibilityLabel = false
+    let synthesizer = AVSpeechSynthesizer()
+    
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 32) {
+                intro()
+                problem()
+                example()
+                WebLinksView(links: LEVEL_5_GUIDE_LINKS)
+            }
+            .padding(.horizontal)
+            .padding(.bottom)
+        }
+    }
+    
+    func intro() -> some View {
+        Text(LocalizedStringKey(LEVEL_5_GUIDE_1))
+            .navigationTitle("VoiceOver")
+    }
+    
+    func problem() -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("Problem")
+                .font(.title3)
+                .bold()
+            Text(LocalizedStringKey(LEVEL_5_GUIDE_2))
+        }
+    }
+    
+    func example() -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("Example")
+                .font(.title3)
+                .bold()
+            Toggle("Use `accessibilityLabel`", isOn: $useAccessibilityLabel)
+                .row()
+            CodeBlockView(code: useAccessibilityLabel ? "Image(\"...\")\n\t.accessibilityLabel(\"\(LEVEL_5_GUIDE_3)\")": "Image(\"...\")\n ")
+            ZStack {
+                Image("VoiceOver-1")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                VStack {
+                    Image(systemName: "speaker.wave.3.fill")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 32)
+                        .padding()
+                    Text("Tap for VoiceOver")
+                }
+                .padding()
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(Material.ultraThin)
+            }
+            .foregroundStyle(.secondary)
+            .clipShape(.rect(cornerRadius: 8))
+            .caption(useAccessibilityLabel ? LEVEL_5_GUIDE_3 : "istockphoto-14/612 Image")
+            .accessibilityLabel(LEVEL_5_GUIDE_3)
+            .accessibilityAddTraits(.isImage)
+            .onTapGesture {
+                speech(text: useAccessibilityLabel ? "\(LEVEL_5_GUIDE_3) Image" : "istockphoto-14/612 Image")
+            }
+        }
+    }
+    
+    func speech(text: String) {
+        let utterance = AVSpeechUtterance(string: text)
+        utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
+        synthesizer.speak(utterance)
+    }
+}
+
+@available(iOS 18.0, *)
+#Preview {
+    GuideVoiceOverView()
+}
+
+
+
+=== AccessibilityEscape.swiftpm/Helpers/CodeBlockView.swift ===
+//
+//  CodeBlockView.swift
+//  AccessibilityEscape
+//
+//  Created by Philipp Nagy on 20.02.25.
+//
+
+import SwiftUI
+
+@available(iOS 18.0, *)
+struct CodeBlockView: View {
+    @Environment(\.colorScheme) var colorScheme
+    var code: String
+    
+    var body: some View {
+        ScrollView(.horizontal) {
+            VStack(alignment: .leading) {
+                HStack {
+                    Text(attributedString(for: code))
+                        .font(.system(.body, design: .monospaced))
+                        .foregroundColor(.primary)
+                        .multilineTextAlignment(.leading)
+                        .padding()
+                    Spacer()
+                }
+            }
+            .frame(minWidth: UIScreen.main.bounds.width - 32)
+            .background(colorScheme == .dark
+                        ? Color(UIColor.tertiarySystemBackground)
+                        : Color(UIColor.secondarySystemBackground))
+            .clipShape(.rect(cornerRadius: 8))
+            .padding(.leading, 16)
+            .padding(.trailing, 32)
+        }
+        .scrollBounceBehavior(.basedOnSize, axes: [.horizontal])
+        .scrollIndicators(.never)
+        .padding(.trailing, -32)
+        .padding(.leading, -16)
+    }
+    
+    // Based on: https://medium.com/@orhanerday/building-a-swiftui-code-block-view-with-syntax-highlighting-d3d737a90a65
+    func attributedString(for code: String) -> AttributedString {
+        var attributedString = AttributedString(code)
+        let keywords = ["let", "var", "if", "else", "struct", "func", "return"]
+        let stringPattern = "\".*?\"" // Pattern to match strings
+        for keyword in keywords {
+            let ranges = code.ranges(of: keyword)
+            for range in ranges {
+                if let attributedRange = Range(NSRange(range, in: code), in: attributedString) {
+                    attributedString[attributedRange].foregroundColor = .purple
+                }
+            }
+        }
+        
+        let contants = [".black", ".blue", ".primary", ".body", ".system(size: 17)", "reduceMotion", ".accessibilityLabel"]
+        for constant in contants {
+            let ranges = code.ranges(of: constant)
+            for range in ranges {
+                if let attributedRange = Range(NSRange(range, in: code), in: attributedString) {
+                    attributedString[attributedRange].foregroundColor = .red
+                }
+            }
+        }
+        
+        if let regex = try? NSRegularExpression(pattern: stringPattern) {
+            let matches = regex.matches(in: code, range: NSRange(code.startIndex..., in: code))
+            for match in matches {
+                if let stringRange = Range(match.range, in: code),
+                   let attributedRange = Range(NSRange(stringRange, in: code), in: attributedString) {
+                    attributedString[attributedRange].foregroundColor = .green
+                }
+            }
+        }
+        return attributedString
+    }
+}
+
+extension String {
+    /// Helper to find all ranges of a substring within a string
+    func ranges(of substring: String) -> [Range<String.Index>] {
+        var result: [Range<String.Index>] = []
+        var startIndex = self.startIndex
+        while startIndex < self.endIndex,
+              let range = self.range(of: substring, range: startIndex..<self.endIndex) {
+            result.append(range)
+            startIndex = range.upperBound
+        }
+        return result
+    }
+}
+
+
+=== AccessibilityEscape.swiftpm/Helpers/ColorView.swift ===
+//
+//  ColorView.swift
+//  AccessibilityEscape
+//
+//  Created by Philipp Nagy on 20.02.25.
+//
+
+import SwiftUI
+
+struct ColorView: View {
+    let color: String
+    let suffix1: String
+    let suffix2: String
+    let split: Bool
+    
+    var body: some View {
+        VStack {
+            Circle()
+                .fill(
+                    LinearGradient(
+                        gradient: Gradient(stops: [
+                            .init(color: Color("\(color)\(suffix1)"), location: 0.0),
+                            .init(color: Color("\(color)\(suffix1)"), location: 0.5),
+                            .init(color: Color("\(color)\(suffix2)"), location: 0.5),
+                            .init(color: Color("\(color)\(suffix2)"), location: 1.0)
+                        ]),
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
+                .padding(16)
+                .background {
+                    if split {
+                        LinearGradient(
+                            gradient: Gradient(stops: [
+                                .init(color: .white, location: 0.0),
+                                .init(color: .white, location: 0.5),
+                                .init(color: .black, location: 0.5),
+                                .init(color: .black, location: 1.0)
+                            ]),
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    }
+                }
+        }
+        .caption("\(color) color")
+    }
+}
+
+
+=== AccessibilityEscape.swiftpm/Helpers/GuideButton.swift ===
+//
+//  GuideButton.swift
+//  AccessibilityEscape
+//
+//  Created by Philipp Nagy on 17.02.25.
+//
+
+import SwiftUI
+
+@available(iOS 18.0, *)
+struct GuideButton: View {
+    let level: Level
+    
+    var body: some View {
+        NavigationLink(destination: level.guideView) {
+            HStack(alignment: .center) {
+                Image(systemName: level.icon)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 32, height: 32)
+                    .foregroundStyle(level.color)
+                    .padding(4)
+                VStack(alignment: .leading) {
+                    Text(level.name)
+                        .font(.headline)
+                    Text("\(level.guideDuration)min read")
+                        .foregroundStyle(.secondary)
+                }
+                .padding(.leading, 8)
+                Spacer()
+            }
+        }
+    }
+}
+
+@available(iOS 18.0, *)
+#Preview {
+    GuideButton(level: Model().levels.first!)
+}
+
+
+=== AccessibilityEscape.swiftpm/Helpers/HapticManager.swift ===
+//
+//  HapticManager.swift
+//  AccessibilityEscape
+//
+//  Created by Philipp Nagy on 19.02.25.
+//
+
+import UIKit
+
+@MainActor
+class HapticManager {
+    static func triggerHapticSuccess() {
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.success)
+    }
+    
+    static func triggerHapticError() {
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.error)
+    }
+}
+
+
+=== AccessibilityEscape.swiftpm/Helpers/LevelButton.swift ===
+//
+//  LevelButton.swift
+//  AccessibilityEscape
+//
+//  Created by Philipp Nagy on 14.02.25.
+//
+
+import SwiftUI
+
+@available(iOS 18.0, *)
+struct LevelButton: View {
+    @Environment(\.colorScheme) var colorScheme
+    var level: Level
+    
+    var body: some View {
+        NavigationLink(destination: level.viewBuilder) {
+            HStack {
+                VStack(alignment: .leading) {
+                    HStack(spacing: 0) {
+                        Text(level.name)
+                            .foregroundStyle(Color.primary)
+                            .fontWeight(.semibold)
+                            .padding(.trailing, 6)
+                        Spacer()
+                        Image(systemName: level.solved ? "checkmark.circle.fill" : "circle")
+                            .resizable()
+                            .frame(width: 24, height: 24)
+                            .foregroundStyle(level.solved ? .green : Color(UIColor.secondaryLabel))
+                    }
+                    Image(systemName: level.icon)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 72)
+                        .padding(30)
+                        .padding(.bottom, -24)
+                        .foregroundStyle(level.color)
+                    Spacer()
+                }
+            }
+            .padding()
+            .background(colorScheme == .dark ? Color(UIColor.secondarySystemBackground) : Color(UIColor.systemBackground))
+            .clipShape(.rect(cornerRadius: 8))
+        }
+    }
+}
+
+
+=== AccessibilityEscape.swiftpm/Helpers/LinkView.swift ===
+//
+//  LinkView.swift
+//  AccessibilityEscape
+//
+//  Created by Philipp Nagy on 20.02.25.
+//
+
+import SwiftUI
+
+struct WebLinkView: View {
+    @Environment(\.colorScheme) var colorScheme
+    let webLink: WebLink
+    
+    var body: some View {
+        Button {
+            if let url = URL(string: webLink.link) {
+                UIApplication.shared.open(url)
+            }
+        } label: {
+            HStack {
+                VStack(alignment: .leading, spacing: 6) {
+                    Text(webLink.text)
+                        .foregroundStyle(Color.primary)
+                        .multilineTextAlignment(.leading)
+                    Text(webLink.subText)
+                        .foregroundStyle(Color.secondary)
+                        .multilineTextAlignment(.leading)
+                }
+                Spacer()
+                Image(systemName: "arrow.up.right")
+                    .foregroundStyle(Color.secondary)
+            }
+            .row()
+        }
+    }
+}
+
+
+=== AccessibilityEscape.swiftpm/Helpers/WebLinksView.swift ===
+//
+//  WebLinksView.swift
+//  AccessibilityEscape
+//
+//  Created by Philipp Nagy on 20.02.25.
+//
+
+import SwiftUI
+
+struct WebLinksView: View {
+    let links: [WebLink]
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("See Also")
+                .font(.title3)
+                .bold()
+            ForEach(links, id: \.link) {
+                WebLinkView(webLink: $0)
+            }
+        }
+    }
+}
+
+
+=== AccessibilityEscape.swiftpm/Level Subsystem/Levels/LevelContrastView.swift ===
+//
+//  LevelContrastView.swift
+//  AccessibilityEscape
+//
+//  Created by Philipp Nagy on 18.02.25.
+//
+
+import SwiftUI
+
+@available(iOS 18.0, *)
+struct LevelContrastView: View {
+    @Environment(\.dismiss) var dismiss
+    @Environment(\.colorSchemeContrast) private var colorSchemeContrast
+    @Environment(Model.self) private var model
+    @State private var tapCount = 0
+    @State private var timer: Timer?
+    @State var solved = false
+    
+    var gradientStyle: LinearGradient {
+        if colorSchemeContrast == .increased {
+            return LinearGradient(colors: [Color.primary], startPoint: .top, endPoint: .bottom)
+        } else {
+            return LinearGradient(
+                gradient: Gradient(colors: [Color.secondary, Color(UIColor.systemBackground)]),
+                startPoint: .top,
+                endPoint: UnitPoint(x: 0.5, y: 0.8)
+            )
+        }
+    }
+    
+    var body: some View {
+        VStack {
+            Text(LocalizedStringKey(LEVEL_2_RIDDLE))
+                .font(.title3)
+                .multilineTextAlignment(.center)
+                .foregroundStyle(gradientStyle)
+                .padding()
+                .onTapGesture {
+                    if colorSchemeContrast == .increased {
+                        handleTap()
+                    }
+                }
+        }
+        .level(level: Levels.contrast, solved: solved)
+    }
+    
+    private func handleTap() {
+        tapCount += 1
+        timer?.invalidate()
+        
+        if tapCount >= 3 {
+            solved = true
+            tapCount = 0
+        } else {
+            timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { _ in
+                DispatchQueue.main.async {
+                    self.tapCount = 0
+                    self.timer?.invalidate()
+                }
+            }
+        }
+    }
+}
+
+@available(iOS 18.0, *)
+#Preview {
+    LevelContrastView()
+}
+
+
+=== AccessibilityEscape.swiftpm/Level Subsystem/Levels/LevelDarkModeView.swift ===
+//
+//  LevelDarkModeView.swift
+//  AccessibilityEscape
+//
+//  Created by Philipp Nagy on 18.02.25.
+//
+
+import SwiftUI
+
+@available(iOS 18.0, *)
+struct LevelDarkModeView: View {
+    @Environment(\.dismiss) var dismiss
+    @Environment(\.colorScheme) var colorScheme
+    @Environment(Model.self) private var model: Model
+    @State var riddleText: String = ""
+    @State var hideBarBackButton = false
+    @State var showLevel = false
+    @State var showSolution = false
+    @State var solved = false
+    
+    var body: some View {
+        let isDarkMode = colorScheme == .dark
+        VStack {
+            if showLevel {
+                ZStack {
+                    ScrollView {
+                        VStack {
+                            Text(riddleText)
+                                .font(.title3)
+                                .multilineTextAlignment(.center)
+                                .padding(.top, 150)
+                            
+                            if showSolution {
+                                Image(systemName: "arrow.down")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 40, height: 40)
+                                    .symbolEffect(.pulse)
+                                    .padding(.top, 80)
+                                Button {
+                                    solved = true
+                                } label: {
+                                    Label("Escape", systemImage: "door.left.hand.open")
+                                        .padding(8)
+                                        .frame(maxWidth: .infinity)
+                                }
+                                .buttonStyle(.borderedProminent)
+                                .padding(.top, 560)
+                            }
+                        }
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                    }
+                    .scrollBounceBehavior(.basedOnSize, axes: [.vertical])
+                }
+            }
+        }
+        .onChange(of: colorScheme) {
+            showSolution.toggle()
+        }
+        .task {
+            model.visibility = .hidden
+            riddleText = isDarkMode ? LEVEL_1_RIDDLE_DARK : LEVEL_1_RIDDLE_LIGHT
+            
+            Task {
+                try? await Task.sleep(nanoseconds: 500_000_000)
+                hideBarBackButton = true
+                try? await Task.sleep(nanoseconds: 1_500_000_000)
+                model.showAssistant(text: FIRST_LEVEL_MESSAGE,
+                                    secondaryLabel: FIRST_LEVEL_ACTION_LABEL,
+                                    secondaryAction: { showLevel = true; model.resetAssistant() },
+                                    actionOnShake: { showLevel = true; model.resetAssistant() })
+            }
+        }
+        .level(level: Levels.darkMode, solved: solved)
+        .navigationBarBackButtonHidden(hideBarBackButton)
+    }
+}
+
+
+=== AccessibilityEscape.swiftpm/Level Subsystem/Levels/LevelDynamicTypeView.swift ===
+//
+//  LevelDynamicTypeView.swift
+//  AccessibilityEscape
+//
+//  Created by Philipp Nagy on 18.02.25.
+//
+
+import SwiftUI
+
+@available(iOS 18.0, *)
+struct LevelDynamicTypeView: View {
+    @Environment(\.dismiss) var dismiss
+    @Environment(\.dynamicTypeSize) var dynamicTypeSize: DynamicTypeSize
+    @Environment(Model.self) private var model
+    @State var solved = false
+    @State var showSolution = false
+    @State var font = Font.system(size: 2)
+    
+    var body: some View {
+        VStack {
+            Text(LEVEL_3_RIDDLE)
+                .font(font)
+                .multilineTextAlignment(.center)
+                .padding()
+                .onLongPressGesture {
+                    if showSolution {
+                        solved = true
+                    }
+                }
+        }
+        .task {
+            checkSolved(dynamicTypeSize: dynamicTypeSize)
+        }
+        .level(level: Levels.dynamicType, solved: solved)
+        .onChange(of: dynamicTypeSize) {
+            checkSolved(dynamicTypeSize: dynamicTypeSize)
+        }
+    }
+    
+    func checkSolved(dynamicTypeSize: DynamicTypeSize) {
+        if [.xxLarge, .xxxLarge, .accessibility1, .accessibility2, .accessibility3, .accessibility4, .accessibility5].contains(dynamicTypeSize) {
+            showSolution = true
+            font = .title3
+            return
+        }
+        showSolution = false
+        font = Font.system(size: 2)
+    }
+}
+
+@available(iOS 18.0, *)
+#Preview {
+    LevelDynamicTypeView()
+}
+
+
+=== AccessibilityEscape.swiftpm/Level Subsystem/Levels/LevelMotionView.swift ===
+//
+//  LevelMotionView.swift
+//  AccessibilityEscape
+//
+//  Created by Philipp Nagy on 18.02.25.
+//
+
+import SwiftUI
+
+@available(iOS 18.0, *)
+struct LevelMotionView: View {
+    @Environment(\.dismiss) var dismiss
+    @Environment(\.accessibilityReduceMotion) var reduceMotion
+    @Environment(Model.self) var model
+    @State var solved = false
+    @State private var angle: Double = 0
+    @State private var radius: CGFloat = 200
+    @State private var timer: Timer?
+    
+    
+    var body: some View {
+        VStack {
+            Button {
+                if reduceMotion {
+                    solved = true
+                }
+            } label: {
+                Label(reduceMotion ? "Escape" : "You can't catch me!", systemImage: reduceMotion ? "door.left.hand.open" : "hand.wave")
+                    .padding(8)
+                    .frame(maxWidth: .infinity)
+            }
+            .buttonStyle(.borderedProminent)
+            .offset(x: radius * cos(angle), y: radius * sin(angle))
+            .rotationEffect(.degrees(angle * 5))
+            .onAppear {
+                toggleAnimation()
+            }
+        }
+        .padding()
+        .level(level: Levels.motion, solved: solved)
+        .onDisappear {
+            timer?.invalidate()
+        }
+        .onChange(of: reduceMotion) {
+            toggleAnimation()
+        }
+    }
+    
+    private func toggleAnimation() {
+        timer?.invalidate()
+        if reduceMotion {
+            angle = 0
+            radius = 0
+            return
+        }
+        
+        timer = Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true) { _ in
+            DispatchQueue.main.async {
+                angle += 10
+                radius += 1
+                
+                if radius > 400 {
+                    radius = 200
+                }
+            }
+        }
+    }
+}
+
+
+=== AccessibilityEscape.swiftpm/Level Subsystem/Levels/LevelVoiceOverView.swift ===
+//
+//  LevelVoiceOverView.swift
+//  AccessibilityEscape
+//
+//  Created by Philipp Nagy on 18.02.25.
+//
+
+import SwiftUI
+
+@available(iOS 18.0, *)
+struct LevelVoiceOverView: View {
+    @Environment(\.dismiss) var dismiss
+    @Environment(Model.self) var model
+    @State var solved = false
+    @State var text = ""
+    @FocusState var isTextFieldActive: Bool
+    
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 8) {
+                ZStack {
+                    Image("VoiceOver-1")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                    Text("")
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .background(Material.ultraThin)
+                }
+                .clipShape(.rect(cornerRadius: 8))
+                .accessibilityLabel("Apples hanging from a tree")
+                .accessibilityAddTraits(.isImage)
+                
+                Rectangle()
+                    .foregroundStyle(.secondary)
+                    .frame(width: 120, height: 16)
+                    .accessibilityHidden(true)
+                Rectangle()
+                    .foregroundStyle(.tertiary)
+                    .frame(width: 64, height: 18)
+                    .accessibilityHidden(true)
+                TextField("Escape", text: $text)
+                    .textFieldStyle(.roundedBorder)
+                    .padding(.top, 32)
+                    .accessibilityLabel("What fruit can be seen in the image?")
+                    .focused($isTextFieldActive)
+                    .onChange(of: text) {
+                        if text.lowercased() == "apple" {
+                            isTextFieldActive = false
+                            Task {
+                                try? await Task.sleep(nanoseconds: 500_000_000)
+                                solved = true
+                            }
+                        } else {
+                            solved = false
+                        }
+                    }
+                    .padding(.bottom, 40)
+                Spacer()
+            }
+            .padding()
+            .onTapGesture {
+                isTextFieldActive = false
+            }
+            .level(level: Levels.voiceOver, solved: solved)
+        }
+        .scrollBounceBehavior(.basedOnSize, axes: [.vertical])
+    }
+}
+
+
+=== AccessibilityEscape.swiftpm/Level Subsystem/LevelsView.swift ===
+//
+//  LevelsView.swift
+//  AccessibilityEscape
+//
+//  Created by Philipp Nagy on 21.02.25.
+//
+
+import SwiftUI
+
+@available(iOS 18.0, *)
+struct LevelsView: View {
+    @Environment(\.sizeCategory) var sizeCategory
+    @Environment(\.colorScheme) var colorScheme
+    @Environment(Model.self) var model
+    
+    var columns: [GridItem] {
+        let columnCount = sizeCategory.isAccessibilityCategory ? 1 : 2
+        return Array(repeating: GridItem(.flexible()), count: columnCount)
+    }
+    
+    var body: some View {
+        NavigationStack {
+            ScrollView {
+                VStack {
+                    startView()
+                    LazyVGrid(columns: columns, spacing: 8) {
+                        ForEach(model.levels, id: \.id) { level in
+                            LevelButton(level: level)
+                        }
+                    }
+                }
+                .padding(.horizontal)
+                .padding(.bottom)
+            }
+            .navigationTitle("Escape")
+            .background(colorScheme == .dark ? Color(UIColor.systemBackground) : Color(UIColor.secondarySystemBackground))
+        }
+        .toolbar(model.visibility, for: .tabBar)
+    }
+    
+    func startView() -> some View {
+        VStack {
+            Image("Logo-AE")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(height: 56)
+                .padding()
+            Text("Accessibility Escape")
+                .font(.title3)
+                .fontWeight(.bold)
+                .padding(.vertical, 2)
+            Text(LocalizedStringKey(LEVELS_VIEW_MESSAGE))
+                .multilineTextAlignment(.center)
+                .padding(.horizontal, 8)
+                .padding(.bottom, 16)
+        }
+        .padding()
+        .frame(maxWidth: .infinity)
+        .background(colorScheme == .dark ? Color(UIColor.secondarySystemBackground) : Color(UIColor.systemBackground))
+        .clipShape(.rect(cornerRadius: 8))
+    }
+}
+
+@available(iOS 18.0, *)
+#Preview {
+    LevelsView()
+        .environment(Model())
+}
+
+
+=== AccessibilityEscape.swiftpm/Localization/LEVEL_1.swift ===
+//
+//  LEVEL_1.swift
+//  AccessibilityEscape
+//
+//  Created by Philipp Nagy on 21.02.25.
+//
+
+
+// Escape Text
+// Escape Text
+// Escape Text
+let LEVEL_1_RIDDLE_LIGHT = """
+Wow, it’s so light in here…
+
+The glare makes it hard to focus, and some details seem to disappear.
+
+A darker setting might reveal what’s hidden.
+"""
+
+let LEVEL_1_RIDDLE_DARK = """
+It’s really dark in here…
+
+The darkness makes it hard to focus, and some details seem to disappear.
+
+A lighter setting might reveal what’s hidden.
+"""
+
+let LEVEL_1_HINTS = [
+    """
+Maybe there's something you need to adjust in your settings?
+
+If you need another hint, feel free to ask again!
+""",
+    """
+Have you checked your Display & Brightness settings? There might be something you need to change!
+
+Let me know if you need another hint.
+""",
+    "To escape this room, switch your Appearance (Light or Dark Mode) in the Display & Brightness settings."
+]
+
+let LEVEL_1_OUTRO = """
+Wow! You actually found a way out!
+
+Wait… you changed the appearances? That’s awesome!
+
+Want to learn more about Dark Mode?
+"""
+
+
+// Guide Text
+// Guide Text
+// Guide Text
+let LEVEL_1_GUIDE_1 = """
+Dark Mode is a **system-wide** setting that uses a dark **colour scheme** for a more comfortable viewing experience in low light conditions
+"""
+
+let LEVEL_1_GUIDE_2 = """
+A common mistake is using **fixed colors** for text or symbols, such as setting the text color to black or white. This can make the text **invisible** in **Dark Mode**, as it doesn’t adapt to different backgrounds. 
+
+Instead, use adaptive colors like **`.primary`**, which automatically adjust based on the system’s appearance.
+"""
+
+let LEVEL_1_GUIDE_3 = """
+System colors **automatically** adjust to different themes, ensuring optimal visibility. Using these system-defined colors ensures a consistent and **accessible design** across **Light Mode** and **Dark Mode** settings.
+"""
+
+let LEVEL_1_GUIDE_4 = """
+Custom colors allow for branding but must remain **accessible**. To follow **WCAG guidelines**, ensure a **contrast ratio** of at least **4.5:1 for text** and **3:1 for UI elements**.
+"""
+
+let LEVEL_1_GUIDE_5 = """
+To create a custom color, add a **New Color Set** in the **Assets** and enable the **Dark appearance** in the **Attributes Inspector** on the right.
+"""
+
+let LEVEL_1_GUIDE_LINKS: [WebLink] = [
+    WebLink(text: "Dark Mode",
+            subText: "Apple Human Interface Guidelines",
+            link: "https://developer.apple.com/design/human-interface-guidelines/dark-mode"),
+    WebLink(text: "Supporting Dark Mode",
+            subText: "Apple Developer Documentation",
+            link: "https://developer.apple.com/documentation/uikit/supporting-dark-mode-in-your-interface"),
+    WebLink(text: "Colors",
+            subText: "Apple Human Interface Guidelines",
+            link: "https://developer.apple.com/design/human-interface-guidelines/color"),
+    WebLink(text: "Minimum Contrast",
+            subText: "Web Content Accessibility Guidelines",
+            link: "https://www.w3.org/TR/WCAG21/#contrast-minimum"),
+    WebLink(text: "SwiftUI ColorScheme",
+            subText: "Apple Developer Documentation",
+            link: "https://developer.apple.com/documentation/swiftui/colorscheme")
+]
+
+
+=== AccessibilityEscape.swiftpm/Localization/LEVEL_2.swift ===
+//
+//  LEVEL_2.swift
+//  AccessibilityEscape
+//
+//  Created by Philipp Nagy on 21.02.25.
+//
+
+
+// Escape Text
+// Escape Text
+// Escape Text
+let LEVEL_2_RIDDLE = """
+In **contrast** to the other rooms,
+this one seems almost too simple...
+
+The solution is right in front of you.
+
+All it takes to escape is
+tapping this text three times—quickly, in a row.
+"""
+
+let LEVEL_2_HINTS = [
+    """
+Maybe there's something you need to adjust in your Accessibility settings?
+
+If you need another hint, feel free to ask again!
+""",
+    """
+Have you checked Accessibility > Display & Text Size?  There might be something you need to change!
+
+Let me know if you need another hint.
+""",
+    "To escape this room, turn on Increased Contrast in Settings > Accessibility > Display & Text Size."
+]
+
+let LEVEL_2_OUTRO = """
+Wow! How did you manage to escape this room? The contrast kept getting worse and worse!
+
+Wait… you increased the contrast in your settings? That’s brilliant!
+
+Want to learn more about the benefits of Increased Contrast?
+"""
+
+
+// Guide Text
+// Guide Text
+// Guide Text
+let LEVEL_2_GUIDE_1 = """
+Increased Contrast is a **system-wide** setting that enhances **interface clarity** by boosting color contrast, making content more distinguishable for users with **visual impairments**.
+"""
+
+let LEVEL_2_GUIDE_2 = """
+A common mistake is relying on **fixed** or **custom colors** for text or symbols, even when adapting for light and dark appearances. This can result in **insufficient contrast** in **Increased Contrast Mode**, making content difficult to read.
+
+Instead, use adaptive colors like **`.red`** and **`.blue`**, which automatically adjust to different accessibility settings, ensuring optimal visibility.
+"""
+
+let LEVEL_2_GUIDE_3 = """
+System colors **automatically** adjust to different themes, ensuring optimal visibility. Using these system-defined colors ensures a consistent and **accessible design** across **Light Mode**, **Dark Mode** and **Increased Contrast** settings.
+
+The left side shows the default appearance, while the right side displays the Increased Contrast Mode:
+"""
+
+let LEVEL_2_GUIDE_4 = """
+Custom colors allow for branding but must remain **accessible**. To follow **WCAG guidelines**, ensure a contrast ratio of at least 4.5:1 for text and 3:1 for UI elements. For **increased contrast**, ensure a **contrast ratio** of at least **7:1 for text** and **4.5:1 for UI elements**.
+"""
+
+let LEVEL_2_GUIDE_5 = """
+To create a custom color, add a **New Color Set** in the **Assets** and enable **High Contrast** in the **Attributes Inspector** on the right.
+"""
+
+let LEVEL_2_GUIDE_LINKS: [WebLink] = [
+    WebLink(text: "Accessibility Color and Effects",
+            subText: "Apple Human Interface Guidelines",
+            link: "https://developer.apple.com/design/human-interface-guidelines/accessibility#Color-and-effects"),
+    WebLink(text: "Testing system accessibility",
+            subText: "Apple Developer Documentation",
+            link: "https://developer.apple.com/documentation/accessibility/testing-system-accessibility-features-in-your-app"),
+    WebLink(text: "Colors",
+            subText: "Apple Human Interface Guidelines",
+            link: "https://developer.apple.com/design/human-interface-guidelines/color"),
+    WebLink(text: "Enhanced Contrast",
+            subText: "Web Content Accessibility Guidelines",
+            link: "https://www.w3.org/TR/WCAG21/#contrast-enhanced"),
+    WebLink(text: "SwiftUI ColorSchemeContrast",
+            subText: "Apple Developer Documentation",
+            link: "https://developer.apple.com/documentation/swiftui/colorschemecontrast")
+]
+
+
+=== AccessibilityEscape.swiftpm/Localization/LEVEL_3.swift ===
+//
+//  LEVEL_3.swift
+//  AccessibilityEscape
+//
+//  Created by Philipp Nagy on 21.02.25.
+//
+
+
+// Escape Text
+// Escape Text
+// Escape Text
+let LEVEL_3_RIDDLE = """
+Not everything needs to be complicated…
+
+The way out is simpler than you think.
+
+Just tap and hold this text… and see what happens.
+"""
+
+let LEVEL_3_HINTS = [
+    """
+This text appears quite small. Maybe there's something you need to adjust in your Accessibility settings?
+
+If you need another hint, feel free to ask again!
+""",
+    """
+Have you checked Accessibility > Display & Text Size? There might be something you need to change!
+
+Let me know if you need another hint.
+""",
+    "To escape this room, set your Dynamic Type to at least XX-Large in Larger Text under Settings > Accessibility > Display & Text Size."
+]
+
+let LEVEL_3_OUTRO = """
+Wow! You actually made it out of this room? The text was unbelievably tiny!
+
+Wait… you adjusted your Text Size in settings? Smart move!
+
+Want to learn more about the benefits of Dynamic Type?
+"""
+
+
+// Guide Text
+// Guide Text
+// Guide Text
+let LEVEL_3_GUIDE_1 = """
+Dynamic Type is a **system-wide** setting that improves readability by adjusting text size based on **user preferences**, ensuring content remains clear and accessible for users with **varying vision needs**.
+"""
+
+let LEVEL_3_GUIDE_2 = """
+A common mistake is relying on **fixed font** sizes for text, which can make content **difficult to read** when users adjust their text size preferences.
+
+Instead, use **adaptive fonts** like **`.body`**, which **automatically scale** based on the user’s settings, ensuring **consistent readability** across different text sizes.
+"""
+
+let LEVEL_3_GUIDE_3 = """
+System fonts **automatically scale** based on user preferences, ensuring optimal readability and accessibility. Using these system-defined text styles maintains a consistent and adaptable design across different Dynamic Type settings.
+
+Below is a table listing system font styles with their large (default) text sizes:
+"""
+
+let LEVEL_3_GUIDE_LINKS: [WebLink] = [
+    WebLink(text: "Typography",
+            subText: "Apple Human Interface Guidelines",
+            link: "https://developer.apple.com/design/human-interface-guidelines/typography"),
+    WebLink(text: "Testing system accessibility",
+            subText: "Apple Developer Documentation",
+            link: "https://developer.apple.com/documentation/accessibility/testing-system-accessibility-features-in-your-app#Ensure-text-is-legible-at-any-size"),
+    WebLink(text: "SwiftUI DynamicTypeSize",
+            subText: "Apple Developer Documentation",
+            link: "https://developer.apple.com/documentation/swiftui/dynamictypesize"),
+    WebLink(text: "Challenge: Large Text",
+            subText: "Apple Developer News",
+            link: "https://developer.apple.com/news/?id=w6r26g7r"),
+    WebLink(text: "Scaling Fonts Automatically",
+            subText: "Apple Developer Documentation",
+            link: "https://developer.apple.com/documentation/uikit/scaling-fonts-automatically")
+]
+
+
+=== AccessibilityEscape.swiftpm/Localization/LEVEL_4.swift ===
+//
+//  LEVEL_4.swift
+//  AccessibilityEscape
+//
+//  Created by Philipp Nagy on 21.02.25.
+//
+
+
+// Escape Text
+// Escape Text
+// Escape Text
+let LEVEL_4_HINTS = [
+    """
+Maybe there's something you need to adjust in your Accessibility settings, to make things move less?
+
+If you need another hint, feel free to ask again!
+""",
+    """
+Have you checked Accessibility > Motion? There might be something you need to change!
+
+Let me know if you need another hint.
+""",
+    "To escape this room, turn on Reduced Motion in Settings > Accessibility > Motion."
+]
+
+let LEVEL_4_OUTRO = """
+Wow, I am not sure if I would be able to catch that button.
+
+Wait you turned on reduce motions? What a genius idea.
+
+Do you want to learn more about Reduce Motion?
+"""
+
+
+// Guide Text
+// Guide Text
+// Guide Text
+let LEVEL_4_GUIDE_1 = """
+Reduced Motion is a **system-wide** setting that **limits animations** and **motion effects**, providing a more comfortable experience for users who are **sensitive to movement**.
+"""
+
+let LEVEL_4_GUIDE_2 = """
+A common mistake is relying on **uncontrolled animations** or motion effects **without considering user preferences**. This can cause discomfort for users who have Reduced Motion enabled.
+
+Instead, check the accessibility environment value 'reduceMotion' and provide a less animated or static alternative when necessary.
+"""
+
+let LEVEL_4_GUIDE_CODE_TRUE = """
+@Environment(\\.accessibilityReduceMotion) private var reduceMotion
+@State private var animate = false
+
+Text("Hello World!")
+    .scaleEffect(animate ? 1.5 : 1.0)
+    .task {
+        guard !reduceMotion else { return }
+        withAnimation(.easeInOut(duration: 1).repeatForever(autoreverses: true)) {
+            animate.toggle()
+        }
+    }
+"""
+
+let LEVEL_4_GUIDE_CODE_FALSE = """
+@State private var animate = false
+
+Text("Hello World!")
+    .scaleEffect(animate ? 1.5 : 1.0 )
+    .task {
+        withAnimation(.easeInOut(duration: 1).repeatForever(autoreverses: true)) {
+            animate.toggle()
+        }
+    }
+   
+   
+"""
+
+let LEVEL_4_GUIDE_LINKS: [WebLink] = [
+    WebLink(text: "Motion",
+            subText: "Apple Human Interface Guidelines",
+            link: "https://developer.apple.com/design/human-interface-guidelines/accessibility#Motion"),
+    WebLink(text: "Testing system accessibility",
+            subText: "Apple Developer Documentation",
+            link: "https://developer.apple.com/documentation/accessibility/testing-system-accessibility-features-in-your-app#All-platforms"),
+    WebLink(text: "SwiftUI accessibilityReduceMotion",
+            subText: "Apple Developer Documentation",
+            link: "https://developer.apple.com/documentation/swiftui/environmentvalues/accessibilityreducemotion")
+]
+
+
+=== AccessibilityEscape.swiftpm/Localization/LEVEL_5.swift ===
+//
+//  LEVEL_5.swift
+//  AccessibilityEscape
+//
+//  Created by Philipp Nagy on 21.02.25.
+//
+
+
+// Escape Text
+// Escape Text
+// Escape Text
+let LEVEL_5_HINTS = [
+    """
+Hmm... the canvas seems blank, or is there an image you can’t see?
+
+If you need another hint, feel free to ask again!
+""",
+    """
+Maybe there's something you need to adjust in your Accessibility settings?
+
+Let me know if you need another hint.
+""",
+    """
+To escape this room, turn on VoiceOver in Settings > Accessibility.
+
+It’s recommended to complete the VoiceOver tutorial first.
+"""
+]
+
+let LEVEL_5_OUTRO = """
+Wow, how did you know what to input without seeing?
+
+Wait… you turned on VoiceOver? That’s a brilliant move!
+
+Want to learn more about how VoiceOver makes apps more accessible?
+"""
+
+
+// Guide Text
+// Guide Text
+// Guide Text
+let LEVEL_5_GUIDE_1 = """
+VoiceOver is a **system-wide** screen reader that provides spoken feedback and navigable controls, enabling **users with visual impairments** to interact with their devices effectively.
+"""
+
+let LEVEL_5_GUIDE_2 = """
+A common mistake is using images or icons **without** providing **descriptive accessibility labels**. This makes it difficult for VoiceOver users to understand their purpose and navigate the interface.
+
+Instead, use **`.accessibilityLabel`** to provide clear, meaningful descriptions, ensuring a fully accessible experience..
+"""
+
+let LEVEL_5_GUIDE_3 = "Drone view of a sandy beach with palm trees and ocean waves."
+
+let LEVEL_5_GUIDE_LINKS: [WebLink] = [
+    WebLink(text: "VoiceOver",
+            subText: "Apple Human Interface Guidelines",
+            link: "https://developer.apple.com/design/human-interface-guidelines/accessibility#VoiceOver"),
+    WebLink(text: "VoiceOver",
+            subText: "Apple Developer Documentation",
+            link: "https://developer.apple.com/documentation/accessibility/voiceover/"),
+    WebLink(text: "Supporting VoiceOver",
+            subText: "Apple Developer Documentation",
+            link: "https://developer.apple.com/documentation/uikit/supporting-voiceover-in-your-app"),
+    WebLink(text: "Enhance VoiceOver",
+            subText: "Apple Developer News",
+            link: "https://developer.apple.com/news/?id=v56qu1b3"),
+    WebLink(text: "VoiceOver Maze",
+            subText: "Apple Developer News",
+            link: "https://developer.apple.com/news/?id=s0tca9uk")
+]
+
+
+=== AccessibilityEscape.swiftpm/Localization/Localization.swift ===
+//
+//  Text.swift
+//  Accessibility Arcade
+//
+//  Created by Philipp Nagy on 26.01.25.
+//
+import SwiftUI
+
+let WELCOME_MESSAGE = """
+Welcome to **Accessibility Escape!** 🎉
+
+Dive into a fun and engaging escape game that highlights common accessibility pitfalls in an interactive and playful way. Along the journey, you'll be encouraged to **adjust** your **system settings**, helping you better understand the importance of accessibility in everyday digital experiences.
+"""
+let WELCOME_ACTION_LABEL = "Start Playing"
+
+let FIRST_LEVEL_MESSAGE = """
+Oh no, the back button has disappeared! There’s no way back now...
+
+But don’t worry—if you really can’t find a way out, just shake your device, and I’ll come to the rescue. Go ahead, give it a try!
+"""
+let FIRST_LEVEL_ACTION_LABEL = "Skip"
+
+let LEAVING_LEVEL_MESSAGE = """
+Are you sure you want to escape, or do you want to keep trying?
+"""
+
+let LEAVING_LEVEL_ACTION_LABEL_1 = "Leave"
+let LEAVING_LEVEL_ACTION_LABEL_2 = "Continue"
+
+let LEVEL_SOLUTION_LABEL_1 = "Learn more"
+let LEVEL_SOLUTION_LABEL_2 = "Escape"
+
+let LEVELS_VIEW_MESSAGE = """
+Solve escape rooms by **adjusting** your **system** **settings** in an interactive experience that highlights common **accessibility pitfalls**
+"""
+
+let GUIDES_VIEW_MESSAGE = """
+Explore **interactive guides** that uncover **common accessibility pitfalls** by showcasing **code examples**
+"""
+
+
+
+
+=== AccessibilityEscape.swiftpm/Models/Model Objects/AssistantMessage.swift ===
+//
+//  AssistantMessage.swift
+//  AccessibilityEscape
+//
+//  Created by Philipp Nagy on 26.01.25.
+//
+
+struct AssistantMessage {
+    let text: String
+    let primaryAction: () -> Void
+    let primaryLabel: String?
+    let secondaryLabel: String?
+    let secondaryAction: () -> Void
+    let actionOnShake: (() -> Void)?
+    
+    init(text: String, primaryLabel: String? = nil, primaryAction: @escaping () -> Void = {}, secondaryLabel: String? = nil, secondaryAction: @escaping () -> Void = {}, actionOnShake: (() -> Void)? = nil) {
+        self.text = text
+        self.primaryLabel = primaryLabel
+        self.primaryAction = primaryAction
+        self.secondaryLabel = secondaryLabel
+        self.secondaryAction = secondaryAction
+        self.actionOnShake = actionOnShake
+    }
+}
+
+extension AssistantMessage: Identifiable, Equatable {
+    var id: String {
+        return text + "-" + (primaryLabel ?? "") + "-" + (secondaryLabel ?? "")
+    }
+    
+    static func == (lhs: AssistantMessage, rhs: AssistantMessage) -> Bool {
+        lhs.id == rhs.id
+    }
+}
+
+
+=== AccessibilityEscape.swiftpm/Models/Model Objects/Level.swift ===
+//
+//  Level.swift
+//  Accessibility Arcade
+//
+//  Created by Philipp Nagy on 24.01.25.
+//
+
+import SwiftUI
+
+@available(iOS 18.0, *)
+@Observable
+class Level: Identifiable {
+    let id: Int
+    let name: String
+    let icon: String
+    let color: Color
+    var solved = false
+    let viewBuilder: AnyView
+    let guideView: AnyView
+    let hints: [String]
+    let outro: String
+    let guideDuration: Int
+    
+    init(id: Int,
+         name: String,
+         icon: String,
+         color: Color,
+         hints: [String],
+         outro: String,
+         viewBuilder: AnyView,
+         guideView: AnyView,
+         guideDuration: Int) {
+        self.id = id
+        self.name = name
+        self.icon = icon
+        self.color = color
+        self.hints = hints
+        self.outro = outro
+        self.viewBuilder = viewBuilder
+        self.guideView = guideView
+        self.guideDuration = guideDuration
+    }
+    
+    func solve() {
+        solved = true
+    }
+}
+
+@available(iOS 18.0, *)
+extension Level: Equatable {
+    static func == (lhs: Level, rhs: Level) -> Bool {
+        lhs.id == rhs.id
+    }
+}
+
+
+=== AccessibilityEscape.swiftpm/Models/Model Objects/Levels.swift ===
+//
+//  Levels.swift
+//  AccessibilityEscape
+//
+//  Created by Philipp Nagy on 18.02.25.
+//
+
+import SwiftUI
+
+@available(iOS 18.0, *)
+@MainActor
+class Levels {
+    static let darkMode = Level(id: 1,
+                                name: "Dark Mode",
+                                icon: "moon.fill",
+                                color: .indigo,
+                                hints: LEVEL_1_HINTS,
+                                outro: LEVEL_1_OUTRO,
+                                viewBuilder: AnyView(LevelDarkModeView()),
+                                guideView: AnyView(GuideDarkModeView()),
+                                guideDuration: 4)
+    static let contrast =  Level(id: 2,
+                                 name: "Contrast",
+                                 icon: "circle.lefthalf.filled",
+                                 color: .blue,
+                                 hints: LEVEL_2_HINTS,
+                                 outro: LEVEL_2_OUTRO,
+                                 viewBuilder: AnyView(LevelContrastView()),
+                                 guideView: AnyView(GuideContrastView()),
+                                 guideDuration: 3)
+    static let dynamicType = Level(id: 3,
+                                   name: "Text",
+                                   icon: "textformat.size",
+                                   color: .purple,
+                                   hints: LEVEL_3_HINTS,
+                                   outro: LEVEL_3_OUTRO,
+                                   viewBuilder: AnyView(LevelDynamicTypeView()),
+                                   guideView: AnyView(GuideDynamicTypeView()),
+                                   guideDuration: 3)
+    static let motion = Level(id: 4,
+                              name: "Motion",
+                              icon: "circle.dotted.and.circle",
+                              color: .blue,
+                              hints: LEVEL_4_HINTS,
+                              outro: LEVEL_4_OUTRO,
+                              viewBuilder: AnyView(LevelMotionView()),
+                              guideView: AnyView(GuideMotionView()),
+                              guideDuration: 1)
+    static let voiceOver = Level(id: 5,
+                                 name: "VoiceOver",
+                                 icon: "voiceover",
+                                 color: .cyan,
+                                 hints: LEVEL_5_HINTS,
+                                 outro: LEVEL_5_OUTRO,
+                                 viewBuilder: AnyView(LevelVoiceOverView()),
+                                 guideView: AnyView(GuideVoiceOverView()),
+                                 guideDuration: 2)
+}
+
+
+=== AccessibilityEscape.swiftpm/Models/Model Objects/Link.swift ===
+//
+//  Link.swift
+//  AccessibilityEscape
+//
+//  Created by Philipp Nagy on 20.02.25.
+//
+
+struct WebLink {
+    let text: String
+    let subText: String
+    let link: String
+}
+
+
+=== AccessibilityEscape.swiftpm/Models/Model Objects/TextStyle.swift ===
+//
+//  TextStyle.swift
+//  AccessibilityEscape
+//
+//  Created by Philipp Nagy on 21.02.25.
+//
+
+import Foundation
+
+struct TextStyle: Identifiable {
+    let id = UUID()
+    let name: String
+    let size: CGFloat
+}
+
+
+=== AccessibilityEscape.swiftpm/Models/Model.swift ===
+//
+//  Model.swift
+//  Accessibility Arcade
+//
+//  Created by Philipp Nagy on 24.01.25.
+//
+
+import SwiftUI
+
+@available(iOS 18.0, *)
+@Observable
+class Model {
+    var isAssistantVisible = false
+    var assistantMessage: AssistantMessage
+    var levels: [Level]
+    var visibility: Visibility = .visible
+    
+    @MainActor
+    init() {
+        assistantMessage = AssistantMessage(text: "")
+        
+        levels = [
+            Levels.darkMode,
+            Levels.contrast,
+            Levels.dynamicType,
+            Levels.motion,
+            Levels.voiceOver
+        ]
+    }
+    
+    func solveLevel(_ id: Int) {
+        levels.first { $0.id == id }?.solve()
+    }
+    
+    func showAssistant(text: String, primaryLabel: String? = nil, primaryAction: @escaping () -> Void = {}, secondaryLabel: String? = nil, secondaryAction: @escaping () -> Void = {}, actionOnShake: (() -> Void)? = nil) {
+        assistantMessage = AssistantMessage(text: text, primaryLabel: primaryLabel, primaryAction: primaryAction, secondaryLabel: secondaryLabel, secondaryAction: secondaryAction, actionOnShake: actionOnShake)
+        isAssistantVisible = true
+    }
+    
+    func resetAssistant() {
+        assistantMessage = AssistantMessage(text: "")
+    }
+}
+
+
+=== AccessibilityEscape.swiftpm/Package.swift ===
+// swift-tools-version: 6.0
+
+// WARNING:
+// This file is automatically generated.
+// Do not edit it by hand because the contents will be replaced.
+
+import PackageDescription
+import AppleProductTypes
+
+let package = Package(
+    name: "AccessibilityEscape",
+    platforms: [
+        .iOS("16.0")
+    ],
+    products: [
+        .iOSApplication(
+            name: "AccessibilityEscape",
+            targets: ["AppModule"],
+            bundleIdentifier: "nagy.philipp.swift.student.challenge.2025.AccessibilityEscape",
+            teamIdentifier: "CB57CJ4M58",
+            displayVersion: "1.0",
+            bundleVersion: "1",
+            appIcon: .asset("AppIcon"),
+            accentColor: .presetColor(.blue),
+            supportedDeviceFamilies: [
+                .pad,
+                .phone
+            ],
+            supportedInterfaceOrientations: [
+                .portrait,
+                .landscapeRight,
+                .landscapeLeft,
+                .portraitUpsideDown(.when(deviceFamilies: [.pad]))
+            ],
+            appCategory: .triviaGames
+        )
+    ],
+    targets: [
+        .executableTarget(
+            name: "AppModule",
+            path: "."
+        )
+    ],
+    swiftLanguageVersions: [.version("6")]
+)
+
+
+=== AccessibilityEscape.swiftpm/ViewModifier/AssistantViewModifier.swift ===
+//
+//  AssistantViewModifier.swift
+//  AccessibilityEscape
+//
+//  Created by Philipp Nagy on 18.02.25.
+//
+
+import SwiftUI
+
+@available(iOS 18.0, *)
+struct AssistantViewModifier: ViewModifier {
+    @Binding var isVisible: Bool
+    private var data: AssistantMessage
+    
+    init(_ isVisible: Binding<Bool>,
+         _ assistantMessage: AssistantMessage) {
+        self._isVisible = isVisible
+        self.data = assistantMessage
+    }
+    
+    func body(content: Content) -> some View {
+        ZStack {
+            content
+                .overlay {
+                    if isVisible {
+                        Color.black.opacity(0.7)
+                            .edgesIgnoringSafeArea(.all)
+                    }
+                }
+                .overlay(alignment: .bottomTrailing) {
+                    if isVisible {
+                        VStack(alignment: .trailing, spacing: 8) {
+                            message()
+                            if let secondaryLabel = data.secondaryLabel {
+                                button(label: secondaryLabel, action: data.secondaryAction, color: Color(UIColor.systemGray2))
+                            }
+                            if let primaryLabel = data.primaryLabel {
+                                button(label: primaryLabel, action: data.primaryAction, color: Color.blue)
+                            }
+                            memoji()
+                        }
+                        .padding(.horizontal, 16)
+                        .onShake {
+                            if let actionOnShake = data.actionOnShake {
+                                isVisible = false
+                                HapticManager.triggerHapticSuccess()
+                                actionOnShake()
+                            }
+                        }
+                    }
+                }
+        }
+    }
+    
+    func button(label: String, action: @escaping () -> Void, color: Color) -> some View {
+        Button {
+            isVisible = false
+            action()
+        } label: {
+            Text(label)
+                .padding(8)
+                .frame(maxWidth: .infinity)
+        }
+        .tint(color)
+        .buttonStyle(.borderedProminent)
+    }
+    
+    func memoji() -> some View {
+        return Image("Memoji")
+            .resizable()
+            .scaledToFit()
+            .frame(width: 124, height: 124)
+    }
+    
+    func message() -> some View {
+        return VStack {
+            HStack {
+                Text(LocalizedStringKey(data.text))
+                Spacer()
+            }
+        }
+        .frame(maxWidth: .infinity)
+        .padding()
+        .background(Color(UIColor.secondarySystemBackground))
+        .cornerRadius(8)
+    }
+}
+
+extension View {
+    @available(iOS 18.0, *)
+    func assistant(
+        isVisible: Binding<Bool>,
+        assistantMessage: AssistantMessage) -> some View {
+            return self.modifier(AssistantViewModifier(isVisible, assistantMessage))
+        }
+}
+
+
+=== AccessibilityEscape.swiftpm/ViewModifier/CaptionViewModifier.swift ===
+//
+//  CaptionViewModifier.swift
+//  AccessibilityEscape
+//
+//  Created by Philipp Nagy on 20.02.25.
+//
+
+import SwiftUI
+
+struct CaptionViewModifier: ViewModifier {
+    let caption: String
+    let spacing: Int
+    
+    func body(content: Content) -> some View {
+        VStack(spacing: CGFloat(spacing)) {
+            content
+            Text(caption)
+                .font(.caption)
+                .foregroundStyle(.secondary)
+                .multilineTextAlignment(.center)
+        }
+        
+        
+    }
+}
+
+extension View {
+    func caption(_ caption: String, spacing: Int = 4) -> some View {
+        return self.modifier(CaptionViewModifier(caption: caption, spacing: spacing))
+    }
+}
+
+
+=== AccessibilityEscape.swiftpm/ViewModifier/DeviceShakeViewModifier.swift ===
+//
+//  DeviceShakeViewModifier.swift
+//  Accessibility Arcade
+//
+//  Created by Philipp Nagy on 26.01.25.
+//
+
+import SwiftUI
+
+extension UIDevice {
+    static let deviceDidShakeNotification = Notification.Name(rawValue: "deviceDidShakeNotification")
+}
+
+extension UIWindow {
+    override open func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        if motion == .motionShake {
+            NotificationCenter.default.post(name: UIDevice.deviceDidShakeNotification, object: nil)
+        }
+    }
+}
+
+struct DeviceShakeViewModifier: ViewModifier {
+    let action: () -> Void
+    
+    func body(content: Content) -> some View {
+        content
+            .onAppear()
+            .onReceive(NotificationCenter.default.publisher(for: UIDevice.deviceDidShakeNotification)) { _ in
+                action()
+            }
+    }
+}
+
+extension View {
+    func onShake(perform action: @escaping () -> Void) -> some View {
+        self.modifier(DeviceShakeViewModifier(action: action))
+    }
+}
+
+
+=== AccessibilityEscape.swiftpm/ViewModifier/LevelViewModifier.swift ===
+//
+//  LevelViewModifier.swift
+//  AccessibilityEscape
+//
+//  Created by Philipp Nagy on 17.02.25.
+//
+
+import SwiftUI
+
+@available(iOS 18.0, *)
+struct LevelViewModifier: ViewModifier {
+    @Environment(\.dismiss) private var dismiss
+    @Environment(Model.self) private var model
+    @State var hintIndex: Int = -1
+    @State var isSheetPresented = false
+    private var level: Level
+    var solved: Bool
+    
+    init(_ level: Level, _ solved: Bool) {
+        self.level = level
+        self.solved = solved
+    }
+    
+    func body(content: Content) -> some View {
+        content
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("Open System Settings", systemImage: "accessibility") {
+                        if let url = URL(string: "App-Prefs:root=ACCESSIBILITY") {
+                            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                        }
+                    }
+                }
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("Hint", systemImage: "questionmark") {
+                        hintIndex = min(hintIndex + 1, 2)
+                        if level.hints.indices.contains(hintIndex) {
+                            model.showAssistant(text: level.hints[hintIndex], primaryLabel: "Continue")
+                        }
+                    }
+                }
+            }
+            .task {
+                model.visibility = .hidden
+            }
+            .navigationBarBackButtonHidden(true)
+            .onDisappear {
+                model.visibility = .visible
+            }
+            .navigationTitle(level.name)
+            .onShake {
+                HapticManager.triggerHapticSuccess()
+                model.showAssistant(text: LEAVING_LEVEL_MESSAGE,
+                                    primaryLabel: LEAVING_LEVEL_ACTION_LABEL_1,
+                                    primaryAction: { dismiss() },
+                                    secondaryLabel: LEAVING_LEVEL_ACTION_LABEL_2)
+            }
+            .sheet(isPresented: $isSheetPresented, onDismiss: { dismiss() }) {
+                NavigationStack {
+                    level.guideView
+                        .navigationTitle(level.name)
+                        .navigationBarTitleDisplayMode(.inline)
+                        .toolbar {
+                            ToolbarItem(placement: .primaryAction) {
+                                Button("Done") {
+                                    isSheetPresented = false
+                                }
+                            }
+                        }
+                }
+                
+            }
+            .onChange(of: solved) {
+                model.solveLevel(level.id)
+                model.showAssistant(text: level.outro,
+                                    primaryLabel: LEVEL_SOLUTION_LABEL_1,
+                                    primaryAction: { isSheetPresented = true },
+                                    secondaryLabel: LEVEL_SOLUTION_LABEL_2,
+                                    secondaryAction: { dismiss() })
+            }
+    }
+}
+
+extension View {
+    @available(iOS 18.0, *)
+    func level(level: Level, solved: Bool) -> some View {
+        return self.modifier(LevelViewModifier(level, solved))
+    }
+}
+
+
+=== AccessibilityEscape.swiftpm/ViewModifier/RowViewModifier.swift ===
+//
+//  RowViewModifier.swift
+//  AccessibilityEscape
+//
+//  Created by Philipp Nagy on 21.02.25.
+//
+
+import SwiftUI
+
+struct RowViewModifier: ViewModifier {
+    @Environment(\.colorScheme) var colorScheme
+    
+    func body(content: Content) -> some View {
+        content
+            .padding()
+            .background(
+                colorScheme == .dark
+                ? Color(UIColor.tertiarySystemBackground)
+                : Color(UIColor.secondarySystemBackground)
+            )
+            .clipShape(.rect(cornerRadius: 8))
+    }
+}
+
+extension View {
+    func row() -> some View {
+        return self.modifier(RowViewModifier())
+    }
+}
+
+
+=== README.md ===
+# Swift Student Challenge 2025
+
+Accessibility Escape is an interactive escape game that teaches developers about common digital accessibility pitfalls through fun and engaging challenges where players adjust system settings, solve puzzles that highlight the importance of accessible design, and follow interactive guides with code examples to encourage better everyday digital experiences for everyone.

@@ -607,6 +607,7 @@ TEST_RUNTIME_ROLE=""
 TEST_PG_DATA_DIR=""
 TEST_PG_UNIT=""
 VERIFY_CREDENTIAL_FILE=""
+VERIFY_BUDGET_PERMIT=""
 VERIFY_HOSTS_FILE=""
 REGISTRY_HOSTS_FILE=""
 MIGRATION_TEMP_DIR=""
@@ -842,7 +843,8 @@ hash_runtime_tree() {
 
 cleanup_ephemeral_credentials() {
   rm -f -- "${VERIFY_CREDENTIAL_FILE:-}" "${VERIFY_HOSTS_FILE:-}" \
-    "${REGISTRY_HOSTS_FILE:-}"
+    "${REGISTRY_HOSTS_FILE:-}" "${VERIFY_BUDGET_PERMIT:-}"
+  VERIFY_BUDGET_PERMIT=""
   VERIFY_CREDENTIAL_FILE=""
   VERIFY_HOSTS_FILE=""
   REGISTRY_HOSTS_FILE=""
@@ -876,6 +878,7 @@ start_release_process() {
   local port=$2
   local process_name="resume-ai-$port"
   pm2_as_app pm2 delete "$process_name" >/dev/null 2>&1 || true
+  pm2_as_app pm2 delete "resume-ai-worker-$port" >/dev/null 2>&1 || true
   pm2_as_app env APP_RELEASE_DIR="$RELEASE_ROOT/$release" APP_PORT="$port" \
     APP_PROCESS_NAME="$process_name" pm2 start \
     "$RELEASE_ROOT/$release/ops/pm2/ecosystem.config.cjs" --update-env
@@ -1041,6 +1044,7 @@ restore_previous_state() {
     fi
     if [ "$CANDIDATE_SLOT_TOUCHED" -eq 1 ]; then
       pm2_as_app pm2 delete "resume-ai-$CANDIDATE_PORT" >/dev/null 2>&1 || true
+      pm2_as_app pm2 delete "resume-ai-worker-$CANDIDATE_PORT" >/dev/null 2>&1 || true
       if pm2_as_app pm2 describe "resume-ai-$CANDIDATE_PORT" >/dev/null 2>&1; then
         printf '%s\n' \
           "Candidate PM2 process survived rollback; the durable recovery journal was retained." >&2
@@ -1157,7 +1161,7 @@ install -o root -g resume-ai-build -m 0640 \
   "$BUNDLE_DIR/baseline/competition-score-prospective-baseline.json" \
   "$STAGING_RELEASE/tests/fixtures/competition-score-prospective-baseline.json"
 set_tree_readonly_for_builder "$STAGING_RELEASE"
-for builder_output in node_modules .next; do
+for builder_output in node_modules .next dist; do
   [ ! -e "$STAGING_RELEASE/$builder_output" ] && [ ! -L "$STAGING_RELEASE/$builder_output" ] \
     || fail "source archive unexpectedly contains generated output: $builder_output"
   install -d -o resume-ai-build -g resume-ai-build -m 0700 \
@@ -1240,6 +1244,10 @@ rm -rf -- "$quota_check_dir"
 
 TEST_DATABASE="resume_ai_security_test_${RELEASE_ID,,}"
 [[ "$TEST_DATABASE" =~ ^[a-z0-9_]+$ ]] || fail "invalid temporary integration database name"
+# Only public, source-reviewed effort configuration enters the secret-free build.
+if [ -f "$STAGING_RELEASE/src/lib/ai/effort-policy.mjs" ]; then
+  build_env+=("SAITU_V7_EFFORT_POLICY=$(get_app_env SAITU_V7_EFFORT_POLICY)" "SAITU_V7_EFFORT_POLICY_SHA256=$(get_app_env SAITU_V7_EFFORT_POLICY_SHA256)")
+fi
 build_systemd_environment=()
 for build_variable in "${build_env[@]}"; do
   build_systemd_environment+=(--setenv="$build_variable")
@@ -1397,7 +1405,7 @@ systemd-run --quiet --wait --collect --pipe --service-type=exec \
   --property='RestrictAddressFamilies=AF_UNIX' \
   --property='InaccessiblePaths=/run/postgresql /var/run/postgresql /var/lib/postgresql /etc/postgresql /var/lib/resume-ai-build /opt/resume-ai/current /opt/resume-ai/releases /run/docker.sock /var/run/docker.sock /run/containerd /run/incus' \
   --property="ReadOnlyPaths=$STAGING_RELEASE" \
-  --property="ReadWritePaths=$STAGING_RELEASE/.next $STAGING_RELEASE/tsconfig.tsbuildinfo $STAGING_RELEASE/node_modules/.cache $STAGING_RELEASE/node_modules/.vite $BUILD_HOME" \
+  --property="ReadWritePaths=$STAGING_RELEASE/.next $STAGING_RELEASE/dist $STAGING_RELEASE/tsconfig.tsbuildinfo $STAGING_RELEASE/node_modules/.cache $STAGING_RELEASE/node_modules/.vite $BUILD_HOME" \
   "${build_systemd_environment[@]}" \
   /usr/bin/env -i "${build_env[@]}" PROJECT_NODE_BIN="$PROJECT_NODE_BIN" \
     TOOL_TYPESCRIPT="${PROJECT_TOOL_ABSOLUTE[typescript]}" \
@@ -1410,10 +1418,28 @@ systemd-run --quiet --wait --collect --pipe --service-type=exec \
     NODE_ENV=test "$PROJECT_NODE_BIN" "$TOOL_VITEST" run --passWithNoTests
     NODE_ENV=production DATABASE_URL= AI_TEST_MODE=0 ALLOW_AI_MOCK=0 \
       NEXT_PUBLIC_AI_TEST_MODE=0 NEXT_DIST_DIR=.next \
-      "$PROJECT_NODE_BIN" "$TOOL_NEXT" build
+      "$PROJECT_NODE_BIN" scripts/competitions/v7/build-worker.mjs --with-next "$TOOL_NEXT"
   '
 finish_builder_identity "the secret-free build cgroup"
 assert_builder_owned_output "$STAGING_RELEASE/.next"
+assert_builder_owned_output "$STAGING_RELEASE/dist"
+root_node "$SCRIPT_DIR/verify-decision-worker-build.mjs" "$STAGING_RELEASE" > "$ARTIFACT_DIR/decision-worker-build.json"
+root_python - "$BUNDLE_DIR/e2e-evidence.tar.gz" "$STAGING_RELEASE/dist/decision-worker/manifest.json" <<'PY'
+import json
+import pathlib
+import sys
+import tarfile
+with tarfile.open(sys.argv[1], 'r:gz') as archive:
+    matches = [member for member in archive.getmembers() if member.name.removeprefix('./') == 'worker-build-result.json']
+    if len(matches) != 1 or not matches[0].isfile():
+        raise SystemExit('signed worker build receipt is missing or ambiguous')
+    signed = json.load(archive.extractfile(matches[0]))
+rebuilt = json.loads(pathlib.Path(sys.argv[2]).read_bytes())
+for key in ('schemaVersion', 'sourceSha256', 'artifactSha256', 'nodeMajor') + (('effortPolicy', 'effortPolicySha256') if 'effortPolicy' in rebuilt else ()):
+    if signed.get(key) != rebuilt.get(key):
+        raise SystemExit(f'candidate decision worker differs from signed evidence: {key}')
+PY
+WORKER_TREE_SHA256="$(hash_runtime_tree --root "$STAGING_RELEASE/dist/decision-worker")"
 ASSET_TREE_SHA256="$(hash_runtime_tree --root "$STAGING_RELEASE/.next" \
   --exclude-relative cache)" \
   || fail "production asset tree could not be hashed"
@@ -1655,6 +1681,7 @@ cmp -s "$ARTIFACT_DIR/post-build-source-manifest.txt" "$BUNDLE_DIR/source-manife
   || fail "builder modified reviewed source outside excluded build/dependency paths"
 /usr/local/lib/resume-ai/scan-release-secrets.sh --source-tree "$STAGING_RELEASE"
 /usr/local/lib/resume-ai/scan-release-secrets.sh --full "$STAGING_RELEASE/.next"
+/usr/local/lib/resume-ai/scan-release-secrets.sh --full "$STAGING_RELEASE/dist/decision-worker"
 
 chown -R root:resume-ai-verify "$STAGING_RELEASE"
 chmod -R u=rX,g=rX,o= "$STAGING_RELEASE"
@@ -1674,6 +1701,46 @@ FIXED_DEEPSEEK_VERIFIER=/usr/local/lib/resume-ai/release-evidence-deepseek-verif
   && cmp -s "$RELEASE_ROOT/$ACTIVE_RELEASE/scripts/lib/release-evidence-deepseek-verifier.mjs" \
     "$FIXED_DEEPSEEK_VERIFIER" \
   || fail "fixed DeepSeek verifier is not bound to the active trusted control generation"
+FIXED_SPEND_CONTROL=/usr/local/lib/resume-ai/release-evidence-spend.mjs
+[ -f "$FIXED_SPEND_CONTROL" ] && [ ! -L "$FIXED_SPEND_CONTROL" ] \
+  && [ "$(stat -c '%U:%G:%a:%h' "$FIXED_SPEND_CONTROL")" = root:root:755:1 ] \
+  && cmp -s "$RELEASE_ROOT/$ACTIVE_RELEASE/scripts/lib/release-evidence-spend.mjs" "$FIXED_SPEND_CONTROL" \
+  || fail "fixed spend control is not bound to the active trusted control generation"
+FIXED_VERIFIER_SHA256="$(sha256sum "$FIXED_DEEPSEEK_VERIFIER" | awk '{print $1}')"
+SHARED_AI_SPEND_RUN_ID="$(get_app_env AI_SPEND_RUN_ID)"
+SHARED_AI_SPEND_LIMIT_CNY="$(get_app_env AI_SPEND_LIMIT_CNY)"
+SHARED_AI_SPEND_FUNDED_CNY="$(get_app_env AI_SPEND_FUNDED_CNY)"
+SHARED_AI_SPEND_PHASE="$(get_app_env AI_SPEND_PHASE)"
+SPEND_PROFILE_ARGS=()
+if [ -f "$VERIFY_RELEASE/src/lib/ai/effort-policy.mjs" ]; then
+  v7_policy_sha="$(get_app_env AI_SPEND_POLICY_SHA256)"
+  v7_condition_sha="$(get_app_env AI_SPEND_EFFORT_CONDITION_SHA256)"
+  v7_effort_policy="$(get_app_env SAITU_V7_EFFORT_POLICY)"
+  v7_effort_sha="$(get_app_env SAITU_V7_EFFORT_POLICY_SHA256)"
+  [ "$(get_app_env AI_REASONING_EFFORT)" = high ] && [ "$(get_app_env AI_SPEND_AUTHORIZED_EFFORT)" = stage ] && [ -z "$(get_app_env AI_SPEND_HIGH_CONDITION_SHA256)" ] \
+    || fail "stage preflight requires its separate effort authorization"
+  [[ "$v7_policy_sha" =~ ^[a-f0-9]{64}$ && "$v7_condition_sha" =~ ^[a-f0-9]{64}$ && "$v7_effort_sha" =~ ^[a-f0-9]{64}$ ]] \
+    && [ "$v7_policy_sha" = "$(sha256sum "$VERIFY_RELEASE/docs/v7/effort-continuation-contract-20261109.md" | awk '{print $1}')" ] \
+    || fail "stage preflight policy/condition binding differs"
+  [[ "$SHARED_AI_SPEND_RUN_ID" =~ ^saitu-v7-effort-20261109-(calibration|formal|repair|performance|reserve)-[0-9]{2}$ ]] \
+    && [ "${BASH_REMATCH[1]}" = "$SHARED_AI_SPEND_PHASE" ] || fail "stage preflight batch phase differs"
+  SPEND_PROFILE_ARGS=(--profile v7-effort --authorized-effort stage --policy-sha256 "$v7_policy_sha" --condition-sha256 "$v7_condition_sha" --effort-policy "$v7_effort_policy" --effort-policy-sha256 "$v7_effort_sha")
+elif [ -f "$VERIFY_RELEASE/scripts/competitions/v7/build-worker.mjs" ]; then
+  [ "$(get_app_env AI_REASONING_EFFORT)" = high ] \
+    && [ "$(get_app_env AI_SPEND_AUTHORIZED_EFFORT)" = high ] \
+    || fail "v7 fixed preflight requires explicitly authorized high effort"
+  v7_policy_sha="$(get_app_env AI_SPEND_POLICY_SHA256)"
+  v7_condition_sha="$(get_app_env AI_SPEND_HIGH_CONDITION_SHA256)"
+  [[ "$v7_policy_sha" =~ ^[a-f0-9]{64}$ && "$v7_condition_sha" =~ ^[a-f0-9]{64}$ ]] \
+    && [ "$v7_policy_sha" = "$(sha256sum "$VERIFY_RELEASE/docs/v7/implementation-contract.md" | awk '{print $1}')" ] \
+    || fail "v7 fixed preflight policy/condition binding differs"
+  [[ "$SHARED_AI_SPEND_RUN_ID" =~ ^saitu-v7-20261109-(calibration|formal|repair|performance|reserve)-[0-9]{2}$ ]] \
+    && [ "${BASH_REMATCH[1]}" = "$SHARED_AI_SPEND_PHASE" ] \
+    || fail "v7 preflight batch phase differs"
+  SPEND_PROFILE_ARGS=(--profile v7-high --authorized-effort high --policy-sha256 "$v7_policy_sha" --condition-sha256 "$v7_condition_sha")
+fi
+[ "$AI_NORMALIZE_MODEL" = deepseek-flash ] && [ "$AI_RECOMMEND_MODEL" = deepseek-flash ] \
+  || fail "fixed production preflight requires deepseek-flash"
 REAL_AI_KEY="$(get_app_env AI_API_KEY)"
 [[ "$REAL_AI_KEY" != *[$'\r\n\t ']* ]] && [ "${#REAL_AI_KEY}" -ge 16 ] \
   || fail "AI_API_KEY is invalid for the fixed preflight"
@@ -1701,6 +1768,14 @@ chmod 0444 "$VERIFY_HOSTS_FILE"
 allowed_deepseek_ips="${deepseek_ips[*]}"
 VERIFY_UNIT="resume-ai-verify-$RELEASE_ID.service"
 CREDENTIAL_PATH="/run/credentials/$VERIFY_UNIT/deepseek-key"
+VERIFY_BUDGET_PERMIT="$VERIFY_CREDENTIAL_FILE.budget-permit"
+VERIFY_BUDGET_LOG="$ARTIFACT_DIR/deepseek-budget-preflight.log"
+VERIFY_BUDGET_RECEIPT="$ARTIFACT_DIR/deepseek-budget-receipt.json"
+/usr/bin/env -i PATH="$ROOT_SYSTEM_PATH" "$NODE_BIN" "$FIXED_SPEND_CONTROL" reserve --permit "$VERIFY_BUDGET_PERMIT" --verifier-sha256 "$FIXED_VERIFIER_SHA256" --run-id "$SHARED_AI_SPEND_RUN_ID" --limit-cny "$SHARED_AI_SPEND_LIMIT_CNY" --funded-cny "$SHARED_AI_SPEND_FUNDED_CNY" --phase "$SHARED_AI_SPEND_PHASE" "${SPEND_PROFILE_ARGS[@]}"
+/usr/bin/env -i PATH="$ROOT_SYSTEM_PATH" "$NODE_BIN" "$FIXED_SPEND_CONTROL" claim --permit "$VERIFY_BUDGET_PERMIT" --verifier-sha256 "$FIXED_VERIFIER_SHA256" --run-id "$SHARED_AI_SPEND_RUN_ID" --limit-cny "$SHARED_AI_SPEND_LIMIT_CNY" --funded-cny "$SHARED_AI_SPEND_FUNDED_CNY" --phase "$SHARED_AI_SPEND_PHASE" "${SPEND_PROFILE_ARGS[@]}"
+: > "$VERIFY_BUDGET_LOG"
+chmod 0600 "$VERIFY_BUDGET_LOG"
+verify_preflight_status=0
 systemd-run --quiet --wait --collect --pipe --service-type=exec \
   --unit="$VERIFY_UNIT" --uid=resume-ai-verify --gid=resume-ai-verify \
   --working-directory=/ \
@@ -1714,15 +1789,20 @@ systemd-run --quiet --wait --collect --pipe --service-type=exec \
   --property='IPAddressDeny=any' \
   --property="IPAddressAllow=$allowed_deepseek_ips" \
   --property="LoadCredential=deepseek-key:$VERIFY_CREDENTIAL_FILE" \
+  --property="LoadCredential=budget-permit:$VERIFY_BUDGET_PERMIT" \
   --property="BindReadOnlyPaths=$VERIFY_HOSTS_FILE:/etc/hosts" \
-  --property="InaccessiblePaths=$VERIFY_RELEASE /opt/resume-ai/current /opt/resume-ai/releases" \
+  --property="InaccessiblePaths=$VERIFY_RELEASE /opt/resume-ai/current /opt/resume-ai/releases /etc/resume-ai /run/postgresql /var/run/postgresql" \
   /usr/bin/env -i PATH=/opt/nodejs/current/bin:/usr/bin:/bin NODE_ENV=production \
     "$NODE_BIN" "$FIXED_DEEPSEEK_VERIFIER" "$CREDENTIAL_PATH" \
-    "$AI_NORMALIZE_MODEL" "$AI_RECOMMEND_MODEL"
+    "/run/credentials/$VERIFY_UNIT/budget-permit" "$AI_NORMALIZE_MODEL" "$AI_RECOMMEND_MODEL" \
+    > "$VERIFY_BUDGET_LOG" 2>&1 || verify_preflight_status=$?
 kill_service_account_processes resume-ai-verify \
   || fail "resume-ai-verify retained a process after its one-shot cgroup ended"
-rm -f -- "$VERIFY_CREDENTIAL_FILE" "$VERIFY_HOSTS_FILE"
+/usr/bin/env -i PATH="$ROOT_SYSTEM_PATH" "$NODE_BIN" "$FIXED_SPEND_CONTROL" settle --permit "$VERIFY_BUDGET_PERMIT" --verifier-sha256 "$FIXED_VERIFIER_SHA256" --run-id "$SHARED_AI_SPEND_RUN_ID" --limit-cny "$SHARED_AI_SPEND_LIMIT_CNY" --funded-cny "$SHARED_AI_SPEND_FUNDED_CNY" --phase "$SHARED_AI_SPEND_PHASE" "${SPEND_PROFILE_ARGS[@]}" --log "$VERIFY_BUDGET_LOG" --output "$VERIFY_BUDGET_RECEIPT"
+rm -f -- "$VERIFY_BUDGET_PERMIT" "$VERIFY_CREDENTIAL_FILE" "$VERIFY_HOSTS_FILE"
+[ "$verify_preflight_status" -eq 0 ] || fail "fixed DeepSeek preflight failed; attempted/unknown reservations retained"
 VERIFY_CREDENTIAL_FILE=""
+VERIFY_BUDGET_PERMIT=""
 VERIFY_HOSTS_FILE=""
 root_python /usr/local/lib/resume-ai/verify-release-source-tree.py \
   --source "$VERIFY_RELEASE" --manifest "$BUNDLE_DIR/source-manifest.txt" \
@@ -1786,10 +1866,14 @@ cmp -s "$ARTIFACT_DIR/final-frozen-source-manifest.txt" "$BUNDLE_DIR/source-mani
   || fail "production pruning changed reviewed source"
 /usr/local/lib/resume-ai/scan-release-secrets.sh --source-tree "$STAGING_RELEASE"
 /usr/local/lib/resume-ai/scan-release-secrets.sh --full "$STAGING_RELEASE/.next"
+/usr/local/lib/resume-ai/scan-release-secrets.sh --full "$STAGING_RELEASE/dist/decision-worker"
 chown -R root:resume-ai-verify "$STAGING_RELEASE"
 chmod -R u=rX,g=rX,o= "$STAGING_RELEASE"
 mv -- "$STAGING_RELEASE" "$VERIFY_RELEASE"
 sync -f "$VERIFY_ROOT"
+[ "$(hash_runtime_tree --root "$VERIFY_RELEASE/dist/decision-worker")" = "$WORKER_TREE_SHA256" ] \
+  || fail "verification or pruning modified decision worker output"
+root_node "$SCRIPT_DIR/verify-decision-worker-build.mjs" "$VERIFY_RELEASE" >/dev/null
 FINAL_ASSET_TREE_SHA256="$(hash_runtime_tree --root "$VERIFY_RELEASE/.next" \
   --exclude-relative cache)" \
   || fail "final production asset tree could not be hashed"
@@ -1823,13 +1907,16 @@ while read -r expected_hash migration_name migration_mode extra; do
   [ -f "$migration_path" ] && [ ! -L "$migration_path" ] || fail "declared migration is missing or unsafe"
   [ "$(sha256sum "$migration_path" | awk '{print $1}')" = "$expected_hash" ] \
     || fail "migration checksum mismatch: $migration_name"
-  if [ "$migration_name" = 20260826_runtime_delete_functions.sql ]; then
-    [ "$expected_hash" = 8f60e9129bb9bd3e74a2880383f05f3b8b4fd392cd74939fb9e4cf1e3463f2eb ] \
-      || fail "reviewed runtime RPC migration hash is not the frozen contract"
-    /usr/local/lib/resume-ai/validate-reviewed-migration.py "$migration_path"
-  else
-    /usr/local/lib/resume-ai/validate-expand-migration.py "$migration_path"
-  fi
+  # Reviewed exceptions match both the exact filename and the validator's
+  # independently frozen SHA. All other SQL retains the generic expand gate.
+  case "$migration_name" in
+    20260826_runtime_delete_functions.sql|20261105_ai_spend_ledger.sql|20261105_decision_states.sql|20261105_spend_authority.sql|20261106_ai_spend_development_batches.sql|20261106_ai_spend_development_effort.sql|20261109_decision_runs.sql|20261109_decision_runs_chat_requests.sql|20261109_spend_v7_batches.sql|20261109_spend_v7_effort_policy.sql|20261109_spend_v7_top5_policy.sql|20261109_spend_user_unbounded_execution.sql)
+      /usr/local/lib/resume-ai/validate-reviewed-migration.py "$migration_path"
+      ;;
+    *)
+      /usr/local/lib/resume-ai/validate-expand-migration.py "$migration_path"
+      ;;
+  esac
   declared_migrations+=("$migration_name:$expected_hash")
 done < "$MIGRATION_MANIFEST"
 [ "${#declared_migrations[@]}" -ge 1 ] || fail "migration manifest is empty"
@@ -1997,6 +2084,14 @@ done
 runuser -u resume-ai -- env -i HOME=/var/lib/resume-ai \
   PATH=/opt/nodejs/current/bin:/usr/bin:/bin \
   "$NODE_BIN" "$FINAL_RELEASE/scripts/verify-next-assets.mjs" "$candidate_url"
+root_node "$SCRIPT_DIR/verify-decision-worker-build.mjs" "$FINAL_RELEASE" >/dev/null
+candidate_worker_pid="$(pm2_as_app pm2 pid "resume-ai-worker-$CANDIDATE_PORT")"
+[[ "$candidate_worker_pid" =~ ^[1-9][0-9]*$ ]] || fail "candidate decision worker PID is missing or ambiguous"
+worker_deadline=$((SECONDS + 15))
+until root_node "$SCRIPT_DIR/verify-decision-worker-health.mjs" "$FINAL_RELEASE" paused --pid "$candidate_worker_pid" >/dev/null 2>&1; do
+  [ "$SECONDS" -lt "$worker_deadline" ] || fail "candidate decision worker did not become healthy while paused"
+  sleep 1
+done
 pm2_as_app pm2 save
 sync -f "$PM2_HOME/dump.pm2"
 sync -f "$PM2_HOME"

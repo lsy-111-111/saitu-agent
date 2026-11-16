@@ -1,0 +1,535 @@
+[PAGE 1]
+Designing an Educational Tool to Improve Understanding and
+Planning in Chemistry Laboratory Courses
+Sieun Kim
+Seoul National University
+Seoul, Republic of Korea
+sieunk@snu.ac.kr
+Abstract
+Chemistry laboratory courses are essential for developing exper-
+imental skills, yet students face challenges with pre-laboratory
+activities and materials due to the lack of details and changing
+environments. This study identifies these challenges and suggests
+design implications for future systems to help students understand
+and plan chemistry laboratory experiments: addressing missing
+details, reflecting real lab environments, and facilitating active plan-
+ning and execution. Based on these findings, this study developed
+ChemLab Planner, a web-based tool that converts text-based lab
+manuals into an interactive, timeline interface. The system breaks
+down procedures into substeps to provide detailed descriptions
+that meet student needs, adapts procedures to actual lab condi-
+tions, and supports team-based planning and execution. These fea-
+tures directly address the identified challenges, enabling students to
+prepare for experiments effectively. Building upon traditional pre-
+laboratory materials, ChemLab Planner offers a scalable approach
+to help laboratory understanding and planning, exemplifying the
+role of computer-aided tools in chemistry laboratory education.
+CCS Concepts
+• Human-centered computing → Human computer interac-
+tion (HCI); • Applied computing → Education; Interactive
+learning environments.
+Keywords
+Chemistry Laboratory Education; Education Support;
+ACM Reference Format:
+Sieun Kim. 2025. Designing an Educational Tool to Improve Understanding
+and Planning in Chemistry Laboratory Courses. In Extended Abstracts of
+the CHI Conference on Human Factors in Computing Systems (CHI EA ’25),
+April 26–May 01, 2025, Yokohama, Japan. ACM, New York, NY, USA, 6 pages.
+https://doi.org/10.1145/3706599.3719282
+1 Introduction
+Chemistry laboratory courses are fundamental to undergraduate
+chemistry education, equipping students with experimental skills
+and reinforcing theoretical knowledge. However, insufficient pre-
+laboratory activities and materials often leave students struggling,
+Permission to make digital or hard copies of all or part of this work for personal or
+classroom use is granted without fee provided that copies are not made or distributed
+for profit or commercial advantage and that copies bear this notice and the full citation
+on the first page. Copyrights for third-party components of this work must be honored.
+For all other uses, contact the owner/author(s).
+CHI EA ’25, Yokohama, Japan
+© 2025 Copyright held by the owner/author(s).
+ACM ISBN 979-8-4007-1395-8/25/04
+https://doi.org/10.1145/3706599.3719282
+resulting in incomplete experiences that fail to meet the course
+objectives. With advances in educational technology, web and XR-
+based tools have emerged to enhance comprehension by recreating
+experimental experiences. While these technologies improve under-
+standing, they often overlook challenges in actual laboratory work,
+such as planning experiment sequences and adapting to changes
+in procedures. This gap highlights the need for solutions that help
+students navigate actual experiment tasks.
+This research is motivated by the need for an effective solution
+to support students in understanding and planning chemistry labo-
+ratory experiments. By identifying student challenges and percep-
+tions of pre-laboratory activities, this study suggests design impli-
+cations for systems that enhance experiment preparation. Through
+this process, this research aims to design and implement an edu-
+cational tool that addresses the students’ challenges in chemistry
+laboratory courses. Specifically, this research aims to answer the
+following research questions:
+(1) What challenges do students face in pre-laboratory activities
+for chemistry laboratory courses?
+(2) What design implications can inform the development of a
+tool to assist students in understanding and planning chem-
+istry laboratory experiments?
+(3) How can a system be designed to address these challenges
+while incorporating the identified design implications?
+2 Related Works
+2.1 Chemistry Laboratory Education
+Laboratory courses are an important part of undergraduate STEM
+education. Chemistry laboratory courses play a crucial role in de-
+veloping students’ experiment design abilities, understanding of
+laboratory equipment, and adherence to safety measures essential
+in the field [6, 7, 11, 24]. Schlesinger identified the primary goals of
+laboratory education as illustrating classroom principles through
+material engagement, fostering an appreciation of science’s reality,
+making scientific facts memorable, and providing hands-on training
+in laboratory methods [17].
+Preparation before conducting experiments is critical for en-
+suring safety and improving experimental accuracy and academic
+performance. Pickering [15] highlights that students who famil-
+iarize themselves with experimental processes in advance are bet-
+ter equipped to approach laboratory work with confidence and
+precision. Consequently, pre-laboratory activities, such as writing
+pre-reports or completing quizzes on experimental methods, have
+thus become standard practice in chemistry laboratory courses to
+enhance student engagement and understanding [2]. Among the
+various materials used in laboratory courses, lab manuals serve as
+the primary resource for experiment instruction and preparation. A
+[PAGE 2]
+CHI EA ’25, April 26–May 01, 2025, Yokohama, Japan Sieun Kim
+Section Example Questions and Agreement Statements
+General Information What chemistry-related lab courses have you completed?
+Pre-laboratory Material Provision How often were [experiment videos] provided in your chemistry lab courses?
+Pre-laboratory Material Helpfulness How helpful was the [lab manual] for understanding the experiment beforehand?
+Experiment Understanding After [completing the required preparation], I understand the experiment well.
+Lab Manual Sufficiency The lab manual provides a sufficient explanation of [the purpose of the experiment].
+Lab Manual Challenges [Omitted steps in the manual] make the experiment hard to understand and plan.
+Lab Environment I often participate in experiments as part of a group of two or more members.
+Table 1: Survey Structure. Example questions and statements are in the right column, where brackets indicate variables.
+survey of American Chemical Society-accredited programs found
+that 91% of institutions rely on step-by-step laboratory guides, re-
+flecting the traditional lab format [1].
+Despite these efforts, challenges remain in preparation for lab-
+oratory work. Traditional lab manuals often lack sufficient detail
+or fail to adapt to the dynamic nature of laboratory environments.
+Moreover, while student perceptions and understanding of chem-
+istry experiments have been studied for assessment purposes [22]
+or to evaluate overall course satisfaction [16, 20], limited attention
+has been given to identifying specific challenges students face with
+experiment preparation. This work aims to identify these challenges
+and improve pre-laboratory resources to better support learning.
+2.2 Computer-aided Chemistry Laboratory
+Education
+Research has explored computer-aided tools to enhance students’
+understanding of chemistry laboratory procedures. Shelby and
+Fralish [18] showed that integrating experiment videos with in-
+teractive quizzes on platforms like Edpuzzle enhances student ex-
+periences and performance in biochemistry labs. Similarly, stud-
+ies [14, 21] highlight the positive effects of videos and interactive
+materials on student motivation and performance. Additionally,
+several works [ 12, 13, 19, 25] have utilized simulations and vir-
+tual or mixed reality to replicate lab experiences. Flesch et al. [9]
+demonstrated how virtual pre-laboratories in hypothetical condi-
+tions improve understanding of analytical chemistry.
+While videos and simulations are valuable supplements, their
+adoption is often constrained by cost [3], as producing and maintain-
+ing these media for each experiment [4] can be resource-intensive.
+Moreover, many existing tools primarily focus on replicating ex-
+perimental experiences, which may not fully address the students’
+challenges in planning actual experiments. Recognizing this gap,
+this work aims to design a tool that supports students in plan-
+ning experiments without requiring experiment-specific content
+generation, thereby providing greater scalability and adaptability.
+3 Methods
+3.1 Survey
+A survey was conducted to identify the challenges faced by un-
+dergraduate students in chemistry-related laboratory courses. A
+total of 62 undergraduate students with experience in these courses
+participated in an online survey, exceeding the required sample size
+of 43 calculated using a priori power analysis in G*Power [8, 10]
+(effect size = 0.25, 𝛼 = 0.05, power = 0.95). Of the participants, 27
+identified as female and 35 as male, with ages ranging from 18
+to 28 (M = 22.44). The majority of participants were enrolled in
+chemistry-related majors, including Materials Science and Engi-
+neering (n = 19), Chemical and Biological Engineering (n = 16),
+Chemistry (n = 7), and Chemical Engineering and Materials Science
+(n = 2). Others included Nuclear Engineering, Medicine, Pharmacy,
+Chemistry Education, General Studies, and Economics. Participants
+completed 1 to 7 chemistry-related lab courses (M = 2.58), including
+General Chemistry, Materials Science, Biochemistry, and Chemical
+Process Labs.
+Participants completed a survey comprising four open-ended
+questions and 39 Likert-scale questions, each rated on a 7-point
+scale, to assess their experiences in chemistry-related laboratory
+courses as in Table 1. Friedman tests were used to analyze differ-
+ences in responses across grouped questions, and post-hoc Wilcoxon
+signed-rank tests [23] with Bonferroni correction [5] were applied
+to determine the significance of pairwise comparisons. The survey
+required approximately 10 minutes, and each participant received
+a compensation of 5,000 KRW. As all the participants were Ko-
+rean, questions were presented in Korean to ensure clarity and
+accessibility for participants.
+3.2 Interview
+Follow-up interviews were conducted with five survey participants
+to gain deeper insights into the rationale for their survey responses.
+The interviewer and each participant reviewed the survey responses
+together, and the participant was asked to elaborate on their an-
+swers, provide clarifications and examples, and suggest improve-
+ments. Each online interview lasted approximately 30 minutes, and
+each participant received a compensation of 10,000 KRW. All human
+studies included in this work were approved by the Institutional
+Review Board of Seoul National University.
+4 Results
+4.1 Pre-laboratory Activities and Materials
+4.1.1 Provision of Pre-laboratory Activities and Materials. Based on
+related works [2, 15], key experiment preparation activities and ma-
+terials were identified as reading lab manuals, watching experiment
+videos, attending lectures, taking quizzes, and writing obligatory
+pre-reports. Participants rated how often these activities or mate-
+rials were provided in their courses on a 7-point Likert scale (1 =
+Never, 7 = Always). Lab manuals were the most frequently used,
+with 79% selecting "Always" and 98% providing positive ratings
+(5-7). Pre-reports ranked second (47% "Always, " 77% positive), while
+[PAGE 3]
+Designing an Educational Tool to Improve Understanding and Planning in Chemistry Laboratory Courses CHI EA ’25, April 26–May 01, 2025, Yokohama, Japan
+Figure 1: Provision of Pre-laboratory Activities and Materials
+Figure 2: Perceived Helpfulness of Pre-laboratory Activities
+and Materials
+lectures, videos, and quizzes were less frequent (refer to Figure 1).
+Additional materials mentioned in short-answer responses either
+matched predefined categories or reflected personal strategies be-
+yond course resources.
+4.1.2 Perceived Helpfulness of Pre-laboratory Activities and Materi-
+als. Participants rated the helpfulness of experiment preparation
+activities and materials for understanding and planning experi-
+ments on a 7-point Likert scale (1 = Not Helpful at All, 7 = Very
+Helpful, N/A = No Experience). While helpfulness ratings generally
+aligned with usage frequency, experiment videos were perceived as
+highly helpful despite lower usage rates, receiving the most ’Very
+Helpful’ responses (44% for understanding, 48% for planning, refer
+to Figure 2). Friedman tests revealed significant differences in the
+perceived helpfulness of materials for both understanding ( 𝜒 2 =
+26.76, p = 2.222e-5) and planning ( 𝜒 2 = 41.14, p = 2.519e-8). Ex-
+periment videos were significantly more helpful than quizzes and
+pre-reports for understanding and more helpful than all other mate-
+rials for planning. Quizzes were significantly less helpful compared
+to lab manuals, experiment videos, and pre-reports for understand-
+ing and less helpful than all other materials for planning.
+During interviews, participants elaborated on their preferences
+for specific materials. Two participants (I1, I2) favored experiment
+videos over lab manuals, citing detailed explanations absent in
+manuals. Three participants (I2, I4, and I5) emphasized pre-reports’
+value in active planning. They explained that writing pre-reports
+allowed them to identify gaps in their knowledge and engage deeper
+with the materials.
+4.2 Student Perspectives on Lab Manuals
+4.2.1 Perceived Sufficiency of Lab Manuals. Participants evaluated
+the sufficiency of lab manuals, the primary preparation material, on
+a 7-point Likert scale (1 = Very Insufficient, 7 = Very Sufficient) in
+aspects such as procedures, purposes, principles, safety, equipment,
+Figure 3: Perceived Sufficiency of Lab Manuals
+Figure 4: Challenges with Lab Manuals
+and result interpretation. A Friedman test revealed a significant
+difference in the perceived sufficiency of lab manuals across these
+aspects (𝜒 2 = 90.96, p = 4.226e-18). Explanations on result interpre-
+tation and equipment usage were perceived as significantly less
+sufficient than all other aspects (refer to Figure 3).
+4.2.2 Challenges with Lab Manuals. To identify challenges asso-
+ciated with lab manuals, participants rated their agreement with
+various challenges on a 7-point Likert scale (1 = Strongly Disagree,
+7 = Strongly Agree). Overall, 53% agreed that planning an experi-
+ment solely with lab manuals is difficult (8% strongly, 8% moderately,
+37% slightly, refer to Figure 4). In addition to challenges identified
+in 4.2.1, new issues such as environment mismatch and missing
+steps were identified.
+A Friedman test revealed a significant difference in the perceived
+challenges associated with lab manuals across different aspects ( 𝜒 2
+= 97.47, p = 3.567e-18). Lack of explanation on result interpretation
+was the most significant challenge. During the interviews, many
+(I2, I3, I4, I5) reported relying on external resources, such as prior
+examples shared by peers or seniors, internet searches, textbooks,
+or academic papers, to understand how to interpret results. En-
+vironment mismatch and lack of equipment explanation were the
+second most significant group of challenges. Participants (I1, I3,
+I4) noted that outdated lab manuals often conflicted with actual
+laboratory setups. Specific examples included different equipments
+(P48, I1, I3), the use of different solvents (I4), and instances of bro-
+ken equipment (P3, P20, P48, I2). I5 reported time mismatches, with
+manuals assuming longer durations than allocated class time, lead-
+ing to rushed procedures. Participants also emphasized the lack of
+explanations on using equipment, such as statistical programs (I1)
+or the buttons on complex chemical engineering process equipment
+(I2). Missing steps and lack of principle explanation formed the third
+group of challenges. I2 explained that manuals often oversimplify
+procedures, stating, "The manual will simply say ’create a vacuum
+to separate the solution’—it’s hard to imagine what I would have to
+do with only this explanation. ” Participants (I2, I3) also noted that
+the principles behind experiments are disconnected from the proce-
+dural steps, making it difficult to understand their relevance. While
+short-answer survey responses mostly aligned with the predefined
+challenges from the Likert scale questions, additional challenges
+[PAGE 4]
+CHI EA ’25, April 26–May 01, 2025, Yokohama, Japan Sieun Kim
+Figure 5: Change in Understanding Across Different Stages
+Figure 6: Laboratory Course Environment
+were also identified, including poor readability and inconsistencies
+between lab manuals and other resources.
+4.3 Insights into Laboratory Environments
+To explore how students progress through laboratory courses, par-
+ticipants evaluated their understanding of the experiment at four
+stages: before preparation, after preparation (pre-laboratory activi-
+ties), after experimenting, and after writing the report, on a 7-point
+Likert scale (1 = Do Not Understand at All, 7 = Fully Understand).
+While understanding improved after preparation, most responses
+remained in the ’somewhat understand’ category, highlighting the
+need to enhance comprehension during the preparation phase (refer
+to Figure 5).
+Participants were also asked about their laboratory environments
+on a 7-point Likert scale (1 = Not True at All, 7 = Very True). Most
+reported conducting experiments in teams with shared equipment
+and minimal plan modifications during experiments. Notably, 89%
+referred to the lab manual during experiments (refer to Figure 6). Al-
+though most participants did not report time shortages, interviews
+revealed that students adjust plans to finish early (I2) or employ
+systematic planning by dividing tasks among team members to
+improve efficiency (I3).
+4.4 Design Implications
+Despite being the primary resource for preparing chemistry labo-
+ratory experiments (4.1.1), 53% of participants found lab manuals
+insufficient for planning (4.2.2), highlighting the need to bridge
+this gap. Educational tools should offer generalizable and scalable
+support to enhance preparation using lab manuals. Drawing from
+survey and interview insights, this study suggests design implica-
+tions for developing an educational tool to enhance lab preparation.
+Addressing Missing Experimental Details in Lab Manuals.
+Lab manuals often lack detail in result interpretation, equipment
+usage, experimental principles, and procedural details. Surveys
+and interviews revealed that participants frequently consult on-
+line resources for clarification. To address this, the system should
+integrate external academic resources (as proposed by I1, I4) and
+explain underlying principles to bridge theory and practice (I2, I3,
+I4). Additionally, it should supplement missing procedural steps
+with detailed descriptions.
+Reflecting Actual Laboratory Environments. Participants
+explained that mismatches between lab manuals and actual setups
+caused by outdated materials or last-minute changes are a signif-
+icant challenge. The system should be able to provide updated
+procedures reflecting current equipment and conditions. Addition-
+ally, it should account for group dynamics and shared resources,
+helping students plan experiments more effectively.
+Supporting Effective Planning and Execution. The system
+should help students actively plan experiments by allowing them to
+customize and annotate steps, similar to writing pre-reports. Since
+students frequently consult lab manuals during experiments, the
+system should be intuitive and easy to navigate during experiments.
+5 ChemLab Planner
+5.1 System Design
+Informed by the design implications, this study developed a web-
+based educational tool, ChemLab Planner (Figure 7), to assist stu-
+dents in understanding and planning chemistry laboratory exper-
+iments. ChemLab Planner operates in three main steps: (1) Step
+Breakdown and Customization: Lab manuals, including experi-
+ment procedures, are processed using few-shot prompting with
+GPT-4o-mini to break each step into substeps and detail omit-
+ted steps. Information about the laboratory environment—such
+as changes in equipment, procedural adjustments, or specific re-
+quirements (e.g., finding MSDS for chemicals)—is also used to adapt
+the procedure to the actual environment. The substeps are dis-
+played (Figures 7B and 8B), allowing users to reorder, edit, add, or
+remove them to align with their goals and preferences. (2) Experi-
+ment Timeline: A multi-person timeline (Figures 7C and 8C) is
+generated based on the time and participant information provided.
+Users can assign substeps to individuals, share tasks across team
+members, and adjust durations for each substep. Descriptions for
+substeps, generated by few-shot prompting with GPT-4o-mini, ad-
+dress gaps identified in the survey—such as result interpretation
+tips, equipment usage, or step principles—while also reflecting user-
+specified laboratory environments. (3) Experiment Execution:
+During the experiment, the system facilitates task management by
+allowing users to mark substeps as completed, make real-time edits
+to address unforeseen issues, and access descriptions for guidance
+(Figures 7D and 8D).
+5.2 User Feedback
+To assess the helpfulness of ChemLab Planner and identify areas for
+improvement, informal user tests were conducted with three sur-
+vey participants. Participants first received a walk-through of the
+system using an example experiment, then independently used the
+system to plan another experiment with self-defined scenarios. All
+three participants found the system helpful for understanding and
+planning chemistry laboratory experiments, especially for novice
+undergraduates with limited experimental experience. The break-
+down of tasks into substeps was highlighted as a key feature, as it
+directly improved understanding and served as a useful checkpoint
+during the planning process. Participants noted that students would
+be motivated to use this system because it resolves conflicts in team
+management and facilitates planning to finish experiments earlier.
+[PAGE 5]
+Designing an Educational Tool to Improve Understanding and Planning in Chemistry Laboratory Courses CHI EA ’25, April 26–May 01, 2025, Yokohama, Japan
+Figure 7: ChemLab Planner: System Design Overview
+Figure 8: ChemLab Planner: Implemented using React and Node.js.
+Participants suggested adding features to detect sequencing is-
+sues, such as conflicts in step order and whether tasks can be per-
+formed simultaneously or must be sequential. They also suggested
+including predicted time durations for substeps. Additionally, one
+participant suggested enhancing result interpretation by provid-
+ing tools to log data, perform basic calculations, and create plots,
+enabling real-time understanding of results during experiments.
+6 Discussion
+6.1 Future Work
+Three key improvements were identified to enhance ChemLab Plan-
+ner further. First, the system could detect impossible sequences and
+inefficiencies in substep assignments to help optimize workflows.
+Second, implementing real-time data logging and analysis would
+enable students to better understand results during experiments.
+Lastly, integrating supplementary materials—such as equipment im-
+ages, videos, lecture slides, or textbook excerpts—into each step can
+enhance comprehension by facilitating cross-referencing across
+multiple resources. Following these enhancements, formal user
+studies can be conducted to evaluate ChemLab Planner’s effective-
+ness. One approach is comparing students’ experiment planning
+and understanding using traditional lab manuals versus ChemLab
+Planner. Additionally, deploying it in actual lab courses and collect-
+ing student feedback can assess its impact on experiment execution.
+6.2 Expansion to Other Fields
+While ChemLab Planner addresses student challenges in chemistry
+laboratory courses, its approach can extend to other STEM fields
+like biology and physics, where experimental settings pose simi-
+lar issues. The system can also help reproduce experiments from
+research papers by breaking down text-based protocols into sub-
+steps, offering structured guidance and identifying knowledge gaps.
+More broadly, ChemLab Planner can support non-academic tasks
+requiring sequence planning, such as cooking or knitting. ChemLab
+Planner can be generalized into a planning tool applicable to learn-
+ing a wide range of sequential, protocol-driven activities beyond
+science experiments.
+6.3 Proficiency-awareness
+ChemLab Planner provides substep descriptions to address gaps
+in traditional lab manuals, enhancing understanding of principles,
+result interpretation, and equipment usage. However, the descrip-
+tions are general and not tailored to user proficiency or curriculum
+needs. Some participants found them too simplistic or broad, high-
+lighting the need for adaptive content. For example, the system
+could prioritize detailed guidance on unfamiliar equipment while
+offering minimal verification cues for experienced users. Further
+research can explore how information and its presentation should
+vary for different proficiency levels. Customizing descriptions based
+on expertise could significantly enhance the system’s support for
+diverse learners.
+7 Conclusion
+This research proposed design implications and introduced Chem-
+Lab Planner, a web-based tool to address student challenges in
+understanding and planning chemistry laboratory experiments.
+[PAGE 6]
+CHI EA ’25, April 26–May 01, 2025, Yokohama, Japan Sieun Kim
+Grounded in surveys and interviews, the implications focused on
+supplementing lab manuals, reflecting real lab environments, and
+supporting active planning. ChemLab Planner applies these by
+breaking down methods into modular substeps, adapting to lab
+conditions, and offering a timeline-based interface for planning
+and execution. The flexibility of the design suggests applicability
+beyond chemistry to other disciplines. This work contributes to im-
+proving laboratory course experiences by examining the challenges
+students face in real-world educational settings.
+Acknowledgments
+I sincerely thank Prof. Moo Sun Hong for his invaluable guidance
+and mentorship throughout this research. This work was supported
+by the Learning Sciences Research Institute of Seoul National Uni-
+versity and the Korea Institute for Advancement of Technology
+(KIAT) grant funded by the Korea Government (MOE) (P0025681,
+Semiconductor-Specialized University).
+References
+[1] Michael R Abraham, Mark S Craolice, A Palmer Graves, Abdulwali H Aldhamash,
+Joann G Kihega, Julieta G Palma Gal, and Valsamma Varghese. 1997. The nature
+and state of general chemistry laboratory courses offered by colleges and uni-
+versities in the United States. Journal of Chemical Education 74, 5 (1997), 591.
+doi:10.1021/ed074p591
+[2] Hendra Y Agustian and Michael K Seery. 2017. Reasserting the role of pre-
+laboratory activities in chemistry education: a proposed framework for their
+design. Chemistry Education Research and Practice 18, 4 (2017), 518–532. doi:10.
+1039/C7RP00140A
+[3] A.W. Bates and A. Sangra. 2011. Managing Technology in Higher Education:
+Strategies for Transforming Teaching and Learning . Wiley.
+[4] A. W. Bates. 2015. Teaching in a Digital Age: Guidelines for Designing Teaching
+and Learning. Tony Bates Associates Ltd., Vancouver, BC.
+[5] Carlo Bonferroni. 1936. Teoria statistica delle classi e calcolo delle probabilita.
+Pubblicazioni del R istituto superiore di scienze economiche e commericiali di firenze
+8 (1936), 3–62.
+[6] W. G. Bowers. 1924. The advantages of laboratory work in the study of elementary
+chemistry. Journal of Chemical Education 1, 11 (1924), 205. doi:10.1021/ed001p205
+[7] Hasok Chang. 2011. How historical experiments can improve scientific knowledge
+and science education: The cases of boiling water and electrochemistry. Science
+& Education 20 (2011), 317–341. doi:10.1007/s11191-010-9301-8
+[8] Franz Faul, Edgar Erdfelder, Axel Buchner, and Albert-Georg Lang. 2009. Statisti-
+cal power analyses using G* Power 3.1: Tests for correlation and regression analy-
+ses. Behavior research methods 41, 4 (2009), 1149–1160. doi:10.3758/BRM.41.4.1149
+[9] Madison M Flesch, Nicholas J Humphrey, and Stephen A Mang. 2024. Virtual
+Choose-Your-Own-Adventure Prelabs Improve Student Understanding of Ana-
+lytical Chemistry Concepts and Instrumentation. Journal of Chemical Education
+101, 3 (2024), 941–948. doi:10.1021/acs.jchemed.3c00803
+[10] Milton Friedman. 1937. The use of ranks to avoid the assumption of normality
+implicit in the analysis of variance. Journal of the american statistical association
+32, 200 (1937), 675–701. doi:10.1080/01621459.1937.10503522
+[11] Avi Hofstein and Rachel Mamlok-Naaman. 2007. The laboratory in science
+education: the state of the art. Chemistry education research and practice 8, 2
+(2007), 105–107. doi:10.1039/B7RP90003A
+[12] Guanxuan Jiang, Xuansheng Xia, Yue Li, Hai-Ning Liang, and Pan Hui. 2024.
+ChemistryVR: Enhancing Educational Experiences through Virtual Chemistry
+Lab Simulations. In SIGGRAPH Asia 2024 Educator’s Forum (SA ’24) . Association
+for Computing Machinery, New York, NY, USA, Article 1, 5 pages. doi:10.1145/
+3680533.3697068
+[13] Shan Jin, Yuyang Wang, Lik-Hang Lee, Xinyi Luo, and Pan Hui. 2023. De-
+velopment of an immersive simulator for improving student chemistry learn-
+ing efficiency. In Proceedings of the 16th International Symposium on Visual In-
+formation Communication and Interaction (Guangzhou, China) (VINCI ’23). As-
+sociation for Computing Machinery, New York, NY, USA, Article 13, 8 pages.
+doi:10.1145/3615522.3615535
+[14] Yujuan Liu. 2021. The effects of online organic chemistry laboratory videos on
+students’ perceptions and intrinsic motivation. Journal of Research in Science,
+Mathematics and Technology Education 4, 3 (2021), 239–255. doi:10.31756/jrmste.
+435
+[15] Miles Pickering. 1987. What goes on in students’ heads in lab?Journal of Chemical
+Education 64, 6 (1987), 521. doi:10.1021/ed064p521
+[16] Chanyapat Sangsuwon and Netdao Yooyong. 2020. Measuring Undergradu-
+ate Science Students Satisfaction for the services provided by Chemistry Lab-
+oratories in SSRU University. In Proceedings of the 11th International Confer-
+ence on Education Technology and Computers (Amsterdam, Netherlands) (ICETC
+’19). Association for Computing Machinery, New York, NY, USA, 250–253.
+doi:10.1145/3369255.3369294
+[17] H. I. Schlesinger. 1935. The contribution of laboratory work to general education.
+Journal of Chemical Education 12, 11 (1935), 524. doi:10.1021/ed012p524
+[18] Shameka J Shelby and Zachary D Fralish. 2021. Using Edpuzzle to improve student
+experience and performance in the biochemistry laboratory. Biochemistry and
+Molecular Biology Education 49, 4 (2021), 529–534. doi:10.1002/bmb.21494
+[19] Kyohyun Song, Gunhee Kim, Inkyu Han, Jeongyoung Lee, Ji-Hyung Park, and
+Sungdo Ha. 2011. CheMO: mixed object instruments and interactions for tangible
+chemistry experiments. In CHI ’11 Extended Abstracts on Human Factors in Com-
+puting Systems (Vancouver, BC, Canada)(CHI EA ’11). Association for Computing
+Machinery, New York, NY, USA, 2305–2310. doi:10.1145/1979742.1979907
+[20] Chin-Chung Tsai. 2003. Taiwanese science students’ and teachers’ percep-
+tions of the laboratory learning environments: Exploring epistemological gaps.
+International Journal of Science Education 25, 7 (2003), 847–860. doi:10.1080/
+09500690305031
+[21] Nicolás Veiga, Florencia Luzardo, Kenneth Irving, María N Rodríguez-Ayán, and
+Julia Torres. 2019. Online pre-laboratory tools for first-year undergraduate
+chemistry course in Uruguay: student preferences and implications on student
+performance. Chemistry education research and practice 20, 1 (2019), 229–245.
+doi:10.1039/C8RP00204E
+[22] Jianye Wei, David F Treagust, Mauro Mocerino, Venkat Rao Vishnumolakala,
+Marjan G Zadnik, Anthony D Lucey, and Euan D Lindsay. 2021. Design and
+validation of an instrument to measure students’ interactions and satisfaction in
+undergraduate chemistry laboratory classes. Research in Science Education 51, 4
+(2021), 1039–1053. doi:10.1007/s11165-020-09933-x
+[23] Frank Wilcoxon. 1992. Individual comparisons by ranking methods. In Break-
+throughs in statistics: Methodology and distribution . Springer, 196–202.
+[24] Kurt Winkelmann, Monica Baloga, Tom Marcinkowski, Christos Giannoulis,
+George Anquandah, and Peter Cohen. 2015. Improving students’ inquiry skills
+and self-efficacy through research-inspired modules in the general chemistry
+laboratory. Journal of Chemical Education 92, 2 (2015), 247–255. doi:10.1021/
+ed500218d
+[25] Mikołaj P. Woźniak, Adam Lewczuk, Krzysztof Adamkiewicz, Jakub Józiewicz,
+Maya Malaya, and Piotr Ladonski. 2020. ARchemist: Aiding Experimental Chem-
+istry Education Using Augmented Reality Technology. In Extended Abstracts of
+the 2020 CHI Conference on Human Factors in Computing Systems (Honolulu, HI,
+USA) (CHI EA ’20). Association for Computing Machinery, New York, NY, USA,
+1–6. doi:10.1145/3334480.3381441

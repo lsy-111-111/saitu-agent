@@ -16,6 +16,41 @@ SELECT pg_catalog.pg_try_advisory_lock(724310896145222::bigint) AS cleanup_lock_
 \quit
 \endif
 
+-- Child calls must expire before runs, and runs before encrypted sessions.
+-- Financial reservations stay in ai_spend_ledger for reconciliation/audit.
+BEGIN;
+WITH expired AS (
+  SELECT request.ctid FROM public.competition_decision_chat_requests request
+    JOIN public.competition_decision_runs run ON run.run_id=request.run_id
+   WHERE run.expires_at <= pg_catalog.now()
+   ORDER BY run.expires_at LIMIT 500 FOR UPDATE OF request SKIP LOCKED
+)
+DELETE FROM public.competition_decision_chat_requests target USING expired WHERE target.ctid=expired.ctid;
+COMMIT;
+
+BEGIN;
+WITH expired AS (
+  SELECT call.ctid FROM public.competition_decision_calls call
+    JOIN public.competition_decision_runs run ON run.run_id=call.run_id
+   WHERE run.expires_at <= pg_catalog.now()
+   ORDER BY run.expires_at LIMIT 500 FOR UPDATE OF call SKIP LOCKED
+)
+DELETE FROM public.competition_decision_calls target USING expired WHERE target.ctid=expired.ctid;
+COMMIT;
+
+BEGIN;
+WITH expired AS (
+  SELECT ctid FROM public.competition_decision_runs
+   WHERE expires_at <= pg_catalog.now()
+     AND NOT EXISTS (SELECT 1 FROM public.competition_decision_calls call
+                      WHERE call.run_id=competition_decision_runs.run_id)
+     AND NOT EXISTS (SELECT 1 FROM public.competition_decision_chat_requests request
+                      WHERE request.run_id=competition_decision_runs.run_id)
+   ORDER BY expires_at LIMIT 500 FOR UPDATE SKIP LOCKED
+)
+DELETE FROM public.competition_decision_runs target USING expired WHERE target.ctid=expired.ctid;
+COMMIT;
+
 BEGIN;
 WITH expired AS (
   SELECT ctid FROM public.competition_idempotency
@@ -41,6 +76,17 @@ WITH expired AS (
    ORDER BY expires_at LIMIT 500 FOR UPDATE SKIP LOCKED
 )
 DELETE FROM public.competition_session_starts target USING expired WHERE target.ctid=expired.ctid;
+COMMIT;
+
+BEGIN;
+WITH expired AS (
+  SELECT ctid FROM public.competition_decision_states
+   WHERE expires_at <= pg_catalog.now()
+     AND NOT EXISTS (SELECT 1 FROM public.competition_decision_runs run
+                      WHERE run.state_key=competition_decision_states.state_key)
+   ORDER BY expires_at LIMIT 500 FOR UPDATE SKIP LOCKED
+)
+DELETE FROM public.competition_decision_states target USING expired WHERE target.ctid=expired.ctid;
 COMMIT;
 
 BEGIN;
@@ -89,9 +135,11 @@ DELETE FROM public.ai_consents target USING expired WHERE target.ctid=expired.ct
 COMMIT;
 
 SELECT (
-  EXISTS (SELECT 1 FROM public.competition_idempotency WHERE expires_at <= pg_catalog.now())
+  EXISTS (SELECT 1 FROM public.competition_decision_runs WHERE expires_at <= pg_catalog.now())
+  OR EXISTS (SELECT 1 FROM public.competition_idempotency WHERE expires_at <= pg_catalog.now())
   OR EXISTS (SELECT 1 FROM public.competition_session_transitions WHERE expires_at <= pg_catalog.now())
   OR EXISTS (SELECT 1 FROM public.competition_session_starts WHERE expires_at <= pg_catalog.now())
+  OR EXISTS (SELECT 1 FROM public.competition_decision_states WHERE expires_at <= pg_catalog.now())
   OR EXISTS (SELECT 1 FROM public.competition_sessions WHERE expires_at <= pg_catalog.now())
   OR EXISTS (SELECT 1 FROM public.competition_rate_limit_counters WHERE reset_at <= pg_catalog.now())
   OR EXISTS (SELECT 1 FROM public.ai_model_call_leases WHERE expires_at <= pg_catalog.now())

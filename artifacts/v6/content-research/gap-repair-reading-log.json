@@ -1,0 +1,35 @@
+{
+  "authorAgentId": "/root/audit_catalog",
+  "coResearchAgentId": "/root",
+  "independentReview": false,
+  "retrievedAt": "2026-11-05",
+  "sources": [
+    {
+      "id": "b-ecommerce-full-guide",
+      "url": "https://3chuang.oss-cn-hangzhou.aliyuncs.com/uploads/file/2024/10/23/a013307e0ca9d6e87fa972b550de2463.pdf",
+      "method": "original_pdf_download_and_full_text_read",
+      "locator": "PDF全14页；第8页平台账号与交付，第9—12页完整100分评分及6+4+4周数据要求",
+      "status": "body_read",
+      "sha256": "229f65811f497e44c53f351118d037b3fe95f6a39f2ecaac391c4a9e6b66056d",
+      "localResearchCopy": "tmp/research-sources/ecommerce-2025-rural-guide.pdf",
+      "revision": "补足原未读附件和全部评分，修正四周不能完赛，清除该项已解决缺口；不构成审核通过"
+    },
+    {
+      "id": "b-cfa-2025-rules",
+      "url": "https://www.unive.it/web/fileadmin/user_upload/cdl_cdlm/area-economica/research-challenge-official-rules.pdf",
+      "method": "institution_hosted_original_pdf_read",
+      "locator": "第1—8页总则资格研究与报告、第15页报告格式、第17—18页评分；PDF封面明确2024–2025",
+      "status": "body_read",
+      "sha256": "c9a1a5e61a251e4db5550636a3ef2af5ccf77b0160c28ebe86676df41886e35a",
+      "localResearchCopy": "tmp/research-sources/cfa-2025-unive-rules.pdf",
+      "officialLinkObservation": {
+        "observerAgentId": "/root",
+        "url": "https://www.unive.it/web/en/8336/cfa-institute-research-challenge",
+        "linkLabel": "Rules",
+        "matchedOfficialCopy": "https://higherlogicdownload.s3.amazonaws.com/CFAI/18ab2d35-5082-4f32-8747-c4d687c9b630/UploadedImages/Official_Rules_GIRC_2024-2025.pdf",
+        "sameByteSha256": "c9a1a5e61a251e4db5550636a3ef2af5ccf77b0160c28ebe86676df41886e35a"
+      },
+      "revision": "移除混届2026—2027事实支持，采用同届历史资格、报告和评分；非审核通过"
+    }
+  ]
+}

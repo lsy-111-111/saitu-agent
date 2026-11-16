@@ -1,0 +1,307 @@
+Skip to main content
+iGEM
+Jamboree
+Competition
+Community
+Villages
+Technology
+Responsibility
+Innovation
+Sign In
+Competition
+About
+Registration
+Deliverables
+Judging
+Sponsorships
+Results
+Teams →
+Awards
+All iGEM awards recognize and celebrate different forms of accomplishment, excellence, and contribution across the Competition. Together, they reflect what iGEM values and help highlight the many ways teams can demonstrate meaningful work, growth, and impact.
+Medals
+Project Awards
+Special Awards
+Special Awards celebrate excellence in specific areas of an iGEM project. They are competitive: within each section, the team with the most impressive work in a given focus area wins.
+Overview
+Award Categories
+There are two kinds of Special Awards, indicated by a tag next to each award's title:
+All TeamsEvery team automatically competes for these awards. Their scores also contribute to the Project Awards.
+General Bio EngineeringSpecializationElective. On the Judging Form, each team may elect up to three additional awards for Gold Medal consideration: at least one from each list, plus a third from either. The limit of three encourages teams to focus on quality over quantity.
+How Winners Are Chosen
+For each Special Award, up to three winners are recognized, one per section. Within each section, the team with the highest score on the award's ballot questions wins, provided that score meets the minimum performance standard. If multiple teams tie at the top, all tied teams receive the award.
+The same section rules used for Village Awards apply: high school is always evaluated separately, and each collegiate section (undergraduate and overgraduate) receives its own award only if it has at least 10 teams. Otherwise the two collegiate sections are combined and a single award goes to the top collegiate team overall.
+Scoring Rubric
+iGEM uses an academic rubric so all judges apply the same standards. For each ballot question, a judge picks a score from 1 to 6. Each question has its own specific wording for what each score means, calibrated to that question.
+The per-question wording is not published so that teams stay focused on answering the broader question rather than optimizing for a specific phrase. The scale below is only a general reference for what each level represents:
+Poor work done or completely absent.
+Less work done; multiple missing components.
+Some work done; incomplete.
+Good work; complete.
+Great work; complete with some impressive components.
+Amazing work; impressive.
+Awards
+Best Presentation
+All Teams
+A great presentation tells your team's story clearly and presents your data in a concise, visually appealing way to a scientific and engineering audience. See the Presentation Video page for requirements.
+STANDARD URL
+None. Judges will evaluate your Team Presentation Video.
+BALLOT QUESTIONS
+How well did the team communicate their project goals, design, and results with convincing evidence?
+How well does this presentation convey what the team accomplished through their technical data or results (either modeled or experimentally measured)?
+Does the visual design of the presentation support the communication of the technical content (project design, results and data analysis, and conclusions)?
+Did you find the presentation engaging?
+Were images, prior work, background information, and supporting data acknowledged appropriately?
+Best Wiki
+All Teams
+Your Team Wiki is the public face of your iGEM project and the main reference future iGEM teams will use to learn from your work. This award honors the Wiki that sets the bar for what the following year's teams should aim for. See the Team Wiki page for requirements.
+STANDARD URL
+None. Judges will evaluate your entire Team Wiki.
+BALLOT QUESTIONS
+How well does the Wiki communicate the team's project and their goals?
+Did the team clearly document their project and support their results with convincing, experimental evidence?
+Does the design of the Wiki support visitors in finding and understanding the content?
+Will the Wiki be a compelling record of the team's project for future teams?
+Is the content (including text, images, and prior work from iGEM teams and other research groups) on the Wiki properly referenced and cited?
+Best Measurement
+General Bio Engineering
+Measurements are how you show that a system, physical or computational, behaves as expected, that data are reliable, and that a result actually matters. Strong contenders pick meaningful targets to measure, capture them precisely through experimental or computational methods, and report results clearly with appropriate units or metrics.
+STANDARD URL
+https://2026.igem.wiki/example/measurement
+BALLOT QUESTIONS
+Could the measurement(s) be reproduced by other iGEM teams?
+Are the methods or protocols described well?
+Could it be useful to other projects?
+Did the team validate and calibrate their measurement process appropriately for their approach?
+Best Model
+General Bio Engineering
+Models help us understand, predict, and design biological systems. Mechanistic modeling, machine learning, and other computational approaches can guide project design and deepen understanding of the system being studied, especially when grounded in data from the team's own experiments or from existing sources. This award is for teams who build or apply a model and use it to inform design, predict behavior, or interpret results, before or alongside their experimental work.
+STANDARD URL
+https://2026.igem.wiki/example/model
+BALLOT QUESTIONS
+How impressive is the modeling or computational approach?
+Did the model or computational approach help the team understand, predict, or design a part, device, or system?
+Did the team use experimental or other relevant data to develop, train, or validate the model or computational approach?
+Does the modeling or computational approach provide a good example for others?
+Best New Basic Part
+General Bio Engineering
+Many genetically encoded functions have not yet been converted into BioBrick parts. To be eligible, your part must consist of a single genetic component and be well documented on the iGEM Registry. Winning parts come with thorough documentation and experimental data showing the part works. See BBa_25IQCJ3B, BBa_25MBHXUL, and BBa_252FW60D as examples.
+STANDARD URL
+None. Judges evaluate the part's entry in the iGEM Registry.
+BALLOT QUESTIONS
+How does the documentation on the Registry compare to BBa_25IQCJ3B, BBa_25MBHXUL, and BBa_252FW60D?
+Did the team show the part works as expected (modeling data can be acceptable)?
+Could it be useful to the community?
+How well characterized (experimentally measured or modeled) is this Basic Part when tested in a device?
+Best New Composite Part
+General Bio Engineering
+Combine existing BioBrick Parts into new devices: inverters, amplifiers, senders, receivers, actuators, and more. To be eligible, your part must combine multiple genetic components and be well documented on the iGEM Registry. Winning parts come with thorough documentation and experimental data showing the part works. See BBa_25LG0OCK, BBa_25IWB2F9, and BBa_25LK9WHI as examples.
+STANDARD URL
+None. Judges evaluate the part's entry in the iGEM Registry.
+BALLOT QUESTIONS
+How does the documentation on the Registry compare to BBa_25LG0OCK, BBa_25IWB2F9, and BBa_25LK9WHI?
+Did the team show the part works as expected (modeling data can be acceptable)?
+Could it be useful to the community?
+How well characterized (experimentally measured or modeled) is this Composite Part?
+Best New Improved Part
+General Bio Engineering
+Take an existing part and redesign it to perform better, using the original as a control so you can show the improvement in the same experiment. To be eligible, the new, improved part must be well documented on the iGEM Registry, and the existing and improved parts should reference each other. See this pair as an example: existing part from 2024 (BBa_K5479006) and improved part from 2025 (BBa_25488QFX).
+STANDARD URL
+None. Judges evaluate the entries in the Registry for both parts.
+BALLOT QUESTIONS
+How does the documentation on the Registry for both the existing and improved parts compare to BBa_K5479006 (existing part) and BBa_25488QFX (improved part)?
+Did the team show that the improved part functions better than the old part? (i.e., the old part was used as a control in the testing of the new part.)
+Could the improved part be useful to the iGEM community?
+How well characterized (experimentally measured or modeled) is this Improved Part?
+Best Part Collection
+General Bio Engineering
+Some projects produce parts that only make sense together: a modular sensing system, a tunable production process, or a coordinated multi-step pathway. To be eligible, your collection must be registered in the iGEM Registry and document the ensemble as a whole. Collection documentation is not the same as part documentation: each part still has its own Registry page covering sequence, function, characterization, and usage, while the collection page sits on top and explains how the parts were designed to work together, what the system does as a whole, and how other teams can reuse the collection or pick individual parts from it. See NRPieceS and PHOENICS as examples.
+STANDARD URL
+None. Judges read the Part Collection Documentation on the Registry.
+BALLOT QUESTIONS
+Is this collection a coherent group of parts meant to be used as a collection, or just a list of all the parts the team made?
+How does the documentation compare to the NRPieceS and PHOENICS collections?
+Did the team finish building a functional system using this collection?
+Can it be useful to the community?
+Best Education
+Specialization
+Innovative educational and outreach activities open a two-way dialogue with new communities about the science and public values behind synthetic biology. Activities do not have to relate directly to your project; they can address wider issues in iGEM or synthetic biology. The only requirement is that they promote scientific learning rather than market iGEM or synthetic biology. Document your approach and what everyone involved learned.
+STANDARD URL
+https://2026.igem.wiki/example/education
+BALLOT QUESTIONS
+How well did their work promote mutual learning and/or a dialogue?
+Is it documented in a way that others can build upon?
+Was it thoughtfully implemented?
+Did the team convince you that their activities would enable more people to shape, contribute to, and/or participate in synthetic biology?
+Best Entrepreneurship
+Specialization
+This award recognizes exceptional effort to build a business case and commercialize an iGEM project, whether new or carried over from a previous year. Successful teams construct a business plan grounded in customer needs and expert input on feasibility, and create a minimum viable product.
+STANDARD URL
+https://2026.igem.wiki/example/entrepreneurship
+BALLOT QUESTIONS
+Has the team identified their first potential customers and their unmet need(s) that are not yet covered by existing solutions?
+Has the team shown that their solution is possible, scalable and inventive?
+Has the team presented logical product development plans with realistic milestones, timelines, resources and risks?
+Has the team outlined the skills, capabilities, and the stakeholders required to be credible in developing their solution further?
+Has the team considered the positive and negative long-term impacts of their fully developed solution?
+Best Hardware
+Specialization
+This award is for teams who develop hardware for synthetic biology. Good iGEM hardware makes work with standard parts easier, faster, better, or more accessible: think a sensor that helps characterize parts, or a robot that automates experiments and cloning. Strong contenders demonstrate utility, user testing, and easy reproducibility.
+STANDARD URL
+https://2026.igem.wiki/example/hardware
+BALLOT QUESTIONS
+Does the hardware you developed address a need or problem in synthetic biology?
+Did the team conduct user testing and learn from user feedback?
+Did the team demonstrate utility and functionality in their hardware proof of concept?
+Is the documentation of the hardware system sufficient to enable reproduction by other teams?
+Inclusivity Award
+Specialization
+This award recognizes exceptional efforts to include people with diverse identities in scientific research. Who gets a voice in iGEM, synthetic biology, and science more broadly? How have you created new opportunities to remove barriers and let more people contribute, participate, or be represented? Activities do not have to relate directly to your team's project. Document your approach, how you improved inclusivity, and what was learned.
+STANDARD URL
+https://2026.igem.wiki/example/inclusivity
+BALLOT QUESTIONS
+How well did the work investigate barriers to participation in synthetic biology and/or science more broadly?
+How well did the work expand access to synthetic biology and/or science more broadly?
+Was there a dialogue with members of the target group, and were their needs, opinions and values considered?
+Is the work documented in a way that other teams or external entities can build upon?
+Best Integrated Human Practices
+Specialization
+How does your project affect society, and how does society shape it back? How do ethical considerations and stakeholder input guide your project's purpose, design, and lab experiments? How did that feedback enter your work throughout the Competition? Document a thoughtful, creative approach to these questions and how your project evolved in the process.
+STANDARD URL
+https://2026.igem.wiki/example/human-practices
+BALLOT QUESTIONS
+How well was the Human Practices work integrated throughout the project?
+How inspiring an example is it to others?
+To what extent is the Human Practices work documented so that others can build upon it?
+How thoughtfully was it implemented? How well did they explain the context, rationale and prior work?
+How well did it incorporate different stakeholder views?
+Best Alternative Platform
+Specialization
+This award is designed to celebrate exemplary work done in alternative platforms, and covers anything that is not E. coli, S. cerevisiae, and B. subtilis. This award may be given to a team working in plant biology chassis, mammalian cells, cell-free platform, or non-model organisms. Show us what you made and remember to adhere to iGEM Safety Policies and guidelines!
+STANDARD URL
+https://2026.igem.wiki/example/alternative-platform
+BALLOT QUESTIONS
+How strong is the evidence that the team successfully engineered their biological system?
+Is the team's chosen platform meaningfully suited to the problem they are tackling?
+How tightly are the team's outputs coupled to the platform?
+Has the team documented what didn't work, why, and what others should watch out for?
+Safety and Security Award
+Specialization
+If local people are to use synthetic biology to solve local problems around the world, it must be used safely and securely. The Safety and Security Committee challenges teams to apply biological engineering approaches to manage the risks involved. Can you take the next step toward knowledge, understanding, and tools that make synthetic biology safer and more secure?
+STANDARD URL
+https://2026.igem.wiki/example/safety-and-security
+BALLOT QUESTIONS
+Did the team make a contribution to biosafety and/or biosecurity?
+Is their contribution well-characterized and/or well-validated?
+Did the team build upon existing knowledge, understanding, tools or approaches?
+In addition to broader safety work, has the team managed risks from their project appropriately?
+Has the team addressed the use of synthetic biology in the real world?
+Best Software
+Specialization
+iGEM projects often build or adapt computational tools to move their work forward. Born out of practical need, these tools can be surprisingly useful for others, and they don't have to be large or complex to make a real difference. This award finds and honors such "nuggets" of computational work.
+To be eligible:
+Your software must be documented and released under an OSI-approved open-source license.
+The source code must be hosted on the dedicated repository in iGEM's GitLab. See the Software Project page for full requirements.
+Software & AI Village teams are not eligible for this award.
+STANDARD URL
+https://2026.igem.wiki/example/software
+BALLOT QUESTIONS
+How well is the software compatible with, and does it leverage, existing synthetic biology standards? (e.g. SBOL, other RFCs, data formats, etc.)
+How well was the software validated (e.g., through experimental work, test data, or benchmarking)?
+Can the software be useful to other projects?
+How well can the software be integrated with external tools/software applications? (APIs, packages, etc.)
+Is the software user-friendly?
+How well is the software written and documented for future groups to extend and improve? (Code documentation, comments in the code, performance evaluation, architecture diagrams, installation and execution scripts, etc.)
+Best Sustainable Development Impact
+Specialization
+The Sustainable Development Goals (SDGs) are a call to action on global environmental, social, and economic challenges, and this award is your team's way to answer that call. Demonstrate how you have evaluated your project ideas against one or more SDGs, consulted SDG stakeholders, and started to build collaborations with other iGEM teams around the goals. You are encouraged to revisit previous iGEM projects, evaluate them against the SDGs, and build on them.
+STANDARD URL
+https://2026.igem.wiki/example/sustainability
+BALLOT QUESTIONS
+Did the team incorporate feedback from relevant Sustainable Development Goals (SDG) stakeholders into their work?
+Did the team address potential long-term social, environmental and economic impacts of their work (in the context of the SDG(s) they have chosen)?
+How well has the team considered the positive and/or negative interactions of their work in relation to other SDGs?
+Has the team documented their work against their chosen SDG(s) so that other teams can build upon their work?
+Has the team's work measurably and significantly addressed one or more SDGs?
+iGEM Spirit Award
+This award recognizes the team that best embodies the values of iGEM in how they approach their project, engage with others, and carry themselves in the community. It is open to teams of any scale or level of achievement, and honors those who give their best effort, strive to move their project forward, support others, and show a genuine commitment to doing good in the world.
+This award celebrates teams that serve as role models for the broader iGEM community.
+Watch the story of Team Sumbawagen 2014 ↗ for an example of the spirit this award celebrates.
+On this page
+Overview
+Awards
+Best Presentation
+Best Wiki
+Best Measurement
+Best Model
+Best New Basic Part
+Best New Composite Part
+Best New Improved Part
+Best Part Collection
+Best Education
+Best Entrepreneurship
+Best Hardware
+Inclusivity Award
+Best Integrated Human Practices
+Best Alternative Platform
+Safety and Security Award
+Best Software
+Best Sustainable Development Impact
+iGEM Spirit Award
+iGEM
+People
+Support
+Blog
+Videos
+Villages
+Jamboree
+Tickets
+Program
+Exhibitors
+Info
+Competition
+About
+Teams
+Registration
+Deliverables
+Judging
+Sponsorships
+Calendar
+Community
+About
+News
+Topics
+Projects
+Events
+Job Board
+Journals
+Technology
+Registry
+Distribution
+Technologies
+Chassis
+Engineering
+Responsibility
+About
+Events
+Guidance
+Human Practices
+Safety Policies
+Opportunities
+Innovation
+About
+Venture Foundry
+Ecosystem
+Events
+Newsletters
+Copyright © 2026 iGEM Foundation, Inc. All rights reserved. iGEM and the iGEM logo are registered trademarks.
+iGEM Foundation
+·
+501(c)(3) not-for-profit organization
+·
+45 Prospect Street, Cambridge MA, 02139 USA
+iGEM Europe · iGEM HQ
+·
+10 rue du Mail, 75002 Paris, France
+Contact us
+Terms & Policies
+Financials

@@ -59,6 +59,56 @@ export function assertLocalCleanupDatabaseUrl(connectionString) {
  */
 export const SECURITY_STATE_CLEANUP_OPERATIONS = Object.freeze([
   {
+    name: "competition_decision_chat_requests",
+    sql: `with expired as (
+            select request.ctid from competition_decision_chat_requests request
+             join competition_decision_runs run on run.run_id = request.run_id
+             where expires_at <= now()
+             order by expires_at limit $1 for update of request skip locked
+          )
+          delete from competition_decision_chat_requests target
+           using expired where target.ctid = expired.ctid`
+  },
+  {
+    // Calls inherit their encrypted parent run's expiry. Keep the separate
+    // append-only spend ledger after deleting personal recommendation state.
+    name: "competition_decision_calls",
+    sql: `with expired as (
+            select call.ctid from competition_decision_calls call
+             join competition_decision_runs run on run.run_id = call.run_id
+             where expires_at <= now()
+             order by expires_at limit $1 for update of call skip locked
+          )
+          delete from competition_decision_calls target
+           using expired where target.ctid = expired.ctid`
+  },
+  {
+    name: "competition_decision_runs",
+    sql: `with expired as (
+            select ctid from competition_decision_runs
+             where expires_at <= now()
+               and not exists (select 1 from competition_decision_calls call
+                                where call.run_id = competition_decision_runs.run_id)
+               and not exists (select 1 from competition_decision_chat_requests request
+                                where request.run_id = competition_decision_runs.run_id)
+             order by expires_at limit $1 for update skip locked
+          )
+          delete from competition_decision_runs target
+           using expired where target.ctid = expired.ctid`
+  },
+  {
+    name: "competition_decision_states",
+    sql: `with expired as (
+            select ctid from competition_decision_states
+             where expires_at <= now()
+               and not exists (select 1 from competition_decision_runs run
+                                where run.state_key = competition_decision_states.state_key)
+             order by expires_at limit $1
+          )
+          delete from competition_decision_states target
+           using expired where target.ctid = expired.ctid`
+  },
+  {
     name: "competition_idempotency",
     sql: `with expired as (
             select ctid from competition_idempotency

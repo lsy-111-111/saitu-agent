@@ -1,0 +1,1737 @@
+[
+  {
+    "recordId": "google-code-jam:2022:qualification-3d-printing:historical-public-task:qualification-3d-printing-2022:v3",
+    "coreDigest": "dabf662e516b076e0954af697f044e7a3ed2af5fb8f678d80fee6f711331ee64",
+    "authorAgentId": "/root/v7_catalog",
+    "officialEntry": {
+      "url": "https://github.com/google/coding-competitions-archive",
+      "title": "Google Code Jam官方题目档案",
+      "publisher": "Google",
+      "checkedAt": "2026-11-09",
+      "sourceId": "v7-landing:google-code-jam",
+      "kind": "official_archive",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/landing-reading-log.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_catalog_review",
+        "runId": "v7-catalog-independent-metadata-20261109",
+        "reviewedAt": "2026-11-08T17:02:35.610Z",
+        "metadataDigest": "c712bab19ca8b3f48fe63a994b9d1427510bcf5bf4997a3c8f73b4b2665612bc",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/metadata-review.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "google-kick-start:2022:round-a-speed-typing:historical-public-task:round-a-speed-typing-2022:v3",
+    "coreDigest": "9074e9142a69e79ccecf708bf13d736714aa4d5173f30842cdb4248c17a9ea22",
+    "authorAgentId": "/root/v7_catalog",
+    "officialEntry": {
+      "url": "https://github.com/google/coding-competitions-archive",
+      "title": "Google Kick Start官方题目档案",
+      "publisher": "Google",
+      "checkedAt": "2026-11-09",
+      "sourceId": "v7-landing:google-kick-start",
+      "kind": "official_archive",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/landing-reading-log.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_catalog_review",
+        "runId": "v7-catalog-independent-metadata-20261109",
+        "reviewedAt": "2026-11-08T17:02:35.610Z",
+        "metadataDigest": "7a671bf5bfc0eec5bad882cc5e6b1d7dd6ff37b7d2ce971785167836eb61c946",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/metadata-review.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "google-hash-code:2022:qualification-mentorship:historical-public-task:qualification-mentorship-2022:v3",
+    "coreDigest": "483ba425949142173f6de9543e71bce5dcfe6ee86b91d934baeb294245a115b1",
+    "authorAgentId": "/root/v7_catalog",
+    "officialEntry": {
+      "url": "https://github.com/google/coding-competitions-archive",
+      "title": "Google Hash Code官方题目档案",
+      "publisher": "Google",
+      "checkedAt": "2026-11-09",
+      "sourceId": "v7-landing:google-hash-code",
+      "kind": "official_archive",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/landing-reading-log.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_catalog_review",
+        "runId": "v7-catalog-independent-metadata-20261109",
+        "reviewedAt": "2026-11-08T17:02:35.610Z",
+        "metadataDigest": "aa62697fcfbf6c3767c84a5af1fc82b1f6f9787a68ec3486309d86bd69cf66fc",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/metadata-review.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "apple-swift-student-challenge:2026:app-playground:individual-student:global-2026:v3",
+    "coreDigest": "36cb0c910438e21006e63d40927911fd7d0f9ca54881023fb7ce507cc7a7aad0",
+    "authorAgentId": "/root/v7_catalog",
+    "officialEntry": {
+      "url": "https://developer.apple.com/swift-student-challenge/",
+      "title": "Apple Swift Student Challenge官方赛事入口",
+      "publisher": "Apple Inc.",
+      "checkedAt": "2026-11-09",
+      "sourceId": "v7-landing:apple-swift-student-challenge",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/landing-reading-log.json"
+    },
+    "lastHeldEvent": {
+      "edition": "2026 Swift Student Challenge",
+      "label": "最近已核实举办届次：2026（具体比赛日期待补）",
+      "startDate": null,
+      "endDate": null,
+      "precision": "year",
+      "sourceUrl": "https://developer.apple.com/swift-student-challenge/",
+      "scope": "2026 Distinguished Winners及2026获奖者报道，不将WWDC日期当比赛日",
+      "checkedAt": "2026-11-09"
+    },
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_catalog_review",
+        "runId": "v7-catalog-independent-metadata-20261109",
+        "reviewedAt": "2026-11-08T17:02:35.610Z",
+        "metadataDigest": "96017563187ea47b9798e4936bddce18e3ddb96246cd76b33bb3944d18d792e8",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/metadata-review.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "international-mathematics-competition:2026-33:proofs:individual:bulgaria-2026:v3",
+    "coreDigest": "a40240b1cc0973b1a10107a2d390fe961ba4e4c2992cbc856972e7bc71bd97f1",
+    "authorAgentId": "/root/v7_catalog",
+    "officialEntry": {
+      "url": "https://www.imc-math.org.uk/",
+      "title": "International Mathematics Competition for University Students官方赛事入口",
+      "publisher": "International Mathematics Competition for University Students",
+      "checkedAt": "2026-11-09",
+      "sourceId": "v7-landing:international-mathematics-competition",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/landing-reading-log.json"
+    },
+    "lastHeldEvent": {
+      "edition": "33rd IMC 2026",
+      "label": "最近已举办：第33届IMC（2026年7月27日至8月3日）",
+      "startDate": "2026-07-27",
+      "endDate": "2026-08-03",
+      "precision": "day",
+      "sourceUrl": "https://imc-math.org.uk/?item=info&year=2026",
+      "scope": "2026归档页明确This year’s competition took place及日期，不采用2027未来赛程",
+      "checkedAt": "2026-11-09"
+    },
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_catalog_review",
+        "runId": "v7-catalog-independent-metadata-20261109",
+        "reviewedAt": "2026-11-08T17:02:35.610Z",
+        "metadataDigest": "25ab2c318368486c5592b4d192f51564c76f25e7727813c77d28275831586d1e",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/metadata-review.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "dandad-new-blood:2026-share-your-passion:personal-social-campaign:eligible-creative:global-2026-dad-brief:v3",
+    "coreDigest": "98ac1802f56beee32bcd960d5e202463fcdc776ada729f3d1a7c7a2444d9750b",
+    "authorAgentId": "/root/v7_catalog",
+    "officialEntry": {
+      "url": "https://www.dandad.org/awards/new-blood-awards",
+      "title": "D&AD New Blood Awards官方赛事入口",
+      "publisher": "D&AD",
+      "checkedAt": "2026-11-09",
+      "sourceId": "v7-landing:dandad-new-blood",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/landing-reading-log.json"
+    },
+    "lastHeldEvent": {
+      "edition": "D&AD New Blood Awards 2026",
+      "label": "最近已核实获奖届次：2026（具体典礼日期待补）",
+      "startDate": null,
+      "endDate": null,
+      "precision": "year",
+      "sourceUrl": "https://www.dandad.org/awards/new-blood-awards",
+      "scope": "当前官网2026 Winners，页面主赛程属于2027未来届次，二者分开",
+      "checkedAt": "2026-11-09"
+    },
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_catalog_review",
+        "runId": "v7-catalog-independent-metadata-20261109",
+        "reviewedAt": "2026-11-08T17:02:35.610Z",
+        "metadataDigest": "68a52db18eec9ba15982fe2803d879991168199dca6bc966951f0534bbbaba75",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/metadata-review.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "national-college-math-modeling:2026:undergraduate-group:undergraduate:china-2026-a:v3",
+    "coreDigest": "10f8777b024c772fdbacde0a8443a8c94961fb840281d434d1e3ae91df8d52fe",
+    "authorAgentId": "/root/v7_catalog",
+    "officialEntry": {
+      "url": "https://www.mcm.edu.cn/",
+      "title": "全国大学生数学建模竞赛官方赛事入口",
+      "publisher": "中国工业与应用数学学会",
+      "checkedAt": "2026-11-09",
+      "sourceId": "v7-landing:national-college-math-modeling",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/landing-reading-log.json"
+    },
+    "lastHeldEvent": {
+      "edition": "2026高教社杯全国大学生数学建模竞赛",
+      "label": "最近已举办：2026届（9月10日开始；结束日期本轮未补齐）",
+      "startDate": "2026-09-10",
+      "endDate": null,
+      "precision": "day",
+      "sourceUrl": "https://www.mcm.edu.cn/",
+      "scope": "主页2026开赛时刻及已发布赛题、2026获奖名单，结束日期留空",
+      "checkedAt": "2026-11-09"
+    },
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_catalog_review",
+        "runId": "v7-catalog-independent-metadata-20261109",
+        "reviewedAt": "2026-11-08T17:02:35.610Z",
+        "metadataDigest": "db3ea3ccfcd4cb7f5fa7700805fa50c5fa662c1d9426c04fe31d1f6799cbae7b",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/metadata-review.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "comap-mcm-icm:2026:mcm-a:undergraduate-or-below:global-2026-mcm-a:v3",
+    "coreDigest": "09e8a5f4f28890bccc914c04579cd37066f355a11b167efa9830a2943f627b0a",
+    "authorAgentId": "/root/v7_catalog_review",
+    "officialEntry": {
+      "url": "https://comap.org/contests/mcm-icm",
+      "title": "美国大学生数学建模竞赛MCM/ICM官方赛事入口",
+      "publisher": "COMAP",
+      "checkedAt": "2026-11-09",
+      "sourceId": "v7-landing:comap-mcm-icm",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/landing-reading-log.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [
+      {
+        "id": "v7-stable-audience:comap-mcm-icm:degree",
+        "field": "degree",
+        "operator": "not_in",
+        "value": [
+          "master",
+          "doctorate",
+          "postgraduate"
+        ],
+        "factIds": [
+          "v7-audience:comap-mcm-icm:degree"
+        ],
+        "sourceIds": [
+          "v7-audience:comap:standing-homepage",
+          "v7-audience:comap:held-2026-rules"
+        ],
+        "stabilityBasis": "standing_rule",
+        "explanation": "常设官网定义与2026规则一致，明确的硕士/博士学生参赛身份与该层次范围冲突；不把英文undergraduate机械等同于中文本科而排除高职/专科，未知学段不排除。"
+      }
+    ],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_catalog_review",
+        "runId": "v7-catalog-independent-metadata-20261109",
+        "reviewedAt": "2026-11-08T17:02:35.610Z",
+        "metadataDigest": "a207714ca33fa13f987a41857a9107eee524d4d2a6ce7794ef9f9caf8a5b8b33",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/metadata-review.json",
+        "outcome": "approved"
+      },
+      {
+        "reviewerId": "/root",
+        "runId": "v7-stable-audience-root-independent-20261109",
+        "reviewedAt": "2026-11-08T17:40:57.599325+00:00",
+        "metadataDigest": "7e631895b4f7285fad11d6c3f5c978e0286c0185c107ebf422ad23be6af93245",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/root-stable-audience-review.json",
+        "outcome": "approved"
+      }
+    ],
+    "stableAudienceEvidence": {
+      "sources": [
+        {
+          "id": "v7-audience:comap:standing-homepage",
+          "url": "https://comap.org/contests/mcm-icm",
+          "title": "COMAP MCM/ICM常设赛事简介",
+          "publisher": "COMAP",
+          "authority": "organizer",
+          "scope": "COMAP常设MCM/ICM简介的高中及大学本科层次学生参赛者边界；不含研究生导师角色或当届报名状态",
+          "checkedAt": "2026-11-08T17:31:35.347223+00:00",
+          "publishedAt": null,
+          "accessStatus": "body_read",
+          "locator": "The Challenge首段：赛事的学生参赛者为高中生及大学本科层次学生",
+          "verificationMethod": "agent_web_read",
+          "retrievedAt": "2026-11-08T17:31:35.347223+00:00",
+          "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/stable-audience-author-evidence.json",
+          "integrity": "consistent"
+        },
+        {
+          "id": "v7-audience:comap:held-2026-rules",
+          "url": "https://www2.scut.edu.cn/_upload/article/files/e5/f2/8871d9db4b7b8ea970516352c699/5b837653-8e0c-41dc-9238-97f734bcb90f.pdf",
+          "title": "COMAP 2026 MCM/ICM规则原件",
+          "publisher": "COMAP（华南理工大学托管原件）",
+          "authority": "official_host",
+          "scope": "已举办2026 MCM/ICM规则第2页Participants中参赛学生层次；不把辅导教师或Advisor计作学生队员",
+          "checkedAt": "2026-11-08T17:31:33.822706+00:00",
+          "publishedAt": null,
+          "accessStatus": "body_read",
+          "locator": "PDF第2页 I. Participants and Advisors / Contest Participants；只核对学生队员层次",
+          "verificationMethod": "agent_web_read",
+          "retrievedAt": "2026-11-08T17:31:33.822706+00:00",
+          "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/stable-audience-author-evidence.json",
+          "integrity": "consistent"
+        }
+      ],
+      "facts": [
+        {
+          "id": "v7-audience:comap-mcm-icm:degree",
+          "field": "eligibility.degree.v7-stable-audience",
+          "text": "COMAP官网常设介绍及已举办2026规则均将学生参赛队员限定在高中及大学本科层次；研究生可担任Advisor的说明不等同于研究生学生队员参赛。",
+          "kind": "official_fact",
+          "status": "historical",
+          "sourceIds": [
+            "v7-audience:comap:standing-homepage",
+            "v7-audience:comap:held-2026-rules"
+          ],
+          "sourceScopes": [
+            {
+              "sourceId": "v7-audience:comap:standing-homepage",
+              "scope": "COMAP常设MCM/ICM简介的高中及大学本科层次学生参赛者边界；不含研究生导师角色或当届报名状态"
+            },
+            {
+              "sourceId": "v7-audience:comap:held-2026-rules",
+              "scope": "已举办2026 MCM/ICM规则第2页Participants中参赛学生层次；不把辅导教师或Advisor计作学生队员"
+            }
+          ],
+          "scope": "COMAP常设MCM/ICM简介的高中及大学本科层次学生参赛者边界；不含研究生导师角色或当届报名状态；已举办2026 MCM/ICM规则第2页Participants中参赛学生层次；不把辅导教师或Advisor计作学生队员",
+          "checkedAt": "2026-11-08T17:34:45.512Z",
+          "supersedes": [],
+          "conflictsWith": [],
+          "entity": {
+            "editionId": "2026",
+            "trackId": "mcm-a",
+            "groupId": "undergraduate-or-below",
+            "scopeId": "global-2026-mcm-a"
+          }
+        }
+      ],
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/stable-audience-author-evidence.json"
+    }
+  },
+  {
+    "recordId": "china-software-cup:2026-15:a3-learning-agents:a-higher-education:china-a3-2026:v3",
+    "coreDigest": "9cc0449ff27d1e6ab9229324149f973b50c3260b07be70bf40f3bc0034022106",
+    "authorAgentId": "/root/v7_catalog",
+    "officialEntry": {
+      "url": "https://www.cnsoftbei.com/",
+      "title": "中国软件杯大学生软件设计大赛官方赛事入口",
+      "publisher": "中国软件杯大学生软件设计大赛组委会",
+      "checkedAt": "2026-11-09",
+      "sourceId": "v7-landing:china-software-cup",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/landing-reading-log.json"
+    },
+    "lastHeldEvent": {
+      "edition": "2026第十五届中国软件杯",
+      "label": "最近已核实举办届次：2026第十五届（具体决赛日期待补）",
+      "startDate": null,
+      "endDate": null,
+      "precision": "year",
+      "sourceUrl": "https://www.cnsoftbei.com/",
+      "scope": "官网2026全国总决赛一二三等奖及获奖证书通知，未把公告发布日期当赛日",
+      "checkedAt": "2026-11-09"
+    },
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_catalog_review",
+        "runId": "v7-catalog-independent-metadata-20261109",
+        "reviewedAt": "2026-11-08T17:02:35.610Z",
+        "metadataDigest": "0f313f2844d608f7d57981fbdb5443f4cc09fbd5b965ee6df43e895dad21ea62",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/metadata-review.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "china-college-computer-design:2026-19:ai-industrial-vision:full-time-undergraduate:china-ai-industrial-2026:v3",
+    "coreDigest": "529b5e1db84c064d182cdf82536b36ce7c9941ad1f23d580660e6efd4a07bb5e",
+    "authorAgentId": "/root/v7_catalog",
+    "officialEntry": {
+      "url": "https://jsjds.blcu.edu.cn/",
+      "title": "中国大学生计算机设计大赛官方赛事入口",
+      "publisher": "中国大学生计算机设计大赛组织委员会",
+      "checkedAt": "2026-11-09",
+      "sourceId": "v7-landing:china-college-computer-design",
+      "kind": "official_host_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/landing-reading-log.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_catalog_review",
+        "runId": "v7-catalog-independent-metadata-20261109",
+        "reviewedAt": "2026-11-08T17:02:35.610Z",
+        "metadataDigest": "74d311fca4a05d249e726d5d5f4045b667674565eb5c69b7b6f2c17eb9156079",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/metadata-review.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "ccf-ccsp:2025:systems-programming-xor:csp-qualified-students:china-harbin-2025:v3",
+    "coreDigest": "21f4de241aeae8caaebfb6ff1bebd65bec5c75086f5eeffeef34c35e5363fdd4",
+    "authorAgentId": "/root/v7_catalog",
+    "officialEntry": {
+      "url": "https://ccsp.ccf.org.cn/",
+      "title": "CCF大学生计算机系统与程序设计竞赛官方赛事入口",
+      "publisher": "中国计算机学会",
+      "checkedAt": "2026-11-09",
+      "sourceId": "v7-landing:ccf-ccsp",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/landing-reading-log.json"
+    },
+    "lastHeldEvent": {
+      "edition": "2026 CCF CCSP",
+      "label": "最近已举办：2026 CCF CCSP（10月21日至22日）",
+      "startDate": "2026-10-21",
+      "endDate": "2026-10-22",
+      "precision": "day",
+      "sourceUrl": "https://ccsp.ccf.org.cn/",
+      "scope": "官网10月21至22日举办安排与10月28日圆满落幕报道共同支持；非CSP认证时间",
+      "checkedAt": "2026-11-09"
+    },
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_catalog_review",
+        "runId": "v7-catalog-independent-metadata-20261109",
+        "reviewedAt": "2026-11-08T17:02:35.610Z",
+        "metadataDigest": "6070e48712df7ff5238f498da725b652dbdf1b740d87a4966abc1390586c79ec",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/metadata-review.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "national-college-mathematics:2011-3:calculus-third-derivative:non-mathematics:zhejiang-zjut-preliminary-2011:v3",
+    "coreDigest": "68cf37dda61a0a4491eaffa903bd19200e84f07d34735af47b524b778ba6468d",
+    "authorAgentId": "/root/v7_catalog_review",
+    "officialEntry": {
+      "url": "https://www.cms.org.cn/competition/NationalCollegeStudentMathematicsCompetition.html",
+      "title": "中国数学会全国大学生数学竞赛官方栏目",
+      "publisher": "中国数学会",
+      "checkedAt": "2026-11-08",
+      "sourceId": "v7-landing:cms-national-college-mathematics",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/correction-captures/observations.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_catalog_review",
+        "runId": "v7-catalog-independent-metadata-20261109",
+        "reviewedAt": "2026-11-08T17:02:35.610Z",
+        "metadataDigest": "b2073cad98fe5f6d2c0820ccecb4c9b9ef5618345497d8c7d421ab21f1c06278",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/metadata-review.json",
+        "outcome": "changes_requested"
+      },
+      {
+        "reviewerId": "/root",
+        "runId": "v7-root-correction-review-20261109",
+        "reviewedAt": "2026-11-08T17:05:09.349425+00:00",
+        "metadataDigest": "72866db4b1c2c7b3fa331b92fb4ce557994636f903b28348245f07d971d07395",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/root-metadata-correction-review.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "mathorcup:2026-16:d-three-dimensional-packing:undergraduate-d:china-spring-d-2026:v3",
+    "coreDigest": "7913b9f3ef114e3ff6efe5c14af8fb44beea1198d2735d0a1cf4cfdd003ec134",
+    "authorAgentId": "/root/v7_catalog",
+    "officialEntry": {
+      "url": "https://www.mathorcup.org/",
+      "title": "MathorCup数学应用挑战赛官方赛事入口",
+      "publisher": "中国优选法统筹法与经济数学研究会",
+      "checkedAt": "2026-11-09",
+      "sourceId": "v7-landing:mathorcup",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/landing-reading-log.json"
+    },
+    "lastHeldEvent": {
+      "edition": "2026第十六届MathorCup数学应用挑战赛",
+      "label": "最近已举办：2026第十六届（4月17日至21日）",
+      "startDate": "2026-04-17",
+      "endDate": "2026-04-21",
+      "precision": "day",
+      "sourceUrl": "https://www.mathorcup.org/",
+      "scope": "主页2026赛程；4月17日正式赛题和更正通知已公开。不同于11月大数据赛",
+      "checkedAt": "2026-11-09"
+    },
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_catalog_review",
+        "runId": "v7-catalog-independent-metadata-20261109",
+        "reviewedAt": "2026-11-08T17:02:35.610Z",
+        "metadataDigest": "f8065fe36095bcefca48a370a14eb3a61e26f5637067d0552f93b843cbb8ce91",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/metadata-review.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "yau-college-mathematics:2026-17:algebra-non-simple-group:undergraduate-individual:global-2026-historical-training:v3",
+    "coreDigest": "aa2a2ac88d7c234a597720ae67bee97dad8b932faa3bc4ff379c359516c2c7be",
+    "authorAgentId": "/root/v7_catalog_review",
+    "officialEntry": {
+      "url": "https://www.yau-contest.com/",
+      "title": "丘成桐大学生数学竞赛官方赛事入口",
+      "publisher": "清华大学丘成桐数学科学中心、上海数学与交叉学科研究院",
+      "checkedAt": "2026-11-09",
+      "sourceId": "v7-landing:yau-college-mathematics",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/landing-reading-log.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [
+      {
+        "id": "v7-stable-audience:yau-college-mathematics:degree",
+        "field": "degree",
+        "operator": "in",
+        "value": [
+          "undergraduate"
+        ],
+        "factIds": [
+          "v7-audience:yau-college-mathematics:degree"
+        ],
+        "sourceIds": [
+          "v7-audience:yau:held-2025-rules",
+          "v7-audience:yau:held-2026-rules"
+        ],
+        "stabilityBasis": "multiple_held_editions",
+        "explanation": "2025、2026两个已举办届次均明确本科在校学生范围；仅当学生明确学段与本科不符时排除，不由学校、专业或年龄猜测学段。"
+      },
+      {
+        "id": "v7-stable-audience:yau-college-mathematics:enrolled",
+        "field": "enrolled",
+        "operator": "eq",
+        "value": true,
+        "factIds": [
+          "v7-audience:yau-college-mathematics:enrolled"
+        ],
+        "sourceIds": [
+          "v7-audience:yau:held-2025-rules",
+          "v7-audience:yau:held-2026-rules"
+        ],
+        "stabilityBasis": "multiple_held_editions",
+        "explanation": "两个已举办届次均明确在校学生人群，仅在学生明确已毕业/非在校身份时产生冲突；未知在校状态保持不排除。"
+      }
+    ],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_catalog_review",
+        "runId": "v7-catalog-independent-metadata-20261109",
+        "reviewedAt": "2026-11-08T17:02:35.610Z",
+        "metadataDigest": "44eeaae2a22489b09ea027caaaf561ea3269df918faa5b1461785310bf6729fd",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/metadata-review.json",
+        "outcome": "approved"
+      },
+      {
+        "reviewerId": "/root",
+        "runId": "v7-stable-audience-root-independent-20261109",
+        "reviewedAt": "2026-11-08T17:40:57.599325+00:00",
+        "metadataDigest": "24f516fdbbd61230b4b7b964194faaf460d3e6959610d1291eb99693885f5381",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/root-stable-audience-review.json",
+        "outcome": "approved"
+      }
+    ],
+    "stableAudienceEvidence": {
+      "sources": [
+        {
+          "id": "v7-audience:yau:held-2025-rules",
+          "url": "https://yau-contest.com/show-86-72.html",
+          "title": "2025第十六届丘成桐大学生数学竞赛官方公告",
+          "publisher": "丘成桐大学生数学竞赛",
+          "authority": "organizer",
+          "scope": "已举办2025第十六届面向尚未取得学士学位的本科在校学生的人群规则；不含当届报名状态",
+          "checkedAt": "2026-11-08T17:31:33.782880+00:00",
+          "publishedAt": null,
+          "accessStatus": "body_read",
+          "locator": "2025丘成桐大学生数学竞赛全球报名开启（更新）正文首段，发布时间2025-03-14",
+          "verificationMethod": "agent_web_read",
+          "retrievedAt": "2026-11-08T17:31:33.782880+00:00",
+          "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/stable-audience-author-evidence.json",
+          "integrity": "consistent"
+        },
+        {
+          "id": "v7-audience:yau:held-2026-rules",
+          "url": "https://www.yau-contest.com/page-rule.html",
+          "title": "2026第十七届丘成桐大学生数学竞赛官方规则",
+          "publisher": "丘成桐大学生数学竞赛",
+          "authority": "organizer",
+          "scope": "已举办2026第十七届面向尚未取得学士学位的本科在校学生的人群规则；不含当届报名状态",
+          "checkedAt": "2026-11-08T17:31:33.730722+00:00",
+          "publishedAt": null,
+          "accessStatus": "body_read",
+          "locator": "2026参赛规则正文首段；仅采用本科在校人群定义，不采用其中报名日期作当前状态",
+          "verificationMethod": "agent_web_read",
+          "retrievedAt": "2026-11-08T17:31:33.730722+00:00",
+          "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/stable-audience-author-evidence.json",
+          "integrity": "consistent"
+        }
+      ],
+      "facts": [
+        {
+          "id": "v7-audience:yau-college-mathematics:degree",
+          "field": "eligibility.degree.v7-stable-audience",
+          "text": "2025第十六届及2026第十七届官方公告均明确面向尚未取得学士学位的本科在校生；该两届明确的本科学生参赛范围不包括硕士、博士或专科学生身份。",
+          "kind": "official_fact",
+          "status": "historical",
+          "sourceIds": [
+            "v7-audience:yau:held-2025-rules",
+            "v7-audience:yau:held-2026-rules"
+          ],
+          "sourceScopes": [
+            {
+              "sourceId": "v7-audience:yau:held-2025-rules",
+              "scope": "已举办2025第十六届面向尚未取得学士学位的本科在校学生的人群规则；不含当届报名状态"
+            },
+            {
+              "sourceId": "v7-audience:yau:held-2026-rules",
+              "scope": "已举办2026第十七届面向尚未取得学士学位的本科在校学生的人群规则；不含当届报名状态"
+            }
+          ],
+          "scope": "已举办2025第十六届面向尚未取得学士学位的本科在校学生的人群规则；不含当届报名状态；已举办2026第十七届面向尚未取得学士学位的本科在校学生的人群规则；不含当届报名状态",
+          "checkedAt": "2026-11-08T17:34:45.512Z",
+          "supersedes": [],
+          "conflictsWith": [],
+          "entity": {
+            "editionId": "2026-17",
+            "trackId": "algebra-non-simple-group",
+            "groupId": "undergraduate-individual",
+            "scopeId": "global-2026-historical-training"
+          }
+        },
+        {
+          "id": "v7-audience:yau-college-mathematics:enrolled",
+          "field": "eligibility.enrolled.v7-stable-audience",
+          "text": "2025第十六届及2026第十七届均明确要求本科在校生；这是一致的人群边界，不是对当前报名开放与否的判断。",
+          "kind": "official_fact",
+          "status": "historical",
+          "sourceIds": [
+            "v7-audience:yau:held-2025-rules",
+            "v7-audience:yau:held-2026-rules"
+          ],
+          "sourceScopes": [
+            {
+              "sourceId": "v7-audience:yau:held-2025-rules",
+              "scope": "已举办2025第十六届面向尚未取得学士学位的本科在校学生的人群规则；不含当届报名状态"
+            },
+            {
+              "sourceId": "v7-audience:yau:held-2026-rules",
+              "scope": "已举办2026第十七届面向尚未取得学士学位的本科在校学生的人群规则；不含当届报名状态"
+            }
+          ],
+          "scope": "已举办2025第十六届面向尚未取得学士学位的本科在校学生的人群规则；不含当届报名状态；已举办2026第十七届面向尚未取得学士学位的本科在校学生的人群规则；不含当届报名状态",
+          "checkedAt": "2026-11-08T17:34:45.512Z",
+          "supersedes": [],
+          "conflictsWith": [],
+          "entity": {
+            "editionId": "2026-17",
+            "trackId": "algebra-non-simple-group",
+            "groupId": "undergraduate-individual",
+            "scopeId": "global-2026-historical-training"
+          }
+        }
+      ],
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/stable-audience-author-evidence.json"
+    }
+  },
+  {
+    "recordId": "atcoder-beginner-contest:2025-427:d-simple-game:individual-open:global-online-abc427:v3",
+    "coreDigest": "5ffaebb182e4a8a9fedc2694af45ce555656560c0f700593cda015d3ae80da70",
+    "authorAgentId": "/root/v7_catalog_review",
+    "officialEntry": {
+      "url": "https://atcoder.jp/",
+      "title": "AtCoder Beginner Contest官方赛事入口",
+      "publisher": "AtCoder Inc.",
+      "checkedAt": "2026-11-09",
+      "sourceId": "v7-landing:atcoder-beginner-contest",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/landing-reading-log.json"
+    },
+    "lastHeldEvent": {
+      "edition": "AtCoder Beginner Contest 483",
+      "label": "最近已举办：ABC 483（2026年11月7日）",
+      "startDate": "2026-11-07",
+      "endDate": "2026-11-07",
+      "precision": "day",
+      "sourceUrl": "https://atcoder.jp/",
+      "scope": "主页Recent Contests中的ABC场次，不以AGC/AHC日期代替ABC",
+      "checkedAt": "2026-11-09"
+    },
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_catalog_review",
+        "runId": "v7-catalog-independent-metadata-20261109",
+        "reviewedAt": "2026-11-08T17:02:35.610Z",
+        "metadataDigest": "dae7e69085f723ab64c550737fdef9e9a07b5413aba5b05bb9ba2ad12b4ef237",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/metadata-review.json",
+        "outcome": "changes_requested"
+      },
+      {
+        "reviewerId": "/root",
+        "runId": "v7-root-correction-review-20261109",
+        "reviewedAt": "2026-11-08T17:05:09.349425+00:00",
+        "metadataDigest": "28df7246366e029a0eb3fc49e8d7592dd458ba936d2c31d540f60a03f3e79299",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/root-metadata-correction-review.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "intercultural-competence:2025-liaoning:case-analysis:chinese-student-team:liaoning-semifinal:v3",
+    "coreDigest": "733a9b6e75f86637e4512955823326b4273749515963d382d2913ec5ce554f96",
+    "authorAgentId": "/root/v7_catalog_review",
+    "officialEntry": {
+      "url": "https://ict.sflep.com/",
+      "title": "全国大学生跨文化能力大赛官方赛事入口",
+      "publisher": "上海外语教育出版社跨文化能力测试中心",
+      "checkedAt": "2026-11-09",
+      "sourceId": "v7-landing:intercultural-competence",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/landing-reading-log.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_catalog_review",
+        "runId": "v7-catalog-independent-metadata-20261109",
+        "reviewedAt": "2026-11-08T17:02:35.610Z",
+        "metadataDigest": "c7283e13424d4ff4b52e90d784e01968569ceeae059e784db3e1510689993f31",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/metadata-review.json",
+        "outcome": "changes_requested"
+      },
+      {
+        "reviewerId": "/root",
+        "runId": "v7-root-correction-review-20261109",
+        "reviewedAt": "2026-11-08T17:05:09.349425+00:00",
+        "metadataDigest": "1c7b20ce87b9c620d33303592028e275f8ccc48f4485f758613421099d49af84",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/root-metadata-correction-review.json",
+        "outcome": "approved"
+      },
+      {
+        "reviewerId": "/root/fast24_f_integration",
+        "runId": "fast24-source08-extra-task-incremental-F-20261109224807098-core-link",
+        "reviewedAt": "2026-11-09T22:48:07.098Z",
+        "metadataDigest": "1f202b575652df446de8f1dd945d47ebd2893bd684f787a00a94bb0c74ac196d",
+        "evidenceArtifact": "artifacts/fast24-20261109/F/source08-extra-task-binding-directed-review.safe.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "chongqing-rural-revitalization:2025-5:bencao-cultural-tourism:students-graduates-2-5:chongqing-regular:v3",
+    "coreDigest": "41d0790f809c29b13f7d75f409a740960a0af74dbade1cf2431e04629b7a4a16",
+    "authorAgentId": "/root/v7_catalog_review",
+    "officialEntry": {
+      "url": "https://www.cqgjxh.com/",
+      "title": "重庆市大学生乡村振兴创意大赛官方赛事入口",
+      "publisher": "重庆市高等教育学会",
+      "checkedAt": "2026-11-09",
+      "sourceId": "v7-landing:chongqing-rural-revitalization",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/landing-reading-log.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_catalog_review",
+        "runId": "v7-catalog-independent-metadata-20261109",
+        "reviewedAt": "2026-11-08T17:02:35.610Z",
+        "metadataDigest": "5814b8a33ab3e19fa456cce340a10e53b1e8a197ca7159e35fc17538deb7447e",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/metadata-review.json",
+        "outcome": "changes_requested"
+      },
+      {
+        "reviewerId": "/root",
+        "runId": "v7-root-correction-review-20261109",
+        "reviewedAt": "2026-11-08T17:05:09.349425+00:00",
+        "metadataDigest": "bca45914052f10a569e594b74640c4f05cb5961d75d92f478b72af208451a73a",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/root-metadata-correction-review.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "chemical-engineering-design:2026-20:clean-styrene-plant:undergraduate:china-styrene:v3",
+    "coreDigest": "30bdf0709daa1eb64410b1aeb8ab89642f1dbdd0ab638eb0df4ebb4dad411c39",
+    "authorAgentId": "/root/v7_catalog",
+    "officialEntry": {
+      "url": "https://iche.zju.edu.cn/",
+      "title": "全国大学生化工设计竞赛官方赛事入口",
+      "publisher": "中国化工学会、中国化工教育协会",
+      "checkedAt": "2026-11-09",
+      "sourceId": "v7-landing:chemical-engineering-design",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/landing-reading-log.json"
+    },
+    "lastHeldEvent": {
+      "edition": "2026第二十届全国大学生化工设计竞赛",
+      "label": "最近已核实举办届次：2026第二十届（具体决赛日期待补）",
+      "startDate": null,
+      "endDate": null,
+      "precision": "year",
+      "sourceUrl": "https://iche.zju.edu.cn/",
+      "scope": "2026全国总决赛视频与2026授奖团队通知；不采纳网页1970占位日期",
+      "checkedAt": "2026-11-09"
+    },
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_catalog_review",
+        "runId": "v7-catalog-independent-metadata-20261109",
+        "reviewedAt": "2026-11-08T17:02:35.610Z",
+        "metadataDigest": "b0bf7c7457539217e946d52eb0818e44a5194f4a118f6e990b3eaf5b4d782811",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/metadata-review.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "embedded-chip-system-design:2026:gowin-real-time-synth:nuaa-undergraduate-graduate:nuaa-gowin-fpga:v3",
+    "coreDigest": "c25d91413bff3ef86114b06850f20fd56937207d54c7e59e907d3f5212d856bb",
+    "authorAgentId": "/root/v7_catalog",
+    "officialEntry": {
+      "url": "https://www.socchina.net/",
+      "title": "全国大学生嵌入式芯片与系统设计竞赛官方赛事入口",
+      "publisher": "全国大学生嵌入式芯片与系统设计竞赛组委会",
+      "checkedAt": "2026-11-09",
+      "sourceId": "v7-landing:embedded-chip-system-design",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/landing-reading-log.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_catalog_review",
+        "runId": "v7-catalog-independent-metadata-20261109",
+        "reviewedAt": "2026-11-08T17:02:35.610Z",
+        "metadataDigest": "ac8ee5d9823d896f3358af06396003c06c2fb95662408d244e984009dab6abac",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/metadata-review.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "chemistry-experiment-innovation:2025-5:popular-science-cochineal:popular-science:china-2025-popular-science:v3",
+    "coreDigest": "661e7fb139f2dc8073def33e5983514975f25e9da371e28e4574ea9e0017c633",
+    "authorAgentId": "/root/v7_catalog",
+    "officialEntry": {
+      "url": "https://cid.nju.edu.cn/",
+      "title": "全国大学生化学实验创新设计大赛官方赛事入口",
+      "publisher": "教育部高等学校化学教育研究中心、高等学校国家级实验教学示范中心联席会",
+      "checkedAt": "2026-11-09",
+      "sourceId": "v7-landing:chemistry-experiment-innovation",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/landing-reading-log.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_catalog_review",
+        "runId": "v7-catalog-independent-metadata-20261109",
+        "reviewedAt": "2026-11-08T17:02:35.610Z",
+        "metadataDigest": "23c6183c94b797469fb70c2831d1bfbaba6fce1b4f253a8409f1588348421c96",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/metadata-review.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "smart-car:2025-20-outdoor:outdoor-ros-mapping:higher-education:china-2025-outdoor-ros:v3",
+    "coreDigest": "01adf43abf9ebe44122b87621980b0f1e665be54e6d343838b43ddeb4c24f51d",
+    "authorAgentId": "/root/v7_catalog",
+    "officialEntry": {
+      "url": "https://www.smartcar.zone/",
+      "title": "全国大学生智能汽车竞赛官方赛事入口",
+      "publisher": "全国大学生智能汽车竞赛组织委员会",
+      "checkedAt": "2026-11-09",
+      "sourceId": "v7-landing:smart-car",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/landing-reading-log.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_catalog_review",
+        "runId": "v7-catalog-independent-metadata-20261109",
+        "reviewedAt": "2026-11-08T17:02:35.610Z",
+        "metadataDigest": "1b4d228b8611370b9a3f5db6efa1bb2e5498e7148202035c51315b80f013476f",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/metadata-review.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "robomaster-university:2026-rmuc:engineering-core-assembly:university:rmuc-2026-core-assembly:v3",
+    "coreDigest": "d11f60e8c8ddfa428ac68d5a59cd164d201666195b53ae6677edda8bca8a60e6",
+    "authorAgentId": "/root/v7_catalog",
+    "officialEntry": {
+      "url": "https://www.robomaster.com/zh-CN",
+      "title": "RoboMaster机甲大师高校系列赛官方赛事入口",
+      "publisher": "RoboMaster组委会",
+      "checkedAt": "2026-11-09",
+      "sourceId": "v7-landing:robomaster-university",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/landing-reading-log.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_catalog_review",
+        "runId": "v7-catalog-independent-metadata-20261109",
+        "reviewedAt": "2026-11-08T17:02:35.610Z",
+        "metadataDigest": "ef642bb661635b59e73ca02f96c506eda45e71902e0a54810421b6c70d7411fe",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/metadata-review.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "biomod:2023:biomolecular-design:undergraduate:biomod-2023:v3",
+    "coreDigest": "d0bbc2b3f2f74df672d5b93c140e91bf9371b4544fbf38a258a5b7330a47cf98",
+    "authorAgentId": "/root/v7_catalog_review",
+    "officialEntry": {
+      "url": "https://biomod.net/",
+      "title": "BIOMOD国际生物分子设计竞赛官方赛事入口",
+      "publisher": "BIOMOD Foundation",
+      "checkedAt": "2026-11-09",
+      "sourceId": "v7-landing:biomod",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/landing-reading-log.json"
+    },
+    "lastHeldEvent": {
+      "edition": "BIOMOD 2025",
+      "label": "最近已核实获奖届次：2025（具体开赛日期未核实）",
+      "startDate": null,
+      "endDate": null,
+      "precision": "year",
+      "sourceUrl": "https://biomod.net/",
+      "scope": "主页可读2025 Winners；未核实2026的已举办结果，不据报名或计划公告判断当前状态。",
+      "checkedAt": "2026-11-09"
+    },
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_catalog_review",
+        "runId": "v7-catalog-independent-metadata-20261109",
+        "reviewedAt": "2026-11-08T17:02:35.610Z",
+        "metadataDigest": "9a8a0cdd326ff25f7ab627e8f3478ae503ecb81daf9231031c9ea3a51c9b85d4",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/metadata-review.json",
+        "outcome": "changes_requested"
+      },
+      {
+        "reviewerId": "/root",
+        "runId": "v7-root-correction-review-20261109",
+        "reviewedAt": "2026-11-08T17:05:09.349425+00:00",
+        "metadataDigest": "24dbaa7ce95406cc4d2769fa9c80b414f21bbea1787df8f053c746c02a50e545",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/root-metadata-correction-review.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "taiwan-child-rights-lesson-contest:2023-first:preschool-rights-learning:preschool-student:taiwan-2023-preschool-student:v3",
+    "coreDigest": "b648302e89ab745569c46823885efa61a4627c0260bb421f4b890d0097fe4678",
+    "authorAgentId": "/root/v7_catalog_review",
+    "officialEntry": {
+      "url": "https://littletree.ndhu.edu.tw/",
+      "title": "國立東華大學師資培育中心官方主页",
+      "publisher": "國立東華大學師資培育中心",
+      "checkedAt": "2026-11-08",
+      "sourceId": "v7-landing:taiwan-child-rights-lesson-contest",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/additional-homepage-author-evidence.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_algorithm_review",
+        "runId": "v7-additional-metadata-independent-20261109",
+        "reviewedAt": "2026-11-08T17:24:15.023Z",
+        "metadataDigest": "8418ab08f311f047250e6cff7c775b026bbb97132ec010dc910749c484a9df10",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/algorithm-reviewer-official-metadata/metadata-review-receipts.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "ncyu-special-education-demonstration:2016-2017-105:reading-lesson-design:pre-service-teachers:taiwan-105-special-education:v3",
+    "coreDigest": "274a4f6245e49de2536cfee73ac9306018192fdfe4bf0a39f1368a2339237cc5",
+    "authorAgentId": "/root/v7_catalog_review",
+    "officialEntry": {
+      "url": "https://www.ncyu.edu.tw/cset/",
+      "title": "國立嘉義大學特殊教育教學研究中心官方主页",
+      "publisher": "國立嘉義大學特殊教育教學研究中心",
+      "checkedAt": "2026-11-08",
+      "sourceId": "v7-landing:ncyu-special-education-demonstration",
+      "kind": "official_host_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/additional-homepage-author-evidence.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_algorithm_review",
+        "runId": "v7-additional-metadata-independent-20261109",
+        "reviewedAt": "2026-11-08T17:24:15.023Z",
+        "metadataDigest": "b46930179d56728837189d74c3d3e6cb99670c48d1fff7cfc2918ae82c25157b",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/algorithm-reviewer-official-metadata/metadata-review-receipts.json",
+        "outcome": "approved"
+      },
+      {
+        "reviewerId": "/root/v7_algorithm_review",
+        "runId": "v7-additional-metadata-independent-20261109",
+        "reviewedAt": "2026-11-08T17:24:15.023Z",
+        "metadataDigest": "8d81e92ba90c4ac82f46f40b8792162ca8e22871f70b2f91e6f5b853bc402f0f",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/algorithm-reviewer-official-metadata/metadata-review-receipts.json",
+        "outcome": "changes_requested"
+      }
+    ]
+  },
+  {
+    "recordId": "acm-student-research:2025-chi:hci-education-research:undergraduate:chi-2025-undergrad:v3",
+    "coreDigest": "c945df84db4e7e1bb66a662a920535723937fc0a8ca17e169a8cf919fd028635",
+    "authorAgentId": "/root/v7_catalog_review",
+    "officialEntry": {
+      "url": "https://chi2025.acm.org/for-authors/student-research-competition/",
+      "title": "ACM CHI2025 Student Research Competition官方页面",
+      "publisher": "ACM SIGCHI",
+      "checkedAt": "2026-11-08",
+      "sourceId": "v7-landing:acm-student-research",
+      "kind": "official_host_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/additional-homepage-author-evidence.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_algorithm_review",
+        "runId": "v7-additional-metadata-independent-20261109",
+        "reviewedAt": "2026-11-08T17:24:15.023Z",
+        "metadataDigest": "a6f7e038bf403e9f38e2ae91e68cd2d70c50aad5864e08c209a04a5c5521765a",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/algorithm-reviewer-official-metadata/metadata-review-receipts.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "aiaa-design-build-fly:2025-2026:aircraft-missions:university-team:2026-charter-flight:v3",
+    "coreDigest": "d1a1abeacaa823b14852e1d688a86c6950e164a3b52de68ddc7c4d32227db70b",
+    "authorAgentId": "/root/v7_catalog_review",
+    "officialEntry": {
+      "url": "https://aiaa.org/dbf/",
+      "title": "AIAA Design/Build/Fly官方主页",
+      "publisher": "AIAA",
+      "checkedAt": "2026-11-08",
+      "sourceId": "v7-landing:aiaa-design-build-fly",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/additional-homepage-author-evidence.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_algorithm_review",
+        "runId": "v7-additional-metadata-independent-20261109",
+        "reviewedAt": "2026-11-08T17:24:15.023Z",
+        "metadataDigest": "9236dd826f9f45364955705c843ad321fa1fcb1bed4d39f88d5bcc370a59b5b2",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/algorithm-reviewer-official-metadata/metadata-review-receipts.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "china-undergraduate-physics-tournament:2020-rules:physics-fight:undergraduate:china-historical-2020:v3",
+    "coreDigest": "f764d92a970b87677cb575dd2be8515fed36667027166c4918da5b6b475ef47d",
+    "authorAgentId": "/root/v7_catalog_review",
+    "officialEntry": {
+      "url": "https://pt.nankai.edu.cn/cupt/",
+      "title": "南开大学CUPT官方赛事栏目（历史资料）",
+      "publisher": "南开大学",
+      "checkedAt": "2026-11-08",
+      "sourceId": "v7-landing:china-undergraduate-physics-tournament",
+      "kind": "official_host_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/additional-homepage-author-evidence.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_algorithm_review",
+        "runId": "v7-additional-metadata-independent-20261109",
+        "reviewedAt": "2026-11-08T17:24:15.023Z",
+        "metadataDigest": "f69211d55697ee451ddea22dba4a3cae4d978094659446dca7f8f53754c0ad75",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/algorithm-reviewer-official-metadata/metadata-review-receipts.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "icpc-programming:2025-world-finals:world-finals:qualified-university-team:world-finals-baku-2025:v3",
+    "coreDigest": "c08443fe26f5f83fba25d40356b0c0d000e302915e9e810c7f1eb949b54f1f23",
+    "authorAgentId": "/root/v7_catalog_review",
+    "officialEntry": {
+      "url": "https://icpc.global/",
+      "title": "ICPC官方主页",
+      "publisher": "ICPC Foundation",
+      "checkedAt": "2026-11-08",
+      "sourceId": "v7-landing:icpc-programming",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/additional-homepage-author-evidence.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_algorithm_review",
+        "runId": "v7-additional-metadata-independent-20261109",
+        "reviewedAt": "2026-11-08T17:24:15.023Z",
+        "metadataDigest": "a18e79678dd7430fdcfb34aa69309ba3551a7961a5cbd8c795f76a5b029b0224",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/algorithm-reviewer-official-metadata/metadata-review-receipts.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "lanqiao-cup:2019-10:cpp-array-successor:cpp-a:china-provincial-cpp-a-2019:v3",
+    "coreDigest": "2ccc823ea2314b326fd32ede5ab969164b83422f278caafa0975429e6c26b116",
+    "authorAgentId": "/root/v7_catalog_review",
+    "officialEntry": {
+      "url": "https://dasai.lanqiao.cn/",
+      "title": "蓝桥杯大赛官方主页",
+      "publisher": "蓝桥杯全国大学生软件和信息技术大赛组委会",
+      "checkedAt": "2026-11-08",
+      "sourceId": "v7-landing:lanqiao-cup",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/additional-homepage-author-evidence.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_algorithm_review",
+        "runId": "v7-additional-metadata-independent-20261109",
+        "reviewedAt": "2026-11-08T17:24:15.023Z",
+        "metadataDigest": "ade8f545fa31e649acb7e425fea40a2c0a4c80da027ac9647dcc7166ada52b6f",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/algorithm-reviewer-official-metadata/metadata-review-receipts.json",
+        "outcome": "approved"
+      },
+      {
+        "reviewerId": "/root/v7_algorithm_review",
+        "runId": "v7-additional-metadata-independent-20261109",
+        "reviewedAt": "2026-11-08T17:24:15.023Z",
+        "metadataDigest": "58fc497910c78cc177f126765a94f79b3a4ba80e4e946bf025059f5181ddfdbd",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/algorithm-reviewer-official-metadata/metadata-review-receipts.json",
+        "outcome": "changes_requested"
+      }
+    ]
+  },
+  {
+    "recordId": "loreal-brandstorm:2026-luxe:future-fragrance:18-30-team:global-local-entry:v3",
+    "coreDigest": "d3b045709185ccfa0c2b8273952c6444706f62a94c5f04ec0938fd9f99d3fd98",
+    "authorAgentId": "/root/v7_catalog_review",
+    "officialEntry": {
+      "url": "https://www.loreal.com/en/brandstorm/",
+      "title": "L’Oréal Brandstorm主办方官方主页",
+      "publisher": "L’Oréal",
+      "checkedAt": "2026-11-08",
+      "sourceId": "v7-landing:loreal-brandstorm",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/additional-homepage-author-evidence.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_algorithm_review",
+        "runId": "v7-additional-metadata-independent-20261109",
+        "reviewedAt": "2026-11-08T17:24:15.023Z",
+        "metadataDigest": "6334e9d9db2c8d6074733c3adc485ee31e3f3f33724b46b7d8ed8519457babf2",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/algorithm-reviewer-official-metadata/metadata-review-receipts.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "if-student-award:2025-entry-guide:sdg-design:design-students-graduates:global-2025:v3",
+    "coreDigest": "30060df9196532127719b73aecf894f8b2ccda6ac4056b78084f661b2b5011fd",
+    "authorAgentId": "/root/v7_catalog_review",
+    "officialEntry": {
+      "url": "https://ifdesign.com/en/if-design-student-award",
+      "title": "iF DESIGN STUDENT AWARD官方主页",
+      "publisher": "iF Design",
+      "checkedAt": "2026-11-08",
+      "sourceId": "v7-landing:if-student-award",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/additional-homepage-author-evidence.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_algorithm_review",
+        "runId": "v7-additional-metadata-independent-20261109",
+        "reviewedAt": "2026-11-08T17:24:15.023Z",
+        "metadataDigest": "020e96c2a7a4b6c3eae5f945b2e5c37bd1d81dff97ba266de2e6c911df86f3c5",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/algorithm-reviewer-official-metadata/metadata-review-receipts.json",
+        "outcome": "approved"
+      },
+      {
+        "reviewerId": "/root/fast24_e_review",
+        "runId": "fast24-source08-design-core-link-E-20261109224648237",
+        "reviewedAt": "2026-11-09T22:46:48.237Z",
+        "metadataDigest": "b4fcf3e0a73af6ee8ec35995859d3fc9581374356d9d0928f018ddcdbb388978",
+        "evidenceArtifact": "artifacts/fast24-20261109/E/source08-design-binding-final-review.safe.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "cfa-research-challenge:2024-2025-historical:equity-research:university-team:global-2024-2025-report:v3",
+    "coreDigest": "0914c38d7de45dc8eeaf7861fadebf4c77adb05a3ec8bcb93c5e64d8279319a5",
+    "authorAgentId": "/root/v7_catalog_review",
+    "officialEntry": {
+      "url": "https://www.cfainstitute.org/insights/events/research-challenge",
+      "title": "CFA Institute Research Challenge官方主页",
+      "publisher": "CFA Institute",
+      "checkedAt": "2026-11-08",
+      "sourceId": "v7-landing:cfa-research-challenge",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/additional-homepage-author-evidence.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_algorithm_review",
+        "runId": "v7-additional-metadata-independent-20261109",
+        "reviewedAt": "2026-11-08T17:24:15.023Z",
+        "metadataDigest": "e630c71a1a493986518b66b7d5f88ccc69b343feee5419e34e94fdd153a5de83",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/algorithm-reviewer-official-metadata/metadata-review-receipts.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "market-research-analysis:2025-15-undergraduate:wenjuan-ai:undergraduate-3-5:china-cau-submission:v3",
+    "coreDigest": "477c58a99bdf8ac88beeb4346d4204e891709a842b9fdc11770f4272cccc4451",
+    "authorAgentId": "/root/v7_catalog_review",
+    "officialEntry": {
+      "url": "http://www.china-cssc.org/",
+      "title": "中国商业统计学会官方主页（市调大赛入口）",
+      "publisher": "中国商业统计学会",
+      "checkedAt": "2026-11-08",
+      "sourceId": "v7-landing:market-research-analysis",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/additional-homepage-author-evidence.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_algorithm_review",
+        "runId": "v7-additional-metadata-independent-20261109",
+        "reviewedAt": "2026-11-08T17:24:15.023Z",
+        "metadataDigest": "79cfb478d34728071a4acaac93812072f41a1ea16562cbd81fbc8e7bff03269d",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/algorithm-reviewer-official-metadata/metadata-review-receipts.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "national-college-industrial-design:2024-7:product-system:fulltime-university:heilongjiang-rules-national-work:v3",
+    "coreDigest": "22f4a96c7a2914438c7db5f1a217ea5c2f67ddb417728349680b253a8ff0abdb",
+    "authorAgentId": "/root/v7_catalog_review",
+    "officialEntry": {
+      "url": "https://www.cuidc.net/",
+      "title": "全国大学生工业设计大赛官方主页",
+      "publisher": "全国大学生工业设计大赛组委会",
+      "checkedAt": "2026-11-08",
+      "sourceId": "v7-landing:national-college-industrial-design",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/additional-homepage-author-evidence.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_algorithm_review",
+        "runId": "v7-additional-metadata-independent-20261109",
+        "reviewedAt": "2026-11-08T17:24:15.023Z",
+        "metadataDigest": "26fb6e30f7330f5ee7d4bd7662c81883c618ed5ebf2f1d1c76bcf6305693d63b",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/algorithm-reviewer-official-metadata/metadata-review-receipts.json",
+        "outcome": "approved"
+      },
+      {
+        "reviewerId": "/root/fast24_e_review",
+        "runId": "fast24-source08-design-core-link-E-20261109224648237",
+        "reviewedAt": "2026-11-09T22:46:48.237Z",
+        "metadataDigest": "5ae83a48837d4dfc314123b34e068cfe00c41f503789cc68170897bc8cbcc0c5",
+        "evidenceArtifact": "artifacts/fast24-20261109/E/source08-design-binding-final-review.safe.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "ecommerce-innovation-creativity-entrepreneurship:2025-15-rural:rural-commerce:university-3-5:china-rural-practical:v3",
+    "coreDigest": "182b1abed0f3baa102723f4e0cd5f2ea5556cdc5f61bbf8131a4535376490501",
+    "authorAgentId": "/root/v7_catalog_review",
+    "officialEntry": {
+      "url": "https://www.3chuang.net/",
+      "title": "全国大学生电子商务三创赛官方主页",
+      "publisher": "全国大学生电子商务“创新、创意及创业”挑战赛竞赛组织委员会",
+      "checkedAt": "2026-11-08",
+      "sourceId": "v7-landing:ecommerce-innovation-creativity-entrepreneurship",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/additional-homepage-author-evidence.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_algorithm_review",
+        "runId": "v7-additional-metadata-independent-20261109",
+        "reviewedAt": "2026-11-08T17:24:15.023Z",
+        "metadataDigest": "d3ecc266c3eec35e521520695c50f0ad2b370d89e2b54a59e458f29fa275b43d",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/algorithm-reviewer-official-metadata/metadata-review-receipts.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "chinese-classics:2025-zhejiang-13:classics-recitation:huzhou-individual:zhejiang-huzhou-local:v3",
+    "coreDigest": "252dd9005d8f0a4f98dad3024901115126398f1b58d5e1e5e5a4095391ba5a37",
+    "authorAgentId": "/root/v7_catalog_review",
+    "officialEntry": {
+      "url": "https://jdsxj.eduyun.cn/",
+      "title": "中华经典诵写讲大赛官方平台",
+      "publisher": "中华经典诵写讲大赛执委会",
+      "checkedAt": "2026-11-08",
+      "sourceId": "v7-landing:chinese-classics",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/additional-homepage-author-evidence.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_algorithm_review",
+        "runId": "v7-additional-metadata-independent-20261109",
+        "reviewedAt": "2026-11-08T17:24:15.023Z",
+        "metadataDigest": "72758fe47dcd8cdf2ca0e440a79601b168f9246c9c0b1983747fe7a6aacb9770",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/algorithm-reviewer-official-metadata/metadata-review-receipts.json",
+        "outcome": "approved"
+      },
+      {
+        "reviewerId": "/root/fast24_f_integration",
+        "runId": "fast24-source08-extra-task-incremental-F-20261109224807098-core-link",
+        "reviewedAt": "2026-11-09T22:48:07.098Z",
+        "metadataDigest": "e43ad86f09608ab6249397c9485d008ee6e057fe04a2caea307dd6f5f8d17a53",
+        "evidenceArtifact": "artifacts/fast24-20261109/F/source08-extra-task-binding-directed-review.safe.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "iot-design:2026-13:espressif-aiot:regular-university:china-espressif:v3",
+    "coreDigest": "ceb1d5ff240dd7afc84846e3030a6083b63aaea6a4aadf4849b870551e0a87ca",
+    "authorAgentId": "/root/v7_catalog_review",
+    "officialEntry": {
+      "url": "https://iot.sjtu.edu.cn/Default.aspx",
+      "title": "全国大学生物联网设计竞赛官方主页",
+      "publisher": "全国大学生物联网设计竞赛组委会",
+      "checkedAt": "2026-11-08",
+      "sourceId": "v7-landing:iot-design",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/additional-homepage-author-evidence.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_algorithm_review",
+        "runId": "v7-additional-metadata-independent-20261109",
+        "reviewedAt": "2026-11-08T17:24:15.023Z",
+        "metadataDigest": "699e4093145838b6b04efd0e8abaca49f70b4d1dc47867a0f376716f74addac6",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/algorithm-reviewer-official-metadata/metadata-review-receipts.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "physics-experiment-innovation:2026-12:ice-metal-friction:assigned-domestic:china-ice-metal:v3",
+    "coreDigest": "6f74a5b525f02ab02570aa062cb1f22b381a3fc0438d1dfc015832eebbdf1f48",
+    "authorAgentId": "/root/v7_catalog_review",
+    "officialEntry": {
+      "url": "https://physics.hit.edu.cn/",
+      "title": "第十二届物理实验竞赛官方承办方（哈工大物理学院）主页",
+      "publisher": "哈尔滨工业大学物理学院",
+      "checkedAt": "2026-11-08",
+      "sourceId": "v7-landing:physics-experiment-innovation",
+      "kind": "official_host_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/additional-homepage-author-evidence.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_algorithm_review",
+        "runId": "v7-additional-metadata-independent-20261109",
+        "reviewedAt": "2026-11-08T17:24:15.023Z",
+        "metadataDigest": "f09d0a9585109751b4ca83c5a70c2a55c30c683c1c178ce5a8563c920e7bc26f",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/algorithm-reviewer-official-metadata/metadata-review-receipts.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "national-college-electronic-design:2025-national:monocular-measurement:undergraduate-task:china-2025-c:v3",
+    "coreDigest": "606e5bff63f6388a3a63f628b58cd94a3a544696a10eed7be365b09f2a830005",
+    "authorAgentId": "/root/v7_catalog_review",
+    "officialEntry": {
+      "url": "https://www.nuedc-training.com.cn/",
+      "title": "全国大学生电子设计竞赛官方培训平台",
+      "publisher": "全国大学生电子设计竞赛组织委员会",
+      "checkedAt": "2026-11-08",
+      "sourceId": "v7-landing:national-college-electronic-design",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/additional-homepage-author-evidence.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_algorithm_review",
+        "runId": "v7-additional-metadata-independent-20261109",
+        "reviewedAt": "2026-11-08T17:24:15.023Z",
+        "metadataDigest": "8ede1d41f964624016e0b8ef31cd797a69ac97042c24cb8280392e3b0aad0238",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/algorithm-reviewer-official-metadata/metadata-review-receipts.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "engineering-practice-innovation:2025-national:solar-mechanical-car:undergraduate:china-2025-solar:v3",
+    "coreDigest": "e47a0eb42419b0de741cb775599d3adcabab8db9cf6f46a15172354af5308bd2",
+    "authorAgentId": "/root/v7_catalog_review",
+    "officialEntry": {
+      "url": "http://gcxl.edu.cn/new/index.html",
+      "title": "中国大学生工程实践与创新能力大赛官方主页",
+      "publisher": "中国大学生工程实践与创新能力大赛组委会",
+      "checkedAt": "2026-11-08",
+      "sourceId": "v7-landing:engineering-practice-innovation",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/additional-homepage-author-evidence.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_algorithm_review",
+        "runId": "v7-additional-metadata-independent-20261109",
+        "reviewedAt": "2026-11-08T17:24:15.023Z",
+        "metadataDigest": "d33524d61e4548607b0b3ffd012e8e066fb4b37a7392ac9f9f20c6fb56b6ca91",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/algorithm-reviewer-official-metadata/metadata-review-receipts.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "formula-student-china:2026-fscc:cost-manufacturing:university-combustion:china-2026-fscc-cost:v3",
+    "coreDigest": "05248d6f581d219729f0247ae6754d77518872700e6bde518767489270d7b516",
+    "authorAgentId": "/root/v7_catalog_review",
+    "officialEntry": {
+      "url": "https://www.formulastudent.cn/",
+      "title": "中国大学生方程式系列赛事官方主页",
+      "publisher": "中国汽车工程学会",
+      "checkedAt": "2026-11-08",
+      "sourceId": "v7-landing:formula-student-china",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/additional-homepage-author-evidence.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_algorithm_review",
+        "runId": "v7-additional-metadata-independent-20261109",
+        "reviewedAt": "2026-11-08T17:24:15.023Z",
+        "metadataDigest": "0656f0504ea666a5d9d65ec779a5939552895ee4beb79b523bfdf4cd91856780",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/algorithm-reviewer-official-metadata/metadata-review-receipts.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "igem-collegiate:2026-collegiate:model-evidence:higher-education:igem-2026-higher-education:v3",
+    "coreDigest": "d6b3927854cf3f12539a2cac763e47d9df07c39c3e7f7d603ae14793ead745fd",
+    "authorAgentId": "/root/v7_catalog_review",
+    "officialEntry": {
+      "url": "https://competition.igem.org/",
+      "title": "iGEM Competition官方主页",
+      "publisher": "iGEM Foundation",
+      "checkedAt": "2026-11-08",
+      "sourceId": "v7-landing:igem-collegiate",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/additional-homepage-author-evidence.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_algorithm_review",
+        "runId": "v7-additional-metadata-independent-20261109",
+        "reviewedAt": "2026-11-08T17:24:15.023Z",
+        "metadataDigest": "d23bfe1b7b2fce035d5d093c646e303bf55d9872bc9622e0a6710380fe4ccd69",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/algorithm-reviewer-official-metadata/metadata-review-receipts.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "mechanical-innovation-design:2026-12-regular:vegetable-processing:undergraduate-junior-college:china-regular-vegetable:v3",
+    "coreDigest": "d7a50e94304f0107fadf02a2dcece2cb01e0009aa65f9bfb01a7528875a900bc",
+    "authorAgentId": "/root/v7_catalog_review",
+    "officialEntry": {
+      "url": "https://12umic.hit.edu.cn/",
+      "title": "第十二届全国大学生机械创新设计大赛官方承办站",
+      "publisher": "哈尔滨工业大学",
+      "checkedAt": "2026-11-08",
+      "sourceId": "v7-landing:mechanical-innovation-design",
+      "kind": "official_host_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/additional-homepage-author-evidence.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_algorithm_review",
+        "runId": "v7-additional-metadata-independent-20261109",
+        "reviewedAt": "2026-11-08T17:24:15.023Z",
+        "metadataDigest": "eff6be7724054bbddc1f6bb5069c6a02d6ea69675654fa43c69641be6d24c5fd",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/algorithm-reviewer-official-metadata/metadata-review-receipts.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "national-structural-design:2026-19-shanghai:lele-cart:undergraduate-junior-college:shanghai-division:v3",
+    "coreDigest": "bc6536f76f9f08436eefb01401cacdef96a89c5c1ed99b170d872c593a7df5e8",
+    "authorAgentId": "/root/v7_catalog_review",
+    "officialEntry": {
+      "url": "https://env.dhu.edu.cn/",
+      "title": "结构设计竞赛上海分区赛官方承办学院主页",
+      "publisher": "东华大学环境科学与工程学院",
+      "checkedAt": "2026-11-08",
+      "sourceId": "v7-landing:national-structural-design",
+      "kind": "official_host_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/additional-homepage-author-evidence.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/v7_algorithm_review",
+        "runId": "v7-additional-metadata-independent-20261109",
+        "reviewedAt": "2026-11-08T17:24:15.023Z",
+        "metadataDigest": "d6b22307d7f8893ad1f94e0472ce341b9a426d4b519e8d4d7d1c9391e5b20d29",
+        "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/algorithm-reviewer-official-metadata/metadata-review-receipts.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "china-college-computer-design:2026-19:ai-industrial-vision:full-time-undergraduate:china-ai-industrial-2026:v3",
+    "coreDigest": "1c8f926218e234be2454ee31d1e311befe8b4b916ba0a104474616ae2c55945c",
+    "authorAgentId": "/root/v7_catalog",
+    "officialEntry": {
+      "url": "https://jsjds.blcu.edu.cn/",
+      "title": "中国大学生计算机设计大赛官方赛事入口",
+      "publisher": "中国大学生计算机设计大赛组织委员会",
+      "checkedAt": "2026-11-09",
+      "sourceId": "v7-landing:china-college-computer-design",
+      "kind": "official_host_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/landing-reading-log.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/e_independent_review",
+        "runId": "accelerate-v743-independent-catalog-source-recheck",
+        "reviewedAt": "2026-11-11T07:17:09.096Z",
+        "metadataDigest": "3a4169d04e7d6481687392da8ccb67fc0093e308bd02f1bc1d2c70358dd6873f",
+        "evidenceArtifact": "artifacts/accelerate-20261111/E/v743-catalog-source-recheck.safe.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "iot-design:2026-13:espressif-aiot:regular-university:china-espressif:v3",
+    "coreDigest": "6c0aa61c816b8c97905bb65d3fc9c9d57b925f7b746d95cd97f90881bf318594",
+    "authorAgentId": "/root/v7_catalog_review",
+    "officialEntry": {
+      "url": "https://iot.sjtu.edu.cn/Default.aspx",
+      "title": "全国大学生物联网设计竞赛官方主页",
+      "publisher": "全国大学生物联网设计竞赛组委会",
+      "checkedAt": "2026-11-08",
+      "sourceId": "v7-landing:iot-design",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/additional-homepage-author-evidence.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/e_independent_review",
+        "runId": "accelerate-v743-independent-catalog-source-recheck",
+        "reviewedAt": "2026-11-11T07:17:09.096Z",
+        "metadataDigest": "8ffda04c1ea60e76d03913b6c4c2a315c04230df0904ccaae0c1335901081795",
+        "evidenceArtifact": "artifacts/accelerate-20261111/E/v743-catalog-source-recheck.safe.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "smart-car:2025-20-outdoor:outdoor-ros-mapping:higher-education:china-2025-outdoor-ros:v3",
+    "coreDigest": "10b2c6a610b77585227ffa9e02b56b61c766eb704d5253c3444551e456f456d8",
+    "authorAgentId": "/root/v7_catalog",
+    "officialEntry": {
+      "url": "https://www.smartcar.zone/",
+      "title": "全国大学生智能汽车竞赛官方赛事入口",
+      "publisher": "全国大学生智能汽车竞赛组织委员会",
+      "checkedAt": "2026-11-09",
+      "sourceId": "v7-landing:smart-car",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/landing-reading-log.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/e_independent_review",
+        "runId": "accelerate-v743-independent-catalog-source-recheck",
+        "reviewedAt": "2026-11-11T07:17:09.096Z",
+        "metadataDigest": "6b88f43e9b0d45cc643daca228a55a7d2455244b780b6349042966675a5a143d",
+        "evidenceArtifact": "artifacts/accelerate-20261111/E/v743-catalog-source-recheck.safe.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "apple-swift-student-challenge:2026:app-playground:individual-student:global-2026:v3",
+    "coreDigest": "d350e2209b349f57568d8d4086d7d089ef4f319c9af597e666e0113121c9643e",
+    "authorAgentId": "/root/v7_catalog",
+    "officialEntry": {
+      "url": "https://developer.apple.com/swift-student-challenge/",
+      "title": "Apple Swift Student Challenge官方赛事入口",
+      "publisher": "Apple Inc.",
+      "checkedAt": "2026-11-09",
+      "sourceId": "v7-landing:apple-swift-student-challenge",
+      "kind": "organizer_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/landing-reading-log.json"
+    },
+    "lastHeldEvent": {
+      "edition": "2026 Swift Student Challenge",
+      "label": "最近已核实举办届次：2026（具体比赛日期待补）",
+      "startDate": null,
+      "endDate": null,
+      "precision": "year",
+      "sourceUrl": "https://developer.apple.com/swift-student-challenge/",
+      "scope": "2026 Distinguished Winners及2026获奖者报道，不将WWDC日期当比赛日",
+      "checkedAt": "2026-11-09"
+    },
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/e_independent_review",
+        "runId": "accelerate-v748-independent-catalog-source-recheck",
+        "reviewedAt": "2026-11-11T09:20:41.233Z",
+        "metadataDigest": "73e1098e26857e516bbe3a27053471fd07b91c1e4f19fe1154ef41df41fed5ca",
+        "evidenceArtifact": "artifacts/accelerate-20261111/E/v748-catalog-source-recheck.safe.json",
+        "outcome": "approved"
+      }
+    ]
+  },
+  {
+    "recordId": "ncyu-special-education-demonstration:2016-2017-105:reading-lesson-design:pre-service-teachers:taiwan-105-special-education:v3",
+    "coreDigest": "2f85ab5669b35abdd4fa0ea05d43786de4f893fc82dec5aa7afca53d52edd022",
+    "authorAgentId": "/root/c_resume",
+    "officialEntry": {
+      "url": "https://www.ncyu.edu.tw/cset/",
+      "title": "國立嘉義大學特殊教育教學研究中心官方主页",
+      "publisher": "國立嘉義大學特殊教育教學研究中心",
+      "checkedAt": "2026-11-08",
+      "sourceId": "v7-landing:ncyu-special-education-demonstration",
+      "kind": "official_host_website",
+      "evidenceArtifact": "artifacts/continuation-v7-20261109/catalog/independent-review-20261109/additional-homepage-author-evidence.json"
+    },
+    "lastHeldEvent": null,
+    "stableAudienceRules": [],
+    "reviews": [
+      {
+        "reviewerId": "/root/e_resume",
+        "runId": "v758-special-education-official-entry-review-e-20261112",
+        "reviewedAt": "2026-11-11T19:06:41.765Z",
+        "metadataDigest": "c5396152401082e0546788f654178ef7f8b407a8f070e4339ae19920f3e64176",
+        "evidenceArtifact": "artifacts/step8-first-20261111/E/v758-special-education-catalog-full-review.E.safe.json",
+        "outcome": "approved"
+      },
+      {
+        "reviewerId": "/root/f_resume",
+        "runId": "codex-v758-f-special-education-homepage-c53961524010",
+        "reviewedAt": "2026-11-11T19:07:03.181Z",
+        "metadataDigest": "c5396152401082e0546788f654178ef7f8b407a8f070e4339ae19920f3e64176",
+        "evidenceArtifact": "artifacts/step8-first-20261111/F/v758-special-education-independent-source-review.safe.json",
+        "outcome": "approved"
+      }
+    ]
+  }
+]

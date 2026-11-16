@@ -333,7 +333,7 @@ describe("requestAiJson", () => {
       maxTokens: 512,
       maxAttempts: 2,
       schema: z.object({ value: z.literal("ok") }).strict(),
-      thinking: "disabled"
+      thinking: "enabled"
     });
 
     expect(result).toMatchObject({ ok: true, data: { value: "ok" }, attempts: 1, finishReason: "stop" });
@@ -341,10 +341,10 @@ describe("requestAiJson", () => {
     const requestBody = JSON.parse(fetchMock.mock.calls[0][1].body as string);
     expect(requestBody).toMatchObject({
       model: "test-model",
-      temperature: 0,
+      reasoning_effort: "max",
       max_tokens: 512,
       response_format: { type: "json_object" },
-      thinking: { type: "disabled" }
+      thinking: { type: "enabled" }
     });
   });
 
@@ -1504,13 +1504,13 @@ describe("competition AI model configuration", () => {
     expect(getCompetitionRecommendModel()).toBe("shared-model");
   });
 
-  it("uses DeepSeek V4 Pro when no model variable is configured", () => {
+  it("uses DeepSeek Flash when no model variable is configured", () => {
     delete process.env.AI_COMPETITION_CLARIFY_MODEL;
     delete process.env.AI_COMPETITION_RECOMMEND_MODEL;
     delete process.env.AI_MODEL;
 
     expect(getCompetitionClarifyModel()).toBe("deterministic-preference-policy.v1");
     expect(getCompetitionRecommendModel()).toBe(DEFAULT_DEEPSEEK_MODEL);
-    expect(DEFAULT_DEEPSEEK_MODEL).toBe("deepseek-v4-pro");
+    expect(DEFAULT_DEEPSEEK_MODEL).toBe("deepseek-flash");
   });
 });

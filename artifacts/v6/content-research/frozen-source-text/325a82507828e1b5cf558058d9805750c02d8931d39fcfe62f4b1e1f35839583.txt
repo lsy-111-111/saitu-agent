@@ -1,0 +1,71 @@
+Celebrate Google’s Coding Competitions with a final round of programming fun
+            
+            
+            - Google Developers Blog
+Community/Events
+Learn
+Blog
+YouTube
+Search
+Community/Events
+Learn
+Blog
+YouTube
+Celebrate Google’s Coding Competitions with a final round of programming fun
+MAY 23, 2023
+the Coding Competitions team
+Share
+Facebook
+Twitter
+LinkedIn
+Mail
+After 20 years, Google's Coding Competitions come to a close with a final round.
+Remember 2003? Before Chrome, Google Calendar, Android, and YouTube? When we carefully cleaned up our saved emails because GMail and its gigabyte of storage hadn't arrived? Two decades ago – Google launched a global coding competition called Code Jam, which challenged programmers of all levels to test and hone their skills by racing to solve algorithmic problems.
+From there, our coding competition lineup continued to grow. Kick Start began as a contest for recent graduates in China and quickly spread around the world. Hash Code, Google's first team-based challenge, started in Europe. And a first-in-class Distributed Code Jam asked participants to build solutions that could scale when run on multiple machines.
+Throughout our coding competitions' 20-year history, you've generated billions of lines of code across millions of submissions. You've gone through hundreds of rounds for thousands of problems and put in millions of hours of code execution and testing. Over a million of you from almost every country worldwide have participated — from experienced programmers to students and everyone in between. And now, just as we invited you to register for our very first round in 2003, we brought competitions to an end by inviting our community to our final event.
+On
+Saturday, April 15, 2023 at 2 p.m. UTC
+we hosted four simultaneous online rounds of competition at varying levels of difficulty. Participants enjoyed four hours of competition as part of our Farewell Rounds. You'll be able to try your hand on these problems sets using practice mode on our site until June 1.
+Problem data (statements, analyses, inputs, outputs, special judging code when applicable, and round overview texts) is now also stored in a GitHub repository called
+coding-competitions-archive
+. This repository will remain up even after this site is turned down. You can either clone the data using git, or you can browse the problems directly in the GitHub website. Additionally, PDF versions of the statements and available analyses are provided for ease of viewing.
+To those who joined us at any part of this twenty year history: It’s been an honor to learn, succeed, fail, and have fun coding with you. Through the conceptual art, the slides, the gophers, and the absurd number of pancakes, we did it – and we did it together. Thanks for going on this journey with us.
+To those who joined us at any part of this twenty year history: It’s been an honor to learn, succeed, fail, and have fun coding with you. Through the conceptual art, the slides, the gophers, and the absurd number of pancakes, we did it – and we did it together. Thanks for going on this journey with us.
+posted in:
+education
+google developers
+students
+student programs
+Previous
+Next
+Connect
+Blog
+Bluesky
+Instagram
+LinkedIn
+X (Twitter)
+YouTube
+Programs
+Google Developer Program
+Google Developer Groups
+Google Developer Experts
+Accelerators
+Women Techmakers
+Google Cloud & NVIDIA
+Developer consoles
+Google API Console
+Google Cloud Platform Console
+Google Play Console
+Firebase Console
+Actions on Google Console
+Cast SDK Developer Console
+Chrome Web Store Dashboard
+Google Home Developer Console
+Android
+Chrome
+Firebase
+Google Cloud Platform
+All products
+Manage cookies
+Terms
+Privacy

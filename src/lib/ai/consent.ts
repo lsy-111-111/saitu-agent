@@ -48,7 +48,7 @@ export function aiConsentRequiredResponse() {
       error: "AI_CONSENT_REQUIRED",
       consentVersion: consentDisclosure.version,
       consentDisclosure,
-      message: "请阅读并单独确认当前版本的 DeepSeek 使用说明，了解文字理解和推荐解释依据选择所需的信息。"
+      message: "请阅读并单独确认当前版本的 DeepSeek 使用说明，了解文字理解、竞赛比较与推荐依据核查所需的信息。"
     },
     { status: 403 }
   );

@@ -218,7 +218,7 @@ export const participationModeOptions = [
 ] as const satisfies readonly ChoiceOption[];
 
 export const participationTimingOptions = [
-  { value: "current-cycle", label: "想参加当前可报名或本届赛事" },
+  { value: "current-cycle", label: "希望近期开始准备，具体参赛时间查官网" },
   { value: "within-3-months", label: "希望未来 3 个月内开始参赛" },
   { value: "next-cycle-ok", label: "可以为下一届长期准备" },
   { value: "flexible", label: "参赛时间都可以" }

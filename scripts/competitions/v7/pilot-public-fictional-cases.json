@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "saitu.pilot-public-fictional-cases.v7.1",
+  "origin": "new_public_fictional_ui_trial_inputs_not_formal_ranking_profiles",
+  "actualParticipants": 0,
+  "comparison60Selection": "reuse_formal_B_C_report_quality_and_comprehension",
+  "cases": [
+    { "caseId": "fictional-pilot-01", "fictional": true, "taskGroup": "software_data", "viewport": "desktop", "stage": "本科大一", "skill": "编程与软件开发", "weekly": "每周 5–10 小时", "budget": 300, "scenario": "followup", "followup": "请解释第一项推荐中需要我亲自完成的工作，以及一项可以先做的小练习。只追问理由，不修改我的自述。" },
+    { "caseId": "fictional-pilot-02", "fictional": true, "taskGroup": "software_data", "viewport": "mobile", "stage": "高职／专科", "skill": "数据分析与建模", "weekly": "每周 5 小时以内", "budget": 100, "scenario": "refresh" },
+    { "caseId": "fictional-pilot-03", "fictional": true, "taskGroup": "engineering_design", "viewport": "desktop", "stage": "本科大二", "skill": "硬件与工程实践", "weekly": "每周 5–10 小时", "budget": 300, "scenario": "correction", "correction": { "text": "明确更正：我的个人总预算改为100元，旧的300元不再适用。请直接按新预算重新匹配。", "field": "budget.maximumYuan", "value": 100 } },
+    { "caseId": "fictional-pilot-04", "fictional": true, "taskGroup": "engineering_design", "viewport": "mobile", "stage": "本科大三", "skill": "结构设计与工程制图", "weekly": "每周 10 小时以上", "budget": 500, "scenario": "stale_poll_correction", "correction": { "text": "明确更正：我的个人总预算改为100元，旧的500元不再适用。请直接采用新预算重新匹配。", "field": "budget.maximumYuan", "value": 100 } },
+    { "caseId": "fictional-pilot-05", "fictional": true, "taskGroup": "experimental_agriculture", "viewport": "desktop", "stage": "本科大一", "skill": "实验操作与安全规范", "weekly": "每周 5 小时以内", "budget": 100, "scenario": "poll_disconnect" },
+    { "caseId": "fictional-pilot-06", "fictional": true, "taskGroup": "experimental_agriculture", "viewport": "mobile", "stage": "硕士研究生", "skill": "调研与科研验证", "weekly": "每周 5–10 小时", "budget": 300, "scenario": "poll_delay" },
+    { "caseId": "fictional-pilot-07", "fictional": true, "taskGroup": "business_practice", "viewport": "desktop", "stage": "本科大二", "skill": "产品策划与需求分析", "weekly": "每周 5–10 小时", "budget": 300, "scenario": "followup", "followup": "第一项建议的个人学习贡献与完整团队参赛有什么区别？请指出仍须自行核查的条件。仅解释，不修改我的画像。" },
+    { "caseId": "fictional-pilot-08", "fictional": true, "taskGroup": "business_practice", "viewport": "mobile", "stage": "高职／专科", "skill": "财会与金融分析", "weekly": "每周 5 小时以内", "budget": 500, "scenario": "correction", "correction": { "text": "明确更正：我的个人总预算改为100元，之前填写的500元撤回。请按100元直接重新匹配。", "field": "budget.maximumYuan", "value": 100 } },
+    { "caseId": "fictional-pilot-09", "fictional": true, "taskGroup": "survey_education", "viewport": "desktop", "stage": "硕士研究生", "skill": "调研与科研验证", "weekly": "每周 5 小时以内", "budget": 100, "scenario": "refresh" },
+    { "caseId": "fictional-pilot-10", "fictional": true, "taskGroup": "survey_education", "viewport": "mobile", "stage": "本科大三", "skill": "写作与材料整理", "weekly": "每周 5–10 小时", "budget": 300, "scenario": "poll_disconnect" },
+    { "caseId": "fictional-pilot-11", "fictional": true, "taskGroup": "arts_language", "viewport": "desktop", "stage": "高职／专科", "skill": "视觉与创意设计", "weekly": "每周 5–10 小时", "budget": 300, "scenario": "poll_delay" },
+    { "caseId": "fictional-pilot-12", "fictional": true, "taskGroup": "arts_language", "viewport": "mobile", "stage": "本科大二", "skill": "语言表达与跨文化沟通", "weekly": "每周 5 小时以内", "budget": 500, "scenario": "stale_poll_correction", "correction": { "text": "明确更正：我的个人总预算改为100元，旧的500元不再作为判断依据。请直接采用100元重新匹配。", "field": "budget.maximumYuan", "value": 100 } }
+  ]
+}

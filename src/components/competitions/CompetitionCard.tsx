@@ -1,6 +1,5 @@
 import Image from "next/image";
 import type { Competition } from "@/content/competitions";
-import { getDocumentedCompetitionAvailability } from "@/lib/competitions/documented-availability";
 import { getCompetitionFactSheet } from "@/content/competition-facts";
 
 type CompetitionCardProps = {
@@ -9,22 +8,11 @@ type CompetitionCardProps = {
   onOpen: (competitionId: string) => void;
 };
 
-const statusTone: Record<string, string> = {
-  open: "border-success-200 bg-success-50 text-success-700",
-  upcoming: "border-brand-200 bg-brand-50 text-brand-700",
-  unknown: "border-border bg-surface text-muted-foreground",
-  stale: "border-border bg-surface text-muted-foreground",
-  closed: "border-border bg-surface text-muted-foreground",
-  cancelled: "border-border bg-surface text-muted-foreground"
-};
-
 export function CompetitionCard({
-  availabilityNow,
   competition,
   onOpen
 }: CompetitionCardProps) {
   const summaryId = `competition-summary-${competition.id}`;
-  const availability = getDocumentedCompetitionAvailability(competition, availabilityNow);
   const edition = getCompetitionFactSheet(competition.id)?.edition ?? competition.recommendation.schedule.edition;
   const coverImage = competition.coverImage;
 
@@ -70,9 +58,9 @@ export function CompetitionCard({
 
           <div className="mt-4 flex flex-wrap items-center gap-2">
             <span
-              className={`inline-flex min-h-8 items-center rounded-full border px-3 text-xs font-semibold ${statusTone[availability.registrationStatus.status]}`}
+              className="inline-flex min-h-8 items-center rounded-full border border-border bg-surface px-3 text-xs font-semibold text-muted-foreground"
             >
-              {availability.registrationStatus.label}
+              赛事资料参考
             </span>
             {edition ? (
               <span className="text-xs font-medium text-muted-foreground">{edition}</span>

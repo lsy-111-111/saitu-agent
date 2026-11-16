@@ -1,0 +1,43 @@
+{
+  "validationType": "review_artifact_structure_and_declared_invariants_only",
+  "productTestsRun": false,
+  "oldGoldCompared": false,
+  "acceptanceClaim": false,
+  "checks": [
+    {
+      "artifact": "ranking-full-pool.jsonl",
+      "uniqueCompleteProfiles": 25,
+      "labels": 3375,
+      "status": "pass"
+    },
+    {
+      "artifact": "legacy-v4-full-pool.jsonl",
+      "uniqueCompleteProfiles": 18,
+      "labels": 2430,
+      "status": "pass"
+    },
+    {
+      "artifact": "followup-base-full-pool.jsonl",
+      "uniqueCompleteProfiles": 36,
+      "labels": 4860,
+      "status": "pass"
+    },
+    {
+      "artifact": "scoring-pairs.jsonl",
+      "pairs": 96,
+      "personalContributionUnresolved": 96,
+      "status": "pass"
+    },
+    {
+      "artifact": "followup-branches.jsonl",
+      "cases": 36,
+      "branches": 75,
+      "status": "pass"
+    },
+    {
+      "check": "known_legacy_hard_negative_preservation",
+      "status": "pass",
+      "note": "数学和电子赛事级、外语四个英语轨道级；国际中文身份未知"
+    }
+  ]
+}

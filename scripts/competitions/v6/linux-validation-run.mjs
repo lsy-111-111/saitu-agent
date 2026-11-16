@@ -1,0 +1,12 @@
+import {readFileSync,mkdirSync} from 'node:fs';
+import {homedir} from 'node:os';
+import {join} from 'node:path';
+import {spawn} from 'node:child_process';
+if(process.platform!=='linux')throw Error('Linux validation VM only');
+const credentials=JSON.parse(readFileSync(join(homedir(),'saitu-validation/private/database.json'),'utf8'));
+const mode=process.argv[2]??'shared-state';
+const report=`artifacts/v6/linux-validation-20261105/${mode}.json`;mkdirSync('artifacts/v6/linux-validation-20261105',{recursive:true});
+const common={...process.env,CI:'1',AI_API_KEY:'',AI_PROVIDER:'mock',AI_TEST_MODE:'1',ALLOW_AI_MOCK:'1',RUN_DEEPSEEK_LIVE:'0',RUN_DEEPSEEK_NORMALIZE_LIVE:'0',SAITU_DECISION_STRATEGY:'rules'};
+const env=mode==='shared-state'?{...common,RUN_POSTGRES_SECURITY_STATE_TESTS:'1',POSTGRES_SECURITY_STATE_TEST_DATABASE_URL:credentials.admin,POSTGRES_SECURITY_STATE_RUNTIME_DATABASE_URL:credentials.runtime,DATABASE_URL:''}:common;
+const args=mode==='shared-state'?['tests/security/competition-shared-state-postgres.integration.test.ts']:mode==='linux-deployment'?['tests/deployment']:['tests'];
+const child=spawn(process.execPath,['node_modules/vitest/vitest.mjs','run',...args,'--maxWorkers=2','--testTimeout=20000','--reporter=json',`--outputFile=${report}`],{env,stdio:'inherit'});child.on('exit',code=>process.exitCode=code??1);

@@ -1,0 +1,1752 @@
+Rule - Panasonic Programming Contest 2025（AtCoder Beginner Contest 427）
+×
+Contest started
+Panasonic Programming Contest 2025（AtCoder Beginner Contest 427） has begun.
+Close
+×
+Contest is over
+Panasonic Programming Contest 2025（AtCoder Beginner Contest 427） has ended.
+Close
+Panasonic Programming Contest 2025（AtCoder Beginner Contest 427）
+English
+日本語
+English
+Sign Up
+Sign In
+Contest Duration:
+2025-10-11 21:00:00+0900 - 2025-10-11 22:40:00+0900 (local time)
+(100 minutes)
+Back to Home
+Top
+Tasks
+Clarifications
+Results
+All Submissions
+Standings
+Virtual Standings
+Editorial
+Discuss
+ルール
+参加資格
+プログラミングに興味がある人なら誰でも参加できます。
+人数
+特に記載のない限り、各コンテストは個人で戦う必要があります。2人以上で結託し、解答する行為は禁止しております。
+勝敗
+制限時間以内の合計得点がより高い人が優勝です。合計得点が同じ場合はより早く解いた人の方が上の順位になります。
+ペナルティ
+不正解を提出するごとにつき、あなたの提出時間にペナルティがつきます。
+注: ジャッジのステータスがコンパイルエラー（CE）のときはペナルティがつきません
+時間 = 最後に正解した時間 + （正解するまでに提出した）不正解の数*5分
+以下に例を挙げます。
+時間[分:秒]状態
+04:33A 正解
+10:22B 不正解
+11:03B 正解
+CとDは提出せず
+この場合、最終スコアは2問正解で時間は16:03（11:03 + 5:00）となります
+「（正解するまでに提出した）不正解の数」 とは以下の例を考えるとわかりやすいかもしれません。
+時間[分:秒]状態
+02:05A 正解
+10:56B 正解
+31:03C 不正解
+45:37C 不正解
+51:43C 不正解
+88:22D 正解
+この場合、最終スコアは3問正解で時間は88:22となります。
+C問題で3回不正解を出してますが、結局C問題を正解することはできなったので、ペナルティは加算されません。
+言語
+問題を解くためのプログラミング言語はAtCoderのシステムが対応しているものに限ります。以下は対応している言語を表にしたものです。
+LanguageCompile / InterpreterExecution Command
+><> (fishr 0.1.0)["fishr","Main.fish"]
+Ada 2022 (GNAT 15.2.0)alr --no-color --no-tty build > /dev/null
+["./obj/main"]
+APL (GNU APL 1.9)["apl","--silent","--noCIN","--noCONT","--noColor","--OFF","--noSV","--rawCIN","-f","Main.apl"]
+Assembly MIPS O32 ABI (GNU assembler 2.42)mips-linux-gnu-as -o Main.o Main.s && mips-linux-gnu-ld -o Main Main.o
+["qemu-mips","Main"]
+Assembly x64 (NASM 2.16.03)nasm -f elf64 Main.asm && gcc -o a.out Main.o -lm
+["./a.out"]
+AWK (GNU awk 5.2.1)["gawk","-f","Main.awk"]
+A言語 (interpreter af48a2a)["interpreter","Main.a"]
+Bash (bash 5.3)bash -n Main.bash && touch ok
+["bash","Main.bash"]
+BASIC (FreeBASIC 1.10.1)fbc -O 3 -arch native Main.bas 1>&2
+["./Main"]
+bc (GNU bc 1.08.2)["bc","--mathlib","--quiet","Main.bc"]
+Befunge93 (TBC 1.0)tbc Main.bf > a.c
+cc -O2 -w a.c -o a.out
+["./a.out"]
+Brainfuck (Tritium 1.2.73)["tritium","-b","-e","Main.bf"]
+C23 (Clang 21.1.0)clang -O2 -march=native -std=c23 -Wall -Wextra -DONLINE_JUDGE -DATCODER -o a.out Main.c -rtlib=compiler-rt -fuse-ld=lld -lm
+["./a.out"]
+C23 (GCC 14.2.0)gcc-14 -O2 -march=native -std=c23 -Wall -Wextra -DONLINE_JUDGE -DATCODER Main.c -lm
+["./a.out"]
+C# 13.0 (.NET 9.0.8)export DOTNET_ROOT=$HOME/.dotnet
+export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
+export DOTNET_EnableWriteXorExecute=0
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
+dotnet publish -c Release -o publish --no-restore --nologo -v q --tl:off 1>&2
+["./publish/Main"]
+C# 13.0 (.NET Native AOT 9.0.8)export DOTNET_ROOT=$HOME/.dotnet
+export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
+export DOTNET_EnableWriteXorExecute=0
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
+dotnet publish -c Release -o publish --no-restore --nologo -v q --tl:off 1>&2
+["./publish/Main"]
+C++23 (GCC 15.2.0)AC_VARIANT=gcc
+USER_BUILD_FLAGS=(
+"-DATCODER"
+"-DNOMINMAX"
+"-DONLINE_JUDGE"
+"-DOR_PROTO_DLL="
+"-DPROTOBUF_USE_DLLS"
+"-DUSE_BOP"
+"-DUSE_CBC"
+"-DUSE_CLP"
+"-DUSE_GLOP"
+"-DUSE_LP_PARSER"
+"-DUSE_MATH_OPT"
+"-DUSE_PDLP"
+"-DUSE_SCIP"
+"-I::install_dir::/include"
+"-I::install_dir::/include/torch/csrc/api/include"
+"-O2"
+"-Wall"
+"-Wextra"
+"-fconstexpr-depth=1024"
+"-fconstexpr-loop-limit=524288"
+"-fconstexpr-ops-limit=2097152"
+"-fmodules"
+"-ftrivial-auto-var-init=zero"
+"-march=native"
+"-pthread"
+"-std=gnu++23"
+"-Wl,--as-needed"
+"-L::install_dir::/lib64"
+"-Wl,-R::install_dir::/lib64"
+"-L::install_dir::/lib"
+"-Wl,-R::install_dir::/lib"
+"-fopenmp"
+"-lstdc++exp"
+"-labsl_cordz_sample_token"
+"-labsl_failure_signal_handler"
+"-labsl_flags_parse"
+"-labsl_flags_usage"
+"-labsl_flags_usage_internal"
+"-labsl_log_flags"
+"-labsl_periodic_sampler"
+"-labsl_poison"
+"-labsl_random_internal_distribution_test_util"
+"-labsl_scoped_set_env"
+"-lboost_atomic"
+"-lboost_charconv"
+"-lboost_chrono"
+"-lboost_container"
+"-lboost_context"
+"-lboost_contract"
+"-lboost_coroutine"
+"-lboost_date_time"
+"-lboost_exception"
+"-lboost_fiber"
+"-lboost_filesystem"
+"-lboost_graph"
+"-lboost_iostreams"
+"-lboost_json"
+"-lboost_locale"
+"-lboost_log"
+"-lboost_log_setup"
+"-lboost_math_c99"
+"-lboost_math_c99f"
+"-lboost_math_c99l"
+"-lboost_math_tr1"
+"-lboost_math_tr1f"
+"-lboost_math_tr1l"
+"-lboost_nowide"
+"-lboost_prg_exec_monitor"
+"-lboost_process"
+"-lboost_program_options"
+"-lboost_random"
+"-lboost_regex"
+"-lboost_serialization"
+"-lboost_stacktrace_from_exception"
+"-lboost_system"
+"-lboost_test_exec_monitor"
+"-lboost_thread"
+"-lboost_timer"
+"-lboost_type_erasure"
+"-lboost_unit_test_framework"
+"-lboost_url"
+"-lboost_wave"
+"-lboost_wserialization"
+"-lgmpxx"
+"-lgmp"
+"-lortools"
+"-lCbc"
+"-lCbcSolver"
+"-lCgl"
+"-lClp"
+"-lClpSolver"
+"-lCoinUtils"
+"-lGLPK"
+"-lOsi"
+"-lOsiCbc"
+"-lOsiClp"
+"-lhighs"
+"-lscip"
+"-lz"
+"-lbz2"
+"-lprotobuf"
+"-labsl_die_if_null"
+"-labsl_log_initialize"
+"-labsl_random_distributions"
+"-labsl_random_seed_sequences"
+"-labsl_random_internal_entropy_pool"
+"-labsl_random_internal_randen"
+"-labsl_random_internal_randen_hwaes"
+"-labsl_random_internal_randen_hwaes_impl"
+"-labsl_random_internal_randen_slow"
+"-labsl_random_internal_platform"
+"-labsl_random_internal_seed_material"
+"-labsl_random_seed_gen_exception"
+"-labsl_statusor"
+"-labsl_status"
+"-lutf8_validity"
+"-lutf8_range"
+"-pthread"
+"-lre2"
+"-labsl_log_internal_check_op"
+"-labsl_leak_check"
+"-labsl_log_internal_conditions"
+"-labsl_log_internal_message"
+"-labsl_examine_stack"
+"-labsl_log_internal_format"
+"-labsl_log_internal_nullguard"
+"-labsl_log_internal_structured_proto"
+"-labsl_log_internal_proto"
+"-labsl_log_internal_log_sink_set"
+"-labsl_log_internal_globals"
+"-labsl_log_globals"
+"-labsl_log_sink"
+"-labsl_strerror"
+"-labsl_vlog_config_internal"
+"-labsl_log_internal_fnmatch"
+"-labsl_flags_internal"
+"-labsl_flags_marshalling"
+"-labsl_flags_reflection"
+"-labsl_flags_private_handle_accessor"
+"-labsl_flags_commandlineflag"
+"-labsl_flags_commandlineflag_internal"
+"-labsl_flags_config"
+"-labsl_flags_program_name"
+"-labsl_raw_hash_set"
+"-labsl_cord"
+"-labsl_cordz_info"
+"-labsl_cord_internal"
+"-labsl_cordz_functions"
+"-labsl_cordz_handle"
+"-labsl_crc_cord_state"
+"-labsl_crc32c"
+"-labsl_crc_internal"
+"-labsl_crc_cpu_detect"
+"-labsl_hashtablez_sampler"
+"-labsl_exponential_biased"
+"-labsl_hash"
+"-labsl_city"
+"-labsl_low_level_hash"
+"-labsl_str_format_internal"
+"-labsl_synchronization"
+"-labsl_graphcycles_internal"
+"-labsl_kernel_timeout_internal"
+"-labsl_stacktrace"
+"-labsl_symbolize"
+"-labsl_debugging_internal"
+"-labsl_demangle_internal"
+"-labsl_demangle_rust"
+"-labsl_decode_rust_punycode"
+"-labsl_utf8_for_code_point"
+"-labsl_malloc_internal"
+"-labsl_time"
+"-labsl_civil_time"
+"-labsl_strings"
+"-labsl_strings_internal"
+"-labsl_string_view"
+"-labsl_int128"
+"-labsl_throw_delegate"
+"-labsl_time_zone"
+"-labsl_tracing_internal"
+"-labsl_base"
+"-lrt"
+"-labsl_raw_logging_internal"
+"-labsl_log_severity"
+"-labsl_spinlock_wait"
+"-lz3"
+"-l_lightgbm"
+"-ltorch"
+"-ltorch_cpu"
+"-lc10")
+set -eu
+ARGUMENTS=("$0")
+while (($#>0));do
+case "$1" in
+--variant)AC_VARIANT="$2"
+shift
+;;
+-h|--help|?)echo "{--option} / {ENVIRONMENT} [default]"
+echo "--variant / AC_VARIANT [gcc]"
+exit 0
+;;
+-*)echo "$(tput setaf 1)ERROR: $(tput sgr0)Unexpected command option: $(tput setaf 5)$1"
+exit 1
+;;
+*)ARGUMENTS=("${ARGUMENTS[@]}" "$1")
+esac
+shift
+done
+if [[ -z $AC_VARIANT ]];then
+export AC_VARIANT="gcc"
+fi
+INSTALL_DIR="$(cat /etc/atcoder/install_dir.txt)"
+USER_BUILD_FLAGS=("${USER_BUILD_FLAGS[@]//'::install_dir::'/$INSTALL_DIR}")
+if [[ $AC_VARIANT == "gcc" ]];then
+g++ ./Main.cpp -o a.out "${USER_BUILD_FLAGS[@]}"
+else
+clang++ std.pcm std.compat.pcm ./Main.cpp -o a.out "${USER_BUILD_FLAGS[@]}"
+fi["./a.out"]
+C3 (c3c 0.7.5)$HOME/c3/c3c -q --ansi=no compile -O5 --x86cpu=native -o a.out Main.c3
+["./a.out"]
+Carp(Carp 0.5.5)export CARP_DIR=/opt/carp-v0.5.5-x86_64-linux
+carp -b --optimize Main.carp 1>&2
+["./out/Untitled"]
+cLay (cLay 20250308-1 (GCC 15.2.0))clay < main.clay > main.cpp && cmake --build build -- --quiet 1>&2
+["./build/main"]
+Clojure (babashka 1.12.208)["bb","Main.clj"]
+Clojure (clojure 1.12.2)["sh","clojure.sh","{memory:mb}"]
+Clojure (Clojure AOT 1.12.2)cd main
+lein uberjar > /tmp/lein.log
+if grep -q -E '^Warning: The Main-Class specified does not exist within the jar' /tmp/lein.log; then
+rm target/uberjar/main-0.1.0-SNAPSHOT-standalone.jar
+grep -E '^Warning:' /tmp/lein.log | sed 's/^Warning:/Error:/' 1>&2
+fi
+["sh","clojure-aot.sh","{memory:mb}"]
+Clojure (ClojureScript 1.12.42 (Clojure 1.12.2 Node.js 22.19.0))export NODE_PATH=/usr/local/lib/node_modules
+cd main
+lein cljsbuild once prod 2>&1 1>/dev/null | grep main/core 1>&2
+["sh","node.sh","{memory:kb}","server.js"]
+COBOL (Free) (GnuCOBOL 3.2)cobc -x -free -O2 -o a.out Main.cbl
+["./a.out"]
+Common Lisp (SBCL 2.5.8)export SBCL_HOME=/usr/local/lib/sbcl
+./sbcl --eval '(compile-file "Main.lisp")' --quit
+if [ -f Main.fasl ]; then
+chmod +x Main.fasl
+fi
+["./Main.fasl"]
+Crystal (Crystal 1.17.0)cd main && shards build --release --no-debug --no-color --quiet -Donline_judge 1>&2
+["./main/bin/main"]
+Cyber (Cyber v0.3)if cyber compile Main.cy > compile-out 2>&1; then
+touch ok
+else
+cat compile-out 1>&2
+fi
+["cyber","Main.cy"]
+D (DMD 2.111.0)dub build --skip-registry=all --nodeps --build=release-nobounds
+["./judge"]
+D (GDC 15.2)dub build --quiet --compiler=gdc-15 --skip-registry=all --nodeps --build=release-nobounds
+["./judge"]
+D (LDC 1.41.0)dub build --skip-registry=all --nodeps --build=release-nobounds
+["./judge"]
+Dart (Dart 3.9.2)dart compile exe judge/bin/judge.dart -o a.out
+["./a.out"]
+dc 1.5.2 (GNU bc 1.08.2)["dc","-f","Main.dc"]
+ECLiPSe (ECLiPSe 7.1_13)export PATH=$PATH:$HOME/.eclipse/bin/x86_64_linux
+echo "compile('Main.ecl', [output: eco, debug: off])" | eclipse 2> err-out
+if grep -q -E '^file Main.ecl:.*error:' err-out; then
+rm Main.eco
+cat err-out 1>&2
+fi
+["eclipse","-f","Main.eco","-e","main"]
+Eiffel (Gobo Eiffel 22.01)export GOBO=$HOME/gobo
+export PATH=$GOBO/bin:$PATH
+gec --gc=boehm main.ecf 1>&2
+["./Main"]
+Eiffel (Liberty Eiffel 07829e3)se c main -bdw_gc --boost -o a.out
+["./a.out"]
+Elixir (Elixir 1.18.4 (OTP 28.0.2))cd main
+MIX_ENV=prod mix release --quiet --overwrite 2> /tmp/err-out || cat /tmp/err-out | ansifilter 1>&2
+["main/_build/prod/rel/main/bin/main","eval","Main.main"]
+Emacs Lisp(Native Compile)(GNU Emacs 29.4)emacs --batch -f package-initialize --eval '(native-compile "Main.el" (expand-file-name "Main.eln"))'
+["emacs","--batch","-f","package-initialize","-l","Main.eln"]
+Emojicode 1.0 beta 2 (emojicodec 1.0 beta 2)emojicodec Main.🍇 -O -o a.out 1>&2["./a.out"]
+Erlang (Erlang 28.0.2)erlc Main.erl 1>&2
+["erl","-noshell","-run","Main","main","run"]
+F# 9.0 (.NET 9.0.8)export DOTNET_ROOT=$HOME/.dotnet
+export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
+export DOTNET_EnableWriteXorExecute=0
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
+dotnet publish -c Release -o publish --no-restore --nologo -v q --tl:off 1>&2
+["./publish/Main"]
+Factor (Factor 0.100)# a workaround to avoid MLE
+# https://atcoder.jp/contests/language-test-202505/submissions/69450872
+/opt/factor/factor
+["/opt/factor/factor","-datastack=102400","-retainstack=102400","-callstack=102400","-callbacks=102400","Main.factor"]
+Fish (fish 4.0.2)fish -n Main.fish && touch ok
+["fish","Main.fish"]
+Forth (gforth 0.7.3)["gforth-fast","-m","100M","-d","100M","-r","100M","-f","100M","-l","100M","Main.fs","-e","bye"]
+Fortran2018 (Flang 20.1.7)export PATH="$HOME/.local/bin:$PATH"
+export LD_LIBRARY_PATH="$HOME/.local/lib"
+flang-new -L$HOME/.local/lib -I$HOME/.local/include -O2 -cpp -std=f2018 Main.f90 -lstdlib
+["./a.out"]
+Fortran2023 (GCC 14.2.0)export PATH="$HOME/.local/bin:$PATH"
+export LD_LIBRARY_PATH="$HOME/.local/lib"
+gfortran -L$HOME/.local/lib -I$HOME/.local/include -O2 -cpp -ffree-line-length-none -std=f2023 Main.f90 -lstdlib
+["./a.out"]
+FORTRAN77 (GCC 14.2.0)export PATH="$HOME/.local/bin:$PATH"
+export LD_LIBRARY_PATH="$HOME/.local/lib"
+f77 -L$HOME/.local/lib -I$HOME/.local/include -O2 -cpp -ffixed-form Main.f -lstdlib
+["./a.out"]
+Gleam (Gleam 1.12.0 (OTP 28.0.2))gleam build --no-print-progress
+["gleam","run","--no-print-progress"]
+Go 1.18 (gccgo 15.2.0)go-15 build -o a.out
+["./a.out"]
+Go (go 1.25.1)export PATH=$PATH:/opt/go/bin
+go build -o a.out
+["./a.out"]
+Haskell (GHC 9.8.4)cd submission
+source ~/.ghcup/env
+cabal v2-build --offline && cp $(cabal list-bin main) ../
+["./main"]
+Haxe/JVM 4.3.7 (hxjava 4.2.0)export PATH=$PATH:/opt/haxe
+export HAXE_STD_PATH=/opt/haxe/std
+haxe --dce full -D analyzer-optimize -L wronganswer --main Main --jvm Main.jar
+if [ ! -e Main.jar ]; then exit 1; fi
+java -jar --dry-run Main.jar || rm -f Main.jar
+["sh","java.sh","{memory:mb}"]
+C++ IOI-Style(GNU++20) (GCC 14.2.0)g++-14 -DEVAL -std=gnu++20 -O2 -pipe -static -s -o a.out Main.cpp
+["./a.out"]
+ISLisp (Easy-ISLisp 5.43)(echo '(compile-file "main.lsp")' | eisl -cr) > output
+if [ ! -f main.o ]; then
+cat output >&2
+fi
+rm output
+["eisl","-s","main.o"]
+Java24 (OpenJDK 24.0.2)javac -cp ac_library.jar:bifurcan.jar Main.java
+["sh","java.sh","{memory:mb}"]
+JavaScript (Bun 1.2.21)["bun","Main.js","--no-install"]
+JavaScript (Deno 2.4.5)export NO_COLOR=1
+export DENO_NO_UPDATE_CHECK=1
+export PATH=$PATH:$HOME/.deno/bin
+deno check --quiet Main.js && touch ok
+["sh","deno.sh","{memory:kb}"]
+JavaScript (Node.js 22.19.0)node --check Main.js && touch ok
+["sh","node.sh","{memory:kb}","Main.js","ONLINE_JUDGE","ATCODER"]
+Jule (jule 0.1.6)$HOME/jule/bin/julec --cppstd cpp20 --opt L2 -p . | ansifilter 1>&2
+["./a.out"]
+Koka (koka v3.2.2)# --no-debug: デバッグのための情報を付けないようにする
+# -v0       : ログ出力を減らす (デフォルトは1)
+koka -O2 --no-debug -o a.out main.kk --buildtag=atcoder --no-buildhash -v0 1>&2
+if [ -f a.out ]; then chmod +x a.out; fi
+["./a.out"]
+Kotlin (Kotlin/JVM 2.2.10)/usr/local/kotlinc/bin/kotlinc ./Main.kt -cp ac_library.jar:kotlinx-collections-immutable-jvm.jar -include-runtime -jvm-target 23 -d ./Main.jar
+["sh","kotlin.sh","{memory:mb}"]
+Kuin (kuincl v.2021.8.17)./kuin/kuincl -i main.kn -o main.cpp -s kuin/sys/ -e cpp -r -q 1>&2 && g++ -O2 -o a.out main.cpp
+["./a.out"]
+Lazy K (irori v1.0.0)timeout 0.01 lazyk -v0 Main.lazy > /dev/null || if [ $? -ne 124 ]; then rm Main.lazy; fi
+["lazyk","Main.lazy"]
+Lean (lean v4.22.0)export PATH=~/.elan/bin:$PATH
+cd atcoder
+lake -q build 1>&2
+["./atcoder/.lake/build/bin/atcoder"]
+LLVM IR (Clang 21.1.0)clang -O2 -march=native -o a.out Main.ll -fuse-ld=lld -lm
+["./a.out"]
+Lua (Lua 5.4.7)luac -o luac.out Main.lua
+["lua","luac.out"]
+Lua (LuaJIT 2.1.1703358377)luajit -O3 -b Main.lua luac.out
+["luajit","-O3","luac.out"]
+Mercury (Mercury 22.01.8)mmc -o a.out -O 5 main
+["./a.out"]
+Nim (Nim 1.6.20)export PATH=$HOME/.nimble/bin:$PATH
+nim cpp -d:release --opt:speed --multimethods:on --warning[SmallLshouldNotBeUsed]:off --hints:off --maxLoopIterationsVM:10000000000000 -o:a.out Main.nim
+["./a.out"]
+Nim (Nim 2.2.4)export PATH=$HOME/.nimble/bin:$PATH
+nim cpp -d:release --opt:speed --multimethods:on --warning[SmallLshouldNotBeUsed]:off --hints:off --maxLoopIterationsVM:10000000000000 --maxCallDepthVM:10000000000000 -o:a.out Main.nim
+["./a.out"]
+OCaml (ocamlopt 5.3.0)eval $(opam env) ocamlfind ocamlopt -O2 -o a.out \
+main.ml -linkpkg -thread \
+-package str,num,zarith,threads,containers,core,iter,batteries
+["./a.out"]
+Octave (GNU Octave 10.2.0)["octave","-W","Main.m"]
+Pascal (fpc 3.2.2)fpc -O2 -Sd -Sh -v0 -oa.out Main.p | grep -v -E '^(Free Pascal|Copyright)' 1>&2
+["./a.out"]
+Perl (perl 5.38.2)perl -c Main.pl && touch ok
+["perl","Main.pl"]
+PHP (PHP 8.4.12)php -l Main.php && touch a.out && php Main.php ONLINE_JUDGE 2> /dev/null
+["php","Main.php"]
+Piet (your-diary/piet_programming_language 3.0.0) (PPM image)piet_programming_language --max-iter 0 Main.ppm && touch ok
+["piet_programming_language","Main.ppm"]
+Pony (ponyc 0.59.0)export PATH=$HOME/.local/share/ponyup/bin:$PATH
+if ! corral run -- ponyc -b a.out -V=0 > err-out; then
+tail -n +4 err-out 1>&2
+fi
+["./a.out"]
+PowerShell (PowerShell 7.5.2)["pwsh","./Main.ps1"]
+Prolog (SWI-Prolog 9.2.9)swipl -O -g main -o a.out -c Main.pl
+["./a.out"]
+Python (CPython 3.13.7)python3.13 -m py_compile Main.py
+python3.13 Main.py ONLINE_JUDGE 2> /dev/null
+["python3.13","-X","int_max_str_digits=0","Main.py"]
+Python (PyPy 3.11-v7.3.20)pypy3 -m py_compile Main.py
+pypy3 Main.py ONLINE_JUDGE 2> /dev/null
+["pypy3","-X","int_max_str_digits=0","Main.py"]
+R (GNU R 4.5.0)Rscript Main.R < /dev/null &> /dev/null
+Rscript -e "parse('Main.R')" && touch a.out
+["Rscript","Main.R"]
+ReasonML (reson 3.16.0)cd main
+eval $(opam env)
+dune build --release
+["./main/_build/default/bin/main.exe"]
+Ruby 3.3 (truffleruby 25.0.0)export PATH=$HOME/.rubies/truffleruby/bin:$PATH
+ruby -c Main.rb && touch syntax_ok && ruby Main.rb ONLINE_JUDGE 2> /dev/null
+["sh","ruby.sh","{memory:mb}"]
+Ruby 3.4 (ruby 3.4.5)export PATH=$HOME/.rubies/ruby/bin:$PATH
+ruby -c Main.rb && touch syntax_ok && ruby --jit Main.rb ONLINE_JUDGE 2> /dev/null
+["ruby","--jit","Main.rb"]
+Rust (rustc 1.89.0)cargo build --release --quiet --offline
+["./target/release/main"]
+SageMath (SageMath 10.7)sage --preparse Main.sage
+python3 -m py_compile Main.sage.py || rm Main.sage.py
+["sage","--python3","Main.sage.py"]
+Scala (Dotty 3.7.2)scala-cli --power package --bloop-jvm system --jvm system -S 3.7.2 Main.scala -o Main --assembly --quiet 2>&1 | ansifilter 1>&2
+["sh","scala.sh","{memory:mb}"]
+Scala 3.7.2 (Scala Native 0.5.8)cd main && sbt -error "set offline := true" nativeLink 1>&2
+["./main/target/scala-3.7.2/main"]
+Scheme (ChezScheme 10.2.0)export CHEZSCHEMELIBDIRS=.:/usr/share/r6rs
+echo '(compile-file "Main.scm")' | scheme -q --optimize-level 3
+["scheme","-q","--optimize-level","3","--script","Main.so"]
+Scheme (Gauche 0.9.15)["gosh","./Main.scm"]
+Seed7 (Seed7 3.5.0)s7c -O2 -oc3 Main.sd7
+["./Main"]
+Swift 6.2
+NUMBER="6.2"
+VERSION="${NUMBER}-RELEASE"
+PLATFORM="ubuntu24.04"
+SWIFTC_COMMAND_PATH="$(pwd)/swift-${VERSION}-${PLATFORM}/usr/bin/swiftc"
+SWIFT_COMMAND_PATH="$(pwd)/swift-${VERSION}-${PLATFORM}/usr/bin/swift"
+export DEBIAN_FRONTEND=noninteractive
+# これがないとswift-ac-libraryのコンパイルが走ってしまう
+export SWIFT_AC_LIBRARY_USES_O_UNCHECKED=true
+export SWIFTPM_MAX_CONCURRENT_OPERATIONS=1
+export SWIFT_BACKTRACE='enable=yes,output-to=stderr,interactive=no'
+PACKAGE_NAME="Package"
+PACKAGE_PATH="$(pwd)/${PACKAGE_NAME}"
+EXECUTABLE_PATH="${PACKAGE_PATH}/.build/release/Main"
+SCRIPT_DIRECTORY="Script"
+SCRIPT_DIRECTORY_PATH="$(pwd)/${SCRIPT_DIRECTORY}"
+SCRIPT_PATH="${SCRIPT_DIRECTORY_PATH}/build.sh"
+# 差分コンパイルのログから抽出したコンパイルコマンドを実行します
+${SWIFTC_COMMAND_PATH} -module-name Main -emit-dependencies -emit-module -emit-module-path ${PACKAGE_PATH}/.build/x86_64-unknown-linux-gnu/release/Modules/Main.swiftmodule -output-file-map ${PACKAGE_PATH}/.build/x86_64-unknown-linux-gnu/release/Main.build/output-file-map.json -whole-module-optimization -num-threads 1 -c @${PACKAGE_PATH}/.build/x86_64-unknown-linux-gnu/release/Main.build/sources -I ${PACKAGE_PATH}/.build/x86_64-unknown-linux-gnu/release/Modules -target x86_64-unknown-linux-gnu -whole-module-optimization -num-threads 1 -serialize-diagnostics -O -j1 -DSWIFT_PACKAGE -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -Xcc -fmodule-map-file=${PACKAGE_PATH}/.build/checkouts/swift-numerics/Sources/_NumericsShims/include/module.modulemap -Xcc -I -Xcc ${PACKAGE_PATH}/.build/checkouts/swift-numerics/Sources/_NumericsShims/include -Xcc -fmodule-map-file=${PACKAGE_PATH}/.build/checkouts/accelerate-linux/Sources/CLAPACK/module.modulemap -I/usr/include/x86_64-linux-gnu -Xcc -fmodule-map-file=${PACKAGE_PATH}/.build/checkouts/accelerate-linux/Sources/CBLAS/module.modulemap -I/usr/include/x86_64-linux-gnu/openblas-pthread -Xcc -fmodule-map-file=${PACKAGE_PATH}/.build/x86_64-unknown-linux-gnu/release/_MT19937.build/module.modulemap -Xcc -I -Xcc ${PACKAGE_PATH}/.build/checkouts/swift-ac-foundation/Sources/_MT19937/include -Xcc -fmodule-map-file=${PACKAGE_PATH}/.build/x86_64-unknown-linux-gnu/release/_cxx.build/module.modulemap -Xcc -I -Xcc ${PACKAGE_PATH}/.build/checkouts/swift-ac-foundation/Sources/_cxx/include -Xcc -fmodule-map-file=${PACKAGE_PATH}/.build/x86_64-unknown-linux-gnu/release/_FastIO.build/module.modulemap -Xcc -I -Xcc ${PACKAGE_PATH}/.build/checkouts/swift-ac-foundation/Sources/_FastIO/include -module-cache-path ${PACKAGE_PATH}/.build/x86_64-unknown-linux-gnu/release/ModuleCache  -Xfrontend -entry-point-function-name -Xfrontend Main_main -swift-version 6 -DONLINE_JUDGE -default-isolation nonisolated -g -Xcc -fPIC -Xcc -g -package-name package -Xfrontend -load-plugin-executable -Xfrontend ${PACKAGE_PATH}/.build/x86_64-unknown-linux-gnu/release/swift-ac-memoizeMacros-tool#swift_ac_memoizeMacros -Xcc -fno-omit-frame-pointer
+${SWIFTC_COMMAND_PATH} -L/usr/lib/x86_64-linux-gnu -llapacke -L/usr/lib/x86_64-linux-gnu/openblas-pthread -lopenblas -lstdc++ -L ${PACKAGE_PATH}/.build/x86_64-unknown-linux-gnu/release -o ${PACKAGE_PATH}/.build/x86_64-unknown-linux-gnu/release/Main -module-name Main -emit-executable -Xlinker --gc-sections -Xlinker --defsym -Xlinker main=Main_main -Xlinker '-rpath=$ORIGIN' @${PACKAGE_PATH}/.build/x86_64-unknown-linux-gnu/release/Main.product/Objects.LinkFileList -target x86_64-unknown-linux-gnu -lm -g
+# (抽出スクリプトでビルドする場合)
+# bash $SCRIPT_PATH 1>&2
+# (swiftコマンドでビルドする場合)
+# ビルドオプションが変化するとフルビルドとなるため、インストールスクリプトと揃える必要がある
+# ${SWIFT_COMMAND_PATH} \
+#   build \
+#   --product Main \
+#   --build-system native \
+#   --jobs 1 \
+#   --configuration release \
+#   --package-path $PACKAGE_PATH \
+#   |& tee /dev/null
+if [ ! -f "$EXECUTABLE_PATH" ]; then
+echo "Error: Failed to build file '$EXECUTABLE_PATH'" >&2
+exit 1
+fi
+["Package/.build/release/Main"]
+Tcl (tclsh 9.0.1)["tclsh9.0","Main.tcl"]
+Terra (Terra 1.2.0)["terra","Main.t"]
+TeX (tex 3.141592653)["sh","tex.sh"]
+Text (cat 9.4)["cat","Main.text"]
+TypeScript 5.8 (Deno 2.4.5)export NO_COLOR=1
+export DENO_NO_UPDATE_CHECK=1
+export PATH=$PATH:$HOME/.deno/bin
+deno check --quiet Main.ts && touch ok
+["sh","deno.sh","{memory:kb}"]
+TypeScript 5.9 (tsc 5.9.2 (Bun 1.2.21))export PATH="$HOME/.bun/bin:$PATH"
+# https://bun.sh/docs/typescript#suggested-compileroptions を参考
+bun x --bun tsc Main.ts --lib ESNext --target ESNext --module ESNext --moduleDetection force --moduleResolution bundler --verbatimModuleSyntax --noEmitOnError --skipLibCheck --pretty | ansifilter 1>&2
+["bun","Main.ts","--no-install"]
+TypeScript 5.9 (tsc 5.9.2 (Node.js 22.19.0))tsc Main.ts --target ESNext --moduleResolution nodenext --module NodeNext --noEmitOnError --pretty true | ansifilter 1>&2
+["sh","node.sh","{memory:kb}","Main.js","ONLINE_JUDGE","ATCODER"]
+Uiua (uiua 0.16.2)./uiua check Main.ua > output
+result=$(tail -1 output)
+result=`echo $result`
+if [ "$result" = $'\r'"0/1 file compiled successfully" ]; then
+cat output >&2
+rm Main.ua
+fi
+rm output
+["./uiua","run","--no-format","--no-color","Main.ua"]
+Unison (Unison 0.5.47)sh -c "echo 'load main.u'; sleep 5 ; echo 'add'" | /opt/ucm/ucm > compile-out
+echo 'compile main main' | /opt/ucm/ucm
+if [ ! -f main ]; then
+cat compile-out | ansifilter 1>&2
+fi
+["/opt/ucm/ucm","run.compiled","main.uc"]
+V (0.4.10)v -prod -cc clang -no-bounds-checking -o a.out Main.v
+["./a.out"]
+Vala (valac 0.56.18)valac --Xcc="-O2" --pkg gee-0.8 --pkg gsl -o a.out Main.vala
+["./a.out"]
+Verilog 2012 (Icarus Verilog 12.0)iverilog -g2012 -DONLINE_JUDGE -DATCODER Main.v
+["vvp","-n","a.out"]
+Veryl (veryl 0.16.4)export PATH=$HOME/bin:$PATH
+cd main
+veryl build --quiet && verilator -CFLAGS "-O2 -march=native" --binary -f main.f
+["./main/obj_dir/Vmain"]
+WebAssembly (wabt 1.0.34 + iwasm 2.4.1)wat2wasm Main.wat && wamrc -o Main.aot Main.wasm
+["iwasm","Main.aot"]
+Whitespace (whitespacers 1.3.0)wsc --dump Main.dump Main.ws
+["wsc","Main.ws"]
+Zig (Zig 0.15.1)zig build --release -Doptimize=ReleaseFast
+["./zig-out/bin/judge"]
+なでしこ (cnako3 3.7.8 (Node.js 22.19.0))cnako3 -c Main.nako3
+["sh","node.sh","{memory:kb}","Main.mjs"]
+プロデル (mono版プロデル 2.0.1353)mono produire-mono/rdrc.exe /console /mono /quiet produire-mono/Main.rdr
+if [ $? -ne 0 ]; then
+rm -f produire-mono/Main.exe
+fi
+["mono","produire-mono/Main.exe"]
+Julia (Julia 1.11.6)export PATH=$PATH:/home/runner/.juliaup/bin
+julia -e "Meta.parse(\"begin \" * read(\"Main.jl\",String) * \" end\")" && touch ok && julia Main.jl ONLINE_JUDGE 2> /dev/null
+["julia","--threads=auto","--startup-file=no","--history-file=no","Main.jl"]
+Python (Codon 0.19.3)export CODON_PYTHON=/usr/local/lib/libpython3.13.so
+codon build --release -o a.out Main.py 2>&1 > /dev/null | ansifilter 1>&2
+["./a.out"]
+C++23 (Clang 21.1.0)AC_VARIANT=clang
+USER_BUILD_FLAGS=(
+"-DATCODER"
+"-DNOMINMAX"
+"-DONLINE_JUDGE"
+"-DOR_PROTO_DLL="
+"-DPROTOBUF_USE_DLLS"
+"-DUSE_BOP"
+"-DUSE_CBC"
+"-DUSE_CLP"
+"-DUSE_GLOP"
+"-DUSE_LP_PARSER"
+"-DUSE_MATH_OPT"
+"-DUSE_PDLP"
+"-DUSE_SCIP"
+"-I::install_dir::/include"
+"-O2"
+"-Wall"
+"-Wextra"
+"-Wno-float-conversion"
+"-Wno-implicit-float-conversion"
+"-Wno-implicit-int-float-conversion"
+"-Wno-unknown-warning-option"
+"-fconstexpr-depth=1024"
+"-fconstexpr-steps=524288"
+"-fexperimental-library"
+"-flto=auto"
+"-fprebuilt-module-path=."
+"-ftrivial-auto-var-init=zero"
+"-fuse-ld=lld"
+"-march=native"
+"-pthread"
+"-rtlib=compiler-rt"
+"-std=gnu++23"
+"-stdlib=libc++"
+"-unwindlib=libunwind"
+"-Wl,--as-needed"
+"-Wl,-R::install_dir::/lib/x86_64-unknown-linux-gnu"
+"-Wl,-R::install_dir::/lib/clang/20/lib/x86_64-unknown-linux-gnu"
+"-fopenmp"
+"-fopenmp-extensions"
+"-L::install_dir::/lib"
+"-Wl,-R::install_dir::/lib"
+"-fopenmp"
+"-labsl_cordz_sample_token"
+"-labsl_failure_signal_handler"
+"-labsl_flags_parse"
+"-labsl_flags_usage"
+"-labsl_flags_usage_internal"
+"-labsl_log_flags"
+"-labsl_periodic_sampler"
+"-labsl_poison"
+"-labsl_random_internal_distribution_test_util"
+"-labsl_scoped_set_env"
+"-lboost_atomic"
+"-lboost_charconv"
+"-lboost_chrono"
+"-lboost_container"
+"-lboost_context"
+"-lboost_contract"
+"-lboost_coroutine"
+"-lboost_date_time"
+"-lboost_exception"
+"-lboost_fiber"
+"-lboost_filesystem"
+"-lboost_graph"
+"-lboost_iostreams"
+"-lboost_json"
+"-lboost_locale"
+"-lboost_log"
+"-lboost_log_setup"
+"-lboost_math_c99"
+"-lboost_math_c99f"
+"-lboost_math_c99l"
+"-lboost_math_tr1"
+"-lboost_math_tr1f"
+"-lboost_math_tr1l"
+"-lboost_nowide"
+"-lboost_prg_exec_monitor"
+"-lboost_process"
+"-lboost_program_options"
+"-lboost_random"
+"-lboost_regex"
+"-lboost_serialization"
+"-lboost_stacktrace_from_exception"
+"-lboost_system"
+"-lboost_test_exec_monitor"
+"-lboost_thread"
+"-lboost_timer"
+"-lboost_type_erasure"
+"-lboost_unit_test_framework"
+"-lboost_url"
+"-lboost_wave"
+"-lboost_wserialization"
+"-lgmpxx"
+"-lgmp"
+"-lortools"
+"-lCbc"
+"-lCbcSolver"
+"-lCgl"
+"-lClp"
+"-lClpSolver"
+"-lCoinUtils"
+"-lGLPK"
+"-lOsi"
+"-lOsiCbc"
+"-lOsiClp"
+"-lhighs"
+"-lscip"
+"-lz"
+"-lbz2"
+"-lprotobuf"
+"-labsl_die_if_null"
+"-labsl_log_initialize"
+"-labsl_random_distributions"
+"-labsl_random_seed_sequences"
+"-labsl_random_internal_entropy_pool"
+"-labsl_random_internal_randen"
+"-labsl_random_internal_randen_hwaes"
+"-labsl_random_internal_randen_hwaes_impl"
+"-labsl_random_internal_randen_slow"
+"-labsl_random_internal_platform"
+"-labsl_random_internal_seed_material"
+"-labsl_random_seed_gen_exception"
+"-labsl_statusor"
+"-labsl_status"
+"-lutf8_validity"
+"-lutf8_range"
+"-pthread"
+"-lre2"
+"-labsl_log_internal_check_op"
+"-labsl_leak_check"
+"-labsl_log_internal_conditions"
+"-labsl_log_internal_message"
+"-labsl_examine_stack"
+"-labsl_log_internal_format"
+"-labsl_log_internal_nullguard"
+"-labsl_log_internal_structured_proto"
+"-labsl_log_internal_proto"
+"-labsl_log_internal_log_sink_set"
+"-labsl_log_internal_globals"
+"-labsl_log_globals"
+"-labsl_log_sink"
+"-labsl_strerror"
+"-labsl_vlog_config_internal"
+"-labsl_log_internal_fnmatch"
+"-labsl_flags_internal"
+"-labsl_flags_marshalling"
+"-labsl_flags_reflection"
+"-labsl_flags_private_handle_accessor"
+"-labsl_flags_commandlineflag"
+"-labsl_flags_commandlineflag_internal"
+"-labsl_flags_config"
+"-labsl_flags_program_name"
+"-labsl_raw_hash_set"
+"-labsl_cord"
+"-labsl_cordz_info"
+"-labsl_cord_internal"
+"-labsl_cordz_functions"
+"-labsl_cordz_handle"
+"-labsl_crc_cord_state"
+"-labsl_crc32c"
+"-labsl_crc_internal"
+"-labsl_crc_cpu_detect"
+"-labsl_hashtablez_sampler"
+"-labsl_exponential_biased"
+"-labsl_hash"
+"-labsl_city"
+"-labsl_low_level_hash"
+"-labsl_str_format_internal"
+"-labsl_synchronization"
+"-labsl_graphcycles_internal"
+"-labsl_kernel_timeout_internal"
+"-labsl_stacktrace"
+"-labsl_symbolize"
+"-labsl_debugging_internal"
+"-labsl_demangle_internal"
+"-labsl_demangle_rust"
+"-labsl_decode_rust_punycode"
+"-labsl_utf8_for_code_point"
+"-labsl_malloc_internal"
+"-labsl_time"
+"-labsl_civil_time"
+"-labsl_strings"
+"-labsl_strings_internal"
+"-labsl_string_view"
+"-labsl_int128"
+"-labsl_throw_delegate"
+"-labsl_time_zone"
+"-labsl_tracing_internal"
+"-labsl_base"
+"-lrt"
+"-labsl_raw_logging_internal"
+"-labsl_log_severity"
+"-labsl_spinlock_wait"
+"-lz3"
+"-l_lightgbm")
+set -eu
+ARGUMENTS=("$0")
+while (($#>0));do
+case "$1" in
+--variant)AC_VARIANT="$2"
+shift
+;;
+-h|--help|?)echo "{--option} / {ENVIRONMENT} [default]"
+echo "--variant / AC_VARIANT [gcc]"
+exit 0
+;;
+-*)echo "$(tput setaf 1)ERROR: $(tput sgr0)Unexpected command option: $(tput setaf 5)$1"
+exit 1
+;;
+*)ARGUMENTS=("${ARGUMENTS[@]}" "$1")
+esac
+shift
+done
+if [[ -z $AC_VARIANT ]];then
+export AC_VARIANT="gcc"
+fi
+INSTALL_DIR="$(cat /etc/atcoder/install_dir.txt)"
+USER_BUILD_FLAGS=("${USER_BUILD_FLAGS[@]//'::install_dir::'/$INSTALL_DIR}")
+if [[ $AC_VARIANT == "gcc" ]];then
+g++ ./Main.cpp -o a.out "${USER_BUILD_FLAGS[@]}"
+else
+clang++ std.pcm std.compat.pcm ./Main.cpp -o a.out "${USER_BUILD_FLAGS[@]}"
+fi["./a.out"]
+Fix (1.1.0-alpha.12)fix build -O max
+["./a.out"]
+SQL (DuckDB 1.3.2)["duckdb","-noheader","-f","Main.sql"]
+Visual Basic 16.9 (.NET 9.0.8)export DOTNET_ROOT=$HOME/.dotnet
+export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
+export DOTNET_EnableWriteXorExecute=0
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
+dotnet publish -c Release -o publish --no-restore --nologo -v q --tl:off 1>&2
+["./publish/Main"]
+ライブラリ
+このページに各言語で使用可能なライブラリが記載されています。
+並列化
+実行時間は実時間とCPU時間の大きい方で計測されます。並列化は禁止されていませんが、実行時間を短くすることには繋がりません。
+環境
+開発環境、エディタはお好きなものをご利用ください。
+また、コンテスト中の
+自作ライブラリの使用
+インターネットでの検索
+を認めております。ただし、後述にもあるように、ネタバレ行為は禁止しておりますのでお気をつけ下さい。
+空白についての出力形式緩和ルール
+本来の正しい出力について、空白文字（CR/LF/Space/Tab）を別の空白文字に置き換えたり、空白文字を先頭・末尾・別の空白文字の直後に追加したものを出力した場合も正解と判定されます。
+ただし、問題によってはこのルールが適用されない場合があり、その場合は問題文にその旨が明記されます。
+その他
+コンテスト中にネット上で問題のネタバレはご遠慮ください。また、他社サービスを使っての実況行為もネタバレにつながる可能性がございますのでご遠慮ください。
+AtCoderのシステムに攻撃を加えることは禁止しております。詳しくは利用規約をご参照ください。
+ジャッジ初回実行時のウォームアップのために1~2分ほどステータスがWJのままになることがあります。採点結果や順位表への影響はありませんのでご安心ください。5分以上更新されない場合にはClarにて該当提出を添えてお問い合わせください。
+コンテスト中におけるSNSの利用について
+すべての人に公開されている情報以外をコンテスト中にSNS等に投稿してはいけません。
+投稿しても良い内容の例：
+その時点での各問題に対するAC数、First ACした人、「全完した」などの順位表から得られる情報は投稿しても問題ありません。
+（凍結されていない限り）順位表はすべての人に公開されているためです。
+「面白かった」などの、問題に言及する内容を含まない感想は問題ありません。
+しかし、「面白かった。A問題は〇〇法を使って解いた」「A問題がTLEだった」「A問題はあることに気がつけば簡単だった」などは問題に言及する内容を含んでいるため、コンテスト中に投稿してはいけません。
+投稿してはいけない内容の例：
+解法に関する内容。
+WAの回数、TLEの回数、テストケース数など。これらの情報はコンテスト終了まで公開されていません。
+問題に対する自分の思考過程を書くこと。他者へのヒントとなりうるためです。お気をつけください。
+問題名、問題文、問題のジャンル、制約など。これらの情報もコンテスト終了まで公開されていません。
+Rules
+Rules
+Eligibility
+Anyone who is interested in programming  can join
+Team or Individual
+Unless otherwise specified, you must compete in a contest alone. We DO NOT allow you to team up form with others.
+How we judge who the winner is
+The contestant with the highest score within the given time will be the winner.
+In case of a tie in score, the contestant who achieved it in less time will be ranked higher.
+Penalty
+Each time you submit a wrong answer, you will be penalized with penalty time.
+NOTE: When Status of Judging is CE (compile error,) you will not be penalized.
+Time = Time spent on the last problem you solved + the number of times you have submitted wrong answers until you solved the problem * 5 minutes
+The following is an example.
+Time [minute: second]Status
+04:33A CORRECT
+10:22B WRONG
+11:03B CORRECT
+C and D were not submitted
+In this case, your ultimate score is 2 correct answers and Spent Time is 16:03（11:03 + 5:00）.
+Just to make sure, we will give you another example of "the number of times you have submitted wrong answers until you solved the problem" here.
+Time [minute: second]Status
+02:05A CORRECT
+10:56B CORRECT
+31:03C WRONG
+45:37C WRONG
+51:43C WRONG
+88:22D CORRECT
+In this case, the ultimate score is 3 correct answers and Spent Time is 88:22.
+Although you have submitted wrong answers 3 times to the problem C, you did not submit the correct answer.Therefore, the penalty time will not be accumulated to the problem C.
+Language
+The list below is programming languages supported by AtCoder system. Please solve the problem using a supported language.
+LanguageCompile / InterpreterExecution Command
+><> (fishr 0.1.0)["fishr","Main.fish"]
+Ada 2022 (GNAT 15.2.0)alr --no-color --no-tty build > /dev/null
+["./obj/main"]
+APL (GNU APL 1.9)["apl","--silent","--noCIN","--noCONT","--noColor","--OFF","--noSV","--rawCIN","-f","Main.apl"]
+Assembly MIPS O32 ABI (GNU assembler 2.42)mips-linux-gnu-as -o Main.o Main.s && mips-linux-gnu-ld -o Main Main.o
+["qemu-mips","Main"]
+Assembly x64 (NASM 2.16.03)nasm -f elf64 Main.asm && gcc -o a.out Main.o -lm
+["./a.out"]
+AWK (GNU awk 5.2.1)["gawk","-f","Main.awk"]
+A言語 (interpreter af48a2a)["interpreter","Main.a"]
+Bash (bash 5.3)bash -n Main.bash && touch ok
+["bash","Main.bash"]
+BASIC (FreeBASIC 1.10.1)fbc -O 3 -arch native Main.bas 1>&2
+["./Main"]
+bc (GNU bc 1.08.2)["bc","--mathlib","--quiet","Main.bc"]
+Befunge93 (TBC 1.0)tbc Main.bf > a.c
+cc -O2 -w a.c -o a.out
+["./a.out"]
+Brainfuck (Tritium 1.2.73)["tritium","-b","-e","Main.bf"]
+C23 (Clang 21.1.0)clang -O2 -march=native -std=c23 -Wall -Wextra -DONLINE_JUDGE -DATCODER -o a.out Main.c -rtlib=compiler-rt -fuse-ld=lld -lm
+["./a.out"]
+C23 (GCC 14.2.0)gcc-14 -O2 -march=native -std=c23 -Wall -Wextra -DONLINE_JUDGE -DATCODER Main.c -lm
+["./a.out"]
+C# 13.0 (.NET 9.0.8)export DOTNET_ROOT=$HOME/.dotnet
+export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
+export DOTNET_EnableWriteXorExecute=0
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
+dotnet publish -c Release -o publish --no-restore --nologo -v q --tl:off 1>&2
+["./publish/Main"]
+C# 13.0 (.NET Native AOT 9.0.8)export DOTNET_ROOT=$HOME/.dotnet
+export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
+export DOTNET_EnableWriteXorExecute=0
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
+dotnet publish -c Release -o publish --no-restore --nologo -v q --tl:off 1>&2
+["./publish/Main"]
+C++23 (GCC 15.2.0)AC_VARIANT=gcc
+USER_BUILD_FLAGS=(
+"-DATCODER"
+"-DNOMINMAX"
+"-DONLINE_JUDGE"
+"-DOR_PROTO_DLL="
+"-DPROTOBUF_USE_DLLS"
+"-DUSE_BOP"
+"-DUSE_CBC"
+"-DUSE_CLP"
+"-DUSE_GLOP"
+"-DUSE_LP_PARSER"
+"-DUSE_MATH_OPT"
+"-DUSE_PDLP"
+"-DUSE_SCIP"
+"-I::install_dir::/include"
+"-I::install_dir::/include/torch/csrc/api/include"
+"-O2"
+"-Wall"
+"-Wextra"
+"-fconstexpr-depth=1024"
+"-fconstexpr-loop-limit=524288"
+"-fconstexpr-ops-limit=2097152"
+"-fmodules"
+"-ftrivial-auto-var-init=zero"
+"-march=native"
+"-pthread"
+"-std=gnu++23"
+"-Wl,--as-needed"
+"-L::install_dir::/lib64"
+"-Wl,-R::install_dir::/lib64"
+"-L::install_dir::/lib"
+"-Wl,-R::install_dir::/lib"
+"-fopenmp"
+"-lstdc++exp"
+"-labsl_cordz_sample_token"
+"-labsl_failure_signal_handler"
+"-labsl_flags_parse"
+"-labsl_flags_usage"
+"-labsl_flags_usage_internal"
+"-labsl_log_flags"
+"-labsl_periodic_sampler"
+"-labsl_poison"
+"-labsl_random_internal_distribution_test_util"
+"-labsl_scoped_set_env"
+"-lboost_atomic"
+"-lboost_charconv"
+"-lboost_chrono"
+"-lboost_container"
+"-lboost_context"
+"-lboost_contract"
+"-lboost_coroutine"
+"-lboost_date_time"
+"-lboost_exception"
+"-lboost_fiber"
+"-lboost_filesystem"
+"-lboost_graph"
+"-lboost_iostreams"
+"-lboost_json"
+"-lboost_locale"
+"-lboost_log"
+"-lboost_log_setup"
+"-lboost_math_c99"
+"-lboost_math_c99f"
+"-lboost_math_c99l"
+"-lboost_math_tr1"
+"-lboost_math_tr1f"
+"-lboost_math_tr1l"
+"-lboost_nowide"
+"-lboost_prg_exec_monitor"
+"-lboost_process"
+"-lboost_program_options"
+"-lboost_random"
+"-lboost_regex"
+"-lboost_serialization"
+"-lboost_stacktrace_from_exception"
+"-lboost_system"
+"-lboost_test_exec_monitor"
+"-lboost_thread"
+"-lboost_timer"
+"-lboost_type_erasure"
+"-lboost_unit_test_framework"
+"-lboost_url"
+"-lboost_wave"
+"-lboost_wserialization"
+"-lgmpxx"
+"-lgmp"
+"-lortools"
+"-lCbc"
+"-lCbcSolver"
+"-lCgl"
+"-lClp"
+"-lClpSolver"
+"-lCoinUtils"
+"-lGLPK"
+"-lOsi"
+"-lOsiCbc"
+"-lOsiClp"
+"-lhighs"
+"-lscip"
+"-lz"
+"-lbz2"
+"-lprotobuf"
+"-labsl_die_if_null"
+"-labsl_log_initialize"
+"-labsl_random_distributions"
+"-labsl_random_seed_sequences"
+"-labsl_random_internal_entropy_pool"
+"-labsl_random_internal_randen"
+"-labsl_random_internal_randen_hwaes"
+"-labsl_random_internal_randen_hwaes_impl"
+"-labsl_random_internal_randen_slow"
+"-labsl_random_internal_platform"
+"-labsl_random_internal_seed_material"
+"-labsl_random_seed_gen_exception"
+"-labsl_statusor"
+"-labsl_status"
+"-lutf8_validity"
+"-lutf8_range"
+"-pthread"
+"-lre2"
+"-labsl_log_internal_check_op"
+"-labsl_leak_check"
+"-labsl_log_internal_conditions"
+"-labsl_log_internal_message"
+"-labsl_examine_stack"
+"-labsl_log_internal_format"
+"-labsl_log_internal_nullguard"
+"-labsl_log_internal_structured_proto"
+"-labsl_log_internal_proto"
+"-labsl_log_internal_log_sink_set"
+"-labsl_log_internal_globals"
+"-labsl_log_globals"
+"-labsl_log_sink"
+"-labsl_strerror"
+"-labsl_vlog_config_internal"
+"-labsl_log_internal_fnmatch"
+"-labsl_flags_internal"
+"-labsl_flags_marshalling"
+"-labsl_flags_reflection"
+"-labsl_flags_private_handle_accessor"
+"-labsl_flags_commandlineflag"
+"-labsl_flags_commandlineflag_internal"
+"-labsl_flags_config"
+"-labsl_flags_program_name"
+"-labsl_raw_hash_set"
+"-labsl_cord"
+"-labsl_cordz_info"
+"-labsl_cord_internal"
+"-labsl_cordz_functions"
+"-labsl_cordz_handle"
+"-labsl_crc_cord_state"
+"-labsl_crc32c"
+"-labsl_crc_internal"
+"-labsl_crc_cpu_detect"
+"-labsl_hashtablez_sampler"
+"-labsl_exponential_biased"
+"-labsl_hash"
+"-labsl_city"
+"-labsl_low_level_hash"
+"-labsl_str_format_internal"
+"-labsl_synchronization"
+"-labsl_graphcycles_internal"
+"-labsl_kernel_timeout_internal"
+"-labsl_stacktrace"
+"-labsl_symbolize"
+"-labsl_debugging_internal"
+"-labsl_demangle_internal"
+"-labsl_demangle_rust"
+"-labsl_decode_rust_punycode"
+"-labsl_utf8_for_code_point"
+"-labsl_malloc_internal"
+"-labsl_time"
+"-labsl_civil_time"
+"-labsl_strings"
+"-labsl_strings_internal"
+"-labsl_string_view"
+"-labsl_int128"
+"-labsl_throw_delegate"
+"-labsl_time_zone"
+"-labsl_tracing_internal"
+"-labsl_base"
+"-lrt"
+"-labsl_raw_logging_internal"
+"-labsl_log_severity"
+"-labsl_spinlock_wait"
+"-lz3"
+"-l_lightgbm"
+"-ltorch"
+"-ltorch_cpu"
+"-lc10")
+set -eu
+ARGUMENTS=("$0")
+while (($#>0));do
+case "$1" in
+--variant)AC_VARIANT="$2"
+shift
+;;
+-h|--help|?)echo "{--option} / {ENVIRONMENT} [default]"
+echo "--variant / AC_VARIANT [gcc]"
+exit 0
+;;
+-*)echo "$(tput setaf 1)ERROR: $(tput sgr0)Unexpected command option: $(tput setaf 5)$1"
+exit 1
+;;
+*)ARGUMENTS=("${ARGUMENTS[@]}" "$1")
+esac
+shift
+done
+if [[ -z $AC_VARIANT ]];then
+export AC_VARIANT="gcc"
+fi
+INSTALL_DIR="$(cat /etc/atcoder/install_dir.txt)"
+USER_BUILD_FLAGS=("${USER_BUILD_FLAGS[@]//'::install_dir::'/$INSTALL_DIR}")
+if [[ $AC_VARIANT == "gcc" ]];then
+g++ ./Main.cpp -o a.out "${USER_BUILD_FLAGS[@]}"
+else
+clang++ std.pcm std.compat.pcm ./Main.cpp -o a.out "${USER_BUILD_FLAGS[@]}"
+fi["./a.out"]
+C3 (c3c 0.7.5)$HOME/c3/c3c -q --ansi=no compile -O5 --x86cpu=native -o a.out Main.c3
+["./a.out"]
+Carp(Carp 0.5.5)export CARP_DIR=/opt/carp-v0.5.5-x86_64-linux
+carp -b --optimize Main.carp 1>&2
+["./out/Untitled"]
+cLay (cLay 20250308-1 (GCC 15.2.0))clay < main.clay > main.cpp && cmake --build build -- --quiet 1>&2
+["./build/main"]
+Clojure (babashka 1.12.208)["bb","Main.clj"]
+Clojure (clojure 1.12.2)["sh","clojure.sh","{memory:mb}"]
+Clojure (Clojure AOT 1.12.2)cd main
+lein uberjar > /tmp/lein.log
+if grep -q -E '^Warning: The Main-Class specified does not exist within the jar' /tmp/lein.log; then
+rm target/uberjar/main-0.1.0-SNAPSHOT-standalone.jar
+grep -E '^Warning:' /tmp/lein.log | sed 's/^Warning:/Error:/' 1>&2
+fi
+["sh","clojure-aot.sh","{memory:mb}"]
+Clojure (ClojureScript 1.12.42 (Clojure 1.12.2 Node.js 22.19.0))export NODE_PATH=/usr/local/lib/node_modules
+cd main
+lein cljsbuild once prod 2>&1 1>/dev/null | grep main/core 1>&2
+["sh","node.sh","{memory:kb}","server.js"]
+COBOL (Free) (GnuCOBOL 3.2)cobc -x -free -O2 -o a.out Main.cbl
+["./a.out"]
+Common Lisp (SBCL 2.5.8)export SBCL_HOME=/usr/local/lib/sbcl
+./sbcl --eval '(compile-file "Main.lisp")' --quit
+if [ -f Main.fasl ]; then
+chmod +x Main.fasl
+fi
+["./Main.fasl"]
+Crystal (Crystal 1.17.0)cd main && shards build --release --no-debug --no-color --quiet -Donline_judge 1>&2
+["./main/bin/main"]
+Cyber (Cyber v0.3)if cyber compile Main.cy > compile-out 2>&1; then
+touch ok
+else
+cat compile-out 1>&2
+fi
+["cyber","Main.cy"]
+D (DMD 2.111.0)dub build --skip-registry=all --nodeps --build=release-nobounds
+["./judge"]
+D (GDC 15.2)dub build --quiet --compiler=gdc-15 --skip-registry=all --nodeps --build=release-nobounds
+["./judge"]
+D (LDC 1.41.0)dub build --skip-registry=all --nodeps --build=release-nobounds
+["./judge"]
+Dart (Dart 3.9.2)dart compile exe judge/bin/judge.dart -o a.out
+["./a.out"]
+dc 1.5.2 (GNU bc 1.08.2)["dc","-f","Main.dc"]
+ECLiPSe (ECLiPSe 7.1_13)export PATH=$PATH:$HOME/.eclipse/bin/x86_64_linux
+echo "compile('Main.ecl', [output: eco, debug: off])" | eclipse 2> err-out
+if grep -q -E '^file Main.ecl:.*error:' err-out; then
+rm Main.eco
+cat err-out 1>&2
+fi
+["eclipse","-f","Main.eco","-e","main"]
+Eiffel (Gobo Eiffel 22.01)export GOBO=$HOME/gobo
+export PATH=$GOBO/bin:$PATH
+gec --gc=boehm main.ecf 1>&2
+["./Main"]
+Eiffel (Liberty Eiffel 07829e3)se c main -bdw_gc --boost -o a.out
+["./a.out"]
+Elixir (Elixir 1.18.4 (OTP 28.0.2))cd main
+MIX_ENV=prod mix release --quiet --overwrite 2> /tmp/err-out || cat /tmp/err-out | ansifilter 1>&2
+["main/_build/prod/rel/main/bin/main","eval","Main.main"]
+Emacs Lisp(Native Compile)(GNU Emacs 29.4)emacs --batch -f package-initialize --eval '(native-compile "Main.el" (expand-file-name "Main.eln"))'
+["emacs","--batch","-f","package-initialize","-l","Main.eln"]
+Emojicode 1.0 beta 2 (emojicodec 1.0 beta 2)emojicodec Main.🍇 -O -o a.out 1>&2["./a.out"]
+Erlang (Erlang 28.0.2)erlc Main.erl 1>&2
+["erl","-noshell","-run","Main","main","run"]
+F# 9.0 (.NET 9.0.8)export DOTNET_ROOT=$HOME/.dotnet
+export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
+export DOTNET_EnableWriteXorExecute=0
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
+dotnet publish -c Release -o publish --no-restore --nologo -v q --tl:off 1>&2
+["./publish/Main"]
+Factor (Factor 0.100)# a workaround to avoid MLE
+# https://atcoder.jp/contests/language-test-202505/submissions/69450872
+/opt/factor/factor
+["/opt/factor/factor","-datastack=102400","-retainstack=102400","-callstack=102400","-callbacks=102400","Main.factor"]
+Fish (fish 4.0.2)fish -n Main.fish && touch ok
+["fish","Main.fish"]
+Forth (gforth 0.7.3)["gforth-fast","-m","100M","-d","100M","-r","100M","-f","100M","-l","100M","Main.fs","-e","bye"]
+Fortran2018 (Flang 20.1.7)export PATH="$HOME/.local/bin:$PATH"
+export LD_LIBRARY_PATH="$HOME/.local/lib"
+flang-new -L$HOME/.local/lib -I$HOME/.local/include -O2 -cpp -std=f2018 Main.f90 -lstdlib
+["./a.out"]
+Fortran2023 (GCC 14.2.0)export PATH="$HOME/.local/bin:$PATH"
+export LD_LIBRARY_PATH="$HOME/.local/lib"
+gfortran -L$HOME/.local/lib -I$HOME/.local/include -O2 -cpp -ffree-line-length-none -std=f2023 Main.f90 -lstdlib
+["./a.out"]
+FORTRAN77 (GCC 14.2.0)export PATH="$HOME/.local/bin:$PATH"
+export LD_LIBRARY_PATH="$HOME/.local/lib"
+f77 -L$HOME/.local/lib -I$HOME/.local/include -O2 -cpp -ffixed-form Main.f -lstdlib
+["./a.out"]
+Gleam (Gleam 1.12.0 (OTP 28.0.2))gleam build --no-print-progress
+["gleam","run","--no-print-progress"]
+Go 1.18 (gccgo 15.2.0)go-15 build -o a.out
+["./a.out"]
+Go (go 1.25.1)export PATH=$PATH:/opt/go/bin
+go build -o a.out
+["./a.out"]
+Haskell (GHC 9.8.4)cd submission
+source ~/.ghcup/env
+cabal v2-build --offline && cp $(cabal list-bin main) ../
+["./main"]
+Haxe/JVM 4.3.7 (hxjava 4.2.0)export PATH=$PATH:/opt/haxe
+export HAXE_STD_PATH=/opt/haxe/std
+haxe --dce full -D analyzer-optimize -L wronganswer --main Main --jvm Main.jar
+if [ ! -e Main.jar ]; then exit 1; fi
+java -jar --dry-run Main.jar || rm -f Main.jar
+["sh","java.sh","{memory:mb}"]
+C++ IOI-Style(GNU++20) (GCC 14.2.0)g++-14 -DEVAL -std=gnu++20 -O2 -pipe -static -s -o a.out Main.cpp
+["./a.out"]
+ISLisp (Easy-ISLisp 5.43)(echo '(compile-file "main.lsp")' | eisl -cr) > output
+if [ ! -f main.o ]; then
+cat output >&2
+fi
+rm output
+["eisl","-s","main.o"]
+Java24 (OpenJDK 24.0.2)javac -cp ac_library.jar:bifurcan.jar Main.java
+["sh","java.sh","{memory:mb}"]
+JavaScript (Bun 1.2.21)["bun","Main.js","--no-install"]
+JavaScript (Deno 2.4.5)export NO_COLOR=1
+export DENO_NO_UPDATE_CHECK=1
+export PATH=$PATH:$HOME/.deno/bin
+deno check --quiet Main.js && touch ok
+["sh","deno.sh","{memory:kb}"]
+JavaScript (Node.js 22.19.0)node --check Main.js && touch ok
+["sh","node.sh","{memory:kb}","Main.js","ONLINE_JUDGE","ATCODER"]
+Jule (jule 0.1.6)$HOME/jule/bin/julec --cppstd cpp20 --opt L2 -p . | ansifilter 1>&2
+["./a.out"]
+Koka (koka v3.2.2)# --no-debug: デバッグのための情報を付けないようにする
+# -v0       : ログ出力を減らす (デフォルトは1)
+koka -O2 --no-debug -o a.out main.kk --buildtag=atcoder --no-buildhash -v0 1>&2
+if [ -f a.out ]; then chmod +x a.out; fi
+["./a.out"]
+Kotlin (Kotlin/JVM 2.2.10)/usr/local/kotlinc/bin/kotlinc ./Main.kt -cp ac_library.jar:kotlinx-collections-immutable-jvm.jar -include-runtime -jvm-target 23 -d ./Main.jar
+["sh","kotlin.sh","{memory:mb}"]
+Kuin (kuincl v.2021.8.17)./kuin/kuincl -i main.kn -o main.cpp -s kuin/sys/ -e cpp -r -q 1>&2 && g++ -O2 -o a.out main.cpp
+["./a.out"]
+Lazy K (irori v1.0.0)timeout 0.01 lazyk -v0 Main.lazy > /dev/null || if [ $? -ne 124 ]; then rm Main.lazy; fi
+["lazyk","Main.lazy"]
+Lean (lean v4.22.0)export PATH=~/.elan/bin:$PATH
+cd atcoder
+lake -q build 1>&2
+["./atcoder/.lake/build/bin/atcoder"]
+LLVM IR (Clang 21.1.0)clang -O2 -march=native -o a.out Main.ll -fuse-ld=lld -lm
+["./a.out"]
+Lua (Lua 5.4.7)luac -o luac.out Main.lua
+["lua","luac.out"]
+Lua (LuaJIT 2.1.1703358377)luajit -O3 -b Main.lua luac.out
+["luajit","-O3","luac.out"]
+Mercury (Mercury 22.01.8)mmc -o a.out -O 5 main
+["./a.out"]
+Nim (Nim 1.6.20)export PATH=$HOME/.nimble/bin:$PATH
+nim cpp -d:release --opt:speed --multimethods:on --warning[SmallLshouldNotBeUsed]:off --hints:off --maxLoopIterationsVM:10000000000000 -o:a.out Main.nim
+["./a.out"]
+Nim (Nim 2.2.4)export PATH=$HOME/.nimble/bin:$PATH
+nim cpp -d:release --opt:speed --multimethods:on --warning[SmallLshouldNotBeUsed]:off --hints:off --maxLoopIterationsVM:10000000000000 --maxCallDepthVM:10000000000000 -o:a.out Main.nim
+["./a.out"]
+OCaml (ocamlopt 5.3.0)eval $(opam env) ocamlfind ocamlopt -O2 -o a.out \
+main.ml -linkpkg -thread \
+-package str,num,zarith,threads,containers,core,iter,batteries
+["./a.out"]
+Octave (GNU Octave 10.2.0)["octave","-W","Main.m"]
+Pascal (fpc 3.2.2)fpc -O2 -Sd -Sh -v0 -oa.out Main.p | grep -v -E '^(Free Pascal|Copyright)' 1>&2
+["./a.out"]
+Perl (perl 5.38.2)perl -c Main.pl && touch ok
+["perl","Main.pl"]
+PHP (PHP 8.4.12)php -l Main.php && touch a.out && php Main.php ONLINE_JUDGE 2> /dev/null
+["php","Main.php"]
+Piet (your-diary/piet_programming_language 3.0.0) (PPM image)piet_programming_language --max-iter 0 Main.ppm && touch ok
+["piet_programming_language","Main.ppm"]
+Pony (ponyc 0.59.0)export PATH=$HOME/.local/share/ponyup/bin:$PATH
+if ! corral run -- ponyc -b a.out -V=0 > err-out; then
+tail -n +4 err-out 1>&2
+fi
+["./a.out"]
+PowerShell (PowerShell 7.5.2)["pwsh","./Main.ps1"]
+Prolog (SWI-Prolog 9.2.9)swipl -O -g main -o a.out -c Main.pl
+["./a.out"]
+Python (CPython 3.13.7)python3.13 -m py_compile Main.py
+python3.13 Main.py ONLINE_JUDGE 2> /dev/null
+["python3.13","-X","int_max_str_digits=0","Main.py"]
+Python (PyPy 3.11-v7.3.20)pypy3 -m py_compile Main.py
+pypy3 Main.py ONLINE_JUDGE 2> /dev/null
+["pypy3","-X","int_max_str_digits=0","Main.py"]
+R (GNU R 4.5.0)Rscript Main.R < /dev/null &> /dev/null
+Rscript -e "parse('Main.R')" && touch a.out
+["Rscript","Main.R"]
+ReasonML (reson 3.16.0)cd main
+eval $(opam env)
+dune build --release
+["./main/_build/default/bin/main.exe"]
+Ruby 3.3 (truffleruby 25.0.0)export PATH=$HOME/.rubies/truffleruby/bin:$PATH
+ruby -c Main.rb && touch syntax_ok && ruby Main.rb ONLINE_JUDGE 2> /dev/null
+["sh","ruby.sh","{memory:mb}"]
+Ruby 3.4 (ruby 3.4.5)export PATH=$HOME/.rubies/ruby/bin:$PATH
+ruby -c Main.rb && touch syntax_ok && ruby --jit Main.rb ONLINE_JUDGE 2> /dev/null
+["ruby","--jit","Main.rb"]
+Rust (rustc 1.89.0)cargo build --release --quiet --offline
+["./target/release/main"]
+SageMath (SageMath 10.7)sage --preparse Main.sage
+python3 -m py_compile Main.sage.py || rm Main.sage.py
+["sage","--python3","Main.sage.py"]
+Scala (Dotty 3.7.2)scala-cli --power package --bloop-jvm system --jvm system -S 3.7.2 Main.scala -o Main --assembly --quiet 2>&1 | ansifilter 1>&2
+["sh","scala.sh","{memory:mb}"]
+Scala 3.7.2 (Scala Native 0.5.8)cd main && sbt -error "set offline := true" nativeLink 1>&2
+["./main/target/scala-3.7.2/main"]
+Scheme (ChezScheme 10.2.0)export CHEZSCHEMELIBDIRS=.:/usr/share/r6rs
+echo '(compile-file "Main.scm")' | scheme -q --optimize-level 3
+["scheme","-q","--optimize-level","3","--script","Main.so"]
+Scheme (Gauche 0.9.15)["gosh","./Main.scm"]
+Seed7 (Seed7 3.5.0)s7c -O2 -oc3 Main.sd7
+["./Main"]
+Swift 6.2
+NUMBER="6.2"
+VERSION="${NUMBER}-RELEASE"
+PLATFORM="ubuntu24.04"
+SWIFTC_COMMAND_PATH="$(pwd)/swift-${VERSION}-${PLATFORM}/usr/bin/swiftc"
+SWIFT_COMMAND_PATH="$(pwd)/swift-${VERSION}-${PLATFORM}/usr/bin/swift"
+export DEBIAN_FRONTEND=noninteractive
+# これがないとswift-ac-libraryのコンパイルが走ってしまう
+export SWIFT_AC_LIBRARY_USES_O_UNCHECKED=true
+export SWIFTPM_MAX_CONCURRENT_OPERATIONS=1
+export SWIFT_BACKTRACE='enable=yes,output-to=stderr,interactive=no'
+PACKAGE_NAME="Package"
+PACKAGE_PATH="$(pwd)/${PACKAGE_NAME}"
+EXECUTABLE_PATH="${PACKAGE_PATH}/.build/release/Main"
+SCRIPT_DIRECTORY="Script"
+SCRIPT_DIRECTORY_PATH="$(pwd)/${SCRIPT_DIRECTORY}"
+SCRIPT_PATH="${SCRIPT_DIRECTORY_PATH}/build.sh"
+# 差分コンパイルのログから抽出したコンパイルコマンドを実行します
+${SWIFTC_COMMAND_PATH} -module-name Main -emit-dependencies -emit-module -emit-module-path ${PACKAGE_PATH}/.build/x86_64-unknown-linux-gnu/release/Modules/Main.swiftmodule -output-file-map ${PACKAGE_PATH}/.build/x86_64-unknown-linux-gnu/release/Main.build/output-file-map.json -whole-module-optimization -num-threads 1 -c @${PACKAGE_PATH}/.build/x86_64-unknown-linux-gnu/release/Main.build/sources -I ${PACKAGE_PATH}/.build/x86_64-unknown-linux-gnu/release/Modules -target x86_64-unknown-linux-gnu -whole-module-optimization -num-threads 1 -serialize-diagnostics -O -j1 -DSWIFT_PACKAGE -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -Xcc -fmodule-map-file=${PACKAGE_PATH}/.build/checkouts/swift-numerics/Sources/_NumericsShims/include/module.modulemap -Xcc -I -Xcc ${PACKAGE_PATH}/.build/checkouts/swift-numerics/Sources/_NumericsShims/include -Xcc -fmodule-map-file=${PACKAGE_PATH}/.build/checkouts/accelerate-linux/Sources/CLAPACK/module.modulemap -I/usr/include/x86_64-linux-gnu -Xcc -fmodule-map-file=${PACKAGE_PATH}/.build/checkouts/accelerate-linux/Sources/CBLAS/module.modulemap -I/usr/include/x86_64-linux-gnu/openblas-pthread -Xcc -fmodule-map-file=${PACKAGE_PATH}/.build/x86_64-unknown-linux-gnu/release/_MT19937.build/module.modulemap -Xcc -I -Xcc ${PACKAGE_PATH}/.build/checkouts/swift-ac-foundation/Sources/_MT19937/include -Xcc -fmodule-map-file=${PACKAGE_PATH}/.build/x86_64-unknown-linux-gnu/release/_cxx.build/module.modulemap -Xcc -I -Xcc ${PACKAGE_PATH}/.build/checkouts/swift-ac-foundation/Sources/_cxx/include -Xcc -fmodule-map-file=${PACKAGE_PATH}/.build/x86_64-unknown-linux-gnu/release/_FastIO.build/module.modulemap -Xcc -I -Xcc ${PACKAGE_PATH}/.build/checkouts/swift-ac-foundation/Sources/_FastIO/include -module-cache-path ${PACKAGE_PATH}/.build/x86_64-unknown-linux-gnu/release/ModuleCache  -Xfrontend -entry-point-function-name -Xfrontend Main_main -swift-version 6 -DONLINE_JUDGE -default-isolation nonisolated -g -Xcc -fPIC -Xcc -g -package-name package -Xfrontend -load-plugin-executable -Xfrontend ${PACKAGE_PATH}/.build/x86_64-unknown-linux-gnu/release/swift-ac-memoizeMacros-tool#swift_ac_memoizeMacros -Xcc -fno-omit-frame-pointer
+${SWIFTC_COMMAND_PATH} -L/usr/lib/x86_64-linux-gnu -llapacke -L/usr/lib/x86_64-linux-gnu/openblas-pthread -lopenblas -lstdc++ -L ${PACKAGE_PATH}/.build/x86_64-unknown-linux-gnu/release -o ${PACKAGE_PATH}/.build/x86_64-unknown-linux-gnu/release/Main -module-name Main -emit-executable -Xlinker --gc-sections -Xlinker --defsym -Xlinker main=Main_main -Xlinker '-rpath=$ORIGIN' @${PACKAGE_PATH}/.build/x86_64-unknown-linux-gnu/release/Main.product/Objects.LinkFileList -target x86_64-unknown-linux-gnu -lm -g
+# (抽出スクリプトでビルドする場合)
+# bash $SCRIPT_PATH 1>&2
+# (swiftコマンドでビルドする場合)
+# ビルドオプションが変化するとフルビルドとなるため、インストールスクリプトと揃える必要がある
+# ${SWIFT_COMMAND_PATH} \
+#   build \
+#   --product Main \
+#   --build-system native \
+#   --jobs 1 \
+#   --configuration release \
+#   --package-path $PACKAGE_PATH \
+#   |& tee /dev/null
+if [ ! -f "$EXECUTABLE_PATH" ]; then
+echo "Error: Failed to build file '$EXECUTABLE_PATH'" >&2
+exit 1
+fi
+["Package/.build/release/Main"]
+Tcl (tclsh 9.0.1)["tclsh9.0","Main.tcl"]
+Terra (Terra 1.2.0)["terra","Main.t"]
+TeX (tex 3.141592653)["sh","tex.sh"]
+Text (cat 9.4)["cat","Main.text"]
+TypeScript 5.8 (Deno 2.4.5)export NO_COLOR=1
+export DENO_NO_UPDATE_CHECK=1
+export PATH=$PATH:$HOME/.deno/bin
+deno check --quiet Main.ts && touch ok
+["sh","deno.sh","{memory:kb}"]
+TypeScript 5.9 (tsc 5.9.2 (Bun 1.2.21))export PATH="$HOME/.bun/bin:$PATH"
+# https://bun.sh/docs/typescript#suggested-compileroptions を参考
+bun x --bun tsc Main.ts --lib ESNext --target ESNext --module ESNext --moduleDetection force --moduleResolution bundler --verbatimModuleSyntax --noEmitOnError --skipLibCheck --pretty | ansifilter 1>&2
+["bun","Main.ts","--no-install"]
+TypeScript 5.9 (tsc 5.9.2 (Node.js 22.19.0))tsc Main.ts --target ESNext --moduleResolution nodenext --module NodeNext --noEmitOnError --pretty true | ansifilter 1>&2
+["sh","node.sh","{memory:kb}","Main.js","ONLINE_JUDGE","ATCODER"]
+Uiua (uiua 0.16.2)./uiua check Main.ua > output
+result=$(tail -1 output)
+result=`echo $result`
+if [ "$result" = $'\r'"0/1 file compiled successfully" ]; then
+cat output >&2
+rm Main.ua
+fi
+rm output
+["./uiua","run","--no-format","--no-color","Main.ua"]
+Unison (Unison 0.5.47)sh -c "echo 'load main.u'; sleep 5 ; echo 'add'" | /opt/ucm/ucm > compile-out
+echo 'compile main main' | /opt/ucm/ucm
+if [ ! -f main ]; then
+cat compile-out | ansifilter 1>&2
+fi
+["/opt/ucm/ucm","run.compiled","main.uc"]
+V (0.4.10)v -prod -cc clang -no-bounds-checking -o a.out Main.v
+["./a.out"]
+Vala (valac 0.56.18)valac --Xcc="-O2" --pkg gee-0.8 --pkg gsl -o a.out Main.vala
+["./a.out"]
+Verilog 2012 (Icarus Verilog 12.0)iverilog -g2012 -DONLINE_JUDGE -DATCODER Main.v
+["vvp","-n","a.out"]
+Veryl (veryl 0.16.4)export PATH=$HOME/bin:$PATH
+cd main
+veryl build --quiet && verilator -CFLAGS "-O2 -march=native" --binary -f main.f
+["./main/obj_dir/Vmain"]
+WebAssembly (wabt 1.0.34 + iwasm 2.4.1)wat2wasm Main.wat && wamrc -o Main.aot Main.wasm
+["iwasm","Main.aot"]
+Whitespace (whitespacers 1.3.0)wsc --dump Main.dump Main.ws
+["wsc","Main.ws"]
+Zig (Zig 0.15.1)zig build --release -Doptimize=ReleaseFast
+["./zig-out/bin/judge"]
+なでしこ (cnako3 3.7.8 (Node.js 22.19.0))cnako3 -c Main.nako3
+["sh","node.sh","{memory:kb}","Main.mjs"]
+プロデル (mono版プロデル 2.0.1353)mono produire-mono/rdrc.exe /console /mono /quiet produire-mono/Main.rdr
+if [ $? -ne 0 ]; then
+rm -f produire-mono/Main.exe
+fi
+["mono","produire-mono/Main.exe"]
+Julia (Julia 1.11.6)export PATH=$PATH:/home/runner/.juliaup/bin
+julia -e "Meta.parse(\"begin \" * read(\"Main.jl\",String) * \" end\")" && touch ok && julia Main.jl ONLINE_JUDGE 2> /dev/null
+["julia","--threads=auto","--startup-file=no","--history-file=no","Main.jl"]
+Python (Codon 0.19.3)export CODON_PYTHON=/usr/local/lib/libpython3.13.so
+codon build --release -o a.out Main.py 2>&1 > /dev/null | ansifilter 1>&2
+["./a.out"]
+C++23 (Clang 21.1.0)AC_VARIANT=clang
+USER_BUILD_FLAGS=(
+"-DATCODER"
+"-DNOMINMAX"
+"-DONLINE_JUDGE"
+"-DOR_PROTO_DLL="
+"-DPROTOBUF_USE_DLLS"
+"-DUSE_BOP"
+"-DUSE_CBC"
+"-DUSE_CLP"
+"-DUSE_GLOP"
+"-DUSE_LP_PARSER"
+"-DUSE_MATH_OPT"
+"-DUSE_PDLP"
+"-DUSE_SCIP"
+"-I::install_dir::/include"
+"-O2"
+"-Wall"
+"-Wextra"
+"-Wno-float-conversion"
+"-Wno-implicit-float-conversion"
+"-Wno-implicit-int-float-conversion"
+"-Wno-unknown-warning-option"
+"-fconstexpr-depth=1024"
+"-fconstexpr-steps=524288"
+"-fexperimental-library"
+"-flto=auto"
+"-fprebuilt-module-path=."
+"-ftrivial-auto-var-init=zero"
+"-fuse-ld=lld"
+"-march=native"
+"-pthread"
+"-rtlib=compiler-rt"
+"-std=gnu++23"
+"-stdlib=libc++"
+"-unwindlib=libunwind"
+"-Wl,--as-needed"
+"-Wl,-R::install_dir::/lib/x86_64-unknown-linux-gnu"
+"-Wl,-R::install_dir::/lib/clang/20/lib/x86_64-unknown-linux-gnu"
+"-fopenmp"
+"-fopenmp-extensions"
+"-L::install_dir::/lib"
+"-Wl,-R::install_dir::/lib"
+"-fopenmp"
+"-labsl_cordz_sample_token"
+"-labsl_failure_signal_handler"
+"-labsl_flags_parse"
+"-labsl_flags_usage"
+"-labsl_flags_usage_internal"
+"-labsl_log_flags"
+"-labsl_periodic_sampler"
+"-labsl_poison"
+"-labsl_random_internal_distribution_test_util"
+"-labsl_scoped_set_env"
+"-lboost_atomic"
+"-lboost_charconv"
+"-lboost_chrono"
+"-lboost_container"
+"-lboost_context"
+"-lboost_contract"
+"-lboost_coroutine"
+"-lboost_date_time"
+"-lboost_exception"
+"-lboost_fiber"
+"-lboost_filesystem"
+"-lboost_graph"
+"-lboost_iostreams"
+"-lboost_json"
+"-lboost_locale"
+"-lboost_log"
+"-lboost_log_setup"
+"-lboost_math_c99"
+"-lboost_math_c99f"
+"-lboost_math_c99l"
+"-lboost_math_tr1"
+"-lboost_math_tr1f"
+"-lboost_math_tr1l"
+"-lboost_nowide"
+"-lboost_prg_exec_monitor"
+"-lboost_process"
+"-lboost_program_options"
+"-lboost_random"
+"-lboost_regex"
+"-lboost_serialization"
+"-lboost_stacktrace_from_exception"
+"-lboost_system"
+"-lboost_test_exec_monitor"
+"-lboost_thread"
+"-lboost_timer"
+"-lboost_type_erasure"
+"-lboost_unit_test_framework"
+"-lboost_url"
+"-lboost_wave"
+"-lboost_wserialization"
+"-lgmpxx"
+"-lgmp"
+"-lortools"
+"-lCbc"
+"-lCbcSolver"
+"-lCgl"
+"-lClp"
+"-lClpSolver"
+"-lCoinUtils"
+"-lGLPK"
+"-lOsi"
+"-lOsiCbc"
+"-lOsiClp"
+"-lhighs"
+"-lscip"
+"-lz"
+"-lbz2"
+"-lprotobuf"
+"-labsl_die_if_null"
+"-labsl_log_initialize"
+"-labsl_random_distributions"
+"-labsl_random_seed_sequences"
+"-labsl_random_internal_entropy_pool"
+"-labsl_random_internal_randen"
+"-labsl_random_internal_randen_hwaes"
+"-labsl_random_internal_randen_hwaes_impl"
+"-labsl_random_internal_randen_slow"
+"-labsl_random_internal_platform"
+"-labsl_random_internal_seed_material"
+"-labsl_random_seed_gen_exception"
+"-labsl_statusor"
+"-labsl_status"
+"-lutf8_validity"
+"-lutf8_range"
+"-pthread"
+"-lre2"
+"-labsl_log_internal_check_op"
+"-labsl_leak_check"
+"-labsl_log_internal_conditions"
+"-labsl_log_internal_message"
+"-labsl_examine_stack"
+"-labsl_log_internal_format"
+"-labsl_log_internal_nullguard"
+"-labsl_log_internal_structured_proto"
+"-labsl_log_internal_proto"
+"-labsl_log_internal_log_sink_set"
+"-labsl_log_internal_globals"
+"-labsl_log_globals"
+"-labsl_log_sink"
+"-labsl_strerror"
+"-labsl_vlog_config_internal"
+"-labsl_log_internal_fnmatch"
+"-labsl_flags_internal"
+"-labsl_flags_marshalling"
+"-labsl_flags_reflection"
+"-labsl_flags_private_handle_accessor"
+"-labsl_flags_commandlineflag"
+"-labsl_flags_commandlineflag_internal"
+"-labsl_flags_config"
+"-labsl_flags_program_name"
+"-labsl_raw_hash_set"
+"-labsl_cord"
+"-labsl_cordz_info"
+"-labsl_cord_internal"
+"-labsl_cordz_functions"
+"-labsl_cordz_handle"
+"-labsl_crc_cord_state"
+"-labsl_crc32c"
+"-labsl_crc_internal"
+"-labsl_crc_cpu_detect"
+"-labsl_hashtablez_sampler"
+"-labsl_exponential_biased"
+"-labsl_hash"
+"-labsl_city"
+"-labsl_low_level_hash"
+"-labsl_str_format_internal"
+"-labsl_synchronization"
+"-labsl_graphcycles_internal"
+"-labsl_kernel_timeout_internal"
+"-labsl_stacktrace"
+"-labsl_symbolize"
+"-labsl_debugging_internal"
+"-labsl_demangle_internal"
+"-labsl_demangle_rust"
+"-labsl_decode_rust_punycode"
+"-labsl_utf8_for_code_point"
+"-labsl_malloc_internal"
+"-labsl_time"
+"-labsl_civil_time"
+"-labsl_strings"
+"-labsl_strings_internal"
+"-labsl_string_view"
+"-labsl_int128"
+"-labsl_throw_delegate"
+"-labsl_time_zone"
+"-labsl_tracing_internal"
+"-labsl_base"
+"-lrt"
+"-labsl_raw_logging_internal"
+"-labsl_log_severity"
+"-labsl_spinlock_wait"
+"-lz3"
+"-l_lightgbm")
+set -eu
+ARGUMENTS=("$0")
+while (($#>0));do
+case "$1" in
+--variant)AC_VARIANT="$2"
+shift
+;;
+-h|--help|?)echo "{--option} / {ENVIRONMENT} [default]"
+echo "--variant / AC_VARIANT [gcc]"
+exit 0
+;;
+-*)echo "$(tput setaf 1)ERROR: $(tput sgr0)Unexpected command option: $(tput setaf 5)$1"
+exit 1
+;;
+*)ARGUMENTS=("${ARGUMENTS[@]}" "$1")
+esac
+shift
+done
+if [[ -z $AC_VARIANT ]];then
+export AC_VARIANT="gcc"
+fi
+INSTALL_DIR="$(cat /etc/atcoder/install_dir.txt)"
+USER_BUILD_FLAGS=("${USER_BUILD_FLAGS[@]//'::install_dir::'/$INSTALL_DIR}")
+if [[ $AC_VARIANT == "gcc" ]];then
+g++ ./Main.cpp -o a.out "${USER_BUILD_FLAGS[@]}"
+else
+clang++ std.pcm std.compat.pcm ./Main.cpp -o a.out "${USER_BUILD_FLAGS[@]}"
+fi["./a.out"]
+Fix (1.1.0-alpha.12)fix build -O max
+["./a.out"]
+SQL (DuckDB 1.3.2)["duckdb","-noheader","-f","Main.sql"]
+Visual Basic 16.9 (.NET 9.0.8)export DOTNET_ROOT=$HOME/.dotnet
+export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
+export DOTNET_EnableWriteXorExecute=0
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
+dotnet publish -c Release -o publish --no-restore --nologo -v q --tl:off 1>&2
+["./publish/Main"]
+Library
+This page shows a list of libraries available for each language.
+Parallelization
+Execution time is measured as the maximum of real time and CPU time. Parallelization is not prohibited, but it does not lead to shorter execution time.
+Environment
+You may use any development environment and editor at your choice.
+Also, you are allow to do the following:
+Use of original libraries
+Web Search
+As mentioned later, please note that we do not allow you to disclose the problem to other sources.
+Relaxed Output Rules Regarding Whitespace
+Normally correct output will still be judged as correct if whitespace characters (CR, LF, space, tab) are replaced with other whitespace characters, or if additional whitespace characters are inserted at the beginning, at the end, or immediately after other whitespace characters.
+However, for some problems this rule may not apply. In such cases, this will be explicitly stated in the problem statement.
+Other Rules
+Do not disclose the problem on the Internet during the contest. Also refrain from reporting the contest on the spot as it might lead to the disclosure of the problem.
+You are not allowed to attack AtCoder system. For more info, please refer our User Policy.
+The status may remain WJ for 1~2 minutes to warm up the judges' initial run. If the status is not updated for more than 5 minutes, please contact us at Clar with the relevant submission.
+Use of social media during the contest
+During the ongoing contest, do not post any non-public information on social media or similar platforms.
+Examples of content you may post:
+Information obtainable from the standings—such as the current number of ACs for each problem, who achieved the First AC, or that someone “solved all problems”—may be posted.
+This is because the standings is public to everyone.
+Comments such as “It was fun” that do not mention any problems are acceptable.
+However, “It was fun. I solved Problem A using the XX method,” “Problem A resulted in TLE,” and “Problem A was easy once you noticed something” all mention a problem, so they must not be posted during the contest.
+Examples of content you must not post:
+Anything related to solution approaches.
+The number of WAs, the number of TLEs, the number of test cases, etc. This information is not public until the contest ends.
+Writing out your own thought process for a problem. It could serve as a hint to others—please be careful.
+Problem names, statements, genres, constraints, etc. This information is also not public until the contest ends.
+Rule
+Glossary
+Terms of Use
+Privacy Policy
+Information Protection Policy
+Company
+FAQ
+Contact
+Copyright Since 2012 ©AtCoder Inc. All rights reserved.
+Page Top

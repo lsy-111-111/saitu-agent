@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "saitu.latency-diagnostic.v1",
+  "runId": "24d95dca-83c9-4a55-986f-86145c8cae3d",
+  "elapsedMs": 96978.115458,
+  "modelAttempts": 2,
+  "plan": null,
+  "error": "invalid_output",
+  "network": [
+    {
+      "headersAfterMs": 268.45837500000005,
+      "status": 200
+    },
+    {
+      "headersAfterMs": 272.359666999997,
+      "status": 200
+    }
+  ],
+  "observations": [
+    {
+      "stage": "v7.rank",
+      "kind": "response",
+      "data": {
+        "ok": false,
+        "repair": false,
+        "upstreamAttempted": true,
+        "usage": {
+          "inputTokens": 31291,
+          "outputTokens": 8192,
+          "cachedInputTokens": 0
+        },
+        "reason": "truncated"
+      }
+    },
+    {
+      "stage": "v7.rank",
+      "kind": "response",
+      "data": {
+        "ok": false,
+        "repair": true,
+        "upstreamAttempted": true,
+        "usage": {
+          "inputTokens": 31306,
+          "outputTokens": 5326,
+          "cachedInputTokens": 31104
+        },
+        "reason": "invalid_output"
+      }
+    }
+  ],
+  "calls": [
+    {
+      "call_id": "890ff235-d79b-482a-a341-ac42ad7661bb",
+      "call_key": "v7.rank:batch:1",
+      "prompt_sha256": "e65e7a612746e0342f1d645e7bf749b83f4f57ddbce16c17642bb6a21267212a",
+      "state": "completed",
+      "reservation_id": "7645f4b0-f8ae-4643-ae29-aceadb0629b0",
+      "saved": {
+        "kind": "receipt",
+        "receipt": {
+          "model": "deepseek-flash",
+          "httpStatus": 200,
+          "finishReason": "length",
+          "content": "",
+          "usage": {
+            "inputTokens": 31291,
+            "outputTokens": 8192,
+            "cachedInputTokens": 0
+          },
+          "durationMs": 59509,
+          "attempts": 1
+        }
+      }
+    },
+    {
+      "call_id": "e3da8bb4-a294-430e-b7b4-cd68b9f8cc74",
+      "call_key": "v7.rank:invalid-output-repair:1",
+      "prompt_sha256": "d506f0239273efd194df319990f383762fba6026e20e0a57780fe9caff9916e5",
+      "state": "completed",
+      "reservation_id": "66dac394-69d6-4a7c-9ddb-0acded282c3c",
+      "saved": {
+        "kind": "receipt",
+        "receipt": {
+          "model": "deepseek-flash",
+          "httpStatus": 200,
+          "finishReason": "stop",
+          "content": "{\"type\":\"json_object\",\"profileRevision\":\"e090ae536df4637e4497e14c10bfe56d62881cd22a32f63f6bbcfdfba48bd37b\",\"catalogVersion\":\"v7-b75f38e52d3b51ddfda62d54\",\"recommendations\":[{\"itemId\":\"@C22\",\"rationale\":\"个人字符串算法入门，历史题低资源可练\"},{\"itemId\":\"@C20\",\"rationale\":\"个人构造算法题，逻辑清晰且可离线练习\"},{\"itemId\":\"@C12\",\"rationale\":\"个人朗诵校选，学校承担初赛费，表达探索\"},{\"itemId\":\"@C37\",\"rationale\":\"个人数学证明，历史低报名费，适合数理探索\"},{\"itemId\":\"@C24\",\"rationale\":\"概念设计海报，参赛免费但制作费未知\"},{\"itemId\":\"@C32\",\"rationale\":\"团队数据建模，二百元每队，个人分摊待核\"},{\"itemId\":\"@C26\",\"rationale\":\"三人英语案例展析，短时表达探索，费用未知\"},{\"itemId\":\"@C2\",\"rationale\":\"个人App创作，产品与设计探索，工具门槛\"},{\"itemId\":\"@C3\",\"rationale\":\"个人算法竞赛体验，D题较难，历史可练\"},{\"itemId\":\"@C28\",\"rationale\":\"软硬结合探索，报名免费但板卡云服务待核\"}],\"shortfallReason\":null}",
+          "usage": {
+            "inputTokens": 31306,
+            "outputTokens": 5326,
+            "cachedInputTokens": 31104
+          },
+          "durationMs": 37400,
+          "attempts": 1
+        }
+      }
+    }
+  ],
+  "notAcceptanceEvidence": true,
+  "originalListDeadlineExceeded": true,
+  "limitations": [
+    "Longer diagnostic observation window only; no browser performance or public admission success claimed",
+    "No hidden reasoning text retained",
+    "Unknown outcomes are not retried"
+  ]
+}

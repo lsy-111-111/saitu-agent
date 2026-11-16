@@ -1,0 +1,298 @@
+{
+  "schemaVersion": "saitu.pipeline-diagnostic.v1",
+  "runId": "2085a326-babb-4e38-aebb-1b6ac86798f5",
+  "elapsedMs": 160787.550667,
+  "listReadyMs": 39831.387083999995,
+  "modelAttempts": 3,
+  "stageCounts": {
+    "rank": 1,
+    "explain": 2,
+    "review": 0
+  },
+  "stage": "explain-and-review",
+  "plan": {
+    "profileRevision": "e090ae536df4637e4497e14c10bfe56d62881cd22a32f63f6bbcfdfba48bd37b",
+    "catalogVersion": "v7-b75f38e52d3b51ddfda62d54",
+    "recommendations": [
+      {
+        "itemId": "atcoder-beginner-contest:2025-427:d-simple-game:individual-open:global-online-abc427:v3",
+        "reasons": [
+          {
+            "text": "个人算法练习，低门槛短时可试",
+            "basis": "suggestion",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          }
+        ]
+      },
+      {
+        "itemId": "google-kick-start:2022:round-a-speed-typing:historical-public-task:round-a-speed-typing-2022:v3",
+        "reasons": [
+          {
+            "text": "个人字符串题，规则简单易起步",
+            "basis": "suggestion",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          }
+        ]
+      },
+      {
+        "itemId": "google-code-jam:2022:qualification-3d-printing:historical-public-task:qualification-3d-printing-2022:v3",
+        "reasons": [
+          {
+            "text": "个人构造题，题面短可快速试做",
+            "basis": "suggestion",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          }
+        ]
+      },
+      {
+        "itemId": "apple-swift-student-challenge:2026:app-playground:individual-student:global-2026:v3",
+        "reasons": [
+          {
+            "text": "个人小型应用，探索软件与设计",
+            "basis": "suggestion",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          }
+        ]
+      },
+      {
+        "itemId": "chinese-classics:2025-zhejiang-13:classics-recitation:huzhou-individual:zhejiang-huzhou-local:v3",
+        "reasons": [
+          {
+            "text": "个人朗诵，低成本练表达与文本",
+            "basis": "suggestion",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          }
+        ]
+      },
+      {
+        "itemId": "lanqiao-cup:2019-10:cpp-array-successor:cpp-a:china-provincial-cpp-a-2019:v3",
+        "reasons": [
+          {
+            "text": "个人机考，费用贴近上限可试编程",
+            "basis": "suggestion",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          }
+        ]
+      },
+      {
+        "itemId": "national-college-mathematics:2011-3:calculus-third-derivative:non-mathematics:zhejiang-zjut-preliminary-2011:v3",
+        "reasons": [
+          {
+            "text": "个人数学证明，低报名费短周期",
+            "basis": "suggestion",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          }
+        ]
+      },
+      {
+        "itemId": "if-student-award:2025-entry-guide:sdg-design:design-students-graduates:global-2025:v3",
+        "reasons": [
+          {
+            "text": "概念海报，投入较轻可探索设计",
+            "basis": "suggestion",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          }
+        ]
+      },
+      {
+        "itemId": "dandad-new-blood:2026-share-your-passion:personal-social-campaign:eligible-creative:global-2026-dad-brief:v3",
+        "reasons": [
+          {
+            "text": "个人创意作品，可短周期做视觉表达",
+            "basis": "suggestion",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          }
+        ]
+      },
+      {
+        "itemId": "loreal-brandstorm:2026-luxe:future-fragrance:18-30-team:global-local-entry:v3",
+        "reasons": [
+          {
+            "text": "三人商业创意，短材料可探索商科",
+            "basis": "suggestion",
+            "studentFactIds": [],
+            "competitionFactIds": [],
+            "conditions": []
+          }
+        ]
+      }
+    ],
+    "shortfallReason": null
+  },
+  "report": null,
+  "error": "invalid_output",
+  "network": [
+    {
+      "callNumber": 1,
+      "headersAfterMs": 296.171916,
+      "status": 200
+    },
+    {
+      "callNumber": 2,
+      "headersAfterMs": 157.91579099999944,
+      "status": 200
+    },
+    {
+      "callNumber": 3,
+      "headersAfterMs": 206.3648749999993,
+      "status": 200
+    }
+  ],
+  "observations": [
+    {
+      "elapsedMs": 39821.631583999995,
+      "stage": "v7.rank",
+      "kind": "response",
+      "data": {
+        "ok": true,
+        "repair": false,
+        "upstreamAttempted": true,
+        "usage": {
+          "inputTokens": 31139,
+          "outputTokens": 5851,
+          "cachedInputTokens": 0
+        },
+        "reason": null
+      }
+    },
+    {
+      "elapsedMs": 39831.138875,
+      "stage": "v7.rank",
+      "kind": "validation",
+      "data": {
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "elapsedMs": 91584.454417,
+      "stage": "v7.explain",
+      "kind": "response",
+      "data": {
+        "ok": false,
+        "repair": false,
+        "upstreamAttempted": true,
+        "usage": {
+          "inputTokens": 42639,
+          "outputTokens": 9407,
+          "cachedInputTokens": 0
+        },
+        "reason": "invalid_output"
+      }
+    },
+    {
+      "elapsedMs": 160787.47954200002,
+      "stage": "v7.explain",
+      "kind": "response",
+      "data": {
+        "ok": false,
+        "repair": true,
+        "upstreamAttempted": true,
+        "usage": {
+          "inputTokens": 42651,
+          "outputTokens": 12078,
+          "cachedInputTokens": 42496
+        },
+        "reason": "invalid_output"
+      }
+    }
+  ],
+  "calls": [
+    {
+      "call_id": "41ed1f4c-dde3-4684-b8c0-8ce50587ceb0",
+      "call_key": "v7.rank:batch:1",
+      "prompt_sha256": "51932144bcdd47e8a135ec83cc13178c43b4dee44630c1e0da54c2849cf1fb8a",
+      "state": "completed",
+      "reservation_id": "eacd5684-31ce-44b2-bbaa-0bee68f0485a",
+      "saved": {
+        "kind": "receipt",
+        "receipt": {
+          "model": "deepseek-flash",
+          "httpStatus": 200,
+          "finishReason": "stop",
+          "content": "{\"profileRevision\":\"e090ae536df4637e4497e14c10bfe56d62881cd22a32f63f6bbcfdfba48bd37b\",\"catalogVersion\":\"v7-b75f38e52d3b51ddfda62d54\",\"recommendations\":[{\"itemId\":\"@C3\",\"rationale\":\"个人算法练习，低门槛短时可试\"},{\"itemId\":\"@C22\",\"rationale\":\"个人字符串题，规则简单易起步\"},{\"itemId\":\"@C20\",\"rationale\":\"个人构造题，题面短可快速试做\"},{\"itemId\":\"@C2\",\"rationale\":\"个人小型应用，探索软件与设计\"},{\"itemId\":\"@C12\",\"rationale\":\"个人朗诵，低成本练表达与文本\"},{\"itemId\":\"@C29\",\"rationale\":\"个人机考，费用贴近上限可试编程\"},{\"itemId\":\"@C37\",\"rationale\":\"个人数学证明，低报名费短周期\"},{\"itemId\":\"@C24\",\"rationale\":\"概念海报，投入较轻可探索设计\"},{\"itemId\":\"@C15\",\"rationale\":\"个人创意作品，可短周期做视觉表达\"},{\"itemId\":\"@C30\",\"rationale\":\"三人商业创意，短材料可探索商科\"}],\"shortfallReason\":null}",
+          "usage": {
+            "inputTokens": 31139,
+            "outputTokens": 5851,
+            "cachedInputTokens": 0
+          },
+          "durationMs": 39786,
+          "attempts": 1
+        }
+      }
+    },
+    {
+      "call_id": "65748b18-a937-402f-b113-4ec1e4c18386",
+      "call_key": "v7.explain:batch:1",
+      "prompt_sha256": "5d611ebcdfb138247c5d7949ebd58d7f3d23ef5da98b43516fdacfb8d019b07f",
+      "state": "completed",
+      "reservation_id": "7054a6a7-cd62-4699-a351-2814ecd92cef",
+      "saved": {
+        "kind": "receipt",
+        "receipt": {
+          "model": "deepseek-flash",
+          "httpStatus": 200,
+          "finishReason": "stop",
+          "content": "{\"type\":\"json_object\",\"profileRevision\":\"e090ae536df4637e4497e14c10bfe56d62881cd22a32f63f6bbcfdfba48bd37b\",\"catalogVersion\":\"v7-b75f38e52d3b51ddfda62d54\",\"recommendations\":[{\"itemId\":\"@C3\",\"reasons\":[{\"text\":\"以探索适合自己的方向为目标，可用2025 ABC427 D题作为个人独立算法练习，先体验有向图有限步博弈这一小任务；公开历史题可练习，但不能回到已结束的正式比赛取得原名次。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P3\"],\"competitionFactIds\":[\"@F24\",\"@F26\"],\"conditions\":[\"仅历史题练习；正式资格与日期需另行核对\"]},{\"text\":\"自报每周5–10小时、准备1–2周，适合先完成一份递推证明、代码和对照测试的短周期产出；该题交付为提交程序逐组输出Alice或Bob。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P7\",\"@P5\"],\"competitionFactIds\":[\"@F20\"],\"conditions\":[\"产出以本人练习记录为准；未取得正式隐藏评测成绩\"]},{\"text\":\"官方2026读取的线上参与费政策为免费，但个人设备、网络等总支出未核，不能据此认定符合100–500元预算和300元自付上限。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P0\",\"@P1\"],\"competitionFactIds\":[\"@F23\"],\"conditions\":[\"参与费政策不等于个人总费用为零；正式参加前需核实总支出\"]}],\"roleIndex\":0,\"roleReason\":\"可先承担独立算法与验证角色：用递推证明、代码和对照测试完成一次D题练习，作为方向探索的小交付。\"},{\"itemId\":\"@C22\",\"reasons\":[{\"text\":\"以探索方向为目标，可用2022 Round A Speed Typing历史题体验个人字符串算法小任务；该系列已结束，仅作历史练习。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P3\"],\"competitionFactIds\":[\"@F178\",\"@F182\"],\"conditions\":[\"系列已结束；不构成当前报名机会；正式资格与日期另行核对\"]},{\"text\":\"自报每周5–10小时、准备1–2周，可先完成双指针跟踪表、个人代码和一个顺序反例；对应交付为每例输出删除数或IMPOSSIBLE。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P7\",\"@P5\",\"@P2\"],\"competitionFactIds\":[\"@F177\",\"@F182\"],\"conditions\":[\"仅历史题练习；未取得正式赛程结果\"]}],\"roleIndex\":0,\"roleReason\":\"可先承担独立字符串算法角色：区分删除、替换和重排，建立双指针不变量并记录边界反例。\"},{\"itemId\":\"@C20\",\"reasons\":[{\"text\":\"探索方向时，2022资格赛3D Printing历史题是短小的个人构造任务：从三台打印机四色容量求四个非负整数用量，无解则输出IMPOSSIBLE。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P3\"],\"competitionFactIds\":[\"@F170\",\"@F168\"],\"conditions\":[\"2022赛事已结束；仅历史题练习；正式资格与日期另行核对\"]},{\"text\":\"自报每周5–10小时、准备1–2周，足以先完成逐色最小值、可行性证明和边界测试；交付为每例四个整数或IMPOSSIBLE。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P7\",\"@P5\"],\"competitionFactIds\":[\"@F165\",\"@F169\"],\"conditions\":[\"产出为本人练习；不产生历史赛事成绩或证书\"]}],\"roleIndex\":0,\"roleReason\":\"可先承担独立约束建模与实现角色：将三台容量压成四个最小值，写出本人不变量证明和边界测试。\"},{\"itemId\":\"@C2\",\"reasons\":[{\"text\":\"以探索方向为目标，可先按2026条款做个人离线App Playground小作品：每人提交一个个人创作作品，团队作品不参与评审。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P3\"],\"competitionFactIds\":[\"@F19\"],\"conditions\":[\"2026已结束；仅用于作品准备；不推定2027资格与窗口\"]},{\"text\":\"自报每周5–10小时、准备1–2周，可先完成三分钟离线交互流程与本人实现记录；交付需ZIP内.swiftpm及离线资源、英文内容。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P7\",\"@P5\"],\"competitionFactIds\":[\"@F14\"],\"conditions\":[\"设备与工具版本需另行核对；不承诺反馈、获奖或工作机会\"]},{\"text\":\"预算100–500元、自付上限300元，但Mac或iPad及工具可借用性未确认；不能把开发者免费注册当作总成本为零。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P0\",\"@P1\"],\"competitionFactIds\":[\"@F15\"],\"conditions\":[\"设备借用方案与个人总支出需核实\"]}],\"roleIndex\":0,\"roleReason\":\"可先承担独立交互开发角色：自己实现输入、状态变化和反馈，并记录离线测试与设计迭代。\"},{\"itemId\":\"@C12\",\"reasons\":[{\"text\":\"该赛道是校选推荐省赛的个人经典朗诵；是否适用需先核对你就读学校与2025湖州师范校选范围，个人组省赛路线不等于全国通道。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P3\",\"@P6\"],\"competitionFactIds\":[\"@F101\",\"@F103\"],\"conditions\":[\"仅浙江与湖州师范校选历史范围；资格与日期另行核对\"]},{\"text\":\"自报每周5–10小时、准备1–2周，可先按《庄子·秋水》节选做逐句查词、停连重音和录音复听；校选交付为脱稿朗诵一篇。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P7\",\"@P5\"],\"competitionFactIds\":[\"@F105\",\"@F100\"],\"conditions\":[\"仅历史题库练习；不改变指定原文\"]},{\"text\":\"浙江个人初赛500元由学校承担且禁止转向学生收费，但仅适用该届该省；个人其他支出仍不能认定符合100–500元预算和300元上限。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P0\",\"@P1\"],\"competitionFactIds\":[\"@F102\"],\"conditions\":[\"报名费承担不等于个人总费用；正式参加前需核实\"]}],\"roleIndex\":0,\"roleReason\":\"可先承担文本解读角色：形成句读、词义依据和表达注释，再据朗读反馈决定是否进入朗诵表达。\"},{\"itemId\":\"@C29\",\"reasons\":[{\"text\":\"探索方向可用2019省赛A组H修改数组历史题体验个人限时程序设计：把已出现过的当前整数递增到最小未用值并输出数组。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P3\"],\"competitionFactIds\":[\"@F246\",\"@F244\"],\"conditions\":[\"2019历史题；当前届规则另查；不声称满分通过\"]},{\"text\":\"自报每周5–10小时、准备1–2周，可先完成不变量说明、单文件实现和对拍记录；题面要求标准C/C++单文件提交。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P7\",\"@P5\"],\"competitionFactIds\":[\"@F240\"],\"conditions\":[\"仅历史题练习；未运行官方隐藏评测\"]},{\"text\":\"2019个人软件赛报名300元/人，但这是历史费用且食宿交通自理；不能据此认定当前自付不超过300元。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P0\",\"@P1\"],\"competitionFactIds\":[\"@F243\"],\"conditions\":[\"历史300元不等于当前费用；个人总支出需核实\"]}],\"roleIndex\":0,\"roleReason\":\"可先承担独立算法与实现角色：完成正确性说明、单文件实现与对拍记录，作为一次短周期编程探索。\"},{\"itemId\":\"@C37\",\"reasons\":[{\"text\":\"探索数学证明方向可用2011预赛非数学组第三题做历史题练习；该题要求从端点值和中点一阶导数条件证明开区间存在三阶导数为3的点。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P3\"],\"competitionFactIds\":[\"@F319\",\"@F314\"],\"conditions\":[\"仅为2011历史题；2011浙江工业大学通知面向本科二年级及以上，不据此认定你符合资格；报名日期另行核对\"]},{\"text\":\"自报每周5–10小时、准备1–2周，可先复习三阶泰勒余项并写双端点展开；对应产出是完整证明和条件核对表。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P7\",\"@P5\"],\"competitionFactIds\":[\"@F314\",\"@F318\"],\"conditions\":[\"历史公开解答的累计分仅参考，不保证其它证明路线同分\"]},{\"text\":\"2011该校通知每人60元，但仅本校历史收取额；个人总支出和当前收费未知，不能认定符合100–500元预算和300元上限。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P0\",\"@P1\"],\"competitionFactIds\":[\"@F316\"],\"conditions\":[\"不推广全国或当前届\"]}],\"roleIndex\":0,\"roleReason\":\"可先承担个人证明与表达角色：检查余项点位置、导数连续性和累计评分步骤，形成逐步证明草稿。\"},{\"itemId\":\"@C24\",\"reasons\":[{\"text\":\"探索设计方向可先读2025官方指南的SDG概念设计任务，用一页海报讲清机制与证据；该届资格限设计相关专业在校生或毕业两年内者，需先核对专业条件。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P3\"],\"competitionFactIds\":[\"@F201\",\"@F198\"],\"conditions\":[\"2025历史指南；不推定当前届资格；专业条件未确认不作肯定匹配\"]},{\"text\":\"自报每周5–10小时、准备1–2周，可先重绘MASHAV气流图或做机制草图；交付格式为A1横版一页PDF、最多2张图及650字符说明。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P7\",\"@P5\"],\"competitionFactIds\":[\"@F197\"],\"conditions\":[\"仅为指南示例评读；不把示例称2025获奖作品\"]},{\"text\":\"指南声明参赛免费，但不包括自主制作和其他支出；预算100–500元、自付上限300元仍需按制作测试另核。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P0\",\"@P1\"],\"competitionFactIds\":[\"@F199\"],\"conditions\":[\"免费仅指参赛费；个人总支出未核\"]}],\"roleIndex\":0,\"roleReason\":\"可先承担机制与证据角色：重绘通风逻辑并列出待测参数，再决定是否扩展到体验表达。\"},{\"itemId\":\"@C15\",\"reasons\":[{\"text\":\"探索创意表达可用2026 Share your passion历史命题做模拟社交内容系列：明确本人实践、目标受众和平台策略。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P3\"],\"competitionFactIds\":[\"@F126\",\"@F124\"],\"conditions\":[\"2026历史命题；正式新届资格另核；不声称当前可报\"]},{\"text\":\"自报每周5–10小时、准备1–2周，可先做五幅静态样稿或三条短创作示例；正式材料还需至多2分钟视频或至多8张JPEG，并用英语。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P7\",\"@P5\"],\"competitionFactIds\":[\"@F121\",\"@F124\"],\"conditions\":[\"中文草稿只作练习；正式英语表达和格式另行准备\"]},{\"text\":\"2026每项报名费15英镑，或完成参赛调查获全额抵用券，但设备、网络、制作及授权成本仍待核；不能据此认定符合100–500元预算。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P0\",\"@P1\"],\"competitionFactIds\":[\"@F123\"],\"conditions\":[\"个人总支出未核；不承诺免费参赛\"]}],\"roleIndex\":0,\"roleReason\":\"可先承担创意与视觉表达角色：明确创作定位，安排至少五幅静态内容的连续叙事，并记录改版理由。\"},{\"itemId\":\"@C30\",\"reasons\":[{\"text\":\"探索商科与体验设计可用2026 Luxe历史命题做概念练习：以创意、科学和技术重新设计奢华香氛产品、服务及体验。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P3\"],\"competitionFactIds\":[\"@F255\",\"@F253\"],\"conditions\":[\"2026历史命题；不表示现在可报；18–30岁和三人团队条件需自行核对\"]},{\"text\":\"自报每周5–10小时、准备1–2周，可先做需求观察和纸面原型；交付为3页方案演示和3分钟团队视频，各不超过50MB。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P7\",\"@P5\"],\"competitionFactIds\":[\"@F251\"],\"conditions\":[\"团队成果不能当本人贡献；练习中需标明本人部分\"]}],\"roleIndex\":0,\"roleReason\":\"若组队，可先承担需求与商业角色：记录本人访谈摘要、反例和成本假设，并在团队视频中区分本人贡献。\"}],\"shortfallReason\":null}",
+          "usage": {
+            "inputTokens": 42639,
+            "outputTokens": 9407,
+            "cachedInputTokens": 0
+          },
+          "durationMs": 51705,
+          "attempts": 1
+        }
+      }
+    },
+    {
+      "call_id": "e773eb8b-97cf-4de9-8d6f-f4a71a174896",
+      "call_key": "v7.explain:invalid-output-repair:1",
+      "prompt_sha256": "f602e5a6b45d4bd62b19248f09d8e28dc7a14519c158d3e3d2898eaf6b7f605c",
+      "state": "completed",
+      "reservation_id": "c8fcba24-6399-460d-b41e-318429a8c27f",
+      "saved": {
+        "kind": "receipt",
+        "receipt": {
+          "model": "deepseek-flash",
+          "httpStatus": 200,
+          "finishReason": "stop",
+          "content": "{\"profileRevision\":\"e090ae536df4637e4497e14c10bfe56d62881cd22a32f63f6bbcfdfba48bd37b\",\"catalogVersion\":\"v7-b75f38e52d3b51ddfda62d54\",\"recommendations\":[{\"itemId\":\"@C3\",\"reasons\":[{\"text\":\"D题要求在每点至少一条出边的有向图上，按Alice先手、Bob后手各移动K次及终点字符求双方最优策略结果，属于边界清楚的小型算法任务。\",\"basis\":\"official_fact\",\"studentFactIds\":[],\"competitionFactIds\":[\"@F26\"],\"conditions\":[\"2025 ABC427为历史记录，仅作练习，不表示当前可报名；正式资格与日期需另行核对。\"]},{\"text\":\"你自报希望探索方向、暂无经历，准备周期1–2周；该历史D题提供具体题面和样例，可作为一次短练习来体验图论与博弈推理是否适合继续投入。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P3\",\"@P2\",\"@P5\"],\"competitionFactIds\":[\"@F26\"],\"conditions\":[\"仅作历史题练习，不回到已结束的正式比赛取得原名次。\"]},{\"text\":\"官方说明线上竞赛参与费为零，但个人设备与网络另计；你自报自付上限300元，正式参加前仍需另行核实个人总支出。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P1\"],\"competitionFactIds\":[\"@F23\"],\"conditions\":[\"线上参与费政策为2026读取的一般说明，不是个人设备、网络或可选线下活动总费用为零的保证。\"]}],\"roleIndex\":0,\"roleReason\":\"可先承担独立算法与验证练习，作为下一步短周期行动分工；不表示已具备全部技能或正式参赛资格。\"},{\"itemId\":\"@C22\",\"reasons\":[{\"text\":\"Speed Typing只允许从实际输入P删除字符并保序得到目标I，能则输出删除数，否则输出IMPOSSIBLE，适合做字符串子序列推理的单题练习。\",\"basis\":\"official_fact\",\"studentFactIds\":[],\"competitionFactIds\":[\"@F182\"],\"conditions\":[\"2022 Round A为历史题，仅作练习，不表示当前可报名。\"]},{\"text\":\"你自报希望探索方向、暂无经历；官方公告说明该系列已结束但题面与测试数据保留在归档，可把本题当一次短练习来体验字符串推理，不属于当前报名通道。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P3\",\"@P2\"],\"competitionFactIds\":[\"@F178\",\"@F182\"],\"conditions\":[\"Google Coding Competitions已结束，历史归档不构成当前报名机会；资格与日期另行核对。\"]}],\"roleIndex\":0,\"roleReason\":\"可先承担独立字符串算法练习，作为下一步短周期行动分工；不把练习表现当作已通过正式赛程。\"},{\"itemId\":\"@C20\",\"reasons\":[{\"text\":\"3D Printing给定三台打印机四色容量，要求构造四个非负整数用量，逐色不超容量且总和恰为100万；无解输出IMPOSSIBLE。\",\"basis\":\"official_fact\",\"studentFactIds\":[],\"competitionFactIds\":[\"@F170\"],\"conditions\":[\"2022资格赛为历史题，仅作练习，不表示当前可报名。\"]},{\"text\":\"你自报希望探索方向、暂无经历，准备周期1–2周；官方公告说明该系列已结束但题面归档可读，可把本题当一次短练习体验约束建模与构造验证。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P3\",\"@P2\",\"@P5\"],\"competitionFactIds\":[\"@F166\",\"@F170\"],\"conditions\":[\"Google Code Jam已结束，历史归档不构成当前报名机会；正式资格与日期另行核对。\"]}],\"roleIndex\":0,\"roleReason\":\"可先承担独立约束建模与实现练习，作为下一步短周期行动分工；不把历史题练习等同于正式成绩。\"},{\"itemId\":\"@C2\",\"reasons\":[{\"text\":\"赛道要求每人提交一个个人创作的App Playground，团队作品不参与评审；交付物是可在Swift Playground或Xcode中离线运行的交互作品。\",\"basis\":\"official_fact\",\"studentFactIds\":[],\"competitionFactIds\":[\"@F19\",\"@F14\"],\"conditions\":[\"2026 Swift Student Challenge已结束，条款仅作历史练习参考，不推定2027资格与窗口。\"]},{\"text\":\"你自报希望探索方向、暂无经历，准备周期1–2周；可先做一个很小的离线交互原型，体验个人App创作与讲解是否适合继续投入。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P3\",\"@P2\",\"@P5\"],\"competitionFactIds\":[\"@F19\",\"@F14\"],\"conditions\":[\"仅作作品准备练习，不把原型当作可提交作品；正式参加前需另行核对资格和日期。\"]},{\"text\":\"2026规则要求满足列明学生身份并注册Apple开发者身份，最终由Apple核验；正式参加前需另行核对资格，不影响把作品准备作为练习。\",\"basis\":\"official_fact\",\"studentFactIds\":[],\"competitionFactIds\":[\"@F15\"],\"conditions\":[\"资格条款为2026历史规定，不能直接套用于2027或当前。\"]}],\"roleIndex\":0,\"roleReason\":\"可先承担独立交互开发练习，作为下一步短周期行动分工；不表示已具备正式参赛所需全部条件。\"},{\"itemId\":\"@C12\",\"reasons\":[{\"text\":\"校选从2025指定题库选择一篇，读例为《庄子·秋水》节选；校选为脱稿朗诵一篇，无需配乐、无需PPT。\",\"basis\":\"official_fact\",\"studentFactIds\":[],\"competitionFactIds\":[\"@F105\",\"@F100\"],\"conditions\":[\"仅限2025浙江第十三届典润之江及湖州师范校选范围，不表示当前可报名。\"]},{\"text\":\"你自报希望探索方向、暂无经历，准备周期1–2周；可先按指定原文做一次逐句查词和录音练习，体验文本解读与普通话表达是否适合继续。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P3\",\"@P2\",\"@P5\"],\"competitionFactIds\":[\"@F105\",\"@F100\"],\"conditions\":[\"校通知有届次与报名年份笔误，赛程以组委会确认为准；本条不据笔误判可报名。\"]},{\"text\":\"浙江个人初赛每人500元由学校承担，禁止转向学生收费；决赛差旅住宿由学校承担，个人其他支出仍须确认。\",\"basis\":\"official_fact\",\"studentFactIds\":[],\"competitionFactIds\":[\"@F102\"],\"conditions\":[\"费用条款仅适用该届该省该范围，不扩大为所有赛事免费。\"]}],\"roleIndex\":1,\"roleReason\":\"可先承担朗诵表达练习，作为下一步短周期行动分工；文本解读可另行并行核对，不把未知当不足。\"},{\"itemId\":\"@C29\",\"reasons\":[{\"text\":\"H题要求把已在前缀出现的当前整数递增到最小未用值，输出修改后的完整数组；提交标准C/C++单文件源程序并按标准输入输出。\",\"basis\":\"official_fact\",\"studentFactIds\":[],\"competitionFactIds\":[\"@F246\",\"@F240\"],\"conditions\":[\"2019第十届省赛A组为历史规则与题目，仅作学习，不声称隐藏评测通过。\"]},{\"text\":\"你自报希望探索方向、暂无经历，准备周期1–2周；可先用该历史单题做小输入手算与代码验证，体验个人限时程序设计的任务形态。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P3\",\"@P2\",\"@P5\"],\"competitionFactIds\":[\"@F246\",\"@F240\"],\"conditions\":[\"仅作历史题与同届规则学习，当前届规则需另查；资格与日期另行核对。\"]},{\"text\":\"你自报自付上限300元，2019软件个人赛报名费为300元/人且食宿交通自理；这只是历史费用，不能直接推定你当前届或本次个人总支出。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P1\"],\"competitionFactIds\":[\"@F243\"],\"conditions\":[\"院校补贴与新届费用不能由2019费用推定，个人总支出仍需核实。\"]}],\"roleIndex\":0,\"roleReason\":\"可先承担独立算法与实现练习，作为下一步短周期行动分工；不把单题练习等同于正式比赛分数。\"},{\"itemId\":\"@C37\",\"reasons\":[{\"text\":\"第三题要求从函数端点值和中点一阶导数条件，证明开区间中存在三阶导数等于3的点，需完整论证；原卷为闭卷150分钟。\",\"basis\":\"official_fact\",\"studentFactIds\":[],\"competitionFactIds\":[\"@F319\",\"@F314\"],\"conditions\":[\"2011第三届预赛非数学组为历史题，仅作练习，不推广全国或当前。\"]},{\"text\":\"你自报本科大一、希望探索方向且暂无经历，准备周期1–2周；可先把该题当作泰勒公式与介值定理的短练习，体验数学证明表达是否适合继续。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P6\",\"@P3\",\"@P2\",\"@P5\"],\"competitionFactIds\":[\"@F319\",\"@F318\",\"@F314\"],\"conditions\":[\"该2011通知面向本科二年级及以上，正式资格需另行核对；仅把题目作为练习。\"]},{\"text\":\"2011该校通知要求每人60元报名费，仅为该校历史收取额；个人总支出、其他学校补贴及当前届收费均未知，不能推成全国或免费。\",\"basis\":\"official_fact\",\"studentFactIds\":[],\"competitionFactIds\":[\"@F316\"],\"conditions\":[\"费用范围仅限浙江工业大学2011同届通知，不作为全国费用通则。\"]}],\"roleIndex\":0,\"roleReason\":\"可先承担个人证明与表达练习，作为下一步短周期行动分工；正式资格不匹配或未知时不改变固定顺序。\"},{\"itemId\":\"@C24\",\"reasons\":[{\"text\":\"赛道围绕SDG1—15提交产品、服务、沟通或应用概念；交付为A1横版一页PDF海报，不超5MB，最多2张图及650字符说明，视频可选。\",\"basis\":\"official_fact\",\"studentFactIds\":[],\"competitionFactIds\":[\"@F201\",\"@F197\"],\"conditions\":[\"2025届官方参赛指南为历史记录，仅作练习，不表示当前可报名。\"]},{\"text\":\"你自报希望探索方向、暂无经历，准备周期1–2周；可先用官方指南中MASHAV完整海报做一次证据阅读练习，区分设计表达与仍需验证的结论。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P3\",\"@P2\",\"@P5\"],\"competitionFactIds\":[\"@F201\",\"@F197\"],\"conditions\":[\"官方指南示例不等同于2025获奖认定；仅作机制与证据阅读练习。\"]},{\"text\":\"2025指南声明参赛免费，但不包括自主制作和其他支出；正式资格为设计相关专业在校生或毕业两年内，团队最多4人。\",\"basis\":\"official_fact\",\"studentFactIds\":[],\"competitionFactIds\":[\"@F199\",\"@F198\"],\"conditions\":[\"资格、免费范围与截止日期均为2025历史信息，正式参加前需另行核对。\"]}],\"roleIndex\":0,\"roleReason\":\"可先承担机制与证据练习，作为下一步短周期行动分工；不把指南示例当作个人获奖或已验证效能。\"},{\"itemId\":\"@C15\",\"reasons\":[{\"text\":\"Share your passion要求为自己建立有持续性的社交传播活动，明确本人实践与热情、目标受众、求职或社群等目的，并解释平台与互动策略。\",\"basis\":\"official_fact\",\"studentFactIds\":[],\"competitionFactIds\":[\"@F126\"],\"conditions\":[\"2026命题为历史记录，不沿用2027 Craft资格及优先次序，不表示当前可报名。\"]},{\"text\":\"创作示例至少三条各不少于30秒视频或五幅静态作品；正式主材料为至多2分钟介绍视频或至多8张JPEG，作品及解释须符合英语提交要求。\",\"basis\":\"official_fact\",\"studentFactIds\":[],\"competitionFactIds\":[\"@F121\",\"@F124\"],\"conditions\":[\"交付规范为2026该命题历史要求，正式新届规则需另核。\"]},{\"text\":\"你自报希望探索方向、暂无经历，准备周期1–2周；2026每项作品报名费15英镑或完成调查获抵用券，但设备网络制作授权成本仍待核，适合先用现有条件做离线样稿而非推定免费。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P3\",\"@P2\",\"@P5\"],\"competitionFactIds\":[\"@F123\",\"@F121\"],\"conditions\":[\"仅作样稿练习，不虚构传播成效；正式报名、版权素材与个人总成本另行核对。\"]}],\"roleIndex\":0,\"roleReason\":\"可先承担创意与视觉表达练习，作为下一步短周期行动分工；不把未发布样稿说成传播或录用成果。\"},{\"itemId\":\"@C30\",\"reasons\":[{\"text\":\"2026命题要求以创意、科学和技术重新设计奢华香氛的产品、服务及体验；交付3页方案演示文件和3分钟团队视频，两者各不超过50MB。\",\"basis\":\"official_fact\",\"studentFactIds\":[],\"competitionFactIds\":[\"@F255\",\"@F251\"],\"conditions\":[\"2026 Luxe命题为历史记录，不表示当前可报名；当地资格与截止需另行核对。\"]},{\"text\":\"报名基础说明为18—30岁三人团队，不限学科及经验；当地参赛通道另核验。\",\"basis\":\"official_fact\",\"studentFactIds\":[],\"competitionFactIds\":[\"@F252\"],\"conditions\":[\"团队状态未报，正式参加前需先核对团队与当地通道；本条不把团队要求说成已满足。\"]},{\"text\":\"你自报希望探索方向、暂无经历，准备周期1–2周；可先个人做一次试香或购香旅程观察和纸面改进，体验香氛体验设计是否适合继续，团队与正式资格另行核对。\",\"basis\":\"inference\",\"studentFactIds\":[\"@P3\",\"@P2\",\"@P5\"],\"competitionFactIds\":[\"@F255\"],\"conditions\":[\"仅作个人观察与纸面练习，不声称已完成团队作品或具备正式资格。\"]}],\"roleIndex\":0,\"roleReason\":\"可先承担需求与商业观察练习，作为下一步短周期行动分工；团队成果与正式参赛资格仍需另行核验。\"}],\"shortfallReason\":null}",
+          "usage": {
+            "inputTokens": 42651,
+            "outputTokens": 12078,
+            "cachedInputTokens": 42496
+          },
+          "durationMs": 69169,
+          "attempts": 1
+        }
+      }
+    }
+  ],
+  "notAcceptanceEvidence": true,
+  "originalListDeadlineExceeded": true,
+  "originalDetailsDeadlineExceeded": true,
+  "limitations": [
+    "Longer diagnostic observation window only; no browser performance or public admission success claimed",
+    "No hidden reasoning text retained",
+    "Unknown outcomes are not retried",
+    "Diagnostic result is never published to a student session"
+  ]
+}

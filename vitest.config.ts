@@ -13,6 +13,7 @@ export default defineConfig({
   },
   test: {
     environment: "node",
+    setupFiles: ["tests/fixtures/mock-spend-ledger.setup.ts"],
     include: ["tests/**/*.test.ts", "tests/**/*.test.tsx"]
   }
 });

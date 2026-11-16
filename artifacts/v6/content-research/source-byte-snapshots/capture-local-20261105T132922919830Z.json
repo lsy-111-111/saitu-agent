@@ -1,0 +1,38 @@
+{
+  "createdAt": "2026-11-05T13:29:22.919959+00:00",
+  "independentReview": false,
+  "sources": [
+    {
+      "sourceId": "b-ecommerce-full-guide",
+      "url": "https://3chuang.oss-cn-hangzhou.aliyuncs.com/uploads/file/2024/10/23/a013307e0ca9d6e87fa972b550de2463.pdf",
+      "finalUrl": "https://3chuang.oss-cn-hangzhou.aliyuncs.com/uploads/file/2024/10/23/a013307e0ca9d6e87fa972b550de2463.pdf",
+      "retrievedAt": "2026-11-05",
+      "status": "captured_bytes_not_verified",
+      "sha256": "229f65811f497e44c53f351118d037b3fe95f6a39f2ecaac391c4a9e6b66056d",
+      "bytes": 399082,
+      "contentType": "application/pdf",
+      "artifact": "artifacts/v6/content-research/source-byte-snapshots/229f65811f497e44c53f351118d037b3fe95f6a39f2ecaac391c4a9e6b66056d.pdf",
+      "captureKind": "original_document_bytes",
+      "authorReadingLog": "artifacts/v6/content-research/gap-repair-reading-log.json",
+      "authorReadLocator": "PDF全14页；第8页平台账号与交付，第9—12页完整100分评分及6+4+4周数据要求",
+      "independentReview": false,
+      "limitation": "Local public source bytes matched author reading-log digest; facts and exact scope require independent review."
+    },
+    {
+      "sourceId": "b-cfa-2025-rules",
+      "url": "https://www.unive.it/web/fileadmin/user_upload/cdl_cdlm/area-economica/research-challenge-official-rules.pdf",
+      "finalUrl": "https://www.unive.it/web/fileadmin/user_upload/cdl_cdlm/area-economica/research-challenge-official-rules.pdf",
+      "retrievedAt": "2026-11-05",
+      "status": "captured_bytes_not_verified",
+      "sha256": "c9a1a5e61a251e4db5550636a3ef2af5ccf77b0160c28ebe86676df41886e35a",
+      "bytes": 403781,
+      "contentType": "application/pdf",
+      "artifact": "artifacts/v6/content-research/source-byte-snapshots/c9a1a5e61a251e4db5550636a3ef2af5ccf77b0160c28ebe86676df41886e35a.pdf",
+      "captureKind": "original_document_bytes",
+      "authorReadingLog": "artifacts/v6/content-research/gap-repair-reading-log.json",
+      "authorReadLocator": "第1—8页总则资格研究与报告、第15页报告格式、第17—18页评分；PDF封面明确2024–2025",
+      "independentReview": false,
+      "limitation": "Local public source bytes matched author reading-log digest; facts and exact scope require independent review."
+    }
+  ]
+}

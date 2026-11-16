@@ -1,0 +1,14 @@
+import type { Page } from "@playwright/test";
+import type {} from "./v7-public-browser.mjs";
+export type BrowserDeliveryPhase = "list" | "details";
+export type BrowserDeliveryLimits = Readonly<{ list: number; details: number }>;
+export type BrowserDeliveryTimeouts = { firstListMs: number; allDetailsMs: number; readyExpansionMs: number; rankHardTimeoutMs: number; detailHardTimeoutMs: number };
+export const BROWSER_DELIVERY_LIMITS: Readonly<{ list: 60000; details: 150000 }>;
+export const BROWSER_PERFORMANCE_TARGETS: Readonly<{ list: 40000; details: 120000; expansion: 1000 }>;
+export function browserDeliveryLimits(timeouts?: BrowserDeliveryTimeouts): BrowserDeliveryLimits;
+export function remainingDeliveryMs(originalClickEpochMs: number, nowEpochMs: number, phase: BrowserDeliveryPhase, limits?: BrowserDeliveryLimits): number;
+export function deliveryThresholds(timing: { listMs?: number | null; allDetailsMs?: number | null; readyExpansionMs?: number | null } | null): { firstListWithin40s: boolean; allDetailsWithin120s: boolean; readyExpansionWithin1s: boolean };
+export function installDeliveryProbe(page: Page): Promise<number>;
+export function publicClickEpochMs(page: Page): Promise<number>;
+export function browserDeliveryTimeout(page: Page, originalClickEpochMs: number, phase: BrowserDeliveryPhase, limits?: BrowserDeliveryLimits): Promise<number>;
+export function waitForBrowserDelivery(page: Page, options: { originalClickEpochMs: number; runId: string; phase: BrowserDeliveryPhase; limits?: BrowserDeliveryLimits }): Promise<void>;

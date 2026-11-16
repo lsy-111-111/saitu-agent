@@ -460,7 +460,7 @@ describe("runtime-layout bootstrap source transaction", () => {
         + `${source.slice(orphanStart, orphanEnd)}\n`
         + `cleanup_orphaned_release_evidence_key_temps "$1" "$2" "$3" "$2" "$3"\n`);
       await chmod(orphanHarness, 0o700);
-      await chmod(fixture, 0o750);
+      await chmod(fixture, 0o711);
       for (const [kind, mode] of [["key", 0o600], ["pub", 0o644], ["pending", 0o600], ["env", 0o600]] as const) {
         const orphan = path.join(fixture, `.release-evidence-signing.${kind}.ABC123`);
         await writeFile(orphan, `orphaned ${kind}\n`, { mode });

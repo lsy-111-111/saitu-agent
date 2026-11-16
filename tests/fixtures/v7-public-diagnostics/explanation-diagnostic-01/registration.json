@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "saitu.explanation-diagnostic-registration.v1",
+  "registeredAt": "2026-11-08T20:14:41.134Z",
+  "asOf": "2026-11-08T19:09:37.921Z",
+  "inputSha256": "f559feed4b7c6c6a3cf6aae25192a17bacd4be2d9eeadd9cce36719a43fcc3d5",
+  "publicInputSource": {
+    "path": "artifacts/continuation-v7-20261109/frontend/public-admission-02/observations/v7-public-desktop-novice-receipt.json",
+    "sha256": "719237666b84cd0d761f15cd7c95a22c733f45200fe15f5b39b9dd8c86997768"
+  },
+  "runtimeSourceBindingSha256": "5a66446aa7dcd54d0568135a42c2a091ca50e1e145ad8656a34b8847166e2577",
+  "candidatePoolSha256": "a957655b2016c337550c715dae1e685b65bf984740720fa63b0affd7b2432fbe",
+  "profileSha256": "5ac291d03844a75a71c9b1a7f4ca5942f90749e5f8927e42752170e55d9807ab",
+  "spendRunId": "saitu-v7-20261109-calibration-07",
+  "oneExplanationInvocation": true,
+  "maximumModelAttempts": 3,
+  "stageAttemptLimits": {
+    "explain": 2,
+    "review": 1
+  },
+  "deadlineMs": 180000,
+  "model": "deepseek-flash",
+  "thinking": "enabled",
+  "reasoningEffort": "high",
+  "formalOrPublicAcceptanceEligible": false,
+  "reason": "Observe explanation schema repair and support review using a previously paid, valid, exact-input public C rank; no repeat rank payment and no fresh full-pipeline timing claim.",
+  "productionDeadlineChanged": false,
+  "originalListDeadlineMs": 30000,
+  "originalDetailsDeadlineMs": 90000,
+  "toolSha256": "0d81da827186bbc0691358cdf363be34ea29ed54156ec2a9c5b96f0e1a0c2afb",
+  "explainPromptVersion": "saitu-explain.v7.4.explicit-claim-schema-repair",
+  "reusedRank": {
+    "path": "artifacts/continuation-v7-20261109/pipeline-diagnostic-02/rank-plan.json",
+    "sha256": "e20dace6bcd3306b935b87476542efe51e46f539ebfa7f7e3795af26ebee8101",
+    "sourceRegistration": {
+      "path": "artifacts/continuation-v7-20261109/pipeline-diagnostic-02/registration.json",
+      "sha256": "07d7d5d96e0a0a64c714348b4790f4d6ab1d3f3d5f663a38ac2b4729957bc724"
+    },
+    "originalRuntime": "e6fe52f43bd050e4f8e87d3865d7da2deb5a48646fdad83856c37bb55902b96c",
+    "rankPromptVersion": "saitu-match.v7.4.resource-scope-json-envelope",
+    "originalTimingNotReusedAsNewTiming": true
+  }
+}

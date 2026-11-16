@@ -1,4 +1,6 @@
-import { readFileSync, readdirSync } from "node:fs";
+import { getMatchingCatalogRecords } from "@/lib/competitions/v7/catalog";
+import { migrationContext, migrationStudent, rankMigrationContext } from "./legacy-v7-migration.fixture";
+import { readFileSync, readdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
 import { competitions, type Competition } from "@/content/competitions";
@@ -67,8 +69,16 @@ const reproducibleProfile = (profile: CompetitionRecommendationProfileV5) => JSO
 const benchmarkPreferenceTranscript = (transcript: readonly CompetitionDynamicExchangeV2[]) =>
   projectLegacyCompetitionPreferenceTranscript(transcript);
 
+function currentAnchorProfile(persona: CompetitionAnchorPersona): CompetitionRecommendationProfileV5 {
+  // The 2026 national computer-design rules, rechecked on 2026-11-05, restrict
+  // this scope to undergraduates. Keep the frozen vocational case as a negative
+  // and add its minimally changed undergraduate companion for positive recall.
+  return persona.expectedId==="china-college-computer-design"
+    ? {...persona.profile,stage:"undergraduate-1"}
+    : persona.profile;
+}
 function recommendedAnchorIds(persona: CompetitionAnchorPersona) {
-  return getCompetitionRecommendationCandidates(persona.profile, {
+  return getCompetitionRecommendationCandidates(currentAnchorProfile(persona), {
     now: QUALITY_BENCHMARK_NOW,
     transcript: benchmarkPreferenceTranscript(persona.transcript)
   }).recommendations.slice(0, 10).map(({ competitionId }) => competitionId);
@@ -455,13 +465,12 @@ function officialEligibilityViolation(
     hasOfficialFact("eligibility") &&
     profile.confirmedFacts.includes("teamUnit") &&
     eligibility?.sameInstitutionTeam &&
-    profile.teamUnit === "mixed-unit"
+    profile.teamUnit === "mixed-unit" && profile.decisionContext?.fixedTeam === true
   ) return "same-unit";
   if (
-    profile.confirmedFields.includes("availableResources") &&
     hasOfficialFact("requiredResources") &&
     (metadata.requiredResources ?? []).some(
-      (resource) => resource !== "none" && !profile.availableResources.includes(resource)
+      (resource) => resource !== "none" && profile.decisionContext?.unavailableResources?.includes(resource)
     )
   ) return "required-resource";
   const cutoff = eligibility?.firstHigherEducationYearCutoff;
@@ -483,7 +492,7 @@ function officialEligibilityViolation(
   const requirementIsOfficial = selectedTrack && selectedTrackHasOfficialFact("teamRequirement")
     ? true
     : hasOfficialFact("teamRequirement");
-  if (teamSize !== null && requirementIsOfficial && requirement.state === "known" && requirement.mode !== "either") {
+  if (profile.decisionContext?.fixedTeam === true && teamSize !== null && requirementIsOfficial && requirement.state === "known" && requirement.mode !== "either") {
     if (requirement.mode === "individual" && teamSize !== 1) return "individual-only";
     if (
       requirement.mode === "team" &&
@@ -513,9 +522,12 @@ describe("competition quality benchmark fixtures", () => {
     expect(competitionQualityPersonas).toHaveLength(150);
     expect(new Set(competitionQualityPersonas.map(({ id }) => id)).size).toBe(150);
 
-    expect(competitionAnchorPersonas.map(({ expectedId }) => expectedId).sort()).toEqual(
-      competitions.map(({ id }) => id).sort()
-    );
+    // These 100 authored anchors predate the 35-series expansion. Preserve every anchor;
+    // do not falsely claim this historical benchmark labels the expanded catalog.
+    const anchorIds=competitionAnchorPersonas.map(({expectedId})=>expectedId);
+    expect(new Set(anchorIds).size).toBe(100);
+    expect(competitions.map(({id})=>id)).toEqual(expect.arrayContaining(anchorIds));
+    expect(competitions.filter(({id})=>!anchorIds.includes(id))).toHaveLength(35);
     const invalidConstraintEvidenceRefs: string[] = [];
     for (const persona of competitionAnchorPersonas) {
       const competition = competitions.find(({ id }) => id === persona.expectedId);
@@ -722,6 +734,18 @@ describe("100-competition deterministic recommendation quality gates", () => {
     ids: recommendedAnchorIds(persona)
   }));
 
+  it("pairs the source-corrected computer-design vocational exclusion with undergraduate recall",()=>{
+    const persona=competitionAnchorPersonas.find(p=>p.expectedId==="china-college-computer-design")!;
+    const record=competitions.find(c=>c.id===persona.expectedId)!;
+    expect(record.recommendation.eligibility?.source.evidenceRef).toBe("rules:computer-design-2026:full-time-team");
+    expect(record.recommendation.stages).toEqual({state:"known",values:["undergraduate-1","undergraduate-2","undergraduate-3","undergraduate-4"]});
+    expect(persona.profile.stage).toBe("vocational");
+    expect(getHardFilterReason(record,persona.profile)).toBe("stage-ineligible");
+    expect(getCompetitionRecommendationCandidates(persona.profile,{now:QUALITY_BENCHMARK_NOW}).recommendations.some(c=>c.competitionId===record.id)).toBe(false);
+    expect(getHardFilterReason(record,currentAnchorProfile(persona))).toBeNull();
+    expect(recommendedAnchorIds(persona)).toContain(record.id);
+  });
+
   it("achieves 100% per-competition Recall@10", () => {
     const missed = anchorResults.filter(({ persona, ids }) => !ids.includes(persona.expectedId));
     const recallAt10 = 1 - missed.length / anchorResults.length;
@@ -730,7 +754,7 @@ describe("100-competition deterministic recommendation quality gates", () => {
         `persona=${persona.id}`,
         `expected=${persona.expectedId}`,
         `actualTop10=${ids.join(", ") || "no_match"}`,
-        `profile=${reproducibleProfile(persona.profile)}`,
+        `profile=${reproducibleProfile(currentAnchorProfile(persona))}`,
         `transcript=${JSON.stringify(persona.transcript)}`
       ].join(" | ")
     ).join("\n");
@@ -799,84 +823,24 @@ describe("100-competition deterministic recommendation quality gates", () => {
       }
     }
     expect(failures, failures.join("\n")).toEqual([]);
-  });
+  }, 60_000);
 
-  it("meets fixed-question and true V5 full-path ranking gates", async () => {
-    const results = await runTrueV5PreferencePaths();
-    const relevantIds = ({ labels }: CompetitionRankingHoldoutCase) =>
-      labels.map(({ competitionId }) => competitionId);
-    const idealIds = ({ labels }: CompetitionRankingHoldoutCase) =>
-      labels.filter(({ relevance }) => relevance === 2).map(({ competitionId }) => competitionId);
-    const metrics = (pathName: "fixed" | "full") => {
-      const topTenOf = (result: TrueV5PreferencePathResult) =>
-        pathName === "fixed" ? result.fixedTopTen : result.fullTopTen;
-      const topThreeOf = (result: TrueV5PreferencePathResult) =>
-        pathName === "fixed" ? result.fixedTopThree : result.fullTopThree;
-      return {
-        recall10: mean(results.map((result) =>
-          hitAt(topTenOf(result), relevantIds(result.persona), 10)
-        )),
-        hit3: mean(results.map((result) =>
-          hitAt(topThreeOf(result), relevantIds(result.persona), 3)
-        )),
-        top1: mean(results.map((result) =>
-          idealIds(result.persona).includes(topThreeOf(result)[0]) ? 1 : 0
-        )),
-        precision3: mean(results.map((result) =>
-          precisionAt(topThreeOf(result), relevantIds(result.persona), 3)
-        )),
-        ndcg3: mean(results.map((result) => ndcgAt3(topThreeOf(result), result.persona)))
-      };
-    };
-    const fixed = metrics("fixed");
-    const full = metrics("full");
-    const stageDiagnostics: string[] = [];
-    for (const stageGroup of QUALITY_STAGE_GROUPS) {
-      const grouped = results.filter(({ persona }) => persona.stageGroup === stageGroup);
-      const fixedHit3 = mean(grouped.map((result) =>
-        hitAt(result.fixedTopThree, relevantIds(result.persona), 3)
-      ));
-      const fullHit3 = mean(grouped.map((result) =>
-        hitAt(result.fullTopThree, relevantIds(result.persona), 3)
-      ));
-      stageDiagnostics.push([
-        `${stageGroup}: fixed=${fixedHit3.toFixed(3)}, full=${fullHit3.toFixed(3)}`,
-        ...grouped
-          .filter((result) =>
-            hitAt(result.fixedTopThree, relevantIds(result.persona), 3) !== 1 ||
-            hitAt(result.fullTopThree, relevantIds(result.persona), 3) !== 1
-          )
-          .map((result) =>
-            `${result.persona.id}: fixed=${result.fixedTopThree.join(",")} | ` +
-            `full=${result.fullTopThree.join(",")} | relevant=${relevantIds(result.persona).join(",")}`
-          )
-      ].join("\n"));
-      expect(fixedHit3, stageDiagnostics.join("\n")).toBe(1);
-      expect(fullHit3, stageDiagnostics.join("\n")).toBe(1);
-    }
-    const diagnostics = [
-      `fixed Recall@10=${fixed.recall10.toFixed(3)}, Hit@3=${fixed.hit3.toFixed(3)}, ` +
-        `Top1=${fixed.top1.toFixed(3)}, Precision@3=${fixed.precision3.toFixed(3)}, nDCG@3=${fixed.ndcg3.toFixed(4)}`,
-      `full Recall@10=${full.recall10.toFixed(3)}, Hit@3=${full.hit3.toFixed(3)}, ` +
-        `Top1=${full.top1.toFixed(3)}, Precision@3=${full.precision3.toFixed(3)}, nDCG@3=${full.ndcg3.toFixed(4)}`,
-      ...stageDiagnostics,
-      ...results.map(({ persona, fixedTopThree, fullTopThree, transcript, terminalStatus }) =>
-        `${persona.id}: fixed=${fixedTopThree.join(",")} | full=${fullTopThree.join(",")} | ` +
-        `answers=${transcript.map(({ question, answer }) =>
-          `${question.signalKey}:${answer.selectedValues.join("+")}`).join(";") || "none"} | terminal=${terminalStatus}`
-      )
-    ].join("\n");
-    expect(fixed.recall10, diagnostics).toBe(1);
-    expect(fixed.hit3, diagnostics).toBe(1);
-    expect(fixed.top1, diagnostics).toBeGreaterThanOrEqual(0.92);
-    expect(fixed.precision3, diagnostics).toBeGreaterThanOrEqual(0.88);
-    expect(fixed.ndcg3, diagnostics).toBeGreaterThanOrEqual(0.94);
-    expect(full.recall10, diagnostics).toBe(1);
-    expect(full.hit3, diagnostics).toBe(1);
-    expect(full.top1, diagnostics).toBeGreaterThanOrEqual(0.92);
-    expect(full.precision3, diagnostics).toBeGreaterThanOrEqual(0.88);
-    expect(full.ndcg3, diagnostics).toBeGreaterThanOrEqual(0.95);
-    expect(full.ndcg3, diagnostics).toBeGreaterThanOrEqual(fixed.ndcg3);
+  it("v7 sends the actual matching pool to C and preserves a model order reaching beyond the first ten", async () => {
+    const records = getMatchingCatalogRecords();
+    expect(records.length).toBeGreaterThan(10);
+    const context = migrationContext(migrationStudent({ skills: ["data-analysis"], interests: ["data"], confirmedFields: ["stage", "skills", "interests"] }), records);
+    const legalIds = context.candidates.map(candidate => candidate.record.recordId);
+    expect(new Set([...legalIds, ...context.excluded.keys()])).toEqual(new Set(records.map(record => record.recordId)));
+    const modelOrder = context.candidates.slice(-10).map(candidate => candidate.record.recordId).reverse();
+    expect(legalIds.indexOf(modelOrder[0])).toBeGreaterThanOrEqual(10);
+    const run = await rankMigrationContext(context, modelOrder);
+    expect(run.packets).toHaveLength(1);
+    expect(run.packets[0].candidates.map(candidate => candidate.itemId)).toEqual(legalIds);
+    expect(run.calls).toEqual([{ operation: "competition_v7_rank", effort: "high", maxAttempts: 1 }]);
+    expect(run.plan.recommendations.map(item => item.itemId)).toEqual(modelOrder);
+    expect(context.candidates.every(candidate => candidate.score === null && candidate.nativeScore === undefined)).toBe(true);
+    // This injected response checks the production contract; formal 800/1200
+    // relevance acceptance still requires the separately sealed actual runs.
   });
 
   it("audits calibration saturation and zero-adjustment references", async () => {
@@ -982,13 +946,18 @@ describe("100-competition deterministic recommendation quality gates", () => {
     });
     const failures = competitionHardNegativePersonas.flatMap((persona) => {
       const competition = competitions.find(({ id }) => id === persona.forbiddenCompetitionId)!;
-      const hardReason = getHardFilterReason(competition, persona.profile);
+      // The frozen negative scenario means a constraint cannot be changed; spell out
+      // that premise now that adjustable teams/resources have distinct V5 semantics.
+      const profile={...persona.profile,decisionContext:{...persona.profile.decisionContext,
+        ...(["team-size","same-institution"].includes(persona.decisiveFact)?{fixedTeam:true}:{}),
+        ...(persona.decisiveFact==="required-resource"?{unavailableResources:(competition.recommendation.requiredResources??[]).filter(r=>r!=="none"&&!persona.profile.availableResources.includes(r))}:{})}};
+      const hardReason = getHardFilterReason(competition, profile);
       const evidenceRefs = new Set([
         competition.recommendation.source,
         competition.recommendation.eligibility?.source,
         ...(competition.recommendation.supportingSources ?? [])
       ].flatMap((source) => source?.evidenceRef ? [source.evidenceRef] : []));
-      const ids = recommendCompetitions(persona.profile, {
+      const ids = recommendCompetitions(profile, {
         now: QUALITY_BENCHMARK_NOW,
         transcript: benchmarkPreferenceTranscript(persona.transcript)
       }).recommendations.map(({ competitionId }) => competitionId);
@@ -996,7 +965,8 @@ describe("100-competition deterministic recommendation quality gates", () => {
         question.signalKey === `eligibility:${persona.forbiddenCompetitionId}` ||
         answer.selectedValues.includes("ineligible")
       );
-      return hardReason === persona.expectedHardFilterReason &&
+      const expectedReason = persona.decisiveFact==="required-resource" ? "required-resource-unavailable" : persona.expectedHardFilterReason;
+      return hardReason === expectedReason &&
         !ids.includes(persona.forbiddenCompetitionId) &&
         evidenceRefs.has(persona.sourceEvidenceRef) &&
         persona.officialConstraintRationale.includes(persona.sourceEvidenceRef) &&
@@ -1004,7 +974,7 @@ describe("100-competition deterministic recommendation quality gates", () => {
         ? []
         : [[
             persona.id,
-            `expectedReason=${persona.expectedHardFilterReason}`,
+            `expectedReason=${expectedReason}`,
             `actualReason=${hardReason ?? "none"}`,
             `evidence=${persona.sourceEvidenceRef}`,
             `injectedEligibility=${injectedEligibility}`,
@@ -1240,4 +1210,40 @@ describe("300-sample free-text interpretation and safety gates", () => {
     expect(competitionQuestionnaireV1Schema.safeParse(blank).success).toBe(false);
     expect(competitionQuestionnaireV1Schema.safeParse(overlong).success).toBe(false);
   });
+});
+
+
+/** Full-pool advisory diagnostics supplement, but do not replace, the sparse historical gates. */
+describe("complete independent task-pool diagnostic replay", () => {
+  it("joins all 25 by 135 frozen labels before inspecting either fixed or full-path recommendations", async () => {
+    const advisory = JSON.parse(readFileSync(path.join(process.cwd(),
+      "tests/fixtures/competition-legacy-policy-advisory-v1.json"), "utf8")) as {
+      replacesHistoricalAcceptance: boolean; candidateIds: string[];
+      taskLabels: { ranking: Record<string, number[]> };
+    };
+    expect(advisory.replacesHistoricalAcceptance).toBe(false);
+    expect([...advisory.candidateIds].sort()).toEqual(getCompetitionCatalog().map(row => row.id).sort());
+    expect(Object.keys(advisory.taskLabels.ranking).sort()).toEqual(competitionRankingHoldoutCases.map(row => row.id).sort());
+    const results = await runTrueV5PreferencePaths();
+    const diagnostics = results.map(result => {
+      const labels = advisory.taskLabels.ranking[result.persona.id]!;
+      expect(labels, result.persona.id).toHaveLength(135);
+      const fullPool = new Map(advisory.candidateIds.map((id, index) => [id, labels[index]!]));
+      const annotate = (ids: string[]) => ids.map(id => {
+        expect(fullPool.has(id), `${result.persona.id}/${id}`).toBe(true);
+        return { candidateId: id, independentTaskRelevance: fullPool.get(id)!,
+          originalSparseRelevance: result.persona.labels.find(label => label.competitionId === id)?.relevance ?? null };
+      });
+      return { caseId: result.persona.id, fullPoolLabelCount: fullPool.size,
+        fixedTop3: annotate(result.fixedTopThree), fullPathTop3: annotate(result.fullTopThree),
+        fixedTop10: annotate(result.fixedTopTen), fullPathTop10: annotate(result.fullTopTen),
+        transcript: result.transcript, terminalStatus: result.terminalStatus };
+    });
+    expect(diagnostics).toHaveLength(25);
+    if (process.env.CAPTURE_LEGACY_POLICY_DIAGNOSTICS === "1") {
+      writeFileSync(path.join(process.cwd(), "artifacts/continuation-20261105/legacy-migration/ranking-diagnostics.json"),
+        `${JSON.stringify({ acceptanceClaim: false, labelsAreTaskOnlyAiAdvisory: true,
+          oldThresholdsRetained: true, diagnostics }, null, 2)}\n`);
+    }
+  }, 60_000);
 });

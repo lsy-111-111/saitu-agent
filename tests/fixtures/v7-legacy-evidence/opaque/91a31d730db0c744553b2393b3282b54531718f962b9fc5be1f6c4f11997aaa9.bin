@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "competition-historical-baseline-limitation.v1",
+  "recordedAt": "2026-08-26T09:40:32Z",
+  "implementationStartedAt": "2026-08-24T14:51:22.643Z",
+  "missingArtifactPath": "tests/fixtures/competition-score-baseline-v11.json",
+  "claim": {
+    "fromScorer": "deterministic-2026-08.v11",
+    "expectedAverageUpliftPoints": [
+      12,
+      15
+    ],
+    "status": "unprovable",
+    "reason": "The independently captured v11 artifact required before 2026-08-24T14:51:22.643Z is missing, so the claimed 12-15 point historical uplift has no trustworthy denominator."
+  },
+  "evidencePolicy": {
+    "retrospectiveReconstruction": "prohibited",
+    "backdating": "prohibited",
+    "currentReleaseEffect": "historical-claim-not-a-release-gate",
+    "replacementGate": "competition-score-prospective-baseline.v1"
+  }
+}

@@ -1,0 +1,98 @@
+[PAGE 1]
+2026 中国大学生方程式系列赛事
+成本项目案例分析题目（Chinese Version）
+你是一名高级职业经理人，受雇于一家成立 17 年的赛车公司，担任首席执行官的职务。
+你们公司经过多年的经营，一共拥有两家大型卡丁车场和一家拥有 F3 级别赛道的赛车场，
+坐落于本市和临近城市。除此之外，你们还拥有自己的研发和生产基地，可以生产卡丁车
+和入门级方程式赛车，其中卡丁车年产量在 300 台左右，入门级方程式赛车在 80 辆左右，
+分别供应自己的赛车场和国内其他赛车俱乐部。
+此前，你们通过与一家运动相关领域的国际公司“极限运动”的多轮沟通，已经达成
+合作意向，“极限运动”计划分批采购你们公司的入门级方程式赛车，采购计划如下表所
+示。本次合作方案为“极限运动”将统一购买赛车，然后自行进行国内和国外市场的销售
+工作，你们公司只负责进行生产，不介入后续市场和销售等工作。现在“极限运动”的初
+步采购价为 25 万人民币一辆。你们公司收到报价后，需要核算接受这个订单后内部生产，
+厂房，设备，人员，物流，材料采购等成本，并计算本单是否盈利，是否需要和“极限运
+动”再次讨论采购价格。
+采购年份 第一年 第二年 第三年
+采购数量 200 500 800
+在你们与“极限运动”达成意向合作的消息传出后，投资公司 A 看好你们的发展，希
+望入股你们公司。董事会经过讨论后，同意引入新股东，减缓资金压力。投资公司 A 的风
+险投资人之前是某国内大型国有汽车公司的生产副总经理，也曾在研发部门担任总监职位，
+他对于赛车的技术突破和研发创新十分感兴趣，要求在未来三年中对赛车进行技术提升，
+但是也要控制整体成本。“极限运动”也同意对赛车进行性能的正优化，但是不要带来更
+多的成本负担。
+你作为本次合作的负责人，你需要对新的董事会汇报以下内容：
+1. 接下“极限运动”的订单后，已现有赛车设计方案需要投入多少成本，最后利润是多
+少？
+2. 如何进行产品的正优化？与之带来的成本是多少？并解释这些设计变更的必要性和成
+本投入的合理性。
+3. 整理下次需要和“极限运动”沟通的事宜，并希望达成什么样的目标。
+Tip:
+1. 题目中的赛车公司：你们的车队；
+2. 题目中”本市“：即车队所在城市；
+3. 入门级方程式赛车：即车队比赛赛车；
+4. 现有赛车制造成本：即成本报告显示的成本价格；如果存在降本，降低的成本需要
+在成本标准表的原则下进行降本；
+5. 成本标准表在本案例分析中，不在表示为生产一千辆赛车的成本值，而表示为当前
+你们赛车公司的生产入门级方程式赛车的成本；
+[PAGE 2]
+6. 车队需自行思考现有公司的规模和工厂信息和生产能力，并自行思考后续增加设备，
+厂房和人员等的投入成本。所有思考方案需要符合实际现实情况，具有逻辑合理性。
+[PAGE 3]
+2026Formula Student China Cost Event Real Case Scenario Topic
+(English Version)
+You are a senior professional manager employed by a racing company that has been
+established for 17 years, serving as the Chief Executive Officer. After years of operation, your
+company has amassed two large karting tracks and a racing track with an F3-level circuit, situated
+in this city and neighboring cities. Furthermore, you possess your own research and development
+as well as production base, capable of manufacturing karting vehicles and entry-level formula
+racing cars. The annual production capacity for karting vehicles stands at approximately 300 units,
+while that for entry-level formula racing cars is around 80 units, supplying both your own racing
+tracks and other domestic racing clubs.
+Previously, through multiple rounds of communication with "Extreme Sports", an
+international company in the sports-related field, you have reached a cooperation intention.
+"Extreme Sports" plans to purchase your company's entry-level formula racing cars in batches,
+and the procurement plan is shown in the table below. The cooperation plan for this time is that
+"Extreme Sports" will purchase the racing cars in a unified manner and then handle the sales
+work in domestic and foreign markets on its own. Your company is only responsible for
+production and will not be involved in subsequent market and sales work. Currently, the initial
+purchase price for "Extreme Sports" is 250,000 RMB per car. After receiving the quotation, your
+company needs to calculate the costs of internal production, factories, equipment, personnel,
+logistics, material procurement, etc. after accepting this order, and determine whether this order
+is profitable or not, and whether it is necessary to discuss the purchase price with "Extreme
+Sports" again.
+Purchase year the first year the second year the third year
+Purchase Quantity 200 500 800
+After the news of your intended cooperation with "Extreme Sports" was released, investment
+company A, optimistic about your development, expressed interest in becoming a shareholder of
+your company. After discussion, the board of directors agreed to introduce new shareholders to
+alleviate financial pressure. The venture capitalist from investment company A was previously the
+deputy general manager of production at a large domestic state-owned automobile company and
+also served as the director of the research and development department. He is very interested in
+technological breakthroughs and research and development innovations in racing cars, and
+requires technological improvements in racing cars in the next three years, while also controlling
+overall costs. "Extreme Sports" also agrees to optimize the performance of racing cars, but
+without incurring additional cost burdens.
+As the person in charge of this collaboration, you are required to report the following to the
+new board of directors:
+4. After receiving the order for "extreme sports", how much cost will be required to implement
+the existing racing car design scheme, and what will be the final profit?
+5. How to carry out positive optimization of the product? What is the cost associated with it?
+Explain the necessity of these design changes and the rationality of the cost investment.
+6. Organize the matters that need to be communicated with "Extreme Sports" next time, and
+what goals we hope to achieve.
+Tip:
+1. The racing company mentioned in the question: your team;
+2. In the title, "local city" refers to the city where the convoy is located;
+3. Entry-level formula racing: that is, team racing;
+4. Current racing car manufacturing cost: This refers to the cost price displayed in the cost
+report; if there is a cost reduction, the reduced cost needs to be implemented under the
+[PAGE 4]
+principles of the cost standard table;
+5. In this case analysis, the cost standard table is not represented as the cost value for
+producing one thousand racing cars, but rather as the cost for producing entry-level formula
+racing cars for your current racing car company;
+6. The team needs to independently consider the current company's scale, factory
+information, and production capacity, as well as the investment costs for subsequent additions of
+equipment, factories, and personnel. All proposed solutions must align with the actual situation
+and be logically reasonable.

@@ -1,3 +1,4 @@
+import { currentDecisionPublicationBinding } from "@/lib/competitions/v6/publication-binding";
 import { createHash, createHmac, randomUUID, timingSafeEqual } from "node:crypto";
 import { z } from "zod";
 import {
@@ -232,6 +233,10 @@ export function buildSignedCompetitionQualificationSnapshot(
     getCompetitionCatalog(),
     new Date(evaluatedAt * 1000)
   );
+  // Keep legacy question/track integrity entries, but bind their signed summary
+  // to current exact-record publication. They are not recommendation eligibility.
+  // Pre-upgrade or revoked-catalog sessions fail the existing snapshot 409 check.
+  snapshot.catalogVersion = `${snapshot.catalogVersion}:published:${currentDecisionPublicationBinding()}`;
   return {
     snapshot,
     summary: summarizeCompetitionQualificationSnapshot(snapshot, evaluatedAt)

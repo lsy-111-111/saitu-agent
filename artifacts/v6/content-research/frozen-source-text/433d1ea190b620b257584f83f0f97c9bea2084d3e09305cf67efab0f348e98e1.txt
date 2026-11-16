@@ -1,0 +1,147 @@
+Skip to main content
+iGEM
+Jamboree
+Competition
+Community
+Villages
+Technology
+Responsibility
+Innovation
+Sign In
+Competition
+About
+Registration
+Deliverables
+Judging
+Sponsorships
+Results
+Teams →
+Registration
+Team Roster
+iGEM 2026 Competition
+The Team Roster is the official list and record of everyone who is involved with the iGEM Team, from student members to PIs, professors, teachers, instructors, and advisors. Keeping it up to date helps ensure your entire team is properly recognized and eligible.
+Only Team PIs can manage Team Rosters, and accept/remove other members.
+Deadline & Requirements
+Deadline / Freeze
+After this deadline, no new members can be added to the Team Roster. No exceptions will be made.
+Team PIs may still remove members until the Wiki Freeze.
+Rules & Requirements
+Only individuals listed on the roster before the freeze deadline will be officially recognized as Competition participants and receive participation certificates at the end of the season.
+Every participant must submit an individual consent form in order to be allowed to join the team roster. Participants under the age of 18 (as of March 31, 2026) cannot sign the consent form for themselves. Their parent or legal guardian must sign on their behalf. Consent forms are submitted on your team page (teams.igem.org). For more information, please visit the Consent Forms page.
+All participants must be at least 13 years old as of March 31, 2026.
+Team Roles
+Team roles reflect how each participant contributes to the team. Assigning roles correctly helps iGEM understand your team structure and ensures the right people have the right access.
+Principal Investigators (PI)
+The official lead(s) responsible for the team’s registration, safety oversight, payments, and compliance throughout the season. PIs approve roster members and act as the main point of contact with iGEM. PIs can be assigned as Primary or Secondary PIs.
+More info ↗
+Student Team Leaders
+The main student coordinators / team captains - who drive the team’s work forward — organizing meetings, keeping timelines on track, and helping connect the project, documentation, and collaboration efforts across the group.
+Student Team Members
+The core student participants who contribute to the team’s work during the season, including research, project development, modeling, outreach, wiki/documentation, and presentations.
+Instructors
+The day-to-day supervisor / coach who support the team’s learning and progress, help guide technical work, and provide coaching and feedback.
+Advisors
+Assistant coach who gives supplementary support and expertise. They contribute expertise or guidance as needed, for example in research feedback, experimental design, safety, or project strategy.
+Others
+Additional contributors who support the team occasionally and don't match any other role category.
+Community Mentors
+Experienced community members assigned by iGEM to support and guide the team. Community mentors are managed by iGEM HQ and cannot be added or removed by team members or PIs.
+Team Sections
+The team section is determined automatically based on your Team Roster. This helps ensure teams are grouped appropriately for the competition, judging, and results. There is no “easier” or “harder” section, all Collegiate sections have the same requirements and are judged using the same criteria.
+Collegiate Competition
+The assignment of section happens after the Team Roster Freeze. Teams will be assigned into one of the sections based on the age of the student team members and student team leaders.
+Undergraduate
+All student team members (incl. leaders) are 23 years old or younger on March 31, 2026.
+Overgraduate
+One or more student team members (incl. leaders) are 24 years old or older on March 31, 2026.
+High School Competition
+All team members are high school students on March 31, 2026.
+There are no separate sections in the High School Competition. All teams (no matter the Organizer Type, or age of members) compete in the same category.
+How to Manage The Team Roster
+Managing the roster is a shared process: students request to join, and Team PIs review and approve members. These steps help ensure the roster stays accurate and official.
+View the Team List ↗
+Requesting to join a Team
+All Team Members
+To join a team, you’ll submit a membership request and select your role. After approval, you’ll be guided to complete the required consent form.
+Step #1: Submit a membership request
+Your Team PI must approve your request to join the Team Roster.
+Go to teams.igem.org -> Find your team on the list -> Go to “Team Roster” -> Click the “Join the Team” button.
+Select your Team Role and click “Send” to generate a membership request for your PI.
+Wait for your PI to approve your membership request. You will receive an email notification if your PI has approved you. Make sure to add “no-reply@igem.org” and “@igem.org” to your list of safe senders.
+Step #2: Sign your consent form
+After your PI approves your membership request, you must sign a Participant Consent Form to appear on the official Team Roster.
+Follow your email notification, or go to teams.igem.org -> Select your team -> Scroll to “Team Roster” -> Locate “Consent” -> Click the “Pending” button.
+You will be redirected to a page with the consent form for you to sign.
+Participants under the age of 18 (as of March 31, 2026) cannot sign the consent form themselves. A parent or legal guardian must sign on their behalf. On the consent form page, participants under the age of 18 must provide their parent or guardian's contact information. The parent or guardian will receive an email request to review and sign the consent form electronically.
+Accepting Team Membership Requests
+PIs Only
+Team PIs review and approve roster requests to confirm each participant belongs to the team. This keeps the roster accurate and ensures all members are properly registered.
+Check your email frequently for requests from your team. Make sure to add “no-reply@igem.org” and “@igem.org” to your list of safe senders.
+Follow your email notification, or go to teams.igem.org -> Select your team -> Scroll to “Team Roster” -> Click the “Manage Roster” button to accept or reject pending members.
+Note: Accepted members will not be on the Team Roster until they have submitted a signed Participant Consent Form.
+Questions?
+If you have any questions about team roster, contact iGEM HQ at hq@igem.org ↗.
+On this page
+Deadline & Requirements
+Team Roles
+Team Sections
+How to Manage The Team Roster
+Questions?
+iGEM
+People
+Support
+Blog
+Videos
+Villages
+Jamboree
+Tickets
+Program
+Exhibitors
+Info
+Competition
+About
+Teams
+Registration
+Deliverables
+Judging
+Sponsorships
+Calendar
+Community
+About
+News
+Topics
+Projects
+Events
+Job Board
+Journals
+Technology
+Registry
+Distribution
+Technologies
+Chassis
+Engineering
+Responsibility
+About
+Events
+Guidance
+Human Practices
+Safety Policies
+Opportunities
+Innovation
+About
+Venture Foundry
+Ecosystem
+Events
+Newsletters
+Copyright © 2026 iGEM Foundation, Inc. All rights reserved. iGEM and the iGEM logo are registered trademarks.
+iGEM Foundation
+·
+501(c)(3) not-for-profit organization
+·
+45 Prospect Street, Cambridge MA, 02139 USA
+iGEM Europe · iGEM HQ
+·
+10 rue du Mail, 75002 Paris, France
+Contact us
+Terms & Policies
+Financials

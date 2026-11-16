@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "saitu.ai-blind-review-lock.v1",
+  "frozenAt": "2026-11-05T16:59:48.211097+00:00",
+  "humanApproved": false,
+  "reviewStatus": "coverage_complete_adjudication_partial_due_to_missing_facts",
+  "fileHashes": {
+    "REVIEW_METHOD.md": "ff6dd551d5f8d303436584d9b880141f3d6a7b3bdff34cbff007958852c95858",
+    "build_review.py": "ac58c155f9915894e854b3689a099913e0b1549e94d36dc6336414dfc965fb85",
+    "disputes-and-hard-negatives.jsonl": "0b523112973bf06e0faa2980ba001e5623f0efc97257ca061a06fc86832300be",
+    "followup-base-full-pool.jsonl": "6a47b550a9802f55794bd7cb5d67b5656c09a9b1076fb3c6c25d26a4e078a160",
+    "followup-branches.jsonl": "f844cb91e27edd8b8aa5a9e6c2ed378046b366f1ce4f81e164486bd780021b03",
+    "legacy-v4-full-pool.jsonl": "26827f0a7c6eeebc6be10bf93b2484fcadd7ba5c817077b14c2b34f4c78e7c4f",
+    "manifest.json": "e87ce666e0ff6cfff5c18414b1a25c9ae7b99d62ddd9569fd885862ab438cd29",
+    "ranking-full-pool.jsonl": "693fe352ed35e6cb2e5111b7aa95cc3159cc476ced2770f9ce1904c0c39cbdb2",
+    "review-index.jsonl": "f61a7cb12897be88ba0c88a4d73bac2923f9de892240e9c292f08eed5b6d375d",
+    "score-task-relations.jsonl": "bc7e00a0fbf6175724b7f2700a569c5be652edca25c2d170af73607bb61ffbc6",
+    "scoring-pairs.jsonl": "cd05f00461f57de4092c4b8a7c5a875123043bf6825a59ca429ff54d987729f6",
+    "semantic-rubric.json": "aa4d4461bf797c9d546e7252bedd6fe6c4e80a51c53cb41195208e36af7450df",
+    "validation.json": "34d088846dd289336199a699507ade017c7840b3580051de52186f9cb2b58a4a"
+  },
+  "sourceHashes": {
+    "manifest.json": "dcc26ed8ac98526d0006e190708befc9d280e8ecf51e15c26a8b96f0223c8df7",
+    "review-inputs.jsonl": "6d40b8e88be560f38ea735c90cb07690cc43bddb402af12584f31fe6761696e7",
+    "candidate-pool.json": "8a8549da1cd0ac32a03cce3549f720fd334ef86f939143827a9e930f8f586cf0"
+  },
+  "readBoundary": "Only the three allowlisted source files and own outputs; no old expected answers, implementation, test logs, other reviews or sealed 800 material."
+}

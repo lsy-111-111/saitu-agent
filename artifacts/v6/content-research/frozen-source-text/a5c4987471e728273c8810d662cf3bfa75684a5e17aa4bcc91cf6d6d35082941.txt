@@ -1,0 +1,288 @@
+Terms and Conditions - Swift Student Challenge - Apple Developer
+View in English
+Apple Developer
+Get Started
+Explore Get Started
+Overview
+Learn
+Apple Developer Program
+Stay Updated
+Latest News
+Hello Developer
+Platforms
+Explore Platforms
+Apple Platforms
+iOS
+iPadOS
+macOS
+tvOS
+visionOS
+watchOS
+App Store
+Featured
+Design
+Distribution
+Games
+Accessories
+Web
+Home
+CarPlay
+Technologies
+Explore Technologies
+Overview
+Xcode
+Swift
+SwiftUI
+Featured
+Accessibility
+AI & Machine Learning
+App Intents
+Apple Intelligence
+Games
+Security
+Xcode Cloud
+Community
+Explore Community
+Overview
+Meet with Apple events
+Community events
+Developer Forums
+Open Source
+Featured
+WWDC
+Swift Student Challenge
+Developer Stories
+App Store Awards
+Apple Design Awards
+Apple Developer Centers
+Documentation
+Explore Documentation
+Documentation Library
+Technology Overviews
+Sample Code
+Human Interface Guidelines
+Videos
+Release Notes
+Featured Updates
+iOS
+iPadOS
+macOS
+watchOS
+visionOS
+tvOS
+Xcode
+Downloads
+Explore Downloads
+All Downloads
+Operating Systems
+Applications
+Design Resources
+Featured
+Xcode
+TestFlight
+Fonts
+SF Symbols
+Icon Composer
+Support
+Explore Support
+Overview
+Help Guides
+Developer Forums
+Feedback Assistant
+Contact Us
+Featured
+Account Help
+App Review Guidelines
+App Review Help
+App Store Connect Help
+Upcoming Requirements
+Agreements and Guidelines
+System Status
+Quick Links
+Events
+News
+Forums
+Sample Code
+Videos
+Swift Student Challenge
+Open Menu
+Close Menu
+Overview
+Get ready
+Distinguished Winners
+Eligibility
+Notify me
+Swift Student Challenge 2026 Terms and Conditions
+You must agree to these Swift Student Challenge 2026 Terms and Conditions (the “Terms”) in order to submit your information to the Swift Student Challenge 2026 (the “Challenge”). If you do not agree with these Terms, do not submit. By submitting your information, you agree to be bound by all the Terms.
+Deadlines
+Challenge submissions are due by Saturday, February 28, 2026, at 11:59 p.m. PST. Apple Inc. (“Apple”) is not responsible for lost or late submissions, or for electronic transmission errors, regardless of cause. Applicants will be notified when results are posted. They can confirm their status by signing in to developer.apple.com/swift-student-challenge/apply with the Apple Account used for submission.
+Application Eligibility Requirements
+To be eligible to submit your information to the Challenge, you must not be employed full time as a developer and you must:
+Meet the minimum age requirement for your country or region as follows:
+14 years of age or older in Austria, Bulgaria, China mainland, Cyprus, Israel, Italy, Lithuania, South Korea, and Spain;
+15 years of age or older in Czechia, France, Greece, Peru, and Slovenia;
+16 years of age or older in Brazil, Croatia, Germany, Hungary, Ireland, Kosovo, Liechtenstein, Luxembourg, Malaysia, Netherlands, Philippines, Poland, Romania, Singapore, and Slovakia; or
+13 years of age or older in all other countries and regions;
+Be registered for free with Apple as an Apple Developer or be a member of the Apple Developer Program;
+Fulfill one of the following requirements at the time of submission:
+Be enrolled in, or have graduated within the last 90 days from, an accredited academic institution or official homeschool equivalent, or an Apple Developer Academy;
+Be enrolled in a STEM organization’s educational curriculum; or
+Have graduated from high school or equivalent within the past 6 months and be awaiting acceptance or have received acceptance to an accredited academic institution.
+You can receive a Swift Student Challenge award up to three times. You can be a Swift Student Challenge Distinguished Winner one time.
+A STEM organization is any organization with a membership program that teaches science, technology, engineering, or math outside of a regular school curriculum and is legally recognized as a nonprofit organization.
+Void where prohibited by law. Eligibility is subject to verification by Apple, and you agree to cooperate with Apple to provide information about your educational and membership status, as applicable. Employees, interns, affiliates, subsidiaries, and advertising and promotional agencies of Apple Inc. are ineligible for the Challenge, as well as immediate family members and/or those living in the same household of such parties.
+Legal guardians of developers who do not meet the minimum age requirements may request permission for their child to apply by sending an email to swiftstudentchallenge@apple.com. Permission may be granted at Apple’s sole discretion.
+Submission Requirements
+You must complete all required fields on the submission form and upload all required files and documentation before submitting.
+You must provide a PDF, PNG, or JPEG of your current class schedule or other current proof of enrollment and the contact information for your dean or principal.
+Class schedules or other current proof of enrollment is accepted in all languages and must clearly show:
+Your name;
+The organization or school name; and
+The dates showing it’s valid at the time of submission.
+Your submission must be an app playground (.swiftpm) in a ZIP file.
+Your creation should not rely on a network connection, and any resources used in your app playground must be included locally in the ZIP file. On-device Apple Intelligence frameworks and other Apple technologies may be used. Submissions will be judged offline.
+Your ZIP file can be up to 25 MB.
+Your app playground must be built with and run on Swift Playground 4.6 or Xcode 26, or later. You may incorporate the use of Apple Pencil.
+All content must be in English.
+AI tools may be used to assist with specific tasks of your project, provided that all usage is fully disclosed. Through their submissions, participants are expected to demonstrate significant individual contributions and technical understanding of their app playground, and skills like problem-solving, impactfulness of the solution, creativity, user experience and design, and use of appropriate tools, and technologies.
+You must provide an essay answer written by you for all required questions on the submission form.
+Your app playground must either be created entirely by you as an individual or be based on a Swift Playground template modified entirely by you as an individual. Group work will not be considered.
+You acknowledge and agree that you are solely responsible for the content of your submission. If your submission includes any open source software, music, photos, artwork, or any other content that you do not have ownership rights in, you agree to (a) comply with all applicable licensing terms and copyright obligations and (b) provide an explanation of why it was used.
+You must comply with the terms of the software you use when creating your app playground (either the Swift Playground Software License Agreement or the Xcode Software License Agreement).
+You hereby grant to Apple, its affiliates, and agents, a nonexclusive, worldwide, fully paid-up, royalty-free license to reproduce, host, process, display, transmit, modify, create derivative works of, and otherwise use your submission solely in order for Apple to evaluate your submission for the Challenge.
+You may only submit one app playground to the Challenge. Submissions are only accepted through developer.apple.com/swift-student-challenge/apply and will not be accepted after the submission deadline.
+Information Submitted to Apple Not Deemed Confidential
+Apple works with many software developers and some of their products may be similar to or compete with the app playground you submit. Apple may also be developing its own similar or competing apps, playgrounds, products, or services or may decide to do so in the future. To avoid potential misunderstandings, Apple cannot agree, and expressly disclaims, any confidentiality obligations or use restrictions, express or implied, with respect to your submission or any information that you provide in connection with your submission (“Applicant Disclosures”). You agree that all such Applicant Disclosures will be non-confidential. Submitting an app playground as part of this submission grants Apple a license but does not grant any ownership interest in your submission, and you retain your rights in your submission.
+Judging
+All decisions made by the judges are final and scoring is confidential. Due to the number of applications received, commentary and feedback on your submission will not be provided. Submissions will be judged on:
+Technical accomplishment in the submitted app playground;
+Creativity of ideas in the submitted app playground; and
+Content of written responses to the questions in the submission form.
+Reasons for Disqualification
+Your submission may not be considered for the Challenge if it does not satisfy all eligibility and submission requirements or for the following reasons:
+Your app playground does not function during the judging process;
+Your submitted app playground was not built by you, or was built by more than one person;
+Your app playground is or uses plagiarized work;
+Your app playground requires sign in;
+You track and/or insert analytics code in your app playground meant to identify or track judges' activity while they review your app playground; or
+You submit the same app playground that you submitted previously, with minimal or no changes.
+In addition, Apple reserves the right to disqualify your current and/or future submission, or withhold or revoke your award at any time if:
+You submit your information to the Challenge more than once as each person is only allowed one submission;
+Any part of your submission is untrue, plagiarized, or fabricated;
+You engage in misappropriation of intellectual property, open source software, music, photos, artwork, or any other content;
+You engage in or previously engaged in harassment or other harmful behavior directed at Apple, Apple employees, other applicants;
+You, directly or indirectly, commit any act intended to interfere with the Challenge, including but not limited to falsely discrediting other applicants to increase your chance of receiving an award or by contacting Apple employees to request more favorable treatment of your submission; or
+You or your submission fail to comply with these Terms.
+Apple takes plagiarism very seriously. Plagiarized works, including design aspects, will not be considered and may disqualify you from future Challenges and opportunities.
+Awards
+Swift Student Challenge awards, including Distinguished Winner awards, will be given at Apple’s sole discretion. Only one award will be given per recipient.
+Distinguished Winners
+Distinguished Winner award recipients may receive an invitation to visit Apple in Cupertino for three days in summer 2026. If selected, you must let us know within two weeks of receiving your invitation if you will be attending the in-person component. Distinguished Winners under the age of 18 who receive an invitation to visit Apple must be accompanied by a legal guardian.
+Lodging and Travel for Distinguished Winners
+You agree to follow all policies set forth by a third party such as the lodging venue, and agree that Apple is not responsible for these policies in any way.
+In addition, Apple will not be responsible for any charges or additional assistance related to lodging, including but not limited to:
+charges or reimbursement for additional nights of lodging or assistance in finding additional lodging;
+reimbursement for any incidental charges or charges for damage to your room or to the lodging venue caused by you;
+charges incurred due to negligence, disorderly conduct, unlawful activities, or noise caused by you;
+charges or reimbursement for alternate lodging or assistance in finding alternate lodging if you do not wish to use provided lodging; or
+charges or reimbursement for alternate lodging or assistance in finding alternate lodging if you are asked to leave the lodging venue due to violating policy.
+For Distinguished Winners who are minors at the time of the visit to Apple, Apple will also pay for travel and lodging for one (1) accompanying parent or guardian.
+Apple is not responsible for any expenses other than those specified in this policy. Transportation between the airport, the lodging venue, Apple, or any other locations related to the Distinguished Winner Event will not be provided by Apple. Travel expenses are not reimbursable by Apple and are the sole responsibility of the recipient.
+General Terms
+All federal, state, and local laws and regulations apply. By submitting your information to the Challenge, you agree to hold Apple and its directors, officers, employees, and assignees, harmless against any and all claims and liability arising out of your submission to the Challenge and/or acceptance of the Challenge award. You assume all liability for any injury or damage caused, or claimed to be caused, by participation in the Challenge or use/redemption of the award. You agree to be bound by these Terms and the decisions of the judges, which are final in all respects. You agree that Apple shall not be responsible for any typographical or other errors in the administration of the Challenge.
+Developer Footer
+Swift Student Challenge Terms and Conditions
+Platforms
+Open Menu
+Close Menu
+iOS
+iPadOS
+macOS
+tvOS
+visionOS
+watchOS
+App Store
+Tools
+Open Menu
+Close Menu
+Swift
+SwiftUI
+Swift Playground
+TestFlight
+Xcode
+Xcode Cloud
+Icon Composer
+SF Symbols
+Technologies
+Open Menu
+Close Menu
+Accessibility
+Accessories
+AI & Machine Learning
+Apple In-App Purchase
+Apple Intelligence
+Audio & Video
+Augmented Reality
+Business
+Design
+Distribution
+Education
+Games
+Health & Fitness
+Localization
+Maps & Location
+Security
+Safari & Web
+Resources
+Open Menu
+Close Menu
+Documentation
+Downloads
+Sample Code
+Videos
+Documentation Archive
+Support
+Open Menu
+Close Menu
+Help Guides & Articles
+Contact Us
+Forums
+Feedback & Bug Reporting
+System Status
+Account
+Open Menu
+Close Menu
+Apple Developer
+App Store Connect
+Certificates, IDs, & Profiles
+Feedback Assistant
+Programs
+Open Menu
+Close Menu
+Apple Developer Program
+Apple Developer Enterprise Program
+App Store Small Business Program
+MFi Program
+Mini Apps Partner Program
+News Partner Program
+Video Partner Program
+Security Bounty Program
+Security Research Device Program
+Events
+Open Menu
+Close Menu
+Meet with Apple
+Apple Developer Centers
+App Store Awards
+Apple Design Awards
+Apple Developer Academies
+WWDC
+Read the latest news.
+Get the Apple Developer app. Follow us on bilibili, LinkedIn, WeChat, and YouTube.
+Light
+Dark
+Auto
+Copyright ©  2026 Apple Inc. All rights reserved.
+Terms of Use
+Privacy Policy
+Agreements and Guidelines

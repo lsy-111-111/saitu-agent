@@ -1,36 +1,44 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import Link from "next/link";
 import { CompetitionCard } from "@/components/competitions/CompetitionCard";
 import { CompetitionDetailModal } from "@/components/competitions/CompetitionDetailModal";
 import { CompetitionTrustNotice } from "@/components/competitions/CompetitionTrustNotice";
 import { AccessibleDirectoryDialog } from "@/components/directory/AccessibleDirectoryDialog";
 import { competitionDirections, competitions } from "@/content/competitions";
 import { trackEvent } from "@/lib/analytics/track";
+import type { DirectorySeries } from "@/lib/competitions/directory-series";
 import {
   ALL_COMPETITION_DIRECTIONS,
   COMPETITION_QUERY_MAX_LENGTH,
   buildCompetitionDirectoryUrl,
   filterCompetitions,
   limitCompetitionQuery,
+  normalizeCompetitionSearch,
+  tokenizeCompetitionSearch,
   type CompetitionDirectionFilter
 } from "@/lib/competitions/search";
 
 const COMPETITIONS_PER_PAGE = 12;
 const directionOptions = [ALL_COMPETITION_DIRECTIONS, ...competitionDirections] as const;
 
+const noAdditionalSeries: readonly DirectorySeries[] = [];
+
 type CompetitionBoardProps = {
   availabilityAsOfMs?: number;
   initialDirection?: CompetitionDirectionFilter;
   initialPage?: number;
   initialQuery?: string;
+  additionalSeries?: readonly DirectorySeries[];
 };
 
 export function CompetitionBoard({
   availabilityAsOfMs,
   initialDirection = ALL_COMPETITION_DIRECTIONS,
   initialPage = 1,
-  initialQuery = ""
+  initialQuery = "",
+  additionalSeries = noAdditionalSeries
 }: CompetitionBoardProps = {}) {
   const [direction, setDirection] = useState<CompetitionDirectionFilter>(initialDirection);
   const [query, setQuery] = useState(() => limitCompetitionQuery(initialQuery));
@@ -50,6 +58,13 @@ export function CompetitionBoard({
     () => filterCompetitions(competitions, query, direction),
     [direction, query]
   );
+  const filteredAdditionalSeries = useMemo(() => {
+    const tokens = tokenizeCompetitionSearch(query);
+    return additionalSeries.filter(item => {
+      const haystack = normalizeCompetitionSearch([item.name, ...item.aliases, item.summary, item.direction].join(" "));
+      return (direction === ALL_COMPETITION_DIRECTIONS || item.direction === direction) && tokens.every(token => haystack.includes(token));
+    });
+  }, [additionalSeries, direction, query]);
   const pageCount = Math.max(1, Math.ceil(filteredCompetitions.length / COMPETITIONS_PER_PAGE));
   const currentPage = Math.min(page, pageCount);
   const firstVisibleIndex = (currentPage - 1) * COMPETITIONS_PER_PAGE;
@@ -178,6 +193,7 @@ export function CompetitionBoard({
   return (
     <section aria-labelledby="competition-directory-title" className="mt-8">
       <h2 className="sr-only" id="competition-directory-title">竞赛目录</h2>
+      <p className="text-sm leading-6 text-muted-foreground" data-testid="competition-directory-total">目录共 {competitions.length + additionalSeries.length} 个赛事系列，投入前请核对当届官方安排。</p>
 
       <div aria-labelledby="competition-search-label" className="mt-5 rounded-card border border-control-border bg-card p-4 shadow-[0_8px_22px_rgba(49,46,129,0.04)] sm:p-5" role="search">
         <label className="text-sm font-semibold text-ink" htmlFor="competition-search" id="competition-search-label">
@@ -249,6 +265,7 @@ export function CompetitionBoard({
       >
         展示 <span className="font-semibold text-ink">{visibleRangeStart}-{visibleRangeEnd}</span>
         {" / "}{filteredCompetitions.length} 项符合条件的内容
+        {filteredAdditionalSeries.length ? `；另有 ${filteredAdditionalSeries.length} 项赛事资料` : ""}
       </p>
 
       {visibleCompetitions.length > 0 ? (
@@ -260,7 +277,7 @@ export function CompetitionBoard({
           </div>
           {pageCount > 1 ? <Pagination currentPage={currentPage} onPageChange={goToPage} pageCount={pageCount} /> : null}
         </>
-      ) : (
+      ) : filteredAdditionalSeries.length ? null : (
         <div className="mt-8 rounded-card border border-dashed border-control-border bg-card px-6 py-12 text-center" data-testid="competition-empty-state" id="competition-grid">
           <h3 className="text-xl font-semibold text-ink">没有找到符合条件的竞赛</h3>
           <p className="mx-auto mt-2 max-w-xl text-sm leading-6 text-muted-foreground">可以换一个关键词，或清除搜索和方向筛选后查看全部竞赛。</p>
@@ -269,6 +286,18 @@ export function CompetitionBoard({
           </button>
         </div>
       )}
+
+      {filteredAdditionalSeries.length ? <section className="mt-8" data-testid="added-directory-series" id="added-directory-series">
+        <h3 className="text-xl font-semibold">更多赛事资料</h3>
+        <p className="mt-2 text-sm leading-6 text-muted-foreground">以下保留赛事基本入口；具体任务、报名资格、时间和费用请按对应官方资料核对。</p>
+        <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {filteredAdditionalSeries.map(item => <li key={item.seriesId} data-directory-series={item.seriesId} className="rounded-2xl border border-border bg-white p-5">
+            <Link className="inline-flex min-h-11 items-center font-semibold text-brand-700 underline underline-offset-4" href={`/competitions/${encodeURIComponent(item.seriesId)}`}>{item.name}</Link>
+            <p className="mt-2 text-sm leading-6">{item.summary}</p>
+            {item.officialSource ? <a className="mt-3 inline-flex min-h-11 items-center text-sm font-semibold text-brand-700 underline" href={item.officialSource.url} target="_blank" rel="noopener noreferrer" aria-label={`查看官方资料：${item.name}`}>查看官方资料</a> : <p className="mt-3 text-xs leading-5 text-muted-foreground">官方资料入口尚待核对。</p>}
+          </li>)}
+        </ul>
+      </section> : null}
 
       <div className="mt-7"><CompetitionTrustNotice /></div>
 

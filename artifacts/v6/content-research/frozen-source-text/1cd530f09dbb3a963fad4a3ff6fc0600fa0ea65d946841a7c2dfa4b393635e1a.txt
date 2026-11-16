@@ -1,0 +1,42 @@
+2026 MCM/ICM Problems
+COMAP Mirror Site: For more in:
+https://www.contest.comap.com/undergraduate/contests/mcm/
+MCM: The Mathematical Contest in Modeling
+ICM: The Interdisciplinary Contest in Modeling
+2026 MCM/ICM
+January 29 - February 2, 2026
+2026 Contest Dates and Times:
+Contest Starts: 5:00 p.m. EST on Thursday, January 29, 2026.
+Contest Ends: 8:00 p.m. EST on Monday, February 2, 2026.
+Solution Report Deadline: 9:00 p.m. EST on Monday, February 2, 2026.
+Contest Results: Results will be available on or before May 8, 2026.
+COMAP is in the USA Eastern time zone: all times given in these instructions are in terms of Eastern Standard Time (EST).
+Click here to download a ZIP file containing all 6 MCM/ICM  problems
+2026 MCM Problems
+Problem A: Modeling Smartphone Battery Drain
+Problem B: Creating a Moon Colony Using a Space Elevator System
+Problem C: Data With The Stars
+Problem_C_Data.csv
+2026 ICM Problems
+Problem D: Managing Sports for Success
+Problem E: Passive Solar Shading
+Problem F: To Gen-AI, or Not To Gen-AI (or how to Gen-AI)? That is the Question!
+Each registered team may choose any one of the six problem choices and should submit a solution to only one problem.
+• MCM problems are Problem A, Problem B, Problem C.
+• ICM problems are Problem D, Problem E, Problem F.
+You must login to the website and choose your problem.
+Click here to download the 2026 MCM/ICM Summary Sheet in Microsoft Word
+Click here to download the 2026 MCM/ICM Summary Sheet in LaTex
+Problem Updates And Notes
+NEW MCM-ICM: Online Submission Process
+Each team is required to submit an PDF electronic copy of its solution using the new online  submission page https://forms.comap.org/241335097294056.
+You will need your team's control number, advisor id number and your problem choice to complete your submission.
+Teams should only submit their solution once.
+You are NO LONGER required to email in your contest submission.
+Click here to view details about the new online submission process.
+For the most up to date information we recommend that you bookmark this page and follow us at
+COMAPCHINAOFFICIAL on Weibo
+@COMAPMath on X
+© 2026 COMAP, The Consortium for Mathematics and Its Applications
+May be reproduced for academic/research purposes
+For More information on COMAP and this project visit www.contest.comap.com

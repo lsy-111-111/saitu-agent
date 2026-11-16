@@ -56,4 +56,16 @@ describe("competition detail actions", () => {
     expect(html).not.toContain("AI生成配图｜赛途原创主题视觉，非赛事官方标识");
     expect(html).toContain(encodeURIComponent(competitions[0].coverImage.src));
   });
+
+  it("keeps public cards and detail headers neutral even during a historical registration window", () => {
+    const competition = competitions.find(item => item.id === "energy-economics-academic-creativity")!;
+    const card = (at: string) => renderToStaticMarkup(<CompetitionCard competition={competition} availabilityNow={new Date(at)} onOpen={vi.fn()} />);
+    expect(card("2026-11-20T00:00:00+08:00")).toBe(card("2027-01-20T00:00:00+08:00"));
+    const html = renderToStaticMarkup(<CompetitionDetailModal competition={competition} availabilityNow={new Date("2026-11-20T00:00:00+08:00")} onClose={vi.fn()} onSourceClick={vi.fn()} />);
+    expect(html).toContain("赛事资料参考");
+    expect(html).toContain("资料按标注届次保留，历史内容用于了解任务与准备方向");
+    expect(html).toContain("参赛资格和开赛时间请自行核查官网");
+    expect(html).not.toContain("全国报名窗口内");
+    expect(html).not.toContain("全国学生团队报名窗口。");
+  });
 });

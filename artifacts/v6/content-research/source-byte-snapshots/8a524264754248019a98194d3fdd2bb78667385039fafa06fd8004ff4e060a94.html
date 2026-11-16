@@ -1,0 +1,878 @@
+
+<!-- PC端页头开始 -->
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <!-- <meta name="viewport" content="width=1200, initial-scale=0.1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="referrer" content="unsafe-url" />
+    <title>基于单目视觉的目标物测量装置-全国大学生电子设计竞赛培训网</title>    <meta name="keywords" content="" />    <meta name="description" content="" />    <link rel="shortcut icon"  href="https://www.nuedc-training.com.cn/logo.ico">
+    <link rel="stylesheet" href="https://static.nuedc-training.com.cn/css/style3.css?v=1756706662">
+    <link rel="stylesheet" href="https://static.nuedc-training.com.cn/css/styleNew.css?v=1756706662">
+    <!--<link rel="stylesheet" href="https://static.nuedc-training.com.cn/css/style.min.css?v=16">-->
+    <script src="https://static.nuedc-training.com.cn/js/jquery.min.js"></script>
+    <script src="https://static.nuedc-training.com.cn/js/Validform_v5.3.2_min.js"></script>
+    <link href="https://static.nuedc-training.com.cn/css/swiper.min.css" rel="stylesheet">
+    <script src="https://static.nuedc-training.com.cn/js/swiper.min.js"></script>
+    <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>-->
+    <!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+    <style>
+        html {
+            overflow-x: hidden;
+        }
+        body {
+            overflow-x: visible
+        }
+    </style>
+    <![endif]-->
+    <!-- 用于电赛赛题页面，切换PC和移动端的页头页脚 处理css加载滞后的问题-->
+    <style>
+        body{
+            overflow-y:scroll;
+        }
+        /* PC页头调整 */
+        .pc-header .header {
+            position: relative;
+            width: 100%;
+            height: 100px;
+            background-color: #fff;
+            z-index: 8;
+        }
+        .pc-header .nav{
+            position:static;
+            width: 100%;
+            height: 60px;
+            background: #4683FF;
+        }
+        .pc-header .header > .container{
+            height:83px;
+        }
+        .pc-header .nav.active{
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 11;
+        }
+        .pc-header .header-search{
+            position:relative;
+            right:0;
+            top:0;
+            margin-top:0;
+        }
+        /* PC端需要隐藏的东西 */
+        .phone-banner,.phone-footer,.phone-header,.down-blue{
+            display:none;
+        }
+        @media screen and (max-width:500px) {
+            /* 移动端需要隐藏的内容*/
+            .banner-a,.details-img,.down-img,.pc-footer,#think_page_trace_open,.pc-header .logo{
+                display:none !important;
+            }
+            /* 移动端需要显示的内容*/
+            .phone-footer,.phone-header{
+                display:block;
+            }
+        }
+    </style>
+</head>
+<!-- <style>
+  *{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+}
+.index-information-box img {
+    left: -220px;
+  }
+</style> -->
+<script>
+    $(function(){
+        var a = "https://www.nuedc-training.com.cn/index/index/mall/sign";
+
+        $(".nav-user-sign").click(function(){
+            if(!$(this).hasClass("active")){
+                $.ajax({
+                    type:"GET",
+                    url:a,
+                    dataType:"json",
+                    data:'',
+                    async:true,
+                    success:function (e) {
+                        if(e.status === 1){
+                            $(".head-popup").show()
+                            $(".popup-main-title").html(e.info)
+                            $("#popupNum").html(e.data.sign_count)
+                            $(".popup-main-li").each(function(index){
+                                if(index < e.data.sign_count){
+                                    $(this).find(".popup-mainItem-bg").show()
+                                }
+                            })
+                        }
+                        if(e.status === 0){
+                            $(".head-popup").show()
+                            $(".popup-main-title").html(e.info)
+                            $("#popupNum").html(e.data.sign_count)
+                            $(".popup-main-li").each(function(index){
+                                if(index < e.data.sign_count){
+                                    $(this).find(".popup-mainItem-bg").show()
+                                }
+                            })
+                        }
+                        if(e.status === 2){
+                            window.location.href = e.data
+                        }
+                    }
+                })
+            }
+        })
+
+        $("#userBtn").click(function(){
+            $.ajax({
+                type:"GET",
+                url:a,
+                dataType:"json",
+                data:'',
+                async:true,
+                success:function (e) {
+                    if(e.status === 1){
+                        $(".head-popup").show()
+                        $(".popup-main-title").html(e.info)
+                        $("#popupNum").html(e.data.sign_count)
+                        $(".popup-main-li").each(function(index){
+                            if(index < e.data.sign_count){
+                                $(this).find(".popup-mainItem-bg").show()
+                            }
+                        })
+                    }
+                    if(e.status === 0){
+                        $(".head-popup").show()
+                        $(".popup-main-title").html(e.info)
+                        $("#popupNum").html(e.data.sign_count)
+                        $(".popup-main-li").each(function(index){
+                            if(index < e.data.sign_count){
+                                $(this).find(".popup-mainItem-bg").show()
+                            }
+                        })
+                    }
+                    if(e.status === 2){
+                        window.location.href = e.data
+                    }
+                }
+            })
+        })
+
+        $(".popup-head-close").click(function(){
+            $(".head-popup").hide()
+            window.location.href = window.location.href
+        })
+
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $(".nav").addClass("active")
+            } else {
+                $(".nav").removeClass("active")
+            }
+        })
+        // if ($("#searchForm").length) {
+        //     var $form = $("#searchForm").Validform({
+        //         tiptype: 4,
+        //         ignoreHidden: true,
+        //         ajaxPost: false,
+        //         beforeSumbmit: function () {
+        //
+        //         },
+        //         callback: function (data) {
+        //
+        //         }
+        //     })
+        // }
+        if ($('#bannerWrap').length) {
+            var banner = new window.GZApp.Scroll({
+                mainWrap: '#bannerWrap',
+                auto: true,
+                speed: 0.5,
+                tagWrap: '#bannerTab2'
+            })
+            banner.showHide();
+        }
+    })
+</script>
+<!-- 	<div class="tip-pop" style="position: fixed; top: 0px; left: 50%; transform: translate(-50%); width: 1200px; margin: 0px auto; padding: 3px 20px; background-color: #fff7db;color: #555555; text-align: left; font-size: 14px; border-radius: 4px; z-index: 9; border-radius: 6px;box-sizing: border-box;">
+		<p style="font-size: 13px;text-align: center;">全国大学生电子设计竞赛培训网将于2020年5月19日 21:00-23:00 进行升级维护，期间部分功能将会无法使用，给您带来的不便敬请谅解。 <a href="" style="color: #0070cf">查看详情</a>
+		<span class="colse-tip-pop" style="padding-left: 10px; cursor: pointer;">X</span>
+		</p>
+	</div> -->
+<script>
+    $('.colse-tip-pop').click(function () {
+        $('.tip-pop').hide()
+    })
+</script>
+
+<body style="-webkit-overflow-scrolling: touch;">
+<div class="header-nav-group pc-header">
+    <header class="header">
+        <div class="container clearfix">
+                        <a class="logo" href="https://www.nuedc-training.com.cn/" title="全国大学生电子设计竞赛培训网">
+                <img src="https://res.nuedc-training.com.cn/s/png/2019/01/26/bbs_201901266708.png" alt="全国大学生电子设计竞赛培训网">
+            </a>
+                        <div class="header-right">
+                <form id="searchForm" action="https://www.nuedc-training.com.cn/index/search/bbs" class="header-search" method="get" onsubmit="$(this).attr('action', $('#search_type').val());return true;">
+				<span>
+					<select class="header-sel" name="st" id="search_type">
+						<option value="https://www.nuedc-training.com.cn/index/search/bbs" >电赛论坛</option>
+                        <option value="https://www.nuedc-training.com.cn/index/search/news" >信息发布</option>
+                        <option value="https://www.nuedc-training.com.cn/index/search/training" >培训资源</option>
+					</select>
+				</span>
+                    <span class="header-line"></span>
+                    <input class="header-text" placeholder="输入您要搜索的关键词" type="search" name="w" id="" datatype="*" nullmsg="请输入搜索内容！" value="">
+                    <button class="header-submit" type="submit">搜索</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="container clearfix">
+            <ul class="clearfix leftCol nav-ul">
+				<li class="leftCol">
+					<a href="https://www.nuedc-training.com.cn/" class="nav-link ">首页</a>
+				</li>
+				<li class="leftCol">
+					<a href="https://www.nuedc-training.com.cn/index/news" class="nav-link ">信息发布</a>
+				</li>
+				<li class="leftCol" style="position: relative">
+					<a href="https://www.nuedc-training.com.cn/index/publicity/topic2025" class="nav-link ">2025电赛专区</a>
+					<img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/>
+				</li>
+				<!-- <li class="leftCol" style="position: relative">
+					<a href="https://bbs.nuedc-training.com.cn"  class="nav-link">电赛论坛</a>
+					<img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/>
+				</li> -->
+				<li class="leftCol  review-header-li" style="position: relative">
+
+					<a href="https://www.nuedc-training.com.cn/index/activity" class="nav-link ">活动专区
+						<!-- <img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/> -->
+					</a>
+					<ul class="header-review-list" style="width: 160px;">
+						<!-- <li class="header-review-li">
+							<a href="https://www.nuedc-training.com.cn/index/card_advance/march2023_list" style="padding:18px 0 14px 0;">
+								答题赢板卡
+							</a>
+							<img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/>
+						</li> -->
+						<li class="header-review-li"><a href="https://www.nuedc-training.com.cn/index/huodong/vlog_2025">电赛作品Vlog分享</a></li>
+					</ul>
+
+					<!--<a href="https://www.nuedc-training.com.cn/index/activity" class="nav-link ">活动专区</a>-->
+				</li>
+				<li class="leftCol review-header-li" style="position: relative">
+					<a href="https://www.nuedc-training.com.cn/index/video" class="nav-link ">
+						培训资源
+					</a>
+					<img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/>
+					<ul class="header-review-list" style="width: 200px;">
+						<li class="header-review-li">
+							<a href="https://www.nuedc-training.com.cn/index/huodong/btq_course_2025" style="padding:18px 0 14px 0;">
+								2025年 TI 杯电赛集训营
+								<!--<img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/>-->
+							</a>
+							<!-- <img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/> -->
+						</li>
+						<li class="header-review-li">
+							<a href="https://www.nuedc-training.com.cn/index/huodong/btq_course_2024" style="padding:18px 0 14px 0;">
+								2024年 TI 杯电赛集训营
+								<!--<img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/>-->
+							</a>
+							<!-- <img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/> -->
+						</li>
+						<li class="header-review-li">
+							<a href="https://www.nuedc-training.com.cn/index/huodong/btq_course" style="padding:18px 0 14px 0;">
+								2023年 TI 杯电赛精品课
+								<!--<img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/>-->
+							</a>
+							<!-- <img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/> -->
+						</li>
+						<li class="header-review-li">
+							<a href="https://www.nuedc-training.com.cn/mooc/index/index" style="padding:18px 0 14px 0;">慕课
+								<!--<img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/>-->
+							</a>
+							<!-- <img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/> -->
+						</li>
+						<li class="header-review-li">
+							<a href="https://www.nuedc-training.com.cn/index/news/details/new_id/323" style="padding:18px 0 14px 0;">历年赛题集合
+								<!--<img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/>-->
+							</a>
+							<!-- <img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/> -->
+						</li>
+					</ul>
+				</li>
+				<li class="leftCol review-header-li" style="position: relative">
+					<a href="https://www.nuedc-training.com.cn/index/huodong/mspm0_index" class="nav-link ">
+						TI MSPM0学习中心
+					</a>
+					<img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/>
+					<ul class="header-review-list" style="width: 200px;">
+						<li class="header-review-li">
+							<a href="https://www.nuedc-training.com.cn/index/huodong/mspm0_activity1" style="padding:18px 0 14px 0;">TI MSPM0 电赛系列活动
+								<!--<img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/>-->
+							</a>
+							<!-- <img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/> -->
+						</li>
+					</ul>
+					
+				</li>
+				<!--<li class="leftCol">-->
+					<!--<a href="https://www.nuedc-training.com.cn/index/review" class="nav-link ">往届回顾</a>-->
+				<!--</li>-->
+				<!-- <li class="leftCol">
+					<a href="https://www.nuedc-training.com.cn/index/mall" class="nav-link ">兑换商城
+						<img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/>
+					</a>
+				</li> -->
+								<li class="leftCol review-header-li" style="position: relative">
+					<a href="https://www.nuedc-training.com.cn/index/evm/index_2025" class="nav-link ">板卡申请
+						<img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/>
+					</a>
+					<ul class="header-review-list">
+						<li class="header-review-li"><a href="https://www.nuedc-training.com.cn/index/evm/index_2025">学生专区</a></li>
+						<li class="header-review-li"><a href="https://www.nuedc-training.com.cn/index/card/index">教师专区</a></li>
+					</ul>
+				</li>
+								<li class="leftCol review-header-li" style="position: relative">
+					<a href="https://bbs.nuedc-training.com.cn"  class="nav-link">电赛论坛</a>
+					<!--<img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/>-->
+					<ul class="header-review-list">
+						<li class="header-review-li">
+							<a href="https://www.nuedc-training.com.cn/index/mall" style="padding:18px 0 14px 0;">兑换商城
+								<!--<img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/>-->
+							</a>
+							<!-- <img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/> -->
+						</li>
+					</ul>
+				</li>
+				 <!-- <li class="leftCol">
+					<a href="https://www.nuedc-training.com.cn/mooc/index/index" class="nav-link ">慕课
+						<img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/>
+					</a>
+				</li> -->
+				<li class="leftCol">
+					<a href="https://www.nuedc-training.com.cn/index/huodong/cse" class="nav-link ">竞赛支持企业
+						<!--<img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/>-->
+					</a>
+				</li>
+			</ul>
+            <style>
+                .header-review-list {
+                    position: absolute;
+                    top: 60px;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    width: 110px;
+                    background:rgba(255,255,255,1);
+                    box-shadow:0px 2px 4px 0px rgba(0,0,0,0.3);
+                    z-index: 9;
+                    display: none;
+
+                }
+                .header-review-li {
+                    padding: 0 0px;
+                }
+                .header-review-li a {
+                    display: block;
+                    padding: 14px 0;
+                    text-align: center;
+                    font-size: 14px;
+                    border-bottom: 1px solid #D8D8D8;
+                    color: #333333;
+                }
+
+                .header-review-li:last-child a {
+                    border: 0;
+                }
+                .header-review-li:hover a {
+                    color: #4583FF;
+                    background-color: #fff;
+                }
+                .review-header-li:hover .header-review-list {
+                    display: block;
+                }
+            </style>
+            <div class="nav-user rightCol clearfix">
+                <!-- <a href="http://tj.21dianyuan.com/KJVOXrPl" class="leftCol nav-user-buy" target="_blank" style="margin-right:5px;">
+                    <div id="openNewBuy" class="nav-user-buy-wrap hide">
+                        <div class="nav-user-buy-link">官方认证购买渠道</div>
+                        <button id="closeNewBuy" class="nav-user-buy-btn"></button>
+                    </div>
+                </a> -->
+
+                                <div class="nav-nologin rightCol">
+                    <a href="https://www.nuedc-training.com.cn/index/login?referer=https://www.nuedc-training.com.cn/topic/index/details/i0QWnc6Och/MMyDhVAd2g+XK58Mp5OnaKjajypiXXTk=">登录</a>
+                    <span>&nbsp;|&nbsp;</span>
+                    <a href="https://www.nuedc-training.com.cn/index/register">注册</a>
+                </div>
+                            </div>
+
+        </div>
+    </nav>
+</div>
+
+<script>
+    function get_cookie(Name) {
+        var search = Name + "="//查询检索的值
+        var returnvalue = "";//返回值
+        if (document.cookie.length > 0) {
+            sd = document.cookie.indexOf(search);
+            if (sd!= -1) {
+                sd += search.length;
+                end = document.cookie.indexOf(";", sd);
+                if (end == -1)
+                    end = document.cookie.length;
+                //unescape() 函数可对通过 escape() 编码的字符串进行解码。
+                returnvalue=unescape(document.cookie.substring(sd, end))
+            }
+        }
+        return returnvalue;
+    }
+
+    if (get_cookie("buyClose")) {
+        $('#openNewBuy').parent().hover(function () {
+            $('#openNewBuy').show()
+        }, function () {
+            $('#openNewBuy').hide()
+        })
+    } else {
+        $('#openNewBuy').removeClass('hide')
+        $('#closeNewBuy,#openNewBuy').show()
+        $('#closeNewBuy').click(function (e) {
+            e.stopPropagation()
+            document.cookie="buyClose=1;domain=.nuedc-training.com.cn;expires=Fri, 31 Dec 9999 23:59:59 GMT";
+            $('#openNewBuy').hide().addClass('hide')
+            $('#closeNewBuy').hide()
+            $('#openNewBuy').parent().hover(function () {
+                $('#openNewBuy').show()
+            }, function () {
+                $('#openNewBuy').hide()
+            })
+            return false
+        })
+    }
+</script>
+
+<!-- PC端页头结束 -->
+<!-- 移动端页头开始 -->
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" charset="UTF-8">
+    <title>基于单目视觉的目标物测量装置-全国大学生电子设计竞赛培训网</title>    <meta name="keywords" content="" />    <meta name="description" content="" />    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no" />
+    <meta name = "format-detection" content = "telephone=no">
+    <link rel="shortcut icon"  href="https://www.nuedc-training.com.cn/logo.ico">
+    <link rel="stylesheet" href="https://static.nuedc-training.com.cn/css/mobile/index.css?v=1756706662">
+    <link href="https://static.nuedc-training.com.cn/css/mobile/swiper.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+    <![endif]-->
+    <!-- 用于电赛赛题页面，切换PC和移动端的页头页脚 处理css加载滞后的问题-->
+    <style>
+        /* PC端需要隐藏的东西 */
+        .phone-banner,.phone-footer,.phone-header,.down-blue{
+            display:none;
+        }
+        @media screen and (max-width:500px) {
+            /* 移动端需要隐藏的内容*/
+            .banner-a,.details-img,.down-img,.pc-footer,#think_page_trace_open,.pc-header .logo,.pc-header .header > .container{
+                display:none !important;
+            }
+            /* 移动端需要显示的内容*/
+            .phone-footer,.phone-header{
+                display:block;
+            }
+            /* 页头 */
+            .pc-header .header {
+                width: 100%;
+                height: 44px;
+                background: #fff;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 999;
+            }
+            .pc-header .nav{
+                display:none;
+            }
+        }
+    </style>
+</head>
+<body style="max-width: 768px;margin:0 auto;-webkit-overflow-scrolling: touch;">
+<div id="top" style="position: relative;top:-100px;"></div>
+<div class="phone-header">
+    <div class="headTop">
+        <div class="headTop-nav-wrap">
+            <a href="javascript:history.go(-1)" class="headTop-back">
+                <img width="22" src="https://static.nuedc-training.com.cn/images/mobile/icon21.png"/>
+            </a>
+            基于单目视觉的目标物测量...            <a href="https://www.nuedc-training.com.cn/mobile/search/index" class="headTop-search">
+                <img width="22" src="https://static.nuedc-training.com.cn/images/mobile/icon22.png"/>
+            </a>
+            <div class="headTop-nav">
+                <img width="22" src="https://static.nuedc-training.com.cn/images/mobile/icon20.png"/>
+            </div>
+        </div>
+    </div>
+    <div class="headTop-hide">
+        <div class="headTop-bg"></div>
+        <div class="headTop-main">
+            <div class="contanter">
+
+                                <div class="clearfix">
+                    <a href="https://www.nuedc-training.com.cn/mobile/register/member_type" class="headTop-register leftCol">注册</a>
+                    <a href="https://www.nuedc-training.com.cn/mobile/login/index?referer=https://www.nuedc-training.com.cn/topic/index/details/i0QWnc6Och/MMyDhVAd2g+XK58Mp5OnaKjajypiXXTk=" class="headTop-login rightCol">登录</a>
+                </div>
+                
+                <ul style="padding-bottom: 100px;">
+                    <li>
+                        <a href="https://www.nuedc-training.com.cn/mobile/index/index" class="headTop-item">首页</a>
+                    </li>
+                    <li>
+                        <a href="https://www.nuedc-training.com.cn/mobile/news/index" class="headTop-item">信息发布</a>
+                    </li>
+                    <li>
+                        <a href="https://bbs.nuedc-training.com.cn" class="headTop-item">电赛论坛</a>
+                    </li>
+                    <li>
+                        <a href="https://www.nuedc-training.com.cn/mobile/activity/index" class="headTop-item">活动专区</a>
+                    </li>
+                    <li>
+                        <a href="https://www.nuedc-training.com.cn/mobile/video/index" class="headTop-item">培训资源</a>
+                    </li>
+                    <li>
+                        <a href="https://www.nuedc-training.com.cn/mobile/review/index" class="headTop-item">往届回顾</a>
+                    </li>
+                    <li>
+                        <a href="https://www.nuedc-training.com.cn/mobile/mall/index" class="headTop-item">兑换商城</a>
+                    </li>
+                    <li>
+                        <a href="https://www.nuedc-training.com.cn/mobile/card/index" class="headTop-item">板卡申请</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>    
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+<script src="https://static.nuedc-training.com.cn/js/jquery.min.js"></script>
+<!-- 百度统计 -->
+<script src="https://static.nuedc-training.com.cn/js/baidu-statistics.js"></script>    
+<script>
+    $(function(){
+        var isShow = true
+        $(".headTop-nav").click(function(){
+            if(isShow === true){
+                $(".headTop-hide").show();
+                $('html').addClass('noscroll');
+                isShow = false
+            } else {
+                $(".headTop-hide").hide();
+                $('html').removeClass('noscroll');
+                isShow = true
+            }
+        })
+        $(".headTop-bg").click(function(){
+            $(".headTop-hide").hide();
+            $('html').removeClass('noscroll');
+            isShow = true
+        })
+    })
+</script>
+<!-- 移动端页头结束 -->
+<style>
+    .text-box img{
+        padding:0 !important;
+    }
+</style>
+
+
+<link rel="stylesheet" href="https://static.nuedc-training.com.cn/css/topic/main.css?v=8">
+<style>
+    .question-a:hover .down-img {
+        background-image: url(https://static.nuedc-training.com.cn/images/topic/down-blue.png) !important;
+    }
+
+    .back-a:hover .back-icon {
+        background-image: url(https://static.nuedc-training.com.cn/images/topic/back-blue.png?v=1) !important;
+    }
+</style>
+<div class="details-wrap">
+    <!-- PC端banner开始 -->
+    <a href="javascript:void(0)" class="banner-a">
+        <img src="https://res.nuedc-training.com.cn/s/png/2025/07/30/topic_202507309934.png" />
+    </a>
+    <!-- PC端banner结束 -->
+    <!-- 移动端banner开始 -->
+    <a href="javascript:void(0)" class="phone-banner">
+        <img src="https://res.nuedc-training.com.cn/s/png/2025/07/30/topic_202507307842.png" />
+    </a>
+    <!-- 移动端banner结束 -->
+    <div class="ds-details">
+        <div class="details-title">
+                        <img src="https://static.nuedc-training.com.cn/images/topic/icon2.png?v=1" />
+                        <!--classify==3不分本科专科-->
+                            <span>C题-基于单目视觉的目标物测量装置——本科组</span>
+                        <span class="back_list">
+                  <a href="javascript:history.back(-1);" class="back-a">
+                <span class="back-icon" style="background-image:url(https://static.nuedc-training.com.cn/images/topic/back-black.png?v=1);"></span>
+                <span>返回赛题列表</span>
+            </a>
+            </span>
+        </div>
+                <!-- 详情页面开始 -->
+        <div class="details-content">
+            <div class="content-title">
+                TI 杯 2025 年全国大学生电子设计竞赛赛题公示            </div>
+            <div class="content-desc">
+                基于单目视觉的目标物测量装置（C题）            </div>
+            <div class="content-text" style="text-align:center;">
+            <div class="text-box">
+                <p><img style="padding:5px;" src="https://res.nuedc-training.com.cn/s/png/2025/07/30/topic_202507301945.png"/><img style="padding:5px;" src="https://res.nuedc-training.com.cn/s/png/2025/07/30/topic_202507303262.png"/><img style="padding:5px;" src="https://res.nuedc-training.com.cn/s/png/2025/07/30/topic_202507302336.png"/><img style="padding:5px;" src="https://res.nuedc-training.com.cn/s/png/2025/07/30/topic_202507306564.png"/><img style="padding:5px;" src="https://res.nuedc-training.com.cn/s/png/2025/07/30/topic_202507309022.png"/><img style="padding:5px;" src="https://res.nuedc-training.com.cn/s/png/2025/07/30/topic_202507302774.png"/></p>            </div>
+        </div>
+            </div>
+        <!-- 暂无公布赛题结束 -->
+</div>
+<!-- 移动端footer开始 -->
+<div class="phone-footer">
+    <div class="footer-box">
+        <!--<img src="https://static.nuedc-training.com.cn/images/topic/icon15.png?v=1" />-->
+        <!--<a href="javasdript:void(0)" class="span1">触屏版</a>-->
+        <!--<span class="span2">|</span>-->
+        <!--<img src="https://static.nuedc-training.com.cn/images/topic/icon16.png?v=1" />-->
+        <!--<a href="javascript:void(0)" class="span3">电脑版</a>-->
+    </div>
+    <div>Copyright 2018-2020 NUEDC All Rights Reserved. </div>
+    <div>全国大学生电子设计竞赛组织委员会 版权所有</div>
+    <div>津ICP备18002217号-1</div>
+</div>
+<!-- 移动端footer结束 -->
+</div>
+<script>
+    var hide2 = '1';
+    if(hide2 == 1){
+        $('.back_list').empty()
+        $(function(){
+            // var a = "/topic/index/index_new.html";
+            var a = "https://www.nuedc-training.com.cn/topic/steady/index_new";
+            var times = Math.floor(Math.random() * 3) + 1
+            var data = {
+                id: 30            }
+            setTimeout(function() {
+                $.ajax({
+                    type:"post",
+                    url:a,
+                    dataType:"json",
+                    data: data,
+                    async:true,
+                    xhrFields:{
+                        withCredentials:true
+                    },
+                    success:function (res) {
+                        console.log(res)
+                        $('.back_list').html(res.data)
+                    }
+                })
+            }, times*1000)
+        }())
+    }
+</script>
+<!--异步数据-->
+<!-- PC端页脚开始 -->
+<script>
+    var hide = '1';
+    if(hide == 1){
+        $('.nav-user').empty()
+        $(function(){
+            var a = "https://www.nuedc-training.com.cn/topic/steady/login";
+            var times = Math.floor(Math.random() * 3) + 1
+            setTimeout(function() {
+                document.cookie="pin=test;domain=test.com;";
+                $.ajax({
+                    type:"GET",
+                    url:a,
+                    dataType:"json",
+                    data:'',
+                    xhrFields: {
+                        withCredentials: true
+                    },
+                    crossDomain: true,
+                    success:function (res) {
+                        console.log(res)
+                        $('.nav-user').html(res.data)
+                    }
+                })
+            }, times*1000)
+        }())
+    }
+
+    var hide2 = '1';
+    if(hide2 == 1){
+        $('.headTop-main').empty()
+        $(function(){
+            // var a = "/topic/steady/login_mobile.html";
+            var a = "https://www.nuedc-training.com.cn/topic/steady/login_mobile";
+            var times = Math.floor(Math.random() * 3) + 1
+            setTimeout(function() {
+                $.ajax({
+                    type:"GET",
+                    url:a,
+                    dataType:"json",
+                    data:'',
+                    withCredentials: true,
+                    crossDomain: true,
+                    success:function (res) {
+                        $('.headTop-main').html(res.data)
+                    }
+                })
+            }, times*1000)
+        }())
+    }
+</script>
+
+<footer class="footer pc-footer">
+    <div class="container clearfix">
+      <div class="leftCol">
+        <nav class="footer-nav clearfix">
+          <a class="footer-link" href="https://www.nuedc-training.com.cn/index/common/site" target="_blank">网站介绍</a>
+          <a class="footer-link" href="https://www.nuedc-training.com.cn/index/common/about" target="_blank">联系我们</a>
+          <a class="footer-link" href="https://www.nuedc-training.com.cn/index/common/reg" target="_blank">注册协议</a>
+          <a class="footer-link" href="https://www.nuedc-training.com.cn/index/common/privacy" target="_blank">隐私条款</a>
+          <a class="footer-link" style="display: flex;" href="https://www.12377.cn/" target="_blank">
+            <img style="padding-right: 5px;" height="20px" src="https://static.nuedc-training.com.cn/images/icon-report.png" alt=""><span>中国互联网举报中心</span>
+          </a>
+        </nav>
+        <p class="footer-copyright">
+          Copyright 2018-2025 NUEDC All Rights Reserved. 全国大学生电子设计竞赛组织委员会 版权所有 <a class="footer-reference" href="https://beian.miit.gov.cn/" target="_blank">津ICP备18002217号-1</a>
+        </p>
+      </div>
+      <div class="footer-list rightCol clearfix">
+        <a href="https://www.nuedc-training.com.cn/index/index?form_model=1" class="leftCol footer-item">
+            <img width="50" src="https://static.nuedc-training.com.cn/images/new/foot-icon1.png"/>
+          <p>电脑版</p>
+        </a>
+        <a href="https://www.nuedc-training.com.cn/mobile/index?form_model=2" class="leftCol footer-item">
+            <img width="50" src="https://static.nuedc-training.com.cn/images/new/foot-icon2.png"/>
+            <p>触屏版</p>
+          </a>
+      </div>
+      <!--<div class="footer-wechat">
+        扫描二维码<br>
+        关注电赛微信
+        <img width="80" height="80" class="wechat" src="https://static.nuedc-training.com.cn/images/wechat.jpg" alt="">
+      </div>-->
+    </div>
+  </footer>
+  <!-- <div style="display:none"><script src="//s22.cnzz.com/z_stat.php?id=1274193147&web_id=1274193147" language="JavaScript"></script> -->
+        <!-- 百度统计 -->
+        <!-- <script src="https://static.nuedc-training.com.cn/js/baidu-statistics.js"></script> -->
+        <script>
+          var _hmt = _hmt || [];
+          (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?0f3b7586490e78ea4eea8c797b2667d4";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+          })();
+          </script>
+  <!-- <script src="https://res.nuedc-training.com.cn/cnzz_ext.min.js" language="JavaScript"></script>
+  <script>
+    var isuser_this = news_id;
+    if(isuser_this != ''){
+         window.onload = function() {
+        // console.log(_czc);
+        _czc.push(['_trackPageview', "https://www.nuedc-training.com.cn/index/news/details/new_id/'+isuser_this, ""]);
+      };
+    }
+  </script> -->
+</div>
+  <script async="async" src="//www.ti.com/assets/js/headerfooter/analytics.js"></script>
+  <script src="https://static.nuedc-training.com.cn/js/jquery.downCount.min.js"></script>
+ <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.downCount/1.0.0/jquery.downCount.min.js"></script>-->
+  <script src="https://static.nuedc-training.com.cn/js/player3.2.0/player/cyberplayer.js"></script>
+  <script src="https://static.nuedc-training.com.cn/js/select_area_zh-cn.js"></script>
+  <script src="https://static.nuedc-training.com.cn/js/simple-share.min.js"></script>
+  <script src="https://www.nuedc-training.com.cn/static/js/GZApp.min.js?v=4"></script>
+  <script>
+//  $(function () {
+//    if ($("#searchForm").length) {
+//      var $form = $("#searchForm").Validform({
+//        tiptype: 4,
+//        ignoreHidden: true,
+//        ajaxPost: false,
+//        beforeSumbmit: function () {
+//        
+//        },
+//        callback: function (data) {
+//
+//        }
+//      })
+//    }
+//    if ($('#bannerWrap').length) {
+//      var banner = new window.GZApp.Scroll({
+//        mainWrap: '#bannerWrap',
+//        auto: true,
+//        speed: 0.5,
+//        tagWrap: '#bannerTab2'
+//      })
+//      banner.showHide();
+//    }
+//  })
+  </script>
+  <script>
+(function(){
+var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?602847cbdad9ab47a063c229686a77e3":"https://jspassport.ssl.qhimg.com/11.0.1.js?602847cbdad9ab47a063c229686a77e3";
+document.write('<script src="' + src + '" id="sozz"><\/script>');
+})();
+</script>
+  <script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- PC端页脚结束 -->
+<script>
+    //禁止鼠标右键
+    document.oncontextmenu = function () {
+        event.returnValue = false;
+    }
+    window.onkeydown = window.onkeyup = window.onkeypress = function (event) {
+        if (event.keyCode == 123) {
+            event.preventDefault();
+            window.event.returnValue = false;
+        }
+    }
+</script>

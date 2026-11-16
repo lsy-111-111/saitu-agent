@@ -31,7 +31,11 @@ gid="$(id -g "$account")"
 pgrep -u "$uid" >/dev/null 2>&1 \
   && fail "builder account was not idle before the VM smoke"
 
-fixture="$(mktemp -d /var/tmp/resume-ai-build-sandbox.XXXXXX)"
+# PrivateTmp deliberately hides /tmp and /var/tmp from the builder. Keep the
+# reviewed fixture on /run, like the production control/runtime partitions.
+fixture="$(mktemp -d /run/resume-ai-build-sandbox.XXXXXX)"
+chown root:"$account" "$fixture"
+chmod 0750 "$fixture"
 home="/run/resume-ai-build-smoke.$$"
 unit="resume-ai-build-smoke-$$.service"
 network_unit="resume-ai-build-network-smoke-$$.service"

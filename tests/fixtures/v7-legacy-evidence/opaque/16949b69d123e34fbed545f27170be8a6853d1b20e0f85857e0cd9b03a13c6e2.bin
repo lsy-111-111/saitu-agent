@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "saitu.legacy-test-applicability-binding.v7.1",
+  "policyVersion": "saitu.policy.2026-11-09.v7",
+  "responseVersion": "competition-recommendation.v7",
+  "evidenceScope": "current-v7-contract-unit-checks-only",
+  "files": [
+    {
+      "path": "tests/competitions/followup-gold-audit.test.ts",
+      "sha256": "e9ff4b83a3ab5aab7abe576fb162010d571f6b0c4320b86d6c7c6c85a56d3d10"
+    },
+    {
+      "path": "tests/competitions/gold-freeze-manifest.test.ts",
+      "sha256": "727dfdd70bed10883dd5ea665668c2874d0e09ef21f8f169b7aa705c6a7043c6"
+    },
+    {
+      "path": "tests/competitions/legacy-v7-migration.fixture.ts",
+      "sha256": "7fde579a7c4617f7082d7282d96a3fc41e12f9ff1b2346ef6ec32b6aaf1e2aec"
+    },
+    {
+      "path": "tests/competitions/quality-benchmark.test.ts",
+      "sha256": "d0eff2f87af89041fc01275c8779b0f94587e6b98750ebe4d8d54f336dfd3b61"
+    },
+    {
+      "path": "tests/competitions/recommendation-quality.test.ts",
+      "sha256": "8e1a987c07b0ce27c30f8fc88864a117e5957d073cb9db640546f7c10bf5471e"
+    },
+    {
+      "path": "tests/competitions/scoring-gold-audit.test.ts",
+      "sha256": "37fc7eba729f099c82ad760b2e4c5e0af0587b727acdf60d92b9b9d3ea69d0ff"
+    },
+    {
+      "path": "tests/competitions/strict-baseline-acceptance.test.ts",
+      "sha256": "51d4c2a92771d69f4728ab6a3dad13906d7683fc421970b3584d65dfd72bcbf7"
+    }
+  ],
+  "migrationContract": {
+    "path": "artifacts/continuation-v7-20261109/legacy-test-migration/migration-contract.json",
+    "sha256": "55b123d2f44e44a5f7bdcc84a4a19fe7a63d2332ce8f43906a630ab3f073604c"
+  },
+  "bindingSha256": "ecb1a4fa54a63d87e1dbf6603295d1102bdcef1e61e872a65baf153cb454b05c"
+}

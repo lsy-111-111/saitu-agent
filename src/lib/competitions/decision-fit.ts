@@ -1,4 +1,5 @@
 import { businessActivities, getSeriesBusinessActivities } from "./business-activities";
+import { experienceTextSkills } from "./v6/experience-fit";
 import type { Competition } from "@/content/competitions";
 import type { CompetitionFitEvidence, CompetitionGoal, CompetitionRecommendationProfileV5 } from "@/types/competition-recommendation";
 import {
@@ -21,6 +22,42 @@ export type DecisionFit = {
   evidence: CompetitionFitEvidence;
   dimensions: { goal: number; task: number; experience: number; readiness: number; growth: number };
 };
+
+/** A listed goal is not a resolved priority. Explicit later follow-up answers can resolve it. */
+export function confirmedDecisionGoal(
+  profile: Profile,
+  followupGoal: CompetitionGoal | null = null,
+): CompetitionGoal | undefined {
+  if (followupGoal) return followupGoal;
+  const context = profile.decisionContext;
+  if (context?.goalResolution === "undecided") return undefined;
+  if (context?.goalIntent) {
+    return context.goalResolution === "confirmed" &&
+      context.goalIntent !== "explore" && context.goalIntent !== "skill"
+      ? context.goalIntent : undefined;
+  }
+  if (context?.primaryGoal) return context.primaryGoal;
+  return profile.confirmedFields.includes("goals") && profile.goals.length === 1
+    ? profile.goals[0] : undefined;
+}
+
+/** Legacy labels describe a topic or team artifact, not the student's own work. */
+export function confirmedPersonalExperiences(competition: Competition, profile: Profile) {
+  const needed = competition.recommendation.skills;
+  return (profile.decisionContext?.experiences ?? []).filter(experience =>
+    experience.confirmed && experience.task.trim().length > 0 &&
+    ["assisted", "independent", "led"].includes(experience.contribution) &&
+    experienceTextSkills(experience.task).some(skill => needed.includes(skill as typeof needed[number]))
+  );
+}
+
+export function personalExperienceFit(competition: Competition, profile: Profile): number | null {
+  const supported = confirmedPersonalExperiences(competition, profile);
+  if (!supported.length) return profile.decisionContext?.experienceStatus === "none" ? 0 : null;
+  return Math.min(1, supported.reduce((sum, item) => sum +
+    (item.contribution === "assisted" ? 0.45 : 1) *
+    (["delivered", "feedback"].includes(item.completion) ? 1 : 0.7), 0));
+}
 
 /** Values without a confirmed input retain their whole interval; school recognition always needs local policy. */
 export function assessDecisionFit(competition: Competition, profile: Profile, input: {
@@ -57,10 +94,9 @@ export function assessDecisionFit(competition: Competition, profile: Profile, in
     const taskLabel = businessActivities.find(item => item.value === activity)!.label;
     evidence.task.unshift(`你特意选了“${taskLabel}”。这项赛事有对应的实际工作，可以优先比较交付物。`);
   }
-  const role = profile.decisionContext?.experienceRole;
-  if (skills.length) evidence.experience.push(`你提到的${skills.map(label).join("、")}可用于${target}的相关工作。`);
-  if (artifacts.length) evidence.experience.push(`你已有的${artifacts.map(label).join("、")}可以作为备赛起点。`);
-  if (role && role !== "unknown") evidence.experience.push(({observed:"你上次主要观察学习，先尝试一个可独立完成的小任务。", assisted:"你上次协助完成项目，可以从相近分工开始。", independent:"你独立完成过部分任务，可以复用自己的工作记录。", led:"你曾主导项目，可以先拆分交付物，再与队友确认分工。"} as const)[role]);
+  const personal = confirmedPersonalExperiences(competition, profile);
+  for (const item of personal) evidence.experience.push(`你已确认${item.contribution === "assisted" ? "协助" : item.contribution === "led" ? "主导" : "独立"}完成的具体工作：“${item.task}”。可从相近任务开始；完成程度与能力仍需用本人产出检验。`);
+  if (!personal.length && (skills.length || artifacts.length)) evidence.unknowns.push("自述技能或项目成果尚未说明你本人具体完成的工作，暂不据此给出确定的个人经历判断。");
   const missing = (metadata.requiredResources ?? []).filter(r => r !== "none" && !profile.availableResources.includes(r));
   if (missing.length) evidence.readiness.push(`准备前先核实${missing.map(label).join("、")}是否需要、如何获得。`);
   if (outputs.length) evidence.growth.push(`你希望做出${outputs.map(label).join("、")}，这与目录记录的成果方向有交集。`);

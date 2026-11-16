@@ -1,0 +1,128 @@
+Skip to main content
+iGEM
+Jamboree
+Competition
+Community
+Villages
+Technology
+Responsibility
+Innovation
+Sign In
+Competition
+About
+Registration
+Deliverables
+Judging
+Sponsorships
+Results
+Teams →
+Competition Deliverables
+Deliverables are the outputs your team creates, submits, and presents throughout the iGEM season. Together, they tell the full story of your project — documenting your work, showcasing it to the world, and creating a lasting contribution to open-science and the global synthetic biology community.
+What are Deliverables?
+Deliverables are the submissions your team makes throughout the iGEM season to document, present, and share your project. They help judges understand what your team has accomplished, how your work meets medal criteria and award eligibility, and what your team contributed to the community. Some deliverables are required for all teams; others depend on your project, or the awards you choose to pursue.
+Deliverables are the primary way judges evaluate your project.
+Missing deliverables or deadlines can affect your eligibility for judging, medals, and awards.
+After the season ends, your deliverables are preserved for the future by becoming part of iGEM's permanent record of synthetic biology projects — a growing open-science archive that researchers, students, and future iGEM teams around the world can access, learn from, and build upon.
+Showcasing your project
+Deliverables help your team showcase what you set out to do, how your project developed, what you achieved, and what you learned along the way.
+Judging and evaluation
+Judges evaluate your project through your deliverables — reviewing your work, assessing your medal criteria, and determining your eligibility for special awards.
+Contribution to open science
+By documenting and sharing your work, your team helps future teams, researchers, educators, and the wider community learn from and build upon what you created.
+New in 2026
+New Deliverables Dashboard
+The deliverables dashboard has been redesigned to offer a simpler, more intuitive way for teams to submit and track their deliverables. Access teams.igem.org/go/deliverables ↗.
+Village Selection: New Submission Format
+Teams now submit a preliminary project title and description alongside their village selection. Teams also now choose one primary village and one alternative, replacing the previous three-preference system.
+Attributions Form: No Longer Embedded on the Wiki
+Teams must still complete and submit the standard Attributions Form through the Deliverables Dashboard, but they are no longer required to embed an iframe of the form on their Wiki. The submitted form will be publicly viewable on their team page.
+Software: Multiple Repositories Now Possible
+Teams can now submit more than one software repository, up to a maximum of five. This allows teams to share multiple tools they have built, instead of being limited to a single repository. The deliverable has also been renamed from Project Software to Software, reflecting that teams may create tools related or unrelated to their project.
+All Deliverables
+An overview of all 12 deliverables in the iGEM Competition, including deadlines, requirements, and Jamboree-specific submissions. Some are required for all teams, others are optional depending on your project and the awards you pursue. Click on any deliverable to learn more.
+Safety Forms
+Jul 1
+·
+Sep 2
+·
+Sep 23
+·
+Oct 7
+Sep 16
+·
+Nov 13 - 15
+Sep 16
+·
+Nov 13 - 15
+Nov 13 - 15
+Required for Judging Eligibility
+Only for teams attending the Jamboree in person
+Deadlines Overview
+All deliverable deadlines for the 2026 iGEM Competition season, alongside other important dates on the Competition Timeline.
+How to Submit Deliverables?
+All deliverables are submitted through your team's Deliverables Dashboard on teams.igem.org ↗. Once you have joined your team and appear on the team roster, go to teams.igem.org/go/deliverables ↗ and you will be taken straight to your team's Deliverables Dashboard — or, if you belong to more than one team, asked to pick which one.
+Go to Deliverables
+On this page
+What are Deliverables?
+New in 2026
+All Deliverables
+Deadlines Overview
+How to Submit Deliverables?
+iGEM
+People
+Support
+Blog
+Videos
+Villages
+Jamboree
+Tickets
+Program
+Exhibitors
+Info
+Competition
+About
+Teams
+Registration
+Deliverables
+Judging
+Sponsorships
+Calendar
+Community
+About
+News
+Topics
+Projects
+Events
+Job Board
+Journals
+Technology
+Registry
+Distribution
+Technologies
+Chassis
+Engineering
+Responsibility
+About
+Events
+Guidance
+Human Practices
+Safety Policies
+Opportunities
+Innovation
+About
+Venture Foundry
+Ecosystem
+Events
+Newsletters
+Copyright © 2026 iGEM Foundation, Inc. All rights reserved. iGEM and the iGEM logo are registered trademarks.
+iGEM Foundation
+·
+501(c)(3) not-for-profit organization
+·
+45 Prospect Street, Cambridge MA, 02139 USA
+iGEM Europe · iGEM HQ
+·
+10 rue du Mail, 75002 Paris, France
+Contact us
+Terms & Policies
+Financials

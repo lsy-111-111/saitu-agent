@@ -1,7 +1,15 @@
+import { currentDecisionPublicationBinding } from "@/lib/competitions/v6/publication-binding";
+import { presentPublishedDecisionAsV5, isPublishedLegacyResponseCurrent, LEGACY_PUBLICATION_ADAPTER_VERSION } from "@/lib/competitions/v6/legacy-presentation";
+import {currentDecisionCatalogVersion} from "@/lib/competitions/v6/catalog-binding";
+import { createHash } from "node:crypto";
+import { mergeQuestionnaireEdits, projectProfileToLegacy } from "@/lib/competitions/v6/profile";
+import { initializeDecisionState, readDecisionState, verifyDecisionToken, createDecisionToken, compareAndSwapDecisionState, type DecisionState } from "@/lib/competitions/v6/decision-state";
+import { getAiConfigurationFingerprint } from "@/lib/ai/ai-client";
 import { getConfiguredAiProvider } from "@/lib/ai/ai-client";
 import {
   aiConsentRequiredResponse,
-  hasValidAiConsent
+  hasValidAiConsent,
+  recordAiConsent
 } from "@/lib/ai/consent";
 import {
   COMPETITION_AI_MAX_REQUEST_BYTES,
@@ -17,25 +25,18 @@ import {
   verifyCompetitionConversationToken
 } from "@/lib/ai/competition-conversation-token";
 import {
-  getCompetitionRecommendModel,
-  explainDecisionShortlist
+  getCompetitionRecommendModel
 } from "@/lib/ai/competition-ranking";
-import { personalizeFixedDecisionExplanations } from "@/lib/ai/competition-decision-explanation";
 import { competitionRecommendRequestSchema } from "@/lib/ai/competition-request-schema";
 import {
   createCompetitionRequestDeadlines,
+  capDecisionRequestDeadlines,
   sessionHasRequestBudget
 } from "@/lib/ai/request-deadline";
 import {
   recordVerifiedRecommendationCompleted
 } from "@/lib/analytics/server";
-import { getCompetitionCatalog } from "@/lib/competitions/catalog";
 import { isCompetitionRecommenderEnabled } from "@/lib/config/features";
-import {
-  competitionDecisionBasis,
-  getCompetitionRecommendationCandidates,
-  selectFinalVisibleCompetitionRecommendations
-} from "@/lib/competitions/recommendation-engine";
 import {
   competitionTransitionId,
   executeCompetitionSessionTransition,
@@ -46,14 +47,26 @@ import {
 import type {
   CompetitionRecommendationResponseV5
 } from "@/types/competition-recommendation";
-import { COMPETITION_RECOMMENDATION_RESPONSE_VERSION } from "@/types/competition-recommendation";
+import { DECISION_RESPONSE_VERSION, DECISION_ENGINE_VERSION, type DecisionReportV6 } from "@/lib/competitions/v6/contracts";
+import { buildDecisionContext } from "@/lib/competitions/v6/engine";
+import { DECISION_MATCH_PROMPT_VERSION, runDecisionRecommendation } from "@/lib/competitions/v6/model";
+import { withRecommendationAccountingTrace } from "@/lib/ai/product-observation";
+import { RECOMMENDATION_RESPONSE_VERSION } from "@/lib/competitions/v7/contracts";
+import { recommendV7 } from "@/lib/competitions/v7/recommend-api";
+import { readSubmissionTimingV7 } from "@/lib/competitions/v7/submission-timing";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 export async function POST(request: Request) {
-  const deadlines = createCompetitionRequestDeadlines();
   const requestId = getRequestId(request);
+  try { readSubmissionTimingV7(request); }
+  catch { return withRequestId(competitionAiJson({ok:false,error:"DECISION_TIMING_INVALID"},{status:400}),requestId); }
+  return withRecommendationAccountingTrace(requestId,()=>recommend(request,requestId));
+}
+
+async function recommend(request:Request,requestId:string) {
+  let deadlines = createCompetitionRequestDeadlines();
   const respond = <T extends Response>(response: T) => withRequestId(response, requestId);
   if (!isCompetitionRecommenderEnabled()) {
     return respond(competitionAiJson({ ok: false, error: "COMPETITION_RECOMMENDER_DISABLED" }, { status: 503 }));
@@ -72,6 +85,9 @@ export async function POST(request: Request) {
   if (!validated.success) {
     return respond(competitionAiJson({ ok: false, error: "INVALID_INPUT" }, { status: 400 }));
   }
+  if (validated.data.reportVersion === DECISION_RESPONSE_VERSION) {
+    deadlines = capDecisionRequestDeadlines(deadlines);
+  }
   const verified = verifyCompetitionConversationToken(validated.data.conversationToken);
   if (!verified.ok) {
     if (verified.reason === "policy_changed") {
@@ -88,12 +104,14 @@ export async function POST(request: Request) {
   if (!verified.payload.completed || verified.payload.pendingQuestion) {
     return respond(competitionAiJson({ ok: false, error: "CONVERSATION_NOT_COMPLETED" }, { status: 409 }));
   }
+  if(validated.data.reportVersion===RECOMMENDATION_RESPONSE_VERSION)return recommendV7(request,requestId,validated.data,verified.payload);
   if (!sessionHasRequestBudget(verified.payload.expiresAt, deadlines)) {
     return respond(competitionAiJson(
       { ok: false, error: "CONVERSATION_EXPIRED" },
       { status: 400 }
     ));
   }
+  const publicationBinding = currentDecisionPublicationBinding();
   const qualificationSnapshot = buildSignedCompetitionQualificationSnapshot(
     verified.payload.profile,
     verified.payload.qualificationSnapshot.evaluatedAt
@@ -101,7 +119,7 @@ export async function POST(request: Request) {
   if (!competitionQualificationSnapshotMatches(
     verified.payload.qualificationSnapshot,
     qualificationSnapshot.snapshot
-  )) {
+  ) || publicationBinding !== currentDecisionPublicationBinding()) {
     return respond(competitionAiJson(
       { ok: false, error: "QUALIFICATION_SNAPSHOT_CHANGED" },
       { status: 409 }
@@ -119,15 +137,57 @@ export async function POST(request: Request) {
   }
 
   let committedRecommendation: CompetitionRecommendationResponseV5 | null = null;
-  return executeCompetitionSessionTransition({
+  let committedDecision: DecisionReportV6 | null = null;
+  let editingState: DecisionState | null = null;
+  let effectiveLegacy = verified.payload.profile;
+  let editedProfile;
+  const editKey = createHash("sha256").update(JSON.stringify(validated.data)).digest("hex");
+  if (validated.data.decisionEdit) {
+    if(validated.data.reportVersion!==DECISION_RESPONSE_VERSION)return respond(competitionAiJson({ok:false,error:"INVALID_INPUT"},{status:400}));
+    const edit=validated.data.decisionEdit, token=verifyDecisionToken(edit.decisionToken);
+    if(!token)return respond(competitionAiJson({ok:false,error:"DECISION_SESSION_EXPIRED"},{status:401}));
+    try {
+      editingState=await readDecisionState(token.id);
+      if(!editingState||editingState.sessionId!==token.sessionId)return respond(competitionAiJson({ok:false,error:"DECISION_SESSION_EXPIRED"},{status:401}));
+      if(editingState.report.catalogVersion!==currentDecisionCatalogVersion())return respond(competitionAiJson({ok:false,error:"DECISION_CATALOG_CHANGED",message:"赛事资料已经更新，请重新生成报告。"},{status:409}));
+      if(editingState.lastQuestionnaireEdit===editKey)return respond(competitionAiJson({responseVersion:DECISION_RESPONSE_VERSION,report:editingState.report,decisionToken:createDecisionToken(editingState)}));
+      if(editingState.generation!==token.generation||editingState.report.profile.revision!==edit.expectedRevision)return respond(competitionAiJson({ok:false,error:"DECISION_REVISION_CHANGED"},{status:409}));
+      editedProfile=mergeQuestionnaireEdits(editingState.report.profile,verified.payload.profile,edit.changedFields,{answerId:`questionnaire-edit-${editKey.slice(0,24)}`,at:new Date().toISOString(),answerContext:verified.payload.rawAnswerContext});
+      effectiveLegacy=projectProfileToLegacy(editedProfile,verified.payload.profile);
+    } catch {return respond(competitionAiJson({ok:false,error:"DECISION_EDIT_UNAVAILABLE"},{status:409}));}
+  }
+  const isV6 = validated.data.reportVersion === DECISION_RESPONSE_VERSION;
+  const decisionContext = buildDecisionContext(effectiveLegacy, {
+        ...(isV6 ? {} : { qualificationSource: "record_only" as const }),
+        profile:editedProfile, questionHistory:editingState?.questionHistory,
+        now: new Date(verified.payload.qualificationSnapshot.evaluatedAt * 1000),
+        transcript: verified.payload.transcript,
+        profileId: verified.payload.sessionId,
+        answerContext: verified.payload.rawAnswerContext, answeredAt: new Date(verified.payload.issuedAt * 1000).toISOString()
+      });
+  const decisionMethod = process.env.SAITU_DECISION_STRATEGY === "llm" ? "llm" : "rules";
+  const response = await executeCompetitionSessionTransition({
     request,
     requestId,
     operation: "competition_recommend",
     sessionId: verified.payload.sessionId,
     sessionExpiresAtEpochSeconds: verified.payload.expiresAt,
-    transitionId: competitionTransitionId("competition_recommend", validated.data),
+    transitionId: competitionTransitionId("competition_recommend", {
+      ...validated.data, profileRevision: decisionContext.profile.revision,
+      catalogVersion: decisionContext.catalogVersion, engineVersion: DECISION_ENGINE_VERSION,
+      method: isV6 ? decisionMethod : "rules", model: isV6 ? getCompetitionRecommendModel() : "server",
+      configuration: isV6 ? getAiConfigurationFingerprint() : LEGACY_PUBLICATION_ADAPTER_VERSION,
+      ...(isV6 && decisionMethod === "llm" ? { matchPromptVersion: DECISION_MATCH_PROMPT_VERSION } : {}),
+      publicationBinding
+    }),
     deadlines,
     onOwnerCommitted: async (context) => {
+      if (context.status === 200 && committedDecision) {
+        console.info(JSON.stringify({event:"decision_v6_completed",...committedDecision.trace,
+          resultCount:committedDecision.recommendations.length,fallbackUsed:committedDecision.fallback.used,
+          fallbackReason:committedDecision.fallback.reason,requestId}));
+        return;
+      }
       if (context.status !== 200 || !committedRecommendation) return;
       await recordVerifiedRecommendationCompleted(committedRecommendation, {
         sessionId: verified.payload.sessionId,
@@ -137,66 +197,40 @@ export async function POST(request: Request) {
     },
     producer: async (context) => {
       try {
-        const candidates = getCompetitionRecommendationCandidates(verified.payload.profile, {
-          now: new Date(verified.payload.qualificationSnapshot.evaluatedAt * 1000),
-          transcript: verified.payload.transcript
-        });
-        const visible = selectFinalVisibleCompetitionRecommendations(candidates.recommendations,
-          verified.payload.profile, verified.payload.transcript);
-        const explanation = await personalizeFixedDecisionExplanations(
-          explainDecisionShortlist(verified.payload.profile, verified.payload.transcript, visible),
-          { request, aiConsent: validated.data.aiConsent, deadlineEpochMs: context.deadlines.aiDeadlineEpochMs,
-            auditDeadlineEpochMs: context.deadlines.producerDeadlineEpochMs, signal: context.signal }
-        );
-        const byId = new Map(candidates.recommendations.map(item => [item.competitionId, item]));
-        const selected = new Set(visible.map(item => item.competitionId));
-        const comparable = new Map(visible.map(item => [competitionDecisionBasis(item),item.name]));
-        const audit = new Map(qualificationSnapshot.snapshot.entries.map(item => [item.competitionId, item]));
-        function reasonFor(id: string) {
-          const candidate = byId.get(id);
-          const qualification = audit.get(id);
-          if (!candidate && qualification?.status === "ineligible") {
-            const reasons: Record<string,string> = {"stage-ineligible":"当前学习阶段与核实的赛道条件冲突。", "major-ineligible":"已确认的专业与官方限制的专业范围不相符。",
-              "full-time-status-ineligible":"当前学籍与全日制要求冲突。","enrollment-status-ineligible":"当前身份与在读要求冲突。",
-              "team-size-ineligible":"已确定的队伍人数与赛道人数范围冲突。","same-institution-team-ineligible":"已确定的跨校队伍与同校要求冲突。",
-              "required-resource-unavailable":"该方向需要你明确无法获得的资源。","first-higher-education-year-ineligible":"首次高等教育年份不符合已核实的条件。"};
-            return reasons[qualification.hardFilterReason ?? ""] ?? "各已记录赛道的资格与已确认条件冲突。";
+        if (isV6) {
+          let auditRecorded = false;
+          committedDecision = await runDecisionRecommendation(effectiveLegacy, {
+            context: decisionContext, method: decisionMethod, requestId,
+            deadlineEpochMs: Math.min(context.deadlines.aiDeadlineEpochMs, deadlines.startedAtEpochMs + 40_000),
+            signal: context.signal,
+            onUpstreamAttempt: async (model) => {
+              if (auditRecorded) return;
+              auditRecorded = true;
+              await recordAiConsent(request,"competition_recommend",{provider:getConfiguredAiProvider(),model},
+                {deadlineEpochMs:context.deadlines.producerDeadlineEpochMs,signal:context.signal});
+            }
+          });
+          if(editingState){
+            const next={...editingState,generation:editingState.generation+1,legacy:effectiveLegacy,report:committedDecision,proposal:null,history:[],historyRevision:committedDecision.profile.revision,lastQuestionnaireEdit:editKey,lastRequestId:undefined,lastRequestHash:undefined,lastReply:undefined};
+            if(context.signal.aborted||Date.now()>=context.deadlines.producerDeadlineEpochMs)return competitionAiJson({ok:false,error:"DECISION_TIMEOUT"},{status:503});
+            if(!await compareAndSwapDecisionState(next,editingState.generation,{signal:context.signal,expectedCatalogVersion:editingState.report.catalogVersion}))return competitionAiJson({ok:false,error:"DECISION_REVISION_CHANGED"},{status:409});
+            return competitionAiJson({responseVersion:DECISION_RESPONSE_VERSION,report:next.report,decisionToken:createDecisionToken(next)});
           }
-          if (!candidate) return "这项比赛的任务与你明确拒绝的工作或指定赛道条件冲突。";
-          if (!candidate.decisionFit?.actionable) return "已比较此项，但你的任务偏好、经历或投入条件尚不足以支持重点推荐。";
-          const basis = candidate.decisionFit.evidence.task[0] ?? candidate.decisionFit.evidence.experience[0] ?? "与你的任务偏好存在交集。";
-          const similar = comparable.get(competitionDecisionBasis(candidate));
-          if (!selected.has(id) && similar) return `你的回答为它与“${similar}”提供了相同的适配依据，可展开比较具体任务。`;
-          return selected.has(id) ? basis : `已纳入比较，本轮有其他候选排在前面。${basis}`;
+          if(committedDecision.catalogVersion!==currentDecisionCatalogVersion())return competitionAiJson({ok:false,error:"DECISION_CATALOG_CHANGED"},{status:409});
+          const decisionSession = await initializeDecisionState({ sessionId: verified.payload.sessionId,
+            expiresAt: verified.payload.expiresAt * 1000, legacy: verified.payload.profile, report: committedDecision });
+          committedDecision = decisionSession.report;
+          return competitionAiJson({responseVersion:DECISION_RESPONSE_VERSION,...decisionSession});
         }
-        const response: CompetitionRecommendationResponseV5 = {
-          responseVersion: COMPETITION_RECOMMENDATION_RESPONSE_VERSION,
-          status: explanation.recommendations.length ? "matched" : "no_match",
-          catalogVersion: candidates.catalogVersion, scorerVersion: candidates.scorerVersion,
-          ...explanation, rankingSource: "evidence-rules",
-          alternatives: candidates.recommendations.filter(item => item.decisionFit?.actionable && !selected.has(item.competitionId))
-            .slice(0,7).map(item => ({competitionId:item.competitionId,name:item.name,reason:reasonFor(item.competitionId)})),
-          candidateAudit: getCompetitionCatalog().map(item => ({competitionId:item.id,reason:reasonFor(item.id)}))
-        };
-        committedRecommendation = response;
-        console.info(
-          JSON.stringify({
-            event: "ai_route_completed",
-            operation: "competition_recommend",
-            provider: response.provider,
-            model: response.model,
-            promptVersion: response.promptVersion,
-            candidateCount: candidates.recommendations.length,
-            resultCount: response.recommendations.length,
-            rankingSource: response.rankingSource,
-            fallbackUsed: response.fallbackUsed,
-            fallbackMode: response.fallbackMode,
-            fallbackReason: response.fallbackReason,
-            requestId,
-            outcome: "success"
-          })
-        );
-        return competitionAiJson(response);
+        const legacyResponse = presentPublishedDecisionAsV5(decisionContext);
+        if (publicationBinding !== currentDecisionPublicationBinding())
+          return competitionAiJson({ ok: false, error: "QUALIFICATION_SNAPSHOT_CHANGED" }, { status: 409 });
+        committedRecommendation = legacyResponse;
+        console.info(JSON.stringify({ event: "ai_route_completed", operation: "competition_recommend",
+          provider: legacyResponse.provider, model: legacyResponse.model, promptVersion: legacyResponse.promptVersion,
+          candidateCount: decisionContext.candidates.length, resultCount: legacyResponse.recommendations.length,
+          rankingSource: legacyResponse.rankingSource, fallbackUsed: false, fallbackMode: "none", requestId, outcome: "success" }));
+        return competitionAiJson(legacyResponse);
       } catch {
         console.error(
           JSON.stringify({
@@ -216,4 +250,14 @@ export async function POST(request: Request) {
       }
     }
   });
+  if (!isV6 && response.status === 200) {
+    let current = false;
+    try { current = isPublishedLegacyResponseCurrent(await response.clone().json()); } catch { /* Fail closed on an unreadable cached body. */ }
+    if (!current) return respond(competitionAiJson({ ok: false, error: "QUALIFICATION_SNAPSHOT_CHANGED" }, { status: 409 }));
+  }
+  // Covers cached responses as well as producer results. A changed publication
+  // cannot be replayed merely because this request entered under the old key.
+  if (!isV6 && publicationBinding !== currentDecisionPublicationBinding())
+    return respond(competitionAiJson({ ok: false, error: "QUALIFICATION_SNAPSHOT_CHANGED" }, { status: 409 }));
+  return response;
 }

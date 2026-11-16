@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="renderer"  content="webkit">
+
+<title>关于第三届全国大学生数学竞赛报名的通知</title>
+<meta name="keywords" content="zhf">
+<meta name="description" content="">
+<link rel="stylesheet" href="/style/css/swiper.min.css">
+<link rel="stylesheet" href="/style/css/style.css">
+<link rel="stylesheet" href="/style/css/news-pdf-viewer.css">
+<script src="/style/js/jquery.min.js"></script>
+<script src="/style/js/swiper.min.js"></script>
+<script src="/style/js/js.js"></script>
+<script src="/style/js/pdf.min.js"></script>
+<script src="/style/js/news-pdf-viewer.js"></script>
+
+</head>
+
+<body>
+<div class="header">	
+<!--  <div class="container clearfix"> <a href="javascript:;" class="menu-btn"><span></span></a>
+    <div class="logo img-center"><a href=""><img src="/static/upload/image/20240311/1710135365384950.png" alt="关于第三届全国大学生数学竞赛报名的通知-科技公告-计E空间 - 浙江工业大学计算机学院"></a></div>
+  </div>-->
+	<div class="headpic" style="display:flex"> <img src="/style/images/hd.jpg" style="width: 100%;"></div>
+  <div class="nav">
+    <div class="container">
+      <div class="sc-form">
+        <form action="/search/" method="get">
+          <input type="text" name="keyword" value="" placeholder="请输入搜索关键字">
+          <button type="submit"></button>
+        </form>
+      </div>
+      <ul>
+        
+  <li class="dropdown "> <i class="arr"></i> <a href="/index/">首页</a>
+   <div class="dropdown-box">
+   
+   <p><a href="/xuegongtongzhi/">学工通知</a></p>
+   
+   <p><a href="/xuegongxinwen/">学工新闻</a></p>
+   
+   <p><a href="/kejichuangxin/">科技创新</a></p>
+   
+   <p><a href="/tupianxinwen/">图片新闻</a></p>
+   
+   <p><a href="/gonggaolan/">公告栏</a></p>
+   
+   </div>
+  </li>
+  
+  <li class="dropdown "> <i class="arr"></i> <a href="/gqt/">计忆团情</a>
+   <div class="dropdown-box">
+   
+   <p><a href="/tuanneitongzhi/">团内通知</a></p>
+   
+   <p><a href="/zuzhishenghuo/">组织生活</a></p>
+   
+   <p><a href="/tuanxuebumen/">团学部门</a></p>
+   
+   <p><a href="/tuanxuehuodong/">团学活动</a></p>
+   
+   <p><a href="/shehuishijian/">社会实践</a></p>
+   
+   <p><a href="/yanhuidongtai/">研会动态</a></p>
+   
+   <p><a href="/mothly/">计E月刊</a></p>
+   
+   </div>
+  </li>
+  
+  <li class="dropdown "> <i class="arr"></i> <a href="/dangjianjiayuan/">党建家园</a>
+   <div class="dropdown-box">
+   
+   <p><a href="/dangjiangonggao/">党建公告</a></p>
+   
+   <p><a href="/zhibufengcai/">支部风采</a></p>
+   
+   <p><a href="/fendangxiaozhuanlan/">分党校专栏</a></p>
+   
+   </div>
+  </li>
+  
+  <li class="dropdown "> <i class="arr"></i> <a href="/xuefengjianshe/">学风建设</a>
+   <div class="dropdown-box">
+   
+   <p><a href="/gongshiqiang/">公示墙</a></p>
+   
+   </div>
+  </li>
+  
+  <li class="dropdown "> <i class="arr"></i> <a href="/zhaoshengjiuye/">招生就业</a>
+   <div class="dropdown-box">
+   
+   <p><a href="/jiuyezhuanlan/">就业专栏</a></p>
+   
+   </div>
+  </li>
+  
+  <li class="dropdown "> <i class="arr"></i> <a href="/yangongzhuanti/">研工专题</a>
+   <div class="dropdown-box">
+   
+   <p><a href="/gongzuodongtai/">工作动态</a></p>
+   
+   <p><a href="/xueshudaodejianshe/">学术道德建设</a></p>
+   
+   </div>
+  </li>
+  
+  <li class="dropdown "> <i class="arr"></i> <a href="/kejichuangxin/">科技创新</a>
+   <div class="dropdown-box">
+   
+   <p><a href="/kejigonggao/">科技公告</a></p>
+   
+   <p><a href="/kejixiangmu/">科技项目</a></p>
+   
+   <p><a href="/kejijingsai/">科技竞赛</a></p>
+   
+   </div>
+  </li>
+  
+  <li class="dropdown "> <i class="arr"></i> <a href="/xiazaizhongxin/">文件中心</a>
+   <div class="dropdown-box">
+   
+   <p><a href="/zhiduwenjian/">制度文件</a></p>
+   
+   <p><a href="/biaogewenjian/">表格文件</a></p>
+   
+   </div>
+  </li>
+  
+  <li class="dropdown "> <i class="arr"></i> <a href="/studentService/">学生服务</a>
+   <div class="dropdown-box">
+   
+   <p><a href="/student/">学生信息中心</a></p>
+   
+   <p><a href="/checkTrusted/">凭证验真</a></p>
+   
+   </div>
+  </li>
+  
+      </ul>
+    </div>
+  </div>
+  
+</div>
+<!-- 引入官方JS-SDK -->
+<script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+
+<script>
+(function () {
+  // 当前页面（去掉 hash），传给后端做签名
+  var pageUrl = location.href.split('#')[0];
+  // pageUrl = pageUrl.replace(/^http:/, 'https:').replace('172.16.12.143', 'www.soft.zjut.edu.cn');
+  pageUrl = pageUrl.replace('172.16.12.143', 'www.soft.zjut.edu.cn');
+  fetch('/core/wx_sign.php?url=' + encodeURIComponent(pageUrl))
+    .then(function(r){ return r.json(); })
+    .then(function(cfg){
+      if (cfg.error) { console.error(cfg.error); return; }
+
+      wx.config({
+        debug: false,              // 调试可临时设 true
+        appId: cfg.appId,
+        timestamp: cfg.timestamp,
+        nonceStr: cfg.nonceStr,
+        signature: cfg.signature,
+        jsApiList: cfg.jsApiList || [
+          'updateAppMessageShareData',
+          'updateTimelineShareData',
+          'onMenuShareAppMessage',
+          'onMenuShareTimeline',
+          'checkJsApi'
+        ]
+      });
+
+      // 你的“分享卡片”文案（可按页面动态设置）
+      var shareData = {
+        title: '关于第三届全国大学生数学竞赛报名的通知',              // 标题
+        description:'浙江工业大学计算机学院',
+        link:  pageUrl,                                  // 分享落地页（必须在JS安全域名里）
+        imgUrl: 'https://www.soft.zjut.edu.cn/style/images/cover_new.png' // 120×120+，绝对HTTPS地址
+      };
+
+      wx.ready(function(){
+        // 新接口（优先）
+        if (wx.updateAppMessageShareData) {
+          wx.updateAppMessageShareData(shareData);  // 分享给朋友
+        }
+        if (wx.updateTimelineShareData) {
+          wx.updateTimelineShareData(shareData);    // 分享到朋友圈
+        }
+        // 兼容老接口（部分旧版微信仍靠这俩）
+        if (wx.onMenuShareAppMessage) {
+          wx.onMenuShareAppMessage(shareData);
+        }
+        if (wx.onMenuShareTimeline) {
+          wx.onMenuShareTimeline(shareData);
+        }
+      });
+
+      wx.error(function(res){
+        console.error('wx.error', res);
+      });
+    });
+})();
+</script>
+
+<div class="container">
+  <div class="main clearfix">
+    <div class="position">当前位置：<a href="/">首页</a>>><a href="/kejichuangxin/">科技创新</a>>><a href="/kejigonggao/">科技公告</a></div>
+    <div class="news-wrap">
+	
+      <div class="news-title">
+        <h1>关于第三届全国大学生数学竞赛报名的通知</h1>
+        <p> <span>发布时间：2011-09-14 16:49:07</span> <span>发布人：admin</span> <span>阅读量：1771</span> </p>
+      </div>
+      <div class="news-content">
+        <P style="LINE-HEIGHT: 150%; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; mso-char-indent-count: 2.0" class=Default><FONT size=3><FONT color=#000000><SPAN style="mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">为了培养人才、服务教学、促进高等学校数学课程的改革和建设，增加大学生学习数学的兴趣，培养分析、解决问题的能力，发现和选拔数学创新人才，为青年学子提供一个展示基础知识和思维能力的舞台，经中国数学会批准，将于</SPAN><?xml:namespace prefix = st1 ns = "urn:schemas-microsoft-com:office:smarttags" /><st1:chsdate w:st="on" Year="2011" Month="10" Day="29" IsLunarDate="False" IsROCDate="False"><B style="mso-bidi-font-weight: normal"><SPAN style="FONT-FAMILY: 'Times New Roman'" lang=EN-US>2011</SPAN></B><B style="mso-bidi-font-weight: normal"><SPAN style="mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">年</SPAN></B><B style="mso-bidi-font-weight: normal"><SPAN style="FONT-FAMILY: 'Times New Roman'" lang=EN-US>10</SPAN></B><B style="mso-bidi-font-weight: normal"><SPAN style="mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">月</SPAN></B><B style="mso-bidi-font-weight: normal"><SPAN style="FONT-FAMILY: 'Times New Roman'" lang=EN-US>29</SPAN></B><B style="mso-bidi-font-weight: normal"><SPAN style="mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">日</SPAN></B></st1:chsdate><B style="mso-bidi-font-weight: normal"><SPAN style="mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">（星期六）上午</SPAN></B><B style="mso-bidi-font-weight: normal"><SPAN style="FONT-FAMILY: 'Times New Roman'" lang=EN-US>9</SPAN></B><B style="mso-bidi-font-weight: normal"><SPAN style="mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">：</SPAN></B><B style="mso-bidi-font-weight: normal"><SPAN style="FONT-FAMILY: 'Times New Roman'" lang=EN-US>00—11</SPAN></B><B style="mso-bidi-font-weight: normal"><SPAN style="mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">：</SPAN></B><B style="mso-bidi-font-weight: normal"><SPAN style="FONT-FAMILY: 'Times New Roman'" lang=EN-US>30</SPAN></B><SPAN style="mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">举行全国大学生数学竞赛（浙江赛区）。现将竞赛的具体事宜通知如下：</SPAN><SPAN style="FONT-FAMILY: 'Times New Roman'" lang=EN-US> <?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p></o:p></SPAN></FONT></FONT></P>
+<P style="LINE-HEIGHT: 150%; TEXT-INDENT: -21pt; MARGIN: 0cm 0cm 0pt 21pt; mso-list: l0 level1 lfo1; tab-stops: list 21.0pt" class=Default><FONT color=#000000><SPAN style="FONT-FAMILY: Wingdings; mso-fareast-font-family: Wingdings; mso-bidi-font-family: Wingdings" lang=EN-US><SPAN style="mso-list: Ignore"><FONT size=3>l</FONT><SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN><FONT size=3><B style="mso-bidi-font-weight: normal"><SPAN style="mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">参赛对象：</SPAN></B><B style="mso-bidi-font-weight: normal"><SPAN style="FONT-FAMILY: 'Times New Roman'" lang=EN-US> <o:p></o:p></SPAN></B></FONT></FONT></P>
+<P style="LINE-HEIGHT: 150%; TEXT-INDENT: 30.1pt; MARGIN: 0cm 0cm 0pt; mso-char-indent-count: 2.5" class=Default><FONT size=3><B style="mso-bidi-font-weight: normal"><U><SPAN style="COLOR: red; mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">大学本科二年级或二年级以上的在校大学生。竞赛分为非数学专业组和数学专业组</SPAN></U></B><B style="mso-bidi-font-weight: normal"><U><SPAN style="FONT-FAMILY: 'Times New Roman'; COLOR: red" lang=EN-US>(</SPAN></U></B><B style="mso-bidi-font-weight: normal"><U><SPAN style="COLOR: red; mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">含数学与应用数学、信息与计算科学专业的学生</SPAN></U></B><B style="mso-bidi-font-weight: normal"><U><SPAN style="FONT-FAMILY: 'Times New Roman'; COLOR: red" lang=EN-US>)</SPAN></U></B><B style="mso-bidi-font-weight: normal"><U><SPAN style="COLOR: red; mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">。</SPAN></U></B><FONT color=#000000><SPAN style="mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">数学专业学生不得参加非数学专业组的竞赛。</SPAN><SPAN style="FONT-FAMILY: 'Times New Roman'"> <SPAN lang=EN-US><o:p></o:p></SPAN></SPAN></FONT></FONT></P>
+<P style="LINE-HEIGHT: 150%; TEXT-INDENT: -21pt; MARGIN: 0cm 0cm 0pt 21pt; mso-list: l0 level1 lfo1; tab-stops: list 21.0pt" class=Default><FONT color=#000000><SPAN style="FONT-FAMILY: Wingdings; mso-fareast-font-family: Wingdings; mso-bidi-font-family: Wingdings" lang=EN-US><SPAN style="mso-list: Ignore"><FONT size=3>l</FONT><SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN><FONT size=3><B style="mso-bidi-font-weight: normal"><SPAN style="mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">竞赛内容：</SPAN></B><B style="mso-bidi-font-weight: normal"><SPAN style="FONT-FAMILY: 'Times New Roman'" lang=EN-US> <o:p></o:p></SPAN></B></FONT></FONT></P>
+<P style="LINE-HEIGHT: 150%; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; mso-char-indent-count: 2.0" class=Default><FONT size=3><FONT color=#000000><SPAN style="mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">非数学专业组竞赛内容为本科高等数学内容（高等数学内容为理工科本科教学大纲规定的高等数学的教学内容）。数学专业组竞赛内容含数学分析、高等代数和解析几何（均为数学专业本科教学大纲规定的教学内容），所占比重分别为</SPAN><SPAN style="FONT-FAMILY: 'Times New Roman'" lang=EN-US>50%</SPAN><SPAN style="mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">、</SPAN><SPAN style="FONT-FAMILY: 'Times New Roman'" lang=EN-US>35%</SPAN><SPAN style="mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">及</SPAN><SPAN style="FONT-FAMILY: 'Times New Roman'" lang=EN-US>15%</SPAN><SPAN style="mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">左右。</SPAN><SPAN style="FONT-FAMILY: 'Times New Roman'" lang=EN-US> <o:p></o:p></SPAN></FONT></FONT></P>
+<P style="LINE-HEIGHT: 150%; TEXT-INDENT: -21pt; MARGIN: 0cm 0cm 0pt 21pt; mso-list: l0 level1 lfo1; tab-stops: list 21.0pt" class=Default><FONT color=#000000><SPAN style="FONT-FAMILY: Wingdings; mso-fareast-font-family: Wingdings; mso-bidi-font-family: Wingdings" lang=EN-US><SPAN style="mso-list: Ignore"><FONT size=3>l</FONT><SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN><FONT size=3><B style="mso-bidi-font-weight: normal"><SPAN style="mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">报名办法：</SPAN></B><B style="mso-bidi-font-weight: normal"><SPAN style="FONT-FAMILY: 'Times New Roman'" lang=EN-US> <o:p></o:p></SPAN></B></FONT></FONT></P>
+<P style="LINE-HEIGHT: 150%; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt" class=Default><FONT size=3><SPAN style="COLOR: red; mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">有意向参赛同学请与</SPAN><st1:chsdate w:st="on" Year="2011" Month="9" Day="21" IsLunarDate="False" IsROCDate="False"><SPAN style="FONT-FAMILY: 'Times New Roman'; COLOR: red" lang=EN-US>9</SPAN><SPAN style="COLOR: red; mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">月</SPAN><SPAN style="FONT-FAMILY: 'Times New Roman'; COLOR: red" lang=EN-US>21</SPAN><SPAN style="COLOR: red; mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">日前</SPAN></st1:chsdate><SPAN style="COLOR: red; mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">以班级为单位将报名表（电子稿和纸质稿）、报名费（</SPAN><SPAN style="FONT-FAMILY: 'Times New Roman'; COLOR: red" lang=EN-US>60</SPAN><SPAN style="COLOR: red; mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">元</SPAN><SPAN style="FONT-FAMILY: 'Times New Roman'; COLOR: red" lang=EN-US>/</SPAN><SPAN style="COLOR: red; mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">人）交至年级团总支处。</SPAN><SPAN style="FONT-FAMILY: 'Times New Roman'; COLOR: red" lang=EN-US><o:p></o:p></SPAN></FONT></P>
+<P style="LINE-HEIGHT: 150%; TEXT-INDENT: -21pt; MARGIN: 0cm 0cm 0pt 21pt; mso-list: l0 level1 lfo1; tab-stops: list 21.0pt" class=Default><FONT color=#000000><SPAN style="FONT-FAMILY: Wingdings; mso-fareast-font-family: Wingdings; mso-bidi-font-family: Wingdings" lang=EN-US><SPAN style="mso-list: Ignore"><FONT size=3>l</FONT><SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN><FONT size=3><B style="mso-bidi-font-weight: normal"><SPAN style="mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">奖项的设立：</SPAN></B><SPAN style="FONT-FAMILY: 'Times New Roman'" lang=EN-US> <o:p></o:p></SPAN></FONT></FONT></P>
+<P style="LINE-HEIGHT: 150%; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; mso-char-indent-count: 2.0" class=Default><FONT size=3><FONT color=#000000><SPAN style="mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">浙江赛区按照重点学校与非重点学校，数学类专业与非数学类专业分别评奖。每个赛区的获奖总名额不超过总参赛人数的</SPAN><SPAN style="FONT-FAMILY: 'Times New Roman'" lang=EN-US>15%</SPAN><SPAN style="mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">（其中一等奖、二等奖、三等奖分别占各类获奖总人数的</SPAN><SPAN style="FONT-FAMILY: 'Times New Roman'" lang=EN-US>20%</SPAN><SPAN style="mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">、</SPAN><SPAN style="FONT-FAMILY: 'Times New Roman'" lang=EN-US>30%</SPAN><SPAN style="mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">、</SPAN><SPAN style="FONT-FAMILY: 'Times New Roman'" lang=EN-US>50%</SPAN><SPAN style="mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">）。冠名为</SPAN><SPAN style="FONT-FAMILY: 'Times New Roman'" lang=EN-US>“</SPAN><SPAN style="mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">第三届全国大学生数学竞赛（</SPAN><SPAN style="FONT-FAMILY: 'Times New Roman'" lang=EN-US>**</SPAN><SPAN style="mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">赛区）</SPAN><SPAN style="FONT-FAMILY: 'Times New Roman'" lang=EN-US>*</SPAN><SPAN style="mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">等奖</SPAN><SPAN style="FONT-FAMILY: 'Times New Roman'" lang=EN-US>”</SPAN><SPAN style="mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">。</SPAN><SPAN style="FONT-FAMILY: 'Times New Roman'" lang=EN-US><o:p></o:p></SPAN></FONT></FONT></P>
+<P style="LINE-HEIGHT: 150%; MARGIN: 0cm 0cm 0pt" class=Default><SPAN style="FONT-FAMILY: 'Times New Roman'" lang=EN-US><o:p><FONT color=#000000 size=3>&nbsp;</FONT></o:p></SPAN></P>
+<P style="LINE-HEIGHT: 150%; MARGIN: 0cm 0cm 0pt" class=Default><B style="mso-bidi-font-weight: normal"><SPAN style="mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'"><FONT color=#000000 size=3>注：与往年不同，今年开始下半年不再举办浙江省高等数学竞赛，只有全国大学生数学竞赛。</FONT></SPAN></B></P>
+<P style="LINE-HEIGHT: 150%; MARGIN: 0cm 0cm 0pt" class=Default><B style="mso-bidi-font-weight: normal"><SPAN style="mso-bidi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'"></SPAN></B><SPAN style="FONT-FAMILY: 'Times New Roman'" lang=EN-US><o:p></o:p></SPAN>&nbsp;</P><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A class=blacklink title=点击下载浏览 href="down.asp?FileName=xls/2011-9/2011914165115809.xls"><IMG border=0 src="images/xls.gif">第三届全国大学生数学竞赛非数学类专业报名表.xls</A>
+      </div>
+	
+	
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="container">
+<!--    <ul class="footer-link">
+      <li>
+        <div class="wrap">
+          <select onChange="javascript:window.open(this.options[this.selectedIndex].value);this.selectedIndex=0">
+            <option selected="" value="">职能单位友链一</option>
+            
+          </select>
+        </div>
+      </li>
+      <li>
+        <div class="wrap">
+          <select  onChange="javascript:window.open(this.options[this.selectedIndex].value);this.selectedIndex=0">
+            <option selected="selected">职能单位友链二</option>
+            
+          </select>
+        </div>
+      </li>
+      <li>
+        <div class="wrap">
+          <select onchange="javascript:window.open(this.options[this.selectedIndex].value);this.selectedIndex=0">
+            <option selected="selected">职能单位友链三</option>
+            
+          </select>
+        </div>
+      </li>
+    </ul>-->
+    <div class="footer-nav"> 
+    
+    <a href="/index/">首页</a> <span>|</span>
+    
+    <a href="/gqt/">计忆团情</a> <span>|</span>
+    
+    <a href="/dangjianjiayuan/">党建家园</a> <span>|</span>
+    
+    <a href="/xuefengjianshe/">学风建设</a> <span>|</span>
+    
+    <a href="/zhaoshengjiuye/">招生就业</a> <span>|</span>
+    
+    <a href="/yangongzhuanti/">研工专题</a> <span>|</span>
+    
+    <a href="/kejichuangxin/">科技创新</a> <span>|</span>
+    
+    <a href="/xiazaizhongxin/">文件中心</a> <span>|</span>
+    
+    <a href="/studentService/">学生服务</a> <span>|</span>
+    
+    </div>
+    <div class="footer-copy">
+      <p>通信地址：中国.杭州.西湖区留和路288号 邮政编码：310023
+联系电话：0571-85290890 电子邮箱：jsj_890@zjut.edu.cn</p>
+      <p><a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">版权所有 © 浙江工业大学 | 浙ICP备06055204号-1 | 浙公网安备 33010302002621号</a>  </p>
+    </div>
+<!--    <div class="footer-ewm">
+      <div class="img-center"><img src="" /></div>
+       </div>-->
+  </div>
+</div>
+<div class="footer-fix">
+  <ul class="clearfix">
+    <li><a href=""><i class="i0"></i>网站首页</a></li>
+    
+    <li><a href="/index/"><i class="i1"></i>首页</a></li>
+    
+    <li><a href="/gqt/"><i class="i2"></i>计忆团情</a></li>
+    
+    <li><a href="/dangjianjiayuan/"><i class="i3"></i>党建家园</a></li>
+    
+  </ul>
+</div>
+</body>
+</html>

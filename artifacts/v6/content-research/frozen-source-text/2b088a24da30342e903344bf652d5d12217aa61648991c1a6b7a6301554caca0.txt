@@ -1,0 +1,649 @@
+[PAGE 1]
+MCM: The Mathematical Contest in Modeling
+ICM: The Interdisciplinary Contest in Modeling
+MCM®/ICM®
+Contest Rules, Registration and Instructions
+January 29 - February 2, 2026
+(All rules and instructions apply to both ICM and MCM contests.)
+RECENT CHANGES TO THE MCM/ICM RULES ARE HIGHLIGHTED IN
+RED
+COMAP'S Mathematical Contest in Modeling (MCM)® / Interdisciplinary Contest in
+Modeling (ICM)® is an international contest designed to provide undergraduate
+students with the opportunity to work as team members to engage in and improve
+their modeling, problem solving, and writing skills. Teams apply mathematics to
+model, develop, and communicate a solution to a real-world problem.
+2026 Contest Dates and Times:
+ Registration Deadline: Before 3:00 p.m. EST on Thursday, January 29, 2026.
+ Contest Starts: 5:00 p.m. EST on Thursday, January 29, 2026.
+ Contest Ends: 8:00 p.m. EST on Monday, February 2, 2026.
+ Solution Report Deadline: 9:00 p.m. EST on Monday, February 2, 2026.
+ Contest Results: Results will be available on May 8, 2026.
+MCM/ICM Rules, Registration, and Instructions
+I. Participants and Advisors
+II. MCM/ICM Resource Guides
+III. Changes for 2026
+IV. Contest Rules
+V. Contest Registration
+VI. Contest Instructions
+Before the Contest - Preparing a Team
+During the Contest - Choosing and Solving the Problem
+During the Contest - Preparing a Solution Document
+During the Contest - Use of AI Tools in COMAP Contests
+During the Contest - Advisor Activities
+After the Contest - Submitting a Solution Document: New online submission
+process
+After the Contest - Advisor Actions
+VII. MCM/ICM Results and Recognition
+VIII. MCM/ICM Awards and Prizes
+[PAGE 2]
+IX. Judging Results and Designations
+X. Internship and Scholarship Partners
+Notes:
+ COMAP is in the USA Eastern time zone: all times given in these
+instructions are in terms of Eastern Standard Time (EST) except where
+local time is noted.
+ COMAP is the final arbiter of all rules and policies, and may refuse to
+register, disqualify, or reduce the award level of any team that, in its sole
+discretion, does not follow contest rules, regulations, or requirements.
+ Decisions of the judges and the contest directors are final.
+ Please print a copy of these contest instructions for reference before,
+during, and after the contest. Click here for the printer friendly version.
+I. Participants and Advisors
+Team Members: A team may consist of up to three students currently enrolled in
+the same school. Students may be enrolled in any department or program at the
+school. There is no limit to the number of teams a school may register. The contest is
+open to all undergraduate and high school students. An advisor must complete the
+registration process for each team.
+School or Institution: For the purposes of participating in the MCM/ICM, a team's
+school or institution is the primary and comprehensive full-time provider for all of the
+team members' education studies in all subjects. Tutoring, test-prep, contest-prep, and
+math- or STEM-learning centers are not considered schools/institutions for the
+purposes of registering and competing in COMAP contests.
+Team Advisors: Any faculty, staff member, or student at the team's institution can
+fulfill the role of Advisor. The advisor will act as the main point of contact for the
+team, and does not have to be from the mathematics department. We encourage
+faculty members to serve as team advisors; however, one team member or another
+student at the school may act as the advisor.
+II. MCM/ICM Resource Guides
+MCM/ICM: Registration Walk Through
+The purpose of this article is to assist and guide advisors participating in the
+MCM/ICM. In the article, COMAP provides information about the contest
+registration process.
+MCM-ICM: Procedures and Tips for a Great Experience
+The purpose of this article is to assist and guide students and advisors participating in
+MCM/ICM. In the article, COMAP, provides information about the administration of
+the contests, as well as tips to ensure your contest experience is smooth, satisfying,
+enjoyable, and successful.
+[PAGE 3]
+Use of AI Tools in COMAP Contests
+This policy is motivated by the rise of large language models (LLMs) and generative
+AI assisted technologies. The policy aims to provide greater transparency and
+guidance to teams, advisors, and judges. This policy applies to all aspects of student
+work, from research and development of models (including code creation) to the
+written report. Since these emerging technologies are quickly evolving, COMAP will
+refine this policy as appropriate.
+MCM-ICM: Online Submission Process
+The purpose of this article is to assist and guide students and advisors participating in
+MCM/ICM. In the article, COMAP, provides information about the new online
+submission process using the new online submission
+page https://forms.comap.org/241335097294056. You will need your team's control
+number, advisor id number and your problem choice to complete your submission.
+III. Changes for 2026
+ New online submission process using the new online submission
+page https://forms.comap.org/241335097294056. You will need your
+team's control number, advisor id number and your problem choice to
+complete your submission.
+ Registration process has been streamlined and split into 2 parts: Advisor Registration
+and Team Registration.
+ The MCM/ICM Contest now have a 25 page limit. The 25 page limit applies to the
+entire submission including the Summary Sheet, Solution, Reference List, Table of
+Contents, Notes, Appendices, Code and any problem specific requirements.
+ Use of AI Tools in COMAP Contests.
+IV. Contest Rules
+1. The 2026 MCM/ICM contest period runs between 5:00 p.m. EST Thursday, January
+29, 2026 and 8:00 p.m. EST on Monday, February 2, 2026.
+2. Each team may consist of a maximum of three undergraduate (or below) students
+enrolled full- or part-time at the same school/institution at the time of the contest.
+Teams may consist of 1, 2, or 3 students and each student may only participate on
+one team.
+3. Each team must have an advisor who is a staff member, a faculty member, or a
+student at the team members' institution. Advisors can serve more than one team.
+Advisors must register teams prior to 3p.m. EST on Thursday, January 29, 2026.
+4. Teams must obtain and use the Control Number and password assigned to them at
+registration to participate in MCM/ICM.
+5. Not later than the opening of the contest window, advisors must assign team
+members to a particular team, and cannot add or change student assignments for
+[PAGE 4]
+the duration of the contest. Teams may, however, remove a team member, if he or
+she decides not to participate.
+6. Once the contest window opens (5:00 p.m. on Thursday, January 29, 2026), team
+membership must be set and teams may not use any persons, other than
+their own team members, to discuss or obtain ideas for working on and
+solving their problem. Teams may use any "inanimate" resource they find on their
+own such as: web pages, books, articles, research reports, databases, etc.
+Teams may not seek help in obtaining answers, ideas, or information, or in locating
+appropriate resources, from any persons outside of their team to include their
+advisor, other teachers, other students, and/or experts or professionals in a field
+relevant to the problem. This restriction includes personal or telephonic contact, as
+well as use of electronic social media such as, but not limited to: emails, texting, chat
+rooms, question-answer systems, interactive blogs, X, Weibo, online help or support
+sites, etc. Additionally, posting or sharing any part or all of the problem statement,
+your team's solution process, or any partial or complete work in any form or medium
+during the contest is strictly prohibited. COMAP will disqualify or deem unsuccessful
+any team that violates this rule. The relevant issue is one of intent: each team of
+students is expected to develop all of its substantive analysis and solution without the
+help of others.
+7. Teams must document any outside sources of information by using footnotes,
+endnotes, or in-line documentation, and include appropriate citations in a reference
+list or Bibliography of these sources.
+8. Teams choose to work on one problem (MCM: A, MCM: B, MCM C, ICM D, ICM E or
+ICM: F) and submit one solution for the problem of their choice.
+9. The names of the students, advisor, and/or institution must not appear on any page
+of the solution. The solution must not contain any identifying information other than
+the team Control Number.
+10. Papers must be submitted as an Adobe PDF electronic file, and typed in English, with
+a readable font of at least 12-point type. Papers must be within the 25 page limit.
+11. Upon closing of the contest window at 8:00 p.m. EST Monday, February 2, 2026,
+advisors must ensure each team makes no further changes to their solution paper.
+Advisors must then ensure all solution documents are properly prepared and sent via
+email to COMAP for judging no later than 9:00 p.m. EST Monday, February 2,
+2026 .
+12. COMAP follows all accommodations relative to learning conditions for individual
+students used as part of the local school/institution program in an affected student's
+daily learning. If specialized staff is required, the school bears the responsibility for
+providing any specialized assistance as required by law. If such accommodations are
+required for a student participating, the school should detail them and the extent to
+which they were utilized as part of the MCM/ICM activities.
+13. COMAP reserves the right to disqualify or reduce the award level of teams found to
+have violated the contest rules.
+[PAGE 5]
+V. Contest Registration
+The registration fee for MCM/ICM is $100 per team. Please register only the teams
+that will take part in the contest. Registration fees are non-refundable. We accept
+payment via Credit Card, and payment must be made via our secure web site. Our
+secure site will process your credit card payment, so your credit card number is
+protected. Our system will not store your credit card number after it processes your
+payment. We regret that we are not able to accept other payment forms at this time.
+All teams must be registered before 3:00 p.m. EST on Thursday, January 29,
+2026. We recommend that all teams complete the registration process well in
+advance, since the registration system will not accept any new team registrations after
+the deadline. COMAP will not accept late registrations for MCM/ICM 2026 under
+any circumstances. NO EXCEPTIONS WILL BE MADE. Note: Advisors do not
+have to designate specific team members when registering "a team." COMAP
+suggests you register the number of teams needed well prior to the deadline and then
+return to the contest site once team membership is set to enter specific students to
+each "Control Number" team you have registered.
+The 2-part registration process will take advisors through a series of screens that ask
+for an email address and contact information. Enter the required information as you
+step through the screens. Be sure to use a valid current email address so that we
+can use it to contact you at any point before, during, or after the contest, if necessary.
+1. All Registration Activity: /undergraduate/contests/mcm. COMAP will accept
+no other forms of registration. Advisors may register any number of teams, and
+should use the same email address and password for all teams under the same
+advisor.
+2. Advisor Registration: If you are an advisor entering the contest site for the first
+time for the 2026 contest, click on Register for Contest on the left-hand side of the
+screen to register as an Advisor. Enter your email and click Continue Advisor
+Registration. Follow the step to continue and finish your
+registration. IMPORTANT: Be sure to use a valid and current email address as you
+will use this email to register all of your teams, and communicate with COMAP.
+Additionally, COMAP will use this email to contact you at any point before, during,
+and after the contest, if necessary.
+3. Register a Team or Teams: On the contest site, click on Advisor Login , then log
+in with the same email address and password that you used when you registered as
+an advisor. Once you are logged in, click on Register Team near the upper right
+corner of the page and follow the instructions there. There is no restriction on the
+number of teams an advisor can register.
+a. Fill in billing information. After we receive approval from your financial
+institution (this takes only a few seconds), the system will issue a control
+number for your team.
+b. Each team is not officially registered until you have received a
+[PAGE 6]
+team control number for that team . The registration page also lists the
+email address and password that you entered when registering; you will
+need this information to complete the contest procedures. Make a record
+of each team control number. You will NOT receive an email
+confirmation of your registration.
+c. You may specify the team members at the time of registration, or at a
+later time. Advisors may assign team members to specific teams and control
+numbers up until the beginning of the contest period. Once the contest
+opens, team members cannot be added or changed. The spelling of all
+names and institutions is the responsibility of the advisor. This is exactly as
+they will appear on certificates. The order of the student names has no
+bearing or importance on participation. In the eyes of COMAP and the
+contest directors,all team members are equal. Advisors should ensure they
+spell team members' names correctly when registering. COMAP will not
+reprint certificates.
+d. To register additional teams, repeat the procedures listed above.
+4. If you need to change any of the advisor or institution information (name, address,
+contact information, etc.) that you specified when you registered, you can do so at
+any point before or during the contest by logging in to the contest web site with the
+same email address and password that you used when registering (click on
+the Advisor Login link on the left side of the screen). Once logged in, click on
+the Edit Advisor or Institution Data link near the upper right corner of the page.
+5. Check the contest web site regularly for any updated instructions or announcements
+about the contest. Except in extreme circumstances, COMAP will not send any
+confirmation, reminders, or announcements by email. All communication regarding
+the contest will be via the contest web site and X/Weibo.
+6. Follow COMAPMath on X or COMAPCHINAOFFICIAL on Weibo for the most up to date
+information before, during, and after the contest.
+VI. Contest Instructions
+Before the Contest - Preparing a Team
+1. We encourage advisors and faculty to coach and prepare students BEFORE the start
+of the contest. COMAP offers several resources:
+a. Go to the MCM/ICM web site and review the rules, guidelines, and prior
+years' problems.
+b. Visit www.mathmodels.org to view previous years' problems and
+solutions.
+c. Visit /undergraduate/contests/resources/index.html , the MCM/ICM
+Articles, Resources, and Links page.
+d. The MCM/ICM Resource Guides found in the Resource Guides section
+above provide students and advisors tips for before, during, and after the contest.
+e. Read the Summer and Fall UMAP Journal MCM and ICM articles, which
+[PAGE 7]
+include the Director's Article and Judges' Commentary for MCM and ICM. These
+articles describe what judges look for in the various sections of solutions.
+During the Contest - Choosing and Solving the Problem
+1. The contest problems become available for teams to view at precisely 5:00 p.m. EST
+on Thursday January 29, 2026 on the contest web
+site: /undergraduate/contests/mcm
+No password is needed to view the problems. Simply go to the contest web site at or
+after 5 p.m. EST on Thursday, January 29, 2026 and you will see a link to view the
+problems.
+2. The contest problems will also become available for teams to view precisely at
+4:50PM EST on Thursday January 29, 2026 on the following mirror sites:
+https://www.comapmath.com/MCMICM/index.html (Asia)
+https://www.comap-math.org/mcm/index.html (North America)
+https://www.mathportals.org/mcm/index.html (North America)
+https://www.immchallenge.org/mcm/index.html (North America)
+If you cannot access any of the sites, there may be a problem with your local
+Internet connection. Contact your local Internet service provider to resolve the issue.
+3. Each registered team may choose any one of the six problem choices and should
+submit a solution to only one problem.
+• MCM problems are Problem A, Problem B, Problem C.
+• ICM problems are Problem D, Problem E, Problem F.
+4. Teams may use any inanimate source of data, materials, computers, software,
+references, websites, books, etc. Teams should reference all sources used using
+footnotes, endnotes, or in-line documentation, and include an associated reference
+list citing all sources.
+5. Teams may not seek help from any person outside of team members as delineated in
+the Contest Rules (specifically Rule #6).
+6. Teams should keep in mind the following guidelines when solving the problem and
+developing their solution.
+a. Summary Sheet: The summary is an essential part of your MCM/ICM paper
+and should appear as the first page of your solution report. The judges place
+considerable weight on the summary, and winning papers are often distinguished
+from other papers based on the quality of the summary. Click here to download
+the Microsoft Word Summary Sheet or Click here to download the LaTeX
+Summary Sheet.
+• To write a good summary, imagine that a reader will choose whether to read
+the body of the paper based on your summary: Your concise presentation in the
+summary should inspire a reader to learn about the details of your work.
+• You should write the summary last, as it should clearly describe your
+approach to the problem and, most prominently, your most important conclusions.
+Ensure you plan time after solving your problem to write a comprehensive and
+articulate summary.
+• Summaries that are mere restatements of the contest problem, or are a
+[PAGE 8]
+cut-and-paste boilerplate from the Introduction are generally considered to be weak.
+b. Overall: The team's solution should be articulate, concise, and organized in
+order to allow the reader to easily follow the solution process and conclusions. Key
+statements should present major ideas and results.
+• A Table of Contents assists the reader in previewing the organization of
+your report.
+• Present a clarification or restatement of the problem as appropriate.
+• Present a clear exposition of all variables and hypotheses.
+• State and justify reasonable assumptions that bear on the problem.
+• Present an analysis of the problem, motivating or justifying the model
+being used.
+• Summarize derivations, computations, or illustrative examples in the
+main body of the solution, and leave lengthy derivations and/or calculations and data
+in appropriate appendices.
+• Include a design of the model. Discuss how the model could be tested,
+to include error analysis, sensitivity, and/or stability.
+• Discuss any apparent strengths or weaknesses to your model or
+approach.
+• Provide a conclusion and report results explicitly.
+• Document resources and references.
+7. Follow COMAPMath on X or COMAPCHINAOFFICIAL on Weibo for the most up to date
+information before, during, and after the contest.
+During the Contest - Use of AI Tools in COMAP Contests
+This policy is motivated by the rise of large language models (LLMs) and
+generative AI assisted technologies. The policy aims to provide greater
+transparency and guidance to teams, advisors, and judges. This policy applies
+to all aspects of student work, from research and development of models
+(including code creation) to the written report. Since these emerging
+technologies are quickly evolving, COMAP will refine this policy as
+appropriate.
+Teams must be open and honest about all their uses of AI tools. The more
+transparent a team and its submission are, the more likely it is that their work
+can be fully trusted, appreciated, and correctly used by others. These
+disclosures aid in understanding the development of intellectual work and in
+the proper acknowledgement of contributions. Without open and clear
+citations and references of the role of AI tools, it is more likely that
+questionable passages and work could be identified as plagiarism and
+disqualified.
+Solving the problems does not require the use of AI tools, although their
+responsible use is permitted. COMAP recognizes the value of LLMs and
+generative AI as productivity tools that can help teams in preparing their
+[PAGE 9]
+submission; to generate initial ideas for a structure, for example, or when
+summarizing, paraphrasing, language polishing etc. There are many tasks in
+model development where human creativity and teamwork is essential, and
+where a reliance on AI tools introduces risks. Therefore, we advise caution
+when using these technologies for tasks such as model selection and building,
+assisting in the creation of code, interpreting data and results of models, and
+drawing scientific conclusions.
+Guidance for teams
+Teams are required to:
+1. Clearly indicate the use of AI tools in their report, including
+which model was used and for what purpose. Please use inline citations
+and the reference section. Also append the Report on Use of AI
+(described below) after your 25-page solution.
+2. Verify the accuracy, validity, and appropriateness of the content
+and any citations generated by language models and correct any errors
+or inconsistencies.
+3. Provide citation and references, following guidance provided
+here. Double-check citations to ensure they are accurate and are
+properly referenced.
+4. Be conscious of the potential for plagiarism since LLMs may
+reproduce substantial text from other sources. Check the original
+sources to be sure you are not plagiarizing someone else's work.
+Citation and Referencing Directions
+Think carefully about how to document and reference whatever tools the team
+may choose to use. A variety of style guides are beginning to incorporate
+policies for the citation and referencing of AI tools. Use inline citations and
+list all AI tools used in the reference section of your 25-page solution.
+Whether or not a team chooses to use AI tools, the main solution report is
+still limited to 25 pages. If a team chooses to utilize AI, following the end of
+your report, add a new section titled Report on Use of AI. This new section
+has no page limit and will not be counted as part of the 25-page
+solution. Click here to download the COMAP AI contest policy with
+examples.
+During the Contest - Preparing a Solution Document
+[PAGE 10]
+1. MCM/ICM solutions are judged as varying degrees of successfully completing the
+contest (from Successful Participant up to Outstanding). There is no passing or cut -
+off score, and therefore, partial solutions are acceptable and teams are encouraged
+to complete as much of the problem as they are able to do. MCM/ICM judges are
+primarily interested in the team's thought processes, analysis of the problem,
+modeling approaches, and mathematical methods.
+2. Teams must submit their entire solution in one Adobe PDF electronic file, consisting
+of written text, figures, charts, and supporting materials. Papers must be typed in
+English, with a readable font of at least 12-point type. Do not send additional non
+solution files such as data or computer programs.
+3. Each page of the solution must contain the team control number and the page
+number at the top of the page. Use a page header on each page - for
+example: Team # 0000000, Page 6 of 25 .
+4. Your solution report should start with the Summary Sheet followed by the team's
+solution. Ensure your solution meets the 25 page limit requirement. A Table of
+Contents is encouraged and does count toward the page limit. Reference list (or
+Bibliography), notes pages, and any appendices count toward the page limit and
+should be included after the solution pages.
+5. Clearly indicate the use of LLMs or other AI tools in your report, including which
+model was used and for what purpose. Please use inline citations and the reference
+section. Also append the Report on Use of AI (described here) after your 25-
+page solution. This section has no page limit and will not be counted as part of the
+25-page solution.
+6. Names of the students, advisor, and/or institution must not appear on any page of
+the solution. The solution file must not contain any identifying information other
+than the team Control Number.
+7. STOP making any changes to the solution at 8:00pm EST on Monday, February
+2, 2026 .
+During the Contest - Advisor Activities
+1. After the contest begins at 5 p.m. EST on Thursday January 29, 2026, and while the
+teams are preparing their solutions, the advisor should login to the contest web site
+at /undergraduate/contests/mcm . Click on Advisor Login , and then enter
+your email address and password.
+2. For each control number, if you have not done so already, enter the team member
+names and confirm that each name is spelled correctly. The order of the student
+names has no bearing or importance on participation. In the eyes of COMAP and the
+contest directors, all team members are equal. This determines how the names
+will appear on the contest certificates. COMAP will not make any changes
+or reprint certificates for any reason.
+3. Specify the problem that each team has chosen to solve.
+4. Click here to download the Microsoft Word Summary Sheet or Click here to
+download the LaTeX Summary Sheet. (This should be used as the first page of
+each team's electronic email submission.)
+[PAGE 11]
+After the Contest - Submitting a Solution Document - NEW for 2026
+1. Teams must end all work on their solution by 8:00 p.m. EST on Monday February
+2, 2026, and send an Adobe PDF electronic file of its Solution Paper to COMAP
+by 9:00 p.m. EST on Monday, February 2, 2026. *Note: Do not wait until the
+last minute. Send your solution as soon as it is completed and only send one copy.
+2. No further modifications, enhancements, additions, or improvements may be made to
+the team's solution paper after 8:00 p.m. EST on February 2, 2026. Any changes to
+the solution will constitute a violation of the contest rules and may result in
+disqualification.
+3. Each team is required to submit an Adobe PDF electronic copy of its solution using
+the new online submission
+page https://forms.comap.org/241335097294056. Any team member or the
+advisor may submit the PDF submission.
+A. You will need your team's control number, advisor id number and
+your problem choice to complete your submission.
+B. Your electronic PDF solution file MUST be received at COMAP on or before the
+submission deadline of 9:00 p.m. EST on February 2, 2026 .
+C. Use your team's control number as the name of your PDF file attachment. For
+example: 0000000.pdf. *Note: The attachment must be less than 20MB.
+D. Page 1 of the team's PDF electronic solution should be the team summary,
+followed by the solution and any references and appendices.
+E. Do not include or send programs, software, databases, and/or other files with your
+solution, as they will not be used in the judging process.
+F. The names of the students, advisor, or institution should NOT appear on any page
+of the electronic solution.
+G. COMAP will accept only an Adobe PDF of your solution. Limit one solution per
+submission form.
+4. Failure by a team to submit a solution via email by 9:00 p.m. EST on February 2,
+2026 in accordance with the above instructions may result in disqualification or
+reduction of award level.
+NOTE: By submitting a MCM/ICM contest entry document, team members agree
+that:
+ Their submission and all rights to its publication become the property of
+COMAP.
+ COMAP may use, edit, excerpt, and publish this submission for promotional
+use or any other purpose, including placing it online, distributing it
+electronically, or publishing it in The UMAP Journal or otherwise, without
+compensation of any kind.
+[PAGE 12]
+ COMAP reserves the right to use in materials relating to this contest, the
+names of the team members, their advisor(s), and their affiliations, without
+further notification, permission, or compensation.
+ All images, figures, photographs, tables, and drawings in a team's submission
+were either created by the team, or, if reproduced or obtained from another
+source, the submission cites a specific reference for each at its location in the
+submission.
+ All direct quotations in the submission are enclosed in quotation marks or
+otherwise identified as such, with a specific reference cited for each at its
+location in the submission.
+After the Contest - Advisor Actions
+1. Advisors should use the Advisor Login link one to two days after the contest has
+closed to verify COMAP received your team's electronic solution. In most cases,
+COMAP will have solution status of all papers posted 24-48 hours after the contest
+window ends.
+2. Visit the contest web site regularly and follow COMAP on @COMAPMath on X or
+COMAPCHINAOFFICIAL on Weibo for updates. COMAP will post the contest results on
+the web site as soon as they are available. It takes several weeks for the judges to
+evaluate the solutions and for COMAP to process the results. Please do not call or
+email COMAP regarding contest results.
+VII. MCM/ICM Results and Recognition
+1. Judging will be completed in April-June. Levels of awards for successful submissions
+are Successful Participant, Honorable Mention, Meritorious, Finalist, or Outstanding
+Winner. Submissions found to have rule or procedure violations, or problem solution
+issues may be designated as Disqualified or Unsuccessful. Click here to view
+descriptions of the contest designations.
+2. COMAP will prepare news releases for local and national dissemination, and
+professional publications will announce results.
+3. Every team that successfully submits a solution paper will be awarded a PDF
+certificate of participation. Click here to download MCM/ICM certificates.
+4. Select teams will have all or portions of their solution papers published in COMAP's
+UMAP Journal.
+VIII. MCM/ICM Awards and Prizes
+[PAGE 13]
+The 2026 International COMAP Scholarship Award will be awarded to the six (6)
+top MCM/ICM teams from any of the participating countries/regions; $9000 being
+split among the team members and $1000 to the school represented with a maximum
+of $3000 paid per team member.
+After the results are issued, each successfully participating team advisor and student
+will receive a PDF certificate of participation. You may login to the contest web site
+using the Advisor Login link to view and print your team's certificates. Click here to
+download MCM/ICM certificates.
+ MCM Awards (Problem A, B and C)
+ The Ben Fusaro Award will be accorded to an especially creative paper and will be
+chosen from the contest finalists.
+ The Frank R. Giordano Award began in 2012. It honors Brig. Gen. (ret) Frank
+Giordano who directed the MCM for 20 years. This award goes to a paper that
+demonstrates true excellence in the execution of the modeling process.
+ The Veena Mendiratta Award honors a Problem C paper that takes an application-
+oriented approach with a focus on usefulness and clarity. It recognizes creative and
+effective use of the data, along with a model that is well-explained and easy to
+understand.
+ ICM Awards (Problem D, E and F)
+ The Leonhard Euler Award is presented to a team selected by the head judge of the
+ICM's Problem D. The criteria are: 1) a paper in the Meritorious/Finalist/Outstanding
+rating; 2) contains especially creative and innovative modeling; and 3) shows good
+understanding of interdisciplinary science. The award honors the name of a 18th-
+century Swiss applied mathematician, who was known for the breadth of his research
+applications, volume of written work, excellent teaching, and interdisciplinarity.
+ The Rachel Carson Award honors an American conservationist whose book "Silent
+Spring" initiated the global environmental movement and whose work spanned many
+disciplines concerned with the local and global environments. This award is presented
+to a team selected by the Head Judge of ICM Problem E for excellence in using
+scientific theory and data in its modeling.
+ Vilfredo Pareto was an Italian scholar, modeler and problem solver, who at various
+times was an engineer, sociologist, economist, political scientist, mathematician, and
+philosopher. He lived and worked in the late 19th and early 20th centuries. The ICM
+Pareto Award for outstanding modeling in the Policy Modeling problem (ICM Problem
+F) honors the work and legacy of this famous social science problem solver. In
+particular for this award, the head judge seeks to highlight a paper that best models
+[PAGE 14]
+the more dynamic and challenging contextual human elements that make
+simplification or refinement of policy models so difficult.
+The Institute for Operations Research and the Management Sciences (INFORMS) is
+the largest society in the world for professionals in the field of operations research
+(OR), management science (MS), and analytics. INFORMS has long recognized the
+importance of involving undergraduate students and faculty in an unscripted process
+of mathematical modeling whose problems contain many of the modern elements
+seen by its membership. The MCM/ICM exemplifies these characteristics.
+Consequently, INFORMS has been an active supporter of the MCM/ICM since its
+inception.
+INFORMS carefully selects and designates a single team from each of the six
+problems - A, B, C, D, E, F - as an INFORMS winning team whose modeling and
+analyses best exemplify the style and content reflected in its membership's
+professional practice. Each student receives a letter of congratulations from the
+current INFORMS President and a complimentary one-year INFORMS student
+membership. Each associated faculty advisor receives a letter of congratulations and
+appreciation from the current INFORMS President, along with complimentary one-
+year access to the full suite of award-winning INFORMS journals.
+The Society for Industrial and Applied Mathematics (SIAM) will designate six teams,
+one each for problems A, B, C, D, E, and F from the MCM/ICM as an SIAM winner.
+The Mathematical Association of America (MAA) will designate up to six teams, at
+[PAGE 15]
+most one each for problems A, B, C, D, E, and F from the MCM/ICM as an MAA
+winner.
+The American Statistical Association (ASA) will designate one team from MCM
+Problem C as a ASA winner.
+The American Mathematical Society (AMS) will designate six teams, one each for
+problems A, B, C, D, E, and F from the MCM/ICM as an AMS winner.
+IX. Judging Results and Designations
+What are the differences between the designations?
+Not Judged - The solution was not submitted correctly. Some examples include
+damaged or corrupted file, file sent in the wrong format, or not submitting your
+solution as outlined in the instructions.
+Disqualified - The team's report was found to be in violation of the contest rules.
+Disqualified - P lagiarism: The solution paper had undocumented sources, verbatim
+text, or information lifted from the Internet, and/or was very similar to other papers
+submitted as determined by judges and/or our pairwise comparison software. All
+information, ideas, data, algorithms, etc. from outside sources used by team members
+must have the original source documented and properly referenced. Our pairwise
+comparison software identifies papers and/or parts of papers as similar to, or exactly
+the same as, other papers submitted.
+Disqualified - W eb: COMAP identified the solution paper, or portions of the
+solution paper as shared or posted, or a team member (or members) were found to
+have received assistance through interactive web sites or electronic media. Posting or
+sharing all, or any part of the problem statement, your solution, or partial solution
+anywhere during the contest weekend is strictly prohibited. Obtaining all, or any part,
+[PAGE 16]
+of anyone else's solution is also prohibited. Contest rules prohibit seeking assistance
+outside of team members or obtaining help from human sources in person or via any
+medium. COMAP continually monitors the Internet during the contest period.
+Unsuccessful Participant - The team's report did not adequately respond to the
+requirements of the contest problem or a team (or team member) was found to have
+visited Internet sites discussing the contest problem during the contest period.
+Unsuccessful Participant - W eb: A team member (or members) visited websites or
+social media where contest problems were being openly discussed. Contest rules
+prohibit seeking assistance outside of team members or obtaining help from human
+sources in person or via any medium. COMAP is continually monitoring the Internet
+during the contest period to include websites and social media where contest solutions
+are being openly discussed.
+Unsuccessful Participant - I ncomplete: The solution paper was found to be
+significantly incomplete and did not show any serious effort in adequately responding
+to the contest problem or its requirements.
+Successful Participant - The team made a concerted effort to respond to the contest
+problem and submit a solution report. The report, however, had incomplete responses
+to all or some requirements, and/or showed some deficiencies or weakness in the
+modeling processes, analysis, conclusions, and/or communication.
+Honorable Mention - The team's solution report indicated an above average effort in
+addressing all problem requirements, and contained elements that were judged to
+show sound and supported processes in modeling and problem solving, analysis,
+conclusions, and communication of results.
+Meritorious - The team's solution report was excellent in many aspects of modeling
+and problem solving, analysis, conclusions, and communication. The report addressed
+all requirements in a clear, well-supported, well-organized, and well-presented
+manner.
+Finalist - The designation Finalist recognizes teams whose solution reports are
+exemplary and therefore reached the final round of judging. These papers present
+complete and logical analysis in an organized and clear presentation above and
+beyond simply addressing the requirements. These papers are easy to read, easy to
+follow, logical, and comprehensive. Finalist papers are among the best of all team
+submissions.
+Outstanding Winner - The designation Outstanding recognizes teams whose
+solution reports are determined, in the final round of judging, to be the "best of the
+best." These teams' reports are at the highest level relative to the contest submissions
+in terms of exemplary student work in modeling and problem solving, analysis, and
+[PAGE 17]
+communication. COMAP may publish and use all or part of these submissions as
+examples of outstanding student work.
+X. Internship and Scholarship Partners
+COMAP is pleased to announce a new partnership with Anzu Partners. Anzu
+Partners is a venture capital and private equity firm that invests in breakthrough
+industrial technologies and life sciences. Anzu is excited to welcome members
+of MCM/ICM Outstanding and Finalist teams residing in the U.S. for consideration
+in their Summer Analyst Program. These Summer Analysts will be responsible for
+both investment team and portfolio support. This is a unique opportunity to gain
+exposure into venture capital while putting your technical degree to use.
+Key activities in investment include:
+ Conducting initial screening on potential investments
+ Diligence with company, customer, and competitor interviews when
+appropriate
+ Analyzing financial projections and proposed deal terms
+Key activities in portfolio support include:
+ Building and testing prototypes for entry into new markets
+ Analyzing product fit to the target market and any potential adjustments
+needed
+ Developing commercial strategies (e.g. channels, pricing, etc.) for growing
+companies
+The position reports to an Anzu Investment Team member, as part of a small, cross-
+functional team with strong personal and professional development opportunities.
+After the MCM/ICM contest results are announced COMAP will contact those US
+teams that meet the requirements with information on how to apply for the paid
+summer internships. Being selected and notified does not guarantee participation in
+the program.
+Click here to learn more about Anzu Partners
+[PAGE 18]
+COMAP is excited to work in collaboration with Ellison Scholars, which is part of
+the Ellison Institute of Technology (EIT). The institute's mission, in partnership
+with the University of Oxford, is to help solve some of humanity's most challenging
+and important problems. This partnership brings exciting opportunities for students
+involved in COMAP's mathematical modeling contests, offering a chance to not only
+showcase their skills but also to join a global mission aimed at tackling some of
+humanity's most pressing challenges.
+Click here to learn more about Ellison Scholars
+COMAP is pleased to announce a new partnership with Two Sigma. Two Sigma is
+an investment manager that uses a variety of technological methods, including
+artificial intelligence, machine learning, and distributed computing, for its trading
+strategies. Two Sigma is excited to welcome members of MCM/ICM Outstanding
+and Finalist teams for consideration in its internship program. After the MCM/ICM
+contest results are announced, COMAP will contact those teams that meet the
+requirements with information on how to apply for a Two Sigma internship. Being
+selected and notified does not guarantee participation in the program.
+Click here to learn more about Two Sigma

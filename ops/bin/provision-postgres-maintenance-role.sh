@@ -49,6 +49,10 @@ cleanup_tables=(
   competition_rate_limit_counters
   competition_session_starts
   competition_session_transitions
+  competition_decision_states
+  competition_decision_runs
+  competition_decision_calls
+  competition_decision_chat_requests
   competition_sessions
 )
 declare -A cleanup_lock_columns=(
@@ -59,6 +63,10 @@ declare -A cleanup_lock_columns=(
   [competition_rate_limit_counters]=reset_at
   [competition_session_starts]=expires_at
   [competition_session_transitions]=expires_at
+  [competition_decision_states]=expires_at
+  [competition_decision_runs]=expires_at
+  [competition_decision_calls]=run_id
+  [competition_decision_chat_requests]=run_id
   [competition_sessions]=expires_at
 )
 
@@ -71,9 +79,14 @@ psql_admin() {
 
 verify_role() {
   local column_mode=${1:-exact}
-  case "$column_mode" in exact|legacy-without-lock-columns) ;; *) fail "invalid maintenance verification mode" ;; esac
+  case "$column_mode" in exact|legacy-v6|legacy-without-lock-columns) ;; *) fail "invalid maintenance verification mode" ;; esac
   local role_gate allowed_tables="" table_name privilege privilege_gate unexpected direct_functions
   local lock_column column_grant_count
+  local -a verified_tables=()
+  for table_name in "${cleanup_tables[@]}"; do
+    if [ "$column_mode" != exact ] && [[ "$table_name" =~ ^competition_decision_(runs|calls|chat_requests)$ ]]; then continue; fi
+    verified_tables+=("$table_name")
+  done
   role_gate="$(psql_admin --tuples-only --no-align --command="
     SELECT count(*)=1 AND bool_and(
       NOT r.rolcanlogin AND NOT r.rolinherit AND NOT r.rolsuper
@@ -94,7 +107,7 @@ verify_role() {
     ) FROM pg_roles r WHERE r.rolname='$MAINTENANCE_ROLE';")"
   [ "$role_gate" = t ] || fail "maintenance role is missing, privileged, or owns database objects"
 
-  for table_name in "${cleanup_tables[@]}"; do
+  for table_name in "${verified_tables[@]}"; do
     [ -z "$allowed_tables" ] || allowed_tables+=","
     allowed_tables+="'$table_name'"
     for privilege in SELECT DELETE; do
@@ -111,7 +124,7 @@ verify_role() {
     lock_column=${cleanup_lock_columns[$table_name]}
     privilege_gate="$(psql_admin --tuples-only --no-align --command="
       SELECT has_column_privilege('$MAINTENANCE_ROLE', 'public.$table_name', '$lock_column', 'UPDATE');")"
-    if [ "$column_mode" = exact ]; then
+    if [ "$column_mode" != legacy-without-lock-columns ]; then
       [ "$privilege_gate" = t ] \
         || fail "maintenance row-lock UPDATE grant is missing for $table_name.$lock_column"
     else
@@ -130,9 +143,13 @@ verify_role() {
         ('public','competition_rate_limit_counters','reset_at'),
         ('public','competition_session_starts','expires_at'),
         ('public','competition_session_transitions','expires_at'),
+        ('public','competition_decision_states','expires_at'),
+        ('public','competition_decision_runs','expires_at'),
+        ('public','competition_decision_calls','run_id'),
+        ('public','competition_decision_chat_requests','run_id'),
         ('public','competition_sessions','expires_at'));")"
-  if [ "$column_mode" = exact ]; then
-    [ "$column_grant_count" = 8 ] || fail "maintenance row-lock column grants are incomplete"
+  if [ "$column_mode" != legacy-without-lock-columns ]; then
+    [ "$column_grant_count" = "${#verified_tables[@]}" ] || fail "maintenance row-lock column grants are incomplete"
   else
     [ "$column_grant_count" = 0 ] || fail "legacy maintenance role has unexpected row-lock grants"
   fi
@@ -147,6 +164,10 @@ verify_role() {
         ('public','competition_rate_limit_counters','reset_at'),
         ('public','competition_session_starts','expires_at'),
         ('public','competition_session_transitions','expires_at'),
+        ('public','competition_decision_states','expires_at'),
+        ('public','competition_decision_runs','expires_at'),
+        ('public','competition_decision_calls','run_id'),
+        ('public','competition_decision_chat_requests','run_id'),
         ('public','competition_sessions','expires_at'));")"
   [ "$unexpected" = 0 ] || fail "maintenance role has unapproved UPDATE on $unexpected columns"
   unexpected="$(psql_admin --tuples-only --no-align --command="
@@ -197,7 +218,9 @@ if [ "$role_count" = 1 ]; then
     printf '%s\n' "PostgreSQL security-state maintenance role is already exact."
     exit 0
   fi
-  verify_role legacy-without-lock-columns
+  if ! (verify_role legacy-v6 >/dev/null 2>&1); then
+    verify_role legacy-without-lock-columns
+  fi
   UPGRADE_LEGACY_ROLE=1
 else
   UPGRADE_LEGACY_ROLE=0
@@ -217,13 +240,31 @@ if [ "$UPGRADE_LEGACY_ROLE" -eq 1 ]; then
   : > "$BACKUP_DIR/rollback.sql"
   : > "$BACKUP_DIR/apply.sql"
   for table_name in "${cleanup_tables[@]}"; do
+    printf 'REVOKE SELECT,DELETE ON TABLE public.%s FROM "%s";\n' \
+      "$table_name" "$MAINTENANCE_ROLE" >> "$BACKUP_DIR/rollback.sql"
     printf 'REVOKE UPDATE (%s) ON TABLE public.%s FROM "%s";\n' \
       "${cleanup_lock_columns[$table_name]}" "$table_name" "$MAINTENANCE_ROLE" \
       >> "$BACKUP_DIR/rollback.sql"
+    printf 'GRANT SELECT,DELETE ON TABLE public.%s TO "%s";\n' \
+      "$table_name" "$MAINTENANCE_ROLE" >> "$BACKUP_DIR/apply.sql"
     printf 'GRANT UPDATE (%s) ON TABLE public.%s TO "%s";\n' \
       "${cleanup_lock_columns[$table_name]}" "$table_name" "$MAINTENANCE_ROLE" \
       >> "$BACKUP_DIR/apply.sql"
   done
+  # Preserve the exact pre-upgrade table and column grants for rollback. These
+  # are ACL identifiers only; no application rows or credentials are read.
+  psql_admin --tuples-only --no-align --command="
+    SELECT format('GRANT %s ON TABLE %I.%I TO %I;', acl.privilege_type, n.nspname, c.relname, '$MAINTENANCE_ROLE')
+      FROM pg_class c JOIN pg_namespace n ON n.oid=c.relnamespace
+      CROSS JOIN LATERAL aclexplode(c.relacl) acl
+     WHERE n.nspname='public' AND acl.grantee=(SELECT oid FROM pg_roles WHERE rolname='$MAINTENANCE_ROLE')
+    UNION ALL
+    SELECT format('GRANT %s (%I) ON TABLE %I.%I TO %I;', acl.privilege_type, a.attname, n.nspname, c.relname, '$MAINTENANCE_ROLE')
+      FROM pg_attribute a JOIN pg_class c ON c.oid=a.attrelid JOIN pg_namespace n ON n.oid=c.relnamespace
+      CROSS JOIN LATERAL aclexplode(a.attacl) acl
+     WHERE n.nspname='public' AND acl.grantee=(SELECT oid FROM pg_roles WHERE rolname='$MAINTENANCE_ROLE');" \
+    >> "$BACKUP_DIR/rollback.sql"
+
 else
 cat > "$BACKUP_DIR/rollback.sql" <<EOF
 DROP OWNED BY "$MAINTENANCE_ROLE";

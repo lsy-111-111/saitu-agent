@@ -1,0 +1,13 @@
+export function validateRegistrationConfig<T>(config: T): T;
+export function inspectPublicAdmission(admission: unknown, config: unknown): string[];
+export function verifyPublicAdmissionOriginals(admission: unknown, config: unknown, directory: string): Promise<any>;
+export function verifyPublicBatchOriginals(batch: any, originals: any[], scope: any, runtime: any): any;
+export function createRegistration(config: unknown, options: { repositoryRoot: string; evidenceRoot?: string; now?: string }): Promise<any>;
+export function verifyRegistration(registration: unknown, options: unknown): any;
+export function verifyImplementationManifest(repositoryRoot: string, expectedManifest: unknown, expectedSha256: string): Promise<{ files: number; sha256: string; actualSourceBytesVerified: boolean }>;
+export function readImplementationManifest(repositoryRoot: string): Promise<{ path: string; sha256: string }[]>;
+export const REGISTRATION_METADATA_FIELDS: readonly string[];
+export const REGISTRATION_CONFIG_FIELDS: readonly string[];
+export type { RankingReviewContract, RankingPanelMetadataVerification } from "./evaluation-ranking-panels.mjs";
+export function validateRegistrationMetadata<T>(registration: T): T;
+export function preflightScoringRegistration(options: { evidenceRoot: string; reference: { path: string; sha256: string; bytes?: number } }): Promise<any>;

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="description" content="BIOMOD Team Sendai">
+	<title>BIOMOD Team Sendai 2023</title>
+	<link rel="icon" href="images/logo.PNG">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="stylesheet" type="text/css" media="all" href="style.css">
+	<!--[if lt IE 9]>
+	<script src="js/html5.js"></script>
+	<script src="js/css3-mediaqueries.js"></script>
+	<![endif]-->
+	<script src="js/jquery1.4.4.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+
+<body>
+	<header id="header" role="banner">
+		<div class="inner">
+			<a href="index.html">
+				<div class="logo">
+					<img src="images/logo.PNG" width="80" height="80" alt="This is our team logo" align="left">
+					<strong>&thinsp;NanoStoma</strong>
+					<h1>&emsp;Team Sendai 2023</h1>
+				</div>
+			</a>
+			<nav id="mainNav">
+				<div class="inner">
+					<a class="menu" id="menu"><span>MENU</span></a>
+					<div class="panel">
+						<ul id="topnav">
+							<li><a href="project.html"><strong>Project</strong></a>
+								<ul class="sub-menu">
+									<li><a href="project.html#background">BACKGROUND</a></li>
+									<li><a href="project.html#problem">PROBLEM</a></li>
+									<li><a href="project.html#challege">CHALLENGES</a></li>
+									<li><a href="project.html#solution">SOLUTION</a></li>
+									<li><a href="project.html#goal">GOALS</a></li>
+									<li><a href="project.html#feasibility">FEASIBILITY</a></li>
+								</ul>
+							</li>
+							<li  class="current-menu-item"><a href="design.html"><strong>Design</strong></a>
+								<ul class="sub-menu">
+									<li><a href="design.html#overview">OVERVIEW</a></li>
+									<li><a href="design.html#structure">MAIN STRUCTURE</a></li>
+									<li><a href="design.html#self-stacking">SELF-STACKING</a></li>
+									<li><a href="design.html#slit">SLIT</a></li>
+								</ul>
+							</li>
+							<li><a href="experiment.html"><strong>Experiment</strong></a>
+								<ul class="sub-menu">
+									<li><a href="experiment.html#summary">SUMMARY</a></li>
+									<li><a href="experiment.html#structure">STRUCTURE</a></li>
+									<li><a href="experiment.html#stacking">STACKING</a></li>
+									<li><a href="experiment.html#locking">LOCKING MECHANISM</a></li>
+									<li><a href="experiment.html#cholesterol">CHOLESTEROL</a></li>
+									<li><a href="experiment.html#soap">SOAP BUBBLE</a></li>
+								</ul>
+							</li>
+							<li><a href="future.html"><strong>Future</strong></a></li>
+							<li><a href="elsi.html"><strong>ELSI</strong></a></li>    
+							<li><a href="team.html"><strong>Team </strong></a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<div id="wrapper">
+		<div>
+			<p class="page-jump"><a href="index.html">top page</a> >
+				Design
+			</p>
+		</div>
+
+		<section id="main">
+			<section class="content">
+				<h3 class="heading">DESIGN</h3>
+				<article class="post">
+					<h3 id="overview">OVERVIEW</h3>
+					<p>The NanoStoma is a square plate DNA origami structure with a built-in slit in the middle of it
+						that possesses a mechanism that allows it to open and close in response to light stimuli. The
+						concept focuses on the controllable creation of a tunnel-like hydrophobic environment that
+						allows movement of gas molecules. The structure would have the capability to be stacked and
+						implemented in a soap bubble’s membrane, effectively connecting the two regions inside and
+						outside of the bubble.
+					</p>
+					<p>The light-inducible functionality of the structure comes from the use of azobenzene-modified DNA,
+						which hybridizes or denatures depending on the 3D conformation of the inserted azobenzene, which
+						can be changed through exposure of specific wavelengths of light. The light exposure would then
+						trigger all the stacked monomers opening or closing, which effectively forms or abolishes the
+						hydrophobic tunnel. The stacking mechanism is highly adaptable as it is based on both
+						shape-shape complementarity through blunt-end stacking interactions and also sticky end
+						hybridization, allowing tailorable size depending on the thickness of the soap membrane used. In
+						addition, due to this mechanism, a standard curve of stacking effectiveness based on magnesium
+						ions can be easily created and reproduced just based on observation of formed structures.
+					</p>
+					<p>Our main structure comprises five layers of helix bundles, with the top and bottom ones being
+						optimized for the stacking functionality. The cross-section of the main layers features a
+						10-helix bundle with the 4th and 5th helices acting to form the central slit. The origami uses
+						the p8064 ssDNA as the scaffold and a total of 236 staple strands.
+					</p>
+					<figure class="table">
+						<img src="images/design/fig1.png" width="600" alt="fig1">
+						<figcaption>Fig 1. Overview of the main structure and the designed dimensions.</figcaption>
+					</figure>
+					<br clear="all" />
+
+					<h3 id="structure">THE MAIN STRUCTURE</h3>
+					<p>The main structure was designed using caDNAno. caDNAno is a software that specifically is aimed to be used to design DNA origami through a simplified interface that optimizes DNA origami design through ‘mapping’ of the single stranded scaffold strand and staple strands, along with their respective crossovers.
+					</p>
+					<p>The layers were made from a single DNA Origami with crossovers that were designed to fold the long single sheet into five distinct layers. The lattice type was set to the square lattice due to the need of precise folding of the layers to realize a continuous slit and proper shape complementarity to allow self-stacking. 
+					</p>
+					<p>Single-stranded circular M13 bacteriophage DNA, p8064, (8064nt) were used for the scaffold, while 20-53nt-long strands (average of 34nt) were used for the staples, which amount to a total of 236 strands. 
+					</p>
+					<figure class="table">
+						<img src="images/design/fig2.png" width="600" alt="fig2">
+						<figcaption>Fig 2. Overview of structure, designed in caDNAno.</figcaption>
+					</figure>
+					<p>In order to prevent unwanted lateral stacking/aggregation, all most-lateral helices that are not involved in the vertical stacking mechanism were modified to include 3nt-long thymine overhangs. In addition, to prevent excessive torque and twisting of the structure, we included base skips every 48 bases (shown by red X marks), which match the realistic correction needed that accounts for the 10.5 bases/helix turn of DNA.
+					</p>
+					<figure class="table">
+						<img src="images/design/fig3.png" width="500" alt="fig2">
+						<figcaption>Fig 3. Thymine overhangs to prevent lateral aggregation, designed in caDNAno.</figcaption>
+					</figure>
+					<p>After designing, we checked the stability of our structure using the finite element analysis tool, CanDo. 
+					</p>
+					<figure class="table">
+						<img src="images/design/gif/cando/video1.gif" width="270" alt="">
+						<img src="images/design/gif/cando/video2.gif" width="270" alt="">
+						<img src="images/design/gif/cando/video3.gif" width="270" alt="">
+					</figure>
+					<p>In addition, we also made use of the coarse-grained molecular dynamics software, oxDNA, to simulate the movement and vibrations of the DNA strands in our structure to see if they would indeed form the intended structure in a realistic water-based environment.
+					</p>
+					<figure class="table">
+						<img src="images/design/gif/oxdna/x_animate_cogli1.gif" width="500" alt="">		
+					</figure>
+					<br clear="all" />
+
+
+
+					<h3 id="self-stacking">THE SELF-STACKING BODY</h3>
+					<p>In order to facilitate self-stacking, we decided to make use of shape complementarity. More specifically, we implemented both pi-pi interactions and sticky end hybridization.
+					</p>
+					<figure class="table">
+						<img src="images/design/fig4.png" width="500" alt="fig4">
+						<figcaption>Fig 4. Concept of the self-stacking mechanism.</figcaption>
+					</figure>
+					<p>In caDNAno, we designed the top-most and bottom-most layer to have complementarity in twenty different spots (two 10-helix-wide regions). Based on the calculations provided by a previous paper, the twenty different stacking positions should give stabilization energy to the stacked region to a degree of at least 232 kcal/mol. We also predict that the resulting stabilization energy has more effect in stabilizing the structure when compared to making changes to the structure or mechanism in order to minimize entropy.
+					</p>	
+					<figure class="table">
+						<img src="images/design/fig5.png" width="350" alt="fig4">
+						<figcaption>Fig 5. Shape complementarity of top and bottom layer, designed in caDNAno.</figcaption>
+					</figure>
+					
+					<br clear="all" />
+
+					<h3 id="slit">THE SLIT</h3>
+					<p>To facilitate the main function of the NanoStoma, a central slit that opens a way between both ends of each monomer is needed. We ended up designing the central slit to have a width of around 10.9nm in its original state. The positioning of this opening was carefully made on each layer to perfectly line up when the layers finally stack together, creating what is essentially a four-helix-long tunnel.
+					</p>
+					<figure class="table">
+						<img src="images/design/fig6.png" width="350" alt="fig6">
+						<figcaption>Fig 6. The central slit in the structure, designed in caDNAno.</figcaption>
+					</figure>
+					<p>The slit spans four out of the five layers, the two inner ones being intended for blocker DNA and the outer ones for cholesterol integration. In order to facilitate these functional modifications, we added staple overhangs with specific sequences.
+					</p>
+					<figure class="table">
+						<img src="images/design/fig7.png" width="550" alt="fig7">
+						<figcaption>Fig 7. Map of functional modifications by layer.</figcaption>
+					</figure>
+					<p>DNA modified with a cholesteryl-TEG moiety on both 5’ and 3’ ends was designed to specifically anneal to the appropriate layers’ staple overhangs.
+					</p>
+					<figure class="table">
+						<img src="images/design/fig8.png" width="400" alt="fig8">
+						<figcaption>Fig 8. Design concept of integration of cholesterol-modified DNA.</figcaption>
+					</figure>
+					<p>For our final idea, we want the formation of the hydrophobic tunnel to be inducible by light. In this attempt, we have decided to use azobenzene-modified DNA. Azobenzene itself switches its conformation from the planar trans form to the non planar cis form when exposed to ultraviolet light. When integrated into DNA, the non-planar form prevents that local region of DNA to bind to another strand, denaturing the double helix. 
+					</p>
+					<figure class="table">
+						<img src="images/design/fig9.png" width="500" alt="fig9">
+						<figcaption>Fig 9. Design concept of azobenzene-based light inducibility of tunnel opening.</figcaption>
+					</figure>
+					<p>As such, we want to design the locking mechanism where the binding of the two middle strands connect the two staple overhangs. Within the hybridization region of the two strands, azobenzene moieties were to be integrated, therefore controlling the binding of these two strands, which therefore controls the opening and closing of the tunnel.
+					</p>
+					<figure class="table">
+						<img src="images/design/fig10.png" width="700" alt="fig10">
+						<figcaption>Fig 10. Designed strand conformations for light-inducible denaturation</figcaption>
+					</figure>
+					<p>Before moving on to actual synthesis of the azobenzene-modified strands, we would like to test the locking mechanism on itself first to see whether the appropriate binding is energetically favored, i.e. actually formed. In this pursuit, we decided to use toehold-mediated strand displacement (TMSD) to act as a proxy of our azobenzene light inducibility. In this proxy, the stimulus of opening is the introduction of another strand that hybridizes completely with the toehold-possessing strand, therefore being more energetically favored and causing the whole structure to dissociate into two parts.
+					</p>
+					<figure class="table">
+						<img src="images/design/fig11.png" width="600" alt="fig11">
+						<figcaption>Fig 11. Designed TMSD-based proxy to simulate the locking mechanism.</figcaption>
+					</figure>
+					<p>In order to maximize the chances of proper formation, we designed and tested our locking mechanism design using NUPACK. The NUPACK results came back positive with good equilibrium probabilities that our intended structures are formed and in a stable state.
+					</p>
+					<figure class="table">
+						<img src="images/design/fig12.png" width="600" alt="fig12">
+						<figcaption>Fig 12. NUPACK results of the TMSD-based proxy system.</figcaption>
+					</figure>
+					<br clear="all" />
+
+
+
+
+
+					<h3>REFERENCE</h3>
+						<p>Douglas SM, Marblestone AH, Teerapittayanon S, Vazquez A, Church GM, et al. Rapid prototyping  of 3D DNA-origami shapes with caDNAno. Nucleic Acids Res. 2009
+						</p>
+						<p>Douglas, S. et al. (2009) “Self-assembly of DNA into nanoscale three-dimensional shapes”. Nature, 459(7245): 414-418
+						</p>
+						<p>H. Dietz, S. M. Douglas, W. M. Shih, Folding DNA into twisted and curved nanoscale shapes. Science325, 725 (2009).
+						</p>
+						<p>Hernández-Ainsa, S., Bell, N. A. W., Thacker, V. V., Göpfrich, K., Misiunas, K., Fuentes-Perez, M. E., Moreno-Herrero, F., & Keyser, U. F. (2013). DNA Origami Nanopores for Controlling DNA Translocation. ACS Nano, 7(7), 6024–6030. https://doi.org/10.1021/nn401759r
+						</p>
+						<p>J. N. Zadeh, C. D. Steenberg, J. S. Bois, B. R. Wolfe, M. B. Pierce, A. R. Khan, R. M. Dirks, N. A. Pierce. NUPACK: analysis and design of nucleic acid systems. J Comput Chem, 32:170–173, 2011. 
+						</p>
+						<p>Karabıyık, H., Sevinçek, R.,& Karabıyık, H. (2014). π-Cooperativity effect on the base stacking interactions in DNA: is there a novel stabilization factor coupled with base pairing H-bonds? Physical Chemistry Chemical Physics, 16(29), 15527. https://doi.org/10.1039/c4cp00997e
+						</p>
+						<p>Mariurt, J. and Doty, P. (1961) “Thermal Renaturation of Deoxyribonucleic Acids”. Journal of Molecular Biology, 3: 585-594
+						</p>
+						<p>Lee, H., Dehez, F., Chipot, C., Lim, H.-K.,& Kim, H. (2019). Enthalpy–Entropy Interplay in π-Stacking Interaction of Benzene Dimer in Water. Journal of Chemical Theory and Computation, 15(3), 1538–1545. https://doi.org/10.1021/acs.jctc.8b00880
+						</p>
+						<p>P. W. K. Rothemund, Folding DNA to create nanoscale shapes and patterns. Nature 440, 297 (2006).
+						</p>
+						<p>Yoo, J.,& Aksimentiev, A. (2015). Molecular Dynamics of Membrane-Spanning DNA Channels: Conductance Mechanism, Electro-Osmotic Transport, and Mechanical Gating. The Journal of Physical Chemistry Letters, 6(23), 4680–4687. https://doi.org/10.1021/acs.jpclett.5b01964
+						</p>
+
+
+
+				</article>
+			</section>
+			<div class="pagenav">
+				<span class="prev"><a href="project.html" rel="prev">&laquo; preivous page</a></span>
+				<span class="next"><a href="analysis.html" rel="next">next page &raquo;</a></span>
+			</div>
+		</section>
+	</div>
+
+	<footer id="footer">
+		<div class="inner">
+			<article class="molbot"><a href="http://www.molbot.mech.tohoku.ac.jp/"><img src="images/molbot.png"
+						width="140" height="100" alt="molbot" align="right"></a></article>
+			<article class="copyright">Copyright&copy;2023 Team Sendai All Rights Reserved. Design by <a
+					href="http://f-tpl.com" target="_blank" rel="nofollow">http://f-tpl.com</a></article>
+			<article class="mail">Contact : <a
+					href="mailto:teamsendai2023&#64;gmail.com">teamsendai2023&#64;gmail.com</a></article>
+		</div>
+	</footer>
+
+</body>
+
+</html>

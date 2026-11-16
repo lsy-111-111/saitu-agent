@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "saitu.legacy-test-applicability.v7.1",
+  "policyVersion": "saitu.policy.2026-11-09.v7",
+  "policySha256": "b1b357f6906cb151022123e52f0b6aa52c9050541950bf6e95512c656caad19b",
+  "baselineSha256": "7a43956ffc9875fab1fa05e60252873a9cc84adb53fa1dd58f5313fbf32b5c1e",
+  "authorContextId": "/root/v7_evaluation",
+  "baselineCounts": {
+    "total": 1775,
+    "passed": 1673,
+    "failed": 26,
+    "pending": 76
+  },
+  "rows": [
+    {
+      "file": "tests/competitions/followup-gold-audit.test.ts",
+      "fullName": "static competition preference follow-up gold audit reaches each track oracle through V5 and proves both emitted branches are distinct",
+      "originalStatus": "failed",
+      "classification": "retired_v5_followup_contract",
+      "runtimeDefectUnderV7": false,
+      "originalEvidenceStatus": "failed_preserved",
+      "rationale": "V5 precomputed track-question paths and branch order do not govern the v7 full-pool LLM ranking; explicit constraints remain mandatory.",
+      "replacementTests": [
+        {
+          "file": "tests/competitions/v7/algorithm.test.ts",
+          "fullName": "v7 full-pool model-owned ranking sends the entire pool in one governed high call and preserves the LLM order"
+        },
+        {
+          "file": "tests/competitions/v7/algorithm.test.ts",
+          "fullName": "v7 full-pool model-owned ranking also includes the real matching pool without a hidden top-N shortlist"
+        },
+        {
+          "file": "tests/competitions/v7/profile.test.ts",
+          "fullName": "v7 clear correction and ambiguity adopts an unambiguous questionnaire text answer while keeping legacy normalization readable"
+        },
+        {
+          "file": "tests/competitions/v7/evaluation-contract.test.ts",
+          "fullName": "v7 same-invocation C reuse and ranking gates accepts a tied C/B family result without the retired .03 superiority gate"
+        }
+      ],
+      "requiredFormalEvidence": {
+        "schemaVersion": "saitu.evaluation-result.v7.1",
+        "cases": 800,
+        "rankingReports": 1200,
+        "status": "evaluation_gates_passed_requires_remaining_product_acceptance",
+        "verifiedOriginalBytes": true,
+        "syntheticEvidenceAllowed": false
+      },
+      "requiredSetDisposition": "pending_independent_applicability_review",
+      "releasePassClaim": false,
+      "originalFailureMessageSha256": "9a0a3dacfa8f744b54d63332215632212b34c4e8e60b5cf493bf34948c16ee0a",
+      "scopeCondition": "Only the v7 submitted-input/full-core model workflow is current; old v5/v6 saved records retain read compatibility."
+    },
+    {
+      "file": "tests/competitions/followup-gold-audit.test.ts",
+      "fullName": "static competition preference follow-up gold audit keeps every authored question material and its own branches outcome-distinct",
+      "originalStatus": "failed",
+      "classification": "retired_v5_followup_contract",
+      "runtimeDefectUnderV7": false,
+      "originalEvidenceStatus": "failed_preserved",
+      "rationale": "Fixed material-question branches were replaced by direct submitted input and clear correction adoption.",
+      "replacementTests": [
+        {
+          "file": "tests/competitions/v7/profile.test.ts",
+          "fullName": "v7 immediate self-report adoption uses submitted ability without requiring a concrete experience or another confirmation"
+        },
+        {
+          "file": "tests/competitions/v7/profile.test.ts",
+          "fullName": "v7 clear correction and ambiguity adopts an unambiguous questionnaire text answer while keeping legacy normalization readable"
+        },
+        {
+          "file": "tests/competitions/v7/profile.test.ts",
+          "fullName": "v7 clear correction and ambiguity applies 8-to-3 hours immediately and retains exact new hours plus the original wording"
+        },
+        {
+          "file": "tests/competitions/v7/durable-state.integration.test.ts",
+          "fullName": "v7 durable PostgreSQL state with no live provider rejects competing corrections and never publishes a late old worker result"
+        },
+        {
+          "file": "tests/competitions/recommendation-run-v7.test.tsx",
+          "fullName": "v7 list delivery and recovery boundaries rejects a stale version or changed identity while retaining delivered lists and detail"
+        }
+      ],
+      "requiredFormalEvidence": {
+        "schemaVersion": "saitu.evaluation-result.v7.1",
+        "cases": 800,
+        "rankingReports": 1200,
+        "status": "evaluation_gates_passed_requires_remaining_product_acceptance",
+        "verifiedOriginalBytes": true,
+        "syntheticEvidenceAllowed": false
+      },
+      "requiredSetDisposition": "pending_independent_applicability_review",
+      "releasePassClaim": false,
+      "originalFailureMessageSha256": "f8f59ee6d582dbeb9b46c7499facb562e012daf9405107450d21b7ca63882506",
+      "scopeCondition": "Only the v7 submitted-input/full-core model workflow is current; old v5/v6 saved records retain read compatibility."
+    },
+    {
+      "file": "tests/competitions/followup-gold-audit.test.ts",
+      "fullName": "static competition preference follow-up gold audit matches the authored fit and goal minimal member, relation and track oracles",
+      "originalStatus": "failed",
+      "classification": "retired_v5_ranking_oracle",
+      "runtimeDefectUnderV7": false,
+      "originalEvidenceStatus": "failed_preserved",
+      "rationale": "Exact V5 Top3 members/relations are a different policy target; v7 requires independent current-pool graded relevance and source-bound reasons.",
+      "replacementTests": [
+        {
+          "file": "tests/competitions/v7/algorithm.test.ts",
+          "fullName": "v7 full-pool model-owned ranking sends the entire pool in one governed high call and preserves the LLM order"
+        },
+        {
+          "file": "tests/competitions/v7/algorithm.test.ts",
+          "fullName": "v7 full-pool model-owned ranking also includes the real matching pool without a hidden top-N shortlist"
+        },
+        {
+          "file": "tests/competitions/v7/algorithm.test.ts",
+          "fullName": "v7 batch grounded explanations never allows explanation generation to reorder the C ranking"
+        },
+        {
+          "file": "tests/competitions/v7/evaluation-contract.test.ts",
+          "fullName": "v7 same-invocation C reuse and ranking gates accepts a tied C/B family result without the retired .03 superiority gate"
+        },
+        {
+          "file": "tests/competitions/v7/evaluation-contract.test.ts",
+          "fullName": "v7 raw scoring replacement gates derives the 800-case gates from raw bound observations and retains separate product acceptance"
+        }
+      ],
+      "requiredFormalEvidence": {
+        "schemaVersion": "saitu.evaluation-result.v7.1",
+        "cases": 800,
+        "rankingReports": 1200,
+        "status": "evaluation_gates_passed_requires_remaining_product_acceptance",
+        "verifiedOriginalBytes": true,
+        "syntheticEvidenceAllowed": false
+      },
+      "requiredSetDisposition": "pending_independent_applicability_review",
+      "releasePassClaim": false,
+      "originalFailureMessageSha256": "ef400b1a3e7386f9e80090d19eaac3322f51106ace51f5298d62c06e5c9f2ef1",
+      "scopeCondition": "Only the v7 submitted-input/full-core model workflow is current; old v5/v6 saved records retain read compatibility."
+    },
+    {
+      "file": "tests/competitions/followup-gold-audit.test.ts",
+      "fullName": "static competition preference follow-up gold audit keeps fit and goal answers qualification-invariant across the complete frozen snapshot",
+      "originalStatus": "failed",
+      "classification": "retired_v5_qualification_contract",
+      "runtimeDefectUnderV7": false,
+      "originalEvidenceStatus": "failed_preserved",
+      "rationale": "Current enrollment and qualification certification are retired; independently reliable audience conflicts and explicit student limits still require validation.",
+      "replacementTests": [
+        {
+          "file": "tests/competitions/v7/catalog.test.ts",
+          "fullName": "explicit audience and historical metadata requires independently reviewed metadata and exact confirmed user evidence for stable audience conflicts"
+        },
+        {
+          "file": "tests/competitions/v7/catalog.test.ts",
+          "fullName": "explicit audience and historical metadata never infers an audience exclusion from historical/current registration qualification alone"
+        },
+        {
+          "file": "tests/competitions/v7/algorithm.test.ts",
+          "fullName": "v7 batch grounded explanations honors explicit task refusal without excluding unknown readiness"
+        },
+        {
+          "file": "tests/competitions/v7/evaluation-contract.test.ts",
+          "fullName": "v7 independent 800-case policy migration requires same-layer replacement for retired registration and evidence-certification cases"
+        },
+        {
+          "file": "tests/competitions/v7/evaluation-contract.test.ts",
+          "fullName": "v7 raw scoring replacement gates derives the 800-case gates from raw bound observations and retains separate product acceptance"
+        }
+      ],
+      "requiredFormalEvidence": {
+        "schemaVersion": "saitu.evaluation-result.v7.1",
+        "cases": 800,
+        "rankingReports": 1200,
+        "status": "evaluation_gates_passed_requires_remaining_product_acceptance",
+        "verifiedOriginalBytes": true,
+        "syntheticEvidenceAllowed": false
+      },
+      "requiredSetDisposition": "pending_independent_applicability_review",
+      "releasePassClaim": false,
+      "originalFailureMessageSha256": "834654cbf3710d3022e64ae208f0cec140a9ee6f1d16f3c89be000f55ef0deb3",
+      "scopeCondition": "Only the v7 submitted-input/full-core model workflow is current; old v5/v6 saved records retain read compatibility."
+    },
+    {
+      "file": "tests/competitions/followup-gold-audit.test.ts",
+      "fullName": "static competition preference follow-up gold audit limits goal trade-offs to the authored 75/25 goalsOutputs refinement",
+      "originalStatus": "failed",
+      "classification": "retired_rule_score_formula",
+      "runtimeDefectUnderV7": false,
+      "originalEvidenceStatus": "failed_preserved",
+      "rationale": "The 75/25 numerical refinement belongs to the retired deterministic scorer, not the v7 model-owned order.",
+      "replacementTests": [
+        {
+          "file": "tests/competitions/v7/algorithm.test.ts",
+          "fullName": "v7 full-pool model-owned ranking sends the entire pool in one governed high call and preserves the LLM order"
+        },
+        {
+          "file": "tests/competitions/v7/algorithm.test.ts",
+          "fullName": "v7 batch grounded explanations never allows explanation generation to reorder the C ranking"
+        },
+        {
+          "file": "tests/competitions/v7/evaluation-contract.test.ts",
+          "fullName": "v7 same-invocation C reuse and ranking gates accepts a tied C/B family result without the retired .03 superiority gate"
+        }
+      ],
+      "requiredFormalEvidence": {
+        "schemaVersion": "saitu.evaluation-result.v7.1",
+        "cases": 800,
+        "rankingReports": 1200,
+        "status": "evaluation_gates_passed_requires_remaining_product_acceptance",
+        "verifiedOriginalBytes": true,
+        "syntheticEvidenceAllowed": false
+      },
+      "requiredSetDisposition": "pending_independent_applicability_review",
+      "releasePassClaim": false,
+      "originalFailureMessageSha256": "04c553e2d3ed843d0e7b5cba440f5e1a483afcaacd46a4660e6a2482971fe43d",
+      "scopeCondition": "Only the v7 submitted-input/full-core model workflow is current; old v5/v6 saved records retain read compatibility."
+    },
+    {
+      "file": "tests/competitions/followup-gold-audit.test.ts",
+      "fullName": "static competition preference follow-up gold audit allows reached track answers only from precomputed states and never upgrades needs_clarification",
+      "originalStatus": "failed",
+      "classification": "retired_confirmation_state_contract",
+      "runtimeDefectUnderV7": false,
+      "originalEvidenceStatus": "failed_preserved",
+      "rationale": "Precomputed qualification confirmation is retired; v7 adopts clear student answers while retaining unknown/negated states and correction isolation.",
+      "replacementTests": [
+        {
+          "file": "tests/competitions/v7/profile.test.ts",
+          "fullName": "v7 immediate self-report adoption uses submitted ability without requiring a concrete experience or another confirmation"
+        },
+        {
+          "file": "tests/competitions/v7/profile.test.ts",
+          "fullName": "v7 immediate self-report adoption adopts unknown and negated facts without manufacturing positive ability"
+        },
+        {
+          "file": "tests/competitions/v7/profile.test.ts",
+          "fullName": "v7 clear correction and ambiguity applies 8-to-3 hours immediately and retains exact new hours plus the original wording"
+        },
+        {
+          "file": "tests/competitions/v7/durable-state.integration.test.ts",
+          "fullName": "v7 durable PostgreSQL state with no live provider rejects competing corrections and never publishes a late old worker result"
+        },
+        {
+          "file": "tests/competitions/recommendation-run-v7.test.tsx",
+          "fullName": "v7 list delivery and recovery boundaries rejects a stale version or changed identity while retaining delivered lists and detail"
+        },
+        {
+          "file": "tests/competitions/v7/catalog.test.ts",
+          "fullName": "explicit audience and historical metadata requires independently reviewed metadata and exact confirmed user evidence for stable audience conflicts"
+        },
+        {
+          "file": "tests/competitions/v7/evaluation-contract.test.ts",
+          "fullName": "v7 raw scoring replacement gates derives the 800-case gates from raw bound observations and retains separate product acceptance"
+        }
+      ],
+      "requiredFormalEvidence": {
+        "schemaVersion": "saitu.evaluation-result.v7.1",
+        "cases": 800,
+        "rankingReports": 1200,
+        "status": "evaluation_gates_passed_requires_remaining_product_acceptance",
+        "verifiedOriginalBytes": true,
+        "syntheticEvidenceAllowed": false
+      },
+      "requiredSetDisposition": "pending_independent_applicability_review",
+      "releasePassClaim": false,
+      "originalFailureMessageSha256": "0dd44a1ee58d9cba292ad09c7d18fb1e5afe0574ec0833a19eced8fff4c551ea",
+      "scopeCondition": "Only the v7 submitted-input/full-core model workflow is current; old v5/v6 saved records retain read compatibility."
+    },
+    {
+      "file": "tests/competitions/gold-freeze-manifest.test.ts",
+      "fullName": "competition gold freeze manifest freezes the benchmark clock and every literal fixture source",
+      "originalStatus": "failed",
+      "classification": "historical_integrity_failure",
+      "runtimeDefectUnderV7": false,
+      "originalEvidenceStatus": "failed_preserved",
+      "rationale": "A frozen v5 verifier/source byte mismatch is a real historical integrity failure. It stays failed; the unchanged old artifact cannot certify today's v7 source.",
+      "replacementTests": [
+        {
+          "file": "tests/competitions/v7/evaluation-contract.test.ts",
+          "fullName": "v7 source freeze reads actual current source bytes and rejects a changed source mirror or manifest"
+        },
+        {
+          "file": "tests/competitions/v7/evaluation-contract.test.ts",
+          "fullName": "v7 same-invocation C reuse and ranking gates checks both arms and all 1200 original bindings before exposing 600 C observations"
+        }
+      ],
+      "requiredFormalEvidence": null,
+      "requiredSetDisposition": "pending_independent_applicability_review",
+      "releasePassClaim": false,
+      "originalFailureMessageSha256": "16fe6208c0744e5ee57523b549b1537ee51da5e9d083b3bd0627eee0f1930437",
+      "scopeCondition": "Only the v7 submitted-input/full-core model workflow is current; old v5/v6 saved records retain read compatibility."
+    },
+    {
+      "file": "tests/competitions/quality-benchmark.test.ts",
+      "fullName": "100-competition deterministic recommendation quality gates meets fixed-question and true V5 full-path ranking gates",
+      "originalStatus": "failed",
+      "classification": "retired_v5_ranking_oracle",
+      "runtimeDefectUnderV7": false,
+      "originalEvidenceStatus": "failed_preserved",
+      "rationale": "V5 fixed-question/full-path Top3 gates do not describe the v7 full-core B/C matrix. No old score is reinterpreted as a v7 pass.",
+      "replacementTests": [
+        {
+          "file": "tests/competitions/v7/algorithm.test.ts",
+          "fullName": "v7 full-pool model-owned ranking sends the entire pool in one governed high call and preserves the LLM order"
+        },
+        {
+          "file": "tests/competitions/v7/algorithm.test.ts",
+          "fullName": "v7 full-pool model-owned ranking also includes the real matching pool without a hidden top-N shortlist"
+        },
+        {
+          "file": "tests/competitions/v7/algorithm.test.ts",
+          "fullName": "v7 full-pool model-owned ranking rejects duplicate series, stale versions, fabricated sources and foreign student IDs"
+        },
+        {
+          "file": "tests/competitions/v7/evaluation-contract.test.ts",
+          "fullName": "v7 same-invocation C reuse and ranking gates accepts a tied C/B family result without the retired .03 superiority gate"
+        },
+        {
+          "file": "tests/competitions/v7/evaluation-contract.test.ts",
+          "fullName": "v7 raw scoring replacement gates derives the 800-case gates from raw bound observations and retains separate product acceptance"
+        }
+      ],
+      "requiredFormalEvidence": {
+        "schemaVersion": "saitu.evaluation-result.v7.1",
+        "cases": 800,
+        "rankingReports": 1200,
+        "status": "evaluation_gates_passed_requires_remaining_product_acceptance",
+        "verifiedOriginalBytes": true,
+        "syntheticEvidenceAllowed": false
+      },
+      "requiredSetDisposition": "pending_independent_applicability_review",
+      "releasePassClaim": false,
+      "originalFailureMessageSha256": "f20cd6b4719f8e47eae22781ec98ed156d40fb6769d67c12d294a97b9d063811",
+      "scopeCondition": "Only the v7 submitted-input/full-core model workflow is current; old v5/v6 saved records retain read compatibility."
+    },
+    {
+      "file": "tests/competitions/recommendation-quality.test.ts",
+      "fullName": "expert competition recommendation gold set keeps the expert top choice and hard-negative gates while filling three unique items",
+      "originalStatus": "failed",
+      "classification": "retired_exact_three_oracle",
+      "runtimeDefectUnderV7": false,
+      "originalEvidenceStatus": "failed_preserved",
+      "rationale": "Fixed Top1/exact-three completion is retired; unique-series contract, reliable conflicts and explicit exclusions remain covered in v7.",
+      "replacementTests": [
+        {
+          "file": "tests/competitions/v7/algorithm.test.ts",
+          "fullName": "v7 full-pool model-owned ranking rejects duplicate series, stale versions, fabricated sources and foreign student IDs"
+        },
+        {
+          "file": "tests/competitions/v7/algorithm.test.ts",
+          "fullName": "v7 batch grounded explanations honors explicit task refusal without excluding unknown readiness"
+        },
+        {
+          "file": "tests/competitions/v7/catalog.test.ts",
+          "fullName": "explicit audience and historical metadata requires independently reviewed metadata and exact confirmed user evidence for stable audience conflicts"
+        },
+        {
+          "file": "tests/competitions/recommendation-run-v7.test.tsx",
+          "fullName": "v7 list delivery and recovery boundaries renders a useful list and official links before any detail exists"
+        },
+        {
+          "file": "tests/competitions/v7/evaluation-contract.test.ts",
+          "fullName": "v7 same-invocation C reuse and ranking gates accepts a tied C/B family result without the retired .03 superiority gate"
+        },
+        {
+          "file": "tests/competitions/v7/evaluation-contract.test.ts",
+          "fullName": "v7 raw scoring replacement gates derives the 800-case gates from raw bound observations and retains separate product acceptance"
+        }
+      ],
+      "requiredFormalEvidence": {
+        "schemaVersion": "saitu.evaluation-result.v7.1",
+        "cases": 800,
+        "rankingReports": 1200,
+        "status": "evaluation_gates_passed_requires_remaining_product_acceptance",
+        "verifiedOriginalBytes": true,
+        "syntheticEvidenceAllowed": false
+      },
+      "requiredSetDisposition": "pending_independent_applicability_review",
+      "releasePassClaim": false,
+      "originalFailureMessageSha256": "f1c96e78c71516bd719175b8a933163d0bb41079fd1e6d5031015b30cb4668ed",
+      "scopeCondition": "Only the v7 submitted-input/full-core model workflow is current; old v5/v6 saved records retain read compatibility."
+    },
+    {
+      "file": "tests/competitions/recommendation-quality.test.ts",
+      "fullName": "expert competition recommendation gold set recovers fixed mechanical/hardware alternatives after the target is hard excluded",
+      "originalStatus": "failed",
+      "classification": "retired_v5_ranking_oracle",
+      "runtimeDefectUnderV7": false,
+      "originalEvidenceStatus": "failed_preserved",
+      "rationale": "Authored fixed mechanical alternatives assume the retired scoring policy; v7 uses full-pool relevance and independently reviewed applicable explicit exclusions.",
+      "replacementTests": [
+        {
+          "file": "tests/competitions/v7/algorithm.test.ts",
+          "fullName": "v7 batch grounded explanations honors explicit task refusal without excluding unknown readiness"
+        },
+        {
+          "file": "tests/competitions/v7/catalog.test.ts",
+          "fullName": "explicit audience and historical metadata requires independently reviewed metadata and exact confirmed user evidence for stable audience conflicts"
+        },
+        {
+          "file": "tests/competitions/v7/algorithm.test.ts",
+          "fullName": "v7 full-pool model-owned ranking also includes the real matching pool without a hidden top-N shortlist"
+        },
+        {
+          "file": "tests/competitions/v7/evaluation-contract.test.ts",
+          "fullName": "v7 same-invocation C reuse and ranking gates accepts a tied C/B family result without the retired .03 superiority gate"
+        },
+        {
+          "file": "tests/competitions/v7/evaluation-contract.test.ts",
+          "fullName": "v7 raw scoring replacement gates derives the 800-case gates from raw bound observations and retains separate product acceptance"
+        }
+      ],
+      "requiredFormalEvidence": {
+        "schemaVersion": "saitu.evaluation-result.v7.1",
+        "cases": 800,
+        "rankingReports": 1200,
+        "status": "evaluation_gates_passed_requires_remaining_product_acceptance",
+        "verifiedOriginalBytes": true,
+        "syntheticEvidenceAllowed": false
+      },
+      "requiredSetDisposition": "pending_independent_applicability_review",
+      "releasePassClaim": false,
+      "originalFailureMessageSha256": "a82ae893134a7865a02c033499e038f5b1cfc98b861fb489def47ad9772b26c5",
+      "scopeCondition": "Only the v7 submitted-input/full-core model workflow is current; old v5/v6 saved records retain read compatibility."
+    },
+    {
+      "file": "tests/competitions/scoring-gold-audit.test.ts",
+      "fullName": "static competition scoring gold audit places at least 90% of gold pairs inside their human-approved base-score intervals",
+      "originalStatus": "failed",
+      "classification": "retired_rule_score_interval",
+      "runtimeDefectUnderV7": false,
+      "originalEvidenceStatus": "failed_preserved",
+      "rationale": "Human-approved old numerical intervals remain old evidence. v7 does not emit that base score; its replacement is graded independent relevance, not a rescaled interval.",
+      "replacementTests": [
+        {
+          "file": "tests/competitions/v7/algorithm.test.ts",
+          "fullName": "v7 full-pool model-owned ranking sends the entire pool in one governed high call and preserves the LLM order"
+        },
+        {
+          "file": "tests/competitions/v7/algorithm.test.ts",
+          "fullName": "v7 batch grounded explanations never allows explanation generation to reorder the C ranking"
+        },
+        {
+          "file": "tests/competitions/v7/evaluation-contract.test.ts",
+          "fullName": "v7 same-invocation C reuse and ranking gates accepts a tied C/B family result without the retired .03 superiority gate"
+        },
+        {
+          "file": "tests/competitions/v7/evaluation-contract.test.ts",
+          "fullName": "v7 raw scoring replacement gates derives the 800-case gates from raw bound observations and retains separate product acceptance"
+        }
+      ],
+      "requiredFormalEvidence": {
+        "schemaVersion": "saitu.evaluation-result.v7.1",
+        "cases": 800,
+        "rankingReports": 1200,
+        "status": "evaluation_gates_passed_requires_remaining_product_acceptance",
+        "verifiedOriginalBytes": true,
+        "syntheticEvidenceAllowed": false
+      },
+      "requiredSetDisposition": "pending_independent_applicability_review",
+      "releasePassClaim": false,
+      "originalFailureMessageSha256": "b1fa76d87196d2f4b00d4d227ef62574edf18ac3a15141e47cb9355e4c708eac",
+      "scopeCondition": "Only the v7 submitted-input/full-core model workflow is current; old v5/v6 saved records retain read compatibility."
+    },
+    {
+      "file": "tests/competitions/strict-baseline-acceptance.test.ts",
+      "fullName": "honest scoring baseline policy retains the legacy exact-three and Top3-subset-of-Top10 quality gates for all original 125 inputs",
+      "originalStatus": "failed",
+      "classification": "retired_exact_three_oracle",
+      "runtimeDefectUnderV7": false,
+      "originalEvidenceStatus": "failed_preserved",
+      "rationale": "The mandatory three-item completion is retired; v7 permits honest shortfall while preserving identity, unique series and actual displayed-list scoring.",
+      "replacementTests": [
+        {
+          "file": "tests/competitions/recommendation-run-v7.test.tsx",
+          "fullName": "v7 list delivery and recovery boundaries renders a useful list and official links before any detail exists"
+        },
+        {
+          "file": "tests/competitions/v7/algorithm.test.ts",
+          "fullName": "v7 full-pool model-owned ranking rejects duplicate series, stale versions, fabricated sources and foreign student IDs"
+        },
+        {
+          "file": "tests/competitions/v7/algorithm.test.ts",
+          "fullName": "v7 full-pool model-owned ranking also includes the real matching pool without a hidden top-N shortlist"
+        },
+        {
+          "file": "tests/competitions/v7/evaluation-contract.test.ts",
+          "fullName": "v7 same-invocation C reuse and ranking gates accepts a tied C/B family result without the retired .03 superiority gate"
+        },
+        {
+          "file": "tests/competitions/v7/evaluation-contract.test.ts",
+          "fullName": "v7 raw scoring replacement gates derives the 800-case gates from raw bound observations and retains separate product acceptance"
+        }
+      ],
+      "requiredFormalEvidence": {
+        "schemaVersion": "saitu.evaluation-result.v7.1",
+        "cases": 800,
+        "rankingReports": 1200,
+        "status": "evaluation_gates_passed_requires_remaining_product_acceptance",
+        "verifiedOriginalBytes": true,
+        "syntheticEvidenceAllowed": false
+      },
+      "requiredSetDisposition": "pending_independent_applicability_review",
+      "releasePassClaim": false,
+      "originalFailureMessageSha256": "a1e0b1d665d6af0bddf92c589f476f872e099a48f7b25dee4c28b7bc48a4ccca",
+      "scopeCondition": "Only the v7 submitted-input/full-core model workflow is current; old v5/v6 saved records retain read compatibility."
+    },
+    {
+      "file": "tests/competitions/strict-baseline-acceptance.test.ts",
+      "fullName": "honest scoring baseline policy captures only when explicitly requested, then verifies the prospective baseline byte-for-byte",
+      "originalStatus": "failed",
+      "classification": "historical_integrity_failure",
+      "runtimeDefectUnderV7": false,
+      "originalEvidenceStatus": "failed_preserved",
+      "rationale": "The old prospective snapshot no longer matches current source/behavior. Do not recapture or change its hash to claim a pass; freeze new v7 evidence separately.",
+      "replacementTests": [
+        {
+          "file": "tests/competitions/v7/evaluation-contract.test.ts",
+          "fullName": "v7 source freeze reads actual current source bytes and rejects a changed source mirror or manifest"
+        },
+        {
+          "file": "tests/competitions/v7/evaluation-contract.test.ts",
+          "fullName": "v7 same-invocation C reuse and ranking gates checks both arms and all 1200 original bindings before exposing 600 C observations"
+        }
+      ],
+      "requiredFormalEvidence": null,
+      "requiredSetDisposition": "pending_independent_applicability_review",
+      "releasePassClaim": false,
+      "originalFailureMessageSha256": "6e54cfa0da6c08bf75ae02c1d185034b789072e0c61548825df8cd4ef6a727f0",
+      "scopeCondition": "Only the v7 submitted-input/full-core model workflow is current; old v5/v6 saved records retain read compatibility."
+    }
+  ],
+  "classifiedOriginalFailures": 13,
+  "historicalIntegrityFailures": 2,
+  "oldTestsDeleted": false,
+  "oldGoldChanged": false,
+  "oldFailuresConvertedToPass": false,
+  "independentReview": null,
+  "remainingScope": "Other current UI/privacy/catalog/ops defects are separate and must be fixed under their owners; this report does not exclude them.",
+  "qualityAcceptance": false
+}

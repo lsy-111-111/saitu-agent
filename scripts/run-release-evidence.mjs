@@ -33,6 +33,7 @@ const REQUIRED_PNPM_ENTRYPOINT = `${REQUIRED_RUNTIME_ROOT}/lib/runtime-tools/nod
 const REQUIRED_PNPM_PACKAGE = `${REQUIRED_RUNTIME_ROOT}/lib/runtime-tools/node_modules/pnpm/package.json`;
 const REQUIRED_COORDINATOR_PATH = "/usr/local/lib/resume-ai/run-release-evidence.mjs";
 const REQUIRED_DEEPSEEK_VERIFIER_PATH = "/usr/local/lib/resume-ai/release-evidence-deepseek-verifier.mjs";
+const REQUIRED_SPEND_CONTROL_PATH = "/usr/local/lib/resume-ai/release-evidence-spend.mjs";
 const REQUIRED_HTTP_PROBE_PATH = "/usr/local/lib/resume-ai/release-evidence-http-probe.mjs";
 const REQUIRED_WORK_PARENT = "/opt/resume-ai/build-staging";
 const REQUIRED_EVIDENCE_GENERATIONS_ROOT = "/var/lib/resume-ai/release-evidence-generations";
@@ -52,17 +53,20 @@ const TRUSTED_PATH = "/usr/sbin:/usr/bin:/sbin:/bin";
 const BUILDER_PATH = "/opt/nodejs/current/bin:/usr/bin:/bin";
 const SOURCE_MANIFEST_MEMBER = "scripts/run-release-evidence.mjs";
 const DEEPSEEK_VERIFIER_MEMBER = "scripts/lib/release-evidence-deepseek-verifier.mjs";
+const SPEND_CONTROL_MEMBER = "scripts/lib/release-evidence-spend.mjs";
 const HTTP_PROBE_MEMBER = "scripts/lib/release-evidence-http-probe.mjs";
 const REQUIRED_TESTS_PATH = "/usr/local/lib/resume-ai/release-required-tests.json";
 const REQUIRED_TESTS_MEMBER = "ops/config/release-required-tests.json";
-const REQUIRED_TEST_POLICY_SHA256 = "69e7f409a3a07b7bcec7805032041a18051b1ca7f8e3842787414af103947321";
+const REQUIRED_TEST_POLICY_SHA256 = "d8031d1299a5ad211bef18e0083d2db6ecd76080ac706379acdf0e5eb7152bae";
 const PROSPECTIVE_BASELINE_MEMBER = "tests/fixtures/competition-score-prospective-baseline.json";
-const DEPENDENCY_INPUT_MEMBERS = ["package.json", "pnpm-lock.yaml", "pnpm-workspace.yaml"];
+const DEPENDENCY_INPUT_MEMBERS = ["package.json", "pnpm-lock.yaml", "pnpm-workspace.yaml", "vitest.config.ts", "tests/fixtures/mock-spend-ledger.setup.ts"];
 const PROJECT_TOOLCHAIN_POLICY_ID = "resume-ai-project-toolchain.v1";
 const TRUSTED_DEPENDENCY_INPUTS = [
-  { path: "package.json", sha256: "d1af29380ea26fc3057eee45150b217f6d8163fee6625e293ac8796346cef488" },
-  { path: "pnpm-lock.yaml", sha256: "528fe4316b80f1cdc3665303b967d25fc01b43f55cde03a1b9eb4693bc362db7" },
-  { path: "pnpm-workspace.yaml", sha256: "e75f844f4a9a6e0f9b39809bf2e249625a3ce20590c40107f25dfa720aa451a5" }
+  { path: "package.json", sha256: "9cc16eab9219c3f1f6c944dcdf1cd8c13f2e9d2eadd297dcfc2cd195bca70260" },
+  { path: "pnpm-lock.yaml", sha256: "e2c3672ee797b690bba9f39ba9cb45ba55d13ed8b927bc392e67502309d4b0b9" },
+  { path: "pnpm-workspace.yaml", sha256: "43b2e5babda0acd9c89dfde3a92d8e5aeedd487a3b7e5c0b311984dc37f762d3" },
+  { path: "vitest.config.ts", sha256: "a32d057bc2e6fd44bb7b9e0df656794f6bd176bfa7232f4a5ac090ff4b9422a5" },
+  { path: "tests/fixtures/mock-spend-ledger.setup.ts", sha256: "496e4764ef52cb24c5f4b54221883936e9f28e609e6c20a0fb26b5e8358f8c9a" }
 ];
 const TRUSTED_PROJECT_TOOLS = [
   { id: "eslint", packageName: "eslint", packagePath: "node_modules/eslint", version: "8.57.1", binName: "eslint", binTarget: "bin/eslint.js" },
@@ -95,21 +99,44 @@ const HTML_REPORT_FILE_LIMIT_BYTES = 64 * 1024 * 1024;
 const HTML_REPORT_TOTAL_LIMIT_BYTES = 512 * 1024 * 1024;
 const HTML_REPORT_MEMBER_LIMIT = 20_000;
 const REQUIRED_TEST_CATEGORIES = new Set([
+  "desktop-e2e",
   "followups-0",
   "followups-1",
   "followups-2",
   "followups-3",
+  "mobile-e2e",
   "pure-text-max-10",
-  "shared-nat-50",
-  "threshold-429-recovery",
-  "token-forgery",
-  "token-expiry",
-  "token-replay",
-  "token-cross-session",
   "queue-full-fallback",
   "quota-config-consistency",
-  "desktop-e2e",
-  "mobile-e2e"
+  "shared-nat-50",
+  "threshold-429-recovery",
+  "token-cross-session",
+  "token-expiry",
+  "token-forgery",
+  "token-replay",
+  "v7-algorithm",
+  "v7-backend-review",
+  "v7-browser-desktop",
+  "v7-browser-mobile",
+  "v7-catalog",
+  "v7-chat-adoption",
+  "v7-chat-grounding",
+  "v7-crypto",
+  "v7-durable-state",
+  "v7-group-persistence",
+  "v7-governor-cap",
+  "v7-native-pg14",
+  "v7-profile",
+  "v7-release-evidence",
+  "v7-test-environment",
+  "v7-v7-worker-ops",
+  "v7-effort-release",
+  "v7-effort-persistence",
+  "v7-original-clock",
+  "v7-effort-evaluation",
+  "v7-effort-fixed-budget",
+  "v7-effort-browser",
+  "v7-provenance-boundary"
 ]);
 const REQUIRED_GATES = [
   "dependency-fetch",
@@ -127,7 +154,11 @@ const REQUIRED_GATES = [
   "required-tests"
 ];
 const REQUIRED_SIGNED_EVIDENCE_FILES = new Set([
+  "deepseek-budget-receipt.json",
   "dependency-provenance-receipt.json",
+  "worker-build-result.json",
+  "native-v7-postgres-result.json",
+  "validation-logs/native-v7-postgres.log",
   "e2e-result.json",
   "playwright-report.json",
   "pnpm-audit-result.json",
@@ -143,7 +174,7 @@ function fail(message) {
   throw new Error(message);
 }
 
-function parseArguments(argv) {
+export function parseArguments(argv) {
   const values = {};
   for (let index = 0; index < argv.length; index += 2) {
     const key = argv[index];
@@ -154,9 +185,9 @@ function parseArguments(argv) {
     if (Object.hasOwn(values, key)) fail(`duplicate argument: ${key}`);
     values[key] = value;
   }
-  const allowed = new Set(["--source-manifest", "--output", "--www-url"]);
+  const allowed = new Set(["--source-manifest", "--output", "--www-url", "--v6-delivery-output"]);
   for (const key of Object.keys(values)) if (!allowed.has(key)) fail(`unknown argument: ${key}`);
-  for (const key of allowed) if (!values[key]) fail(`missing argument: ${key}`);
+  for (const key of ["--source-manifest", "--output", "--www-url"]) if (!values[key]) fail(`missing argument: ${key}`);
   return values;
 }
 
@@ -698,7 +729,7 @@ export function parseRequiredTestManifest(bytes, sourceEntries) {
     if (pins.has(pin.path)) fail("required-test source pin is duplicated");
     pins.set(pin.path, pin.sha256);
   }
-  for (const config of ["playwright.config.ts", "vitest.config.ts"]) {
+  for (const config of ["playwright.config.ts", "vitest.config.ts", "tests/fixtures/mock-spend-ledger.setup.ts"]) {
     if (!pins.has(config)) fail(`required-test manifest does not pin ${config}`);
   }
 
@@ -764,15 +795,92 @@ export function parseRequiredTestManifest(bytes, sourceEntries) {
   };
 }
 
+// This input-only address is from the preserved v1 denominator, not new scores.
+// Changes to it require a separately reviewed control-plane generation.
+const PROSPECTIVE_INPUT_IDENTITY_SHA256 = "b12ad197eaa1022de4b05f7d093be23a8b4b7e768404ff4737f76a61f3d7c65b";
+const PROSPECTIVE_MEMBER_SETS = {
+  sourceSnapshot: "4178fc21d285be0fcd72b42a469f2679b8c8b42e793bf7cff53e9eab5fee9833",
+  datasets: "a6df65e070ed56cd2c0b3c88750af8e7d95623316133d226e27c32b0fa2db2f6"
+};
+
+export function validateProspectiveBaseline(value) {
+  const { artifactSha256, ...withoutArtifactHash } = value ?? {};
+  const digest = (input) => sha256(Buffer.from(canonicalJson(input)));
+  if (!['competition-score-prospective-baseline.v1', 'competition-score-prospective-baseline.v2'].includes(value?.schemaVersion)
+    || !/^[a-f0-9]{64}$/u.test(artifactSha256 ?? '') || artifactSha256 !== digest(withoutArtifactHash)) {
+    fail("prospective baseline candidate has an invalid canonical artifact hash");
+  }
+  // Preserve the existing v1 consumer contract. v2 records null exclusions and
+  // therefore needs explicit denominator and outcome validation before use.
+  if (value.schemaVersion === 'competition-score-prospective-baseline.v1') return value;
+  if (value.captureIntent !== 'forward-regression-denominator-only' || value.historicalComparisonAllowed !== false
+    || !Array.isArray(value.results) || value.results.length !== 125
+    || value.datasets?.anchorCaseCount !== 100 || value.datasets?.holdoutCaseCount !== 25) {
+    fail('prospective v2 must preserve the full forward-only denominator');
+  }
+  const identity = value.results.map(({ dataset, personaId, inputSha256, fixedCompetitionId }) => ({ dataset, personaId, inputSha256, fixedCompetitionId }));
+  if (digest(identity) !== PROSPECTIVE_INPUT_IDENTITY_SHA256) fail('prospective v2 changed a preserved input or fixed pair');
+  if (value.resultsSha256 !== digest(value.results)) fail('prospective v2 results hash mismatch');
+  for (const key of ['sourceSnapshot', 'datasets']) {
+    const snapshot = value[key];
+    if (snapshot?.algorithm !== 'sha256' || !Array.isArray(snapshot.files) || snapshot.files.length === 0
+      || new Set(snapshot.files.map(row => row.path)).size !== snapshot.files.length
+      || snapshot.files.some(row => typeof row.path !== 'string' || !/^(src|tests)\/[A-Za-z0-9_./-]+$/u.test(row.path)
+        || row.path.split('/').some(part => part === '.' || part === '..') || !/^[a-f0-9]{64}$/u.test(row.sha256 ?? ''))
+      || snapshot.snapshotSha256 !== digest([...snapshot.files].sort((a, b) => a.path.localeCompare(b.path)))) {
+      fail('prospective v2 content-addressed source or dataset snapshot is invalid');
+    }
+    if (digest(snapshot.files.map(row => row.path).sort((a, b) => a.localeCompare(b))) !== PROSPECTIVE_MEMBER_SETS[key]) {
+      fail('prospective v2 source or dataset member set changed');
+    }
+  }
+  const strings = (items) => Array.isArray(items) && items.every(item => typeof item === 'string' && item.trim().length > 0);
+  for (const row of value.results) {
+    if (!strings(row.top10) || row.top10.length > 10 || new Set(row.top10).size !== row.top10.length
+      || !strings(row.finalTop3) || row.finalTop3.length > 3 || new Set(row.finalTop3).size !== row.finalTop3.length) {
+      fail('prospective v2 has an invalid observed result list');
+    }
+    const qualification = row.fixedCompetitionQualification;
+    if (!qualification || !['eligible', 'needs_clarification', 'ineligible'].includes(qualification.status)
+      || !strings(qualification.reasons) || !strings(qualification.sourceRefs)) fail('prospective v2 qualification evidence is invalid');
+    if (row.fixedPairStatus === 'hard_excluded') {
+      if (row.fixedCompetitionDisplayedScore !== null || qualification.status !== 'ineligible'
+        || typeof qualification.hardFilterReason !== 'string' || !qualification.hardFilterReason.trim()
+        || qualification.reasons.length === 0 || qualification.sourceRefs.length === 0
+        || row.top10.includes(row.fixedCompetitionId) || row.finalTop3.includes(row.fixedCompetitionId)) {
+        fail('prospective v2 hard exclusion is not supported');
+      }
+    } else if (row.fixedPairStatus !== 'scored' || qualification.status === 'ineligible'
+      || !Number.isFinite(row.fixedCompetitionDisplayedScore) || row.fixedCompetitionDisplayedScore < 0
+      || row.fixedCompetitionDisplayedScore > 100) fail('prospective v2 scored outcome is invalid');
+  }
+  const aggregates = { scoreMeanSemantics: 'scored-pairs-only; hard-excluded pairs retained as null' };
+  for (const dataset of ['anchor', 'holdout']) {
+    const rows = value.results.filter(row => row.dataset === dataset);
+    const scored = rows.filter(row => row.fixedPairStatus === 'scored');
+    aggregates[`${dataset}FixedPairMean`] = scored.length ? scored.reduce((sum, row) => sum + row.fixedCompetitionDisplayedScore, 0) / scored.length : null;
+    aggregates[`${dataset}ScoredPairCount`] = scored.length;
+    aggregates[`${dataset}HardExcludedPairCount`] = rows.length - scored.length;
+  }
+  if (canonicalJson(value.aggregates) !== canonicalJson(aggregates)) fail('prospective v2 aggregate denominator or mean mismatch');
+  // Recording fewer than three recommendations does not pass the independent
+  // exact-three/subset quality tests. Those tests still run in the unit gate.
+  return value;
+}
+
 async function inspectProspectiveBaseline(sourceRoot) {
   const filename = path.join(sourceRoot, PROSPECTIVE_BASELINE_MEMBER);
   const artifact = await hashOrdinaryFile(filename, { maxBytes: REQUIRED_TEST_MANIFEST_LIMIT_BYTES, label: "prospective baseline candidate" });
   if (artifact.metadata.uid !== 0n || (artifact.metadata.mode & 0o7022n) !== 0n) fail("prospective baseline candidate is not root-frozen");
   let value;
   try { value = JSON.parse(artifact.bytes.toString("utf8")); } catch { fail("prospective baseline candidate is not JSON"); }
-  const { artifactSha256, ...withoutArtifactHash } = value ?? {};
-  if (value?.schemaVersion !== "competition-score-prospective-baseline.v1" || !/^[a-f0-9]{64}$/u.test(artifactSha256 ?? "") || artifactSha256 !== sha256(Buffer.from(canonicalJson(withoutArtifactHash)))) {
-    fail("prospective baseline candidate has an invalid canonical artifact hash");
+  validateProspectiveBaseline(value);
+  const { artifactSha256 } = value;
+  if (value.schemaVersion === 'competition-score-prospective-baseline.v2') {
+    for (const member of [...value.sourceSnapshot.files, ...value.datasets.files]) {
+      const source = await hashOrdinaryFile(path.join(sourceRoot, member.path), { label: 'prospective v2 bound source' });
+      if (source.sha256 !== member.sha256) fail(`prospective v2 bound source changed: ${member.path}`);
+    }
   }
   return {
     path: PROSPECTIVE_BASELINE_MEMBER,
@@ -1097,6 +1205,15 @@ async function prepareTrustedDependencies({
   await mkdir(controlRoot, { mode: 0o550 });
   await chown(controlRoot, 0, buildIdentity.gid);
   await chmod(controlRoot, 0o550);
+  // The fixed test setup is an execution input as well as a source pin. These
+  // directories are created only inside this new root-owned control tree;
+  // package fetch/install still runs --ignore-scripts and --ignore-pnpmfile.
+  for (const relative of ["tests", "tests/fixtures"]) {
+    const directory = path.join(controlRoot, relative);
+    await mkdir(directory, { mode: 0o550 });
+    await chown(directory, 0, buildIdentity.gid);
+    await chmod(directory, 0o550);
+  }
   const inputs = [];
   for (const relative of DEPENDENCY_INPUT_MEMBERS) {
     const reviewed = sourceState.entries.find((entry) => entry.relative === relative);
@@ -1453,13 +1570,21 @@ async function prepareBuilderView({ sourceRoot, sourceState, baseline, workRoot,
   }
 
   const mounts = {};
-  for (const [name, relative] of [["next", ".next"], ["nextE2e", ".next-e2e"], ["testResults", "test-results"], ["viteCache", "node_modules/.vite"]]) {
+  for (const [name, relative] of [["next", ".next"], ["worker", "dist"], ["nextE2e", ".next-e2e"], ["testResults", "test-results"], ["viteCache", "node_modules/.vite"]]) {
     await ensureReadOnlyViewDirectory(view, relative, buildIdentity);
     const output = path.join(writable, name);
     await mkdir(output, { mode: 0o700 });
     await chown(output, buildIdentity.uid, buildIdentity.gid);
     mounts[name] = { source: output, target: path.join(view, ...relative.split("/")) };
   }
+  // Test-generated public evidence is not a source input or a delivery member.
+  // The target starts empty; only the unit gate receives this extra bind.
+  await ensureReadOnlyViewDirectory(view, "artifacts", buildIdentity);
+  if ((await readdir(path.join(view, "artifacts"))).length !== 0) fail("unit artifact target must start empty");
+  const unitArtifactsSource = path.join(workRoot, "unit-artifacts");
+  await mkdir(unitArtifactsSource, { mode: 0o700 });
+  await chown(unitArtifactsSource, buildIdentity.uid, buildIdentity.gid);
+  const unitArtifacts = { source: unitArtifactsSource, target: path.join(view, "artifacts") };
   const home = path.join(writable, "home");
   await mkdir(home, { mode: 0o700 });
   await chown(home, buildIdentity.uid, buildIdentity.gid);
@@ -1468,6 +1593,7 @@ async function prepareBuilderView({ sourceRoot, sourceState, baseline, workRoot,
     writable,
     home,
     mounts,
+    unitArtifacts,
     browsers,
     tools,
     dependencyProvenance: trustedDependencies,
@@ -1615,6 +1741,66 @@ async function runSandboxed({
   return { result, rawLog: bytes, stdout: execution.stdout, stderr: execution.stderr };
 }
 
+const NATIVE_V7_ASSERTIONS = Object.freeze([
+  'runtime has v7 S/I/U without DELETE/TRUNCATE/DDL',
+  'actual read-only SQL accepts the complete migrated schema',
+  'read-only SQL rejects plaintext',
+  'read-only SQL rejects lost-call-parent',
+  'read-only SQL rejects lost-idempotency',
+  'read-only SQL rejects lost-cipher-cap',
+  'read-only SQL rejects missing full grant evidence predicate',
+  'read-only SQL rejects weakened full grant evidence predicate',
+  'Node cleanup respects child FKs and retains the paid ledger',
+  'installed SQL cleanup converges across committed batches without deleting spend',
+  'production app.env and PM2 clean env reach the actual high-grant gate; DB formal cap wins; zero dispatch',
+  'built worker stays paused before switch, activates, and pauses on rollback',
+  'worker exits cleanly on SIGTERM',
+]);
+const NATIVE_V7_EFFORT_ASSERTIONS = Object.freeze([...NATIVE_V7_ASSERTIONS, 'stage effort app.env and PM2 reach the actual policy-bound reserve gate; DB cap wins; zero dispatch']);
+const NATIVE_V7_TOP5_ASSERTIONS = Object.freeze([...NATIVE_V7_EFFORT_ASSERTIONS, 'top5 app.env and PM2 reach the actual LLL policy-bound reserve gate; DB cap wins; zero dispatch']);
+const NATIVE_V7_UNBOUNDED_ASSERTIONS = Object.freeze([...NATIVE_V7_TOP5_ASSERTIONS, 'user-unbounded app.env and PM2 reserve beyond finite caps while physical unknown holds remain protected; zero dispatch']);
+
+export function validateNativeV7PostgresEvidence(result, log, sourceHashes, workerBuild) {
+  const unbounded=sourceHashes.has("db/migrations/20261109_spend_user_unbounded_execution.sql"), top5 = sourceHashes.has("db/migrations/20261109_spend_v7_top5_policy.sql"), stage = sourceHashes.has("src/lib/ai/effort-policy.mjs") || Object.hasOwn(workerBuild,"effortPolicySha256"), assertions=unbounded?NATIVE_V7_UNBOUNDED_ASSERTIONS:top5?NATIVE_V7_TOP5_ASSERTIONS:stage?NATIVE_V7_EFFORT_ASSERTIONS:NATIVE_V7_ASSERTIONS;
+  if (!hasExactKeys(result, ["schemaVersion", "status", "database", "postgresVersion", "observations", "productionGrantChain", "workerBuild", "paidCalls", "productionTouched", "execution",...(stage?["stageGrantChain"]:[]),...(top5?["top5GrantChain"]:[]),...(unbounded?["userUnboundedGrantChain"]:[])])
+    || result.schemaVersion !== (unbounded?"saitu.v7-ops-local-evidence.v4":top5?"saitu.v7-ops-local-evidence.v3":stage?"saitu.v7-ops-local-evidence.v2":"saitu.v7-ops-local-evidence.v1") || result.status !== "passed"
+    || !/^saitu_v7_ops_[a-f0-9]{10}$/.test(result.database) || !/^14\./.test(result.postgresVersion)
+    || JSON.stringify(result.observations) !== JSON.stringify(assertions) || result.paidCalls !== 0 || result.productionTouched !== false)
+    fail("native v7 PostgreSQL14 evidence is incomplete or non-passing");
+  const grant = result.productionGrantChain;
+  if (!hasExactKeys(grant, ["syntheticGrantInDisposableDatabase", "phase", "configuredCalibrationCallLimit", "authoritativePgCallLimit", "authorizedReservations", "chargedMicros", "providerDispatches", "configurationOnlyNextSeal"])
+    || grant.syntheticGrantInDisposableDatabase !== true || grant.phase !== "formal" || grant.configuredCalibrationCallLimit !== 1
+    || grant.authoritativePgCallLimit !== 2 || grant.authorizedReservations !== 2 || grant.chargedMicros !== 0 || grant.providerDispatches !== 0 || grant.configurationOnlyNextSeal !== true)
+    fail("native v7 high-grant authority chain differs");
+  if (!hasExactKeys(result.workerBuild, ["sourceSha256", "artifactSha256",...(stage?["effortPolicySha256"]:[]),...(unbounded?["executionMode"]:[])])
+    || result.workerBuild.sourceSha256 !== workerBuild.sourceSha256 || result.workerBuild.artifactSha256 !== workerBuild.artifactSha256)
+    fail("native v7 worker differs from the uniform production build");
+  if(stage){const g=result.stageGrantChain;
+    if(!hasExactKeys(g,["syntheticGrantInDisposableDatabase","grantVersion","effortPolicySha256","rankEffort","authorizedReservations","chargedMicros","providerDispatches","configurationOnlyNextSeal"])||g.syntheticGrantInDisposableDatabase!==true||g.grantVersion!=="saitu.v7.effort.v1"||g.effortPolicySha256!==workerBuild.effortPolicySha256||result.workerBuild.effortPolicySha256!==workerBuild.effortPolicySha256||g.rankEffort!==workerBuild.effortPolicy?.rank||g.authorizedReservations!==2||g.chargedMicros!==0||g.providerDispatches!==0||g.configurationOnlyNextSeal!==true)fail("native stage effort authority chain differs");
+  }
+  if(top5){const g=result.top5GrantChain;
+    if(!hasExactKeys(g,["syntheticGrantInDisposableDatabase","grantVersion","effortPolicySha256","rankEffort","authorizedReservations","chargedMicros","providerDispatches","configurationOnlyNextSeal"])||g.syntheticGrantInDisposableDatabase!==true||g.grantVersion!=="saitu.v7.top5.v1"||g.effortPolicySha256!==workerBuild.effortPolicySha256||g.effortPolicySha256!=="04962f576d20346af8a8f076ce64fdbda5aea13fdbd2fae39f3c7456fe30aa48"||g.rankEffort!=="low"||g.authorizedReservations!==2||g.chargedMicros!==0||g.providerDispatches!==0||g.configurationOnlyNextSeal!==true)fail("native top5 authority chain differs");
+  }
+  if(unbounded){const g=result.userUnboundedGrantChain;
+    if(!hasExactKeys(g,["syntheticGrantInDisposableDatabase","grantVersion","executionMode","effortPolicySha256","rankEffort","authorizedReservations","chargedMicros","providerDispatches","configurationOnlyNextSeal","physicalUnknownHoldRejected"])||result.workerBuild.executionMode!=="user-unbounded"||workerBuild.executionMode!=="user-unbounded"||g.executionMode!=="user-unbounded"||g.syntheticGrantInDisposableDatabase!==true||g.grantVersion!=="saitu.v7.top5.user-unbounded.v1"||g.effortPolicySha256!==workerBuild.effortPolicySha256||g.rankEffort!=="low"||g.authorizedReservations!==3||g.chargedMicros!==0||g.providerDispatches!==0||g.configurationOnlyNextSeal!==true||g.physicalUnknownHoldRejected!==true)fail("native user-unbounded authority chain differs");
+  }
+  const execution = result.execution;
+  if (!hasExactKeys(execution, ["platform", "arch", "node", "source", "sourceSha256", "rawLogSha256"])
+    || execution.platform !== "linux" || execution.arch !== "x64" || execution.node !== "v24.20.0"
+    || execution.source !== "tests/deployment/v7-ops-postgres.test.mjs"
+    || execution.sourceSha256 !== sourceHashes.get(execution.source) || execution.rawLogSha256 !== sha256(log))
+    fail("native v7 source, runtime or raw-log binding differs");
+  const lines = log.toString("utf8").split(/\r?\n/).filter(Boolean);
+  if (JSON.stringify(lines.filter(line => line.startsWith("PASS ")).map(line => line.slice(5))) !== JSON.stringify(assertions))
+    fail("native v7 raw log lacks all required executed assertions");
+  const footers = lines.filter(line => line.startsWith("{")).map(line => { try { return JSON.parse(line); } catch { return null; } });
+  if (footers.length !== 1 || !hasExactKeys(footers[0], ["status", "observations", "paidCalls", "productionTouched", "result"])
+    || footers[0].status !== "passed" || footers[0].observations !== assertions.length || footers[0].paidCalls !== 0 || footers[0].productionTouched !== false
+    || !/^\/tmp\/saitu-v7-native-[A-Za-z0-9]+\/result\.json$/.test(footers[0].result))
+    fail("native v7 completion marker differs");
+  return true;
+}
+
 function secretFreeEnvironment(builder, overrides = {}) {
   return {
     HOME: builder.home,
@@ -1634,6 +1820,10 @@ function secretFreeEnvironment(builder, overrides = {}) {
     SUPABASE_URL: "",
     SUPABASE_SERVICE_ROLE_KEY: "",
     AI_API_KEY: "",
+    RUN_V7_DATABASE_TESTS: "0",
+    RUN_V7_NATIVE_POSTGRES_TESTS: "0",
+    V7_TEST_ADMIN_DATABASE_URL: "",
+    V7_TEST_RUNTIME_DATABASE_URL: "",
     AI_CONSENT_SALT: "synthetic-release-evidence-consent-salt-000000000000000000",
     AI_CONVERSATION_SIGNING_SECRET: "synthetic-release-evidence-signing-secret-0000000000000000",
     LOG_HASH_SECRET: "synthetic-release-evidence-log-secret-0000000000000000000",
@@ -1653,6 +1843,23 @@ function secretFreeEnvironment(builder, overrides = {}) {
   };
 }
 
+export function projectToolOutputSandbox(builder, name, toolId) {
+  const binding = builder.unitArtifacts;
+  const expectedSource = path.join(path.dirname(builder.writable), "unit-artifacts");
+  const expectedTarget = path.join(builder.view, "artifacts");
+  if (!binding || binding.source !== expectedSource || binding.target !== expectedTarget
+    || !path.isAbsolute(builder.view) || !path.isAbsolute(builder.writable)
+    || path.resolve(builder.view) !== builder.view || path.resolve(builder.writable) !== builder.writable
+    || path.resolve(binding.source) !== binding.source || path.resolve(binding.target) !== binding.target) fail("unit artifact output binding drift");
+  const binds = Object.values(builder.mounts);
+  const overlaps = (left, right) => left === right || left.startsWith(`${right}${path.sep}`) || right.startsWith(`${left}${path.sep}`);
+  if (binds.some(row => overlaps(row.target, expectedTarget) || overlaps(row.source, expectedSource))) fail("unit artifact output became a common mount");
+  if (name === "unit" && toolId !== "vitest") fail("unit artifact output requires the fixed unit test gate");
+  return { binds: name === "unit" ? [...binds, binding] : binds,
+    writablePaths: name === "unit" ? [builder.writable, binding.source] : [builder.writable],
+    inaccessiblePaths: name === "unit" ? [] : [`-${binding.source}`] };
+}
+
 async function runPnpmGate({ name, argv, builder, buildIdentity, workRoot, logPath, environment, networkAllow, hostsFile, joinUnit }) {
   return runSandboxed({
     name,
@@ -1664,15 +1871,16 @@ async function runPnpmGate({ name, argv, builder, buildIdentity, workRoot, logPa
     argv: [REQUIRED_PNPM_ENTRYPOINT, ...argv],
     semanticCommand: { executable: REQUIRED_NODE_PATH, argv: [REQUIRED_PNPM_ENTRYPOINT, ...argv] },
     logPath,
-    writablePaths: [builder.writable],
+    writablePaths: projectToolOutputSandbox(builder, name, undefined).writablePaths,
     readOnlyRoot: builder.view,
-    binds: Object.values(builder.mounts),
+    binds: projectToolOutputSandbox(builder, name, undefined).binds,
     privateNetwork: !networkAllow?.length,
     joinUnit,
     networkAllow,
     hostsFile,
     allowNamespaces: name === "production-e2e",
     inaccessiblePaths: [
+      ...projectToolOutputSandbox(builder, name, undefined).inaccessiblePaths,
       `-${builder.originalSourceRoot}`,
       `-${path.join(workRoot, "dependency-control")}`,
       `-${path.join(workRoot, "dependency-writable")}`,
@@ -1691,21 +1899,26 @@ async function runProjectToolGate({ name, toolId, argv, builder, buildIdentity, 
     cwd: builder.view,
     environment: secretFreeEnvironment(builder, environment),
     executable: REQUIRED_NODE_PATH,
-    argv: [tool.executable, ...argv],
+    argv: name === "production-build"
+      ? [path.join(builder.view, "scripts/competitions/v7/build-worker.mjs"), "--with-next", tool.executable]
+      : [tool.executable, ...argv],
     semanticCommand: {
       executable: REQUIRED_NODE_PATH,
-      argv: [`<frozen-node_modules>/${tool.relativePath}`, ...argv],
+      argv: name === "production-build"
+        ? ["<reviewed-source>/scripts/competitions/v7/build-worker.mjs", "--with-next", `<frozen-node_modules>/${tool.relativePath}`]
+        : [`<frozen-node_modules>/${tool.relativePath}`, ...argv],
       projectTool: toolId,
       executableSha256: tool.sha256
     },
     logPath,
-    writablePaths: [builder.writable],
+    writablePaths: projectToolOutputSandbox(builder, name, toolId).writablePaths,
     readOnlyRoot: builder.view,
-    binds: Object.values(builder.mounts),
+    binds: projectToolOutputSandbox(builder, name, toolId).binds,
     privateNetwork: true,
     joinUnit,
     allowNamespaces: name === "production-e2e",
     inaccessiblePaths: [
+      ...projectToolOutputSandbox(builder, name, toolId).inaccessiblePaths,
       `-${builder.originalSourceRoot}`,
       `-${path.join(workRoot, "dependency-control")}`,
       `-${path.join(workRoot, "dependency-writable")}`,
@@ -1879,7 +2092,7 @@ export function evaluateRequiredTestReports(contract, reports, sourceRoot) {
   };
 }
 
-function assertDeepSeekLog(raw) {
+function assertDeepSeekLog(raw, expectedVerifier = "release-evidence-deepseek.v2") {
   const required = new Set(["models", "competition_normalize", "competition_followup_policy", "competition_recommend"]);
   for (const line of raw.toString("utf8").split(/\r?\n/u)) {
     const candidate = line.trim();
@@ -1887,7 +2100,7 @@ function assertDeepSeekLog(raw) {
     try {
       const value = JSON.parse(candidate);
       if (value?.event !== "deepseek_preflight") continue;
-      if (value.status === "ok" && value.verifier === "release-evidence-deepseek.v1") required.delete(value.operation);
+      if (value.status === "ok" && value.verifier === expectedVerifier) required.delete(value.operation);
       if (value.status === "failed" || value.status === "skipped") fail("DeepSeek preflight did not execute fully");
     } catch (error) {
       if (error instanceof Error && error.message === "DeepSeek preflight did not execute fully") throw error;
@@ -1915,27 +2128,84 @@ async function createHostsFile(workRoot, label, hostAddresses) {
   return filename;
 }
 
-async function prepareDeepSeekCredential(workRoot) {
+export function parseReleaseEffortPolicy(value) {
+  if (!hasExactKeys(value,["version","rank","explain","review"]) || value.version !== "saitu.effort-policy.v1" || ["rank","explain","review"].some(stage => !["high","low"].includes(value[stage]))) fail("invalid release effort policy");
+  return {version:value.version,rank:value.rank,explain:value.explain,review:value.review};
+}
+export const releaseEffortPolicySha256 = value => sha256(Buffer.from(JSON.stringify(parseReleaseEffortPolicy(value))));
+export function productionBrowserBinding(workerBuild, effortEnvironment) {
+  if (!/^[a-f0-9]{64}$/.test(workerBuild?.sourceSha256 ?? "")) fail("production browser source binding is missing");
+  const unbounded=workerBuild.executionMode==="user-unbounded";
+  if(unbounded&&effortEnvironment.SAITU_AI_EXECUTION_MODE!=="user-unbounded"||!unbounded&&effortEnvironment.SAITU_AI_EXECUTION_MODE)fail("production browser execution mode differs");
+  const carriesEffort = Object.hasOwn(workerBuild, "effortPolicy") || Object.hasOwn(workerBuild, "effortPolicySha256");
+  if (carriesEffort) {
+    if (!hasExactKeys(effortEnvironment, ["SAITU_V7_EFFORT_POLICY", "SAITU_V7_EFFORT_POLICY_SHA256",...(unbounded?["SAITU_AI_EXECUTION_MODE"]:[])])) fail("production browser effort environment differs");
+    let policy; try { policy = parseReleaseEffortPolicy(JSON.parse(effortEnvironment.SAITU_V7_EFFORT_POLICY)); } catch { fail("production browser effort policy is invalid"); }
+    const fingerprint = releaseEffortPolicySha256(policy);
+    if (fingerprint !== effortEnvironment.SAITU_V7_EFFORT_POLICY_SHA256 || fingerprint !== workerBuild.effortPolicySha256 || releaseEffortPolicySha256(workerBuild.effortPolicy) !== fingerprint) fail("production browser effort differs from the uniform worker build");
+  } else if (!hasExactKeys(effortEnvironment, [])) fail("legacy production browser cannot accept an effort override");
+  return { ...effortEnvironment, SAITU_V7_SOURCE_SHA256: workerBuild.sourceSha256 };
+}
+export function preflightBudgetEnvironment(environment, requiresV7, expectedPolicySha256, requiresStage = false, requiresTop5 = false, requiresUnbounded = false) {
+  if (requiresTop5 && !requiresStage) fail("top5 release requires the explicit stage policy");
+  if(requiresUnbounded&&(!requiresTop5||environment.SAITU_AI_EXECUTION_MODE!=="user-unbounded")||!requiresUnbounded&&environment.SAITU_AI_EXECUTION_MODE&&environment.SAITU_AI_EXECUTION_MODE!=="finite")fail("release execution mode differs from its source authorization");
+  const spendRunId = String(environment.AI_SPEND_RUN_ID ?? "").trim();
+  const spendLimitCny = requiresUnbounded?"unbounded":String(environment.AI_SPEND_LIMIT_CNY ?? "300"), spendFundedCny = requiresUnbounded?"physical":String(environment.AI_SPEND_FUNDED_CNY ?? ""), spendPhase = String(environment.AI_SPEND_PHASE ?? "calibration");
+  if (!/^[a-zA-Z0-9._-]{1,100}$/.test(spendRunId) || !["calibration","formal","repair","performance","reserve"].includes(spendPhase) || !requiresUnbounded&&![spendLimitCny,spendFundedCny].every(value => Number.isFinite(Number(value)) && Number(value)>0 && Number.isSafeInteger(Math.floor(Number(value)*1e6)) && (requiresV7 || Number(value)<=300))) fail("shared spend limits, phase and run are required");
+  const profileArguments = [], effortEnvironment = {};
+  if (requiresStage) {
+    let policy;
+    try { policy = parseReleaseEffortPolicy(JSON.parse(environment.SAITU_V7_EFFORT_POLICY)); } catch { fail("release requires an explicit stage effort policy"); }
+    const policySha = releaseEffortPolicySha256(policy);
+    if (requiresTop5 && ["rank","explain","review"].some(key => policy[key] !== "low")) fail("top5 release requires the approved low/low/low policy");
+    if (!requiresV7 || !/^[a-f0-9]{64}$/.test(expectedPolicySha256 ?? "") || environment.AI_SPEND_POLICY_SHA256 !== expectedPolicySha256 || environment.AI_REASONING_EFFORT !== "high" || environment.AI_SPEND_AUTHORIZED_EFFORT !== "stage" || environment.SAITU_V7_EFFORT_POLICY_SHA256 !== policySha || !/^[a-f0-9]{64}$/.test(environment.AI_SPEND_EFFORT_CONDITION_SHA256 ?? "") || environment.AI_SPEND_HIGH_CONDITION_SHA256 || !new RegExp(`^saitu-v7-${requiresUnbounded?"top5-unbounded":requiresTop5?"top5":"effort"}-20261109-${spendPhase}-[0-9]{2}$`).test(spendRunId)) fail("stage preflight requires its separate effort grant and condition");
+    Object.assign(effortEnvironment,{SAITU_V7_EFFORT_POLICY:JSON.stringify(policy),SAITU_V7_EFFORT_POLICY_SHA256:policySha});
+    if(requiresUnbounded)effortEnvironment.SAITU_AI_EXECUTION_MODE="user-unbounded";
+    profileArguments.push("--profile",requiresUnbounded?"v7-top5-user-unbounded":requiresTop5?"v7-top5":"v7-effort","--authorized-effort","stage","--policy-sha256",expectedPolicySha256,"--condition-sha256",environment.AI_SPEND_EFFORT_CONDITION_SHA256,"--effort-policy",JSON.stringify(policy),"--effort-policy-sha256",policySha);
+  } else {
+    if (["SAITU_V7_EFFORT_POLICY","SAITU_V7_EFFORT_POLICY_SHA256","AI_SPEND_EFFORT_CONDITION_SHA256"].some(key => environment[key] !== undefined && environment[key] !== "")) fail("old preflight cannot consume a stage effort policy");
+    if (requiresV7) {
+      if (typeof expectedPolicySha256 !== "string" || !/^[a-f0-9]{64}$/.test(expectedPolicySha256) || environment.AI_SPEND_POLICY_SHA256 !== expectedPolicySha256 || environment.AI_REASONING_EFFORT !== "high" || environment.AI_SPEND_AUTHORIZED_EFFORT !== "high" || ![environment.AI_SPEND_POLICY_SHA256,environment.AI_SPEND_HIGH_CONDITION_SHA256].every(value => typeof value === "string" && /^[a-f0-9]{64}$/.test(value)) || !new RegExp(`^saitu-v7-20261109-${spendPhase}-[0-9]{2}$`).test(spendRunId)) fail("v7 fixed preflight requires the explicit high batch authorization");
+      profileArguments.push("--profile","v7-high","--authorized-effort","high","--policy-sha256",environment.AI_SPEND_POLICY_SHA256,"--condition-sha256",environment.AI_SPEND_HIGH_CONDITION_SHA256);
+    }
+  }
+  return {spendRunId,spendLimitCny,spendFundedCny,spendPhase,profileArguments,effortEnvironment,verifierId:requiresUnbounded?"release-evidence-deepseek.v7.top5.user-unbounded.v1":requiresTop5?"release-evidence-deepseek.v7.top5.v1":requiresStage?"release-evidence-deepseek.v7.effort.v1":requiresV7?"release-evidence-deepseek.v7.1":"release-evidence-deepseek.v2"};
+}
+
+async function prepareDeepSeekCredential(workRoot, requiresV7, expectedPolicySha256, requiresStage, requiresTop5, requiresUnbounded) {
   const apiKey = String(process.env.AI_API_KEY ?? "").trim();
   delete process.env.AI_API_KEY;
   if (apiKey.length < 16 || /[\r\n\t ]/u.test(apiKey)) fail("AI_API_KEY is required only for the fixed one-shot DeepSeek verifier");
-  const normalizeModel = String(process.env.AI_COMPETITION_NORMALIZE_MODEL ?? process.env.AI_MODEL ?? "deepseek-v4-pro").trim();
-  const recommendModel = String(process.env.AI_COMPETITION_RECOMMEND_MODEL ?? process.env.AI_MODEL ?? "deepseek-v4-pro").trim();
-  if (![normalizeModel, recommendModel].every((value) => /^[A-Za-z0-9._-]{1,128}$/u.test(value))) fail("DeepSeek model name is unsafe");
+  const normalizeModel = String(process.env.AI_COMPETITION_NORMALIZE_MODEL ?? process.env.AI_MODEL ?? "deepseek-flash").trim();
+  const recommendModel = String(process.env.AI_COMPETITION_RECOMMEND_MODEL ?? process.env.AI_MODEL ?? "deepseek-flash").trim();
+  if (![normalizeModel, recommendModel].every((value) => value === "deepseek-flash")) fail("fixed preflight requires deepseek-flash");
+  const budget = preflightBudgetEnvironment(process.env, requiresV7, expectedPolicySha256, requiresStage, requiresTop5, requiresUnbounded);
   const credential = path.join(workRoot, "deepseek.credential");
   await writeFile(credential, `${apiKey}\n`, { flag: "wx", mode: 0o400 });
   await chown(credential, 0, 0);
   await chmod(credential, 0o400);
-  return { credential, normalizeModel, recommendModel };
+  return { credential, normalizeModel, recommendModel, ...budget };
 }
 
-async function runFixedDeepSeek({ builder, verifyIdentity, workRoot, logPath, controlFile, verifierSha256 }) {
+async function runFixedDeepSeek({ builder, verifyIdentity, workRoot, logPath, controlFile, verifierSha256, spendControlSha256, budgetReceiptPath }) {
+  const permitFile=path.join(workRoot,"deepseek-budget-permit.json");
+  const budgetControl=async(command,extra=[])=>{
+    const execution=await spawnCaptured(REQUIRED_NODE_PATH,[REQUIRED_SPEND_CONTROL_PATH,command,"--permit",permitFile,"--verifier-sha256",verifierSha256,"--run-id",controlFile.spendRunId,"--limit-cny",controlFile.spendLimitCny,"--funded-cny",controlFile.spendFundedCny,"--phase",controlFile.spendPhase,...controlFile.profileArguments,...extra]);
+    if(execution.exitCode!==0)fail("protected shared-budget control failed; unknown reservations remain held");
+    return JSON.parse(execution.stdout.toString("utf8").trim());
+  };
+  let launched=false,prepared=false,permitSha256;
+
   await assertAccountIdle(verifyIdentity);
   const addresses = await resolveHost("api.deepseek.com");
   const hostsFile = await createHostsFile(workRoot, "api.deepseek.com", { "api.deepseek.com": addresses });
   const unit = `resume-ai-evidence-deepseek-${path.basename(workRoot).slice(-12)}.service`;
   const credentialPath = `/run/credentials/${unit}/deepseek-key`;
+  const budgetCredentialPath = `/run/credentials/${unit}/budget-permit`;
   try {
+    await budgetControl("reserve");prepared=true;
+    const claimed=await budgetControl("claim");launched=true;permitSha256=claimed.permitSha256;
+
     const result = await runSandboxed({
       name: "deepseek-preflight",
       unit,
@@ -1943,11 +2213,11 @@ async function runFixedDeepSeek({ builder, verifyIdentity, workRoot, logPath, co
       cwd: "/",
       environment: { PATH: BUILDER_PATH, NODE_ENV: "production" },
       executable: REQUIRED_NODE_PATH,
-      argv: [REQUIRED_DEEPSEEK_VERIFIER_PATH, credentialPath, controlFile.normalizeModel, controlFile.recommendModel],
+      argv: [REQUIRED_DEEPSEEK_VERIFIER_PATH, credentialPath, budgetCredentialPath, controlFile.normalizeModel, controlFile.recommendModel],
       semanticCommand: {
         executable: REQUIRED_NODE_PATH,
-        argv: [REQUIRED_DEEPSEEK_VERIFIER_PATH, "<systemd-credential>", controlFile.normalizeModel, controlFile.recommendModel],
-        verifierSha256
+        argv: [REQUIRED_DEEPSEEK_VERIFIER_PATH, "<systemd-credential>", "<systemd-budget-permit>", controlFile.normalizeModel, controlFile.recommendModel],
+        verifierSha256, spendControlSha256, permitSha256
       },
       logPath,
       writablePaths: [],
@@ -1955,13 +2225,19 @@ async function runFixedDeepSeek({ builder, verifyIdentity, workRoot, logPath, co
       privateNetwork: false,
       networkAllow: addresses,
       hostsFile,
-      credentials: [{ name: "deepseek-key", path: controlFile.credential }],
+      credentials: [{ name: "deepseek-key", path: controlFile.credential }, {name:"budget-permit",path:permitFile}],
       inaccessiblePaths: [`-${builder.view}`, `-${builder.writable}`]
     });
-    assertDeepSeekLog(result.stdout);
+    assertDeepSeekLog(result.stdout, controlFile.verifierId);
     return result;
   } finally {
-    await rm(controlFile.credential, { force: true });
+    try {
+      if(launched){
+        const logExists=await lstat(logPath).then(()=>true,()=>false);
+        if(logExists)await budgetControl("settle",["--log",logPath,"--output",budgetReceiptPath]);
+        // Missing logs after any possible launch deliberately leave the full reservations held.
+      }else if(prepared)await budgetControl("cancel").catch(()=>undefined);
+    }finally{await rm(controlFile.credential,{force:true});await rm(permitFile,{force:true});}
   }
 }
 
@@ -2120,11 +2396,12 @@ async function runManifestControl({ builder, buildIdentity, workRoot, expectedBy
     executable: "/bin/bash",
     argv: [path.join(builder.view, "ops/bin/create-release-source-manifest.sh"), builder.view],
     semanticCommand: { executable: "/bin/bash", argv: ["ops/bin/create-release-source-manifest.sh", "."] },
-    writablePaths: [builder.writable],
+    writablePaths: projectToolOutputSandbox(builder, `source-manifest-${suffix}`, undefined).writablePaths,
     readOnlyRoot: builder.view,
-    binds: Object.values(builder.mounts),
+    binds: projectToolOutputSandbox(builder, `source-manifest-${suffix}`, undefined).binds,
     privateNetwork: true,
     inaccessiblePaths: [
+      ...projectToolOutputSandbox(builder, `source-manifest-${suffix}`, undefined).inaccessiblePaths,
       `-${builder.originalSourceRoot}`,
       `-${path.join(workRoot, "dependency-control")}`,
       `-${path.join(workRoot, "dependency-writable")}`,
@@ -2162,7 +2439,20 @@ async function prepareEphemeralPostgres({ workRoot, buildIdentity }) {
     if (!metadata.isFile() || metadata.uid !== 0 || (metadata.mode & 0o022) !== 0) fail(`PostgreSQL test binary is not root-frozen: ${binary}`);
   }
   const id = randomUUID().replaceAll("-", "").slice(0, 16);
-  const data = path.join("/run", `resume-ai-evidence-pg-${id}`);
+  // The full v7 crash/retention suite can exceed Jammy's small /run tmpfs with
+  // PostgreSQL WAL. Use the installed dedicated identity's disk-backed home;
+  // it remains inaccessible to application identities and outside production PG.
+  const dataParent = "/var/lib/resume-ai-pgtest";
+  for (const ancestor of ["/var", "/var/lib"]) {
+    const metadata = await lstat(ancestor);
+    if (!metadata.isDirectory() || metadata.isSymbolicLink() || metadata.uid !== 0 || metadata.gid !== 0 || (metadata.mode & 0o022) !== 0)
+      fail("dedicated PostgreSQL test data ancestor is not root-controlled");
+  }
+  const parentMetadata = await lstat(dataParent);
+  if (!parentMetadata.isDirectory() || parentMetadata.isSymbolicLink() || await realpath(dataParent) !== dataParent
+    || parentMetadata.uid !== pgtestIdentity.uid || parentMetadata.gid !== pgtestIdentity.gid || (parentMetadata.mode & 0o777) !== 0o700)
+    fail("dedicated PostgreSQL test data parent is not private and identity-owned");
+  const data = path.join(dataParent, `resume-ai-evidence-pg-${id}`);
   await mkdir(data, { mode: 0o700 });
   await chown(data, pgtestIdentity.uid, pgtestIdentity.gid);
   const initUnit = `resume-ai-evidence-pginit-${id}.service`;
@@ -2229,6 +2519,7 @@ until pg_isready --dbname=postgres >/dev/null 2>&1; do
 done
 psql --dbname=postgres --no-psqlrc --set=ON_ERROR_STOP=1 --command="CREATE ROLE ${role} LOGIN NOSUPERUSER NOCREATEDB NOCREATEROLE NOINHERIT NOREPLICATION NOBYPASSRLS"
 psql --dbname=postgres --no-psqlrc --set=ON_ERROR_STOP=1 --command="CREATE DATABASE ${database} OWNER postgres"
+psql --dbname=${database} --no-psqlrc --set=ON_ERROR_STOP=1 --command="REVOKE CREATE ON SCHEMA public FROM PUBLIC; REVOKE CREATE,TEMPORARY ON DATABASE ${database} FROM PUBLIC"
 psql --dbname=postgres --no-psqlrc --set=ON_ERROR_STOP=1 --command="COPY (SELECT 1) TO PROGRAM 'id -u > ${data}/copy-program-uid; test ! -e /run/postgresql/.s.PGSQL.5432; test ! -r /var/lib/postgresql; test ! -r /etc/postgresql; test ! -e /opt/resume-ai/current; test ! -e /opt/resume-ai/releases'"
 `;
   try {
@@ -2419,12 +2710,20 @@ async function main() {
   const sourceState = await inspectSource(sourceRoot, manifestArtifact);
   const coordinatorSha256 = await verifyInstalledControlFile(REQUIRED_COORDINATOR_PATH, SOURCE_MANIFEST_MEMBER, sourceState);
   const deepseekVerifierSha256 = await verifyInstalledControlFile(REQUIRED_DEEPSEEK_VERIFIER_PATH, DEEPSEEK_VERIFIER_MEMBER, sourceState);
+  const spendControlSha256 = await verifyInstalledControlFile(REQUIRED_SPEND_CONTROL_PATH, SPEND_CONTROL_MEMBER, sourceState);
   const httpProbeSha256 = await verifyInstalledControlFile(REQUIRED_HTTP_PROBE_PATH, HTTP_PROBE_MEMBER, sourceState);
   const requiredTestsSha256 = await verifyInstalledControlFile(REQUIRED_TESTS_PATH, REQUIRED_TESTS_MEMBER, sourceState);
   const requiredTestsArtifact = await hashOrdinaryFile(REQUIRED_TESTS_PATH, { maxBytes: REQUIRED_TEST_MANIFEST_LIMIT_BYTES, label: "required-test manifest" });
   if (requiredTestsArtifact.sha256 !== requiredTestsSha256) fail("installed required-test manifest changed after control-file verification");
   const requiredTests = parseRequiredTestManifest(requiredTestsArtifact.bytes, sourceState.entries);
 
+  // Explicit V6 only: v5 retains its original artifact whitelist and gates.
+  let v6Delivery = null;
+  if (args["--v6-delivery-output"]) {
+    await verifyInstalledControlFile("/usr/local/lib/resume-ai/release-evidence-v6-contract.mjs", "scripts/lib/release-evidence-v6-contract.mjs", sourceState);
+    await verifyInstalledControlFile("/usr/local/lib/resume-ai/release-evidence-v6-delivery.mjs", "scripts/lib/release-evidence-v6-delivery.mjs", sourceState);
+    v6Delivery = await import("file:///usr/local/lib/resume-ai/release-evidence-v6-delivery.mjs");
+  }
   const workParent = await realpath(REQUIRED_WORK_PARENT);
   const buildIdentity = await accountIdentity(BUILD_ACCOUNT);
   const verifyIdentity = await accountIdentity(VERIFY_ACCOUNT);
@@ -2458,12 +2757,15 @@ async function main() {
   const output = await realpath(args["--output"]);
   if (output !== outputCandidate) fail("release evidence generation path changed while it was created");
   const runId = generationMatch[1];
+  if (v6Delivery && args["--v6-delivery-output"] !== `/var/lib/resume-ai/v6-delivery-generations/delivery-${runId}`) fail("V6 delivery output must use the same engineering generation UUID");
   const workRoot = path.join(workParent, `release-evidence-${runId}`);
   await mkdir(workRoot, { mode: 0o750 });
   await chown(workRoot, 0, buildIdentity.gid);
   const logs = path.join(output, "validation-logs");
   await mkdir(logs, { mode: 0o700 });
 
+  let engineeringSealed = false;
+  let v6BuildToken = null;
   try {
     const startedAt = isoNow();
     const requiredTestManifestEvidencePath = path.join(output, "release-required-tests.json");
@@ -2473,7 +2775,10 @@ async function main() {
       label: "required-test manifest evidence"
     });
     if (requiredTestManifestEvidence.sha256 !== requiredTestsSha256) fail("required-test manifest evidence copy differs from installed policy");
-    const deepseekControl = await prepareDeepSeekCredential(workRoot);
+    const requiresStage = sourceState.entries.some(row => row.relative === "src/lib/ai/effort-policy.mjs");
+    const requiresTop5 = sourceState.entries.some(row => row.relative === "db/migrations/20261109_spend_v7_top5_policy.sql");
+    const requiresUnbounded = sourceState.entries.some(row => row.relative === "db/migrations/20261109_spend_user_unbounded_execution.sql");
+    const deepseekControl = await prepareDeepSeekCredential(workRoot, sourceState.entries.some(row => row.relative === "scripts/competitions/v7/build-worker.mjs"), sourceState.entries.find(row => row.relative === (requiresUnbounded ? "docs/v7/top5-unbounded-execution-contract-20261109.md" : requiresTop5 ? "docs/v7/top5-continuation-contract-20261109.md" : requiresStage ? "docs/v7/effort-continuation-contract-20261109.md" : "docs/v7/implementation-contract.md"))?.sha256, requiresStage, requiresTop5, requiresUnbounded);
     const trustedDependencies = await prepareTrustedDependencies({
       sourceRoot,
       sourceState,
@@ -2506,7 +2811,9 @@ async function main() {
     }
 
     const unitBuilderPath = path.join(builder.writable, "vitest-unit-result.json");
-    const unit = await runProjectToolGate({
+    let unit;
+    try {
+      unit = await runProjectToolGate({
       name: "unit",
       toolId: "vitest",
       argv: ["run", "--reporter=json", `--outputFile=${unitBuilderPath}`],
@@ -2515,7 +2822,12 @@ async function main() {
       workRoot,
       logPath: path.join(logs, "unit.log"),
       environment: { RUN_POSTGRES_SECURITY_STATE_TESTS: "0", RUN_DEEPSEEK_LIVE: "0" }
-    });
+      });
+    } finally {
+      // Discard the separate unit output before any later gate can run; no
+      // production build/PG/browser gate or signed delivery imports these bytes.
+      await rm(builder.unitArtifacts.source, { recursive: true, force: true });
+    }
     const unitArtifact = await publishMachineFile(unitBuilderPath, path.join(output, "vitest-unit-result.json"));
     unit.result.stats = parseVitestBytes(unitArtifact.bytes, { allowSkipped: true });
     unit.result.machineResultSha256 = unitArtifact.sha256;
@@ -2529,9 +2841,17 @@ async function main() {
       buildIdentity,
       workRoot,
       logPath: path.join(logs, "production-build.log"),
-      environment: { NODE_ENV: "production", NEXT_DIST_DIR: ".next" }
+      environment: { NODE_ENV: "production", NEXT_DIST_DIR: ".next", ...deepseekControl.effortEnvironment }
     });
     gates.push(build.result);
+    const workerBuild = await publishMachineFile(path.join(builder.mounts.worker.source, "decision-worker/manifest.json"), path.join(output, "worker-build-result.json"));
+    const workerReceipt = JSON.parse(workerBuild.bytes.toString("utf8"));
+    if(requiresUnbounded&&workerReceipt.executionMode!=="user-unbounded")fail("worker execution mode differs from the authorized release configuration");
+    const workerBytes = await hashOrdinaryFile(path.join(builder.mounts.worker.source, "decision-worker/worker.mjs"), { label: "built decision worker" });
+    const nextBinding = await hashOrdinaryFile(path.join(builder.mounts.next.source, "decision-worker-binding.json"), { label: "Next-worker build binding" });
+    if (requiresStage && (workerReceipt.effortPolicySha256 !== deepseekControl.effortEnvironment.SAITU_V7_EFFORT_POLICY_SHA256 || releaseEffortPolicySha256(workerReceipt.effortPolicy) !== workerReceipt.effortPolicySha256)) fail("worker effort policy differs from the authorized release configuration");
+    if (workerReceipt.schemaVersion !== "saitu.worker-build.v7" || workerReceipt.artifactSha256 !== workerBytes.sha256 || workerReceipt.nextBindingSha256 !== nextBinding.sha256) fail("worker build output does not match its source-bound receipt");
+    if (v6Delivery) v6BuildToken = v6Delivery.captureProductionBuild({ sourceState, buildRoot: builder.mounts.next.source, workerRoot: path.join(builder.mounts.worker.source, "decision-worker") });
 
     const registryAddresses = await resolveHost("registry.npmjs.org");
     const registryHosts = await createHostsFile(workRoot, "registry.npmjs.org", { "registry.npmjs.org": registryAddresses });
@@ -2556,14 +2876,14 @@ async function main() {
     audit.result.machineResultSha256 = (await hashOrdinaryFile(auditResultPath)).sha256;
     gates.push(audit.result);
 
-    let postgresArtifact;
+    let postgresArtifact, nativePostgresEvidence;
     const postgres = await prepareEphemeralPostgres({ workRoot, buildIdentity });
     try {
       const postgresBuilderPath = path.join(builder.writable, "vitest-postgres-result.json");
       const postgresGate = await runProjectToolGate({
         name: "postgres-integration",
         toolId: "vitest",
-        argv: ["run", "tests/security/competition-shared-state-postgres.integration.test.ts", "--reporter=json", `--outputFile=${postgresBuilderPath}`],
+        argv: ["run", "tests/security/competition-shared-state-postgres.integration.test.ts", "tests/competitions/v7/backend-review.integration.test.ts", "tests/competitions/v7/durable-state.integration.test.ts", "tests/competitions/v7/group-worker.integration.test.ts", "tests/ai/reservation-scope.integration.test.ts", "tests/ai/v7-effort-durable-postgres.integration.test.ts", "tests/deployment/v7-effort-fixed-postgres.integration.test.ts", "tests/ai/v7-top5-durable-postgres.integration.test.ts", "tests/deployment/v7-native-postgres.integration.test.ts", "--maxWorkers=1", "--no-file-parallelism", "--hookTimeout=120000", "--testTimeout=30000", "--reporter=json", `--outputFile=${postgresBuilderPath}`],
         builder,
         buildIdentity,
         workRoot,
@@ -2571,13 +2891,23 @@ async function main() {
         environment: {
           RUN_POSTGRES_SECURITY_STATE_TESTS: "1",
           POSTGRES_SECURITY_STATE_TEST_DATABASE_URL: postgres.adminUrl,
-          POSTGRES_SECURITY_STATE_RUNTIME_DATABASE_URL: postgres.runtimeUrl
+          POSTGRES_SECURITY_STATE_RUNTIME_DATABASE_URL: postgres.runtimeUrl,
+          RUN_V7_DATABASE_TESTS: "1",
+          RUN_V7_NATIVE_POSTGRES_TESTS: "1",
+          V7_TEST_ADMIN_DATABASE_URL: postgres.adminUrl,
+          V7_TEST_RUNTIME_DATABASE_URL: postgres.runtimeUrl,
+          V7_NATIVE_EVIDENCE_DIRECTORY: path.join(builder.writable, "native-v7-postgres"),
+          ...deepseekControl.effortEnvironment
         },
         joinUnit: postgres.serverUnit
       });
       postgresArtifact = await publishMachineFile(postgresBuilderPath, path.join(output, "vitest-postgres-result.json"));
       postgresGate.result.stats = parseVitestBytes(postgresArtifact.bytes, { allowSkipped: false });
       postgresGate.result.machineResultSha256 = postgresArtifact.sha256;
+      const nativePostgres = await publishMachineFile(path.join(builder.writable, "native-v7-postgres/native-v7-postgres-result.json"), path.join(output, "native-v7-postgres-result.json"));
+      const nativePostgresLog = await publishMachineFile(path.join(builder.writable, "native-v7-postgres/native-v7-postgres.log"), path.join(logs, "native-v7-postgres.log"));
+      validateNativeV7PostgresEvidence(JSON.parse(nativePostgres.bytes.toString("utf8")), nativePostgresLog.bytes, new Map(sourceState.entries.map(entry => [entry.relative, entry.sha256])), workerReceipt);
+      nativePostgresEvidence = { artifact: "native-v7-postgres-result.json", sha256: nativePostgres.sha256, rawLog: "validation-logs/native-v7-postgres.log", rawLogSha256: nativePostgresLog.sha256 };
       gates.push(postgresGate.result);
     } finally {
       await postgres.cleanup();
@@ -2589,8 +2919,11 @@ async function main() {
       workRoot,
       logPath: path.join(logs, "deepseek-preflight.log"),
       controlFile: deepseekControl,
-      verifierSha256: deepseekVerifierSha256
+      verifierSha256: deepseekVerifierSha256,
+      spendControlSha256,budgetReceiptPath:path.join(output,"deepseek-budget-receipt.json")
     });
+    const spendReceipt=await hashOrdinaryFile(path.join(output,"deepseek-budget-receipt.json"),{maxBytes:CONTROL_FILE_LIMIT_BYTES,label:"shared budget receipt"});
+    deepseek.result.budgetReceipt="deepseek-budget-receipt.json";deepseek.result.budgetReceiptSha256=spendReceipt.sha256;
     gates.push(deepseek.result);
 
     const jsonBuilderPath = path.join(builder.writable, "playwright-report.json");
@@ -2605,6 +2938,7 @@ async function main() {
       logPath: path.join(logs, "production-e2e.log"),
       environment: {
         E2E_PRODUCTION: "1",
+        ...productionBrowserBinding(workerReceipt, deepseekControl.effortEnvironment),
         PLAYWRIGHT_JSON_OUTPUT_NAME: jsonBuilderPath,
         PLAYWRIGHT_HTML_OUTPUT_DIR: htmlBuilderPath,
         PLAYWRIGHT_HTML_OPEN: "never",
@@ -2754,6 +3088,9 @@ async function main() {
     if (finalDependencyProvenanceReceipt.sha256 !== trustedDependencies.receiptSha256) {
       fail("dependency provenance receipt changed during release validation");
     }
+    const finalWorker = await hashOrdinaryFile(path.join(builder.mounts.worker.source, "decision-worker/worker.mjs"), { label: "final decision worker" });
+    const finalWorkerManifest = await hashOrdinaryFile(path.join(builder.mounts.worker.source, "decision-worker/manifest.json"), { label: "final decision worker manifest" });
+    if (finalWorker.sha256 !== workerBytes.sha256 || finalWorkerManifest.sha256 !== workerBuild.sha256) fail("decision worker changed after the production build gate");
 
     const completedAt = isoNow();
     const validation = {
@@ -2764,6 +3101,8 @@ async function main() {
       sourceManifestSha256: sourceState.sourceManifestSha256,
       sourceModeManifestSha256: sourceState.sourceModeManifestSha256,
       sourceModeMemberCount: sourceState.sourceModeMemberCount,
+      workerBuild: { artifact: "worker-build-result.json", sha256: workerBuild.sha256 },
+      nativePostgres: nativePostgresEvidence,
       prospectiveBaselineCandidate: {
         path: baseline.path,
         byteSha256: baseline.byteSha256,
@@ -2806,9 +3145,34 @@ async function main() {
       sourceState,
       coordinatorSha256
     });
+    engineeringSealed = true;
+    if (v6Delivery) {
+      const delivery = v6Delivery.prepareDelivery(v6BuildToken, { sourceRoot, workRoot, output: args["--v6-delivery-output"], runId, engineeringRoot: output, modulesRoot: path.join(builder.view, "node_modules"), buildIdentity });
+      const environment = secretFreeEnvironment({ ...builder, home: delivery.home }, { NODE_ENV: "production" });
+      const common = { identity: buildIdentity, cwd: delivery.runtime, environment, executable: REQUIRED_NODE_PATH, writablePaths: [path.join(delivery.runtime, "node_modules"), delivery.home, delivery.store], readOnlyRoot: delivery.runtime, privateNetwork: true };
+      const prune = await runSandboxed({ ...common, name: "v6-delivery-prune", unit: `resume-ai-v6-prune-${runId}`, argv: [REQUIRED_PNPM_ENTRYPOINT, ...v6Delivery.PRUNE_ARGUMENTS, `--store-dir=${delivery.store}`], semanticCommand: { executable: REQUIRED_NODE_PATH, argv: [REQUIRED_PNPM_ENTRYPOINT, ...v6Delivery.PRUNE_ARGUMENTS, "--store-dir=<generation-store>"] }, logPath: delivery.log });
+      const dependencies = await runSandboxed({ ...common, name: "v6-delivery-production-dependencies", unit: `resume-ai-v6-dependencies-${runId}`, argv: [REQUIRED_PNPM_ENTRYPOINT, "list", "--prod", "--depth=0", "--json"], semanticCommand: { executable: REQUIRED_NODE_PATH, argv: [REQUIRED_PNPM_ENTRYPOINT, "list", "--prod", "--depth=0", "--json"] }, logPath: delivery.dependenciesLog });
+      v6Delivery.sealDelivery(v6BuildToken, { prune, dependencies });
+    }
     process.stdout.write(`${output}\n`);
   } catch (error) {
-    await writeEvidenceFailure(output, error).catch(() => undefined);
+    // Do not add bytes to the already signed, exact v5 artifact set if the new
+    // V6 delivery step fails. No successful V6 completion is emitted.
+    if (!engineeringSealed) await writeEvidenceFailure(output, error).catch(() => undefined);
+    else if (v6Delivery) {
+      // No filesystem operation may use caller delivery output after a failed
+      // path guard. Keep diagnostics on the controller's existing stderr FD;
+      // the original exception remains authoritative if diagnostics also fail.
+      try {
+        process.stderr.write("v6_delivery_failed_after_engineering_seal\n");
+        for (const name of ["prune.log", "dependencies.log"]) {
+          // workRoot is the root-controlled exclusive staging directory created
+          // before any build account runs, not the rejected delivery output.
+          const failureLog = await hashOrdinaryFile(path.join(workRoot, "v6-delivery", name), { label: "V6 failure log" }).catch(() => null);
+          if (failureLog) process.stderr.write(`${JSON.stringify({ schemaVersion: "saitu.v6-delivery-failure-log.v1", name, sha256: failureLog.sha256, bytes: failureLog.bytes.length, encoding: "base64", data: failureLog.bytes.toString("base64") })}\n`);
+        }
+      } catch { /* Never replace the original failure or write a fallback path. */ }
+    }
     throw error;
   } finally {
     if (!workRoot.startsWith(`${workParent}${path.sep}release-evidence-`)) fail("unsafe release-evidence cleanup target");

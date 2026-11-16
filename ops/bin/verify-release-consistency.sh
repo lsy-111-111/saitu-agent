@@ -112,4 +112,20 @@ runuser -u resume-ai -- env -i HOME=/var/lib/resume-ai PM2_HOME="$PM2_HOME" \
   "$ACTIVE_PORT" "$ACTIVE_RELEASE" "$PREVIOUS_PORT" "$PREVIOUS_RELEASE" \
   /etc/resume-ai/app.env /etc/resume-ai/quota.env
 
+for slot in "$ACTIVE_RELEASE:active:$ACTIVE_PORT" "$PREVIOUS_RELEASE:paused:$PREVIOUS_PORT"; do
+  [ -f "$RELEASE_ROOT/$ACTIVE_RELEASE/scripts/competitions/v7/worker-entry.ts" ] || break
+  IFS=: read -r release status worker_port <<< "$slot"
+  [ "$release" != none ] || continue
+  [ -f "$RELEASE_ROOT/$release/scripts/competitions/v7/worker-entry.ts" ] || continue
+  /opt/nodejs/current/bin/node "$SCRIPT_DIR/verify-decision-worker-build.mjs" "$RELEASE_ROOT/$release" >/dev/null
+  worker_pid="$(/opt/nodejs/current/bin/node -e 'const fs=require("node:fs");const entries=JSON.parse(fs.readFileSync(process.argv[1],"utf8"));const matching=entries.filter(entry=>entry.name===process.argv[2]);if(matching.length!==1||!Number.isInteger(matching[0].pid)||matching[0].pid<1)process.exit(2);process.stdout.write(String(matching[0].pid));' "$temp_dir/live.json" "resume-ai-worker-$worker_port")" \
+    || fail "decision worker PID is missing or ambiguous for $release"
+  deadline=$((SECONDS + 15))
+  until /opt/nodejs/current/bin/node "$SCRIPT_DIR/verify-decision-worker-health.mjs" \
+    "$RELEASE_ROOT/$release" "$status" --pid "$worker_pid" >/dev/null 2>&1; do
+    [ "$SECONDS" -lt "$deadline" ] || fail "decision worker health failed for $release ($status)"
+    sleep 1
+  done
+done
+
 printf '%s\n' "$ACTIVE_RELEASE:$ACTIVE_PORT:$PREVIOUS_RELEASE:$PREVIOUS_PORT"

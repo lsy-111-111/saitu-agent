@@ -495,11 +495,11 @@ describe("competition recommendation conversation flow", () => {
     });
   });
 
-  it("requires both fields in the combined experience-and-evidence turn", () => {
+  it("accepts self-reported experience without requiring evidence materials", () => {
     const turn = fixedQuestionTurns.find((item) => item.id === "experienceLevel")!;
     const profile: DraftCompetitionProfile = { experienceLevel: "participated" };
 
-    expect(isTurnComplete(turn, profile)).toBe(false);
+    expect(isTurnComplete(turn, profile)).toBe(true);
     expect(isTurnComplete(turn, profile, { experienceLevel: "有一份课程项目报告" })).toBe(true);
     expect(turnAnswerLabel(turn, profile, { experienceLevel: "有一份课程项目报告" })).toContain(
       "补充：有一份课程项目报告"

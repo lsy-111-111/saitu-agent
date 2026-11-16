@@ -1,0 +1,90 @@
+{
+  "createdAt": "2026-11-05T11:51:47.154030+00:00",
+  "independentReview": false,
+  "sources": [
+    {
+      "sourceId": "lanqiao-c3-rules",
+      "url": "https://webadm.suse.edu.cn/_upload/article/files/db/ce/8c33934f4d00ac940f42f84d62f5/57a90821-ccb9-4ddb-955a-89a8e3a333b3.rar",
+      "retrievedAt": "2026-11-05T11:51:20.024701+00:00",
+      "independentReview": false,
+      "status": "captured_bytes_not_verified",
+      "finalUrl": "https://webadm.suse.edu.cn/_upload/article/files/db/ce/8c33934f4d00ac940f42f84d62f5/57a90821-ccb9-4ddb-955a-89a8e3a333b3.rar",
+      "sha256": "bc58356bb01f436d14f9bce7a9b92070a9363dbe16e4282360449559de1b6531",
+      "bytes": 1829923,
+      "contentType": "application/x-rar-compressed;charset=UTF-8",
+      "artifact": "artifacts/v6/content-research/source-byte-snapshots/bc58356bb01f436d14f9bce7a9b92070a9363dbe16e4282360449559de1b6531.bin",
+      "limitation": "HTTP success or a byte digest does not establish that a document is a usable rule or that facts are true; reviewers must open and read it."
+    },
+    {
+      "sourceId": "lanqiao-c3-h",
+      "url": "https://acm.ecnu.edu.cn/contest/515/statements/",
+      "retrievedAt": "2026-11-05T11:51:20.025101+00:00",
+      "independentReview": false,
+      "status": "captured_bytes_not_verified",
+      "finalUrl": "https://acm.ecnu.edu.cn/contest/515/statements/",
+      "sha256": "5f790cfbae199558b808a73b0d6372c6e11aab86ff82d95dabce80627e855b95",
+      "bytes": 150837,
+      "contentType": "application/pdf",
+      "artifact": "artifacts/v6/content-research/source-byte-snapshots/5f790cfbae199558b808a73b0d6372c6e11aab86ff82d95dabce80627e855b95.pdf",
+      "limitation": "HTTP success or a byte digest does not establish that a document is a usable rule or that facts are true; reviewers must open and read it."
+    },
+    {
+      "sourceId": "putnam-c3-rules",
+      "url": "https://maa.org/wp-content/uploads/2026/08/2026-Putnam-Policies.pdf",
+      "retrievedAt": "2026-11-05T11:51:20.025253+00:00",
+      "independentReview": false,
+      "status": "unavailable",
+      "reason": "ValueError: curl_transport_failed:  Left  Speed\n\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n  0  1540    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\ncurl: (56) The requested URL returned error: 403\n"
+    },
+    {
+      "sourceId": "putnam-c3-home",
+      "url": "https://maa.org/putnam-/",
+      "retrievedAt": "2026-11-05T11:51:21.866602+00:00",
+      "independentReview": false,
+      "status": "unavailable",
+      "reason": "ValueError: curl_transport_failed:  Left  Speed\n\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n  0  1325    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\ncurl: (56) The requested URL returned error: 403\n"
+    },
+    {
+      "sourceId": "putnam-c3-a1",
+      "url": "https://maa.org/wp-content/uploads/2026/02/2025OfficialSolutions.pdf",
+      "retrievedAt": "2026-11-05T11:51:21.977638+00:00",
+      "independentReview": false,
+      "status": "unavailable",
+      "reason": "ValueError: curl_transport_failed: Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n  0  1545    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\ncurl: (56) The requested URL returned error: 403\n"
+    },
+    {
+      "sourceId": "ccsp-c4-notice",
+      "url": "https://ccsp.ccf.org.cn/ccsp/Bulletin/2025-09-15/848571.shtml",
+      "retrievedAt": "2026-11-05T11:51:22.962372+00:00",
+      "independentReview": false,
+      "status": "captured_bytes_not_verified",
+      "finalUrl": "https://ccsp.ccf.org.cn/ccsp/Bulletin/2025-09-15/848571.shtml",
+      "sha256": "edeef98d27b72071e174b659467433f53d19a2fb9aae5b20a7a942aac2bb058d",
+      "bytes": 98513,
+      "contentType": "text/html",
+      "artifact": "artifacts/v6/content-research/source-byte-snapshots/edeef98d27b72071e174b659467433f53d19a2fb9aae5b20a7a942aac2bb058d.html",
+      "limitation": "HTTP success or a byte digest does not establish that a document is a usable rule or that facts are true; reviewers must open and read it."
+    },
+    {
+      "sourceId": "ccsp-c4-archive",
+      "url": "https://ccsp.ccf.org.cn/ccsp/bkzq/zlxz/",
+      "retrievedAt": "2026-11-05T11:51:23.559611+00:00",
+      "independentReview": false,
+      "status": "captured_bytes_not_verified",
+      "finalUrl": "https://ccsp.ccf.org.cn/ccsp/bkzq/zlxz/",
+      "sha256": "55b4621b8e12fd5158322e5cfdfe818e19ba51b8732bb9f3894ab90630e0f723",
+      "bytes": 56811,
+      "contentType": "text/html",
+      "artifact": "artifacts/v6/content-research/source-byte-snapshots/55b4621b8e12fd5158322e5cfdfe818e19ba51b8732bb9f3894ab90630e0f723.html",
+      "limitation": "HTTP success or a byte digest does not establish that a document is a usable rule or that facts are true; reviewers must open and read it."
+    },
+    {
+      "sourceId": "ccsp-c4-xor",
+      "url": "https://www.ccf.org.cn/ccf/contentcore/resource/download?ID=F43386642EF7A3E5563DD082AC261ED3E17E72083F2FC299A3BD8AB50C7B6EC4",
+      "retrievedAt": "2026-11-05T11:51:23.693383+00:00",
+      "independentReview": false,
+      "status": "unavailable",
+      "reason": "ValueError: curl_transport_failed: 6M    0     0  1082k      0 --:--:--  0:00:20 --:--:-- 1180k\n100 22.9M    0 22.9M    0     0  1094k      0 --:--:--  0:00:21 --:--:-- 1200k\n100 23.8M    0 23.8M    0     0  1090k      0 --:--:--  0:00:22 --:--:-- 1136k\ncurl: (63) Exceeded the maximum allowed file size (25000000) with 25000000 bytes\n"
+    }
+  ]
+}

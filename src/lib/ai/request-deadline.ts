@@ -65,6 +65,19 @@ export function remainingDeadlineMs(deadlineEpochMs: number) {
   return Math.max(0, Math.floor(deadlineEpochMs - Date.now()));
 }
 
+/** v6 reserves time for deterministic fallback, persistence and the final response. */
+export function capDecisionRequestDeadlines(base: CompetitionRequestDeadlines): CompetitionRequestDeadlines {
+  const at = (deadline: number, duration: number) => Math.min(deadline, base.startedAtEpochMs + duration);
+  return {
+    startedAtEpochMs: base.startedAtEpochMs,
+    aiDeadlineEpochMs: at(base.aiDeadlineEpochMs, 38_000),
+    producerDeadlineEpochMs: at(base.producerDeadlineEpochMs, 40_000),
+    finalizeDeadlineEpochMs: at(base.finalizeDeadlineEpochMs, 42_000),
+    duplicateWaitDeadlineEpochMs: at(base.duplicateWaitDeadlineEpochMs, 44_000),
+    responseDeadlineEpochMs: at(base.responseDeadlineEpochMs, 45_000)
+  };
+}
+
 export function deadlineHasElapsed(deadlineEpochMs: number) {
   return remainingDeadlineMs(deadlineEpochMs) <= 0;
 }

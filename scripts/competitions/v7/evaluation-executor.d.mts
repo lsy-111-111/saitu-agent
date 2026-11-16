@@ -1,0 +1,12 @@
+export const EXECUTOR_VERSION: string;
+export const PRODUCT_OPERATIONS: readonly string[];
+export function providerCapacityFeedback(result: any, actualDispatch?: boolean, timing?: { elapsedMs: number; budgetMs: number }): any;
+export function loadActualProductModules(): Promise<any>;
+export function executeProductOperation(item: any, options: any): Promise<any>;
+export function executeGroupedReportV7(context: any, options: any): Promise<any>;
+export function executeObservedProduct(item: any, options: any): Promise<any>;
+export function checkpointInvocation(directory: string, identity: unknown, work: (journal: (record: unknown) => void) => Promise<any>): Promise<any>;
+export function acquireCoordinatorLock(directory: string, identity: unknown, recoverSha256?: string | null): Promise<() => Promise<void>>;
+export function runBoundedSlotQueue(slots: any[], options: { concurrency: number; run: (slot: any, index: number) => Promise<any>; onCheckpoint?: (outcomes: any[]) => Promise<void> }): Promise<{ outcomes: any[]; failures: any[] }>;
+export function checkpointRegisteredInvocation(directory: string, identity: unknown, scope: unknown, work: (journal: (record: unknown) => void) => Promise<any>, admitNewAttempt?: () => boolean): Promise<any>;
+export function deriveProfilePools(options: any): Promise<any[]>;

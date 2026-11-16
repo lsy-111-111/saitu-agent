@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "saitu.legacy-historical-evidence-lock.v7.1",
+  "purpose": "unchanged authored fixtures and historical manifest/baseline; not v7 ranking gold",
+  "fileSha256": {
+    "tests/fixtures/competition-followup-gold.ts": "7072b0f2fc9eb84c825d536f84120ab8a3b99245fdf175c512699c742c461962",
+    "tests/fixtures/competition-free-text-samples.ts": "1c5d769b64eb3ad7a508ccb06d96a8d9c9bb159ac05019af0cec89d9baebea5d",
+    "tests/fixtures/competition-gold-freeze-manifest.ts": "12e55abd85d6c80e55379bb30ea597d85f33c771bce8283538f0f0e7bd481fb7",
+    "tests/fixtures/competition-historical-baseline-limitation.json": "91a31d730db0c744553b2393b3282b54531718f962b9fc5be1f6c4f11997aaa9",
+    "tests/fixtures/competition-preference-oracle.ts": "130daf4c33ad3cc4a0b716ecb834aaad9e4684ff3f99e0f4af86d1915bed4d0a",
+    "tests/fixtures/competition-quality-anchors-1.ts": "f95ab4bbfcdaf3fda4f8b10166dc368ef43e437dfb662bcd1df47bad003e8c0e",
+    "tests/fixtures/competition-quality-anchors-2.ts": "90f4222c52ce4b093d5353667eb42d8d4fd9e5338897cdcfebba8e1e2ef233ef",
+    "tests/fixtures/competition-quality-anchors-3.ts": "8305d38ca5d37d95536b776630d43649c8498fbfc3815905ac8bec77e484430f",
+    "tests/fixtures/competition-quality-anchors-4.ts": "add8eaea39315ea24cbf7e61b9cfdd02cf95a634c28adc7becf9c87c88c8370d",
+    "tests/fixtures/competition-quality-negative-gold.ts": "c35faf24060ec03048c7da7fecf438c0fd22ab2cc3db554fa5a64399e463b704",
+    "tests/fixtures/competition-quality-no-match-gold.ts": "b1120ec3344e9fc01ea23cf39e9fc9874bae12a4fef940d41de8e7fb423efa24",
+    "tests/fixtures/competition-quality-personas.ts": "c83d0d4fa2e58de10b66f3e8a6ac838c5211d50ca20ab9c4d881e7e68de4b5bf",
+    "tests/fixtures/competition-quality-ranking-gold.ts": "e0b9f769b18bf9d1fd4960e7f82c8b4bc8ecae64c4d8284ee5e9adf9299415d7",
+    "tests/fixtures/competition-quality-year-gold.ts": "8e586b03e42c5868743d8580d5da4a2a7bd6dd83b16c9b7f38574cfa7a10ff4b",
+    "tests/fixtures/competition-questionnaire-context.ts": "01857fb9c25230f3efe72d72ad445e6dfe4e5f3990daf3f10ad652015b2394f1",
+    "tests/fixtures/competition-score-prospective-baseline.json": "84c3a3565861bb9ae532e8db3c4cacf57e70efd965f2bfde15c88fd5df755f96",
+    "tests/fixtures/competition-scoring-gold.ts": "cc2f799b2f4bf0c6ab4d84f3a1291b320fbd6716661a745f7675e354414d0337",
+    "tests/fixtures/deepseek-live-personas.ts": "7be4ba001224642c64941b530560490887bd1a3946fa47dcfebca564a0cbc7b7"
+  }
+}

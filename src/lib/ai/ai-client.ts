@@ -1,10 +1,19 @@
+import { emitProductObservation } from "./product-observation";
+import { currentDurableRequestVersionV7, hasDurableAiRun, markDurableDispatch, recordDurableReceipt, runDurableAiAttempt, type DurableReceipt } from "./durable-call";
 import { createHmac } from "node:crypto";
+import { reserveAiSpend, configuredDevelopmentEffort, type SpendFailure, type SpendReservation } from "@/lib/ai/spend-ledger";
+import { decisionRequestSha256, effortPolicySha256, resolveDecisionModelSettingsForOperation } from "./effort-policy.mjs";
+import { currentDecisionEffortPolicy } from "./effort-context";
 import {
   acquireModelCallPermit,
+  readUserUnboundedAuthorizationBeforeV7,
+  recordModelCallCapacityFeedbackV7,
   type ModelCallGateFailureReason
 } from "@/lib/ai/model-call-governor";
+import {isUserUnboundedExecutionMode} from "./execution-policy.mjs";
 
 export type AiJsonFailureReason =
+  | "durable_outcome_unknown"
   | "missing_api_key"
   | "mock_mode"
   | "mock_not_allowed"
@@ -22,12 +31,15 @@ export type AiJsonFailureReason =
   | "truncated"
   | "network_error"
   | "timeout"
+  | SpendFailure
   | ModelCallGateFailureReason;
 
 export type TransientAiFailureReason = Extract<
   AiJsonFailureReason,
   "rate_limited" | "upstream_server_error" | "network_error" | "timeout"
 >;
+
+export type AiTokenUsage = { inputTokens: number; outputTokens: number; cachedInputTokens: number };
 
 export type AiJsonResult<T> =
   | {
@@ -40,6 +52,7 @@ export type AiJsonResult<T> =
       upstreamAttempted: true;
       requestId?: string;
       durationMs: number;
+      usage?: AiTokenUsage;
     }
   | {
       ok: false;
@@ -52,6 +65,7 @@ export type AiJsonResult<T> =
       attempts?: number;
       retryAfterMs?: number;
       upstreamAttempted: boolean;
+      usage?: AiTokenUsage;
     };
 
 export type AiTextStreamResult =
@@ -83,6 +97,8 @@ export type RequestAiJsonOptions<T> = {
   model?: string;
   systemPrompt?: string;
   temperature?: number;
+  /** Optional DeepSeek flash thinking-mode sampling; unset preserves legacy requests. */
+  topP?: number;
   maxTokens?: number;
   timeoutMs?: number;
   requestDeadlineMs?: number;
@@ -91,9 +107,16 @@ export type RequestAiJsonOptions<T> = {
   maxAttempts?: 1 | 2 | 3;
   schema?: AiOutputSchema<T>;
   thinking?: "disabled" | "enabled";
+  reasoningEffort?: "max" | "high" | "low";
+  /** Only offline, preregistered experiments may override max without a promotion. */
+  evaluationRun?: boolean;
   operation?: string;
   promptVersion?: string;
+  recommendationPolicyVersion?: string;
+  implementationVersion?: string;
   candidateCount?: number;
+  /** Server-owned metadata only; never sent in the provider body. */
+  diagnosticContext?: { invocationId: string; stage: string; reviewId?: string };
   retryBaseDelayMs?: number;
   retryInstruction?: string;
 };
@@ -104,7 +127,42 @@ const defaultTimeoutMs = 12000;
 export const DEFAULT_AI_REQUEST_DEADLINE_MS = 45_000;
 const MIN_AI_ATTEMPT_WINDOW_MS = 5_000;
 export const AI_JSON_MAX_RESPONSE_BYTES = 256 * 1024;
-export const DEFAULT_DEEPSEEK_MODEL = "deepseek-v4-pro";
+export const DEFAULT_DEEPSEEK_MODEL = "deepseek-flash";
+export const DEFAULT_REASONING_EFFORT = "max";
+
+export function getConfiguredReasoningEffort(): "max" | "high" | "low" {
+  // Changing an environment value alone is not evidence for downgrading effort.
+  return configuredDevelopmentEffort() ?? DEFAULT_REASONING_EFFORT;
+}
+
+export function getAiConfigurationFingerprint() {
+  if(process.env.AI_SPEND_AUTHORIZED_EFFORT==="stage"){
+    const policy=currentDecisionEffortPolicy(),settings=resolveDecisionModelSettingsForOperation("competition_v7_rank",policy);
+    if(settings.thinking==="disabled")return `${DEFAULT_DEEPSEEK_MODEL}:rank-thinking-disabled:temperature-0:stage:${effortPolicySha256(policy)}:flash-policy.v3`;
+    return `${DEFAULT_DEEPSEEK_MODEL}:thinking-enabled:stage:${effortPolicySha256(policy)}:flash-policy.v2`;
+  }
+  return `${DEFAULT_DEEPSEEK_MODEL}:thinking-enabled:${getConfiguredReasoningEffort()}:flash-policy.v1`;
+}
+
+type ResolvedRequestEffort = {effort:"max"|"high"|"low";thinking:"enabled"|"disabled";temperature?:0;topP?:1;policySha256?:string;requestVersion?:{recommendationPolicyVersion:string;implementationVersion:string}};
+function resolveRequestEffort<T>(options:RequestAiJsonOptions<T>):ResolvedRequestEffort {
+  const durableVersion=currentDurableRequestVersionV7();
+  const suppliedVersion=options.recommendationPolicyVersion===undefined&&options.implementationVersion===undefined?undefined:
+    {recommendationPolicyVersion:options.recommendationPolicyVersion!,implementationVersion:options.implementationVersion!};
+  if(suppliedVersion&&(Object.values(suppliedVersion).some(value=>typeof value!=="string"||!value||value.length>180)
+    ||durableVersion&&JSON.stringify(durableVersion)!==JSON.stringify(suppliedVersion)))throw new Error("decision_request_version_mismatch");
+  const requestVersion=durableVersion??suppliedVersion;
+  if(/^competition_v7_(rank|explain|review|chat|extract|chat_review)$/.test(options.operation??"")||process.env.AI_SPEND_AUTHORIZED_EFFORT==="stage"){
+    const policy=currentDecisionEffortPolicy(),settings=resolveDecisionModelSettingsForOperation(options.operation??"",policy),effort=settings.policyReasoningEffort;
+    if(options.reasoningEffort!==undefined&&options.reasoningEffort!==effort)throw new Error("decision_effort_option_mismatch");
+    if(options.thinking!==undefined&&options.thinking!==settings.thinking)throw new Error("decision_thinking_option_mismatch");
+    if(settings.thinking==="disabled"&&(options.temperature!==undefined&&options.temperature!==0||options.topP!==undefined&&options.topP!==1||options.maxAttempts!==undefined&&options.maxAttempts!==1))throw new Error("decision_non_thinking_sampling_mismatch");
+    if(settings.thinking==="disabled"&&(options.model?.trim()||getConfiguredAiModel())!==DEFAULT_DEEPSEEK_MODEL)throw new Error("decision_non_thinking_model_mismatch");
+    return {effort,thinking:settings.thinking,...(settings.thinking==="disabled"?{temperature:0 as const,topP:1 as const}:{}),policySha256:effortPolicySha256(policy),requestVersion};
+  }
+  if(options.thinking==="disabled")throw new Error("decision_non_thinking_authorization_required");
+  return {effort:options.evaluationRun?(options.reasoningEffort??DEFAULT_REASONING_EFFORT):getConfiguredReasoningEffort(),thinking:"enabled"};
+}
 
 function getTimeoutMs() {
   const timeout = Number(process.env.AI_TIMEOUT_MS);
@@ -404,11 +462,12 @@ export async function waitForAiRetry<T>(
 
 function logAiAttempt<T>(
   result: AiJsonResult<T>,
-  context: Pick<RequestAiJsonOptions<T>, "operation" | "promptVersion" | "candidateCount"> & {
+  context: Pick<RequestAiJsonOptions<T>, "operation" | "promptVersion" | "candidateCount" | "topP"> & {
     provider: string;
     attempt: number;
   }
 ) {
+  emitProductObservation("ai_attempt_result",{operation:context.operation??"unspecified",model:result.model,attempt:context.attempt,upstreamAttempted:result.upstreamAttempted,ok:result.ok,reason:result.ok?null:result.reason,httpStatus:result.httpStatus??null,providerRequestId:result.requestId??null,finishReason:result.finishReason??null,durationMs:result.durationMs??null,usage:"usage" in result?result.usage??null:null,...(context.topP === undefined ? {} : { topP: context.topP })});
   if (context.provider === "mock") return;
 
   const entry = JSON.stringify({
@@ -424,6 +483,7 @@ function logAiAttempt<T>(
     finishReason: result.finishReason,
     fallbackReason: result.ok ? undefined : result.reason,
     candidateCount: context.candidateCount,
+    ...(context.topP === undefined ? {} : { topP: context.topP }),
     outcome: result.ok ? "success" : "failure"
   });
   if (result.ok) {
@@ -433,16 +493,18 @@ function logAiAttempt<T>(
   }
 }
 
-async function requestAiJsonOnce<T>(
+async function requestAiJsonOnceInternal<T>(
   prompt: string,
   options: RequestAiJsonOptions<T>,
   attempt: number,
-  deadline: number
+  deadline: number,
+  binding:ResolvedRequestEffort
 ): Promise<AiJsonResult<T>> {
   const startedAt = Date.now();
   const provider = getConfiguredAiProvider();
   const apiKey = options.apiKey?.trim() || process.env.AI_API_KEY?.trim();
   const model = options.model?.trim() || getConfiguredAiModel();
+  const effort = binding.effort;
 
   if (provider === "mock") {
     return {
@@ -474,6 +536,9 @@ async function requestAiJsonOnce<T>(
       durationMs: getDurationMs(startedAt),
       attempts: attempt
     };
+  }
+  if (model !== DEFAULT_DEEPSEEK_MODEL && process.env.NODE_ENV !== "test") {
+    return { ok: false, upstreamAttempted: false, reason: "invalid_request", model, attempts: attempt };
   }
 
   const remainingBeforeQueue = deadline - Date.now();
@@ -517,13 +582,24 @@ async function requestAiJsonOnce<T>(
     };
   }
 
+  const maxTokens = options.maxTokens ?? 8192;
+  const systemPrompt = options.systemPrompt ?? "You return only valid JSON. Do not invent facts not present in the user input.";
+  const requestPrompt = attempt === 1 ? prompt : `${prompt}\n\nCorrection: the previous response was unusable. Return one complete JSON object only, with no commentary.${options.retryInstruction ? ` ${options.retryInstruction}` : ""}`;
+  const spend = await reserveAiSpend({ system: systemPrompt, prompt: requestPrompt, maxTokens, model, effort, operation: options.operation,effortPolicySha256:binding.policySha256,deadlineEpochMs:deadline,signal:options.signal });
+  if (!spend.ok) {
+    gate.permit.release();
+    return { ok: false, upstreamAttempted: false, reason: spend.reason, model, attempts: attempt, durationMs: getDurationMs(startedAt) };
+  }
+  let actualUsage: AiTokenUsage | undefined;
+  let upstreamAttempted = false;
+
   const controller = new AbortController();
   const abortFromCaller = () => controller.abort();
   options.signal?.addEventListener("abort", abortFromCaller, { once: true });
   if (options.signal?.aborted) controller.abort();
   const timeoutId = windowlessSetTimeout(
     () => controller.abort(),
-    Math.max(1, Math.min(options.timeoutMs ?? getTimeoutMs(), remainingBeforeFetch))
+    Math.max(1, Math.min(options.timeoutMs ?? getTimeoutMs(), deadline - Date.now()))
   );
 
   try {
@@ -532,31 +608,31 @@ async function requestAiJsonOnce<T>(
       messages: [
         {
           role: "system",
-          content: options.systemPrompt ?? "You return only valid JSON. Do not invent facts not present in the user input."
+          content: systemPrompt
         },
         {
           role: "user",
-          content:
-            attempt === 1
-              ? prompt
-              : `${prompt}\n\nCorrection: the previous response was unusable. Return one complete JSON object only, with no commentary.${
-                  options.retryInstruction ? ` ${options.retryInstruction}` : ""
-                }`
+          content: requestPrompt
         }
       ],
-      temperature: options.temperature ?? 0,
+      thinking: { type: binding.thinking },
+      ...(binding.thinking==="disabled"?{temperature:0,top_p:1}:{reasoning_effort:effort,...(options.topP === undefined ? {} : { top_p: options.topP })}),
+      max_tokens: maxTokens,
       response_format: {
         type: "json_object"
       }
     };
 
-    if (options.maxTokens !== undefined) {
-      body.max_tokens = options.maxTokens;
-    }
-    if (options.thinking !== undefined) {
-      body.thinking = { type: options.thinking };
-    }
-
+    if (Date.now() >= deadline || options.signal?.aborted) return { ok: false, upstreamAttempted: false, reason: "timeout", model, attempts: attempt };
+    await markDurableDispatch();
+    upstreamAttempted = true;
+    emitProductObservation("ai_transport_dispatch",{model,attempt,operation:options.operation??"unspecified",reservationId:spend.reservation.id,
+      thinkingType: (body.thinking as { type: string }).type,
+      ...(binding.thinking==="disabled"?{policyReasoningEffort:effort,wireReasoningEffort:null,temperature:body.temperature}:{reasoningEffort:body.reasoning_effort}),
+      effortPolicySha256:binding.policySha256??null,
+      maxTokens: body.max_tokens, deadlineEpochMs: deadline,
+      ...(binding.thinking==="disabled"?{topP:body.top_p}:options.topP === undefined ? {} : { topP: options.topP }),
+      ...options.diagnosticContext});
     const response = await fetch(apiUrl, {
       method: "POST",
       headers: {
@@ -566,6 +642,8 @@ async function requestAiJsonOnce<T>(
       body: JSON.stringify(body),
       signal: controller.signal
     });
+    emitProductObservation("ai_transport_response",{model,attempt,httpStatus:response.status});
+    recordModelCallCapacityFeedbackV7(response.status,getRetryAfterMs(response));
     const requestId = getResponseRequestId(response, apiKey);
 
     if (!response.ok) {
@@ -611,11 +689,29 @@ async function requestAiJsonOnce<T>(
       };
     }
 
+    const rawUsage = asRecord(payload.usage);
+    const inputTokens = rawUsage?.prompt_tokens;
+    const outputTokens = rawUsage?.completion_tokens;
+    const cachedInputTokens = rawUsage?.prompt_cache_hit_tokens === undefined ? 0 : rawUsage.prompt_cache_hit_tokens;
+    // Invalid provider counters are unknown usage, never clamp them into a cheaper valid bill.
+    const usage: AiTokenUsage | undefined =
+      typeof inputTokens === "number" && typeof outputTokens === "number" && typeof cachedInputTokens === "number" &&
+      [inputTokens, outputTokens, cachedInputTokens].every(n => Number.isSafeInteger(n) && n >= 0) &&
+      cachedInputTokens <= inputTokens && outputTokens <= maxTokens &&
+      inputTokens <= Buffer.byteLength(systemPrompt + requestPrompt, "utf8") + 1024
+        ? {inputTokens, outputTokens, cachedInputTokens} : undefined;
+    actualUsage = usage;
     const choice = getChoice(payload);
+    await recordDurableReceipt({model,httpStatus:response.status,requestId,finishReason:choice.finishReason,content:choice.content,usage,durationMs:getDurationMs(startedAt),attempts:attempt,
+      operation:options.operation,thinking:binding.thinking,
+      ...(binding.thinking==="disabled"?{policyReasoningEffort:effort,wireReasoningEffort:null,temperature:0}:{reasoningEffort:effort}),
+      effortPolicySha256:binding.policySha256,...binding.requestVersion,
+      ...(binding.thinking==="disabled"?{topP:1}:options.topP === undefined ? {} : { topP: options.topP })});
     if (choice.finishReason === "length") {
       return {
         ok: false,
         upstreamAttempted: true,
+        ...(usage ? { usage } : {}),
         reason: "truncated",
         model,
         finishReason: choice.finishReason,
@@ -629,6 +725,7 @@ async function requestAiJsonOnce<T>(
       return {
         ok: false,
         upstreamAttempted: true,
+        ...(usage ? { usage } : {}),
         reason: "api_error",
         model,
         finishReason: choice.finishReason,
@@ -642,6 +739,7 @@ async function requestAiJsonOnce<T>(
       return {
         ok: false,
         upstreamAttempted: true,
+        ...(usage ? { usage } : {}),
         reason: "empty_content",
         model,
         finishReason: choice.finishReason,
@@ -655,6 +753,7 @@ async function requestAiJsonOnce<T>(
       return {
         ok: false,
         upstreamAttempted: true,
+        ...(usage ? { usage } : {}),
         reason: "empty_content",
         model,
         finishReason: choice.finishReason,
@@ -670,6 +769,7 @@ async function requestAiJsonOnce<T>(
       return {
         ok: false,
         upstreamAttempted: true,
+        ...(usage ? { usage } : {}),
         reason: "invalid_json",
         model,
         finishReason: choice.finishReason,
@@ -686,6 +786,7 @@ async function requestAiJsonOnce<T>(
         return {
           ok: false,
           upstreamAttempted: true,
+        ...(usage ? { usage } : {}),
           reason: "invalid_output",
           model,
           finishReason: choice.finishReason,
@@ -698,6 +799,7 @@ async function requestAiJsonOnce<T>(
       return {
         ok: true,
         upstreamAttempted: true,
+        ...(usage ? { usage } : {}),
         data: validated.data,
         model,
         finishReason: choice.finishReason,
@@ -711,6 +813,7 @@ async function requestAiJsonOnce<T>(
     return {
       ok: true,
       upstreamAttempted: true,
+        ...(usage ? { usage } : {}),
       data: parsedContent as T,
       model,
       finishReason: choice.finishReason,
@@ -722,30 +825,64 @@ async function requestAiJsonOnce<T>(
   } catch (error) {
     return {
       ok: false,
-      upstreamAttempted: true,
+      upstreamAttempted,
       reason: error instanceof Error && error.name === "AbortError" ? "timeout" : "network_error",
       model,
       durationMs: getDurationMs(startedAt),
       attempts: attempt
     };
   } finally {
+    await spend.reservation.settle(actualUsage, upstreamAttempted).catch(() => {emitProductObservation("ai_settlement_failed",{reservationId:spend.reservation.id,usage:actualUsage??null,upstreamAttempted});});
     clearTimeout(timeoutId);
     options.signal?.removeEventListener("abort", abortFromCaller);
     gate.permit.release();
   }
 }
 
+function replayDurableReceipt<T>(receipt:DurableReceipt,options:RequestAiJsonOptions<T>,binding:ResolvedRequestEffort):AiJsonResult<T> {
+  const base={model:receipt.model,httpStatus:receipt.httpStatus,requestId:receipt.requestId,finishReason:receipt.finishReason,usage:receipt.usage,durationMs:receipt.durationMs,attempts:receipt.attempts,upstreamAttempted:true as const};
+  if(binding.thinking==="disabled"&&(receipt.operation!=="competition_v7_rank"||receipt.effortPolicySha256!==binding.policySha256||receipt.thinking!=="disabled"||receipt.temperature!==0||receipt.topP!==1||receipt.policyReasoningEffort!==binding.effort||receipt.wireReasoningEffort!==null||receipt.reasoningEffort!==undefined))return {...base,ok:false,reason:"invalid_request"};
+  if(receipt.finishReason==="length")return {...base,ok:false,reason:"truncated"};
+  if(receipt.finishReason!==null&&receipt.finishReason!=="stop")return {...base,ok:false,reason:"api_error"};
+  const parsed=parseAiJson<unknown>(receipt.content);
+  if(parsed===null)return {...base,ok:false,reason:"invalid_json"};
+  const validated=options.schema?.safeParse(parsed);
+  if(validated&&!validated.success)return {...base,ok:false,reason:"invalid_output"};
+  return {...base,ok:true,data:(validated?.success?validated.data:parsed) as T};
+}
+async function requestAiJsonOnce<T>(prompt:string,options:RequestAiJsonOptions<T>,attempt:number,deadline:number,binding:ResolvedRequestEffort):Promise<AiJsonResult<T>> {
+  const request={prompt,system:options.systemPrompt,model:binding.thinking==="disabled"?(options.model?.trim()||getConfiguredAiModel()):options.model,maxTokens:options.maxTokens,promptVersion:options.promptVersion};
+  const samplingBinding=binding.thinking==="disabled"?{operation:options.operation,temperature:0,topP:1}:options.topP === undefined ? {} : {topP:options.topP};
+  const boundRequest=binding.policySha256?{...request,thinking:binding.thinking,reasoningEffort:binding.effort as "high"|"low",effortPolicySha256:binding.policySha256,...binding.requestVersion,...samplingBinding}:{...request,...samplingBinding};
+  return runDurableAiAttempt({key:`${options.diagnosticContext?.stage??options.operation??"json"}:${options.diagnosticContext?.reviewId??"batch"}:${attempt}`,
+    prompt:JSON.stringify(boundRequest),requestSha256:binding.policySha256?decisionRequestSha256(boundRequest as Parameters<typeof decisionRequestSha256>[0]):undefined,
+    operation:options.operation,thinking:binding.thinking,reasoningEffort:binding.effort,effortPolicySha256:binding.policySha256,
+    ...(binding.thinking==="disabled"?{temperature:0,topP:1}:{})},
+    ()=>requestAiJsonOnceInternal(prompt,options,attempt,deadline,binding),receipt=>replayDurableReceipt(receipt,options,binding));
+}
+
 export async function requestAiJson<T>(prompt: string, options: RequestAiJsonOptions<T> = {}): Promise<AiJsonResult<T>> {
+  if (options.topP !== undefined && (!Number.isFinite(options.topP) || options.topP < 0.95 || options.topP > 1)) return { ok: false, reason: "invalid_request", model: options.model ?? getConfiguredAiModel(), upstreamAttempted: false };
   const maxAttempts = options.maxAttempts ?? 1;
   const provider = getConfiguredAiProvider();
+  let binding:ResolvedRequestEffort;
+  try {binding=resolveRequestEffort(options);}catch {return {ok:false,reason:"spend_configuration_invalid",model:options.model??getConfiguredAiModel(),upstreamAttempted:false};}
   const relativeDeadline = Date.now() + getRequestDeadlineMs(options);
   const deadline = Number.isFinite(options.deadlineEpochMs)
     ? Math.min(relativeDeadline, Math.floor(Number(options.deadlineEpochMs)))
     : relativeDeadline;
-  let result = await requestAiJsonOnce(prompt, options, 1, deadline);
+  if(binding.thinking==="disabled"){
+    try{
+      if(!isUserUnboundedExecutionMode())throw new Error("decision_non_thinking_authorization_required");
+      await readUserUnboundedAuthorizationBeforeV7(deadline,options.signal);
+    }catch{return {ok:false,reason:options.signal?.aborted||Date.now()>=deadline?"timeout":"spend_configuration_invalid",model:options.model??getConfiguredAiModel(),upstreamAttempted:false};}
+  }
+  let result = await requestAiJsonOnce(prompt, options, 1, deadline,binding);
   logAiAttempt(result, { ...options, provider, attempt: 1 });
 
   for (let attempt = 2; attempt <= maxAttempts && !result.ok; attempt += 1) {
+    // Unknown outcomes cannot trigger another paid request after crash/timeout.
+    if((hasDurableAiRun()||isUserUnboundedExecutionMode())&&!["invalid_json","invalid_output","empty_content","truncated"].includes(result.reason))break;
     const remainingBeforeRetry = deadline - Date.now();
     if (!isRetryableAiFailure(result.reason) || remainingBeforeRetry <= 0) {
       break;
@@ -757,8 +894,9 @@ export async function requestAiJson<T>(prompt: string, options: RequestAiJsonOpt
     ) {
       break;
     }
+    emitProductObservation("ai_retry_wait",{attempt,retryWaitMs,previousReason:result.reason});
     if (!await waitBeforeRetry(retryWaitMs, deadline, options.signal)) break;
-    result = await requestAiJsonOnce(prompt, options, attempt, deadline);
+    result = await requestAiJsonOnce(prompt, options, attempt, deadline,binding);
     logAiAttempt(result, { ...options, provider, attempt });
   }
 
@@ -863,7 +1001,13 @@ export async function requestAiTextStream(
   }
 
   let releaseWhenReturning = true;
+  let spendReservation: SpendReservation | undefined;
+  let streamAttempted = false;
   try {
+    const spend = await reserveAiSpend({ system: systemPrompt, prompt, maxTokens: 8192, model, effort: getConfiguredReasoningEffort(), operation: "text_stream",deadlineEpochMs:deadline,signal:controller.signal });
+    if (!spend.ok) return { ok: false, upstreamAttempted: false, reason: spend.reason, model };
+    spendReservation = spend.reservation;
+    streamAttempted = true;
     const response = await fetch(apiUrl, {
       method: "POST",
       headers: {
@@ -882,12 +1026,15 @@ export async function requestAiTextStream(
             content: prompt
           }
         ],
-        temperature: 0.2,
+        thinking: { type: "enabled" },
+        reasoning_effort: getConfiguredReasoningEffort(),
+        max_tokens: 8192,
         stream: true
       }),
       signal: controller.signal
     });
 
+    recordModelCallCapacityFeedbackV7(response.status,getRetryAfterMs(response));
     clearTimeout(timeoutId);
     const requestId = getResponseRequestId(response, apiKey);
 
@@ -945,6 +1092,9 @@ export async function requestAiTextStream(
     return failure;
   }
   finally {
+    // Streaming usage is not available in the legacy interface; keep its full
+    // reservation as a conservative charge rather than report an invented cost.
+    await spendReservation?.settle(undefined, streamAttempted).catch(() => undefined);
     options.signal?.removeEventListener("abort", abortFromCaller);
     if (releaseWhenReturning) gate.permit.release();
   }

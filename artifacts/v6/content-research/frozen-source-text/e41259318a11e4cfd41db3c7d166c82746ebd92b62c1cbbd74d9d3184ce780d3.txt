@@ -1,0 +1,57 @@
+[PAGE 1]
+CFA INSTITUTE
+RESEARCH CHALLENGE
+www.cfainstitute.org/researchchallenge
+Each team must prepare a written research report on the subject company chosen by the local host.
+Teams may utilize their industry mentor or faculty adviser as resources, but may not enlist the help
+of any other professionals in writing the actual report.
+The Written Report must:
+• be no longer than ten (10) pages (not including the front cover provided by CFA Institute) on
+A4 sized paper, although you may include an appendix no longer than 10 A4 sized pages;
+• include the following information:
+o Company name
+o Exchange
+o Ticker symbol
+o Sector
+o Industry
+o Recommendation (buy/sell/hold)
+o Current price (as of __date)
+o Target price (% increase/decrease)
+• contain only publicly available information;
+• be the original work of the team members;
+• be prepared from the perspective of an independent research analyst;
+• be submitted to the local-level host by the deadline established by the host;
+• include the front cover provided by CFA Institute (teams must fill in the information indicated
+in highlighted text and may not alter any other part of the cover, including the CFA Institute
+logo); and
+• contain (but is not limited to*) the following sections:
+o Business Description
+o Industry Overview and Competitive Positioning
+o Investment Summary
+o Valuation
+o Financial Analysis
+o Investment Risks
+o Environmental, Social, and Governance
+*You may also include other headings that cover important information not otherwise covered in the
+sections listed above.
+The reports will be graded based on the following scoring rubric. Take note of the comments section,
+which presents reasons why points may be deducted from each section.
+[PAGE 2]
+Research Report Evaluation Form
+SECTION MAXIMUM POINTS COMMENTS
+Business Description
+5
+Industry Overview &
+Competitive Positioning
+10
+Investment Summary
+15
+Valuation
+20
+Financial Analysis
+20
+Investment Risks
+15
+Environmental, Social,
+Governance 15
+Total 100

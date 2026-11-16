@@ -1,10 +1,14 @@
 "use client";
 
+import { DecisionChat } from "./DecisionChat";
 import Link from "next/link";
 import { useCallback, useLayoutEffect, useMemo, useRef } from "react";
 import { OrbitBackdrop } from "@/components/brand/OrbitBackdrop";
 import { ClarificationQuestionCard } from "@/components/competitions/recommend/ClarificationQuestionCard";
 import { DecisionPreferences } from "./DecisionPreferences";
+import { DecisionReport } from "./DecisionReport";
+import { DecisionRunReport } from "./DecisionRunReport";
+import { DecisionRunChat } from "./DecisionRunChat";
 import { SelectionResultActions } from "./SelectionResultActions";
 import {
   AgentMessage,
@@ -92,7 +96,7 @@ export function CompetitionRecommendationWizard({
       const instantScroll = window.matchMedia("(prefers-reduced-motion: reduce), (pointer: coarse)").matches;
       scrollTarget.scrollIntoView({
         behavior: instantScroll ? "instant" : "smooth",
-        block: questionChanged ? "start" : "nearest",
+        block: questionChanged || conversation.phase === "results" ? "start" : "nearest",
         inline: "nearest"
       });
 
@@ -163,7 +167,9 @@ export function CompetitionRecommendationWizard({
   const visibleRecommendations = conversation.result?.recommendations ?? [];
   const isE2eRuleTestMode =
     process.env.NEXT_PUBLIC_AI_TEST_MODE === "1" &&
-    conversation.result?.rankingSource === "evidence-rules";
+    (conversation.result?.rankingSource === "evidence-rules" ||
+      (conversation.decisionReport?.trace.method === "rules" &&
+        conversation.decisionReport.trace.callCount === 0));
 
   const history = (
     <ConversationHistory
@@ -203,6 +209,7 @@ export function CompetitionRecommendationWizard({
         </button>
       </div>}
 
+      <p className="mb-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs leading-5 text-muted-foreground">本标签页会暂存输入和推荐，刷新可恢复；关闭标签页后清除。{conversation.recommendationRun ? <button type="button" className="min-h-11 font-semibold text-brand-700 underline" onClick={conversation.restart}>清除本标签页记录</button> : null}</p>
       <section
         aria-label="与乐乐的竞赛助手对话"
         className="relative isolate overflow-visible rounded-[24px] bg-brand-50/40 py-4 sm:border sm:border-border sm:p-4 md:p-6 lg:p-8"
@@ -234,6 +241,7 @@ export function CompetitionRecommendationWizard({
                       total={conversation.activeTurns.length}
                       onSkip={conversation.skipFixedAnswer}
                       hasContextAnswer={conversation.hasContextAnswer}
+                      decisionReady={conversation.decisionReady}
                       onAnswer={conversation.chooseFixedAnswer}
                       onBack={conversation.goBackFixed}
                       onConfirm={conversation.confirmFixedAnswer}
@@ -245,7 +253,7 @@ export function CompetitionRecommendationWizard({
                       turn={conversation.currentTurn}
                     >
                       <DecisionPreferences turn={conversation.currentTurn} profile={conversation.profile}
-                        context={conversation.decisionContext} onChange={conversation.changeContext} />
+                        context={conversation.decisionContext} onChange={conversation.changeContext} depth={conversation.depth} />
                     </FixedConversationQuestion>
                     {conversation.returnToSummary && <button type="button" className="mt-3 min-h-11 rounded-full border border-brand-300 bg-white px-5 text-sm font-semibold text-brand-700" onClick={conversation.returnToSummary}>回到确认页，用现有回答重新匹配</button>}
                   </QuestionEntrance>
@@ -266,7 +274,8 @@ export function CompetitionRecommendationWizard({
                   <h2 className="text-lg font-semibold text-ink" id="answer-summary-title">
                     我已经记下了。上面的每条回答都可以直接修改。
                   </h2>
-                  <p className="mt-2 text-sm leading-6 text-muted-foreground">请核对回答。本站程序会依据这些条件决定参赛资格、推荐竞赛和顺序。单独同意后，DeepSeek 可以协助理解你填写的文字，并从已确定的推荐依据中挑选适合展示的理由。</p>
+                  <p className="mt-2 text-sm leading-6 text-muted-foreground">请核对目标、经历中的本人贡献和现实条件。乐乐会结合这些回答与赛事资料比较方向，说明现在能从哪里开始、未来值得补什么。你的确认代表理解准确，不代表能力已被客观测评。</p>
+                  {conversation.decisionContext.experiences?.some(item=>!item.confirmed)?<p className="mt-2 text-sm text-brand-700">尚未勾选确认的经历不会提交或用于能力判断；你可以返回经历题编辑并确认。</p>:null}
                 </AgentMessage>
 
                 <AgentMessage>
@@ -386,7 +395,7 @@ export function CompetitionRecommendationWizard({
                       ? "我会把你的描述整理成几条线索。下一步你可以逐条确认或修改，再用它们选赛。"
                       : conversation.phase === "clarifying"
                         ? "只有在不同回答可能改变推荐时，我才会继续问；最多再问三题。"
-                        : "我会先排除明确不符资格的竞赛，结合你确认的目标、任务和经历比较各个赛道，说明值得准备的方向及其依据。"}
+                        : "我会结合你自报的目标、能力与投入条件比较各个赛道，先给出名单，再继续准备每项的详细说明。"}
                   </p>
                 </AgentMessage>
               </div>
@@ -500,6 +509,36 @@ export function CompetitionRecommendationWizard({
                 </AgentMessage>
               </div>
             ) : null}
+
+            {conversation.phase === "results" && conversation.recommendationRun ? <section
+              aria-labelledby="recommendation-results-title" className="scroll-mt-24 outline-none"
+              data-testid="conversation-stage" data-phase="results" ref={setCurrentStageRef} tabIndex={-1}>
+              {process.env.NEXT_PUBLIC_AI_TEST_MODE === "1" ? <p className="mb-4 rounded-xl border border-brand-200 bg-brand-50 p-4 text-sm leading-6" data-testid="ai-test-mode-notice">E2E 集成测试环境：模型响应由测试 fixture 模拟，没有调用真实模型；此结果仅用于验证产品流程。</p> : null}
+              <DecisionRunReport key={conversation.recommendationDisplayRun?.runId ?? conversation.recommendationRun.runId}
+                run={conversation.recommendationRun} displayRun={conversation.recommendationDisplayRun}
+                pollError={conversation.errorMessage || conversation.runPollError}
+                onRetry={conversation.errorMessage ? conversation.retry : conversation.retryPoll}
+                onRematch={() => void conversation.retryRecommendationRun()}
+                requestFailed={Boolean(conversation.errorMessage)}
+                submitting={conversation.requestPending} turns={conversation.activeTurns} onEdit={conversation.editTurn}/>
+              {conversation.decisionAiConsent ? <div className="mt-5"><DecisionRunChat run={conversation.recommendationRun}
+                aiConsent={conversation.decisionAiConsent} onReply={conversation.acceptRunChatReply}/></div> : null}
+              <details className="mt-5 rounded-2xl border border-border bg-white p-4"><summary className="cursor-pointer font-semibold text-brand-700">回看与修改问答记录</summary><div className="mt-4">{history}</div></details>
+            </section> : null}
+
+            {conversation.phase === "results" && !conversation.recommendationRun && conversation.decisionReport ? <section
+              aria-labelledby="recommendation-results-title" className="scroll-mt-24 outline-none"
+              data-testid="conversation-stage" data-phase="results" ref={setCurrentStageRef} tabIndex={-1}>
+              {isE2eRuleTestMode ? <p
+                className="mb-4 rounded-[14px] border border-brand-200 bg-brand-50 px-4 py-3 text-sm leading-6 text-brand-700"
+                data-testid="ai-test-mode-notice"
+              >E2E 规则测试环境：当前结果用于自动化验收，没有调用 DeepSeek。</p> : null}
+              <DecisionReport key={conversation.decisionReport.reportId} report={conversation.decisionReport}
+                previousReport={conversation.previousDecisionReport} turns={conversation.activeTurns} onEdit={conversation.editTurn}/>
+              {conversation.decisionToken && conversation.decisionAiConsent ? <DecisionChat report={conversation.decisionReport} decisionToken={conversation.decisionToken}
+                aiConsent={conversation.decisionAiConsent} onReply={conversation.acceptDecisionChatReply}/> : null}
+              <details className="mt-5 rounded-2xl border border-border bg-white p-4"><summary className="cursor-pointer font-semibold text-brand-700">回看与修改问答记录</summary><div className="mt-4">{history}</div></details>
+            </section> : null}
 
             {conversation.phase === "results" &&
             conversation.result ? (

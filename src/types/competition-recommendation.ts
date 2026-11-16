@@ -398,6 +398,28 @@ export type CompetitionRecommendationProfileV4 = {
  * directly. Older profiles are accepted only by isolated legacy adapters.
  */
 export type CompetitionDecisionContext = {
+  mode?: "quick" | "deep";
+  goalIntent?: CompetitionGoal | "explore" | "skill";
+  goalResolution?: "confirmed" | "undecided";
+  experienceStatus?: "provided" | "none" | "unknown";
+  experiences?: Array<{
+    id: string;
+    task: string;
+    contribution: "observed" | "assisted" | "independent" | "led" | "unknown";
+    completion: "learning" | "draft" | "delivered" | "feedback" | "unknown";
+    challenge: string;
+    confirmed: boolean;
+  }>;
+  noviceTaskPreferences?: Array<{
+    task: "organize-information" | "explain-ideas" | "observe-record" | "make-content" | "build-tool";
+    preference: "try" | "avoid" | "unknown";
+  }>;
+  budget?: {
+    range: "zero" | "under100" | "100-500" | "over500" | "unknown";
+    maximumYuan?: number;
+    scope: "personal" | "team" | "unknown";
+  };
+  preparationHorizon?: "1-2-weeks" | "one-month" | "2-3-months" | "long-term" | "unknown";
   businessActivity?: import("@/lib/competitions/business-activities").BusinessActivity;
   fixedTeam?: boolean;
   excludedTaskFormats?: (CompetitionTaskFormat | "laboratory")[];
@@ -676,6 +698,7 @@ export type CompetitionRecommendationExplanation = {
 export type CompetitionRecommendationExplanationSource = "deepseek" | "rule";
 export type CompetitionRecommendationFallbackMode = "none" | "partial" | "full";
 export type CompetitionRecommendationFallbackReason =
+  | "durable_outcome_unknown"
   | "missing_api_key"
   | "mock_mode"
   | "mock_not_allowed"
@@ -695,7 +718,10 @@ export type CompetitionRecommendationFallbackReason =
   | "timeout"
   | "capacity_exhausted"
   | "daily_budget_exhausted"
-  | "budget_store_unavailable";
+  | "budget_store_unavailable"
+  | "spend_budget_exhausted"
+  | "spend_store_unavailable"
+  | "spend_configuration_invalid";
 
 export type CompetitionRecommendationItemV1 = {
   rank: number;

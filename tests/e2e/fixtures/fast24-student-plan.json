@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "saitu.fast24.student-ui-plan.v1",
+  "evidenceRule": "Synthetic rehearsal is never live-model evidence. Live dispatch belongs to the root's shared collector.",
+  "cases": [
+    { "caseId": "C01-software-details", "discipline": "计算机", "viewport": "desktop", "journey": "details", "major": "计算机与信息", "subject": "信息通信、芯片与计算机系统", "skill": "编程与软件开发", "stage": "本科大二", "weekly": "每周 5–10 小时", "budget": 300 },
+    { "caseId": "C02-business-compare", "discipline": "商科", "viewport": "mobile", "journey": "compare", "major": "经管与商科", "subject": "商业与创业实践", "skill": "产品策划与需求分析", "stage": "本科大二", "weekly": "每周 5–10 小时", "budget": 100 },
+    { "caseId": "C03-design-why-not", "discipline": "设计", "viewport": "desktop", "journey": "why_not", "major": "设计与艺术", "subject": "视觉传达、广告与数字艺术", "skill": "视觉与创意设计", "stage": "本科大三", "weekly": "每周 10 小时以上", "budget": 500 },
+    { "caseId": "C04-language-feedback", "discipline": "人文语言", "viewport": "mobile", "journey": "dislike", "major": "语言、文化与传播", "subject": "外语、中华文化与跨文化传播", "skill": "语言表达与跨文化沟通", "stage": "本科大一", "weekly": "每周 5 小时以内", "budget": 0 },
+    { "caseId": "C05-engineering-correction", "discipline": "工程", "viewport": "desktop", "journey": "correction", "major": "工程与制造", "subject": "工程实践与智能制造", "skill": "硬件与工程实践", "stage": "本科大二", "weekly": "每周 5–10 小时", "budget": 300, "chatText": "更正：我的个人总预算改为100元，不是300元。请按100元重新匹配。", "expectedField": "budget.maximumYuan", "expectedValue": 100 },
+    { "caseId": "C06-biology-self-other", "discipline": "生命科学", "viewport": "mobile", "journey": "self_other", "major": "生物与生命科学", "subject": "生物与生命科学", "skill": "调研与科研验证", "stage": "本科大二", "weekly": "每周 5–10 小时", "budget": 100, "experience": { "task": "整理实验数据并写了课程报告", "contribution": "independent", "completion": "delivered" }, "chatText": "更正：实验和数据分析都是队友做的，我本人只帮忙整理资料。请撤回我独立完成实验或数据分析的说法，重新匹配。", "expectedField": "experience.1.contribution", "expectedValue": "assisted" },
+    { "caseId": "C07-software-withdraw", "discipline": "计算机", "viewport": "desktop", "journey": "withdraw", "major": "计算机与信息", "subject": "算法与科学计算", "skill": "编程与软件开发", "stage": "本科大一", "weekly": "每周 5 小时以内", "budget": 0, "chatText": "我撤回之前会编程和软件开发的回答，其实我只是看过教程，没有自己写过程序。请不要再当作已有编程能力，重新匹配。", "expectedField": "skills", "expectedValue": "programming" },
+    { "caseId": "C08-medicine-unknown", "discipline": "医学健康", "viewport": "mobile", "journey": "unknown", "major": "临床医学与健康", "subject": "医学技术、基础医学与健康", "skill": null, "stage": "本科大一", "weekly": null, "budget": null, "undecided": true },
+    { "caseId": "C09-novice-fewer", "discipline": "人文语言", "viewport": "desktop", "journey": "fewer", "major": "人文与社会科学", "subject": "公共管理、政策与社会治理", "skill": "写作与材料整理", "stage": "本科大一", "weekly": "每周 5 小时以内", "budget": 0, "profileNote": "只愿意独立做资料整理，不做实验、编程、路演或收费项目；有依据的建议不足五项时请说明，不要补数。" },
+    { "caseId": "C10-math-refresh", "discipline": "数学理科", "viewport": "mobile", "journey": "refresh", "major": "数学与理科", "subject": "数学、统计与建模", "skill": "数据分析与建模", "stage": "本科大二", "weekly": "每周 5–10 小时", "budget": 100 },
+    { "caseId": "C11-business-saved-legacy", "discipline": "商科", "viewport": "desktop", "journey": "saved", "major": "财会、金融与税务", "subject": "财税、金融与会计", "skill": "财会与金融分析", "stage": "本科大二", "weekly": "每周 5–10 小时", "budget": 100 },
+    { "caseId": "C12-design-corrected-refresh", "discipline": "设计", "viewport": "mobile", "journey": "corrected_refresh", "major": "设计与艺术", "subject": "视觉传达、广告与数字艺术", "skill": "视觉与创意设计", "stage": "本科大二", "weekly": "每周 5–10 小时", "budget": 500, "chatText": "更正：我的个人总预算改为0元，暂时不自费。请按0元重新匹配。", "expectedField": "budget.maximumYuan", "expectedValue": 0 }
+  ]
+}

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="description" content="BIOMOD Team Sendai">
+	<title>BIOMOD Team Sendai 2023</title>
+	<link rel="icon" href="images/logo.PNG">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="stylesheet" type="text/css" media="all" href="style.css">
+	<!--[if lt IE 9]>
+	<script src="js/html5.js"></script>
+	<script src="js/css3-mediaqueries.js"></script>
+	<![endif]-->
+	<script src="js/jquery1.4.4.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+
+<body>
+	<header id="header" role="banner">
+		<div class="inner">
+			<a href="index.html">
+				<div class="logo">
+					<img src="images/logo.PNG" width="80" height="80" alt="This is our team logo" align="left">
+					<strong>&thinsp;NanoStoma</strong>
+					<h1>&emsp;Team Sendai 2023</h1>
+				</div>
+			</a>
+			<nav id="mainNav">
+				<div class="inner">
+					<a class="menu" id="menu"><span>MENU</span></a>
+					<div class="panel">
+						<ul id="topnav">
+							<li class="current-menu-item"><a href="project.html"><strong>Project</strong></a>
+								<ul class="sub-menu">
+									<li><a href="project.html#background">BACKGROUND</a></li>
+									<li><a href="project.html#problem">PROBLEM</a></li>
+									<li><a href="project.html#challege">CHALLENGES</a></li>
+									<li><a href="project.html#solution">SOLUTION</a></li>
+									<li><a href="project.html#goal">GOALS</a></li>
+									<li><a href="project.html#feasibility">FEASIBILITY</a></li>
+								</ul>
+							</li>
+							<li><a href="design.html"><strong>Design</strong></a>
+								<ul class="sub-menu">
+									<li><a href="design.html#overview">OVERVIEW</a></li>
+									<li><a href="design.html#structure">MAIN STRUCTURE</a></li>
+									<li><a href="design.html#self-stacking">SELF-STACKING</a></li>
+									<li><a href="design.html#slit">SLIT</a></li>
+								</ul>
+							</li>
+							<li><a href="experiment.html"><strong>Experiment</strong></a>
+								<ul class="sub-menu">
+									<li><a href="experiment.html#summary">SUMMARY</a></li>
+									<li><a href="experiment.html#structure">STRUCTURE</a></li>
+									<li><a href="experiment.html#stacking">STACKING</a></li>
+									<li><a href="experiment.html#locking">LOCKING MECHANISM</a></li>
+									<li><a href="experiment.html#cholesterol">CHOLESTEROL</a></li>
+									<li><a href="experiment.html#soap">SOAP BUBBLE</a></li>
+								</ul>
+							</li>
+							<li><a href="future.html"><strong>Future</strong></a></li>
+							<li><a href="elsi.html"><strong>ELSI</strong></a></li>
+							<li><a href="team.html"><strong>Team </strong></a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+
+	<div id="wrapper">
+		<div>
+			<p class="page-jump"><a href="index.html">top page</a> >
+				Project
+			</p>
+		</div>
+		<section id="main">
+			<section class="content">
+				<h3 class="heading">PROJECT</h3>
+				<article class="post">
+					<h3 id="background">BACKGROUND</h3>
+					<p>
+						For a long time, building nanostructures have been dominated by the use of inorganic materials
+						such as polymers and metals. However, the advent of DNA nanotechnology has launched a myriad of
+						opportunities to build nanostructures using biomolecules, with the inherent advantage of being
+						easier to engineer for direct biological relevance. For example, DNA origami exploits the nature
+						of Watson-Crick base pairing to allow creation of extremely small structures out of DNA with
+						sub-nanometer precision. The energetically more stable form of the “folded” form prompts the DNA
+						to self-assemble without needing any additional process. The basic structure of a DNA origami
+						consists of one strand of ssDNA called the “scaffold”, which then pairs with the designed
+						shorter strands called the “staple” strands to realize the intended folding.
+					</p>
+					<p>Several different innovative structures and functionalities have been made using DNA. These
+						include fully functional DNA robots with specific functionalities, complex DNA logical circuits
+						that mimic the functionality of electronic circuits, and even a nanometer-sized replica of the
+						Mona Lisa!
+					</p>
+					<figure class="table">
+						<img src="images/project/figure/fig1.png" width="600" alt="fig1">
+						<figcaption>Fig 1. DNA robots and DNA circuits as examples of DNA nanotechnology inventions.
+						</figcaption>
+					</figure>
+					<p>Other structures come in the form of nanopores. As the name suggests, they are incredibly tiny
+						channels or openings on the nanoscale, typically measuring just a few nanometers in diameter.
+						They play a pivotal role in various scientific applications, particularly in the fields of
+						biotechnology and materials science. Nanopores can be found in natural systems, such as cell
+						membranes, where they facilitate the transport of ions and molecules. In other words, DNA
+						membrane channels are being engineered to mimic a natural system of chemical exchange: where
+						molecules pass between two distinct environments. In nature, chemical exchange systems govern
+						various phenomena that keep all organisms alive and even keep the planet together.
+					</p><br clear="all" />
+
+
+
+					<h3 id="problem">THE PROBLEM</h3>
+					<p>Despite that, most DNA channels struggle to really mimic the functionality of naturally occurring
+						ones. For example, the reversibility of the opening and closing of a natural membrane channel
+						plays a crucial role in how it establishes its importance. Many opening-closing mechanisms
+						devised in DNA origami require the removal of an existing component of the system, as is usually
+						done through strand displacement reactions or enzymatic digestion of DNA strands. As such,
+						restoration to the initial state without ‘refueling’ is usually difficult, unrealistic, or just
+						plainly impossible.
+					</p>
+					<figure class="table">
+						<img src="images/project/figure/fig2.png" width="600" alt="fig2">
+						<figcaption>Fig 2. Reversible control of opening-closing like a door is needed in DNA membrane
+							channels.</figcaption>
+					</figure>
+					<p>In addition, the operation of DNA nanopores is currently tied to liquid environments. Of the many
+						chemical processes in nature, many of them require the interaction between solution and gas, or
+						even occur solely in the gaseous phase. Therefore, to truly mimic functionality of these
+						systems, there needs to be a novelty in enabling DNA origami nanostructures to interface
+						environments that are in different states of matter. As such, the liquid-centric nature of
+						current DNA nanopores leaves the full potential of DNA nanostructures’ functionality practically
+						unexplored.
+					</p>
+					<figure class="table">
+						<img src="images/project/figure/fig3.png" width="600" alt="fig3">
+						<figcaption>Fig 3. The hydrophilic nature of DNA causes all efforts of DNA nanotechnology to be
+							confined to water-based mediums.</figcaption>
+					</figure>
+					<p>To summarize, inability to interact with dry environments, coupled with the inability to
+						reversibly open and close without additional input of DNA or protein (which would also be
+						impossible in dry environments) presents a unique and crucial challenge for the whole field of
+						biomolecular nanotechnology. This liquid-centric trait prevents more complex molecular robots in
+						reaching its full potential not only in technical functionality but also in real-world
+						applications. For example, the inability to function in environments surrounded by air severely
+						limits its applicability in dry environments, where humans live and many causes of our current
+						problems lie, such as climate change and airborne pathogens.
+					</p>
+					<p>With the elaboration above, we came up with several questions:
+					</p>
+					<p>What if we can create a tunnel-like structure with DNA that allows gaseous molecules to pass
+						through?
+					</p>
+					<p>However, in order to do that, then we must also wonder what if we devised a way for a DNA
+						nanostructure to connect two ‘dry’ environments while still facilitating the ionic conductivity
+						required for successful assembly of it?
+					</p>
+					<p>Would that set a foot towards application of DNA origami devices to be able to transmit gaseous
+						molecules between different compartments of nanorobots, thus allowing gaseous sensing?
+					</p>
+					<p>Would it be able to propel research and technology in fields requiring very precise chemical
+						control, such as materials engineering and finemechanics?
+					</p>
+					<p>Furthermore, in this unique environment, what if we devised a novel mechanism for reversible
+						opening-closing of the DNA channel?
+					</p>
+					<p>Would it be possible then in the future to use such technology to create complex systems that
+						rely on gas exchange to create devices that control greenhouse gas emissions? Maybe fully
+						photosynthesizing artificial leaves? Or even fine-tune weather control? All through the use of
+						DNA-based nanostructures. (See more in-depth elaboration on our <a href="future.html">Future
+							page!</a>)
+					</p>
+					<br clear="all" />
+
+
+
+					<h3 id="challege">THE CHALLENGES</h3>
+					<p>In considering our question, we come across the first challenge: the hydrophobic environment
+						required to facilitate the movement of gas. This challenge is outlined by the inherent
+						hydrophilicity of DNA, which would also mean that design of DNA origami and ideal working
+						conditions would be those where it can be stabilized by water molecules.
+					</p>
+					<p>In order to transport gas between two distinct places, those two places would naturally be filled
+						with gas and the transporter structure would need to be placed in between these gas chambers.
+						However, current DNA nanostructures that transport molecules are usually embedded in a lipid
+						bilayer membrane, which would mean that they connect between two hydrophilic environments: a
+						no-go for gas exchange.
+					</p>
+					<figure class="table">
+						<img src="images/project/figure/fig4.png" width="400" alt="fig4">
+						<figcaption>Fig 4. Water influx into purely DNA-based structures prevents gas from passing
+							through.</figcaption>
+					</figure>
+					<p>Our next concern comes when we consider the structure to operate in a soap bubble’s membrane,
+						since it is probably the simplest naturally occurring structure that bridges two different
+						regions of gas using a water-based liquid. The membrane of a soap bubble is variable in
+						thickness, and the thickness is several orders larger than what can possibly be made from a
+						single DNA origami.
+					</p>
+					<figure class="table">
+						<img src="images/project/figure/fig5.png" width="600" alt="fig5">
+						<figcaption>Fig 5. Comparison of the thickness of conventional lipid bilayer membranes and soap
+							bubble membranes</figcaption>
+					</figure>
+					<p>Due to there is virtually no research done in this field, there is a very limited amount of
+						established research methods that validly test mechanisms of gas transport using biomolecular
+						nanotechnology.
+					</p>
+					<br clear="all" />
+
+
+
+					<h3 id="solution">OUR SOLUTION</h3>
+					<p>We devised a DNA origami valve, called the NanoStoma, designed to self-integrate into a soap
+						bubble’s membrane and facilitate light-inducible gas exchange.
+					</p>
+					<figure class="table">
+						<img src="images/project/figure/fig6.png" width="600" alt="fig6">
+						<figcaption>Fig 6.Overview of the NanoStoma structure, produced in VMD.</figcaption>
+					</figure>
+					<p>Our DNA Origami structure was designed to mimic the structure of stomata found on plant leaves,
+						which open and close to control gas exchange for photosynthesis. More specifically, we were
+						inspired by the stomatal opening system of CAM plants, which entails stomatal opening during
+						nighttime and closing during daytime, controlled by blue light exposure. The NanoStoma
+						self-stacks and integrates itself to the membrane of a bubble, connecting the air space inside
+						and outside of the bubble. In its initial state, blocker DNA strands block the resulting tunnel,
+						preventing gas molecules from traveling between the chambers. When exposed to UV light, the
+						photoresponsive groups within the DNA dissociate the blocker DNA duplex, opening the tunnel and
+						allowing the passage of molecules. The mechanism by which the NanoStoma operates is detailed in
+						the Design section.
+					</p>
+					<figure class="table">
+						<img src="images/project/figure/fig7.png" width="500" alt="fig7">
+						<figcaption>Fig 7.The stomatal control of CAM photosynthetic plants inspired our design.
+						</figcaption>
+					</figure>
+					<p>The NanoStoma self-stacks and integrates itself to the membrane of a bubble, connecting the air
+						space inside and outside of the bubble. In its initial state, blocker DNA strands block the
+						resulting tunnel, preventing gas molecules from traveling between the chambers. When exposed to
+						UV light, the photoresponsive groups within the DNA dissociate the blocker DNA duplex, opening
+						the tunnel and allowing the passage of molecules. The mechanism by which the NanoStoma operates
+						is detailed in the Design section. To overcome the hydrophilicity problem, we made use of
+						cholesterol, which is widely used in DNA nanotechnology research.
+					</p>
+					<figure class="table">
+						<img src="images/project/figure/fig8.png" width="500" alt="fig8">
+						<figcaption>Fig 8. Cholesterol is widely used to create a hydrophobic region on a DNA origami
+							structure.
+						</figcaption>
+					</figure>
+
+					<p>Our structure provides a fairly simple yet elegant solution to the problem of interest. Being
+						designed purely out of DNA origami, it provides an easy-to-understand proof of concept that in
+						the future allows for high potential of further optimization and modification by merging it with
+						technologies such as synthetic proteins and adsorption onto inorganic nanoparticles. We also
+						characterized and proposed novel use of the unique environment found in the membranes of soap
+						bubbles and reverse vesicles, which have seen limited use in the field of biomolecular
+						nanotechnology.
+					</p>
+					<figure class="table">
+						<img src="images/project/figure/fig9.png" width="450" alt="fig9">
+						<figcaption>Fig 9. Final concept of the stacked NanoStoma controlling gas exchange.
+						</figcaption>
+					</figure>
+					<br clear="all" />
+
+
+
+					<h3 id="goal">GOALS</h3>
+					<p>As is the case with other novel things, there are a lot of things that need to be proven to
+						establish the novelty completely. In our project, as far as we know, we are the first group of
+						people to even attempt to create a DNA nanodevice that interacts with gas and hydrophobic
+						environments. As such, there needs to be a lot of rigorous scientific proof to really be able to
+						justify this as a fully functioning novel structure, proofs that would need a considerable
+						amount of funding and cutting-edge research facilities that are reserved for highly ambitious
+						research groups.
+					</p>
+					<p>BIOMOD, on the other hand, gives relatively a very short amount of time when compared to a
+						traditional research project on subjects such as these. As such, we have focused our attempts at
+						providing the foundational truth of our idea and have listed the points below as our criterias
+						for success in BIOMOD 2023.
+					</p>
+					<figure class="table">
+						<img src="images/project/figure/fig10.png" width="500" alt="fig9">
+					</figure>
+					<br clear="all" />
+
+
+
+					<h3 id="feasibility">FEASIBILITY</h3>
+					<p>Regarding the feasibility of our project, the main hindrances come in the form of time and cost.
+						We have designed the structure to be as simple as possible to provide the foundational proof of
+						our concept. However, even with such simplicity, a considerable amount of funding and
+						time—mainly in tweaking and optimizing design choices—is still needed. In addition, the novel
+						ideas and concepts in our project have been practically unexplored in the literature, needing
+						even more time to explore and empirically establish what is possible and what is not.
+					</p>
+					<p>As such, as with our criterias for success, we have focused to maximize the feasibility of our
+						project by aiming to gather empirical evidence regarding each functional part in the system of
+						our nanodevice, providing a clear proof of the mechanisms and allowing future projects to focus
+						on combining such mechanisms into a fully applicable system.
+					</p>
+					<p>In ensuring high productivity, the project was performed with limited strictness regarding each
+						person’s role, allowing both focused work in each of the assigned roles but also the ability to
+						sub-in in case of the unavailability of people or the sheer amount of work needed to be done in
+						a given day, which sped up the project and made sure that each member is fully aware of the
+						project’s progress. We also planned regular frequent meetings with our mentors to let them know
+						of our progress and to gather advice, not only on scientific truth but also feasibility (DNA
+						order times, availability of equipment, etc.).
+					</p>
+					<p>For details on our construct, the implementation of the final structure may come with
+						difficulties at first.
+					</p>
+					<p>Concerns might arise regarding the light-controllability of the structure, especially regarding
+						its specificity. In addition, since the structure is modular and self-stacks, concerns might
+						arise regarding whether all monomers will truly properly function and open the tunnel when
+						exposed to the light stimulus. In this case, we want to highlight the specificity of
+						azobenzene—the photoresponsive molecule we used—as it has been used in other applications.
+						Because the photoresponsivity comes from the single molecular structure of azobenzene, it is
+						highly preserved unless that structure is broken i.e. covalent bonds were broken, which would
+						need a considerable amount of energy. In addition, studies have shown that chemical
+						modifications to the azobenzene group allow for changes and fine-tuning of the wavelength that
+						the azobenzene-derived moiety responds to, adding to the adaptability and tunability of the
+						locking specificity.
+					</p>
+					<p>Other concerns may come in the form of even if the locking mechanism works perfectly, the size of
+						gas molecules would simply be too small to get blocked by the blocker DNA. However, we would
+						like to highlight that the structure stacks and creates a homogeneous polymer with hundreds of
+						monomer, each one having blocker strands in positions that would be slightly different from each
+						other due to natural molecular motions, which effectively drives the probability distribution of
+						successful blockage of gas molecules to the highly effective region. In addition, with more and
+						more technological advances being developed to directly modify the DNA molecule, modifications
+						can be added to increase the effective molecule size or perform electrostatic repulsion of
+						specific gas molecules, adding to the efficiency of the blocking.
+					</p><br clear="all" />
+
+					<h3>REFERENCE</h3>
+					<p>Asanuma, H., Liang, X., Nishioka, H., Matsunaga, D., Liu, M., & Komiyama, M. (2007). Synthesis of
+						azobenzene-tethered DNA for reversible photo-regulation of DNA functions: hybridization and
+						transcription. Nature Protocols, 2(1), 203–212. https://doi.org/10.1038/nprot.2006.465
+					</p>
+					<p>Asanuma, H., Liang, X., Yoshida, T., & Komiyama, M. (2001). Photocontrol of DNA Duplex Formation
+						by Using Azobenzene-Bearing Oligonucleotides. ChemBioChem, 2(1), 39–44.
+						https://doi.org/10.1002/1439-7633(20010105)2:1&lt;39::AID-CBIC39&gt;3.0.CO;2-E
+					</p>
+					<p>Douglas, S. et al. (2009) “Self-assembly of DNA into nanoscale three-dimensional shapes”. Nature,
+						459(7245): 414-418
+					</p>
+					<p>Duckett, D., Murchie, A. and Lilley, D. (1990) “The role of metal ions in the conformation of the
+						four-way DNA junction”. The EMBO Journal, 9(2): 583-590
+					</p>
+					<p>COCKBURN, W. (1983). Stomatal mechanism as the basis of the evolution of CAM and C 4
+						photosynthesis. Plant, Cell & Environment, 6(4), 275–279.
+						https://doi.org/10.1111/1365-3040.ep11611925
+					</p>
+					<p>Gao, M., Kwaria, D., Norikane, Y., & Yue, Y. (2023). Visible‐light‐switchable azobenzenes:
+						Molecular design, supramolecular systems, and applications. Natural Sciences, 3(1).
+						https://doi.org/10.1002/ntls.20220020
+					</p>
+					<p>Hernández-Ainsa, S., Bell, N. A. W., Thacker, V. V., Göpfrich, K., Misiunas, K., Fuentes-Perez,
+						M. E., Moreno-Herrero, F., & Keyser, U. F. (2013). DNA Origami Nanopores for Controlling DNA
+						Translocation. ACS Nano, 7(7), 6024–6030. https://doi.org/10.1021/nn401759r
+					</p>
+					<p>Ohmann, A., Göpfrich, K., Joshi, H., Thompson, R. F., Sobota, D., Ranson, N. A., Aksimentiev, A.,
+						& Keyser, U. F. (2019). Controlling aggregation of cholesterol-modified DNA nanostructures.
+						Nucleic Acids Research, 47(21), 11441–11451. https://doi.org/10.1093/nar/gkz914
+					</p>
+					<p>P. W. K. Rothemund, Folding DNA to create nanoscale shapes and patterns. Nature 440, 297 (2006).
+					</p>
+					<p>Qian, L., & Winfree, E. (2011). Scaling Up Digital Circuit Computation with DNA Strand
+						Displacement Cascades. Science, 332(6034), 1196–1201. https://doi.org/10.1126/science.1200520
+					</p>
+					<p>Thubagere, A. J., Li, W., Johnson, R. F., Chen, Z., Doroudi, S., Lee, Y. L., Izatt, G., Wittman,
+						S., Srinivas, N., Woods, D., Winfree, E., & Qian, L. (2017). A cargo-sorting DNA robot. Science,
+						357(6356). https://doi.org/10.1126/science.aan6558
+					</p>
+					<p>Tikhomirov, G., Petersen, P., & Qian, L. (2017). Fractal assembly of micrometre-scale DNA origami
+						arrays with arbitrary patterns. Nature, 552(7683), 67–71. https://doi.org/10.1038/nature24655
+					</p>
+
+
+
+
+
+				</article>
+			</section>
+			<div class="pagenav">
+				<span class="prev"><a href="index.html" rel="prev">&laquo; previous page</a></span>
+				<span class="next"><a href="design.html" rel="next">next page &raquo;</a></span>
+			</div>
+		</section>
+	</div>
+
+
+
+	<footer id="footer">
+		<div class="inner">
+			<article class="molbot"><a href="http://www.molbot.mech.tohoku.ac.jp/"><img src="images/molbot.png"
+						width="140" height="100" alt="molbot" align="right"></a></article>
+			<article class="copyright">Copyright&copy;2023 Team Sendai All Rights Reserved. Design by <a
+					href="http://f-tpl.com" target="_blank" rel="nofollow">http://f-tpl.com</a></article>
+			<article class="mail">Contact : <a
+					href="mailto:teamsendai2023&#64;gmail.com">teamsendai2023&#64;gmail.com</a></article>
+		</div>
+	</footer>
+
+</body>
+
+</html>

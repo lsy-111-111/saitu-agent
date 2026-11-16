@@ -1,0 +1,15 @@
+import type { DecisionEffortPolicy } from "../../src/lib/ai/effort-policy.mjs";
+type EffortRuntime = { effortPolicy: DecisionEffortPolicy; effortPolicySha256: string; reasoningEffort: "high" | "low" | "mixed" };
+export function browserEffortRuntime(spend: unknown): EffortRuntime;
+export function isBrowserUserUnbounded(spend: unknown): boolean;
+export function assertBrowserExecutionLimits(spend: unknown): boolean;
+export function assertBrowserLiveExecutionMode(spend: unknown, environment?: Record<string, string | undefined>): void;
+export function assertBrowserWorkerExecutionMode(health: unknown, spend: unknown): void;
+export function assertBrowserDatabaseLimits(batch: unknown, budget: unknown, spend: unknown): void;
+export function browserExecutionScopeLimits(batch: unknown, budget: unknown, spend: unknown): Record<string, unknown>;
+export function configuredBrowserEffortRuntime(environment?: Record<string, string | undefined>): EffortRuntime;
+export function assertBrowserEffortEnvironment(spend: unknown, environment?: Record<string, string | undefined>): EffortRuntime;
+export function assertBrowserEffortGrant(batch: unknown, spend: unknown, environment?: Record<string, string | undefined>): EffortRuntime;
+export function browserLedgerEffortMatches(row: unknown, spend: unknown): boolean;
+export function browserCallEffortMatches(call: unknown, spend: unknown): boolean;
+export function hasBrowserBoundProviderDispatch(calls: unknown[], spend: unknown): boolean;

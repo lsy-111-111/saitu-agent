@@ -150,7 +150,7 @@ describe("competition recommendation catalog", () => {
     }
   });
 
-  it("requires official core eligibility evidence at the event or representative-track level", () => {
+  it("requires scoped core evidence or preserves the documented BIM module gap", () => {
     const gaps: string[] = [];
 
     for (const competition of competitions) {
@@ -195,7 +195,11 @@ describe("competition recommendation catalog", () => {
       }
     }
 
-    expect(gaps).toEqual([]);
+    // The available newer BIM notice separates A-H from I-J. Unselected modules
+    // cannot inherit a prior edition's universal 3-5-person condition.
+    expect(gaps).toEqual(["bim-graduation-design"]);
+    expect(findCatalogCompetition("bim-graduation-design")?.recommendation.teamRequirement.state).toBe("unknown");
+    expect(findCatalogCompetition("bim-graduation-design")?.recommendation.eligibility?.state).not.toBe("verified");
   });
 
   it("publishes a bounded, evidence-based 100-point credibility score for every entry", () => {
@@ -351,7 +355,9 @@ describe("competition recommendation catalog", () => {
     expect(findCatalogCompetition("business-elite-innovation")?.name).toBe("全国高校商业精英挑战赛");
     expect(findCatalogCompetition("business-elite-innovation")?.recommendation.teamRequirement).toEqual({
       state: "known",
-      mode: "either"
+      mode: "team",
+      minSize: 3,
+      maxSize: 5
     });
   });
 
@@ -486,7 +492,7 @@ describe("competition recommendation catalog", () => {
       ["national-college-math-modeling", "学校统一报名", "赛区人数"],
       ["graduate-math-modeling", "培养单位资格审核", null],
       ["graduate-rural-revitalization-agritech", "培养单位资格审核", "队伍人数"],
-      ["culsc-life-sciences", "学校当届参赛确认", "仅加入1支参赛队伍"]
+      ["culsc-life-sciences", "学校当届参赛确认", null]
     ] as const;
 
     for (const [competitionId, workflowNotice, remainingBlocker] of cases) {

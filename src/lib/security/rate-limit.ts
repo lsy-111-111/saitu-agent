@@ -18,12 +18,14 @@ import {
 } from "@/lib/ai/request-deadline";
 import { isEphemeralE2eSecurityStateAllowed } from "@/lib/config/e2e-runtime";
 import { getPool, isDatabaseConfigured } from "@/lib/db/pool";
+import { isAuthorizedUserUnboundedValidationRequestV7 } from "@/lib/ai/execution-authorization";
 
 export type BucketName =
   | "session_start_minute"
   | "session_start_daily"
   | "session_transitions"
   | "transition_retries"
+  | "decision_poll"
   | "track";
 
 type BucketConfig = { limit: number; windowMs: number };
@@ -108,7 +110,8 @@ const buckets: Record<BucketName, BucketConfig> = {
     limit: 2,
     windowMs: readNumber("SESSION_TTL_SECONDS", 30 * 60) * 1000
   },
-  track: { limit: readNumber("MAX_TRACK_PER_IP_MINUTE", 60), windowMs: 60_000 }
+  track: { limit: readNumber("MAX_TRACK_PER_IP_MINUTE", 60), windowMs: 60_000 },
+  decision_poll: {limit:240,windowMs:60_000}
 };
 
 const hits = new Map<string, HitState>();
@@ -467,7 +470,7 @@ function hasMemoryCapacity(kind: keyof ReturnType<typeof memoryLimits>, current:
   return current < memoryLimits()[kind];
 }
 
-export function checkRateLimit(request: Request, bucket: BucketName) {
+function checkMemoryCountLimit(request: Request, bucket: BucketName, validationCollector = false) {
   const now = Date.now();
   const config = buckets[bucket];
   const key = bucketKey(request, bucket);
@@ -490,7 +493,7 @@ export function checkRateLimit(request: Request, bucket: BucketName) {
       stateUnavailable: false as const
     };
   }
-  if (current.count >= config.limit) {
+  if (!validationCollector && current.count >= config.limit) {
     return {
       ok: false as const,
       remaining: 0,
@@ -501,10 +504,25 @@ export function checkRateLimit(request: Request, bucket: BucketName) {
   current.count += 1;
   return {
     ok: true as const,
-    remaining: config.limit - current.count,
+    remaining: Math.max(0, config.limit - current.count),
     resetAt: current.resetAt,
     stateUnavailable: false as const
   };
+}
+
+export function checkRateLimit(request: Request, bucket: BucketName) {
+  return checkMemoryCountLimit(request, bucket);
+}
+
+async function isAuthorizedValidationCollector(request: Request, client?: Pick<PoolClient, "query">) {
+  try { return await isAuthorizedUserUnboundedValidationRequestV7(request, client); }
+  catch { return false; }
+}
+
+/** Polling quota relief is available only to a signed, locally isolated
+ * collector whose active database grant is verified on this request. */
+export async function checkDecisionPollRateLimitV7(request: Request) {
+  return checkMemoryCountLimit(request, "decision_poll", await isAuthorizedValidationCollector(request));
 }
 
 export function rateLimitResponse(
@@ -989,7 +1007,8 @@ async function maybePrunePersistentState(client: PoolClient) {
 async function consumePersistentCounter(
   client: PoolClient,
   bucket: "session_start_minute" | "session_start_daily",
-  scopeKey: string
+  scopeKey: string,
+  validationCollector = false
 ) {
   const config = buckets[bucket];
   const result = await client.query<{ reset_at: Date }>(
@@ -1009,8 +1028,9 @@ async function consumePersistentCounter(
            updated_at = now()
        where competition_rate_limit_counters.reset_at <= now()
           or competition_rate_limit_counters.hit_count < $4
+          or $5::boolean
      returning reset_at`,
-    [bucket, scopeKey, config.windowMs, config.limit]
+    [bucket, scopeKey, config.windowMs, config.limit, validationCollector]
   );
   if (result.rowCount === 1) return;
   const current = await client.query<{ reset_at: Date }>(
@@ -1130,8 +1150,9 @@ async function beginPersistentStart(
     );
     if (start.rowCount === 1) {
       const ipScope = securityStateHash(`competition-ip\0${getClientIp(input.request)}`);
-      await consumePersistentCounter(client, "session_start_minute", ipScope);
-      await consumePersistentCounter(client, "session_start_daily", ipScope);
+      const validationCollector = await isAuthorizedValidationCollector(input.request, client);
+      await consumePersistentCounter(client, "session_start_minute", ipScope, validationCollector);
+      await consumePersistentCounter(client, "session_start_daily", ipScope, validationCollector);
     }
     return {
       ...(await claimPersistentIdempotency(
@@ -1191,7 +1212,8 @@ async function beginPersistentTransition(
            from competition_session_transitions where session_key = $1`,
         [sessionKey]
       );
-      if (Number(count.rows[0]?.transition_count ?? 0) >= buckets.session_transitions.limit) {
+      if (Number(count.rows[0]?.transition_count ?? 0) >= buckets.session_transitions.limit &&
+        !await isAuthorizedValidationCollector(input.request, client)) {
         throw new PersistentLimitError("session_transitions", expiresAt);
       }
       await client.query(
@@ -1549,7 +1571,7 @@ async function executePersistentClaim(
   return cloneForReplay(response, input.requestId, false);
 }
 
-function memorySessionStart(input: CompetitionControlInput, key: string, expiresAt: number) {
+function memorySessionStart(input: CompetitionControlInput, key: string, expiresAt: number, validationCollector = false) {
   const now = Date.now();
   pruneExpiredMemory(now);
   const knownExecution = cachedTransitions.has(key) ||
@@ -1560,7 +1582,7 @@ function memorySessionStart(input: CompetitionControlInput, key: string, expires
       if (!hasMemoryCapacity("starts", startedSessionKeys.size)) {
         return Promise.resolve(securityStateUnavailableResponse(input, "session_start_minute"));
       }
-      const minute = checkRateLimit(input.request, "session_start_minute");
+      const minute = checkMemoryCountLimit(input.request, "session_start_minute", validationCollector);
       if (!minute.ok) {
         if (minute.stateUnavailable) {
           return Promise.resolve(securityStateUnavailableResponse(input, "session_start_minute"));
@@ -1572,7 +1594,7 @@ function memorySessionStart(input: CompetitionControlInput, key: string, expires
           requestId: input.requestId
         }));
       }
-      const daily = checkRateLimit(input.request, "session_start_daily");
+      const daily = checkMemoryCountLimit(input.request, "session_start_daily", validationCollector);
       if (!daily.ok) {
         if (daily.stateUnavailable) {
           return Promise.resolve(securityStateUnavailableResponse(input, "session_start_daily"));
@@ -1639,7 +1661,7 @@ async function executeCompetitionSessionStartInternal(
       }
     }
   } else {
-    response = await memorySessionStart(input, key, expiresAt);
+    response = await memorySessionStart(input, key, expiresAt, await isAuthorizedValidationCollector(input.request));
   }
   logCompetitionRequestOutcome({ ...input, bucket: "session_start", response });
   return response;
@@ -1724,7 +1746,8 @@ async function executeCompetitionSessionTransitionInternal(
     if (
       !knownTransition &&
       session.committedTransitions.size + session.pendingTransitions.size >=
-        buckets.session_transitions.limit
+        buckets.session_transitions.limit &&
+      !await isAuthorizedValidationCollector(input.request)
     ) {
       response = rateLimitResponse(session.expiresAt, {
         bucket: "session_transitions",

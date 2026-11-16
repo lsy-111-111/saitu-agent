@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "saitu.pipeline-diagnostic-registration.v1",
+  "registeredAt": "2026-11-08T19:59:13.605Z",
+  "asOf": "2026-11-08T19:09:37.921Z",
+  "inputSha256": "f559feed4b7c6c6a3cf6aae25192a17bacd4be2d9eeadd9cce36719a43fcc3d5",
+  "publicInputSource": {
+    "path": "artifacts/continuation-v7-20261109/frontend/public-admission-02/observations/v7-public-desktop-novice-receipt.json",
+    "sha256": "719237666b84cd0d761f15cd7c95a22c733f45200fe15f5b39b9dd8c86997768"
+  },
+  "runtimeSourceBindingSha256": "e6fe52f43bd050e4f8e87d3865d7da2deb5a48646fdad83856c37bb55902b96c",
+  "candidatePoolSha256": "a957655b2016c337550c715dae1e685b65bf984740720fa63b0affd7b2432fbe",
+  "profileSha256": "5ac291d03844a75a71c9b1a7f4ca5942f90749e5f8927e42752170e55d9807ab",
+  "spendRunId": "saitu-v7-20261109-calibration-06",
+  "oneOriginalPipelineInvocation": true,
+  "maximumModelAttempts": 5,
+  "stageAttemptLimits": {
+    "rank": 2,
+    "explain": 2,
+    "review": 1
+  },
+  "deadlineMs": 240000,
+  "model": "deepseek-flash",
+  "thinking": "enabled",
+  "reasoningEffort": "high",
+  "formalOrPublicAcceptanceEligible": false,
+  "reason": "One predeclared public novice full-pipeline observation after comparison scope repair and exact JSON marker normalization across v7 stages; complete unchanged pool/input; no acceptance or latency quality claim.",
+  "productionDeadlineChanged": false,
+  "originalListDeadlineMs": 30000,
+  "originalDetailsDeadlineMs": 90000,
+  "toolSha256": "152b396be90df14ba85d53f7e9583cb08348e5cd4724741a3fe6ac04dc13290c",
+  "rankPromptVersion": "saitu-match.v7.4.resource-scope-json-envelope",
+  "explainPromptVersion": "saitu-explain.v7.3.first-two-comparison-json-envelope",
+  "replacesUnstartedRegistration": {
+    "path": "artifacts/continuation-v7-20261109/pipeline-diagnostic-01/registration.json",
+    "sha256": "cb982b3cd71dfd483fe0aa7243e47a07a3bf01409408f64144aa83c527dd383d",
+    "cancellation": "artifacts/continuation-v7-20261109/pipeline-diagnostic-01/cancelled-before-dispatch.json"
+  }
+}

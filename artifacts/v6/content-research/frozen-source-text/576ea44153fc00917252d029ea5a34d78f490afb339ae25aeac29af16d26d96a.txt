@@ -1,0 +1,53 @@
+[ARCHIVE MEMBER 2010-2026历年笔试真题/2011/4.Algebra-Individual-2011.pdf; sha256=9a7fa187a87b93d5f599360a97a1733228a25d2bae66f33bb5f4384767c17252]
+[PAGE 1]
+S.-T. Yau College Student
+Mathematics Contests 2011
+Algebra, Number Theory and
+Combinatorics
+Individual
+2:30–5:00 pm, July 10, 2011
+(Please select 5 problems to solve)
+For the following problems, every example and statement must be
+backed up by proof. Examples and statements without proof will re-
+ceive no-credit.
+1. Let K =Q(√−3), an imaginary quadratic ﬁeld.
+(a) Do
+es there exists a ﬁnite Galois extension L/Q which contains
+K such that Gal(L/Q) ∼= S3? (Here S3 is the symmetric group
+in 3 letters.)
+(b) Does there exists a ﬁnite Galois extension L/Q which contains
+K such that Gal(L/Q) ∼=Z/4Z?
+(c) Does there exists a ﬁnite Galois extension L/Q which contains
+K such that Gal( L/Q) ∼= Q? Here Q is the quaternion group
+with 8 elements {±1, ±i, ±j, ±k}, a ﬁnite subgroup of the group
+of units H× of the ring H of all Hamiltonian quaternions.
+2. Let f be a two-dimensional (complex) representation of a ﬁnite
+group G such that 1 is an eigenvalue of f (σ) for every σ ∈ G. Prove
+that f is a direct sum of two one-dimensional representations of G
+3. Let F ⊂R be the subset of all real numbers that are roots of monic
+polynomials f (X) ∈Q[X].
+(1) Show that F is a ﬁeld.
+(2) Show that the only ﬁeld automorphisms of F are the identity
+automorphism α(x) = x for all x ∈ F .
+4. Let V be a ﬁnite-dimensional vector space over R and T : V → V
+be a linear transformation such that
+(1) the minimal polynomial of T is irreducible;
+(2) there exists a vector v ∈ V such that {T iv | i ≥ 0} spans V .
+Show that V contains no non-trivial proper T -invariant subspace.
+5. Given a commutative diagram
+A → B → C → D → E
+↓ ↓ ↓ ↓ ↓
+A′ → B′ → C ′ → D′ → E′
+1
+附件/试卷 4
+Appendix/Contest Paper 4
+[PAGE 2]
+Algebra, Number The
+ory and Combinatorics, 2011-Individual 2
+of Abelian groups, such
+that (i) both rows are exact sequences and (ii)
+every vertical map, except the middle one, is an isomorphism. Show
+that the middle map C → C ′ is also an isomorphism.
+6. Prove that a group of order 150 is not simple.
+附件/试卷 4
+Appendix/Contest Paper 4

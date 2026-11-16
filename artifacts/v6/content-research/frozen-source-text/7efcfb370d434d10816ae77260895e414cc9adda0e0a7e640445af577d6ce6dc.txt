@@ -1,0 +1,824 @@
+[PAGE 1]
+1
+Public
+CFA
+Institute Research Challenge
+OFFICIAL RULES
+2026-2027 SEASON
+[PAGE 2]
+2
+Public
+RULE 1: INTRODUCTION AND GENERAL PROVISIONS ........................................................................................... 3
+1.1 CONFLICTS OF INTEREST ............................................................................................................................................. 3
+1.2 PLAGIARISM .............................................................................................................................................................. 4
+1.3 THIRD PARTY INTELLECTUAL PROPERTY RIGHTS ............................................................................................................. 5
+1.4 USE OF REPORTS ....................................................................................................................................................... 5
+1.5 PARTICIPATION INFORMATION ..................................................................................................................................... 5
+1.6 PROGRAM OR EVENT MODIFICATIONS........................................................................................................................... 5
+RULE 2: TEAMS ........................................................................................................................................................ 5
+2.1 TEAM COMPOSITION .................................................................................................................................................. 5
+2.2 TEAM MEMBER REQUIREMENTS .................................................................................................................................... 6
+2.3 TEAM MEMBER INELIGIBILITY ....................................................................................................................................... 6
+2.4 RESEARCH ................................................................................................................................................................ 7
+2.5 INTERACTION WITH SUBJECT COMPANY ........................................................................................................................ 8
+2.6 WRITTEN REPORTS .................................................................................................................................................... 8
+2.7 PRESENTATIONS ........................................................................................................................................................ 9
+RULE 3: FACULTY ADVISOR, INDUSTRY MENTOR, JUDGES, AND GRADERS .......................................................... 9
+3.1 FACULTY ADVISOR ..................................................................................................................................................... 9
+3.2 TIME PERMITTED WITH FACULTY ADVISOR ................................................................................................................... 10
+3.3 INDUSTRY MENTOR.................................................................................................................................................. 10
+3.4 TIME PERMITTED WITH INDUSTRY MENTOR .................................................................................................................. 11
+3.5 JUDGES ................................................................................................................................................................... 11
+3.6 GRADERS ................................................................................................................................................................ 11
+RULE 4: LOCAL LEVEL COMPETITION .................................................................................................................... 11
+4.1 ELIGIBILITY OF HOST ................................................................................................................................................. 11
+4.2 COMPETITION REQUIREMENTS .................................................................................................................................... 11
+4.3 HOST REQUIREMENTS ............................................................................................................................................... 13
+4.4 TRAVEL AND ACCOMMODATIONS ............................................................................................................................... 13
+RULE 5: SUB-REGIONAL, REGIONAL, AND GLOBAL LEVEL COMPETITION ............................................................ 13
+5.1 REGIONAL LEVEL HOST .............................................................................................................................................. 13
+5.2 SUB-REGIONAL COMPETITION AND SCORING ................................................................................................................ 13
+5.2 REGIONAL SEMIFINAL COMPETITION AND SCORING ....................................................................................................... 14
+5.3 REGIONAL FINAL COMPETITION AND SCORING ............................................................................................................. 14
+5.4 GLOBAL COMPETITION AND SCORING ........................................................................................................................ 14
+APPENDIX A – WRITTEN REPORT GUIDELINES ...................................................................................................... 16
+APPENDIX B – GUIDELINES FOR REFLECTIVE AND RESPONSIBLE USE OF AI  ....................................................... 167
+APPENDIX C – WRITTEN REPORT COVER WITH DISCLOSURE ............................................................................. 178
+APPENDIX D – RESEARCH REPORT EVALUATION FORM ....................................................................................... 19
+APPENDIX E – LOCAL, REGIONAL, AND GLOBAL PRESENTATION SCORING SHEET ............................................ 20
+APPENDIX F – SUB-REGIONAL PRESENTATION SCORING SHEET ....................................................................... 220
+APPENDIX G – TIEBREAKERS ................................................................................................................................. 22
+[PAGE 3]
+3
+Public
+RULE 1:
+INTRODUCTION
+AND
+GENERAL PROVISIONS
+The CFA Institute Research Challenge  (Research Challenge ) is a competition between university-sponsored teams
+that research a designated publicly traded company, prepare a written report on that select ed company, and then
+present their findings to a panel of judges. The competition has five levels: local, sub-regional, regional semifinals,
+regional, and global. Winners at the local level advance to compete against teams within their geographic region at
+the sub-regional level. Winning teams at the sub-regional level advance to compete at the regional semifinal level.
+Winning teams at the regional seminal level advance to compete at the regional level. Winning teams at the regional
+level advance to compete at the global level. One team is designated the ultimate winning team, or champion, at the
+global level.  The decisions of CFA Institute interpreting these rules shall be final and binding upon all teams and local
+level hosts.
+A university is defined as a degree -granting institution that primarily delivers teaching to students in a traditional
+educational setting, such as a classroom, as opposed to primarily through electronic media. This includes universities
+that provide onlin e learning in addition to their classroom -based course offerings. If, due to extenuating
+circumstances, the university is temporarily offering classes virtually only, they will still be allowed to register team(s).
+The institution should hold educational a ccreditation by an accrediting agency recognized by mainstream academia
+to operate as an accreditor or authorization by a government organization, whichever is the standard for the country
+where the institution is located. CFA Institute may, at its sole di scretion, grant exceptions to this rule on a case -by-
+case basis.
+Local level hosts are responsible for the administration of the Research Challenge at the local level. No decision by
+the local level host regarding the administration of the local level competition shall conflict with these rules and in the
+event of any conflict, these rules shall govern .  Local level hosts may add additional requirements regarding the
+administration of their local level competition as long as those requirements do  not conflict with these rules.
+Clarification of “Registered Teams”:  For purposes of advancement to subsequent rounds, only teams that submit a
+written report will be counted. For funding purposes, a “registered team” is one with at least three members
+registered by the applicable deadline. A team that withdraws prior to submitting a written report may still be included
+in the count for funding eligibility but will not be included in the count for advancement eligibility.  CFA Institute is
+committed to creating a welcoming and safe environment for the Research Challenge where fairness, opportunity,
+and trust exist, allowing teams to leverage the diverse talents and perspectives of their participants. Participants in
+the Research Challenge are ambassadors of their university, the Local Host, and CFA Institute. Actions in their
+professional and personal lives should reflect positively on CFA Institute, the Research Challenge, the Local Host, and
+the participant’s university.
+1.1 Conflicts of Interest
+All participants in the Research Challenge, including hosts, teams, team members, industry mentors, faculty advisors,
+judges, and graders have an obligation to avoid actual or potential conflicts of interest with their participation. A
+conflict of interest is any matter that could reasonably be expected to impair an individual’s independence and
+objectivity or interfere with an individual’s duties. A conflict may be actual or perceived. For example, a conflict of
+interest may exist when a participant or a participant’s family member or close friend is involved in activities that affect
+the participant’s ability to perform their role fairly and impartially , but conflicts of interest can arise even without a
+[PAGE 4]
+4
+Public
+personal relationship . Hosts, mentors, and advisors also have an obligation to avoid purposefully or inadvertently
+pressuring teams to make a particular investment recommendation.
+To avoid any actual or perceived conflicts of interest, each participant must disclose to CFA Institute in writing any
+potential conflicts, including but not limited to any ownership interest in the subject company and any close personal
+or professional relationships with employees at the subject company. Judges and graders must further disclose any
+close personal or professional relationship with team members, mentors, or faculty advisors. Potential conflicts of
+interest must be disclosed promptly upon becoming aware of the potential conflict.
+CFA Institute (with assistance as necessary from the local level host) will investigate any disclosures of actual or
+potential conflicts of interest. If a conflict of interest is found to exist and cannot be reasonably and timely cured, the
+individual with  the conflict of interest will be disqualified from participation. If CFA Institute determines that it is
+necessary to protect the integrity of the competition, CFA Institute may disqualify a team from the competition if any
+team member, industry mentor, or faculty advisor is found to have a conflict of interest that is incapable of being
+reasonably and timely cured. In extraordinary circumstances where a local level host is found to have a conflict of
+interest, CFA Institute may, at its discretion , disqualify the local level host and all teams from that location from
+participation in the Research Challenge. The decision of CFA Institute regarding the existence of a conflict of interest
+and its determination regarding the disqualification of any individual or team is final and binding.
+1.2 Plagiarism
+Plagiarism is defined as copying or using in substantially the same form materials prepared  by others without
+acknowledging the source of the material or identifying the  author and publisher of such material.  Teams can read
+existing research on the subject company, but all analysis should be their own; they may not copy analysis (i.e.,
+plagiarize) from another source.
+Teams must not:
+a. use excerpts from articles or reports prepared by others either verbatim or with only slight changes in
+wording without acknowledgment,
+b. cite specific quotations as attributable to “leading analysts” and “investment experts” without naming the
+specific references,
+c. present statistical estimates of forecasts prepared by others and identifying the sources but without
+including the qualifying statements or caveats that may have been used,
+d. use charts and graphs without stating their sources, or
+e. copy proprietary computerized spreadsheets or algorithms without seeking the cooperation or authorization
+of their creators.
+The prohibition on plagiarism applies to a team’s written report and presentation.
+Sourced information should be properly cited using a generally accepted citation system. Generally accepted citation
+systems include, but are not limited to, the Chicago Manual of Style, the Harvard referencing system, and MLA
+(Modern Language Association) style.
+Allegations of plagiarism will be investigated by CFA Institute (with assistance as necessary from the local level host)
+and may be referred to the Professional Conduct Team at CFA Institute. Team members found to have plagiarized will
+[PAGE 5]
+5
+Public
+be disqualified and reported to the Professional Conduct Team. The team’s university may also be ineligible to
+participate in the following year’s competition. The decision of the local host or CFA Institute (as applicable) regarding
+plagiarism is final and binding.
+1.3 Third Party Intellectual Property Rights
+Respect for third-party intellectual property rights is essential to the CFA Institute Research Challenge.  While teams
+are free to include text, images, graphics, or other logos in their written reports and presentations as permitted by
+these rules, it is the obligation of each  team to ensure that the use of any third-party materials complies with all
+applicable copyright and trademark laws. Third-party images included in any written report or presentation must be
+appropriately licensed from the images’ owners. Where legally necessary, teams should secure the owner’s
+permission of any trademarks or service marks incorporated into their written report or presentation. By participating
+in any level of the Research Challenge, each team represents and warrants that neither its written report nor its
+presentation infringes or violates the copyright, trademark, trade secret or other intellectual property right of any
+third party anywhere in the world.
+By participating in the Research Challenge, CFA Institute grants each participating team a non -exclusive, non -
+transferable, revocable license to use the CFA Institute name and logo as specified in Appendix C to these Rules for
+the limited and specific purpose of that team’s participation in the Research Challenge.  Teams will use those materials
+only as specified in Appendix C and these Rules.  No other use of CFA Institute’s intellectual property is permitted.
+Teams may not change or alter the CFA Institute name or logo in any way.
+1.4 Use of Reports
+CFA Institute shall own the copyright in all materials prepared by or for hosts, teams, industry mentors, graders,
+judges, or faculty advisors in connection with the Research Challenge. The written reports and presentations prepared
+for the challenge may not be used for any purpose other than participation in the  Research Challenge. Team members
+may share their reports for recruitment purposes , in this instance all identifiable data must be anonymized. This
+section is subject to Appendix C.
+1.5 Participant Information
+By participating in the Research Challenge, each participant acknowledges that CFA Institute collects, processes and
+shares personal information of participants as described in the CFA Institute  Privacy Policy. Each participant agrees
+that CFA Institute and its affiliates (including the local host), shall have the right to use such individual’s name, voice,
+photograph, likeness, and their appearance in any medium or forum anywhere in the world (including online) without
+further compensation unless prohibited by law.
+1.6 Program or Event Modifications
+If, for reasons beyond the control of CFA Institute  and/or local hosts, the program and/or event format may need to
+be modified or, in extreme cases, cancelled.
+[PAGE 6]
+6
+Public
+RULE 2:
+TEAM
+S
+2.1 Team Composition
+Teams must be sponsored by a  university located within the area of the local competition in which the team wishes
+to compete. Local hosts have the sole discretion to allow more than one  team from a university. All teams from one
+university must participate in the same local competition. Local hosts have the discretion to choose how many teams
+(provided the minimum number of teams compete) and which universities compete in their local competition.
+Each team:
+a. Should strive for diversity when considering team members.
+b. Must consist of undergraduate, graduate, or a combination of undergraduate and graduate students.
+c. Must consist of no fewer than three and no more than five members at the time of the local kickoff.
+d. Can have no alternates. If a team loses one of its members, that member can be replaced no later than two
+weeks prior to the submission of the written report at the local level. If a team falls below three  registered
+members after this date, the team may continue in the competition with the remaining team members.
+2.2 Team Member Requirements
+Each team member must:
+a. complete the official registration form no later than two weeks following the local level kickoff meeting (timely
+completion of the official registration entitles students to be recognized participants by CFA Institute and
+ensures that winning team members are eligible to advance to sub-regional, regional semifinal, regional
+and/or global levels ). Replacement students must register within one week from the start of their
+participation;
+b. accept the terms of the participation agreement upon registration;
+c. agree to abide by the CFA Institute Code of Ethics and Standards of Professional Conduct;
+d. be a currently enrolled college or university student in an undergraduate or graduate program at the
+sponsoring university time of the local level kickoff meeting.  If the team member has graduated at the time
+of the local, sub-regional, regional semifinal, regional, or global final, the team member may still participate in
+the competition. ;
+e. be registered for at least a part -time course load, as defined by his or her university, at the time of the local
+level kickoff meeting; and
+f. participate in each stage of the competition their team advances to.   If, because of extenuating
+circumstances, such as serious illness/injury, a team member is unable to participate in one of the events
+(local, sub-regional, regional semifinal, regional, or global), that team member will not be disqualified and is
+eligible to participate in following competition rounds if the team advances.
+2.3 Team Member Ineligibility
+An individual is ineligible to be a team member, if that individual:
+a. has previously participated as a team member of the Research Challenge on any team that has submitted a
+written report at the local level;
+b. has been, or is, employed in a role within the core investment management profession at the time of the local
+kickoff meeting . If an individual begins employment within the core investment management profession
+following the local kickoff meeting, that team member may continue to participate. Core investment
+[PAGE 7]
+7
+Public
+management professionals are those individuals primarily involved in activities related to the investment
+decision-making process—generally portfolio managers, financial advisors, and research analysts on both the
+buy and sell side. The core investment man agement industry is comprised of firms (or larger firm business
+lines) primarily engaged in asset management (mutual funds, hedge funds, private equity, real estate
+investment, investment research and ratings, and investment advisory services), wealth mana gement,
+fiduciary asset ownership (such as pension funds, endowments, and sovereign wealth funds), and their
+related regulators and standard setters. If an individual’s  work was solely an internship, the individual is
+permitted to participate as a team member;
+c. has been, or is, a CFA® charterholder;
+d. is employed by CFA Institute or the local host;
+e. is under investigation or has been sanctioned by the CFA Institute Professional Conduct Program ; or
+f. has ever been convicted of a felony or crime punishable by more than one year’s imprisonment or has ever
+engaged in conduct which would violate the CFA Institute Code of Ethics and Standards of Professional
+Conduct.
+For purposes of these rules “employed” also includes performing services as an independent contractor, consultant,
+“freelancer,” or other similar service as well as formal employment as an employee.    CFA Institute defines an
+internship as real -world work experiences in which students fulfill short -term positions within a company or
+organization in order to gain hands-on experience and develop career-specific skills. Internships may be paid or unpaid,
+with or without academic credit, and are of varying lengths.
+Host societies/entities are responsible for ensuring team member eligibility, including, but not limited to, prior
+participation in the competition and prior or current work experience .
+2.4 Research
+Only team members may conduct research on the subject company for the purposes of the CFA Institute Research
+Challenge. Teams may use only publicly available information in conducting their research.
+Publicly available information  includes: (i) information in company financial statements and press releases ; (ii)
+information in the media about the company and its competitors ; (iii)  information produced by data aggregators for
+general use (e.g., LSEG, Bloomberg, S&P Global, FactSet, etc.); and (iv) Information provided by the subject company
+in the informational session and/or any permitted follow-up communication. Does NOT include: (i) information about
+the company that is (or should be) known only to staff or some staff employed by the company or firms with whom
+the company does business ; and (ii) information that is (or should be) known only to those involved in legal or
+regulatory proceedings involved with the company.
+In conducting research, teams:
+a. May utilize their industry mentor and/or faculty advisor as resources but may not enlist the help of any other
+individual who has ever been employed as an investment management professional in conducting research;
+b. Should prepare the written reports and presentations from the perspective of an independent research
+analyst; and
+[PAGE 8]
+8
+Public
+c. Can read existing research on the subject company, but all analysis should be their own; they may not copy
+analysis (i.e., plagiarize) from another source into their written reports or presentations. Sourced information
+should be properly cited using a generally accepted citation system.  Volunteer charterholders who mentor or
+advise students must request and receive permission from their firm to share reports prepared either within
+their firm or from outside sources. Additionally, all volunteers who work with students should ensure that
+they understand how to avoid plagiarism and what is required when citing the work of another research
+analyst.
+d. Can use Artificial Intelligence (“AI”) tools in a responsible, transparent, and ethically sound manner aligned
+with CFA Institute’s mission, values, and commitment to integrity and professionalism. All use of AI must
+comply with applicable legal and regulatory standards Misrepresenting or attempting to present AI-
+generated content as wholly original human work constitutes a breach of ethical standards and is prohibited.
+Teams are expected to exercise sound professional judgment in their use of AI and must clearly disclose and
+document any material reliance on AI tools within their research.  Teams should be prepared to explain and
+reflect on their use of AI during questioning from the judging panel. Teams should consider Appendix B:
+‘Guidelines for Reflective and Responsible Use of AI’
+2.5 Interaction with Subject Company (Company)
+Teams may not have contact with Company corporate executives or board members for the purposes of the Research
+Challenge other than during the  informational session (described in the following text)  and one permitted follow -up
+communication.
+a. The Company may provide teams with an informational session , including a question and answer  period
+(Q&A).
+b. If the Company agrees, teams may have one follow -up communication prior to the local final. This follow -up
+communication must be organized by the local host and the contact must be confined to those corporate
+officers who normally interact with investors, such as investor relations officers, CEOs, or chief financial
+officers.
+c. Teams may not contact Company corporate executives for the purposes of the Research Challenge other than
+as described in (a) and (b) above.
+d. Teams are permitted to interact with the Company as a member of the general public (e.g. , teams may dine
+in a restaurant that is owned by the Company or take a tour of the Company if it is publicly available).
+e. Teams may contact the Company’s customers, competitors, former employees, and suppliers in conducting
+research, including surveys . Contacted individuals should not be known to have ever been employed as an
+investment management professional. Each team member must identify themselves as a student and disclose
+their participation in the Research Challenge.
+f. Prior to contacting the Company, its customers, competitors, former employees, or suppliers, the team must
+submit its questions to the faculty advisor or industry mentor. The faculty advisor or industry mentor must
+participate in each communication but only for the purpose of ensuring that no material nonpublic information
+is discussed. Faculty advisors and industry mentors are not permitted to ask any questions or provide any
+opinions on the Company. The time spent by the faculty advisor or industry mentor while monitoring this kind
+of communication will not count toward the maximum number of hours allotted for faculty advisor or industry
+mentor involvement.
+[PAGE 9]
+9
+Public
+2.6 Written Reports
+Each team must prepare a written research report on the Company. Teams may utilize their industry mentor or faculty
+advisor as a resource but may not enlist the help of any other investment management professionals in writing the
+content of the report.
+The written report must:
+a. conform to the guidelines set forth in Appendix A, “Written Report Guidelines” (the cover page is shown in
+Appendix C),
+b. not exceed 10 A4-sized pages, but may include an appendix no longer than 10 A4-sized pages,
+c. be written in the English language,
+d. contain only publicly available information,
+e. be the original work of the team members,
+f. be properly cited using a generally accepted citation system,
+g. be prepared from the perspective of an independent research analyst, and
+h. be submitted to the local level host by the deadline established by the host.   Hosts may impose penalties for
+late submissions. Penalties may include, but are not limited to, point deductions or disqualification from the
+competition. The decision to impose penalties and the extent of those penalties is at the discretion of the
+host.
+i. The written report will be graded according to the criteria set forth in Appendix D, “Research Report Evaluation
+Form.”
+2.7 Presentations
+Each team may make a presentation of their findings to a panel of judges.
+a. Teams may utilize their industry mentor and/or faculty advisor as a resource for guidance, direction,
+suggestions, and feedback. Teams may not enlist the help of any other person who has ever been employed
+as an investment management professional or finance faculty member in preparing content or evaluating the
+presentation (including, but not limited to, mock judging panels).
+b. Teams may utilize presentation coaches or other public-speaking resources as long as those resources do not
+contribute to the content of the presentation.
+c. The teams may not hand the judges any printed materials before or after the presentations, but the local host
+can distribute the presentation slides to the judges.
+d. Teams may not use props in their presentation.  A prop is an object used by students to enhance or illustrate
+an aspect of the team presentation.  Cue cards are not considered props.
+e. Presentations must include source information.
+f. Only student team members may participate in the presentation. Subject to the limitations of these rules,
+teams are free to structure their presentations as they wish.
+g. Presentations at the sub-regional, regional semifinal, r egional, and global levels must be in the English
+language.
+h. The presentation is limited to 10 minutes. At the local and regional semifinal an additional 10 minutes  and at
+the regional final and global final, an additional 15 minutes, will be provided to answer questions posed by the
+judges (Q&A). During the regional final and global final, the timekeeper may end the Q&A before 15 minutes
+if there is a consensus amongst the judges that there are no further questions and at least 10 minutes have
+passed. At the sub-regional level there will be no Q&A.
+i. Only judges are permitted to pose questions to a team during the Q&A portion of a presentation.
+[PAGE 10]
+10
+Public
+j. Each presentation will be timed . The timekeeper  may provide a one -minute warning and an announcement
+when time has expired during the presentation. The timekeeper will announce when time has expired during
+the Q&A period. When the timekeeper announces that time has expired, teams must immediately conclude.
+k. Presentations will be judged according to Appendix E, “Presentation Scoring Sheet.”
+RULE 3:
+FACULTY
+ADVISOR
+,
+INDUSTRY MENTOR
+,
+JUDGE
+S
+,
+AND
+GRADER
+S
+3.1 Faculty Advisor
+a. Each team may be provided one faculty advisor. The faculty advisor must be currently employed in a
+teaching role by the team’s sponsoring university. Teams are not allowed to have more than one faculty
+advisor.  The faculty advisor’s primary responsibility is to provide guidance and direction to the team
+throughout all levels of competition
+b. A faculty advisor may work with more than one team from the same university. In this case, the faculty advisor
+shall treat all teams equally in regards to level of support provided.
+c. The faculty advisor will be selected by the team’s university.
+d. The faculty advisor must complete the official registration form no later than two weeks following the local
+level kickoff meeting.
+e. The faculty advisor must accept the terms of the participation agreement upon registration.
+f. The faculty advisor must agree to abide by the CFA Institute Code of Ethics and Standards of Professional
+Conduct.
+g. The faculty advisor may not conduct any analysis for the team’s written report or presentation or participate
+in the presentation.
+h. The faculty advisor may not contribute any research or content to either the written report or the presentation
+other than by providing guidance, direction, suggestions, and feedback .
+3.2 Time Permitted with Faculty Advisor
+Teams are permitted to use a faculty advisor on substantive matters for limited hours . Teams may spend up to  10
+hours with the faculty advisor prior to submitting the  written report. For each local, sub-regional, regional semifinal,
+regional final, or global final in which the team competes, the faculty advisor may contribute an additional three hours.
+Logistical work, such as arranging meeting space and times and class attendance , does not count toward the time
+limit. Failure to abide by these time limits will result in the team’s and the faculty advisor’s disqualification from the
+Research Challenge.
+3.3 Industry Mentor
+Each team may be provided one industry mentor.
+a. The industry mentor will be selected by the local level host.
+b. The industry mentor must accept the terms of the participation agreement upon registration.
+c. The industry mentor must agree to abide by the CFA Institute Code of Ethics and Standards of Professional
+Conduct.
+d. The industry mentor may not conduct any analysis for the team’s written report or presentation.
+e. The industry mentor may not contribute any research or content to either the written report or the
+presentation other than by providing guidance, direction, suggestions, and feedback.
+[PAGE 11]
+11
+Public
+f. Students may not receive assistance from additional finance industry professionals.
+g. It is recommended that industry mentors be CFA charterholders.
+3.4 Time Permitted with Industry Mentor
+Teams are permitted to use an industry mentor on substantive matters for limited hours. Teams may spend up to six
+hours with the industry mentor prior to submitting the written report. For each local, sub-regional, regional semifinal,
+regional final, or global final in which the team competes, the industry mentor may contribute an additional two hours.
+Logistical work, such as arranging meeting space and time , does not count toward the time limit. Failure to abide by
+these time limits will result in the team’s and the industry mentor’s disqualification from the Research Challenge.
+3.5 Judges
+a. Judges will independently evaluate each presentation using the presentation scoring sheet (see Appendix E
+and Appendix F).
+b. Judges must accept the terms of the participation agreement upon registration.
+c. Judges must agree to abide by the CFA Institute Code of Ethics and Standards of Professional Conduct .
+d. Each judging panel must have a minimum of three judges.
+e. Judges will be selected by the event host. All judges must be investment professionals. It is recommended
+they have experience writing and reviewing equity research reports.
+f. It is recommended that judges be CFA charterholders.
+3.6 Graders
+a. Graders will independently evaluate each written report using the Research Report Evaluation Form (see
+Appendix D).
+b. Graders must accept the terms of the participation agreement upon registration.
+c. Graders must agree to abide by the CFA Institute Code of Ethics and Standards of Professional Conduct .
+d. Graders will be selected by the event host. All graders must be investment professionals with experience in
+writing and reviewing research reports.
+e. It is recommended that graders be CFA charterholders.
+RULE 4:
+LOCAL
+LEVEL COMPETITION
+4.1 Eligibility of Host
+Only CFA Institute, CFA Institute member societies, and CFA Institute–approved entities are eligible to serve as local
+level hosts. All new hosts must be approved by CFA Institute. The local host is responsible for holding the local level
+competition in its region in accordance with these Rules.
+4.2 Competition Requirements
+Local level competitions must have at least three teams from at least two universities committed to participating by
+the specified competition star t date. If fewer than three teams from two universities commit to participating by the
+competition start date in a local level competition, the winning team in that local final will not be eligible to compete
+at the sub-regional level. If teams drop out of the competition after the competition start date, the winning team in
+[PAGE 12]
+12
+Public
+that local final will be eligible to compete at the sub-regional level even if there are fewer than three teams from two
+universities at the end of the local competition.
+A university may have an unlimited number of teams participate if approved by the local level host. Local level hosts
+may choose to evaluate all the team reports and presentations or they may choose to utilize the university to evaluate
+the reports. In the  case where the university is evaluating the report, they must grade according to the criteria set
+forth in Appendix D , “Research Report Evaluation Form.”  The university then identifies the top teams that will
+participate in the evaluations competed by the local host. The local host determines the number of teams participating
+beyond the university round.
+The local level host is responsible for establishing the timetable and deadlines for their local competition and for
+designating the means by which written reports are submitted for consideration and the manner in which
+presentations are conducted. It is t he responsibility of each local level host to ensure that its local competition
+schedule is completed by 1 March 2027. The local level host shall provide information about the local level competition
+schedule and local level requirements to teams no later than the local level kickoff meeting.
+No decision by the local level host regarding the administration of the local level competition shall conflict with these
+rules, and in the event of any conflict, these rules shall govern.  Local level hosts may add additional requirements
+regarding the administration of their local level competition if those requirements do  not conflict with these rules.
+The decisions of CFA Institute interpreting these rules shall be final and binding upon all local level hosts.
+The winner from each eligible local level competition will advance to a sub-regional level competition. If the local level
+competition has at least 24 teams competing, then the top two teams will advance to a sub-regional level
+competition. Only the first -place finisher in local  level competitions involving 23 participating teams or fewer will
+advance to the sub-regional competition (Refer to Clarification of ‘Registered Teams’ )Teams are free to adjust their
+presentations between rounds in any manner that complies with these rules. Permitted adjustments include changes
+to slide formatting and substantive content, including, but not limited to, the investment recommendation and price
+target.
+Local level competitions must adhere to one of the following competition formats  which is selected by the local
+host and disclosed to teams in advance of the local kickoff meeting:
+• Classic format. The classic format is used when all participating teams  present at the local final competition.
+Typically, these competitions feature three to six teams. Each team submits a written report and gives a
+presentation to a panel of judges. The winning team will have the highest combined score based on the
+written report results (50%) and the presentation results (50%).
+• Staggered format. The staggered format is used when it is not feasible for all teams to present at the local
+final, so the scores from the written report and/or the presentation allow only the top teams to advance.
+Typically, these competitions feature more than six teams and follow one of these options:
+o Staggered Format A : Each team submits and is evaluated on a written report . The teams (at least
+three) with the highest written report scores advance to give a presentation to a single panel of judges.
+If all teams are evaluated by the same graders, the winning team will have the highest combined score
+based on the written report results (50%) and the presentation results (50%). If the teams are
+evaluated by different sets of graders (i.e. the team’s written report scores are not relative to one
+another), the winning team will be the team with the highest presentation results.
+[PAGE 13]
+13
+Public
+o Staggered Format B : Teams are divided into at least two semifinal groups. Each team submits a
+written report and gives a presentation. Teams are evaluated among their group s, and the top team
+in each semifinal group based on the combined score of the written report (50%) and the
+presentations (50%) advances to the local final. The winning team will then be determined in the local
+final based solely on the presentation scores.
+• District format. The district format is used in a large geographic area when travel to and from a central location
+is not possible. These competitions are allowed only under special circumstances and need to be approved by
+CFA Institute. Teams are assigned to one of at least three districts. There must be at least four teams in each
+district. Each team submits a written report and gives a presentation to the district’s panel of judges. Each
+district will send the team with the highest score in that district to the local final. The winning district teams
+will compete against one another in the local final to determine the winning team. District format competitions
+with at least 24 teams will send the top two teams to compete at the regional round. District format
+competitions with at least 48 teams will send the top three teams to compete in the regional round.
+For local finals utilizing the staggered format, there may be a tie among written report scores in determining which
+teams advance to the presentation round. In this event, use the tiebreakers outlined in Appendix G.  In the event of a
+tie at the local final, the winner will be determined using the tiebreakers outlined in Appendix G.
+4.3 Host Requirements
+Local level hosts must:
+a. Register their competition by 28 August 2026.
+b. Select a publicly traded subject company.
+c. Select the industry mentors, graders, and judges.
+d. Ensure that all team members meet the eligibility requirements set forth in Section 2.2 .
+e. Ensure that no team members are ineligible pursuant to Section 2.3.
+f. Send the result of the local level and the winning team’s written report to CFA Institute within two days of
+completion of the local final.
+g. Conduct the local level completion in accordance with these rules and the local level host’s competition
+schedule and procedures.
+All decisions of the local level host are final and binding on local level teams but subject to the review of CFA Institute.
+4.4 Travel and Accommodations
+Participants and volunteers are responsible for any and all expenses incurred for travel and accommodations related
+to the local level competition unless the local host otherwise agrees to be responsible.
+RULE 5:
+SUB
+-
+REGIONAL,
+REGIONAL SEMIFINAL,
+REGIONAL
+,
+AND
+GLOBAL
+LEVEL COMPETITION
+S
+5.1 Sub-Regional, Regional Semifinal, Regional, and Global Level Host
+CFA Institute will act as the host and establish the schedule for the sub-regional, regional semifinal, regional, and
+global level competitions.
+[PAGE 14]
+14
+Public
+CFA Institute offers the Research Challenge in a manner accessible to individuals with documented disabilities in
+compliance with the law. Where required by law, CFA Institute will offer reasonable accommodations to disabled team
+members, which may include reasonably necessary waivers from or modifications to these rules for the disabled team
+member. Contact researchchallenge@cfainstitute.org for instructions on how to request an accommodation for your
+disability.
+If, for reasons beyond the control of CFA Institute  the event format may need to be modified  or, in extreme cases,
+cancelled. Participants will not be compensated in the event of any event format modifications or cancellations.
+5.2 Sub-Regional Competition and Scoring
+Sub-regions are pre-determined using established geographic and political areas.
+During the sub -regional round teams will be evaluated on a recorded 10 -minute presentation. The presentation will
+be recorded using a format to be specified by CFA Institute. There will be no question and answer  period. The report
+will be submitted by the local host, but not evaluated.
+CFA Institute will send the recorded presentations  from each team to a group of judges. These judges will score
+presentations for all the teams competing against each other in that sub -region breakout. The overall score will be
+based 100% on presentation score. During the sub-regional round, there will be no question and answer period. Sub-
+regional judges will assess the presentation score using Appendix F. In the event a tie, the winner will be determined
+as per Appendix G.
+In order to eliminate the fluctuating scores between judges, winners are determined using an average ranking for
+each team as opposed to the average raw score. Raw scores are collected and converted to rankings for each team.
+Sub-regional winners advance to the regional semifinal level. Sub-regional competitions advance teams to the
+regional semifinal level as follows:
+NUMBER OF
+SUB-REGIONAL
+TEAMS
+TEAMS ADVANCING
+TO REGIONAL
+NUMBER OF
+SUB-REGIONAL
+TEAMS
+TEAMS ADVANCING
+TO REGIONAL
+1-4 1  21-24 6
+5-8 2  25-28 7
+9-12 3  29-32 8
+13-16 4  33-36 9
+17-20 5  37+ 10
+5.3 Regional Semifinal Competition and Scoring
+During the regional semifinal round, teams will be randomly assigned to semifinal breakouts. Teams will advance from
+the semifinal breakouts to the regional final.
+Scores will be based 100% on presentation. During the regional semifinal round, the question and answer period will
+be ten minutes. Regional semifinal judges will assess the presentation score using Appendix E. In the event of a tie,
+the winner will be determined as per Appendix G.
+[PAGE 15]
+15
+Public
+In order to eliminate fluctuating scores between judges, winners are determined using an average ranking for each
+team as opposed to the average raw score. Raw scores are collected and converted to rankings for each team.
+5.3 Regional Final Competition and Scoring
+Scores will be based 100% on presentation scores. During the regional final round, the question and answer period
+will be fifteen minutes. Regional judges will assess the presentation score using Appendix E. In the event of a tie, the
+winner will be determined as per Appendix G.
+In order to eliminate the fluctuating scores between judges, winners are determined using an average ranking for each
+team as opposed to the average raw score. Raw scores are collected and converted to rankings for each team.
+Two regional winners per region will advance to the global round.
+5.4 Global Final Competition and Scoring
+Scores will be based 100% on presentation scores. During the Global Final round, the question and answer period will
+be fifteen minutes. Global judges will assess the presentation score using Appendix E. In the event of a tie, the winner
+will be determined as per Appendix G.
+In order to eliminate the fluctuating scores between judges, winners are determined using an average ranking for each
+team as opposed to the average raw score. Raw scores are collected and converted to rankings for each team.
+The global  champion will receive a scholarship for their universit y in the amount of US D 10,000. This scholarship
+should be used to directly support educational expenses of students at that university.  The prize money will be paid
+directly to the winning university.
+[PAGE 16]
+16
+Public
+A
+ppendix A
+–
+Written Report Guidelines
+Each team must prepare a written research report on the subject company chosen by the local host. Teams may use
+their industry mentor or faculty advisor as resources but may not enlist the help of any other professionals in writing
+the actual report.
+The written report must
+• be no longer than 10 pages (not including the front cover page provided by CFA Institute) on A4-sized paper
+(210 mm × 297 mm, 8.27” × 11.69”), although you may include an appendix no longer than 10 A4-sized
+pages;
+• be properly cited using a generally accepted citation system. Generally accepted citation systems include,
+but are not limited to, the Chicago Manual of Style, the Harvard referencing system, and MLA (Modern
+Language Association) style.
+• include the following information in a header on the first page:
+o Company name
+o Exchange
+o Ticker symbol
+o Sector/Industry
+o Recommendation (buy/sell/hold)
+o Current price (as of __ date)
+o Target price (% increase/decrease)
+• contain only publicly available information;
+• be the original work of the team members;
+• be prepared from the perspective of an independent research analyst;
+• be submitted to the local-level host by the deadline established by the host;
+• include the front cover provided by CFA Institute with the information in highlighted text filled in (teams
+must not alter any other part of the cover page, including the CFA Institute logo); and
+• contain (but not limited to*) the following sections:
+o Business description
+o Industry overview and competitive positioning
+o Investment summary
+o Valuation
+o Financial analysis
+o Investment risks
+o Environmental, social, and governance
+*You may also include other headings for important information not otherwise covered in the previously listed
+sections.
+[PAGE 17]
+17
+Public
+Appendix B
+-
+Guidelines for Reflective and Responsible Use of AI
+It is common practice for professionals to use Artificial Intelligence tools and outputs to support their work. CFA
+Institute Research Challenge mirrors professional practice so use of AI is acceptable in developing reports and
+presentations. However, as in professional practice, this requires responsible and reflective use, awareness of risk
+and full transparency. Judging panels are likely to ask questions about use of AI in relation to any significant data and
+findings that are presented.
+Teams may prepare for this in their own ways, but to demonstrate reflective and responsible use of Artificial
+Intelligence teams should be ready to:
+Acknowledge use
+Disclose what AI tools were used, how and why.
+Verify AI outputs
+Cross-check outputs against trusted sources. Explain the degree of consensus.
+Evaluate AI outputs
+Sense-check - considering bias, omissions, alternative viewpoints, the size and rigor of data sources. Explain the
+degree of confidence and risk in different AI outputs.
+Reflect
+Explain how AI tools and outputs affected your judgement. What were the strengths and weaknesses of the AI tools
+and outputs used in your findings?
+[PAGE 18]
+18
+Public
+Appendix C
+–
+Written Report Cover
+with Disclosure
+CFA Institute Research Challenge
+hosted
+by/in
+Local Challenge (e.g., CFA Society Virginia,
+CFA Society Thailand
+, etc.)
+Team Name
+The CFA Institute Research Challenge is a global competition that tests the equity research and valuation,
+investment report writing, and presentation skills of university students. The following report was prepared in
+compliance with the Official Rules of the CFA Institute Research Challenge, is submitted by a team of university
+students as part of this annual educational initiative and should not be considered a professional report.
+Disclosures:
+Ownership and material conflicts of interest
+The author(s), or a member of their household, of this report [holds/does not hold] a financial interest in the securities of this
+company.
+The author(s), or a member of their household, of this report [knows/does not know] of the existence of any conflicts of
+interest that might bias the content or publication of this report. [The conflict of interest is…]
+Receipt of compensation
+Compensation of the author(s) of this report is not based on investment banking revenue.
+Position as an officer or a director
+The author(s), or a member of their household, does not serve as an officer, director, or advisory board member of the subject
+company.
+Market making
+The author(s) does not act as a market maker in the subject company’s securities.
+Disclaimer
+The information set forth herein has been obtained or derived from sources generally available to the public and believed by the
+author(s) to be reliable, but the author(s) does not make any representation or warranty, express or implied, as to its accuracy
+or completeness. The information is not intended to be used as the basis of any investment decisions by any person or entity.
+This information does not constitute investment advice, nor is it an offer or a solicitation of an offer to buy or sell any security.
+This report should not be considered to be a recommendation by any individual affiliated with [society name], CFA Institute, or
+the CFA Institute Research Challenge with regard to this company’s stock.
+[PAGE 19]
+19
+Public
+Appendix D
+–
+Research Report Evaluation Form
+Research Report Evaluation Form
+SECTION MAXIMUM POINTS COMMENTS
+Business Description 5
+Industry Overview &
+Competitive Positioning 10
+Investment Summary 15
+Valuation 20
+Financial Analysis 20
+Investment Risks 15
+Environmental, Social,
+Governance 15
+Total 100
+[PAGE 20]
+20
+Public
+Appendix E
+–
+Local,
+Regional Semifinal,
+Regional, and Global
+Presentation Scoring Sheet
+Presentation Scoring Sheet
+Team:  Judge:
+CRITERIA MAXIMUM POINTS POINTS COMMENTS
+Financial Analysis
+How thorough was their analysis of the
+industry, company, and competitors?
+20
+Valuation
+Were the valuation methodologies
+appropriate and detailed?
+20
+Environmental, Social, and Governance
+Did the analysis thoroughly incorporate
+conservation of the natural world,
+consideration of people and
+relationships, and standards for running
+a company?
+10
+Presentation
+How effective/convincing was their
+presentation? Was it logical and did the
+facts support the recommendation?
+20
+Question & Answer
+Were they able to answer the questions
+effectively and with confidence?
+20
+Team Involvement
+Team involvement in the
+presentation/questions and answers
+5
+Materials
+Quality of slides 5
+Total 100
+[PAGE 21]
+21
+Public
+Appendix F
+–
+Sub
+-
+Regional
+Presentation Scoring Sheet
+Presentation Scoring Sheet
+Team:  Judge:
+CRITERIA MAXIMUM POINTS POINTS COMMENTS
+Financial Analysis
+How thorough was their analysis of the
+industry, company, and competitors?
+20
+Valuation
+Were the valuation methodologies
+appropriate and detailed?
+20
+Environmental, Social, and Governance
+Did the analysis thoroughly incorporate
+conservation of the natural world,
+consideration of people and
+relationships, and standards for running
+a company?
+10
+Presentation
+How effective/convincing was their
+presentation? Was it logical and did the
+facts support the recommendation?
+20
+Team Involvement
+Team involvement in the presentation 5
+Materials
+Quality of slides 5
+Total 80
+[PAGE 22]
+22
+Public
+Appendix G
+–
+Tiebreakers
+Local Level – Written Report
+When using the staggered method, local hosts may use the written reports to advance a team. In the event of a tie,
+the advancing team will be determined in the following order:
+a. Financial analysis section of the Research Report Evaluation Form;
+b. Valuation section of the Research Report Evaluation Form;
+c. Investment summary section of the Research Report Evaluation Form;
+d. Industry overview and competitive positioning section of the Research Report Evaluation Form;
+e. Investment risks section of the Research Report Evaluation Form;
+f. Environmental, Social, and Governance section of the Research Report Evaluation Form;
+g. Business description section of the Research Report Evaluation Form.
+Local Level – Presentation
+In the event of a tie, the advancing team will be determined in the following order:
+a. Better overall score for the presentation (if using Classic format only);
+b. Financial analysis section of the Presentation Scoring Sheet;
+c. Valuation section of the Presentation Scoring Sheet;
+d. Environmental, Social, and Governance section of the Presentation Scoring Sheet;
+e. Question and answer of the Presentation Scoring Sheet;
+f. Presentation section of the Presentation Scoring Sheet;
+g. Team involvement section of the Presentation Scoring Sheet;
+h. Materials section of the Presentation Scoring Sheet.
+Sub-Regional, Regional Semifinal, Regional, and Global Levels
+In the event of a tie, the advancing team will be determined in the following order:
+a. Financial analysis section of the Presentation Scoring Sheet;
+b. Valuation section of the Presentation Scoring Sheet;
+c. Environmental, Social, and Governance section of the Presentation Scoring Sheet;
+d. Question and answer of the Presentation Scoring Sheet (skip during the sub-regional level);
+e. Presentation section of the Presentation Scoring Sheet;
+f. Team involvement section of the Presentation Scoring Sheet;
+g. Materials section of the Presentation Scoring Sheet.

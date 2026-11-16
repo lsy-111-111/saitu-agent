@@ -9,3 +9,11 @@ competition_idempotency
 ai_model_call_leases
 ai_model_call_waiters
 resume_ai_schema_migrations
+competition_decision_states
+competition_decision_runs
+competition_decision_calls
+competition_decision_chat_requests
+ai_spend_budgets
+ai_spend_ledger
+ai_spend_authority
+ai_spend_development_batches

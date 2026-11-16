@@ -196,19 +196,19 @@ for directory, directories, files in os.walk(root, topdown=True, followlinks=Fal
             fail(f"unapproved directory symlink was added to the release tree: {child_relative}")
         if child.is_symlink():
             continue
-        if relative_directory == pathlib.Path(".") and name in {".next", "node_modules"}:
+        if relative_directory == pathlib.Path(".") and name in {".next", "node_modules", "dist"}:
             continue
         if child_relative not in approved_directories:
             fail(f"unapproved directory was added to the release tree: {child_relative}")
     if relative_directory == pathlib.Path("."):
         for generated_name in [
             name for name in directories
-            if name in {".next", "node_modules"}
+            if name in {".next", "node_modules", "dist"}
         ]:
             if pathlib.Path(directory, generated_name).is_symlink():
                 fail(f"generated release tree is a symlink: {generated_name}")
         directories[:] = [
-            name for name in directories if name not in {".next", "node_modules"}
+            name for name in directories if name not in {".next", "node_modules", "dist"}
         ]
     for name in files:
         relative = (relative_directory / name).as_posix()
@@ -224,3 +224,18 @@ for directory, directories, files in os.walk(root, topdown=True, followlinks=Fal
 
 for digest, kind, relative in rows:
     print(f"{digest}\t{kind}\t{relative.as_posix()}")
+
+# dist is a closed generated partition, not an arbitrary source exclusion.
+worker_dist = root / "dist"
+if worker_dist.exists() and any(worker_dist.iterdir()):
+    if sorted(path.name for path in worker_dist.iterdir()) != ["decision-worker"]:
+        fail("generated dist contains an unapproved directory")
+    worker_output = worker_dist / "decision-worker"
+    if not worker_output.is_dir() or worker_output.is_symlink():
+        fail("decision worker output is linked or not a directory")
+    if sorted(path.name for path in worker_output.iterdir()) != ["manifest.json", "worker.mjs"]:
+        fail("decision worker output membership differs from the closed contract")
+    for member in worker_output.iterdir():
+        metadata = member.lstat()
+        if not stat.S_ISREG(metadata.st_mode) or metadata.st_nlink != 1:
+            fail("decision worker output contains an unsafe member")

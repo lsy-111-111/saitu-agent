@@ -509,7 +509,7 @@ function expandCompetitionQuestionnaire(
   };
 }
 
-export function normalizeCompetitionQuestionnaire(input: unknown):
+export function normalizeCompetitionQuestionnaire(input: unknown, options: { policy?: "v7" } = {}):
   | { ok: true; questionnaire: NormalizedCompetitionQuestionnaireV1; interpretations: CompetitionQuestionnaireInterpretation[] }
   | { ok: false } {
   const parsed = competitionQuestionnaireV1Schema.safeParse(input);
@@ -520,9 +520,10 @@ export function normalizeCompetitionQuestionnaire(input: unknown):
     const hasText = Boolean(answer.freeText);
     const proposed = [...new Set([...answer.selectedValues, ...suggestedValues])];
     const conflict = hasText && suggestedValues.length > 0 && !validateValues(answer.fieldId, proposed);
+    const preserveRawTask = options.policy === "v7" && answer.fieldId === "taskFormats" && hasText && suggestedValues.length === 0;
     return {
       fieldId: answer.fieldId,
-      explicitValues: [...answer.selectedValues],
+      explicitValues: options.policy === "v7" && hasText && suggestedValues.length > 0 && !conflict ? proposed : [...answer.selectedValues],
       suggestedValues,
       source: !hasText ? "explicit" : suggestedValues.length === 0 ? "unresolved" : answer.selectedValues.length ? "mixed" : "deterministic",
       confidence: !hasText ? 1 : suggestedValues.length === 0 ? 0 : answer.selectedValues.length ? 0.9 : 0.95,
@@ -530,12 +531,14 @@ export function normalizeCompetitionQuestionnaire(input: unknown):
       ...(hasText && suggestedValues.length > 0 ? { evidenceSpan: answer.freeText } : {}),
       rationale: !hasText
         ? "用户直接选择了白名单选项。"
+        : preserveRawTask
+          ? "已保留你的任务偏好原话，不强行归入预设选项。"
         : suggestedValues.length === 0
           ? "自由文本暂时无法唯一对应白名单选项，需要用户确认。"
           : conflict
             ? "自由文本与已选单选项不一致，需要用户决定最终值。"
-            : "自由文本与白名单选项唯一对应，仍需用户确认后采用。",
-      requiresConfirmation: hasText
+            : options.policy === "v7" ? "已采用这次提交的明确自述。" : "自由文本与白名单选项唯一对应，仍需用户确认后采用。",
+      requiresConfirmation: options.policy === "v7" ? hasText && !preserveRawTask && (suggestedValues.length === 0 || conflict) : hasText
     };
   });
   return { ok: true, questionnaire, interpretations };
@@ -548,7 +551,7 @@ export function getCompetitionNormalizeModel() {
 export async function enhanceCompetitionQuestionnaireWithAi(
   questionnaire: NormalizedCompetitionQuestionnaireV1,
   interpretations: readonly CompetitionQuestionnaireInterpretation[],
-  options: { deadlineEpochMs?: number; signal?: AbortSignal } = {}
+  options: { deadlineEpochMs?: number; signal?: AbortSignal; policy?: "v7" } = {}
 ): Promise<{
   interpretations: CompetitionQuestionnaireInterpretation[];
   provider: string;
@@ -646,10 +649,10 @@ export async function enhanceCompetitionQuestionnaireWithAi(
     model,
     systemPrompt: "Return JSON only. Map user text only to supplied whitelist values and obey each field's semanticPolicy; return ambiguous or no_match instead of guessing.",
     temperature: 0,
-    maxTokens: 1400,
+    maxTokens: 8192,
     maxAttempts: 2,
     schema: outputSchema,
-    thinking: "disabled",
+    thinking: "enabled",
     operation: "competition_normalize",
     promptVersion: COMPETITION_NORMALIZE_PROMPT_VERSION,
     candidateCount: requests.length,
@@ -685,6 +688,7 @@ export async function enhanceCompetitionQuestionnaireWithAi(
       const conflict = !validateValues(interpretation.fieldId, proposed);
       return {
         ...interpretation,
+        ...(options.policy === "v7" && !conflict ? { explicitValues: proposed, requiresConfirmation: false } : {}),
         suggestedValues: proposed.slice(
           0,
           COMPETITION_QUESTIONNAIRE_FIELD_SPECS[interpretation.fieldId].maxSelections
@@ -865,6 +869,9 @@ function valueFor(
   const values = interpretation.requiresConfirmation
     ? confirmations.find((item) => item.fieldId === fieldId)?.values
     : interpretation.explicitValues;
+  // V7 keeps unmapped task prose in the signed raw answer and canonical facts.
+  // It does not invent a whitelist value or change legacy confirmation rules.
+  if (fieldId === "taskFormats" && interpretation.source === "unresolved" && !interpretation.requiresConfirmation && values?.length === 0) return [];
   return values && validateValues(fieldId, values) ? values : null;
 }
 

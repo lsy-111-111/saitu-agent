@@ -72,7 +72,7 @@ done < "$POLICY"
 [ "${policy[NODE_ARCHIVE]:-}" = node-v24.20.0-linux-x64.tar.xz ] || fail "Node archive is not approved"
 [[ "${policy[NODE_SHA256]:-}" =~ ^[a-f0-9]{64}$ ]] || fail "Node checksum is malformed"
 [ "${policy[NODE_ORIGIN]:-}" = https://nodejs.org/dist/v24.20.0 ] || fail "Node origin is not approved"
-[ "${policy[NPM_VERSION]:-}" = 11.17.0 ] || fail "Node-bundled npm version is not approved"
+[ "${policy[NPM_VERSION]:-}" = 11.19.0 ] || fail "Node-bundled npm version is not approved"
 [ "${policy[PM2_VERSION]:-}" = 7.0.4 ] && [ "${policy[PNPM_VERSION]:-}" = 11.19.0 ] \
   || fail "PM2/pnpm versions are not approved"
 [ "${policy[PM2_TARBALL]:-}" = https://registry.npmjs.org/pm2/-/pm2-7.0.4.tgz ] \

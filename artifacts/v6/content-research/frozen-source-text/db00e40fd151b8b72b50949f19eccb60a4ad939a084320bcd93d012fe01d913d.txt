@@ -1,0 +1,307 @@
+[PAGE 1]
+The optional pieces are your chance to
+show additional executions (e.g. ads,
+product mock-ups, app prototypes), or
+give further insights into your research
+and development. You should name
+every asset (each file you upload or
+URL you input) clearly, indicating
+whether that asset is one of your main
+deliverables, or an optional supporting
+piece (e.g. “Main Deliverable 1 of 4”,
+“Supporting Image 3”, etc).
+What else do you need to know?
+You can enter online from early 2027.
+Please note, D&AD hosts a number of
+awards, so make sure you’re on an entry
+site that says ‘New Blood Awards’
+at the top of the page before starting to
+create your entry. You’ll be able to access
+the entry site by heading to
+dandad.org/newbloodawards and selecting
+‘enter now’ when the entry site is live.
+The entry site will walk you through the
+process, but before you start, make sure
+all your team members and tutors have
+registered and can login at dandad.org.
+Keep it anonymous. This is for your
+benefit – we want the judges to look
+purely at your work and keep the
+process free of unconscious bias. So
+don’t include your name, or the names
+of your teammates, tutors or college
+anywhere in your entered work, or in file
+names. If these are included, we may
+ask you to resubmit without them, or
+remove them ourselves. There may be
+some exceptions, e.g. if your identity is
+somehow part of your concept –
+check with us if you’re not sure.
+All work must be submitted in English
+unless specified by the brief. Any
+explanations must also be in English.
+You must upload all your files on the
+entry site. We will not accept files
+uploaded on other sites e.g.
+submitting a video via Youtube or Vimeo.
+You have to upload it directly. The one
+exception is for interactive executions –
+see the following pages for more info.
+All entries MUST be in response to a New
+Blood Awards 2027 brief. If your entry
+doesn’t appear to be answering any of
+this year’s briefs, it may be withdrawn.
+To make it clear that your entry is a
+response to one of the briefs, make sure
+you mention the sponsor in your entry
+description and clearly explain how it is
+solving the problem outlined in the brief.
+There’s a lot here, we know. But it’s
+essential to get your entry right – so read
+on.
+To find out what to submit…
+1.Check your chosen brief. The ‘What and
+how to submit’ section will tell you the
+formats you can submit your response
+in. It’ll be a combination of the following:
+video, JPEG, interactive and PDF.
+2.Find the full specifications for each
+format (file type, file size, etc) in the
+following pages. Make sure you meet
+these specs when preparing your work,
+or it may not be accepted / may not
+display properly at judging.
+Title & Description
+You’ll need to give a title and description
+when you enter online.
+Title: The name of your concept, not
+simply the name of the brief (e.g. “Money
+made simple” not “Wise entry”).
+Description: A short summary of your
+idea (max. 100 words). Don’t include or
+recap the brief in this description, but do
+make sure to mention the brief sponsor.
+We will use this to help promote your
+work if it wins and it will be available to
+the judges as supporting material. Your
+brief may ask you to include specific info
+in this description.
+Main vs optional submission material
+Most briefs have options for the main
+deliverable(s) and optional supporting
+material.
+The main deliverable is what you must
+submit for that brief and what the judges
+will base initial decisions on. They’ll view
+this first, then look at any optional
+material only if they want to – if your
+main piece has impressed them enough
+that they want to see more. Your main
+piece(s) must clearly and effectively
+present your idea and execution;
+anything the judges will need so they can
+understand your response, and anything
+specified under ‘The important stuff’ on
+the brief.
+Research and development
+A lot of the briefs ask you to show
+highlights from your creative process,
+research, and development. To do this, you
+could include:
+A summary of your research approach.
+The key insight(s) that led to your
+solution.
+How you developed the idea from
+insight(s) to solution.
+Alternative ideas you explored.
+Scamps, initial hand sketches,
+prototypes, mock-ups.
+Mood boards and other reference
+imagery.
+Use of other creative material
+If you use any images, writing, music or
+other creative material belonging to
+someone else (such as background music
+or stock footage for a case video), you
+must comply with any copyright
+restrictions. Entries into New Blood Awards
+are not commercial projects, but if you win
+brands may want to work with you to make
+your idea a reality, so ensuring your work
+meets the necessary copyright rules is very
+important.
+Check the rules on any work you include in
+your entry, e.g. stock images or typefaces
+you’ve bought the license for, copyright-
+expired text, music made available under a
+Creative Commons License or that you’ve
+received appropriate permissions to use.
+Make sure you credit or acknowledge the
+source if / as required.
+You should not include work created by
+other artists from sites such as Instagram
+without their explicit permission as, if you
+win, your entry will be hosted on
+our website.
+We can’t provide detailed advice on
+copyright but for more information, try:
+gov.uk/government/organisations/intellect
+ual-property-office
+You could use a piece of music that is
+made available under a suitable Creative
+Commons License. Take a look here for
+more inspiration:
+creativecommons.org/legalmusicforvideos
+PREPARING YOUR ENTRIES 1/2
+@newblood_dandad
+dandad.org/new-blood-awards
+• New Blood Awards 2027 •
+#NewBloodAwards
+[PAGE 2]
+Interactive work (URLS)Use this for
+interactive executions, digital prototypes,
+websites, apps, etc.
+Format specs:
+URLs are only accepted where the
+website itself is part of the entry, or
+used to send zip files via Dropbox (see
+below).
+URLs cannot be submitted as your
+main piece, only as optional supporting
+material. Interactive work must be
+Chrome compatible.
+If the work is online, or made using
+Adobe XD or similar, submit the URL.
+If you can’t host the work online, submit
+a ZIP folder – instructions below.
+Submitting zip files
+Zip files are OK for interactive work, HTML,
+websites, widgets or apps. We won’t
+accept zip files for anything else.
+When you start the online entry form,
+you’ll get an entry number. Use this as
+the name for the zip folder itself, and at
+the start of file names for the root
+folder, index file, and Flash or
+Shockwave files.
+Submit websites in their entirety as
+Chrome compatible HTML projects.
+To submit a ZIP file, please upload it to
+Dropbox (dropbox.com) or another file
+sharing site and then submit the
+Dropbox link as a URL. If using a file
+transfer site, please make sure the
+transfer link does not expire before the
+end of May 2027.
+Physical work
+We don’t accept any physical entry
+material.
+Audio
+File size
+The Formats
+Make sure you know which formats are
+allowed for your brief before you get stuck
+in.
+Video
+Use this for presentation films, moving
+image executions and TV ads.
+Format specs:
+MP4 and MOV formats only. These
+must be multiplexed with audio and
+video in one single file.
+Do not include a clock or slate at the
+start.
+See below for full specs.
+Bitrate max
+Codec File
+Aspect ratio
+Tips for a great presentation film
+Use your time wisely and wow the judges:
+Don’t include the brief – you don’t have
+long so don’t waste time telling the
+judges what they already know. You
+can, however talk about how you
+interpreted the brief and how this led to
+your response.
+Summarise your project / killer idea in
+the first 30 seconds and get the jury’s
+attention. You can use the rest of your
+time to go into more detail if you need
+to.
+Don’t make the judges wait until the
+end of the film to find out your solution.
+Focus on the creative idea and its
+relevance to the audience.
+H.264
+You don’t need to make it elaborate and
+fancy. Simple films with a clearly presented
+idea are just as effective.If you’re
+demonstrating an idea using mock-ups and
+screenshots, clearly show how it would
+work. It’s fine to include a voiceover
+speaking over footage, but to keep judging
+fair and unbiased, don’t include footage
+where  you talk directly to camera and don’t
+include your name, university, or any other
+information revealing your identity.
+JPEG (image)
+Use this for presentation slides, photos,
+illustrations, and posters.
+Format specs:
+JPEG is the only image format we can
+accept.
+Colour mode: RGB.
+Image resolution: at least 300dpi.
+Maximum file size: 100mb.
+Dimensions: at least 410mm on the
+longest side.
+Orientation: images will be viewed  on-
+screen, so landscape is strongly
+recommended unless portrait format is
+integral to the response.
+Aspect ratio: up to you (unless
+otherwise specified in the brief). But
+your work will be viewed on-screen,
+ranging from judges’ own laptops to
+widescreen TVs, so images will look
+their best in landscape at 16:9.
+Tips for creating great presentation slides
+Here’s an example of good presentation
+slides.
+You should combine images and text in
+one JPEG, to show your idea as well as
+explain it.
+Work will be viewed on-screen at
+judging, with no option to scroll and
+limited zoom function. Your slides must
+be clear and easy to view when the
+image is viewed to fit-to-screen on a
+standard laptop. We strongly
+recommend landscape format.
+Make sure text is big enough to be read
+without zooming and keep it short, clear
+and relevant. Basically use the same
+principles as a PowerPoint or Keynote
+slide.
+Show the key elements of your work.
+Keep the layout clean, simple and
+uncluttered.
+PREPARING YOUR ENTRIES 2/2
+@newblood_dandad
+dandad.org/new-blood-awards
+• New Blood Awards 2027 •
+#NewBloodAwards
+Format MOV
+MP4
+1920 x 1080
+1280 x 720
+1024 x 576
+(64 x 480)
+(720 x 576)
+ACC
+Stereo
+48kHz
+Minimum: 8.5mbps
+(15mbps for HD)
+Maximum: 50mbps
+500mb

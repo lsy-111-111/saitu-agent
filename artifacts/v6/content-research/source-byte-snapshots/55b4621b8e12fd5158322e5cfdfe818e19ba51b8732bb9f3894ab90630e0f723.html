@@ -1,0 +1,1208 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+<meta charset="UTF-8">
+<meta name="viewport"
+  content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+<!-- css -->
+<link rel="shortcut icon" type="image/ico" href="/images/favicon.ico" />
+<link rel="stylesheet" href="/v3/css/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="/v3/css/font-awesome.min.css" type="text/css" />
+<link rel="stylesheet" href="/v3/css/v3-framework.css" type="text/css" />
+<link rel="stylesheet" href="/v3/css/v3-common.css" type="text/css" />
+<link rel="stylesheet" href="/css/swiper-3.4.2.min.css" />
+<link rel="stylesheet" href="/v3/css/kjlt.css?v=1.0" />
+
+<!-- js -->
+<script>
+  var frontAppContext = 'https://www.ccf.org.cn/ccf/';
+  var siteID = "122";
+</script>
+
+<script src="/v3/js/zcms_require.js" contextpath="https://www.ccf.org.cn/ccf/"></script>
+
+<script src="/v3/js/bootstrap.min.js"></script>
+<script>
+  if (isIE && ieVersion < 9 || isIE8) {
+    importJS('../v3/js/ie/html5shiv.js')
+    if (!isIE6 && !isIE7) {
+      importJS('../v3/js/ie/respond.min.js')
+    }
+    importJS('../v3/js/ie/excanvas.js')
+  }
+  if (/MSIE (6|7)\.0/.test(navigator.userAgent)) {
+    importCSS('../v3/css/bootstrap-ie6.css')
+    importJS('../v3/js/ie/bootstrap-ie6.js')
+  }
+  if (isIE && ieVersion < 9 || isIE8) {
+    importCSS('../v3/css/v3-site-ie.css')
+  }
+  if (inTouch) {
+    importJS('../v3/js/hammer.min.js')
+  }
+  importJS('../js/responsiveslides.js')
+</script>
+<script type="text/javascript" src="/v3/js/v3_common.js"></script>
+<script type="text/javascript" src="/v3/js/v3_site.js"></script>
+<script type="text/javascript" src="/js/jquery-select.js"></script>
+<script type="text/javascript" src="/v3/js/lib.js"></script>
+<script src="/js/swiper-3.4.2.jquery.min.js"></script>
+
+
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script>
+  $(function(){// 在页面加载完毕后执行，防止因jquery找不到造成手机首次打开错误
+    setTimeout(function(){
+    var imgUrl = "https://www.ccf.org.cn/images/images/logo.png";//默认图片
+    var desc="";
+     if($("#content img,.article img").size()>0){
+        imgUrl=$("#content img,.article img")[0].src;
+    };
+      
+    if($(".sr_face_img img").size()>0){
+        imgUrl=$(".sr_face_img img")[0].src;
+    };
+    
+    if($("#ArticleUserLogoFile").size()>0){
+        imgUrl=$("#ArticleUserLogoFile")[0].src;
+    };
+    if($("#logofile").val()!=''&&$("#logofile").val()!=undefined){
+     	imgUrl=$("#logofile").val();
+    };
+    if($("#wximg").val()!=''&&$("#wximg").val()!=undefined){
+     	imgUrl=$("#wximg").val();
+    };
+    if($("head").children("[name='description']").attr("content")!=""){
+      desc=$("head").children("[name='description']").attr("content");
+    };
+    if($("#ArticleUserIntr").size()>0){
+      desc=$("#ArticleUserIntr").text().trim();
+    };
+    if($("#Summary").val()!=''&&$("#Summary").val()!=undefined){
+		desc=$("#Summary").val();
+    };
+    if(desc == undefined) {
+        desc = "";
+    }
+     var param = {
+                "href":window.location.href,
+                "imgPath":imgUrl,
+                "title":$("title").text(),
+                "desc":desc,
+                "siteID":"122"
+            }
+     Share(param);
+    },2000)
+  })
+</script>
+<script src="/js/share.js" type="text/javascript"></script> 
+
+
+
+
+<script>
+  $(function () {
+    // Server.sendRequest("member/clickMyCCF", null, function (response) {
+    //   if (response.Status == 1) {
+    //     var vd = response.Prop3;
+    //     if (vd && vd != 'null' && vd > Date.parse(new Date())) {
+    //       $("#header_joinccf").hide();
+    //       $("#header_joinccf_m").hide();
+    //     } else {
+    //       $('#header_joinccf').attr("href", "https://web.ccf.org.cn/CCF/frame.action?menuShowFlag=B00021");
+    //       $("#header_joinccf").text("会员缴费");
+    //       $('#header_joinccf_m').attr("href", "href", "https://web.ccf.org.cn/CCF/reg_phone.html");
+    //       $("#header_joinccf_m").text("会员缴费");
+    //     }
+    //     $('#header_login').attr("href", "https://ccflinkapp.ccf.org.cn/pc/p/myNew");
+    //     $("#header_login").text("我的主页");
+    //     $('#mlg').attr("href", "https://ccflinkapp.ccf.org.cn/pc/p/myNew");
+
+    //     $("#header_logout").show();
+
+    //   } else {
+    //     $('#mlg').attr("href", "javascript:memberLogin();");
+    //     $("#header_login").text("登录");
+    //     $("#header_joinccf").show();
+    //     $("#header_joinccf_m").show();
+    //     $("#header_logout").hide();
+    //   }
+    // });
+    Server.sendRequest("member/clickMyCCF", null, function (response) {
+      if (response.Status == 1) {
+        $(".member-logined").removeClass("hide");
+        var name = response.MemberName;
+        var imgSrc = response.LogoFile;
+        $(".kjlt-header .userbox").attr("href", "https://ccflinkapp.ccf.org.cn/pc/p/myNew");
+        $(".kjlt-header .userbox .name").text(name);
+        //$(".kjlt-header .userbox img").attr({ "src": imgSrc, 'onerror': 'this.src="/images/kjlt/default.png",this.onerror=null' });
+        	if(!imgSrc){
+          imgSrc = '/images/kjlt/default.png'
+        }
+        $(".kjlt-header .userbox img").attr({ "src": imgSrc });
+      } else {
+        /* 未登录 */
+        $(".member-login").removeClass("hide");
+        $('#header_login').attr("href", "javascript:memberLogin();");
+      }
+    });
+  });
+
+  function memberLogin() {
+    var curURL = window.location.href;
+    window.location.href = frontAppContext + 'sso/login?SiteID=' + siteID + '&Refer=' + curURL;
+  }
+
+  function memberLoginOut() {
+    window.location.href = frontAppContext + 'logout';
+  }
+</script>
+<!--[if lt IE 10]><script src="${prefix("js/respond.src.js")}"></script><![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+  <title>往届&#32;CCF&#32;CCSP&#32;竞赛资料(2026年9月更新) - 资料下载 - 中国计算机学会</title>
+  	<meta name="keywords" content="">
+  <meta name="description" content="2016-2021CCF&#32;CCSP&#32;竞赛资料">
+  <meta name="referrer" content="never">
+</head>
+
+<body>
+  
+
+<div class="kjlt-header list-header">
+<style>
+ 
+  .kjlt-header .head-top .r-btn a {    height: 40.1px!important;}
+  
+ 
+</style>
+  
+  <div class="head-top">
+    <div class="container">
+      
+
+      <div class="row clearfix">
+        <a   href="https://www.ccf.org.cn/ccsp/" target="_blank" style="
+    color: #ffffff;
+    font-size: 16px;
+    FONT-WEIGHT: 600;
+    line-height: 40px;
+    display: inline-block;
+    padding: 0px 38px;
+    background: url(https://www.ccf.org.cn/upload/resources/image/2021/12/09/179104.png) no-repeat 10PX 10px;
+">返回CCSP首页
+          </a>
+        <div class="r-btn fr">
+          <a class="join member-login hide" href="https://web.ccf.org.cn/CCF/regTo.action?flag=0&amp;url=" target="_blank">加入CCF</a>
+          <a class="login member-login hide" id="header_login">登录</a>
+          <a class="userbox member-logined hide" target="_blank">
+           
+            <span class="name" style="    font-size: 18px;
+    margin-top: 0px;"></span>
+          </a>
+          <a class="join member-logined hide" onclick="memberLoginOut();">退出</a>
+          <!-- <a class="member-login pointer" target="_blank">登录1</a> -->
+           &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="link fr">
+        
+          <a href="https://www.ccf.org.cn/" target="_blank">CCF官网</a>
+          &nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="https://www.ccf.org.cn/Map/" target="_blank">站点地图</a>
+          &nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="https://www.ccf.org.cn/About_CCF/Governance/Secretariat/" target="_blank">联系我们</a>
+          &nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="https://www.ccf.org.cn/FAQ/Membership/" target="_blank">常见问题</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="head-con">
+    <div class="container">
+      <div class="row clearfix">
+         <div class="logo">
+      <a style="display:block;float:left;" href="https://www.ccf.org.cn/" target="_blank"><img src="https://www.ccf.org.cn/ccf/preview/zgjsjxh/upload/resources/image/2022/11/18/223873.png" alt="logo"></a>
+          <a style="display:block;float:left;margin-left: 0px;
+    line-height: 80px;" href="https://www.ccf.org.cn/ccsp/" target="_blank"><img src="https://www.ccf.org.cn/ccf/preview/zgjsjxh/upload/resources/image/2022/11/18/223879.png" alt="logo"></a>
+        </div>
+         
+          <STYLE>
+.head-con h3.t2 {
+	color: #2d2e30;
+	letter-spacing: 0;
+	font-size: 30px;
+}
+
+.head-con h3.t2 em {
+	font-weight: normal;
+	font-size: 12px;
+	margin-top: 4px;
+	color: #999;
+}
+.head-con h3{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 28px;
+    color: #006699;
+    line-height: 1.3em;
+    font-weight: bold;
+    letter-spacing: 6px;
+    overflow: hidden;
+    margin-left: 12px;
+}
+.head-con h3 em{
+    display: block;
+    font-size: 18px;
+    line-height: 1.5em;
+    font-weight: bold;
+    overflow: hidden;
+    margin-top: -6px;
+    letter-spacing: 0;
+}          
+          </STYLE>
+       
+        <div class="fl synav">
+          <a class="toindex" href="/ccsp/" target="_blank">
+            首页
+          </a>
+          <div class="oneNav">
+            
+                     
+            
+           <span class="showname noselect">活动预告</span>
+            <div class="showlist">
+              
+                
+                  <div class="item">
+                    <a href="/ccsp/About_CCSP/">关于竞赛</a>
+                  </div>
+                  <div class="item">
+                    <a href="/ccsp/jszc/">竞赛章程</a>
+                  </div>
+                  <div class="item">
+                    <a href="/ccsp/Organizations/">组织机构</a>
+                  </div>
+                  <div class="item">
+                    <a href="/ccsp/tzgg/">通知公告</a>
+                  </div>
+                  <div class="item">
+                    <a href="/ccsp/Bulletin/">竞赛动态</a>
+                  </div>
+                  <div class="item">
+                    <a href="https://csp.ccf.org.cn/csp/index.action?examType=2">报名参赛</a>
+                  </div>
+                  <div class="item">
+                    <a href="/ccsp/bkzq/">备考专区</a>
+                  </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="fr searchbox" style="    margin-right: 0px;">
+          <form id="LuceneSearchFrom" name="LuceneSearchFrom" method="POST" action="https://www.ccf.org.cn/ccf/search/result">
+            <input type="text" class="search-ipt" id="Query" name="Query" placeholder="CCF创建60周年" autocomplete="off" />
+            			 <input type="hidden" id="SiteID" name="SiteID" value="122" />
+            <input type="hidden" id="SearchType" name="SearchType" value="2" />
+            <input type="hidden" id="AllSite" name="AllSite" />
+            <input type="hidden" id="TitleOnly" name="TitleOnly" value="Y" />
+            <input type="hidden" id="Sort" name="Sort" value="PUBLISHDATE" />
+            <input type="hidden" id="usingSynonym" name="usingSynonym" />
+            <input type="hidden" id="PageIndex" name="PageIndex"  />
+            			<input type="button" class="search-btn" onclick="queryLucene()" />
+           
+         
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="second-menu hide">
+    <div class="container clearfix ease-animation d-flex">
+      <div class="item fl one d-shrink">
+        
+        <a href="https://www.ccf.org.cn/ccf/catalog/show?ID=25675&amp;platformID=pc">新闻动态</a>
+           
+      </div>
+      <div class="swiper-secondmenu fl d-grow">
+        <div class="swiper-wrapper">
+          
+            
+                         
+              <div class="item swiper-slide fl" id="001313000007000001000002">
+                <a href="/YOCSEF/Branches/Hangzhou/News/">杭州</a>
+              </div>
+                         
+                         
+              <div class="item swiper-slide fl" id="001313000007000002000002">
+                <a href="/YOCSEF/Branches/Shanghai/News/">上海</a>
+              </div>
+                         
+                         
+              <div class="item swiper-slide fl" id="001313000007000003000002">
+                <a href="/YOCSEF/Branches/Changsha/News/">长沙</a>
+              </div>
+                         
+                         
+              <div class="item swiper-slide fl" id="001313000007000004000002">
+                <a href="/YOCSEF/Branches/Shenyang/News/">沈阳</a>
+              </div>
+                         
+                         
+              <div class="item swiper-slide fl" id="001313000007000005000002">
+                <a href="/YOCSEF/Branches/Harbin/News/">哈尔滨</a>
+              </div>
+                         
+                         
+              <div class="item swiper-slide fl" id="001313000007000006000002">
+                <a href="/YOCSEF/Branches/Jinan/News/">济南</a>
+              </div>
+                         
+                         
+              <div class="item swiper-slide fl" id="001313000007000007000002">
+                <a href="/YOCSEF/Branches/Guangzhou/News/">广州</a>
+              </div>
+                         
+                         
+              <div class="item swiper-slide fl" id="001313000007000008000002">
+                <a href="/YOCSEF/Branches/Chongqing/News/">重庆</a>
+              </div>
+                         
+                         
+              <div class="item swiper-slide fl" id="001313000007000009000002">
+                <a href="/YOCSEF/Branches/Wuhan/News/">武汉</a>
+              </div>
+                         
+                         
+              <div class="item swiper-slide fl" id="001313000007000010000002">
+                <a href="/YOCSEF/Branches/Chengdu/News/">成都</a>
+              </div>
+                         
+                         
+              <div class="item swiper-slide fl" id="001313000007000011000002">
+                <a href="/YOCSEF/Branches/Zhengzhou/News/">郑州</a>
+              </div>
+                         
+                         
+              <div class="item swiper-slide fl" id="001313000007000012000002">
+                <a href="/YOCSEF/Branches/Suzhou/News/">苏州</a>
+              </div>
+                         
+                         
+              <div class="item swiper-slide fl" id="001313000007000013000002">
+                <a href="/YOCSEF/Branches/Dalian/News/">大连</a>
+              </div>
+                         
+                         
+              <div class="item swiper-slide fl" id="001313000007000014000002">
+                <a href="/YOCSEF/Branches/Xi_an/News/">西安</a>
+              </div>
+                         
+                         
+              <div class="item swiper-slide fl" id="001313000007000015000002">
+                <a href="/YOCSEF/Branches/Qingdao/News/">青岛</a>
+              </div>
+                         
+                         
+              <div class="item swiper-slide fl" id="001313000007000016000002">
+                <a href="/YOCSEF/Branches/Shenzhen/News/">深圳</a>
+              </div>
+                         
+                         
+              <div class="item swiper-slide fl" id="001313000007000017000002">
+                <a href="/YOCSEF/Branches/Tianjin/News/">天津</a>
+              </div>
+                         
+                         
+              <div class="item swiper-slide fl" id="001313000007000018000002">
+                <a href="/YOCSEF/Branches/Nanjing/News/">南京</a>
+              </div>
+                         
+                         
+              <div class="item swiper-slide fl" id="001313000007000019000002">
+                <a href="/YOCSEF/Branches/Hefei/News/">合肥</a>
+              </div>
+                         
+                         
+              <div class="item swiper-slide fl" id="001313000007000020000002">
+                <a href="/YOCSEF/Branches/Taiyuan/News/">太原</a>
+              </div>
+                         
+           
+          
+        </div>
+        <div class="iconbtn noselect swiper-secondmenu-prev">
+          <img src="/images/ccf-member/icon15.png" />
+        </div>
+        <div class="iconbtn noselect swiper-secondmenu-next">
+          <img src="/images/ccf-member/icon11.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  function queryLucene() {
+    toSearch($V("Query"));
+  }
+  $("#Query").keydown(function (event) {
+    if (event.keyCode == 13) {
+      toSearch($V("Query"));
+    }
+  });
+
+  function toSearch(query) {
+    if (query == null || query == "") {
+      query = "CCF创建60周年";
+    }
+    $S("Query", query);
+    $("#LuceneSearchFrom").submit();
+  }
+
+  $(".oneNav").click(function () {
+    if ($(this).hasClass("on")) {
+      $(this).removeClass("on")
+      $(".showlist").slideUp();
+    } else {
+      $(this).addClass("on")
+      $(".showlist").slideDown();
+    }
+  })
+  $(".second-menu .iconbtn").click(function () {
+    $(".second-menu .container").toggleClass("on")
+  })
+
+  $(document).on('click', ':not(.oneNav)', function () {
+    $(".oneNav").removeClass("on")
+    $(".showlist").slideUp();
+    return
+  });
+  $(".oneNav").on("click", function (e) {
+    e.stopPropagation();
+  });
+
+
+  var SwiperSecondMenu = new Swiper('.swiper-secondmenu', {
+    slidesPerView: 'auto',
+    prevButton: '.swiper-secondmenu-prev',
+    nextButton: '.swiper-secondmenu-next',
+  })
+
+  // 导航高亮
+  var navCurrent = function () {
+    var cur = $('#CatalogInnerCode').val()
+    var secondCur = '';
+    if (cur) {
+      secondCur = cur.substring(0, 18)
+      console.log(secondCur)
+      $('.swiper-secondmenu .item').each(function () {
+        var innercode = $(this).attr('id')
+        if (!secondCur) {
+          $(this).addClass('active')
+        } else {
+          if (secondCur.indexOf(innercode) == 0) {
+            $(this).addClass('active')
+          }
+        }
+      })
+    }
+  }
+  $(function () {
+    navCurrent()
+  })
+</script>    
+  
+  
+  
+  <div class="yoc-datailpage">
+    <div class="container container-1230">
+      <div class="row clearfix">
+        <div class="col-md-9 ">
+
+          <div class="crumbsbox hide">
+            <a class="home" href="/Activities/Activities/">
+              <img class="fl" src="/images/kjlt/home.png" />
+            </a>
+            <a href="/Activities/Contests/">
+              竞赛
+            </a> >
+            <a href="/ccsp/">
+              CCSP
+            </a> >
+            <span>
+              备考专区
+            </span>
+          </div>
+
+          <div class="catalogbox clearfix  hide">
+          
+          
+            <div class=" fl">
+              <a href="/ccsp/bkzq/zlfx/">经验分享-初赛CSP</a>
+            </div><div class=" fl">
+              <a href="/ccsp/bkzq/jyfx-jsccsp/">经验分享-决赛CCSP</a>
+            </div><div class="on fl">
+              <a href="/ccsp/bkzq/zlxz/">资料下载</a>
+            </div>
+            
+          </div>
+
+          <div class="detailbox" style="background-color:#fff">
+            <div class="datail-tit">
+              <div class="name" style="font-size: 18px;font-weight: bold;">往届&#32;CCF&#32;CCSP&#32;竞赛资料(2026年9月更新)</div>
+              <div class="info">
+                <span>2022-11-28</span>
+                <span>阅读量:<span id="hitcount779819">24318</span><script src="https://www.ccf.org.cn/ccf/counter?Type=Article&ID=779819&DomID=hitcount779819"></script></span>
+                <span class="fontbtn fr">小字</span>
+              </div>
+            </div>
+            <div class="content">
+              <p><span style="font-family: inherit;">2016-2024 CCF CCSP 竞赛真题:</span><br/></p><p><a href="http://history.ccfccsp.org.cn/" target="_self">http://history.ccfccsp.org.cn/</a></p><p><br/></p><p>2025 CCF CCSP竞赛资料</p><p><a href="https://www.ccf.org.cn/ccf/contentcore/resource/download?ID=F43386642EF7A3E5563DD082AC261ED3E17E72083F2FC299A3BD8AB50C7B6EC4" title="CCSP2025资料" filerela="438803" target="_blank"><img id="fileExt" src="/images/filetype/zip.gif" title="zip" onerror="src=&#39;/images/filetype/unknown.gif&#39;;this.onerror=null;"/> CCSP2025资料</a></p><p><br/></p><div>CCSP2020考题解读视频已上传数字图书馆。</div><div><div><a href="https://dl.ccf.org.cn/albumList/getMeetingDetail5649677196134400?_ack=1" target="_self">https://dl.ccf.org.cn/albumList/getMeetingDetail5649677196134400?_ack=1</a></div><p><br/></p><p><br/></p><p>声明：CCF对CCSP历年竞赛真题拥有版权，未经授权，不得使用</p></div><p><br/></p>
+            </div>
+          </div>
+          
+              
+     <div class="rightbox ysydbox">
+                 
+                  
+                   
+            <div class="listbox ysyd-swiper">
+              <div class="swiper-wrapper">
+                 
+                  
+              
+            </div>
+          </div>
+        </div>
+              </div>
+          
+          
+          
+          
+          
+      <div class="col-md-3 m-b-lg">
+
+      <div class="rightbox rmdxbox ">
+          <div class="right-title">
+            <span class="title">热门动态</span>
+            <div class="btnbox fr">
+              <span class="noselect swiper-rmdt-prev">
+                <img src="/images/kjlt/icon14.png" />
+              </span>
+              <span class="noselect swiper-rmdt-next">
+                <img src="/images/kjlt/icon15.png" />
+              </span>
+            </div>
+          </div>
+          <div class="rmdt-swiper">
+            <div class="swiper-wrapper">
+              
+                
+                  <div class="item swiper-slide">
+                    <div class="title">
+                      <a href="/CCF_BC/News/focus/2022-08-18/768219.shtml" class="name line2" target="_blank"
+                        title="”让智能赋能制造”——首届CCF智能制造大会(CIMC&#32;2022)成功举办">”让智能赋能制造”——首届CCF智能制造大会(CIMC&#32;2022)成功举办</a>
+                    </div>
+                    <div class="img-block">
+                      <a href="/CCF_BC/News/focus/2022-08-18/768219.shtml" target="_blank">
+                        <img src="/upload/resources/image/2022/08/18/203848_400x300c.jpg" alt=""
+                          onerror="this.src='/images/kjlt/icon36.png';this.error='null'" />
+                      </a>
+                      <div class="time">2022-08-18</div>
+                    </div>
+                    
+                      <div class="summary line4">
+                        助力制造业企业及会员单位匹配需求供给、实现资源互补，搭建专业的产需服务平台，促进制造业数字化转型和融合创新发展，首届“CCF智能制造大会”&#32;（CIMC&#32;2022），于2022年7月16-17日在CCF业务总部&amp;学术交流中心成功举办。
+                      </div>
+                    
+                    
+                  </div>
+                  <div class="item swiper-slide">
+                    <div class="title">
+                      <a href="/CCF_BC/News/focus/2022-08-18/768221.shtml" class="name line2" target="_blank"
+                        title="FCES&#32;2022今日在CCF业务总部&amp;学术交流中心召开">FCES&#32;2022今日在CCF业务总部&amp;学术交流中心召开</a>
+                    </div>
+                    <div class="img-block">
+                      <a href="/CCF_BC/News/focus/2022-08-18/768221.shtml" target="_blank">
+                        <img src="/upload/resources/image/2022/08/18/203889_400x300c.png" alt=""
+                          onerror="this.src='/images/kjlt/icon36.png';this.error='null'" />
+                      </a>
+                      <div class="time">2022-08-18</div>
+                    </div>
+                    
+                      <div class="summary line4">
+                        7月22-23日，由CCF主办的2022&#32;CCF未来计算机教育峰会(FCES&#32;2022)在苏州CCF&#32;CCB（业务总部&amp;学术交流中心）召开，全国近百所高校科研机构和企业的60多位专家学者、政府领导和多家企业代表，以及300多位现场观众齐聚苏州，共话中国计算机教育的未来。
+                      </div>
+                    
+                    
+                  </div>
+                  <div class="item swiper-slide">
+                    <div class="title">
+                      <a href="/CCF_BC/News/ccfcj60zn/2022-08-18/768225.shtml" class="name line2" target="_blank"
+                        title="CCF创建60周年庆典特辑，燃放激情，谱写华章，精彩分享！">CCF创建60周年庆典特辑，燃放激情，谱写华章，精彩分享！</a>
+                    </div>
+                    <div class="img-block">
+                      <a href="/CCF_BC/News/ccfcj60zn/2022-08-18/768225.shtml" target="_blank">
+                        <img src="/upload/resources/image/2022/08/18/203893_400x300c.png" alt=""
+                          onerror="this.src='/images/kjlt/icon36.png';this.error='null'" />
+                      </a>
+                      <div class="time">2022-08-18</div>
+                    </div>
+                    
+                      <div class="summary line4">
+                        CCF发展的60年，也是伴随中国计算机事业走过的60年，庆典上的很多专家，都为中国计算机事业奉献了热血青春，当年意气风发，如今虽已满头华发，但初心未改，他们创造了CCF的光辉历史，还将继续带领CCF走向更加美好的明天。
+                      </div>
+                    
+                    
+                  </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="rightbox jubox hide">
+          <div class="right-title">
+            <span class="title">CCF聚焦</span>
+            <div class="btnbox fr">
+              <span class="noselect swiper-ju-prev">
+                <img src="/images/kjlt/icon14.png" />
+              </span>
+              <span class="noselect swiper-ju-next">
+                <img src="/images/kjlt/icon15.png" />
+              </span>
+            </div>
+          </div>
+          <div class="ju-swiper">
+            <div class="swiper-wrapper">
+              
+                
+                  <div class="item swiper-slide">
+                    <a href="https://www.ccf.org.cn/Focus/2026-09-24/933992.shtml" class="name line2" target="_blank"
+                      title="CCCF&#32;2026年9月刊发布——“智能化软件开发”专题">CCCF&#32;2026年9月刊发布——“智能化软件开发”专题</a>
+                  </div>
+                  <div class="item swiper-slide">
+                    <a href="https://www.ccf.org.cn/Focus/2026-09-22/934285.shtml" class="name line2" target="_blank"
+                      title="今晚8点，免费解锁7个AI&#32;Agent实战项目！仅开放2小时">今晚8点，免费解锁7个AI&#32;Agent实战项目！仅开放2小时</a>
+                  </div>
+                  <div class="item swiper-slide">
+                    <a href="https://www.ccf.org.cn/Focus/2026-09-22/934264.shtml" class="name line2" target="_blank"
+                      title="2026下半年CCF新晋高级会员、杰出会员名单公布">2026下半年CCF新晋高级会员、杰出会员名单公布</a>
+                  </div>
+                  <div class="item swiper-slide">
+                    <a href="https://www.ccf.org.cn/Focus/2026-09-15/932408.shtml" class="name line2" target="_blank"
+                      title="从芯片到机器人应用：RISC-V构建具身智能开源算力体系&#32;|&#32;TF技术前线183期回顾">从芯片到机器人应用：RISC-V构建具身智能开源算力体系&#32;|&#32;TF技术前线183期回顾</a>
+                  </div>
+                  <div class="item swiper-slide">
+                    <a href="https://www.ccf.org.cn/Focus/2026-09-15/932411.shtml" class="name line2" target="_blank"
+                      title="BioAI无限未来&#32;|&#32;TF技术前线186期报名">BioAI无限未来&#32;|&#32;TF技术前线186期报名</a>
+                  </div>
+                  <div class="item swiper-slide">
+                    <a href="https://www.ccf.org.cn/Focus/2026-09-15/932398.shtml" class="name line2" target="_blank"
+                      title="CCF人工智能素养提升行动｜人文智能普及行动">CCF人工智能素养提升行动｜人文智能普及行动</a>
+                  </div>
+                  <div class="item swiper-slide">
+                    <a href="https://www.ccf.org.cn/Focus/2026-09-09/931088.shtml" class="name line2" target="_blank"
+                      title="2026&#32;CCF&#32;CCSP竞赛将于10月21~22日举办，9月9日开启报名">2026&#32;CCF&#32;CCSP竞赛将于10月21~22日举办，9月9日开启报名</a>
+                  </div>
+                  <div class="item swiper-slide">
+                    <a href="https://www.ccf.org.cn/Focus/2026-09-08/930242.shtml" class="name line2" target="_blank"
+                      title="活动通知｜CCF人工智能素养提升行动“星火计划”之浙江山区海岛22县活动">活动通知｜CCF人工智能素养提升行动“星火计划”之浙江山区海岛22县活动</a>
+                  </div>
+                  <div class="item swiper-slide">
+                    <a href="https://www.ccf.org.cn/Focus/2026-09-08/930204.shtml" class="name line2" target="_blank"
+                      title="教师节福利｜@老师们，CCF请你5折喝奶茶、咖啡！">教师节福利｜@老师们，CCF请你5折喝奶茶、咖啡！</a>
+                  </div>
+                  <div class="item swiper-slide">
+                    <a href="https://www.ccf.org.cn/Focus/2026-09-08/930205.shtml" class="name line2" target="_blank"
+                      title="大模型的知识与记忆&#32;|&#32;TF技术前线184期报名">大模型的知识与记忆&#32;|&#32;TF技术前线184期报名</a>
+                  </div>
+                  <div class="item swiper-slide">
+                    <a href="https://www.ccf.org.cn/Focus/2026-09-07/929936.shtml" class="name line2" target="_blank"
+                      title="CCF举办2026理事夜话活动">CCF举办2026理事夜话活动</a>
+                  </div>
+                  <div class="item swiper-slide">
+                    <a href="https://www.ccf.org.cn/Focus/2026-09-04/929181.shtml" class="name line2" target="_blank"
+                      title="第三届CACC合作伙伴虚位以待！">第三届CACC合作伙伴虚位以待！</a>
+                  </div>
+                  <div class="item swiper-slide">
+                    <a href="https://www.ccf.org.cn/Focus/2026-09-02/928593.shtml" class="name line2" target="_blank"
+                      title="第17届国际先进并行处理技术会议APPT在比利时召开">第17届国际先进并行处理技术会议APPT在比利时召开</a>
+                  </div>
+                  <div class="item swiper-slide">
+                    <a href="https://www.ccf.org.cn/Focus/2026-09-01/928402.shtml" class="name line2" target="_blank"
+                      title="9月回归月&#32;CCF盛情邀请">9月回归月&#32;CCF盛情邀请</a>
+                  </div>
+                  <div class="item swiper-slide">
+                    <a href="https://www.ccf.org.cn/Focus/2026-08-31/928381.shtml" class="name line2" target="_blank"
+                      title="招募讲者｜CCF“星火计划”之浙江山区海岛开学AI第一课活动">招募讲者｜CCF“星火计划”之浙江山区海岛开学AI第一课活动</a>
+                  </div>
+                  <div class="item swiper-slide">
+                    <a href="https://www.ccf.org.cn/Focus/2026-08-28/927350.shtml" class="name line2" target="_blank"
+                      title="ADL175《智能教育》开启报名">ADL175《智能教育》开启报名</a>
+                  </div>
+                  <div class="item swiper-slide">
+                    <a href="https://www.ccf.org.cn/Focus/2026-08-26/926857.shtml" class="name line2" target="_blank"
+                      title="CCF智慧交通分会2026年度委员增选通知">CCF智慧交通分会2026年度委员增选通知</a>
+                  </div>
+                  <div class="item swiper-slide">
+                    <a href="https://www.ccf.org.cn/Focus/2026-08-25/925262.shtml" class="name line2" target="_blank"
+                      title="CCCF&#32;2026年8月刊发布——“数据智能”专题">CCCF&#32;2026年8月刊发布——“数据智能”专题</a>
+                  </div>
+                  <div class="item swiper-slide">
+                    <a href="https://www.ccf.org.cn/Focus/2026-08-25/926529.shtml" class="name line2" target="_blank"
+                      title="CCF积分全攻略：获取·查看·兑换，一篇搞定">CCF积分全攻略：获取·查看·兑换，一篇搞定</a>
+                  </div>
+                  <div class="item swiper-slide">
+                    <a href="https://www.ccf.org.cn/Focus/2026-08-24/926313.shtml" class="name line2" target="_blank"
+                      title="从“山雨欲来”到“插电即用”，量子计算的现在与未来——对话孙晓明、刘雷波、姚麟">从“山雨欲来”到“插电即用”，量子计算的现在与未来——对话孙晓明、刘雷波、姚麟</a>
+                  </div>
+                  <div class="item swiper-slide">
+                    <a href="https://www.ccf.org.cn/Focus/2026-08-24/926321.shtml" class="name line2" target="_blank"
+                      title="具身智能如何度过焦虑期？中国优势、世界模型与规模化落地——对话宋继强、王志刚、张强">具身智能如何度过焦虑期？中国优势、世界模型与规模化落地——对话宋继强、王志刚、张强</a>
+                  </div>
+                  <div class="item swiper-slide">
+                    <a href="https://www.ccf.org.cn/Focus/2026-08-24/926322.shtml" class="name line2" target="_blank"
+                      title="从芯片到机器人应用：RISC‑V构建具身智能开源算力体系&#32;|&#32;TF技术前线183期报名">从芯片到机器人应用：RISC‑V构建具身智能开源算力体系&#32;|&#32;TF技术前线183期报名</a>
+                  </div>
+                  <div class="item swiper-slide">
+                    <a href="https://www.ccf.org.cn/Focus/2026-08-24/926323.shtml" class="name line2" target="_blank"
+                      title="2026&#32;《CCF技术公益案例集》征集延期至8月31日">2026&#32;《CCF技术公益案例集》征集延期至8月31日</a>
+                  </div>
+                  <div class="item swiper-slide">
+                    <a href="https://www.ccf.org.cn/Focus/2026-08-24/926309.shtml" class="name line2" target="_blank"
+                      title="ADL174《大模型与智能体机理与评测》开启报名">ADL174《大模型与智能体机理与评测》开启报名</a>
+                  </div>
+                  <div class="item swiper-slide">
+                    <a href="https://www.ccf.org.cn/Focus/2026-08-24/923747.shtml" class="name line2" target="_blank"
+                      title="具身智能普惠开发与深度产业落地&#32;|&#32;TF技术前线181期回顾">具身智能普惠开发与深度产业落地&#32;|&#32;TF技术前线181期回顾</a>
+                  </div>
+                  <div class="item swiper-slide">
+                    <a href="https://www.ccf.org.cn/Focus/2026-08-24/923750.shtml" class="name line2" target="_blank"
+                      title="Agent&#32;Harness专场&#32;|&#32;TF技术前线182期回顾">Agent&#32;Harness专场&#32;|&#32;TF技术前线182期回顾</a>
+                  </div>
+                  <div class="item swiper-slide">
+                    <a href="https://www.ccf.org.cn/Focus/2026-08-14/923719.shtml" class="name line2" target="_blank"
+                      title="关于2026年CCF企业数字化发展案例征集活动调整的通知">关于2026年CCF企业数字化发展案例征集活动调整的通知</a>
+                  </div>
+                  <div class="item swiper-slide">
+                    <a href="https://www.ccf.org.cn/Focus/2026-08-12/925054.shtml" class="name line2" target="_blank"
+                      title="CCF&#32;CCD&#32;2026导教班在云南师范大学顺利开班">CCF&#32;CCD&#32;2026导教班在云南师范大学顺利开班</a>
+                  </div>
+                  <div class="item swiper-slide">
+                    <a href="https://www.ccf.org.cn/Focus/2026-08-11/922371.shtml" class="name line2" target="_blank"
+                      title="抓紧申报！2026CCF企业数字化发展案例征集申报常见问题答疑">抓紧申报！2026CCF企业数字化发展案例征集申报常见问题答疑</a>
+                  </div>
+                  <div class="item swiper-slide">
+                    <a href="https://www.ccf.org.cn/Focus/2026-08-11/920162.shtml" class="name line2" target="_blank"
+                      title="ADL173期《具身智能机器人》开启报名">ADL173期《具身智能机器人》开启报名</a>
+                  </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="rightbox zxhybox hide">
+          <div class="right-title">
+            <span class="title">最新会议</span>
+            <div class="btnbox fr">
+              <span class="noselect swiper-zxhy-prev">
+                <img src="/images/kjlt/icon14.png" />
+              </span>
+              <span class="noselect swiper-zxhy-next">
+                <img src="/images/kjlt/icon15.png" />
+              </span>
+            </div>
+          </div>
+          <div class="zxhy-swiper">
+            <div class="swiper-wrapper">
+              
+                <div class="swiper-slide">
+                  
+                    <div class="img-block firstbox video-box"  onclick="javascript:window.open('https://www.ccf.org.cn/ccf/content/needPriv?ID=616724&amp;SiteID=122&amp;NeedValid=Y');" style="cursor:pointer">
+                      <a href="https://www.ccf.org.cn/ccf/content/needPriv?ID=616724&amp;SiteID=122&amp;NeedValid=Y" target="_blank">
+                        <img src="/upload/resources/video/2017/10/17/44744_400x300c.jpg" alt=""
+                          onerror="this.src='/images/kjlt/icon36.png';this.error='null'" />
+                      </a>
+                      <a href="https://www.ccf.org.cn/ccf/content/needPriv?ID=616724&amp;SiteID=122&amp;NeedValid=Y" class="name ellipsis" target="_blank"
+                        title="云计算与大数据">云计算与大数据</a>
+                    </div>
+                  
+                    <div class="item">
+                      <div class="d-flex flexbox">
+                        
+                          <div class="d-shrink img-block video-box" onclick="javascript:window.open('https://www.ccf.org.cn/ccf/content/needPriv?ID=616006&amp;SiteID=122&amp;NeedValid=Y');" style="cursor:pointer">
+                            <a href="https://www.ccf.org.cn/ccf/content/needPriv?ID=616006&amp;SiteID=122&amp;NeedValid=Y" target="_blank">
+                              <img src="/upload/resources/video/2017/10/16/44680_400x300c.jpg" alt="" />
+                            </a>
+                          </div>
+                        
+                        <div class="d-grow">
+                          <a href="https://www.ccf.org.cn/ccf/content/needPriv?ID=616006&amp;SiteID=122&amp;NeedValid=Y" class="name line2" target="_blank"
+                            title="社会网络与网络信息内容分析">社会网络与网络信息内容分析</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="d-flex flexbox">
+                        
+                          <div class="d-shrink img-block video-box" onclick="javascript:window.open('https://www.ccf.org.cn/ccf/content/needPriv?ID=616013&amp;SiteID=122&amp;NeedValid=Y');" style="cursor:pointer">
+                            <a href="https://www.ccf.org.cn/ccf/content/needPriv?ID=616013&amp;SiteID=122&amp;NeedValid=Y" target="_blank">
+                              <img src="/upload/resources/video/2017/10/16/44681_400x300c.jpg" alt="" />
+                            </a>
+                          </div>
+                        
+                        <div class="d-grow">
+                          <a href="https://www.ccf.org.cn/ccf/content/needPriv?ID=616013&amp;SiteID=122&amp;NeedValid=Y" class="name line2" target="_blank"
+                            title="从腾讯微博看社会网络应用">从腾讯微博看社会网络应用</a>
+                        </div>
+                      </div>
+                    </div>                  
+                </div>
+                <div class="swiper-slide">
+                  
+                    <div class="img-block firstbox video-box" onclick="javascript:window.open('https://www.ccf.org.cn/ccf/content/needPriv?ID=616049&amp;SiteID=122&amp;NeedValid=Y');" style="cursor:pointer">
+                      <a href="/ccsp/bkzq/zlxz/2022-11-28/779819.shtml" target="_blank">
+                        <img src="/upload/resources/video/2017/10/17/44723_400x300c.jpg" alt=""
+                          onerror="this.src='/images/kjlt/icon36.png';this.error='null'" />
+                      </a>
+                      <a href="https://www.ccf.org.cn/ccf/content/needPriv?ID=616049&amp;SiteID=122&amp;NeedValid=Y" class="name ellipsis" target="_blank"
+                        title="CCF&#32;YOCSEF的定位和组织">CCF&#32;YOCSEF的定位和组织</a>
+                    </div>
+                  
+                    <div class="item">
+                      <div class="d-flex flexbox">
+                        
+                          <div class="d-shrink img-block video-box" onclick="javascript:window.open('https://www.ccf.org.cn/ccf/content/needPriv?ID=615837&amp;SiteID=122&amp;NeedValid=Y');" style="cursor:pointer">
+                            <a href="https://www.ccf.org.cn/ccf/content/needPriv?ID=615837&amp;SiteID=122&amp;NeedValid=Y" target="_blank">
+                              <img src="/upload/resources/video/2017/10/13/44571_400x300c.jpg" alt="" />
+                            </a>
+                          </div>
+                        
+                        <div class="d-grow">
+                          <a href="https://www.ccf.org.cn/ccf/content/needPriv?ID=615837&amp;SiteID=122&amp;NeedValid=Y" class="name line2" target="_blank"
+                            title="千人计划专家的困惑与需求">千人计划专家的困惑与需求</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="d-flex flexbox">
+                        
+                          <div class="d-shrink img-block video-box" onclick="javascript:window.open('https://www.ccf.org.cn/ccf/content/needPriv?ID=615839&amp;SiteID=122&amp;NeedValid=Y');" style="cursor:pointer">
+                            <a href="https://www.ccf.org.cn/ccf/content/needPriv?ID=615839&amp;SiteID=122&amp;NeedValid=Y" target="_blank">
+                              <img src="/upload/resources/video/2017/10/13/44572_400x300c.jpg" alt="" />
+                            </a>
+                          </div>
+                        
+                        <div class="d-grow">
+                          <a href="https://www.ccf.org.cn/ccf/content/needPriv?ID=615839&amp;SiteID=122&amp;NeedValid=Y" class="name line2" target="_blank"
+                            title="SoLoMo的本土化路线&#32;">SoLoMo的本土化路线&#32;</a>
+                        </div>
+                      </div>
+                    </div>                  
+                </div>
+                <div class="swiper-slide">
+                  
+                    <div class="img-block firstbox video-box" onclick="javascript:window.open('https://www.ccf.org.cn/ccf/content/needPriv?ID=615874&amp;SiteID=122&amp;NeedValid=Y');" style="cursor:pointer">
+                      <a href="/ccsp/bkzq/zlxz/2022-11-28/779819.shtml" target="_blank">
+                        <img src="/upload/resources/video/2017/10/15/44642_400x300c.jpg" alt=""
+                          onerror="this.src='/images/kjlt/icon36.png';this.error='null'" />
+                      </a>
+                      <a href="https://www.ccf.org.cn/ccf/content/needPriv?ID=615874&amp;SiteID=122&amp;NeedValid=Y" class="name ellipsis" target="_blank"
+                        title="展望面向云环境的存储系统技术">展望面向云环境的存储系统技术</a>
+                    </div>
+                  
+                    <div class="item">
+                      <div class="d-flex flexbox">
+                        
+                          <div class="d-shrink img-block video-box" onclick="javascript:window.open('https://www.ccf.org.cn/ccf/content/needPriv?ID=615876&amp;SiteID=122&amp;NeedValid=Y');" style="cursor:pointer">
+                            <a href="https://www.ccf.org.cn/ccf/content/needPriv?ID=615876&amp;SiteID=122&amp;NeedValid=Y" target="_blank">
+                              <img src="/upload/resources/video/2017/10/15/44643_400x300c.jpg" alt="" />
+                            </a>
+                          </div>
+                        
+                        <div class="d-grow">
+                          <a href="https://www.ccf.org.cn/ccf/content/needPriv?ID=615876&amp;SiteID=122&amp;NeedValid=Y" class="name line2" target="_blank"
+                            title="社交媒体中的时空轨迹模式挖掘&#32;&#32;">社交媒体中的时空轨迹模式挖掘&#32;&#32;</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="d-flex flexbox">
+                        
+                          <div class="d-shrink img-block video-box" onclick="javascript:window.open('https://www.ccf.org.cn/ccf/content/needPriv?ID=622756&amp;SiteID=122&amp;NeedValid=Y');" style="cursor:pointer">
+                            <a href="https://www.ccf.org.cn/ccf/content/needPriv?ID=622756&amp;SiteID=122&amp;NeedValid=Y" target="_blank">
+                              <img src="/upload/resources/image/2018/01/28/51568_400x300c.jpg" alt="" />
+                            </a>
+                          </div>
+                        
+                        <div class="d-grow">
+                          <a href="https://www.ccf.org.cn/ccf/content/needPriv?ID=622756&amp;SiteID=122&amp;NeedValid=Y" class="name line2" target="_blank"
+                            title="张长水-从机器学习到人工智能（2017年12月15日）">张长水-从机器学习到人工智能（2017年12月15日）</a>
+                        </div>
+                      </div>
+                    </div>                  
+                </div>
+              
+            </div>
+          </div>
+        </div>
+          <!-- </div> -->
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+    <input type="hidden" value="001394000004000002000011000002" id="CatalogInnerCode" />
+  
+<div class="kjlt-footer">
+  <div class="foot-top">
+    <div class="container">
+      <div class="row clearfix">
+        <div class="col-md-3 col-xs-12 fl left">
+          <div class="info">
+            <div class="">电话： 0512-65900856</div>
+                       <div class=""> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 0512-65900816</div>
+            <div class="">邮件： marketing@ccf.org.cn </div>
+            <div class="hide"> 意见： suggest@ccf.org.cn</div>
+            <div class="hide">投诉： complain@ccf.org.cn</div>
+          </div>
+          <div class="code clearfix">
+            <div class="item fl hide">
+              <img src="/images/kjlt/code1.png" />
+              <div class="font">数字图书馆</div>
+            </div>
+            <div class="item fl">
+              <img src="/images/kjlt/code2.png" />
+              <div class="font">微信公众号</div>
+            </div>
+            <div class="item fl">
+              <img src="https://www.ccf.org.cn/ccf/preview/zgjsjxh/CCF_BC/img/bookicon.png" style="width:70px;" />
+              <div class="font">场地预定</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9 col-xs-12 fr right ">
+          <div class="item">
+            <div class="name">
+              <span>关于CCF BC</span>
+            </div>
+            <div class="list">
+              <div>
+                <a href="https://ccfbc.ccf.org.cn/CCF_BC/about_CCFBC/2022-05-24/762798.shtml" target="_blank">简介</a>
+              </div>
+              <div>
+                <a href="https://ccfbc.ccf.org.cn/CCF_BC/News/events/" target="_blank">CCF BC大事记</a>
+              </div>
+              <div>
+                <a href="https://ccfbc.ccf.org.cn/CCF_BC/lxwm/" target="_blank">联系我们</a>
+              </div>
+              <div>
+                <a href="https://ccfbc.ccf.org.cn/CCF_BC/traffic/2022-05-24/763144.shtml" target="_blank">交通信息</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="name">
+              <span>场地预定</span>
+            </div>
+            <div class="list">
+              <div>
+                <a href="https://ccfbc.ccf.org.cn/CCF_BC/intro/" target="_blank">会议中心介绍</a>
+              </div>
+              <div>
+                <a href="https://ccfbc.ccf.org.cn/CCF_BC/building/" target="_blank">导览地图</a>
+              </div>
+              
+            </div>
+          </div>
+          <div class="item">
+            <div class="name">
+              <span>科创</span>
+            </div>
+            <div class="list">
+              
+                <div>
+                  <a href="https://ccfbc.ccf.org.cn/CCF_BC/kc/kczg/" target="_blank">科创中国</a>
+                </div>
+              
+              <div>
+                <a href="https://ccfbc.ccf.org.cn/CCF_BC/kc/kcds/" target="_blank">科创大赛</a>
+              </div>
+              
+            </div>
+          </div>
+          <div class="item">
+            <div class="name">
+              <span>会议活动</span>
+            </div>
+            <div class="list">
+              <div>
+                <a href="https://ccfbc.ccf.org.cn/CCF_BC/activities/tf/" target="_blank">TF</a>
+              </div>
+              <div>
+                <a href="https://ccfbc.ccf.org.cn/CCF_BC/activities/csp/" target="_blank">CSP</a>
+              </div>
+              <div>
+                <a href="https://ccfbc.ccf.org.cn/CCF_BC/activities/gesp/" target="_blank">GESP</a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="foot-btm ">
+    <div class="container">
+      <div class="row clearfix">
+        <div class="fl">版权所有 中国计算机学会 技术支持：泽元软件 <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802033133" style="display:inline-block;text-decoration:none;height:16px;line-height:16px;"><img src="https://www.ccf.org.cn/images/icon.png" style="float:left;"/><p style="float:left;height:20px;line-height:21px;margin: 0px 0px 0px 5px; ">京公网安备 11010802033133号</p></a> <a  href="https://beian.miit.gov.cn/" target="_blank">京ICP备13000930号-5 </a></div>
+        <div class="fr">
+          <a href="https://www.ccf.org.cn/FAQ/Membership/"  target="_blank">常见问题</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="https://www.ccf.org.cn/Career_Center/Join_Us/"  target="_blank">招聘信息</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="https://www.ccf.org.cn/en/"  target="_blank">英文网站</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="right-fix hide">
+
+  
+    <div class="item1 item" style="background:url(/CCF_CCB/img/ywzbicon1.png) no-repeat center 17px;">
+      <a href="https://www.wenjuan.com/s/V7BJje5/" target="_blank">场地预订</a>
+    </div>
+  
+  <div class="item2 item" style="background:url(/CCF_CCB/img/ywzbicon2.png) no-repeat center 17px;">
+    
+      <a href="/CCF_BC/traffic/2022-05-24/763144.shtml" target="_blank">如何抵达</a>
+    
+  </div>
+  <div class="item3 item" style="background:url(/CCF_CCB/img/ywzbicon3.png) no-repeat center 17px;">
+    
+      <a href="https://map.baidu.com/search/%E9%85%92%E5%BA%97/@13431830.574652078,3666784.0718227364,16.18z?querytype=nb&c=224&wd=%E9%85%92%E5%BA%97&da_src=shareurl&on_gel=1&l=16&gr=1&b=(13429529.90062672,3665057.6854943642;13434941.593280545,3667686.0205983697)&pl_data_type=hotel&pl_sub_type=%E9%85%92%E5%BA%97&pl_price_section=0,%2B&pl_sort_type=default&pl_sort_rule=0&pl_discount2_section=0,%2B&pl_groupon_section=0,%2B&pl_cater_book_pc_section=0,%2B&pl_hotel_book_pc_section=0,%2B&pl_ticket_book_flag_section=0,%2B&pl_movie_book_section=0,%2B&pl_business_type=hotel&uid=bfe42f58a4cdbc05c6effb16&nb_x=13431761.76&nb_y=3666845.84&gr_radius=1000&pn=0&device_ratio=2" target="_blank">周边酒店</a>
+     
+  </div>
+  <div class="item4 item">
+    
+      <a href="/CCF_BC/ccbhdrl/" target="_blank">活动预告</a>
+    
+  </div>
+  <!-- <div class="item5 item">
+    <a href="" target="_blank">二维码</a>
+  </div> -->
+  <div class="item6 go-top">
+    <a class="pointer">返回顶部</a>
+  </div>
+</div>
+
+<script>
+  $('.go-top').click(function () {
+    $('html,body').animate({ scrollTop: 0 }, 500);
+    return false;
+  });
+  var height = $(window).height();
+  var scrollHandler = function (evt) {
+    var top = Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+    if (top > height) {
+      $(".go-top").fadeIn(500);
+    } else {
+      $(".go-top").fadeOut(500);
+    }
+  }
+  $(document.body).on('scroll', scrollHandler);
+  $(window).on('scroll', scrollHandler);
+
+</script>
+  <script>
+    var xgrwSwiper = new Swiper('.rmdt-swiper', {
+      prevButton: '.swiper-rmdt-prev',
+      nextButton: '.swiper-rmdt-next',
+      slidesPerView: 1,
+      slidesPerColumn: 1,
+      autoplay: 5000,
+      spaceBetween: 10,
+      // direction : 'vertical',
+      // loop: true,
+    })
+
+    var juSwiper = new Swiper('.ju-swiper', {
+      prevButton: '.swiper-ju-prev',
+      nextButton: '.swiper-ju-next',
+      slidesPerView: 1,
+      slidesPerColumn: 5,
+      autoplay: 50000,
+    })
+
+
+    var zxhySwiper = new Swiper('.zxhy-swiper', {
+      prevButton: '.swiper-zxhy-prev',
+      nextButton: '.swiper-zxhy-next',
+      autoplay: 50000,
+    })
+
+
+    var ysydSwiper = new Swiper('.ysyd-swiper', {
+      prevButton: '.swiper-ysyd-prev',
+      nextButton: '.swiper-ysyd-next',
+      slidesPerView: 1,
+      slidesPerColumn: 3,
+      autoplay: 5000,
+    })
+
+    $(".fontbtn").click(function(){
+      if($(this).hasClass("on")){
+        $(this).removeClass("on")
+        $(this).text("小字")
+        $(".detailbox .content").css("font-size","16px")
+      }else{
+        $(this).addClass("on")
+        $(this).text("大字")
+        $(".detailbox .content").css("font-size","14px")
+      }
+    })
+
+    var curCatalogInnerCode = "001394000004000002000011000002";
+    for (var i = 1, len = curCatalogInnerCode.length; i < len / 6 + 1; i++) {
+      var innerCode = curCatalogInnerCode.substring(0, i * 6);
+      console.log(innerCode)
+      var catalogElement = document.getElementById(innerCode);
+      if (catalogElement) {
+        catalogElement.className += " active";
+      }
+    }
+
+
+  </script>
+
+<script src="https://www.ccf.org.cn/ccf/stat/front/stat.js" type="text/javascript"></script>
+<script>
+if(window._zcms_stat)_zcms_stat("SiteID=122&CatalogInnerCode=001394000004000002000011000002&Type=Article&LeafID=779819&Dest=https://www.ccf.org.cn/ccf/stat/dealer");
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?52c5741a6890518197fb671ac942f81e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- App=ZCMS(CCF内容管理系统) 2.5.28290,CostTime=196,PublishDate=2026-09-30 18:35:06 -->
+</body>
+
+</html>

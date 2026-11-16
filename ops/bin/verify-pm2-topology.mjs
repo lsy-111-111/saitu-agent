@@ -1,6 +1,10 @@
 #!/usr/bin/env node
 
 import fs from "node:fs";
+import path from "node:path";
+import { createHash } from "node:crypto";
+import { fileURLToPath } from "node:url";
+import { spawnSync } from "node:child_process";
 
 const dumpOnly = process.argv[2] === "--dump-only";
 let livePath;
@@ -61,8 +65,17 @@ function readEnvironment(path) {
 
 const applicationEnvironment = readEnvironment(appEnvironmentPath);
 const quotaEnvironment = readEnvironment(quotaEnvironmentPath);
+if (!["", "finite", "user-unbounded"].includes(applicationEnvironment.get("SAITU_AI_EXECUTION_MODE") || "")) throw new Error("invalid application execution mode");
 const expected = new Map([[`resume-ai-${activePort}`, activeRelease]]);
 if (previousPort !== "none") expected.set(`resume-ai-${previousPort}`, previousRelease);
+const activeHasWorker = fs.existsSync(`${releaseRoot}/${activeRelease}/scripts/competitions/v7/worker-entry.ts`);
+for (const [name, release] of [...expected]) {
+  if (fs.existsSync(`${releaseRoot}/${release}/scripts/competitions/v7/worker-entry.ts`)) {
+    const check = spawnSync(process.execPath, [path.join(path.dirname(fileURLToPath(import.meta.url)), "verify-decision-worker-build.mjs"), `${releaseRoot}/${release}`], { env: { NODE_ENV: "production" }, stdio: "pipe", maxBuffer: 65536 });
+    if (check.error || check.status !== 0) throw new Error(`PM2 release has an invalid Next-worker build: ${release}`);
+    if (activeHasWorker) expected.set(`resume-ai-worker-${name.slice(-4)}`, release);
+  }
+}
 
 function valueFrom(environment, key) {
   if (Object.hasOwn(environment, key)) return environment[key];
@@ -94,17 +107,18 @@ function verify(path, label) {
     const environment = matches[0].pm2_env ?? matches[0];
     const expectedDirectory = `${releaseRoot}/${release}`;
     const port = name.slice(-4);
+    const isWorker = name.startsWith("resume-ai-worker-");
     if (environment.status !== "online" || environment.pm_cwd !== expectedDirectory) {
       throw new Error(`${label} does not bind ${name} to the expected online release`);
     }
     if (
-      environment.pm_exec_path !== `${expectedDirectory}/node_modules/next/dist/bin/next` ||
+      environment.pm_exec_path !== `${expectedDirectory}/${isWorker ? "dist/decision-worker/worker.mjs" : "node_modules/next/dist/bin/next"}` ||
       environment.exec_interpreter !== "/opt/nodejs/current/bin/node" ||
       environment.exec_mode !== "fork_mode"
     ) {
       throw new Error(`${label} has an unapproved executable, interpreter, or mode for ${name}`);
     }
-    const expectedArguments = ["start", "--hostname", "127.0.0.1", "--port", port];
+    const expectedArguments = isWorker ? [] : ["start", "--hostname", "127.0.0.1", "--port", port];
     if (JSON.stringify(normalizeArguments(environment.args)) !== JSON.stringify(expectedArguments)) {
       throw new Error(`${label} has unapproved Next.js arguments for ${name}`);
     }
@@ -121,6 +135,25 @@ function verify(path, label) {
       ["PORT", port],
       ["PATH", "/opt/nodejs/current/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"]
     ]);
+    if (fs.existsSync(`${expectedDirectory}/scripts/competitions/v7/worker-entry.ts`)) {
+      const manifest = JSON.parse(fs.readFileSync(`${expectedDirectory}/dist/decision-worker/manifest.json`, "utf8"));
+      if (manifest.schemaVersion !== "saitu.worker-build.v7" || !/^[a-f0-9]{64}$/u.test(manifest.sourceSha256)) throw new Error(`${label} has an invalid worker source binding`);
+      const executionMode=applicationEnvironment.get("SAITU_AI_EXECUTION_MODE")||"finite";
+      if(executionMode==="user-unbounded"?manifest.executionMode!=="user-unbounded":Object.hasOwn(manifest,"executionMode"))throw new Error(`${label} worker execution mode differs from application authorization`);
+      exactRuntimeEnvironment.set("SAITU_V7_SOURCE_SHA256", manifest.sourceSha256);
+      const effortRequired=fs.existsSync(`${expectedDirectory}/src/lib/ai/effort-policy.mjs`);
+      if(effortRequired||Object.hasOwn(manifest,"effortPolicy")||Object.hasOwn(manifest,"effortPolicySha256")){
+        const p=manifest.effortPolicy;
+        if(!p||Object.keys(p).sort().join(",")!=="explain,rank,review,version"||p.version!=="saitu.effort-policy.v1"||["rank","explain","review"].some(stage=>!["high","low"].includes(p[stage])))throw new Error(`${label} lacks the signed worker effort policy`);
+        const serialized=JSON.stringify({version:p.version,rank:p.rank,explain:p.explain,review:p.review}),fingerprint=createHash("sha256").update(serialized).digest("hex");
+        if(manifest.effortPolicySha256!==fingerprint||applicationEnvironment.get("SAITU_V7_EFFORT_POLICY_SHA256")!==fingerprint)throw new Error(`${label} worker effort policy differs from application authorization`);
+        exactRuntimeEnvironment.set("SAITU_V7_EFFORT_POLICY",serialized);exactRuntimeEnvironment.set("SAITU_V7_EFFORT_POLICY_SHA256",fingerprint);
+      }
+    }
+    if (isWorker) {
+      exactRuntimeEnvironment.set("SAITU_V7_WORKER_HEALTH_FILE", `/var/cache/resume-ai/${release}/decision-worker-health.json`);
+      exactRuntimeEnvironment.set("SAITU_V7_WORKER_CONCURRENCY", applicationEnvironment.get("SAITU_V7_WORKER_CONCURRENCY") || "2");
+    }
     for (const [key, expectedValue] of exactRuntimeEnvironment) {
       if (String(valueFrom(environment, key) ?? "") !== expectedValue) {
         throw new Error(`${label} has stale or missing ${key} for ${name}`);
@@ -164,12 +197,12 @@ function verify(path, label) {
       environment.autorestart !== true ||
       environment.watch !== false ||
       environment.merge_logs !== true ||
-      Number(environment.max_memory_restart) !== 768 * 1024 * 1024 ||
+      Number(environment.max_memory_restart) !== (isWorker ? 384 : 768) * 1024 * 1024 ||
       Number(environment.restart_delay) !== 1000 ||
       Number(environment.exp_backoff_restart_delay) !== 100 ||
       Number(environment.min_uptime) !== 10_000 ||
       Number(environment.max_restarts) !== 10 ||
-      Number(environment.kill_timeout) !== 10_000 ||
+      Number(environment.kill_timeout) !== (isWorker ? 20_000 : 10_000) ||
       Number(environment.listen_timeout) !== 15_000
     ) {
       throw new Error(`${label} has unapproved lifecycle controls for ${name}`);

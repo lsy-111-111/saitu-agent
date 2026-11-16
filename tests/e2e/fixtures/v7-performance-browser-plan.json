@@ -1,0 +1,917 @@
+{
+  "schemaVersion": "saitu.performance-browser-plan.v7.1",
+  "origin": "five_public_synthetic_profile_families_repeated_for_timing_only",
+  "newRunsOnly": true,
+  "sampleCount": 100,
+  "profileFamilies": 5,
+  "independentStudentSamplesClaimed": false,
+  "clock": "browser_performance_now_before_initial_submit_click_includes_normalize_clarify_network_and_enqueue",
+  "failuresRemainInDenominator": true,
+  "automaticPaidRetries": false,
+  "paidWarmupRequests": 0,
+  "requestConcurrency": "adaptive",
+  "modelConcurrencyLimit": null,
+  "schedulingBasis": "physical_browser_resources_with_per_sample_original_click",
+  "cases": [
+    {
+      "caseId": "v7-performance-001",
+      "viewport": "desktop",
+      "stage": "本科大一",
+      "skill": null,
+      "weekly": "每周 5–10 小时",
+      "budget": 300,
+      "profileFamilyId": "v7-public-desktop-novice"
+    },
+    {
+      "caseId": "v7-performance-002",
+      "viewport": "mobile",
+      "stage": "本科大二",
+      "skill": "数据分析与建模",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-mobile-data"
+    },
+    {
+      "caseId": "v7-performance-003",
+      "viewport": "desktop",
+      "stage": "本科大三",
+      "skill": "编程与软件开发",
+      "weekly": "每周 10 小时以上",
+      "budget": 0,
+      "profileFamilyId": "v7-public-desktop-software"
+    },
+    {
+      "caseId": "v7-performance-004",
+      "viewport": "mobile",
+      "stage": "高职／专科",
+      "skill": "视觉与创意设计",
+      "weekly": "每周 5–10 小时",
+      "budget": 500,
+      "profileFamilyId": "v7-public-mobile-design"
+    },
+    {
+      "caseId": "v7-performance-005",
+      "viewport": "desktop",
+      "stage": "硕士研究生",
+      "skill": "语言表达与跨文化沟通",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-desktop-language"
+    },
+    {
+      "caseId": "v7-performance-006",
+      "viewport": "mobile",
+      "stage": "本科大一",
+      "skill": null,
+      "weekly": "每周 5–10 小时",
+      "budget": 300,
+      "profileFamilyId": "v7-public-desktop-novice"
+    },
+    {
+      "caseId": "v7-performance-007",
+      "viewport": "desktop",
+      "stage": "本科大二",
+      "skill": "数据分析与建模",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-mobile-data"
+    },
+    {
+      "caseId": "v7-performance-008",
+      "viewport": "mobile",
+      "stage": "本科大三",
+      "skill": "编程与软件开发",
+      "weekly": "每周 10 小时以上",
+      "budget": 0,
+      "profileFamilyId": "v7-public-desktop-software"
+    },
+    {
+      "caseId": "v7-performance-009",
+      "viewport": "desktop",
+      "stage": "高职／专科",
+      "skill": "视觉与创意设计",
+      "weekly": "每周 5–10 小时",
+      "budget": 500,
+      "profileFamilyId": "v7-public-mobile-design"
+    },
+    {
+      "caseId": "v7-performance-010",
+      "viewport": "mobile",
+      "stage": "硕士研究生",
+      "skill": "语言表达与跨文化沟通",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-desktop-language"
+    },
+    {
+      "caseId": "v7-performance-011",
+      "viewport": "desktop",
+      "stage": "本科大一",
+      "skill": null,
+      "weekly": "每周 5–10 小时",
+      "budget": 300,
+      "profileFamilyId": "v7-public-desktop-novice"
+    },
+    {
+      "caseId": "v7-performance-012",
+      "viewport": "mobile",
+      "stage": "本科大二",
+      "skill": "数据分析与建模",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-mobile-data"
+    },
+    {
+      "caseId": "v7-performance-013",
+      "viewport": "desktop",
+      "stage": "本科大三",
+      "skill": "编程与软件开发",
+      "weekly": "每周 10 小时以上",
+      "budget": 0,
+      "profileFamilyId": "v7-public-desktop-software"
+    },
+    {
+      "caseId": "v7-performance-014",
+      "viewport": "mobile",
+      "stage": "高职／专科",
+      "skill": "视觉与创意设计",
+      "weekly": "每周 5–10 小时",
+      "budget": 500,
+      "profileFamilyId": "v7-public-mobile-design"
+    },
+    {
+      "caseId": "v7-performance-015",
+      "viewport": "desktop",
+      "stage": "硕士研究生",
+      "skill": "语言表达与跨文化沟通",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-desktop-language"
+    },
+    {
+      "caseId": "v7-performance-016",
+      "viewport": "mobile",
+      "stage": "本科大一",
+      "skill": null,
+      "weekly": "每周 5–10 小时",
+      "budget": 300,
+      "profileFamilyId": "v7-public-desktop-novice"
+    },
+    {
+      "caseId": "v7-performance-017",
+      "viewport": "desktop",
+      "stage": "本科大二",
+      "skill": "数据分析与建模",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-mobile-data"
+    },
+    {
+      "caseId": "v7-performance-018",
+      "viewport": "mobile",
+      "stage": "本科大三",
+      "skill": "编程与软件开发",
+      "weekly": "每周 10 小时以上",
+      "budget": 0,
+      "profileFamilyId": "v7-public-desktop-software"
+    },
+    {
+      "caseId": "v7-performance-019",
+      "viewport": "desktop",
+      "stage": "高职／专科",
+      "skill": "视觉与创意设计",
+      "weekly": "每周 5–10 小时",
+      "budget": 500,
+      "profileFamilyId": "v7-public-mobile-design"
+    },
+    {
+      "caseId": "v7-performance-020",
+      "viewport": "mobile",
+      "stage": "硕士研究生",
+      "skill": "语言表达与跨文化沟通",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-desktop-language"
+    },
+    {
+      "caseId": "v7-performance-021",
+      "viewport": "desktop",
+      "stage": "本科大一",
+      "skill": null,
+      "weekly": "每周 5–10 小时",
+      "budget": 300,
+      "profileFamilyId": "v7-public-desktop-novice"
+    },
+    {
+      "caseId": "v7-performance-022",
+      "viewport": "mobile",
+      "stage": "本科大二",
+      "skill": "数据分析与建模",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-mobile-data"
+    },
+    {
+      "caseId": "v7-performance-023",
+      "viewport": "desktop",
+      "stage": "本科大三",
+      "skill": "编程与软件开发",
+      "weekly": "每周 10 小时以上",
+      "budget": 0,
+      "profileFamilyId": "v7-public-desktop-software"
+    },
+    {
+      "caseId": "v7-performance-024",
+      "viewport": "mobile",
+      "stage": "高职／专科",
+      "skill": "视觉与创意设计",
+      "weekly": "每周 5–10 小时",
+      "budget": 500,
+      "profileFamilyId": "v7-public-mobile-design"
+    },
+    {
+      "caseId": "v7-performance-025",
+      "viewport": "desktop",
+      "stage": "硕士研究生",
+      "skill": "语言表达与跨文化沟通",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-desktop-language"
+    },
+    {
+      "caseId": "v7-performance-026",
+      "viewport": "mobile",
+      "stage": "本科大一",
+      "skill": null,
+      "weekly": "每周 5–10 小时",
+      "budget": 300,
+      "profileFamilyId": "v7-public-desktop-novice"
+    },
+    {
+      "caseId": "v7-performance-027",
+      "viewport": "desktop",
+      "stage": "本科大二",
+      "skill": "数据分析与建模",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-mobile-data"
+    },
+    {
+      "caseId": "v7-performance-028",
+      "viewport": "mobile",
+      "stage": "本科大三",
+      "skill": "编程与软件开发",
+      "weekly": "每周 10 小时以上",
+      "budget": 0,
+      "profileFamilyId": "v7-public-desktop-software"
+    },
+    {
+      "caseId": "v7-performance-029",
+      "viewport": "desktop",
+      "stage": "高职／专科",
+      "skill": "视觉与创意设计",
+      "weekly": "每周 5–10 小时",
+      "budget": 500,
+      "profileFamilyId": "v7-public-mobile-design"
+    },
+    {
+      "caseId": "v7-performance-030",
+      "viewport": "mobile",
+      "stage": "硕士研究生",
+      "skill": "语言表达与跨文化沟通",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-desktop-language"
+    },
+    {
+      "caseId": "v7-performance-031",
+      "viewport": "desktop",
+      "stage": "本科大一",
+      "skill": null,
+      "weekly": "每周 5–10 小时",
+      "budget": 300,
+      "profileFamilyId": "v7-public-desktop-novice"
+    },
+    {
+      "caseId": "v7-performance-032",
+      "viewport": "mobile",
+      "stage": "本科大二",
+      "skill": "数据分析与建模",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-mobile-data"
+    },
+    {
+      "caseId": "v7-performance-033",
+      "viewport": "desktop",
+      "stage": "本科大三",
+      "skill": "编程与软件开发",
+      "weekly": "每周 10 小时以上",
+      "budget": 0,
+      "profileFamilyId": "v7-public-desktop-software"
+    },
+    {
+      "caseId": "v7-performance-034",
+      "viewport": "mobile",
+      "stage": "高职／专科",
+      "skill": "视觉与创意设计",
+      "weekly": "每周 5–10 小时",
+      "budget": 500,
+      "profileFamilyId": "v7-public-mobile-design"
+    },
+    {
+      "caseId": "v7-performance-035",
+      "viewport": "desktop",
+      "stage": "硕士研究生",
+      "skill": "语言表达与跨文化沟通",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-desktop-language"
+    },
+    {
+      "caseId": "v7-performance-036",
+      "viewport": "mobile",
+      "stage": "本科大一",
+      "skill": null,
+      "weekly": "每周 5–10 小时",
+      "budget": 300,
+      "profileFamilyId": "v7-public-desktop-novice"
+    },
+    {
+      "caseId": "v7-performance-037",
+      "viewport": "desktop",
+      "stage": "本科大二",
+      "skill": "数据分析与建模",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-mobile-data"
+    },
+    {
+      "caseId": "v7-performance-038",
+      "viewport": "mobile",
+      "stage": "本科大三",
+      "skill": "编程与软件开发",
+      "weekly": "每周 10 小时以上",
+      "budget": 0,
+      "profileFamilyId": "v7-public-desktop-software"
+    },
+    {
+      "caseId": "v7-performance-039",
+      "viewport": "desktop",
+      "stage": "高职／专科",
+      "skill": "视觉与创意设计",
+      "weekly": "每周 5–10 小时",
+      "budget": 500,
+      "profileFamilyId": "v7-public-mobile-design"
+    },
+    {
+      "caseId": "v7-performance-040",
+      "viewport": "mobile",
+      "stage": "硕士研究生",
+      "skill": "语言表达与跨文化沟通",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-desktop-language"
+    },
+    {
+      "caseId": "v7-performance-041",
+      "viewport": "desktop",
+      "stage": "本科大一",
+      "skill": null,
+      "weekly": "每周 5–10 小时",
+      "budget": 300,
+      "profileFamilyId": "v7-public-desktop-novice"
+    },
+    {
+      "caseId": "v7-performance-042",
+      "viewport": "mobile",
+      "stage": "本科大二",
+      "skill": "数据分析与建模",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-mobile-data"
+    },
+    {
+      "caseId": "v7-performance-043",
+      "viewport": "desktop",
+      "stage": "本科大三",
+      "skill": "编程与软件开发",
+      "weekly": "每周 10 小时以上",
+      "budget": 0,
+      "profileFamilyId": "v7-public-desktop-software"
+    },
+    {
+      "caseId": "v7-performance-044",
+      "viewport": "mobile",
+      "stage": "高职／专科",
+      "skill": "视觉与创意设计",
+      "weekly": "每周 5–10 小时",
+      "budget": 500,
+      "profileFamilyId": "v7-public-mobile-design"
+    },
+    {
+      "caseId": "v7-performance-045",
+      "viewport": "desktop",
+      "stage": "硕士研究生",
+      "skill": "语言表达与跨文化沟通",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-desktop-language"
+    },
+    {
+      "caseId": "v7-performance-046",
+      "viewport": "mobile",
+      "stage": "本科大一",
+      "skill": null,
+      "weekly": "每周 5–10 小时",
+      "budget": 300,
+      "profileFamilyId": "v7-public-desktop-novice"
+    },
+    {
+      "caseId": "v7-performance-047",
+      "viewport": "desktop",
+      "stage": "本科大二",
+      "skill": "数据分析与建模",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-mobile-data"
+    },
+    {
+      "caseId": "v7-performance-048",
+      "viewport": "mobile",
+      "stage": "本科大三",
+      "skill": "编程与软件开发",
+      "weekly": "每周 10 小时以上",
+      "budget": 0,
+      "profileFamilyId": "v7-public-desktop-software"
+    },
+    {
+      "caseId": "v7-performance-049",
+      "viewport": "desktop",
+      "stage": "高职／专科",
+      "skill": "视觉与创意设计",
+      "weekly": "每周 5–10 小时",
+      "budget": 500,
+      "profileFamilyId": "v7-public-mobile-design"
+    },
+    {
+      "caseId": "v7-performance-050",
+      "viewport": "mobile",
+      "stage": "硕士研究生",
+      "skill": "语言表达与跨文化沟通",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-desktop-language"
+    },
+    {
+      "caseId": "v7-performance-051",
+      "viewport": "desktop",
+      "stage": "本科大一",
+      "skill": null,
+      "weekly": "每周 5–10 小时",
+      "budget": 300,
+      "profileFamilyId": "v7-public-desktop-novice"
+    },
+    {
+      "caseId": "v7-performance-052",
+      "viewport": "mobile",
+      "stage": "本科大二",
+      "skill": "数据分析与建模",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-mobile-data"
+    },
+    {
+      "caseId": "v7-performance-053",
+      "viewport": "desktop",
+      "stage": "本科大三",
+      "skill": "编程与软件开发",
+      "weekly": "每周 10 小时以上",
+      "budget": 0,
+      "profileFamilyId": "v7-public-desktop-software"
+    },
+    {
+      "caseId": "v7-performance-054",
+      "viewport": "mobile",
+      "stage": "高职／专科",
+      "skill": "视觉与创意设计",
+      "weekly": "每周 5–10 小时",
+      "budget": 500,
+      "profileFamilyId": "v7-public-mobile-design"
+    },
+    {
+      "caseId": "v7-performance-055",
+      "viewport": "desktop",
+      "stage": "硕士研究生",
+      "skill": "语言表达与跨文化沟通",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-desktop-language"
+    },
+    {
+      "caseId": "v7-performance-056",
+      "viewport": "mobile",
+      "stage": "本科大一",
+      "skill": null,
+      "weekly": "每周 5–10 小时",
+      "budget": 300,
+      "profileFamilyId": "v7-public-desktop-novice"
+    },
+    {
+      "caseId": "v7-performance-057",
+      "viewport": "desktop",
+      "stage": "本科大二",
+      "skill": "数据分析与建模",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-mobile-data"
+    },
+    {
+      "caseId": "v7-performance-058",
+      "viewport": "mobile",
+      "stage": "本科大三",
+      "skill": "编程与软件开发",
+      "weekly": "每周 10 小时以上",
+      "budget": 0,
+      "profileFamilyId": "v7-public-desktop-software"
+    },
+    {
+      "caseId": "v7-performance-059",
+      "viewport": "desktop",
+      "stage": "高职／专科",
+      "skill": "视觉与创意设计",
+      "weekly": "每周 5–10 小时",
+      "budget": 500,
+      "profileFamilyId": "v7-public-mobile-design"
+    },
+    {
+      "caseId": "v7-performance-060",
+      "viewport": "mobile",
+      "stage": "硕士研究生",
+      "skill": "语言表达与跨文化沟通",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-desktop-language"
+    },
+    {
+      "caseId": "v7-performance-061",
+      "viewport": "desktop",
+      "stage": "本科大一",
+      "skill": null,
+      "weekly": "每周 5–10 小时",
+      "budget": 300,
+      "profileFamilyId": "v7-public-desktop-novice"
+    },
+    {
+      "caseId": "v7-performance-062",
+      "viewport": "mobile",
+      "stage": "本科大二",
+      "skill": "数据分析与建模",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-mobile-data"
+    },
+    {
+      "caseId": "v7-performance-063",
+      "viewport": "desktop",
+      "stage": "本科大三",
+      "skill": "编程与软件开发",
+      "weekly": "每周 10 小时以上",
+      "budget": 0,
+      "profileFamilyId": "v7-public-desktop-software"
+    },
+    {
+      "caseId": "v7-performance-064",
+      "viewport": "mobile",
+      "stage": "高职／专科",
+      "skill": "视觉与创意设计",
+      "weekly": "每周 5–10 小时",
+      "budget": 500,
+      "profileFamilyId": "v7-public-mobile-design"
+    },
+    {
+      "caseId": "v7-performance-065",
+      "viewport": "desktop",
+      "stage": "硕士研究生",
+      "skill": "语言表达与跨文化沟通",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-desktop-language"
+    },
+    {
+      "caseId": "v7-performance-066",
+      "viewport": "mobile",
+      "stage": "本科大一",
+      "skill": null,
+      "weekly": "每周 5–10 小时",
+      "budget": 300,
+      "profileFamilyId": "v7-public-desktop-novice"
+    },
+    {
+      "caseId": "v7-performance-067",
+      "viewport": "desktop",
+      "stage": "本科大二",
+      "skill": "数据分析与建模",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-mobile-data"
+    },
+    {
+      "caseId": "v7-performance-068",
+      "viewport": "mobile",
+      "stage": "本科大三",
+      "skill": "编程与软件开发",
+      "weekly": "每周 10 小时以上",
+      "budget": 0,
+      "profileFamilyId": "v7-public-desktop-software"
+    },
+    {
+      "caseId": "v7-performance-069",
+      "viewport": "desktop",
+      "stage": "高职／专科",
+      "skill": "视觉与创意设计",
+      "weekly": "每周 5–10 小时",
+      "budget": 500,
+      "profileFamilyId": "v7-public-mobile-design"
+    },
+    {
+      "caseId": "v7-performance-070",
+      "viewport": "mobile",
+      "stage": "硕士研究生",
+      "skill": "语言表达与跨文化沟通",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-desktop-language"
+    },
+    {
+      "caseId": "v7-performance-071",
+      "viewport": "desktop",
+      "stage": "本科大一",
+      "skill": null,
+      "weekly": "每周 5–10 小时",
+      "budget": 300,
+      "profileFamilyId": "v7-public-desktop-novice"
+    },
+    {
+      "caseId": "v7-performance-072",
+      "viewport": "mobile",
+      "stage": "本科大二",
+      "skill": "数据分析与建模",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-mobile-data"
+    },
+    {
+      "caseId": "v7-performance-073",
+      "viewport": "desktop",
+      "stage": "本科大三",
+      "skill": "编程与软件开发",
+      "weekly": "每周 10 小时以上",
+      "budget": 0,
+      "profileFamilyId": "v7-public-desktop-software"
+    },
+    {
+      "caseId": "v7-performance-074",
+      "viewport": "mobile",
+      "stage": "高职／专科",
+      "skill": "视觉与创意设计",
+      "weekly": "每周 5–10 小时",
+      "budget": 500,
+      "profileFamilyId": "v7-public-mobile-design"
+    },
+    {
+      "caseId": "v7-performance-075",
+      "viewport": "desktop",
+      "stage": "硕士研究生",
+      "skill": "语言表达与跨文化沟通",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-desktop-language"
+    },
+    {
+      "caseId": "v7-performance-076",
+      "viewport": "mobile",
+      "stage": "本科大一",
+      "skill": null,
+      "weekly": "每周 5–10 小时",
+      "budget": 300,
+      "profileFamilyId": "v7-public-desktop-novice"
+    },
+    {
+      "caseId": "v7-performance-077",
+      "viewport": "desktop",
+      "stage": "本科大二",
+      "skill": "数据分析与建模",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-mobile-data"
+    },
+    {
+      "caseId": "v7-performance-078",
+      "viewport": "mobile",
+      "stage": "本科大三",
+      "skill": "编程与软件开发",
+      "weekly": "每周 10 小时以上",
+      "budget": 0,
+      "profileFamilyId": "v7-public-desktop-software"
+    },
+    {
+      "caseId": "v7-performance-079",
+      "viewport": "desktop",
+      "stage": "高职／专科",
+      "skill": "视觉与创意设计",
+      "weekly": "每周 5–10 小时",
+      "budget": 500,
+      "profileFamilyId": "v7-public-mobile-design"
+    },
+    {
+      "caseId": "v7-performance-080",
+      "viewport": "mobile",
+      "stage": "硕士研究生",
+      "skill": "语言表达与跨文化沟通",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-desktop-language"
+    },
+    {
+      "caseId": "v7-performance-081",
+      "viewport": "desktop",
+      "stage": "本科大一",
+      "skill": null,
+      "weekly": "每周 5–10 小时",
+      "budget": 300,
+      "profileFamilyId": "v7-public-desktop-novice"
+    },
+    {
+      "caseId": "v7-performance-082",
+      "viewport": "mobile",
+      "stage": "本科大二",
+      "skill": "数据分析与建模",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-mobile-data"
+    },
+    {
+      "caseId": "v7-performance-083",
+      "viewport": "desktop",
+      "stage": "本科大三",
+      "skill": "编程与软件开发",
+      "weekly": "每周 10 小时以上",
+      "budget": 0,
+      "profileFamilyId": "v7-public-desktop-software"
+    },
+    {
+      "caseId": "v7-performance-084",
+      "viewport": "mobile",
+      "stage": "高职／专科",
+      "skill": "视觉与创意设计",
+      "weekly": "每周 5–10 小时",
+      "budget": 500,
+      "profileFamilyId": "v7-public-mobile-design"
+    },
+    {
+      "caseId": "v7-performance-085",
+      "viewport": "desktop",
+      "stage": "硕士研究生",
+      "skill": "语言表达与跨文化沟通",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-desktop-language"
+    },
+    {
+      "caseId": "v7-performance-086",
+      "viewport": "mobile",
+      "stage": "本科大一",
+      "skill": null,
+      "weekly": "每周 5–10 小时",
+      "budget": 300,
+      "profileFamilyId": "v7-public-desktop-novice"
+    },
+    {
+      "caseId": "v7-performance-087",
+      "viewport": "desktop",
+      "stage": "本科大二",
+      "skill": "数据分析与建模",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-mobile-data"
+    },
+    {
+      "caseId": "v7-performance-088",
+      "viewport": "mobile",
+      "stage": "本科大三",
+      "skill": "编程与软件开发",
+      "weekly": "每周 10 小时以上",
+      "budget": 0,
+      "profileFamilyId": "v7-public-desktop-software"
+    },
+    {
+      "caseId": "v7-performance-089",
+      "viewport": "desktop",
+      "stage": "高职／专科",
+      "skill": "视觉与创意设计",
+      "weekly": "每周 5–10 小时",
+      "budget": 500,
+      "profileFamilyId": "v7-public-mobile-design"
+    },
+    {
+      "caseId": "v7-performance-090",
+      "viewport": "mobile",
+      "stage": "硕士研究生",
+      "skill": "语言表达与跨文化沟通",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-desktop-language"
+    },
+    {
+      "caseId": "v7-performance-091",
+      "viewport": "desktop",
+      "stage": "本科大一",
+      "skill": null,
+      "weekly": "每周 5–10 小时",
+      "budget": 300,
+      "profileFamilyId": "v7-public-desktop-novice"
+    },
+    {
+      "caseId": "v7-performance-092",
+      "viewport": "mobile",
+      "stage": "本科大二",
+      "skill": "数据分析与建模",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-mobile-data"
+    },
+    {
+      "caseId": "v7-performance-093",
+      "viewport": "desktop",
+      "stage": "本科大三",
+      "skill": "编程与软件开发",
+      "weekly": "每周 10 小时以上",
+      "budget": 0,
+      "profileFamilyId": "v7-public-desktop-software"
+    },
+    {
+      "caseId": "v7-performance-094",
+      "viewport": "mobile",
+      "stage": "高职／专科",
+      "skill": "视觉与创意设计",
+      "weekly": "每周 5–10 小时",
+      "budget": 500,
+      "profileFamilyId": "v7-public-mobile-design"
+    },
+    {
+      "caseId": "v7-performance-095",
+      "viewport": "desktop",
+      "stage": "硕士研究生",
+      "skill": "语言表达与跨文化沟通",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-desktop-language"
+    },
+    {
+      "caseId": "v7-performance-096",
+      "viewport": "mobile",
+      "stage": "本科大一",
+      "skill": null,
+      "weekly": "每周 5–10 小时",
+      "budget": 300,
+      "profileFamilyId": "v7-public-desktop-novice"
+    },
+    {
+      "caseId": "v7-performance-097",
+      "viewport": "desktop",
+      "stage": "本科大二",
+      "skill": "数据分析与建模",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-mobile-data"
+    },
+    {
+      "caseId": "v7-performance-098",
+      "viewport": "mobile",
+      "stage": "本科大三",
+      "skill": "编程与软件开发",
+      "weekly": "每周 10 小时以上",
+      "budget": 0,
+      "profileFamilyId": "v7-public-desktop-software"
+    },
+    {
+      "caseId": "v7-performance-099",
+      "viewport": "desktop",
+      "stage": "高职／专科",
+      "skill": "视觉与创意设计",
+      "weekly": "每周 5–10 小时",
+      "budget": 500,
+      "profileFamilyId": "v7-public-mobile-design"
+    },
+    {
+      "caseId": "v7-performance-100",
+      "viewport": "mobile",
+      "stage": "硕士研究生",
+      "skill": "语言表达与跨文化沟通",
+      "weekly": "每周 5 小时以内",
+      "budget": 100,
+      "profileFamilyId": "v7-public-desktop-language"
+    }
+  ]
+}

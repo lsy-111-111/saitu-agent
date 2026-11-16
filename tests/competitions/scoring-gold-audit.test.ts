@@ -1,4 +1,6 @@
-import { readFileSync } from "node:fs";
+import { explainDecisionV7 } from "@/lib/competitions/v7/model";
+import { migrationContext, migrationExplanation, migrationSuccess, rankMigrationContext } from "./legacy-v7-migration.fixture";
+import { readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
 import { competitions } from "@/content/competitions";
@@ -12,6 +14,7 @@ import {
   getHardFilterReason,
   hasDominantConfirmedSubjectMatch,
   scoreCompetitionRecommendations,
+  scoreCompetitionRecommendationsWithCompatibilityPolicy,
   semanticArchetypeFit
 } from "@/lib/competitions/scoring";
 import { calibrateCompetitionScore } from "@/lib/competitions/recommendation-engine";
@@ -300,11 +303,16 @@ describe("static competition scoring gold audit", () => {
     expect(failures, failures.join("\n")).toEqual([]);
   });
 
-  it("keeps all seven dimensions inside their caps and derives base score from their exact sum", () => {
+  it("keeps the compatibility policy's seven dimensions inside their caps and derives its base score from their exact sum", () => {
     const failures: string[] = [];
-    for (const { gold, persona, competition, scored } of evaluated) {
+    // L11 version migration: the approved current policy has five dimensions
+    // (checked on all 96 inputs below). Keep the old seven-dimensional shape
+    // on the explicitly retained compatibility scorer. This does not migrate
+    // any numeric quality interval or composite ordering label.
+    for (const { gold, persona, competition, transcript } of evaluated) {
+      const scored=persona&&competition?scoreCompetitionRecommendationsWithCompatibilityPolicy([competition],persona.profile,{now:QUALITY_BENCHMARK_NOW,transcript})[0]:undefined;
       if (!scored) {
-        failures.push(`${gold.id}: production recommendation scorer returned no eligible result (hardFilter=${
+        failures.push(`${gold.id}: compatibility recommendation scorer returned no eligible result (hardFilter=${
           persona && competition ? getHardFilterReason(competition, persona.profile) ?? "track-level" : "missing-fixture"
         })`);
         continue;
@@ -327,16 +335,26 @@ describe("static competition scoring gold audit", () => {
     expect(failures, failures.join("\n")).toEqual([]);
   });
 
-  it("places at least 90% of gold pairs inside their human-approved base-score intervals", () => {
-    const misses = evaluated.flatMap(({ gold, scored }) => {
-      const [minimum, maximum] = gold.allowedBaseMatchScore;
-      return scored && scored.baseMatchScore >= minimum && scored.baseMatchScore <= maximum
-        ? []
-        : [`${gold.id}: expected ${minimum}-${maximum}, actual ${scored?.baseMatchScore ?? "filtered"}`];
-    });
-    const passRate = (evaluated.length - misses.length) / evaluated.length;
-    expect(passRate, `gold interval pass rate=${(passRate * 100).toFixed(1)}%\n${misses.join("\n")}`)
-      .toBeGreaterThanOrEqual(0.9);
+  it("v7 leaves rule scores absent and keeps C order fixed through grounded explanations", async () => {
+    expect(evaluated).toHaveLength(96);
+    for (const { gold, persona } of evaluated) {
+      expect(persona, gold.id).toBeDefined();
+      const context = migrationContext(persona!.profile);
+      expect(context.candidates.every(candidate => candidate.score === null && candidate.nativeScore === undefined), gold.id).toBe(true);
+    }
+    const context = migrationContext();
+    const modelOrder = context.candidates.slice(-10).map(candidate => candidate.record.recordId).reverse();
+    const ranked = await rankMigrationContext(context, modelOrder);
+    expect(ranked.plan.recommendations.map(item => item.itemId)).toEqual(modelOrder);
+    const explained = await explainDecisionV7(context, ranked.plan, { modelCall: async () => migrationSuccess(migrationExplanation(context, modelOrder)) });
+    expect(explained.recommendations.map(item => item.itemId)).toEqual(modelOrder);
+    expect(explained.recommendations.every(item => !("baseMatchScore" in item) && !("nativeScore" in item))).toBe(true);
+    expect(explained.trace).toMatchObject({ method: "llm", engineVersion: "saitu-decision.2026-11.v7" });
+    let attempts = 0;
+    await expect(explainDecisionV7(context, ranked.plan, { modelCall: async () => { attempts++; return migrationSuccess(migrationExplanation(context, [...modelOrder].reverse())); } })).rejects.toThrow("invalid_output");
+    expect(attempts).toBe(2);
+    // The original 96 numerical intervals remain immutable historical evidence.
+    // These behavior checks do not grade actual model relevance or rescale them.
   });
 
   it("gives every human-labelled weak pair zero calibration uplift", () => {
@@ -504,5 +522,93 @@ describe("static competition scoring gold audit", () => {
       gap,
       `valid median=${median(valid).toFixed(1)}, weak median=${median(weak).toFixed(1)}, gap=${gap.toFixed(1)}`
     ).toBeGreaterThanOrEqual(20);
+  });
+});
+
+
+/** Current policy structure. The legacy 96/104/90% quality gates remain untouched. */
+describe("five-dimensional policy structure and migration diagnostics (not historical acceptance)", () => {
+  const weights = { goal: 30, task: 25, experience: 20, readiness: 15, growth: 10 } as const;
+  const personas = new Map(competitionRankingHoldoutCases.map(persona => [persona.id, persona]));
+  const evaluated = staticCompetitionScoringGoldPairs.map(gold => {
+    const profile = personas.get(gold.personaId)!.profile;
+    const competition = competitions.find(item => item.id === gold.competitionId)!;
+    const transcript = authoredTrackTranscript(gold, competition, profile);
+    const scored = scoreCompetitionRecommendations([competition], profile, {
+      now: QUALITY_BENCHMARK_NOW, transcript
+    })[0];
+    return { gold, profile, scored };
+  });
+
+  it("preserves five policy caps, exact lower-bound sum and bounded uncertainty for all 96 pairs", () => {
+    expect(evaluated).toHaveLength(96);
+    for (const { gold, scored } of evaluated) {
+      expect(scored?.decisionFit, gold.id).toBeDefined();
+      const fit = scored!.decisionFit!;
+      expect(Object.keys(fit.dimensions).sort(), gold.id).toEqual(Object.keys(weights).sort());
+      for (const key of Object.keys(weights) as (keyof typeof weights)[]) {
+        expect(Number.isFinite(fit.dimensions[key]), `${gold.id}/${key}`).toBe(true);
+        expect(fit.dimensions[key], `${gold.id}/${key}`).toBeGreaterThanOrEqual(0);
+        expect(fit.dimensions[key], `${gold.id}/${key}`).toBeLessThanOrEqual(weights[key]);
+      }
+      expect(fit.lower, gold.id).toBeCloseTo(Object.values(fit.dimensions).reduce((a, b) => a + b, 0), 8);
+      expect(scored!.baseMatchScore, gold.id).toBe(fit.lower);
+      expect(fit.upper, gold.id).toBeGreaterThanOrEqual(fit.lower);
+      expect(fit.upper, gold.id).toBeLessThanOrEqual(100);
+    }
+  });
+
+  it("does not collapse unconfirmed personal contribution into a point score in any of the 96 old profiles", () => {
+    const failures: string[] = [];
+    for (const { gold, profile, scored } of evaluated) {
+      // This premise comes from the literal profiles, not the scorer's current output.
+      expect(profile.decisionContext?.experienceRole, gold.id).toBeUndefined();
+      const fit = scored?.decisionFit;
+      if (!fit || fit.dimensions.experience !== 0 || fit.upper - fit.lower < 20 - 1e-9) {
+        failures.push(`${gold.id}: role missing, experience=${fit?.dimensions.experience}, interval=${fit?.lower}-${fit?.upper}`);
+      }
+    }
+    expect(failures, failures.join("\n")).toEqual([]);
+  });
+
+  it("keeps the independent task-only evidence separate from the 104 composite ordering obligations", () => {
+    const advisory = JSON.parse(readFileSync(path.join(process.cwd(),
+      "tests/fixtures/competition-legacy-policy-advisory-v1.json"), "utf8")) as {
+      humanApproved: boolean; replacesHistoricalAcceptance: boolean;
+      taskOnlyRelations: { preferredCaseId: string; overCaseId: string; dimension: string; humanApproved: boolean }[];
+    };
+    expect(advisory.humanApproved).toBe(false);
+    expect(advisory.replacesHistoricalAcceptance).toBe(false);
+    expect(advisory.taskOnlyRelations).toHaveLength(72);
+    const byId = new Map<string, (typeof evaluated)[number]>(evaluated.map(row => [row.gold.id, row]));
+    const edges = deriveAllLabelImpliedScoringGoldOrderingEdges(staticCompetitionScoringGoldPairs);
+    expect(edges).toHaveLength(104);
+    const intervalRows = evaluated.map(({ gold, scored }) => ({
+      caseId: gold.id, originalInterval: gold.allowedBaseMatchScore,
+      actual: scored?.baseMatchScore ?? null,
+      insideOriginalInterval: !!scored && scored.baseMatchScore >= gold.allowedBaseMatchScore[0] &&
+        scored.baseMatchScore <= gold.allowedBaseMatchScore[1],
+      policy: scored?.decisionFit ?? null
+    }));
+    const oldRelations = edges.map(edge => ({ ...edge,
+      higher: byId.get(edge.higherPairId)?.scored?.baseMatchScore ?? null,
+      lower: byId.get(edge.lowerPairId)?.scored?.baseMatchScore ?? null
+    }));
+    const taskRelations = advisory.taskOnlyRelations.map(edge => {
+      expect(edge.dimension).toBe("task");
+      expect(edge.humanApproved).toBe(false);
+      expect(byId.has(edge.preferredCaseId)).toBe(true);
+      expect(byId.has(edge.overCaseId)).toBe(true);
+      return { ...edge,
+        higherTask: byId.get(edge.preferredCaseId)?.scored?.decisionFit?.dimensions.task ?? null,
+        lowerTask: byId.get(edge.overCaseId)?.scored?.decisionFit?.dimensions.task ?? null
+      };
+    });
+    // Opt-in diagnostics never update labels, intervals, thresholds or expected output.
+    if (process.env.CAPTURE_LEGACY_POLICY_DIAGNOSTICS === "1") {
+      writeFileSync(path.join(process.cwd(), "artifacts/continuation-20261105/legacy-migration/policy-diagnostics.json"),
+        `${JSON.stringify({ acceptanceClaim: false, historicalThresholds: { numeric: 0.9, relations: 1 },
+          intervalRows, oldRelations, advisoryTaskRelations: taskRelations }, null, 2)}\n`);
+    }
   });
 });

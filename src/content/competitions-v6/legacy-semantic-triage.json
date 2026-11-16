@@ -1,0 +1,5742 @@
+{
+  "schemaVersion": "saitu.legacy-semantic-triage.v1",
+  "scope": "All 135 inherited eligibility/team/fee statements read and applicability risks triaged. This is not a complete source recheck, L2 approval, or independent review.",
+  "items": [
+    {
+      "seriesId": "china-international-college-innovation",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "ba6127ac8097cb2fc40f5eebef2b50e0b7a177a3da634fc055a8b4fdf6f29f50",
+      "claimsRead": [
+        {
+          "id": "china-international-college-innovation:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "产业赛道以全日制在校生或毕业五年内的相应毕业生为项目负责人。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "china-international-college-innovation:legacy:source:2"
+          ]
+        },
+        {
+          "id": "china-international-college-innovation:legacy:fact:team",
+          "field": "team",
+          "text": "产业赛道每队3–15人。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "china-international-college-innovation:legacy:source:2"
+          ]
+        },
+        {
+          "id": "china-international-college-innovation:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "产业赛道负责人/3—15人文本不能绑定本科创意组资格，须拆赛道重读。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "challenge-cup-academic-science",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "b6db021e798cc4dedc36bdbaec6d41a31b266a2473242c40922fabf0cdac0dbe",
+      "claimsRead": [
+        {
+          "id": "challenge-cup-academic-science:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "既有规则资料：挑战杯官方章程确认全日制高校学生申报个人或集体作品，资格与作品分类按章程执行。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "challenge-cup-academic-science:legacy:source:2"
+          ]
+        },
+        {
+          "id": "challenge-cup-academic-science:legacy:fact:team",
+          "field": "team",
+          "text": "既有规则资料：可个人或组队；当届赛道人数与跨校要求待核实。〔2〕",
+          "status": "unknown",
+          "sourceIds": [
+            "challenge-cup-academic-science:legacy:source:2"
+          ]
+        },
+        {
+          "id": "challenge-cup-academic-science:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "自然科学论文、哲学社科、科技发明的类别和当届资格应分开，旧章程不可替代当届通知。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "national-college-math-modeling",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "3189ffc8e8d39e06575a41ba4ae6eb914c357b5f1b1a8efd1c2f1911d6176392",
+      "claimsRead": [
+        {
+          "id": "national-college-math-modeling:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "2026年江苏赛区按本科、高职高专组区分，高职高专学生也可选择本科组。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "national-college-math-modeling:legacy:source:2"
+          ]
+        },
+        {
+          "id": "national-college-math-modeling:legacy:fact:team",
+          "field": "team",
+          "text": "江苏赛区通知规定同校1–3人。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "national-college-math-modeling:legacy:source:2"
+          ]
+        },
+        {
+          "id": "national-college-math-modeling:legacy:fact:fee",
+          "field": "fee",
+          "text": "江苏赛区按队收300元，由参赛学校承担。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "national-college-math-modeling:legacy:source:2"
+          ]
+        },
+        {
+          "id": "national-college-math-modeling:v2:eligibility",
+          "field": "eligibility",
+          "text": "章程面向大学生，同校不超过3人一队、专业不限；研究生不得参加，高职高专学生可选择本科组。",
+          "status": "historical",
+          "sourceIds": [
+            "cumcm-charter"
+          ]
+        }
+      ],
+      "finding": "江苏报名费由学校承担只适用江苏；本科组与高职组不能互借资格。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "challenge-cup-entrepreneurship-plan",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "00945a06592331a0214033046655385e6804babec1aaece28bd690206e1261e4",
+      "claimsRead": [
+        {
+          "id": "challenge-cup-entrepreneurship-plan:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "既有规则资料：挑战杯创业计划竞赛官方章程确认高校学生项目团队申报及校、省、全国赛递进路径；届次与组别附加条件仍需当届通知。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "challenge-cup-entrepreneurship-plan:legacy:source:2"
+          ]
+        },
+        {
+          "id": "challenge-cup-entrepreneurship-plan:legacy:fact:team",
+          "field": "team",
+          "text": "既有规则资料：团队参赛；当届赛道人数与跨校要求待核实。〔2〕",
+          "status": "unknown",
+          "sourceIds": [
+            "challenge-cup-entrepreneurship-plan:legacy:source:2"
+          ]
+        },
+        {
+          "id": "challenge-cup-entrepreneurship-plan:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "注册创业组与未注册创客路径需分别核验，搜狐发现线索不能当主办方章程。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "national-college-electronic-design",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "6f8758fca48c3ccec67c537ab52cdb018d5c61b2af4e46a7d44e37e18811c573",
+      "claimsRead": [
+        {
+          "id": "national-college-electronic-design:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "既有规则资料：全国大学生电子设计竞赛官方通知确认本科学生三人一队，在所在赛区集中完成作品。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "national-college-electronic-design:legacy:source:2"
+          ]
+        },
+        {
+          "id": "national-college-electronic-design:legacy:fact:team",
+          "field": "team",
+          "text": "既有规则资料：团队参赛；当届赛道人数与跨校要求待核实。〔2〕",
+          "status": "unknown",
+          "sourceIds": [
+            "national-college-electronic-design:legacy:source:2"
+          ]
+        },
+        {
+          "id": "national-college-electronic-design:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "national-college-electronic-design:v2:eligibility",
+          "field": "eligibility",
+          "text": "原通知面向全日制在校本科或高职高专学生，同队3人须全程参赛与评审；队中含本科生只能选本科组题目。",
+          "status": "historical",
+          "sourceIds": [
+            "electronics-national-2025"
+          ]
+        }
+      ],
+      "finding": "本科/高职组及三人一队应按主赛规则；新增2025C题不外推下一届。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "icpc-programming",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "51c13ee5fd7722cda27bfb5d55b53a0baedc3f9eaef695e30f0478d26abd15ff",
+      "claimsRead": [
+        {
+          "id": "icpc-programming:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "大连理工大学盘锦校区2026区域赛队员选拔面向本校全日制在校本科生，不代表其他区域站资格。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "icpc-programming:legacy:source:2"
+          ]
+        },
+        {
+          "id": "icpc-programming:legacy:fact:team",
+          "field": "team",
+          "text": "组队人数及是否允许跨校待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "icpc-programming:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "盘锦校内选拔不是全球或各区域站资格；三人和参赛次数须当届原规。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "market-research-analysis",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "c99839b73027c2f47c67d7735fe0d9dff6dc0e4d4b3c4ead247c96d3f443ba6c",
+      "claimsRead": [
+        {
+          "id": "market-research-analysis:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "第十七届贵州财经大学报名通知覆盖本校全日制本科生、硕士生及留学生。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "market-research-analysis:legacy:source:1"
+          ]
+        },
+        {
+          "id": "market-research-analysis:legacy:fact:team",
+          "field": "team",
+          "text": "实践赛每队3–5名学生。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "market-research-analysis:legacy:source:1"
+          ]
+        },
+        {
+          "id": "market-research-analysis:legacy:fact:fee",
+          "field": "fee",
+          "text": "该校通知列本科组每人30元，研究生及留学生组每人20元。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "market-research-analysis:legacy:source:1"
+          ]
+        },
+        {
+          "id": "market-research-analysis:v2:eligibility",
+          "field": "eligibility",
+          "text": "该通知本科实践队伍由同校3—5名本科生组成；本科生须先通过知识赛，不能仅凭年级判定已具备实践赛资格。",
+          "status": "historical",
+          "sourceIds": [
+            "market-czu-2027"
+          ]
+        }
+      ],
+      "finding": "贵州财经校报名费/留学生安排不外推；本科实践赛需知识赛前置。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "understanding-contemporary-china-foreign-language",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "e0a56d67e4ccb0315bc55e10c4151c8d9a361e8d73efa58db483691f1aba7e79",
+      "claimsRead": [
+        {
+          "id": "understanding-contemporary-china-foreign-language:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "既有规则资料：2026外研社·国才杯官方通知确认多学段高校学生赛道，个人赛项与团队赛项并存；具体赛项资格按当届细则。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "understanding-contemporary-china-foreign-language:legacy:source:2"
+          ]
+        },
+        {
+          "id": "understanding-contemporary-china-foreign-language:legacy:fact:team",
+          "field": "team",
+          "text": "既有规则资料：可个人或组队；当届赛道人数与跨校要求待核实。〔2〕",
+          "status": "unknown",
+          "sourceIds": [
+            "understanding-contemporary-china-foreign-language:legacy:source:2"
+          ]
+        },
+        {
+          "id": "understanding-contemporary-china-foreign-language:legacy:fact:fee",
+          "field": "fee",
+          "text": "四川大学2026英语组综合能力比赛校内选拔免费，不能据此推断其他组别。〔3〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "understanding-contemporary-china-foreign-language:legacy:source:3"
+          ]
+        }
+      ],
+      "finding": "综合能力个人赛、口译、短视频须分赛项；四川免费仅为校选。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "energy-conservation-emission-reduction",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "25392eb23e7d1bed0f7d19d7c6a9b2862f1b65fd409e0137094a181f797215ce",
+      "claimsRead": [
+        {
+          "id": "energy-conservation-emission-reduction:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "第十九届通知面向全日制专科至博士在校生，在职研究生除外。〔3〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "energy-conservation-emission-reduction:legacy:source:3"
+          ]
+        },
+        {
+          "id": "energy-conservation-emission-reduction:legacy:fact:team",
+          "field": "team",
+          "text": "每队至多7人，队内有研究生即列入研究生组。〔3〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "energy-conservation-emission-reduction:legacy:source:3"
+          ]
+        },
+        {
+          "id": "energy-conservation-emission-reduction:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "研究生队伍划分、在职排除及至多7人需要同一届通知支持。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "ecommerce-innovation-creativity-entrepreneurship",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "b2ce34f034291de6355457bfe1fcc5f8974aebbf85f8993202b28eba59e56057",
+      "claimsRead": [
+        {
+          "id": "ecommerce-innovation-creativity-entrepreneurship:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "安徽工业大学校内选拔面向本校全日制本科生和研究生。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "ecommerce-innovation-creativity-entrepreneurship:legacy:source:2"
+          ]
+        },
+        {
+          "id": "ecommerce-innovation-creativity-entrepreneurship:legacy:fact:team",
+          "field": "team",
+          "text": "该校说明允许跨校、跨专业，3–5人组队。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "ecommerce-innovation-creativity-entrepreneurship:legacy:source:2"
+          ]
+        },
+        {
+          "id": "ecommerce-innovation-creativity-entrepreneurship:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "ecommerce-innovation-creativity-entrepreneurship:v2:eligibility",
+          "field": "eligibility",
+          "text": "该校通知面向本校全日制本科和研究生，3—5人组队并允许跨校跨专业；不能直接替其他学校确认通道。",
+          "status": "historical",
+          "sourceIds": [
+            "ecommerce-ahut-2027"
+          ]
+        }
+      ],
+      "finding": "跨校许可和校内入口是不同条件；实战与常规赛费用及交付不能混。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "smart-car",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "41b5520ced7280d533c5a8196de785bd9ecae47818090d0fe185e2d82c868825",
+      "claimsRead": [
+        {
+          "id": "smart-car:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "常州工学院室外赛校内通知面向全日制本科生、研究生。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "smart-car:legacy:source:2"
+          ]
+        },
+        {
+          "id": "smart-car:legacy:fact:team",
+          "field": "team",
+          "text": "该校室外赛每队2–5人。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "smart-car:legacy:source:2"
+          ]
+        },
+        {
+          "id": "smart-car:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "室外赛2—5人不能迁入其他智能车赛组；本科与研究生限制按赛组。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "china-college-computer-design",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "dc835a5175333568cf79a472d6d37cef7767fd2c64035bce509380f061ae7681",
+      "claimsRead": [
+        {
+          "id": "china-college-computer-design:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "参赛时须为普通高校在籍本科生，专业不限，含港澳台学生和来华留学生。国赛须通过省赛推荐。〔1〕〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "china-college-computer-design:legacy:source:1",
+            "china-college-computer-design:legacy:source:2"
+          ]
+        },
+        {
+          "id": "china-college-computer-design:legacy:fact:team",
+          "field": "team",
+          "text": "同校2–9名全日制本科生，每队到国赛答辩的作者至少2人。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "china-college-computer-design:legacy:source:2"
+          ]
+        },
+        {
+          "id": "china-college-computer-design:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "china-college-computer-design:v2:eligibility",
+          "field": "eligibility",
+          "text": "2026规则面向在籍本科生；每件作品为同校2—9名本科生共同完成，国赛现场答辩至少2名作者。",
+          "status": "historical",
+          "sourceIds": [
+            "4c-rules-2026"
+          ]
+        }
+      ],
+      "finding": "普通软件与AI工业视觉不是同题；2—9作者须核类别，4C现场评分歧义保留。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "china-software-cup",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "e3f97d2d6cfdd5865488091d524b8e26e9523bd03787c5f91f8e86013c311872",
+      "claimsRead": [
+        {
+          "id": "china-software-cup:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "此届哈尔滨工程大学通知面向本校全日制在籍本科生和研究生。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "china-software-cup:legacy:source:1"
+          ]
+        },
+        {
+          "id": "china-software-cup:legacy:fact:team",
+          "field": "team",
+          "text": "该校组织的队伍由1–3名学生组成。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "china-software-cup:legacy:source:1"
+          ]
+        },
+        {
+          "id": "china-software-cup:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "哈尔滨工程校选不等于全国资格；新增A3须与具体A组学籍绑定。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "career-planning",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "8587d62ae0f84cf135b6f04fc15050d9eb347de7e2b1c18bac015735ae1f69df",
+      "claimsRead": [
+        {
+          "id": "career-planning:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "既有规则资料：教育部2025当届通知确认高教、职教学生赛道与个人参赛身份；校级、省级和全国赛的具体资格仍需按学校与赛道通知执行。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "career-planning:legacy:source:2"
+          ]
+        },
+        {
+          "id": "career-planning:legacy:fact:team",
+          "field": "team",
+          "text": "既有规则资料：个人参赛；当届赛道人数与跨校要求待核实。〔2〕",
+          "status": "unknown",
+          "sourceIds": [
+            "career-planning:legacy:source:2"
+          ]
+        },
+        {
+          "id": "career-planning:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "成长/就业赛道及职教组不同；教育部旧届条款不得作为新届确认。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "information-security",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "c5ec13035d1fccea1be43ae19f03c2494f59bf317a8d619937cccd4771dd41f1",
+      "claimsRead": [
+        {
+          "id": "information-security:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "中国地质大学（北京）本届校内组织通知要求全日制在校本科生，年级、专业不限。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "information-security:legacy:source:2"
+          ]
+        },
+        {
+          "id": "information-security:legacy:fact:team",
+          "field": "team",
+          "text": "该通知对应赛项每队最多4名学生，成员须来自同校。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "information-security:legacy:source:2"
+          ]
+        },
+        {
+          "id": "information-security:legacy:fact:fee",
+          "field": "fee",
+          "text": "第十九届作品赛不向参赛队伍收取费用。其他专项需另查。〔3〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "information-security:legacy:source:3"
+          ]
+        }
+      ],
+      "finding": "作品赛免队费不代表攻击防御专项或制作差旅免费；校通知范围需保留。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "integrated-circuit-innovation",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "2312916fa27bba3fe40f30fc8c0ee32124ded863681b93bb301120007dc5ab5e",
+      "claimsRead": [
+        {
+          "id": "integrated-circuit-innovation:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "第十届普通高校赛道与职业技能赛项适用不同章程。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "integrated-circuit-innovation:legacy:source:1"
+          ]
+        },
+        {
+          "id": "integrated-circuit-innovation:legacy:fact:team",
+          "field": "team",
+          "text": "普通高校赛道每队1–3名学生，可跨校。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "integrated-circuit-innovation:legacy:source:1"
+          ]
+        },
+        {
+          "id": "integrated-circuit-innovation:legacy:fact:fee",
+          "field": "fee",
+          "text": "普通高校赛道报名阶段有300元／队押金，退还条件见章程。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "integrated-circuit-innovation:legacy:source:1"
+          ]
+        }
+      ],
+      "finding": "普通高校与职业技能赛项分离；300元为押金，不能当最终个人支出。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "advanced-graphics-bim",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "6c944b0ae5ace32a7cfb511f6bb391538337938028a9f78e6f906a37396f92c9",
+      "claimsRead": [
+        {
+          "id": "advanced-graphics-bim:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "燕山大学校内选拔对象为本校在读本科生，其他高校按各自办法确认。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "advanced-graphics-bim:legacy:source:2"
+          ]
+        },
+        {
+          "id": "advanced-graphics-bim:legacy:fact:team",
+          "field": "team",
+          "text": "组队人数及是否允许跨校待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "advanced-graphics-bim:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "燕山大学校选本科限制不可外推；成图、模型和创新赛项人数不同。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "national-college-industrial-design",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "2b5dc37794262a16acfead8f8299234ab0438459dcd942448223749e04737d31",
+      "claimsRead": [
+        {
+          "id": "national-college-industrial-design:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "浙江农林大学该届校选面向本校全日制在校大学生。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "national-college-industrial-design:legacy:source:2"
+          ]
+        },
+        {
+          "id": "national-college-industrial-design:legacy:fact:team",
+          "field": "team",
+          "text": "该校允许本研混合，研究生不得单独组队；不同赛道人数另核。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "national-college-industrial-design:legacy:source:2"
+          ]
+        },
+        {
+          "id": "national-college-industrial-design:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "浙江农林本研混合要求属于本校；产品与系统设计的赛区评分不互换。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "future-designer-ncda",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "de88f3e3ceca79d8eb11992e3319b6870d7df25a70b9445b0429cc0461c4d6e1",
+      "claimsRead": [
+        {
+          "id": "future-designer-ncda:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "既有规则资料：未来设计师NCDA官网确认高校学生多类别作品申报，个人或团队作者均可能；人数依类别细则。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "future-designer-ncda:legacy:source:2"
+          ]
+        },
+        {
+          "id": "future-designer-ncda:legacy:fact:team",
+          "field": "team",
+          "text": "既有规则资料：可个人或组队；当届赛道人数与跨校要求待核实。〔2〕",
+          "status": "unknown",
+          "sourceIds": [
+            "future-designer-ncda:legacy:source:2"
+          ]
+        },
+        {
+          "id": "future-designer-ncda:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "作品类别决定作者与导师数；企业题素材包与全国内容页不能混为已读附件。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "energy-economics-academic-creativity",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "56e89d9570d22ed136158246138177d90a5c8010ffc6d090c20c25ec6e901e95",
+      "claimsRead": [
+        {
+          "id": "energy-economics-academic-creativity:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "第十三届面向普通高校全日制本科、硕士及博士在读学生；境外参赛应核对依托高校要求。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "energy-economics-academic-creativity:legacy:source:1"
+          ]
+        },
+        {
+          "id": "energy-economics-academic-creativity:legacy:fact:team",
+          "field": "team",
+          "text": "1–4名学生，须指定队长与联系人。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "energy-economics-academic-creativity:legacy:source:1"
+          ]
+        },
+        {
+          "id": "energy-economics-academic-creativity:legacy:fact:fee",
+          "field": "fee",
+          "text": "组委会不向参赛学生或单位收费。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "energy-economics-academic-creativity:legacy:source:1"
+          ]
+        }
+      ],
+      "finding": "13届本科硕博资格与1—4人可作为线索；免主办费不等于材料差旅零。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "business-elite-innovation",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "5f7802047e21da3c1a91b3e37d8a2467c689a1a9ec6cade9c13d5ca5ff2e9a8a",
+      "claimsRead": [
+        {
+          "id": "business-elite-innovation:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "既有规则资料：贸促会商业行业委员会当届通知确认高校组别，不同专业赛可采个人或团队形式。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "business-elite-innovation:legacy:source:2"
+          ]
+        },
+        {
+          "id": "business-elite-innovation:legacy:fact:team",
+          "field": "team",
+          "text": "既有规则资料：可个人或组队；当届赛道人数与跨校要求待核实。〔2〕",
+          "status": "unknown",
+          "sourceIds": [
+            "business-elite-innovation:legacy:source:2"
+          ]
+        },
+        {
+          "id": "business-elite-innovation:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "商业精英是赛事族，五赛道及教师个人赛与学生团队要拆分。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "national-college-logistics-design",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "04024938ddba52d781faf931cf22e22a0a2a6ca1716ccad4a5d8ce179db0ff33",
+      "claimsRead": [
+        {
+          "id": "national-college-logistics-design:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "第九届历史文件按本科生和硕博研究生分别设组。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "national-college-logistics-design:legacy:source:2"
+          ]
+        },
+        {
+          "id": "national-college-logistics-design:legacy:fact:team",
+          "field": "team",
+          "text": "参赛队需符合本组的规定人数及物流类专业成员比例，两个组别不可混用。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "national-college-logistics-design:legacy:source:2"
+          ]
+        },
+        {
+          "id": "national-college-logistics-design:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "本科/硕博物流组的成员专业比例、人数需各自规则，不能只有系列概览。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "china-college-computer-contest",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "48491ddb2f15307e7283ca37a735841d90d5d523fe30855ada0050b59197cccc",
+      "claimsRead": [
+        {
+          "id": "china-college-computer-contest:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "当届学籍、年级和适用赛道待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "china-college-computer-contest:legacy:fact:team",
+          "field": "team",
+          "text": "组队人数及是否允许跨校待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "china-college-computer-contest:legacy:fact:fee",
+          "field": "fee",
+          "text": "2026网络技术挑战赛资格赛免报名费；进入选拔赛每件作品600元。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "china-college-computer-contest:legacy:source:1"
+          ]
+        }
+      ],
+      "finding": "网络技术挑战赛资格赛免费、选拔赛600元/作品，不能全部阶段免费。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "robocon",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "c8bd14f502c5aebee75f61cd0b42b5cf6e0fe1cf86ff21cae863d36b15cbfa20",
+      "claimsRead": [
+        {
+          "id": "robocon:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "既有规则资料：2026第二十五届ROBOCON官方办赛通知确认高校战队制和现场机器人对抗；各赛项队伍规模与资格依规则册。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "robocon:legacy:source:2"
+          ]
+        },
+        {
+          "id": "robocon:legacy:fact:team",
+          "field": "team",
+          "text": "既有规则资料：团队参赛；当届赛道人数与跨校要求待核实。〔2〕",
+          "status": "unknown",
+          "sourceIds": [
+            "robocon:legacy:source:2"
+          ]
+        },
+        {
+          "id": "robocon:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "ROBOCON按当届规则册及具体对抗题核队伍编制，不以办赛新闻代替。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "robocup-china",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "52a3b985cf324d96f7052f45eeebb39b6e5157f1e6e75f932dbaf2cdcb3ea3ca",
+      "claimsRead": [
+        {
+          "id": "robocup-china:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "既有规则资料：中国机器人大赛暨RoboCup中国赛官方平台确认高校与职教赛道的机器人团队现场参赛。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "robocup-china:legacy:source:1"
+          ]
+        },
+        {
+          "id": "robocup-china:legacy:fact:team",
+          "field": "team",
+          "text": "既有规则资料：团队参赛；当届赛道人数与跨校要求待核实。〔1〕",
+          "status": "unknown",
+          "sourceIds": [
+            "robocup-china:legacy:source:1"
+          ]
+        },
+        {
+          "id": "robocup-china:legacy:fact:fee",
+          "field": "fee",
+          "text": "常州工学院发布的RoboCup赛区校赛免报名费，后续阶段另核。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "robocup-china:legacy:source:2"
+          ]
+        }
+      ],
+      "finding": "RoboCup不同组别差异很大；校赛免费不能代表后续赛段。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "siemens-intelligent-manufacturing",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "4bf976aeeff96ebfea13db1e8f98ccf23e6f12ebccc234c4d0a0e4c9e22b7725",
+      "claimsRead": [
+        {
+          "id": "siemens-intelligent-manufacturing:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "当届学籍、年级和适用赛道待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "siemens-intelligent-manufacturing:legacy:fact:team",
+          "field": "team",
+          "text": "每支队伍报一个赛项，学生1–3名；研究生名额随赛项变化。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "siemens-intelligent-manufacturing:legacy:source:2"
+          ]
+        },
+        {
+          "id": "siemens-intelligent-manufacturing:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "西门子杯研究生名额随赛项变化，1—3人不能证明个人适用资格。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "lanqiao-cup",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "408b92d3853b1f62bae04ac54920037648076d51308c9fc55234f63c37aa1e3e",
+      "claimsRead": [
+        {
+          "id": "lanqiao-cup:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "已核个人赛面向有正式全日制学籍的研究生、本科或高职高专学生，按科目分组。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "lanqiao-cup:legacy:source:1"
+          ]
+        },
+        {
+          "id": "lanqiao-cup:legacy:fact:team",
+          "field": "team",
+          "text": "该页面为个人赛科目。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "lanqiao-cup:legacy:source:1"
+          ]
+        },
+        {
+          "id": "lanqiao-cup:legacy:fact:fee",
+          "field": "fee",
+          "text": "已核个人赛科目每人300元，参赛期间食宿交通另计。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "lanqiao-cup:legacy:source:1"
+          ]
+        },
+        {
+          "id": "lanqiao-cup:v2:eligibility",
+          "field": "eligibility",
+          "text": "页面列全日制在校研究生、本科及高职高专学生；按学籍和学校类别选相应组别，不能把某科目的组别推广至全部。",
+          "status": "historical",
+          "sourceIds": [
+            "lanqiao-individual-2026"
+          ]
+        }
+      ],
+      "finding": "个人软件赛300元不含食宿交通；A/B学校学段限制与年份分别处理。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "21st-century-english-speaking",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "a6a2dc5aa163bd6ba6d151ac420969c2a64f874b6791618247ae9cc58192cb4a",
+      "claimsRead": [
+        {
+          "id": "21st-century-english-speaking:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "既有规则资料：21世纪杯高校官方入口确认大学生个人演讲赛、在线选拔与现场轮次；各组别学籍条件需当届复核。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "21st-century-english-speaking:legacy:source:2"
+          ]
+        },
+        {
+          "id": "21st-century-english-speaking:legacy:fact:team",
+          "field": "team",
+          "text": "既有规则资料：个人参赛；当届赛道人数与跨校要求待核实。〔2〕",
+          "status": "unknown",
+          "sourceIds": [
+            "21st-century-english-speaking:legacy:source:2"
+          ]
+        },
+        {
+          "id": "21st-century-english-speaking:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "演讲个人赛资格与各轮选拔条件需本届规则；不能从大学生名称推全学段。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "icbc-fintech-innovation",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "01b122c3538b3ff997707cff556a08532912cae142427af1818aea86b9c47aa2",
+      "claimsRead": [
+        {
+          "id": "icbc-fintech-innovation:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "当届学籍、年级和适用赛道待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "icbc-fintech-innovation:legacy:fact:team",
+          "field": "team",
+          "text": "第十七届作品通知同时列出个人提交和团队由队长提交两条路径。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "icbc-fintech-innovation:legacy:source:1"
+          ]
+        },
+        {
+          "id": "icbc-fintech-innovation:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "工行作品个人/团队两入口不证明所有学籍适用；企业题与作品要求需补。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "digital-media-creative-tech",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "d31ccc30f7bf2b28602594e3dd01998508d2e5ed8ad01e7920867baf798d6db4",
+      "claimsRead": [
+        {
+          "id": "digital-media-creative-tech:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "既有规则资料：2025官方通知列明高职、本科、研究生等高校在校生组别，并明确团队不超过5人；各赛道细则仍需单独复核。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "digital-media-creative-tech:legacy:source:2"
+          ]
+        },
+        {
+          "id": "digital-media-creative-tech:legacy:fact:team",
+          "field": "team",
+          "text": "本届每队学生不超过5人。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "digital-media-creative-tech:legacy:source:1"
+          ]
+        },
+        {
+          "id": "digital-media-creative-tech:legacy:fact:fee",
+          "field": "fee",
+          "text": "所引高校第十四届校赛免报名费，后续赛段收费待核实。〔3〕",
+          "status": "unknown",
+          "sourceIds": [
+            "digital-media-creative-tech:legacy:source:3"
+          ]
+        }
+      ],
+      "finding": "数字媒体校赛免费不代表国赛；高职/本科/研究生组别须保持。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "future-aircraft-design",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "4f2eac40b9606758157ab91bf70a1123a120ce9714930922c1dcd39b6ffd836d",
+      "claimsRead": [
+        {
+          "id": "future-aircraft-design:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "专业、业余、青少分别设组，个人身份与选组边界按当届文件核实。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "future-aircraft-design:legacy:source:1"
+          ]
+        },
+        {
+          "id": "future-aircraft-design:legacy:fact:team",
+          "field": "team",
+          "text": "可个人参加；组队时专业组不超过10人，业余组及青少组不超过4人。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "future-aircraft-design:legacy:source:1"
+          ]
+        },
+        {
+          "id": "future-aircraft-design:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "未来飞行器专业/业余/青少三组年龄和人数不同，不能由本科身份自选专业组。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "vocational-innovation-entrepreneurship",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "8cfbac81bda0502dddc3acbc5e8ec8be98215c49fd25cb9cb13deec4178e128f",
+      "claimsRead": [
+        {
+          "id": "vocational-innovation-entrepreneurship:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "陕西赛区征集通知所述校选对象为本校全日制本科生。该文件为2025年历史安排。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "vocational-innovation-entrepreneurship:legacy:source:2"
+          ]
+        },
+        {
+          "id": "vocational-innovation-entrepreneurship:legacy:fact:team",
+          "field": "team",
+          "text": "该历史校选主体赛团队由3–7名学生组成。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "vocational-innovation-entrepreneurship:legacy:source:2"
+          ]
+        },
+        {
+          "id": "vocational-innovation-entrepreneurship:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "职教赛事却引用本校本科校选需核适用赛区与职教资格，2025是历史。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "iot-design",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "b65c4dfe91c4d0c8b9a922d5a8e0e0520e5b742b140499c75d77d1e597d49775",
+      "claimsRead": [
+        {
+          "id": "iot-design:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "全日制普通高校本科生、研究生可参赛；可本研混合组队。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "iot-design:legacy:source:1"
+          ]
+        },
+        {
+          "id": "iot-design:legacy:fact:team",
+          "field": "team",
+          "text": "不超过4名学生。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "iot-design:legacy:source:1"
+          ]
+        },
+        {
+          "id": "iot-design:legacy:fact:fee",
+          "field": "fee",
+          "text": "组委会不收报名费、参赛费或评审费；器材与差旅需另核。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "iot-design:legacy:source:1"
+          ]
+        }
+      ],
+      "finding": "物联网免报名评审费不含芯片、云模型或差旅；本研混队以章程核。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "youth-tech-challenge",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "19e3383d022ee547442d165fa40c85339338f32ebed1cea3823fbae147789a66",
+      "claimsRead": [
+        {
+          "id": "youth-tech-challenge:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "当届学籍、年级和适用赛道待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "youth-tech-challenge:legacy:fact:team",
+          "field": "team",
+          "text": "组队人数及是否允许跨校待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "youth-tech-challenge:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "揭榜挂帅必须选具体榜题并核揭榜者条件，不能泛化学生赛道。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "low-altitude-industry",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "4167620491664dc26f2bc67d0d04554ee851a51cfb0077ff2c9e24e549794733",
+      "claimsRead": [
+        {
+          "id": "low-altitude-industry:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "当届学籍、年级和适用赛道待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "low-altitude-industry:legacy:fact:team",
+          "field": "team",
+          "text": "组队人数及是否允许跨校待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "low-altitude-industry:legacy:fact:fee",
+          "field": "fee",
+          "text": "第二届通知写明免团队报名费。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "low-altitude-industry:legacy:source:1"
+          ]
+        }
+      ],
+      "finding": "低空赛免团队报名费无法补未知学籍和原型成本；学生项目条件需读。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "ican-innovation-entrepreneurship",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "a49faf7bdc2a9f764a09c947e8eed945ec015653646ba8a90fef647891f87642",
+      "claimsRead": [
+        {
+          "id": "ican-innovation-entrepreneurship:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "第二十届通知列高校在校本科生、硕士生和博士生，创业赛道部分对象可放宽至毕业5年以内。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "ican-innovation-entrepreneurship:legacy:source:2"
+          ]
+        },
+        {
+          "id": "ican-innovation-entrepreneurship:legacy:fact:team",
+          "field": "team",
+          "text": "所列创业赛道每队2–5人，不跨赛区。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "ican-innovation-entrepreneurship:legacy:source:2"
+          ]
+        },
+        {
+          "id": "ican-innovation-entrepreneurship:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "iCAN创业赛2—5人与毕业5年例外不能推广至其它赛道。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "graduate-rural-revitalization-agritech",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "469ea118b208227149b9be9bda5226b877d5bf4b9db54289d0432a0cdd463dea",
+      "claimsRead": [
+        {
+          "id": "graduate-rural-revitalization-agritech:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "当届学籍、年级和适用赛道待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "graduate-rural-revitalization-agritech:legacy:fact:team",
+          "field": "team",
+          "text": "组队人数及是否允许跨校待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "graduate-rural-revitalization-agritech:legacy:fact:fee",
+          "field": "fee",
+          "text": "该项科技作品竞赛FAQ明确免报名费。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "graduate-rural-revitalization-agritech:legacy:source:2"
+          ]
+        }
+      ],
+      "finding": "研究生科技强农FAQ免报名费不能证明本科生资格或实验资源。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "green-development",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "f8e83ae89c627dd17e5859655f442003fcf9fb7e17c2d4525eed04087038a750",
+      "claimsRead": [
+        {
+          "id": "green-development:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "当届学籍、年级和适用赛道待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "green-development:legacy:fact:team",
+          "field": "team",
+          "text": "组队人数及是否允许跨校待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "green-development:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "绿色发展产业创新路线可能有单位/项目成熟度门槛，当前未知不推可报。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "xuechuangbei-business-simulation",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "d78e37fec1b557f331d1e1367c0febeb1ab5c48c5f9969ed062300f1fc6d4b7b",
+      "claimsRead": [
+        {
+          "id": "xuechuangbei-business-simulation:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "铜仁学院校内选拔面向本校全日制本科生。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "xuechuangbei-business-simulation:legacy:source:2"
+          ]
+        },
+        {
+          "id": "xuechuangbei-business-simulation:legacy:fact:team",
+          "field": "team",
+          "text": "该校选拔每队1–3人，不跨校。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "xuechuangbei-business-simulation:legacy:source:2"
+          ]
+        },
+        {
+          "id": "xuechuangbei-business-simulation:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "学创杯铜仁本科校选和1—3人不能当全国所有组统一规则。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "mechanical-innovation-design",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "ea2621930099ec0e33c935477709efd7587472a6ba177f0ceec38eaf489d257f",
+      "claimsRead": [
+        {
+          "id": "mechanical-innovation-design:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "第十二届常规赛接受全国在校本科生、专科生，含2026届毕业生，需通过学校推荐。〔3〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "mechanical-innovation-design:legacy:source:3"
+          ]
+        },
+        {
+          "id": "mechanical-innovation-design:legacy:fact:team",
+          "field": "team",
+          "text": "可个人或小组参加，学生最多5名。〔3〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "mechanical-innovation-design:legacy:source:3"
+          ]
+        },
+        {
+          "id": "mechanical-innovation-design:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "机械创新2026毕业生许可、学校推荐和至多5人应与常规题绑定。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "3d-digital-innovation-design",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "21aedda00571e14cbdc6d44684ddfb4d50e84a8835309336dd5ee0cd722a8bad",
+      "claimsRead": [
+        {
+          "id": "3d-digital-innovation-design:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "既有规则资料：2026全国3D大赛官方页确认高校与职业院校组别，赛项可个人或团队参与；具体人数随赛项变化。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "3d-digital-innovation-design:legacy:source:2"
+          ]
+        },
+        {
+          "id": "3d-digital-innovation-design:legacy:fact:team",
+          "field": "team",
+          "text": "既有规则资料：可个人或组队；当届赛道人数与跨校要求待核实。〔2〕",
+          "status": "unknown",
+          "sourceIds": [
+            "3d-digital-innovation-design:legacy:source:2"
+          ]
+        },
+        {
+          "id": "3d-digital-innovation-design:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "3D大赛是赛项族，公开总页不提供单项统一人数及完整评分。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "graduate-cybersecurity-innovation",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "d9a6fbed4291d39fc0fbb1f46a26581383ca134125d6908b5b6120f9a1726b2d",
+      "claimsRead": [
+        {
+          "id": "graduate-cybersecurity-innovation:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "第五届邀请函列正式在读硕博和符合通知条件、已转入研一的本研衔接学生。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "graduate-cybersecurity-innovation:legacy:source:1"
+          ]
+        },
+        {
+          "id": "graduate-cybersecurity-innovation:legacy:fact:team",
+          "field": "team",
+          "text": "每队1–4名学生。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "graduate-cybersecurity-innovation:legacy:source:1"
+          ]
+        },
+        {
+          "id": "graduate-cybersecurity-innovation:legacy:fact:fee",
+          "field": "fee",
+          "text": "决赛队员及教师食宿、交通通常自理。报名费待核实。〔1〕",
+          "status": "unknown",
+          "sourceIds": [
+            "graduate-cybersecurity-innovation:legacy:source:1"
+          ]
+        }
+      ],
+      "finding": "网络安全研究生赛的本研衔接例外须文件条件；食宿自理不是报名费已知。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "national-structural-design",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "34e13db758e6c66908b8a2ca5adc69d5cce22f889077b8e61c3149793a0c4eb7",
+      "claimsRead": [
+        {
+          "id": "national-structural-design:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "河南工业大学校内选拔面向全日制本科一至三年级，专业不限。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "national-structural-design:legacy:source:1"
+          ]
+        },
+        {
+          "id": "national-structural-design:legacy:fact:team",
+          "field": "team",
+          "text": "该校校赛3人组队，可跨年级。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "national-structural-design:legacy:source:1"
+          ]
+        },
+        {
+          "id": "national-structural-design:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "结构校选限本科一至三仅河南工业；上海分区新题不能替代全国资格。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "national-advertising-art",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "dc89486ad95f606ca1c520c25d735a5a39739eb44184540ef5f1b14f4eddf88e",
+      "claimsRead": [
+        {
+          "id": "national-advertising-art:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "西安交通大学2026年校内通知面向本校全日制本科生和研究生。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "national-advertising-art:legacy:source:2"
+          ]
+        },
+        {
+          "id": "national-advertising-art:legacy:fact:team",
+          "field": "team",
+          "text": "组队人数及是否允许跨校待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "national-advertising-art:legacy:fact:fee",
+          "field": "fee",
+          "text": "西安交通大学通知写明通过该校校赛的作品免大广赛报名费；其他学校需核实。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "national-advertising-art:legacy:source:2"
+          ]
+        },
+        {
+          "id": "national-advertising-art:v2:eligibility",
+          "field": "eligibility",
+          "text": "指南面向高校全日制大学生和研究生及列明的港澳台、留学生；作品须原创并遵循统一命题。",
+          "status": "historical",
+          "sourceIds": [
+            "advertising-guide-2026"
+          ]
+        }
+      ],
+      "finding": "大广赛校内免报名费不等同全国收费；平面/视频作者上限不同。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "engineering-practice-innovation",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "a873ee703745d870885c2f45cba3152ae6104cd0c8eef21558df67ae7318bb09",
+      "claimsRead": [
+        {
+          "id": "engineering-practice-innovation:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "第十届预通知所列选手为全日制在校本科生。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "engineering-practice-innovation:legacy:source:2"
+          ]
+        },
+        {
+          "id": "engineering-practice-innovation:legacy:fact:team",
+          "field": "team",
+          "text": "每队最多4名学生，具体赛项须再核。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "engineering-practice-innovation:legacy:source:2"
+          ]
+        },
+        {
+          "id": "engineering-practice-innovation:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "工创最多4人概述须按太阳能等具体赛项再核，不能绑定所有赛项。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "huacan-design-award",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "c1848f0e74a42bdfb8d933e98a4a5251745691f683999fe4cab09b6f9a268451",
+      "claimsRead": [
+        {
+          "id": "huacan-design-award:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "高校在读学生可报相应组别；青年教师、青年设计师和海外华人华侨另按各自组别。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "huacan-design-award:legacy:source:1"
+          ]
+        },
+        {
+          "id": "huacan-design-award:legacy:fact:team",
+          "field": "team",
+          "text": "该届高校通知的作品可列1名第一作者及最多4名其他成员。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "huacan-design-award:legacy:source:2"
+          ]
+        },
+        {
+          "id": "huacan-design-award:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "华灿学生/青年教师/设计师身份分离；高校作品作者上限不能泛化。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "national-innovation-training-annual",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "03d0e756765141d26ebc8b4290cdd6fcba75eb6f818b30500ad57c3d67387f75",
+      "claimsRead": [
+        {
+          "id": "national-innovation-training-annual:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "年会展示从国创计划项目中遴选，由中央部委高校或省级教育部门择优推荐。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "national-innovation-training-annual:legacy:source:1"
+          ]
+        },
+        {
+          "id": "national-innovation-training-annual:legacy:fact:team",
+          "field": "team",
+          "text": "以原项目申报论文、参展成果或创业推介，依项目类型组织。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "national-innovation-training-annual:legacy:source:1"
+          ]
+        },
+        {
+          "id": "national-innovation-training-annual:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "创新年会是既有国创项目遴选，推荐截止已过；不是个人自由报名新手赛。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "chemical-engineering-design",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "d6ca6d37f30212851d670a7672c56ff7a61fd60fd09fa779b0ad818df3540803",
+      "claimsRead": [
+        {
+          "id": "chemical-engineering-design:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "正式参赛者须为全日制在校本科生。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "chemical-engineering-design:legacy:source:2"
+          ]
+        },
+        {
+          "id": "chemical-engineering-design:legacy:fact:team",
+          "field": "team",
+          "text": "同一高校5名学生组队并确定队长，每人限参加一队，可跨学科。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "chemical-engineering-design:legacy:source:2"
+          ]
+        },
+        {
+          "id": "chemical-engineering-design:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "化工设计同校5本科与研究生排除须正式规则；化工实验是独立系列。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "service-outsourcing-innovation",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "bb3b29ce1ba5a8acea9ed68018c21a3876b34b52365f93ca3bbd6d3596c247ff",
+      "claimsRead": [
+        {
+          "id": "service-outsourcing-innovation:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "当届学籍、年级和适用赛道待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "service-outsourcing-innovation:legacy:fact:team",
+          "field": "team",
+          "text": "第十七届通知限定每队学生不超过5名。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "service-outsourcing-innovation:legacy:source:2"
+          ]
+        },
+        {
+          "id": "service-outsourcing-innovation:legacy:fact:fee",
+          "field": "fee",
+          "text": "该届不收报名费；差旅与制作支出另核。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "service-outsourcing-innovation:legacy:source:2"
+          ]
+        }
+      ],
+      "finding": "服创企业命题和创业实践路径不同，毕业生例外不能由学生标签推断。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "milan-design-week-china",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "c6b4bbe1ed4f6cb789a4e61d803c62b3f2a89e4494ca90f457ca2d764d5118aa",
+      "claimsRead": [
+        {
+          "id": "milan-design-week-china:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "当届学籍、年级和适用赛道待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "milan-design-week-china:legacy:fact:team",
+          "field": "team",
+          "text": "辽宁工业大学第十一届校赛可个人参赛，团队不超过3人。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "milan-design-week-china:legacy:source:2"
+          ]
+        },
+        {
+          "id": "milan-design-week-china:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "米兰作品展学生/教师类别分开；辽宁校赛三人上限不得当统一全国。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "geology-skills",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "9f0f7862871f6a9e3a756032019d64c9e19de26b0cfc56805a6d14c54f19f82e",
+      "claimsRead": [
+        {
+          "id": "geology-skills:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "当届学籍、年级和适用赛道待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "geology-skills:legacy:fact:team",
+          "field": "team",
+          "text": "此届通知每支参赛队由3名学生组成，学校统一组织。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "geology-skills:legacy:source:1"
+          ]
+        },
+        {
+          "id": "geology-skills:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "地质技能三人校队不证明所有专业/学段可报，需补适用对象。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "optoelectronic-design",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "6a1854b3407fde1b03ece57fb2277bb9701531af9f097e97cdaefe213066ff7d",
+      "claimsRead": [
+        {
+          "id": "optoelectronic-design:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "东北石油大学2026通知列全日制本科及以上学生，具体资格按题类。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "optoelectronic-design:legacy:source:2"
+          ]
+        },
+        {
+          "id": "optoelectronic-design:legacy:fact:team",
+          "field": "team",
+          "text": "创意设计类≤3人，研究生至多1人；队长应为本科或专科生。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "optoelectronic-design:legacy:source:2"
+          ]
+        },
+        {
+          "id": "optoelectronic-design:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "光电创意类至多3人、研究生比例和队长限制不能套其他题类。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "metallographic-skills",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "275e7f042264bf6c23b8cc3e2345c4e5e8ff3f8d8cc9f30883d4b8e64b9d00cd",
+      "claimsRead": [
+        {
+          "id": "metallographic-skills:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "该届由列入教育部普通高校名单的本科或专科院校选派代表。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "metallographic-skills:legacy:source:1"
+          ]
+        },
+        {
+          "id": "metallographic-skills:legacy:fact:team",
+          "field": "team",
+          "text": "组队人数及是否允许跨校待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "metallographic-skills:legacy:fact:fee",
+          "field": "fee",
+          "text": "该届通知中的复赛费用为每位参赛师生500元，决赛为每人800元。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "metallographic-skills:legacy:source:1"
+          ]
+        }
+      ],
+      "finding": "金相复赛/决赛500/800每师生为不同阶段费用，不能只记报名费。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "zhou-peiyuan-mechanics",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "87c0a2dad2454242c72af947f4d52d6370295f9428757c82a807deb74e7308a7",
+      "claimsRead": [
+        {
+          "id": "zhou-peiyuan-mechanics:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "既有规则资料：2025中国力学学会通知确认在校大学生及研究生可参加，设个人赛和团体赛；下一届资格须重新核对。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "zhou-peiyuan-mechanics:legacy:source:1"
+          ]
+        },
+        {
+          "id": "zhou-peiyuan-mechanics:legacy:fact:team",
+          "field": "team",
+          "text": "既有规则资料：可个人或组队；当届赛道人数与跨校要求待核实。〔1〕",
+          "status": "unknown",
+          "sourceIds": [
+            "zhou-peiyuan-mechanics:legacy:source:1"
+          ]
+        },
+        {
+          "id": "zhou-peiyuan-mechanics:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "周培源个人与团体赛、历史2025与下一届须拆，研究生参加条件另核。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "mechanical-engineering-innovation",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "ecc9fb1ab19fcf3db90d69e3ee4c221b45485c1792ad7a4a2d2f832799279e48",
+      "claimsRead": [
+        {
+          "id": "mechanical-engineering-innovation:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "机械产品数字化设计赛主要面向机械相关专业的本科生和高职高专生，按学段分别设组。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "mechanical-engineering-innovation:legacy:source:2"
+          ]
+        },
+        {
+          "id": "mechanical-engineering-innovation:legacy:fact:team",
+          "field": "team",
+          "text": "该专项每件作品至多3名学生，并确定一名队长。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "mechanical-engineering-innovation:legacy:source:2"
+          ]
+        },
+        {
+          "id": "mechanical-engineering-innovation:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "机械工程创新赛事族中的数字化设计3人上限不能套全部专项。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "china-us-young-maker",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "00be3c6ab3ba72762f23691b283ee32ce712d1cd947ff6ef375815b6c256ca9f",
+      "claimsRead": [
+        {
+          "id": "china-us-young-maker:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "既有规则资料：2026官方规则面向18至40岁的中国或美国公民及合法永久居民，个人或不超过5人的团队可报名，并设职业院校赛道。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "china-us-young-maker:legacy:source:1"
+          ]
+        },
+        {
+          "id": "china-us-young-maker:legacy:fact:team",
+          "field": "team",
+          "text": "既有规则资料：可个人或组队；当届赛道人数与跨校要求待核实。〔1〕",
+          "status": "unknown",
+          "sourceIds": [
+            "china-us-young-maker:legacy:source:1"
+          ]
+        },
+        {
+          "id": "china-us-young-maker:legacy:fact:fee",
+          "field": "fee",
+          "text": "2026上海赛区通知明确免报名费。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "china-us-young-maker:legacy:source:2"
+          ]
+        }
+      ],
+      "finding": "中美创客年龄国籍及永久居留是硬条件，上海免报名费范围有限。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "raicom-robot-developer",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "a875a6cfe7832f88304f58fe3eeb08884c2c959a477e698613dae65a9728e9b2",
+      "claimsRead": [
+        {
+          "id": "raicom-robot-developer:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "北京科技大学所列2026赛项要求2026年9月（含）前注册在籍的全日制本科生、研究生，年级和专业不限。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "raicom-robot-developer:legacy:source:2"
+          ]
+        },
+        {
+          "id": "raicom-robot-developer:legacy:fact:team",
+          "field": "team",
+          "text": "该校主要组织团体参赛，队伍规模按具体题目确认。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "raicom-robot-developer:legacy:source:2"
+          ]
+        },
+        {
+          "id": "raicom-robot-developer:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "睿抗本科研究生在籍截止及队伍大小随具体题，校通知不能兜底。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "datang-ict",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "ab1c4bd35230cf1a41d141b820f61dabc39bdc6ee0bcd5af1900ab5414bde285",
+      "claimsRead": [
+        {
+          "id": "datang-ict:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "该校第十三届通知面向指定电子信息、计算机、自动化等专业本科生及相关学科在读研究生，具体赛道另核。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "datang-ict:legacy:source:2"
+          ]
+        },
+        {
+          "id": "datang-ict:legacy:fact:team",
+          "field": "team",
+          "text": "组队人数及是否允许跨校待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "datang-ict:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "大唐ICT列举专业可能来自校选，不能作为全国唯一专业名单。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "huawei-ict",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "5c35a4bdbade7e89c015dbe8060b10ffe8974e6020dab87eb6bbe8199b999910",
+      "claimsRead": [
+        {
+          "id": "huawei-ict:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "当届学籍、年级和适用赛道待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "huawei-ict:legacy:fact:team",
+          "field": "team",
+          "text": "组队人数及是否允许跨校待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "huawei-ict:legacy:fact:fee",
+          "field": "fee",
+          "text": "西安交通大学转发的2026–2027通知写明本次赛事不收费；差旅及设备另计。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "huawei-ict:legacy:source:2"
+          ]
+        }
+      ],
+      "finding": "华为2026—2027不收费不等于所有硬条件已核，赛道与区域须明确。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "embedded-chip-system-design",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "6f4b8aa754b3fd652dceba580ebd4edd55297812850f46beb6ddeef65d7ad9b2",
+      "claimsRead": [
+        {
+          "id": "embedded-chip-system-design:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "南京航空航天大学FPGA创新赛道通知列电子电气类相关专业全日制本科生、研究生。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "embedded-chip-system-design:legacy:source:1"
+          ]
+        },
+        {
+          "id": "embedded-chip-system-design:legacy:fact:team",
+          "field": "team",
+          "text": "该赛道1–3名学生组队。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "embedded-chip-system-design:legacy:source:1"
+          ]
+        },
+        {
+          "id": "embedded-chip-system-design:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "FPGA赛道1—3人、电子电气类要求需与全国章程对照，不泛化嵌入式全赛。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "culsc-life-sciences",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "60654f013fef902f4d36e1997ddfc2d8e77036a683ef60890ef7b2a36e14d727",
+      "claimsRead": [
+        {
+          "id": "culsc-life-sciences:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "第十二届科学探究类通知列全日制在校本科生。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "culsc-life-sciences:legacy:source:1"
+          ]
+        },
+        {
+          "id": "culsc-life-sciences:legacy:fact:team",
+          "field": "team",
+          "text": "组队人数及是否允许跨校待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "culsc-life-sciences:legacy:fact:fee",
+          "field": "fee",
+          "text": "该赛类报名费每队400元，缴纳后不退。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "culsc-life-sciences:legacy:source:1"
+          ]
+        },
+        {
+          "id": "culsc-life-sciences:v2:eligibility",
+          "field": "eligibility",
+          "text": "通知列全日制在校本科生，资格由学校确认；每队学生不超过5名、指导老师1—2名，另有参赛次数限制。",
+          "status": "historical",
+          "sourceIds": [
+            "life-inquiry-2027"
+          ]
+        }
+      ],
+      "finding": "生命科学科学探究本科组、参赛次数和400元不退应显式，创意创业另查。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "physics-experiment-innovation",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "6219911c5b5b78a75a8cd89b9bd6800fe37daf31c33188cbda06dd56620080ed",
+      "claimsRead": [
+        {
+          "id": "physics-experiment-innovation:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "当届学籍、年级和适用赛道待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "physics-experiment-innovation:legacy:fact:team",
+          "field": "team",
+          "text": "第十二届通知每队最多5名学生，其中讲课类项目最多3名。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "physics-experiment-innovation:legacy:source:2"
+          ]
+        },
+        {
+          "id": "physics-experiment-innovation:legacy:fact:fee",
+          "field": "fee",
+          "text": "该通知规定每队1000元用于网评和远程答辩，现场展示的会务费另算。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "physics-experiment-innovation:legacy:source:2"
+          ]
+        }
+      ],
+      "finding": "物理实验讲课最多3人与其它5人不同，1000元网评之外现场会务另算。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "bim-graduation-design",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "fb0f623822a45c3851516c1ffb661dc8ac35f3a916f0484f37131e2c01a53203",
+      "claimsRead": [
+        {
+          "id": "bim-graduation-design:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "当届学籍、年级和适用赛道待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "bim-graduation-design:legacy:fact:team",
+          "field": "team",
+          "text": "该届学校通知列每队3–5名学生，研究生不超过2人；每人限一队。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "bim-graduation-design:legacy:source:1"
+          ]
+        },
+        {
+          "id": "bim-graduation-design:legacy:fact:fee",
+          "field": "fee",
+          "text": "该通知载明不收报名费。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "bim-graduation-design:legacy:source:1"
+          ]
+        }
+      ],
+      "finding": "BIM毕业设计3—5人与研究生最多2名仅来源范围有效，免费不代表软件差旅。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "intelligent-robot-creativity",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "0bccf3e1632fe4f8198943a1d2548dcb96af139b90f7e6616e3bf556e131dc91",
+      "claimsRead": [
+        {
+          "id": "intelligent-robot-creativity:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "第九届高校通知接受全日制普通高校在籍本科生、研究生。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "intelligent-robot-creativity:legacy:source:2"
+          ]
+        },
+        {
+          "id": "intelligent-robot-creativity:legacy:fact:team",
+          "field": "team",
+          "text": "组队人数及是否允许跨校待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "intelligent-robot-creativity:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "智能机器人创意子项门槛与装备要求未齐，不能从本科研究生概述判可做。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "china-good-design",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "3751a992e174fb5cf09dc5be7abcc3fe5deb936addbac30e507a0c4b4020e52e",
+      "claimsRead": [
+        {
+          "id": "china-good-design:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "学生组和教师组分开申报；学生组作者栏不可署教师姓名。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "china-good-design:legacy:source:1"
+          ]
+        },
+        {
+          "id": "china-good-design:legacy:fact:team",
+          "field": "team",
+          "text": "组队人数及是否允许跨校待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "china-good-design:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "好创意学生作者不能署教师，导师栏与作者栏区别需要保留。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "china-robot-ai",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "797105a09580a33f3383ce0e41f0be9a7a4e007aed41da15ab9b5d9326482219",
+      "claimsRead": [
+        {
+          "id": "china-robot-ai:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "所引2026校内通知面向已正式注册的全日制本科生和硕博研究生。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "china-robot-ai:legacy:source:2"
+          ]
+        },
+        {
+          "id": "china-robot-ai:legacy:fact:team",
+          "field": "team",
+          "text": "组队人数及是否允许跨校待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "china-robot-ai:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "机器人AI大赛多赛项，校内正式注册资格不是全部赛项的最低门槛。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "chinese-classics",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "ea16357ad22901538a7511903807aaa06fd6ab1259d8009780e6ba49590790d1",
+      "claimsRead": [
+        {
+          "id": "chinese-classics:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "组委会文件的不同赛项设学生、教师及其他组别；学生按所对应的赛项和组别申报。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "chinese-classics:legacy:source:2"
+          ]
+        },
+        {
+          "id": "chinese-classics:legacy:fact:team",
+          "field": "team",
+          "text": "组队人数及是否允许跨校待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "chinese-classics:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "chinese-classics:v2:eligibility",
+          "field": "eligibility",
+          "text": "诵读方案大学生组含研究生，可个人或团队参赛；团队最多20人，不能跨设定组别混报，摄像伴奏不作为参赛者。",
+          "status": "historical",
+          "sourceIds": [
+            "classics-official-attachment-2026"
+          ]
+        }
+      ],
+      "finding": "经典诵写讲不同赛项和组别独立；20人诵读不等于笔写或讲解人数。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "intercultural-competence",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "c57ffc6b06dce0f7f94b2a895f8b0f403a072725e56708fd84797d8fa6ed5fd3",
+      "claimsRead": [
+        {
+          "id": "intercultural-competence:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "既有规则资料：2026官方直通说明确认面向高校学生，大赛包括团队现场赛和短视频赛；各赛道的学段与作者人数并未统一，报名前须查当届章程。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "intercultural-competence:legacy:source:1"
+          ]
+        },
+        {
+          "id": "intercultural-competence:legacy:fact:team",
+          "field": "team",
+          "text": "该校初赛可3人一队，也可先个人报名后由教师协助组队。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "intercultural-competence:legacy:source:2"
+          ]
+        },
+        {
+          "id": "intercultural-competence:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "跨文化现场团队和短视频作者要求不同；个人先报名只是校选组织安排。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "baidu-star",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "678900b09f0098d40fe7adbebef002072b43f3e65ee71b846d25d03f2a788ef4",
+      "claimsRead": [
+        {
+          "id": "baidu-star:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "中北大学转述第22届决赛要求具有正式全日制在校学籍。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "baidu-star:legacy:source:2"
+          ]
+        },
+        {
+          "id": "baidu-star:legacy:fact:team",
+          "field": "team",
+          "text": "选手独立使用一台计算机，分组要求依该届规程。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "baidu-star:legacy:source:2"
+          ]
+        },
+        {
+          "id": "baidu-star:legacy:fact:fee",
+          "field": "fee",
+          "text": "所引通知将报名和机考服务分开：赛事不收报名费，第三方平台考试费每人每场80元，初赛和决赛分别计算。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "baidu-star:legacy:source:1"
+          ]
+        }
+      ],
+      "finding": "百度之星免报名费但机考每场80元，初决赛分别计算，不可标免费。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "water-innovation-design",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "2bbd06087b917049ebe806407c4944f10962f9b414f244888514630f962881e0",
+      "claimsRead": [
+        {
+          "id": "water-innovation-design:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "当届学籍、年级和适用赛道待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "water-innovation-design:legacy:fact:team",
+          "field": "team",
+          "text": "四川农业大学校赛每队最多4名学生，每人限一项。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "water-innovation-design:legacy:source:1"
+          ]
+        },
+        {
+          "id": "water-innovation-design:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "水利创新校赛4人和每人1项不能自动当全国现行规则。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "chemical-engineering-experiment",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "483a0daeb2b6553c99075e78c33a49ca8a4028bffa26b30fff75e833089103fe",
+      "claimsRead": [
+        {
+          "id": "chemical-engineering-experiment:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "既有规则资料：2026年中国化工教育协会正式文件与当届赛区通知确认该赛事为化工及制药相关本科生团队赛；母赛队伍人数尚须以当届细则复核。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "chemical-engineering-experiment:legacy:source:2"
+          ]
+        },
+        {
+          "id": "chemical-engineering-experiment:legacy:fact:team",
+          "field": "team",
+          "text": "该届竞赛通知每队3名选手，名单确定后不得随意变更。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "chemical-engineering-experiment:legacy:source:2"
+          ]
+        },
+        {
+          "id": "chemical-engineering-experiment:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "化工实验3人固定名单与专业限定应原文支持，不借用化工设计规则。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "chemistry-experiment-innovation",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "148cf86d7a4be1c75ed640430f3d12149c32c20711ae87bc2ec772f44b80daa8",
+      "claimsRead": [
+        {
+          "id": "chemistry-experiment-innovation:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "第六届全国章程面向普通高校全日制在校本科生。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "chemistry-experiment-innovation:legacy:source:2"
+          ]
+        },
+        {
+          "id": "chemistry-experiment-innovation:legacy:fact:team",
+          "field": "team",
+          "text": "新创、改进、科普实验赛道每队3人，数智化实验赛道每队3–5人。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "chemistry-experiment-innovation:legacy:source:2"
+          ]
+        },
+        {
+          "id": "chemistry-experiment-innovation:legacy:fact:fee",
+          "field": "fee",
+          "text": "章程允许按分赛区或总决赛收取会务费，具体金额待核实。〔2〕",
+          "status": "unknown",
+          "sourceIds": [
+            "chemistry-experiment-innovation:legacy:source:2"
+          ]
+        }
+      ],
+      "finding": "化学创新数智化3—5人不同于其它3人，会务费允许收但数额未知。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "computer-system-ability",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "e7e63af62f259a5536c878f941998c982bdcc484f53df456f2b2fe5fa3a78a9c",
+      "claimsRead": [
+        {
+          "id": "computer-system-ability:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "西安交通大学2026组织通知允许计算机及相关专业在校本科生、研究生报名，各具体赛道另有要求。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "computer-system-ability:legacy:source:2"
+          ]
+        },
+        {
+          "id": "computer-system-ability:legacy:fact:team",
+          "field": "team",
+          "text": "组队人数及是否允许跨校待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "computer-system-ability:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "系统能力OS/编译器/CPU子赛资格不同，计算机相关校通知不能全覆盖。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "garden-design-build",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "aa4380b79cdd3110fb622cd58f592ab8d6bf0afa3e425966435480426d68644d",
+      "claimsRead": [
+        {
+          "id": "garden-design-build:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "该届社区花园赛道允许相关专业的本科生、研究生参赛。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "garden-design-build:legacy:source:1"
+          ]
+        },
+        {
+          "id": "garden-design-build:legacy:fact:team",
+          "field": "team",
+          "text": "3–7名学生，可跨校、跨专业组队。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "garden-design-build:legacy:source:1"
+          ]
+        },
+        {
+          "id": "garden-design-build:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "花园社区赛允许跨校3—7人不等于所有建造赛道；现场建造资源需核。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "information-security-confrontation",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "b9155ee407813ff10a5823e9548ed5703149acad5ba4d191caaf932b665e95aa",
+      "claimsRead": [
+        {
+          "id": "information-security-confrontation:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "辽宁工业大学2026校内选拔面向本校在校本科生和研究生。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "information-security-confrontation:legacy:source:2"
+          ]
+        },
+        {
+          "id": "information-security-confrontation:legacy:fact:team",
+          "field": "team",
+          "text": "该校通知中的破阵夺旗赛在线组队。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "information-security-confrontation:legacy:source:2"
+          ]
+        },
+        {
+          "id": "information-security-confrontation:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "信息安全对抗破阵夺旗队伍与密码专项不能混用，校选范围保留。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "surveying-innovation",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "22aea510fc659fb5a5aeb60c7ec96310b005e402ad06fb196d815cee814a8a5c",
+      "claimsRead": [
+        {
+          "id": "surveying-innovation:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "该届要求选手在2026年7月为在校本科生，按赛项另核专业限制。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "surveying-innovation:legacy:source:1"
+          ]
+        },
+        {
+          "id": "surveying-innovation:legacy:fact:team",
+          "field": "team",
+          "text": "虚实协同数字测图团体项目由2名学生参赛。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "surveying-innovation:legacy:source:1"
+          ]
+        },
+        {
+          "id": "surveying-innovation:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "测绘2026年7月在校本科是明确时点；虚实数字测图2人只属该项目。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "statistical-modeling",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "6fb0c7800e6eb9f5afd4c3a3b57b5a53222bedc350a0e4daf44bbaf817707674",
+      "claimsRead": [
+        {
+          "id": "statistical-modeling:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "当届学籍、年级和适用赛道待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "statistical-modeling:legacy:fact:team",
+          "field": "team",
+          "text": "同校3名学生组队，每人仅能加入一队。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "statistical-modeling:legacy:source:1"
+          ]
+        },
+        {
+          "id": "statistical-modeling:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "统计建模旧首源是转载页，不能当主办；同校3人与本研不混需追原件。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "basic-medicine-innovation",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "6fe4ccba343d14c0e9f75720bd247acc2c5d05bb730005cb142e83ff0a3f09dc",
+      "claimsRead": [
+        {
+          "id": "basic-medicine-innovation:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "南京中医药大学校赛通知要求国赛当年8月30日前正式注册的全日制本科生，含长学制本科阶段。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "basic-medicine-innovation:legacy:source:2"
+          ]
+        },
+        {
+          "id": "basic-medicine-innovation:legacy:fact:team",
+          "field": "team",
+          "text": "每队3–5人，每生限一件作品，可按文件要求跨两校组队。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "basic-medicine-innovation:legacy:source:2"
+          ]
+        },
+        {
+          "id": "basic-medicine-innovation:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "基础医学长学制本科阶段与一般研究生不同，跨两校许可须完整条件。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "tax-risk-case",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "8353f58c9454a59a36ee446f671f2356b6e9e79b6e4a040bae4552805d99b429",
+      "claimsRead": [
+        {
+          "id": "tax-risk-case:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "中国地质大学（北京）该届通知允许本校全日制本科生和研究生报名。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "tax-risk-case:legacy:source:1"
+          ]
+        },
+        {
+          "id": "tax-risk-case:legacy:fact:team",
+          "field": "team",
+          "text": "该校通知每队3名学生。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "tax-risk-case:legacy:source:1"
+          ]
+        },
+        {
+          "id": "tax-risk-case:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费每队150元。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "tax-risk-case:legacy:source:1"
+          ]
+        }
+      ],
+      "finding": "税收风险本科院校标题与本校研究生许可不一致，需核全国组别。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "enterprise-competition-simulation",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "c2c453b4ad477a8fe4459a882ee1d1052c9f48c299228b1a3b7d4973829f40c2",
+      "claimsRead": [
+        {
+          "id": "enterprise-competition-simulation:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "既有规则资料：2026官方通知设置研究生、本科与高职组，参赛队由3名学生组成；校内选拔和指导教师规则按当届文件执行。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "enterprise-competition-simulation:legacy:source:2"
+          ]
+        },
+        {
+          "id": "enterprise-competition-simulation:legacy:fact:team",
+          "field": "team",
+          "text": "各赛道由学校组织，每队3名学生。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "enterprise-competition-simulation:legacy:source:2"
+          ]
+        },
+        {
+          "id": "enterprise-competition-simulation:legacy:fact:fee",
+          "field": "fee",
+          "text": "全国复赛按每赛道每队600元收取。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "enterprise-competition-simulation:legacy:source:2"
+          ]
+        }
+      ],
+      "finding": "企业竞争模拟研究生/本科/高职三组拆开；复赛600元按赛道队伍非个人。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "digital-enterprise-sandbox",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "15992ebfafbd880adee2440bfb90cf0a4d13453ee463717a3e80db9871aa96d8",
+      "claimsRead": [
+        {
+          "id": "digital-enterprise-sandbox:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "既有规则资料：2026年当届高校通知确认参赛者为截至2026年12月31日仍在籍的全日制本科生，每队4人且不得跨校组队。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "digital-enterprise-sandbox:legacy:source:2"
+          ]
+        },
+        {
+          "id": "digital-enterprise-sandbox:legacy:fact:team",
+          "field": "team",
+          "text": "河北科技大学该届选拔每队4名学生，不跨校。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "digital-enterprise-sandbox:legacy:source:2"
+          ]
+        },
+        {
+          "id": "digital-enterprise-sandbox:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "沙盘要求12月31日仍在籍可能排毕业生；4人同校须本届原文。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "digital-building-innovation",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "6eae1c97fe460126ec5ed75b1762c648087477a0ffb48a3f99cad1118a85ee4d",
+      "claimsRead": [
+        {
+          "id": "digital-building-innovation:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "既有规则资料：2026年中国建设教育协会正式通知确认面向全国全日制本科、高职和中职建筑相关在籍学生，以团队参加选拔和总决赛；母赛队伍人数因赛道而异。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "digital-building-innovation:legacy:source:1"
+          ]
+        },
+        {
+          "id": "digital-building-innovation:legacy:fact:team",
+          "field": "team",
+          "text": "既有规则资料：团队参赛；当届赛道人数与跨校要求待核实。〔1〕",
+          "status": "unknown",
+          "sourceIds": [
+            "digital-building-innovation:legacy:source:1"
+          ]
+        },
+        {
+          "id": "digital-building-innovation:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "数字建筑本科/高职/中职按赛道，不把系列概览用作单项资格。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "global-campus-ai-algorithm",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "2e637be1d34bd1000d0fcde945d8c2d400c0a7d659af6943a3d4a5e14489d8fc",
+      "claimsRead": [
+        {
+          "id": "global-campus-ai-algorithm:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "当届学籍、年级和适用赛道待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "global-campus-ai-algorithm:legacy:fact:team",
+          "field": "team",
+          "text": "核实的算法赛项每队至多3名学生，不可跨校；个人与其他赛项规则另核。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "global-campus-ai-algorithm:legacy:source:1"
+          ]
+        },
+        {
+          "id": "global-campus-ai-algorithm:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "校园AI算法每项队伍上限不同，室内农业题和总体比赛不能互借资格。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "smart-agricultural-equipment",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "2a279d3be9acf57513cc558e86f5b9f03e0a4a99fe0b895e4a86519af945659b",
+      "claimsRead": [
+        {
+          "id": "smart-agricultural-equipment:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "当届学籍、年级和适用赛道待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "smart-agricultural-equipment:legacy:fact:team",
+          "field": "team",
+          "text": "组队人数及是否允许跨校待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "smart-agricultural-equipment:legacy:fact:fee",
+          "field": "fee",
+          "text": "第十二届未开展省级选拔的地区，报名按每件作品200元收取；设省赛地区另核。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "smart-agricultural-equipment:legacy:source:1"
+          ]
+        }
+      ],
+      "finding": "农装200元作品费只对未设省选地区，省赛地区不可直接套用。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "keyun-accounting",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "1a6981980fc3eda01625d0ca6307b819e6b6a47110546d6c31502a773e32a8e1",
+      "claimsRead": [
+        {
+          "id": "keyun-accounting:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "湖南工学院该届通知限全日制在籍学生。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "keyun-accounting:legacy:source:2"
+          ]
+        },
+        {
+          "id": "keyun-accounting:legacy:fact:team",
+          "field": "team",
+          "text": "4名选手组成校队，不跨校。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "keyun-accounting:legacy:source:2"
+          ]
+        },
+        {
+          "id": "keyun-accounting:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "科云4人校队与全日制要求须适用文件，平台账号和校内选拔需确认。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "world-vocational-skills",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "7513d6c9d23a0fcb0b1440589c7fe73407fad518bc7c3ec2a44fd9b21f21fa05",
+      "claimsRead": [
+        {
+          "id": "world-vocational-skills:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "2026年通知区分职教轨道，以及对普高、普通本科开放的特定赛道。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "world-vocational-skills:legacy:source:1"
+          ]
+        },
+        {
+          "id": "world-vocational-skills:legacy:fact:team",
+          "field": "team",
+          "text": "团体赛每队不超过4人，国际组另有限制。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "world-vocational-skills:legacy:source:1"
+          ]
+        },
+        {
+          "id": "world-vocational-skills:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "世界职校技能赛普通本科只在特定赛道开放，不能泛化为全项目可报。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "robotac",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "34ec5c9b557a1be6d0b0577421a862358f7cfef551b244739eb71b71feb0cf20",
+      "claimsRead": [
+        {
+          "id": "robotac:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "第25届要求2026年5月仍有高校全日制在籍身份，覆盖研究生、本科生、专科生和留学生。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "robotac:legacy:source:2"
+          ]
+        },
+        {
+          "id": "robotac:legacy:fact:team",
+          "field": "team",
+          "text": "对抗、挑战及设计赛分别组织，队伍编制依所选赛项核实。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "robotac:legacy:source:2"
+          ]
+        },
+        {
+          "id": "robotac:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "RoboTac不同对抗/挑战/设计编制独立，5月在籍条件不能变成全年在籍。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "worldskills",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "88f5ab18129a3c404706ee95f53642925a162248becd0e66dd7bea6551df269b",
+      "claimsRead": [
+        {
+          "id": "worldskills:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "须由成员国家或地区选拔。大部分技能项目以竞赛年度不超过22岁为限，指定例外项目不超过25岁。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "worldskills:legacy:source:2"
+          ]
+        },
+        {
+          "id": "worldskills:legacy:fact:team",
+          "field": "team",
+          "text": "先经过成员地区遴选；人数、个人或团体方式按技能项目核实。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "worldskills:legacy:source:2"
+          ]
+        },
+        {
+          "id": "worldskills:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "世界技能赛须成员选拔及分项目年龄上限，不能按大学生标签直接报名。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "worldskills-china-selection",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "66ee4a4842d69a247dc47f969d826b4304373cb35c4eb1d77125430673244976",
+      "claimsRead": [
+        {
+          "id": "worldskills-china-selection:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "通往世界技能大赛须通过成员国家或地区的选拔。中国选拔的年龄、身份与属地入口须查对应技能当届文件。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "worldskills-china-selection:legacy:source:2"
+          ]
+        },
+        {
+          "id": "worldskills-china-selection:legacy:fact:team",
+          "field": "team",
+          "text": "组队人数及是否允许跨校待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "worldskills-china-selection:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "中国选拔是世界技能赛的资格路径不是同层新竞赛成绩，年龄属地另核。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "brics-skills",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "1084f1654049e59a41198fb29f25a7cc330fa12c87af0d1173618c889d522a83",
+      "claimsRead": [
+        {
+          "id": "brics-skills:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "所引第十届学校组织通知限本校全日制在校生，仅适用于公告对应的专项。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "brics-skills:legacy:source:2"
+          ]
+        },
+        {
+          "id": "brics-skills:legacy:fact:team",
+          "field": "team",
+          "text": "组队人数及是否允许跨校待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "brics-skills:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "金砖是多个专项集合，本校在籍条件只限对应专项。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "matiji-programming",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "15dd70daa5bc8b7bfcf266dea8f614e4dc75695894440ef37803b868c8c37fed",
+      "claimsRead": [
+        {
+          "id": "matiji-programming:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "西南石油大学组织的第八届本科院校赛道初赛面向本校在籍本科生、硕士生和博士生。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "matiji-programming:legacy:source:2"
+          ]
+        },
+        {
+          "id": "matiji-programming:legacy:fact:team",
+          "field": "team",
+          "text": "组队人数及是否允许跨校待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "matiji-programming:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "码蹄本科院校赛道可能允许研究生，名称不直接等于本科生限定。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "national-college-mathematics",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "ac8b05043c1f875e7bda604a77e99e4139a3aab8a4e056414b6e6c868906c013",
+      "claimsRead": [
+        {
+          "id": "national-college-mathematics:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "第十八届面向全日制在校大学生，按数学专业、非数学专业、高职高专等类别报名。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "national-college-mathematics:legacy:source:1"
+          ]
+        },
+        {
+          "id": "national-college-mathematics:legacy:fact:team",
+          "field": "team",
+          "text": "个人竞赛。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "national-college-mathematics:legacy:source:1"
+          ]
+        },
+        {
+          "id": "national-college-mathematics:legacy:fact:fee",
+          "field": "fee",
+          "text": "全国通知标准为每人100元；交费时间与方式由赛区或学校组织。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "national-college-mathematics:legacy:source:1"
+          ]
+        }
+      ],
+      "finding": "数学竞赛首源互联网转载须保留other；2011经典题规则与2026不混。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "red-tourism-creative-planning",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "20d924960a1469feb0db97c4abdaadcd85b4ce72e926b617f0610d025a04aa84",
+      "claimsRead": [
+        {
+          "id": "red-tourism-creative-planning:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "宝鸡文理学院2026校赛通知允许在校本科生、研究生报名。〔3〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "red-tourism-creative-planning:legacy:source:3"
+          ]
+        },
+        {
+          "id": "red-tourism-creative-planning:legacy:fact:team",
+          "field": "team",
+          "text": "该校通知3–5名学生，可跨校组队。〔3〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "red-tourism-creative-planning:legacy:source:3"
+          ]
+        },
+        {
+          "id": "red-tourism-creative-planning:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "红旅搜狐只是线索，宝鸡文理跨校3—5人是校赛表述须追全国原文。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "graduate-math-modeling",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "a98a1b286a2513a5298aebedea50c9362d8035bfaa38a34b0955976d110cc538",
+      "claimsRead": [
+        {
+          "id": "graduate-math-modeling:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "既有规则资料：2026官方页面确认面向在读硕士、博士研究生，参赛队由3名研究生组成；报名与资格由培养单位审核。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "graduate-math-modeling:legacy:source:2"
+          ]
+        },
+        {
+          "id": "graduate-math-modeling:legacy:fact:team",
+          "field": "team",
+          "text": "2026届每队3名研究生，跨校组队须另核当届限制。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "graduate-math-modeling:legacy:source:1"
+          ]
+        },
+        {
+          "id": "graduate-math-modeling:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费每队300元。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "graduate-math-modeling:legacy:source:1"
+          ]
+        }
+      ],
+      "finding": "研究生数模培养单位审核、3人和跨校规定应同时满足，300元是队费。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "graduate-electronic-design",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "9b37b646c5258d1639bc779b80ebab0cb976f4fd8c9135c4a50115fa43fe3d4d",
+      "claimsRead": [
+        {
+          "id": "graduate-electronic-design:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "当届邀请函另列已确认研究生录取的本科毕业生及特殊申请要求。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "graduate-electronic-design:legacy:source:1"
+          ]
+        },
+        {
+          "id": "graduate-electronic-design:legacy:fact:team",
+          "field": "team",
+          "text": "技术赛与商业计划书专项分别组队，报名和评审独立。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "graduate-electronic-design:legacy:source:1"
+          ]
+        },
+        {
+          "id": "graduate-electronic-design:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "研究生电设录取本科毕业生属例外条件，技术与商业专项分别审核。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "graduate-ai-innovation",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "f6a7ec5b951f672c15975d33908120867255396e8934d3dbb8b8de757da4cb6d",
+      "claimsRead": [
+        {
+          "id": "graduate-ai-innovation:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "既有规则资料：2026官方页面确认在读硕士、博士及已取得研究生录取资格者可参赛，个人或不超过3人的团队均可报名。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "graduate-ai-innovation:legacy:source:1"
+          ]
+        },
+        {
+          "id": "graduate-ai-innovation:legacy:fact:team",
+          "field": "team",
+          "text": "可个人参加，团队至多3人。组队时研究生比例至少50%，由在读研究生任队长。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "graduate-ai-innovation:legacy:source:1"
+          ]
+        },
+        {
+          "id": "graduate-ai-innovation:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "研究生AI个人与团队须区分，研究生占比及队长条件不能被至多3人覆盖。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "graduate-public-management-case",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "ce6565df548e9ce09e11127626b1e462125ef287049cbd1d3c09b909fe46e7b6",
+      "claimsRead": [
+        {
+          "id": "graduate-public-management-case:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "每队以在读MPA为主。可纳入一位公共管理相关专业在读研究生或MPA毕业生。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "graduate-public-management-case:legacy:source:1"
+          ]
+        },
+        {
+          "id": "graduate-public-management-case:legacy:fact:team",
+          "field": "team",
+          "text": "同校3–5名学生组队。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "graduate-public-management-case:legacy:source:1"
+          ]
+        },
+        {
+          "id": "graduate-public-management-case:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "公共管理案例MPA为主及仅1名例外，不能推任何研究生可自由组队。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "graduate-culture-china",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "4c0673c216655ea0fbeca091bfcae0215e7f32096105a45df4682f9d9f59e955",
+      "claimsRead": [
+        {
+          "id": "graduate-culture-china:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "既有规则资料：2026官方页面确认面向在读硕士、博士研究生，个人或1至5人团队均可参赛；不同赛道材料要求须复核。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "graduate-culture-china:legacy:source:1"
+          ]
+        },
+        {
+          "id": "graduate-culture-china:legacy:fact:team",
+          "field": "team",
+          "text": "已核常规赛道每队1–5名学生，舞蹈赛道另核。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "graduate-culture-china:legacy:source:1"
+          ]
+        },
+        {
+          "id": "graduate-culture-china:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "文化中国舞蹈另有人数，本科生不因文化兴趣自动具备研究生资格。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "comap-mcm-icm",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "6817645d0e52782958ab9a220ea8979e0ba89699e591fa30e4e7bb4d8c714d4a",
+      "claimsRead": [
+        {
+          "id": "comap-mcm-icm:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "MCM/ICM面向本科及以下学生，同校报名。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "comap-mcm-icm:legacy:source:1"
+          ]
+        },
+        {
+          "id": "comap-mcm-icm:legacy:fact:team",
+          "field": "team",
+          "text": "不超过3人，须隶属同一学校。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "comap-mcm-icm:legacy:source:1"
+          ]
+        },
+        {
+          "id": "comap-mcm-icm:legacy:fact:fee",
+          "field": "fee",
+          "text": "2027届每队注册费100美元。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "comap-mcm-icm:legacy:source:1"
+          ]
+        }
+      ],
+      "finding": "COMAP本科及以下与同校最多3人明确，2027美元费用不能用作2026实际支付。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "igem-collegiate",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "3d6d11d58b72898c03247b69ece2a09aef51f724020112c88689fdfda2f19043",
+      "claimsRead": [
+        {
+          "id": "igem-collegiate:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "西北工业大学2026 iGEM校内选拔面向本校全日制统招本科生，适用于该校校选。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "igem-collegiate:legacy:source:2"
+          ]
+        },
+        {
+          "id": "igem-collegiate:legacy:fact:team",
+          "field": "team",
+          "text": "该校选拔可个人或不超过4人的团队参加，不能视作国际赛人数上限。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "igem-collegiate:legacy:source:2"
+          ]
+        },
+        {
+          "id": "igem-collegiate:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "iGEM本校4人校选不等于国际队伍上限，校选本科不代表国际组资格。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "ccpc-collegiate",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "7174f1a11fa307b48ca17644efd773a90a6cdbb94ec697426a1a96c2d9fd5fe2",
+      "claimsRead": [
+        {
+          "id": "ccpc-collegiate:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "当届学籍、年级和适用赛道待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "ccpc-collegiate:legacy:fact:team",
+          "field": "team",
+          "text": "第十一届总决赛邀请函要求每队3名选手。其他站点需另核。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "ccpc-collegiate:legacy:source:2"
+          ]
+        },
+        {
+          "id": "ccpc-collegiate:legacy:fact:fee",
+          "field": "fee",
+          "text": "第十一届总决赛邀请函列每队1600元，交通食宿另计。其他分站和赛季不可套用。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "ccpc-collegiate:legacy:source:2"
+          ]
+        }
+      ],
+      "finding": "CCPC旧iccpc.cn空正文；第11届总决赛1600元不套区域站或下届。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "robomaster-university",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "2a0516b4e42f1f52bab532605e3718949fc268b1f60a13618bb89595d2ed1178",
+      "claimsRead": [
+        {
+          "id": "robomaster-university:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "2027高校联盟赛由高校战队报名，其他RoboMaster赛事另查。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "robomaster-university:legacy:source:1"
+          ]
+        },
+        {
+          "id": "robomaster-university:legacy:fact:team",
+          "field": "team",
+          "text": "战队队长或指导教师办理报名。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "robomaster-university:legacy:source:1"
+          ]
+        },
+        {
+          "id": "robomaster-university:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "RoboMaster2027联盟不是所有机甲赛事，队长报名不证明全队资格。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "asc-supercomputing",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "bc91dd49bfc51fc484b3f7f34568b95d544ebcb690c3b234e7f0ea18172fa506",
+      "claimsRead": [
+        {
+          "id": "asc-supercomputing:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "ASC26赛季规则面向本科在读学生。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "asc-supercomputing:legacy:source:1"
+          ]
+        },
+        {
+          "id": "asc-supercomputing:legacy:fact:team",
+          "field": "team",
+          "text": "每队5名本科生。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "asc-supercomputing:legacy:source:1"
+          ]
+        },
+        {
+          "id": "asc-supercomputing:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "ASC26本科5人并不解决机房、集群与预算，硬件资源需明确。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "biomedical-engineering-design",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "01d214cd1f5f375d7b99f9e1d02cb751cc643643d664d00514d7171e570f772f",
+      "claimsRead": [
+        {
+          "id": "biomedical-engineering-design:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "第十一届面向普通高校全日制本科、硕士、博士在读学生，毕业年级按当年6月学历判断。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "biomedical-engineering-design:legacy:source:1"
+          ]
+        },
+        {
+          "id": "biomedical-engineering-design:legacy:fact:team",
+          "field": "team",
+          "text": "每队不超过5名，可跨校组队，混合队按最高学历分组。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "biomedical-engineering-design:legacy:source:1"
+          ]
+        },
+        {
+          "id": "biomedical-engineering-design:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "生医设计最高学历分组及毕业年6月判断不能用当前年级替代。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "pharmacy-student-forum",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "fca44a18bf168964796d5464324bc6e26e7b18ae2e39e8d997ff636a06a82ddf",
+      "claimsRead": [
+        {
+          "id": "pharmacy-student-forum:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "“药学科学”接受药学创新实验相关本科生及当届研一学生；“药学服务”另有临床药学专业要求。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "pharmacy-student-forum:legacy:source:1"
+          ]
+        },
+        {
+          "id": "pharmacy-student-forum:legacy:fact:team",
+          "field": "team",
+          "text": "同一项目学生成员不超过5名。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "pharmacy-student-forum:legacy:source:1"
+          ]
+        },
+        {
+          "id": "pharmacy-student-forum:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "药苑药学科学与药学服务的专业条件不同，研一例外不泛化。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "nactrans",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "9352f6150b5b57ed23515965a356712aa5f9c8681cbd0d536ab762abf8647c49",
+      "claimsRead": [
+        {
+          "id": "nactrans:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "第二十一届主题赛道面向在校生，须由所在学校报名。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "nactrans:legacy:source:1"
+          ]
+        },
+        {
+          "id": "nactrans:legacy:fact:team",
+          "field": "team",
+          "text": "每份作品最多5名学生。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "nactrans:legacy:source:1"
+          ]
+        },
+        {
+          "id": "nactrans:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "交通赛校级报名与主题赛最多5人须具体届次，不能个人直接报全国。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "concrete-material-design",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "789d1064fd8de6e3521bd496a9a54cbb120bd44d7b07fb6c1be09ec4f615d458",
+      "claimsRead": [
+        {
+          "id": "concrete-material-design:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "中南大学第八届校选面向本校全日制本科生。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "concrete-material-design:legacy:source:1"
+          ]
+        },
+        {
+          "id": "concrete-material-design:legacy:fact:team",
+          "field": "team",
+          "text": "该校要求每队3人，可跨专业、跨年级。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "concrete-material-design:legacy:source:1"
+          ]
+        },
+        {
+          "id": "concrete-material-design:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "混凝土本科3人是中南校选范围，正式原料和实验室另核。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "collegiate-gis-skills",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "44e3e319d04dcc8ba9734f0811b5d28d66711d05549e715bc8324e88b9fe9e5b",
+      "claimsRead": [
+        {
+          "id": "collegiate-gis-skills:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "西南交通大学第十五届校选限已修GIS课程的2023、2024级测绘类本科生。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "collegiate-gis-skills:legacy:source:1"
+          ]
+        },
+        {
+          "id": "collegiate-gis-skills:legacy:fact:team",
+          "field": "team",
+          "text": "该校选出4名选手组成代表队。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "collegiate-gis-skills:legacy:source:1"
+          ]
+        },
+        {
+          "id": "collegiate-gis-skills:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "GIS已修课程与测绘年级是西南交大校选，不是全国普遍门槛。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "neccs",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "3e88669ca5ee634a2c7815fcc039d7a2d2851636abda83868cb0c2457df321b8",
+      "claimsRead": [
+        {
+          "id": "neccs:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "2026年中国农业大学烟台研究院初赛限在烟台的本科、研究生及二学位学生；分组见本院通知。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "neccs:legacy:source:2"
+          ]
+        },
+        {
+          "id": "neccs:legacy:fact:team",
+          "field": "team",
+          "text": "组队人数及是否允许跨校待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "neccs:legacy:fact:fee",
+          "field": "fee",
+          "text": "该院的初赛通知列每位参赛学生15元，不能套用至其他学校。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "neccs:legacy:source:2"
+          ]
+        }
+      ],
+      "finding": "NECCS烟台校区15元不可推广其他高校，二学位与分组条件需保留。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "national-interpreting-english",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "25f73396988ee45294e1612ae96d05378258ad168e544529f167b1d08b655433",
+      "claimsRead": [
+        {
+          "id": "national-interpreting-english:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "宁波大学校内选拔限本校有口译基础的全日制在校生，另有英语水平要求。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "national-interpreting-english:legacy:source:1"
+          ]
+        },
+        {
+          "id": "national-interpreting-english:legacy:fact:team",
+          "field": "team",
+          "text": "该校现场选拔由选手独立听音并完成口译。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "national-interpreting-english:legacy:source:1"
+          ]
+        },
+        {
+          "id": "national-interpreting-english:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "口译校队英语要求和选拔方式属宁波大学，不代表全国统一资格。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "jessup-international-law",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "8f511399bd0e8f09783a07dac29c928fe63dc9cac2edb68d06cdf8f0a3aa43ef",
+      "claimsRead": [
+        {
+          "id": "jessup-international-law:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "提供法律、国际法相关或国际关系培养项目的院校可派队。个人学籍、执业及特殊许可还需对照当届规则。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "jessup-international-law:legacy:source:2"
+          ]
+        },
+        {
+          "id": "jessup-international-law:legacy:fact:team",
+          "field": "team",
+          "text": "每校最多1队，由本校2–5名队员组成。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "jessup-international-law:legacy:source:2"
+          ]
+        },
+        {
+          "id": "jessup-international-law:legacy:fact:fee",
+          "field": "fee",
+          "text": "2027国际注册费按队收取，中国大陆及港澳830美元，中国台北600美元；地区选拔及差旅另核。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "jessup-international-law:legacy:source:2"
+          ]
+        }
+      ],
+      "finding": "Jessup院校课程、学生学籍与执业限制逐条，美元注册费不含地区赛差旅。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "vis-commercial-arbitration",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "69ddd7bc0f7c98f59d1437e00192038fac1b49c30a0070e9a9d9782223a0ac9d",
+      "claimsRead": [
+        {
+          "id": "vis-commercial-arbitration:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "接受法学院或设有法学课程的高等院校，队员须在校就读学位课程，已取得执业资格及往届口辩经历须另核。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "vis-commercial-arbitration:legacy:source:2"
+          ]
+        },
+        {
+          "id": "vis-commercial-arbitration:legacy:fact:team",
+          "field": "team",
+          "text": "每校最多1队，至少2名学生，无全队人数上限。每场庭辩由2名队员发言。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "vis-commercial-arbitration:legacy:source:2"
+          ]
+        },
+        {
+          "id": "vis-commercial-arbitration:legacy:fact:fee",
+          "field": "fee",
+          "text": "每队注册费800欧元，汇款手续费由付款方承担；维也纳差旅食宿另计。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "vis-commercial-arbitration:legacy:source:2"
+          ]
+        }
+      ],
+      "finding": "Vis至少2名队员与每场2人出庭不同，全队人数无限不能推无限参赛费用。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "icc-criminal-moot",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "03976a19c77d33eb5bc5e59ca72cd00198721d94a27ac9deb888dac26fc94e65",
+      "claimsRead": [
+        {
+          "id": "icc-criminal-moot:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "深圳大学2027英文赛校队选拔面向该校在读大一及以上本科生、研究生。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "icc-criminal-moot:legacy:source:2"
+          ]
+        },
+        {
+          "id": "icc-criminal-moot:legacy:fact:team",
+          "field": "team",
+          "text": "组队人数及是否允许跨校待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "icc-criminal-moot:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "ICC深圳大学招新不是国际完整规则，英文能力与校队资格未确认。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "cfa-research-challenge",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "d4d60f9212cf3eccb3828e14c3092d2f9c833642e32cef4df4bbafa1a87ea408",
+      "claimsRead": [
+        {
+          "id": "cfa-research-challenge:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "CFA Research Challenge 接受本科及研究生，须经所在高校和当地组织报名。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "cfa-research-challenge:legacy:source:1"
+          ]
+        },
+        {
+          "id": "cfa-research-challenge:legacy:fact:team",
+          "field": "team",
+          "text": "高校队伍由3–5名学生组成。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "cfa-research-challenge:legacy:source:1"
+          ]
+        },
+        {
+          "id": "cfa-research-challenge:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "CFA本研同校队还需当地组织路径，历届作品不证明现届条件。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "ima-management-accounting",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "b5615f02f72e873a79813a8247d9d81145f203ee07ec8be65e35b390b888af3d",
+      "claimsRead": [
+        {
+          "id": "ima-management-accounting:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "赛事官网面向在校本科生和研究生。〔3〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "ima-management-accounting:legacy:source:3"
+          ]
+        },
+        {
+          "id": "ima-management-accounting:legacy:fact:team",
+          "field": "team",
+          "text": "每队3–5名学生，成员来自同一所学校。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "ima-management-accounting:legacy:source:2"
+          ]
+        },
+        {
+          "id": "ima-management-accounting:legacy:fact:fee",
+          "field": "fee",
+          "text": "赛事官网写明在读本科生、研究生可免费参加。〔3〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "ima-management-accounting:legacy:source:3"
+          ]
+        }
+      ],
+      "finding": "IMA同校3—5人、免费报名需同届来源，免费不等于后续出行费用。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "cgma-global-business",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "fd6346bc83b3dcd40b3c950be413005d6157be138b3f9f16c8c2c14574e40c6c",
+      "claimsRead": [
+        {
+          "id": "cgma-global-business:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "2026中国大陆赛面向全日制在读本科生，专业和年级不限。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "cgma-global-business:legacy:source:1"
+          ]
+        },
+        {
+          "id": "cgma-global-business:legacy:fact:team",
+          "field": "team",
+          "text": "初轮个人答题；案例赛4人一队，可跨校、跨年级。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "cgma-global-business:legacy:source:1"
+          ]
+        },
+        {
+          "id": "cgma-global-business:legacy:fact:fee",
+          "field": "fee",
+          "text": "广州南方学院转发的2026赛事通知列每人80元；其他赛区须另核。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "cgma-global-business:legacy:source:2"
+          ]
+        }
+      ],
+      "finding": "CGMA个人初轮和4人案例赛不混，80元学校通知不可覆盖所有赛区。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "loreal-brandstorm",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "acd731e8b8e2dad6d0dd6c836c2f9d5640a340f8875c9857b191e4c13c422d68",
+      "claimsRead": [
+        {
+          "id": "loreal-brandstorm:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "2026届接受18–30岁人群，专业背景不限；2027届的日期及资格另核。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "loreal-brandstorm:legacy:source:2"
+          ]
+        },
+        {
+          "id": "loreal-brandstorm:legacy:fact:team",
+          "field": "team",
+          "text": "组队人数及是否允许跨校待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "loreal-brandstorm:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "Brandstorm18—30为2026条件，不从名称推仅大学生，也不外推2027。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "hult-prize",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "a52df25ca7c1c24376b17d8af44e65b734a337b7ce0a232e5f50dbfe3c3d488f",
+      "claimsRead": [
+        {
+          "id": "hult-prize:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "2027报名页要求成员就读大学学位项目，并在2027年2月28日前满18岁。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "hult-prize:legacy:source:1"
+          ]
+        },
+        {
+          "id": "hult-prize:legacy:fact:team",
+          "field": "team",
+          "text": "每队2–4人。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "hult-prize:legacy:source:1"
+          ]
+        },
+        {
+          "id": "hult-prize:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "Hult2027具体出生截止与在读学位要求应使用明确日期，而非泛18岁。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "james-dyson-award",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "6b03ab364b59e7de2a773436a562943defafed0a00da5699869160d74cc547ab",
+      "claimsRead": [
+        {
+          "id": "james-dyson-award:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "工程、产品设计或工业设计专业在读生，或四年内毕业者可作为个人或队长报名。就读地区须在赛事名单中，中国大陆、香港及台湾在列。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "james-dyson-award:legacy:source:1"
+          ]
+        },
+        {
+          "id": "james-dyson-award:legacy:fact:team",
+          "field": "team",
+          "text": "个人或组队均可。队长须符合专业要求，其他队员须在规定四年期间有至少一学期本科或研究生学习经历。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "james-dyson-award:legacy:source:1"
+          ]
+        },
+        {
+          "id": "james-dyson-award:legacy:fact:fee",
+          "field": "fee",
+          "text": "当届官方参赛说明未核实报名费金额。原型、材料及运输成本另作预算。〔1〕",
+          "status": "unknown",
+          "sourceIds": [
+            "james-dyson-award:legacy:source:1"
+          ]
+        }
+      ],
+      "finding": "Dyson队长专业及四年毕业窗口、地区名单是硬条件，其他队员例外单列。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "if-student-award",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "be63e3f43c6444a062f4456dcdee3c1907829546943fc65d9db6ff9c5999c4de",
+      "claimsRead": [
+        {
+          "id": "if-student-award:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "面向大学在读学生及毕业不超过两年者。使用英语提交设计说明、图像和方案海报。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "if-student-award:legacy:source:1"
+          ]
+        },
+        {
+          "id": "if-student-award:legacy:fact:team",
+          "field": "team",
+          "text": "可个人参加或最多4人组队；团队申请须提供成员学生身份材料。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "if-student-award:legacy:source:1"
+          ]
+        },
+        {
+          "id": "if-student-award:legacy:fact:fee",
+          "field": "fee",
+          "text": "学生奖免报名费，无须强制寄送实物原型。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "if-student-award:legacy:source:1"
+          ]
+        }
+      ],
+      "finding": "iF两年毕业窗口与最多4人要同届核实，免原型寄送不代表制作支出全零。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "student-rural-revitalization",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "994d746e2a2ac67a4c2473b940bc4b2f1b5893a6e7fe9e48f8125ef5e42a28e7",
+      "claimsRead": [
+        {
+          "id": "student-rural-revitalization:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "以高校在校生为重点，年龄不超过40周岁，出生日期界限按通知。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "student-rural-revitalization:legacy:source:2"
+          ]
+        },
+        {
+          "id": "student-rural-revitalization:legacy:fact:team",
+          "field": "team",
+          "text": "学生3–7人，明确1名负责人，鼓励跨地区、学校和学科组队。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "student-rural-revitalization:legacy:source:2"
+          ]
+        },
+        {
+          "id": "student-rural-revitalization:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "乡村振兴全国与重庆独立系列不互替，40岁和3—7人需主办正式通知。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "microsoft-imagine-cup",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "14bb16cc96ae08a8d4c255fce54e04cc7e718cc6c57f776d2b9a1551c2414de2",
+      "claimsRead": [
+        {
+          "id": "microsoft-imagine-cup:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "2027按初创企业类别申请，学生初创类别有独立评奖路径，须提交公司和Azure方案资料。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "microsoft-imagine-cup:legacy:source:1"
+          ]
+        },
+        {
+          "id": "microsoft-imagine-cup:legacy:fact:team",
+          "field": "team",
+          "text": "组队人数及是否允许跨校待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "microsoft-imagine-cup:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "Imagine Cup2027学生初创不是一般编程个人赛，企业与Azure条件不能遗漏。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "collegiate-chemistry-lab",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "84b2431cf25621fbd77ca07ebc1f06b702074741617ad40e08cef81b10eb169a",
+      "claimsRead": [
+        {
+          "id": "collegiate-chemistry-lab:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "福州大学发布的第十四届选拔通知要求全日制化学类专业本科生，年级不限。本赛事与化学实验创新设计大赛独立。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "collegiate-chemistry-lab:legacy:source:2"
+          ]
+        },
+        {
+          "id": "collegiate-chemistry-lab:legacy:fact:team",
+          "field": "team",
+          "text": "组队人数及是否允许跨校待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "collegiate-chemistry-lab:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "化学实验技能竞赛与创新设计独立，福州化学类校选不可外推全赛。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "pharmaceutical-process-design",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "6c332a36db587af9f7c62209ec569161e4987a07dc7b37d9c7459109783f5fd5",
+      "claimsRead": [
+        {
+          "id": "pharmaceutical-process-design:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "第十三届历史规则允许研究生参加，但人数不得超过全队的一半。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "pharmaceutical-process-design:legacy:source:1"
+          ]
+        },
+        {
+          "id": "pharmaceutical-process-design:legacy:fact:team",
+          "field": "team",
+          "text": "同校6人组队，设1名队长，每名学生限一队，可跨学科。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "pharmaceutical-process-design:legacy:source:1"
+          ]
+        },
+        {
+          "id": "pharmaceutical-process-design:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "制药设计同校6人且研究生至多半数，不是研究生完全排除或不限比例。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "cosmetics-innovation",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "340c9106922c154ebff4a276987521bcaed75e81f16c32d5c617b1550c32bce1",
+      "claimsRead": [
+        {
+          "id": "cosmetics-innovation:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "石河子大学第四届化妆品创新大赛通知面向本校全日制在校学生。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "cosmetics-innovation:legacy:source:2"
+          ]
+        },
+        {
+          "id": "cosmetics-innovation:legacy:fact:team",
+          "field": "team",
+          "text": "该校每队学生不超过5名，须确定1名负责人。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "cosmetics-innovation:legacy:source:2"
+          ]
+        },
+        {
+          "id": "cosmetics-innovation:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "化妆品创新本校5人限制不能推广，实验/材料与合规条件未知。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "lee-li-moot",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "cc837bb3693f44a54124197226c473055ad66b76cc5d7abbb863c93502e139ba",
+      "claimsRead": [
+        {
+          "id": "lee-li-moot:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "深圳大学2026年校队招新面向本校法学院本科生。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "lee-li-moot:legacy:source:2"
+          ]
+        },
+        {
+          "id": "lee-li-moot:legacy:fact:team",
+          "field": "team",
+          "text": "校方按一校一队组织，拟选7名正式队员。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "lee-li-moot:legacy:source:2"
+          ]
+        },
+        {
+          "id": "lee-li-moot:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "理律本院本科7名招新不等于全国正式上场人数，应追规则和赛题。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "red-cross-ihl-moot",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "4991fb7ea181adbcf57808630f82e25dfa73699993f9be242f481386905e137c",
+      "claimsRead": [
+        {
+          "id": "red-cross-ihl-moot:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "吉林大学法学院第20届校队招新面向本院本科生和法学／法律硕士。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "red-cross-ihl-moot:legacy:source:2"
+          ]
+        },
+        {
+          "id": "red-cross-ihl-moot:legacy:fact:team",
+          "field": "team",
+          "text": "组队人数及是否允许跨校待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "red-cross-ihl-moot:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "红十字模拟法庭吉林招新范围不是全国统一学籍或队伍人数。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "student-public-relations",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "495c8ccdc9785f3a64137e33fd1d50954cadfd306df235632c8bfaff8d0d8d9a",
+      "claimsRead": [
+        {
+          "id": "student-public-relations:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "第十届通知接受境内高校（含港澳台）在读学生及海外高校在读学生；硕士可参加。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "student-public-relations:legacy:source:1"
+          ]
+        },
+        {
+          "id": "student-public-relations:legacy:fact:team",
+          "field": "team",
+          "text": "每队3–5人，须代表同一学校。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "student-public-relations:legacy:source:1"
+          ]
+        },
+        {
+          "id": "student-public-relations:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "公关策划海外高校与同校3—5人需同时成立，硕士许可不能外推博士。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "environmental-law-moot",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "0c808c543a5ae26f185da10d2aa05249ec8feac2ff55b413ceeb4c2d1bb86435",
+      "claimsRead": [
+        {
+          "id": "environmental-law-moot:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "中山大学校队选拔面向法学院二年级及以上本科生及研究生，含确定入学的2026级硕士。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "environmental-law-moot:legacy:source:2"
+          ]
+        },
+        {
+          "id": "environmental-law-moot:legacy:fact:team",
+          "field": "team",
+          "text": "本次校队招募8人，不代表其他学校或国赛规定人数。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "environmental-law-moot:legacy:source:2"
+          ]
+        },
+        {
+          "id": "environmental-law-moot:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "环境法中山校选8人非国赛人数，已录取硕士例外须按文件。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "national-student-arts",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "7af3f6a9bba05cee3ce2cbf6322f1e272bd121cc0623e324e268fa7a3dff2732",
+      "claimsRead": [
+        {
+          "id": "national-student-arts:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "第八届艺术表演、艺术作品、艺术实践工作坊面向普通高校全日制在籍本专科生及研究生。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "national-student-arts:legacy:source:1"
+          ]
+        },
+        {
+          "id": "national-student-arts:legacy:fact:team",
+          "field": "team",
+          "text": "组队人数及是否允许跨校待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "national-student-arts:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "大学艺术展演表演、作品、工作坊各自人数交付，不套一个总人数。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "acca-job-hunting",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "b06a612f8487f51c2c5d6e649f0c0cffbe610b5b9f84d8f3439dd95575da5ffe",
+      "claimsRead": [
+        {
+          "id": "acca-job-hunting:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "湖南工学院2026校赛接受各专业各年级本科生。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "acca-job-hunting:legacy:source:2"
+          ]
+        },
+        {
+          "id": "acca-job-hunting:legacy:fact:team",
+          "field": "team",
+          "text": "该校选拔为个人赛。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "acca-job-hunting:legacy:source:2"
+          ]
+        },
+        {
+          "id": "acca-job-hunting:legacy:fact:fee",
+          "field": "fee",
+          "text": "2025指南写明学生可免费报名。新届费用待核实。〔1〕",
+          "status": "unknown",
+          "sourceIds": [
+            "acca-job-hunting:legacy:source:1"
+          ]
+        }
+      ],
+      "finding": "ACCA2025免费与2026校选对象跨届，不能以历史费率确认当前免费。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "formula-student-china",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "d4b2aa23d2e7b109bc30f85f6dc51dd912e5b33e17531fa16c7433ce3051682d",
+      "claimsRead": [
+        {
+          "id": "formula-student-china:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "2026郑州站文件按上一赛季成绩及验车情况审定已有车队资格。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "formula-student-china:legacy:source:1"
+          ]
+        },
+        {
+          "id": "formula-student-china:legacy:fact:team",
+          "field": "team",
+          "text": "组队人数及是否允许跨校待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "formula-student-china:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "方程式2026按上季及验车筛队，新学生须加入已有校队而非直接自建参赛。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "collegiate-welding",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "1b81f40521fdcdbdb7bbb50b4bc3f81887ac86cb2660abe32c78f4fb06eed1bb",
+      "claimsRead": [
+        {
+          "id": "collegiate-welding:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "西北工业大学校内组织优先面向焊接方向大二、大三本科生。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "collegiate-welding:legacy:source:1"
+          ]
+        },
+        {
+          "id": "collegiate-welding:legacy:fact:team",
+          "field": "team",
+          "text": "该校队伍原则上1名组长加3名成员。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "collegiate-welding:legacy:source:1"
+          ]
+        },
+        {
+          "id": "collegiate-welding:legacy:fact:fee",
+          "field": "fee",
+          "text": "西北工业大学该届组织通知说明参赛者无须缴纳报名费。〔1〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "collegiate-welding:legacy:source:1"
+          ]
+        }
+      ],
+      "finding": "焊接西北工大优先年级和1+3编制是校选，免费亦为本校范围。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "cryptography-math-challenge",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "29bc89e1f1ca576bc3877bda690258c771d7c115001bda1ddd44a6ba712a90f2",
+      "claimsRead": [
+        {
+          "id": "cryptography-math-challenge:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "第十一届总决赛承办高校将参赛范围说明为在校大学生与研究生。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "cryptography-math-challenge:legacy:source:2"
+          ]
+        },
+        {
+          "id": "cryptography-math-challenge:legacy:fact:team",
+          "field": "team",
+          "text": "本届为参赛队伍比赛，人数及新一届资格待核。〔2〕",
+          "status": "unknown",
+          "sourceIds": [
+            "cryptography-math-challenge:legacy:source:2"
+          ]
+        },
+        {
+          "id": "cryptography-math-challenge:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "密码数学总决赛大学生研究生概述缺队伍人数与晋级资格，不判新届可报。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    },
+    {
+      "seriesId": "exploration-geophysics",
+      "checkedAt": "2026-11-05",
+      "authorAgentId": "/root/audit_catalog",
+      "status": "author_claim_scope_triage_not_source_verification",
+      "reviewedFields": [
+        "eligibility",
+        "team",
+        "fee"
+      ],
+      "claimDigest": "c855845210591432ee32b10522915bf1af4614dc7ee56cea5edae2aa6ca06a4f",
+      "claimsRead": [
+        {
+          "id": "exploration-geophysics:legacy:fact:eligibility",
+          "field": "eligibility",
+          "text": "西南石油大学第十三届校选面向2026年7月1日前正式注册的全日制本科、硕士和博士在校生，不含在职研究生。〔2〕",
+          "status": "pending_review",
+          "sourceIds": [
+            "exploration-geophysics:legacy:source:2"
+          ]
+        },
+        {
+          "id": "exploration-geophysics:legacy:fact:team",
+          "field": "team",
+          "text": "组队人数及是否允许跨校待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        },
+        {
+          "id": "exploration-geophysics:legacy:fact:fee",
+          "field": "fee",
+          "text": "报名费及收费环节待核实。",
+          "status": "unknown",
+          "sourceIds": []
+        }
+      ],
+      "finding": "勘探地球物理7月1日前在籍与在职研究生排除应保留，组队规模仍未知。",
+      "allOriginalSourcesRechecked": false,
+      "independentReview": false
+    }
+  ]
+}

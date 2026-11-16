@@ -1,0 +1,151 @@
+﻿
+从昆虫到可食用色素——解密胭脂虫红的色彩化学
+ISSN: 1000-8438
+CN: 11-1818/O6
+大学化学
+大学化学
+首页
+期刊介绍
+编委会
+投稿
+在线投稿
+征稿简则
+投稿须知
+中图分类号查询
+版权转让协议
+相关下载
+审稿人中心
+同行评审细则
+专家在线审稿
+编辑在线办公
+政策与伦理
+出版伦理
+学术不端行为与处理措施
+更正和撤稿政策
+申诉与投诉政策
+版权与使用规范
+网站责任声明
+期刊订阅
+E-mail Alert
+纸刊订阅
+联系我们
+English
+大学化学
+>>
+2026
+,
+Vol. 41
+>>
+Issue (5)
+: 120-130.
+doi:
+10.12461/PKU.DXHX202509113
+所属专题：
+第5届全国大学生化学实验创新设计大赛
+专题
+上一篇
+从昆虫到可食用色素——解密胭脂虫红的色彩化学
+杨子威, 张晨熙, 段宇, 尚艳雪, 何顺美
+湖南农业大学化学与材料科学学院, 湖南 长沙 410128
+收稿日期:
+2025-09-24
+录用日期:
+2026-01-07
+发布日期:
+2026-05-21
+通讯作者:
+何顺美
+											E-mail:heshunmei@hunau.edu.cn
+																Shunmei He
+基金资助:
+湖南省自然科学基金项目(2026JJ50381)；湖南省教育厅科学研究项目(25C0160,24C0080)
+From insects to edible pigments: unveiling the color chemistry of cochineal
+Ziwei Yang, Chenxi Zhang, Yu Duan, Yanxue Shang, Shunmei He
+School of Chemistry and Material Science, Hunan Agricultural University, Changsha 410128, Hunan Province, China
+Received:
+2025-09-24
+Accepted:
+2026-01-07
+Published:
+2026-05-21
+Contact:
+Shunmei He   
+											E-mail:heshunmei@hunau.edu.cn
+PDF
+340
+赞
+可视化
+0
+摘要/Abstract
+摘要：
+胭脂虫红是从寄生在仙人掌上的雌性胭脂虫体内提取的天然动物色素，因其安全无毒而被广泛应用于食品、药品及化妆品等领域。本科普实验探究了胭脂虫红在不同pH溶液中呈现橙色-红色-紫色的渐变特性，以及与金属离子铜、铁、钙形成不同颜色的配合物，并通过紫外可见吸收光谱分析了其中蕴含的化学原理。利用胭脂虫红的变色特点构建两种比色卡，向大众科普了如何对常见食品、日用品、保健品以及药品进行酸碱鉴别、金属离子鉴定及其浓度检测，以别具一格的颜色变化给予大众对化学知识最直观的理解。本科普实验试剂和材料绿色易得、操作简单、现象有趣、过程安全，非常适合由浅至深地面向中小学生及公众开展不同层次的化学知识科普，展现天然动物色素在科学实践和社会发展中的独特价值。
+关键词:
+胭脂虫红,
+酸碱变色,
+金属离子检测,
+比色卡
+Abstract:
+Cochineal, a natural animal pigment extracted from female cochineal insects (Dactylopius coccus) that parasitize cacti, is widely utilized in food, pharmaceutical, and cosmetic industries due to its safety and non-toxic properties. This popular science experiment investigates the chromatic transition (orange-red-purple) of cochineal in solutions with varying pH levels, along with its colorimetric reactions with metal ions (copper, iron, calcium) to form distinct complexes. The chemical principles underlying these phenomena were examined through UV-Vis absorption spectroscopy. By leveraging cochineal’s color-changing properties, we developed two types of colorimetric cards for public science education, demonstrating applications in pH determination, metal ion identification, and concentration measurement in common consumer products including foods, daily necessities, and health supplements. The experiment features environmentally friendly reagents, straightforward procedures, visually striking results, and high safety standards, making it particularly suitable for multi-level chemical education targeting K-12 students and the general public. This work highlights the unique scientific and societal value of natural animal-derived pigments through engaging hands-on demonstrations.
+Key words:
+Cochineal,
+Acid-base color change,
+Metal ion detection,
+Colorimetric card
+引用本文
+杨子威, 张晨熙, 段宇, 尚艳雪, 何顺美. 从昆虫到可食用色素——解密胭脂虫红的色彩化学[J]. 大学化学,  2026, 41(5): 120-130.
+Ziwei Yang, Chenxi Zhang, Yu Duan, Yanxue Shang, Shunmei He. From insects to edible pigments: unveiling the color chemistry of cochineal[J]. University Chemistry, 2026, 41(5): 120-130.
+使用本文
+导出引用管理器
+EndNote (中文内容)
+|
+EndNote (英文内容)
+|
+Reference Manager
+|
+ProCite
+|
+BibTeX
+|
+RefWorks
+链接本文:
+https://www.dxhx.pku.edu.cn/CN/10.12461/PKU.DXHX202509113
+https://www.dxhx.pku.edu.cn/CN/Y2026/V41/I5/120
+参考文献
+[1] R.W. Dapson, Biotech. Histochem. 2007, 82 (4-5), 173.
+[2] 汤沈杨, 陈梦瑶, 肖花美, 李飞. 应用昆虫学报, 2019, 56 (5), 969.
+[3] 张弘, 郑华, 陈军, 卢艳民. 食品科学, 2008, 29 (11), 59.
+[4] H. Atabey, H. Sari, F.N. Al-Obaidi, J. Solution Chem. 2012, 41, 796.
+[5] V.Y. Fain, B.E. Zaitsev, M.A. Ryabov, Russ. J. Gen. Chem. 2007, 77 (10), 1769.
+[6] Q. Liu, Z.Y. He, M.M. Zeng, F. Qin, Z.J. Wang, G.P. Liu, J. Chen, Food Sci. Nutr. 2020, 9 (1), 36.
+相关文章
+3
+[1]
+李佳禾, 刘俞泽, 马家辉, 佟庆笑, 钟建基, 简经鑫.
+洛芬碱衍生物的合成、化学发光与重金属离子检测
+[J]. 大学化学, 2025, 40(6): 230  -237 .
+[2]
+方子安, 温钱钱, 王逸迪, 欧阳红霞, 王琦, 李秋平.
+验“金”试纸——基于色彩美学的科普实验设计
+[J]. 大学化学, 2024, 39(5): 108  -115 .
+[3]
+童新阳, 葛子健, 刘煜超, 姚奇志, 李玲玲.
+厨余物的“高光”时刻——从厨余垃圾到碳量子点的居家制备及应用探究
+[J]. 大学化学, 2022, 37(5): 2109082  - .
+Metrics
+Viewed
+Full text
+Abstract
+Cited
+Shared
+推荐阅读
+0
+No Suggested Reading articles found!
+摘要
+参考文献
+相关文章
+Metrics
+推荐阅读
+回顶部
+版权所有 © 大学化学编辑部
+地址：北京大学化学与分子工程学院      邮政编码：100871
+服务热线：010-62751721     Email：dxhx@pku.edu.cn      QQ作者群：114648064

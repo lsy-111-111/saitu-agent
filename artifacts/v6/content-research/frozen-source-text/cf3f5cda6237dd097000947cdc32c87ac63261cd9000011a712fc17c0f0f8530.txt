@@ -1,0 +1,2513 @@
+[PAGE 1]
+CFA Institute Research Challenge
+hosted by
+CFA Society Poland
+Kozminski University
+The CFA Institute Research Challenge is a global competition that tests the equity research and
+valuation, investment report writing, and presentation skills of university students. The following report
+was prepared by a team of university students as part of this annual educational initiative and should
+not be considered a professional report.
+Disclosures:
+Ownership and material conflicts of interest
+The author(s), or a member of their household, of this report [holds/does not hold] a financial interest in the securities of this
+company.
+The author(s), or a member of their household, of this report [knows/does not know] of the existence of any conflicts of
+interest that might bias the content or publication of this report. [The conflict of interest is..]
+Receipt of compensation
+Compensation of the author(s) of this report is not based on investment banking revenue.
+Position as an officer or director
+The author(s), or a member of their household, does not serve as an officer, director, or advisory board member of the subject
+company.
+Marketing making
+The author(s) does not act as a market maker in the subject company’s securities.
+Disclaimer
+The information set forth herein has been obtained or derived from sources generally available to the public and believed by
+the author(s) to be reliable, but the author(s) does not make any representation or warranty, express or implied, as to its
+accuracy or completeness. The information is not intended to be used as the basis of any investment decisions by any person or
+entity. This information does not constitute investment advice, nor is it an offer or a solicitation of an offer to buy or sell any
+security. This report should not be considered to be a recommendation by any individual affiliated with [CFA Society Poland],
+CFA Institute, or the CFA Institute Research Challenge with regard to this company’s stock.
+[PAGE 2]
+14.2k 14.7k 17.0k 17.1k 19.8k 19.9k
+2019 2020 2021 2022 2023 2024
+0
+50
+100
+150
+200
+250
+2019 2020 2021 2022 2023 2024 2025
+0
+75
+150
+225
+300
+375
+2020 2021 2022 2023 2024 2025
+WIG Real Estate
+DOM
+MWIG40
+EXECUTIVE SUMMARY: Not Just Another Developer, It’s the Polish Real Estate Titan!
+RECOMMENDATON BUY
+Valuation Date 31.01.2025
+Target Price PLN 260
+Current Price* PLN 213
+Upside % 22
+Shares Outstanding mln 25.8
+52 Week High PLN 216
+52 Week Low PLN 209
+We initiate coverage on Dom Development (WSE: DOM) with a BUY recommendation and
+a 12-month price target of PLN 260. This represents a 22% upside from the close price of
+PLN 213 as of January 31, 2025. The target price is solely based on DCF valuation and
+triangulated using comparable multiples, a dividend discount model, and a sum-of-the-parts
+valuation.
+Dom Development stands out as Poland's leading residential real estate developer with
+a legacy that spans nearly thirty years of delivering over 50,000 apartments to customers.
+Amid the recent market volatility, the strong balance sheet, record sales, and attractive land
+bank provide a solid foundation for the company’s outlook growth in 2025 and beyond.
+Our BUY recommendation rests on a rigorous financial analysis, further supported by three
+core investment pillars and validated by insights from 11 industry experts, including
+a C-suite executive at a direct competitor (Annex 1)
+Figure 2: DOM Stock Price Vs Main Indices,
+Rebased to 100 [2020-2025]
+Figure 1: Summary
+1. COVID
+pandemic↓
+Figure 4: DOM Stock Price Performance Annotated with Key Events
+2019-2025 [PLN]
+Figure 3: DOM’s Land Bank (2019-2024)
+Source: Stooq.pl, Capital IQ, Team Analysis
+Source: Stooq.pl, Team analysis
+3. Safe 2%
+credit
+announced↑
+4. Polish
+Parliamentary
+elections↑
+DOM IS A STAR OUTPERFORMER – READY TO ‘DELIVER’ EVEN MORE
+Dom Development is the largest residential real estate developer by units sold and delivered
+on the Polish market (Figure 14). The Group is heading into 2025 with record-breaking
+financial performance in 2023 and 2024. We believe DOM is in an intense phase of 'upward
+momentum' (Figure 4). While the stock market has shown enthusiasm already with DOM’s
+stock registering handsome 28% returns in 2024, we are convinced DOM has even more
+attractive upside to be unlocked that investors should bet on thanks to a) DOM’s strategic
+positioning in Poland’s key housing agglomerations b) a premium offer that is resilient to
+market swings c) bumper sales growth to be driven by the company's presence in fast-
+growing housing markets of Krakow and Tri-City and d) the Group’s advantageous position
+against peers in selling efficiency and clearing the stock faster than the overall market (Figure
+31).
+DOM’S ROCK-SOLID BALANCE SHEET WILL FUEL LONG TERM RETURNS
+Dom Development's consistent gearing ratio of 17% or lower for the last decade indicates its
+healthy balance sheet and financial stability. In a capital-intensive industry like real estate, the
+option to take on additional debt is a luxury not available to many competitors. Coupled with
+prudent financial management, it makes DOM more resilient to economic downturns and
+primes it for future growth and strategic expansion (Figure 9). The company's financial
+discipline also rewards shareholders with a consistent dividend payout with the company
+issuing PLN 2.4 billion as dividends since its listing in 2006.
+BIG LAND BANK WITH A FOCUS ON PREMIUM SEGMENT
+DOM is sitting on a robust land bank of approximately 20,000 units (Figure 3), ensuring a
+steady pipeline for the next three to five years of sales. The company has mastered the
+premium multi-family residential development code, excelling in four of the six major Polish
+housing markets where the demand for high-standard apartments is strongest. The
+company’s focus on affluent, cash-rich clients (Figure 30)  has helped maintain strong sales
+and investor demand, even in the face of rising inflation. Additionally, DOM is tapping into
+urban regeneration and revitalization projects that will not only strengthen its ESG
+commitments but also further drive sustainable growth (Figure 19)
+DOM DEVELOPMENT
+Source: Stooq.pl, Team analysis
+Source: Company Reports, Team analysis
+Warsaw Stock Exchange
+(WSE:DOM) Current price: PLN 213.0
+Recommendation: BUYIndustry: Real Estate Target price: PLN 259.9
+As of 31st Jan 2025 Upside: 22%
+2. Start of
+Russian invasion
+of Ukraine↓
+2024 was another
+record year with
+4,216 units delivered Record Revenue Potential in Coming
+Quarters –PLN 4,014mln
+Robust Pipeline – Almost
+20,000 Units in Land Bank
+Undisputed Market
+Leader in Warsaw –
+Poised for More
+Growth That
+Speaks for Itself –
+38% 5YR CAGR
+PLN 213
+Attractive Payouts
+- 6% Dividend
+Yield(1)
+A Winning
+Strategy!
+Figure 5: DOM at a Glance – Key Value Drivers
+Source: Stooq.pl, Team analysis
++5,674 units
+* Closing price as of 31.01.2025
+(1) Price PLN 213 and dividend 12.5
+[PAGE 3]
+Sales and open days
+Mortgage consulting
+Handover of apartment
+Dividend payouts
+Since its foundation in 1996 Dom Development (WSE: DOM) has evolved from a Warsaw-
+based residential real estate developer to a nationwide leader. The company has a strong
+presence across key markets (Figure 6) - Warsaw, Krakow, Wroclaw, and the Tri-City region
+where they offer apartments across the segments from popular to upper-standard to luxury.
+The group has built a trusted brand known for quality, financial stability and long-term value
+creator (Figure 7). As one of the biggest companies on the market, DOM is one of the key
+constituents of the mWIG40 and WIG Real Estate indices.
+BUSINESS DESCRIPTION
+Land acquisition
+Architectural design
+Construction
+Finishing and decor
+Preparation &
+construction phase Sales and handover16-20 months window
+8%
+13%
+20%
+15%
+13%
+31% 900k+
+800-900k
+700-800k
+600-700k
+500-600k
+Up to 500k
+BUSINESS MODEL
+Core Operations: Dom Development follows a vertically integrated business model. This
+includes managing almost the entire real estate project lifecycle - from land acquisition and
+planning to construction and sales. With this approach ensures high operational execution
+and cost-effectiveness. A key addition to this model is mortgage consulting through an in-
+house division, which supports the customer group in securing financing and fit out
+packages, allowing clients to personalize their apartments.
+Target Market: Dom Development operates only in four of Poland's six largest real estate
+market (Figure 6). They offer apartments across segments, nonetheless, their primary focus is
+on upper-standard properties as 59% of apartments were sold for PLN 700K, and 31% were
+priced above PLN 900K (Figure 8). The company's strong appeal to investors is further
+underscored by over half of the sales being made on cash (Figure 29). Sales are driven by an
+experienced in-house sales team with advertising campaigns across multiple channels. This
+effort includes direct customer engagement through open days and other promotional
+events, helping them establish a connection with their clients.
+LAND ACQUISITION AND STRATEGY
+Land Acquisition: Dom Development actively seeks investment opportunities in land across
+the major Polish regions where it operates. The company strategically acquires land during the
+real estate cycle to ensure business continuity while focusing on a sustainable and optimal
+inventory level. Currently, the company strategy includes maintaining a land bank with a 3-
+year sales cycle, which they have been able to achieve successfully. DOM recognizes that
+prime land is becoming increasingly scarce in large cities and places sufficient emphasis on
+revitalizing urban areas.
+Previous Mergers & Acquisitions: Dom Development has strategically acquired other
+developers in recent years to expand their geographical presence (Figure 9). In the real estate
+sector, such transactions are motivated by the need to purchase land for development.
+Ultimately, this approach enabled the company to establish operations in Tri-City by acquiring
+Euro Styl. Similarly, the acquisitions of Sento and Buma align with their strategy to strengthen
+their position in the Krakow market. Although, the company has indicated that they are not
+currently looking to expand into new markets due to lower margins, M&A could be a strategic
+tool they can revisit. Such an event would be particularly relevant if other markets in Poland
+became more financially viable.
+No PRS: Although DOM occasionally catered to the private rented sector (PRS), such as  397
+units contracted in 2022 for an institutional investor in Warsaw, it is not the Group’s focus
+segment due to lower margins of such projects and a similar strategy is expected to continue.
+INDUSTRY OVERVIEW
+We conducted interviews with some of the leading industry experts to form an informed view
+of the residential restate market in Poland, its intricate dynamics and the recent headwinds.
+The list of experts includes economists and researchers specializing in CEE economy, senior
+executives at competing firms, and real estate subject matter experts (Annex 1).
+OVERALL MARKET DYNAMICS - NEUTRAL
+Short-term headwinds with muted demand: The Polish residential real estate market
+experienced a noticeable slowdown in demand. The sales across the country’s top 6 markets
+declined by -35% YoY from 60,614 units to 39,626 (Annex 20). We believe this drop was
+primarily driven by high inflation and interest rates (Annex 28) and potential customers
+delaying the apartment purchase in the hopes of a new “Kredyt Mieszkaniowy na Start”,
+which remains uncertain in the legislative process. This market-wide trend has varying
+impacts on developers based on their offering, scale of operation and market.
+202220212017
+210 mln35 mln260 mln
+Figure 7: DOM NPS and Customer
+Satisfaction Score
+Source: Company Reports, Team Analysis
+Figure 6: DOM’s Geographic Presence
+Tri-City
+Warsaw
+Wroclaw
+Krakow
+Figure 8: DOM’s Business Segments by
+Value
+Source: Company Reports, Team Analysis
+Figure 9: DOM’s Acquisition History
+Source: Mergermarket, Team Analysis (deal value in PLN)
+16 16
+8
+2
+26
+14
+6
+14
+23
+9
+15
+12
+18
+13
+17
+Q1 2021
+Q2 2021
+Q3 2021
+Q4 2021
+Q1 2022
+Q2 2022
+Q3 2022
+Q4 2022
+Q1 2023
+Q2 2023
+Q3 2023
+Q4 2023
+Q1 2024
+Q2 2024
+Q3 2024
+Figure 10: Bankruptcies Filed by
+Construction Enterprises (2021-Q3 2024)
+Source: GUS, Team Analysis
+535
+1,298 921 716 598 1,681
+75 72
+66 70 66
+70
+0
+20
+40
+60
+80
+-
+500
+1,000
+1,500
+2,000
+2,500
+Q3 2023 Q4 2023 Q1 2024 Q2 2024 Q3 2024 Q4 2024
+*Q4 NPS is assumed to be the average of past 5 quarters
+Source: Company Reports, Team Analysis
+[PAGE 4]
+31.5%
+2010 2012 2014 2016 2018 2020 2022
+Figure 11: Average Margins in Real
+Estate Sector Oversupply in the market with higher time to sell is a problem: On the supply side, the developers optimistically released new offers throughout the year, offering 56,694 units
+(+32% YoY). With the new offers outpacing the sales, the market now has 54,400 units on
+offer, the highest in the last 4 years (Annex 21) .
+Healthy volume of permits paints a better outlook: On the supply side, permits rose
+sharply in 2024 after a 20.47% YoY decline in 2023 (Annex 23). A total of 205,078 permits
+(+26.6% YoY) were issued across the top six markets in Poland. This showcases developers'
+renewed confidence in a better outlook of the market. Based on our research, the real estate
+companies are securing permits to align with expected demand recovery in the coming years
+which would certainly be a lot better.
+CONSOLIDATION AHEAD - POSITIVE
+The ongoing slowdown in the Polish residential real estate market has disproportionately
+impacted the smaller developers in the Polish real estate market (Annex 22). Even well-
+known entities like Lokum (-78%), Ronson (-49%), and Victoria Dom (-50%) experienced
+a drop in sales YoY. About 50 construction companies declared bankruptcy during the first
+three quarters of 2024. This highlights the tough market conditions faced by the construction
+industry (Figure 10).
+Rising unsold inventory and longer selling times make it difficult for these entities to
+purchase land in the medium term. This would essentially accelerate the market consolidation,
+leaving the market in the hands of bigger players, including Dom Development.
+FAVORABLE POLISH ECONOMY & REAL ESTATE GROWTH - POSITIVE
+Our analysis and the insights from expert interviews suggest a positive medium-term outlook
+for the Polish economy. While the challenging conditions are expected to persist in the early
+months of 2025, the second half could be better. In recent months, a gradual decline in
+inflation alongside higher growth in wages (Figure 12) and better overall macro was seen,
+which should improve future sales. With a better economic perspective, the market expects a
+100bps rate cut as suggested by the 12x15 PLN FRA. This lowered borrowing cost and clarity
+about the mortgage program in the coming months would revive the demand in the housing
+market. Furthermore, the urban migration trends are expected to sustain long-term demand
+for residential properties, especially in the top market where Dom Development operates.
+UNCERTAIN REGULATORY ENVIRONMENT - NEGATIVE
+Spatial Planning Reform: The "Ustawa o planowaniu i zagospodarowaniu przestrzennym"
+reform significantly shifts Poland's urban planning framework. The new amendment requires
+municipalities to adopt General Plans (Plan Ogólny) by December 31, 2025 (Figure 13). From
+a pure business standpoint, the stricter regulations on building areas and land use restrictions
+will likely increase compliance costs. Simultaneously, the demand for land in certain areas
+covered by the previous plan would surge dramatically.
+Uncertainty around "Kredyt Mieszkaniowy na Start“: The program was expected to succeed
+the "Safe 2% Credit" program in 2024. Nonetheless, the government has yet to provide clarity
+on its implementation. The resulting uncertainty caused many potential buyers to postpone
+purchases, contributing to the market's slowdown last year. As the developers anticipate its
+rollout in 2025, the ongoing uncertainty complicates market dynamics, and clarity would help
+the market.
+Figure 12: Inflation Rate Vs Salary Increase
+(2022-2024)
+Figure 13: Spatial Planning Act Snapshot
+IMMINENT MARGIN PRESSURE - NEGATIVE
+At first glance, the developers appear to enjoy a healthy gross margin (Figure 11). However,
+these numbers do not accurately reflect the industry's risk-to-reward ratio. Given that it takes
+anywhere from a few years to an entire decade (business model) to acquire land, prepare it,
+construct the apartments, and sell them, the margins are not very high for the risks. From our
+conversations with experts, margin pressures may soon weigh in. The limited availability of
+land, implementation of Spatial Planning regulation, rising labor shortages, increasing costs of
+construction (Annex 25, Annex 26), and material costs would add to margin compression.
+The same concerns are reflected by the Business tendency survey in construction (Figure 16).
+However, the margins are expected to align with the historical averages in the medium-to-
+long run, which even industry experts partially agree with.
+0.0%
+5.0%
+10.0%
+15.0%
+20.0%
+2022 2023 2024
+Nominal salary CPI inflation
+Source: GUS, Team analysis
+Source: PZFD report, Team Analysis
+Source: Capital IQ, Team Analysis
+Gross
+margin
+EBITDA
+Net
+margin
+Figure 14: Units Sold DOM vs Competitors
+in Different Cities, 2024
+Source: Company Reports, Team Analysis
+City DOM DEVELIA ROBYG
+Warsaw 1,791 1,165 858
+Wroclaw 1,038 407 72
+Tri-City 920 553 473
+Krakow 520 662 NA
+Figure 15: Global Real Estate Bubble
+Index 2024
+Source: UBS, Team Analysis
+General Plans
+deadline
+Stricter regulations
+& Compliance
+costs
+Zoning
+Challenges
+Reduced
+housing supply
+0.23 Poland
+Spain0.56
+0.20 Italy
+0.35 France
+Switzerland0.56
+0.75 Germany
+Lower value indicates positive and less risky market (cities are
+Warsaw, Madrid, Milan, Paris, Geneva, and Frankfurt)
+24
+28
+41
+44
+47
+81
+82
+Others
+Direct import costs
+Regulations and legal
+Rent and premises
+Financing costs
+Labor costs
+Energy and fuel
+Figure 16: What factors will contribute the most to the rise in costs in next 12 months? (scale of
+100)
+Source: GUS, Business Tendency
+Survey, Team Analysis
+22.2%
+17.2%
+[PAGE 5]
+COMPETITIVE OVERVIEW
+INDUSTRY LEADERSHIP AND INNOVATION
+As the Polish residential real estate market leader, Dom Development consistently drives
+industry innovation. From pioneering turnkey apartments to launching customized housing
+solutions for people with special needs in 2024, DOM remains at the forefront of market
+advancements. The company's latest initiative, the Green Investment Card, highlights their
+commitment to sustainability. From 2026 onwards, all new projects will adopt this internal
+standard to align with urban sustainability priorities. These innovations strengthen DOM's
+competitive positioning and reinforce market leadership.
+SUPERIOR OPERATIONAL EFFICIENCY AND ABILITY TO OUTSELL
+Dom Development’s well-established subcontractor network has been a key driver of its
+ability to deliver projects on time, even under challenging market conditions. The company
+successfully navigated labor shortages over the past decade, underscoring its operational
+resilience. Beyond construction efficiency, DOM also exhibits exceptional sales
+performance (Figure 27) maintaining industry-leading time-to-sell ratios (offer/sales in the
+last quarter) compared to both the industry and direct competitors (Figure 30). This reflects
+a highly effective sales strategy, strong demand for its projects, and an attractive land bank
+that continues to support future growth (Figure 17)
+MARKET DOMINANCE ACROSS KEY CITIES
+Dom Development remains the undisputed leader in Poland’s residential real estate market,
+outperforming competitors in both revenue and units sold. In the first nine months of 2024,
+DOM reported PLN 1.85 billion in revenue (+16% YoY), 20% above its nearest rival.
+In Warsaw, DOM sold 1,791 units, exceeding Develia’s sales by 50% in 2024, reinforcing
+its market leadership in the capital city. Momentum remains strong in Wroclaw, where
+DOM’s 653 unit sales outperformed Echo by 180 apartments in the city, further cementing its
+foothold. Q4 preliminary data suggests a continued widening of this gap between the two
+competitors in Wroclaw. Additionally, DOM regained its top position in Tri-City, surpassing
+ROBYG and Develia until Q3 by selling 742 units (full year 1038). Despite a market slowdown,
+DOM recorded a 13.5% YoY sales increase in Krakow, showcasing its resilience and ability to
+outperform competitors even in challenging market conditions. DOM is aggressively
+expanding in Krakow and the Tri-City region with management focused on establishing a
+bigger market share.
+ENVIRONMENTAL, SOCIAL & GOVERNANCE
+DOM enhances its competitive advantage with the Green Project Card (GPC), embedding
+sustainability across its developments while adhering to GRI, CSRD, and WSE guidelines. This
+strategic commitment positions DOM at the forefront of Poland’s residential real estate
+sector, aligning with evolving ESG market trends and regulatory requirements (Figure 20). By
+integrating sustainability into its core operations, DOM strengthens its resilience to regulatory
+shifts while creating long-term value. These initiatives directly support eight Sustainable
+Development Goals (Figure 26), reinforcing a structured ESG strategy (Figure 19, Annex
+30) backed by ongoing EU Taxonomy alignment.
+ESG REGULATORY ALIGNMENT
+DOM integrates the European Green Deal and EU Taxonomy framework into its sustainability
+initiatives, reinforcing compliance and long-term resilience. The company’s reporting
+framework reveals that 96% of turnover, 4% of CapEx, and 88% of OpEx are Taxonomy-
+eligible, reflecting a stronger operational alignment with sustainability goals than capital
+investments. DOM aims to increase investments in biodiversity and circular economy projects
+to enhance Taxonomy-aligned CapEx. The DOM 2030 Strategy establishes clear objectives for
+progressing toward full EU Taxonomy compliance. However, full alignment remains
+commercially unfeasible as SLL bonds for real estate are yet to be issued from our
+conversation with industry experts (Annex 1). Nonetheless, DOM is well-positioned to
+capitalize on future green financing opportunities.
+ESG PERFORMANCE ANALYSIS - ENVIRONMENTAL (E):
+Entity Overall E S G
+Sevva (SDG) 5.9/10 3.2 6.4 8.0
+Morningstar 22.6/40+ - - -
+Bloomberg 2.5/10 0.4 7.8 4.8
+Team T 3.7/ 5 3.3 4.0 3.8
+DOM in harmony
+with nature
+DOM
+is people
+DOM on solid
+foundations
+0 1 2 3 4 5 6
+ROBYG
+Dom
+Atal
+Archicom
+Develia Overall
+E
+S
+G
+Figure 19: DOM’s Key ESG pillars
+Source: Company Reports, Team analysis
+Figure 20: ESG Scorecard
+Source: Sevva.ai, Morningstar: Sustainalytics, Bloomberg,
+Team analysis
+Figure 21: Comparative ESG scores
+Source: Competitor Reports, Company reports, Team
+analysis
+22,146 21,900
+19,889
+13,594
+11,724 11,168 9,768
+Source: Company Reports, Team analysis
+Figure 17: Comparison of Land Bank units
+owned by DOM and its competitors in 2024
+Source: Company Reports, Team analysis
+Figure 18: Industry Recognition, Leadership,
+Awards, and Initiatives of DOM
+Energy Efficiency & Renewables: DOM has embedded sustainability at the core of its
+development strategy, steadily transitioning to a low-carbon operating model. By 2023, the
+company increased its renewable energy share to 12% (from 0% in 2021), securing 4,000
+MWh of green energy to power its construction sites. These actions align with its 30% CO2
+reduction target by 2030. Beyond energy sourcing, DOM future-proofs its developments
+through intelligent building systems, energy-efficient lighting, photovoltaics, and motion/dusk
+detectors, significantly reducing operating costs. The company is also integrating local,
+natural, and recycled materials, limiting embodied carbon and enhancing long-term cost
+efficiency. Additionally, its commitment to reducing energy demand extends to the
+construction phase, where optimized processes and innovative materials minimize resource
+consumption. As part of its Green Investment Card initiative, all future developments will
+prioritize urban sustainability while maintaining DOM’s premium housing standards.
+Founding member of the
+Polish Association of
+Developers
+2023 Builder
+of the year
+Property developer of the year
+in more than 10 different years
+[PAGE 6]
+0.41
+0.58
+0.33
+0.27
+Atal Dom Develia Murapol
+3.7
+1.5
+5.3
+3.5
+1.8
+2.6
+Atal
+Archicom
+Dom
+ROBYG
+Develia
+Murapol
+Staff positions
+Operational 61% 39%
+Managerial 35% 65%
+Senior management 37% 63%
+Water Management: DOM proactively integrates nature-based water solutions, embedding
+rainwater harvesting, bioretention basins, and sustainable drainage systems (SUDS) to
+enhance retention and minimize environmental impact. Rising water stress in Krakow and Tri-
+City in 2023 prompted further investment in green roofs and stormwater management,
+ensuring climate resilience. By prioritizing hydrologically secure land acquisition, DOM future-
+proofs its developments while reinforcing long-term sustainability.
+GHG Emissions: DOM’s aggressive decarbonization efforts have led to a 99% reduction in
+Scope 1 methane (CH4) and nitrous oxide (N2O) emissions since 2021. Scope 2 emissions
+declined 17%, fueled by expanded renewable energy procurement, energy-efficient lighting,
+and smart-building technology integration. The transition to a hybrid vehicle fleet further
+reduces reliance on fossil fuels, reinforcing DOM’s push toward a low-emission operating
+model.
+ESG PERFORMANCE ANALYSIS - SOCIAL (S):
+Community Impact: DOM enhances urban living by revitalizing public spaces and fostering
+inclusive communities. Initiatives like "Active Senior" and accessible turnkey fit-outs improve
+quality of life, while the 15-minute city model—achieved in 86% of projects in 2023—ensures
+convenient access to essential services, reinforcing DOM's leadership in sustainable urban
+development.
+Diversity & Inclusion: Women represent 53% of DOM’s workforce, with 35% in managerial
+roles (Figure 22) —a figure DOM is actively improving. The company tracks pay equity, with
+gender pay gaps at 36% for executives and 14% for managers, mainly due to seniority
+distribution. Leadership programs and inclusive hiring initiatives drive DOM’s commitment to
+a more diverse leadership pipeline.
+Employee Wellbeing: DOM prioritizes fair wages, performance-based incentives, and
+continuous development. Employees receive two days of annual training, while safety audits
+and training programs resulted in zero workplace injuries in 2023. An external whistleblower
+platform reinforces ethical governance. With one of the lowest staff turnover rates (9.5%), the
+longest average tenure on LinkedIn (Figure 23), and top-three rankings on GoWork (Figure
+24), DOM remains a top employer in Poland’s real estate sector.
+ESG PERFORMANCE ANALYSIS - GOVERNANCE (G):
+Leadership Structure: DOM operates a dual-board system, ensuring effective oversight and
+strategic decision-making. The five-member management board (20% women, 20% non-
+Polish) brings over two decades of industry expertise (Annex 5), while the eight-member
+supervisory board (38% women, 25% non-Polish) brings a diversity of perspectives,
+backgrounds, and experiences (Annex 5). DOM is on track to achieve 30% female
+representation in management and supervisory boards by 2026.
+Shareholder Composition: Groupe Belleforet S.a.r.l. retains a 54.81% majority stake, granting
+substantial influence over governance and long-term strategic planning (Annex 4). In 2024,
+co-founder Jarosław Szanajca, holding 5.64% of shares, transitioned to the supervisory
+board.
+Executive Compensation: DOM aligns management incentives with performance through a
+structured remuneration framework. Compensation consists of fixed salaries and
+performance-linked bonuses, capped at 5x base salary. Variable pay is tied to key financial
+metrics (gross/net profit) and ESG targets, ensuring a clear link between executive pay and
+long-term value creation. DOM ’s industry-leading EBITDA performance underscores the
+effectiveness of this incentive structure (Figure 25), which undergoes regular review by the
+Supervisory Board and Remuneration Committee to maintain transparency and best
+governance practices.
+MATERIAL ESG RISKS AND THEIR IMPACT
+Dom Development operates in an evolving regulatory and environmental landscape, where
+proactive ESG management is critical to long-term growth. Failure to engage in urban
+infrastructure could weaken community trust and brand equity, reducing DOM’s competitive
+edge. Regulatory misalignment with the EU Taxonomy presents financial and reputational
+risks, increasing compliance costs and potentially undermining DOM ’ s ESG leadership.
+Climate-related threats, including extreme weather events, pose operational risks that could
+disrupt project timelines and inflate capital expenditures. Strong ESG ratings from agencies
+such as Sustainalytics and MSCI remain key to securing favorable financing terms and
+maintaining investor confidence, reinforcing DOM ’s commitment to sustainability-driven
+value creation.
+ESG OPPORTUNITIES FOR DOM
+DOM's Green Project Card (GPC) enhances green financing eligibility, including Sustainability-
+Linked Loans (SLLs) and potential green bond issuance. By aligning with the EU Taxonomy,
+DOM may reduce WACC and strengthen financial flexibility. Additionally, obtaining BREEAM
+or LEED certifications could attract eco-conscious investors and clients. Investments in
+renewables, biodiversity, and sustainable urban integration further align with shifting
+consumer preferences, driving long-term revenue growth. DOM's commitment to SASB and
+ISSB disclosure standards enhances transparency, reinforcing its status as a sustainable real
+estate development leader.
+0.10% 0.69% 0.86% 0.58%
+Figure 23: Employee Wellbeing
+Source: LinkedIn, Team Analysis
+Figure 22: Diversity at DOM – FTEs White
+Collar
+Source: Company Reports, Team Analysis
+Figure 24: Employee satisfaction
+Source: Gowork.pl, Team Analysis
+Figure 25: Executive compensation vs
+EBITDA (PLN bn)
+Figure 26: UN SDGs Met by DOM
+Source: Company Reports, UN Sustainable Development
+Goals
+Source: Company Reports, Team Analysis
+- management
+compensation as
+% of EBITDA
+& more
+to come!
+[PAGE 7]
+Sector: Real Estate
+WSE: DOM
+INVESTMENT SUMMARY
+0
+50
+100
+150
+200
+250
+300
+350
+400
+450
+500
+2021 2022 2023 2024 2025
+Atal Dom
+Archicom ECHO
+Lokum
+0.0%
+5.0%
+10.0%
+15.0%
+20.0%
+25.0%
+30.0%
+35.0%
+90
+95
+100
+105
+110
+115
+2014
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+Construction price index Margin
+5.9
+2.7
+5.4
+4.6
+0.0
+3.0
+6.0
+9.0
+12.0
+2021 Q1
+2021 Q2
+2021 Q3
+2021 Q4
+2022 Q1
+2022 Q2
+2022 Q3
+2022 Q4
+2023 Q1
+2023 Q2
+2023 Q3
+2023 Q4
+2024 Q1
+2024 Q2
+2024 Q3
+2024 Q4
+Market DOM
+DEVELIA ROBYG
+Figure 28: DOM vs Peers stock
+Performance Comparison, Rebased to 100
+Source: Stooq.pl, Team analysis
+3,975
+3,602 3,661 3,756
+4,066
+3,093
+3,906 4,269
+2017A 2018A 2019A 2020A 2021A 2022A 2023A 2024A
+Figure 27: Units Sold
+Source: Company Reports. Team Analysis
+THESIS 1: DOM IS THE CROWN JEWEL OF POLAND'S RESIDENTIAL DEVELOPMENT
+MARKET. WELL-POSITIONED TO SUSTAIN ITS OUTPERFORMANCE
+A) The Group can stay resilient in variable market situations thanks to its conservative
+level of debt: The real estate sector is notoriously popular amongst investors and financial
+institutions as a risky bet due to the requirements of large upfront investments for
+construction, correlation to broader macro factors, and reliance on external financing.
+Thankfully for investors of DOM, these concerns are important, but much less so. DOM’s
+fortress like balance sheet enables confidence as there gearing ratio has remained below 17%
+in the last decade, even dropping negative which implies excess cash position of the company
+and prudent financial management (Figure 32).
+B) Strategic positioning for market consolidation through potential M&A: Our interview
+with a senior investor relations team member from a PLN 2.4 billion competitor confirmed that
+Dom Development is seen as a key player in potential industry consolidation. With smaller
+developers facing declining sales and liquidity challenges in 2023–2024 (Annex 22), the real
+estate sector may witness a wave of M&A activity in the near future. As a financially strong
+and operationally efficient company, DOM is well-positioned to capitalize on market
+consolidation, expanding its strategic Land Bank competitive advantage.
+C) Sustained dividend growth reinforcing shareholder value: While reinvestment is a key
+driver of long-term growth, DOM has maintained a clear and consistent capital return policy
+since 2012, prioritizing shareholder dividends. The company has sustained a payout ratio of
+70–90% of net profits, reinforcing its commitment to rewarding investors. This makes DOM an
+attractive investment not only for value-oriented investors but also for those seeking
+consistent dividend growth (Annex 15).
+THESIS 2: ROCK-SOLID BALANCE SHEET FUELS DOM’S ABILITY TO NAVIGATE RISKS
+WHILE TURBOCHARGING LONG-TERM WEALTH CREATION FOR SHAREHOLDERS
+A) Extensive Land Bank driving a robust development pipeline: DOM holds one of the
+largest Land Banks in key Polish housing markets (Figure 17), providing a strong foundation
+for future growth. Our view about the Group scaling new projects in key agglomerations,
+particularly Krakow and Tri-city is supported by a full analysis of past projects  dating back to
+2012 (Annex 32). The share of external capital usually does not exceed 50%. Additionally,
+DOM leverages its know-how enabling it to maintain profitability even in high-cost locations.
+B) Market leader in the premium residential segment: DOM dominates the high-end
+residential market, with over 50% of its units sold classified as premium, operating across four
+of Poland’s largest housing markets. A significant proportion of transactions are cash-based,
+underscoring DOM’s affluent clientele (Figure 30), which is less price-sensitive and insulated
+from inflationary pressures. Additionally, investment-driven purchases remain a key demand
+driver, reinforcing premium properties’ role as an inflation hedge.
+C) Strategic urban revitalization and ESG-focused growth: DOM is actively capitalizing on
+urban revitalization projects, aligning with its ESG commitments and long-term growth
+strategy. By integrating sustainability into its development model, DOM enhances its market
+positioning while ensuring profitable and environmentally responsible growth. Additionally,
+these initiatives help minimize non-compliance risks with the European Green Deal,
+reinforcing DOM’s long-term resilience in an evolving regulatory landscape.
+THESIS 3: WITH A PREMIUM-FOCUSED Land Bank. DOM ISN’T JUST RESILIENT—IT’S
+UNSTOPPABLE
+Figure 29: Resilient Gross Margins
+Against Rising Construction Costs
+Source: GUS, Company Reports, Team Analysis
+Figure 30: Split of Transactions by Type
+of Financing, Q3 2024
+Source: Company Reports, Team Analysis
+Figure 31: Stock-to-sales ratio, DOM vs
+peers [quarters needed to sell the stock]
+Source: Company Reports, Team Analysis
+29% 24% 24%
+Top three performers
+CAGR, 2021-2025
+53%46%
+Mortgage
+financed
+buyers
+Cash
+transactions
+A) Poised for market share expansion through strong sales momentum: Dom
+Development has consistently delivered strong sales growth (Figure 27), hitting back-to-
+back record numbers of units sold in the last two years. It sold 4,269 units (+9% YoY) in
+2024. The company thrashes its competitors operationally and in stock market
+performance (Figure 28). We believe this upward trajectory is bound to continue as the
+company’s focus on high-standard, premium residential apartments positions it to capture an
+even greater share of Poland's thriving real estate market.
+B) Unmatched efficiency in project delivery and superior stock-to-sales
+ratio fuelling growth: DOM’s efficiency in completing projects on time, combined with its
+swift sales process, is a key driver of growth and profitability. The company maintains strong
+subcontractor relationships and benefits from economies of scale, resulting in an impressive
+Time-to-sell (TTS) rate and strong revenue potential. Despite a declining supply of saleable
+housing units over the past year, DOM has sustained a stock-to-sales ratio that outperforms
+the overall market (Figure 31).
+C) DOM ’ s operational efficiency translates to enhanced revenue potential in the
+coming years: We believe DOM is well-positioned to achieve record-breaking revenue in
+the coming quarters, supported by PLN 4 billion in projected deferred revenues and an
+increasing number of sales and project launches in key agglomerations. Given its proven
+ability to generate strong total shareholder returns and consistently outperform peers over
+the past half decade, DOM remains a compelling investment opportunity for those seeking
+both growth and stability in Poland’s real estate sector. This outlook is further reinforced by
+our SOTP valuation (Figure 46).
+[PAGE 8]
+Sector: Technology
+2020A 2021A 2022A 2023A 2024E 2025E 2026E 2027E 2028E 2029E 2030E
+DuPont Analysis
+Gross Margin 32% 33% 31% 32% 32% 32% 31% 30% 29% 28% 27%
+EBITDA Margin 22% 23% 21% 23% 22% 23% 22% 21% 20% 19% 18%
+Net Profit Margin 17% 17% 17% 17% 17% 18% 17% 16% 16% 15% 15%
+Asset Turnover 0.6x 0.5x 0.6x 0.6x 0.6x 0.6x 0.6x 0.6x 0.6x 0.6x 0.6x
+Return on Assets 9% 8% 10% 10% 10% 11% 10% 10% 9% 9% 9%
+Financial Leverage 2.8x 3.1x 2.9x 3.1x 3.1x 3.0x 3.0x 2.9x 2.9x 2.8x 2.7x
+Return on Equity 26% 26% 29% 32% 32% 33% 31% 29% 27% 26% 24%
+Return on Invested Capital 29% 30% 27% 26% 28% 30% 28% 27% 25% 25% 24%
+Liquidity
+Current Ratio 1.9x 1.8x 1.7x 1.8x 1.8x 1.9x 1.9x 1.9x 1.9x 1.9x 1.9x
+Quick Ratio 0.5x 0.4x 0.2x 0.2x 0.2x 0.2x 0.2x 0.2x 0.2x 0.2x 0.2x
+Debt Ratios
+Interest Coverage Ratio 12.7x 13.0x 12.5x 12.7x 12.7x 12.7x 14.9x
+Debt / EBITDA 1.2x 1.1x 0.9x 1.0x 1.1x 1.0x 1.1x 1.1x 1.1x 1.1x 1.1x
+Forecasting revenues over 6 years, we estimate a CAGR of 4% from 2020 to 2030 (Figure 33).
+DOM’s revenue is primarily driven by the number of units delivered annually, determined
+based on the pipeline of projects (Annex 32). As of the report date, DOM has 36 projects in
+construction and 16 projects under preparation across four operational regions, with Warsaw
+accounting for 58% of the portfolio as of 2023. Based on projected prices per square
+meter (Annex 24) in each operational area, we estimate stable and consistent revenue growth,
+reaching PLN 4.2bn by 2030. While DOM has experienced relatively dynamic growth from
+2020-2023, our forecast reflects a more conservative trajectory due to limited pricing upside,
+making further increases challenging without impacting demand. Given different levels of
+regional competitiveness, we expect Warsaw’s revenue contribution to decline by 2030E.
+FROM BLUEPRINTS TO BILLIONS
+HIGHER EARNINGS, HIGHER PAYOUTS
+Dynamic growth, stable profitability, and leading earnings per share (Figure 35) have allowed
+DOM to increase dividends in recent years (Figure 36). Following historical payout trends, we
+forecast that DOM will allocate 40% of the current year's net profit and 60% of the previous
+year's net profit to dividends. The company consistently meets investors' high return and
+consistent dividend expectations, which is characteristic of the real estate market and a key
+driver of stock performance resilience in the sector.
+DEFYING COST SURGES WITH PREMIUM STRATEGY
+DOM has consistently maintained robust profitability levels (Figure 33) despite the persistent
+rise in material costs and the highly competitive nature of the real estate industry. With a five-
+year track record of EBITDA margins exceeding 20%, DOM stood at 23% in 2023 (Figure 31).
+According to our research, the real estate sector faces increasing material and labor costs.
+While, historically, DOM has successfully passed these costs on to customers while
+maintaining stable profitability, industry-wide margin pressure is inevitable and will persist and
+affect the company over the forecast period. Nonetheless, DOM's strong track record in cost
+management and its strategic focus on the premium apartment sector position the company
+to mitigate these challenges effectively. Additionally, its pricing power in the high-end market
+segment allows for greater flexibility in passing cost increases to buyers without significantly
+impacting demand. As a result, these trends are unlikely to impact DOM's profitability
+substantially compared to the industry. DOM's shift toward renewable energy sources is also
+expected to support margins, buffering against market fluctuations. Further, the company's
+disciplined approach to procurement and supplier negotiations strengthens cost efficiency,
+ensuring sustained profitability despite external pressures. This proactive transition
+underscores DOM's resilience and adaptability to evolving industry conditions while
+maintaining stable financial performance.
+FUELING GROWTH WITH SMART CAPITAL
+Working capital: according to forecasts, DOM's working capital has a CAGR of 8.5%
+between 2020 and 2030. Its structure mainly consists of inventories, primarily units under
+construction, offset by deferred revenues and accounts payables (Figure 37). Most units are
+sold before completion, while deferred revenues, representing 50–60% of total revenues,
+provide a reliable short-term funding source. We expect steady working capital growth over
+the forecast period.
+Land Bank: As a key inventory component, Land Bank is essential to DOM's long-term
+growth strategy. In 2024, its capacity hit a record 19,889 units. Regions like Krakow have and
+Tri-City have seen rapid expansion for DOM’s operations, further bolstering Dom
+Development’s project pipeline.
+0
+2,000
+4,000
+6,000
+Warsaw Tricity Wroclaw Cracow
+22% 23%
+21%
+15%
+18%
+Base Bull Bear
+17
+3,6
+DOM
+Industry
+average
+7.6 9.1 9.5 10.0 10.5
+16.5 12.5
+2018A 2019A 2020A 2021A 2022A 2023A 2024E
+3 837 88 77
+- 82
+- 509
+-1 734
+1 679
+Inventories Receivables Other current
+assets
+Provisions Deferred
+revenue
+Payables NWC
+FINANCIAL ANALYSIS
+Figure 32: DuPont Analysis
+Source: Company Reports, Team analysis
+Figure 33: Revenue projections (PLN m)
+Source: Company Reports, Team Analysis
+Figure 34: EBITDA margin %
+Source: Company Reports, Team Analysis
+Figure 35: EPS comparison (2023A)
+Source: CapitalIQ, Team Analysis
+Figure 36: Dividend growth
+Source: Company Reports, Team Analysis
+Figure 37: NWC (PLN m, 2023A)
+Source: Company Reports, Team Analysis
+[PAGE 9]
+1.1
+2.0
+2.7
+5.4
+1.8
+DD Atal Develia Echo Inve st Murapol
+We issue a BUY recommendation for DOM based on a rigorous valuation analysis using four
+different approaches- DCF, relative valuation, DDM, and the sum of the parts (Figure 39). We
+assign a 100% weight to the DCF approach due to its superior ability to capture the
+company’s long-term intrinsic value through detailed cash flow forecasts, operational insights,
+and financial projections. Other approaches also confirm our buy recommendation for DOM.
+VALUATION
+Inventory: Represents the largest component of net working capital, comprising finished
+housing units, parking spaces, and work in progress for ongoing projects. Inventory levels
+align with industry standards and are linked to next year's sales at 1.33x and 1.34x.
+Receivables and Payables: Calculated using turnover days, receivables remain at 13 days
+and payables at 93 days, ensuring that working capital assumptions accurately reflect the
+company's operational cycle while also demonstrating cash flow efficiency and strong supplier
+relationships. Deferred Revenue: Modelled as a ratio of next year’s sales, deferred revenue
+remains steady at 3.1%–3.2%, consistent with historical trends and revenue recognition
+practices, capturing differences in timings of cash inflows and revenue recognition.
+NET WORKING CAPITAL
+Revenues: Volume of deliveries and average transaction price drive revenue
+Deliveries: We forecast deliveries of 4.1k–4.3k units annually in 2025–27E, reaching 4.5k units
+by 2030 (Figure 40). Key drivers include a) DOM’s continuous momentum reflected in
+record-breaking deliveries of 4.2k units in 2024 (+10% y/y); b) strong Land Bank
+expansion in 2024 (+11% y/y); c) rapid launches of new projects in high-growth
+agglomerations; and d) sufficient offer supplementation. Our forecasts are based on
+historical project trends, current Land Bank capacity, and detailed pipeline forecast, ensuring
+a robust projection framework feeding from our SOTP valuation (Annex 32).
+Average transaction price: The average transaction price surpassed PLN 700k in 2024 (+26%
+y/y). We maintain an average transaction price of PLN 700k+ over the forecast horizon, using
+a conservative assumption that average prices will increase in line with inflation.
+Costs: Our conservative approach accounts for potential market volatility, including
+fluctuations in variable costs. Fixed costs are projected to remain stable at % of sales, driven by
+efficient resource allocation and economies of scale achieved through a steady pipeline of
+p rojects. This r eflects t he DOM ’ s consistent o perational e fficiency
+despite external challenges.
+Gross Margins: Projected to decline from 32% in 2025 to 28% by 2030 due to competitive
+pressures, stricter regulations, and the expectation of rising construction costs in the real
+estate sector (Annex 25, Annex 26 ). Construction costs are the biggest concern of
+managers in the business tendency survey for 2024 despite the stability seen in recent
+months (Annex 25).
+3,666 3,831 4,057 4,292 4,106 4,196 4,361 4,482 4,530
+2022A 2023A 2024A 2025A 2026A 2027A 2028A 2029A 2030A
+Forecast period
+DCF VALUATION – PLN 260 , 22% UPSIDE↑
+LEVERAGING STABILITY FOR STEADY EXPANSION
+DOM maintains a leading debt profile among its peers, with a stable Debt/EBITDA ratio in the
+range of 0.9–1.2x (Figure 32) – well below the 2023 sector average of 2.97x (Figure 38). The
+company's gearing ratio of 0.45 highlights a balanced approach to capital structure, with 55%
+of financing from equity and earnings. This moderate leverage demonstrates DOM's prudent
+financial management, allowing the company to sustain growth while managing financial risks
+effectively. Stability in debt positioning enhances DOM's resilience against market fluctuations
+and supports quick expansion without liquidity constraints. DOM's interest coverage ratio of
+70 reflects exceptionally strong debt-servicing capabilities, with EBIT exceeding interest
+expenses by 70x, providing DOM with ample financial buffer to meet its interest obligations.
+Long-term bonds accounted for 10% of total liabilities as of year-end 2023, with the
+remaining debt split between lease liabilities and short-term bonds. Additionally, DOM has
+secured bond issuance agreements of up to PLN 800 million with mBank and Trigon,
+ensuring ample financial flexibility for future projects. With a stable cash balance (8–10% of
+total assets) and a high current ratio (Figure 32), DOM is well-positioned for expansion
+in Krakow, Wroclaw, and other key markets. While additional leverage is feasible, uncertain
+land availability limits potential returns, making additional debt financing unwarranted given
+current conditions.
+171.0
+198.0
+217.0
+200.0
+189.0
+297.0
+264.0
+281.0
+255.0
+262.0
+DCF
+Relative
+SOTP
+DDM
+Consensus
+PLN 260
+Beta: We use a beta of 0.62 as the maximum of three approaches: 5-year regression of
+WIG (Figure 41), bottom-up beta using comparable companies (Annex 13) and Damodaran
+sector beta. Cost of Equity (CoE): 9.6%, calculated based on the Capital Asset Pricing Model
+(CAPM) (Annex 9). Cost of Debt (CoD): 6.32%, derived from DOM’s 2024 bonds issued, with
+additional consideration given to the average yield to maturity (YTM) of bonds trading on
+Catalyst over the past three years (Annex 10). WACC: Estimated at 9.01%, assuming a stable
+capital structure for the future (Figure 43, Annex 11).
+BETA & WACC
+Median:
+2.3x
+Figure 38: Debt / EBITDA (2023A)
+Source:
+CapitalIQ
+, Team Analysis
+The terminal growth rate is calculated using the Key Value Driver formula, incorporating a
+reinvestment rate of 6.7% and a return on new invested capital (RONIC) of 15%. This
+estimate reflects a cautious approach compared to DOM's historical average ROIC of
+20% (Figure 44).
+TERMINAL GROWTH
+Figure 39: Valuation Football Field
+Source: Team Analysis
+Figure 40: Deliveries volume
+Source: Company Reports, Team Analysis
+y = 0.6239x + 0.0042
+-30%
+-20%
+-10%
+0%
+10%
+20%
+-30% -20% -10% 0% 10% 20%
+Figure 41: DOM vs WIG weekly 5 yr
+returns regression analysis
+Source:
+Stooq.pl
+, Team Analysis
+Figure 42: Enterprise value to Equity
+value bridge [mPLN]
+Source: Team Analysis
+6 894 145 401 - 15 - 720 6 704
+Enterprise value NOA Cash Management options Debt Equity value
+Enterprise
+value
+NOA Cash Management
+options
+Debt Equity
+value
+Black Scholes
+options
+valuation
+"Margins are justified, but the future profitability
+for developers depends on adapting to
+regulatory costs and rising land prices." – Expert
+X, C-suite executive at a competitor of DOM.
+“DOM is a candidate for consolidating
+the market via M&A because of their
+well managed financial strategy ” -
+Expert X
+[PAGE 10]
+Figure 43: WACC calculation
+Source: P.Fernandez, NBP, Company Reports,
+Team Analysis
+0.0x
+1.0x
+2.0x
+3.0x
+4.0x WSE:DOM Sector median
+We valued DOM using comparable companies' forward-looking valuation multiples of
+EV/EBITDA and Price-to-earnings (P/E). EV/EBITDA reflects operational performance, while P/E
+captures equity-specific factors, offering a balanced perspective. The average 2025E multiples
+were 9.3x EV/EBITDA and 8.2x P/E. Additionally, we did a regression of ROE/PBV (Annex 17)
+as the PBV reflects balance sheet strength, which is especially relevant for real estate firms
+with significant tangible assets. Notably, DOM's P/BV has outperformed peers over the last
+decade (Figure 45) thanks to its efficient capital allocation and superior returns. We formed
+two peer groups for relative valuation: a) Polish developers and b) Western European
+developers (Annex 18). While DOM operates exclusively in Poland, Western European peers
+provided us with a broader sectoral benchmark as Poland aligns with Western Europe's
+economic development trajectory. The relative valuation yielded a target price of PLN224,
+based on the average derived from EV/EBITDA and P/E multiples, indicating a modest 5%
+upside. The relative valuation was not used for the final price calculation but supplements
+our BUY view on Dom Development.
+WACC
+Equity – weight [%] 88.2%
+Debt – weight [%] 11.8%
+Tax [%] 19.0%
+Cost of equity [%] 9.4%
+Cost of debt [%] 7.2%
+WACC [%] 9.01%
+RELATIVE VALUATION – 5% UPSIDE↑
+SUM-OF-THE-PARTS (SOTP) – PLN 246, 15% UPSIDE↑
+We employed a sum-of-the-parts (SOTP) valuation to derive a conservative value of DOM’s
+projects pipeline based on a) projects currently under construction and b) extended pipeline
+scenario up to 2027 (Figure 46). Historical project data (e.g., Osiedle Wilno, active since 2012
+(Annex 32)informed our 2025-2027 pipeline projections across markets. Beyond 2027, we
+apply 1% terminal growth computed using the key value driver formula (Figure 46). As DOM
+does not disclose the total capital expenditure on acquiring land, we estimate the value of
+secured land bank using benchmark market transactions for land parcels in premium
+locations. The final price using the SOTP model was PLN 246, suggesting a 15% upside from
+the close of January 31 2025. This supports our DCF and further strengthens our BUY rating
+on the ticker.
+Sum-of-the-parts valuation [mPLN]
+Value of properties in the
+pipeline (till 2027) 10,328
+All-in pipeline costs (till 2027) 8,135
+Terminal value (beyond 2027) 5,790
+Total 7,982
+Present value of total 5,720
+Estimated value of secured
+land bank 1,011
+Enterprise value 6,732
+Net debt 319
+Equity value 6,412
+Price per share PLN 248
+DIVIDEND DISCOUNT MODEL (DDM) – PLN 236, 11% UPSIDE↑
+To support our DCF valuation, we conducted a DDM valuation, which yields a target price of
+PLN 236, implying an 11% upside to the price at the close of January 31 2025. Our dividend
+model assumes an 80% dividend payout ratio throughout the 2025-2030 forecast period,
+reflecting DOM's proven grit of never missing a dividend payout since its debut on the
+Warsaw stock exchange in 2006. The Group ’ s focus on shareholder returns (Annex
+18) underscores its consistent execution of this strategy. A perpetual growth rate of 2.0% was
+applied, calculated using long-term average ROE x Retention Rate from data provided by
+Prof. Damodaran for real estate developers and sense checked with DOM's historical levels.
+Using a cost of equity of 9.4%, the resulting target price corroborates our DCF valuation and
+further strengthens our BUY recommendation on DOM.
+SENSITIVITY & SCENARIO ANALYSIS
+ESG IMPACT ON VALUATION
+We consulted the Sustainalytics’ ESG Risk Rating report on DOM, noting an ESG-adjusted
+beta of 0.95 (Annex 13). This beta adjusts for financial flexibility (-0.02) and operating
+performance (-0.03), thereby reducing it from a baseline of 1.0. We believe ESG factors are
+priced into the stock price. Hence, no external adjustments were made. This was further
+confirmed by expert interviews conducted by the team, which indicated that, currently, ESG
+considerations have minimal influence on financing decisions within Poland's real estate
+sector. With no notable issuance of green bonds or SLLs in Poland's residential real estate
+sector, we believe it is premature to make ESG adjustments in our valuation. Nonetheless,
+DOM remains strong on our proprietary ESG scorecard (Annex 13).
+We conducted a sensitivity analysis (Fig 49, Figure 50) changing two key valuation drivers
+simultaneously – WACC and the terminal growth rate. A 1% WACC increase reduces the price
+by 15%, with greater declines when combined with downward terminal growth rate
+adjustments. A Monte Carlo simulation with 10,000 iterations was performed, simultaneously
+changing key variables from our DCF base case of a) margins, b) WACC, c) growth, and d)
+deliveries (Annex 19).
+We also built a bull and bear case scenario using a separate set of assumptions (Fig 47) to
+consider possible deviations from our DCF base case valuation. There is no change to our
+assumption of the cost of capital in both bull and bear cases. However, we expect the biggest
+changes in profitability margins and number of units delivered in the bull (+2% deliveries Vs
+base case) and bear case (-3% deliveries Vs base case). The reasons for this deviation
+include a) better/worse economic environment affecting demand for residential
+apartments, b) faster/slower than expected interest rate cuts, c) ramp-up/ slowdown of
+turnkey apartment deliveries which will allow the company to sell at a higher average
+transaction price and maintain strong margins at the 30% level, d) changes in the regulatory
+and legal environment which can increase costs for the Group and impact gross margins to
+decline to 24% by 2030 e) internal quality controls enhancement/deterioration.
+Terminal growth rate 0.6% 1.0% 1.7%
+Gross margin (2030E) 24% 27% 30%
+EBITDA margin (2030E) 15% 18% 21%
+WACC 9.0% 9.0% 9.0%
+Upside / (Downside) -19% 22% 48%
+Figure 44: Terminal growth decomposition
+Source: Damodaran, Team Analysis
+Figure 45: Price to book-value DOM vs peers
+Source: CapitalIQ, Team Analysis
+Figure 46: SOTP Summary
+Source: Company Reports,, Team Analysis
+Terminal growth
+NOPAT terminal [mPLN] 602,8
+Depreciation terminal [mPLN] 24,3
+CAPEX terminal [mPLN] 27,3
+Working capital terminal[mPLN] 36,2
+Reinvestment rate [%] 6.5%
+RONIC [%] 15.0%
+Terminal growth rate [%] 0.97%
+Figure 47: Bull & Bear Scenario Analysis
+Source: Company Reports,, Team Analysis
+BEAR BASE BULL
+"Poland’s largest cities are seeing growing demand driven by strong job markets, rising international students,
+and favorable climate conditions. With hotter summers in Southern Europe, more buyers are considering Poland
+for second homes, further supporting urban residential real estate,” – Expert B, business analyst at DOM’s
+competitor
+[PAGE 11]
+INVESTMENT RISKS
+[M1] Interest rate and inflation risk: Persistently high interest rates in Poland may weaken
+residential sales and overall industry sentiment. Combined with inflation, rising costs pressure
+developers margins, while higher borrowing costs deter primary market
+buyers. Valuation: Sensitivity analysis (Figure 50) indicates that a 2% increase in
+WACC would lower our target price to 207PLN, which is a 20.3% decline from our base case
+recommendation. Mitigation: DOM's focus on premium properties attracts higher-income
+buyers, ensuring more stable demand that is less reliant on borrowing costs. This reduces
+market volatility exposure and enhances revenue stability.
+[M2] Risk of economic slowdowns: Economic downturns weaken the labor market, wages,
+and consumer confidence. Slower wage growth reduces purchasing power, weakening
+demand in the primary housing market and extending DOM’s sales cycles. This may require
+pricing adjustments, potentially impacting profitability. Valuation: A 5% decline in revenue
+could decrease DOM ’ s share price by 28.5%. Mitigation: The company focuses on
+developing properties in key metropolitan areas and high-growth urban centers to sustain
+market attractiveness and reduce exposure to economic fluctuations.
+[M3] Land bank depletion risk: Land scarcity is driving up prices, while the rising number
+of urban revitalization projects with high demolition costs may put long-term pressure on
+the company’s gross margins. Valuation: A 5% cost increase and 3% drop in revenue could
+result in a 40% decline in share price. Mitigation: DOM is actively securing premium land
+and has the potential to acquire smaller developers with well-established Land Banks.
+MARKET RISKS
+[O1] Quality Control Risk: Expanding operations makes maintaining consistent quality
+challenging, especially in the premium segment where high standards are critical. Poor quality
+control may lead to delays and impact customer satisfaction. Valuation: A 5% rise in costs will
+result in 23.1% drop to 200PLN. Mitigation: DOM invests in robust quality assurance
+processes, adopts advanced construction technologies, and ensures experienced personnel
+oversee project execution.
+[O2] Labor Market Constraints: The shortage of skilled labor in the real estate sector may
+hinder DOM’s ability to meet timelines and drive-up labor costs. Valuation: A 2.5% cost
+increase will lower the target price by 11.5%. Mitigation: DOM invests in training programs
+and builds healthy partnerships with contractors to mitigate labor churn.
+[O3] Decreasing Profitability: Rising labor and material costs increase construction expenses,
+potentially pressuring margins. While DOM has passed some costs on to customers, it may
+not successfully continue to offset these increases fully. Valuation: A 2.5% drop in revenues
+and a 2.5% increase in costs will cause a 25.8% decrease in share price. Mitigation: DOM
+secures long-term supplier contracts, streamlines procurement, and enhances operational
+efficiency.
+[O4] Technological Risk: Rapid adoption of construction technologies and digital innovations
+is critical to remaining competitive. Failure to adapt may increase costs and reduce
+efficiency. Valuation: A 1% drop-in terminal growth rate would cause the share price to
+decline by 7.6%. Mitigation: DOM should gradually adopt modern construction technologies,
+including digital project management systems and energy-efficient techniques.
+[P1] Risks related to the war in Ukraine: The war in Ukraine poses a geopolitical
+risk, potentially disrupting migration, capital, and labor flows needed for Ukraine ’ s
+reconstruction. A Ukrainian outflow from Poland may reduce demand for rental and
+purchased flats, impacting the real estate market. Valuation: A 5% decline in revenue will
+result in a 28.5% decline in stock price. Mitigation: Strengthening leadership in the local
+market to ensure continued demand.
+[P2] Taxation risk: The potential introduction of a cadastral tax may reduce demand for
+premium housing and drive down property prices, negatively affecting DOM ’ s profit
+margins. Valuation: A 2% increase in costs reduces DOM’s share price by 9.2% due to tax
+burden and reduced investor confidence in high-end real estate. Mitigation: Optimizing
+resource allocation and pricing strategies to offset cost pressures and safeguard margins.
+[P3] Government risk: Uncertainty around the implementation of the "Mieszkanie na Start"
+program may slow purchasing decisions, prolong sales cycles, and increase market
+volatility. Valuation: A slowdown of 2% in revenues would cause the price to drop by 11.4%.
+This scenario could lead to higher inventory levels and delayed cash flow
+realization. Mitigation: Developing offers that appeal to both subsidy-dependent and non-
+subsidy-dependent buyers to mitigate reliance on government policies.
+[P4] Regulatory risk: Delays in obtaining building permits due to Poland’s Spatial Planning
+Act could extend project timelines and increase costs. Stricter zoning regulations and
+evolving government policies may limit DOM ’ s ability to scale new developments.
+Valuation: A 5% increase in costs with a 2% decrease in revenue will cause a 34.4% drop in
+recommended price. Mitigation: DOM has an experienced legal and compliance team to
+navigate zoning regulations and permitting processes more effectively.
+POLITICAL RISKS
+OPERATIONAL RISKS
+Low
+Medium
+High
+Low Medium High
+M1
+M2
+M3
+P1
+P2
+P3
+P4
+O1
+O2
+O3
+O4
+PROBABILITY
+IMPACT
+Figure 48: Risk Matrix
+Source
+:
+P
+.
+Fernandez
+,
+NBP
+,
+Company
+Reports
+,
+Team
+Analysis
+% -5.0% -2.5% 0.0% 2.5% 5.0%
+5.0% 394,3 364,2 334,1 304,1 274,1
+2.5% 357,1 327,0 297,0 267,0 237,0
+0.0% 319,9 289,9 259,9 229,9 200,0
+-2.5% 282,8 252,8 222,8 192,9 163,0
+-5.0% 245,6 215,7 185,8 156,0 126,3
+% 1.0% 0.5% 0.0% -0.5% -1.0%
+-2.0% 398,7 370,5 347,1 327,2 310,1
+-1.0% 332,6 313,6 297,3 283,2 270,8
+0.0% 285,2 271,7 259,9 249,4 240,2
+1.0% 249,4 239,5 230,6 222,7 215,5
+2.0% 221,5 213,9 207,1 200,9 195,3
+Terminal Growth
+WACC
+Costs
+Revenue
+Figure 49: Sensitivity analysis -
+Revenue/Costs
+Source:
+CapitalIQ
+, Team Analysis
+Figure 50: Sensitivity analysis -
+WACC/Terminal growth
+Source:
+CapitalIQ
+, Team Analysis
+Figure 51: Monte Carlo analysis
+Source:
+CapitalIQ
+, Team Analysis
+0
+100
+200
+300
+400
+500
+600
+700
+800
+PLN 332PLN 163 PLN 270PLN 220
+Price
+Observation frequency
+Summary
+Min 163
+Max 332
+Avg 231
+[PAGE 12]
+ANNEX – TABLE OF CONTENT
+ANNEX 1: Expert Interviews
+ANNEX 2: History of Dom Development
+ANNEX 3: Flagship Projects of Dom Development
+ANNEX 4: Shareholder structure of Dom Development
+ANNEX 5: Board members of Dom Development
+ANNEX 6: PESTEL analysis
+ANNEX 7: Key assumptions
+ANNEX 8: Scenario analysis
+ANNEX 9: Cost of equity
+ANNEX 10: Cost of debt
+ANNEX 11: WACC
+ANNEX 12: Terminal growth rate
+ANNEX 13: Beta calculations
+ANNEX 14: Valuing management options for DCF valuation
+ANNEX 15: Forecasted performance
+ANNEX 16: SWOT analysis
+ANNEX 17: ROE/PBV Regression
+ANNEX 18: Relative valuation
+ANNEX 19: Montecarlo analysis
+ANNEX 20: Polish RE market through the lens of units for sale, introduced, &
+sold, quarterly (2020-2024)
+ANNEX 21: Polish RE market through the lens of units sold, introduced, & offer,
+quarterly (2020-2024)
+ANNEX 22: Year on year comparison of number of units sold by RE developers in
+Poland (2023-2024)
+ANNEX 23: Construction permits issued in Six Largest Polish Cities (2010-2024)
+ANNEX 24: Pricer per sqm in Primary Market
+ANNEX 25: How will prices of services/materials/raw materials change in next 12
+months?
+ANNEX 26: Construction price index (2018-2024)
+ANNEX 27: Volume of Mortgages, Thousands, Monthly
+(2021-2024)
+ANNEX 28: Mortgage Rate Vs Value of Mortgages Issued in Poland (2017 -2024)
+ANNEX 29: Proprietary ESG Scorecard
+ANNEX 30: ESG Risk Table
+ANNEX 31: Analyst recommendations
+ANNEX 32: Project pipeline (2024-2031)
+ANNEX 33: Profit and Loss statement (2019 -2030)
+ANNEX 34: Balance sheet (2019-2030)
+ANNEX 35: Cash flow statement (2019 -2030)
+ANNEX 36: Sources
+Expert A • C suite executive at a direct competitor of Dom Development with PLN 2bln+ market capitalization
+Expert B • Business analyst with 6+ years of experience at a leading residential real estate developer in Poland
+Expert C • Lead economist at World Bank for 15+ years
+Expert D • Head of Team XYZ at Polish Economic Institute for 5+ years
+Expert E • Consultant and mortgage advisor with 10+ years experience
+Expert F • Real estate industry expert with 10+ years of experience, interim CFO of a real estate and logistics firm
+Expert G • Researcher and macroeconomic expert with 10+ years of experience
+Expert H • ESG practitioner and one of the founding members of a sustainability focused industry organization in Poland
+Expert I • Researcher specializing in financial economics and ESG transition dynamics
+Expert J • A beneficiary of Safe Credit 2% scheme in Warsaw
+Expert K • Professor of real estate for 10+ years at a leading Polish university
+Annex 1 – Expert Interviews
+Annex 2 – History of Dom Development
+1996
+2000 2008
+2010
+2017
+2006 2018
+2020
+2021
+2022
+INTERIOR DESIGN
+First developer in
+Poland to offer
+‘turnkey’ apartments
+TRICITY MARKET
+Entrance to the real
+estate market in
+TriCity
+WROCLAW MARKET
+Entrance to the real
+estate market in
+Wroclaw
+SERVICED FLATS
+New serviced apartments
+with hotel function and a
+large food hall
+MERGER
+Extending the activities in
+Krakow through merger of
+Sento S.A. and Buma
+DEBUT MORTGAGE
+LOANS
+Credit consulting
+department
+establishment
+IPO
+Entrance to the Warsaw
+Stock Exchange
+GENERAL
+CONTRACTORSHIP
+The establishment of its
+own general contractor for
+projects
+KRAKOW MARKET/
+ACQUISITION
+Entrance to the Krakow
+market through acquisition
+of Sento S.A.
+DOM starts its
+operations in Warsaw
+Annex 3 – Flagship Projects of Dom Development
+Names of interviewees are kept confidential upon their request
+Source: Team analysis
+Source: Company’s website
+Source: Company’s Reports
+[PAGE 13]
+Annex 4 – Shareholder structure of Dom Development
+54.8%
+22.1%
+14.5%
+8.6%
+Corporations
+Institutions
+Individuals
+Public and other
+Shareholder Shares %
+Corporations:
+Groupe Belleforet 14,140,441 54.8%
+Individuals:
+Jarosław Szanajca 1,454,050 5.6%
+Grzegorz Kielpsz 1,280,750 5.0%
+Janusz Zalewski 300,000 1.2%
+Małgorzata Kolarska 285,066 1.1%
+Other individuals (owning <1% shares) 422,961 1.6%
+Institutions:
+PTE Allianz Polska 2,501,493 9.7%
+Natonale Nederlanden PTE S.A. 575,820 2.2%
+Aegon Asset Management UK Plc 552,086 2.1%
+UNIQA Österreich Versicherungen 427,479 1.7%
+PTE PZU S.A. 369,949 1.4%
+TFI PZU S.A. 298,229 1.2%
+Other institutions (owning <1% of shares) 984,955 3.8%
+Public and other 2,205,140 8.5%
+Total 25,798,422 100%
+Name & Position Background
+SUPERVISORY BOARD
+Dorota Podedwora-Tarnowska, Vice Chairwoman of the Supervisory Board 7+ years on the Supervisory Board, PhD in Economics, Finance Expert, Former Deputy
+Minister, Finance (2013-2015)
+Jarosław Szanajca,  Chairman of the Supervisory Board Founder of DOM (since 1996) 20+ years in development, Law graduate, University of
+Warsaw, Former Chairman in Gres-Investi (1992-1996)
+Janusz Zalewski, Deputy Chairman of the Supervisory Board 4+ years on the Supervisory Board, 40+ years in finance and development, 24+ years with
+DOM, Former CFO&Vice President of DOM
+Mark Richard Anthony Spiteri, Member of the Supervisory Board 13+ years on the Supervisory Board, 19+ years of experience in property development,
+Director of businesses in financial services sector
+Anna Maria Panasiuk, Member of the Supervisory Board 2+ years on the Supervisory Board, Extensive experience in capital market law, Experienced
+legal advisor for investment funds and holdings
+Edyta Wojtkiewicz, Member of the Supervisory Board 2+ years on the Supervisory Board, Over 20 years of executive experience, Strong financial
+expertise and communication across all levels
+Philippe Bonavero, Member of the Supervisory Board 2+ years on the Supervisory Board, 9+ years of executive experience in the British real
+estate sector, Legal and financial expert
+Grzegorz Kiełpsz, Member of the Supervisory Board 18+ years on the Supervisory Board, 30+ years of experience in property development
+sector,
+28+ years with DOM, One of the founders of DOM
+MANAGEMENT BOARD
+Mikołaj Konopka, Chairman of the Management Board * 30+ years of experience in real estate and construction, 17+ years with DOM, Expert in land
+acquisition and development, Degree in Maritime Transport Economics (UG)
+Leszek Stankiewicz, Deputy Chairman of the Management Board, Financial Director ** 20+ years of executive experience, 10 years of experience in the construction sector, 5+
+years with DOM, PhD in Management, degrees in finance (UW & SGH)
+Justyna Wilk, Member of the Management Board *** Experience in the property market, 14+ years with DOM, Former Land Dept. Director&
+Commercial Proxy, Board member since 1st of January 2025, Geodesy degree (WUT),
+Postgrad (SGH)
+Grzegorz Smoliński, Member of the Management Board **** 25+ years of experience in property development, 27+ years with DOM, President of Dom
+Development Kredyty since 2019, MBA (SGH) & Finance degree (Vistula University)
+Terry Roydon, Member of the Management Board ***** 40+ years in the European construction industry, 25+ years with DOM, Former CEO of UK-listed developers, MBA (Pittsburgh) & Property Management degree (London)
+Annex 5 – Board members of Dom Development
+* ** *** **** *****
+Annex 6 – PESTEL analysis
+Source: Team
+analysis
+Source: Capital IQ, Team analysis
+[PAGE 14]
+Annex 7 – Key assumptions
+Revenues
+1. Period of analysis was established to be 2025-2030. The revenue forecast is driven by two key quantitative factors a) number of deliveries and b) average transaction price
+per unit. We use a city-wise segmentation of under construction and in-preparation projects reported by Dom Development and projection a future pipeline using expected
+start and handover dates of projects. A fairly good understanding of sales for DOM is possible because the Group’s current land bank of 19,889 units is sufficient for the next
+three to five years of sales.
+2. No. of units sold and delivered: We expect DOM to maintain and sustainably increase from its current level of units delivered of 4,216 in 2024 (+10% y/y) to roughly 4,400
+deliveries by end of forecast period. In our view it is ‘not’ likely that the Group will double or triple from its current level of operations in the coming years. However, we do
+not ignore that it may be possible within city-wise segments with a small base. For eg: between 2020 and 2024, units sold in Krakow jumped by 4.4x and in Wroclaw by 2.3x. In
+our forecast, our estimates built using the project pipeline show units sold in Krakow will be 1.4x from 2024 level of 520 units to 749 units in 2030.
+3. Growth drivers: Our model assumes biggest increase in units delivered in a) Krakow, forecasted to increase from 475 deliveries in 2024 to 755 deliveries annually in 2030 b)
+TriCity, from 950 deliveries in 2024 to 1,115 in 2030 annually. This assumption is supported by a rising Land Bank stock in these cities. In 2024, units under preparation and
+under construction combined in Krakow were 2,910 and Tri-City were 5,537. DOM will maintain leadership in the Warsaw market leveraging a strong under construction and
+in-preparation pipeline of 11,434 units. We do not assume DOM will expand into new housing markets either in Poland or abroad. The management gives no such indication
+and has mentioned its objective to increase market share in the existing markets.
+Costs
+1. We believe that while currently there are no gross margin pressures on DOM, this situation is likely to change in coming years with overall sector margins reverting lower.
+Hence, we model a base case with gross margins sightly dropping from 32% to 28%.
+2. Other operating costs such as general and administration and selling costs are modeled as % of revenue. We expect efficiency in sales and marketing activities of DOM and
+include a slowdown factor of selling costs by 2% YoY.
+CAPEX and D&A
+1. CAPEX increases with inflation, not significant for real estate developers
+Working capital forecasts
+1. Inventories are modelled as next year sales taking into account new Land Bank acquisitions and lag between converting inventory into sales. For 2024, we use an average of
+past five years inventory/sales ratio. For the next years in our forecast, the ratio remains consistent on average and increases by 0.04x. Deferred revenue is also modelled relative
+to next year sales.
+Debt forecasts and cost of debt
+1. Debt includes long term debt, short term debt, and leases. It is modelled using Debt/EBITDA ratio expected to stay in the range of 1.0-1.1x based on historical analysis. We
+believe DOM will maintain its financially prudent strategy of keeping conservative debt levels. We do not foresee any need for development loans or financing through private
+individual investors and think company can continue financing majority of their needs internally.
+2.The cost of debt is reflected in income statement only partially, to the tune of 20% of total interest expense. The remaining portion is modelled as being capitalized into
+work in progress associated with development projects. Cost of debt is assumed as WIBOR 6M 5.84% plus 1.4% bank margin, equal to DOM’s latest bond issue of series
+DOMDEM2051229 in December 2024. We also considered average YTM of publicly traded bonds of Dom Development and a synthetic credit rating method (Annex x).
+DDM
+1. Payout ratio fixed at 80% based on past policy of the Group, growth rate of DDM model assumed as 2% by multiplying historical ROE and Retention ratio of DOM and sense
+checked using data from from prof. Damodaran. Given DOM distributed advance dividend in 2024, we include a 40% advance payout in our forecasts.
+SOTP
+1. Units under preparation in all cities are spread out to build a project pipeline until 2027. The project start date and handover dates are usually kept between 4 to 6  quarters
+based on our analysis of DOM’s pipeline going back till 2012. We see 4-6 quarters is reasonable for start to handover assumption.
+2. The project all-in-costs are linked with DCF assumptions of EBITDA margins. The revenues are linked to average transaction price of the unit, increasing in-line with inflation.
+The project pipeline also assumes that commencements will not dramatically exceed historic levels of 3-5k units annually to ensure there is no operational burden on the
+company and our forecasts are realistic.
+3. Estimated value of secured land bank assumes average size of a unit as 70sqm thereby arriving at a total usable floor area from the owned land bank that was not used in the
+SOTP pipeline of 180,600sqm. The value of the Land Bank was then established at PLN 1011million using average price paid per UFA in similar market transactions.
+0
+50
+100
+150
+200
+250 Base Bull Bear
+Annex 8 – Scenario analysis
+PLN 171
+PLN 260
+PLN 315 Bull case scenario: DOM benefits from a favourable macroeconomic
+environment, allowing it to sustain high profitability and revenues. The key
+assumptions driving this scenario include a) Higher margins: The company
+successfully maintains its strong gross margins by passing cost increases onto
+buyers, benefiting from its turnkey apartment offerings, which command a
+premium price. b) Average price appreciation c) DOM demonstrates an ability
+to launch new projects faster than expected, capitalizing on strong market
+demand. d) Interest rate tailwinds: A more aggressive rate-cutting cycle by
+NBP which would be faster than expected stimulates mortgage affordability,
+leading to higher demand for residential units for popular segment. The
+premium segment is not highly impacted by high mortgage rates. e) Increased
+sales and deliveries: With demand picking up, the company experiences an
+uptick in sales volumes, resulting in a 2% increase in deliveries versus the base
+case. The combined effect results in a valuation uplift implying an upside of
+48% compared to our base case  upside of 22%.
+Bear case scenario: DOM faces multiple headwinds that negatively impact its profitability and revenue growth. The key assumptions driving this scenario
+include a) Margin compression: The company struggles to pass on rising costs to customers, leading to a decline in gross margins b) Regulatory impact:
+The new Spatial Planning Act delays projects and lowers deliveries. c) Weaker demand: Economic uncertainty and slow rate cuts force price reductions d)
+Project delays: Execution risks and supply issues lead to a 3% drop in deliveries.
+Annex 9 – Cost of equity
+Approach 1 - CAPM
+Risk-free rate 5.83%
+Beta 0.62
+Market risk premium 5.8%
+Cost of Equity 9.4%
+We calculate cost of equity using the Capital Asset Pricing Model (CAPM). The risk-free rate was taken on
+31.01.2025 to ensure consistency with the valuation date. Market risk premium for Poland was gathered
+from prof. P. Fernandez research. We arrived at a cost o equity of 9.4% using the CAPM method.
+Consideration for ESG was discussed within the research team with one option being- use an ESG-
+adjusted beta. We believe the ESG factors are already priced in by the market and hence do not use any
+ESG adjustments in our cost of equity calculations.
+The bear scenario results  in a valuation downside of -20% versus our
+base case upside of 22%.
+Source: Team Analysis
+Source: Team Analysis
+Source: Team Analysis
+[PAGE 15]
+Annex 10 – Cost of Debt
+Method 2 – Synthetic credit ratings
+EBIT 2023A [mPLN] 558,2
+Interest paid [mPLN] 28,4
+Interest coverage ratio 19,7x
+Synthetic credit rating assigned AAA
+Credit spread (Damodaran) 0.75%
+Risk-free rate 5.73%
+Cost of debt 6.48%
+Tax rate 19.00%
+After-tax cost of debt 5.25%
+Method 1 – YTM of Dom Development’s bonds
+DOM0925 2020 5.6%
+DOM0526 2021 6.1%
+DOM0928 2023 7.3%
+DOMDEM2051229 2024 7.2%
+Average cost of debt 6.32%
+Tax rate 19.0%
+After-tax cost of debt 5.12%
+Note: we have used 2021-23 average YTM as the average cost of debt in this specific
+calculation because the bond issued in 2024 was not trading on Catalyst at the time of
+valuation.
+Annex 11 – WACC
+To estimate the cost of debt for Dom Development, we considered three methods to ensure comprehensiveness: a) synthetic rating estimation, b) the
+average YTM of publicly traded bonds, and c) the market cost of debt, calculated as WIBOR6M plus the bank margin. A key element in cost of debt is that
+DOM capitalizes its interest expense under historical cost of inventories / work-in-progress. The total cost of debt is not seen in the profit and loss
+account. This was taken care of even while we forecasted the P&L statement and the interest expense line within it. Ultimately, for the cost of debt we
+opted to use the market cost of debt of 7.2%, arrived at using WBOR6M of 5.8% plus 1.4% bank margin in our model. The bank margin is the same as on
+DOM’s latest bond issue in December 2024. We did not use the synthetic rating approach as it is derived from US data and was not fully reflective of the
+specific dynamics within the Polish market.
+Annex 12 – Terminal growth rate
+We assume a stable WACC throughout the DCF forecast period as
+opposed to dynamic WACC or a distinct calculation of WACC for the
+terminal year. We use a stable WACC because it reflects our
+assumption about DOM’s risk profile and stable future capital structure.
+Additionally, the Polish 10-year risk-free rate already incorporates
+market expectations for future economic conditions, making further
+adjustments to the WACC redundant. By keeping the WACC constant,
+we ensure the valuation remains focused on realistic and consistent
+assumptions, without speculative fluctuations that could undermine its
+reliability.
+Terminal growth
+NOPAT terminal [mPLN] 602,8
+Depreciation terminal [mPLN] 24,3
+CAPEX terminal [mPLN] 27,3
+Working capital terminal[mPLN] 36,2
+Reinvestment rate [%] 6.5%
+RONIC [%] 15.0%
+Terminal growth rate [%] 0.97%
+WACC Forecast period Terminal period
+Equity – weight [%] 88.2%
+Same as forecast
+period, we do not
+assume separate
+WACC for the
+reasons explained
+below.
+Debt – weight [%] 11.8%
+Tax [%] 19.0%
+Cost of equity [%] 9.4%
+Cost of debt [%] 7.2%
+WACC [%] 9.01% 9.01%
+We calculated the terminal growth using the Key Value Driver formula.
+With a reinvestment rate of 6.5% and imputing returns on new
+invested capital (RONIC) of 15%, the g was 0.98%. The key value driver
+formula directly links growth to the company’s reinvestment rate and
+(RONIC). We opted for this approach over other methods like exit
+multiples or the Gordon Growth Model to maintain internal consistency.
+This contrasts with exit multiples, which can be highly subjective and
+dependent on market comparable that may not accurately represent
+DOM’s unique performance.
+Annex 13 – Beta calculations
+Average unlevered 0,52
+Dom’s Cash/Firm value 0,05
+Dom’s Unlevered beta 0,49
+D/E ratio 0,13
+Tax rate 19%
+Dom’s levered beta 0,54
+Name Ticker Levered beta Tax rate Unlevered beta Cash Market cap [mPLN] Cash/FV Cash adj. unl.beta
+Develia WSE:DVL 0.7 19% 0.5 312 2,568 9% 0.6
+Atal WSE:1AT 0.8 19% 0.6 52 2,247 2% 0.6
+Archicom WSE:ARH 0.9 19% 0.7 117 1,948 04% 0.7
+Murapol WSE:MUR 0.4 19% 0.3 246 1,541 11% 0.3
+Inpro WSE:INP 0.4 19% 0.3 53 246 13% 0.3
+Marvipol Development WSE:MVP 0.8 19% 0.3 310 278 37% 0.5
+Lokum Deweloper WSE:LKD 0.5 19% 0.4 98 328 25% 0.6
+Average 14% 0.518
+Method 1: To estimate Dom Development’s beta, we used a bottom-up approach with comparable Polish real
+estate developers of similar business models and size. Due to limited perfectly matching 5-year size wise, we
+included some with differing sizes to broaden the sample. The beta was derived by unlevering and relevering
+peer betas to Dom Development’s capital structure, adjusted for cash to firm value. Method 2: We decided to
+use the max of the bottom-up and WIG Vs DOM regression of 5 year weekly returns approach. Both methods
+produced a beta within a narrow range of 0.54 to 0.62.
+Source: Team Analysis
+Source: Team analysis
+Source: Team Analysis
+Source: Team analysis
+Source: CapitalIQ, Team Analysis
+Method 3: We also reviewed the ESG-adjusted beta for Dom Development that was provided by Sustainalytics. The ESG-adjusted beta reflects the Group’s
+exposure to material ESG risks and their financial impact. With a company exposure score of 33.3 (low risk) and a subindustry exposure of 35.0, the
+adjustment process modifies the overall beta based on risk indicators. Factors like carbon emissions (+0.02) and regional corruption (+0.02) contribute to
+the final ESG-adjusted beta of 0.95, indicating a slight downward adjustment from a baseline of 1.0 that Sustainalytics uses to establish comparability
+between different companies. DOM’s ESG-adjusted beta got a slight reduction due to the company’s relatively low ESG risk, suggesting marginally lower
+systematic risk when ESG factors are considered.
+[PAGE 16]
+Annex 14 – Valuing management options for DCF valuation
+-0.080
+-0.060
+-0.040
+-0.020
+0.000
+0.020
+0.040
+0.060
+0.080
+Particular
+Option strike price PLN 50
+Risk-free rate 5.8%
+Spot price of the stock(1) PLN 260
+Time to maturity in years 7,9
+Volatility of the stock 9.6%
+Price of the option PLN 147
+No. of option contracts 100,000
+Total value (PLN m) 14,7
+Value of management options using Black-Scholes method
+To account for the potential dilution from the exercised of stock options granted to the management, we used the Black Scholes model to determine
+the value of 100,000 options held by Mr. Leszek Stankiewicz under the 7th Management Share Option programme. With the options maturing in
+December 2032 and having an exercise price of PLN 50, we were able to value the options. This value was deducted from the equity value arrived at
+from the DCF valuation. Key assumptions of BSM were:
+Source: Stooq.pl, Team analysis
+Source: Stooq.pl, Team analysis
+Annualized volatility of DOM stock price, last 1 year
+(1)In valuing DOM's management options using the Black-Scholes model,
+we used a spot price of PLN 260, which differs from the prevailing
+market price. This adjustment addresses the inherent circularity in
+valuing options within an equity research framework. Typically, the spot
+price refers to the current market price of the stock. However, when
+valuing options to estimate the value per share, using the market price
+introduces inconsistency, as the resulting option value would feed into
+the valuation of the same stock price being tested for under- or over-
+valuation. To resolve this, we applied the treasury stock method to
+estimate an initial value per share and used this as the input spot price
+in the Black-Scholes model. This iterative approach ensures internal
+consistency by converging on an appropriate per-share value while
+accurately capturing the dilution effect of management options.
+Particular
+Option strike price PLN 50
+No. of option contracts 100,000
+Expected proceeds from exercise PLN 500,000
+Spot price of the stock(2) PLN 213
+Additional shares after exercise 2,347
+Total shares outstanding (diluted) in millions 25,8
+Total diluted shares using the Treasury stock method
+Source: Stooq.pl, Team analysis
+Summary of DCF with management options
+Enterprise value 6,894
+Non operating assets 145
+Value of management options 14,7
+Net debt 319
+Equity value 6,704
+Total shares outstanding 25,8
+Price per share PLN 260
+Annex 15 – Forecasted performance
+0.0
+10.0
+20.0
+30.0
+2021A2022A2023A2024E 2025F 2026F 2027F 2028F 2029F 2030F
+EPS DPS
+y = 4.939x + 0.728
+R² = 0.688
+0.0x
+0.5x
+1.0x
+1.5x
+2.0x
+2.5x
+3.0x
+3.5x
+-10.0% 0.0% 10.0% 20.0% 30.0% 40.0% 50.0%
+We conducted PBV and ROE regressions to establish a price target for
+Dom Development. However, the implied P/BV multiple derived for
+DOM from this regression was 2.5x, while Dom Development has
+consistently traded at an average of 3.0x for the past year and
+consistently with a higher P/BV ratio than peers for the last decade
+(Figure 45). This reflects a sustained premium to peers. This premium is
+justified by the company's strong brand, superior profitability, and
+consistent dividend policy, which have historically supported a higher
+valuation. Given this long-term trend, the regression-based PBV multiple
+was deemed not useful for valuation purposes and was ultimately
+disregarded.
+Annex 17 – ROE/PBV Regression
+Annex 16 – SWOT analysis
+Develia
+Murapol
+Kaufman & Broad
+Neinor Homes
+Atal
+Instone Real Estate
+Source: Team analysis
+Source: Team Analysis
+Source: Team Analysis
+Source: CapitalIQ, Team Analysis
+Source: Team Analysis
+[PAGE 17]
+Annex 18 – Relative valuation
+Polish real estate developers European real estate developers
+Peer Group
+Ticker             Name Market cap EURm P/E multiple EV/EBITDA multiple P/BV multiple
+Polish real estate developers 2023 2024 2025 2023 2024 2025 2023 2024 2025
+WSE:DVL Develia S.A. 609 7.4x 8.4x 8.6x 5.6x 6.9x 7.0x 1.5x 1.6x 1.6x
+WSE:1AT Atal S.A. 528 9.2x 7.2x 7.2x 8.3x 6.6x 6.6x 1.6x 1.3x 1.3x
+WSE:ARH Archicom S.A. 527 12.1x 12.0x 11.1x 15.6x 9.2x 8.7x 1.5x 2.0x 1.8x
+WSE:ECH Echo Investment S.A. 422 20.0x 11.5x 8.7x 15.9x 13.5x 9.9x 0.9x 1.1x 1.1x
+WSE: MUR Murapol S.A. 337 8.8x 11.0x 11.1x 6.2x 8.9x 9.0x 3.4x 2.3x 2.3x
+Average 11.5x 10.0x 9.3x 10.3x 9.0x 8.2x 1.8x 1.7x 1.6x
+Median 9.2x 11.0x 8.7x 8.3x 8.9x 8.7x 1.5x 1.6x 1.6x
+European real estate developers
+LSE:BTRW Barratt Redrow plc 7,860 10.5x 19.9x 20.6x 4.9x 14.3x 14.8x 1.0x 0.8x 0.8x
+LSE:BWY Bellway p.l.c. 3,721 9.5x 21.1x 22.2x 5.2x 12.4x 13.0x 0.9x 0.9x 0.9x
+BME:MVC Metrovacesa S.A. 1,317 NM 30.5x 30.2x NM 16.6x 16.5x 0.7x 0.8x 0.8x
+BME:HOME Neinor Homes, S.A. 1,258 18.9x 21.0x 20.9x 13.5x 14.9x 14.8x 0.8x 1.3x 1.3x
+ENXTPA:KOF Kaufman & Broad S.A. 688 0.0x 23.7x 24.1x 3.6x 5.6x 5.7x 0.0x 3.4x 3.5x
+XTRA:INS Instone Real Estate Group SE 360 8.5x 18.1x 17.7x 6.2x 7.6x 7.5x 0.5x 0.6x 0.6x
+OM:BONAV B Bonava AB (publ) 257 12.9x NM NM 11.0x 22.8x 23.9x 0.2x 0.4x 0.4x
+Average 10.7x 16.7x 16.6x 8.7x 11.6x 11.4x 1.1x 1.4x 1.4x
+Median 9.5x 18.1x 17.7x 6.2x 10.8x 9.4x 0.9x 1.2x 1.2x
+Annex 19 – Montecarlo analysis
+0%
+20%
+40%
+60%
+80%
+100%
+160 190 220 250 280 310 340
+76% of observations are
+above the current
+market price of
+PLN 213
+10% of observations are
+above our recommended
+target price of PLN 260
+We conducted a Monte Carlo
+simulation with 10,000 iterations. The
+simulations indicate a price range for
+DOM between PLN 163 and PLN 332,
+with a mean estimated price of PLN
+231., implying a modest 8% upside.
+The key variables that were randomized
+for Monte Carlo simulations from our
+DCF base were gross margins, WACC,
+no of deliveries, inventory levels, and
+terminal growth.
+Monte Carlo results summary
+Min 163
+Max 332
+Mean 231
+Std dev 22
+25th percentile 215
+50th percentile 229
+75th percentile 244
+49,905
+0
+20,000
+40,000
+60,000
+80,000
+Q1
+2019
+Q2
+2019
+Q3
+2019
+Q4
+2019
+Q1
+2020
+Q2
+2020
+Q3
+2020
+Q4
+2020
+Q1
+2021
+Q2
+2021
+Q3
+2021
+Q4
+2021
+Q1
+2022
+Q2
+2022
+Q3
+2022
+Q4
+2022
+Q1
+2023
+Q2
+2023
+Q3
+2023
+Q4
+2023
+Q1
+2024
+Q2
+2024
+Q3
+2024
+Q4
+2024
+Under construction Flates delivered Permits granted
+Annex 20 – Polish RE market through the lens of units for sale, introduced, & sold, quarterly (2020-2024)
+Annex 21 – Polish RE market through the lens of units sold, introduced, & offer, quarterly (2020-2024)
+12,100
+9,600
+54,400
+0
+20,000
+40,000
+60,000
+2020
+Q1
+2020
+Q2
+2020
+Q3
+2020
+Q4
+2021
+Q1
+2021
+Q2
+2021
+Q3
+2021
+Q4
+2022
+Q1
+2022
+Q2
+2022
+Q3
+2022
+Q4
+2023
+Q1
+2023
+Q2
+2023
+Q3
+2023
+Q4
+2024
+Q1
+2024
+Q2
+2024
+Q3
+2024
+Q4
+Introduction Sold On offer
+Source: GUS, NBP, JLL, Team Analysis
+Source: GUS, NBP, JLL, Team Analysis
+Source: Team analysis
+Source: Team Analysis
+Source: CapitalIQ, Team analysis
+[PAGE 18]
+90
+95
+100
+105
+110
+115
+120
+2018
+M01
+2019
+M01
+2020
+M01
+2021
+M01
+2022
+M01
+2023
+M01
+2024
+M01
+Index
+Annex 22 – Year on year comparison of number of units sold by RE developers in Poland (2023-2024)
+Annex 23 - Construction permits issued in Six Largest
+Polish Cities (2010-2024)
+16.6%
+52.7%
+29.7%
+1.0%
+Rise faster
+Rise slower
+Stabilize
+Fall
+Annex 25 - How will prices of services/materials/raw
+materials change in next 12 months?
+Source: GUS, Team Analysis
+0
+500
+1,000
+1,500
+2,000
+2,500
+3,000
+3,500
+4,000
+4,500
+5,000
+2023
+2024
+Source: Company Reports, Team analysis
+9%
+20%
+1%
+20%
+-28%
+Annex 24 - Pricer per sqm in Primary Market
+Source: GUS, Team Analysis Source: GUS, Team Analysis
+-38%
+-32%
+-50%
+-49% -1% -35% -77%
+-
+50,000
+100,000
+150,000
+200,000
+250,000
+-
+10,000
+20,000
+30,000
+40,000
+50,000
+60,000
+70,000
+Wrocław Łód Kraków Warsaw
+Gdynia  Sopot Pozna POLAND
+Poland
+Cities
+Source: GUS, Team analysis
+Annex 26 - Construction price index (2018-2024)
+Dropping now, but
+expected to rise
+Source: GUS, NBP, Team analysis
+Annex 28 - Mortgage Rate Vs Value of Mortgages
+Issued in Poland (2017-2024)
+0.00%
+5.00%
+10.00%
+0
+5,000
+10,000
+15,000
+2017 2018 2019 2020 2021 2022 2023 2024
+Mortgage value
+(PLNm)
+Source: BIK, Team analysis
+Annex 27 - Volume of Mortgages, Thousands, Monthly
+(2021-2024)
+21.8
+6.3
+21.5
+14.9
+0
+10
+20
+30
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
+2021 2022 2023 2024
+16,821
+10,060
+0
+2,000
+4,000
+6,000
+8,000
+10,000
+12,000
+14,000
+16,000
+18,000
+I 2014
+IV 2014
+III 2015
+II 2016
+I 2017
+IV 2017
+III 2018
+II 2019
+I 2020
+IV 2020
+III 2021
+II 2022
+I 2023
+IV 2023
+III 2024
+Warszawa Wroclaw
+Krakow Gdansk
+Gdynia 7 biggest
+[PAGE 19]
+Annex 29 – Proprietary ESG Scorecard
+Environmental DOM ATAL DEVELIA ARCHICOM ROBYG
+GHG Emission
+Uses the GHG Protocol,
+reporting 13.3k tonnes
+of CO2. Focuses on low-
+carbon materials and
+increasing renewable
+energy use
+Reports 8.4k tonnes of
+CO2 under ISO-certified
+EMS. Implements
+energy-efficient
+solutions like LEDs and
+occupancy sensors, with
+plans for EV adoption
+Lacks a standardized
+GHG methodology but
+prioritizes low-carbon
+materials, energy-
+efficient designs, and
+renewable energy
+integration
+Adopts the GHG
+Protocol and transitions
+to green energy.
+Ensures transparency
+through audits and
+external assessments
+Uses 100% renewable
+energy in construction.
+Reduced emissions by
+47% in 2023 and
+reports Scope 1, 2, and
+3 emissions under the
+GHG Protocol
+Grade 3 4 2 3 5
+Social
+Workforce well-being
+and safety
+Provides private medical
+care, flexible work, strict
+OHS compliance,
+accident prevention, and
+fosters inclusion and
+diversity
+Focuses on health
+programs, safety
+systems, accident
+monitoring, and
+diversity initiatives
+Offers private medical
+insurance, inclusive work
+awards, accident
+monitoring, and safety
+training
+Ensures strict OHS
+compliance, zero
+accidents, private
+medical care, and
+flexible work options
+Achieved zero accidents,
+provides OHS training,
+private care, flexible
+work, and discloses a
+reducing 11% gender
+pay gap
+Grade 4 3 3 3 5
+Governance
+Leadership &
+Accountability and
+oversight
+Well-structured
+supervisory and
+management boards
+with an ESG compliance
+director. Internal audits
+and risk management
+frameworks ensure
+compliance
+Management committee
+oversees ESG efforts
+with risk frameworks,
+anti-corruption policies,
+and whistleblowing
+mechanisms. Regular
+ESG audits prioritize
+stakeholder concerns
+Supervisory board with
+two committees ensures
+compliance with WSE
+practices. Strong risk
+controls and
+transparency with
+stakeholders
+Management board
+supervises ESG
+strategies with internal
+audits and regular
+reviews. Transparent
+communication with
+shareholders
+Head of ESG appointed
+with robust compliance
+frameworks.
+Independent board
+members ensure strong
+oversight and auditing
+Grade 4 3 3 3 4
+Overall ESG score 3.7 3.3 2.7 3.0 4.7
+Rating Category Description
+0 Not applicable No evidence of effort or achievement related to the criterion
+1 Below standard Some attempts made, but little progress or success in addressing the criterion
+2 Basic Shows effort with partial success in meeting the criterion
+3 Meets standard Effort and outcomes are consistent with typical industry expectations for the criterion
+4 Outstanding Demonstrates above-average effort and notable success in achieving the criterion
+5 Leader Sets an example of excellence, innovation, and exceptional results in achieving the criterion
+Approach and rationale: with no universal standard for ESG reporting and DOM’s unique role in its industry, ESG ratings have often varied significantly
+depending on the criteria used. To develop a more accurate evaluation, we conducted a thorough analysis of ESG reports from comparable companies
+and industry peers. This enabled us to create a tailored scorecard that reflects the ESG factors most relevant to DOM. Our ratings and the rationale
+behind the key factors used in our analysis are outlined below.
+Annex 30 – ESG Risk Table
+PILLAR KEY INITIATIVES
+DOM IN HARMONY WITH NATURE
+- Reduction of Scope 1 and 2 CO2 emissions by 30% by 2030 (baseline: 2021)
+- Urban Greenery Programme and Green Investment Cards to support biodiversity
+- Commitment to sustainable procurement through the Green Procurement Standard
+DOM IS PEOPLE
+- Adoption of the "15-minute city" concept to create accessible urban environments with integrated healthcare,
+education, and public spaces
+- Focus on employee well-being through equal opportunities, retention strategies, and attractive working conditions
+- Initiatives for accessible building designs and rollout of the “We Are Fair” program
+DOM IS ON SOLID FOUNDATIONS
+- Transparent governance aligned with the Best Practices of WSE Listed Companies
+- Gender-balanced leadership with a target of 30% female representation on supervisory and management boards
+by 2026
+- Monitoring the wage gap and implementing robust compliance systems by 2025
+Annex 31 – Analyst recommendations
+TEAM T
+PLN 250PLN 227 PLN 247 PLN 260
+PLN 209
+Source: Company
+Reports, Team analysis
+[PAGE 20]
+Project name Units Start Q Expected handover Q Revenue PLN M Costs PLN M NOPAT NPV
+Metro Zachód
+Phase 1 - stage 10 145 Q1 2024 Q4 2025 126 99 22 21
+Phase 3 - stage 8 (Building E) 118 Q2 2024 Q4 2025 103 80 19 18
+Phase 3 - stage 8 (Building F) 90 Q2 2024 Q1 2026 78 62 14 13
+Phase 4 - stage 8 249 Q3 2024 Q1 2026 217 170 38 35
+Phase 5 - stage 8 250 Q1 2025 Q3 2026 229 180 40 35
+Phase 4 - stage 7 200 Q3 2026 Q3 2028 189 153 30 22
+Phase 5 - stage 7 150 Q3 2027 Q1 2029 146 118 23 16
+Phase 1 - stage 6 200 Q2 2028 Q1 2030 200 163 29 19
+Phase 5 - stage 11 195 Q4 2028 Q2 2030 195 161 27 17
+Apartamenty Literacka
+Phase 2 200 Q1 2025 Q4 2026 183 144 32 27
+Phase 3 50 Q3 2025 Q4 2026 46 37 7 6
+Phase 4 50 Q4 2025 Q2 2027 46 36 8 7
+Phase 5 143 Q1 2026 Q3 2027 135 108 22 18
+Grzybowska
+Phase 1 196 Q2 2025 Q4 2026 180 141 31 27
+Harmonia Mokotów
+Phase 1 157 Q4 2023 Q3 2025 123 95 23 22
+Phase 2 213 Q1 2024 Q3 2025 186 144 34 33
+Phase 3 105 Q3 2024 Q1 2026 92 72 16 15
+Urbino
+Phase 2 - stage 2 100 Q1 2024 Q3 2025 87 67 16 15
+Phase 1 - stage 3 190 Q3 2025 Q2 2027 174 139 28 23
+Phase 2 - stage 3 165 Q4 2026 Q1 2028 156 125 25 19
+Phase 1 - stage 4 160 Q2 2027 Q1 2029 156 127 23 16
+Phase 2 - stage 4 150 Q2 2028 Q1 2030 150 123 22 14
+Osiedle Przy Alejach
+Phase 1 122 Q2 2023 Q1 2025 95 74 18 18
+Phase 3 105 Q1 2024 Q3 2025 92 71 17 16
+Phase 2 150 Q2 2024 Q4 2025 131 101 24 22
+Phase 4 19 Q3 2024 Q1 2026 17 13 3 3
+Apartamenty Rudnickiego
+Phase 1 141 Q2 2024 Q1 2026 123 97 21 20
+Phase 2 150 Q2 2025 Q4 2026 137 108 24 21
+Phase 3 203 Q1 2027 Q1 2029 197 162 29 21
+Osiedle Przy Forcie
+Phase 1 124 Q1 2024 Q3 2025 108 84 20 19
+Osiedle Przy Ryżowej
+Phase 1 151 Q3 2023 Q2 2025 118 91 22 21
+Phase 2 (downward revision) 254 Q4 2023 Q3 2025 199 154 36 35
+Beethovena
+Phase 1 272 Q2 2025 Q1 2027 249 200 40 34
+Phase 2 178 Q3 2025 Q1 2027 163 131 26 22
+Phase 3 120 Q1 2027 Q4 2028 117 94 18 13
+Apartamenty Białej Koniczyny
+(Pory)
+Phase 2 71 Q2 2023 Q1 2025 56 43 10 10
+Osiedle Mokotów Sportowy
+(Antoniewska)
+Phase 1 158 Q2 2024 Q1 2026 138 108 24 22
+Phase 2 300 Q1 2026 Q3 2027 284 227 46 37
+Phase 4 260 Q2 2026 Q4 2027 246 197 40 31
+Phase 6 240 Q1 2027 Q1 2029 233 191 34 24
+Phase 7 170 Q3 2027 Q2 2029 165 135 24 17
+Phase 8 210 Q2 2028 Q1 2030 210 169 33 21
+Palladium (Akacje)
+Phase 1 160 Q1 2025 Q4 2026 147 117 24 20
+Phase 2 255 Q2 2026 Q1 2028 241 195 38 29
+Phase 3 222 Q2 2027 Q1 2029 216 174 34 24
+Osiedle Jagiellońska
+Phase 2 137 Q1 2023 Q1 2025 107 83 20 20
+Phase 3 45 Q1 2023 Q1 2025 35 27 6 6
+Wilno
+Phase 3 130 Q2 2026 Q1 2028 123 99 19 15
+Phase 4 180 Q1 2027 Q4 2028 175 141 27 20
+Phase 5 200 Q2 2027 Q1 2029 195 159 29 20
+Phase 6 190 Q3 2027 Q2 2029 185 151 27 19
+Phase 7 240 Q1 2028 Q4 2029 240 199 33 22
+Phase 8 250 Q2 2028 Q1 2030 250 207 35 22
+Phase 9 250 Q3 2028 Q2 2030 250 207 35 22
+Phase 10 380 Q1 2029 Q3 2030 389 323 54 33
+Phase 12 100 Q3 2029 Q1 2031 102 85 14 8
+Phase 13 143 Q1 2030 Q4 2031 145 120 20 11
+Bokserka
+Phase 1 129 Q2 2026 Q1 2028 122 99 19 15
+Phase 2 150 Q3 2026 Q2 2028 142 115 22 17
+Phase 3 150 Q4 2027 Q1 2030 146 119 22 14
+Bielany
+Phase 1 138 Q3 2026 Q2 2028 131 105 20 15
+Perspektywa
+Phase 4 102 Q2 2022 Q1 2025 68 53 13 13
+Doki
+Phase 1 - Task A 187 Q3 2023 Q2 2025 118 91 22 21
+Phase 2 - Doki G 246 Q3 2024 Q2 2026 200 157 35 31
+Phase 3 100 Q4 2025 Q3 2027 93 74 15 12
+Phase 4 143 Q4 2025 Q3 2027 132 107 21 17
+Dolne Miasto
+Phase 1 62 Q3 2024 Q2 2026 50 40 9 8
+Phase 2 132 Q2 2025 Q1 2027 122 98 20 17
+Phase 3 150 Q3 2025 Q2 2027 139 111 22 18
+Phase 4 150 Q4 2025 Q3 2027 139 111 22 18
+Phase 5 145 Q2 2026 Q1 2028 136 109 22 17
+Phase 6 210 Q1 2027 Q4 2028 203 164 32 23
+Phase 7 150 Q1 2028 Q3 2029 149 120 23 16
+Synteza
+Phase 1 - AB 101 Q1 2023 Q1 2025 64 49 12 12
+Phase 2 - C 120 Q3 2023 Q2 2025 76 59 14 14
+Phase 3 - Building D 143 Q2 2024 Q1 2026 116 91 20 19
+Phase 4 80 Q1 2025 Q4 2026 74 58 13 11
+Phase 5 84 Q2 2025 Q1 2027 78 62 13 11
+Lema
+Phase 1 189 Q1 2023 Q1 2025 119 92 22 22
+Gdańsk Warszawska
+Phase 1- E/F 102 Q3 2024 Q1 2026 83 65 14 13
+Phase 2 120 Q1 2026 Q3 2027 113 90 18 15
+Phase 3 128 Q2 2027 Q1 2029 124 101 18 13
+Phase 2 203 Q4 2027 Q2 2029 196 161 29 20
+Osiedle Przy Błoniach 3
+Osiedle Przy Błoniach 3 Units Start Q Expected handover Q Revenue PLN M NPV
+Phase 2 56 Q1 2024 Q3 2025 46 8
+Phase 3 180 Q1 2026 Q1 2028 169 20
+Phase 4 185 Q2 2027 Q1 2029 179 19
+Widoki
+Phase 2 64 Q3 2023 Q3 2025 40 7
+Phase 3 60 Q1 2024 Q1 2026 49 8
+Leśna Góra
+Phase 1 90 Q1 2028 Q2 2029 89 10
+Gdańsk Uczniowska
+Phase 1 366 Q4 2026 Q3 2028 344 40
+Gdańsk Potęgowska
+Phase 1 135 Q2 2026 Q1 2028 127 15
+Hubska 100
+Phase 2 129 Q3 2024 Q2 2026 91 14
+Phase 3 139 Q3 2026 Q1 2028 108 17
+BRANIBORSKA
+Phase 2 210 Q4 2023 Q2 2025 137 25
+Phase 3 187 Q2 2023 Q1 2025 122 22
+Międzyleska 1-2
+Phase 1 117 Q3 2026 Q1 2028 91 11
+Zielna
+Phase 1 - stage 4 89 Q3 2024 Q2 2026 63 10
+Phase 3 65 Q2 2025 Q3 2026 49 8
+Apartamenty Nad Rzeką
+Phase 1 152 Q1 2023 Q1 2025 99 18
+Osobowicka 114
+Phase 1 82 Q2 2022 Q1 2025 53 10
+Braci Gierymskich
+Phase 1 120 Q2 2025 Q4 2026 91 14
+Phase 2 114 Q2 2026 Q4 2027 89 11
+Międzyleska 1-2
+Phase 1 159 Q1 2023 Q1 2025 104 19
+Phase 2 248 Q1 2024 Q1 2026 175 28
+Rapsodia (Wołowska)
+Phase 1 390 Q3 2026 Q4 2027 304 39
+Apartamenty Nad Oławką
+(Krakowska)
+Phase 1 88 Q4 2023 Q2 2025 58 10
+Phase 2 174 Q1 2025 Q4 2026 131 20
+Ramiszowska
+Phase 1 47 Q1 2026 Q3 2027 37 5
+Phase 2 109 Q2 2026 Q4 2027 85 10
+Górka Narodowa
+Phase 4 125 Q4 2023 Q2 2025 73 13
+Phase 5 329 Q1 2025 Q4 2026 247 37
+29. Aleja
+Phase 2 166 Q3 2024 Q1 2026 115 18
+Phase 3 70 Q3 2026 Q1 2028 54 7
+Phase 4 70 Q2 2027 Q2 2029 56 6
+Malborska
+Phase 2 71 Q2 2024 Q4 2025 49 8
+Park Matecznego
+Phase 1 353 Q2 2024 Q4 2025 244 42
+Phase 2 180 Q2 2025 Q1 2027 135 18
+Phase 3 60 Q1 2026 Q4 2027 47 6
+Meiera
+Phase 1 247 Q2 2026 Q2 2028 192 23
+Phase 2 197 Q1 2027 Q3 2028 157 18
+Phase 3 247 Q2 2027 Q1 2029 197 22
+Phase 4 50 Q3 2027 Q1 2029 40 4
+Wielicka
+Phase 1 224 Q4 2025 Q2 2027 168 22
+Phase 2 223 Q4 2026 Q4 2028 173 20
+Extended pipeline (2025 -
+2030) 2,410
+Truncated pipeline (2025-
+2027) 2,015
+…….forecasted pipeline continued and shortened
+Sum-of-the-parts valuation [mPLN]
+Value of properties in the pipeline (till
+2027) 10,328
+All-in pipeline costs (till 2027) 8,135
+Terminal value (beyond 2027) 5,790
+Total 7,982
+Present value of total 5,720
+Estimated value of secured land bank 1,011
+Enterprise value 6,732
+Net debt 319
+Equity value 6,412
+Price per share PLN 248
+SOTP Valuation summary
+Annex 32 – Project pipeline (2024-2031)
+Source: Team analysis
+[PAGE 21]
+Annex 33 – Profit and Loss statement (2019-2030)
+Annex 34 – Balance sheet (2019-2030)
+Annex 35 – Cash flow statement (2019-2030)
+Balance Sheet (PLNm) 2019A 2020A 2021A 2022A 2023A 2024E 2025F 2026F 2027F 2028F 2029F 2030F
+Fixed and intangible assets 63 61 79 100 101 103 106 109 111 114 117 120
+Non-operational assets 57 11 67 133 145 145 145 145 145 145 145 145
+Total non-current assets 120 72 146 232 246 248 251 253 256 259 262 265
+Inventories 2 510 2 424 3 025 3 443 3 837 4 472 4 709 4 995 5 167 5 491 5 669 5 742
+Receivables 63 118 68 91 88 108 120 127 130 136 143 148
+Other current assets 5 5 5 8 77 9 11 11 11 12 13 13
+Cash and Cash Equivalents 253 586 607 304 286 401 540 510 571 523 606 660
+Total current assets 2 831 3 132 3 705 3 845 4 289 4 990 5 379 5 643 5 879 6 162 6 431 6 563
+Total assets 2 950 3 204 3 851 4 078 4 535 5 238 5 630 5 896 6 135 6 421 6 693 6 828
+Total shareholders' equity 1 084 1 157 1 249 1 413 1 450 1 654 1 808 1 930 2 053 2 172 2 295 2 407
+Long-term & short-term debt 571 485 484 478 654 720 801 835 828 823 833 814
+Other long-term liabilities 68 75 106 80 108 108 108 108 108 108 108 108
+Accruals and provisions 37 50 64 71 82 96 106 113 116 120 127 131
+Account payables 356 326 392 483 509 595 671 713 738 779 832 869
+Deferred income 834 1 111 1 556 1 551 1 734 2 066 2 135 2 199 2 292 2 419 2 498 2 498
+Total Liabilities 1 866 2 047 2 602 2 665 3 086 3 585 3 822 3 967 4 082 4 249 4 399 4 421
+Total equity & liabilities 2 950 3 204 3 851 4 078 4 535 5 238 5 630 5 896 6 135 6 421 6 693 6 828
+Cash flow statement (PLNm) 2019A 2020A 2021A 2022A 2023A 2024E 2025F 2026F 2027F 2028F 2029F 2030F
+Profit before tax 320 379 405 513 573 585 740 743 749 744 748 732
+Depreciation 15 15 15 17 21 21 21 22 23 23 24 24
+Working capital investment &
+Non-cash adjustments (87) 390 40 (216) (179) (154) (94) (182) (53) (158) (48) (36)
+Interest cost / income 9 13 14 9 10 74 12 12 12 12 12 12
+Cash flow from operating
+activities 258 796 475 322 425 526 679 594 730 621 736 732
+Interest paid and received (14) (14) (12) (9) (10) (74) (12) (12) (12) (12) (12) (12)
+Income tax (82) (103) (69) (110) (147) (111) (141) (141) (142) (141) (142) (139)
+Net cash flow from operating
+activities 162 679 394 204 268 341 527 441 576 468 582 581
+Net cash flow from investing
+activities (18) (38) (66) (216) (16) (23) (24) (25) (25) (26) (27) (27)
+Change in interest-bearing debt 50 (75) (59) (31) 149 66 82 34 (7) (6) 11 (20)
+Proceeds from issue of shares /
+(Dividends) (223) (234) (246) (260) (419) (323) (419) (480) (483) (484) (483) (481)
+Net cash flow from financing
+activities (174) (309) (306) (291) (270) (257) (338) (447) (490) (489) (472) (500)
+Increase / (decrease) in net cash
+and cash equivalents  (29) 332 21 (303) (18) 61 165 (30) 61 (48) 83 54
+Cash and cash equivalents –
+opening balance 282 253 586 607 304 286 347 512 482 543 495 578
+Cash and cash equivalents –
+closing balance 253 586 607 304 286 347 512 482 543 495 578 632
+Income Statement (PLNm) 2019A 2020A 2021A 2022A 2023A 2024E 2025F 2026F 2027F 2028F 2029F 2030F
+Total revenue 1,662 1,815 1,897 2,419 2,550 3,028 3,415 3,585 3,691 3,848 4,061 4,193
+COGS (1,162) (1,236) (1,272) (1,664) (1,735) (2,055) (2,313) (2,462) (2,553) (2,702) (2,892) (3,028)
+Gross profit 500 579 625 756 815 974 1,103 1,123 1,138 1,146 1,169 1,165
+OPEX (164) (177) (196) (237) (236) (294) (330) (347) (355) (367 ) (385) (397)
+EBITDA 336 401 429 519 579 680 773 777 783 779 784 769
+Depreciation (15) (15) (16) (18) (21) (21) (21) (22) (23) (23) (24) (24)
+EBIT 321 386 413 502 558 659 751 755 761 756 760 744
+Interest expense (0) (8) (8) 11 15 (8) (12) (12) (12) (12) (12) (12)
+EBT 320 379 405 513 573 651 740 743 749 744 748 732
+Income tax expense (64) (76) (80) (102) (113) (124) (141) (141) (142) (141) (142) (139)
+Net profit 256 302 325 410 460 527 599 601 607 602 606 593
+Annex 36 – Sources
+• Bloomberg Terminal. Dom Development (DOM:WSE) ESG Data. Accessed January 2025.
+• Damodaran, Aswath. Cost of Capital by Country and Industry. Stern School of Business, NYU, 2024.
+• Dom Development. ESG Strategy 2030. Warsaw: Dom Development S.A., 2021.
+• Dom Development. Non-financial Report 2022. Warsaw: Dom Development S.A., 2022.
+• Dom Development. Non-financial Report 2023. Warsaw: Dom Development S.A., 2023.
+• Dom Development. SPRAWOZDANIE RADY NADZORCZEJ O WYNAGRODZENIACH CZŁONKÓW ZARZĄDU I RADY NADZORCZEJ DOM DEVELOPMENT S.A. ZA ROK 2023. Warsaw: Dom Development
+S.A. Fred. (n.d.). https://fred.stlouisfed.org/categories/22. Date accessed: 20.01.2025.
+• GoWork.pl (n.d.). https://www.gowork.pl. Date accessed: 20.01.2025.
+• Greenomy. EU Taxonomy Alignment: 5 Steps for Non-Financial Corporates. (n.d.). https://www.greenomy.io/blog/eu-taxonomy-alignment .
+• GUS (Polish Central Statistical Office). Polish Housing Market Data, 2023. Warsaw: GUS, 2023.
+• LinkedIn. (n.d.). https://www.linkedin.com/. Date accessed: 20.01.2025.
+• Michaelides, Callia. March 2021. ESG in business valuations. KPMG Cyprus.
+• Morningstar: Sustainalytics. (n.d.) Company ESG Risk Ratings. Sustainalytics.https://www.sustainalytics.com/esg-ratings. Date accessed: 20.01.2025.
+• SASB STANDARDS (n.d.). Sustainable Industry Classification System. The IFRS Foundation. https://sasb.ifrs.org/. Date accessed: 20.01.2025.
+• Sevva. (n.d.). https://sevva.ai/page/company-profile/Dom%20Development%20SA. Date accessed: 20.01.2025.
+• Statista (n.d.). https://www.statista.com/login/campus/. Date accessed: 20.01.2025.
+• Sustainalytics. Dom Development ESG Risk Rating Report. Amsterdam: Sustainalytics, 2024.
+• S&P Capital IQ
+• Large language models such as OpenAI were used to proofread and ensure proper language usage and coherence only. All analysis, valuation, graphs, content, conclusions, and opinions remain
+those of the authors of the report.
+Source: Team analysis
+Source: Team analysis
+Source: Team analysis
+Source: Team analysis

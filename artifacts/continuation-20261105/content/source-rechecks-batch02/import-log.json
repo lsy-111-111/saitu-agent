@@ -1,0 +1,153 @@
+{
+  "independentReview": false,
+  "note": "Original source bytes and extraction only; no approval or semantic verification implied",
+  "sources": [
+    {
+      "sourceId": "4c-rules-2026",
+      "url": "https://jsjds.blcu.edu.cn/gyds1/csyq.htm",
+      "path": "/Users/jiumian/Desktop/工作/小程序/saitu-agent/artifacts/continuation-20261105/content-review-a2/live-originals/4c-rules-2026-curl.html",
+      "sha256": "b07a0de3980ba4da9efb6813a969cbfd614b1763dad0499f2d639935e27993a0",
+      "bytes": 25477,
+      "retrievedAt": "2026-11-05T16:55:19.771507+00:00",
+      "importedSourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/b07a0de3980ba4da9efb6813a969cbfd614b1763dad0499f2d639935e27993a0.html",
+      "importedBodyArtifact": "artifacts/v6/content-research/frozen-source-text/44b70fb32bccbf8b62253fdb09354a6ea861aa4eb39d2b71304dc5f28caf54f6.txt",
+      "bodySha256": "44b70fb32bccbf8b62253fdb09354a6ea861aa4eb39d2b71304dc5f28caf54f6"
+    },
+    {
+      "sourceId": "4c-submission-2026",
+      "url": "https://jsjds.blcu.edu.cn/info/1045/2013.htm",
+      "path": "/Users/jiumian/Desktop/工作/小程序/saitu-agent/artifacts/continuation-20261105/content-review-a2/live-originals/4c-submission-2026-curl.html",
+      "sha256": "e3f819300678bb5142fb57274802f0384542f12ca2a13c6cacba70bfa5b8e16a",
+      "bytes": 15285,
+      "retrievedAt": "2026-11-05T16:55:19.771832+00:00",
+      "importedSourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/e3f819300678bb5142fb57274802f0384542f12ca2a13c6cacba70bfa5b8e16a.html",
+      "importedBodyArtifact": "artifacts/v6/content-research/frozen-source-text/588eb77d6a9742549dc60e8ed6300ef6e39c1b351ae73902d66f2335acdc3e26.txt",
+      "bodySha256": "588eb77d6a9742549dc60e8ed6300ef6e39c1b351ae73902d66f2335acdc3e26"
+    },
+    {
+      "sourceId": "advertising-aliyun-brief-2026",
+      "url": "https://www.sun-ada.net/home/zt_xqs3026.html",
+      "path": "/Users/jiumian/Desktop/工作/小程序/saitu-agent/artifacts/continuation-20261105/content-review-a2/live-originals/advertising-aliyun-brief-2026.html",
+      "sha256": "8d4c98ec1a7a9a6068b557a08e035ca5804205ad57b348f5230309de3235a1d8",
+      "bytes": 64469,
+      "retrievedAt": "2026-11-05T16:48:24.899018+00:00",
+      "importedSourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/8d4c98ec1a7a9a6068b557a08e035ca5804205ad57b348f5230309de3235a1d8.html",
+      "importedBodyArtifact": "artifacts/v6/content-research/frozen-source-text/077aaf2e2a9c0b17d23834abf6de54b1740b045ef179a2efd539e90cc3f49e18.txt",
+      "bodySha256": "077aaf2e2a9c0b17d23834abf6de54b1740b045ef179a2efd539e90cc3f49e18"
+    },
+    {
+      "sourceId": "advertising-guide-2026",
+      "url": "https://www.sun-ada.net/home/about_intrs2.html",
+      "path": "/Users/jiumian/Desktop/工作/小程序/saitu-agent/artifacts/continuation-20261105/content-review-a2/live-originals/advertising-guide-2026.html",
+      "sha256": "6e3255aa663a7c4771be1914604ac7442b2c0bde506c7ad2ec3ab7b95465c526",
+      "bytes": 90038,
+      "retrievedAt": "2026-11-05T16:48:25.447798+00:00",
+      "importedSourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/6e3255aa663a7c4771be1914604ac7442b2c0bde506c7ad2ec3ab7b95465c526.html",
+      "importedBodyArtifact": "artifacts/v6/content-research/frozen-source-text/f5b5f1b6c3d47c8e5d1b492c8e2a4ea7e8d3903e4f9d4a7bb5d3518dfc38be77.txt",
+      "bodySha256": "f5b5f1b6c3d47c8e5d1b492c8e2a4ea7e8d3903e4f9d4a7bb5d3518dfc38be77"
+    },
+    {
+      "sourceId": "cmc-c5-zjut-rules",
+      "url": "https://www.soft.zjut.edu.cn/170.html",
+      "path": "/Users/jiumian/Desktop/工作/小程序/saitu-agent/artifacts/continuation-20261105/content-review-a2/live-originals/cmc-c5-zjut-rules-curl.html",
+      "sha256": "2df5b570123f404b60978d141b2e45d1d295b6d64a7c2c163b17417fc872134a",
+      "bytes": 22574,
+      "retrievedAt": "2026-11-05T16:55:19.366219+00:00",
+      "importedSourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/2df5b570123f404b60978d141b2e45d1d295b6d64a7c2c163b17417fc872134a.html",
+      "importedBodyArtifact": "artifacts/v6/content-research/frozen-source-text/d9f77aa7f98c6df7c8fef731bb04925956cf02b0fa95e485d15bb816a76e242b.txt",
+      "bodySha256": "d9f77aa7f98c6df7c8fef731bb04925956cf02b0fa95e485d15bb816a76e242b"
+    },
+    {
+      "sourceId": "geography-2026-notice",
+      "url": "https://www.gsc.org.cn/gsc/xueshuDetail.html?contentId=2318&id=56",
+      "path": "/Users/jiumian/Desktop/工作/小程序/saitu-agent/artifacts/continuation-20261105/content-review-a2/live-originals/geography-2026-notice-curl.html",
+      "sha256": "c2bea03bcfd75c65cdc84d347c041b84f09788d5cf3364f702807f37ce9414ac",
+      "bytes": 29876,
+      "retrievedAt": "2026-11-05T16:55:19.024135+00:00",
+      "importedSourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/c2bea03bcfd75c65cdc84d347c041b84f09788d5cf3364f702807f37ce9414ac.html",
+      "importedBodyArtifact": "artifacts/v6/content-research/frozen-source-text/ddee78d3c41a6ed6bd58b1f8bb064644838ee28440f67d28d79e06aba88c702d.txt",
+      "bodySha256": "ddee78d3c41a6ed6bd58b1f8bb064644838ee28440f67d28d79e06aba88c702d"
+    },
+    {
+      "sourceId": "market-czu-2027",
+      "url": "https://www.czu.cn/2026/1008/c6a178011/page.htm",
+      "path": "/Users/jiumian/Desktop/工作/小程序/saitu-agent/artifacts/continuation-20261105/content-review-a2/live-originals/market-czu-2027.html",
+      "sha256": "45f2d01e9e699b86447489e9913220c1ad1b576a387709b529b037d47dcbbec7",
+      "bytes": 48570,
+      "retrievedAt": "2026-11-05T16:48:25.632451+00:00",
+      "importedSourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/45f2d01e9e699b86447489e9913220c1ad1b576a387709b529b037d47dcbbec7.html",
+      "importedBodyArtifact": "artifacts/v6/content-research/frozen-source-text/d11f4bf2fee693745c22adb4c9e37da135056f415385853760b1129053d658d8.txt",
+      "bodySha256": "d11f4bf2fee693745c22adb4c9e37da135056f415385853760b1129053d658d8"
+    },
+    {
+      "sourceId": "testing-2025-rules",
+      "url": "https://cie.hsu.edu.cn/_upload/article/files/4c/cd/ec4c409b42b8935c13cb0fef7ba8/e2b38fc7-deaf-46d0-9613-46b6146fbb73.pdf",
+      "path": "/Users/jiumian/Desktop/工作/小程序/saitu-agent/artifacts/continuation-20261105/content-review-a2/live-originals/testing-2025-rules-curl.pdf",
+      "sha256": "670d6ddedce4f3a0bf2c88af0ba9454630d56e67b5c57c2066eb872c9c920a1e",
+      "bytes": 335856,
+      "retrievedAt": "2026-11-05T16:55:19.052907+00:00",
+      "importedSourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/670d6ddedce4f3a0bf2c88af0ba9454630d56e67b5c57c2066eb872c9c920a1e.pdf",
+      "importedBodyArtifact": "artifacts/v6/content-research/frozen-source-text/7524a34a7e3a8df2f5952e67d19f43b7a48e3e6b85b73b40886df7cc462924b1.txt",
+      "bodySha256": "7524a34a7e3a8df2f5952e67d19f43b7a48e3e6b85b73b40886df7cc462924b1"
+    },
+    {
+      "sourceId": "testing-2025-track",
+      "url": "https://cie.hsu.edu.cn/_upload/article/files/4c/cd/ec4c409b42b8935c13cb0fef7ba8/58ec3abc-b3c4-4e96-884b-68355b624244.pdf",
+      "path": "/Users/jiumian/Desktop/工作/小程序/saitu-agent/artifacts/continuation-20261105/content-review-a2/live-originals/testing-2025-track-curl.pdf",
+      "sha256": "af7caac1d89d2186a792f4dab3286716295d075d84357ca8c24bbfd8452a1232",
+      "bytes": 189646,
+      "retrievedAt": "2026-11-05T16:55:18.981063+00:00",
+      "importedSourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/af7caac1d89d2186a792f4dab3286716295d075d84357ca8c24bbfd8452a1232.pdf",
+      "importedBodyArtifact": "artifacts/v6/content-research/frozen-source-text/59313caa0d412f6d9140388919d49bc91f8d8349329bb6b17ed57f31f89e3bd3.txt",
+      "bodySha256": "59313caa0d412f6d9140388919d49bc91f8d8349329bb6b17ed57f31f89e3bd3"
+    },
+    {
+      "sourceId": "igem-2025-hkust-model",
+      "url": "https://2025.igem.wiki/hkust/model",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/igem-model.html",
+      "status": "200",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:10:35.516302+00:00",
+      "importedSourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/43ac4d99fdaf07521e20cae33dedee8f2ecae59100c1752c28c643e65388934d.html",
+      "importedBodyArtifact": "artifacts/v6/content-research/frozen-source-text/ee804f87805796fef92dbd5e7594a02ff835beb9fe5c07be306846f3ff19dc7a.txt",
+      "sha256": "43ac4d99fdaf07521e20cae33dedee8f2ecae59100c1752c28c643e65388934d",
+      "bodySha256": "ee804f87805796fef92dbd5e7594a02ff835beb9fe5c07be306846f3ff19dc7a"
+    },
+    {
+      "sourceId": "psychology-2026-notice",
+      "url": "https://jwb.bnuzh.edu.cn/docs/2026-03/94468b7ed4ae4ab3b1610a3dd0360737.pdf",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/psychology-2026-notice.pdf",
+      "status": "200",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:10:35.516484+00:00",
+      "importedSourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/e89de114231e9e64be1f50e9ecc0a3e58508f6df781687a0faf7bafa8bd3a7d0.pdf",
+      "importedBodyArtifact": "artifacts/v6/content-research/frozen-source-text/32eab0dec9fb97f5687110933cbe9aaa443f048f07f06fdebae0ec7f9e2488e4.txt",
+      "sha256": "e89de114231e9e64be1f50e9ecc0a3e58508f6df781687a0faf7bafa8bd3a7d0",
+      "bodySha256": "32eab0dec9fb97f5687110933cbe9aaa443f048f07f06fdebae0ec7f9e2488e4"
+    },
+    {
+      "sourceId": "datajournalism-2026-hainan",
+      "url": "https://webplus.hainnu.edu.cn/_s58/2026/0515/c2514a165201/page.psp",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/datajournalism-2026-hainan.html",
+      "status": "200",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:10:35.516485+00:00",
+      "importedSourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/571555789d380d0c6e39c6861255cf83127d8e552fe1e8ae9232ec61481db548.html",
+      "importedBodyArtifact": "artifacts/v6/content-research/frozen-source-text/18e75b30742c6e3c02ad4a66ca719ee371bbef35010c611894aa18980071105f.txt",
+      "sha256": "571555789d380d0c6e39c6861255cf83127d8e552fe1e8ae9232ec61481db548",
+      "bodySha256": "18e75b30742c6e3c02ad4a66ca719ee371bbef35010c611894aa18980071105f"
+    },
+    {
+      "sourceId": "cvma-vocational-2026",
+      "url": "https://www.cvma.org.cn/6848/202604/73246.html",
+      "path": "artifacts/continuation-20261105/content/source-rechecks-batch02/cvma-vocational-2026.html",
+      "status": "200",
+      "error": "",
+      "retrievedAt": "2026-11-05T17:10:35.516486+00:00",
+      "importedSourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/a97846162f243e5a62867d5f3f8743c20d22008ed1ee24b9e2e39ee0baa14ef0.html",
+      "importedBodyArtifact": "artifacts/v6/content-research/frozen-source-text/38120843a8cf4428e6ea917d6e8de6457680ac7efc41cd6bcb1896c79b1c327a.txt",
+      "sha256": "a97846162f243e5a62867d5f3f8743c20d22008ed1ee24b9e2e39ee0baa14ef0",
+      "bodySha256": "38120843a8cf4428e6ea917d6e8de6457680ac7efc41cd6bcb1896c79b1c327a"
+    }
+  ]
+}

@@ -450,11 +450,42 @@ pm2_as_app() {
     PATH=/opt/nodejs/current/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin "$@"
 }
 
+drain_previous_worker_for_legacy() {
+  local active_release=$1 previous_release=$2 previous_port=$3 worker_name worker_pid deadline
+  [ ! -f "$RELEASE_ROOT/$active_release/scripts/competitions/v7/worker-entry.ts" ] || return 0
+  [ "$previous_release" != none ] || return 0
+  [ -f "$RELEASE_ROOT/$previous_release/scripts/competitions/v7/worker-entry.ts" ] || return 0
+  worker_name="resume-ai-worker-$previous_port"
+  worker_pid="$(pm2_as_app pm2 pid "$worker_name")"
+  [ "$worker_pid" != 0 ] || return 0
+  [[ "$worker_pid" =~ ^[1-9][0-9]*$ ]] || fail "legacy rollback worker PID is missing or ambiguous"
+  deadline=$((SECONDS + 105))
+  # current already points at legacy: prohibit new stages, but let any paid
+  # response settle. Never force-delete a worker with unobserved in-flight work.
+  until root_node -e '
+    const fs=require("node:fs"),path=require("node:path");
+    const [release,pid,active]=process.argv.slice(1),file=`/var/cache/resume-ai/${path.basename(release)}/decision-worker-health.json`;
+    const stat=fs.lstatSync(file);if(!stat.isFile()||stat.isSymbolicLink()||stat.nlink!==1||(stat.mode&63)!==0)process.exit(2);
+    const value=JSON.parse(fs.readFileSync(file,"utf8")),manifest=JSON.parse(fs.readFileSync(`${release}/dist/decision-worker/manifest.json`,"utf8")),age=Date.now()-Date.parse(value.updatedAt);
+    if(fs.realpathSync("/opt/resume-ai/current")!==active||value.schemaVersion!=="saitu.worker-health.v7"||value.releaseDirectory!==release||value.sourceSha256!==manifest.sourceSha256||value.pid!==Number(pid)||value.status!=="paused"||value.inFlight!==0||value.databaseReady!==true||!Number.isFinite(age)||age< -2000||age>10000)process.exit(2);
+    process.kill(Number(pid),0);
+  ' "$RELEASE_ROOT/$previous_release" "$worker_pid" "$RELEASE_ROOT/$active_release" >/dev/null 2>&1; do
+    [ "$SECONDS" -lt "$deadline" ] || fail "legacy rollback is incomplete: worker drain was not verified; worker retained"
+    sleep 1
+  done
+  pm2_as_app pm2 delete "$worker_name" >/dev/null
+  pm2_as_app pm2 save >/dev/null
+  chmod 0600 "$PM2_HOME/dump.pm2"
+  sync -f "$PM2_HOME/dump.pm2"
+  sync -f "$PM2_HOME"
+}
+
 start_release_process() {
   local release=$1
   local port=$2
   local process_name="resume-ai-$port"
   pm2_as_app pm2 delete "$process_name" >/dev/null 2>&1 || true
+  pm2_as_app pm2 delete "resume-ai-worker-$port" >/dev/null 2>&1 || true
   pm2_as_app env APP_RELEASE_DIR="$RELEASE_ROOT/$release" APP_PORT="$port" \
     APP_PROCESS_NAME="$process_name" pm2 start \
     "$RELEASE_ROOT/$release/ops/pm2/ecosystem.config.cjs" --update-env >/dev/null
@@ -633,6 +664,7 @@ EOF
   mv -f -- "$state_temp" "$STATE_FILE"
   sync -f "$STATE_FILE"
   sync -f "$STATE_DIR"
+  drain_previous_worker_for_legacy "$active_release" "$previous_release" "$previous_port"
   nginx -t
   if systemctl is-active --quiet nginx; then systemctl reload nginx; fi
 }
@@ -655,6 +687,7 @@ if [ "$PHASE" = state_committed ] && [ -f "$STATE_FILE" ]; then
     authorize_database_for_release "$NEW_RELEASE"
     start_release_process "$NEW_RELEASE" "$NEW_PORT"
     wait_for_release "$NEW_PORT" "$NEW_RELEASE"
+    drain_previous_worker_for_legacy "$NEW_RELEASE" "$NEW_PREVIOUS_RELEASE" "$NEW_PREVIOUS_PORT"
     persist_pm2
     ALLOW_PENDING_TRANSACTION=1 "$SCRIPT_DIR/verify-release-consistency.sh" \
       "$STATE_FILE" >/dev/null
@@ -729,6 +762,7 @@ else
   authorize_database_for_release "$OLD_ACTIVE_RELEASE"
   start_release_process "$OLD_ACTIVE_RELEASE" "$OLD_ACTIVE_PORT"
   pm2_as_app pm2 delete "resume-ai-$NEW_PORT" >/dev/null 2>&1 || true
+  pm2_as_app pm2 delete "resume-ai-worker-$NEW_PORT" >/dev/null 2>&1 || true
   if [ "$OLD_PREVIOUS_RELEASE" != none ]; then
     start_release_process "$OLD_PREVIOUS_RELEASE" "$OLD_PREVIOUS_PORT"
   fi

@@ -1,0 +1,32 @@
+{
+  "createdAt": "2026-11-05T13:05:01.802937+00:00",
+  "independentReview": false,
+  "sources": [
+    {
+      "sourceId": "chi-d1-2025-rules",
+      "url": "https://chi2025.acm.org/for-authors/student-research-competition/",
+      "retrievedAt": "2026-11-05T13:04:59.090321+00:00",
+      "independentReview": false,
+      "status": "captured_bytes_not_verified",
+      "finalUrl": "https://chi2025.acm.org/for-authors/student-research-competition/",
+      "sha256": "5c956eb98084849dd76935d1475a8e5e5a8f27dfd646bfddbb39048f621263bc",
+      "bytes": 73856,
+      "contentType": "text/html; charset=UTF-8",
+      "artifact": "artifacts/v6/content-research/source-byte-snapshots/5c956eb98084849dd76935d1475a8e5e5a8f27dfd646bfddbb39048f621263bc.html",
+      "limitation": "HTTP success or a byte digest does not establish that a document is a usable rule or that facts are true; reviewers must open and read it."
+    },
+    {
+      "sourceId": "chi-d1-chemlab-work",
+      "url": "https://kimsieun.com/pdfs/chemlabplanner.pdf",
+      "retrievedAt": "2026-11-05T13:04:59.090653+00:00",
+      "independentReview": false,
+      "status": "captured_bytes_not_verified",
+      "finalUrl": "https://kimsieun.com/pdfs/chemlabplanner.pdf",
+      "sha256": "5ae130f922bb36480e7b2b66ea893466fa7a3b124cad9d894e08f993bb8e1e01",
+      "bytes": 2454139,
+      "contentType": "application/pdf",
+      "artifact": "artifacts/v6/content-research/source-byte-snapshots/5ae130f922bb36480e7b2b66ea893466fa7a3b124cad9d894e08f993bb8e1e01.pdf",
+      "limitation": "HTTP success or a byte digest does not establish that a document is a usable rule or that facts are true; reviewers must open and read it."
+    }
+  ]
+}

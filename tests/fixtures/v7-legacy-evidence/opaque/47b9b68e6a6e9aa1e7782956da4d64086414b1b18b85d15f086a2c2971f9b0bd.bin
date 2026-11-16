@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "saitu.legacy-historical-integrity.v7.1",
+  "goldFreezeStatus": "failed_preserved",
+  "goldFreezeMismatches": [
+    {
+      "path": "tests/competitions/scoring-gold-audit.test.ts",
+      "expectedSha256": "6520a36da238e02a46d95fae4c63c3007b61424b968c8ba0fc491b548ddd84ad",
+      "archivedActualSha256": "9644a50efa2199528e3de349ab40304a7e86b9545b73c0e2e06a4800abca3330"
+    },
+    {
+      "path": "tests/competitions/followup-gold-audit.test.ts",
+      "expectedSha256": "2538c418bd782ccbfedbf615ee0805d6219e4d55a95ae3e8e5d2a6161a775abb",
+      "archivedActualSha256": "af12fbbc3507170e8d7568419f7e6e86f658f56b0bd6e40b15d9ce1aa449faa2"
+    },
+    {
+      "path": "tests/competitions/quality-benchmark.test.ts",
+      "expectedSha256": "c9c461f073ea86912a92dce8c8a2132721b83bf1ca77c7a9152633fad0b9f5e8",
+      "archivedActualSha256": "464a277dab9dc2dd148ad1e26e0edb9c22ca6771081c3996cde8ff46b65fd069"
+    },
+    {
+      "path": "tests/competitions/qualification-status-audit.test.ts",
+      "expectedSha256": "9584146f4b54b8701da2862bd7af5840dae4a7b350e30ab0448225a7b66535f8",
+      "archivedActualSha256": "554e658e9f4ceebd9045e2fffdc69529a285fa284d9e42390ef0be61bf155e59"
+    },
+    {
+      "path": "tests/competitions/recommendation-quality.test.ts",
+      "expectedSha256": "0a2a0e0a7d5405aa52352d521908dc4589f45b1b0d6b916a91868b6cb7c5e9c5",
+      "archivedActualSha256": "21d4c64037653ce6a02e968d8a02b28ec5c6b387ccd896bd1f096ff9e0fbcf02"
+    },
+    {
+      "path": "tests/competitions/strict-baseline-acceptance.test.ts",
+      "expectedSha256": "ed0fd1e9a85b911acb9794c6689dcf0e733145da0e7e5a6e6e337bac34334b0b",
+      "archivedActualSha256": "b3acb3a32a08f7b65faa0d9c9e9c463c0886ba3e0e78e3126c466c3d2c740c18"
+    },
+    {
+      "path": "tests/ai/competition-clarify-context.test.ts",
+      "expectedSha256": "7fb965ef3dbd321089bf496581cbc41d1ebe8f6ae79d0e3fc94a860deacd8bde",
+      "archivedActualSha256": "ae4b07e73ac7f63a2063ab48ca3044518291001f7663330eec76680e70cc3ce9"
+    },
+    {
+      "path": "tests/ai/competition-recommend-route.test.ts",
+      "expectedSha256": "c1e902569f83a67b5ed1b3c467e663aa8141e2ad8ef1ced009bc40660d89933b",
+      "archivedActualSha256": "3f63166c582ed3b31875f8aa3b0048ca68ea64339477315691d5a872bb46de45"
+    },
+    {
+      "path": "tests/ai/deepseek-live.test.ts",
+      "expectedSha256": "64e3e26faa1390ed9113302874ac19216fff8b9dc105a6fd77c1a2158f409354",
+      "archivedActualSha256": "1b90e8b237d5b3f78fed1f821b50d84542cafb380117f1769040abea5c804f9f"
+    },
+    {
+      "path": "tests/competitions/gold-freeze-manifest.test.ts",
+      "expectedSha256": "80e2cfa47ef3613c453e756a77acd6da54c20f9fe8cd31df988fb1e8fe013256",
+      "archivedActualSha256": "8703362b8c1122085216f27f06836f6e07df02b5dd345a831223e5d3b30dd0fd"
+    },
+    {
+      "path": "package.json",
+      "expectedSha256": "d1af29380ea26fc3057eee45150b217f6d8163fee6625e293ac8796346cef488",
+      "archivedActualSha256": "9cc16eab9219c3f1f6c944dcdf1cd8c13f2e9d2eadd297dcfc2cd195bca70260"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "expectedSha256": "528fe4316b80f1cdc3665303b967d25fc01b43f55cde03a1b9eb4693bc362db7",
+      "archivedActualSha256": "e2c3672ee797b690bba9f39ba9cb45ba55d13ed8b927bc392e67502309d4b0b9"
+    },
+    {
+      "path": "vitest.config.ts",
+      "expectedSha256": "0afd980d2e576ff96bcdfd1a990445c0e1812c07ecbafd4ddf269e34b58caa53",
+      "archivedActualSha256": "a32d057bc2e6fd44bb7b9e0df656794f6bd176bfa7232f4a5ac090ff4b9422a5"
+    },
+    {
+      "path": "tsconfig.json",
+      "expectedSha256": "e476b123244f956a4ee9f86fd76fc6dc305ad6c1370108c36044805c70253009",
+      "archivedActualSha256": "b61e141617f687fb9265b8c4a14483beea51e453837dd29191bd37562564a205"
+    }
+  ],
+  "prospectiveBaselineStatus": "failed_preserved",
+  "prospectiveSourceMismatches": [
+    {
+      "path": "src/components/competitions/recommend/questionContent.ts",
+      "expectedSha256": "c9109b8f2ad3264add4aaddeb6e3f14c97a45ed6811dcb9e4718350f1f943c63",
+      "archivedActualSha256": "19cd35b8157e3836be5bc3a983f84849f339401953526549e2aa4c6bf2b432de"
+    },
+    {
+      "path": "src/content/competition-documented-tracks.ts",
+      "expectedSha256": "f277b9621d02bac15e638727c36bc64a9366e0952ad6fa4213dca038aac6928d",
+      "archivedActualSha256": "e226a23cae91801a3ff0cfe79dde7a110e451d0710f3b68d697dc01ecc04a4e1"
+    },
+    {
+      "path": "src/content/competition-expansion.ts",
+      "expectedSha256": "c7fa7713a0b92265d892b08ab44194ce2745f066525d7bd3d5d3ba195d995084",
+      "archivedActualSha256": "c624a35121f9109b323266e17d9958be9a33397a11fdca0b7a4e0e23b62f0db2"
+    },
+    {
+      "path": "src/content/competition-fact-sheets.json",
+      "expectedSha256": "9525eb31b450437db03057250bb150a2a1e8bac933197ced694c82017134828b",
+      "archivedActualSha256": "41d66770a4cb7b5092239c836d3d851cf08d4db850256c4b76a9f0753200a312"
+    },
+    {
+      "path": "src/content/competitions.ts",
+      "expectedSha256": "13f48071046bb8c8aac1ca5b3bf7736f06c7917aab55370fed0279350dca0cb0",
+      "archivedActualSha256": "d228bf322d040ef72c316912fb4321bbff9aedadf01921c1eac57042cc51090e"
+    },
+    {
+      "path": "src/lib/competitions/decision-fit.ts",
+      "expectedSha256": "e8be1164675400767642ed0de55eccdb73dd514ac98db20969e14d6f9b252b1e",
+      "archivedActualSha256": "6b4a4df9105f3b8c1a9cb3bee10ec6f63fac719efec32b614197e2a21b3aea0c"
+    },
+    {
+      "path": "src/lib/competitions/scoring.ts",
+      "expectedSha256": "f22b2899079977c701fa21369a5d5cbdb57e32b6be2cfea45bead8326caa8cb7",
+      "archivedActualSha256": "472fe9f6bb5206cab5985f90765ba4c05961605651254395f1bfea9dafe0240d"
+    },
+    {
+      "path": "src/lib/competitions/v6/catalog-types.ts",
+      "expectedSha256": "8b10d14434152bc2cdbac7fadf2382b588e6d5324921430bd5a85a02a40b04e6",
+      "archivedActualSha256": "11bcd4e5bf41259ee1e13e4321bf6d0f8e8dc20d2d73cccb334456e40c2ba336"
+    },
+    {
+      "path": "src/lib/competitions/v6/contracts.ts",
+      "expectedSha256": "f6644829dba1161b01faacdfffc6977ada24f9eb6bff7befe1de79aff3580ad5",
+      "archivedActualSha256": "6c9b7be2e2a980bf14a41dd0bba4f329fb6fea6f0cda97465c7a6c51224d5741"
+    },
+    {
+      "path": "src/lib/competitions/v6/experience-fit.ts",
+      "expectedSha256": "1a513790090051612871e7926bdb2039d8c11ed54b0bc621034fe57bc5e5a973",
+      "archivedActualSha256": "d20ca6a0a9919422bf9a389736eff83aaefd9f26dc4f966eae0a2cee570273a6"
+    },
+    {
+      "path": "src/types/competition-recommendation.ts",
+      "expectedSha256": "9d840e99e42476a49fbb22e0da60a1dd1852dc74e8ea7934b684b6551ac7fdaa",
+      "archivedActualSha256": "e7882053cee932cc43d4a1916ca36e5d215340305699448792e5ebd9a97e8470"
+    }
+  ],
+  "historicalHashesRewritten": false
+}

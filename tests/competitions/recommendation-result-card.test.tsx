@@ -106,7 +106,7 @@ describe("recommendation result card", () => {
     expect(html).toContain('href="https://example.com/competition/rules"');
   });
 
-  it("诚实标记参考匹配和资格待核验", () => {
+  it("keeps legacy detail readable while replacing eligibility badges with an official-site reminder", () => {
     const html = renderToStaticMarkup(
       <RecommendationResultCard
         onOpenDetails={vi.fn()}
@@ -128,7 +128,9 @@ describe("recommendation result card", () => {
     );
 
     expect(html).toContain("参考匹配");
-    expect(html).toContain("资格待核验");
+    expect(html).not.toContain("资格待核验");
+    expect(html).toContain("参赛资格和开赛时间请自行核查官网");
+    expect(html).toContain('aria-expanded="false"');
     expect(html).toContain("尚待核实的条件");
   });
 });

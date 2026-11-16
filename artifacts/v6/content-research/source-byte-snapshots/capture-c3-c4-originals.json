@@ -1,0 +1,78 @@
+{
+  "createdAt": "2026-11-05T11:54:02.661Z",
+  "independentReview": false,
+  "sources": [
+    {
+      "sourceId": "lanqiao-c3-rules",
+      "url": "https://webadm.suse.edu.cn/_upload/article/files/db/ce/8c33934f4d00ac940f42f84d62f5/57a90821-ccb9-4ddb-955a-89a8e3a333b3.rar",
+      "finalUrl": "https://webadm.suse.edu.cn/_upload/article/files/db/ce/8c33934f4d00ac940f42f84d62f5/57a90821-ccb9-4ddb-955a-89a8e3a333b3.rar",
+      "retrievedAt": "2026-11-05T11:54:02.611Z",
+      "sha256": "bc58356bb01f436d14f9bce7a9b92070a9363dbe16e4282360449559de1b6531",
+      "artifact": "artifacts/v6/content-research/source-byte-snapshots/bc58356bb01f436d14f9bce7a9b92070a9363dbe16e4282360449559de1b6531.rar",
+      "bytes": 1829923,
+      "contentType": "application/vnd.rar",
+      "status": "captured_bytes_not_verified",
+      "independentReview": false
+    },
+    {
+      "sourceId": "lanqiao-c3-h",
+      "url": "https://acm.ecnu.edu.cn/contest/515/statements/",
+      "finalUrl": "https://acm.ecnu.edu.cn/contest/515/statements/",
+      "retrievedAt": "2026-11-05T11:54:02.612Z",
+      "sha256": "5f790cfbae199558b808a73b0d6372c6e11aab86ff82d95dabce80627e855b95",
+      "artifact": "artifacts/v6/content-research/source-byte-snapshots/5f790cfbae199558b808a73b0d6372c6e11aab86ff82d95dabce80627e855b95.pdf",
+      "bytes": 150837,
+      "contentType": "application/pdf",
+      "status": "captured_bytes_not_verified",
+      "independentReview": false
+    },
+    {
+      "sourceId": "ccsp-c4-xor",
+      "url": "https://www.ccf.org.cn/ccf/contentcore/resource/download?ID=F43386642EF7A3E5563DD082AC261ED3E17E72083F2FC299A3BD8AB50C7B6EC4",
+      "finalUrl": "https://www.ccf.org.cn/ccf/contentcore/resource/download?ID=F43386642EF7A3E5563DD082AC261ED3E17E72083F2FC299A3BD8AB50C7B6EC4",
+      "retrievedAt": "2026-11-05T11:54:02.657Z",
+      "sha256": "dc84cb993fa0614452c0beae85e50ed1aba52c0119711128d6076f402eeba7e6",
+      "artifact": "artifacts/v6/content-research/source-byte-snapshots/dc84cb993fa0614452c0beae85e50ed1aba52c0119711128d6076f402eeba7e6.zip",
+      "bytes": 63732368,
+      "contentType": "application/zip",
+      "status": "captured_bytes_not_verified",
+      "independentReview": false
+    },
+    {
+      "sourceId": "cmc-c5-rules",
+      "url": "https://statics.scnu.edu.cn/pics/maths/2013/1002/20131002033745685.pdf",
+      "finalUrl": "https://statics.scnu.edu.cn/pics/maths/2013/1002/20131002033745685.pdf",
+      "retrievedAt": "2026-11-05T11:54:02.660Z",
+      "sha256": "589ccaf43ae4b0b8365c70f5a6c8b0317be247f1280bd3529fa9d2efef7e6854",
+      "artifact": "artifacts/v6/content-research/source-byte-snapshots/589ccaf43ae4b0b8365c70f5a6c8b0317be247f1280bd3529fa9d2efef7e6854.pdf",
+      "bytes": 438,
+      "contentType": "application/pdf",
+      "status": "captured_bytes_not_verified",
+      "independentReview": false
+    },
+    {
+      "sourceId": "cmc-c5-paper",
+      "url": "https://math.ecnu.edu.cn/llin/pdf_files/nonmath2011.pdf",
+      "finalUrl": "https://math.ecnu.edu.cn/llin/pdf_files/nonmath2011.pdf",
+      "retrievedAt": "2026-11-05T11:54:02.661Z",
+      "sha256": "97374ed3c4bfa9e0b66be49b21a0b61cba20189263de63bf72131517b992b846",
+      "artifact": "artifacts/v6/content-research/source-byte-snapshots/97374ed3c4bfa9e0b66be49b21a0b61cba20189263de63bf72131517b992b846.pdf",
+      "bytes": 104100,
+      "contentType": "application/pdf",
+      "status": "captured_bytes_not_verified",
+      "independentReview": false
+    },
+    {
+      "sourceId": "cmc-c5-answer",
+      "url": "https://math.ecnu.edu.cn/llin/pdf_files/nonmathans2011.pdf",
+      "finalUrl": "https://math.ecnu.edu.cn/llin/pdf_files/nonmathans2011.pdf",
+      "retrievedAt": "2026-11-05T11:54:02.661Z",
+      "sha256": "c5e541e527e837c84cf719b6461ab3ea9facf0437b7a67e698fa7f5112e33e0e",
+      "artifact": "artifacts/v6/content-research/source-byte-snapshots/c5e541e527e837c84cf719b6461ab3ea9facf0437b7a67e698fa7f5112e33e0e.pdf",
+      "bytes": 119905,
+      "contentType": "application/pdf",
+      "status": "captured_bytes_not_verified",
+      "independentReview": false
+    }
+  ]
+}

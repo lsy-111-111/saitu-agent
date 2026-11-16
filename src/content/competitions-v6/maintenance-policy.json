@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "saitu.catalog-maintenance-policy.v1",
+  "timezone": "Asia/Shanghai",
+  "enabledInProduction": false,
+  "paidModelCallsEnabled": false,
+  "nearDeadlineDays": 7,
+  "tiers": {
+    "near_deadline": { "intervalHours": 12, "reason": "有完整适用证据的报名或提交截止在未来7天内" },
+    "active_or_unresolved": { "intervalHours": 24, "reason": "开放或即将开放报名、届次/报名状态未知，或来源冲突待核" },
+    "current_edition": { "intervalHours": 168, "reason": "当届资料按周复核；不由年份字符串推断开放报名" },
+    "historical": { "intervalCalendarMonths": 3, "reason": "明确历史或已结束资料按日历季度检查" }
+  },
+  "flow": ["discover_source_changes", "field_diff_proposal", "two_isolated_source_reviews", "rules_and_regression_checks", "stage_immutable_snapshot", "activate_after_all_gates"],
+  "automaticFactUpdates": false,
+  "automaticApproval": false,
+  "automaticActivation": false,
+  "sourceUnavailableAction": "retain_unknown_create_review_proposal_never_mark_refreshed",
+  "maximumConcurrentFetches": 2,
+  "maximumSourcesPerManualRun": 20
+}

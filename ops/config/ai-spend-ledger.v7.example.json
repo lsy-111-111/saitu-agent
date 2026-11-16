@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "release-evidence-spend-policy.v7",
+  "runId": "saitu-v7-20261109-formal-00",
+  "phase": "formal",
+  "pgServiceFile": "/etc/resume-ai/ai-spend-ledger.pg_service.conf",
+  "pgService": "saitu_shared_ledger",
+  "limitCny": 1,
+  "fundedCny": 1,
+  "authorization": {
+    "mainRunId": "REPLACE_WITH_EXISTING_MAIN_RUN_ID",
+    "grantVersion": "saitu.v7",
+    "policySha256": "REPLACE_WITH_APPROVED_POLICY_SHA256",
+    "authorizedEffort": "high",
+    "effortConditionSha256": "REPLACE_WITH_EXISTING_BATCH_CONDITION_SHA256",
+    "callLimit": 2,
+    "funding": {
+      "runId": "REPLACE_WITH_LATEST_EXISTING_FUNDING_RUN_ID",
+      "createdAt": "REPLACE_WITH_EXACT_UTC_TIMESTAMP_FROM_DATABASE",
+      "fundingLimitMicros": 1000000,
+      "baselineIdsSha256": "REPLACE_WITH_SHA256_OF_SORTED_BASELINE_UUIDS_JOINED_BY_COMMAS"
+    }
+  }
+}

@@ -1,0 +1,483 @@
+[
+  {
+    "id": "C001",
+    "name": "中国大学生物理学术竞赛 CUPT",
+    "priority": "P1",
+    "decision": "accepted_scoped_existing_record",
+    "sourceUrls": [
+      "https://www.cupt-iypt.com/uploads/allimg/20240430/1-24043011212RZ.pdf",
+      "https://cupt-iypt.com/uploads/allimg/20230905/1-230Z5160KL54.pdf"
+    ],
+    "existingSeriesId": "china-undergraduate-physics-tournament",
+    "discoveryReason": "检索命中 CUPT 规则及 2026 区域赛、2027 校内选拔材料；补物理探究与学术表达方向。需分清校选、区域赛、国赛名额与作品赛，不能直接宣称个人可报国赛。",
+    "verificationStatus": "verified",
+    "checkedAt": "2026-11-06",
+    "findings": [
+      "历史首次检查：原发现PDF本轮返回404，未获取规则正文。",
+      "已复核当前限定范围档案与实际同摘要双审原件：2020 CUPT规则、IYPT2020第6题和2026华北通知的保存正文支持身份及历史物理探究案例。"
+    ],
+    "blockers": [
+      "批准限已列届次/任务/地区档案；不证明下一届或当前可报名。"
+    ],
+    "publishable": true
+  },
+  {
+    "id": "C002",
+    "name": "全国大学生地理科学展示大赛",
+    "priority": "P1",
+    "decision": "priority_verify",
+    "sourceUrls": [
+      "https://www.gsc.org.cn/gsc/xueshuDetail.html?contentId=2318&id=56",
+      "https://www.gsc.org.cn/gsc/zhiKuDetail.html?contentId=2155&id=32"
+    ],
+    "existingSeriesId": "geographical-science-innovation",
+    "discoveryReason": "中国地理学会结果说明原中国高校地理科学展示大赛自第九届更名为全国大学生地理科技创新大赛；应建立新旧名关系，核实本科专业范围与调研成果要求。",
+    "verificationStatus": "partial",
+    "checkedAt": "2026-11-06",
+    "findings": [
+      "历史首次检查：中国地理学会2026通知确认第九届更名为全国大学生地理科技创新大赛。",
+      "本轮目录对账：已有对应结构档案；官方2026通知明确第九届由中国高校地理科学展示大赛更名，并面向地理科学类本科生、院系注册。"
+    ],
+    "blockers": [
+      "更名归同一系列；初审范围L2。两位既有评审仍要求具体完整题/作品方能L3，不能据此强加T08必须L3；发布审批尚未闭环。",
+      "当前结构等级不等于发布或正式参赛资格已批准，待适用范围内容审核。"
+    ],
+    "publishable": false
+  },
+  {
+    "id": "C003",
+    "name": "全国大学生海洋知识竞赛",
+    "priority": "P1",
+    "decision": "priority_verify",
+    "sourceUrls": [
+      "https://www.hunan.gov.cn/zqt/zcsd/202506/t20250611_33706249.html",
+      "https://m.cgs.gov.cn/ddyw/202606/t20260609_862125.html",
+      "https://www.hualixy.edu.cn/youth/txzx/ggtz/content_74013"
+    ],
+    "existingSeriesId": "national-marine-knowledge",
+    "discoveryReason": "政府通知与中国地质调查局结果命中全国海洋知识竞赛大学生组；可补兴趣探索路线。必须区分公众答题与大学生组选拔，知识积累不能包装成科研或就业保证。",
+    "verificationStatus": "partial",
+    "checkedAt": "2026-11-06",
+    "findings": [
+      "历史首次检查：中国地质调查局2026报道确认第15届设公众组与大学生组，赛事已有总决赛报道。",
+      "本轮目录对账：已有对应结构档案；全国通知确认大学生组选拔；广东赛区后续通知确认报名已截止及地域阶段。",
+      "本轮公开原件补查（作者研究，独立处置待完成）：已取得原缺失广东资格正文。广东大学生组限广东省本专科院校全日制在校学生；粤港澳邀请赛同时包括本届广东选拔赛一等奖和二等奖学生，以及香港澳门部分设置海洋学科的大学选派学生。两组与全国赛资格不可互借。校内10月27日报送为广州华立学院步骤，不推广。"
+    ],
+    "blockers": [
+      "需要与已存全国及广东后续半决赛原件按日期范围核对",
+      "需通过内容复审再导入运行时来源索引；本届历史不算正式规划覆盖",
+      "未因获取原件自动发布或增加严格覆盖。"
+    ],
+    "publishable": false
+  },
+  {
+    "id": "C005",
+    "name": "全国大学生气象科技创新大赛",
+    "priority": "P1",
+    "decision": "priority_verify",
+    "sourceUrls": [
+      "https://ccsmic2026.cms1924.org/cn/web/index/32458_2808858",
+      "https://mm.cms1924.org/cn/web/index/28767"
+    ],
+    "existingSeriesId": "meteorological-science-innovation",
+    "discoveryReason": "命中中国气象学会赛事站的第二届通知、作品方向与本科组描述；补气象、数据和跨学科作品方向。需核实各赛道交付物、本科组与研究生组边界及最新周期。",
+    "verificationStatus": "partial",
+    "checkedAt": "2026-11-06",
+    "findings": [
+      "历史首次检查：第二届官网项目申报页列学生、年龄和四类作品及申报材料。",
+      "本轮目录对账：已有对应结构档案；官网申请页明确本科/研究生分组、个人或团队、年龄不超过30周岁；当前记录限创意构思类。"
+    ],
+    "blockers": [
+      "团队上限、上传限制、费用及完整评分仍未知；L2结构档案不是已审核可发布状态，不能从泛科技主题补L3。",
+      "当前结构等级不等于发布或正式参赛资格已批准，待适用范围内容审核。"
+    ],
+    "publishable": false
+  },
+  {
+    "id": "C010",
+    "name": "全国大学生植物保护专业能力大赛",
+    "priority": "P1",
+    "decision": "priority_verify",
+    "sourceUrls": [
+      "https://www.ahstu.edu.cn/cxcy/info/1011/5230.htm",
+      "https://cvm.cau.edu.cn/module/download/downfile.jsp?classid=0&filename=f79c20302422483ab1c8908b3ce4aa35.pdf"
+    ],
+    "existingSeriesId": null,
+    "discoveryReason": "多所大学命中 2026 第六届全国大学生植物保护专业能力大赛选拔通知；补农科辨识、实验与专业表达。需补主办原文、专业资格及低年级准备路径。",
+    "verificationStatus": "partial",
+    "checkedAt": "2026-11-06",
+    "findings": [
+      "历史首次检查：安徽科技工程大学校内选拔通知列植物生产相关本科生及个人/团队项目。",
+      "本轮公开原件补查（作者研究，独立处置待完成）：仅取得安徽校选全文；附件下载提示验证码。原文参赛要求写广义相关专业，但校赛步骤与第五届参照不能替代第六届全国完整规则。"
+    ],
+    "blockers": [
+      "继续查公开主办/承办原件，或需要用户提供全国通知及附件；不绕过验证码",
+      "未因获取原件自动发布或增加严格覆盖。"
+    ],
+    "publishable": false
+  },
+  {
+    "id": "C021",
+    "name": "全国大学生房地产策划大赛",
+    "priority": "P1",
+    "decision": "priority_verify",
+    "sourceUrls": [
+      "https://www.ccen.com.cn/info/1150/5980.htm",
+      "https://www.ccen.com.cn/info/1150/6130.htm"
+    ],
+    "existingSeriesId": "real-estate-urban-renewal-planning",
+    "discoveryReason": "中国建设教育协会命中 2026 房地产与城市更新策划大赛；可补城市研究、商业分析与策划作品。需核实更名、学校选送、组别与会务成本，费用不得隐去。",
+    "verificationStatus": "partial",
+    "checkedAt": "2026-11-06",
+    "findings": [
+      "历史首次检查：中国建设教育协会页面确认第18届房地产与城市更新策划大赛。",
+      "本轮目录对账：已有对应结构档案；中国建设教育协会2026第十八届通知和总决赛通知支持正式名称及城市更新策划方向。"
+    ],
+    "blockers": [
+      "旧房地产策划泛名到当前城市更新名的历史连续性仍缺早期官方依据；完整任务书和专业评审未读，不能多算更名或混入物业管理另一赛事。",
+      "当前结构等级不等于发布或正式参赛资格已批准，待适用范围内容审核。"
+    ],
+    "publishable": false
+  },
+  {
+    "id": "C024",
+    "name": "全国大学生社会工作实务大赛",
+    "priority": "P1",
+    "decision": "priority_verify",
+    "sourceUrls": [
+      "https://www.myunion.com.cn/news/detail/6972d887546cdb0b3587b167.html",
+      "https://caswe.pku.edu.cn/info/1065/1999.htm",
+      "https://cswc.mytpr.net/sspsc/doc/%E5%A4%A7%E8%B5%9B%E8%AF%84%E5%AE%A1%E6%A0%87%E5%87%86.pdf"
+    ],
+    "existingSeriesId": "zhongshe-social-service-skills",
+    "discoveryReason": "命中中社杯全国大学生社会服务实践技能大赛及评审标准；可补社会服务、需求评估与项目设计。先按中社杯正式身份建档，辽宁省实务技能赛须作为不同地域赛事处理。",
+    "verificationStatus": "partial",
+    "checkedAt": "2026-11-06",
+    "findings": [
+      "历史首次检查：中国社会工作教育协会页面确认2025首届中社杯全国大学生社会服务实践技能大赛已结束。",
+      "本轮目录对账：已有对应结构档案；第二届中社杯官方启动原文支持社会服务实践技能身份；原CSV已明确应按中社杯建档。"
+    ],
+    "blockers": [
+      "通用社会工作实务候选不是另增系列；不与辽宁地域赛事合并。第二届细评分与作品/使用边界仍待核，不能沿用首届PDF为当届依据。",
+      "当前结构等级不等于发布或正式参赛资格已批准，待适用范围内容审核。"
+    ],
+    "publishable": false
+  },
+  {
+    "id": "C026",
+    "name": "中国数据新闻大赛",
+    "priority": "P1",
+    "decision": "priority_verify",
+    "sourceUrls": [
+      "https://webplus.hainnu.edu.cn/_s58/2026/0515/c2514a165201/page.psp",
+      "https://xwmt.hainnu.edu.cn/2026/0515/c2514a165201/pagem.htm"
+    ],
+    "existingSeriesId": "china-data-journalism",
+    "discoveryReason": "命中第十一届中国数据新闻大赛与省赛区征集材料；补新闻写作、数据分析和可视化作品。需核实数据新闻与 AIGC 两项赛事的独立规则、费用与作品公开要求。",
+    "verificationStatus": "partial",
+    "checkedAt": "2026-11-06",
+    "findings": [
+      "历史首次检查：海南师范大学页面为第11届数据新闻大赛海南赛区启动公告。",
+      "本轮目录对账：已有对应结构档案；海南师大第十一届中国数据新闻大赛暨第二届AIGC应用大赛海南赛区公告正文已保存。"
+    ],
+    "blockers": [
+      "记录限数据新闻及海南职责范围，不能把AIGC分项另算独立系列，也不把地方资格推向全国；无完整作品，不计L3。",
+      "当前结构等级不等于发布或正式参赛资格已批准，待适用范围内容审核。"
+    ],
+    "publishable": false
+  },
+  {
+    "id": "C028",
+    "name": "全国大学生网络文化节",
+    "priority": "P1",
+    "decision": "priority_verify",
+    "sourceUrls": [
+      "https://www.moe.gov.cn/srcsite/A12/s7060/202506/t20250605_1193065.html",
+      "https://dxs.moe.gov.cn/zx/a/hd_wlwhj_hdfa/250606/2008580.shtml"
+    ],
+    "existingSeriesId": "national-student-network-culture",
+    "discoveryReason": "教育部与中国大学生在线命中第八届网络文化节正式通知、分类和常见问题；适合补文字、影像等作品方向。需区分学生作品与教师活动，核实新一届窗口，不标记为当前开放。",
+    "verificationStatus": "partial",
+    "checkedAt": "2026-11-06",
+    "findings": [
+      "历史首次检查：教育部大学生在线活动页本轮超时，未取得正文。",
+      "本轮目录对账：已有对应结构档案；教育部/大学生在线第八届方案及FAQ已有正文，FAQ明确作品首次网络发表时间限制。"
+    ],
+    "blockers": [
+      "记录限历史网语青年说路径；现行报名、详细量表和完整作品另核，不能从点击量自行造评分。原candidate pending已落后于事实进展。",
+      "当前结构等级不等于发布或正式参赛资格已批准，待适用范围内容审核。"
+    ],
+    "publishable": false
+  },
+  {
+    "id": "C030",
+    "name": "全国大学生供应链大赛",
+    "priority": "P1",
+    "decision": "priority_verify",
+    "sourceUrls": [
+      "https://jwc.zjhzu.edu.cn/_upload/article/files/3f/5d/38e3c4e94f1b879d3dc93f0d4288/ce2b3a21-79f9-47c1-b298-e3d0b4dcf013.pdf",
+      "https://www.easymoo.com/contest/news/article/cflp?a=242&i=569"
+    ],
+    "existingSeriesId": "national-supply-chain",
+    "discoveryReason": "命中中物联第七届全国供应链大赛及本科组校内通知；补运营决策、供应链分析。需按实战、商贸运营赛项分别核实学段、平台费用和技能收益。",
+    "verificationStatus": "partial",
+    "checkedAt": "2026-11-06",
+    "findings": [
+      "历史首次检查：平台返回第四届全国供应链大赛2023决赛安排，含方案设计与答辩。",
+      "本轮目录对账：已有对应结构档案；保存的第七届全国供应链大赛规则正文支持本科/高职等组别及运营实战路径。"
+    ],
+    "blockers": [
+      "当前记录限2026历史省赛；个人总费用、平台内部计分和完整场景未知。旧candidate仅2023线索应更新但本轮不改。",
+      "当前结构等级不等于发布或正式参赛资格已批准，待适用范围内容审核。"
+    ],
+    "publishable": false
+  },
+  {
+    "id": "C033",
+    "name": "全国大学生人力资源管理综合能力竞赛",
+    "priority": "P1",
+    "decision": "priority_verify",
+    "sourceUrls": [
+      "https://jwc.nufe.edu.cn/info/1031/18184.htm",
+      "https://jmxy.shou.edu.cn/2026/0330/c17373a351451/page.htm",
+      "https://www.hufe.edu.cn/gsglxy/info/1010/15502.htm"
+    ],
+    "existingSeriesId": null,
+    "discoveryReason": "多所高校命中第十一届人力资源管理综合能力竞赛及研究创新赛道；补人力资源案例、调研与模拟运营。需按赛道核对任务与评审，不能把不同人力资源赛事合并。",
+    "verificationStatus": "partial",
+    "checkedAt": "2026-11-06",
+    "findings": [
+      "历史首次检查：上海海洋大学2026校级选拔通知确认第11届人力资源管理综合能力竞赛。",
+      "本轮公开原件补查（作者研究，独立处置待完成）：找到湖南财政经济学院正式通知附件导航，全国通知及实施细则下载提示验证码；尚无附件正文。",
+      "另取得南京财经大学2026研究创新赛道全文：本校本研不限专业、认证后同校3至5人、导师1至2；校赛免费，分赛区800元/队、总决赛1000元/队且各项费用自理。不得互借综合能力赛道或推广本校资格。"
+    ],
+    "blockers": [
+      "全国正式通知/两赛道规则仍需分开补齐；校内范围不能推为全国资格。",
+      "已读公开正文不等于普通推荐或严格覆盖通过。"
+    ],
+    "publishable": false
+  },
+  {
+    "id": "C039",
+    "name": "全国大学生心理学实验设计大赛",
+    "priority": "P1",
+    "decision": "priority_verify",
+    "sourceUrls": [
+      "https://jwb.bnuzh.edu.cn/docs/2026-03/94468b7ed4ae4ab3b1610a3dd0360737.pdf",
+      "https://psy.ecnu.edu.cn/_upload/article/files/81/dd/b56a32d54b38bc4b77c0276b84a3/2579e75d-7eb3-4ef1-96fc-dae8644c40c3.pdf"
+    ],
+    "existingSeriesId": "psychology-undergraduate-innovation-forum",
+    "discoveryReason": "命中心理学专业本科生创新创业论坛官方通知与心理实验设计分论坛；补心理研究设计。应按论坛母系列及分项建档，核实专业、伦理和校内名额，不能泛称无门槛心理测试赛。",
+    "verificationStatus": "partial",
+    "checkedAt": "2026-11-06",
+    "findings": [
+      "历史首次检查：2026心理学本科创新创业论坛官方通知附件列心理实验设计等四个分论坛。",
+      "本轮目录对账：已有对应结构档案；教育部心理学类教指委2026本科生创新创业论坛通知原件支持实验设计分论坛。"
+    ],
+    "blockers": [
+      "按论坛母系列+实验设计赛道，不能新增独立泛称心理实验大赛；本记录避开短视频现场冲突，伦理/专业名额/费用和具体案例仍需核。",
+      "当前结构等级不等于发布或正式参赛资格已批准，待适用范围内容审核。"
+    ],
+    "publishable": false
+  },
+  {
+    "id": "C046",
+    "name": "华为软件精英挑战赛",
+    "priority": "P1",
+    "decision": "priority_verify",
+    "sourceUrls": [
+      "https://developer.huaweicloud.com/competition",
+      "https://bbs.huaweicloud.com/live/competition_live/202603231900.html"
+    ],
+    "existingSeriesId": null,
+    "discoveryReason": "华为云赛事平台命中 2026 软件精英挑战赛；与现有华为 ICT 大赛任务及系列不同，适合单独核验。应追本届赛题、团队规则和投入要求，不套用 2024 题目。",
+    "verificationStatus": "partial",
+    "checkedAt": "2026-11-06",
+    "findings": [
+      "历史首次检查：华为云官方竞赛平台列2026华为软件精英挑战赛及截止线索。",
+      "本轮公开原件补查（作者研究，独立处置待完成）：华为自身直播页可确认系列2026第12届身份、开发环境和宣传性奖金信息，回放要求登录；页面不含完整规则/赛题。"
+    ],
+    "blockers": [
+      "需可公开访问赛题和本届参赛/团队条款；不看登录后资料、不提交表单联系",
+      "未因获取原件自动发布或增加严格覆盖。"
+    ],
+    "publishable": false
+  },
+  {
+    "id": "C052",
+    "name": "NASA Space Apps Challenge",
+    "priority": "P1",
+    "decision": "accept_scoped_L1_research_record",
+    "sourceUrls": [
+      "https://www.spaceappschallenge.org/legal/",
+      "https://spaceapps-v2-staging.s3.amazonaws.com/media/documents/Final_Space_Apps_2025_Judging_Guidelines_for_web.pdf"
+    ],
+    "existingSeriesId": null,
+    "discoveryReason": "NASA Space Apps 官网命中 2026 参与条款和报名流程，评审资料提供作品要求线索；补跨学科解决问题与团队原型。需以本届规则核实参与、评奖和地域/节点条件。",
+    "verificationStatus": "verified",
+    "checkedAt": "2026-11-06",
+    "findings": [
+      "历史首次检查：NASA Space Apps法律页面本轮返回502，未得到目标正文。",
+      "本轮公开原件补查（作者研究，独立处置待完成）：已取得2026-08-07更新正式参与条款全文；2026-11-14活动及未成年监护规则明确。对与中国（含香港澳门）或中资实体关联的参赛有限制，条款明确根据关联而非中国国籍；不能笼统标全球学生均可，也不能仅按国籍拒绝。作品和材料须公开无条件或开放源码，使用第三方材料需权利和引用。",
+      "限定L1研究档案03已由隔离A3/B3按同SHA 89dafa1756bb39c9a658a056314df2ec8aa82de983ab44ff8adabea1ddedecee 批准；最终身份、参与对象和未知边界以 artifacts/continuation-20261105/p1-scoped-l1-decisions-03/decisions.json 对应行为准。旧findings保留为历史取证过程，不继续作为当前结论。"
+    ],
+    "blockers": [
+      "具体队伍数量、任务、全部成本与地方组织边界还需对应赛事/地方原件",
+      "不能由此批准原40画像资格或计严格覆盖",
+      "不把未明的学校关联处理为已满足",
+      "仅接受限定L1研究档案；未导入运行目录、未批准普通推荐/当前报名/严格覆盖。"
+    ],
+    "publishable": false
+  },
+  {
+    "id": "C054",
+    "name": "Apple Swift Student Challenge",
+    "priority": "P1",
+    "decision": "accepted_scoped_existing_record",
+    "sourceUrls": [
+      "https://developer.apple.com/swift-student-challenge/policy/",
+      "https://developer.apple.com/swift-student-challenge/eligibility/"
+    ],
+    "existingSeriesId": "apple-swift-student-challenge",
+    "discoveryReason": "Apple 开发者站命中 2026 Swift Student Challenge 条款、资格与作品格式；补个人软件作品。需核实年龄、在读证明、设备工具及本届窗口，不据此承诺获奖或招聘。",
+    "verificationStatus": "verified",
+    "checkedAt": "2026-11-06",
+    "findings": [
+      "历史首次检查：Apple官方资格页可打开，但本次返回片段主要是导航，不能宣称已读资格正文。",
+      "已复核当前限定范围档案与实际同摘要双审原件：2026 Apple正式条款/提交要求及公开Accessibility Escape完整源包均有字节/正文绑定；当前摘要双审通过。"
+    ],
+    "blockers": [
+      "批准限已列届次/任务/地区档案；不证明下一届或当前可报名。"
+    ],
+    "publishable": true
+  },
+  {
+    "id": "C055",
+    "name": "Schneider Go Green",
+    "priority": "P1",
+    "decision": "priority_verify",
+    "sourceUrls": [
+      "https://www.gogreencompetition.com/faq",
+      "https://www.gogreencompetition.com/",
+      "https://apply.younoodle.com/showcase/competition/2026_schneider_go_green_challenge"
+    ],
+    "existingSeriesId": "schneider-go-green",
+    "discoveryReason": "Go Green 官网 FAQ、作品目标和 2026 报名入口命中；补可持续发展与跨学科方案。需核实年龄、在读/创业者身份、团队及地区限制，不能混用不同年度条件。",
+    "verificationStatus": "partial",
+    "checkedAt": "2026-11-06",
+    "findings": [
+      "历史首次检查：Go Green官方FAQ列2026年龄学生条件、英语要求、线上形式且报名已关闭。",
+      "本轮目录对账：已有对应结构档案；2026 Go Green条款与FAQ原文已保存，支持清洁能源第一阶段提案和团队参赛条件。"
+    ],
+    "blockers": [
+      "FAQ与条款的决赛时长冲突不宜机械择新；当前限定第一阶段。完整案例缺口阻L3而非要求所有P1必须L3，发布复核仍未闭环。",
+      "当前结构等级不等于发布或正式参赛资格已批准，待适用范围内容审核。"
+    ],
+    "publishable": false
+  },
+  {
+    "id": "C061",
+    "name": "University Physics Competition",
+    "priority": "P1",
+    "decision": "accept_scoped_L1_research_record",
+    "sourceUrls": [
+      "https://uphysicsc.com/",
+      "https://www.uphysicsc.com/2025contest.html",
+      "https://www.uphysicsc.com/contestrules.html",
+      "https://www.uphysicsc.com/registerateam.html",
+      "https://www.uphysicsc.com/2026contest.html",
+      "https://www.university-physics-competition.com/2026-competition"
+    ],
+    "existingSeriesId": null,
+    "discoveryReason": "University Physics Competition 官网命中本科生、团队、教师担保及 48 小时物理建模报告任务；补物理建模作品。须核实本届日期、英语交付、费用与团队要求。",
+    "verificationStatus": "verified",
+    "checkedAt": "2026-11-06",
+    "findings": [
+      "历史首次检查：UPC官网说明本科生团队以物理分析完成英文论文，比赛为48小时。",
+      "本轮公开原件补查（作者研究，独立处置待完成）：官方通用8条规则支持1至3名同校在籍学生、无STEM学士学位、需要本校教师担保；不要求全日制。48小时英文论文、300词以内摘要、赛中不得求助队外人员，AI使用须报告。2026赛事页宣布11月6日18:00 MST开始；普通50美元每队、晚报70美元每队且提前6小时截止。",
+      "限定L1研究档案03已由隔离A3/B3按同SHA 89dafa1756bb39c9a658a056314df2ec8aa82de983ab44ff8adabea1ddedecee 批准；最终身份、参与对象和未知边界以 artifacts/continuation-20261105/p1-scoped-l1-decisions-03/decisions.json 对应行为准。旧findings保留为历史取证过程，不继续作为当前结论。"
+    ],
+    "blockers": [
+      "不得把赛中48小时当准备工时或每周需求",
+      "个人完整支出与汇率/支付费未定，不能除队伍人数或假定学校报销",
+      "原40未确认教师，不能算正式参赛已满足",
+      "2026题目尚待开始发布；不能套用2025题为当届",
+      "作者报告主页存在无关内容，但本档案没有该页冻结原件，观察未独立核实；三份规则页与镜像赛程不能证明来源整体完整性。",
+      "仅接受限定L1研究档案；未导入运行目录、未批准普通推荐/当前报名/严格覆盖。"
+    ],
+    "publishable": false
+  },
+  {
+    "id": "C065",
+    "name": "D&AD New Blood Awards",
+    "priority": "P1",
+    "decision": "accepted_scoped_existing_record",
+    "sourceUrls": [
+      "https://www.dandad.org/awards/new-blood-awards/faqs",
+      "https://media.dandad.org/documents/New_Blood_Awards_2026_Tutor_Pack_UPDATED_1.pdf"
+    ],
+    "existingSeriesId": "dandad-new-blood",
+    "discoveryReason": "D&AD 官方命中 New Blood 2026 学生资格、命题和评审；补广告创意、设计及国际作品集。需核实所选 brief、费用、知识产权和提交格式，不以品牌知名度保证就业收益。",
+    "verificationStatus": "verified",
+    "checkedAt": "2026-11-06",
+    "findings": [
+      "历史首次检查：D&AD官网FAQ已出现2027入口及学生/非创意从业者等资格分支。",
+      "已复核当前限定范围档案与实际同摘要双审原件：2027公开通则与2026 Share your passion完整brief/导师包分别有保存正文；2026记录当前双审通过。"
+    ],
+    "blockers": [
+      "批准限已列届次/任务/地区档案；不证明下一届或当前可报名。"
+    ],
+    "publishable": true
+  },
+  {
+    "id": "C077",
+    "name": "大学生广告艺术节学院奖",
+    "priority": "P1",
+    "decision": "accept_scoped_L1_research_record",
+    "sourceUrls": [
+      "https://www.5iidea.com/contents/32332",
+      "https://yscm.yangtzeu.edu.cn/info/1087/12014.htm",
+      "https://www.admen.cn/content/32332"
+    ],
+    "existingSeriesId": null,
+    "discoveryReason": "创意星球命中大学生广告艺术节学院奖 2026 秋季规则；与已有大广赛是不同系列，不能因广告主题合并。需单独核实命题、商业使用条款、费用和奖项层级。",
+    "verificationStatus": "verified",
+    "checkedAt": "2026-11-06",
+    "findings": [
+      "历史首次检查：创意星球页面标题为学院奖2026秋季征集细则；本次首段返回主要导航。",
+      "本轮公开原件补查（作者研究，独立处置待完成）：已取得2026秋季细则，内文更新时间2026-09-09，与页面旧创建时间2021-05-11分开。广泛在校学生范围；参赛费免收，个人全部成本仍未知；10月开放、暂定11月20日17:00截稿。文案至多3作者、其余至多6，导师上限3不代表必须有3或一定无导师。具体命题策略单优先于通则。",
+      "限定L1研究档案03已由隔离A3/B3按同SHA 89dafa1756bb39c9a658a056314df2ec8aa82de983ab44ff8adabea1ddedecee 批准；最终身份、参与对象和未知边界以 artifacts/continuation-20261105/p1-scoped-l1-decisions-03/decisions.json 对应行为准。旧findings保留为历史取证过程，不继续作为当前结论。"
+    ],
+    "blockers": [
+      "独立学院奖系列，不与大广赛合并",
+      "具体命题策略单/素材与商业使用授权条款还须补齐，不能只凭通则作普通推荐",
+      "暂定截止需后续复核；网络/工具/素材等成本未知不能视免费",
+      "正式评奖分母/具体评分未完成核验",
+      "仅接受限定L1研究档案；未导入运行目录、未批准普通推荐/当前报名/严格覆盖。"
+    ],
+    "publishable": false
+  },
+  {
+    "id": "C080",
+    "name": "全国大学生软件测试大赛",
+    "priority": "P1",
+    "decision": "priority_verify",
+    "sourceUrls": [
+      "https://www.mooctest.org/news_detail?new_id=184",
+      "https://jwc.ynu.edu.cn/info/1009/4389.htm"
+    ],
+    "existingSeriesId": "national-software-testing",
+    "discoveryReason": "赛事站和高校通知命中第十一届软件测试大赛及 2026 赛项；补测试、质量工程与 AI 助手评测方向。需分个人/高职团队与具体赛项核实，不混用组别资格。",
+    "verificationStatus": "partial",
+    "checkedAt": "2026-11-06",
+    "findings": [
+      "历史首次检查：慕测官网新闻页仅返回Vite应用壳，没有可读规则。",
+      "本轮目录对账：已有对应结构档案；2025软件测试大赛规程及Web个人赛项正文原件可核，已超越原Vite壳读取状态。"
+    ],
+    "blockers": [
+      "同一系列2025历史练习范围，不证明2026规则；具体被测应用/完整答卷缺口阻L3，不把有指导登记误作无导师禁止。发布审核仍未闭环。",
+      "当前结构等级不等于发布或正式参赛资格已批准，待适用范围内容审核。"
+    ],
+    "publishable": false
+  }
+]

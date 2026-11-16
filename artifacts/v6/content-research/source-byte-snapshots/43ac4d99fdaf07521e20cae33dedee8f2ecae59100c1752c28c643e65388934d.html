@@ -1,0 +1,1404 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://static.igem.wiki/common/icons/favicons/igem-2022.svg"/>
+    <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
+
+    <!-- Bootstrap CSS -->
+    <link href="static/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="static/style.css" rel="stylesheet">
+
+    <title>Model | HKUST - iGEM 2025</title>
+
+</head>
+<body>
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" title="Back to top">
+    <img src="https://static.igem.wiki/teams/5546/icons/back-to-top-button.webp" alt="Back to top">
+  </button>
+
+  <!-- Navigation -->
+  <nav class="top-nav">
+  <!---- IMAGE LOGO ---->
+  <a class="navbar-brand" href="https://2025.igem.wiki/hkust/">
+    <img src="https://static.igem.wiki/teams/5546/icons/horizontal-logo.webp" alt="Logo" class="navbar-logo">
+  </a>
+  
+    <ul class="nav-links">
+      <!-- HOME -->
+      <li class="active">
+        <a href="index.html">Home</a>
+      </li>
+  
+      <!-- PROJECT -->
+      <li class="dropdown">
+        <a href="#" class="nav-link dropdown-toggle" id="navbar-project" data-bs-toggle="dropdown" aria-expanded="false">Project</a>
+        <ul class="dropdown-menu" aria-labelledby="navbar-project">
+          <li><a class="dropdown-item" href="description">Description</a></li>
+          <li><a class="dropdown-item" href="engineering">Engineering</a></li>
+          <li><a class="dropdown-item" href="parts">Parts</a></li>
+          <li><a class="dropdown-item" href="contribution">Contribution</a></li>
+        </ul>
+      </li>
+  
+      <!-- WET LAB -->
+      <li class="dropdown">
+        <a href="#" class="nav-link dropdown-toggle" id="navbar-wet-lab" data-bs-toggle="dropdown" aria-expanded="false">Wet Lab</a>
+        <ul class="dropdown-menu" aria-labelledby="navbar-wet-lab">
+          <li><a class="dropdown-item" href="notebook">Notebook</a></li>
+          <li><a class="dropdown-item" href="experiments">Experiments</a></li>
+          <li><a class="dropdown-item" href="safety">Safety</a></li>
+          <li><a class="dropdown-item" href="protocols">Protocols</a></li>
+        </ul>
+      </li>
+      
+      <!-- MODEL -->
+      <li class="active">
+        <a href="model">Model</a>
+      </li>
+      
+      <!-- HUMAN PRACTICES -->
+      <li class="dropdown">
+        <a href="#" class="nav-link dropdown-toggle" id="navbar-team" data-bs-toggle="dropdown" aria-expanded="false">Human Practices</a>
+        <ul class="dropdown-menu" aria-labelledby="navbar-team">
+          <li><a class="dropdown-item" href="human-practices">Human Practices</a></li>
+          <li><a class="dropdown-item" href="education">Education</a></li>
+        </ul>
+      </li>
+      
+  
+      <!-- TEAM -->
+      <li class="dropdown">
+        <a href="#" class="nav-link dropdown-toggle" id="navbar-team" data-bs-toggle="dropdown" aria-expanded="false">Team</a>
+        <ul class="dropdown-menu" aria-labelledby="navbar-team">
+          <li><a class="dropdown-item" href="members">Members</a></li>
+          <li><a class="dropdown-item" href="attributions">Attributions</a></li>
+        </ul>
+      </li>
+      
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <div class="container">
+    <div id="progress-container">
+        <div id="progress-bar">
+        </div>
+    </div>
+</div>
+
+  <!-- Page Content -->
+    
+
+<!-- Fixed Navigation Bar -->
+<nav class="sidebar-nav">
+  <ul>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#models">Models</a></li>
+  </ul>
+</nav>
+
+<!-- Background Section -->
+<section class="background-section">
+  <img src="https://static.igem.wiki/teams/5546/title/2.webp" alt="Background Image" class="background-image">
+  <div class="overlay"></div>
+</section>
+
+
+
+<div class="container">  
+  <div class="row mt-4">
+    <div class="col-lg-11 offset-lg-1 col-md-10 offset-md-1 col-12"> 
+    <section id="overview" class="experiment-section">
+      <h2 class="section-title">Dry Lab Overview</h2>
+      <hr>
+      <div class="section-content">
+        <div class="content-block">
+            <p>Our Dry Lab efforts aimed to validate hypotheses and simulate experiments that surpassed the constraints of our Wet Lab capabilities. Although Dry Lab modeling often incorporates assumptions and generalisations, it can sometimes yield valuable insights into the behaviours or mechanisms of biological systems. In some cases, it may also provide insights into further experimental designs or characterisation studies needed to be done. In our project, our Dry Lab team conducted simulation and modeling studies on two circuits: the metallothionein and the biosensor. Working alongside the Wet Lab and iHP modules, we generated outputs that aimed to guide Wet Lab experiments and also provided proof-of-concept data for iHP feedback. Furthermore, our work is extensively documented and shared, and we hope it serves as a valuable resource for other iGEM teams pursuing similar projects.</p>
+            <img src="https://static.igem.wiki/teams/5546/model/mtoverview.webp" style="width:100%; height:auto;"> 
+            <p> The above figure is an overview of our Dry Lab work on the Metallothionein Circuit. It provides a timeline and summary of each engineering cycle and how it pertained to the project.</p>
+            <img src="https://static.igem.wiki/teams/5546/model/bsoverview.webp" style="width:100%; height:auto;">
+            <p>The above figure is an overview of our Dry Lab work on the Biosensor Circuit. As part of Cycle 3 of our Engineering Cycle, it summarises our work and process under the Design, Build, Test & Learn Principles.</p> ⁠
+        </div>
+      </div>
+    </section>
+  </div>
+  </div>
+
+  <section id="models" class="experiment-section">
+  <div class="row mt-4">
+  <div class="col">
+    <div class="tab" id="models">
+      <div class="tab-title">
+        <button id="cpsbutton" onclick="cps()">MT Cycle 0</button>
+        <button id="gromacsbutton" onclick="gromacs()">MT Cycle 1A</button>
+        <button id="membutton" onclick="mem()">MT Cycle 1B</button>
+        <button id="modelusebutton" onclick="modeluse()">MT Cycle 2</button>
+        <button id="biosensorbutton" onclick="biosensor()">Biosensor</button>
+        <button id="ksbutton" onclick="ks()">Kill Switch</button>
+      </div>
+    
+
+    <div class="tab-box"> 
+
+    <div class="tab-content" id="cpscontent">
+      <h2>Overview</h2>
+      <p> Protein screening, a long-established process, aims to narrow down extensive protein libraries to a select few candidates. This is done to identify the ideal protein for specific functions, such as discovering new drugs, biofuels, or biomarkers. In the early stages of our project, we underwent the usual process of screening for promising proteins by searching through online libraries such as NCBI, Uniprot and RSCB. However, we found the field of Bioremediation to be underdocumented, where proteins which bind to heavy metals (e.g, metallothioneins, phytochelatins) often lacked a record of crystal structure as well as data surrounding its binding properties. </p>
+      <p>For this reason, our Dry Lab team aimed to leverage tools such as AlphaFold 3 and MIB2 to computationally screen for protein candidates to be used in our metal-binding circuit. We also wanted to screen for proteins with the optimal properties, such as stability under acidic conditions and having sufficient binding capacity in order to increase real-world application.</p>
+      <h2>Design</h2>
+      <p> Before deciding on what tools to use, our entire team was faced by the question of: 
+How do we decide what an ‘ideal protein’ is for our project?
+</p>
+      <p>Within sludge, the most noticeable problem from a bioremediation standpoint was the large discrepancy of Zinc to Cadmium ions (around 1000 fold difference). Additionally, sources from government agencies like T-Park suggested an average of around 6kg of Cadmium to exist within around 2000 tonnes of sludge ash. Therefore, we decided our protein had to have 3 major criteria: </p>
+      <ol>
+      <li><strong>Specificity</strong> - it should be very specific and bind exclusively to Cadmium, irrespective of the concentration or presence of other heavy metals. Only with this, we would be able to effectively resolve our problem.</li>
+      <li><strong>Sensitivity</strong> - it should be sensitive to low concentrations of cadmium and be able to facilitate the binding process even at uM concentrations. Our literature review suggested the cadmium concentration would exist around 4 mg / L (Halecki et al., 2024). This translated to roughly 40uM and was a reasonable level of sensitivity to begin with. Furthermore, metallothioneins are dynamic structures which only fold and coordinate properly under the induction of heavy metals (Freisinger & Vašák, 2013). Thus, an alignment between the metallothionein’s ideal cadmium concentration and the concentration found in real-world applications was crucial. </li>
+      <li><strong>Binding Efficiency</strong> - it should be able to bind to several cadmium ions per protein. However, the protein must be equally robust and compact to prevent metabolic burden or improper surface-expression within the bacteria. Therefore, we used this general equation as a guide:
+        Binding Efficiency = Amount of Cd2+ ions binding per protein / Protein Amino Acid Length</li>
+      </ol>
+      <p>
+      <p>In our research, we stumbled across EC20 linked to the Lpp-OmpA surface display system. This circuit has documented use in many past iGEM projects. EC20 has many documented benefits, including its alleged specificity and artificially induced capacity of over 10 Cd2+ per 42 amino acids. However, in our research, we encountered some interesting matters.</p>
+      <ol>
+        <li>Despite much usage of both EC20 and EC20 in conjunction with Lpp-OmpA surface display, the actual characterisation of EC20 and literature regarding its properties surprisingly lacked documentation.</li>
+        <li>Since its discovery (Bae et al., 2000), its crystal structure has not been resolved nor documented. In principle, EC20 was the most suitable and optimal candidate for our work. It provided a sufficient robustness and matched all three of the aforementioned criteria from our initial evaluation. Unfortunately, the lack of characterisation results in a degree of uncertainty for use in Wet Lab experiments. This led us to use computational tools to further analyse EC20.</li>
+        <li>We also wanted to verify our outputs by screening proteins which had more literature support and compare the results. If working, we also hoped to screen for other less documented proteins to see if they might show some promise to be tested in the Wet Lab.</li>
+      </ol>
+      <h2>Build</h2>
+      <p> Firstly, we used AlphaFold 3 to determine the structure of EC20. Taking the sequence from the iGEM part BBa_K1321005, we used the Expasy translate tool to acquire the amino acid sequence of EC20 and predict it in AlphaFold 3. 
+</p>
+      <p>However, we did not want to limit ourselves to simply EC20. Therefore, we also built a library of other MTs, phytochelatins and proteins with homologous functions and used AlphaFold 3 to predict its folding with the Lpp-OmpA delivery system. For many proteins, they lacked an existing .pdb or .cif file on databases which could complicate simulations. Therefore, the first screening method was to check the pTM and pLdTT of the isolated structure to ensure that the plDDT was reasonable before continuing with Lpp-OmpA folding (showing medium confidence bands). </p>
+      <p>
+        A key aspect of our selection process involved predicting the structures of candidate proteins to ensure they have well-defined conformations under physiological conditions, which is critical for their functionality as cadmium binders. Specifically, we aimed to achieve accurate structural representations of these proteins that reflect their behavior in the presence of metal ions. Given that AlphaFold 3 does not currently support cadmium ion simulations directly, we opted to use zinc ions as a proxy due to their structural and chemical similarities. Furthermore, metallothioneins are documented to possess affinity for both zinc and cadmium (Ruttkay-Nedecky et al., 2013; Nordberg, M. & Nordberg, G. F., 2022; Irvine, Pinter, & Stillman, 2016). By simulating the candidate proteins both in their unbound state and in complex with zinc ions, we analysed their structural stability and binding potential. To determine whether the predicted protein structures were well-defined, we utilized key metrics provided by AlphaFold 3, specifically the pLDDT (predicted Local Distance Difference Test) score, pTM (predicted Template Modeling) score, and ipTM (interacting predicted Template Modeling) score.
+        <ul>
+          <li>pLDDT scores provide confidence levels for the accuracy of specific regions within the protein model, with scores above 70 generally indicating reliable structural conformations. Higher pLDDT values suggest that these regions are likely to be well-defined and stable.</li>
+          <li>pTM scores evaluate the overall quality of the protein model by comparing it to known structures in the Protein Data Bank (PDB). A pTM score above 0.6 typically indicates a reliable model with a high likelihood of accurately representing the protein's true structure.</li>
+          <li>ipTM scores are specifically designed to assess the quality of protein structures in the context of complexes, such as a metal ion bound to a protein. This score helps determine how well the protein will maintain its structural integrity upon binding with zinc ions (or cadmium in the future). Higher ipTM scores correlate with greater stability and proper interaction between the metal ion and the protein.</li>
+        </ul>
+      </p>
+    <img src="https://static.igem.wiki/teams/5546/model/mtmodelcycle0/c0figure1.webp" alt="Overview Image" class="card-image"> 
+    <p style="text-align: center;"><strong>Figure 1.</strong> Example of AlphaFold 3 protein prediction results showing pLDDT, pTM and ipTM scores.</p>
+    <p>By assessing pLDDT, pTM, and ipTM scores of our candidate proteins, we could effectively gauge their structural integrity and potential for cadmium binding. This comprehensive evaluation process allowed us to select proteins that were likely to be functionally effective in removing cadmium from sludge. Thus, we utilized AlphaFold 3 to facilitate these structural predictions, providing valuable insights into the potential effectiveness of each protein as a cadmium-binding agent. 
+</p>
+    <h2>Structural and Binding Characteristics</h2>
+    <p>We summarized the results of pTM and ipTM scores from our simulations in the table below, including additional relevant information from the literature, such as binding capacities and the presence of experimentally determined solution structures.</p>
+    <p>It is important to note that PflQ2MT has been observed to preferentially bind only 3 zinc ions instead of the typical 4, however, PflQ2MT can bind up to 4 cadmium ions (Habjanič, Zerbe, & Freisinger, 2018). Given this information, we chose to simulate the binding of the maximum capacity of 4 zinc ions in our AlphaFold 3 predictions, substituting for cadmium ions.</p>
+    <table style="margin-left: auto; margin-right: auto;" class="model-table">
+      <thread>
+        <tr>
+          <th>Name</th>
+          <th>Organism Type</th>
+          <th>Organism</th>
+          <th>Binding Capacity (no. of Cd2+)</th>
+          <th>Length (a.a.)</th>
+          <th>RCSB Solution Structure*</th>
+          <th>Structure Prediction Score</th>
+          <th>Structure Prediction Score with Zn2+</th>
+        </tr>
+      </thread>
+      <tbody>
+        <tr>
+          <td>EC20
+(Bae et al., 2000)
+</td>
+          <td>N/A (synthetic)</td>
+          <td>N/A (synthetic)</td>
+          <td>10</td>
+          <td>21</td>
+          <td>-</td>
+          <td>pTM = 0.32-0.51#</td>
+          <td>ipTM = 0.18, pTM = 0.23</td>
+        </tr>
+        <tr>
+          <td>LgiMT1
+(García-Risco et al., 2023)
+</td>
+          <td>Sea snail</td>
+          <td><em>Lottia gigantea</em></td>
+          <td>4 + 3</td>
+          <td>74</td>
+          <td>-</td>
+          <td>pTM = 0.2</td>
+          <td>ipTM = 0.78, pTM = 0.68</td>
+        </tr>
+        <tr>
+          <td>LgiMT2
+(García-Risco et al., 2023)
+</td>
+          <td>Sea snail</td>
+          <td><em>Lottia gigantea</em></td>
+          <td>4 + 3</td>
+          <td>74</td>
+          <td>-</td>
+          <td>pTM = 0.39</td>
+          <td>ipTM = 0.67, pTM = 0.62</td>
+        </tr>
+
+        <tr>
+          <td>PflQ2MT (shortened)
+(Habjanič et al., 2018)
+</td>
+          <td>Bacteria</td>
+          <td><em>Pseudomonas fluorescens</em></td>
+          <td>4</td>
+          <td>52</td>
+          <td>6GV6</td>
+          <td>pTM = 0.7</td>
+          <td>ipTM = 0.89, pTM = 0.79</td>
+        </tr>
+        <tr>
+          <td>Helix pomatia CdMT
+(Beil et al., 2019)
+</td>
+          <td>Land snail</td>
+          <td><em>Helix pomatia</em></td>
+          <td>3 + 3</td>
+          <td>67</td>
+          <td>6QK6</td>
+          <td>pTM = 0.4</td>
+          <td>ipTM = 0.7, pTM = 0.6</td>
+        </tr>
+
+        <tr>
+          <td>Mouse-CdMT1
+(Klaus Zangger et al., 1999)
+</td>
+          <td>Mammal</td>
+          <td><em>Mouse</em></td>
+          <td>4</td>
+          <td>31</td>
+          <td>1DFS</td>
+          <td>pTM = 0.34</td>
+          <td>ipTM = 0.77, pTM = 0.66</td>
+        </tr>
+
+        <tr>
+          <td>2A81G5 (antibody)
+(Blake et al., 1996)
+</td>
+          <td>Mammal</td>
+          <td><em>Mouse</em></td>
+          <td>1</td>
+          <td>Heavy Chain: 114, Light Chain: 112</td>
+          <td>-</td>
+          <td>ipTM = 0.89, pTM = 0.92</td>
+          <td>Cannot be simulated
+ 2A81G5 binds to EDTA-chelated cadmium, but AlphaFold does not support the chemical EDTA
+</td>
+        </tr>
+
+      </tbody>
+
+    </table>
+    <p style="text-align: center;"><strong>Figure 2.</strong>Summary of literature and AlphaFold 3 results for comparison</p>
+    <p>*Experimentally determined structure (via NMR or similar techniques)</p>
+
+
+    <h2>Identifying properties of EC20</h2>
+    <p>To evaluate the structural properties of EC20, we input the protein sequence into AlphaFold 3 and conducted six different trials. This approach was chosen to assess the consistency and reliability of structure predictions across multiple simulations. Each trial was set up without any change in conditions.</p>
+    <p>
+      The results from these trials are as follows:</p>
+      <ul>
+      <li>Trial #1: pTM = 0.33</li>
+      <li>Trial #2: pTM = 0.51</li>
+      <li>Trial #3: pTM = 0.42</li>
+      <li>Trial #4: pTM = 0.32</li>
+      <li>Trial #5: pTM = 0.33</li>
+      <li>Trial #6: pTM = 0.41</li>
+    </ul>
+    <p>To visually summarize the results, we have combined the structural representations from all six trials, labeled with its corresponding trial number and pTM value. Figure 3 below shows the structures of EC20 for all six trials.</p>
+    <img src="https://static.igem.wiki/teams/5546/model/mtmodelcycle0/whatsapp-image-2025-10-08-at-13-57-26.webp" alt="Figure 3" class="card-image"> 
+    <p style="text-align: center;"><strong>Figure 3.</strong> AlphaFold 3 results showing the structures of EC20 for all 6 trials</p>
+
+    <h2>Analysis of Trial Results</h2>
+    <p>Trials #1, #2, #4, and #5 demonstrated that EC20 folds onto itself, with Trial #2 yielding the highest pTM score of 0.51, indicating a more favorable and stable configuration. In contrast, Trial #3 exhibited an arc-like structure, while Trial #6 illustrated EC20 as predominantly flat, lacking the self-folding characteristic seen in the other trials.</p>
+    <p>The pTM scores ranged from a low of 0.32 to a high of 0.51. This significant variability suggested that the structure of EC20 was not well-defined. Alternatively, it suggested that the entirety of EC20 was a variable region, and its folding depended on the environment. Given that EC20 is a synthetic metal-chelating protein, such variability is expected; however, it raises potential concerns during modeling due to the numerous structural variations and the likelihood of protein misfolding.
+</p>
+    <h2>Results</h2>
+    <img src="https://static.igem.wiki/teams/5546/model/mtmodelcycle0/c0figure3.webp" alt="Figure 4" class="card-image"> 
+    <p style="text-align: center;"><strong>Figure 4.</strong> Structure of EC20 with and without addition of zinc ions</p>
+    <img src="https://static.igem.wiki/teams/5546/model/mtmodelcycle0/c0figure4.webp" alt="Figure 4" class="card-image"> 
+    <p style="text-align: center;"><strong>Figure 5.</strong> Structure of LgiMT1 with and without addition of zinc ions</p>
+    <img src="https://static.igem.wiki/teams/5546/model/mtmodelcycle0/c0figure5.webp" alt="Figure 5" class="card-image"> 
+    <p style="text-align: center;"><strong>Figure 6.</strong> Structure of LgiMT2 with and without addition of zinc ions</p>
+    <img src="https://static.igem.wiki/teams/5546/model/mtmodelcycle0/c0figure6.webp" alt="Figure 6" class="card-image"> 
+    <p style="text-align: center;"><strong>Figure 7.</strong> Structure of PflQ2MT with and without addition of zinc ions</p>
+    <img src="https://static.igem.wiki/teams/5546/model/mtmodelcycle0/c0figure7.webp" alt="Figure 7" class="card-image"> 
+    <p style="text-align: center;"><strong>Figure 8.</strong> Structure of Helix Pomatia CdMT with and without addition of zinc ions</p>
+    <img src="https://static.igem.wiki/teams/5546/model/mtmodelcycle0/c0figure8.webp" alt="Figure 8" class="card-image"> 
+    <p style="text-align: center;"><strong>Figure 9.</strong> Structure of Mouse-CdMT1 with and without addition of zinc ions</p>
+    <img src="https://static.igem.wiki/teams/5546/model/mtmodelcycle0/c0figure9.webp" alt="Figure 9" class="card-image"> 
+    <p style="text-align: center;"><strong>Figure 10.</strong> Structure of 2A81G5</p>
+
+    <h2>Analysis</h2>
+    <p>Several notable observations emerged from the AlphaFold structural predictions: </p>
+    <ol>
+      <li><b>Zinc Ion Binding</b>: Zinc ions bind primarily to cysteine residues within the proteins, demonstrating the key role of these amino acids in metal ion coordination. This binding pattern highlights the importance of cysteine in metalloproteins. [Figure 11. below]</li>
+      <li><b>Cystine-Rich Regions</b>: Zinc ions tend to concentrate in cystine-rich regions, known as cystine pockets, which are characterized by clusters of cysteine residues that facilitate metal binding. [Figure 12. below]</li>
+      <li><b>Structural Certainty and Stability</b>: Some proteins exhibited low structural certainty, as indicated by low pTM scores, but showed improved structural stability upon zinc binding. Notably, LgiMT1 and LgiMT2 demonstrated this behavior, as evidenced by significant alterations in color corresponding to the pLDDT scores of the entire protein. The increase in pLDDT scores upon zinc binding indicates greater confidence in structural predictions and suggests that metal binding may enhance folding and stability. [Figures 5 & 6. above]</li>
+    </ol>
+    <img src="https://static.igem.wiki/teams/5546/model/mtmodelcycle0/c0figure10.webp" alt="Figure 10" class="card-image"> 
+    <p style="text-align: center;"><strong>Figure 11.</strong> Showing a zinc ion (in green) bound to 4 thiol group from cystine (yellow spheres)</p>
+    <img src="https://static.igem.wiki/teams/5546/model/mtmodelcycle0/c0figure11.webp" alt="Figure 11" class="card-image"> 
+    <p style="text-align: center;"><strong>Figure 12.</strong> Showing zinc ions (in green) bound to a cystine rich region (in yellow brackets) of a protein</p>
+    <p>
+      After comparing the pTM and ipTM scores of the available proteins, we opted for PflQ2MT due to its well-defined structure, which exhibited an ipTM score of 0.89 and a pTM score of 0.79 when zinc ions are bound. These scores indicate that PflQ2MT has a high-quality structural model, with the ipTM score reflecting its stability and interaction profile in the presence of metal ions. Specifically, an ipTM score of 0.89 suggests that PflQ2MT maintains excellent structural integrity when bound to zinc, greatly enhancing the likelihood of proper function when engaging with cadmium. Additionally, the pTM score of 0.79 confirms that its overall structure is reliable and closely resembles known protein configurations found in the Protein Data Bank (PDB).
+    </p>
+    <p>
+      Selecting PflQ2MT not only allows us to leverage a protein with good binding characteristics but also facilitates future modeling efforts. Its well-defined structure reduces concerns about misfolding, which can be a significant issue with proteins that exhibit poorly defined structures under experimental conditions. Thus, choosing PflQ2MT optimizes our project’s chances for success in cadmium removal efforts due to its robust structural and functional credentials.
+    </p>
+
+    <h2>Further Screening</h2>
+    <p>As previously mentioned, since AlphaFold 3 did not support cadmium ions (Cd²⁺), we sought alternative software to predict cadmium ion binding. The MIB2 (Metal Ion-Binding Site Prediction and Modeling Server) is an online tool designed to identify and model metal ion-binding sites in proteins. MIB2 supports predictions for 18 different metal ions and enhances accuracy by applying metal-specific scoring and a broader set of structural templates (Lu et al., 2022).</p>
+    <p>To test cadmium ion binding affinity (and other metal ions) to our selected protein, we utilized MIB2 to predict cadmium binding sites. MIB2 provides PS2 for protein structure prediction, but for more accurate results, we opted to generate a protein structure using other prediction tools such as AlphaFold and subsequently uploaded the PDB file to MIB2 for metal ion binding predictions. We selected all 18 available metal ions for the prediction: Ca²⁺, Cu²⁺, Fe³⁺, Mg²⁺, Mn²⁺, Zn²⁺, Cd²⁺, Fe²⁺, Ni²⁺, Hg²⁺, Co²⁺, Cu⁺, Au⁺, Ba²⁺, Pb²⁺, Pt²⁺, Sm³⁺ and Sr²⁺.</p>
+
+    <h2>MIB2 Simulation</h2>
+    <p>We can analyzed the binding potential for cadmium using the data generated by MIB2 [Figure 13 below]. The graph displays the binding potential of the metal ion (x-axis) to each amino acid residue number (y-axis). The orange dots represent residues that can bind cadmium ions, typically appearing at the peak; however, this is not always the case, as binding may occur through coordination of neighboring amino acids. For example, amino acids numbered 10, 28, 29, and 47, all cysteine residues, can bind cadmium with a score of 1.392 [Figure 14 below].</p>
+    <img src="https://static.igem.wiki/teams/5546/model/mtmodelcycle0/c0figure12.webp" alt="Figure 12" class="card-image"> 
+    <p style="text-align: center;"><strong>Figure 13.</strong> Binding potential of Cd2+ to amino acids residues of PflQ2MT</p>
+    <img src="https://static.igem.wiki/teams/5546/model/mtmodelcycle0/c0figure13.webp" alt="Figure 13" class="card-image"> 
+    <p style="text-align: center;"><strong>Figure 14.</strong> Docking results of Cd2+ to amino acids residues of PflQ2MT</p>
+    <p>We combined the MIB2 cadmium ion binding predictions for PflQ2MT to reveal the top 15 binding sites out of 63 [Figure 15 below], with docking scores ranging from 0.845 to 1.392, visualized using ChimeraX. The cadmium ions appear concentrated in one region (indicated by the red box) near the cysteine residues (indicated in yellow), aligning with previous AlphaFold 3 results and the solution structure of PflQ2MT. However, there was one exception where a cadmium ion binds outside of cysteine residues (indicated by the red arrow), indicating some inaccuracies in the predictions.</p>
+    <img src="https://static.igem.wiki/teams/5546/model/mtmodelcycle0/c0figure14.webp" alt="Figure 14" class="card-image"> 
+    <p style="text-align: center;"><strong>Figure 15.</strong> MIB2 results of cadmium ion binding for PflQ2MT, showing the top 15 results.</p>
+    <p>Moreover, we examined the affinity of various metal ions present in the MIB2 complex for individual cysteine residues in PflQ2MT. Our primary goal was to identify a metallothionein that exhibited specificity for cadmium while minimizing any interference or competition from other non-toxic heavy metals. We focused all the nine cysteine residues located at positions 5, 7, 10, 12, 28, 32, 42, 47, and 49. Positive binding scores indicate that a metal ion has an affinity for the cysteine residues, while a negative score signifies that there is no affinity.</p>
+    <p>The binding affinity results, as illustrated in Figure 16 below, reveal that the metal ions with the highest affinity is Ni²⁺, followed closely by Cu⁺ and Au⁺. Whereas the binding score for Cd²⁺ remained the most consistent, followed by Zn²⁺ and Pb²⁺. It is important to note that Pf²⁺ was not considered due to its extreme binding score, as the maximum score in our analysis was around 3, while the upper quartile was just barely above -0.5.</p>
+    <p>The results further indicate that the cysteine residues display binding affinities to metal ions such as Cu²⁺, Fe³⁺, Mn²⁺, Zn²⁺, Cd²⁺, Fe²⁺, Ni²⁺, Hg²⁺, Co²⁺, Cu⁺, Au²⁺, Ba²⁺, and Pb²⁺, all showing upper quartile binding scores greater than 1. This observation corroborates previous modeling attempts using AlphaFold 3, which highlighted the affinity of Zn²⁺ to cysteine, characterized by its thiol functional group, for various metal ions (Yang et al., 2024).</p>
+    <img src="https://static.igem.wiki/teams/5546/model/mtmodelcycle0/c0figure15.webp" alt="Figure 15" class="card-image"> 
+    <p style="text-align: center;"><strong>Figure 16.</strong> Binding score of different metal ions to cysteine residues on PflQ2MT</p>
+    <p>However, we wanted to ascertain whether the metal ions listed above could specifically bind to the cysteine pocket of PflQ2MT, as the previous results only reflect the binding affinity of individual cysteine residues. The binding score data from MIB2 predicted binding by evaluating each cysteine residue independently, scoring their affinities one at a time.</p>
+    <p>Since proteins exist as three-dimensional structures, metal ions typically bind to a pocket formed by multiple residues working together, rather than to one isolated cysteine alone. Thus, further analysis was necessary to consider the docking scores and to quantify the number of cysteines identified by MIB2 as participating in metal ion binding within the three-dimensional structure of PflQ2MT. This assessment helped determine how many cysteines are involved collectively in binding metal ions, ultimately clarifying which metal ions can effectively bind to PflQ2MT.</p>
+    <p>As such, we first analysed the number of cysteines involved in binding for each metal ion. Figure 17 below illustrates the number of cysteines identified for binding by each metal ion, with a maximum of 9. The results indicate a noteworthy discrepancy: while Cu²⁺, Fe³⁺, Zn²⁺, Hg²⁺, Co²⁺, and Au²⁺ exhibited affinity for individual cysteine residues, a consideration of the three-dimensional protein structure revealed that they do not effectively bind to these residues. As a result, the metal ions identified as capable of binding include Mn²⁺, Cd²⁺, Fe²⁺, Ni²⁺, Cu⁺, Ba²⁺, and Pb²⁺.</p>
+    <p>PflQ2MT exhibited the greatest preference for Cd²⁺ and Cu⁺ (binding to all 9 cysteines), followed by Fe²⁺ at 7 and Pb²⁺ at 5. Cu⁺ is less stable and tends to oxidize to the Cu²⁺ form, and since Cu²⁺ cannot bind to any cysteines, it is unlikely to compete effectively with Cd²⁺. These results suggest that PflQ2MT preferentially binds to Cd²⁺ more than any of the other predicted metal ions.</p>
+    <img src="https://static.igem.wiki/teams/5546/model/mtmodelcycle0/c0figure16.webp" alt="Figure 16" class="card-image"> 
+    <p style="text-align: center;"><strong>Figure 17.</strong> Number of cysteines involved in binding for each metal ion</p>
+
+    <h2>Validating the Results</h2>
+    <p>The solution structure of PflQ2MT demonstrates that cadmium binds to the cysteine-rich pocket (Habjanič et al., 2018). Additionally, it is known that metal ions generally bind to cysteine residues in metallothioneins (Yang et al., 2024). Therefore, the predictions are mostly accurate.</p>
+    <p>However, the research paper that characterized PflQ2MT indicates that it can bind both zinc and cadmium ions (Habjanič et al., 2018), which contrasts with our findings showing that Zn²⁺ cannot bind to any cysteine residues. Although Zn²⁺ exhibits a higher binding affinity than Cd²⁺, MIB2 did not mark any cysteine residues as capable of binding Zn²⁺. We suspect this discrepancy could be attributed to the following issue.</p>
+
+    <h2>Learn: Limitations Regarding the Predictions</h2>
+    <p>While the cadmium ion binding predictions appear generally accurate, some limitations exist with MIB2 due to its lack of molecular dynamics in docking metal ions to proteins.</p>
+    <p>MIB2 algorithm appears to treat proteins as a static structure, implying that the protein is entirely rigid and unable to alter its topology. This assumption could significantly impact the accuracy of its predictions for dynamic structures such as metal-binding proteins. This issue becomes particularly evident when predicting metal binding affinities for proteins such as LgiMT1 and LgiMT2, where the changes in topology are substantial upon metal ion binding (refer to the AlphaFold 3 analysis from before, and Figures 5 & 6. Consequently, the metal binding affinity results may lack precision, as they fail to account for the correct dynamic topology of the protein.</p>
+    <p>Figure 18 below shows the MIB2 cadmium binding prediction for LgiMT1, showing all potential cadmium binding positions. It is observed that cadmium concentrates at four distinct positions (indicated with red boxes), whereas literature indicates that cadmium should only bind at two positions, the β and γ domains in LgiMT1, which bind 3 and 4 cadmium ions, respectively) (García-Risco et al., 2023).</p>
+    <img src="https://static.igem.wiki/teams/5546/model/mtmodelcycle0/c0figure17.webp" alt="Figure 17" class="card-image"> 
+    <p style="text-align: center;"><strong>Figure 18.</strong> Visualization of MIB2 prediction for all cadmium binding positions of LgiMT1</p>
+    <p>The expected structure with annotations of the β and γ domains is included for comparison, derived from AlphaFold 3 results of LgiMT1 with 7 zinc ions [Figure 19 below], which we predicted previously. This observation reinforces that the absence of a well-defined initial structure can significantly affect prediction accuracy. Although PflQ2MT displays a relatively well-defined structure, subtle changes may nonetheless sufficiently alter the resulting predictions.</p>
+    <img src="https://static.igem.wiki/teams/5546/model/mtmodelcycle0/c0figure18.webp" alt="Figure 18" class="card-image"> 
+    <p style="text-align: center;"><strong>Figure 19.</strong> AlphaFold 3 structure prediction of LgiMT1 binding with 7 zinc ions from an earlier section, with annotations showing the β and γ domains</p>
+
+    <p>Thus, in our computational workflow, we highlighted the many limitations that AI servers face. This highlighted two key learning points which guided our future cycles.</p>
+    <ol>
+      <li>Models cannot be fully in-silico and must be validated by Wet Lab experiments or existing literature to increase validity of outputs</li>
+      <li>AI tools themselves are not the most apt tool to simulate dynamic proteins such as EC20 and PflQ2MT. Thus, a more robust and specific model had to be developed.</li>
+      <li>Therefore, it was in our future cycles where our team began working with Molecular Dynamics simulations in order to check for binding, folding and stability under the specific conditions we would test and use our protein.</li>
+    </ol>
+
+    <h2>References</h2>
+    <ul>
+    <ul>
+    <li>Bae, W., Chen, W., Mulchandani, A., & Mehra, R. K. (2000). Enhanced bioaccumulation of heavy metals by bacterial cells displaying synthetic phytochelatins. <em>Biotechnol. Bioeng., 70</em>(5), 518–524. <a href="https://doi.org/10.1002/10970290(20001205)70:5%3C518::AIDBIT6%3E3.0.CO;25">https://doi.org/10.1002/10970290(20001205)70:5%3C518::AIDBIT6%3E3.0.CO;25</a>
+    </li>
+  <li>Beil, A., Jurt, S., Walser, R., Schönhut, T., Güntert, P., Palacios, Ò., Atrian, S., Capdevila, M., Reinhard Dallinger, & Zerbe, O. (2019). The Solution Structure and Dynamics of Cd-Metallothionein from Helix pomatia Reveal Optimization for Binding Cd over Zn. <em>Biochemistry, 58</em>(45), 4570–4581. <a href="https://doi.org/10.1021/acs.biochem.9b00830">https://doi.org/10.1021/acs.biochem.9b00830</a>
+  </li>
+  <li>Blake, D. A., Chakrabarti, P., Khosraviani, M., Hatcher, F. M., Westhoff, C. M., Goebel, P., Wylie, D. E., & Robert, B. (1996). Metal Binding Properties of a Monoclonal Antibody Directed toward MetalChelate Complexes *. <em>Journal of Biological Chemistry, 271</em>(44), 27677–27685. <a href="https://doi.org/10.1074/jbc.271.44.27677">https://doi.org/10.1074/jbc.271.44.27677</a></li>
+  <li>Freisinger, E., & Vašák, M. (2013). Cadmium in Metallothioneins. <em>Metal Ions in Life Sciences, 11</em>, 339–371. https://doi.org/10.1007/9789400751798_11</li>
+  <li>García-Risco, M., Calatayud, S., Pedrini-Martha, V., Ricard Albalat, Palacios, Ò., Capdevila, M., & Reinhard Dallinger. (2023). A de novo evolved domain improves the cadmium detoxification capacity of limpet metallothioneins. <em>Scientific Reports, 13</em>(1). <a href="https://doi.org/10.1038/s41598-023-35786-1">https://doi.org/10.1038/s41598-023-35786-1</a></li>
+  <li>Habjanič, J., Zerbe, O., & Freisinger, E. (2018). A histidine-rich Pseudomonas metallothionein with a disordered tail displays higher binding capacity for cadmium than zinc. <em>Metallomics, 10</em>(10), 1415–1429. <a href="https://doi.org/10.1039/C8MT00193F">https://doi.org/10.1039/C8MT00193F</a></li>
+  <li>Halecki, W., Sionkowski, T., Chmielowski, K., Kowalczyk, A., & Kalarus, K. (2024). Municipal wastewater quality control: Heavy metal comparative Analysis—Case study. <em>Environmental Protection and Natural Resources, 34</em>. <a href="https://doi.org/10.2478/oszn-2023-0023">https://doi.org/10.2478/oszn-2023-0023</a></li>
+  <li>Klaus Zangger, GÜLIN ÖZ, Armitage, I. M., & Otvos, J. D. (1999). Three‐dimensional solution structure of mouse [Cd7]‐metallothionein‐l by homonuclear and heteronuclear NMR spectroscopy. <em>Protein Science, 8</em>(12), 2630–2638. <a href="https://doi.org/10.1110/ps.8.12.2630">https://doi.org/10.1110/ps.8.12.2630</a></li>
+  <li>Lin, Y.-F., Cheng, C.-W., Shih, C.-S., Hwang, J.-K., Yu, C.-S., & Lu, C.-H. (2016). MIB: Metal Ion-Binding Site Prediction and Docking Server. <em>Journal of Chemical Information and Modeling, 56</em>(12), 2287–2291. <a href="https://doi.org/10.1021/acs.jcim.6b00407">https://doi.org/10.1021/acs.jcim.6b00407</a></li>
+  <li>Lu, C.-H., Chen, C.-C., Yu, C.-S., Liu, Y.-Y., Liu, J.-J., Wei, S.-T., & Lin, Y.-F. (2022). MIB2: metal ion-binding site prediction and modeling server. <em>Bioinformatics, 38</em>(18), 4428–4429. <a href="https://doi.org/10.1093/bioinformatics/btac534">https://doi.org/10.1093/bioinformatics/btac534</a></li>
+  <li>Lu, C.-H., Lin, Y.-F., Lin, J.-J., & Yu, C.-S. (2012). Prediction of Metal Ion–Binding Sites in Proteins Using the Fragment Transformation Method. <em>PLoS ONE, 7</em>(6), e39252. <a href="https://doi.org/10.1371/journal.pone.0039252">https://doi.org/10.1371/journal.pone.0039252</a></li>
+  <li>Yang, R., Dumila Roshani, Gao, B., Li, P., & Shang, N. (2024). Metallothionein: A Comprehensive Review of Its Classification, Structure, Biological Functions, and Applications. <em>Antioxidants, 13</em>(7), 825–825. <a href="https://doi.org/10.3390/antiox13070825">https://doi.org/10.3390/antiox13070825</a></li>
+  </ul>
+</ul>
+
+
+    </div>
+
+    <div class="tab-content" id="gromacscontent">
+      <h2>Overview</h2>
+      <p>GROMACS is a software specialising in Molecular Dynamics (MD) simulations. MD simulations calculate the physical movements of molecules based on energies, modeling their behaviour under realistic conditions and physical constraints over time. In synthetic biology, these simulations predict interactions between biological components.</p>
+<p>Our primary motivation for this model is to efficiently answer biophysical questions that are resource-intensive for wet lab experimentation and to verify assumptions from circuit design. This is crucial for enhancing our understanding of the genetic circuit and communicating results to other modules to facilitate informed design changes. The predictive nature of MD modeling is especially vital for novel circuits like the circuit like ours involving metallothionein (MT), as it provides a computational basis for supporting real-life experimental data.</p>
+<p>The computational tool, GROMACS, was selected for this task due to its robust interface and high performance ability. A key feature is its ability to incorporate force fields in simulations, investigating the potential energy between molecules while taking into account various parameters such as temperature, pH, pressure and density. These different conditions may require more extensive and time-consuming measures to explore through wet lab experiments alone, but can be tested in a fairly accurate manner with the help of MD simulation.</p>
+<p>Our Dry Lab team focused on evaluating the binding potential between metallothionein (MT) and cadmium ions by generating predictive trajectories of the cadmium ion around our fusion protein. We also worked to determine the optimal pH for binding. Results were analysed through trajectory animations and by quantifying intermolecular distances to evaluate binding probability. </p>
+<p>The insights from the minimum distances between the cadmium ion and MT suggest that cadmium ions exhibit more interactions with the protein. However, due to limited computational resources, these results primarily provide a foundation for future optimization. Future directions include subsequent work that involve longer simulation times, calculation of binding free energy (ΔG), and refined concentration setups to draw stricter conclusions regarding the specificity of cadmium binding compared to zinc ions.</p>
+
+      <h2>Design</h2>
+      <p>Through molecular dynamics simulation on GROMACS, our team mainly aims at evaluating the binding potential between MT and cadmium ions.</p>
+      <strong>Designing system</strong>
+      <p>Given that the concentration of zinc ion is significantly higher than cadmium ion in a random sludge sample, in ratios which can range from approximately 20:1 to 100:1 (Milik et al., 2017). We aim to simulate the situation as accurately as possible and select a concentration of 18 zinc ions to 1 cadmium ion for a zinc ion concentration sufficient enough to provide insightful results while keeping that of the cadmium ion minimal to reflect reality. However, it is worth noting that this concentration is still higher than what is expected in a real life sludge sample.</p>
+      <strong>System Overview and Expectations</strong>
+      <p>Our designed system consists of our fusion protein in an environment of 18 zinc ions and 1 cadmium ions. The system then goes through neutralisation with addition of sodium and chloride ions, then its energy is minimized. We are studying specifically the ion behaviour around the MT through their trajectory, and the distance between the cadmium ion and the MT residues are measured. A distance is interpreted to be potential bonding between the protein residue and cadmium ion when it is in the range of approximately 2.52 – 2.54 angstrom (Å) (Jalilehvand et al., 2009).</p>
+      <strong>Additional considerations</strong>
+      <p>Furthermore, gromacs energies parameters such as density, pressure, potential energy, and temperature are also plotted against time to visualise how these factors change with time within the system. Such observations will help to determine the stability of the system.</p>
+
+
+      <h2>Build</h2>
+      <strong>Getting the software ready</strong>
+      <p>Most of the dry lab members working on this task accessed GROMACS through homebrew and worked on the task using MacOS terminal, but it can also be accessed through VS Code.</p>
+      <strong>Convert protein structure into .gro format + Force field selection</strong>
+      <p>A forcefield CHARMM36 is specifically used in our case since only this force field has cadmium ion properties (GROMACS forums editors, 2023).
+In a new folder, we input our fusion protein structure, which is a .pdb file since it is a molecular structure. The overall construction of our fusion protein cannot be found on databases and therefore have to be constructed by ourselves. The .pdb fusion protein structural file is made using AlphaFold by inputting the full protein sequence. We convert the .pdf file into .gro file that is compatible with working with in gromacs by the command:
+</p>
+      <ul>
+        <li>gmx pdb2gmx -f fusion_pro2.pdb -o processed.gro -ter -ignh</li>
+      </ul>
+      <img src="https://static.igem.wiki/teams/5546/model/gromacs/fig1.webp" alt="Figure 1" class="card-image">
+      <p style="text-align: center;"><strong>Figure 1.</strong>Force field selection process</p>
+      <p>It shows a selection of force fields that are available to choose from, select charmm36 force field (number 8 in our selection).</p>
+      <strong>Components selection + definition</strong>
+      <img src="https://static.igem.wiki/teams/5546/model/gromacs/fig2.webp" alt="Figure 2" class="card-image">
+      <p style="text-align: center;"><strong>Figure 2.</strong>Water molecule model selection</p>
+      <p>Next, we choose either TIP3P or TIP3P_ORIGINAL as our water molecule, which are compatible with our chosen force field.</p>
+      <img src="https://static.igem.wiki/teams/5546/model/gromacs/fig3.webp" alt="Figure 3" class="card-image">
+      <img src="https://static.igem.wiki/teams/5546/model/gromacs/fig4.webp" alt="Figure 4" class="card-image">
+      <p style="text-align: center;"><strong>Figure 3.</strong> Water molecule selection</p>
+      <p>Structure of the content in the .pdb file has been read and analysed, information stored for use later.</p>
+      <img src="https://static.igem.wiki/teams/5546/model/gromacs/fig5.webp" alt="Figure 5" class="card-image">
+      <p style="text-align: center;"><strong>Figure 4.</strong>Terminus type selection</p>
+      <p>Since the environment in which this process happens is acidic (low pH), we choose a neutral N-terminus and a COO- (charged) terminus.</p>
+      <strong>System configuration + solvation</strong>
+      <p>We construct a cubic system - the “box” which encloses our system for simulation with the following command:</p>
+      <ul>
+        <li>gmx editconf -f processed.gro -o newbox.gro -c -d 1.0 -bt cubic</li>
+      </ul>
+      <img src="https://static.igem.wiki/teams/5546/model/gromacs/fig6.webp" alt="Figure 6" class="card-image">
+      <p style="text-align: center;"><strong>Figure 5.</strong>Construction of cubic system</p>
+      <p>What we have done here is inputting the .gro file which we have processed earlier, to obtain newbox.gro, which is the system placed in a box with the properties outputted above. After setting up the box, we fill the box with the water molecules which we have selected earlier by the command:</p>
+      <ul>
+        <li>gmx solvate -cp newbox.gro -cs spc216.gro -o solvated.gro -p topol.top</li>
+      </ul>
+      <img src="https://static.igem.wiki/teams/5546/model/gromacs/fig7.webp" alt="Figure 7" class="card-image">
+      <p style="text-align: center;"><strong>Figure 6.</strong>System configuration</p>
+      <strong>Adding cadmium and zinc ions</strong>>
+      <p>Next, adding our desired ions is a critical step. We add the cadmium and zinc ions respectively to a preprocessed .mdp file. </p>
+      <p>Add zinc ions by the command:</p>
+      <ul>
+        <li>gmx genion -s ions.tpr -o system_with_zn.gro -p topol.top -pname ZN -np 18</li>
+      </ul>
+      <img src="https://static.igem.wiki/teams/5546/model/gromacs/fig8.webp" alt="Figure 8" class="card-image"> 
+      <p style="text-align: center;"><strong>Figure 7.</strong>Addition of zinc ions</p>
+      <p>Preprocessing is needed after adding the zinc ions with the following command:</p>
+      <ul>
+        <li>gmx grompp -f minim.mdp -c system_with_zn.gro -p topol.top -o ions_zn.tpr</li>
+      </ul>
+      <img src="https://static.igem.wiki/teams/5546/model/gromacs/fig9.webp" alt="Figure 9" class="card-image"> 
+      <img src="https://static.igem.wiki/teams/5546/model/gromacs/fig10.webp" alt="Figure 10" class="card-image">
+      <p style="text-align: center;"><strong>Figure 8.</strong>Preprocessing after addition of zinc ions</p>
+      <p>Next, add cadmium ions:</p>
+      <ul>
+        <li>gmx genion -s ions_zn.tpr -o system_with_zn_cd.gro -p topol.top -pname CD2 -np 1</li>
+      </ul>
+      <img src="https://static.igem.wiki/teams/5546/model/gromacs/fig11.webp" alt="Figure 11" class="card-image"> 
+      <p style="text-align: center;"><strong>Figure 9.</strong>Addition of cadmium ion</p>
+      <p>Preprocess again with:</p>
+      <ul>
+        <li>gmx grompp -f minim.mdp -c system_with_zn_cd.gro -p topol.top -o ions_final.tpr</li>
+      </ul>
+      <img src="https://static.igem.wiki/teams/5546/model/gromacs/fig12.webp" alt="Figure 12" class="card-image"> 
+      <p style="text-align: center;"><strong>Figure 10.</strong>Preprocessing after addition of cadmium ion</p>
+      <strong>Neutralisation</strong>
+      <p>The system then goes through neutralisation with addition of sodium and chloride ions.
+Addition of sodium and chloride ions:
+</p>
+      <ul>
+        <li>gmx genion -s ions_final.tpr -o solvated_ions.gro -p topol.top -pname NA -nname CL -neutral</li>
+      </ul>
+      <img src="https://static.igem.wiki/teams/5546/model/gromacs/fig13.webp" alt="Figure 13" class="card-image"> 
+      <p style="text-align: center;"><strong>Figure 11.</strong>Neutralisation process</p>
+      <strong>Energy minimization</strong>
+      <p>Next, the energy of the system is minimized. The software will figure out optimal locations of the molecules relative to the MT. The MT also adjusts its structure to adopt lower energy conformations. The purpose of this step is to mimic nature's preference for lowest energy conformations.</p>
+      <strong>NVT, NPT Equilibrium and MD Simulations</strong>
+      <p>After running energy minimization, we can run NVT and NPT equilibrium, and md simulations to generate data for temperature, pressure, and trajectories respectively in order to check for system and protein stability.</p>
+      <strong>Visualization</strong>
+      <p>Using PyMOL, input the system file and trajectory file, an animation of the moving zinc and cadmium ions can be generated. Depending on the number of frames, the animation length varies.</p>
+
+
+
+      <h2>Test</h2>
+      <strong>Binding Affinity</strong>
+      <p>A protein is composed of long amino acid sequences, each of these amino acids are referred to as a residue. Binding potential is a variable that measures the probability of a residue binding to specific molecules. In our case, we focus on evaluating the binding potential between MT and cadmium ions. Higher binding potential values indicate a higher chance of binding occurring between residues and the specific molecule.</p>
+      <img src="https://static.igem.wiki/teams/5546/model/gromacs/bindingpotential1.webp" alt="Binding Potential" class="card-image"> 
+      <p style="text-align: center;"><strong>Figure 14.</strong> Residues’ binding potential for cadmium ions</p>
+      <p>The graph illustrates the binding potential for cadmium ions for the different residues. The x axis shows the residue numbers, and the y axis plots the binding potential which is a dimensionless value. The baseline for the binding potential score is approximately -0.5, residues having a binding potential score close to this value indicate weak attraction to bind to cadmium ions.</p>
+      <p>The graphs show a trend of comparably higher binding potential for higher-numbered residues. The residues with the highest binding potential to cadmium ions are shown to be 171-CYS, 189-GLN 193-GLU, and 201-CYS. It means that for these specific residues, they are most likely to bind to cadmium ions. Therefore, the measured distance between the MT and cadmium ions are displayed in the following graphs for further investigation.</p>
+      <p>The binding distance between cadmium ions and cystine is 2.52 – 2.54 angstrom (Å) (Jalilehvand et al., 2009). This means that a distance within this range or smaller indicates that cadmium ion is bound to cysteine. Our graphs are frames obtained from the trajectories of the ions which are generated in GROMACs. In our graphs, the distances between the cadmium ion and the specific MT residue are displayed, all in the units of Å, which can be directly compared to the cutoff for binding distance. Ideally, the expected results should show the residues having a distance within or smaller than 2.52 – 2.54 Å to verify the cadmium ion can bind to MT. </p>
+      <img src="https://static.igem.wiki/teams/5546/model/gromacs/fig15.webp" alt="Figure 15" class="card-image">
+      <p style="text-align: center;"><strong>Figure 15.</strong> Measured distance between cadmium ion and 171-CYS residue</p>
+      <img src="https://static.igem.wiki/teams/5546/model/gromacs/fig16.webp" alt="Figure 16" class="card-image">
+      <p style="text-align: center;"><strong>Figure 16.</strong> Measured distance between cadmium ion and 171-CYS residue</p>
+      <p>The distances shown between 171-CYS and the cadmium ion are measured to be 38.9Å and 13.1Å over two different frames, which are not in the range of expected values of binding distance. This means that even though given the higher binding potential, the distance between the cadmium ion and 171-CYS residue indicates that the condition in this case is not optimistic for binding.</p>
+      <img src="https://static.igem.wiki/teams/5546/model/gromacs/fig17.webp" alt="Figure 17" class="card-image">
+      <p style="text-align: center;"><strong>Figure 17.</strong> Measured distance between cadmium ion and 189-GLN residue</p>
+      <img src="https://static.igem.wiki/teams/5546/model/gromacs/fig18.webp" alt="Figure 18" class="card-image">
+      <p style="text-align: center;"><strong>Figure 18.</strong> Measured distance between cadmium ion and 193-GLU residue</p>
+      <p>The distances between 189-GLN and 193-GLU are shown to be 50.7Å and 27.5Å respectively. These values are also higher and not in the range of expected values of binding distance. Thus in this case, the chances of binding are also low.</p>
+      <img src="https://static.igem.wiki/teams/5546/model/gromacs/fig19.webp" alt="Figure 19" class="card-image">
+      <p style="text-align: center;"><strong>Figure 19.</strong> Measured distance between cadmium ion and 201-CYS residue</p>
+      <img src="https://static.igem.wiki/teams/5546/model/gromacs/fig20.webp" alt="Figure 20" class="card-image">
+      <p style="text-align: center;"><strong>Figure 20.</strong> Measured distance between cadmium ion and 201-CYS residue</p>
+      <p>201-CYS and the cadmium ion show a distance of 44.5Å and 20.3Å across 2 frames. These two values are also not in the range of expected values of binding distance, and therefore the chances of binding are low, according to this result.</p>
+      <strong>System and Protein Stability</strong>
+      <p>Molecular dynamics simulation also allows us to analyze the system conditions, structural properties and energies over time, facilitating the assessment of system and protein stability.
+The properties examined include system density, potential energy, system pressure, system temperature, backbone and radius of gyration of the protein.
+</p>
+      <strong>System Conditions</strong>
+      <img src="https://static.igem.wiki/teams/5546/model/gromacs/fig21.webp" alt="Figure 21" class="card-image">
+      <p style="text-align: center;"><strong>Figure 21.</strong> System density over time</p>
+      <p>The density is shown to be relatively stable with slight fluctuations around the level of 1020-1030 kg/m^3 after an initial spike, meaning that the system has stabilized rapidly and achieved equilibrium given that there is no major change in density.</p>
+      <img src="https://static.igem.wiki/teams/5546/model/gromacs/fig22.webp" alt="Figure 22" class="card-image">
+      <p style="text-align: center;"><strong>Figure 22.</strong> Potential energy of the system over time</p>
+      <p>Potential energy rapidly decreases as the system relaxes, and reaches a low energy state at around -1.0kJ/mol, indicating stability has been achieved given that the curve is near-plateau.</p>
+      <img src="https://static.igem.wiki/teams/5546/model/gromacs/fig23.webp" alt="Figure 23" class="card-image">
+      <p style="text-align: center;"><strong>Figure 23.</strong> System pressure over time</p>
+      <p>The pressure of the system fluctuates around the level of 0 bar. Since the fluctuations are near an average pressure of 0 bar, it shows that the controlled pressure is maintained to be around 0 bar which is typical for MD simulations.</p>
+      <img src="https://static.igem.wiki/teams/5546/model/gromacs/fig24.webp" alt="Figure 24" class="card-image">
+      <p style="text-align: center;"><strong>Figure 24.</strong> System temperature over time</p>
+      <p>The temperature of the system is around 300K (~27℃). The fluctuations with an average temperature of 300K Indicates that system temperature is also under control and as expected.</p>
+      <strong>Protein Structural Properties</strong>
+      <img src="https://static.igem.wiki/teams/5546/model/gromacs/fig25.webp" alt="Figure 25" class="card-image">
+      <p style="text-align: center;"><strong>Figure 25.</strong> Backbone RMSD of the protein over time</p>
+      <p>The Root Mean Square Deviation (RMSD) is a measure of similarity in conformation between the backbone and protein structure. The graph shows an initial increase until around 0.4nm, which indicates stabilisation around that value. After that, the RMSD fluctuates around 0.4nm, indicating that the protein structure has stabilised and is not undergoing major conformational changes.</p>
+      <img src="https://static.igem.wiki/teams/5546/model/gromacs/fig26.webp" alt="Figure 26" class="card-image">
+      <p style="text-align: center;"><strong>Figure 26.</strong> Radius of gyration of the protein over time</p>
+      <p>Radius of gyration measures the distance of concentration of mass from a rotational axis. Overall, the measured data shows minor fluctuation around a steady range for all components (total and axial). It can be concluded that the spatial distribution of atoms is consistent throughout.</p>
+      <p>Ideally, we expect that system conditions and protein structure to stay consistent and stable in order to output results. Through studying the graphs which present us with such information, the fluctuation of results under our simulated conditions and timeframe, the protein did not reach a stable binding state.</p>
+
+      <h2>Learn</h2>
+      <p>While limited by computational resources, our GROMACS simulations provide insight on valuable initial trends rather than conclusive proof. Our analysis of the minimum measured distances between the cadmium ion and MT suggests that cadmium ions may have more interactions with the MT protein than zinc ions. However, this remains a preliminary observation.</p>
+      <strong>Interpretation and Limitations</strong>
+      <p>The distances observed in our simulation were consistently longer than the typical length for a stable metal-thiolate bond. This indicates that under our simulated conditions and timeframe, the system did not reach a stable binding state. The fluctuations in the distance graphs confirm that a longer simulation time is required to achieve stability and observe a definitive binding event, which is beyond the scope of our current computational resources.</p>
+      <strong>Connections with other modules</strong>
+      <p>For Wet Lab, our results highlight that binding should be treated as an assumption to be tested. It is recommended that wet-lab experiments prioritize direct validation of the cadmium-MT binding affinity, as the computational model could not yet confirm it.</p>
+      <p>For Circuit Design, our analysis highlights that the performance of the MT part is the project's critical uncertainty.</p>
+      <strong>Future directions</strong>
+      <p>Given the results obtained from our trails, future work should focus on:</p>
+      <p>1. <strong>Longer simulation times:</strong> Achieving a standard timeframe calculation of 100ns or longer.</p>
+      <p>2. <strong>Binding free energy calculation:</strong> Quantitatively compare the binding strength of cadmium ions and zinc ions, so that rather than purely investigating in the binding potential between the cadmium ion and MT, the binding specificity of the two different ions to the protein can also be explored and compared.</p>
+      <p>3. <strong>Refined setup:</strong> Optimisation of system parameters and ions concentration to achieve enhanced stability.</p>
+
+      <h2>References</h2>
+      <ul>
+        <ul>
+      <li>‌Bondi, A. (1964). van der Waals Volumes and Radii. <em>The Journal of Physical Chemistry, 68</em>(3), 441–451. <a href="https://doi.org/10.1021/j100785a001">https://doi.org/10.1021/j100785a001</a></li>
+      <li>GROMACS forums. (2023, February 22). <em>CHARMM force field parameters for metal ions Cd(II) and Pb(II)</em>. GROMACS Forums. <a href="https://gromacs.bioexcel.eu/t/charmm-force-field-parameters-for-metal-ions-cd-ii-and-pb-ii/5852">https://gromacs.bioexcel.eu/t/charmm-force-field-parameters-for-metal-ions-cd-ii-and-pb-ii/5852</a></li>
+      <li>Hub, J. S., Bert, Helmut Grubmüller, & Gerrit Groenhof. (2014). Quantifying Artifacts in Ewald Simulations of Inhomogeneous Systems with a Net Charge. <em>Journal of Chemical Theory and Computation, 10</em>(1), 381–390. <a href="https://doi.org/10.1021/ct400626b">https://doi.org/10.1021/ct400626b</a></li>
+      <li>Farideh Jalilehvand, Leung, B. O., & Mah, V. (2009). Cadmium(II) Complex Formation with Cysteine and Penicillamine. <em>Inorganic Chemistry, 48</em>(13), 5758–5771. <a href="https://doi.org/10.1021/ic802278r">https://doi.org/10.1021/ic802278r</a></li>
+      <li>Milik, J., Pasela, R., Lachowicz, M., & Chalamoński, M. (2017). THE CONCENTRATION OF TRACE ELEMENTS IN SEWAGE SLUDGE FROM WASTEWATER TREATMENT PLANT IN GNIEWINO. <em>Journal of Ecological Engineering, 18</em>(5), 118–124. <a href="https://doi.org/10.12911/22998993/74628">https://doi.org/10.12911/22998993/74628</a></li>
+    </ul>
+    </ul>
+
+    </div>
+
+    <div class="tab-content" id="memcontent">
+      <h2>Membrane Protein Docking</h2>
+      <p>In order to understand whether the fusion protein could correctly express itself on the membrane, we decided to use computational tools to stimulate the expression of the fusion protein Lpp-OmpA-PflQ2MT into the bacterial outer membrane. By using the computational tools CHARMM-GUI and GROMACS, we can predict whether the Lpp-OmpA-PflQ2MT can correctly be expressed on the membrane of <em>E. coli</em> (strain K12) and <em>P. putida</em> (strain KT2440).</p>
+      <strong>Step1: Preparing the Protein Sequence</strong>
+      <p>Before using CHARMM-GUI to stimulate the membrane protein, we would need to know the characteristics and the original position of the component on a membrane to better understand the results. Although Wet Lab work was done in DH5a and BL21, the asset library and characterisation of <em>E. coli</em> K12 was more documented and well known, thus we first did the simulation using <em>E. coli</em> K12 structure. This served as a proxy for other <em>E. coli</em> strains and also a basis to validate the result of <em>P. putida</em> KT2440</p>
+      <strong>Setup</strong>
+      <p>Membrane source: <em>E. coli</em> K12 and <em>P. putida</em> KT2440 </p>
+      <p>Fusion protein composition: Lpp-OmpA-PflQ2MT</p>
+      <p><strong>Lpp (Braun’s Lipoprotein)</strong>: A major outer membrane protein in <em>E. coli</em> that anchors the outer membrane to the peptidoglycan layer, typically lipidated at a cysteine residue for membrane attachment. [Figure 1]
+</p>
+      <p><strong><em>UniProt Accession Number</em></strong>: P69776 (Originates from <em>E. coli</em> K12)</p>
+      <p><strong>OmpA</strong>: An outer membrane protein in Gram-negative bacteria with a β-barrel transmembrane domain (N-terminal) and a periplasmic domain that interacts with peptidoglycan. [Figure 2]
+</p>
+      <p><strong><em>RCSB Accession Number</em></strong>: 1QJP (Pautsch & Schulz, 2000) (Originates from <em>E. coli</em> BL21(DE3))</p>
+      <p><strong>PflQ2MT</strong>: A metallothionein-like domain from another microorganism, rich in cysteine residues, designed to bind heavy metal ions (preferentially four Cd²⁺ ions via thiolate bonds). [Figure 3]</p>
+      <p><strong><em>UniProt Accession Number</em></strong>: J2EKT7 (Originates from P. fluorescens (strain Q2-87))
+</p>
+      <table style="margin-left: auto; margin-right: auto;" class="model-table">
+        <thread>
+          <tr>
+            <th>Lpp</th>
+            <th>OmpA</th>
+            <th>PflQ2MT</th>
+          </tr>
+        </thread>
+      <tbody>
+      <tr>
+        <td><img src="https://static.igem.wiki/teams/5546/model/membranemodel/fig1.avif" alt="Figure 1" class="card-image"></td>
+        <td><img src="https://static.igem.wiki/teams/5546/model/membranemodel/fig2.avif" alt="Figure 2" class="card-image"></td>
+        <td><img src="https://static.igem.wiki/teams/5546/model/membranemodel/fig3.avif" alt="Figure 3" class="card-image"></td>
+      </tr>
+      </tbody>
+      </table>
+      <p style="text-align: center;"><strong>Figure 1, 2, and 3 (from left to right)</strong>Showing the structures of Lpp, OmpA, and PflQ2MT (short-form) respectively</p>
+      <p>The protein sequence is then combined and modelled using AlphaFold 3 and the structure for Lpp-OmpA-PflQ2MT is produced as shown below. [Figure 4]</p>
+      <img src="https://static.igem.wiki/teams/5546/model/membranemodel/fig4.avif" alt="Figure 4" class="card-image"> 
+      <p style="text-align: center;"><strong>Figure 4.</strong> Fusion protein structure generated from AlphaFold 3</p>
+      <strong>Step 2: Setting up CHARMM-GUI</strong>
+      <p>CHARMM-GUI is a web-based platform to interactively build complex systems and prepare the inputs with well-established and reproducible simulation protocols for state-of-the-art molecular simulations. CHARMM-GUI is a suitable option to stimulate complex systems. Below we explain how to model a membrane protein.</p>
+      <p>In order to make sure the orientation of the fusion protein and composition of membrane will be accurate, we first modelled OmpA only. This is because OmpA’s orientation on protein is known and can be found on OPM database (Orientation of Proteins in Membrane database) with the access code 1qjp.</p>
+      <img src="https://static.igem.wiki/teams/5546/model/membranemodel/fig5.avif" alt="Figure 5" class="card-image"> 
+      <p style="text-align: center;"><strong>Figure 5.</strong> Image from OPM illustrating the orientation of OmpA (OPM, 2025)</p>
+      <p>To generate the membrane, we referenced a research done on a similar protein, OphrH modelled in <em>E. coli</em> K12. Thus the membrane composition shown in figure 6 below (Lee, Patel, Kucharska, Tamm, & Im, 2017).</p>
+      
+
+      <table style="margin-left: auto; margin-right: auto;" class="model-table">
+          <tr>
+            <td>System</td>
+            <td colspan="2" class="table-secondary text-center">Lipid composition</td>
+            <td colspan="2" class="table-secondary text-center">No. of Lipids</td>
+          </tr>
+          <tr>
+            <td rowspan="2"><em>E. coli</em> K12</td>
+            <td>Top</td>
+            <td>Bottom</td>
+            <td>Top</td>
+            <td>Bottom</td>
+          </tr>
+          <tr>
+            <td><em>E. coli</em> Lipid A + K12 core</td>
+            <td>PPPE/PVPG/PVCL2</td>
+            <td>36</td>
+            <td>75/20/5</td>
+          </tr>
+        </table>
+      
+      <p style="text-align: center;"><strong>Figure 6.</strong> Table showing membrane lipid composition of <em>E. coli</em> K12 from research</p>
+      <p>For the composition of the upper leaflet of <em>E. coli</em> K12 membrane, we referenced CHARMM-GUI tutorial on “Membrane Builder: BtuB in <em>E. coli</em> outer membrane”, where the Core type is K-12 and the number of O-antigen repeating units is 2 and O6 is used as the available O-antigen and other parameters remains the same as default.</p>
+      <h2>Results & Analysis</h2>
+      <p>The resultant topology of OmpA in the membrane in figure 7 is shown below, which is the same as the OmpA from OPM shown in figure 5 above. With the correct topology and system size, we can add the other components into the model while using the same parameters.</p>
+      <img src="https://static.igem.wiki/teams/5546/model/membranemodel/fig7.avif" alt="Figure 7" class="card-image">
+      <p style="text-align: center;"><strong>Figure 7.</strong> CHARMM-GUI result of docking OmpA to the membrane</p>
+      <p>To further judge whether the positioning of the fusion protein is accurate, we compared the cross sectional area of OmpA to the fusion protein OmpA-PflQ2MT .</p>
+      
+      
+      <table style="margin-left: auto; margin-right: auto;" class="model-table">
+          <tr>
+            <td>Cross sectional Area of the Protein</td>
+            <td><img src="https://static.igem.wiki/teams/5546/model/membranemodel/fig8.avif" alt="Figure 8" class="card-image"></td>
+            <td><img src="https://static.igem.wiki/teams/5546/model/membranemodel/fig9.avif" alt="Figure 9" class="card-image"></td>
+          </tr>
+          <tr>
+            <td>Protein</td>
+            <td>OmpA</td>
+            <td>OmpA-PflQ2MT </td>
+          </tr>
+          <tr>
+            <td>Parameters for positioning</td>
+            <td>Directly imported form OPM server</td>
+            <td>Positioned using PPM2.0</td>
+          </tr>
+        </table>
+      
+      <p style="text-align: center;"><strong>Figure 8 and 9.</strong> Cross-Sectional Depiction of OmpA and OmpA-PflQ2MT respectively through the membrane</p>
+      <p>As seen from the figure 8, OmpA’s cross-sectional area of the protein span across extra-cellular and intra-cellular with more surface extruding into the extra-cellular part, which corresponds to its topology in OPM server and its characteristics as a beta-barrel transmembrane protein. Thus, we can use this knowledge to validate whether the fusion protein is correctly positioned.</p>
+      <p>As an incorrect example, we can see from figure 9 that most of the protein is expressed on the intra-cellular side which is not how a transmembrane protein should be expressed inside a membrane.</p>
+      <p>Therefore, we tested out other PDB orientations until we got one that is the closest as its real-life counterpart as validated with OmpA topology on OPM.</p>
+      
+      
+      <table style="margin-left: auto; margin-right: auto;" class="model-table">
+          <tr>
+            <td>PDB orientation parameters</td>
+            <td>Calculated Cross Sectional Area</td>
+            <td>Visualized</td>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li>Positioned using PDB orientation</li>
+                <li>Rotate molecule respect to the X axis -90 Degree</li>
+              </ul>
+            </td>
+            <td><img src="https://static.igem.wiki/teams/5546/model/membranemodel/fig10.avif" alt="Figure 10" class="card-image"></td>
+            <td><img src="https://static.igem.wiki/teams/5546/model/membranemodel/membrane1.avif" alt="Figure 11" class="card-image"></td>
+          </tr>
+        </table>
+
+        <p style="text-align: center;"><strong>Figure 10. (left)</strong> shows the calculated cross sectional area;</p>
+      <p style="text-align: center;"><strong>Figure 11. (right)</strong> illustrates the docking of OmpA-PflQ2MT to the membrane</p>
+      
+      
+      <img src="https://static.igem.wiki/teams/5546/model/membranemodel/membrane2.avif" alt="Figure 12" class="card-image">
+      <p style="text-align: center;"><strong>Figure 12.</strong> Illustration of OmpA-PflQ2MT with the respective layer of membrane labelled</p>
+      <p>The red box area indicates upper leaflet, whereas the pink box area indicates lower leaflet and the green arrow pointing to the green protein is OmpA-PflQ2MT (slightly hidden).</p>
+      <h2>Learn: Results and interpretation</h2>
+      <p>During our membrane protein simulation, we ran into several problems in the end, and we could not follow through with analysis and continue development of this dry lab part. The reasons are as follows:</p>
+      <strong>1. Limited benchmark data for membrane protein simulations</strong>
+      <p>During our initial research into membrane protein simulations, there were very few tutorials and information on membrane modelling. Therefore, it was difficult to verify the accuracy of our model or confirm whether the chosen parameters (e.g. force fields, PDB manipulation option, system size, component building options, etc) align with real-world bacterial behaviors through a purely in-silico model. Without established reference datasets or similar peer-reviewed case studies like ours utilizing Lpp-OmpA-(a metal binding protein), our results are largely unsubstantiated and would require characterisation studies and validation from wet lab data. Therefore, the original purpose of predicting wet lab results is quite challenging and requires a shift in paradigm. Rather, the fundamental model itself must first be validated before subsequently relying on it to predict Wet Lab results. Only then, it can be more reliable to help predict the outcome of experiments which exceed the scope of the Wet Lab.</p>
+      <strong>2. Little to no data on the membrane lipid composition of <em>P. putida</em> KT2440</strong>
+      <p>Our end goal is to take the simulation and analyze results of the fusion protein on <em>E. coli</em> K12 to compare with that on <em>P. putida</em> KT2440. General gram-negative membrane models like <em>E. coli</em> K12 are very well documented, with plenty of peer-reviewed articles and tutorials using the same parameters to generate the membrane. While for <em>P. putida</em>, the bacteria membrane is known to vary under environmental stresses (e.g. extreme pH value, heavy metal exposure, etc. ). There is not much literature surrounding the composition of the membrane, hence our model of the lipid membrane is simply an educated guess with many assumptions. An inaccurate membrane model would skew the protein insertion dynamics or cadmium accessibility to PflQ2MT on the membrane, resulting in analysis which must be interpreted with caution. </p>
+      <strong>3. Structural Artifacts in Protein Prediction Affecting Model</strong>
+      <p>The predicted structure of the fusion protein introduced a notable difference from the original protein component. Specifically as seen from figure 13 below, a structure that originally should be part of the OmpA β-barrel domain has manifested as uncoiled strings rather than the expected barrel conformation at the junction connecting to the PflQ2MT domain. This is likely due to limitations in structure prediction tools on predicting fusion proteins involving sequence from several organisms. This distortion would alter membrane insertion and exposure of PflQ2MT domain where it should be exposed outside of the membrane, but due the the protein conformation it is “squished” next to OmpA which result in it expressing partially within the membrane as well. We had tried other protein structural prediction software like SWISS-MODEL and RoseTTAFold which all gave similar results. This hinders our abilities to further stimulate the binding of metal-ions onto the membrane protein as well as inaccurate RMSD metric and binding energy calculations down the line. With more time, a dynamic model which accounted for the fact that fusion proteins are not static would have been more beneficial and insightful.</p>
+      <img src="https://static.igem.wiki/teams/5546/model/membranemodel/protein.avif" alt="Figure 13" class="card-image"> 
+      <p style="text-align: center;"><strong>Figure 13.</strong> Comparison of fusion protein (OmpA-PflQ2MT) (left) with OmpA (Right)</p>
+      <p>CHARMM-GUI provided an easy entry point for membrane protein modeling, and we were able to utilise it to get successful docking results. Thus, we believe our engineering work provided insightful troubleshooting and thought processes for us and possibly for future teams.</p>
+      <p>However, there are still many uncertainties and assumptions which had to be made, leading to potential discrepancy between the simulation of the bacteria membrane and protein compared to its behaviour in bacteria, and due to the computational and time limitations, we did not have time to improve the model further.</p>
+      <p>In the future to better utilize membrane protein stimulation and improve the modelling, we could find experts to help validate the accuracy of our model and ask for their expertise on such matters. Not only that, if resources allow, we can do our own wet lab experiments on the membrane of <em>P. putida</em> to get more accurate results for the lipid composition of the membrane system, to further improve the computational model.</p>
+
+      <h2>References </h2>
+      <ul>
+        <ul>
+        <li>Brown, T. P., Santa, D. E., Berger, B. A., Kong, L., Wittenberg, N. J., & Im, W. (2024). CHARMM GUI Membrane Builder for oxidized phospholipid membrane modeling and simulation. <em>Current Opinion in Structural Biology, 86</em>, 102813–102813. <a href="https://doi.org/10.1016/j.sbi.2024.102813">https://doi.org/10.1016/j.sbi.2024.102813</a></li>
+        <li>Feng, S., Park, S., Choi, Y. K., & Im, W. (2023). CHARMM-GUI Membrane Builder: Past, Current, and Future Developments and Applications. <em>Journal of Chemical Theory and Computation, 19</em>(8), 2161–2185. <a href="https://doi.org/10.1021/acs.jctc.2c01246">https://doi.org/10.1021/acs.jctc.2c01246</a>
+</li>
+        <li>Gee, S., Glover, K. J., Wittenberg, N. J., & Im, W. (2024). CHARMM‐GUI Membrane Builder for Lipid Droplet Modeling and Simulation. <em>ChemPlusChem, 89</em>(8). <a href="https://doi.org/10.1002/cplu.202400013">https://doi.org/10.1002/cplu.202400013</a></li>
+        <li>Jo, S., Cheng, X., Islam, S. M., Huang, L., Rui, H., Zhu, A., Lee, H. S., Qi, Y., Han, W., Vanommeslaeghe, K., MacKerell, A. D., Roux, B., & Im, W. (2014). CHARMM-GUI PDB Manipulator for Advanced Modeling and Simulations of Proteins Containing Nonstandard Residues. <em>Advances in Protein Chemistry and Structural Biology</em>, 235–265. <a href="https://doi.org/10.1016/bs.apcsb.2014.06.002">https://doi.org/10.1016/bs.apcsb.2014.06.002</a></li>
+        <li>Jo, S., Kim, T., & Im, W. (2007). Automated Builder and Database of Protein/Membrane Complexes for Molecular Dynamics Simulations. <em>PLoS ONE, 2</em>(9), e880. <a href="https://doi.org/10.1371/journal.pone.0000880">https://doi.org/10.1371/journal.pone.0000880</a>
+</li>
+        <li>Jo, S., Kim, T., Iyer, V. G., & Im, W. (2008). CHARMM-GUI: A web-based graphical user interface for CHARMM. <em>Journal of Computational Chemistry, 29</em>(11), 1859–1865. <a href="https://doi.org/10.1002/jcc.20945">https://doi.org/10.1002/jcc.20945</a>
+</li>
+        <li>Jo, S., Lim, J. B., Klauda, J. B., & Im, W. (2009). CHARMM-GUI Membrane Builder for Mixed Bilayers and Its Application to Yeast Membranes. <em>Biophysical Journal, 97</em>(1), 50–58. <a href="https://doi.org/10.1016/j.bpj.2009.04.013">https://doi.org/10.1016/j.bpj.2009.04.013</a></li>
+        <li>Kong, L., Park, S.-J., & Im, W. (2024). CHARMM-GUI PDB Reader and Manipulator: Covalent Ligand Modeling and Simulation. <em>Journal of Molecular Biology/Journal of Molecular Biology</em>, 168554–168554. <a href="https://doi.org/10.1016/j.jmb.2024.168554">https://doi.org/10.1016/j.jmb.2024.168554</a></li>
+        <li>Lee, J., Patel, D. S., Kucharska, I., Tamm, L. K., & Im, W. (2017). Refinement of OprH-LPS interactions by molecular simulations. <em>Biophysical Journal, 112</em>(2), 346–355. <a href="https://doi.org/10.1016/j.bpj.2016.12.006">https://doi.org/10.1016/j.bpj.2016.12.006</a></li>
+        <li>Lee, J., Patel, D. S., Ståhle, J., Park, S.-J., Kern, N. R., Kim, S., Lee, J., Cheng, X., Valvano, M. A., Holst, O., Knirel, Y. A., Qi, Y., Jo, S., Klauda, J. B., Widmalm, G., & Im, W. (2018). CHARMM-GUIMembrane Builderfor Complex Biological Membrane Simulations with Glycolipids and Lipoglycans. <em>Journal of Chemical Theory and Computation, 15</em>(1), 775–786. <a href="https://doi.org/10.1021/acs.jctc.8b01066">https://doi.org/10.1021/acs.jctc.8b01066</a></li>
+        <li><em>OPM</em>. (2025). Umich.edu. <a href="https://opm.phar.umich.edu/proteins/1">https://opm.phar.umich.edu/proteins/1</a></li>
+        <li>Pautsch, A., & Schulz, G. E. (2000). High-resolution structure of the OmpA membrane domain11Edited by D. C. Rees. <em>Journal of Molecular Biology, 298</em>(2), 273–282. <a href="https://doi.org/10.1006/jmbi.2000.3671">https://doi.org/10.1006/jmbi.2000.3671</a></li>
+        <li>Park, S., Choi, Y. K., Kim, S., Lee, J., & Im, W. (2021). CHARMM-GUI Membrane Builder for Lipid Nanoparticles with Ionizable Cationic Lipids and PEGylated Lipids. <em>Journal of Chemical Information and Modeling, 61</em>(10), 5192–5202. <a href="https://doi.org/10.1021/acs.jcim.1c00770">https://doi.org/10.1021/acs.jcim.1c00770</a></li>
+        <li>Park, S.-J., Kern, N., Brown, T., Lee, J., & Im, W. (2023). CHARMM-GUI PDB Manipulator: Various PDB Structural Modifications for Biomolecular Modeling and Simulation. <em>Journal of Molecular Biology</em>, 167995. <a href="https://doi.org/10.1016/j.jmb.2023.167995">https://doi.org/10.1016/j.jmb.2023.167995</a></li>
+        <li>Wu, E. L., Cheng, X., Jo, S., Rui, H., Song, K. C., Dávila-Contreras, E. M., Qi, Y., Lee, J., Monje-Galvan, V., Venable, R. M., Klauda, J. B., & Im, W. (2014). CHARMM-GUI Membrane Builder Toward Realistic Biological Membrane Simulations. <em>Journal of Computational Chemistry, 35</em>(27), 1997–2004. <a href="https://doi.org/10.1002/jcc.23702">https://doi.org/10.1002/jcc.23702</a>
+</li>
+        </ul></ul>
+    </div>
+
+    <div class="tab-content" id="modelusecontent">
+      <!-- <h2>Overview</h2> -->
+      <h2><strong>Development of neural network models</strong></h2>
+      <h2>1. Prediction of metal binding sites in proteins</h2>
+      <img src="https://static.igem.wiki/teams/5546/model/mtmodel2/deeplearning-stage1-2.webp" alt="Model" class="card-image"> 
+      <p style="text-align: center; font-weight: bold;">The model has been documented into a paper which has been accepted by 2025 9th International Conference on Computational Biology and Bioinformatics (ICCBB 2025). The preprint version has been released: <a href="https://doi.org/10.1101/2025.09.13.676010" target="_blank" rel="noopener">https://doi.org/10.1101/2025.09.13.676010</a>.</p>
+
+
+      <h2>Design</h2>
+      <p>Computational prediction of residue-level metal-binding sites has progressed quickly in recent years. However, we found that existing methods still face major limitations. Sequence-based predictors for multiple metals often show limited accuracy or rely on rigid, ion-specific designs that must be completely rebuilt to include new metal types. Structure-based predictors can achieve higher accuracy, but they depend on high-resolution 3D structures and computationally intensive steps such as homology modeling or structural alignment. More recently, protein language model approaches like ESM-1b and ESM-2 have improved predictive performance, but they remain resource-heavy, with long inference times and substantial GPU memory requirements for large sequence datasets.</p>
+
+      <h2>Build</h2>
+      <p>To address these challenges, we developed a new multi-metal binding site predictor based solely on amino acid sequences. As shown in the figure above, our framework uses a two-stage architecture: in the first stage, independent convolutional neural networks (CNNs) are trained for each specific metal ion; in the second stage, the outputs of these networks are combined into a fusion model.</p>
+
+      <h2>Test</h2>
+      <p><strong>Training time</strong></p>
+      <p>Because of this lightweight design, both the individual metal-specific predictors and the combined fusion network can be trained in less than an hour using a single NVIDIA A800 GPU. This fast turnaround allows for rapid testing of design choices and real-time parameter optimization, which is particularly valuable for large-scale proteome analysis.</p>
+      <p><strong>Threshold-Dependent Analyses</strong></p>
+      <p>To evaluate the performance of our fusion network, we used a stratified five-fold cross-validation approach during training and tested the final models on an independent dataset. Results from all folds were averaged to ensure reliability. For binary classification, we introduced a probability cutoff τ: residues predicted above this threshold were considered metal-binding, while those below it were treated as non-binding.</p>
+      <p><strong>F1 Score and Matthews Correlation Coefficient </strong></p>
+      <p>When examining different threshold values, the ensemble displayed strong and consistent performance across metals. The overall accuracy peaked within a moderate threshold range, where both precision and recall were well balanced. Matthews Correlation Coefficient (MCC) metrics followed a similar trend to the F1 score, confirming that the ensemble achieved a stable compromise between false positives and false negatives, even when dealing with uneven class distribution.</p>
+      <p><strong>Precision–Recall Trade-Off</strong></p>
+      <p>The precision–recall curves revealed different strengths for each type of metal. Iron predictions maintained good accuracy even as recall increased, making the model well-suited for exhaustive screening tasks. Zinc predictions required more cautious thresholding for applications where precision is most important. Magnesium predictions showed steadier performance across a wide range of thresholds, providing a good balance of sensitivity and reliability for more general applications.</p>
+      <p><strong>Per-Metal Performance</strong></p>
+      <p>At the optimal operating threshold, each metal displayed characteristic trade-offs. Iron showed the strongest balance between precision and recall, magnesium performed consistently across conditions, and the recall of zinc can be increased after minor adjustment to the threshold. These differences allow the method to be tuned for specific goals, whether maximizing coverage for large-scale annotation or prioritizing precision for experiments needing more confident predictions.</p>
+      <p>On the whole, the ensemble delivered reliable performance across all metals. Supported by the above testing results, we finally selected τ = 0.45, which ensured a balanced outcome.</p>
+      <!-- <img src="https://static.igem.wiki/teams/5546/model/mtmodel2/william1.avif" alt="Figure 1" class="card-image"> 
+      <img src="https://static.igem.wiki/teams/5546/model/mtmodel2/william2.avif" alt="Figure 2" class="card-image"> 
+      <img src="https://static.igem.wiki/teams/5546/model/mtmodel2/william3.avif" alt="Figure 3" class="card-image">
+      <img src="https://static.igem.wiki/teams/5546/model/mtmodel2/william4.avif" alt="Figure 4" class="card-image">
+      <img src="https://static.igem.wiki/teams/5546/model/mtmodel2/william5.avif" alt="Figure 5" class="card-image">
+      <img src="https://static.igem.wiki/teams/5546/model/mtmodel2/william6.avif" alt="Figure 6" class="card-image">
+       -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+        <img src="https://static.igem.wiki/teams/5546/model/mtmodel2/william1.avif" alt="Figure 1" class="card-image">
+        <img src="https://static.igem.wiki/teams/5546/model/mtmodel2/william2.avif" alt="Figure 2" class="card-image">
+        <img src="https://static.igem.wiki/teams/5546/model/mtmodel2/william3.avif" alt="Figure 3" class="card-image">
+        <img src="https://static.igem.wiki/teams/5546/model/mtmodel2/william4.avif" alt="Figure 4" class="card-image">
+        <img src="https://static.igem.wiki/teams/5546/model/mtmodel2/william5.avif" alt="Figure 5" class="card-image">
+        <img src="https://static.igem.wiki/teams/5546/model/mtmodel2/william6.avif" alt="Figure 6" class="card-image">
+        <!-- <img src="https://static.igem.wiki/teams/5546/model/mtmodel2/william7.avif" alt="Figure 7" class="card-image"> -->
+      </div>
+      <img src="https://static.igem.wiki/teams/5546/model/mtmodel2/william7.avif" alt="Figure 7" class="card-image">
+      
+      <p><strong>Ablation Study</strong></p>
+      <p>To better understand how each part of our model contributed to overall performance, we carried out an ablation study using stratified five-fold cross-validation. By systematically testing different configurations, we were able to observe how design choices progressively improved prediction accuracy.</p>
+      <p><strong>CNN Layers and Dropout</strong></p>
+      <p>Our initial baseline, which relied on simple sequence encoding with a single CNN layer, performed poorly and struggled to extract meaningful features. Adding more CNN layers improved the results greatly, as deeper hierarchical filters captured increasingly complex sequence patterns important for recognizing binding motifs. The introduction of a dropout layer further strengthened the model by reducing overfitting, making predictions more reliable across different datasets while still remaining responsive to rare binding residues.</p>
+      <p><strong>Handling Class Imbalance</strong></p>
+      <p>Because metal-binding residues are much less common than non-binding positions, class imbalance posed a significant challenge. To address this, we designed a weighted loss function that increased the influence of the minority binding class during training. We then compared our loss function with the traditional F1 loss. From the results, it is clear that our loss function boosted the model’s recall while preserving overall balance, countering the natural bias toward non-binding sites. Unlike data resampling methods, this loss-based approach improved the detection of rare positives in a direct and efficient manner.</p>
+      <p><strong>Fusion Layer</strong></p>
+      <p>When predictions from the separate metal-specific CNN modules were combined through a fusion layer, we observed further refinement of performance. This integration not only smoothed out inconsistencies across different metal types but also made it possible to apply a shared threshold without requiring separate calibration for each ion. Importantly, the fusion mechanism also captured the interplay between metals, leading to more balanced precision and recall. In practice, this meant fewer cases of the model favoring precision over sensitivity or vice versa, resulting in more stable predictions overall.
+</p>
+      <p>The ablation experiments highlighted two fundamental insights. First, the weighted loss function is indispensable for managing the extreme residue imbalance, ensuring that the model fairly represents both common non-binding and rare binding sites. Second, the fusion framework, though modest in impact when considered in isolation, adds an important layer of robustness by aligning performance across different metals and encoding subtle cross-metal relationships that single models cannot capture.</p>
+      <img src="https://static.igem.wiki/teams/5546/model/mtmodel2/william8.avif" alt="Figure 8" class="card-image">
+
+      <h2>Learn</h2>
+      <p>From our testing phase, we learned that it is possible to predict proteins accurately without explicitly using structural information as input. One possible explanation is that the amino acid sequence itself already encodes the relevant structural features. For future improvements, we plan to extend the model to additional metals and work towards raising the F1 score beyond 0.9.</p>
+      <h2>2. Generating new protein sequences that can bind to specific metal ions</h2>
+      <img src="https://static.igem.wiki/teams/5546/model/mtmodel2/diffusion-model.webp" alt="Figure 9" class="card-image">
+
+      <h2>Design</h2>
+      <p>Building upon our demonstration that accurate prediction of metal binding sites is feasible using solely protein sequences as input, we advance to the development of a generative model for producing novel protein sequences. Here we propose a diffusion-based generative model that is built around a U-Net architecture, wherein the U-Net receives noisy latents and metal labels as inputs, outputting the predicted noise for iterative denoising.</p>
+      <p>The overall architecture is a latent diffusion model tailored for generating protein sequences, particularly those involving metal-binding properties (conditioned on metal labels). It combines an autoencoder framework with a diffusion process in latent space, enabling efficient generation of diverse, novel protein sequences.</p>
+      <strong>Key Components:</strong>
+      <ul>
+        <li><strong>Encoder:</strong>Protein sequences (represented as strings of amino acid one-letter codes, e.g., "NELRCGCPDCHKVDPE RVFNH...") are fed into an encoder, which maps them into a compressed latent representation denoted as Z0. This latent embedding captures essential features of the sequence in a lower-dimensional space, facilitating the subsequent diffusion process.</li>
+        <li><strong>Forward Diffusion:</strong>Starting from the latent Z0​, Gaussian noise is progressively added over multiple steps through a forward diffusion process, transforming it into a highly noised version Zt. This creates a Markov chain where each step increases randomness, ultimately approximating a standard Gaussian distribution. The process is deterministic and serves to train the model on how to handle noise addition.</li>
+        <li><strong>U-Net for Denoising:</strong>The core of the generative process is a U-Net-based denoiser. During the reverse diffusion (generation or reconstruction), the U-Net receives the noised latent Zt as input, along with conditioned metal labels (e.g. specifying types like zinc or iron for metalloprotein design). The metal labels are first passed through a separate encoder to embed them into a compatible format, which is then integrated into the U-Net. The U-Net predicts the noise added at each step ("pred noise"), allowing iterative subtraction of noise to recover a clean latent representation.</li>
+        <li><strong>Decoder:</strong>Once the latent has been denoised through repeated U-Net applications, the resulting clean latent Z0’ is passed through a decoder to reconstruct or generate new protein sequences. This maps the latent back to the original sequence space, producing functional protein variants.</li>
+      </ul>
+      <p>This design leverages the strengths of latent diffusion (computational efficiency in lower dimensions) and U-Net's hierarchical feature extraction, making it suitable for tasks like de novo metalloprotein design where conditioning on labels ensures generated sequences exhibit desired properties like metal-binding affinity.</p>
+
+
+    </div>
+
+    <div class="tab-content" id="biosensorcontent">
+      <h2>Design</h2>
+      <strong>Overview</strong>
+      <p>As part of Cycle 3 of our project, it involved the development of a dynamic cadmium-sensitive Biosensor. As more thoroughly described under Cycle 3 of our Engineering Cycles page, this biosensor circuit aimed to use a multi-regulatory system in order to increase the sensitivity of the circuit towards cadmium (to detect and glow under trace concentrations found in sludge). The circuit also aimed to increase expression rate of the downstream mScarlet fluorescent protein and its subsequent degradation by utilising a Toehold Switch expression system and an LVA degradation tag found natively in the <em>Pseudomonas putida</em> bacteria.</p>
+      <strong>Our Hypothesis</strong>
+      <p>The hypothesis from our team was to produce a circuit, that under induction of a certain concentration of aTc and Cadmium, would produce a sharp fluorescent peak in under 6 hours, followed by a rapid non-linear degradation over 2-3 hours.</p>
+      <p>Thus, we sought to try to use ODEs to model the entire biosensor model and prove our hypothesis on how the Biosensor Circuit was intended to work.</p>
+      <p>To model the entire biosensor, it needed to model the uptake and flux of both cadmium ions and anhydrotetracycline (aTc), and how the concentration of these two inputs affect the regulatory effect of the tetracycline repressor (tetR) for repression and the cadmium-responsive regulator (cadR) enabling cadmium detection and mScarlet serving as a fluorescent reporter.</p>
+      <strong>Kinetic Equations </strong>
+      <p>To model the entire biosensor, it needed to model the uptake and flux of both cadmium ions and anhydrotetracycline (aTc), and how the concentration of these two inputs affect the regulatory effect of the tetracycline repressor (tetR) for repression and the cadmium-responsive regulator (cadR) enabling cadmium detection and mScarlet serving as a fluorescent reporter. Therefore, we first sought to break the complex regulatory elements down into simpler kinetic equations first, as a means to illustrate the holistic system. In doing so, we formulated the equations as seen below in Figures 1, 2, 3, based on the major regulatory elements.</p>
+      <img src="https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-1.webp" alt="Figure 1" class="card-image"> 
+    <p style="text-align: center;"><strong>Figure 1.</strong> tetR Kinetic Equations</p>
+    <img src="https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-2.webp" alt="Figure 2" class="card-image"> 
+    <p style="text-align: center;"><strong>Figure 2.</strong> cadR Kinetic Equations</p>
+    <img src="https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-3.webp" alt="Figure 3" class="card-image"> 
+    <p style="text-align: center;"><strong>Figure 3.</strong> Riboswitch Kinetic Equations</p>
+      <h2>Build</h2>
+      <strong> Using SimBiology and MatLab </strong>
+      <p>Initially, our team opted to use SimBiology to model our system. While MatLab provided a greater degree of flexibility and power to model ODE systems, SimBiology provided certain safeguards to reduce likelihood of human errors in our model. Here, it allowed us to model our equations using simple kinetic equations and provided validity checks on aspects such as parameter units which helped us to quickly validate and revise the accuracy of our models, parameters and data. By using SimBiology, it allowed us to clearly define our parameters as seen in Figure 4 and better represent the mechanism of the Biosensor on a molecular level.</p>
+      <p>For the above kinetic equations, we made several assumptions for modelling purposes. Firstly, we assumed the majority of degradation, transcription and translation reactions were first-order reactions unless literature suggested otherwise. For initial modelling purposes, we also assumed the cell would remain a constant volume and would not grow. To model the influx of cadmium before triggering the cell, we assumed a constant passive diffusion mechanism, and similarly, assumed the cadmium would only be used to activate the Biosensor and would not be replenished or utilised in other reactions. We assumed the reaction would linearly scale-up with volume as we first modeled it under the environment of one cell 1 fl, although this volume is dynamic and varies depending on growth conditions (Volkmer & Heinemann, 2011).</p>
+      <strong> Parameter Table </strong>
+      <p>The following table lists the parameters used in the ODEs, grouped by their relevance to tetR, cadR, and Switch & Trigger components, with their values and units. Note that parameters without sources, particularly those focusing on degradation rates, were estimated by assuming a first-order degradation pathway and calculating values based on an estimated half-life. Some values were also predicted using the BioInformatics Tool ProtoParam (Gasteiger et al., 2005). Unfortunately, not every species has been characterised or studied in studies. Some values also had to be arbitrarily assigned and adjusted through trial and error testing as they are not able to be directly characterised, or the kinetic equations modelling them are</p>
+      <strong> TetR Reaction </strong>
+      <img src="https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-4.webp" alt="Figure 4" class="card-image"> 
+      <strong> cadR Reaction </strong>
+      <img src="https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-5.webp" alt="Figure 5" class="card-image">
+      <strong> Switch & Trigger </strong>
+      <img src="https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-6.webp" alt="Figure 6" class="card-image">
+      <p style="text-align: center;"><strong>Figure 4.</strong> Parameters of Kinetic Equations</p>
+      <p>By combining the kinetic laws above, we developed a schematic to represent the flux of the Biosensor Circuit components within a bacterial cell as seen in Figure 5. The schematic was built in one of the supplementary MatLab Apps, the SimBiology Model Builder.</p>
+      <img src="https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-7.webp" alt="Figure 7" class="card-image">
+      <p style="text-align: center;"><strong>Figure 5.</strong> SimBiology Schematic of Biosensor Circuit in Bacterial Cell</p>
+      <p>Within this schematic, the entire circuit is built within a single <em> Pseudomonas putida </em>  bacteria cell which as mentioned was assumed to be 1 fl (Volkmer & Heinemann, 2011). Parameters from Figures 1, 2 & 3 were assigned within SimBiology’s parameter field. All variable species except for two were set with initial concentrations of 0, although this understandably would not be entirely realistic. The first was aTc, where according to the paper where the Biosensor was adapted from, we replicated their protocol and inputted a final concentration 0.938 micromolar of aTc (Hu et al., 2023). For the starting cadmium concentration, a median concentration was selected based on the survivability of the bacteria transformed with metallothionein.</p>
+      <p>Each blue oval represents a species with variable concentration to be determined by the chemical equations applied to it. The yellow circles are components to assign a reaction with the arrow following the direction of the reaction. The equations used were all ones derived from Figure 4. By linking a reactant and product through the arrow, it directly indicates to the cell that the reactant is consumed in the production of the product and thus sets that reactant as a limiting reactant. In the opposite case, such as with the tetR_repression reaction, tetR protein directly represses the transcription of tetR mRNA. However, the kinetic equation itself for tetR repression includes this repression dynamic, and the homodimer tetR protein which binds and represses the promoter undergoes a reversible reaction. Thus, while tetR protein is a main reactant, it is not directly linked as a reactant. This is the logic used when the schematic for the Biosensor model was designed.</p>
+
+      <h2>Test</h2>
+      <strong> SimBiology Outputs </strong>
+      <p>After the model was built, the SimBiology Model was exported into the built-in SimBiology Analyser where the kinetic laws were computed together as an ODE system. It was hypothesised by the Circuit Design Team that a fluorescent peak could be reached within 4 hours of mScarlet induction. It was also expected that this would be succeeded by rapid non-linear degradation as expected and demonstrated in Iteration 1 of the LVA-tag modelling. Thus, the timespan was reasonably set at 650 minutes.</p>
+      <p>To compute the ODEs, the SimBiology Analyser provides several solver types to choose between. In this case, the ODE15s was chosen as the solver. As the ODE system captures processes like transcription, translation, and protein degradation, which operate on significantly different timescales, a stiff model arises due to the discrepancy of timeframe in which species dynamics occurs. Therefore, it seemed beneficial to use ODE15s as the solver which is able to incorporate both the large steps necessary for the comparatively slow dynamics of protein translation and degradation along with the small steps necessary in fast dynamics. ODE15s employs variable-order numerical differentiation formulas, which handle the disparate timescales more effectively. This allows ODE15s to take larger time steps while maintaining stability and accuracy, making it more efficient for my model. Additionally, its adaptive nature adjusts the solver’s order dynamically, optimizing performance for the complex regulatory relationships in the Biosensor Circuit.</p>
+      <p>Thus, the outputs of the model were as generated, with a generated model for mScarlet as seen in Figures 6 below.</p>
+      <img src="https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-8.webp" alt="Figure 8" class="card-image">
+      <p style="text-align: center;"><strong>Figure 6.</strong> mScarlet degradation tag</p>
+      <p>The graph plots mScarlet concentration against time and focuses on the reagent most wanted for this model. It results in a Biosensor which peaks around 0.065 micromole / liter concentration. Based on this model, the behaviour of this circuit behaved similarly to the expectation from Circuit design, having a fast response, followed by a fluorescent peak, and then a drop, thus producing the circuit behaviour of a dynamic biosensor. </p>
+      <strong> Modelling in MatLab </strong>
+      <p>With an output that behaved as expected, we transitioned and plotted the model in MatLab to create a more universally readable file. Firstly, this involved combining the Kinetic Equations to create a set of 11 ODEs to model the entire system as seen in Figure 7:</p>
+
+      <table style="margin-left: auto; margin-right: auto;" class="model-table">
+        <thread>
+          <tr>
+            <th>Species</th>
+            <th>ODE equation</th>
+          </tr>
+        </thread>
+      <tbody>
+      <tr>
+          <td>tetR free protein</td>
+          <td><img src="https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-9.webp" alt="Figure 9" class="card-image"></td>
+        </tr>
+        <tr>
+          <td>cadR free protein</td>
+          <td><img src="https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-10.webp" alt="Figure 10" class="card-image"></td>
+        </tr>
+        <tr>
+          <td>Trigger RNA</td>
+          <td><img src="https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-11.webp" alt="Figure 11" class="card-image"></td>
+        </tr>
+        <tr>
+          <td>aTc</td>
+          <td><img src="https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-12.webp" alt="Figure 12" class="card-image"></td>
+        </tr>
+        <tr>
+          <td>tetR mRNA</td>
+          <td><img src="https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-13.webp" alt="Figure 13" class="card-image"></td>
+        </tr>
+        <tr>
+          <td>Cadmium Ions</td>
+          <td><img src="https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-14.webp" alt="Figure 14" class="card-image"></td>
+        </tr>
+        <tr>
+          <td>Hairpin Structure</td>
+          <td><img src="https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-15.webp" alt="Figure 15" class="card-image"></td>
+        </tr>
+        <tr>
+          <td>Induced Riboswitch</td>
+          <td><img src="https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-16.webp" alt="Figure 16" class="card-image"></td>
+        </tr>
+        <tr>
+          <td>mScarlet</td>
+          <td><img src="https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-17.webp" alt="Figure 17" class="card-image"></td>
+        </tr>
+        <tr>
+          <td>tetR-aTc complex</td>
+          <td><img src="https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-18.webp" alt="Figure 18" class="card-image"></td>
+        </tr>
+        <tr>
+          <td>cadR mRNA</td>
+          <td><img src="https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-19.webp" alt="Figure 19" class="card-image"></td>
+        </tr>
+      </tbody>
+      </table>
+      <p style="text-align: center;"><strong>Figure 7.</strong> Combined ODEs of Biosensor Model</p>
+      <p>The ODEs were plotted in MatLab and computed using ODE15s again with the same tolerances, timespan and parameters. Subsequently, a species profile and mScarlet plot was generated and the model largely simulated as expected with no anomalous behaviour or outputs (such as negatives or largely disobeying with the behavioural species in SimBiology).</p>
+      <p>In Figure 8 and 9, both the concentration profile and mScarlet could be seen. </p>
+      <img src="https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-20.webp" alt="Figure 20" class="card-image"> 
+    <p style="text-align: center;"><strong>Figure 8.</strong> Concentration Profiles</p>
+    <img src="https://static.igem.wiki/teams/5546/model/bsmodel/bsmodel-21.webp" alt="Figure 21" class="card-image"> 
+    <p style="text-align: center;"><strong>Figure 9.</strong> mScarlet Model</p>
+
+    <h2>Learn</h2>
+      <strong> What do the outputs show? </strong>
+      <p>For the output, the general expected output is around 0.065 which appears to not be a detectable fluorescence by the human eye, even under UV or Blue-green excitation (NISWENDER et al., 1995). The model was intended to be a proof of concept and to verify the hypothesis of the Biosensor circuit, however, the Biosensor was not able to successfully express any visible fluorescent protein and thus was not able to be characterised or used to verify our model. Interestingly, literature suggests that the model aligns with the Wet Lab output as 0.065 micromole / litre of most fluorescent proteins is insufficient to be detected by eye. Potentially, this indicates the circuit is behaving as sequencing results show the circuit was assembled and transformed properly. Thus, the circuit may be behaving as expected but at an insufficient sensitivity. </p>
+      <p>Notably, there is also a slight discrepancy in the degradation relationship of the plots in Figure 6 and Figure 9. This slight difference in computation may be due to hidden computational processing in SimBiology as all equations and parameters were verified to be identical in both the MatLab and SimBiology file. However, they both peak at the same concentration and follow the same general behaviour, perhaps indicating it is a negligible discrepancy.</p>
+      <p>It is also important to note that the parameters are educated guesses at best, and concentrations seen from profiles and the mScarlet graph are very unlikely to reflect the actual model of the circuit. With more time, we had hoped to be able to take a more reductionist approach and attempt to characterise certain parts we used that were not extensively documented. This would have benefitted both the validity of our model and the wider iGEM community.</p>
+      <strong> Future Directions </strong>
+      <p>Upon the development of our model, our Wet Lab work had shown inconclusive results regarding the LVA-degradation tag, and the subsequent Biosensor circuit was unable to produce reproducible results. Our team thus hypothesised two potential reasons</p>
+      <p>1. The estimation of parameters resulted in an overall system that misrepresented what was actually happening in the system</p>
+      <p>2. The Biosensor Circuit itself was non-functional, or there was a deeper issue which appeared as a failure of the LVA degradation tag.</p>
+      <p>Regrettably, our team lacked the time to perform proper sensitivity analysis. This would have allowed us to better fine-tune and determine the Cadmium and aTc sensitivity to trigger our circuit. More specifically, we hoped a sensitivity analysis could determine the parts contributing to the maximum peak of mScarlet or the initial rate of mScarlet production. It would also highlight if certain parts such as the promoter were acting as a bottle-neck for the desired expression or sensitivity of our circuit, and we could have sought to replace such parts with better characterised ones. This would allow us to see whether reducing the strength of certain regulatory elements were worth testing.</p>
+      <p>Overall, ODEs are merely a model to simulate and are predominantly valuable from trying to validate hypotheses regarding the entirety of the model, rather than predicting quantitative results. Naturally, there are many parameters and data which are not reliably characterised and educated guesses must be made. However, as seen, ODE modelling can show value when computing the flux of many different species and be used to see how regulatory components may interact with one another.</p>
+
+      <h2>References</h2>
+      <ul>
+        <ul>
+        <li>Andersen, J. B., Sternberg, C., Poulsen, L. K., Bjørn, S. P., Givskov, M., & Molin, S. (1998). New Unstable Variants of Green Fluorescent Protein for Studies of Transient Gene Expression in Bacteria. Applied and Environmental Microbiology, 64(6), 2240–2246. <a href="https://doi.org/10.1128/aem.64.6.2240-2246.1998">https://doi.org/10.1128/aem.64.6.2240-2246.1998</a></li>
+        <li>Bernstein, J. A., Khodursky, A. B., Lin, P.-H. ., Lin-Chao, S., & Cohen, S. N. (2002). Global analysis of mRNA decay and abundance in Escherichia coli at single-gene resolution using two-color fluorescent DNA microarrays. Proceedings of the National Academy of Sciences, 99(15), 9697–9702. <a href="https://doi.org/10.1073/pnas.112318199">https://doi.org/10.1073/pnas.112318199</a></li>
+        <li>Gasteiger, E., Hoogland, C., Gattiker, A., Duvaud, S., Wilkins, M., Appel, R., & Bairoch, A. (2005). Protein Analysis Tools on the ExPASy Server Protein Identification and Analysis Tools on the ExPASy Server (pp. 571–607). <a href="https://link.springer.com/book/10.1385/1592598900">https://link.springer.com/book/10.1385/1592598900</a></li>
+        <li>Hu, S., Zhang, G., & Jia, X. (2023). Improvement of a highly sensitive and specific whole-cell biosensor by adding a positive feedback amplifier. Synthetic and Systems Biotechnology, 8(2), 292–299. <a href="https://doi.org/10.1016/j.synbio.2023.03.007">https://doi.org/10.1016/j.synbio.2023.03.007</a></li>
+        <li>Kamionka, A. (2004). Two mutations in the tetracycline repressor change the inducer anhydrotetracycline to a corepressor. Nucleic Acids Research, 32(2), 842–847. <a href="https://doi.org/10.1093/nar/gkh200">https://doi.org/10.1093/nar/gkh200</a></li>
+        <li>Köbbing, S., Blank, L. M., & Wierckx, N. (2020). Characterization of context-dependent effects on synthetic promoters. Frontiers in Bioengineering and Biotechnology, Volume 8 - 2020. <a href="https://doi.org/10.3389/fbioe.2020.00551">https://doi.org/10.3389/fbioe.2020.00551</a></li>
+        <li>Liu, X., Hu, Q., Yang, J., Huang, S., Wei, T., Chen, W., He, Y., Wang, D., Liu, Z., Wang, K., Gan, J., & Chen, H. (2019). Selective cadmium regulation mediated by a cooperative binding mechanism in CadR. Proceedings of the National Academy of Sciences, 116(41), 20398–20403. <a href="https://doi.org/10.1073/pnas.1908610116">https://doi.org/10.1073/pnas.1908610116</a></li>
+        <li>Moran, M. A., Satinsky, B., Gifford, S. M., Luo, H., Rivers, A., Chan, L.-K., Meng, J., Durham, B. P., Shen, C., Varaljay, V. A., Smith, C. B., Yager, P. L., & Hopkinson, B. M. (2012). Sizing up metatranscriptomics. The ISME Journal, 7(2), 237–243. <a href="https://doi.org/10.1038/ismej.2012.94">https://doi.org/10.1038/ismej.2012.94</a></li>
+        <li>NISWENDER, K. D., BLACKMAN, S. M., ROHDE, L., MAGNUSON, M. A., & PISTON, D. W. (1995). Quantitative imaging of green fluorescent protein in cultured cells: Comparison of microscopic techniques, use in fusion proteins and detection limits. Journal of Microscopy, 180(2), 109–116. <a href="https://doi.org/10.1111/j.1365-2818.1995.tb03665.x">https://doi.org/10.1111/j.1365-2818.1995.tb03665.x</a></li>
+        <li>Scholz, O., Schubert, P., Kintrup, M., & Hillen, W. (2000). Tet Repressor Induction without Mg2+. Biochemistry, 39(35), 10914–10920. <a href="https://doi.org/10.1021/bi001018p">https://doi.org/10.1021/bi001018p</a></li>
+        <li>Tuttle, L. M., Salis, H. M., Tomshine, J. R., & Kaznessis, Y. N. (2005). Model-driven designs of an oscillating gene network. Biophysical Journal, 89(6), 3873–3883. <a href="https://doi.org/10.1529/biophysj.105.064204">https://doi.org/10.1529/biophysj.105.064204</a></li>
+        <li>Volkmer, B., & Heinemann, M. (2011). Condition-Dependent Cell Volume and Concentration of Escherichia coli to Facilitate Data Conversion for Systems Biology Modeling. PLoS ONE, 6(7), e23126. <a href="https://doi.org/10.1371/journal.pone.0023126">https://doi.org/10.1371/journal.pone.0023126</a></li>
+        <li>Wade, J. T., & Struhl, K. (2008). The transition from transcriptional initiation to elongation. Current Opinion in Genetics & Development, 18(2), 130–136. <a href="https://doi.org/10.1016/j.gde.2007.12.008">https://doi.org/10.1016/j.gde.2007.12.008</a></li>
+        <li>Yu, J. (2006). Probing Gene Expression in Live Cells, One Protein Molecule at a Time. Science, 311(5767), 1600–1603. <a href="https://doi.org/10.1126/science.1119623">https://doi.org/10.1126/science.1119623</a></li>
+        </ul>
+      </ul>
+
+    </div>
+
+
+    <div class="tab-content" id="kscontent">
+      <h2>Protein Structure Prediction for Kill Switch System</h2>
+      <p>We discovered the citric acid promoter PodpH, which was used by a previous iGEM team that could be used for our citric-dependent kill switch. However, due to literature on the PopdH promoter and tctD-tctE two-component system being mostly from <em>P. aeruginosa</em>, we were unable to find any literature that describes the use of <em>P. aeruginosa</em>’s PodpH in our chassis <em>P. putida</em>. We tried NCBI BLAST but found no match of the PodpH promoter sequence in <em>P. putida</em>, and we were also unable to locate the native PodpH from <em>P. putida</em>.</p>
+      <p>tctD and tctE (Tricarboxylate Transport Regulatory Protein D and Tricarboxylate Transport Sensor Kinase E) regulates the promoter PodpH and its gene opdH in <em>P. aeruginosa</em>. Therefore, we decided to compare the protein structure of tctD and tctE from <em>P. aeruginosa</em> and <em>P. putida</em> using AlphaFold 3 and RaptorX, to determine whether PodpH from <em>P. aeruginosa</em> has cross-compatibility.</p>
+      <p>Abbreviations:</p>
+      <ul>
+      <li>PP -	<em>P. putida</em></li>
+      <li>PA -	<em>P. aeruginosa</em></li>
+      <li>tctD-PP - protein from <em>P. putida</em></li>
+      <li>tctD-PA - tctD protein from <em>P. aeruginosa</em></li>
+      <li>tctE-PP - tctE protein from <em>P. putida</em></li>
+      <li>tctE-PA - tctE protein from <em>P. aeruginosa</em></li>
+    </ul>
+      <p>The object is to find the structural similarities or differences of the tctD and tctE from PP and PA. We first predicted the protein structure for tctD and tctE from both bacteria using AlphaFold 3, then checked the similarities between the tctD and tctE from PP and PA, we used <a href="http://raptorx6.uchicago.edu/">RaptorX</a> for structure alignment. Raptor X structure Alignment employs a statistical learning method to design a new threading scoring function, aiming at better measuring the compatibility between a target sequence and a template structure (Peng, J., & Xu, J. (2011))</p>
+      <h2>Results and Analysis</h2>
+      <p>The quality of the structural alignment of the protein sequence is judged using the parameters provided by Raptor X as follows:</p>
+      <ul>
+        <li>LALI (Length of Alignment):
+          <ul>
+            <li>It measure the number of aligned residues in a protein structure alignment</li>
+            <li>So in our use case, it counts how many residues from one protein are matched to residues in another protein</li>
+          </ul>
+          </li>
+        <li>RMSD (Root Mean Square Deviation):
+          <ul>
+            <li>Formula:<img src="https://static.igem.wiki/teams/5546/model/killswitch/rmsd.webp">, unit (angstroms(Å))</li>
+            <li>It measures the average distance between the aligned atoms in two or more protein structures</li>
+            <li>It is quite sensitive to outliers which can inflate the value</li>
+            <li>So in our use case, a lower RMSD will indicate a closer structural match.</li>
+          </ul>
+          </li>
+        <li>uGDT (Unnormalized Global Distance Test)
+          <ul>
+            <li>It measures how well two protein structures align by counting how many residues are close in space after alignment</li>
+            <li>It weights closer alignment more heavily</li>
+          </ul>
+          </li>
+        <li>GDT ( Global Distance Test)
+          <ul>
+            <li>It compares alignments across proteins of different sizes using percentage</li>
+            <li>In out use case, it provides a more refined view of alignment quality compared to RMSD by considering multiple distance threshold</li>
+            <li>-> A higher GDT score indicates better structural similarity</li>
+          </ul>
+
+        </li>
+
+        <li>TMscore (Template Modeling Score) (ranges from 0 to 1)
+          <ul>
+            <li>Formula:<img src="https://static.igem.wiki/teams/5546/model/killswitch/tmscore.webp"></li>
+            <li>It is defined to assess the topological similarity of two protein structures (Jinrui Xu, Yang Zhang (2010))
+              <ul>
+                <li>Where if the score is:
+                  <ul>
+                    <li>Greater than 0.6: indicate a high likelihood (90%) that two proteins share the same fold</li>
+                    <li>Smaller than 0.4: Suggests a high likelihood (90%) that the proteins have different folds</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+        </li>
+
+
+
+      </ul>
+      <h2>Comparing tctD-PP and tctD-PA</h2>
+      <p>Figure 1 below shows the structure of tctD-PP and tctD-PA, with pTM scores of 0.59 and 0.68, where most regions of the two proteins have plDDT scores of 70 and 90 or higher, indicating the protein structure is reasonably accurate for comparison.</p>
+      <img src="https://static.igem.wiki/teams/5546/model/killswitch/ksfig1new.avif" alt="Figure 1" class="card-image"> 
+    <p style="text-align: center;"><strong>Figure 1.</strong> tctD-PP (left) and tctD-PA (right) structures from AlphaFold 3</p>
+    <p>Figure 2 below shows the structure alignment attempt for tctD-PP and tctD-PA. The results show that the LALI is 123 out of 222 indicating only half is aligned, but RMSD is 1.07 < 2 which is an excellent alignment with highly similar structures. uGDT value is 120(54) which also shows good alignment with moderate to high similarity.</p>
+    <p>Based on visual observations, tctD is composed of two distinct parts, and we suspected the two proteins fold in different directions, which causes the LALI value to only be around half as only one part of the two is aligned. Therefore, we designed to compare one part at a time (calling them part 1A, 1B and 2A, and 2B of tctD-PP and tctD-PA respectively).</p>
+    <p>Results for comparing 1A and 2A indicates that the LALI value is 102 out of 102, so it is an exact match. The RMSD value is 0.26 < 2 indicates excellent alignment with highly similar structures, and the uGDT value is 102(100) showing nearly exact alignment. The TMscore is 0.995, which also shows very likely (90% chance) that 1A and 2A share the same fold. [Figure 3 below]</p>
+    <p>Results for comparing 1B and 2B indicates that the LALI value is 117 out of 120, so it is a near exact match. The RMSD value is 1.89 < 2 indicates excellent alignment with highly similar structures as well, and the uGDT value is 106(88) showing nearly exact alignment. The TMscore is 0.890, which also shows very likely (90% chance) that 1B and 2B shares the same fold. But compared to 1A and 2A, the structure is less similar, hence probably the reason why the score was lower for the whole tctD protein. [Figure 4 below]</p>
+    <img src="https://static.igem.wiki/teams/5546/model/killswitch/ksfig2.webp" alt="Figure 2" class="card-image"> 
+    <p style="text-align: center;"><strong>Figure 2.</strong> RaptorX results showing alignment of tctD-PP and tctD-PA</p>
+    <img src="https://static.igem.wiki/teams/5546/model/killswitch/ksfig3new.avif" alt="Figure 3" class="card-image"> 
+    <p style="text-align: center;"><strong>Figure 3.</strong> RaptorX results comparing 1A and 2A of tctD-PP and tctD-PA</p>
+    <img src="https://static.igem.wiki/teams/5546/model/killswitch/ksfig4.avif" alt="Figure 4" class="card-image"> 
+    <p style="text-align: center;"><strong>Figure 4.</strong> RaptorX results comparing 1B and 2B of tctD-PP and tctD-PA</p>
+    
+    <h2>Comparing tctE-PP and tctEPA</h2>
+    <p>Figure 5 below shows the structure of tctE-PP and tctE-PA, with pTM scores of 0.68 and 0.69, where most regions of the two proteins have plDDT scores of 70 and 90 or higher, indicating the protein structure is highly accurate and is good for comparison.</p>
+    <img src="https://static.igem.wiki/teams/5546/model/killswitch/ksfig5new.avif" alt="Figure 5" class="card-image"> 
+    <p style="text-align: center;"><strong>Figure 5.</strong> tctE-PP (left) and tctE-PA (right) structures from AlphaFold 3</p>
+    <p>Length of the protein is slightly different at 460 and 463 for tctE-PP and tctE-PA respectively. The results for alignment shows the LALI is 459 out of 460-463 which indicates a near exact match for both proteins. The RMSD value 1.80 < 2, which shows excellent alignment with highly similar structures.</p>
+    <p>The uGDT value is 369(88) > 80 indicates near exact alignment. The TMscore is 0.947 which shows very likely (90% chance) that the protein shares the same fold. [Figure 6 below]</p>
+    <img src="https://static.igem.wiki/teams/5546/model/killswitch/ksfig6.avif" alt="Figure 6" class="card-image"> 
+    <p style="text-align: center;"><strong>Figure 6.</strong>RaptorX results comparing tctE-PP and tctE-PA</p>
+    <p>The results from structure alignment comparing tctD and tctE of PP and PA shows that the two proteins share a very similar structure. As a result, we determined that the tctD and tctE should be able to regulate PodpH when used in our chassis <em>P. putida</em>. This aided the decision of circuit design to use PodpH and tctD-PP as the citric acid dependent mechanism in our kill switch design.</p>
+
+    <h2>References</h2>
+    <ul>
+      <ul>
+      <li>Peng, J., & Xu, J. (2011). RaptorX: exploiting structure information for protein alignment by statistical inference. <em>Proteins, 79 Suppl 10</em>(Suppl 10), 161–171. <a href="https://doi.org/10.1002/prot.23175">https://doi.org/10.1002/prot.23175</a></li>
+      <li>Jinrui Xu, Yang Zhang (2010), How significant is a protein structure similarity with TM-score = 0.5?, <em>Bioinformatics, Volume 26</em>, Issue 7, April 2010, Pages 889–895, <a href="https://doi.org/10.1093/bioinformatics/btq066">https://doi.org/10.1093/bioinformatics/btq066</a></li>
+      </ul>
+    </ul>
+
+    </div>
+
+    
+  </section>
+    </div>
+    </div>
+</div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.sidebar-nav a');
+      const sidebarNav = document.querySelector('.sidebar-nav');
+      const FADE_START = 0.99;
+      const FADE_END = 0.995;  
+      const TOP_THRESHOLD = 50; 
+      const updateActiveLink = () => {
+          let currentActiveId = null;
+          for (let i = sections.length - 1; i >= 0; i--) {
+              const section = sections[i];
+              const rect = section.getBoundingClientRect();
+              if (rect.top <= TOP_THRESHOLD) {
+                  currentActiveId = section.id;
+                  break; 
+              }
+          }
+
+          navLinks.forEach(link => {
+              const targetId = link.getAttribute('href').substring(1);
+              link.classList.toggle('active', targetId === currentActiveId);
+          });
+
+          const scrollY = window.scrollY;
+          const innerHeight = window.innerHeight;
+          const scrollHeight = document.documentElement.scrollHeight;
+          const progress = (scrollY + innerHeight) / scrollHeight;
+          
+          let opacity = 1;
+          if (progress > FADE_START) {
+              opacity = Math.max(0, 1 - (progress - FADE_START) / (FADE_END - FADE_START));
+          }
+          sidebarNav.style.opacity = opacity;
+      };
+
+      updateActiveLink();
+
+      window.addEventListener('scroll', updateActiveLink);
+      window.addEventListener('resize', updateActiveLink);
+  });
+</script>
+
+
+  <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Design</title>
+    <style>
+        /* Define a variable for black background for consistency */
+        :root {
+            --black: #1a1a1a;
+        }
+
+        /* Basic styling for the footer structure */
+        footer {
+            background-color: var(--black);
+            color: #fff;
+            padding: 20px 15px;
+            font-family: sans-serif;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Main layout container: 3 columns (Social | Logo | Marquee) */
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap; /* Allows wrapping on small screens */
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #555;
+        }
+
+        /* General section styling */
+        .footer-section, .school-logo-wrapper, .sponsor-marquee-section {
+            margin: 10px 0;
+            min-height: 1px;
+        }
+
+        /* 1. Social Media Styling */
+        .social-media-section {
+            flex-basis: 300px; 
+            flex-shrink: 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+        }
+        
+        .social-media-section h3 {
+            margin-bottom: 10px;
+        }
+        
+        .social-media-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+        }
+
+        .social-media-links a {
+            text-decoration: none;
+            display: block;
+            margin: 0 5px;
+            flex-shrink: 0;
+        }
+
+        .social-media-links img {
+            width: 4em !important;
+            height: auto;
+            vertical-align: middle;
+            max-width: 100%;
+        }
+
+        /* 2. School Logo Centering */
+        .school-logo-wrapper {
+            flex-grow: 1;
+            text-align: center;
+            min-width: 250px;
+        }
+        
+        .school-logo-wrapper img {
+            max-width: 380px;
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* 3. Sponsor Marquee Section (Right Column) */
+        .sponsor-marquee-section {
+            flex-basis: 300px;
+            flex-shrink: 0;
+            margin: 10px auto; 
+            overflow: hidden; /* CRITICAL: Clips the scrolling content */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+            height: 100%;
+        }
+
+        /* Title Styling */
+        .sponsor-marquee-section h3 {
+            text-align: center;
+            margin: 0 0 10px 0;
+            font-size: 1em;
+            color: #fff;
+        }
+        
+        /* Marquee Track Wrapper: Defines the visible area */
+        .marquee-track-wrapper {
+            white-space: nowrap;
+            width: 100%; 
+            flex-grow: 1; 
+            display: flex; 
+            align-items: center;
+        }
+
+        /* Marquee Content (The element that scrolls) */
+        .marquee-content {
+            display: flex;
+            animation: marquee 15s linear infinite;
+            padding-right: 30px;
+            margin-top: 0; 
+            width: fit-content; /* Allows the element to size exactly to the content (two sets) */
+            /* REMOVED: min-width: 200%; <-- This was interfering with the seamless loop calculation */
+        }
+
+        /* Logo Styling */
+        .marquee-content img {
+            background-color: #fff; 
+            padding: 5px 10px;
+            border-radius: 4px;
+            max-height: 50px; 
+            height: auto;
+            width: auto;
+            margin: 0 25px; 
+            flex-shrink: 0;
+            object-fit: contain;
+        }
+        
+        /* Marquee Animation Definition */
+        @keyframes marquee {
+            /* We translate by exactly -50% of the total content width, which is the length of one set. */
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); } 
+        }
+
+        /* License and Repository Info Styling */
+        .license-info {
+            padding-top: 15px;
+            text-align: center;
+            font-size: 0.8em;
+        }
+
+        .license-info a {
+            color: #aaa;
+            text-decoration: underline;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 900px) {
+            /* Stack elements vertically on smaller screens */
+            .footer-content {
+                flex-direction: column;
+                justify-content: center;
+            }
+            .social-media-section, .school-logo-wrapper, .sponsor-marquee-section {
+                width: 100%;
+                flex-basis: auto;
+                text-align: center;
+                overflow: hidden;
+                margin: 10px 0;
+            }
+            
+            /* Sponsor section specific changes for mobile */
+            .sponsor-marquee-section {
+                margin-top: 20px;
+                height: auto; 
+            }
+            
+            .marquee-track-wrapper {
+                height: 70px; 
+                flex-grow: 0;
+            }
+            
+            .marquee-content img {
+                max-height: 30px; 
+                padding: 5px 10px;
+                margin: 0 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<footer>
+    <div class="footer-container">
+        
+        <div class="footer-content">
+            
+            <!-- 1. Social Media Section (Left) -->
+            <div class="footer-section social-media-section">
+                <h3>Connect with us!</h3>
+                <p class="social-media-links">
+                    <a href="https://www.xiaohongshu.com/user/profile/6550e37e000000000202ad55?xsec_token=YB--qF36slpQvPamlLMndlem86ckMiG8jcq3GN01xhBRM=&xsec_source=app_share&xhsshare=CopyLink&appuid=62af11dc000000001b028f10&apptime=1750167719&share_id=ea1d7f49d32b4e76a6f47420af6cbf89" target="_blank" rel="noopener noreferrer">
+                        <img src="https://static.igem.wiki/teams/5546/socialmedia/xiaohongshu.webp" alt="little red book">
+                    </a>
+                    
+                    <a href="https://www.instagram.com/igem.hkust?igsh=bHc2cG1wZGdpaHBu" target="_blank" rel="noopener noreferrer" >
+                        <img src="https://static.igem.wiki/teams/5546/socialmedia/insgram.webp" alt="Instagram">
+                    </a>
+                    
+                    <a href="https://mp.weixin.qq.com/s/xjFSnsCy0Uc4mI4HCb3ngg" target="_blank" rel="noopener noreferrer">
+                        <img src="https://static.igem.wiki/teams/5546/socialmedia/wechat.webp" alt="wechat">
+                    </a>
+                </p>
+            </div>
+            
+            <!-- 2. School Logo Section (Center Column) -->
+            <div class="school-logo-wrapper">
+                <img src="https://static.igem.wiki/teams/5546/sponsor/ust-l3-white.webp" alt="UST logo">
+            </div>
+
+            <!-- 3. Sponsor Marquee Section (Right Column) -->
+            <div class="sponsor-marquee-section">
+                
+                <h3>Grateful Thanks to our Supporters:</h3>
+                
+                <!-- Wrapper to define the visible track height and clip the scrolling content -->
+                <div class="marquee-track-wrapper">
+                    <!-- The content is duplicated ONLY ONCE for a seamless loop -->
+                    <div class="marquee-content">
+                        <!-- Set 1 (Original Content) -->
+                        <img src="https://static.igem.wiki/teams/5546/sponsor/biometallica.webp" alt="BioMetallica">
+                        <img src="https://static.igem.wiki/teams/5546/sponsor/hklabware-white-2.webp" alt="HK Labware">
+                        <img src="https://static.igem.wiki/teams/5546/sponsor/idt-trans.webp" alt="IDT Technology">
+                        <img src="https://static.igem.wiki/teams/5546/sponsor/seva.avif" alt="SEVA">
+                        <img src="https://static.igem.wiki/teams/5546/sponsor/mathworks-white.webp" alt="MathWorks">
+                        
+                        <!-- Set 2 (Duplicate for seamless loop) -->
+                        <img src="https://static.igem.wiki/teams/5546/sponsor/biometallica.webp" alt="BioMetallica">
+                        <img src="https://static.igem.wiki/teams/5546/sponsor/hklabware-white-2.webp" alt="HK Labware">
+                        <img src="https://static.igem.wiki/teams/5546/sponsor/idt-trans.webp" alt="IDT Technology">
+                        <img src="https://static.igem.wiki/teams/5546/sponsor/seva.avif" alt="SEVA">
+                        <img src="https://static.igem.wiki/teams/5546/sponsor/mathworks-white.webp" alt="MathWorks">
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+        <!-- License Information -->
+        <div class="license-info">
+            <p class="mb-0"><small>© 2025 - Content on this site is licensed under a <a class="subfoot" href="https://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International license</a>.</small></p>
+            <p><small>The repository used to create this website is available at <a href="https://gitlab.igem.org/2025/hkust">gitlab.igem.org/2025/hkust</a>.</small></p>
+        </div>
+        
+    </div>
+</footer>
+</body>
+</html>
+
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="static/bootstrap.bundle.min.js"></script>
+  <script src="static/script.js"></script>
+</body>
+</html>

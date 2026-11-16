@@ -63,6 +63,26 @@ INSERT INTO competition_session_starts VALUES (now()-interval '1 second','expire
 INSERT INTO competition_session_transitions VALUES (now()-interval '1 second','expired'),(now()+interval '1 hour','live');
 INSERT INTO competition_sessions VALUES (now()-interval '1 second','expired'),(now()+interval '1 hour','live');
 SQL
+# Exercise the real new-table definitions, rather than stand-in payload tables.
+PGDATABASE=resume_ai_ops_test "${PSQL[@]}" --file="$REPO_ROOT/db/migrations/20261105_decision_states.sql"
+PGDATABASE=resume_ai_ops_test "${PSQL[@]}" --file="$REPO_ROOT/db/migrations/20261105_ai_spend_ledger.sql"
+PGDATABASE=resume_ai_ops_test "${PSQL[@]}" --file="$REPO_ROOT/db/migrations/20261105_spend_authority.sql"
+PGDATABASE=resume_ai_ops_test "${PSQL[@]}" --file="$REPO_ROOT/db/migrations/20261109_decision_runs.sql"
+PGDATABASE=resume_ai_ops_test "${PSQL[@]}" --file="$REPO_ROOT/db/migrations/20261109_decision_runs_chat_requests.sql"
+PGDATABASE=resume_ai_ops_test "${PSQL[@]}" <<'SQL'
+GRANT SELECT,DELETE ON competition_decision_states TO resume_ai_security_maintenance;
+GRANT UPDATE (expires_at) ON competition_decision_states TO resume_ai_security_maintenance;
+GRANT SELECT,DELETE ON competition_decision_runs,competition_decision_calls,competition_decision_chat_requests TO resume_ai_security_maintenance;
+GRANT UPDATE (expires_at) ON competition_decision_runs TO resume_ai_security_maintenance;
+GRANT UPDATE (run_id) ON competition_decision_calls,competition_decision_chat_requests TO resume_ai_security_maintenance;
+INSERT INTO competition_decision_states(state_key,ciphertext,iv,tag,expires_at)
+VALUES (repeat('a',64),decode('010203','hex'),decode(repeat('00',12),'hex'),decode(repeat('00',16),'hex'),now()-interval '1 second'),
+       (repeat('b',64),decode('040506','hex'),decode(repeat('00',12),'hex'),decode(repeat('00',16),'hex'),now()+interval '1 hour');
+INSERT INTO ai_spend_budgets(run_id,hard_limit_micros,created_at) VALUES ('retention-test',1000000,now()-interval '181 days');
+INSERT INTO ai_spend_authority(singleton,run_id) VALUES(true,'retention-test');
+INSERT INTO ai_spend_ledger(id,run_id,model,effort,operation,price_version,reserved_micros,charged_micros,state,created_at,settled_at)
+VALUES ('00000000-0000-4000-8000-000000000001','retention-test','deepseek-flash','max','test-only','fixture',100,100,'conservative',now()-interval '181 days',now()-interval '181 days');
+SQL
 cleanup_passes=0
 while :; do
   cleanup_output="$(PGDATABASE=resume_ai_ops_test "${PSQL[@]}" --file="$REPO_ROOT/ops/postgresql/cleanup-security-state.sql")"
@@ -81,6 +101,16 @@ cleanup_gate="$(PGDATABASE=resume_ai_ops_test "${PSQL[@]}" --tuples-only --no-al
     AND (SELECT count(*) FROM competition_session_starts)=1
     AND (SELECT count(*) FROM competition_session_transitions)=1
     AND (SELECT count(*) FROM competition_sessions)=1
+    AND (SELECT count(*) FROM competition_decision_states)=1
+    AND (SELECT state_key FROM competition_decision_states)=repeat('b',64)
+    AND (SELECT encode(ciphertext,'hex') FROM competition_decision_states)='040506'
+    AND (SELECT count(*) FROM ai_spend_budgets)=1
+    AND (SELECT count(*) FROM ai_spend_authority WHERE singleton AND run_id='retention-test')=1
+    AND NOT has_table_privilege('resume_ai_security_maintenance','ai_spend_authority','DELETE')
+    AND (SELECT count(*) FROM ai_spend_ledger WHERE charged_micros=100 AND state='conservative')=1
+    AND NOT has_table_privilege('resume_ai_security_maintenance','ai_spend_budgets','DELETE')
+    AND NOT has_table_privilege('resume_ai_security_maintenance','ai_spend_ledger','DELETE')
+    AND NOT has_column_privilege('resume_ai_security_maintenance','competition_decision_states','ciphertext','UPDATE')
     AND NOT has_table_privilege('resume_ai_security_maintenance','ai_consents','UPDATE')
     AND has_column_privilege('resume_ai_security_maintenance','ai_consents','created_at','UPDATE')
     AND NOT has_column_privilege('resume_ai_security_maintenance','ai_consents','payload','UPDATE');")"

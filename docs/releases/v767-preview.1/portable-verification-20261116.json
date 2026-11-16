@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "saitu.portable.verification.v1",
+  "browser": {
+    "startTime": "2026-11-16T08:50:52.632Z",
+    "duration": 207961.30500000002,
+    "expected": 24,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "live": {
+    "schemaVersion": "saitu.portable.live-check.v1",
+    "startedAt": "2026-11-16T08:51:55.838Z",
+    "origin": "http://127.0.0.1:3187",
+    "syntheticStudent": true,
+    "automaticPaidRetry": false,
+    "directoryCards": 12,
+    "submitStatus": 202,
+    "runId": "6ee6803d-6189-43d7-a551-8c65861de64b",
+    "listDeliveredAt": "2026-11-16T08:52:14.311Z",
+    "detailsReadyAt": "2026-11-16T08:52:35.743Z",
+    "reloadDidNotResubmit": true,
+    "savedCount": 1,
+    "passed": true,
+    "finishedAt": "2026-11-16T08:52:36.049Z",
+    "pageErrors": []
+  },
+  "restart": {
+    "restartPreservedRun": true,
+    "httpStatus": 200,
+    "runStatus": "ready",
+    "items": 5,
+    "runs": 1,
+    "calls": 4,
+    "pending": 0,
+    "charged_micros": "236966"
+  },
+  "portConflicts": [
+    {
+      "port": 3187,
+      "exitCode": 1,
+      "passed": true
+    },
+    {
+      "port": 55432,
+      "exitCode": 1,
+      "passed": true
+    }
+  ],
+  "originalInputsChecked": 1605,
+  "originalInputsChanged": 0,
+  "originalProjectDeleted": false,
+  "newDatabaseIncludesHistory": false,
+  "independentRuntime": {
+    "originalAndBuildReadsDenied": true,
+    "wrapperNotSandboxedBecauseMacDisallowsPs": true,
+    "pages": [
+      {
+        "endpoint": "/",
+        "status": 200
+      },
+      {
+        "endpoint": "/competitions",
+        "status": 200
+      },
+      {
+        "endpoint": "/competitions/recommend",
+        "status": 200
+      },
+      {
+        "endpoint": "/teams",
+        "status": 200
+      },
+      {
+        "endpoint": "/about",
+        "status": 200
+      },
+      {
+        "endpoint": "/competitions/saved",
+        "status": 200
+      },
+      {
+        "endpoint": "/privacy",
+        "status": 200
+      }
+    ],
+    "passed": true,
+    "workerReady": true
+  },
+  "relocation": {
+    "relocatedLaunchPassed": true,
+    "newDatabaseEmpty": true,
+    "recommendations": 0,
+    "modelcalls": 0,
+    "sessions": 0
+  },
+  "secretScan": {
+    "scannedFiles": 4539,
+    "secretMatches": 0,
+    "forbiddenRuntimeState": 0
+  },
+  "completedAt": "2026-11-16",
+  "testsAreExcludedFromDeliveryDatabase": true
+}

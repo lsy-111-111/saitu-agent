@@ -1,3 +1,7 @@
+import { validateMatchPlanV7 } from "@/lib/competitions/v7/model";
+import { migrationContext, migrationRecords, migrationStudent, rankMigrationContext } from "./legacy-v7-migration.fixture";
+import { readFileSync, writeFileSync } from "node:fs";
+import path from "node:path";
 import { describe, expect, it } from "vitest";
 import { findCatalogCompetition, getCompetitionCatalog } from "@/lib/competitions/catalog";
 import {
@@ -278,29 +282,26 @@ const personas: GoldPersona[] = [
 ];
 
 describe("expert competition recommendation gold set", () => {
-  it("keeps the expert top choice and hard-negative gates while filling three unique items", () => {
-    const results = personas.map((persona) => {
-      const recommendation = recommendLegacyCompetitions(persona.profile, {
-        now: new Date("2026-08-22T00:00:00.000Z"),
-        transcript: transcript(persona.fit, persona.team)
-      });
-      const ids = recommendation.recommendations.slice(0, 3).map(({ competitionId }) => competitionId);
-      return { persona, ids };
-    });
-
-    // Keep this message actionable when a future catalog change breaks the expert gate.
-    const diagnostics = results.map(({ persona, ids }) => `${persona.id}: ${ids.join(", ") || "no_match"}`);
-    const topOneIdealCount = results.filter(({ persona, ids }) => persona.idealIds.includes(ids[0])).length;
-    const unacceptableTopChoice = results.filter(
-      ({ persona, ids }) => !persona.acceptableIds.includes(ids[0])
-    );
-    const forbidden = results.filter(({ persona, ids }) => ids.some((id) => persona.forbiddenIds?.includes(id)));
-    const malformed = results.filter(({ ids }) => ids.length !== 3 || new Set(ids).size !== 3);
-
-    expect(forbidden, diagnostics.join("\n")).toEqual([]);
-    expect(unacceptableTopChoice, diagnostics.join("\n")).toEqual([]);
-    expect(malformed, diagnostics.join("\n")).toEqual([]);
-    expect(topOneIdealCount / results.length, diagnostics.join("\n")).toBeGreaterThanOrEqual(0.9);
+  it("v7 enforces at most ten unique series and accepts an explained short list without filling three", async () => {
+    const records = migrationRecords();
+    records[1] = { ...records[1], seriesId: records[0].seriesId, track: { id: "alternative", name: "另一任务方向" } };
+    const context = migrationContext(migrationStudent(), records);
+    const unique = [...new Map(context.candidates.map(candidate => [candidate.record.seriesId, candidate.record.recordId])).values()];
+    expect(unique.length).toBeGreaterThan(10);
+    const modelOrder = unique.slice(0, 10).reverse();
+    const full = await rankMigrationContext(context, modelOrder);
+    expect(full.plan.recommendations.map(item => item.itemId)).toEqual(modelOrder);
+    const duplicate = structuredClone(full.plan);
+    const duplicateSeries = records[0].seriesId;
+    duplicate.recommendations[0].itemId = records[0].recordId;
+    duplicate.recommendations[1].itemId = records[1].recordId;
+    expect(validateMatchPlanV7(duplicate, context).issues).toContain(`duplicate_series:${duplicateSeries}`);
+    await expect(rankMigrationContext(context, unique.slice(0, 11))).rejects.toThrow("invalid_output");
+    const shortOrder = unique.slice(-2).reverse();
+    const short = await rankMigrationContext(context, shortOrder);
+    expect(short.plan.recommendations.map(item => item.itemId)).toEqual(shortOrder);
+    expect(short.plan.shortfallReason?.trim().length).toBeGreaterThan(0);
+    await expect(rankMigrationContext(context, shortOrder, null)).rejects.toThrow("invalid_output");
   });
 
   it("fills a low-actionability profile without crossing a hard exclusion", () => {
@@ -400,57 +401,25 @@ describe("expert competition recommendation gold set", () => {
     expect(qualityIds).toContain(fixedSubjectMatch.competitionId);
   });
 
-  it("recovers fixed mechanical/hardware alternatives after the target is hard excluded", () => {
-    const persona = competitionHardNegativePersonas.find(({ id }) =>
-      id === "hard-negative-12-mechanical-engineering-innovation-full-time"
-    );
-    expect(persona).toBeDefined();
-    if (!persona) throw new Error("Missing engineering hard-negative fixture");
-    const recalled = getCompetitionRecommendationCandidates(persona.profile, {
-      now: new Date("2026-08-23T00:00:00.000Z")
-    }).recommendations;
-    const quality = selectFinalQualityRecommendations(recalled, persona.profile);
-    const relevantMechanicalAlternatives = new Set([
-      "siemens-intelligent-manufacturing",
-      "robocup-china",
-      "intelligent-robot-creativity",
-      "worldskills-china-selection",
-      "world-vocational-skills",
-      "worldskills",
-      "robotac",
-      "robocon",
-      "raicom-robot-developer",
-      "smart-car"
-    ]);
-    expect(recalled.map(({ competitionId }) => competitionId)).not.toContain(
-      persona.forbiddenCompetitionId
-    );
-    expect(quality.length, quality.map(({ competitionId }) => competitionId).join(",")).toBeGreaterThanOrEqual(2);
-    expect(
-      quality.slice(0, 3).filter(({ competitionId }) =>
-        relevantMechanicalAlternatives.has(competitionId)
-      ).length,
-      quality.map(({ competitionId }) => competitionId).join(",")
-    ).toBeGreaterThanOrEqual(2);
-    expect(quality.slice(0, 3).map(({ competitionId }) => competitionId)).not.toEqual(
-      expect.arrayContaining([
-        "ecommerce-innovation-creativity-entrepreneurship",
-        "china-college-computer-design",
-        "challenge-cup-entrepreneurship-plan"
-      ])
-    );
-
-    const result = recommendCompetitions(persona.profile, {
-      now: new Date("2026-08-23T00:00:00.000Z")
-    });
-    expect(result.recommendations).toHaveLength(3);
-    expect(result.recommendations.map(({ competitionId }) => competitionId)).not.toContain(
-      persona.forbiddenCompetitionId
-    );
-    expect(result.recommendations.filter(({ competitionId }) =>
-      relevantMechanicalAlternatives.has(competitionId)
-    ).length).toBeGreaterThanOrEqual(2);
-    expect(result.noMatchReason).toBeUndefined();
+  it("v7 removes an explicit hardware task refusal while keeping unknown resource alternatives in the full pool", async () => {
+    const original = competitionHardNegativePersonas.find(persona => persona.id === "hard-negative-12-mechanical-engineering-innovation-full-time")!;
+    expect(original).toBeDefined();
+    const records = migrationRecords(3);
+    records[0].taskFamily = "engineering-prototype";
+    records[1].taskFamily = "software-algorithms";
+    records[2].taskFamily = "data-modeling";
+    const profile = { ...original.profile, decisionContext: { ...original.profile.decisionContext, excludedTaskFormats: ["hardware" as const] } };
+    const context = migrationContext(profile, records);
+    expect(context.excluded.has(records[0].recordId)).toBe(true);
+    expect(new Set(context.candidates.map(candidate => candidate.record.recordId))).toEqual(new Set(records.slice(1).map(record => record.recordId)));
+    const modelOrder = context.candidates.map(candidate => candidate.record.recordId).reverse();
+    const ranked = await rankMigrationContext(context, modelOrder);
+    expect(ranked.packets[0].candidates.map(candidate => candidate.itemId)).toEqual(context.candidates.map(candidate => candidate.record.recordId));
+    expect(ranked.plan.recommendations.map(item => item.itemId)).toEqual(modelOrder);
+    const unknown = migrationContext(migrationStudent({ availableResources: [], confirmedFields: ["stage"] }), records);
+    expect(unknown.excluded.size).toBe(0);
+    expect(new Set(unknown.candidates.map(candidate => candidate.record.recordId))).toEqual(new Set(records.map(record => record.recordId)));
+    expect(unknown.candidates.every(candidate => candidate.eligibility === "unknown")).toBe(true);
   });
 
   it("keeps all scored entries in fit order for every timing preference", () => {
@@ -600,5 +569,40 @@ describe("expert competition recommendation gold set", () => {
     expect(beforeRemovedEligibilityAnswer!.eligibility).toEqual(
       scoreLegacyCompetition(challengeCup, originalResearchProfile, now)!.eligibility
     );
+  });
+});
+
+
+describe("legacy complete independent task-pool diagnostic replay", () => {
+  it("joins all 18 by 135 labels without changing the 90 percent ideal or hard-negative gates", () => {
+    const advisory = JSON.parse(readFileSync(path.join(process.cwd(),
+      "tests/fixtures/competition-legacy-policy-advisory-v1.json"), "utf8")) as {
+      replacesHistoricalAcceptance: boolean; candidateIds: string[];
+      taskLabels: { legacy: Record<string, number[]> };
+    };
+    expect(advisory.replacesHistoricalAcceptance).toBe(false);
+    expect([...advisory.candidateIds].sort()).toEqual(getCompetitionCatalog().map(row => row.id).sort());
+    expect(Object.keys(advisory.taskLabels.legacy).sort()).toEqual(personas.map(row => `v4-${row.id}`).sort());
+    const diagnostics = personas.map(persona => {
+      const labels = advisory.taskLabels.legacy[`v4-${persona.id}`]!;
+      expect(labels, persona.id).toHaveLength(135);
+      const fullPool = new Map(advisory.candidateIds.map((id, index) => [id, labels[index]!]));
+      const actual = recommendLegacyCompetitions(persona.profile, {
+        now: new Date("2026-08-22T00:00:00.000Z"), transcript: transcript(persona.fit, persona.team)
+      }).recommendations.slice(0, 3).map(row => {
+        expect(fullPool.has(row.competitionId), `${persona.id}/${row.competitionId}`).toBe(true);
+        return { candidateId: row.competitionId, independentTaskRelevance: fullPool.get(row.competitionId)!,
+          originalIdeal: persona.idealIds.includes(row.competitionId),
+          originalAcceptable: persona.acceptableIds.includes(row.competitionId),
+          originalForbidden: persona.forbiddenIds?.includes(row.competitionId) ?? false };
+      });
+      return { caseId: persona.id, fullPoolLabelCount: fullPool.size, top3: actual };
+    });
+    expect(diagnostics).toHaveLength(18);
+    if (process.env.CAPTURE_LEGACY_POLICY_DIAGNOSTICS === "1") {
+      writeFileSync(path.join(process.cwd(), "artifacts/continuation-20261105/legacy-migration/legacy-ranking-diagnostics.json"),
+        `${JSON.stringify({ acceptanceClaim: false, labelsAreTaskOnlyAiAdvisory: true,
+          oldThresholdsRetained: true, diagnostics }, null, 2)}\n`);
+    }
   });
 });

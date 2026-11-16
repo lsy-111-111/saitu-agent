@@ -1,0 +1,42 @@
+{
+  "sources": [
+    {
+      "sourceId": "cmc-c5-rules",
+      "url": "https://statics.scnu.edu.cn/pics/maths/2013/1002/20131002033745685.pdf",
+      "finalUrl": "https://statics.scnu.edu.cn/pics/maths/2013/1002/20131002033745685.pdf",
+      "retrievedAt": "2026-11-05T11:54:02.660Z",
+      "sha256": "589ccaf43ae4b0b8365c70f5a6c8b0317be247f1280bd3529fa9d2efef7e6854",
+      "artifact": "artifacts/v6/content-research/source-byte-snapshots/589ccaf43ae4b0b8365c70f5a6c8b0317be247f1280bd3529fa9d2efef7e6854.pdf",
+      "bytes": 438,
+      "contentType": "application/pdf",
+      "status": "captured_bytes_not_verified",
+      "independentReview": false
+    },
+    {
+      "sourceId": "ic-2026-charter",
+      "url": "https://univ.ciciec.com/col.jsp?id=123",
+      "retrievedAt": "2026-11-05T12:26:25.088315+00:00",
+      "independentReview": false,
+      "status": "captured_bytes_not_verified",
+      "finalUrl": "https://univ.ciciec.com/col.jsp?id=123",
+      "sha256": "19e8391510110c096ce90bca80e101a55bce5eec58cbb92b09628f6915c28b13",
+      "bytes": 46061,
+      "contentType": "text/html; charset=UTF-8",
+      "artifact": "artifacts/v6/content-research/source-byte-snapshots/19e8391510110c096ce90bca80e101a55bce5eec58cbb92b09628f6915c28b13.html",
+      "limitation": "HTTP success or a byte digest does not establish that a document is a usable rule or that facts are true; reviewers must open and read it."
+    },
+    {
+      "sourceId": "ic-2026-preliminary",
+      "url": "https://univ.ciciec.com/nd.jsp?id=1050",
+      "retrievedAt": "2026-11-05T12:26:27.669124+00:00",
+      "independentReview": false,
+      "status": "captured_bytes_not_verified",
+      "finalUrl": "https://univ.ciciec.com/nd.jsp?id=1050",
+      "sha256": "b57e2c8cf79f8d576dd575e00cc8abc49200d6bdd7b6490c9f75023cdf09d161",
+      "bytes": 56823,
+      "contentType": "text/html; charset=UTF-8",
+      "artifact": "artifacts/v6/content-research/source-byte-snapshots/b57e2c8cf79f8d576dd575e00cc8abc49200d6bdd7b6490c9f75023cdf09d161.html",
+      "limitation": "HTTP success or a byte digest does not establish that a document is a usable rule or that facts are true; reviewers must open and read it."
+    }
+  ]
+}

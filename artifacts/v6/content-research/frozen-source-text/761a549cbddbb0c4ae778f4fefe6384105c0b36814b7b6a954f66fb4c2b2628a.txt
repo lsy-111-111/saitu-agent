@@ -1,0 +1,166 @@
+[PAGE 1]
+Problem 1 – Marking Scheme
+Solution 1: Oﬃcial Solution
+• Stating one of the equalities cos(x) = sin( π2 −x) or sin(x) = cos( π2 −x) and arriving to sin(sin(x)) =
+sin( π2 − cos(x)) or cos(cos(x)) = cos( π2 − sin(x)) (2 pt)
+• Stating sin(x) = sin( y) ⇐ ⇒ y = x + 2πk or y = π − x + 2πk (or cos(x) = cos( y) ⇐ ⇒ y = x + 2πk
+or y = −x + 2πk) and arriving to sin(x) ± cos(x) = ± π2 + 2πk (1+1 pt)
+– Only 1 pt is awarded if not both cases are stated.
+– Only 1 pt is awarded if the student forgets +2πk (the 2π periodicity).
+• Arguing that a solution may only exist when k = 0 and arriving to | sin(x) ± cos(x)| = π2 (2 pt)
+– No points are awarded if in the previous item the student forgets the +2πk term.
+• Proving or stating as common knowledge that | sin(x) ± cos(x)| ≤
+√
+2 (1 pt)
+– This point is also awarded for proving another upper bound which will later lead to a contra-
+diction.
+• Using the previous upper bound estimate to conclude that | sin(x) ± cos(x)| = π2 has no real
+solutions (3 pt)
+– Only 1 point is awarded if only one case is treated.
+– Saying that the second case is similar to the ﬁrst one awards all 3 pts.
+Solution 2: Factorisation
+• Writing sin(sin(x)) − cos(cos(x)) = 2 cos
+(
+π
+4 + sin(x)−cos(x)2
+)
+· sin
+(
+− π4 + sin(x)+cos(x)2
+)
+(2 pt)
+• Stating that this diﬀerence is 0 iﬀ cos(. . . ) = 0 or sin(. . . ) = 0 , which implies: sin(x) ± cos(x) =
+π
+2 + 2πk (1+1 pt)
+• Arguing that a solution may only exist when k = 0 and arriving to | sin(x) ± cos(x)| = π2 (2 pt)
+• Proving or stating as common knowledge that | sin(x) ± cos(x)| ≤
+√
+2 (1 pt)
+• Using the previous upper bound to conclude sin(x) ± cos(x) = π2 has no real solutions. (3 pt)
+Solution 3: Taylor estimates
+• Stating the estimates sin(x) < x for x ∈ (0, ∞) and cos(x) > 1 − x22 for x ∈ R \ {0} (1+1 pt)
+• Writing y = sin(x) arriving to cos(±
+√
+1 − y2) = sin( y) (2 pt)
+• For y ∈ (0, 1) ∪ (1, ∞) applying the Taylor estimates and obtaining the contradiction (3 pt)
+• Dealing with the cases y = 1 and y ≤ 0 (3 pt)
+1
+[PAGE 2]
+IMC 2026 Problem 2 marking scheme
+Solution 1
+Step 1 (2 points):
+0 = tr(AT A + BB T − AB − BA)
+Step 2 (2 points):
+= ∑
+i,j
+a2ij + ∑
+i,j
+b2ji − 2 ∑
+i,j
+aij bji
+Step 3 (2 points):
+= ∑
+i,j
+(aij − bji)2
+Step 4 (2 points):
+=⇒ B = At
+Step 5 (2 points):
+=⇒ AB = BA
+Solution 2
+Step 1 (1 point): Introduce X = A − BT and XT X or some equivalent.
+Step 2 (2 points):
+XT X = AB − AT BT
+Step 3 (1 point): Conclude that λi(XX T) ≥ 0.
+Step 4 (2 points): Since tr (AB − AT BT) = 0, conclude that λi(XX T) = 0.
+Step 5 (2 points):
+=⇒ B = At
+Step 6 (2 points):
+=⇒ AB = BA
+Alternative version of steps 3–5: instead of looking at eigenvalues, recognize that ∥X∥2 = tr(AB − AT BT) = 0, where
+∥ · ∥ is the Euclidean matrix norm .
+Remarks
+Not worth any points: showing / noticing / stating that AB − BA is symmetric and solution under the assumption that
+A and B are symmetric themselves.
+A solution under the assumption that A and B are normal may be up to 5 points: 1 point for introducing X = A − BT
+and computing XT X (which is automatically 0), then 2 more points for proving that XX T = 0 implies X = 0 and then
+2 more points for substituting B = AT back to the original equation.
+1
+[PAGE 3]
+IMC 2026 – Problem 3 Marking Scheme
+T otal: 10 points
+Let A ⊆ [n] be the set of cards placed in the increasing stack, and let π(A) denote the resulting
+ﬁnal order. An overlap is a pair of distinct choices of A that produce the same ﬁnal order. Let En
+denote the number of overlaps. Write F0 = 0, F1 = 1, and Fm+1 = Fm + Fm−1.
+(i) Initial count and reduction to overlaps. [1 pt]
+Noting that there are 2 n − 2 valid two-colourings, since neither stack may be empty, and
+that the required number is
+2n − 2 − En.
+(ii) Structure and multiplicity of overlaps. [3 pt]
+Proving that if π(A) = π(A′) with A ̸= A′, then the two splits diﬀer by moving exactly one
+critical card from one stack to the other.
+Deducing that no ﬁnal order is produced by more than two splits, so e very overlap is
+subtracted exactly once.
+(iii) Counting the overlaps. [4 pt]
+Identifying, in each of the two possible cases, the forced part of an ove rlapping pair up to
+the critical card, and expressing the number of overlapping pairs u sing binomial coeﬃcients:
+En =
+⌊(n−1)/2⌋∑
+r=1
+(n − r − 1
+r
+)
++
+⌊n/2⌋∑
+s=2
+(n − s − 1
+s − 1
+)
+.
+Any equivalent correctly indexed binomial expression receives fu ll credit.
+(iv) Summing the overlap count. [1 pt]
+Using the standard Fibonacci binomial identity to obtain
+⌊(n−1)/2⌋∑
+r=1
+(n − r − 1
+r
+)
+= Fn − 1,
+⌊n/2⌋∑
+s=2
+(n − s − 1
+s − 1
+)
+= Fn−1 − 1,
+and hence
+En = Fn+1 − 2.
+(v) Correct ﬁnal answer. [1 pt]
+Concluding that the number of distinct ﬁnal orders is
+(2n − 2) − (Fn+1 − 2) = 2n − Fn+1 .
+Notes.
+• A solution consisting only of checks for speciﬁc values of n earns +0 pt.
+• Forgetting the non-emptiness condition incurs no additional deduct ion: −0 pt.
+(Any consequent error is already reﬂected in the relevant criterion above.)
+• Minor computational ﬂaws: -1 pt.
+• Observing that the number of solutions starting with ”1” equals the nu mber of solutions of
+length n − 1 with the order reversed: +1 pt.
+[PAGE 4]
+Problem 4 – Marking Scheme
+• xn ↓ −1 (1 p)
+• limn→∞ xn = 0 (1 p)
+• Evaluation of the limit limn→∞ x2nln n (3 p)
+• Application of the Stolz theorem for convergence (3 p)
+• Use of the Taylor expansion of arctan (2 p)
+3
+[PAGE 5]
+Problem 5 – Marking Scheme
+NO POINTS FOR THE FOLLOWING:
+• Bound that can be obtained by interpolating on {−A, . . . ,−1, 1, . . . , B}
+e.g.
+– deg p ≤ A + B
+– only proves for AB ∈ [C, D] (for ﬁxed C, D ∈ R+)
+• Mentioning Chebyshev polinomials, Fejér kernel (without using them in a way relevant to the
+solution).
+PARTIAL / WEAKER RESULTS:
+• deg p ≤ C(A + B) for C < 1 ≥ 1 point
+• Essential ideas for a full solution. ? points
+4

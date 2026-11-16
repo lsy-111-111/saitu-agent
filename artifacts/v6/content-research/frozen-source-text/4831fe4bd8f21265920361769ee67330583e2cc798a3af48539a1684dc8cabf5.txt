@@ -1,0 +1,236 @@
+Eligibility and Requirements - Swift Student Challenge - Apple Developer
+View in English
+Apple Developer
+Get Started
+Explore Get Started
+Overview
+Learn
+Apple Developer Program
+Stay Updated
+Latest News
+Hello Developer
+Platforms
+Explore Platforms
+Apple Platforms
+iOS
+iPadOS
+macOS
+tvOS
+visionOS
+watchOS
+App Store
+Featured
+Design
+Distribution
+Games
+Accessories
+Web
+Home
+CarPlay
+Technologies
+Explore Technologies
+Overview
+Xcode
+Swift
+SwiftUI
+Featured
+Accessibility
+AI & Machine Learning
+App Intents
+Apple Intelligence
+Games
+Security
+Xcode Cloud
+Community
+Explore Community
+Overview
+Meet with Apple events
+Community events
+Developer Forums
+Open Source
+Featured
+WWDC
+Swift Student Challenge
+Developer Stories
+App Store Awards
+Apple Design Awards
+Apple Developer Centers
+Documentation
+Explore Documentation
+Documentation Library
+Technology Overviews
+Sample Code
+Human Interface Guidelines
+Videos
+Release Notes
+Featured Updates
+iOS
+iPadOS
+macOS
+watchOS
+visionOS
+tvOS
+Xcode
+Downloads
+Explore Downloads
+All Downloads
+Operating Systems
+Applications
+Design Resources
+Featured
+Xcode
+TestFlight
+Fonts
+SF Symbols
+Icon Composer
+Support
+Explore Support
+Overview
+Help Guides
+Developer Forums
+Feedback Assistant
+Contact Us
+Featured
+Account Help
+App Review Guidelines
+App Review Help
+App Store Connect Help
+Upcoming Requirements
+Agreements and Guidelines
+System Status
+Quick Links
+Events
+News
+Forums
+Sample Code
+Videos
+Swift Student Challenge
+Open Menu
+Close Menu
+Overview
+Get ready
+Distinguished Winners
+Eligibility
+Notify me
+Eligibility and requirements
+The Swift Student Challenge is designed for students who are cultivating their software development skills. Make sure to review the current eligibility conditions to confirm that you’re qualified to participate. Please note that we can’t accept submissions from applicants who are employed as professional developers.
+Applying
+To be eligible for the Challenge, you can not be employed full time as a developer, and at the time you submit your app playground you must:
+Meet the minimum age for requirement for your country or region as follows:
+14 years of age or older in Austria, Bulgaria, China mainland, Cyprus, Israel, Italy, Lithuania, South Korea, and Spain.
+15 years of age or older in Czechia, France, Greece, Peru, and Slovenia.
+16 years of age or older in Brazil, Croatia, Germany, Hungary, Ireland, Kosovo, Liechtenstein, Luxembourg, Malaysia, Netherlands, Philippines, Poland, Romania, Singapore, and Slovakia.
+13 years of age or older in all other countries and regions.
+Be registered for free with Apple as an Apple developer or be a member of the Apple Developer Program; and
+Fulfill one of the following requirements:
+Be enrolled in, or have graduated within the last 90 days from, an accredited academic institution or official homeschool equivalent, or an Apple Developer Academy;
+Be enrolled in a STEM organization’s educational curriculum; or
+Have graduated from high school or equivalent within the past 6 months and be awaiting acceptance or have received acceptance to an accredited academic institution.
+You can receive a Swift Student Challenge award up to three times. You may be selected as a Distinguished Winner one time only.
+Building your app playground
+Create an app playground that can be experienced within three minutes. Be creative.
+Requirements:
+Your submission must be an app playground (.swiftpm) in a ZIP file.
+Your creation should not rely on a network connection and any resources used in your app playground should be included locally in the ZIP file. Submissions will be judged offline.
+Your ZIP file can be up to 25 MB.
+Your submission must be created by you as an individual or a template modified by you as an individual. Group work will not be considered. You may include third-party open source licensed code and/or public domain images and sounds, with credit and an explanation of why it was used.
+Your app playground must be built with and run on Swift Playground 4.6 or Xcode 26, or later. You may incorporate the use of Apple Pencil.
+All content should be in English.
+Full Terms and Conditions
+Developer Footer
+Swift Student Challenge
+Eligibility and Requirements
+Platforms
+Open Menu
+Close Menu
+iOS
+iPadOS
+macOS
+tvOS
+visionOS
+watchOS
+App Store
+Tools
+Open Menu
+Close Menu
+Swift
+SwiftUI
+Swift Playground
+TestFlight
+Xcode
+Xcode Cloud
+Icon Composer
+SF Symbols
+Technologies
+Open Menu
+Close Menu
+Accessibility
+Accessories
+AI & Machine Learning
+Apple In-App Purchase
+Apple Intelligence
+Audio & Video
+Augmented Reality
+Business
+Design
+Distribution
+Education
+Games
+Health & Fitness
+Localization
+Maps & Location
+Security
+Safari & Web
+Resources
+Open Menu
+Close Menu
+Documentation
+Downloads
+Sample Code
+Videos
+Documentation Archive
+Support
+Open Menu
+Close Menu
+Help Guides & Articles
+Contact Us
+Forums
+Feedback & Bug Reporting
+System Status
+Account
+Open Menu
+Close Menu
+Apple Developer
+App Store Connect
+Certificates, IDs, & Profiles
+Feedback Assistant
+Programs
+Open Menu
+Close Menu
+Apple Developer Program
+Apple Developer Enterprise Program
+App Store Small Business Program
+MFi Program
+Mini Apps Partner Program
+News Partner Program
+Video Partner Program
+Security Bounty Program
+Security Research Device Program
+Events
+Open Menu
+Close Menu
+Meet with Apple
+Apple Developer Centers
+App Store Awards
+Apple Design Awards
+Apple Developer Academies
+WWDC
+Read the latest news.
+Get the Apple Developer app. Follow us on bilibili, LinkedIn, WeChat, and YouTube.
+Light
+Dark
+Auto
+Copyright ©  2026 Apple Inc. All rights reserved.
+Terms of Use
+Privacy Policy
+Agreements and Guidelines

@@ -1,0 +1,71 @@
+{
+  "createdAt": "2026-11-05T12:44:25.367493+00:00",
+  "independentReview": false,
+  "sources": [
+    {
+      "sourceId": "abc-c7-home",
+      "url": "https://atcoder.jp/contests/abc427",
+      "retrievedAt": "2026-11-05T12:44:21.602278+00:00",
+      "independentReview": false,
+      "status": "captured_bytes_not_verified",
+      "finalUrl": "https://atcoder.jp/contests/abc427",
+      "sha256": "42c1bef01de2be9e64ccb056a437a26d62ecbdede07a8569e14e57289d2cd69b",
+      "bytes": 24610,
+      "contentType": "text/html; charset=utf-8",
+      "artifact": "artifacts/v6/content-research/source-byte-snapshots/42c1bef01de2be9e64ccb056a437a26d62ecbdede07a8569e14e57289d2cd69b.html",
+      "limitation": "HTTP success or a byte digest does not establish that a document is a usable rule or that facts are true; reviewers must open and read it."
+    },
+    {
+      "sourceId": "abc-c7-rules",
+      "url": "https://atcoder.jp/contests/abc427/rules",
+      "retrievedAt": "2026-11-05T12:44:21.602616+00:00",
+      "independentReview": false,
+      "status": "captured_bytes_not_verified",
+      "finalUrl": "https://atcoder.jp/contests/abc427/rules",
+      "sha256": "5a6e5a83c3d931e49c9c49bb8e04535e29d7f312493116c2f1eb3c2e28017bb4",
+      "bytes": 109288,
+      "contentType": "text/html; charset=utf-8",
+      "artifact": "artifacts/v6/content-research/source-byte-snapshots/5a6e5a83c3d931e49c9c49bb8e04535e29d7f312493116c2f1eb3c2e28017bb4.html",
+      "limitation": "HTTP success or a byte digest does not establish that a document is a usable rule or that facts are true; reviewers must open and read it."
+    },
+    {
+      "sourceId": "abc-c7-task",
+      "url": "https://atcoder.jp/contests/abc427/tasks/abc427_d",
+      "retrievedAt": "2026-11-05T12:44:21.602758+00:00",
+      "independentReview": false,
+      "status": "captured_bytes_not_verified",
+      "finalUrl": "https://atcoder.jp/contests/abc427/tasks/abc427_d",
+      "sha256": "1b388e662f546cdc5d422acfc55f962dd351e023e0e2293e56a56fbe98d8306b",
+      "bytes": 22129,
+      "contentType": "text/html; charset=utf-8",
+      "artifact": "artifacts/v6/content-research/source-byte-snapshots/1b388e662f546cdc5d422acfc55f962dd351e023e0e2293e56a56fbe98d8306b.html",
+      "limitation": "HTTP success or a byte digest does not establish that a document is a usable rule or that facts are true; reviewers must open and read it."
+    },
+    {
+      "sourceId": "abc-c7-editorial",
+      "url": "https://atcoder.jp/contests/abc427/editorial/14196",
+      "retrievedAt": "2026-11-05T12:44:23.244759+00:00",
+      "independentReview": false,
+      "status": "captured_bytes_not_verified",
+      "finalUrl": "https://atcoder.jp/contests/abc427/editorial/14196",
+      "sha256": "41a3b72b7cdeb4c09c7422a85b6c07685cafb4458a01d7276c6eace20b3a522c",
+      "bytes": 15336,
+      "contentType": "text/html; charset=utf-8",
+      "artifact": "artifacts/v6/content-research/source-byte-snapshots/41a3b72b7cdeb4c09c7422a85b6c07685cafb4458a01d7276c6eace20b3a522c.html",
+      "limitation": "HTTP success or a byte digest does not establish that a document is a usable rule or that facts are true; reviewers must open and read it."
+    },
+    {
+      "sourceId": "abc-c7-free",
+      "url": "https://info.atcoder.jp/overview/about/why-tada",
+      "retrievedAt": "2026-11-05T12:44:23.390084+00:00",
+      "independentReview": false,
+      "status": "captured_bytes_not_verified",
+      "finalUrl": "https://info.atcoder.jp/overview/about/why-tada",
+      "sha256": "c5d5398158e1ecac2f53837d1d944a4388b4edd1bda70414cdacd55ea054a627",
+      "bytes": 51173,
+      "contentType": "text/html; charset=utf-8",
+      "artifact": "artifacts/v6/content-research/source-byte-snapshots/c5d5398158e1ecac2f53837d1d944a4388b4edd1bda70414cdacd55ea054a627.html",
+      "limitation": "HTTP success or a byte digest does not establish that a document is a usable rule or that facts are true; reviewers must open and read it."
+    }
+  ]
+}

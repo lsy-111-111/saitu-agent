@@ -1,0 +1,247 @@
+{
+  "schemaVersion": "saitu.author-source-reading.v1",
+  "authorAgentId": "/root/continue_catalog",
+  "independentReview": false,
+  "createdAt": "2026-11-05T18:07:43.114750+00:00",
+  "sourceReadings": [
+    {
+      "sourceId": "b-ad-shaoyang-2026-reference",
+      "url": "https://www.syzyedu.com/Uploads/202606/6a338bf15e345.pdf",
+      "finalUrl": "https://www.syzyedu.com/Uploads/202606/6a338bf15e345.pdf",
+      "retrievedAt": "2026-11-05T18:07:43.114750+00:00",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/7612675c599a2b113ee8e4abae2869402cb5c8e3cdb33d538a5bee4db96d43bb.pdf",
+      "sourceByteSha256": "7612675c599a2b113ee8e4abae2869402cb5c8e3cdb33d538a5bee4db96d43bb",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/e4c8731b81f278038009813bf343ac35f33cbb5eb18db3852d1d2a76b65f07fb.txt",
+      "bodySha256": "e4c8731b81f278038009813bf343ac35f33cbb5eb18db3852d1d2a76b65f07fb",
+      "characters": 2174,
+      "extractionMethod": "PDFKit page text; listed page separately rendered for visual verification",
+      "status": "body_available_not_verified",
+      "independentReview": false,
+      "captureIndex": "artifacts/continuation-20261105/content/source-rechecks-batch03/reading-log.json",
+      "bytes": 164339,
+      "actualReading": "完整5页抽取阅读，第4页评分表视觉复核。主办为邵阳职业技术学院；校赛各类别四项权重，不称全国权重。"
+    },
+    {
+      "sourceId": "b-ima-16-handbook",
+      "url": "https://casecompetition.imachina.org.cn/details/136.html",
+      "finalUrl": "https://casecompetition.imachina.org.cn/Uploads/Picture/2026/09/29/u6abb71131dfad.pdf",
+      "retrievedAt": "2026-11-05T18:07:43.114750+00:00",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/9c4e624bc63ae1167992886dcf0d49893f718c46b73bbcc987a351a1394e6819.pdf",
+      "sourceByteSha256": "9c4e624bc63ae1167992886dcf0d49893f718c46b73bbcc987a351a1394e6819",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/0a304fadae63e5f73301c8a6f11eb22a3491f0496dad85c9b0761b0116550e95.txt",
+      "bodySha256": "0a304fadae63e5f73301c8a6f11eb22a3491f0496dad85c9b0761b0116550e95",
+      "characters": 6266,
+      "extractionMethod": "PDFKit page text; listed page separately rendered for visual verification",
+      "status": "body_available_not_verified",
+      "independentReview": false,
+      "captureIndex": "artifacts/continuation-20261105/content/source-rechecks-batch03/reading-log.json",
+      "bytes": 27549641,
+      "actualReading": "完整9页文本读取；第6页视觉复核校内选拔满足5支，与规则页超过5队边界不同。手册没有内容细分分值表。数字乱码处不据文本确认，未使用奖项金额。"
+    },
+    {
+      "sourceId": "b-ima-fourth-reference-rubric",
+      "url": "https://ck.zjgsu.edu.cn/_upload/article/files/27/da/d1ca938a4887a39eca6f400d13a0/4f89c4a4-e777-4a9e-86c8-3fdf5451bbe1.pdf",
+      "finalUrl": "https://ck.zjgsu.edu.cn/_upload/article/files/27/da/d1ca938a4887a39eca6f400d13a0/4f89c4a4-e777-4a9e-86c8-3fdf5451bbe1.pdf",
+      "retrievedAt": "2026-11-05T18:07:43.114750+00:00",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/c3a7c470bebb3c8fdf3fe088a7d9675ae1808541abeee8b510147afcb6bdf1fe.pdf",
+      "sourceByteSha256": "c3a7c470bebb3c8fdf3fe088a7d9675ae1808541abeee8b510147afcb6bdf1fe",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/fb59cc657ccb0b7c7114ffad43f8e7a15123a06c201cee1192e6f5070dd233ee.txt",
+      "bodySha256": "fb59cc657ccb0b7c7114ffad43f8e7a15123a06c201cee1192e6f5070dd233ee",
+      "characters": 35423,
+      "extractionMethod": "PDFKit page text; listed page separately rendered for visual verification",
+      "status": "body_available_not_verified",
+      "independentReview": false,
+      "captureIndex": "artifacts/continuation-20261105/content/source-rechecks-batch03/reading-log.json",
+      "bytes": 3597524,
+      "actualReading": "完整22页文件及正文抽取，实读第1页届次日期、目录及第7—9页；第8页评分表视觉核对。正文标16页后附上一届案例，不把附件届次混为第四届。只用第8页历史初赛评价作为跨届参考，不套用资格、流程或格式。"
+    },
+    {
+      "sourceId": "ccsp-c4-notice",
+      "url": "https://ccsp.ccf.org.cn/ccsp/Bulletin/2025-09-15/848571.shtml",
+      "finalUrl": "https://ccsp.ccf.org.cn/ccsp/Bulletin/2025-09-15/848571.shtml",
+      "retrievedAt": "2026-11-05T11:51:22.962372+00:00",
+      "sourceByteSha256": "edeef98d27b72071e174b659467433f53d19a2fb9aae5b20a7a942aac2bb058d",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/edeef98d27b72071e174b659467433f53d19a2fb9aae5b20a7a942aac2bb058d.html",
+      "captureIndex": "artifacts/v6/content-research/source-byte-snapshots/capture-20261105T115147154048Z.json",
+      "independentReview": false,
+      "status": "body_available_not_verified",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/998f0c01597cf9b9c83a5d674dba08053df98da13c2ac88c696154a0a8434026.txt",
+      "bodySha256": "998f0c01597cf9b9c83a5d674dba08053df98da13c2ac88c696154a0a8434026",
+      "characters": 3952,
+      "extractionMethod": "html_parser_without_scripts_styles",
+      "actualReading": "重新读取冻结完整通知第五—十节，联网正文同范围核对。只证明机考、选手排名和报名缴费方式，未读到明确独立作答条款；待核条件不得做eq人数硬排除。"
+    },
+    {
+      "sourceId": "b-ad-rules",
+      "url": "https://www.sun-ada.net/home/about_intrs2.html",
+      "finalUrl": "https://www.sun-ada.net/home/about_intrs2.html",
+      "retrievedAt": "2026-11-05T12:26:35.920896+00:00",
+      "sourceByteSha256": "6e3255aa663a7c4771be1914604ac7442b2c0bde506c7ad2ec3ab7b95465c526",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/6e3255aa663a7c4771be1914604ac7442b2c0bde506c7ad2ec3ab7b95465c526.html",
+      "captureIndex": "artifacts/v6/content-research/source-byte-snapshots/capture-20261105T122752114163Z.json",
+      "independentReview": false,
+      "status": "body_available_not_verified",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/3d4e5526ec26f2e6e96d999ca8ba8a7bac51294ca9ddfa42b342fc379c662503.txt",
+      "bodySha256": "3d4e5526ec26f2e6e96d999ca8ba8a7bac51294ca9ddfa42b342fc379c662503",
+      "characters": 7286,
+      "extractionMethod": "html_parser_without_scripts_styles",
+      "readingBoundary": "沿用原作者已读完整来源；本轮只新增明确参考评分及校内选拔差异，不改变原命题内容。"
+    },
+    {
+      "sourceId": "b-ad-task",
+      "url": "https://www.sun-ada.net/home/zt_xqs3026.html",
+      "finalUrl": "https://www.sun-ada.net/home/zt_xqs3026.html",
+      "retrievedAt": "2026-11-05T12:26:38.615054+00:00",
+      "sourceByteSha256": "8d4c98ec1a7a9a6068b557a08e035ca5804205ad57b348f5230309de3235a1d8",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/8d4c98ec1a7a9a6068b557a08e035ca5804205ad57b348f5230309de3235a1d8.html",
+      "captureIndex": "artifacts/v6/content-research/source-byte-snapshots/capture-20261105T122752114163Z.json",
+      "independentReview": false,
+      "status": "body_available_not_verified",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/3897b27d7c96495efc0369035f6182abd3a2015f61460da634016c909dc9f5bc.txt",
+      "bodySha256": "3897b27d7c96495efc0369035f6182abd3a2015f61460da634016c909dc9f5bc",
+      "characters": 6311,
+      "extractionMethod": "html_parser_without_scripts_styles",
+      "readingBoundary": "沿用原作者已读完整来源；本轮只新增明确参考评分及校内选拔差异，不改变原命题内容。"
+    },
+    {
+      "sourceId": "b-ima-rules",
+      "url": "https://casecompetition.imachina.org.cn/details/100.html",
+      "finalUrl": "https://casecompetition.imachina.org.cn/details/100.html",
+      "retrievedAt": "2026-11-05T12:26:43.408234+00:00",
+      "sourceByteSha256": "637a546721da98069edb88b66fb60550ce9fa877a5300f654d2410d767e332ee",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/637a546721da98069edb88b66fb60550ce9fa877a5300f654d2410d767e332ee.html",
+      "captureIndex": "artifacts/v6/content-research/source-byte-snapshots/capture-20261105T122752114163Z.json",
+      "independentReview": false,
+      "status": "body_available_not_verified",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/de09728dd6cd6c825ce64c9a65c0fa525770a342b87c651638b04ef6cb04809b.txt",
+      "bodySha256": "de09728dd6cd6c825ce64c9a65c0fa525770a342b87c651638b04ef6cb04809b",
+      "characters": 3270,
+      "extractionMethod": "html_parser_without_scripts_styles",
+      "readingBoundary": "沿用原作者已读完整来源；本轮只新增明确参考评分及校内选拔差异，不改变原命题内容。"
+    },
+    {
+      "sourceId": "b-ima-delivery",
+      "url": "https://casecompetition.imachina.org.cn/details/102.html",
+      "finalUrl": "https://casecompetition.imachina.org.cn/details/102.html",
+      "retrievedAt": "2026-11-05T12:26:44.332042+00:00",
+      "sourceByteSha256": "1c24ce3f862e91b51ac6d6b00296fc24dad1025d66e1486ca1d71f32ae36c566",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/1c24ce3f862e91b51ac6d6b00296fc24dad1025d66e1486ca1d71f32ae36c566.html",
+      "captureIndex": "artifacts/v6/content-research/source-byte-snapshots/capture-20261105T122752114163Z.json",
+      "independentReview": false,
+      "status": "body_available_not_verified",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/58624ddb41ccda041274398a0f4cab820d8138ed329d272aeb244b1860d17051.txt",
+      "bodySha256": "58624ddb41ccda041274398a0f4cab820d8138ed329d272aeb244b1860d17051",
+      "characters": 2214,
+      "extractionMethod": "html_parser_without_scripts_styles",
+      "readingBoundary": "沿用原作者已读完整来源；本轮只新增明确参考评分及校内选拔差异，不改变原命题内容。"
+    },
+    {
+      "sourceId": "b-ima-case",
+      "url": "https://casecompetition.imachina.org.cn/Uploads/Picture/2026/10/27/u6ae04e27dbd7d.pdf",
+      "finalUrl": "https://casecompetition.imachina.org.cn/Uploads/Picture/2026/10/27/u6ae04e27dbd7d.pdf",
+      "retrievedAt": "2026-11-05T12:26:44.679903+00:00",
+      "sourceByteSha256": "8501f97e14087651e860a371163aa1354efe79b1538695c171174a5eabb40bf7",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/8501f97e14087651e860a371163aa1354efe79b1538695c171174a5eabb40bf7.pdf",
+      "captureIndex": "artifacts/v6/content-research/source-byte-snapshots/capture-20261105T122752114163Z.json",
+      "independentReview": false,
+      "status": "body_available_not_verified",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/a92cfb2a37850712857852937622499eebbc0e5fa53a4a843deb33fa98086678.txt",
+      "bodySha256": "a92cfb2a37850712857852937622499eebbc0e5fa53a4a843deb33fa98086678",
+      "characters": 10250,
+      "extractionMethod": "pypdf_text_extraction",
+      "readingBoundary": "沿用原作者已读完整来源；本轮只新增明确参考评分及校内选拔差异，不改变原命题内容。"
+    },
+    {
+      "sourceId": "b-industrial-rule",
+      "url": "https://arch.hit.edu.cn/_upload/article/files/ee/e4/13a9400d4b9189d376c73be3b166/e8624474-d7df-46aa-9343-ad9ba91ff0bf.pdf",
+      "finalUrl": "https://arch.hit.edu.cn/_upload/article/files/ee/e4/13a9400d4b9189d376c73be3b166/e8624474-d7df-46aa-9343-ad9ba91ff0bf.pdf",
+      "retrievedAt": "2026-11-05T12:27:27.140596+00:00",
+      "sourceByteSha256": "5ed8956da5f36c7fbf104c13b349f0b117adcf3522f2c3cb0b9028c1d56c8a0e",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/5ed8956da5f36c7fbf104c13b349f0b117adcf3522f2c3cb0b9028c1d56c8a0e.pdf",
+      "captureIndex": "artifacts/v6/content-research/source-byte-snapshots/capture-20261105T122752114163Z.json",
+      "independentReview": false,
+      "status": "body_available_not_verified",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/61ba7a0943df39d14209c2dfd3ba59e318da0a6b3168cdffaff7442bd5bb4026.txt",
+      "bodySha256": "61ba7a0943df39d14209c2dfd3ba59e318da0a6b3168cdffaff7442bd5bb4026",
+      "characters": 4291,
+      "extractionMethod": "pypdf_text_extraction",
+      "actualReading": "重读完整八页抽取正文，第5—6页五项评价。仅黑龙江同届参考，不确认原作赛区。"
+    },
+    {
+      "sourceId": "b-industrial-work",
+      "url": "https://www.gdep.edu.cn/__local/7/DB/0D/045B0FC787464C7A103EAE08495_1FD490AC_7AB15B.pdf",
+      "finalUrl": "https://www.gdep.edu.cn/__local/7/DB/0D/045B0FC787464C7A103EAE08495_1FD490AC_7AB15B.pdf",
+      "retrievedAt": "2026-11-05T12:27:28.711362+00:00",
+      "sourceByteSha256": "079493e107a89799cb53d94d9d2640d0f9e90b4705b817dd88ac9057c4a04928",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/079493e107a89799cb53d94d9d2640d0f9e90b4705b817dd88ac9057c4a04928.pdf",
+      "captureIndex": "artifacts/v6/content-research/source-byte-snapshots/capture-20261105T122752114163Z.json",
+      "independentReview": false,
+      "status": "body_available_not_verified",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/98179d27f796aced3a91bb6b1ce81970266f7dcd94d53d16ff351800bba8cbe5.txt",
+      "bodySha256": "98179d27f796aced3a91bb6b1ce81970266f7dcd94d53d16ff351800bba8cbe5",
+      "characters": 38094,
+      "extractionMethod": "pypdf_text_extraction",
+      "actualReading": "重新渲染视觉阅读PDF44页印刷42页Empty完整展板，包含结构、变形、用户、作者学校和2024标识；没有工程制造/安全测试数据。"
+    },
+    {
+      "sourceId": "b-hult-guide",
+      "url": "https://a.storyblok.com/f/133195/x/c87070884e/2023-hult-prize-challenge.pdf",
+      "finalUrl": "https://a.storyblok.com/f/133195/x/c87070884e/2023-hult-prize-challenge.pdf",
+      "retrievedAt": "2026-11-05T12:27:34.054408+00:00",
+      "sourceByteSha256": "4324aa383ae6c0e23464eddd45e4c79baab9c58b871b1c15d585394381c6fd32",
+      "sourceArtifact": "artifacts/v6/content-research/source-byte-snapshots/4324aa383ae6c0e23464eddd45e4c79baab9c58b871b1c15d585394381c6fd32.pdf",
+      "captureIndex": "artifacts/v6/content-research/source-byte-snapshots/capture-20261105T122752114163Z.json",
+      "independentReview": false,
+      "status": "body_available_not_verified",
+      "bodyArtifact": "artifacts/v6/content-research/frozen-source-text/abf1b80575d2e812a91e299d7c5cebe658569deb1d8524f069411ab1f157e369.txt",
+      "bodySha256": "abf1b80575d2e812a91e299d7c5cebe658569deb1d8524f069411ab1f157e369",
+      "characters": 47397,
+      "extractionMethod": "pypdf_text_extraction",
+      "actualReading": "重读指南第1—7及22—23页，视觉核23页五项定性评委关注点，完整挑战指南原件存在；数字评分卡和上传规格仍未知，不当当前报名依据。"
+    }
+  ],
+  "visualArtifacts": [
+    "artifacts/continuation-20261105/content/source-rechecks-batch03/ima-sixteenth-6.png",
+    "artifacts/continuation-20261105/content/source-rechecks-batch03/ima-fourth-8.png",
+    "artifacts/continuation-20261105/content/source-rechecks-batch03/advertising-shaoyang-4.png",
+    "artifacts/continuation-20261105/content/source-rechecks-batch03/industrial-work-44.png",
+    "artifacts/continuation-20261105/content/source-rechecks-batch03/hult-23.png"
+  ],
+  "priorAuthorLogs": [
+    "artifacts/continuation-20261105/content/source-rechecks-batch02/reading-log.json",
+    "artifacts/v6/content-research/arts-business-b-reading-log.json",
+    "artifacts/v6/content-research/software-math-c4-reading-log.json"
+  ],
+  "searches": [
+    {
+      "query": "全国大学生广告艺术大赛 平面类 评审标准 创意 表现 评分",
+      "selectedUrl": "https://www.syzyedu.com/Uploads/202606/6a338bf15e345.pdf",
+      "result": "同届校赛完整原件，明确只参考"
+    },
+    {
+      "query": "IMA 校园管理会计案例大赛 2026 评分 标准 案例",
+      "selectedUrl": "https://casecompetition.imachina.org.cn/details/136.html",
+      "result": "同届完整9页手册无细分内容权重，保留未知"
+    },
+    {
+      "query": "IMA 第十六届 校园 管理会计 评分",
+      "selectedUrl": "https://ck.zjgsu.edu.cn/_upload/article/files/27/da/d1ca938a4887a39eca6f400d13a0/4f89c4a4-e777-4a9e-86c8-3fdf5451bbe1.pdf",
+      "result": "找到主办手册高校托管的历史完整评分，仅跨届参考"
+    }
+  ],
+  "limitation": "原件、原文定位及作者判断不构成独立批准。当前正式参赛费用/资格缺口未解除，历史参考权重不升级为当前正式权重。",
+  "liveRecheckLimitations": [
+    {
+      "sourceId": "b-industrial-rule",
+      "result": "web open timeout; used original frozen PDF bytes for historical re-read"
+    },
+    {
+      "sourceId": "b-industrial-work",
+      "result": "web open timeout; used original frozen PDF bytes and newly rendered complete exhibit page"
+    },
+    {
+      "sourceId": "b-hult-guide",
+      "result": "web open rejected 12,789,453 byte length; used original frozen complete PDF and newly rendered page23"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+/** Continue only the provably undispatched fifth item of the original public group. */
+import {createHash,randomUUID} from 'node:crypto';
+import {appendFileSync} from 'node:fs';
+import {readFile,writeFile,readdir} from 'node:fs/promises';
+import {createRequire} from 'node:module';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {Pool} from 'pg';
+import {canonicalHash} from './frozen-ranking-executor.mjs';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../../..');
+const base=path.join(root,'artifacts/specialist-20261106/c-development');
+const group=path.join(base,'anchors-v611-five'),snapshot=path.join(group,'source');
+const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
+const json=async file=>JSON.parse(await readFile(file,'utf8'));
+const registrationBytes=await readFile(path.join(group,'registration.json'));
+const registration=JSON.parse(registrationBytes);
+if(registration.runName!=='anchors-v611-five'||registration.repeats!==5||registration.diagnosticTransportOnly||registration.reasoningEffort!=='max')throw new Error('original_exact_five_group_required');
+try{await readFile(path.join(group,'run-5.json'));throw new Error('fifth_result_already_exists');}catch(error){if(error.code!=='ENOENT')throw error;}
+const eventPath=path.join(base,'accounting-events.jsonl');
+const previous=(await readFile(eventPath,'utf8')).split('\n').filter(Boolean).map(JSON.parse);
+const oldGroup=previous.filter(event=>event.runName===registration.runName);
+const originalIds=[...new Set(oldGroup.filter(event=>event.type==='ai_transport_dispatch').map(event=>event.invocationId))];
+if(originalIds.length!==4)throw new Error('exactly_four_prior_invocations_required_no_unknown_replay');
+const prior=await Promise.all([1,2,3].map(n=>json(path.join(group,`run-${n}.json`))));
+if(prior.some((row,index)=>row.repetition!==index+1||row.invocationId!==originalIds[index]))throw new Error('prior_ordinal_binding_mismatch');
+const unknownInvocation=originalIds[3];
+if(prior.some(row=>row.invocationId===unknownInvocation))throw new Error('interrupted_invocation_mismatch');
+const unknownEvents=oldGroup.filter(event=>event.invocationId===unknownInvocation);
+if(unknownEvents.some(event=>event.type==='ai_attempt_result'||event.type==='ai_budget_settled'))throw new Error('unexpected_prior_terminal_event_audit_required');
+const manifest=await json(path.join(group,'implementation-snapshot.json'));
+async function sourceFiles(directory,basePath=directory){const result=[];for(const entry of(await readdir(directory,{withFileTypes:true})).sort((a,b)=>a.name.localeCompare(b.name))){const file=path.join(directory,entry.name);if(entry.isDirectory())result.push(...await sourceFiles(file,basePath));else if(entry.isFile())result.push({path:path.relative(basePath,file),sha256:hash(await readFile(file))});}return result;}
+if(canonicalHash(await sourceFiles(path.join(snapshot,'src')))!==registration.implementationSha256||canonicalHash(manifest.files)!==registration.implementationSha256)throw new Error('original_frozen_source_changed');
+const contextJson=await json(path.join(group,'context.json'));
+const input=(await json(path.join(group,'public-input.json'))).input;
+if(canonicalHash(contextJson)!==registration.contextSha256||canonicalHash(input)!==registration.inputSha256)throw new Error('original_input_or_context_changed');
+const order=registration.orders.find(row=>row.repetition===5);
+if(!order||order.candidateOrder.length!==registration.candidateCount||canonicalHash([...order.candidateOrder].sort())!==registration.candidateSetSha256)throw new Error('original_fifth_order_required');
+const require=createRequire(import.meta.url);
+require('@next/env').loadEnvConfig(root,true,{info(){},error(){}},true);
+const currentConfig={provider:process.env.AI_PROVIDER,reasoningEffort:'max',spendRunId:process.env.AI_SPEND_RUN_ID,spendPhase:process.env.AI_SPEND_PHASE,apiTimeoutMs:Number(process.env.AI_TIMEOUT_MS)||null,requestDeadlineMs:Number(process.env.AI_REQUEST_DEADLINE_MS)||null,mock:false};
+if(canonicalHash(currentConfig)!==canonicalHash(registration.config)||!process.env.AI_API_KEY||process.env.AI_TEST_MODE==='1'||process.env.ALLOW_AI_MOCK==='1')throw new Error('original_public_runtime_configuration_changed');
+if(!['127.0.0.1','localhost','[::1]'].includes(new URL(process.env.DATABASE_URL).hostname))throw new Error('local_existing_ledger_required');
+const pool=new Pool({connectionString:process.env.DATABASE_URL,max:1});
+const ownIds=new Set(previous.filter(event=>event.type==='ai_budget_reserved').map(event=>event.details.reservationId));
+let dispatches=previous.filter(event=>event.type==='ai_transport_dispatch').length,recordingFailed=false;
+async function ledger(ids){const rows=(await pool.query(`select id,phase,state,reserved_micros::text,charged_micros::text,input_tokens::text,output_tokens::text,cached_input_tokens::text,created_at,settled_at from ai_spend_ledger where run_id=$1 ${ids?'and id=any($2::uuid[])':''} order by created_at,id`,ids?[process.env.AI_SPEND_RUN_ID,ids]:[process.env.AI_SPEND_RUN_ID])).rows;return{observedAt:new Date().toISOString(),rows,accountedMicros:rows.reduce((sum,row)=>sum+Number(row.charged_micros??row.reserved_micros),0)};}
+const before=await ledger();
+const allocation=await json(path.join(base,'allocation-start.json'));
+const archivedIds=['e9233989-df7b-4391-8cb1-8f6bb5ed125c','f4a90e80-4ff6-41fb-8df0-fcda035dbe07','b5048f59-8cd2-465f-8ef7-0108760cbc88','19e15d69-d133-46cc-b2c3-15f5d2785293','b7db7657-7022-44b2-a1df-63381c4d8905','b241fdb2-d831-4494-aeec-6fd4c8d19789'];
+const accountedIds=new Set([...allocation.ledger.rows.map(row=>row.id),...ownIds,...archivedIds]);
+if(before.rows.some(row=>!accountedIds.has(row.id)))throw new Error('unexplained_ledger_row_no_resume');
+const resume={schemaVersion:'saitu.public-ranking-resume.v1',registeredAt:new Date().toISOString(),originalRegistrationSha256:hash(registrationBytes),implementationSha256:registration.implementationSha256,repetition:5,order,priorCompletedInvocations:prior.map(row=>row.invocationId),blockedUnknownInvocation:unknownInvocation,blockedUnknownReservationIds:unknownEvents.filter(event=>event.type==='ai_budget_reserved').map(event=>event.details.reservationId),unknownResultPreserved:true,priorOwnDispatches:dispatches,priorOwnAccountedMicros:(await ledger([...ownIds])).accountedMicros,model:'deepseek-flash',thinking:'enabled',effort:'max',noRedispatch:true,acceptanceEligible:false};
+await writeFile(path.join(group,'resume-registration-05.json'),JSON.stringify(resume,null,2)+'\n',{flag:'wx'});
+await writeFile(path.join(group,'resume-ledger-before.json'),JSON.stringify(before,null,2)+'\n',{flag:'wx'});
+const dependencies=createRequire(import.meta.resolve('vitest/package.json'));
+const {createServer}=await import(dependencies.resolve('vite'));
+const server=await createServer({root:snapshot,configFile:false,optimizeDeps:{noDiscovery:true,entries:[]},server:{middlewareMode:true,watch:null},resolve:{alias:{'@':path.join(snapshot,'src'),'server-only':path.join(snapshot,'tests/fixtures/server-only.ts')}},appType:'custom',logLevel:'silent'});
+try{
+ const [model,ai,observation,spend,scope,pack,validation]=await Promise.all(['/src/lib/competitions/v6/model.ts','/src/lib/ai/ai-client.ts','/src/lib/ai/product-observation.ts','/src/lib/ai/spend-ledger.ts','/src/lib/ai/spend-run-context.ts','/src/lib/competitions/v6/model-evidence-pack.ts','/src/lib/competitions/v6/validation.ts'].map(module=>server.ssrLoadModule(module)));
+ if(ai.getConfiguredAiModel()!=='deepseek-flash'||ai.getConfiguredReasoningEffort()!=='max')throw new Error('exact_original_flash_max_required');
+ const context={...contextJson,now:new Date(contextJson.now)},events=[],stages=[],requests=[],invocationId=randomUUID(),startedAt=new Date().toISOString(),started=Date.now();
+ const observer=event=>{const entry={...event,runName:registration.runName,invocationId,repetition:5};events.push(entry);if(event.type==='ai_budget_reserved')ownIds.add(event.details.reservationId);if(event.type==='ai_transport_dispatch')dispatches++;if(event.type.startsWith('ai_'))try{appendFileSync(eventPath,JSON.stringify(entry)+'\n');}catch{recordingFailed=true;}};
+ const guardedCall=async(prompt,options)=>{const own=await ledger([...ownIds]),reserveMicros=spend.requestReserveMicros(options.systemPrompt??'',prompt,options.maxTokens??8192),expanded=pack.expandCandidateEvidence(JSON.parse(prompt));requests.push({stage:options.promptVersion.split('.').at(-1),promptSha256:hash(prompt),promptBytes:Buffer.byteLength(prompt),expandedPromptBytes:Buffer.byteLength(JSON.stringify(expanded)),candidateCount:expanded.candidates?.length??null,candidateIds:expanded.candidates?.map(row=>row.itemId)??[],reserveMicros,model:options.model,thinking:options.thinking,reasoningEffort:options.reasoningEffort,timeoutMs:options.timeoutMs,deadlineEpochMs:options.deadlineEpochMs,maxTokens:options.maxTokens});if(recordingFailed||dispatches>=28||own.accountedMicros+reserveMicros>12000000)return{ok:false,reason:recordingFailed?'spend_store_unavailable':'spend_budget_exhausted',upstreamAttempted:false,model:'deepseek-flash',attempts:0};const all=await ledger();return scope.withAiSpendLimit(Math.min(all.accountedMicros+12000000-own.accountedMicros,Number(process.env.AI_SPEND_LIMIT_CNY)*1000000),()=>ai.requestAiJson(prompt,options));};
+ const report=await observation.withProductObservation({observer},()=>model.runDecisionRecommendation(input.profile,{method:'llm',context,experiment:{candidateItemIds:context.candidates.map(row=>row.record.recordId),candidateOrder:order.candidateOrder,shuffleSeed:order.shuffleSeed,skipIndependentRecall:true,reasoningEffort:'max'},modelCall:guardedCall,onObservation:async event=>stages.push(event)}));
+ const row={invocationId,repetition:5,resumedFromRegistrationSha256:resume.originalRegistrationSha256,startedAt,completedAt:new Date().toISOString(),elapsedMs:Date.now()-started,candidateSetSha256:registration.candidateSetSha256,candidateOrder:order.candidateOrder,fullPoolCount:registration.candidateCount,outputSha256:canonicalHash(report),report,validation:validation.validateDecisionReport(report,context),requests,stages,events,realHttpDispatches:events.filter(event=>event.type==='ai_transport_dispatch').length,reservationIds:events.filter(event=>event.type==='ai_budget_reserved').map(event=>event.details.reservationId),contextUnchanged:canonicalHash(JSON.parse(JSON.stringify(context)))===registration.contextSha256};
+ await writeFile(path.join(group,'run-5.json'),JSON.stringify(row,null,2)+'\n',{flag:'wx'});
+ await writeFile(path.join(group,'interruption-4.json'),JSON.stringify({schemaVersion:'saitu.public-ranking-interrupted.v1',repetition:4,invocationId:unknownInvocation,originalOrder:registration.orders.find(row=>row.repetition===4),ordinalBasis:'original_sequential_driver_and_three_completed_prior_ids',status:'interrupted_after_dispatch_provider_usage_unknown',events:unknownEvents,reservationIds:resume.blockedUnknownReservationIds,retried:false,output:null,elapsedMs:null,usage:null,accounting:'full_original_reservation_retained'},null,2)+'\n',{flag:'wx'});
+ const allEvents=(await readFile(eventPath,'utf8')).split('\n').filter(Boolean).map(JSON.parse).filter(event=>event.runName===registration.runName),completed=[...prior,row],own=await ledger([...ownIds]);
+ const summary={schemaVersion:'saitu.public-ranking-interrupted-group-result.v1',completedAt:new Date().toISOString(),registeredRuns:5,invocationsWithActualDispatch:new Set(allEvents.filter(event=>event.type==='ai_transport_dispatch').map(event=>event.invocationId)).size,completeReports:4,interruptedUnknownResults:1,successfulCRuns:completed.filter(row=>!row.report.fallback.used&&row.report.trace.method==='llm'&&row.report.trace.verification==='model_reviewed'&&row.report.recommendations.length>0).length,knownFallbackRuns:completed.filter(row=>row.report.fallback.used).length,actualHttpDispatches:allEvents.filter(event=>event.type==='ai_transport_dispatch').length,allocationHttpDispatches:dispatches,allocationAccountedMicros:own.accountedMicros,candidateCount:registration.candidateCount,latencyMsByRepetition:[prior[0].elapsedMs,prior[1].elapsedMs,prior[2].elapsedMs,null,row.elapsedMs],frozenSourceUnchanged:canonicalHash(await sourceFiles(path.join(snapshot,'src')))===registration.implementationSha256,unknownResultRedispatched:false,acceptanceEligible:false,qualityLabelsAvailable:false,pageOrBrowserExecution:false,status:'all_five_original_items_accounted_one_interrupted_unknown_result'};
+ await writeFile(path.join(group,'resume-ledger-after.json'),JSON.stringify(await ledger(),null,2)+'\n',{flag:'wx'});
+ await writeFile(path.join(group,'summary.json'),JSON.stringify(summary,null,2)+'\n',{flag:'wx'});
+ console.log(JSON.stringify(summary));
+}finally{await server.close();await pool.end();}

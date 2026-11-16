@@ -1,14 +1,15 @@
 #!/usr/bin/env node
 
 import nextEnv from "@next/env";
+import { installSourceLoader } from "./lib/load-typescript-source.mjs";
 
 const { loadEnvConfig } = nextEnv;
 loadEnvConfig(process.cwd(), false, { info() {}, error(message) { console.error(message); } }, true);
 
-const DEFAULT_MODEL = "deepseek-v4-pro";
+const DEFAULT_MODEL = "deepseek-flash";
 const DEFAULT_MODELS_URL = "https://api.deepseek.com/models";
 const DEFAULT_CHAT_URL = "https://api.deepseek.com/chat/completions";
-const PROMPT_VERSION = "deepseek-preflight.v5";
+const PROMPT_VERSION = "deepseek-preflight.v6.flash-max";
 
 function isDisabled(value) {
   return ["0", "false", "off", "disabled"].includes(String(value ?? "").trim().toLowerCase());
@@ -66,29 +67,13 @@ async function fetchChecked(url, init, operation) {
 }
 
 async function requestJson({ apiKey, apiUrl, model, systemPrompt, userPrompt, maxTokens, operation }) {
-  const payload = await fetchChecked(
-    apiUrl,
-    {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        model,
-        messages: [
-          { role: "system", content: systemPrompt },
-          { role: "user", content: userPrompt }
-        ],
-        temperature: 0,
-        max_tokens: maxTokens,
-        response_format: { type: "json_object" },
-        thinking: { type: "disabled" }
-      })
-    },
-    operation
-  );
-  return parseChoice(payload);
+  installSourceLoader();
+  const { requestAiJson } = await import("../src/lib/ai/ai-client.ts");
+  const result = await requestAiJson(userPrompt, { apiKey, apiUrl, model, systemPrompt,
+    maxTokens: Math.max(8192, maxTokens), maxAttempts: 1, timeoutMs: requestTimeout(),
+    requestDeadlineMs: requestTimeout(), operation, promptVersion: PROMPT_VERSION });
+  if (!result.ok) throw new Error(`${operation} failed: ${result.reason}`);
+  return result.data;
 }
 
 function validateNormalization(value) {
@@ -174,7 +159,10 @@ async function main() {
       : []
   );
   for (const model of configuredModels) {
+    if (model !== DEFAULT_MODEL) throw new Error("This release requires deepseek-flash");
     if (!availableModels.has(model)) throw new Error(`Configured DeepSeek model is unavailable: ${model}`);
+    const metadata = modelsPayload.data.find(entry => entry.id === model);
+    if (!metadata?.effort?.supported_levels?.includes("max")) throw new Error("DeepSeek Flash max effort is not confirmed available");
   }
   console.info(JSON.stringify({ event: "deepseek_preflight", operation: "models", status: "ok", models: configuredModels }));
 

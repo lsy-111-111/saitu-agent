@@ -1,0 +1,188 @@
+D - The Simple Game
+×
+Contest started
+Panasonic Programming Contest 2025（AtCoder Beginner Contest 427） has begun.
+Close
+×
+Contest is over
+Panasonic Programming Contest 2025（AtCoder Beginner Contest 427） has ended.
+Close
+Panasonic Programming Contest 2025（AtCoder Beginner Contest 427）
+English
+日本語
+English
+Sign Up
+Sign In
+Contest Duration:
+2025-10-11 21:00:00+0900 - 2025-10-11 22:40:00+0900 (local time)
+(100 minutes)
+Back to Home
+Top
+Tasks
+Clarifications
+Results
+All Submissions
+Standings
+Virtual Standings
+Editorial
+Discuss
+D - The Simple Game
+Editorial
+/
+Time Limit: 2 sec / Memory Limit: 1024 MiB
+配点 : 425 点
+問題文
+N 頂点 M 辺の有向グラフがあります。頂点には 1 から N までの番号が付けられており、i 番目の辺は頂点 U_i から頂点 V_i へ向かう有向辺です。ここで、各頂点の出次数は 1 以上です。
+また、各頂点には文字が書かれており、頂点 i に書かれている文字は S_i です。ただし、S_i とは S の i 文字目を指します。
+Alice と Bob はこのグラフ上で 1 つの駒を用いて以下のゲームを行います。
+はじめ、駒は頂点 1 に置かれており、Alice が先手、Bob が後手となって以下の操作を交互に K 回ずつ行う。
+現在駒が置かれている頂点を u とする。頂点 u から頂点 v に向かう辺が存在するような頂点 v を選び、駒を頂点 v に移動させる。
+最終的に駒が置かれている頂点を v として、S_v =  A のとき Alice の勝ち、S_v =  B のとき Bob の勝ちである。
+両者が最適に行動したときのゲームの勝者を求めてください。
+1 つの入力において T 個のテストケースが与えられます。それぞれについて答えてください。
+制約
+1 \leq T
+2 \leq N, M \leq 2 \times 10^5
+1 \leq K \leq 10
+S は A, B からなる長さ N の文字列
+1 \leq U_i, V_i \leq N
+i \neq j のとき (U_i, V_i) \neq (U_j, V_j)
+各頂点の出次数は 1 以上
+1 つの入力に含まれるテストケースについて、N の総和は 2 \times 10^5 以下
+1 つの入力に含まれるテストケースについて、M の総和は 2 \times 10^5 以下
+入力
+入力は以下の形式で標準入力から与えられる。
+T
+\text{case}_1
+\text{case}_2
+\ldots
+\text{case}_T
+ここで、\text{case}_i は i 番目のテストケースを表し、各テストケースは以下の形式で与えられる。
+N M K
+S
+U_1 V_1
+U_2 V_2
+\vdots
+U_M V_M
+出力
+T 行出力せよ。i 行目には、i 番目のテストケースにおいて両者が最適に行動したときに Alice が勝つ場合 Alice を、Bob が勝つ場合 Bob を出力せよ。
+入力例 13
+4 6 2
+AABB
+1 2
+2 3
+3 1
+3 3
+3 4
+4 2
+4 6 2
+ABAB
+1 2
+2 3
+3 1
+3 3
+3 4
+4 2
+5 8 3
+ABABB
+1 2
+2 2
+2 3
+3 1
+3 4
+4 4
+4 5
+5 3
+出力例 1Alice
+Bob
+Bob
+1 番目のテストケースについてゲームの進行の一例を説明します。ただし、この進行において両者は最適に行動しているとは限りません。
+はじめ、駒は頂点 1 に置かれている。
+Alice が頂点 2 に駒を動かす。
+Bob が頂点 3 に駒を動かす。
+Alice が頂点 3 に駒を動かす。
+Bob が頂点 1 に駒を動かす。
+このとき、S_1 = A であるため Alice の勝ちとなります。
+Score : 425 points
+Problem Statement
+There is a directed graph with N vertices and M edges. The vertices are numbered from 1 to N, and the i-th edge is a directed edge from vertex U_i to vertex V_i. Here, the out-degree of each vertex is at least 1.
+Also, each vertex has a character written on it, and the character written on vertex i is S_i. Here, S_i refers to the i-th character of S.
+Alice and Bob play the following game on this graph using one piece:
+Initially, the piece is placed on vertex 1, and they alternately perform the following operation K times each, with Alice going first and Bob going second.
+Let u be the vertex where the piece is currently placed. Choose a vertex v such that there is an edge from vertex u to vertex v, and move the piece to vertex v.
+Let v be the vertex where the piece is finally placed. If S_v =  A, Alice wins; if S_v =  B, Bob wins.
+Find the winner of the game when both players play optimally.
+In each input, you are given T test cases. Solve each of them.
+Constraints
+1 \leq T
+2 \leq N, M \leq 2 \times 10^5
+1 \leq K \leq 10
+S is a string of length N consisting of A and B.
+1 \leq U_i, V_i \leq N
+(U_i, V_i) \neq (U_j, V_j) if i \neq j .
+The out-degree of each vertex is at least 1.
+The sum of N over all test cases in a single input is at most 2 \times 10^5.
+The sum of M over all test cases in a single input is at most 2 \times 10^5.
+Input
+The input is given from Standard Input in the following format:
+T
+\text{case}_1
+\text{case}_2
+\ldots
+\text{case}_T
+Here, \text{case}_i represents the i-th test case, and each test case is given in the following format:
+N M K
+S
+U_1 V_1
+U_2 V_2
+\vdots
+U_M V_M
+Output
+Print T lines. The i-th line should contain Alice if Alice wins when both players play optimally in the i-th test case, and Bob if Bob wins.
+Sample Input 13
+4 6 2
+AABB
+1 2
+2 3
+3 1
+3 3
+3 4
+4 2
+4 6 2
+ABAB
+1 2
+2 3
+3 1
+3 3
+3 4
+4 2
+5 8 3
+ABABB
+1 2
+2 2
+2 3
+3 1
+3 4
+4 4
+4 5
+5 3
+Sample Output 1Alice
+Bob
+Bob
+We will explain an example of how the game proceeds in the first test case. Here, both players do not necessarily play optimally.
+Initially, the piece is placed on vertex 1.
+Alice moves the piece to vertex 2.
+Bob moves the piece to vertex 3.
+Alice moves the piece to vertex 3.
+Bob moves the piece to vertex 1.
+At this point, S_1 = A, so Alice wins.
+Rule
+Glossary
+Terms of Use
+Privacy Policy
+Information Protection Policy
+Company
+FAQ
+Contact
+Copyright Since 2012 ©AtCoder Inc. All rights reserved.
+Page Top

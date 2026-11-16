@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "saitu.legacy-review-package.v1",
+  "status": "pending_independent_review",
+  "createdAt": "2026-11-05T11:16:04.984Z",
+  "humanReviewPerformed": false,
+  "containsNewLabels": false,
+  "oldExpectedAnswersOmitted": true,
+  "counts": {
+    "inputs": 175,
+    "scoringPairs": 96,
+    "followupCases": 36,
+    "rankingProfiles": 25,
+    "legacyV4Profiles": 18,
+    "candidates": 135
+  },
+  "artifacts": [
+    {
+      "path": "artifacts/v6/legacy-review-20261105/review-inputs.jsonl",
+      "sha256": "6d40b8e88be560f38ea735c90cb07690cc43bddb402af12584f31fe6761696e7"
+    },
+    {
+      "path": "artifacts/v6/legacy-review-20261105/candidate-pool.json",
+      "sha256": "8a8549da1cd0ac32a03cce3549f720fd334ef86f939143827a9e930f8f586cf0"
+    }
+  ],
+  "inputProvenance": [
+    {
+      "path": "tests/fixtures/competition-scoring-gold.ts",
+      "sha256": "cc2f799b2f4bf0c6ab4d84f3a1291b320fbd6716661a745f7675e354414d0337"
+    },
+    {
+      "path": "tests/fixtures/competition-followup-gold.ts",
+      "sha256": "7072b0f2fc9eb84c825d536f84120ab8a3b99245fdf175c512699c742c461962"
+    },
+    {
+      "path": "tests/fixtures/competition-quality-personas.ts",
+      "sha256": "c83d0d4fa2e58de10b66f3e8a6ac838c5211d50ca20ab9c4d881e7e68de4b5bf"
+    },
+    {
+      "path": "tests/competitions/recommendation-quality.test.ts",
+      "sha256": "ff534bb2545a0be596a926cad207e5c4a3e91d596c24c37d23b6dc7bb9ab357d"
+    },
+    {
+      "path": "src/lib/competitions/scoring.ts",
+      "sha256": "2d20de40d49bab2277d70aa591c03d5cfcb15a5ebd00af92a1a3cd4f665bac77"
+    },
+    {
+      "path": "src/lib/competitions/decision-fit.ts",
+      "sha256": "136619dcc83c41d4f5af07fdd4004b76f0859959f4565fdc331df09951320b1a"
+    },
+    {
+      "path": "src/lib/competitions/recommendation-engine.ts",
+      "sha256": "baa55cb11174593a7837aa78238f74a3756444d579c4a56f56fb04436c1cf35f"
+    }
+  ],
+  "limitations": [
+    "Original frozen labels remain untouched and may disagree with current policy; this package is not an acceptance result.",
+    "Shared-filesystem blinding is procedural, not access control.",
+    "Candidate pool is the legacy compatibility catalog; v6 expansion evaluation has a separate frozen pool."
+  ]
+}

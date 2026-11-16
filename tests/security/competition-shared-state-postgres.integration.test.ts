@@ -1,3 +1,4 @@
+import { AI_EVIDENCE_EXPLANATION_CONSENT_VERSION } from "@/lib/ai/consent-disclosure";
 import { spawn, spawnSync, type ChildProcess } from "node:child_process";
 import { createHmac, timingSafeEqual } from "node:crypto";
 import {
@@ -35,7 +36,7 @@ const SHARED_NAT_LOG_HASH_SECRET =
   "shared-nat-full-stack-log-hash-secret-00000000000000000000000";
 const SHARED_NAT_RATE_HASH_SALT =
   "shared-nat-full-stack-rate-hash-salt-0000000000000000000000";
-const SHARED_NAT_CONSENT_VERSION = "2026-08-26.v5";
+const SHARED_NAT_CONSENT_VERSION = AI_EVIDENCE_EXPLANATION_CONSENT_VERSION;
 const CHILD_DIAGNOSTIC_LIMIT_BYTES = 64 * 1024;
 
 type BoundedOutput = {
@@ -987,6 +988,17 @@ integrationDescribe("real PostgreSQL shared security state", () => {
         SHARED_NAT_SESSION_COUNT
       );
 
+      // Observe both exact start counters before a complete multi-wave journey
+      // legitimately outlives the minute bucket. Later cleanup must not be mistaken
+      // for a lost session start.
+      const startCounterReceipt=await adminPool.query<{bucket:string;hit_count:number;reset_at:Date}>(
+        `select bucket, hit_count, reset_at from competition_rate_limit_counters order by bucket`
+      );
+      expect(startCounterReceipt.rows.map(({bucket,hit_count})=>({bucket,hit_count}))).toEqual([
+        {bucket:"session_start_daily",hit_count:SHARED_NAT_SESSION_COUNT},
+        {bucket:"session_start_minute",hit_count:SHARED_NAT_SESSION_COUNT}
+      ]);
+
       await delayBetweenWaves();
       await Promise.all(journeys.map(async (journey) => {
         const body = await postJson(
@@ -1126,13 +1138,17 @@ integrationDescribe("real PostgreSQL shared security state", () => {
       });
       expect(Number(transitionDistribution.rows[0]!.minimum)).toBeGreaterThanOrEqual(3);
       expect(Number(transitionDistribution.rows[0]!.maximum)).toBeLessThanOrEqual(5);
-      const sharedIpCounters = await adminPool.query<{ bucket: string; hit_count: number }>(
-        `select bucket, hit_count from competition_rate_limit_counters order by bucket`
-      );
-      expect(sharedIpCounters.rows).toEqual([
-        { bucket: "session_start_daily", hit_count: SHARED_NAT_SESSION_COUNT },
-        { bucket: "session_start_minute", hit_count: SHARED_NAT_SESSION_COUNT }
-      ]);
+      const sharedIpCounters=await adminPool.query<{observed_at:Date;counters:{bucket:string;hit_count:number}[]}>(`
+        select pg_catalog.now() as observed_at,
+          coalesce((select json_agg(row_to_json(active_counter)) from (
+            select bucket,hit_count from competition_rate_limit_counters
+             where reset_at>pg_catalog.now() order by bucket
+          ) active_counter),'[]'::json) as counters
+      `);
+      expect(sharedIpCounters.rows[0].counters).toEqual(startCounterReceipt.rows
+        .filter(row=>row.reset_at.getTime()>sharedIpCounters.rows[0].observed_at.getTime())
+        .map(({bucket,hit_count})=>({bucket,hit_count})));
+
 
       const rawAccessLog = readFileSync(accessLog, "utf8");
       const logLines = rawAccessLog.split("\n").filter(Boolean);
@@ -1242,24 +1258,24 @@ integrationDescribe("real PostgreSQL shared security state", () => {
     expect(await limited.json()).toMatchObject({ bucket: "session_start_daily" });
   }, 90_000);
 
-  it("holds 8 active and 32 queued calls while rejecting the next request", async () => {
+  it("holds the hard ceiling of 2 active and 32 queued calls even with env=8 while rejecting the next request", async () => {
     process.env.AI_CONCURRENCY_MAX = "8";
     process.env.AI_QUEUE_MAX = "32";
     process.env.AI_QUEUE_WAIT_MS = "15000";
     process.env.AI_MODEL_CALLS_PER_DAY = "1200";
     const governor = await freshGovernorModule();
     const active = await Promise.all(Array.from(
-      { length: 8 },
+      { length: 2 },
       () => governor.acquireModelCallPermit()
     ));
     expect(active.every(({ ok }) => ok)).toBe(true);
-    await waitForCount("ai_model_call_leases", 8, 5_000);
+    await waitForCount("ai_model_call_leases", 2, 5_000);
 
     const queued = Array.from({ length: 32 }, () => governor.acquireModelCallPermit());
     await waitForCount("ai_model_call_waiters", 32, 10_000);
     const full = await governor.acquireModelCallPermit();
     expect(full).toEqual({ ok: false, reason: "capacity_exhausted" });
-    await waitForCount("ai_model_call_leases", 8);
+    await waitForCount("ai_model_call_leases", 2);
     await waitForCount("ai_model_call_waiters", 32);
 
     for (const result of active) if (result.ok) result.permit.release();

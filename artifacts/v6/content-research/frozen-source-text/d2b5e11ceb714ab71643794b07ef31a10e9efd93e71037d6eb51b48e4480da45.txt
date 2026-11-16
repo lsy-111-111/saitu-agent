@@ -1,0 +1,90 @@
+AtCoderってどうして無料なの？ - AtCoderInfo
+AtCoder
+Open main menu
+AtCoderを知る
+AtCoder株式会社について
+AtCoderとは？競技プログラミングとは？AtCoderってどうして無料なの？AtCoderの問題クオリティ企業情報事業紹介AtCoderのロゴ利用に関するガイドライン
+AtCoderのコンテスト
+はじめかたAlgorithm ContestHeuristic Contestコンテスト中のルールレーティングのしくみ
+おすすめページ
+AtCoderレーティングのしくみ
+AtCoderのAlgorithm/Heuristicレーティングについて軽く説明しています。
+コンテスト中のルールについて
+コンテストに参加する際に気をつけて欲しいルールについて書いています。
+AtCoderで強くなる
+練習の仕方
+強くなるには？rng_58のおすすめする練習の仕方
+学習リソース
+学習コンテンツ紹介関連書籍AtCoder ProblemsAtCoder Algorithm Lectures
+公式イベント
+AtCoderの公式コンテストイベントAtCoder World Tour FinalsAtCoder Japan OpenAtCoder企業対抗リーグ
+おすすめページ
+強くなるには？
+練習方法のおすすめを記載しています。
+AtCoderを活用する
+企業のみなさまへ
+会社での活用方法Algorithm部門のレーティングと業務における期待できる活躍AtCoderユーザにアプローチする方法AtCoderJobsで求人掲載AtCoderJobsAgentで採用公式コンテストイベント スポンサー募集
+学校関係者のみなさまへ
+部活動での競技プログラミングのススメAtCoderJuniorLeagueとは？AtCoderJuniorLeague関連のインタビュー記事AtCoderJuniorLeagueの結果まとめ企業・団体におけるAtCoderの利用について
+ユーザのみなさまへ
+AtCoderJobsでバイト/インターン/就職/転職AtCoderJobsAgentで転職AtCoderJobs完全攻略ガイド
+おすすめページ
+Algorithm部門のレーティングと業務における期待できる活躍
+レーティングと業務の関係について記載しています。
+その他読みもの
+インタビュー記事
+AtCoderJobsAgentのインタビュー記事AtCoderJuniorLeagueのインタビュー記事
+開催記録
+イベント記録
+その他
+すべての記事
+AtCoderってどうして無料なの？
+Home
+AtCoderを知る
+AtCoderってどうして無料なの？
+AtCoderってどうして無料なの？
+AtCoderのコンテストに参加するのにお金はかかりません！無料でどなたでも参加することが出来ます！  では、どうしてAtCoderのコンテストは無料なのでしょうか？
+AtCoderは、主にコンテストのスポンサー収益で運営しています。AtCoderでは、多くの企業がコンテストを開催しています。
+これらのスポンサー企業によって、AtCoderのコンテストは支えられています。
+どうして多くの企業はAtCoderでスポンサーをするの？
+理由は様々ですが、  AtCoderの参加者を有力なIT人材だとみて、採用活動の一環としてスポンサーとなってくれる企業が多いです。AtCoderでのコンテスト開催によって、多くのAtCoder参加者が、各スポンサー企業に入社しています。  AtCoderは競技としてサービスを提供していますが、一部の業務において、AtCoderで培った能力が役立つ場面があります。各企業がAtCoder参加者をどう見ているかは、各コンテストのトップページにほぼ毎回記載されておりますので、そちらをご確認ください。
+AtCoderに取り組んでいる皆様の多くは就職・転職に興味があってAtCoderをプレイしているわけではないと思いますが、実はそうした方々が企業主催のコンテストに参加することに、大きな意味があります。  転職活動を熱心に行っている人には他の転職サイトやイベントなどで接触できますが、まだ就職や転職に対する興味が薄く、活動を行っていない人にも情報を伝えることができる、というのが、企業から見たAtCoderの大きなメリットです。就職・転職に興味がない方々でも、積極的にコンテストに参加することが、AtCoderへの支援となりますので、ぜひコンテストに出場してください！
+Footer
+AtCoderは、世界最高峰の競技プログラミングサイトです。 リアルタイムのオンラインコンテストで競い合うことや、
+5,000以上の過去問にいつでもチャレンジすることができます。
+X / Twitter
+YouTube
+ライセンス表記
+AtCoderについて
+AtCoderとは？
+競技プログラミングとは？
+レーティングのしくみ
+アクセスガイド
+お知らせ
+資料請求
+AtCoder
+AtCoderJobs
+各サービス
+AtCoder
+AtCoderJobs
+アルゴリズム実技検定
+AtCoderCareerDesign
+AtCoder株式会社について
+会社概要
+FAQ
+プライバシーポリシー
+利用規約
+© 2023 AtCoder, Inc. All rights reserved.
+引用をストックしました
+ストック一覧を見る
+閉じる
+引用するにはまずログインしてください
+ログイン
+閉じる
+引用をストックできませんでした。再度お試しください
+閉じる
+限定公開記事のため引用できません。
+読者です
+読者をやめる
+読者になる
+読者になる

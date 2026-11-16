@@ -1,18 +1,21 @@
 import { createHash, generateKeyPairSync, randomUUID, sign as signBytes } from "node:crypto";
+import { execFile } from "node:child_process";
 import { existsSync } from "node:fs";
 import { chmod, lstat, mkdir, mkdtemp, open, readFile, realpath, rm, symlink, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import path from "node:path";
+import { promisify } from "node:util";
 import { describe, expect, it } from "vitest";
 
 // @ts-expect-error The installed release coordinator is intentionally plain JavaScript.
 import { CapturedOutputLimitError, evaluateRequiredTestReports, hashOrdinaryFile, parseProjectToolchainPolicy, parseRequiredTestManifest, resolveContainedDependencySymlink, spawnCaptured, validateDedicatedAccountRecords, validateReadOnlyTreeMemberMetadata, writeEvidenceFailure } from "../../scripts/run-release-evidence.mjs";
 // @ts-expect-error The installed release verifier is intentionally plain JavaScript.
-import { parseRequiredTestManifest as parseVerifiedRequiredTestManifest, validateCommand, validateDependencyProvenanceEvidence, validateLinuxGenerationAttestation } from "../../ops/bin/verify-release-evidence.mjs";
+import { deriveRequiredTestVerificationFromArtifacts, parseRequiredTestManifest as parseVerifiedRequiredTestManifest, validateCommand, validateDependencyProvenanceEvidence, validateLinuxGenerationAttestation } from "../../ops/bin/verify-release-evidence.mjs";
 
 const root = process.cwd();
 const manifestPath = path.join(root, "ops/config/release-required-tests.json");
 const sha256 = (bytes: Buffer | string) => createHash("sha256").update(bytes).digest("hex");
+const execFileAsync = promisify(execFile);
 
 type RequiredTestRequirement = {
   id: string;
@@ -333,7 +336,9 @@ describe("fixed release required-test contract", () => {
     expect(contract.projectToolchain.inputs.map((input) => input.path)).toEqual([
       "package.json",
       "pnpm-lock.yaml",
-      "pnpm-workspace.yaml"
+      "pnpm-workspace.yaml",
+      "vitest.config.ts",
+      "tests/fixtures/mock-spend-ledger.setup.ts"
     ]);
     expect(contract.projectToolchain.tools.map((tool) => [tool.id, tool.packageName, tool.version, tool.binName, tool.binTarget])).toEqual([
       ["eslint", "eslint", "8.57.1", "eslint", "bin/eslint.js"],
@@ -354,6 +359,43 @@ describe("fixed release required-test contract", () => {
       .toThrow(/project-toolchain input differs/u);
   });
 
+  it("rejects substituted test configuration and mock setup in both authorities", async () => {
+    const {bytes,value,sourceEntries}=await loadContract();
+    for(const relative of ["vitest.config.ts","tests/fixtures/mock-spend-ledger.setup.ts"]){
+      expect(value.sourcePins.some(pin=>pin.path===relative)).toBe(true);
+      expect(value.projectToolchain.inputs.some(input=>input.path===relative)).toBe(true);
+      const changed=sourceEntries.map(entry=>entry.relative===relative?{...entry,sha256:"0".repeat(64)}:entry);
+      expect(()=>parseRequiredTestManifest(bytes,changed)).toThrow(/input differs/u);
+      expect(()=>parseVerifiedRequiredTestManifest(bytes,new Map(changed.map(entry=>[entry.relative,{kind:"F",digest:entry.sha256}])))).toThrow(/input differs/u);
+    }
+  });
+
+  it("matches every required observation to real Vitest and Playwright discovery", async () => {
+    const { contract } = await loadContract();
+    const browserFiles = [...new Set(contract.requirements.filter(item => item.framework === "playwright").map(item => item.testFile))];
+    const { stdout } = await execFileAsync(process.execPath, [
+      path.join(root, "node_modules/playwright/cli.js"), "test", ...browserFiles, "--list", "--reporter=json"
+    ], { cwd: root, maxBuffer: 8 * 1024 * 1024 });
+    type DiscoverySuite = { suites?: DiscoverySuite[]; specs?: Array<{ file: string; title: string; tests: Array<{ projectName: string }> }> };
+    const discovered: string[] = [];
+    const visitSuite = (suite: DiscoverySuite) => {
+      for (const spec of suite.specs ?? []) for (const test of spec.tests) discovered.push(JSON.stringify([path.basename(spec.file), spec.title, test.projectName]));
+      for (const child of suite.suites ?? []) visitSuite(child);
+    };
+    for (const suite of (JSON.parse(stdout) as { suites: DiscoverySuite[] }).suites) visitSuite(suite);
+    for (const requirement of contract.requirements.filter(item => item.framework === "playwright")) {
+      expect(discovered.filter(key => key === JSON.stringify([path.basename(requirement.testFile), requirement.fullName, requirement.project])), requirement.id).toHaveLength(1);
+    }
+    const unitFiles = [...new Set(contract.requirements.filter(item => item.framework === "vitest").map(item => item.testFile))];
+    const unit = await execFileAsync(process.execPath, [path.join(root, "node_modules/vitest/vitest.mjs"), "list", ...unitFiles, "--json"], {
+      cwd: root, maxBuffer: 8 * 1024 * 1024, env: { ...process.env, RUN_POSTGRES_SECURITY_STATE_TESTS: "1", RUN_V7_DATABASE_TESTS: "1", RUN_V7_NATIVE_POSTGRES_TESTS: "1" },
+    });
+    const declarations = (JSON.parse(unit.stdout) as Array<{ file: string; name: string }>).map(item => JSON.stringify([path.relative(root, item.file), item.name.replaceAll(" > ", " ")]));
+    for (const requirement of contract.requirements.filter(item => item.framework === "vitest")) {
+      expect(declarations.filter(key => key === JSON.stringify([requirement.testFile, requirement.fullName])), requirement.id).toHaveLength(1);
+    }
+  }, 30_000);
+
   it("pins every selected source and covers the complete fixed release matrix", async () => {
     const { bytes, contract, sourceEntries, value } = await loadContract();
     const verifiedContract = parseVerifiedRequiredTestManifest(
@@ -363,43 +405,111 @@ describe("fixed release required-test contract", () => {
         { kind: "F", digest: entry.sha256 }
       ]))
     ) as RequiredContract;
-    expect(contract.minimumPassedObservations).toBe(19);
-    expect(contract.requirements).toHaveLength(19);
-    expect(verifiedContract.minimumPassedObservations).toBe(19);
+    expect(contract.minimumPassedObservations).toBe(342);
+    expect(contract.requirements).toHaveLength(342);
+    expect(verifiedContract.minimumPassedObservations).toBe(342);
     expect(verifiedContract.requirements.map(({ id }) => id))
       .toEqual(contract.requirements.map(({ id }) => id));
     expect([...contract.pins]).toEqual(value.sourcePins.map((pin) => [pin.path, pin.sha256]));
+    expect(contract.requirements.slice(0, 19).map(item => item.id)).toEqual([
+      "followups-0-desktop",
+      "followups-1-desktop",
+      "followups-2-desktop",
+      "followups-2-mobile",
+      "followups-3-pure-text-desktop",
+      "followups-3-pure-text-mobile",
+      "shared-nat-50-postgres",
+      "shared-nat-50-full-stack",
+      "session-start-real-threshold",
+      "countdown-answer-recovery-desktop",
+      "countdown-answer-recovery-mobile",
+      "conversation-token-forgery",
+      "conversation-token-expiry",
+      "conversation-token-semantic-replay",
+      "cross-session-isolation",
+      "queue-8-active-32-waiting",
+      "queue-full-deterministic-fallback",
+      "root-quota-generation-consistency",
+      "nginx-three-endpoint-consistency"
+]);
     expect(new Set(contract.requirements.flatMap((requirement) => requirement.categories))).toEqual(new Set([
+      "desktop-e2e",
       "followups-0",
       "followups-1",
       "followups-2",
       "followups-3",
+      "mobile-e2e",
       "pure-text-max-10",
-      "shared-nat-50",
-      "threshold-429-recovery",
-      "token-forgery",
-      "token-expiry",
-      "token-replay",
-      "token-cross-session",
       "queue-full-fallback",
       "quota-config-consistency",
-      "desktop-e2e",
-      "mobile-e2e"
-    ]));
+      "shared-nat-50",
+      "threshold-429-recovery",
+      "token-cross-session",
+      "token-expiry",
+      "token-forgery",
+      "token-replay",
+      "v7-algorithm",
+      "v7-backend-review",
+      "v7-browser-desktop",
+      "v7-browser-mobile",
+      "v7-catalog",
+      "v7-chat-adoption",
+      "v7-chat-grounding",
+      "v7-crypto",
+      "v7-durable-state",
+      "v7-group-persistence",
+      "v7-governor-cap",
+      "v7-native-pg14",
+      "v7-profile",
+      "v7-release-evidence",
+      "v7-test-environment",
+      "v7-v7-worker-ops",
+      "v7-effort-release",
+      "v7-effort-persistence",
+      "v7-original-clock",
+      "v7-effort-evaluation",
+      "v7-effort-fixed-budget",
+      "v7-effort-browser",
+      "v7-provenance-boundary"
+]));
   });
 
   it("accepts only exact passing observations from all three machine reports", async () => {
     const { contract } = await loadContract();
     const reports = passingReports(contract);
     const result = evaluateRequiredTestReports(contract, reports, root);
-    expect(result.minimumPassedObservations).toBe(19);
-    expect(result.passedObservations).toBe(19);
-    expect(result.verified).toHaveLength(19);
+    expect(result.minimumPassedObservations).toBe(342);
+    expect(result.passedObservations).toBe(342);
+    expect(result.verified).toHaveLength(342);
     expect(result.reportSha256).toEqual({
       "vitest-unit": reports["vitest-unit"].sha256,
       "vitest-postgres": reports["vitest-postgres"].sha256,
       "playwright-production": reports["playwright-production"].sha256
     });
+  });
+
+  it("consumes original artifact wrappers and accepts additional reviewed unit and browser files", async () => {
+    const { bytes, contract, sourceEntries } = await loadContract();
+    const extraUnit = "tests/deployment/release-required-tests.test.ts", extraBrowser = "tests/e2e/saved-competitions.spec.ts";
+    const rows = new Map(sourceEntries.map(entry => [entry.relative, { kind: "F", digest: entry.sha256 }]));
+    for (const relative of [extraUnit, extraBrowser]) rows.set(relative, { kind: "F", digest: sha256(await readFile(path.join(root, relative))) });
+    const consumer = parseVerifiedRequiredTestManifest(bytes, rows);
+    expect(consumer.pins.has(extraUnit)).toBe(false); expect(consumer.pins.has(extraBrowser)).toBe(false);
+    const reports = passingReports(contract);
+    const fixedRoot = "/opt/resume-ai/build-staging/release-evidence-123e4567-e89b-42d3-a456-426614174000/source";
+    const unit = JSON.parse(reports["vitest-unit"].bytes.toString("utf8")), postgres = JSON.parse(reports["vitest-postgres"].bytes.toString("utf8")), browser = JSON.parse(reports["playwright-production"].bytes.toString("utf8"));
+    for (const report of [unit, postgres]) for (const suite of report.testResults) suite.name = path.join(fixedRoot, path.relative(root, suite.name));
+    for (const spec of browser.suites[0].specs) spec.file = path.join(fixedRoot, path.relative(root, spec.file));
+    unit.testResults.push({ name: path.join(fixedRoot, extraUnit), assertionResults: [{ fullName: "additional reviewed unit observation", status: "passed" }] }); unit.numPassedTests += 1;
+    browser.suites[0].specs.push({ file: path.join(fixedRoot, extraBrowser), title: "additional reviewed browser observation", tests: [{ projectName: "desktop", results: [{ status: "passed" }] }] }); browser.stats.expected += 1;
+    const input = { unit: artifact(unit), postgres: artifact(postgres), playwright: artifact(browser) };
+    expect(deriveRequiredTestVerificationFromArtifacts(consumer, input).passedObservations).toBe(342);
+    expect(evaluateRequiredTestReports(contract, { "vitest-unit": input.unit, "vitest-postgres": input.postgres, "playwright-production": input.playwright }, fixedRoot).passedObservations).toBe(342);
+    const unknown = structuredClone(unit); unknown.testResults.at(-1).name = path.join(fixedRoot, "tests/unreviewed.test.ts");
+    expect(() => deriveRequiredTestVerificationFromArtifacts(consumer, { ...input, unit: artifact(unknown) })).toThrow(/outside the reviewed source/u);
+    const outside = structuredClone(browser); outside.suites[0].specs.at(-1).file = "/var/tmp/foreign.spec.ts";
+    expect(() => deriveRequiredTestVerificationFromArtifacts(consumer, { ...input, playwright: artifact(outside) })).toThrow(/outside the reviewed source/u);
+    expect(() => deriveRequiredTestVerificationFromArtifacts(consumer, { ...input, unit: { ...input.unit, sha256: "0".repeat(64) } })).toThrow(/artifact bytes or digest/u);
   });
 
   it("fails closed when a pinned test is changed into a trivial substitute", async () => {
@@ -432,6 +542,11 @@ describe("fixed release required-test contract", () => {
     const unit = JSON.parse(base["vitest-unit"].bytes.toString("utf8"));
     unit.testResults[0].assertionResults[0].status = "skipped";
     expect(() => evaluateRequiredTestReports(contract, { ...base, "vitest-unit": artifact(unit) }, root)).toThrow(/missing, skipped, renamed, or failed/u);
+
+    const postgres = JSON.parse(base["vitest-postgres"].bytes.toString("utf8"));
+    const native = postgres.testResults.find((suite: { name: string }) => suite.name.endsWith("v7-native-postgres.integration.test.ts"));
+    native.assertionResults[0].status = "skipped";
+    expect(() => evaluateRequiredTestReports(contract, { ...base, "vitest-postgres": artifact(postgres) }, root)).toThrow(/missing, skipped, renamed, or failed/u);
 
     const playwright = JSON.parse(base["playwright-production"].bytes.toString("utf8"));
     playwright.suites[0].specs[0].title = `${playwright.suites[0].specs[0].title} renamed`;
@@ -534,9 +649,10 @@ describe("signed Linux validation generation", () => {
       "production-e2e", "required-tests"
     ];
     const topLevel = [
-      "dependency-provenance-receipt.json", "e2e-result.json", "playwright-report.json",
+      "dependency-provenance-receipt.json", "deepseek-budget-receipt.json", "worker-build-result.json", "e2e-result.json", "playwright-report.json",
       "pnpm-audit-result.json", "release-required-tests.json", "required-test-receipt.json",
-      "validation-result.json", "vitest-postgres-result.json", "vitest-unit-result.json"
+      "validation-result.json", "vitest-postgres-result.json", "vitest-unit-result.json",
+      "native-v7-postgres-result.json", "validation-logs/native-v7-postgres.log"
     ];
     try {
       await mkdir(path.join(evidenceDir, "validation-logs"), { recursive: true });
@@ -612,6 +728,9 @@ describe("signed Linux validation generation", () => {
         enforceRootPublicKey: false
       };
       await expect(validateLinuxGenerationAttestation(input)).resolves.toBeDefined();
+      await writeFile(path.join(evidenceDir, "deepseek-budget-receipt.json"), "rewritten budget receipt\n");
+      await expect(validateLinuxGenerationAttestation(input)).rejects.toThrow(/signed artifact differs: deepseek-budget-receipt\.json/u);
+      await writeFile(path.join(evidenceDir, "deepseek-budget-receipt.json"), "deepseek-budget-receipt.json\n");
       await writeFile(path.join(evidenceDir, "validation-logs/unit.log"), "rewritten unit log\n");
       await expect(validateLinuxGenerationAttestation(input))
         .rejects.toThrow(/signed artifact differs: validation-logs\/unit\.log/u);

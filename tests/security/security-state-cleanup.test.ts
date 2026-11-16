@@ -11,6 +11,10 @@ const allowedTables = new Set([
   "competition_rate_limit_counters",
   "competition_session_starts",
   "competition_session_transitions",
+  "competition_decision_states",
+  "competition_decision_runs",
+  "competition_decision_calls",
+  "competition_decision_chat_requests",
   "competition_sessions"
 ]);
 

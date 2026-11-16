@@ -1,0 +1,333 @@
+"""Independent AI rubric materializer; NOT application scoring code or human gold.
+Only source inputs are the three allowlisted blinded files. Manual semantic
+anchor lists below were authored after reading the candidate summaries.
+"""
+import json, hashlib, collections
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[3]
+SRC = ROOT / 'artifacts/v6/legacy-review-20261105'
+OUT = Path(__file__).resolve().parent
+def read(name): return json.loads((SRC/name).read_text())
+manifest = read('manifest.json')
+inputs = [json.loads(l) for l in (SRC/'review-inputs.jsonl').read_text().splitlines()]
+catalog = read('candidate-pool.json')['catalog']
+byid = {c['id']:c for c in catalog}
+assert hashlib.sha256((SRC/'review-inputs.jsonl').read_bytes()).hexdigest() == '6d40b8e88be560f38ea735c90cb07690cc43bddb402af12584f31fe6761696e7'
+assert hashlib.sha256((SRC/'candidate-pool.json').read_bytes()).hexdigest() == '8a8549da1cd0ac32a03cce3549f720fd334ef86f939143827a9e930f8f586cf0'
+
+# Indexes refer only to the frozen 135 candidate source order. Lists are an AI
+# semantic judgment, not overlaps with application tags, golds, or outputs.
+# Level 3 = direct task; 2 = substantial transferable/adjacent task; 1 = indirect
+# project vehicle or peripheral task; unlisted = 0 (not ability incompetence).
+M = {
+'algorithm': ([5,26,68,82,90,100], [2,11,12,14,22,41,58,59,65,72,74,76,93,95,98,102,133], [0,1,6,9,19,23,24,25,28,29,32,33,35,36,48,56,63,94,101,107,121,134]),
+'ai-research': ([82,95], [1,2,5,11,12,14,22,24,28,41,48,56,58,59,63,65,68,72,74,76,93,94,98,100,102,133], [0,6,9,19,23,25,26,32,33,35,36,90,101,103,105,107,121,134]),
+'business-simulation': ([20,38,79,80,114,115], [0,3,6,9,21,28,31,35,78,84,113,116,117,127,130], [13,19,34,36,37,48,55,76,85,87,88,89,92,96,120,121]),
+'robotics': ([10,23,24,25,56,63,65,83,86,101], [4,15,30,32,39,44,51,54,57,59,72,94,95,131], [0,1,11,12,17,22,26,33,34,35,36,40,48,55,58,69,82,85,87,88,89,102,103,105,118,121,132]),
+'visual-design': ([18,29,40,43,45,49,64], [11,16,17,66,73,92,97,116,118,119,124,127,129], [0,3,9,13,20,30,34,35,37,39,42,48,54,55,62,81,85,87,88,89,103,117,120,121]),
+'career-language': ([13,7,27,66,67,108,109], [20,43,92,97,127,129,130], [3,6,9,18,28,31,38,45,49,64,78,79,80,84,85,87,88,89,96,110,111,112,114,115,116,117,120,125,126]),
+'chemistry-lab': ([70,71,122], [47,52,60,61,77,99,104,106,123,124,132], [0,1,8,19,33,35,36,37,46,50,51,53,54,69,76,103,134]),
+'digital-building': ([16,42,62,81], [39,40,54,69,73,75,105,106,107,118], [0,1,8,17,19,29,30,33,34,35,36,37,44,45,46,49,50,52,53,55,64,83,92,119,120,131,132,134]),
+'medical-research': ([60,77,99], [1,36,61,71,76,103,104,122,123], [0,2,8,19,33,35,37,46,47,52,69,70,82,93,95,98,124]),
+'electronics': ([4,15,32,51,57,59,94], [10,22,23,24,25,26,30,39,41,44,54,56,58,61,63,65,72,83,86,101,102,131], [0,1,11,12,14,17,33,34,35,36,40,46,48,55,69,74,82,85,87,88,89,95,103,118,121,132]),
+'finance-tax': ([28,78,84,113,114], [6,19,20,21,38,76,79,80,115,130], [0,3,9,13,31,34,35,36,37,48,82,85,87,88,89,92,96,116,117,120,121,127]),
+'modeling': ([2,76,93,98], [6,19,53,82,91,102,105,113,133,134], [1,5,12,14,21,22,28,41,47,50,58,65,68,72,74,75,78,90,95,96,100,107,114,123]),
+'public-management': ([6,96,120], [1,8,19,36,37,92,97,127], [0,3,9,13,20,21,28,31,34,35,46,48,55,66,67,76,78,79,80,85,89,105,107,110,111,112,113,114,115,116,117,119,125,126,128]),
+'culture': ([7,66,67,97,108,109], [18,27,43,45,49,64,92,129], [1,3,6,9,13,20,29,36,37,40,73,96,110,111,112,116,117,119,120,125,126,127]),
+'software': ([11,12,22,41,48,58,72,102,121], [5,14,26,28,29,32,56,57,59,65,74,82,90,95,100], [0,1,2,9,10,23,24,25,33,34,35,36,40,55,62,63,68,75,76,81,83,93,94,98,101,103,105,107,133]),
+'venture': ([0,3,9,31,35,55,116,117,121], [20,21,28,34,37,38,46,48,79,80,92,114,115,118,119,120,124,127], [1,6,8,11,12,13,17,19,29,30,33,36,39,40,43,45,49,54,56,64,65,69,78,81,83,84,89,94,95,96,97,99,103,113,130]),
+'green': ([8,19,37,69,119], [1,30,36,55,83,99,105,117,120,128], [0,2,3,6,9,17,21,25,33,34,35,39,42,44,46,47,50,52,53,54,61,70,71,73,75,76,81,92,93,96,98,103,106,107,118,122,123,124,131,132,134]),
+'field-research': ([6,96,120], [1,8,19,36,37,50,67,75,76,78,92,97,105,107,127,134], [0,3,9,13,20,21,28,31,34,35,46,55,69,73,79,80,93,98,110,111,112,113,114,115,116,117,119,125,126,128]),
+'general-research': ([1], [6,19,36,46,76,96,97,120], [0,2,3,8,9,13,20,21,28,31,33,35,37,50,55,66,67,73,75,78,92,93,98,105,107,110,111,112,113,114,115,117,125,126,127,128,134]),
+'network': ([22,41,57,58,72,74], [4,12,14,15,32,48,59,94,102], [0,1,5,9,10,11,24,25,26,28,33,35,36,56,63,65,68,82,83,90,95,100,101,121,133]),
+}
+DESCR = {
+'algorithm':'算法题求解、编程与软件任务', 'ai-research':'人工智能算法、软件实现和研究',
+'business-simulation':'企业经营模拟、财务决策与商业展示', 'robotics':'机器人控制、软硬件集成及原型任务',
+'visual-design':'视觉/数字创作与作品集', 'career-language':'职业规划和语言文化沟通表达',
+'chemistry-lab':'化学/化工实验、安全操作与研究证据', 'digital-building':'土木结构、BIM和数字建筑设计',
+'medical-research':'基础医学、生命科学实验和研究', 'electronics':'电子/嵌入式系统和软硬件实践',
+'finance-tax':'财税、金融数据、案例研究及职业应用', 'modeling':'数学统计建模、计算与研究论文',
+'public-management':'公共政策、实地调查与案例研究', 'culture':'语言文化研究、创作与传播',
+'software':'软件工程、可运行系统与产品交付', 'venture':'创业项目、用户验证、商业计划与原型',
+'green':'节能减排、可持续技术和影响验证', 'field-research':'实地调研、数据证据与报告',
+'general-research':'人文社科原创研究、资料和论文', 'network':'信息通信网络、系统实现及实操',
+}
+for k, levels in M.items():
+    assert len([i for level in levels for i in level]) == len(set(i for level in levels for i in level)), k
+    assert all(0 <= i < 135 for level in levels for i in level)
+
+def level(key, c):
+    i = catalog.index(c)
+    return next((3-j for j, ids in enumerate(M[key]) if i in ids), 0)
+
+def archetype(row):
+    name = row.get('personaId',row['caseId'])
+    for k in sorted(M,key=len,reverse=True):
+        if name.endswith('-'+k): return k
+    legacy = {
+    'v4-algorithm-team':'algorithm','v4-software-product':'software',
+    'v4-math-model-undergraduate':'modeling','v4-math-model-master-hard-negative':'modeling',
+    'v4-electronic-design-freshman':'electronics','v4-electronic-design-master-hard-negative':'electronics',
+    'v4-freshman-original-research':'general-research','v4-field-research-business':'field-research',
+    'v4-entrepreneurship-authorized-product':'venture','v4-innovation-prototype-team':'venture',
+    'v4-career-action':'career-language','v4-language-undergraduate':'culture','v4-language-doctorate-hard-negative':'culture',
+    'v4-design-portfolio':'visual-design','v4-robotics-equipped-team':'robotics','v4-fintech-supply-chain':'finance-tax',
+    'v4-green-low-carbon':'green','v4-medical-research':'medical-research'}
+    if row['caseId'] in legacy:return legacy[row['caseId']]
+    anchor = name.removeprefix('anchor-')
+    mapping = {
+      'china-international-college-innovation':'venture','challenge-cup-academic-science':'general-research',
+      'national-college-math-modeling':'modeling','challenge-cup-entrepreneurship-plan':'venture',
+      'national-college-electronic-design':'electronics','integrated-circuit-innovation':'electronics',
+      'enterprise-competition-simulation':'business-simulation','understanding-contemporary-china-foreign-language':'culture',
+      'energy-conservation-emission-reduction':'green','ecommerce-innovation-creativity-entrepreneurship':'venture',
+      'smart-car':'robotics','graduate-electronic-design':'electronics','graduate-rural-revitalization-agritech':'green',
+      'xuechuangbei-business-simulation':'business-simulation','computer-system-ability':'software',
+      'raicom-robot-developer':'robotics','graduate-public-management-case':'public-management',
+      '3d-digital-innovation-design':'visual-design','basic-medicine-innovation':'medical-research',
+      'intercultural-competence':'culture','embedded-chip-system-design':'electronics','datang-ict':'network',
+      'culsc-life-sciences':'medical-research','21st-century-english-speaking':'culture',
+      'national-innovation-training-annual':'electronics'}
+    assert anchor in mapping, name
+    return mapping[anchor]
+
+def profile(row):
+    p=dict(row['profile'])
+    if row['operation']=='legacy_ranking':
+        # Explicit legacy answer strings are inputs, not missing facts inferred from task name.
+        t=row.get('team','')
+        if t=='solo':p.update(teamSize='solo')
+        elif t=='team-3-same-unit':p.update(teamSize='three',teamUnit='same-unit')
+        elif t=='team-4-5-same-unit':p.update(teamSize='four-five',teamUnit='same-unit')
+        elif t=='team-over-5':p.update(teamSize='over-five')
+    return p
+
+def eligibility(p,c,track=None):
+    r=c['recommendation'];e=r.get('eligibility',{});hard=[];unknown=[];repair=[]
+    s=r.get('stages',{});stage=p.get('stage')
+    if s.get('state')=='known' and stage and stage not in s.get('values',[]):
+        hard.append({'field':'stage','observed':stage,'allowed':s.get('values',[]),'reason':'冻结目录的已知学段边界与输入明确冲突。'})
+    elif s.get('state')!='known':unknown.append('目录学段边界未知；不得默认开放或拒绝。')
+    if e.get('stageClarificationNotes',{}).get(stage):unknown.append(e['stageClarificationNotes'][stage])
+    unknown.extend(e.get('blockingClarifications',[]))
+    if e.get('state')!='verified':unknown.append('资格记录未完整核实，未发现冲突不等于可以报名。')
+    if e.get('firstHigherEducationYearCutoff'):unknown.append('首次接受高等教育年份/出生年份替代通道及申诉状态均缺失，不能按研究生身份直接通过或排除。')
+    if e.get('requiresFullTime') or stage in e.get('requiresFullTimeStages',[]):
+        if p.get('enrollmentStatus') in [None,'unsure','unknown']:unknown.append('要求全日制，输入缺少已确认学籍事实。')
+        elif p.get('enrollmentStatus')!='full-time-student':hard.append({'field':'enrollmentStatus','observed':p.get('enrollmentStatus'),'reason':'不满足目录明示的全日制要求。'})
+    if e.get('requiresCurrentEnrollment') and not p.get('enrollmentStatus'):unknown.append('在籍状态未知。')
+    if e.get('sameInstitutionTeam') and p.get('teamUnit')!='same-unit':
+        if p.get('teamUnit') in [None,'unsure','unknown']:unknown.append('要求同校组队，当前同校事实未确认。')
+        else:hard.append({'field':'teamUnit','observed':p.get('teamUnit'),'reason':'当前队伍与同校要求冲突。'})
+    allowed=e.get('allowedMajorFields',[])
+    if allowed and not set(allowed)&set(p.get('majorFields',[])):unknown.append('专业硬条件不能由现有宽口径专业字段证明；需具体专业核对。')
+    if c['id']=='graduate-rural-revitalization-agritech' and stage=='undergraduate-4':unknown.append('本科四年级不自动等于已获推免资格，须独立确认。')
+    if c['id']=='huawei-ict':unknown.append('摘要称ICT学院学生，资格备注称全球高校师生；身份范围有张力，须核所选赛道，不把学院身份推为既定硬门槛。')
+    if c['id'] in ['information-security','tax-risk-case'] and stage in ['master','doctorate','vocational']:
+        unknown.append('目录宽学段与本科生/本科院校文字范围存在张力，不可仅凭宽标签裁定资格；需原规则重核。')
+    if c['id']=='national-innovation-training-annual':unknown.append('国创项目身份与院校推荐/展示入选通道尚未确认。')
+    tr=None
+    if track:
+        tr=next((t for t in r.get('tracks',[]) if t['id']==track),None)
+        if tr is None:unknown.append('所指轨道不存在于冻结目录。')
+        else:
+            ts=tr.get('stages',{})
+            if ts.get('state')=='known' and stage not in ts.get('values',[]):hard.append({'field':'track.stage','observed':stage,'allowed':ts.get('values',[]),'reason':'选定轨道学段明确不符；偏好不能改写资格。'})
+            unknown.extend(tr.get('blockingClarifications',[]))
+            track_notes=' '.join(tr.get('eligibilityNotes',[]))
+            if any(t in track_notes for t in ['同校','禁止跨校','同一学校']) and p.get('teamUnit')!='same-unit':
+                unknown.append('轨道文字要求同校，输入尚未确认符合；轨道选择不能补充同校事实。')
+            if '全日制' in track_notes and p.get('enrollmentStatus')!='full-time-student':
+                unknown.append('轨道文字要求全日制，输入尚未确认符合。')
+            if tr.get('preferenceQuestionEligible') is False:unknown.append('该轨道由资格事实决定，不得作为自由偏好切换。')
+    team=(tr or {}).get('teamRequirement',r.get('teamRequirement',{}))
+    size={'solo':(1,1),'two':(2,2),'three':(3,3),'four-five':(4,5),'over-five':(6,999)}.get(p.get('teamSize'))
+    if team.get('state')!='known':unknown.append('具体队伍形式/人数未知。')
+    elif team.get('mode')=='individual':
+        if size and size[0]>1:repair.append('该项个人参赛；已有团队不证明本人不能单独报名，勿硬排除个人。')
+    else:
+        mi=team.get('minSize');ma=team.get('maxSize')
+        if size and ((mi is not None and size[1]<mi) or (ma is not None and size[0]>ma)):
+            hard.append({'field':'teamSize','observed':p.get('teamSize'),'allowedMin':mi,'allowedMax':ma,'reason':'当前队伍人数不符合明示边界；可重新组队后重评，不能称永久不合资格。'})
+        elif not size and (mi is not None or ma is not None):unknown.append('人数要求明确，但输入人数未知。')
+        elif size and ((mi is not None and size[0]<mi) or (ma is not None and size[1]>ma)):unknown.append('输入队伍人数区间跨越资格边界，须精确人数。')
+        if team.get('mode')=='team' and mi is None and size==(1,1):unknown.append('团队赛的最少人数未明确；独自参赛者需核实能否单人成队，不能自动报名。')
+        if team.get('minimumSizeUnknown'):unknown.append('赛事明确队伍人数下限未知。')
+    unknown.extend(['费用、差旅、耗材与参赛渠道的完整成本未知；不得当免费或低成本。','具体赛期/报名窗口未在此次盲评核验；无默认正在报名。'])
+    return {'status':'hard_conflict_current_configuration' if hard else 'unresolved_not_verified_eligible','hardExclusions':hard,'unknownConditions':list(dict.fromkeys(unknown)),'configurationNotes':repair,'evidenceRef':e.get('source',{}).get('evidenceRef')}
+
+def relevance(row,c,key=None):
+    key=key or archetype(row);n=level(key,c)
+    # Narrow legacy career-only input must not acquire language preference.
+    if row['caseId']=='v4-career-action' and catalog.index(c) in [7,27,66,67,108,109]:n=1
+    if key in ['public-management','field-research'] and c['id']=='challenge-cup-academic-science' and row.get('trackId')=='social-survey':n=3
+    reason=['候选核心任务与已声明任务未形成具体连接；这是任务不相关，不是认定能力低。',
+            '只见外围表达、泛项目载体或主题迁移连接，须新增具体任务选择才能优先。',
+            '存在相邻方法或可迁移交付，但仍需补足具体场景/专业任务，不能等同完全直接匹配。',
+            '候选核心任务与画像所选方向/交付有直接连接；不因此证明个人熟练度或报名资格。'][n]
+    return {'taskRelevance':n,'taskArchetype':key,'rationale':f"画像任务：{DESCR[key]}。候选任务：{c['summary']} {reason}",'evidencePaths':[f"review-inputs.jsonl#{row['caseId']}.profile",f"candidate-pool.json#catalog/{c['id']}/summary"]}
+
+def label(row,c):
+    p=profile(row)
+    return {'caseId':row['caseId'],'candidateId':c['id'],**relevance(row,c),'eligibility':eligibility(p,c,row.get('trackId')),
+      'trackConditions':[{'trackId':t['id'],'label':t['label'],'eligibility':eligibility(p,c,t['id'])} for t in c['recommendation'].get('tracks',[])],
+      'reviewerType':'independent_ai_not_human_gold'}
+
+def scoring(row):
+    c=byid[row['candidateId']];p=profile(row);o=label(row,c);n=o['taskRelevance']
+    task={0:[0,4],1:[3,11],2:[11,21],3:[20,25]}[n]
+    # Goal benefit is not win probability; goalValues in the source is unused.
+    goal={0:[3,17],1:[7,22],2:[15,28],3:[20,30]}[n]
+    hours=p.get('weeklyCommitment');need=c['recommendation'].get('weeklyHours',[])
+    resources=c['recommendation'].get('requiredResources',[])
+    missing=[x for x in resources if x not in p.get('availableResources',[])]
+    prep=[5,15] if hours=='over-10' else [3,13]
+    if hours=='5-10' and need==['over-10']:prep=[2,11]
+    if hours=='under-5':prep=[1,10]
+    # Omission is not an affirmed lack; preserve upper possibility.
+    grow={0:[0,6],1:[1,8],2:[3,10],3:[4,10]}[n]
+    dims={
+      'goal':{'weight':30,'range':goal,'reason':f"声明目标为{p.get('goals',[])}；按候选任务可产出的目标价值判断，未采用目录goalValues，未把奖项目标等于获奖概率。"},
+      'task':{'weight':25,'range':task,'reason':o['rationale']},
+      'experienceAndPersonalContribution':{'weight':20,'range':[0,20],'status':'not_adjudicable','reason':f"输入仅列{p.get('evidence',[])}、{p.get('experienceLevel')}和技能自述；没有个人承担步骤、独立完成质量、可验证作品。兴趣/团队项目/奖项均不能替代个人能力证据，未知不得定低分。"},
+      'preparation':{'weight':15,'range':prep,'reason':f"每周投入{hours}，目录建议{need}；资源自述{p.get('availableResources',[])}。目录所列必要资源未出现项{missing}仅记待确认，不能推定没有；赛程集中时长、费用和训练计划未知。"},
+      'growth':{'weight':10,'range':grow,'reason':f"学段{p.get('stage')}，起点{p.get('startingPoint')}；依据任务可学习性保留区间，不以低年级扣能力分；个人挑战梯度和支持计划未知。"},
+    }
+    total=[sum(d['range'][j] for d in dims.values()) for j in range(2)]
+    o.update(dimensions=dims,totalScoreRange=total,scoreSemantics='Conditional fit only; hard exclusion is separate and must not be overridden by total.',
+      precisionStatus='broad_policy_range_not_point_gold',migrationDecision='policy_reassessment_supported_but_old_label_replacement_requires_separate_audit',
+      migrationReason='五维权重和个人贡献证据约束支持重评；本评审未读旧答案，不能确认旧区间是否错误，也未见原实现输出。',
+      unresolved=['个人贡献不可裁定；总分区间为可辩护可能范围，不是统计90%置信区间。','保留原90%数值区间通过率与104关系门槛；本产物不表示已满足或等价。'])
+    return o
+
+def write_jsonl(name,rows):
+    with (OUT/name).open('w') as f:
+        for r in rows:f.write(json.dumps(r,ensure_ascii=False,sort_keys=True)+'\n')
+
+score_rows=[scoring(r) for r in inputs if r['operation']=='score_pair']
+write_jsonl('scoring-pairs.jsonl',score_rows)
+
+# Retain explicit pair relations where both tasks have a strong semantic gap;
+# never generate order from an implementation's scores. Eligibility is separate.
+relations=[]
+for i in range(0,96,4):
+    group=score_rows[i:i+4]
+    for a in group[:3]:
+        b=group[3]
+        if a['taskRelevance']>=2 and b['taskRelevance']==0:
+            relations.append({'personaId':inputs[i]['personaId'],'preferredCaseId':a['caseId'],'overCaseId':b['caseId'],'dimension':'task','condition':'same known eligibility class or compare task dimension only','reason':'直接/相邻任务优于无具体任务连接；数值总分和现实可报名性不能由这一关系单独推出。','humanApproved':False})
+write_jsonl('score-task-relations.jsonl',relations)
+
+rank_rows=[r for r in inputs if r['operation'] in ['ranking','legacy_ranking']]
+for op,name in [('ranking','ranking-full-pool.jsonl'),('legacy_ranking','legacy-v4-full-pool.jsonl')]:
+    write_jsonl(name,(label(r,c) for r in rank_rows if r['operation']==op for c in catalog))
+
+signal_key={'venture-readiness':'venture','product-validation':'software','research-provenance':'general-research','field-research':'field-research','modeling-intensive':'modeling','hardware-build':'electronics','robotics-integration':'robotics','network-systems':'network','finance-operations':'finance-tax','language-communication':'culture','sustainability-impact':'green','software-engineering':'software','algorithm-competition':'algorithm','design-portfolio':'visual-design','career-evidence':'career-language'}
+
+def branch_review(row,branch):
+    p=profile(row);family=row['questionFamily'];selected=branch['selectedValues'];base=archetype(row)
+    result={'caseId':row['caseId'],'questionFamily':family,'signalKey':row['signalKey'],'selectedValues':selected,'reviewerType':'independent_ai_not_human_gold',
+      'invariants':['偏好回答不能更改学段、全日制、人数、同校、报名权利、费用或项目真实性事实。','偏好不产生个人贡献或能力证据；团队成果不等于个人能力。','不得为制造差异强制改变总榜第一名；相同可行任务并列是合法结果。'],
+      'eligibilityInvariant':'Profile facts and event-level gates are unchanged. A different selected track can reveal distinct pre-existing track gates, never waive them.',
+      'precisionStatus':'task_constraints_not_exact_global_rank_gold'}
+    if family=='fit':
+        keys=[signal_key[v] for v in selected]
+        direct=[];adj=[]
+        for c in catalog:
+            v=max(level(k,c) for k in keys)
+            if v==3:direct.append(c['id'])
+            if v==2:adj.append(c['id'])
+        result.update(preferTaskCandidates=direct,adjacentTaskCandidates=adj,rankingConstraint='在资格均已确认且投入可比的候选间，优先对应已选具体任务；多选为联合偏好，不应惩罚同时覆盖两项的候选。',
+          unresolved=['偏好信号没有给个人贡献、时间预算变化或通用总分增量；无法据此裁定固定名次差。'])
+        if 'product-validation' in selected:
+            # Product validation is broader than software alone.
+            result['preferTaskCandidates']=[catalog[i]['id'] for i in [0,9,34,35,48,55,103,116,117,118,121,124,127]]
+            result['unresolved'].append('产品验证可为硬件、软件、服务，须继续问产品对象；不应自动等同软件开发能力。')
+    elif family=='goal':
+        goal=selected[0]
+        outputs={'award':'参赛训练和可交付性，不预测获奖概率','portfolio':'可公开展示且有个人贡献的作品','employment':'行业任务、职业技能和可展示实践','entrepreneurship':'真实用户、商业验证和项目权利','postgraduate':'原创研究、过程证据和学术表达','project':'可验证原型、系统或研究交付'}
+        result.update(goalInterpretation=outputs[goal],rankingConstraint=f"同一任务/资格/准备可比时，以{outputs[goal]}作为有意义的目标取舍；不得把广泛目标词变成无关赛事跳升。",preferTaskCandidates=[c['id'] for c in catalog if level(base,c)==3],
+          unresolved=['目录没有可信的跨赛事获奖概率、就业转化率或升学增益数据，不能裁定精确全局名次逆转。'])
+        result['branchSpecificConstraint']={
+          'award':'获奖目标可提高规则训练与可完成赛项的重要性；没有竞争强度/历届个人成绩数据，不得宣称某赛事更易获奖或强制逆转名次。',
+          'portfolio':'对本来相关的候选，优先能形成可展示且能说明个人贡献的作品路径；只提交不可展示的答题成绩不能自动等同作品集。',
+          'employment':'对本来相关的候选，优先有行业任务、职业操作或求职证据的路径；不从赛事名望推出就业因果收益。',
+          'entrepreneurship':'需将创业/商业验证作为真实新增目标，创业项目路径相对纯研究/纯答题路径应更有目标价值；项目产权和注册资格仍未知。',
+          'postgraduate':'规范研究过程、原创问题和可验证论文的目标价值应高于只做商业路演的路径；不许承诺升学加分。',
+          'project':'可运行系统、实物原型、实验或有数据支撑的研究交付优于只有口号/计划的路径；能力仍需本人证据。',
+        }[goal]
+        goal_targets={
+          'goal-01':{'portfolio':[18,29,66,97],'award':[7,27,108]},
+          'goal-02':{'entrepreneurship':[0,3,9,35,117],'award':[3,20,38,79]},
+          'goal-03':{'employment':[4,15,57,58,59],'award':[4,15,26,57]},
+          'goal-04':{'postgraduate':[1,19,36,60,76],'project':[8,36,69,83]},
+          'goal-05':{'employment':[20,38,78,79,84,114,130],'award':[20,38,79]},
+          'goal-06':{'project':[11,12,48,72,102,121],'employment':[12,22,48,58,72]},
+          'goal-07':{'employment':[28,78,84,113,114,130],'award':[20,38,78,79]},
+          'goal-08':{'project':[24,56,63,65,101],'employment':[25,56,59,65]},
+          'goal-09':{'entrepreneurship':[0,3,37,117,120],'project':[1,6,36,96,120]},
+          'goal-10':{'portfolio':[18,29,40,43,45,49,64],'award':[18,43,45,64]},
+          'goal-11':{'portfolio':[18,29,40,49,64],'project':[16,40,62,81]},
+          'goal-12':{'postgraduate':[1,6,19,76,96],'project':[6,36,96,120]},
+        }
+        result['conditionalGoalTaskExamples']=[catalog[i]['id'] for i in goal_targets[row['caseId']][goal]]
+        result['examplesAreNotForcedGlobalOrder']=True
+    else:
+        cid=row['signalKey'].split(':',1)[1];c=byid[cid];tid=selected[0]
+        tr=next((t for t in c['recommendation'].get('tracks',[]) if t['id']==tid),None)
+        result.update(candidateId=cid,selectedTrackId=tid,trackFound=tr is not None,trackEligibility=eligibility(p,c,tid),
+          rankingConstraint='明确选择的轨道应保留选择状态并改变该候选的任务说明/准备问题；不得重置至另一轨道来规避资格。完整资格未确认时展示待核实，不能宣称可报名。',
+          unresolved=['没有轨道专门的个人经历和准备证据，不能给精确加分或保证赛事名次变化。'])
+        if cid=='challenge-cup-academic-science':
+            result['trackTask']={'natural-science-paper':'自然科学研究问题、方法和论文','social-survey':'社会调查、研究方法和调查报告','technology-invention':'技术原理、发明制作及验证'}[tid]
+            if p['stage']=='vocational':result['unresolved'].append('顶层赛事学段不含高职而轨道学段含高职，目录内部冲突；不能用轨道宽标签覆盖顶层。暂不裁定合法报名，保留硬边界待原规则复核。')
+        if cid=='datang-ict':result['trackTask']='工程实践：同校2人；5G创新：同校4–6人且至少两专业。仅选择轨道不能补齐未知人数/专业。'
+        if cid=='graduate-rural-revitalization-agritech':result['unresolved'].append('本科四年级画像缺已获推免事实；两种轨道偏好均不能补齐该资格。')
+        result['questionUseConstraint']='可询问任务偏好，但必须保留具体轨道资格差异；偏好答案本身不是资格确认。'
+        if any(h['field'] in ['stage','track.stage'] for h in result['trackEligibility']['hardExclusions']):
+            result['questionUseConstraint']='当前明确学段冲突未解前，不应把该轨道当作可报名推荐来引导偏好选择；可解释排除原因并核实目录冲突。'
+        if cid=='datang-ict':
+            result['questionUseConstraint']='两分支人数不同且本批人数未知，优先确认实际人数/同校/跨专业事实；单纯偏好追问不构成资格裁定。'
+    return result
+
+followup_rows=[branch_review(r,b) for r in inputs if r['operation']=='followup_branches' for b in r['branches']]
+write_jsonl('followup-branches.jsonl',followup_rows)
+# Base pool relevance for every followup input: branch-specific task priorities
+# above constrain this baseline and do not manufacture new skill evidence.
+write_jsonl('followup-base-full-pool.jsonl',(label(r,c) for r in inputs if r['operation']=='followup_branches' for c in catalog))
+
+index=[]
+for row in inputs:
+    op=row['operation'];name={'score_pair':'scoring-pairs.jsonl','followup_branches':'followup-branches.jsonl','ranking':'ranking-full-pool.jsonl','legacy_ranking':'legacy-v4-full-pool.jsonl'}[op]
+    index.append({'caseId':row['caseId'],'operation':op,'artifact':name,'status':'reviewed_with_explicit_unknowns','humanReviewPerformed':False,
+      'candidateCoverage':1 if op=='score_pair' else 135,'branchCount':len(row.get('branches',[])),
+      'policyMigration':'new_independent_contract_proposal_only_not_authorization_to_overwrite_old_gold'})
+write_jsonl('review-index.jsonl',index)
+
+special=[
+ {'caseIds':['v4-math-model-master-hard-negative'],'candidateId':'national-college-math-modeling','decision':'preserve_stage_hard_negative','reason':'硕士不在冻结目录国赛本专科学段中；建模兴趣和偏好不能放开该资格。','notEquivalentTo':'不能因此排除graduate-math-modeling等另有研究生入口的赛事。'},
+ {'caseIds':['v4-electronic-design-master-hard-negative'],'candidateId':'national-college-electronic-design','decision':'preserve_stage_hard_negative','reason':'硕士不在本科电子设计主赛允许学段中；graduate-electronic-design是独立候选。'},
+ {'caseIds':['v4-language-doctorate-hard-negative'],'candidateId':'understanding-contemporary-china-foreign-language','trackIds':['english-comprehensive','translation','short-video','four-new'],'decision':'preserve_explicit_track_stage_hard_negatives','reason':'这四条英语赛道均不含博士。国际中文赛道要求来华留学生事实，未知不能作为替代合格通道。赛事级目录过宽不覆盖赛道边界。'},
+ {'caseIds':['track-01','track-10'],'candidateId':'challenge-cup-academic-science','decision':'catalog_conflict_unresolved','reason':'赛事顶层不含高职，3条轨道反含高职；只读包无法裁决事实冲突。保留顶层硬边界并标记待官方规则复核，不用偏好选择绕过。'},
+ {'caseIds':['score-gold-095','rank-doctorate-or-recent-public-management'],'candidateId':'challenge-cup-academic-science','decision':'conditional_doctorate_route_unknown','reason':'目录明示博士需硕博连读/直博且未通过博士资格考试等替代通道，画像没有此事实。高任务相关性不是已合格。'},
+ {'caseIds':['score-gold-070','score-gold-090','rank-master-ai-research','rank-doctorate-or-recent-ai-research'],'candidateId':'icpc-programming','decision':'eligibility_unknown_not_degree_only_exclusion','reason':'首次入学年份/出生年份替代条件及往届参赛次数缺失，不得凭研究生/博士身份直接通过或直接淘汰。'},
+ {'caseIds':['goal-04','track-05'],'candidateId':'graduate-rural-revitalization-agritech','decision':'recommendation_admission_fact_unknown','reason':'本科四年级不证明已获推免资格；轨道目标取舍与该资格独立。'},
+ {'caseIds':['track-06','track-07','track-09'],'candidateId':'datang-ict','decision':'track_team_facts_needed','reason':'工程实践2人、5G创新4–6人且至少两专业；画像人数/队伍单位未知，不能要求只换偏好就合格/不合格。'},
+ {'caseIds':[r['caseId'] for r in inputs if r['operation']=='score_pair'],'decision':'personal_contribution_unadjudicable','reason':'96项均只提供证据类别和技能自述，没有贡献份额、独立任务过程或可核验质量；五维中的20分个人经历项保持0–20，不视作能力0。'},
+ {'caseIds':[r['caseId'] for r in inputs if r['operation']=='ranking'],'decision':'novice_coverage_missing','reason':'这25画像均自称project-or-award且有项目/论文/奖项/作品集标签，不能以低年级名字冒充零经历新手。新手优先政策必须另有真实新手输入验证。'},
+]
+write_jsonl('disputes-and-hard-negatives.jsonl',special)
+
+audit={'schemaVersion':'saitu.independent-legacy-blind-review.v1','reviewerType':'AI independent semantic review; not human-approved or human gold','modelDeclaredByParent':'GPT-6 Astra/high','sourceHashes':{n:hashlib.sha256((SRC/n).read_bytes()).hexdigest() for n in ['manifest.json','review-inputs.jsonl','candidate-pool.json']},
+ 'readAllowlist':['manifest.json','review-inputs.jsonl','candidate-pool.json'],'implementationRead':False,'oldGoldRead':False,'testLogsRead':False,'otherReviewRead':False,'externalEvidenceFetched':False,
+ 'method':'AI read all 135 candidate summaries and all input profiles/branch selectors, authored semantic archetype tables and materialized individual 0–3 labels with source-specific rationales. This is one AI reviewer plus a deterministic materializer, not 5805 independent human judgments. Qualification unknowns preserve source gaps. No use of candidate goalValues, credibility scores, application output or old expected answers for labels.',
+ 'policyWeights':{'goal':30,'task':25,'experienceAndPersonalContribution':20,'preparation':15,'growth':10},
+ 'counts':{'inputs':len(inputs),'scoringPairs':len(score_rows),'followupCases':36,'followupBranches':len(followup_rows),'rankingProfiles':25,'legacyProfiles':18,'rankingLabels':25*135,'legacyLabels':18*135,'followupBaseLabels':36*135,'taskRelations':len(relations),'candidatePool':len(catalog)},
+ 'acceptanceThresholds':{'numericIntervalPassRate':0.9,'existingRelationThreshold':104,'changed':False,'equivalenceClaimed':False,'testAcceptanceClaimed':False},
+ 'limitations':['来源是指定的v5兼容目录，不是独立最新官方事实核查；目录内部冲突已保留。','未见原答案，因此无权宣称哪条旧答案已经失效；须开发者逐条对照证据而非模型输出。','经验/个人贡献维度所有96项均不可精确裁定，保留0–20。','数值区间是规范性可辩护范围，不是统计置信区间；禁止拿宽化结果假称原90%测试等价。','低年级新手应有探索路径；本批25排名画像均为项目/奖项标签，不能充当真正新手覆盖。','候选排名相关性不是能力分，且资格/成本未知不得转成低能力或已可报名。'],
+ 'artifacts':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in OUT.glob('*.jsonl')}}
+(OUT/'manifest.json').write_text(json.dumps(audit,ensure_ascii=False,indent=2)+'\n')
+(OUT/'semantic-rubric.json').write_text(json.dumps({'candidateIndexOrder':[c['id'] for c in catalog],'archetypeDescriptions':DESCR,'explicitSemanticLevels':M,'defaultRelevance':0,'humanApproved':False},ensure_ascii=False,indent=2)+'\n')
+print(json.dumps(audit['counts']))

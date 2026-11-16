@@ -1,8 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
+import type { ReactNode } from "react";
+import { DecisionCatalogDetail } from "./DecisionCatalogDetail";
+import type { DecisionCompetitionRecord } from "@/lib/competitions/v6/catalog-types";
 import { skillOptions, preferredOutputOptions } from "./recommend/questionContent";
 import type { Competition } from "@/content/competitions";
 import { OrbitBackdrop } from "@/components/brand/OrbitBackdrop";
-import { getDocumentedCompetitionAvailability } from "@/lib/competitions/documented-availability";
 import { getCompetitionFactSheet, type CompetitionFactSheet } from "@/content/competition-facts";
 import { getCompetitionFieldGuide } from "@/content/competition-field-guides";
 
@@ -12,25 +15,18 @@ type CompetitionDetailContentProps = {
   headingId: string;
   headingLevel?: "h1" | "h2";
   onSourceClick?: (competitionId: string) => void;
-};
-
-const statusTone: Record<string, string> = {
-  open: "border-success-200 bg-success-50 text-success-700",
-  upcoming: "border-brand-500/25 bg-brand-50 text-brand-700",
-  unknown: "border-border bg-surface text-muted-foreground",
-  stale: "border-border bg-surface text-muted-foreground",
-  closed: "border-border bg-surface text-muted-foreground",
-  cancelled: "border-border bg-surface text-muted-foreground"
+  decisionRecord?: DecisionCompetitionRecord | null;
+  recordLinks?: ReactNode;
 };
 
 export function CompetitionDetailContent({
-  availabilityNow,
   competition,
   headingId,
   headingLevel: Heading = "h2",
-  onSourceClick
+  onSourceClick,
+  decisionRecord,
+  recordLinks
 }: CompetitionDetailContentProps) {
-  const availability = getDocumentedCompetitionAvailability(competition, availabilityNow);
   const facts = getCompetitionFactSheet(competition.id);
   const guide = getCompetitionFieldGuide(competition.id);
   const { schedule, tracks, source, supportingSources } = competition.recommendation;
@@ -75,22 +71,25 @@ export function CompetitionDetailContent({
 
           <div className="mt-4 flex flex-wrap items-center gap-2">
             <span
-              className={`inline-flex min-h-8 items-center rounded-full border px-3 text-xs font-semibold ${statusTone[availability.registrationStatus.status]}`}
+              className="inline-flex min-h-8 items-center rounded-full border border-border bg-surface px-3 text-xs font-semibold text-muted-foreground"
             >
-              {availability.registrationStatus.label}
+              赛事资料参考
             </span>
             {(facts?.edition || schedule.edition) && (
               <span className="text-xs text-muted-foreground">{facts?.edition || schedule.edition}</span>
             )}
           </div>
           <p className="mt-3 text-xs leading-5 text-muted-foreground">
-            {availability.registrationStatus.note}
+            资料按标注届次保留，历史内容用于了解任务与准备方向；参赛资格和开赛时间请自行核查官网。
           </p>
         </div>
       </header>
 
+      {recordLinks}
+      {decisionRecord ? <DecisionCatalogDetail record={decisionRecord}/> : Heading === "h2" ? <Link className="mt-5 inline-flex min-h-11 items-center text-sm font-semibold text-brand-700 underline" href={`/competitions/${encodeURIComponent(competition.id)}`}>查看完整任务、价值与准备指南</Link> : null}
+
       <div className="mt-7 divide-y divide-border border-y border-border">
-        {guide && (
+        {!decisionRecord && guide && (
           <section className="py-5">
             <h3 className="text-lg font-semibold text-ink">这场比赛，你会做什么？</h3>
             <p className="mt-2 text-sm leading-7 text-ink">{guide.task}。</p>

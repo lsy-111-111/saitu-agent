@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="hotcss" content="initial-dpr=1;max-width=750"/>
+    <link rel="stylesheet" href="https://files.sciconf.cn/asset/lib/ant-design-vue/antd.css">
+    <link rel="stylesheet" href="https://medmeeting-cms.oss-cn-beijing.aliyuncs.com/pc-template/new_web/lib/css/app.css"/>
+    <link rel="stylesheet" href="https://medmeeting-cms.oss-cn-beijing.aliyuncs.com/pc-template/new_web/c17/css/index.css?v=20250821"/>
+    <link rel="stylesheet" href="https://medmeeting-cms.oss-cn-beijing.aliyuncs.com/pc-template/new_web/lib/css/editor.style.css"/>
+    <link href="https://files.sciconf.cn/asset/lib/aos/aos.css" rel="stylesheet">
+    <script src="https://files.sciconf.cn/asset/lib/aos/aos.js"></script>
+    <script src="https://files.sciconf.cn/asset/lib/hotcss.js"></script>
+    <!-- 引入vue.js框架 -->
+    <script src="https://files.sciconf.cn/asset/lib/vue.min.js"></script>
+    <!-- 引入ant design组件库 -->
+    <script src="https://files.sciconf.cn/asset/lib/ant-design-vue/antd.min.js"></script>
+    <!-- 引入css var 兼容 -->
+    <script src="https://medmeeting-cms.oss-cn-beijing.aliyuncs.com/pc-template/new_web/lib/css-vars-ponyfill.min.js"></script>
+    <script src="https://medmeeting-cms.oss-cn-beijing.aliyuncs.com/pc-template/js/jquery.min.js"
+            type="text/javascript"></script>
+    <!-- 腾讯云点播引入 -->
+    <link href="https://medmeeting-cms.oss-cn-beijing.aliyuncs.com/asset/tcplayer/tcplayer.min.css" rel="stylesheet"/>
+
+    <title>第二届全国大学生气象科技创新大赛</title>
+    <meta name="keywords" content="第二届全国大学生气象科技创新大赛，在线会议，会议直播平台，网络会议直播，美迪康会务通，学术会议管理系统，会议活动管理，注册签到管理，会场幻灯片传输转播，PPT传输，会议网络直播，电子壁报管理系统，会员管理系统"/>
+    <meta name="description" content="第二届全国大学生气象科技创新大赛，在线会议，会议直播平台，网络会议直播，美迪康会务通，学术会议管理系统，会议活动管理，注册签到管理，会场幻灯片传输转播，PPT传输，会议网络直播，电子壁报管理系统，医学会，会员管理系统"/>
+
+    <!--icon-->
+        <link rel="shortcut icon" href="https://medmeeting-cms.oss-cn-beijing.aliyuncs.com/public/399/0/202509/2025090110432510256384971.ico" type="images/x-icon">
+        <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?eb829ff09b9c16ded7d1e4762598f28d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+    <style>
+        html {
+            /* 主题色 */
+            --web-theme-color: #4373f7;
+            /* 导航背景色 */
+            --web-nav-color: #4373f7;
+            /* 导航选中颜色 */
+            --web-nav-active-color: #97b7f7;
+            /* 导航文字颜色 */
+            --web-nav-font-color: #fff;
+            /* 导航文字选中颜色 */
+            --web-nav-font-active-color: #fff;
+            /* 页面可是区域宽度 */
+            --web-width: 1200px;
+        }
+        @media screen and (min-width: 769px) {
+            html {
+                font-size: 26.666px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper flex flex-column">
+        <div class="flex-item">
+
+            <!-- 中英文切换 -->
+            
+            <!-- banner -->
+                    <img class="banner" style="display: block;margin:0 auto;max-width:100%;"
+             src="https://medmeeting-cms.oss-cn-beijing.aliyuncs.com/public/399/46978/202604/2026040910203041591078632.jpg"
+             alt="第二届全国大学生气象科技创新大赛">
+    
+            <!-- 导航 -->
+            <div id="nav">
+                <a-affix :offset-top="0">
+                    <div class="nav">
+                        <a-icon class="nav-menu" @click="handleClick" :type="mobileMenuIcon ? 'menu' : 'close'" ></a-icon>
+                        <div class="web-container flex x-between y-center nav-wrapper">
+                            <div class="nav-left flex y-center">
+                                <div v-cloak class="nav-date flex y-center">
+                                    <!-- 只有手机端才渲染 -->
+                                                                    </div>
+                            </div>
+
+                            <div id="navList" class="nav-list x-between flex">
+                                
+                                        <div class="nav-item selected">
+                                            <a class="nav-item-p"
+                                               href="/cn/web/index/32458" target="_self">
+                                                首页                                            </a>
+
+                                                                                    </div>
+
+                                    
+                                        <div class="nav-item">
+                                            <a class="nav-item-p"
+                                               href="/cn/web/index/32458_2808858" target="_blank">
+                                                项目申报                                            </a>
+
+                                                                                    </div>
+
+                                    
+                                        <div class="nav-item">
+                                            <a class="nav-item-p"
+                                               href="/cn/web/index/32458_2808884" target="_self">
+                                                组织机构                                            </a>
+
+                                                                                    </div>
+
+                                                                </div>
+                        </div>
+                    </div>
+                </a-affix>
+            </div>
+
+            <!-- 内容 -->
+            <div class="sub-content">
+                <div id="indexModule">
+
+    <!-- 快捷通道 -->
+    
+    <!-- 截止日期 & 倒计时 -->
+                <div class="web-container module-margin">
+            <a-row :gutter="[22,0]" type="flex">
+                <!-- 有任何一个不存在则需要把对应的lg值改为24 -->
+                
+                                    <a-col :xs="24" :lg="24">
+                        <div data-aos="flip-right" class="date-module common-module flex x-between flex-wrap">
+                                                            <a class="date-item">
+                                    <p>第一阶段</p>
+                                    <b>面向全国高校征集作品，征集开始日期为2026年4月</b>
+                                </a>
+                                                            <a class="date-item">
+                                    <p>第二阶段</p>
+                                    <b>截止6月30日，大赛组织方将对作品进行初评，初评通过的作品将参加现场展示交流和评审活动</b>
+                                </a>
+                                                            <a class="date-item">
+                                    <p>第三阶段</p>
+                                    <b>10月中旬，举办全国大学生气象科技创新大赛现场展示交流和评审活动，地点：兰州</b>
+                                </a>
+                                                    </div>
+                    </a-col>
+                            </a-row>
+        </div>
+    
+    <!-- 轮播图 & 会议信息 -->
+                <div class="web-container module-margin">
+            <a-row :gutter="[22,0]" type="flex">
+                <!-- 有任何一个不存在则需要把对应的lg值改为24 -->
+                                                            <!-- banner轮播 -->
+                        <a-col :xs="24" :lg="12">
+                            <!-- banner轮播 -->
+                            <div data-aos="flip-left" class="common-module">
+                                <a-carousel autoplay arrows dots-class="custom-dots"
+                                            class="carousel-banner-module flex-item">
+                                    <div slot="prevArrow" slot-scope="props" class="custom-slick-arrow"
+                                         style="left: 15px;">
+                                        <a-icon style="color:#000;font-size:18px;" type="left"/>
+                                    </div>
+                                    <div slot="nextArrow" slot-scope="props" class="custom-slick-arrow"
+                                         style="right: 15px">
+                                        <a-icon style="color:#000;font-size:18px;" type="right"/>
+                                    </div>
+                                                                            <a href="javascript:;" class="carousel-banner-item">
+                                            <img class="carousel-banner-item-image"
+                                                 src="https://medmeeting-cms.oss-cn-beijing.aliyuncs.com/public/399/46978/202604/2026041710304951910763482.jpg"
+                                                 alt="">
+                                        </a>
+                                                                    </a-carousel>
+                            </div>
+                        </a-col>
+                                    
+                                                            <a-col :xs="24" :lg="12">
+                            <!-- 富文本模块 -->
+                            <div data-aos="flip-right" class="common-module text-module flex flex-column">
+                                <div class="common-title flex x-between y-center">
+                                    <h2>通知</h2>
+                                    <a class="text-more"
+                                       href="/cn/web/index/32458_2808893">MORE</a>
+                                </div>
+                                <div class="text-content-wrapper flex-item">
+                                    <div class="module-editor text-content">
+                                        <h2 style="text-align:center;">
+	<span style="font-size:32px;">本届大赛获奖情况已与9月25日10:00公布</span> 
+</h2>
+<h2 style="text-align:center;">
+	<span style="font-size:32px;">详细信息请点击下方文件资料查看</span>
+</h2>
+<h2 style="text-align:center;">
+	<span style="font-size:32px;">请进入决赛的的选手扫码进群了解后续赛事安排</span>
+</h2>
+<p>
+	<span style="font-size:32px;"><br />
+</span>
+</p>
+<p>
+	<span style="font-size:32px;">
+	<h2 style="text-wrap-mode:wrap;text-align:center;">
+		<span style="font-size:32px;"><img src="https://medmeeting-cms.oss-cn-beijing.aliyuncs.com/public/399/46978/202609/20260925141222_69965.png!1920" alt="" /></span>
+	</h2>
+<br />
+</span>
+</p>                                    </div>
+                                </div>
+                            </div>
+                        </a-col>
+                                                </a-row>
+        </div>
+    
+    <!-- 组织机构 & 会议动态 -->
+                <div class="web-container module-margin">
+            <a-row :gutter="[22,0]" type="flex">
+                <!-- 有任何一个不存在则需要把对应的lg值改为24 -->
+                
+                                    <a-col :xs="24" :lg="24">
+                        <!-- 新闻列表 -->
+                        <div data-aos="flip-right" class="common-module new-module">
+                            <div class="common-title flex x-between y-center">
+                                <h2>文件资料</h2>
+                                <a href="/cn/web/index/32458_2808896"
+                                   class="text-more">MORE</a>
+                            </div>
+                            <div class="new-list">
+                                                                        <a href="/cn/web/jump/32458?mid=2808896&nid=135059 " target="_blank" class="new-item flex y-center x-between" data-href="https://medmeeting-cms.oss-cn-beijing.aliyuncs.com/public/399/46978/202611/2026110216154552108971364.docx">
+                                            <div class="flex flex-item x-left y-center fs16 color333" style='width:0;'>
+                                                <div class="row-1">
+                                                    第二届全国大学生气象科技创新大赛决赛获奖名单                                                </div>
+                                                                                                                                            </div>
+                                            <p class="ml15 color999">2026-11-02</p>
+                                        </a>
+                                                                            <a href="/cn/web/jump/32458?mid=2808896&nid=135058 " target="_blank" class="new-item flex y-center x-between" data-href="https://medmeeting-cms.oss-cn-beijing.aliyuncs.com/public/399/46978/202611/2026110216152886753109412.doc">
+                                            <div class="flex flex-item x-left y-center fs16 color333" style='width:0;'>
+                                                <div class="row-1">
+                                                    中国气象学会关于公布第二届全国大学生气象科技创新大赛决赛结果的通知                                                </div>
+                                                                                                                                            </div>
+                                            <p class="ml15 color999">2026-11-02</p>
+                                        </a>
+                                                                            <a href="/cn/web/jump/32458?mid=2808896&nid=135018 " target="_blank" class="new-item flex y-center x-between" data-href="https://medmeeting-cms.oss-cn-beijing.aliyuncs.com/public/399/46978/202609/2026092514270919825106374.docx">
+                                            <div class="flex flex-item x-left y-center fs16 color333" style='width:0;'>
+                                                <div class="row-1">
+                                                    关于获奖证书接收                                                </div>
+                                                                                                                                            </div>
+                                            <p class="ml15 color999">2026-09-25</p>
+                                        </a>
+                                                                            <a href="/cn/web/jump/32458?mid=2808896&nid=135017 " target="_blank" class="new-item flex y-center x-between" data-href="https://medmeeting-cms.oss-cn-beijing.aliyuncs.com/public/399/46978/202609/2026092809465211063942578.pdf">
+                                            <div class="flex flex-item x-left y-center fs16 color333" style='width:0;'>
+                                                <div class="row-1">
+                                                    中国气象学会关于举办第二届全国大学生气象科技创新大赛决赛的通知                                                </div>
+                                                                                                                                            </div>
+                                            <p class="ml15 color999">2026-09-25</p>
+                                        </a>
+                                                                            <a href="/cn/web/jump/32458?mid=2808896&nid=135016 " target="_blank" class="new-item flex y-center x-between" data-href="https://medmeeting-cms.oss-cn-beijing.aliyuncs.com/public/399/46978/202609/2026092514102445826713910.docx">
+                                            <div class="flex flex-item x-left y-center fs16 color333" style='width:0;'>
+                                                <div class="row-1">
+                                                    全国大学生气象科技创新大赛决赛群微信二维码                                                </div>
+                                                                                                                                            </div>
+                                            <p class="ml15 color999">2026-09-25</p>
+                                        </a>
+                                                                </div>
+                        </div>
+                    </a-col>
+                
+            </a-row>
+        </div>
+    
+                                                                                                
+                <!-- 友情链接 -->
+                <section data-aos="zoom-out-up" class="web-container module-margin">
+                    <div class="common-module friend-module">
+                        <div class="common-title flex x-between y-center">
+                            <h2>相关链接</h2>
+                            <a class="text-more" href="/cn/web/index/32458_2808879">MORE</a>
+                        </div>
+                        <div class="friend-list">
+                            <a-carousel autoplay arrows dots-class="custom-dots" class="carousel-friend-module">
+                                <div slot="prevArrow" slot-scope="props" class="custom-slick-arrow" style="left: 0px;">
+                                    <a-icon style="color:#000;font-size:18px;" type="left"/>
+                                </div>
+                                <div slot="nextArrow" slot-scope="props" class="custom-slick-arrow" style="right: 0px;">
+                                    <a-icon style="color:#000;font-size:18px;" type="right"/>
+                                </div>
+                                                                                                    <div>
+                                        <a-row :gutter="[{lg:22,md:15,sm:15,xs:15},15]">
+                                                                                                                                                <a-col :key="0" :lg="4" :xs="12">
+                                                        <a class="friend-item t-c"
+                                                           href="https://www.cyscc.org/castic/#/home"
+                                                           target="_blank">
+                                                            <img
+                                                                src="https://medmeeting-cms.oss-cn-beijing.aliyuncs.com/public/399/46978/202604/2026040118531684210159736.png"
+                                                                alt="">
+                                                            <h3 class="row-1 mt15 fs16 color333">全国青少年科技创新大赛</h3>
+                                                        </a>
+                                                    </a-col>
+                                                                                                                                                    <a-col :key="1" :lg="4" :xs="12">
+                                                        <a class="friend-item t-c"
+                                                           href="https://www.cms1924.org/xuehui-station/index.html"
+                                                           target="_blank">
+                                                            <img
+                                                                src="https://medmeeting-cms.oss-cn-beijing.aliyuncs.com/public/399/46978/202604/2026040118522145109381762.gif"
+                                                                alt="">
+                                                            <h3 class="row-1 mt15 fs16 color333">中国气象学会</h3>
+                                                        </a>
+                                                    </a-col>
+                                                                                                                                                                                                                                                                                        </a-row>
+                                    </div>
+                                                            </a-carousel>
+                        </div>
+                    </div>
+                </section>
+
+                                                                                
+
+    <!-- 赞助商 -->
+    
+    <!-- 页面弹框 -->
+    </div>
+<script>
+
+    //获得北京时间
+    Date.prototype.getBJDate = function () {
+        //获得当前运行环境时间
+        var d = new Date(), currentDate = new Date(), tmpHours = currentDate.getHours();
+        //算得时区
+        var time_zone = -d.getTimezoneOffset() / 60;
+        //少于0的是西区 西区应该用时区绝对值加京八区 重新设置时间（西区时间比东区时间早 所以加时区间隔）
+        if (time_zone < 0) {
+            time_zone = Math.abs(time_zone) + 8;
+            currentDate.setHours(tmpHours + time_zone);
+        } else {
+            //大于0的是东区  东区时间直接跟京八区相减
+            time_zone -= 8;
+            currentDate.setHours(tmpHours - time_zone);
+        }
+        return currentDate;
+    }
+
+    // 倒计时
+    Vue.component('dateCountDown', {
+        template: '<div class="flex x-center countdown-content">\
+                    <div class="countdown-item t-c">\
+                        <b>{{day}}</b>\
+                        <p>DAYS</p>\
+                    </div>\
+                    <div class="countdown-dot">:</div>\
+                    <div class="countdown-item t-c">\
+                        <b>{{hour}}</b>\
+                        <p>HOURS</p>\
+                    </div>\
+                    <div class="countdown-dot">:</div>\
+                    <div class="countdown-item t-c">\
+                        <b>{{min}}</b>\
+                        <p>MINUTES</p>\
+                    </div>\
+                    <div class="countdown-dot">:</div>\
+                    <div class="countdown-item t-c">\
+                        <b>{{sec}}</b>\
+                        <p>SECONDS</p>\
+                    </div>\
+                </div>',
+        data() {
+            return {
+                day: '00',
+                hour: '00',
+                min: '00',
+                sec: '00',
+            }
+        },
+        props: {
+            dateStr: {
+                type: String,
+                default: '',
+            }
+        },
+        methods: {
+            dateFormat(d) {
+                return d > 9 ? d : '0' + d;
+            },
+            getCountdownFun() {
+                let expire_time = this.dateStr.replace(new RegExp(/-/gm), "/");
+                var that = this;
+
+                function __getCountdown() {
+                    var NowTime = new Date().getBJDate(),
+                        EndTime = new Date(expire_time),
+                        t = (EndTime.getTime() - NowTime.getTime()),
+                        day = Math.floor(t / 1000 / 60 / 60 / 24),
+                        hour = Math.floor(t / 1000 / 60 / 60 % 24),
+                        min = Math.floor(t / 1000 / 60 % 60),
+                        sec = Math.floor(t / 1000 % 60);
+
+                    that.day = that.dateFormat(day);
+                    that.hour = that.dateFormat(hour);
+                    that.min = that.dateFormat(min);
+                    that.sec = that.dateFormat(sec);
+
+                    setTimeout(function () {
+                        __getCountdown();
+                    }, 1000)
+                }
+
+                __getCountdown();
+            }
+        },
+        mounted() {
+            this.getCountdownFun();
+        },
+    })
+
+    new Vue({
+        el: '#indexModule',
+        data() {
+            return {
+                visible: true,
+
+            }
+        },
+        methods: {},
+
+    })
+</script>            </div>
+
+            <!-- 左侧广告 -->
+                    </div>
+
+        <!-- 联系我们 -->
+        
+        <!-- 智能客服 -->
+        <style>
+    .ai-btn{
+        position: fixed;
+        right:5px;
+        text-align: center;
+        display: block;
+        top:60%;
+        z-index: 9;
+    }
+    .ai-btn img{
+        width:105px;
+        display:block;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .ai-content{
+        display: flex;
+        flex-direction: column;
+        height:100%;
+    }
+    .flex-item{
+        flex:1;
+    }
+    .send-box{
+        position: relative;
+        border:1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .send-input{
+        width:100%;
+        padding:15px;
+        border:0!important;
+        resize: none;
+        outline: none;
+        box-sizing: border-box;
+        box-shadow:none!important;
+    }
+    .send-edit{
+        padding: 10px 15px;
+        width: 100%;
+        background: #fafafa;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .send-btn{
+        background-color: var(--web-theme-color);
+        color:#fff;
+        padding:5px 10px;
+        line-height: 1.2;
+        cursor: pointer;
+        user-select: none;
+        border-radius: 3px;
+    }
+    .ai-question .ai-question-item{
+        margin-top:7px;
+    }
+    .ai-question .ai-question-item a{
+        color: var(--web-theme-color);
+        font-weight:bold;
+    }
+    .ai-item{
+        margin-top:15px;
+    }
+    .ai-talk{
+        max-width:80%;
+        display: inline-block;
+    }
+    .ai-talk-text{
+        padding:8px 10px;
+        border-radius: 5px;
+        background-color: var(--web-theme-color);
+        display: inline-block;
+        color:#fff;
+    }
+    .ai-question-text{
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .ai-question-text table{
+        border-collapse: collapse;  /* 合并边框为单线 */
+        width: 100%;
+        border-spacing: 0;
+        border: 1px solid #ccc;
+    }
+    .ai-question-text td, .ai-question-text th{
+        border: 1px solid #ddd;  /* 单元格边框 */
+        padding: 8px;            /* 内边距 */
+    }
+    .ai-content pre{
+        border:0;
+    }
+    /* .cursor::after {
+        content: "|";
+        animation: blink 1s infinite;
+    }
+    @keyframes blink { 50% { opacity: 0; } } */
+
+</style>
+
+<div id="aiModal">
+    <a v-if="showAi" class="ai-btn t-r" href="javascript:;">
+        <a-icon class="color000" @click="showAi = false;" type="close"></a-icon>
+        <img @click="visible = true" src="https://files.sciconf.cn/master/512/5963/202502/20250228150439_44451.jpeg!1920" alt="" />
+    </a>
+    <a-modal v-model="visible" title="AI参会助手" centered wrap-class-name="ai-modal" :footer="null">
+        <div class="ai-content">
+            <div id="aiContent" style="overflow: auto;height:60vh;padding-bottom:15px;margin-bottom:15px;">
+                <div style="font-weight:bold;">
+                您好，我是您的专属AI参会助手！您可以尝试给我安排如下任务：</div>
+                <div class="ai-question">
+                    <p @click="handleSendQuestion(item)" v-for="(item,index) in question" class="ai-question-item"><a href="javascript:;">{{index+1}}、{{item}}?</a></p>
+                </div>
+                <div v-if="answerList.length" class="ai-list">
+                    <!-- 问题 -->
+                    <div  v-for="(item,index) in answerList" :key="index">
+                        <div class="ai-item" style="text-align: right;">
+                            <div class="ai-talk">
+                                <span class="ai-talk-text">{{item.question}}</span>
+                            </div>
+                            <p v-if="ai_type_list.length > 1" class="mt5"><a-tag style="margin-right:0;">{{ai_type_list[item.type_index]?.name}}</a-tag></p>
+                        </div>
+                        <!-- 回答正文 -->
+                        <div v-if="item.result" class="ai-item ai-question-text">
+                            <div class="pb5 color333">
+                                <div v-html="item.result"></div>
+                                <div v-if="!item.loading" class="flex x-left mt10 y-center">
+                                    <span class="color999 mr5">是否满意：</span>
+                                    <a-radio-group @change="handleChangeEvent($event,item.request_id)">
+                                        <a-radio value="1">是</a-radio>
+                                        <a-radio value="2">否</a-radio>
+                                    </a-radio-group>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- loading -->
+                         <div v-if="item.loading" class="ai-item loading" style="text-align: right;font-size:12px;color:#666;"> 
+                            深度思考中                            <img style="width:15px;height:auto;margin-right: 15px;" src="https://medmeeting-cms.oss-cn-beijing.aliyuncs.com/asset/cert/images/loading.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="send-box">
+                <a-textarea v-model="searchValue" :row="3" @keyup.enter="handleSendQuestion(searchValue)" class="send-input" placeholder="请在此输入您的需求"></a-textarea>
+                <div class="flex x-between send-edit y-center">
+                    <a-dropdown>
+                        <a class="ant-dropdown-link color666" style="line-height: 1;" @click.prevent>
+                            {{ 'cn' == 'cn' ? ai_type_list[ai_type_index]?.name : ai_type_list[ai_type_index]?.name_en }}
+                            <a-icon type="down"></a-icon>
+                        </a>
+                        <a-menu slot="overlay">
+                            <a-menu-item @click="handleClickEvent(index)" v-for="(item,index) in ai_type_list" :key="index">
+                                <p class="color333">{{ 'cn' == 'cn' ? item.name : item.name_en }}</p>
+                                <p class="color999">{{ 'cn' == 'cn' ? item.desc : item.desc_en }}</p>
+                            </a-menu-item>
+                        </a-menu>
+                    </a-dropdown>
+                    <div @click="handleSendQuestion(searchValue)" class="send-btn">发送</div>
+                </div>
+            </div>
+        </div>
+    </a-modal>
+</div>
+<script>
+    window.meeting_id = '32458';
+</script>
+<script src="https://medmeeting-cms.oss-cn-beijing.aliyuncs.com/asset/lib/marked.min.js"></script>
+<script src="https://medmeeting-cms.oss-cn-beijing.aliyuncs.com/asset/lib/axios@1.7.9.min.js"></script>
+<script src="https://medmeeting-cms.oss-cn-beijing.aliyuncs.com/asset/lib/md5.min.js"></script>
+<!-- 测试 -->
+<!-- ai下的相关文件，调整好后需要进行打包，把打包后的文件放到_ai_modal.min.php中
+打包地址 https://www.jsjiami.com/jiemi.html
+如果需要调整请把_ai_modal.php中的引入地址改正_ai_modal.m.php -->
+<script>
+var secret = 'fcc31629e2f3a2b8ea001a59ef792113';
+axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+var base_url = "https://capi.cms1924.org";
+// var base_url = "http://api.dev.medcon.net.cn";
+new Vue({
+    el:"#aiModal",
+    data(){
+        return {
+            // 弹窗是否可见
+            visible:false,
+            // 显示ai
+            showAi:false,
+            // 搜索的值
+            searchValue:'',
+            // 禁用发送功能
+            disabled:false,
+            // ai type 类型
+            ai_type_list:[],
+            // ai index 索引
+            ai_type_index:0,
+            question:["会议报名通知","会议时间","会议发票怎么获取"],
+            // 问答列表
+            answerList:[
+                // 示例数据
+                // {
+                //     loading:true,
+                //     type_index:0,
+                //     question:'会议报名通知',
+                //     result:'回答的问题回答的问题'
+                // }
+            ],
+            language : "cn",
+        }
+    },
+    methods: {
+        sortParams(params){
+            let auth = '';
+            // 拷贝一份
+            params = JSON.parse(JSON.stringify(params));
+            Object.keys(params).sort().forEach((item) => {
+                if (['id', 'page', 'limit'].includes(item) || item.includes('_id')) {
+                    auth += item + '=' + params[item] + '&';
+                }
+            });
+            // 删除最后一个&
+            auth = auth.substr(0, auth.length - 1);
+            console.log(auth);
+            auth = MD5(MD5(auth) + secret);
+            auth = auth.toUpperCase();
+            return auth;
+        },
+
+        handleClickEvent(index){
+            window.localStorage.setItem('ai_type_index', index);
+            this.ai_type_index = index;
+        },
+
+        // 获取ai配置
+        getAiConfig(){
+            axios.get(base_url+'/mall/meeting/kf/config', {
+                headers: {
+                    meetingID:window.meeting_id,
+                    mid:window.meeting_id,
+                    key:'Medcon20201010@)@)@!)',
+                },
+                dataType:"JSON",
+            }).then(res => {
+                this.showAi = res.data.data.is_open_customer == 1 ? true : false;
+                this.ai_type_list = res.data.data.type_list;
+                var ai_type_index =  window.localStorage.getItem('ai_type_index') || 0;
+                if(this.ai_type_list.length - 1 >= ai_type_index){
+                    this.ai_type_index = ai_type_index;
+                }
+            })
+        },
+
+        // 是否满意
+        handleChangeEvent(e,request_id){
+            let value = e.target.value;
+            axios({
+                url : base_url+'/mall/meeting/kf/feedback',
+                method:'post',
+                headers: {
+                    meetingID:window.meeting_id,
+                    mid:window.meeting_id,
+                    key:'Medcon20201010@)@)@!)',
+                },
+                data:{  
+                    request_id,
+                    satisfied:value,
+                    __sign:this.sortParams({request_id:request_id,satisfied:value}),
+                },
+            }).then(res => {
+                if(res.data.code == 200){
+                    this.$message.success(this.language == 'cn' ? '提交成功' : 'success');
+                }else{
+                    this.$message.success(this.language == 'cn' ? '提交失败' : 'error');
+                }
+            })
+        },
+
+        // 发送消息
+        handleSendQuestion(text){
+            
+            this.searchValue = '';
+            if(this.disabled){
+                this.$message.warning('上一次提问正在获取中...');
+                return false;   
+            };
+            if(!text){
+                this.$message.warning('请输入您的问题');
+                return false;
+            };
+            this.disabled = true;
+            var itemInfo = {
+                question:text,
+                loading:true,
+                result:'',
+                type_index:this.ai_type_index,
+            };
+            this.answerList.push(itemInfo);
+            this.$nextTick(() => {
+                document.getElementById("aiContent").scrollTo(0,9999999);
+            });
+            var type_id = this.ai_type_list[this.ai_type_index].id;
+            // 设置超时时间为600秒
+            var instance = axios.create({ timeout: 600000 ,adapter: ['fetch', 'xhr', 'http'] });
+            this.language == 'en' && (text = text + '用英文回答');// 英文回答
+            instance.get(base_url+'/mall/meeting/kf/talk', { 
+                responseType: 'stream',
+                params: {
+                    text_id:text,
+                    type_id:type_id,
+                    __sign:this.sortParams({text_id:text,type_id:type_id}),
+                },
+                headers: {
+                    meetingID:window.meeting_id,
+                    mid:window.meeting_id,
+                    key:'Medcon20201010@)@)@!)',
+                },
+                dataType:"JSON",
+            }).then(response => {
+                var reader = response.data.getReader(); // 通过ReadableStream处理
+                var decoder = new TextDecoder('utf-8');
+                var buffer = '';
+                var strIndex = 0;
+                var resultText = '';
+                var addText = '';
+                var that = this;
+                var timer = null;
+                // 递归处理数据块
+                reader.read().then(function process({ done, value }) {
+                    if (done) {
+                        that.disabled = false;
+                        console.log('流结束');
+                        return;
+                    }
+                    try {
+                        var buffer = decoder.decode(value, { stream: true }); // 解码并保留未完整字符‌:ml-citation{ref="1,3" data="citationList"}
+                        // console.log(buffer);
+                        // 处理分块数据（如按分隔符拆分）
+                        var chunks = buffer.split('\n');
+                        chunks.slice(0, -1).forEach(chunk => {
+                            chunk = chunk.replace('data:','');
+                            try {
+                                var data = JSON.parse(chunk);
+                                addText = data.output.text;
+                                var request_id = data.request_id;
+                                if(timer){
+                                    clearInterval(timer);
+                                }
+                                timer = setInterval(function(){
+                                    if(strIndex >= addText.length){
+                                        clearInterval(timer);
+                                        // 流结束并且逐字输出结束
+                                        !that.disabled && (itemInfo.loading = false);
+                                        return;
+                                    }
+                                    resultText += addText[strIndex];
+
+                                    itemInfo.result = marked.parse(resultText);
+                                    itemInfo.request_id = request_id;
+                                    strIndex++;
+                                    that.$nextTick(() => {
+                                        document.getElementById("aiContent").scrollTo(0,9999999);
+                                    });
+                                }, 30);
+                               
+                            } catch {
+                            }
+                        });
+                        buffer = chunks[chunks.length - 1]; // 保留未完成部分‌:ml-citation{ref="2,3" data="citationList"}
+                        // 此处可插入业务逻辑（如渲染到页面）
+                    } catch (error) {
+                        console.error('数据处理失败:', error);
+                        this.disabled = false;
+                    };
+                    return reader.read().then(process); // 继续读取下一块‌:ml-citation{ref="1,3" data="citationList"}
+                });
+                // this.question = res.data.data;
+            }).finally(() => {
+                // console.log('finally');
+                // this.disabled = false;
+            })
+        }
+    },
+    mounted() {
+        this.getAiConfig();
+    },
+})
+</script><!-- 正式 -->
+
+        <!--footer-->
+        <style>
+    .footer{
+        color:#fff;
+        background-color: var(--web-theme-color);
+        position: relative;
+    }
+    .footer *{
+        position: relative;
+        z-index: 2;
+        color:#fff;
+    }
+    .footer:before{
+        content:'';
+        position: absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height:100%;
+        z-index: 1;
+        background:rgba(0,0,0,0.1);
+    }
+</style>
+<div class="footer">
+    <div class="web-container t-c">
+                    <span style="text-wrap-mode:wrap;">第二届全国大学生气象科技创新大赛</span>                                    <div class='medcon-power'>
+                <span style="color:#ed3e3e;font-size:12px;">大会官方网站内容未经允许，禁止拷贝或转载本站内容，禁止建立类似会议注册页面，否则追究法律责任！</span>
+            </div>
+            <div class="power medcon-power">
+                <span>技术支持：400-008-5413</span>
+                <a href="https://www.scimeeting.cn" target="_blank" style="padding:0px 10px; color: #2eb1e8;">
+                    <img src="https://medmeeting-cms.oss-cn-beijing.aliyuncs.com/pc-template/images/s-logo.png" alt="medcon" style="height:13px;position: relative;top: 1px;">
+                    美迪康会务通</a>
+                <a href="https://beian.miit.gov.cn/" target="_blank"><span style="">京ICP备11011505号-67</span></a>
+            </div>            
+                <div class="ps">
+        <a href="https://console.cms1924.org/meetings/index/32458" target="_blank">管理入口</a>
+    </div>
+    </div>
+</div>
+<!-- 微信PDF点击链接提示层 开始-->
+
+<style>
+        .mask-box{display:none;position: fixed;left: 0;top: 0;right:0;bottom:0;background: rgba(0,0,0,0.85);filter: alpha(opacity=85);width: 100%;height: 100%;z-index: 10000;}
+        .mask-box>img{position:absolute;top:1%;right:5%;width:70%;height:auto;}
+     </style>
+    <div id="maskBox" class="mask-box">
+        <img src="https://files.sciconf.cn/upload/image/20201014/20201014174840_55216.png" /> 
+    </div>
+    <script>
+        function callback() {
+            document.getElementById('maskBox').style.display='block';
+        }
+        $("body").on('click','a',function(e){
+            var href = $(this).attr('href');
+            var datahref = $(this).attr('data-href');
+            if (datahref) {
+                href = datahref;
+            }
+            if (!href) {
+                return false;
+            }
+            var suffix = href.split('.');
+            var suffix = suffix[suffix.length - 1].toLowerCase();
+            var allowedTypes = ['pdf', 'doc', 'docx', 'ppt', 'pptx', 'xlsx', 'xls', 'zip', 'rar'];
+            if (href.startsWith('http') && href.includes('files.sciconf.cn') && $.inArray(suffix, allowedTypes) !== -1) {
+                if (/MicroMessenger/ig.test(navigator.userAgent) || (typeof WeixinJSBridge == "object" && typeof WeixinJSBridge.invoke == "function")) {
+                    e.preventDefault();
+                    callback();
+                } 
+                document.getElementById('maskBox').addEventListener('click',function(){
+                    document.getElementById('maskBox').style.display='none'
+                })
+            }
+        })
+    </script>
+
+    <!-- 微信PDF点击链接提示层 结束-->
+    </div>
+
+    <script>
+       
+        new Vue({
+            el:'#nav',
+            data(){
+                return {
+                    mobileMenuIcon:true,
+                }
+            },
+            methods: {
+                handleClick(){
+                    var navListEl = document.getElementById('navList');
+                    navListEl.style.display = navListEl.style.display == 'block' ? 'none' : 'block';
+                    this.mobileMenuIcon = !this.mobileMenuIcon;
+                }
+            },
+            mounted(){
+                // 添加dom动画
+                try{
+                    AOS.init({
+                        duration: 600, // 动画持续时间
+                        easing: 'ease-in-out', // 缓动函数
+                        delay: 0, // 延迟时间
+                        // once: true, // 仅触发一次
+                    });
+                }catch(err){}
+                
+            }
+        })
+    </script>
+</body>
+<!--<script type="text/javascript" src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>-->
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+<script type="text/javascript" src="https://medmeeting-cms.oss-cn-beijing.aliyuncs.com/asset/js/jweixin/jweixin_init.js?v=1793877195"></script>
+<script type="text/javascript" src="https://medmeeting-cms.oss-cn-beijing.aliyuncs.com/asset/js/jweixin/jweixin_share.js?v=1793877195"></script>
+<script type="text/javascript">
+    var title ='欢迎参加第二届全国大学生气象科技创新大赛';
+    var share_data = {
+        imgurl: 'https://capi.cms1924.org/v1/meeting/img?url=https://files.sciconf.cn/upload/image/20231013/20231013115433_38870.png',
+        url: window.location.href,
+        title: title.replace(/&#183;/, "·").replace(/&amp;/, "&"),
+        desc: '时间：2026年04月01日-10月20日\n地址：甘肃国际会议中心',
+        encodeTitle: '',
+        encodeDesc: '',
+        meetingid: '32458',
+        module: 'app-frontend',
+    };
+    var config = {
+        debug: false,
+        appId: 'wxdc619ef672782bbd',
+        timestamp: '',
+        nonceStr: '',
+        signature: ''
+    };
+    jweixin_manage.init(config);
+    jweixin_share_manage.init(share_data);
+</script></html>

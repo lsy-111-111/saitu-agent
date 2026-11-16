@@ -1,0 +1,1198 @@
+[PAGE 1]
+2025-26 Design, Build, Fly Rules
+[PAGE 2]
+2025-26 Design, Build, Fly Rules
+2 of 34
+Summary
+The AIAA through the Applied Aerodynamics, Airplane Design, Design Engineering and Flight Test Technical
+Committees and the AIAA Foundation invites all university students to participate in the Textron Aviation/Raytheon
+Student Design, Build, Fly Competition. The contest will provide a real-world airplane design experience for engineering
+students by giving them the opportunity to validate their analytic studies.
+Student teams will design, fabricate, and demonstrate the flight capabilities of an electric powered, remote-
+controlled airplane that can best meet the specified mission profile. The goal is a balanced design possessing good flight
+handling qualities and practical and affordable manufacturing requirements while demonstrating high vehicle
+performance.
+To encourage innovation and maintain a fresh design challenge, the design requirements and performance
+objectives are updated for each new contest year. The changes provide new design requirements and opportunities,
+while allowing for application of technology developed by the teams from prior years.
+Check the rules package carefully as items and approaches that were legal in past years may not be legal for
+this contest year. Only the contents of this year's Rules package along with the current FAQ and Q&A documents hold
+bearing on the requirements and/or allowances for the current contest year.
+NOTE:  Items in the rules that are critical to the safety and execution of the competition or are new are hi-lighted in
+RED text.  Please take note of these requirements and rules.
+It is the responsibility of the teams to know and follow all provided rules, the FAQ and Q&A, and all contest day
+briefings.
+Cash prizes are $3000 for 1st, $2000 for 2nd and $1500 for 3rd place. The winning team(s) may be invited to
+present their design at AIAA’s AVIATION Forum. The team with the best Report Score will receive a $100 prize from the
+Design Engineering Technical Committee.
+[PAGE 3]
+2025-26 Design, Build, Fly Rules
+3 of 34
+Table of Contents
+Summary ................................................................................................................................................................................. 2
+Table of Contents .................................................................................................................................................................... 3
+1. General Information ....................................................................................................................................................... 5
+1.1 Team Requirements ................................................................................................................................................... 5
+1.2 Team Pilot .................................................................................................................................................................. 5
+1.3 Sponsorship ................................................................................................................................................................ 5
+1.4 Communications ........................................................................................................................................................ 5
+1.5 Question and Answer (Q&A) Process [NEW] ............................................................................................................. 6
+1.6 Flight Order ................................................................................................................................................................ 7
+1.7 Protest Procedure ...................................................................................................................................................... 7
+1.8 Sportsmanship ........................................................................................................................................................... 7
+2. Schedule and Location Information ............................................................................................................................... 8
+2.1 Entries ........................................................................................................................................................................ 8
+2.2 Proposal Schedule and Submission Information ....................................................................................................... 8
+2.3 Design Report Schedule and Submission Information .............................................................................................. 8
+2.4 Contest Fly-off Site ..................................................................................................................................................... 9
+2.5 Contest Fly-off Schedule ............................................................................................................................................ 9
+2.6 Fly-Off Registration Fee [NEW] .................................................................................................................................. 9
+3. Airplane and Mission Requirements ............................................................................................................................ 10
+3.1 Mission and Payload Requirements......................................................................................................................... 10
+3.1.1 Passengers ............................................................................................................................................................... 10
+3.1.2 Cargo ........................................................................................................................................................................ 11
+3.1.3 Deployable banner requirements: ........................................................................................................................... 12
+3.2 Airplane Requirements ............................................................................................................................................ 13
+3.2.1 General Requirements ............................................................................................................................................. 13
+3.2.2 Arming and Safety .................................................................................................................................................... 14
+3.2.3 Batteries & Power .................................................................................................................................................... 15
+3.2.3.1 Propulsion Systems .............................................................................................................................................. 16
+3.2.3.2 Propulsion Batteries ............................................................................................................................................ 16
+3.3 Mission Operations .................................................................................................................................................. 17
+3.3.1 Flight Course ............................................................................................................................................................ 17
+3.3.2 Staging ...................................................................................................................................................................... 17
+3.3.3 Flight Missions ......................................................................................................................................................... 18
+[PAGE 4]
+2025-26 Design, Build, Fly Rules
+4 of 34
+3.3.3.1 Mission 1 – Test Flight ......................................................................................................................................... 19
+3.3.3.2 Mission 2 – Charter Flight .................................................................................................................................... 19
+3.3.3.3 Mission 3 – Banner Flight .................................................................................................................................... 20
+3.3.4 Ground Mission ........................................................................................................................................................ 21
+4. Fly-off Technical Inspection .......................................................................................................................................... 22
+4.1 Airplane Staging ....................................................................................................................................................... 22
+4.2 Minimum Safety Inspections ................................................................................................................................... 23
+4.2.1 Physical Inspection ................................................................................................................................................... 23
+4.2.2 Arming and Safety .................................................................................................................................................... 24
+4.2.3 Batteries and Propulsion Systems ........................................................................................................................... 24
+4.2.4 Structural Verification .............................................................................................................................................. 24
+4.2.5 Radio Range Check and Fail-Safe Validation ............................................................................................................ 24
+4.3 Mission Compliance ................................................................................................................................................. 25
+5. Reports ......................................................................................................................................................................... 26
+5.1 Proposal ................................................................................................................................................................... 26
+5.1.1 Proposal Formatting Requirements ......................................................................................................................... 26
+5.1.2 Proposal Submission Requirements ........................................................................................................................ 26
+5.1.3 Proposal Scoring....................................................................................................................................................... 26
+5.1.4 Proposal Scoring Rubric ........................................................................................................................................... 27
+5.2 Design Report ........................................................................................................................................................... 28
+5.2.1 Design Report Formatting Requirements ................................................................................................................ 28
+5.2.2 Design Report Submission Requirements ................................................................................................................ 28
+5.2.3 Stand Alone Configuration Drawing Requirements ................................................................................................. 28
+5.2.4 Design Report Scoring .............................................................................................................................................. 29
+5.2.5 Design Report Scoring Rubric................................................................................................................................... 30
+6. Fly-Off Scoring .............................................................................................................................................................. 32
+6.1 Judging ..................................................................................................................................................................... 32
+6.2 Units of Measure...................................................................................................................................................... 32
+6.3 Total Score ............................................................................................................................................................... 32
+Appendix A. Frequently Asked Questions ....................................................................................................................... 33
+[PAGE 5]
+2025-26 Design, Build, Fly Rules
+5 of 34
+1. General Information
+1.1 Team Requirements
+All team members (except for a non-student pilot) must be full time students at an accredited University or College and
+student members of the AIAA.  At least 1/3 of the team members must consist of underclassmen, which is defined as
+students who are NOT in their final year of the university's bachelor's degree program (freshman, sophomores or juniors
+in a common four-year program).  Team members may include graduate students limited to no more than 1/3 of the
+team.  Teams may request an exception to this rule if they believe their university graduate program meets the intent
+of the team membership requirements.  Graduate students who have previously worked in industry (excluding
+internships) are not eligible as they do not meet the requirements for AIAA Student Membership.
+There is no set requirement for the number of students that must attend the fly-off.  It is preferred, but not required, for
+the team advisor or responsible faculty member to attend.
+Team members may be updated/changed at any time during the contest but must always comply with the 1/3 rules.
+Following the initial team roster submitted with the contest entry, a “One Time” update to the official team roster may
+be submitted with the Design Report in February.
+Each educational institution may submit one (1) team entry.
+For schools with multiple campuses in different cities each campus will be considered as a separate entity.
+Two or more schools may combine to submit a single entry.
+Schools which already have an entry may not have additional students from their school participate as members of a
+team from a different (shadow) school.
+International Teams: Special information for non-US teams can be found at https://www.aiaa.org/dbf/travel-
+information/international-teams.
+1.2 Team Pilot
+The team pilot must be an AMA (Academy of Model Aeronautics) member. Teams may use a non-university member for
+the pilot if desired.  All pilots must sign in and verify AMA membership at the fly-off.
+Qualified, volunteer pilots will be available at the contest fly-off on an as-available basis to assist teams who are unable
+to have their pilot attend.  The contest administrators will facilitate communication between teams and volunteer pilots
+at the fly-off, but will not be involved in matching teams and pilots.  Details on how to coordinate with a volunteer pilot
+will be in the Contest Information Sheet.  Requests of the organizing committee to coordinate with a volunteer pilot
+prior to the fly-off will not be acknowledged.
+1.3 Sponsorship
+Teams may solicit and accept sponsorship in the form of funds or materials and components from commercial
+organizations. All design, analysis, major component fabrication and assembly of the contest entry airplane is the sole
+responsibility of the student team members.
+1.4 Communications
+The primary location for information for the contest is the AIAA DBF website.  The contest web site is
+https://www.aiaa.org/dbf and is the primary location for all contest information, schedules, rules and contest
+documentation, forms and links to required sites.  The primary method of communication between AIAA and the DBF
+Organizing Committee and all teams will be by email.
+It is the team's responsibility to make sure the e-mail contact addresses supplied with the entry process for the Faculty
+Advisor and Primary and Secondary Contacts remain active during the contest period as e-mail will be the primary
+means to provide information and updates.  Do not use an internal team correspondence e-mail list server as your point
+of contact e-mail address.  If any of the contact information requires updating, contact Student Programs  at
+studentprogram@aiaa.org with a request to update the information.
+[PAGE 6]
+2025-26 Design, Build, Fly Rules
+6 of 34
+AIAA and the DBF Organizing Committee will utilize social media as an additional means of communicating with the
+teams during the contest weekend only. This will NOT be a means of communicating rules, FAQ's, Q&A, protests, etc.,
+but only used in case of emergencies, weather delays or contest weekend schedule updates. Additional information will
+be included in the contest information sheet to be sent out to the registered teams prior to the fly-off.
+Questions regarding contest administrative items such as help with the online submission process, visa letter requests,
+information for international students, participation certificates and events at the fly-off not related to direct execution
+of the competition should be sent to Student Programs at studentprogram@aiaa.org.
+1.5 Question and Answer (Q&A) Process [NEW]
+Questions regarding rules interpretation will be submitted using the online submission system at https://www.aiaa-
+awards.org/a.  Questions submitted by email will not be accepted.
+Rules interpretation questions may be submitted after the entry date (when all participant e-mail addresses are
+known), so that all teams will have equal access to all rules information.  The online submission site will open on 1
+November for the first Q&A.  Questions with answers will be posted on the website Q&A and delivered by email to all
+teams. The email with the Q&A document will be sent to the Primary and Secondary Contacts and Faculty Advisor on
+record in the on-line submission system.
+At the discretion of the DBF Organizing Committee based on number of questions received and criticality of answers, the
+online submission site will be closed for the first Q&A.  Once the questions have been received and answers
+documented in the Q&A on the website, the online submissions system will re-open for the next set of questions.  This
+process will be repeated until a few weeks before the fly-off at the discretion of the committee.
+Questions submitted for consideration in the published Q&A releases must adhere to the following requirements:
+• All questions must be submitted using the official DBF Q&A form on the DBF website.  Questions submitted without
+using this form will be ignored.  The form may not be altered and must be saved with the university name in the
+following format:  “DBF_Q&A_(university name).xls”
+• Teams are limited to no more than seven (7) questions per Q&A release.  Once a Q&A is published, teams may
+submit up to 7 additional questions.
+• Proposed questions MUST be reviewed by ALL team members AND the Faculty Advisor prior to submittal to
+assure everyone has thoroughly reviewed the rules, FAQ and prior Q&A for the answers to the questions.  The
+Primary or Secondary contact or Faculty Advisor must assert on the form that this requirement was satisfied.
+• Questions requesting approval of a specific design approach or implementation will not be answered.  Teams must
+submit question to clarify a rule, not to approve a design.  Review of generic design concepts may be accepted if it
+aligns with guidelines herein.
+• Questions submitted that do not meet ALL of the above requirements will be ignored.
+• Questions should adhere to the following guidelines:
+o Questions are limited to rules interpretation and clarification only, including answers or updates to rules
+provided in previous Q&A documents, needed to design, build and test airplanes and payloads.
+o Questions should be limited to no more than two sentences, preferably a single sentence question.  Discussion
+or background information on why a team is asking the question is unnecessary.  A valid question does not need
+additional information included with it.  Keep in mind that questions are copied directly into the Q&A document
+and the additional information becomes burdensome in creating the document with appropriate answers.
+o Questions out of curiosity or asking why a rule was written will be ignored.
+o Questions asking how something will be executed at the fly-off will be ignored.  Details of the fly-off execution
+will be in the Contest Information sheet and in the daily pilot briefings.
+o Graphics may be submitted with questions but should only be used if absolutely necessary to clarify the
+question.  Graphics must be inserted into the form in the space provided.  Any graphic should be of sufficient
+quality such that it can be copied into the Q&A document with clarity.
+[PAGE 7]
+2025-26 Design, Build, Fly Rules
+7 of 34
+1.6 Flight Order
+A flight order list will be generated and emailed to the teams on the Wednesday prior to the fly-off weekend.
+Teams will always rotate in this order.  The flight order will be repeated continuously.
+The flight order list will carry over from Thursday to Friday, Friday to Saturday, and Saturday to Sunday at whatever spot
+in the rotation it leaves off.  The flight order list is used for all queues during the contest.  These queues include, but are
+not limited to Tech inspection, Flight Line Missions, and Ground Missions.  Note that the Organizing Committee reserves
+the right to open up any of the queues to first-come-first-served if no teams come when called, or return to the flight
+order if lines begin to form. This will be done at the sole discretion of the Organizing Committee.
+Each team’s position in the flight order will be determined from their Total Report Score, the highest total report score
+goes first.
+Design Report scores along with Total Report scores will be available following the pilot briefing at the start of the
+contest (they will not be included with the flight order e-mail).
+To help streamline the contest flow and maximize flight opportunities for each team, the Tech inspections will be
+conducted in the same order as the flight rotation (which is based on total report scores) so that the first teams
+inspected will be the first teams in the flight queue.  Teams may use the sequence to help estimate when they need to
+arrive at the contest site to make sure they do not miss their slot in the first tech inspection rotation.
+Note:  It is each team's responsibility to monitor the notifications from the scoring table in order to respond if ready.
+Teams MUST Check-In with the scoring table before proceeding to the flight line.  A contest official will be available to
+help teams enter the staging box.
+1.7 Protest Procedure
+Submitting a protest is a serious matter and will be treated as such. Teams may submit a protest to the Contest
+Administration at any time during the competition.  Protests MAY NOT be submitted after the conclusion of the
+competition.  Protests must be submitted in writing and signed by the registered team advisor; designees are not
+allowed for protest submissions.  If the team advisor is not present, he or she may send by electronic method a signed
+protest to the team for them to present.  Electronically submitted protests must be on hard copy (printed by the team)
+and have the advisor’s signature.  A phone number where the advisor may be contacted must be provided.  Protests
+may be posted for review at the decision of the administration.
+Protests and penalties (up to disqualification from the contest for deliberate attempts to misinform officials, violate the
+contest rules, or safety infractions) will be decided by the Contest Administration. Protests submitted but not upheld by
+the judges may be given a penalty of the loss of one flight score to the team submitting the protest.  The decision of the
+Contest Administration is final.
+Teams may only protest events involving their own team.  Protests against other teams or actions not specifically
+involving their own team will not be accepted.
+1.8 Sportsmanship
+All teams and students participating in DBF are expected to uphold the highest standards of sportsmanship during the
+competition and abide by the AIAA Code of Ethics (https://www.aiaa.org/about/Governance/Code-of-Ethics).
+Attempts to intentionally violate the rules or negatively impact the performance of other teams will not be tolerated.
+Penalties for violations will be decided by the Contest Administration and may range from a warning to a loss of flight
+score up to disqualification from the current and future competitions.
+[PAGE 8]
+2025-26 Design, Build, Fly Rules
+8 of 34
+2. Schedule and Location Information
+Event Open Close
+Entry, Proposal
+& Team Roster
+15 October 2025 at 8 AM
+(0800) US Eastern Time
+31 October 2025 at 5 PM (1700)
+US Eastern Time
+Design Report 1 February 2026 at 8AM
+(0800) US Eastern Time
+20 February 2026 at 5 pm (1700)
+US Eastern Time
+Fly-Off 16 April 2026 19 April 2026
+2.1 Entries
+The entry period OPENS 15 October 2025 at 8 AM (0800) US Eastern Time.  No entries will be accepted before that
+time.  A completed entry must be RECEIVED by 31 October 2025 at 5 PM (1700) US Eastern Time.  Entries will be
+collected through the AIAA Online Submission System.
+Proposals and Team Rosters must be submitted as part of the entry process.  Proposals and Team Rosters will not be
+accepted outside of the online submission system.
+Be sure to include ALL required information requested by the online submission.  Once submitted, corrections to the
+entry, including any corrections or updates to the Proposal, will not be accepted.
+Team Rosters must be submitted using the official form located on the DBF Website.  All team members must have a
+valid AIAA Student Membership. Membership numbers of all team members must be submitted with the team rosters.
+You may join at any time by going to the AIAA Student Membership website. Membership numbers are provided
+instantly upon payment of membership fees.
+Incomplete entries will not be accepted.
+An entry is not complete until the “Save and Finalize” function is selected in the online submission system and
+confirmed.
+2.2 Proposal Schedule and Submission Information
+Proposals will be submitted using the online system at https://www.aiaa-awards.org/a
+The proposals will be scored as defined in the proposal requirements section.  The top 100 proposals plus ties will be
+invited to submit design reports and potentially become eligible for the fly-off. Teams will be notified no later than 17
+November if their proposal has been accepted.
+Proposals submitted by email will not be accepted.
+Proposals will be judged “as received”. No corrections/additions/changes will be allowed by the organizers so check your
+proposals carefully before submitting them.  Once a Proposal is submitted, no changes are allowed.
+Submission of Proposals is electronic only (no hard copy required). The details for the electronic format and submission
+are at the end of the proposal section in this rules document.
+2.3 Design Report Schedule and Submission Information
+Design Reports will be submitted using the online system at https://www.aiaa-awards.org/a
+The design report submission period OPENS 1 February 2026 at 8 AM (0800) US Eastern Time.  The design report must
+be RECEIVED by 20 February 2026 at 5 PM (1700) US Eastern Time.
+The reports will be scored as defined in the design report requirements section.  Reports submitted by email will not be
+accepted.
+[PAGE 9]
+2025-26 Design, Build, Fly Rules
+9 of 34
+Reports will be judged “as received”. No corrections/additions/changes will be allowed by the organizers so check your
+reports carefully before submitting them.  Once a Report is submitted, no changes are allowed.
+Submission of Reports is electronic only (no hard copy required). The details for the electronic format and submission,
+including a requirement for an additional, separate configuration drawing, are in the report section in this rules
+document.
+2.4 Contest Fly-off Site
+Host for the competition will be Textron Aviation. The fly-off is planned to be held at the Textron Aviation Employees’
+Flying Club in Wichita, KS.  A Contest Information sheet will be emailed to all qualified teams 2 - 3 weeks prior to the
+flyoff. The Contest Information sheet will contain details about the fly-off site, access, parking, schedule and any other
+information on events during the fly-off.  You can check on historical weather conditions at
+www.weatherunderground.com.
+Teams are advised to check with their airlines on what materials they will be allowed to bring both to and from the
+contest site. Hazmat items like paints, thinners and glues may need to be purchased locally and PROPERLY disposed of
+following the contest. **NOTE: It is the team’s responsibility to ensure that their airplane arrives at the fly-off location.
+Neither AIAA nor the corporate sponsors will assist in getting your airplane or materials to the fly-off location. Teams
+may hand carry their airplane, use a shipping company to have it delivered to their hotel, or use any other means of
+transportation that they feel is appropriate. But each team must coordinate all aspects of getting the airplane to the fly-
+off.
+2.5 Contest Fly-off Schedule
+The contest fly-off is scheduled for 16 - 19 April 2026 and is anticipated to run from 10 AM (1000) to 6 PM (1800) on
+Thursday, 7 AM (0700) to 6 PM (1800) on Friday, 7 AM (0700) to 6 PM (1800) on Saturday and 7 AM (0700) to 5 PM
+(1700) on Sunday (local time).  Awards will be presented at 5:30 PM (1730) on Sunday.  All teams should plan their travel
+so that they may stay for the awards presentations on Sunday.  A final contest schedule will be e-mailed to the teams
+prior to the contest date.
+Tech inspections will begin on Thursday afternoon and will continue as required on Friday, Saturday and Sunday.
+PLEASE NOTE:  All schedule deadlines are strictly enforced
+All deadlines are based on when an entry or submission is Received (Save and Finalize) by Contest officials via the online
+submission system.
+Late entries and proposals will NOT be accepted.
+Late report submissions will NOT be accepted.
+There is no allowance for computer, internet, or power outages by the submitter, or any other type of error beyond the
+control of the DBF Organizing Committee.
+Teams which do not submit the required electronic report and configuration drawing will NOT be allowed to participate
+in the fly-off.
+It is the team’s responsibility to assure that all deadlines are known, understood, and met.
+2.6 Fly-Off Registration Fee [NEW]
+New this year is a Fly-off Registration Fee.  Teams that are eligible to participate in the fly-off by submitting the required
+Design Report and Configuration Drawing will be required to pay a team fee prior to attending.  The fee will be used to
+align the DBF Fly-off with AIAA premier events and will help enhance the DBF experience.  The fee will be $550 per
+team.  More information will be available from AIAA Student Programs and on the DBF website.  For all questions and
+comments, please contact Student Programs at studentprogram@aiaa.org.
+[PAGE 10]
+2025-26 Design, Build, Fly Rules
+10 of 34
+3. Airplane and Mission Requirements
+Banner Towing Bush Plane
+The objective for this year is to design, build, and test a banner towing bush plane, conduct charter flights to pay for the
+airplane and start a banner towing business.
+3.1 Mission and Payload Requirements
+• Airplane maximum wingspan is 5 feet.
+• Rated Airplane Cost (RAC) is a function of wingspan per the equation below and will be measured and recorded
+in Tech Inspection.  Wingspan will be measured and rounded to the nearest 1 inch increment (< ½ inch round
+down, >/= ½ inch rounded up) and recorded in feet to two decimal places.  The minimum allowable RAC = 0.90
+(equivalent to a 3 foot wingspan).
+RAC = 0.05 * WS + 0.75
+• Payloads
+o Mission 1 – no payload
+o Mission 2 – passengers and/or cargo
+o Mission 3 – deployable banner
+• The airplane must have a single passenger compartment and at least one cargo compartment.  The airplane
+must be capable of carrying at least 3 passengers for each piece of cargo declared in Tech Inspection.
+• A second transmitter may be used for deployment and release of the banner but may only be operated by the
+Observer crew member.
+3.1.1 Passengers
+• The passengers are a standard 2.3 inch rubber duck as shown below.  The passengers will be provided at the
+contest for tech inspection and ground and flight missions.  These are commercially available worldwide.
+General physical dimensions are provided in the figure below but should not be considered fixed limits for all
+ducks.  Teams should anticipate small variations in the size of commercially procured rubber ducks and design
+accordingly.  If the contest-provided ducks do not fit when verified during Tech Inspection, teams must leave
+Tech Inspection, modify their passenger system and return to the queue.
+• The airplane must be capable of carrying a minimum of three passengers.
+• The passengers must be carried in a single passenger compartment on a single plane parallel to the horizontal
+plane while in flight.
+• The passenger compartment must be accessed by a door or hatch for loading and unloading of passengers.  The
+door may only allow access to the passenger compartment.  It may not provide access to the cargo bay(s) or
+other internal sections of the airplane.  There may be more than one door to access the passenger
+compartment.
+• Each door or hatch must remain rigidly attached to the airplane when opening and in the open configuration.  A
+string or lanyard is not an acceptable attachment method.  How the door opens (hinge, pivot, slide, etc) is up to
+each team to determine.
+• The passengers must board the airplane individually (no speed loaders) and be fully restrained in a vertical and
+upright orientation.  The restraint system must prevent movement of passengers during all phases of flight,
+including landing.  The restraint system may be removed for loading and unloading of passengers but must be in
+the airplane at the start of the ground mission or when entering the staging box.
+[PAGE 11]
+2025-26 Design, Build, Fly Rules
+11 of 34
+2.3 Inch Rubber Duck
+3.1.2 Cargo
+• Cargo will be a standard hockey puck as shown in the figure below.
+• The airplane must be capable of carrying a minimum of one piece of cargo.
+• The cargo must be carried in a separate cargo bay(s) that may be in front of, behind, or below the passengers.
+The airplane may have multiple cargo bays but each cargo bay must be separated from the passenger
+compartment and other cargo bays by a solid bulkhead or floor.  Small openings in the bulkheads or floor are
+allowed for the pass through of wiring or other airplane systems.
+• The cargo bay(s) must be accessed by a door or hatch for loading and unloading of cargo.  The door or hatch
+may only allow access to the cargo bay(s).  It may not provide access to the passenger bay(s) or other internal
+sections of the airplane.
+• The door or hatch must remain rigidly attached to the airplane when opening and in the open configuration.  A
+string or lanyard is not an acceptable attachment method.  How the door opens (hinge, pivot, slide, etc) is up to
+each team to determine.  Each cargo bay may have only one door or hatch for loading and unloading cargo.
+• The cargo must be restrained to prevent movement during all phases of flight, including landing.  The
+configuration of the cargo in the cargo bay(s) is up to each team to determine.  There are no restrictions on
+touching other cargo, other parts of the airplane, orientation, etc.  If a cargo holding fixture is implemented, it
+may be removed from the airplane for loading and unloading cargo, but must be inside the airplane at the start
+of the Ground Mission or when entering the staging box.
+Cargo (standard hockey puck)
+General Physical Characteristics
+Width (in) 2.0 - 2.3
+Length (in) 2.0 - 2.5
+Height (in) up to 2.5
+Weight (oz) 0.6 - 0.7
+Diameter
+3 in
+Thickness 1 in
+Weight 6 oz
+[PAGE 12]
+2025-26 Design, Build, Fly Rules
+12 of 34
+3.1.3 Deployable banner requirements:
+• The banner must have a minimum length of 10 inches and a maximum aspect ratio (length/height) of 5 (for the
+required minimum length of 10 inches, the required minimum height must be 2 inches and for longer banners,
+length </= 5 X height).
+• The banner must have the team’s university name or logo on both sides.
+• The banner must be compactly stowed externally to the airplane for take-off.  While stowed, the banner may
+not interfere with any flight or control functions.  Examples include:  a) may not inhibit movement or
+performance of any flight control surface; b) may not touch the ground during take-off, especially during
+rotation.
+• The components or mechanisms to stow, deploy, tow and release the banner may be either internal or external
+to the airplane or a combination of both.
+• The banner must be remotely deployed in flight.
+• The banner must remain in the vertical orientation during flight.
+• The banner must be remotely released from the airplane in flight.
+• The banner may not fray, rip, tear or otherwise sustain any wear or damage during the flight, including ground
+impact after release (does not apply to the tow line or any replaceable banner tow structure).
+o Damaged banners must be repaired and resubmitted to tech inspection prior to additional flights.
+• Each team may submit up to two banners at tech inspection.  All banners must be included in the original tech
+inspection.  Additional banners may not be added after tech inspection is complete.
+• Banner length will be recorded as part of tech inspection in inches and rounded down to the prior ¼ inch.
+Example:
+Measured Fraction Recorded Value
+3/16 .00
+3/8  .25
+11/16 .50
+31/32 .75
+[PAGE 13]
+2025-26 Design, Build, Fly Rules
+13 of 34
+3.2 Airplane Requirements
+3.2.1 General Requirements
+• The airplane may be of any configuration except rotary wing or lighter-than-air.
+• The airplane must be capable of performing all required missions.
+• During Tech Inspection, the airplane must pass the wing tip load test in the flight configuration with the
+maximum designed takeoff weight, to include the heaviest weight payload declared and heaviest battery pack(s)
+to be flown.
+• The loaded and empty CG locations must be marked on the exterior of the airplane.
+• The maximum load demonstrated will be recorded and may not be increased after completing Tech Inspection.
+• No structure nor components may be dropped from the airplane during flight unless required by a mission
+specific objective.
+• All structure, components, and payloads must be mechanically fastened and not rely on friction to be the
+primary retention method.
+• No form of externally assisted take-off is allowed.  All energy for take-off must come from the on-board
+propulsion battery pack(s).
+• Must be propeller driven and electric powered with an unmodified, over-the-counter model, brushed or
+brushless electric motor.
+• The airplane must be radio controlled with manual flight by the pilot.  No autopilots/flight controllers are
+allowed under any circumstances, even in manual mode.  No onboard GPS systems are allowed.  Flight
+stabilization subsystems and rate gyros are allowed.
+• The radio-control Transmitter/Receiver must be a commercially available controller with fail-safe capability and
+operating on a legal US frequency (72MHz, 900MHz, 2.4GHz).
+• Telemetry data transmitted via the receiver to the pilot’s RC controller are allowed.  Telemetry systems using
+stand-alone transmitters and receivers or ground stations are not allowed.  On-board data recording systems
+without the ability to transmit or receive radio frequency signals are allowed.
+• Cameras on or in the airplane are not allowed during the competition under any circumstances.
+• The airplane may use multiple motors and/or propellers.
+• Propellors may be driven with direct connection to the motor or with gear or belt reduction.
+• Commercial ducted fan units are allowed.
+• For safety, each airplane will use a commercially produced propeller/blades.  The propeller may have folding
+blades.  The propeller blades may be modified to reduce the propeller diameter by clipping the tips. Paint may
+be applied to the blades to balance the propeller.  The propeller mounting bore hole may be modified using a
+commercially procured propeller shaft reaming tool only.  No other modifications to the propeller are allowed.
+• The propeller (diameter/pitch) may be changed for each flight attempt.
+• This is an Academy of Model Aeronautics (AMA) sanctioned event.  The following compliance requirements will
+be strictly enforced:
+o The airplane TOGW (take-off gross weight with payload) must be less than 55-lb.
+o The exact airplane being presented at Tech Inspection must have been flown prior to the contest date.
+Proof of flight must be presented upon entering Tech Inspection.
+Note: Proof of flight is a video showing controlled straight and level flight and will be presented to the inspector when
+called to Tech Inspection.
+[PAGE 14]
+2025-26 Design, Build, Fly Rules
+14 of 34
+• The airplane must remain substantially the same as documented in the report (for example you may not change
+a flying wing design to a conventional tail design). You may make small modifications to the design to improve
+flight performance after the report submission (one example would be changing a control surface size).  The
+configuration drawing supplied in PDF form as described below in the Design Report section will be used to
+verify the airplane configuration during Tech Inspection.
+Note: There is no requirement for the configuration of the airplane presented in the Proposal to be the same as
+presented in the Design Report.
+• The airplane must have an externally accessible SWITCH to turn on the radio control system. It may not be
+internal or under a panel or hatch.  An arming plug is NOT considered an acceptable switch.  The radio control
+system switch must be separate from the propulsion system fuse & arming system.
+• All components must be adequately secured to the vehicle and all permanent fasteners shall be tight with a
+secondary retention method such as safety wire, thread locker (Loctite™), or nuts/screws with a mechanical
+interference fit (Nylocks™). Clevises on flight controls and landing gear must have an appropriate mechanical
+locking device to prevent them from disengaging in flight.
+• All control horns must be adequately and properly secured to the control surfaces.  Commercially available
+control horns MUST be installed per manufacturer’s instructions. NOTE: Control horns may not be adhered to
+film surfaces as sole attachment method.
+• All control surfaces, wing-surfaces, and fuselage components supporting aerodynamic surfaces must have
+adequate stiffness to resist flutter & aero-elastic effects.
+• All motors and propellers must be secured to airplane with sufficient strength and integrity to withstand all
+expected flight loads, including but not limited to thrust, torque, flight maneuvers, and landing loads.
+• All electrical connections shall be fully insulated with no visible wires or exposed surfaces which may conduct
+electricity.
+3.2.2 Arming and Safety
+• The airplane must have a mechanical motor arming fuse for each propulsion system separate from the onboard
+radio receiver (Rx) switch.
+• The arming fuse MUST be a "blade" style fuse.
+100 Amp Blade Style Fuse
+[PAGE 15]
+2025-26 Design, Build, Fly Rules
+15 of 34
+• No part of the arming fuse may be closer than 6 inches from the plane of any propeller as shown below.  Note
+that the propeller plane extends beyond the physical dimensions of the airplane.
+• The arming fuse must be located so it is accessible by a crew member standing ahead of the propeller(s) for
+pusher airplanes and standing behind the propeller(s) for tractor airplanes (i.e. the crew member must not reach
+across the propeller plane to access the fuse). The airplane Rx should always be powered on and the throttle
+verified to be "closed" before installing the arming fuse.
+• The arming fuse MUST be mounted on the outside of the airplane (it may not be behind an access panel or door)
+and MUST act as the system "safing" device.
+Note: The airplane must be “safed” (arming fuse removed) any time the airplane is being manually moved, or
+while loading/unloading payloads during the mission. The arming fuse must be removed anytime the airplane is
+in the hanger area.
+• The arming fuse MUST be mounted on the top or upper surface of the airplane such that is easily accessible.
+Any location that is deemed unsafe by the Tech Inspector must be corrected in order to pass Tech Inspection.
+• The arming fuse shall be integrated into the electrical circuit on the positive (+ Red) wire between the battery
+and the electronic speed controller (ESC).
+• The current rating for any arming fuse shall not exceed 100 Amps (see arming fuse limits for propulsion batteries
+with maximum discharge limits less than 100 amps).
+3.2.3 Batteries & Power
+• All battery packs must be un-altered and commercially procured as Commercial-Off-The-Shelf (COTS) battery
+packs.  Custom battery packs will not be allowed.
+• The Original Manufacturer's Label must be clearly visible on ALL battery packs.
+o The Original Label MUST clearly state the Battery Chemistry, Battery Capacity (mAh), Voltage (V), and C-
+Rating or maximum current rating.
+• A separate battery is required for the Rx/Servo battery on the airplane.  There is no restriction on the Rx/Servo
+and Transmitter battery type regardless of the propulsion battery type.
+• If the ESC has a Battery Eliminator Circuit (BEC), it must be disabled.
+• All battery connections must be "fully insulated" style connectors.
+• Manufacturer installed intra-pack charging connectors are allowed.
+• All batteries must be stored and charged in a commercially available, unaltered and manufacturer labeled
+battery charging sack or manufacturer labeled charging box – the only time they may be out of the sack is for
+tech inspection or while in the airplane.
+[PAGE 16]
+2025-26 Design, Build, Fly Rules
+16 of 34
+3.2.3.1 Propulsion Systems
+• There may be a maximum of one battery pack connected to a propulsion system.  A propulsion system consists
+of one battery, one externally accessible arming fuse, one or more electronic speed controllers (ESC), and one or
+more motors (see figure below).
+• If more than one propulsion system is implemented, the following rules apply:
+○ All propulsion battery packs must be identical (same manufacturer, part number, size, voltage, power,
+rating, etc).
+○ Each battery pack must be independently connected to its own propulsion system.  Batteries may not be
+connected in series or parallel.
+○ If a battery pack has more than one output connector, the output must be combined in wiring prior to
+the arming fuse.  A battery pack with more than one output connector may not be wired to more than
+one propulsion system.
+○ Each battery/propulsion system is required to have its own Arming Fuse.
+3.2.3.2 Propulsion Batteries
+• All propulsion batteries used in the competition must be approved in tech inspection and will be indicated with
+an approved contest decal.
+• Propulsion batteries may be NiCAD, NiMH or lithium based chemistries.
+• Total Propulsion Energy stored on airplane (sum of all propulsion batteries) shall not exceed 100 Watt-hours.
+• Individual battery packs may not exceed the FAA limits for hand carry on commercial air flights of 100 Watt-
+hours (rated capacity x rated voltage) per battery pack and as further defined in:
+https://www.tsa.gov/travel/security-screening/whatcanibring/items/lithium-batteries-more-100-watt-hours
+• The maximum current rating for the arming fuse is the maximum continuous discharge current rating of the
+battery pack (battery capacity X C-rating or maximum labeled discharge current) up to 100 amps.
+NOTE:  It is the responsibility of each team to ensure compliance with all laws and regulations for shipping or hand-
+carrying batteries.
+[PAGE 17]
+2025-26 Design, Build, Fly Rules
+17 of 34
+3.3 Mission Operations
+3.3.1 Flight Course
+The nominal flight course is shown below.  The orientation (direction) of the flight course will be adjusted based on the
+prevailing winds as determined by the Flight Line Judge.  The flight course will be positioned to maintain the greatest
+possible safety to personnel and facilities.
+Flight Course
+3.3.2 Staging
+• When called to the flight line, teams will first enter the staging area.  Teams will be assigned a staging box to
+prepare for the flight attempt.
+• The airplane will be brought to the staging area with the propulsion battery pack(s), payloads and arming
+fuse/plug removed from the airplane.
+o The airplane must be in the desired configuration to start the assembly.  Once a team enters staging
+area, no adjustments are allowed to the airplane configuration such as opening hatches or any other
+work necessary for the installation of batteries and payloads.
+o For Mission 2, teams will declare the number of passenger and/or cargo to carry.  These will be
+provided prior to starting the assembly.  All components and subsystems for loading and restraining
+the passengers and cargo that are part of the airplane flight configuration must be inside the
+airplane.
+o For Mission 3, the banner deployment, towing and release mechanism may be installed.  The banner
+must be separated from the mechanism.
+• Teams must bring all tools, assembly aids, consumable materials (tape, rubber bands, etc) with them to the
+staging area.  If you forget something you must leave the staging box and forfeit the flight attempt.
+• Only the mission support crew may go to and enter the staging box.  The mission support crew may include
+a pilot, an observer and a ground crew member.  The observer and ground crew member must be students.
+• The ground crew member is the only person who may touch the airplane while inside the staging box while
+preparing the airplane for flight.  One exception is to check balance using the wing tips with the aid of the
+observer or pilot.  Additional exceptions for the safety of the airplane and personnel due to weather
+conditions may be allowed at the discretion of the Staging Judge.
+[PAGE 18]
+2025-26 Design, Build, Fly Rules
+18 of 34
+• Prior to starting assembly of the airplane, the propulsion battery pack(s) will be inspected to verify it has
+been approved in Tech Inspection.  For Mission 3, the banner length will be measured and recorded.
+• There will be a 5-minute time limit in the staging box once time has been started as declared by the Staging
+Judge.  Any and all work required to install the propulsion battery pack(s) and payloads, check flight controls
+and prepare for the airplane for flight must be completed within the 5-minute time limit.
+• Prior to starting the 5-minute assembly time, teams may place the airplane, payloads, batteries, tools and
+materials in any configuration desired within the staging box.  Staging boxes will be adequately sized to
+accommodate this.
+o Absolutely no work is allowed until the 5-minute time has started.  This will be strictly enforced.
+Teams beginning work on the airplane prior to the Staging Judge starting the time will be given a
+single warning.  Any further violations may result in a forfeit of the flight attempt at the discretion
+of the Staging Judge.
+• All assembly work on the airplane in the staging box must be done with the airplane on its landing gear in
+the upright configuration.  The airplane may not be picked up, rotated or put in any position other than
+upright and on its landing gear during assembly, payload installation or flight controls checks.
+• There is no work allowed on the airplane after the 5-minute assembly and checkout time.  The airplane must
+be ready to fly prior to being called to the flight line, less the installation of the arming fuse.  If the assembly
+is not completed or the airplane is not ready to fly, the team forfeits the flight attempt and must return to
+the flight queue.  No work is allowed on the airplane after the leaving the staging box in route to the flight
+line other than installation of the arming fuse and controls and propulsion checks prior to take-off.
+Staging Area Entrance Criteria
+The airplane is in the configuration desired to start staging box assembly
+Payload mount and restraint systems are inside the airplane
+Propulsion batteries are NOT installed and in an approved charging sack
+Mission 3:  Banner, deployment, towing and release device (unless pre-installed)
+Arming Fuse
+All tools, consumable materials, assembly aids, etc
+3.3.3 Flight Missions
+• The Flight Missions must be flown in order.
+• A new mission may not be flown until the team has obtained a successful score for the preceding mission.
+• After successfully completing all three flight missions, teams will be allowed one additional attempt for both
+Mission 2 and Mission 3 to improve their score.
+• The airplane must be flown in the same configuration for all three missions unless specifically cited herein.
+• The airplane will use ground rolling takeoff and landing.  There is no limit on take-off distance this year.
+• The upwind turn will be made after passing the upwind marker. The downwind turn will be made after passing
+the downwind marker. Upwind and downwind markers will be 500 ft from the starting line. The airplane must
+be "straight and level" when passing the turn marker before initiating a turn.
+[PAGE 19]
+2025-26 Design, Build, Fly Rules
+19 of 34
+• The airplane must complete a successful landing at the end of each mission for the mission to receive a score.  A
+successful landing is defined as landing on the paved portion of the runway. The airplane may "run-off" the
+runway during roll-out.  The airplane may not “bounce” off the runway.
+• Airplanes obtaining “significant” damage during landing will not receive a score for that flight.  Determination of
+“significant” is solely at the discretion of the Flight Line Judge.
+• Flight altitude must be sufficient for safe terrain clearance and low enough to maintain good visual contact with
+the airplane. Decisions on safe flight altitude will be at the discretion of the Flight Line Judge and all rulings will
+be final.
+o All instructions from the Flight Line Judge must be followed IMMEDIATELY.  Failure to do so may result in
+a loss of mission attempt or in the case of multiple or serious infractions, loss of future flight attempts.
+3.3.3.1 Mission 1 – Test Flight
+• There is no payload for Mission 1.
+• Teams must complete 3 laps within the flight window.
+• There will be a 5-minute flight window for this mission.
+• Time starts when the airplane throttle is advanced for (the first) take-off (or attempt).
+• A lap is complete when the airplane passes over the start/finish line in the air (the landing is not part of the 5
+minute time window).
+• Must complete a successful landing to get a score.
+Scoring:
+M1 = 1.0 for successful mission
+3.3.3.2 Mission 2 – Charter Flight
+• The payload for Mission 2 is passengers and/or cargo.
+• Teams may select the number of passengers and/or cargo flown but it may not exceed the maximum number of
+passengers or cargo declared at Tech Inspection.
+• There will be a 5-minute window for this mission.
+• The score will be net income based on number of passengers and/or cargo, number of laps flown and propulsion
+battery capacity using the following equations and parameters:
+Net Income = Income – Cost
+Income = (#passengers * (Ip1 + (Ip2 * #laps))) + ( #cargo * (Ic1 + (Ic2 * #laps)))
+Fixed income per passenger Ip1 6
+Income per passenger per lap Ip2 2
+Fixed income per cargo Ic1 10
+Income per cargo per lap Ic2 8
+[PAGE 20]
+2025-26 Design, Build, Fly Rules
+20 of 34
+Cost = #laps * (Ce + (#passengers * Cp) + (#cargo * Cc)) * EF
+EF = Efficiency Factor = Total Propulsion Battery Capacity (W-hrs) / 100
+Base operating cost per lap Ce 10
+Passenger operating cost per lap Cp 0.5
+Cargo operating cost per lap Cc 2
+• Time starts when the airplane throttle is advanced for (the first) take-off (or attempt).
+• A lap is complete when the airplane passes over the start/finish line in the air (the landing is not part of the 5
+minute time window).
+• Must complete a successful landing to get a score.
+Scoring:
+M2 = 1 + [N_Net_Income / Max_Net_Income] , where Max_Net_Income is the highest Net_Income score of all teams
+3.3.3.3 Mission 3 – Banner Flight
+• The payload for Mission 3 is the banner.
+• After the first upwind turn, the banner will be deployed by remote command on the down wind leg of the
+pattern.
+• After the airplane crosses the finish line on the last lap, the banner will be released by remote command (teams
+should plan to release the banner as soon as possible after crossing the finish line in order to minimize retrieval
+time).
+• There will be a 5-minute window for this mission.
+• The score is based on the number of laps completed, banner length and RAC.
+• Time starts when the airplane throttle is advanced for (the first) take-off (or attempt).
+• A lap is complete when the airplane passes over the start/finish line in the air (the landing is not part of the 5
+minute time window).
+• Must complete a successful landing to get a score.
+Scoring:
+M3 = 2 + [N_(#laps X banner length / RAC) / Max_(#laps X banner length / RAC)], where Max_(#laps X banner length /
+RAC) is the highest (#laps X banner length / RAC) score of all teams
+[PAGE 21]
+2025-26 Design, Build, Fly Rules
+21 of 34
+3.3.4 Ground Mission
+• The ground mission may be attempted at any time.
+• After successfully completing the ground mission, teams will be allowed one additional attempt to improve their
+score.
+• The Ground Mission is a timed mission for a ground demonstration of Missions 2 and 3.
+• The propulsion battery is not part of this mission and should not be installed or brought to the mission box.
+• The mission will begin with the airplane in the flight configuration inside the “mission box” along with the
+uninstalled maximum number of passengers and cargo declared in Tech Inspection and the uninstalled banner.
+The mission box is approximately a 10 foot by 10 foot box.
+• All assembly work on the airplane in the mission box must be done with the airplane on its landing gear in the
+upright configuration.  The airplane may not be picked up, rotated or put in any position other than upright and
+on its landing gear during assembly, payload installation/removal or flight controls checks.
+• The assembly crew member and a pilot may participate in the Ground Mission, only the assembly crew team
+member may touch the airplane.
+•  Prior to starting the mission, the pilot will then demonstrate the flight controls are active.
+• The assembly crew member and pilot will start behind the start/finish line.
+• Time will start when the ground mission official says “GO”.
+• The assembly crew member will load the passengers and cargo, including required restraints for flight, then run
+back to the start/finish line; time will stop when he/she crosses the line.
+• The pilot will then demonstrate the flight controls are active.
+• The assembly crew member will again start behind the start/finish line and time will restart when the ground
+mission official says “GO”.
+• The assembly crew member will return to the mission box, remove the passengers and cargo.
+• The assembly crew member will then install the banner in the stowed configuration onto the airplane then run
+back to the start/finish line; time will stop when he/she crosses the line.
+• The pilot will then demonstrate the flight controls are active.
+• The assembly crew member will then hold the airplane in the vertical position with the tail down.
+• The pilot will then demonstrate deployment of the banner followed by release of the banner to complete the
+mission.
+Scoring:
+GM = [Min_(mission time) / N_(mission time] , where Min_(mission time) is the lowest mission time for all teams.
+[PAGE 22]
+2025-26 Design, Build, Fly Rules
+22 of 34
+4. Fly-off Technical Inspection
+Each team may only submit one airplane (airframe) to technical inspection for the fly-off.  All airplanes, along with
+batteries, payloads and required hardware, will undergo a technical inspection by a designated contest Tech Inspector.
+The Tech Inspection will verify that all safety, design and mission requirements are satisfied prior to attempting any
+competition flights or ground mission. All decisions of the Tech inspector are final.
+To speed up the tech inspection process, each team MUST present a paper copy of a signed Pre-Tech and First-Flight
+Certification when called to begin their on-site tech inspection.  Teams may not begin the on-site tech inspection
+without a completed and signed certification.  The Pre-Tech and First-Flight Certification sheet will be provided to each
+team prior to the fly-off and made available on the contest website.
+The Pre-Tech must be conducted by, and signed off by, a non-team member RC pilot or the team faculty advisor.  The
+Pre-Tech will cover the same safety of flight requirements and mission compliance as the on-site tech inspection and will
+assist teams in making sure they are ready and able to pass the on-site tech inspection the first time.  An expanded First-
+Flight requirement, which also must be signed off by a non-team member RC pilot or the team faculty advisor, requires
+demonstration of a complete flight including take-off, flying a minimum flight pattern, and landing in a pre-designated
+location without damage to the airplane.  The non-team member RC pilot who signs the inspection and flight
+certifications may be the same as a team's non-student contest pilot. This certification is independent of the AMA
+compliance video demonstrating controlled straight and level flight.
+Each team will also present their proof of flight video showing controlled straight and level flight to the Tech Inspector
+when called to Tech Inspection.
+The Tech Inspector will verify the airplane presented for Tech Inspection matches the configuration documented in the
+configuration drawing submitted with the Design Report.
+Only two student team members are allowed in Tech Inspection.  Additional team members may help carry airplanes and
+hardware to and from the Tech Inspection area but must exit before starting.
+In order to speed up Tech Inspection, teams must be able to install payloads and make configuration changes in a
+timely manner.  At the sole discretion of the Tech Inspector, teams may be required to return to the Tech Inspection
+queue if the time it takes to make these changes is excessive.
+Teams may be allowed, at the sole discretion of the Tech Inspector, to correct minor non-conformances in Tech
+Inspection.  The primary criteria will be how long it is estimated by the Tech Inspector to complete the modifications.
+4.1 Airplane Staging
+• The Airplane will enter Tech Inspection without any payload items or propulsion batteries installed.  If the
+banner deployment, towing and release mechanism is intended to be installed on the airplane for all missions, it
+may be attached to the airplane.
+• Team members will declare the maximum number of Mission 2 Passengers and Cargo.
+• All Mission 3 banners (if more than one with potential to fly) must be brought to Tech Inspection.  After passing
+Tech Inspection, no additional banners will be approved.
+• All batteries and battery packs teams intend to use over the full duration of the competition, including back-up
+batteries, must be brought to Tech Inspection.
+[PAGE 23]
+2025-26 Design, Build, Fly Rules
+23 of 34
+Tech Inspection Entrance Criteria
+Signed Pre-Tech and First-Flight Certification form – all signatures required
+Video showing straight and level flight of the airplane being brought to Tech Inspection
+The airplane to be inspected
+All propulsion batteries in an approved charging sack
+All payload components and mounting and restraint systems
+Arming Fuse(s)
+Note:  Teams failing to bring the required documents, video and hardware noted above when entering Tech Inspection
+will be denied entrance and must return to the Tech Inspection queue.
+4.2 Minimum Safety Inspections
+The following minimum safety inspections will be performed.  Additional inspections may be conducted at the discretion
+of the Tech Inspector.
+In order to speed up tech inspection, it is the sole responsibility of the teams to ensure all inspections may be easily
+completed by the Tech Inspector.  The required inspections below must be easily accessible and visible for the
+inspector.  If required inspection items are hidden behind permanent panels/bulkheads, buried under wiring or other
+airplane components or not easy to find and identify, teams may be required to leave Tech Inspection, correct the
+problems identified and return to the Tech Inspection queue at the sole discretion of the Tech Inspector.
+4.2.1 Physical Inspection
+• Verify all components are adequately secured to the vehicle. Verify all permanent fasteners are tight and have
+either safety wire, thread locker (LoctiteTM), or nuts/screws with a mechanical interference fit such as nylon
+inserts or patches or self-locking threads. Clevises on flight controls must have an appropriate mechanical
+locking device to prevent their disengaging in flight.
+• Verify each hatch or access panel has a positive, mechanical latching method to assure it does not come loose in
+flight.  Spring latches, fasteners, cotter pins, tape, etc are examples of acceptable methods.  Magnets are not an
+acceptable latching method.  Velcro may be an acceptable method depending on the implementation, but a
+secondary method may be required at the discretion of the Tech Inspector.
+• Verify propeller structural and attachment integrity.
+• Verify propulsion is provided by a commercially available electric motor.
+• Visual inspection of all electronic wiring to assure adequate wire gauges and connectors are used and all wires
+are fully insulated (no bare conductors).
+• Verify there are no illegal components or subsystems (autopilots/flight controllers, GPS, cameras).
+• Verify all control rods are of the proper gauge/strength, and are securely attached to control horns.
+• Verify all control horns are properly secured to the control surfaces.  Commercially available control horns MUST
+be installed per manufacturer’s instructions. NOTE: Control horns may not be adhered to film surfaces.
+• Verify all control surfaces and connections and wings/stabilizer are of adequate stiffness to resist flutter and
+aero-elastic effects.
+[PAGE 24]
+2025-26 Design, Build, Fly Rules
+24 of 34
+4.2.2 Arming and Safety
+• Verify the arming fuse is a blade-style commercial fuse and does not exceed 100 amps or the  battery discharge
+limit, whichever is smaller.
+• Verify a blade-style fuse holder is connected inline between the propulsion battery(ies) positive lead wire and
+the electronic speed controller.
+• Verify the fuse holder location on the airplane meets ALL safety requirements
+o At least 6 inches from any propellor plane that extends beyond the physical dimensions of the airplane
+o That it can be accessed easily from behind the propellor ,not from the side of the airplane, of tractor
+airplanes and from in front of the propellor on pusher airplanes without having to reach around or avoid
+other components during insertion and extraction
+o That it is on the top surface of the airplane and there are no blind or hard to reach locations
+4.2.3 Batteries and Propulsion Systems
+• Verify all batteries are an approved chemistry.
+• Verify there is a separate receiver battery and the BEC, if equipped, has been disabled.
+• Verify all propulsion batteries are the same chemistry with manufacturer’s label and in original packaging.
+• Verify each propulsion battery does not exceed 100 W-hrs in capacity.
+• Verify there is only one battery per propulsion system.
+• Verify the battery original wire leads are intact and connectors are of proper size and insulated.
+• Verify all batteries are adequately secured in the airplane for all phases of flight.
+• Verify the team has a compliant battery charging sack and it is properly used.
+NOTE:  Teams will be allowed to have additional batteries or battery packs inspected after passing Tech Inspection due
+to damage, real time power change requirements, etc.  However, teams must follow the Tech Inspection queue or wait
+until Tech Inspection is open for all for additional battery inspections.  Any team that uses batteries that have not passed
+a Tech Inspection will lose that flight attempt and may not attempt any further flights until the batteries have passed
+inspection.
+4.2.4 Structural Verification
+The airplane will be lifted with one lift point at each wing tip with the airplane configured with the maximum weight of
+payloads and batteries (MGTOW) to verify adequate wing strength (this is "roughly" equivalent to a 2.5g load case) and
+to verify the required vehicle cg location markings.  Verify the MGTOW does not exceed 55 lbs.  Special provisions will be
+made at the time of the contest for airplanes whose cg does not fall within the wing tip chord.
+4.2.5 Radio Range Check and Fail-Safe Validation
+Note:  Teams must put the RC controller in the Range Check (low power) mode while conducting this test.  It is the
+team member’s or pilot's responsibility to know how to put the RC controller in this mode prior to entering Tech
+Inspection.
+• Verify the Radio-Controlled Transmitter/Receiver is a commercially available controller with fail-safe capability
+and operating on a legal US frequency (72MHz, 900MHz, 2.4GHz).
+• Verify the propulsion system(s) does not operate with fuse removed.
+• Verify the airplane does not respond to commands with receiver switch OFF and fuse installed.
+• Verify airplane controls respond to commands with ¼ propulsion power and in the proper direction.
+[PAGE 25]
+2025-26 Design, Build, Fly Rules
+25 of 34
+• Verify fail-safe mode by turning the airplane receiver on and then turning the RC controller off and confirm the
+airplane controls respond as follows:
+o Throttle closed
+o Full up elevator
+o Full right rudder
+o Full right aileron
+o Full Flaps down
+For airplanes not equipped with a particular control, then the tech inspector must be satisfied that the intended function
+of the fail-safe system will be carried out.
+The radio Fail Safe provisions will be strictly enforced.
+4.3 Mission Compliance
+• Verify the airplane, payloads and any mission specific components or systems are compliant to the current
+mission requirements.  This includes but is not limited to the airplane configuration and size, fit of contest
+supplied payloads, compliance of any team-supplied payloads, proper restraints of all payloads and any other
+items related to specific design or performance requirements for the contest mission.
+• Verify and document maximum mission payloads (quantity, size, weight, etc).
+[PAGE 26]
+2025-26 Design, Build, Fly Rules
+26 of 34
+5. Reports
+All material contained within all proposals and design reports must be original work of the teams or appropriately cited
+in the bibliography section of the report or in the footnotes of the proposal.  All proposals and reports will be reviewed
+using standard AIAA tools.  Any material that is found to be uncited and non-original work will be subject to a penalty as
+determined by the DBF Organizing Committee.  Based on the severity, penalties can include points deducted from the
+proposal or report score up to a 100% reduction or full disqualification for the competition year.
+5.1 Proposal
+Note:  The proposal score will be incorporated into the final team score as a percentage of the Total Report Score.
+Details can be found in the Scoring section of the Rules.
+Each team will submit a proposal as outlined below that will be judged.
+Examples of top scoring proposals from prior contest years are posted on the contest website.  Note that the formatting
+and content may have changed from one year to the next.  Prior year proposals may not reflect or meet the rules listed
+for the current year.
+Note:  Proposals must strictly adhere to the following requirements.  Failure to meet requirements will result in
+penalties that range from score reduction to elimination from the contest.
+5.1.1 Proposal Formatting Requirements
+• Proposals must be in PDF format.  Proposals that are not in PDF format will not be accepted.
+• Proposals must be one and one-half line spacing with a 10-pt Arial font recommended. Text, tables, and figures
+should be clear and readable for the judges.  The proposals will be assessed for format and readability at the
+judges’ discretion.
+• Proposals must have the University name on the first page.
+• Absolute maximum page count for the proposal is 6 pages, the PDF reader "pages" value will be used as the
+official page count.
+• Proposals exceeding the maximum page count will not be accepted.
+• Proposal PDF must be formatted as 8.5” x 11" pages.
+5.1.2 Proposal Submission Requirements
+Each team must provide an electronic copy of their proposal as outlined below to the online Submission site.
+• The proposal must be named: “2026DBF_[university name]_PROPOSAL.pdf" .
+o University name should not be an acronym.
+o Universities with multiple campuses should specify which campus in the university name.
+• The proposal must be a single file with all figures/drawings included in the proper sequence in PDF format.
+• Note: The proposal should have all figures compressed to print resolution to reduce file size to a recommended
+20 MB maximum.
+5.1.3 Proposal Scoring
+Proposals will be scored on a 100-point basis following the guidelines outlined below.
+All information used for scoring must be in the outlined sections. Content that is out of sequence will be treated as
+missing and scored accordingly.
+ALL items requested below should be present, easy to locate and identify, well documented and in the correct section
+for full scoring. Note that all proposals are assessed relative to each other so that simply addressing each of the sections
+[PAGE 27]
+2025-26 Design, Build, Fly Rules
+27 of 34
+below may not be sufficient for full credit.  Proposals will be assessed on how well they communicate the required
+information given the size and length constraints.
+Summary of Proposal Non-compliance Penalties
+Requirement Penalty
+Must be in PDF format Rejection (Not Accepted)
+Maximum page count of 6 pages Rejection (Not Accepted)
+5.1.4 Proposal Scoring Rubric
+All section scores include format, completeness and readability.
+Executive Summary (5 points):
+• Objective Statement.
+• Planned approach to achieve all objectives.
+• Includes main points from subsequent sections.
+Management Summary (20 points):
+• Describe the organization, the roles of each team and individual skill sets required.
+• Organization chart (by team/function, individual names are not required for the proposal).
+• Schedule / Major Milestone chart.
+• Budget (not only for expected materials and manufacturing of the airplane, but for travel to the competition site
+and any other expenses associated with the competition).
+Conceptual Design Approach (55 points):
+• Decomposition of mission requirements into sub-system requirements.
+• Trade Studies conducted with results.
+• Preliminary design / sizing results; concept sketch, if available (does not have to be representative of the final
+design).
+• Sensitivity Study of Design Parameters.
+• Description of design approach for each mission including initial targets for contest specific scoring parameters
+such as payloads, weights, and/or lap times.
+Manufacturing Plan (10 points):
+• Preliminary manufacturing flow.
+• Describe critical processes or technologies required.
+Test Planning (10 points):
+• Component and ground test plan.
+• Flight test plan.
+[PAGE 28]
+2025-26 Design, Build, Fly Rules
+28 of 34
+5.2 Design Report
+Each team will submit a design report as outlined below that will be judged.
+Examples of winning team design reports from prior contest years are posted on the contest website.  Note that the
+formatting and content has changed from one year to the next.  Prior year reports may not reflect or meet the rules
+listed for the current year.
+Note:  Reports must strictly adhere to the following requirements.  Failure to meet requirements will result in
+penalties that range from score reduction to elimination from the contest.
+5.2.1 Design Report Formatting Requirements
+• Reports must be in PDF format.
+Reports that are not in PDF format will not be accepted.
+• Reports must be one and one-half line spacing with a 10-pt Arial font recommended. Text, tables and figures
+should be clear and readable for the judges.  The reports will be assessed for format and readability at the
+judges’ discretion.
+• Reports must have the University name on the cover page.
+• Absolute maximum page count for the report is 60 pages, the PDF reader "pages" value will be used as the
+official page count.
+Reports exceeding the maximum page count will incur a 10-point penalty for each additional page.
+• Report PDF must be formatted as 8.5” x 11" pages.
+• May use 11” x 17" pages for the drawing package.
+• An additional stand-alone configuration drawing must be submitted along with the report file.  See description
+below in the requirements section.
+5.2.2 Design Report Submission Requirements
+Each team must provide an electronic copy of their design report as outlined below to the online Submission site.
+• The report files must be named: “2026DBF_[university name]_DESIGN_REPORT.pdf”.
+• The report must be a single file with all figures/drawings included in the proper report sequence in PDF format.
+Note: The proposal should have all figures compressed to print resolution to reduce file size to a recommended 20
+MB maximum.
+5.2.3 Stand Alone Configuration Drawing Requirements
+• In addition to the drawings included within the design report, an additional, separate file with a one page
+configuration drawing formatted to fit 8.5" x 11" paper must be submitted with the report for confirmation of
+the basic configuration.  Note that this page DOES NOT count toward the report total page count)
+• The configuration drawing shall include the following configuration items as a minimum:
+o Wing configuration
+o Propulsion/propellor location(s)
+o Tail configuration
+o Landing gear configuration (tricycle vs tail-dragger for example)
+• The configuration drawing must be in the format shown in the figure below and must include a top, side, front
+and isometric view.
+• The configuration drawing file must be named:  “2026DBF_[university name]_CONFIG.pdf”.
+[PAGE 29]
+2025-26 Design, Build, Fly Rules
+29 of 34
+o University name should not be an acronym.
+o Universities with multiple campuses should specify the campus in the university name.
+• The university name shall be clearly shown on the drawing.
+• The configuration drawing file is limited to 5 MB in size.
+Configuration drawings that do not contain the configuration items above or are not in the format shown in the
+figure blow will incur a 10 point penalty against the design report score.
+Configuration Drawing Format and Content
+5.2.4 Design Report Scoring
+Reports will be scored on a 100 point basis following the guidelines outlined below.
+All information used for scoring must be in the outlined sections. Content that is out of sequence, including the drawing
+package, will be treated as missing and scored accordingly.
+ALL items requested below should be present, easy to locate and identify, well documented and in the correct section
+for full scoring.  Note that all reports are assessed relative to each other so that simply addressing each of the sections
+below may not be sufficient for full credit.  Reports will be assessed on how well they communicate the required
+information given the size and length constraints.
+Summary of Report Non-Compliance Penalties
+Requirement Penalty
+Must be in PDF format Rejection (Not Accepted)
+Maximum page count of 60 pages 10 points per additional page
+Configuration drawing content and format 10 points
+[PAGE 30]
+2025-26 Design, Build, Fly Rules
+30 of 34
+5.2.5 Design Report Scoring Rubric
+All section scores include format, completeness and readability.
+Executive Summary (5 Points):
+• Maximum of 1 page.  If exceeded, score as 0 points.
+• Summary description of selected design and why it best meets the mission requirements.
+• Main points from subsequent sections.
+• Document the performance/capabilities of your system solution.
+Management Summary (5 Points):
+• Describe the organization of the design team.
+• Chart of design personnel and assignments areas.
+• Milestone chart showing planned and actual timing of major elements.
+Conceptual Design (15 Points):
+• Describes mission requirements (problem statement).
+• Translate mission requirements into sub system design requirements.
+• Present a scoring sensitivity analysis.
+• Review solution concepts/configurations considered.
+• Describe concept weighting and selection process and results.
+Preliminary Design (20 Points):
+• Describe design/analysis methodology.
+• Document design/sizing trades.
+• Describe/document methodology for prediction of airplane performance
+(include capabilities and uncertainties).
+• Provide estimates of the airplane lift, drag and stability characteristics and method of prediction.
+• Provide estimates of the airplane mission performance.
+Detail Design (15 Points + 15 Points for Drawing Package):
+• Document dimensional parameters of final design.
+• Document structural characteristics/capabilities of final design.
+• Document systems and sub-systems selection/integration/architecture.
+• Document Weight and Balance for final design.
+• Must include Weight & Balance table empty and with each possible payload/configuration.
+• Document flight performance parameters for final design.
+• Document mission performance for final design.
+• Drawing package:
+o Configuration drawing with dimensions of all configurations.
+o Structural arrangement drawing.
+o Systems layout/location drawing.
+o Payload(s) accommodation drawing(s).
+[PAGE 31]
+2025-26 Design, Build, Fly Rules
+31 of 34
+Manufacturing Plan (5 Points):
+• Document the process selected for major component manufacture.
+• Manufacturing processes investigated and selection process and results.
+• Manufacturing milestones chart: plan and actual.
+Testing Plan (5 points):
+• Describe all major ground and flight tests performed.
+• Objectives and schedule for each.
+• Data to be collected and how applied.
+• Test and flight check lists.
+Performance Results (10 Points):
+• Describe the demonstrated performance of key subsystems following execution of testing plan.
+• Compare test results to predictions and explain any differences and improvements made.
+• Describe the demonstrated performance of your complete airplane solution.
+• Compare test results to predictions and explain any differences and improvements made.
+Bibliography (5 Points):
+• Must include list of all published works referenced in the text must be present in this section.
+• Any material taken from a published source in all previous sections must have a numerical subscript
+corresponding to the appropriate citation in this section.
+• References should appear in numerical order.
+• Format should match AIAA provided guidelines:
+https://www.aiaa.org/publications/journals/reference-style-and-format
+[PAGE 32]
+2025-26 Design, Build, Fly Rules
+32 of 34
+6. Fly-Off Scoring
+In the event that, due to time or facility limitations, it is not possible to allow all teams to have the maximum number of
+flight attempts, the contest committee reserves the right to ration and/or schedule flights. The exact determination of
+how to ration flights will be made on the contest day based on the number of entries, weather, and field conditions.
+6.1 Judging
+Students must design, document, fabricate, and demonstrate the airplane they determine to be capable of achieving the
+highest score on the specified mission profile(s). Mission scores will be based on the demonstrated mission performance
+obtained during the contest.
+Each team must also submit a written Proposal and Design Report. A maximum of 100 points each will be awarded for
+the proposal and design report.  The Proposal and Design Report scores will then be combined as defined herein to
+establish a Total Report Score  The overall team score is a combination of the Total Report score and Total Mission Score
+plus a Participation score. The team with the highest overall team score will be declared the winner.  Scores will be
+FINAL 7 working days after the completion of the contest.  This period will allow for review of the scores in a timely
+fashion following the contest.
+All submitted reports are the property of AIAA, Textron Aviation and Raytheon and may be published or reproduced at
+their discretion.
+6.2 Units of Measure
+The units of measure for scoring will be based on the US English system.  Unless otherwise specified in the rules, all
+times or physical measurements will be rounded to the number of decimal places shown below.  Conventional rounding
+will be implemented (<0.5 --> round down, >= 0.5 --> round up).
+Units of Measure and Numbers of Decimal Places
+Item Unit of Measure Decimal Places
+Time Seconds (s) 2 (e.g. X.XX)
+Length Inches (in) 2 (e.g. X.XX)
+Weight Ounces (oz) 2 (e.g. X.XX) Pounds (lbs) 2 (e.g. X.XX)
+6.3 Total Score
+Each team's overall score will be computed from their Total Report Score, Total Mission Score, and Participation Score
+using the following equation below. The Total Report Score will be used as a tie breaker.
+Competition Score = Total Report Score * Total Mission Score + Participation Score
+Total Report Score = 0.15 x Proposal Score + 0.85 x Design Report Score
+Total Mission Score = M1 + M2 + M3 + GM
+Participation Score is as follows:
+Score Participation
+1 Attending the Fly-off
+2 Completing Tech Inspection
+3 Attempting a Flight Mission
+[PAGE 33]
+Appendix A. Frequently Asked Questions
+*** All Rulings in This FAQ Supplement The Official Rules! ***
+A.1 Flight / Mission Questions
+Question: Do we have to fly all of the different missions to get a score?
+Answer: You will get a score for each mission you successfully complete. The flights must be completed in the order
+specified to obtain a score.
+Question: If the airplane is damaged on a flight can we use another copy of the airplane which has the same design?
+Answer: No, you must repair the original airplane.
+Question: Can we tailor the configuration of the airplane differently for the different missions? For example, could we
+use different sized propulsion systems for each flight?
+Answer: You cannot change the hardware configuration of the airplane for the different missions unless specifically
+allowed by the rules for each year (i.e., batteries, payloads, payload support, etc).
+Question: What constitutes a successful landing?
+Answer: The airplane must touch down ON the runway. It may roll/slide, not bounce, off the runway after touchdown.
+Question: Is there a minimum altitude for flying the course?
+Answer: No. Altitude must be high enough for safe flight as set by the discretion of the Contest Director.
+Question: What would constitute “non-critical” versus “significant damage” on landing as described in the rules?
+Answer: The decision will be at the discretion of the flight line judges. In general, “non-critical” damage would allow the
+airplane to be easily returned to safe flight status. A couple of examples of “non-critical” damage would be a broken
+propeller, bent landing gear, sheared nylon bolts or minor scratches to the finish. If any component is structurally
+damaged and would be considered a hazard to safe flight then it will be considered as “significant damage”.
+Question: At what wind speed will the contest be called.
+Answer: It will be up to each team to determine whether they want to fly or not. The contest director will determine if it
+becomes unsafe for teams to fly. Wind speed is not the only factor that may be considered.
+A.2 Airplane Configuration Questions
+Question: Can there be thrust vectoring via rotating the engine, nozzles, blown surfaces etc.?
+Answer: Yes. Any of the above options is allowed and may be varied during flight. However, "rotary wing" vehicles are
+not allowed, so you may need to consult the judges with your specific design doesn't cross over the line into vertical
+flight capability.
+Question: What constitutes a major configuration change between the configuration submitted in the 3-view drawing
+and the airplane presented to Tech Inspection?
+Answer: Only minor configuration changes are allowed from the airplane design presented in the Design Report and
+documented in the 3-view drawing and the airplane presented to tech inspection such as controls surface size changes,
+placement or size of landing gear, location of propulsion motors, etc. Examples of major configuration changes that will
+not be allowed are, but not limited to:
+• Tricycle landing gear to tail dragger landing gear
+• Cannot change tail configuration (Conventional tail, T-Tail, V-Tail)
+• Conventional wing to flying wing or blended wing body
+• Tractor propulsion to pusher propulsion
+[PAGE 34]
+2025-26 Design, Build, Fly Rules
+34 of 34
+• Quantity of propulsion motors
+The Tech Inspector will make a final determination if an airplane has had a major configuration change.
+Question: Can we change the airplane geometry, such as wing sweep or span, for different missions?
+Answer: Variable geometry is allowed provided it is controlled remotely through the RC control system. You may not
+"swap out" parts for different missions.
+Question: Do the external arming plug accessibility requirements (from behind if tractor, from the front if pusher)
+exclude the use of a pusher-puller type multi-engine configuration?
+Answer: You may use a push-pull configuration but must locate the arming plug(s) such that they can be accessed by the
+crew member without having to reach over or around either propeller or being in the propeller disk plane of either
+propeller.
+Question: Are folding propellers allowed?
+Answer: Yes, commercial, folding propellers are allowed.
+Question: Are modifications to commercially procured propellers allowed?
+Answer: Only the propeller tips may be modified for length adjustment.
+A.3 General Questions
+Question: What is the maximum number of people that can make-up a team?
+Answer: There is no specific limit on team size. It is up to the team itself to determine a size sufficient to meet the
+required tasks and small enough to remain manageable.  Keep in mind that space at the fly-off for each team is limited
+and must be considered in team size and team members that will travel to the fly-off.
+Question: Is it necessary to list all team members on the entry.
+Answer: Yes, we need to know all the team members to verify that at least 1/3 of the team members are Freshmen,
+Sophomores or Juniors and that no more than 1/3 of the team members are Graduate students. Team members may be
+updated/changed at any time during the contest but must always comply with the 1/3 rules.
+Question: Is it allowed to have more than 1 pilot on a team (in case one of them cannot go to the contest, or simply
+have a back-up pilot)?
+Answer: Yes, teams may use multiple pilots as long as each pilot meets the requirements listed in the rules.
+Question: Can the plane be flown FPV for competition?
+Answer: No.
+Question: How can we disable a battery eliminator circuit (BEC) that is built into the electronic speed control (ESC)?
+Answer: Follow the manufacturer’s instructions on how to disable the BEC function of the ESC. Typically, this involves
+removing the red wire on the connector from the ESC to the throttle channel on the RC receiver.
+- Nearly all speed controllers come with a BEC as standard, so assume that it exists and needs to be disabled.
+- The power wire (usually red) from the Motor controller back to the receiver needs to be disconnected.
+- This will be functionally verified during the Radio Check.

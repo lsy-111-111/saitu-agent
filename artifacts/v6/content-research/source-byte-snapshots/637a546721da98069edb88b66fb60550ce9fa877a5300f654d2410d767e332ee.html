@@ -1,0 +1,845 @@
+<!doctype html>
+<html>
+<head>
+<link href="/Public/favicon.ico" type="image/x-icon" rel="shortcut icon"/><!-- Favicon Icon -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="author" content="http://www.fractal-technology.com">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no,email=no,adress=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="keywords" content="参赛须知" />
+
+<meta name="description" content="参赛条件： 
+
+
+	• 学生性质：各高校在读本科生、研究生（含MPAcc、MBA），学制、年级、专业不限。 
+
+
+	• 同一学校：参赛队伍的所有队员必须来自于同一所学校，不可跨校组队。如有违规，将取消组队与参赛资格。 
+
+
+	• 团队参赛：以团队形式参赛，每队由3-5人组成并选出一位队长（每人只能参加一支队伍）。 
+
+
+	• 每校队数：鼓励学校举行校内赛，以决出优秀队伍晋级区域赛。每校将有五个晋级区域赛名额。 
+
+
+	 
+
+
+	注意事项： 
+
+
+	1）每队队长作为主要联系人，队长一旦注册不可更改（队员信息在报名截止后不可再更改）。 
+
+
+	2）参..." />
+
+<title>参赛须知_IMA管理会计师协会_参赛须知</title>
+<link rel="stylesheet" type="text/css" href="/Public/static/themes/css/jquery.mCustomScrollbar.css">
+<link rel="stylesheet" type="text/css" href="/Public/static/themes/css/video-js.css">
+<link rel="stylesheet" type="text/css" href="/Public/static/themes/css/global.css">
+<link rel="stylesheet" type="text/css" href="/Public/static/themes/css/base.css">
+<link rel="stylesheet" type="text/css" href="/Public/static/themes/css/flex.css">
+<link rel="stylesheet" type="text/css" href="/Public/static/themes/css/page.css">
+<link rel="stylesheet" type="text/css" href="/Public/static/themes/css/xf.css">
+<script src="/Public/static/themes/js/plugs/jquery-1.11.3.min.js"></script>
+<script src="/Public/static/themes/js/plugs/jquery.placeholder.min.js"></script>
+<script src="/Public/static/themes/js/plugs/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="/Public/static/themes/js/plugs/slick.js"></script>
+<script src="/Public/static/themes/js/global.js"></script>
+<script src="/Public/static/themes/js/plugs/video.js"></script>
+
+
+
+<script type="text/javascript">
+function logout () {
+        var params = {
+            token:''
+        }
+        $.get("/Site/Passport/logout.html",params,function (data) {
+            if (data == 1) {
+                $('#loginZRP').html('<a href="/Site/Passport/Login.html">登录</a><span>|</span><a href="https://cmaonlinestore.com.cn/PersonifyChinaEbusiness/" target="_blank">注册</a>');
+            }else{
+                alert('退出失败');
+            }
+
+        });
+    }
+
+
+</script>
+
+</head>
+
+
+
+<body>
+                <script>
+        $(function(){
+            $('.x-header .widget-area-edit-bg,.x-header .widget-area-edit-title').remove();
+            $('.x-footer .widget-area-edit-bg,.x-footer .widget-area-edit-title').remove();
+            $('.rightNav .widget-area-edit-bg,.rightNav .widget-area-edit-title').remove();
+        });
+
+        </script>
+                <style>
+        .empty-data{ width:100%; font-size:25px; padding-top:8%; padding-bottom:8%; text-align: center;}
+        </style>
+            <style>
+#myalert{ display:none; }
+.recruit .block1{ height: auto}
+.layer{background:url(/Public/static/themes/image/con_mask.png);;position:fixed;left:0;right: 0;top:0;bottom: 0;width:100%;height:100%;z-index: 1000000;}
+.layer .myalert{padding:30px;background:#fff;width:240px;position:absolute;margin-top:-100px;top:50%;left:50%;margin-left:-120px;text-align:center; z-index: 100000}
+.layer .guan{background:url(/Public/static/themes/image/clos.png) no-repeat center; display:block;width:23px;height:23px;position:absolute;top:10px;right:10px;}
+.layer .text{padding-bottom:15px;font-size:16px;color:#474747;}
+.layer .button{background:none;border:1px solid #bbbbbb;width:91px;height:29px;font:14px/100% "Microsoft YaHei", Arial, Tahoma, Helvetica, sans-serif;color: #707070;}
+</style>
+<div id="myalert" class="layer">
+    <div class="myalert">
+        <a href="javascript:;" onclick="myalert_hide();" class="guan"></a>
+        <div class="text">请输入关键字</div>
+        <a><button class="button" type="button" id="my_ok" style="cursor:pointer ;opacity: 1;transform: translateY(0px);">确定</button></a>
+    </div>
+</div>
+<script>
+function my_alert(text,callback) {
+    $('#myalert').show();
+    $('#myalert .myalert div').html(text);
+
+    $('#my_ok').click( function() {
+        $('#myalert').hide();
+
+        if (typeof(callback) == 'function') {
+            callback();
+            return false;
+        }
+    });
+}
+
+function myalert_hide(){
+    $('#myalert').hide();
+}
+</script>
+    <div class="gotop"><div class="s"></div></div>
+	
+	<div class="head_phone m-show">
+		<div class="nav-mod">
+			<div class="search-box m-show">
+				<div class="search-txt"><input type="text" placeholder="search..."id="txtSearchwap" onkeydown="keydown(event, '#btnSearchwap')" name="txtSearchwap" ></div>
+				<button class="search-btn" type="button" onclick="return false;" id="btnSearchwap"></button>
+            </div>
+            <ul class="nav-lv1 clear"><li class="nav-item one m-show">
+        <div class="nav-tit oneChild"><a class="nav-link" href="" style="cursor:default ;" >其他地区</a><span class="arr"></span></div>
+        <ul class="nav-lv2">
+            <li class="nav-item"><div class="nav-tit"><a class="nav-link" href="http://imamiddleeast.org/"   >中东/非洲</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imanet.org/?SelectedRegion={61AABF9A-3686-4AEC-AA53-CC96C0314A41}&amp;;ssopc=1&amp;ssopc=1"   >东南亚</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imanet.org/?SelectedRegion={652BBC29-A94F-40E7-A07B-4A36EF8B94BF}&amp;ssopc=1"   >欧洲</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imanet.org"   >IMA全球</a></div></li>        </ul>
+    </li>
+
+<li class="nav-item one">
+            <div class="nav-tit oneChild"><a href="javascript:void(0);" class="nav-link">CMA认证</a><span class="arr"></span></div>
+            <ul class="nav-lv2">
+                <li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/cma.html">概述</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/entrance.html">入门</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/test.html">参加考试</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/i_huabei.html">CMA授权培训机构</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/receive.html">CMA持证者</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/problems.html">常见问题</a></div></li>            </ul>
+        </li><li class="nav-item one">
+            <div class="nav-tit oneChild"><a href="javascript:void(0);" class="nav-link">持续教育</a><span class="arr"></span></div>
+            <ul class="nav-lv2">
+                <li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/education.html">概述</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/learning_platform.html">中文在线学习平台</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/education.html#c4">CPE合作伙伴课程</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imanet.org/education-center?ssopc=1">英文在线学习课程</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/csca.html">CSCA</a></div></li>            </ul>
+        </li><li class="nav-item one">
+            <div class="nav-tit oneChild"><a href="javascript:void(0);" class="nav-link">研究出版物</a><span class="arr"></span></div>
+            <ul class="nav-lv2">
+                <li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/publications.html">概述</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/strategy.html">管理会计公告</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/magazine.html">战略财务杂志</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/research_reports.html">研究及报告</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/books.html">IMA图书</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/teaching_case.html">IMA教学案例</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/single_detail/1108.html?_isa=1">IMA中国研究基金</a></div></li>            </ul>
+        </li><li class="nav-item one">
+            <div class="nav-tit oneChild"><a href="javascript:void(0);" class="nav-link">活动</a><span class="arr"></span></div>
+            <ul class="nav-lv2">
+                <li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/activity.html">概述</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/xianshang.html">活动预告</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/brand_activities.html">品牌活动</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/instructor.html">讲师培训</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/club.html">精英俱乐部活动</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/excellent.html">合作伙伴系列活动</a></div></li>            </ul>
+        </li><li class="nav-item one">
+            <div class="nav-tit oneChild"><a href="javascript:void(0);" class="nav-link">学术校园</a><span class="arr"></span></div>
+            <ul class="nav-lv2">
+                <li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/plan.html">概述</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/single_detail/589.html">高等教育认可计划</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/previous_case.html">校园管理会计大赛</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/single_detail/590.html">CMA奖学金</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/single_detail/881.html">案例写作大赛</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/single_detail/1152.html">管理会计论文奖</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/single_detail/1153.html">博士生志愿者招募</a></div></li>            </ul>
+        </li><li class="nav-item one">
+            <div class="nav-tit oneChild"><a href="/" class="nav-link">案例大赛</a><span class="arr"></span></div>
+            <ul class="nav-lv2">
+                <li class="nav-item"><div class="nav-tit"><a class="nav-link" href="/">概述</a></div></li>            </ul>
+        </li></ul>            <div class="share-box"><a class="share-item icon-wchat" href="javascript:;" title="分享到微信"><span class="code"><img src="/Uploads/Picture/2019/09/26/s5d8c58fa99c25.png" alt=""  title=""></span></a>
+<a class="share-item icon-sinawb" href="javascript:;"  title="分享到新浪微博"><span class="code"><img src="/Uploads/Picture/2019/09/26/s5d8c58fa99c25.png" alt=""  title=""></span></a></div>		</div>
+	</div>
+    <a href="javascript:;" class="navBg"></a>
+    
+    <div class="x-header">
+            <div class="head_top">
+                    
+                <div class="x-wrap clear">
+                    <div class="imaA" style="min-width:50px;min-height:10px;"><a  href="https://www.imachina.org.cn/" target="_blank" >IMA美国管理会计师协会</a></div>    
+                    <div class="r">
+                            <div class="head_a" style="min-width:50px;"><a  href="https://www.imachina.org.cn/" target="_blank" >首页</a><span>|</span><a  href="https://www.imachina.org.cn/about.html" target="_blank" >关于IMA</a><span>|</span><a  href="https://www.imachina.org.cn/shop.html" target="_blank" >在线项目</a><span>|</span></div>                                <div class="dl" style="min-width:50px;"><dt class="dt">
+    <a href="" style="cursor:default ;" >其他地区</a><span>&#xe834;</span>
+</dt>
+    <dd class="dd">
+        <a href="https://www.imanet.org" target="_blank"  >IMA全球</a><a href="https://www.imanet.org/?SelectedRegion={652BBC29-A94F-40E7-A07B-4A36EF8B94BF}&amp;ssopc=1" target="_blank"  >欧洲</a><a href="http://imamiddleeast.org/" target="_blank"  >中东/非洲</a><a href="https://www.imanet.org/?SelectedRegion={61AABF9A-3686-4AEC-AA53-CC96C0314A41}&amp;;ssopc=1&amp;ssopc=1" target="_blank"  >东南亚</a>    </dd></div>    
+                                <div class="login"><a href="https://www.imachina.org.cn/Site/passport/login" target="_blank">登录</a><span>|</span><a href="https://cmaonlinestore.com.cn/PersonifyChinaEbusiness/" target="_blank">注册</a></div>
+                        <div class="tools p-show">
+                            <div class="search-trigger">
+                                <div class="search-box">
+                                    <button class="search-btn" type="button"id="btnSearch">&#xe851;</button><div class="search-txt"><input placeholder="search..." type="text"   id="txtSearch" onkeydown="keydown(event, '#btnSearch');" name="txtSearchwap"></div>
+                                </div>  
+                            </div>
+                            <div class="share-box"><a class="share-item icon-wchat" href="javascript:;" title="分享到微信"><span class="code"><img src="/Uploads/Picture/2019/09/26/s5d8c58fa99c25.png" alt=""  title=""></span></a>
+<a class="share-item icon-sinawb" href="javascript:;"  title="分享到新浪微博"><span class="code"><img src="/Uploads/Picture/2019/09/26/s5d8c58fa99c25.png" alt=""  title=""></span></a></div>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="head_bot">
+                <div class="x-wrap">
+                    <div class="menu-head">
+                            <div class="logo"><a href="https://imachina.org.cn/"><img src="/Uploads/Picture/2021/10/15/s6168f83063c16.jpg" alt=""></a></div>                        <div class="menu-btn m-show"><span class="line"></span></div>
+                    </div>
+
+                    <div class="nav-mod">
+                            <ul class="nav-lv1 clear"><li class="nav-item one">
+        <div class="nav-tit oneChild"><a href="javascript:;" class="nav-link">CMA认证</a><span class="arr"></span></div>
+        <ul class="nav-lv2">
+            <li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/cma.html">概述</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/entrance.html">入门</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/test.html">参加考试</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/i_huabei.html">CMA授权培训机构</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/receive.html">CMA持证者</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/problems.html">常见问题</a></div></li>        </ul>
+    </li><li class="nav-item one">
+        <div class="nav-tit oneChild"><a href="javascript:;" class="nav-link">持续教育</a><span class="arr"></span></div>
+        <ul class="nav-lv2">
+            <li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/education.html">概述</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/learning_platform.html">中文在线学习平台</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/education.html#c4">CPE合作伙伴课程</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imanet.org/education-center?ssopc=1">英文在线学习课程</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/csca.html">CSCA</a></div></li>        </ul>
+    </li><li class="nav-item one">
+        <div class="nav-tit oneChild"><a href="javascript:;" class="nav-link">研究出版物</a><span class="arr"></span></div>
+        <ul class="nav-lv2">
+            <li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/publications.html">概述</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/strategy.html">管理会计公告</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/magazine.html">战略财务杂志</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/research_reports.html">研究及报告</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/books.html">IMA图书</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/teaching_case.html">IMA教学案例</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/single_detail/1108.html?_isa=1">IMA中国研究基金</a></div></li>        </ul>
+    </li><li class="nav-item one">
+        <div class="nav-tit oneChild"><a href="javascript:;" class="nav-link">活动</a><span class="arr"></span></div>
+        <ul class="nav-lv2">
+            <li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/activity.html">概述</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/xianshang.html">活动预告</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/brand_activities.html">品牌活动</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/instructor.html">讲师培训</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/club.html">精英俱乐部活动</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/excellent.html">合作伙伴系列活动</a></div></li>        </ul>
+    </li><li class="nav-item one">
+        <div class="nav-tit oneChild"><a href="javascript:;" class="nav-link">学术校园</a><span class="arr"></span></div>
+        <ul class="nav-lv2">
+            <li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/plan.html">概述</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/single_detail/589.html">高等教育认可计划</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/previous_case.html">校园管理会计大赛</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/single_detail/590.html">CMA奖学金</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/single_detail/881.html">案例写作大赛</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/single_detail/1152.html">管理会计论文奖</a></div></li><li class="nav-item"><div class="nav-tit"><a class="nav-link" href="https://www.imachina.org.cn/single_detail/1153.html">博士生志愿者招募</a></div></li>        </ul>
+    </li><li class="nav-item one">
+        <div class="nav-tit oneChild"><a href="javascript:;" class="nav-link">案例大赛</a><span class="arr"></span></div>
+        <ul class="nav-lv2">
+            <li class="nav-item"><div class="nav-tit"><a class="nav-link" href="/">概述</a></div></li>        </ul>
+    </li></ul>                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var p=1;
+            </script>
+            <script type="text/javascript">
+            $(function(){
+                $('#btnSearch').click(function(){
+                    var keywords = $("#txtSearch").val();
+                    if(keywords == ''){
+                        my_alert("请输入关键字"); return false;
+                    }
+                    var url= window.location.pathname;
+                        if(url.indexOf("searchs") > -1 ){
+                            window.location.href="/searchs/keywords/" + encodeURI(keywords);
+                        }else{
+                            window.open("/searchs/keywords/"+ encodeURI(keywords));
+                            }
+                });
+               
+            })
+            $(function(){
+                $('#btnSearchwap').click(function(){
+                    var keywords = $("#txtSearchwap").val();
+                    if(keywords == ''){
+                        my_alert("请输入关键字"); return false;
+                    }
+                    var url= window.location.pathname;
+                        if(url.indexOf("searchs") > -1){
+                            window.location.href="/searchs/keywords/" + encodeURI(keywords);
+                        }else{
+                            window.open("/searchs/keywords/" + encodeURI(keywords));
+                            }
+                });
+                $.get("/Article/user/get_name.html", function(res){
+                    if (res.name) {
+                       $(".x-header .head_bot .x-wrap").append(res.str)
+                    } else {
+                      $(".x-header .head_bot .x-wrap").append(res.str)
+                    }
+                })
+               
+            })
+            
+            function keydown(e, but) {
+                var currKey=0,e=e||event;
+                var _this = $(but);
+            
+                if(e.keyCode==13)
+                {
+                    _this.click();
+                    return false;
+                }
+            }
+            </script>
+
+
+        
+<div class="x-container">
+
+	<div class="article limg_box">
+		<div class="x-wrap">
+			<div class="article-title">
+				 <div class="h24">参赛须知</div>
+				<div class="info">
+															<span class="date">时间：2026.10.01</span>					</div>			</div>
+			<div class="article-cont">
+							  		  <p>
+	<span class='p' style="font-size:18px;"><strong>参赛条件：</strong></span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">• 学生性质：各高校在读本科生、研究生（含MPAcc、MBA），学制、年级、专业不限。</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">• 同一学校：参赛队伍的所有队员必须来自于同一所学校，不可跨校组队。如有违规，将取消组队与参赛资格。</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">• 团队参赛：以团队形式参赛，每队由3-5人组成并选出一位队长（每人只能参加一支队伍）。</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">• 每校队数：鼓励学校举行校内赛，以决出优秀队伍晋级区域赛。每校将有五个晋级区域赛名额。</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">&nbsp;</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;"><strong>注意事项：</strong></span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">1）每队队长作为主要联系人，队长一旦注册不可更改（队员信息在报名截止后不可再更改）。</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">2）参赛团队可邀请校内教师或实务界人士担任指导教师（赛后可根据需要提供电子版指导老师证书）。</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">3）IMA欢迎并鼓励参赛队员注册成为CMA考生，参加CMA的学习和考试。</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">4）<span class='p' style="font-size:18px;"><span class='p' style="font-size:18px;"><span class='p' style="font-size:18px;">报名截止后，每队人员信息不可再调整，参赛队伍不可再擅自替换队员。</span></span></span></span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;"> </span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">5）参赛团队须确保所提供的所有参赛资料（包括团队成员、参赛文件等信息）真实、有效、完整，且在参赛全程中的所有参赛作品，均为团队自己原创作品。</span> 
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<span class='p' style="font-size:18px;"><strong>参赛流程：</strong></span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">了解大赛—组队—报名参赛—下载案例—校内赛—区域赛—区域决赛—全国总决赛</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">（注：建议由队长尽早在官网进行参赛登记，若同一学校报名队伍超过5支，我们将及时联系学校老师确认校内赛的安排。参加校内赛的同学如需要均可获得电子版参赛证书。校内赛截止后组委会将与学校老师或校内赛对接人确定每校晋级的5个队伍信息。）</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">&nbsp;</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;"><strong>参赛语言：</strong></span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">校内赛：学校自行决定比赛语言。</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">区域赛：团队英文演讲视频、英文PPT</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">区域决赛：团队英文演讲、英文PPT（使用中文不得分）</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">全国总决赛：团队英文演讲、英文PPT（使用中文不得分）</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">&nbsp;</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;"><strong>晋级流程：</strong></span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">1、校内赛：参赛队伍超过5支的学校，请由学校组织校内赛，每校将有五个晋级区域赛的赛队名额。</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">2、区域赛：评委在线评审出区域赛成绩前5名的队伍入围区域决赛。</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">3、区域决赛：评委团根据区域决赛队伍的案例分析及团队演讲，现场评审并合议决出各赛区一、二、三等奖。区域决赛第一名晋级全国总决赛。</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">3、全国总决赛：各区域决赛第一名团队进行案例分析及团队演讲，评委团现场评出全国特等、一、二、三等奖。</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">&nbsp;</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;"><strong>评审形式：</strong></span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">校内赛：由学校自行决定评审形式（建议团队现场演讲形式）；</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">区域赛：由专业评委对参赛队伍提交的团队演讲视频与内容进行在线评审；</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">区域决赛和全国总决赛：由专业评委现场评审。</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">&nbsp;</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;"><strong>奖项设置：</strong></span> 
+</p>
+<ul>
+	<li>
+		<span class='p' style="font-size:18px;">全国总决赛：</span> 
+	</li>
+</ul>
+<p>
+	<span class='p' style="font-size:18px;">特等奖：1队，奖金6,000元/队（税前），全国总决赛特等奖电子证书（可打印）<span class='p' style="font-size:18px;">。&nbsp;</span></span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">一等奖：1队，奖金4,500元/队（税前），全国总决赛一等奖电子证书（可打印）。 </span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">二等奖：1队，奖金3,000元/队（税前），全国总决赛二等奖电子证书（可打印）。&nbsp;</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">三等奖：4队，<span class='p' style="font-size:18px;text-wrap-mode:wrap;">全国总决赛三等奖电子证书（可打印）。</span></span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;"><span class='p' style="font-size:18px;"><span class='p' style="font-size:18px;">评委组可根据总决赛期间的精彩表现授予参赛团队或个人其他额外奖项。</span></span></span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;"><span class='p' style="font-size:18px;"><span class='p' style="font-size:18px;"><br />
+</span></span></span> 
+</p>
+<ul>
+	<li>
+		<span class='p' style="font-size:18px;">区域决赛：</span> 
+	</li>
+</ul>
+<p>
+	<span class='p' style="font-size:18px;">一等奖：1队，晋级全国总决赛，奖金3,000元/队（税前），区域决赛一等奖电子证书（可打印），IMA专属管理会计学习礼包（价值100美金/每份）。</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">二等奖：2队，奖金1,500元/队（税前），区域决赛二等奖电子证书（可打印）<span class='p' style="font-size:18px;white-space:normal;">，IMA专属管理会计学习礼包（价值100美金/每份）。</span></span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">三等奖：2队，区域决赛三等奖电子证书（可打印）<span class='p' style="font-size:18px;white-space:normal;">，IMA专属管理会计学习礼包（价值100美金/每份）。</span></span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;text-wrap-mode:wrap;">评委组可根据区域决赛期间的精彩表现授予参赛团队或个人其他额外奖项。</span> 
+</p>
+<p>
+	<br />
+</p>
+<ul>
+	<li>
+		<span class='p' style="font-size:18px;">校内赛和区域赛：</span> 
+	</li>
+</ul>
+<p>
+	<span class='p' style="font-size:18px;">参加校内赛、区域赛未晋级的同学根据需要均可获得电子参赛证书（可打印版）。</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;"> </span>
+</p>
+<p align="left" class='p' style="white-space:normal;">
+	<b><span class='p' style="font-size:14pt;font-family:&quot;">校内赛注意事项</span></b><span class='p' style="font-size:14pt;font-family:&quot;"></span><b><span class='p' style="font-size:14pt;font-family:宋体;"></span></b> 
+</p>
+<p class='p' style="white-space:normal;">
+	<span class='p' style="font-size:18px;"></span><span class='p' style="font-size:18px;"></span> 
+</p>
+<p class="MsoNormal" class='p' style="white-space:normal;">
+	<span class='p' style="font-size:13.5pt;font-family:&quot;">本届赛事同一所学校报名队伍超过</span><span class='p' style="font-size:13.5pt;font-family:宋体;"><span class='p' style="font-family:&quot;">5</span><span class='p' style="font-family:&quot;">支时，组委会将联系指导老师，请学校老师或社团组织校内赛选拔出</span><span class='p' style="font-family:&quot;">5</span><span class='p' style="font-family:&quot;">支队伍代表学校参加区域赛。以下是关于校内赛的相关注意事项和说明：</span></span> 
+</p>
+<p class="MsoListParagraphCxSpFirst" class='p' style="margin:5px 0px 5px 0.25in;white-space:normal;text-indent:-0.25in;">
+	<span class='p' style="font-size:13.5pt;font-family:&quot;">1.</span><span class='p' style="font-size:13.5pt;font-family:&quot;">校内赛案例：校内赛统一使用本届大赛官方案例。</span> 
+</p>
+<p class="MsoListParagraphCxSpFirst" class='p' style="margin:5px 0px 5px 0.25in;white-space:normal;text-indent:-0.25in;">
+	<span class='p' style="font-size:13.5pt;font-family:&quot;">2.校内赛形式：校内赛的具体形式由学校组织者根据实际情况决定。可供参考形式：先以</span><span class='p' style="font-size:13.5pt;font-family:宋体;"><span class='p' style="font-family:&quot;">PPT</span><span class='p' style="font-family:&quot;">挑选，再进行团队现场演讲，或两者结合。</span></span> 
+</p>
+<span class='p' style="white-space:normal;font-size:18px;"> 
+<p class="MsoListParagraphCxSpMiddle" class='p' style="margin:5px 0px 5px 0.25in;text-indent:-0.25in;">
+	<span class='p' style="font-size:13.5pt;font-family:&quot;">3.</span><span class='p' style="font-size:13.5pt;font-family:&quot;">指导：学校老师可担任指导老师为同学们辅导，</span><span class='p' style="font-size:13.5pt;font-family:宋体;"><span class='p' style="font-family:&quot;">IMA</span><span class='p' style="font-family:&quot;">协会亦可根据学校需求推荐</span><span class='p' style="font-family:&quot;">CMA</span><span class='p' style="font-family:&quot;">校外导师适当义务辅导，并配合参与校内赛评审。</span></span> 
+</p>
+<p class="MsoListParagraphCxSpMiddle" class='p' style="margin:5px 0px 5px 0.25in;text-indent:-0.25in;">
+	<span class='p' style="font-size:13.5pt;font-family:&quot;">4.</span><span class='p' style="font-size:13.5pt;font-family:&quot;">报名：一旦参赛队伍确定队长后，需在报名截止前完成大赛官网报名的信息填写，所填写内容需真实、准确，报名截止后，每队人员信息不可再调整，参赛队伍不可再擅自替换队员。</span> 
+</p>
+<p class="MsoListParagraphCxSpLast" class='p' style="margin:5px 0px 5px 0.25in;text-indent:-0.25in;">
+	<br />
+</p>
+</span> 
+<p>
+	<br />
+</p>
+<ul>
+	<li>
+		<span class='p' style="font-size:18px;">其他奖项：</span> 
+	</li>
+</ul>
+<p>
+	<span class='p' style="font-size:18px;">优秀组织奖：校内赛参赛队伍达到或超过10支，且有队伍入围区域决赛的高校，授予优秀组织奖证书。</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">优秀指导教师奖：全国总决赛团队指导教师获优秀指导教师证书和价值约200美金的IMA专属管理会计教学礼包。</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">指导老师证书：校内指导教师根据需要可获得指导教师电子证书（可打印）。</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">&nbsp;</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;"><strong>赛区设置：</strong></span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">东北：黑龙江、吉林、辽宁</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">华北：北京、天津、河北、山西、内蒙古</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">华东：江苏、浙江、上海、安徽、山东</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">西北：陕西、甘肃、宁夏、青海、新疆</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">西南：云南、贵州、四川、重庆、西藏</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">华南：广东、广西、福建、海南、江西、港澳台</span> 
+</p>
+<p>
+	<span class='p' style="font-size:18px;">华中：河南、湖北、湖南</span> 
+</p>
+<p align="left">
+	<span class='p' style="font-size:18px;"></span> 
+</p>
+<p align="left">
+	<br />
+</p>
+<p class="MsoNormal">
+	<span class='p' style="font-family:Microsoft YaHei;font-size:18px;">大赛组委会联系方式：</span><span class='p' style="font-family:&quot;"> </span><span class='p' style="font-family:&quot;"></span> 
+</p>
+<p class="MsoNormal">
+	<span class='p' style="font-family:Microsoft YaHei;font-size:18px;">邮箱：</span><a href="mailto:student@imanet.org.cn"><span class='p' style="font-family:Microsoft YaHei;font-size:18px;">student@imanet.org.cn</span></a><span class='p' style="font-family:&quot;"> </span> 
+</p>
+<p class="MsoNormal">
+	<span class='p' style="font-family:Microsoft YaHei;font-size:18px;">值班电话：</span><span class='p' style="font-family:宋体;"><span class='p' style="font-family:Microsoft YaHei;font-size:18px;">010</span><span class='p' style="font-family:Microsoft YaHei;font-size:18px;">–</span><span class='p' style="font-family:Microsoft YaHei;font-size:18px;">8553 4628&nbsp; &nbsp;</span><span class='p' style="font-family:Microsoft YaHei;font-size:18px;">周一至周四（</span><span class='p' style="font-family:Microsoft YaHei;font-size:18px;">15:00-17:30</span><span class='p' style="font-family:Microsoft YaHei;font-size:18px;">）</span></span> 
+</p>
+<br />
+<p>
+	<br />
+</p>			</div>
+
+			<div class="share-mod">
+				<span class="share-label">分享到:</span>
+				<div class="share-box bdsharebuttonbox">
+					<a href="#" class="share-item icon-wchat" data-cmd="weixin" title="分享到微信"></a>
+					<a href="#" class="share-item icon-qq" data-cmd="sqq" title="分享到QQ好友"></a>
+					<a href="#" class="share-item icon-qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+					<a href="#" class="share-item icon-sinawb" data-cmd="tsina" title="分享到新浪微博"></a>
+					<a href="#" class="share-item icon-txwb" data-cmd="tqq" title="分享到腾讯微博"></a>
+					<a href="#" class="share-item icon-smore" data-cmd="more" title="更多分享"></a>
+				</div>
+			</div>
+			
+			<div class="article-paging">
+					<div class=" prev">
+								<a href="/details/84.html" title="11th赛事规则"><span>上一条</span>：11th赛事规则</a>
+							</div>
+													<div class=" next">
+								<a href="/details/103.html" title="奖项设置" ><span>下一条</span>：奖项设置</a>
+							</div>
+										</div>
+		</div>
+	</div>
+
+</div>
+
+<script>
+$(function(){
+$('.article-cont img').parent().attr('style','text-align: center;');
+})
+</script>
+
+    
+	<script src="/Public/static/guestbook.js"></script><form id="form_7cb5daace2532623a6c84e4d27d7dc63" data-action="/guestbook/message/contact_footer.html"><div class="ctpop">
+    <div class="con">
+        <div class="ptop"></div>
+        <div class="close"></div>
+        <div class="inner">
+            <div class="popt"><div>联系我们</div></div>
+            <div class="inp"> <input type="text" name="form_7cb5daace2532623a6c84e4d27d7dc63_name" id="name" placeholder="请输入您的姓名"></div>                <div class="inp"> <input type="text" name="form_7cb5daace2532623a6c84e4d27d7dc63_email" id="email" placeholder="请输入您的邮箱"></div>                <div class="inp"> <input type="text" name="form_7cb5daace2532623a6c84e4d27d7dc63_number" id="number" placeholder="请输入您的IMA编号"></div>                <div class="select-mod" data-select-clickup="true">
+                                 <div class="select-bar"><div class="select-btn"><p class="select-val placeholder" name="select-val">请选择您的致电原因</p></div>
+                                    <select name="form_7cb5daace2532623a6c84e4d27d7dc63_reason" id="zhaoq_select" class="select-native">
+                                            <option value="">--请选择--</option>
+                                        <option value="CMA信息" onclick="validation('CMA信息');">
+                                                CMA信息                                            </option><option value="年费" onclick="validation('年费');">
+                                                年费                                            </option><option value="分会相关" onclick="validation('分会相关');">
+                                                分会相关                                            </option><option value="出版" onclick="validation('出版');">
+                                                出版                                            </option><option value="教育" onclick="validation('教育');">
+                                                教育                                            </option><option value="活动" onclick="validation('活动');">
+                                                活动                                            </option><option value="商城" onclick="validation('商城');">
+                                                商城                                            </option><option value="网站相关" onclick="validation('网站相关');">
+                                                网站相关                                            </option><option value="其他" onclick="validation('其他');">
+                                                其他                                            </option>                                    </select>
+                                </div>
+                                <div class="select-cont">
+                                    <ul class="select-opts">
+                                        <li class="select-item" onclick="validation('CMA信息');"> CMA信息</li><li class="select-item" onclick="validation('年费');"> 年费</li><li class="select-item" onclick="validation('分会相关');"> 分会相关</li><li class="select-item" onclick="validation('出版');"> 出版</li><li class="select-item" onclick="validation('教育');"> 教育</li><li class="select-item" onclick="validation('活动');"> 活动</li><li class="select-item" onclick="validation('商城');"> 商城</li><li class="select-item" onclick="validation('网站相关');"> 网站相关</li><li class="select-item" onclick="validation('其他');"> 其他</li>                                    </ul>
+                                </div>
+                                <input type="hidden" name="form_7cb5daace2532623a6c84e4d27d7dc63_reason"  id="reason">
+                            </div>                <div class="tarea inp"> <textarea name="form_7cb5daace2532623a6c84e4d27d7dc63_content" placeholder="留言内容" id="content" ></textarea></div>                            <div class="a_com">
+                <a class="a" href="javascript:;" id="submit">提交</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function validation(value){
+        $('#reason').val(value);
+    }
+// $(function(){
+//     $('#reason').bind("change", function(){ alert("你触发了change事件");});
+//     $('.select-val').on("change", function(){ alert("你触发了change事件");});
+// })
+</script>
+<script type="text/javascript">
+
+    new Guestbook({"name":{"fieldname":"name","fieldtype":"text","itemname":"\u59d3\u540d","strlen":"","valid":"1","valdefault":"","preg":null,"token":"form_7cb5daace2532623a6c84e4d27d7dc63_name"},"email":{"fieldname":"email","fieldtype":"text","itemname":"\u90ae\u7bb1","strlen":"","valid":"1","valdefault":"","preg":[{"reg":"\/^([\\.a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+([\\.a-zA-Z0-9_-]+)\/","msg":"\u8bf7\u8f93\u5165\u6b63\u786e\u7684\u90ae\u7bb1"}],"token":"form_7cb5daace2532623a6c84e4d27d7dc63_email"},"number":{"fieldname":"number","fieldtype":"text","itemname":"IMA\u7f16\u53f7","strlen":"","valid":"1","valdefault":"","preg":null,"token":"form_7cb5daace2532623a6c84e4d27d7dc63_number"},"reason":{"fieldname":"reason","fieldtype":"select","itemname":"\u81f4\u7535\u539f\u56e0","strlen":"","valid":"1","valdefault":"CMA\u4fe1\u606f,\u5e74\u8d39,\u5206\u4f1a\u76f8\u5173,\u51fa\u7248,\u6559\u80b2,\u6d3b\u52a8,\u5546\u57ce,\u7f51\u7ad9\u76f8\u5173,\u5176\u4ed6","preg":null,"token":"form_7cb5daace2532623a6c84e4d27d7dc63_reason"},"content":{"fieldname":"content","fieldtype":"textarea","itemname":"\u7559\u8a00\u5185\u5bb9","strlen":"0,500","valid":"1","valdefault":"","preg":null,"token":"form_7cb5daace2532623a6c84e4d27d7dc63_content"}}, 'form_7cb5daace2532623a6c84e4d27d7dc63', {
+      'language':'',  // 'tr'   'zh-CN'  'en'
+      // 绑定验证事件, 主要使用于非弹窗信息提示; 友情提示：弹窗提示时使用可能会存在小瑕疵
+      validate: function(gb, trigger) {
+        // gb.getEleByName('name')[0].onblur = trigger;
+        // gb.getEleByName('tel')[0].onblur = trigger;
+        // for (var i = 0 ; i < gb.getEleByName('gender').length; i++) {
+        //   gb.getEleByName('gender')[i].onchange = trigger;
+        // }
+        // for (var i = 0 ; i < gb.getEleByName('like[]').length; i++) {
+        //   gb.getEleByName('like[]')[i].onchange = trigger;
+        // }
+       //gb.getEleByName('reason')[0].onchange = trigger;
+        // gb.getEleByName('degrees')[0].onchange = trigger;
+        // gb.getEleByName('content')[0].onblur = trigger;
+        // gb.getEleByName('verify')[0].onblur = trigger;
+      },
+      // 绑定提交事件
+      trigger:function(gb,trigger){
+        document.getElementById('submit').onclick = trigger;
+      },
+      // 验证规则, true: 返回全部错误信息, false: 返回第一条错误信息
+      allError: false,
+      // 数据处理
+      parse: {
+        'reason': function(gb) {
+          var vals = '';
+          var eles = $('.select-val').text();
+         
+            if (eles!='请选择您的致电原因'){
+              vals = eles;
+          }
+          return vals;
+        },
+        'gender': function(gb) {
+          var vals = '';
+          var eles = gb.getEleByName('gender');
+          for (var i = 0; i < eles.length; i++) {
+            if (eles[i].checked)
+              vals = eles[i].value;
+          }
+          return vals;
+        },
+        'like': function(gb) {
+          var vals = [];
+          var eles = gb.getEleByName('like[]');
+          for (var i = 0; i < eles.length; i++) {
+            if (eles[i].checked)
+              vals.push(eles[i].value);
+          }
+          return vals;
+        },
+        'address': function(gb) {
+          var vals = '';
+          var eles = gb.getEleByName('address');
+          for (var i = 0; i < eles.length; i++) {
+              vals = eles[i].value;
+          }
+          return vals;
+        },
+      },
+      // 提交成功回调方法
+      onSuccess: function(success) {
+          // {status: 1, 'info': "成功信息", field: "字段名"}
+          my_alert('信息已提交');
+          $('#form_7cb5daace2532623a6c84e4d27d7dc63')[0].reset();
+          window.location.reload();
+    
+      },
+      // 提交失败回调方法
+      onError: function(error) {
+          // {status: 0, 'info': "错误信息", field: "字段名"}
+          my_alert(error.info);
+      }
+    }, function(valid, gb){
+      // 验证失败返回错误信息
+      if (valid !== true) {
+        for(i in valid){
+            my_alert(valid[i]);
+        }
+        return false; // 不提交
+      }
+    
+      return true; // 提交表单
+    });
+    </script></form><div class="x-footer">
+		<div class="footer_top">
+			<div class="x-wrap clear">
+				<div class="l">
+					<div class="dl">
+							<div class="dt">CMA</div>						<div class="dd" style="min-width:50px;"><div class="li"><a  href="https://www.imachina.org.cn/wendang%20.html" target="_blank"  class="a"><img src="/Public/static/themes/image/temp/foot_1.png" alt="">文档下载中心</a></div>
+<div class="li"><a  href="https://www.imachina.org.cn/entrance.html" target="_blank"  class="a"><img src="/Public/static/themes/image/temp/foot_2.png" alt="">成为CMA</a></div>
+<div class="li"><a  href="https://www.imachina.org.cn/test.html" target="_blank"  class="a"><img src="/Public/static/themes/image/temp/foot_3.png" alt="">CMA备考指南</a></div>
+<div class="li"><a  href="https://www.imachina.org.cn/test.html#tt6" target="_blank"  class="a"><img src="/Public/static/themes/image/temp/foot_4.png" alt="">申请CMA证书</a></div></div>					</div>
+					<div class="dl">
+							<div class="dt">找到我们</div>						<div class="dd" style="min-width:50px;">	<div class="li ewm">
+        <a href="javascript:;" class="a"><img src="/Public/static/themes/image/temp/foot_5.png" alt="">官方微信</a>
+        <div class="code"><img src="/Uploads/Picture/2019/09/26/s5d8c58fa99c25.png" alt=""  title=""></div>
+    </div>
+    <div class="li ewm">
+        <a href="javascript:;" class="a"><img src="/Public/static/themes/image/temp/foot_6.png" alt="">官方微博</a>
+        <div class="code"><img src="/Uploads/Picture/2019/09/26/s5d8c58fa99c25.png" alt=""  title=""></div>
+    </div>
+    <div class="li"><a  href="https://www.linkedin.com/company/ima-institute-of-management-accountants" target="_blank"  class="a"><img src="/Public/static/themes/image/temp/foot_7.png" alt="">领英</a></div>
+    <div class="li"><a  href="http://i.youku.com/u/UNDMyMTY5MTk2" target="_blank"  class="a"><img src="/Public/static/themes/image/temp/foot_8.png" alt="">优酷平台</a></div></div>					</div>
+				</div>
+						
+						<form id="form_7f1599b01629dd640201d48933c067a1" data-action="/guestbook/message/email.html"><div class="r">
+        <div class="pad">
+                <div class="t3">想了解更多关于CMA认证的信息？</div>                <div class="t4">提交邮箱，我们将为您定期发送关于CMA认证的新资讯</div>
+            <div class="inp">
+                    <div  class="i"> <input type="text" name="form_7f1599b01629dd640201d48933c067a1_email" id="form_7f1599b01629dd640201d48933c067a1_email" placeholder="请输入邮箱"/></div>
+                                
+                <!-- <button class="subs" type="button"id="email_sub" >提交</button> -->
+                <button class="sub" type="button" id="submit">提交</button>
+            </div>
+            <div class="radio" id="emails"><span></span>我愿意接收来自IMA协会邮件，包括新闻，产品内容，活动预告等我将遵守IMA相关条款及保密政策</div>
+           
+        </div>
+    </div>
+
+       <script type="text/javascript">
+        function refreshs(){
+            if($('#emails').is('.radio.on')){
+                        return true;
+                    }else{
+                    my_alert('请勾选“我愿意接收来自IMA协会邮件，包括新闻，产品内容，活动预告等我将遵守IMA相关条款及保密政策”');
+                    }
+        }
+    new Guestbook({"email":{"fieldname":"email","fieldtype":"text","itemname":"邮箱","strlen":"","valid":"1","valdefault":"","preg":[{"reg":"\/^([\\.a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+([\\.a-zA-Z0-9_-]+)\/","msg":"请输入正确的邮箱"}],"token":"form_7f1599b01629dd640201d48933c067a1_email"}}, 'form_7f1599b01629dd640201d48933c067a1', {
+    // 绑定验证事件, 主要使用于非弹窗信息提示; 友情提示：弹窗提示时使用可能会存在小瑕疵
+    validate: function(gb, trigger) {
+
+    },
+    // 绑定提交事件
+    trigger: function(gb, trigger) {
+        // document.getElementById('submit').onclick = trigger;
+        $('#form_7f1599b01629dd640201d48933c067a1').find('.sub')[0].onclick = trigger;
+    },
+    // 验证规则, true: 返回全部错误信息, false: 返回第一条错误信息
+    allError: false,
+    parse: {
+        'email': function(gb) {
+            var vals = '';
+            var eles = gb.getEleByName('email')[0];
+            vals = eles.value;
+            if(vals == "请输入邮箱"){
+                vals = "";
+            }
+           if(refreshs()){
+             return vals;
+           } ;
+            
+        },
+        
+    },
+    onSuccess: function(success) {
+        // {status: 1, 'info': "成功信息", field: "字段名"}
+        my_alert('信息已提交', function() {
+            $('#form_7f1599b01629dd640201d48933c067a1')[0].reset();
+            window.location.reload();
+        });
+
+        $('#my_ok1').click(function(){
+            $('#form_7f1599b01629dd640201d48933c067a1')[0].reset();
+        });
+    },
+    // 提交失败回调方法
+    onError: function(error) {
+        // {status: 0, 'info': "错误信息", field: "字段名"}
+        my_alert(error.info);
+       
+    }
+}, function(valid, gb) {
+    // 验证失败返回错误信息
+    if (valid !== true) {
+        for (i in valid) {
+            my_alert(valid[i]);
+        }
+        return false; // 不提交
+    }
+
+    return true; // 提交表单
+});
+</script>
+
+</form>			</div>
+		</div>
+		<div class="footer_bot">
+			<div class="x-wrap clear">
+				<div class="l">
+						<div class="site">    <a  href="/single/28.html"  >隐私条款</a><span>|</span><a  href="/sitemap.html"  >网站地图</a><span>|</span><a  style="cursor: default;" class="contectss">联系我们（大赛相关）</a></div>					<div class="copy"> ©1997–2026, Shanghai Representative Office of Institute of Management Accountants, Inc.
+<br>版权所有 管理会计师协会上海代表处</div>
+					<div class="ba" style="min-width:50px;"><a href="http://beian.miit.gov.cn/">沪ICP备2020037726号-6</a>|<a  href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010602005970" target="_blank" ><img src="/Public/static/themes/image/images/jhpng_03.png" title="" alt="" /> 沪公网安备31010602005970号</a></div>					
+				</div>
+				<div class="r" style="min-width:50px;"><div class="add">上海市静安区南京西路1717号31楼4室</div>
+<div class="num" style="background: url(/Public/static/themes/image/images/telepng_03.png) no-repeat left center;      padding-left: 30px;">热线电话：<span>4000-462-262</span><span class="nspan">服务时间：9:00-17:30 (工作日)</span></div>
+<div class="ftbj">
+    <span><span class="kf">客服邮箱：imachina@imanet.org</span></span>
+    <a href="http://www.fractal-technology.com" target="_blank" style="margin-left: 30px;">Powered by Fractal-Technology</a>
+</div>
+<!-- <div class="ftbj"><a href="http://www.fractal-technology.com" target="_blank">网站建设</a>：<a href="http://www.fractal-technology.com" target="_blank">北京分形科技</a></div> --></div>					
+			</div>
+		</div>
+	</div>
+	<script>
+	$(function(){
+		$('.contectss').click(function(){
+			$('.ctpop').attr('style','display: block;');
+		})
+	})
+	</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?70a8602309a86fc96e5e56f2a0959bf1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>
